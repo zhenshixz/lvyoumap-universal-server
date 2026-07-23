@@ -70,14 +70,16 @@ http://127.0.0.1:3000/api/weather?province=北京
 ## GitHub Desktop自动部署
 
 公开仓库默认不需要GitHub Token、Actions Secrets或云厂商插件。`bootstrap.sh`会安装
-`lvyoumap-update.timer`，服务器每5分钟检查一次`main`：
+`lvyoumap-update.timer`，服务器约每30秒检查一次`main`：
 
 ```bash
 sudo systemctl enable --now lvyoumap-update.timer
 sudo systemctl start lvyoumap-update.service
 ```
 
-以后只需通过GitHub Desktop提交并Push。远端提交没有变化时不会重新构建；构建或健康检查失败时继续保留上一版。
+以后只需通过GitHub Desktop完成`Commit to main`并点击`Push origin`。远端提交没有变化时不会重新构建；
+发现更新后使用服务器上的Git镜像增量拉取。小改动通常可在约1分钟内上线，实际时间仍受GitHub网络速度影响。
+构建或健康检查失败时继续保留上一版。
 
 仓库地址和分支可在`/etc/lvyoumap.env`中通过以下变量调整：
 

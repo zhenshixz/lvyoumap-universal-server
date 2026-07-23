@@ -5,6 +5,7 @@ repository="${LVYOUMAP_REPOSITORY:-https://github.com/zhenshixz/lvyoumap-univers
 branch="${LVYOUMAP_BRANCH:-main}"
 base="/opt/lvyoumap"
 current="${base}/current"
+mirror="/var/lib/lvyoumap/repository.git"
 
 exec 9>/run/lock/lvyoumap-update.lock
 if ! flock -n 9; then
@@ -34,12 +35,27 @@ cleanup() {
 }
 trap cleanup EXIT
 
-git clone --depth 1 --branch "${branch}" --single-branch "${repository}" "${workdir}/source"
-resolved_sha="$(git -C "${workdir}/source" rev-parse HEAD)"
+if [[ ! -e "${mirror}" ]]; then
+  git clone --mirror "${repository}" "${mirror}"
+elif ! git -C "${mirror}" rev-parse --is-bare-repository >/dev/null 2>&1; then
+  invalid_mirror="${mirror}.invalid.$(date +%s)"
+  mv "${mirror}" "${invalid_mirror}"
+  echo "Moved an invalid repository cache to ${invalid_mirror}."
+  git clone --mirror "${repository}" "${mirror}"
+fi
+
+git -C "${mirror}" remote set-url origin "${repository}"
+git -C "${mirror}" fetch --prune --no-tags origin \
+  "+refs/heads/${branch}:refs/heads/${branch}"
+resolved_sha="$(git -C "${mirror}" rev-parse "refs/heads/${branch}")"
 if [[ "${resolved_sha}" != "${remote_sha}" ]]; then
-  echo "Repository changed during checkout; retry on the next update." >&2
+  echo "Repository changed during fetch; retry on the next update." >&2
   exit 1
 fi
+
+mkdir -p "${workdir}/source"
+git -C "${mirror}" archive "${resolved_sha}" |
+  tar -xf - -C "${workdir}/source"
 
 (
   cd "${workdir}/source"
