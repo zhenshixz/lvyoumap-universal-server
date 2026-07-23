@@ -1,0 +1,15 @@
+{
+  "name": "lvyoumap-universal-server",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Cloud-neutral China tourism map with a static frontend and a small weather API",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node server/index.js",
+    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js",
+    "verify": "npm run check && npm run build && node scripts/verify-build.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

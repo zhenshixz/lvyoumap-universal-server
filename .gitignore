@@ -1,0 +1,18 @@
+# Dependencies and generated output
+node_modules/
+dist/
+release/
+
+# Runtime configuration and secrets
+.env
+*.pem
+
+# Runtime logs, caches, and local backups
+*.log
+*.tmp
+content/*.backup*.json
+progress.json
+
+# Deployment archives and local platform state
+lvyoumap-universal-server-*.tar.gz
+.vercel/

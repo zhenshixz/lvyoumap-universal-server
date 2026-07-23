@@ -1,0 +1,60 @@
+name: Build and deploy universal server
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - name: Package release
+        run: tar -czf "lvyoumap-release-${GITHUB_SHA}.tar.gz" dist server package.json package-lock.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lvyoumap-release
+          path: lvyoumap-release-*.tar.gz
+          retention-days: 7
+
+  deploy:
+    if: ${{ vars.ENABLE_SERVER_DEPLOY == 'true' }}
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: lvyoumap-release
+      - name: Configure SSH
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "${DEPLOY_SSH_KEY}" > ~/.ssh/lvyoumap
+          printf '%s\n' "${DEPLOY_KNOWN_HOSTS}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/lvyoumap ~/.ssh/known_hosts
+      - name: Upload and activate release
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        run: |
+          archive="lvyoumap-release-${GITHUB_SHA}.tar.gz"
+          remote_archive="/tmp/${archive}"
+          scp -i ~/.ssh/lvyoumap -P "${DEPLOY_PORT}" "${archive}" \
+            "${DEPLOY_USER}@${DEPLOY_HOST}:${remote_archive}"
+          ssh -i ~/.ssh/lvyoumap -p "${DEPLOY_PORT}" \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" \
+            "sudo /usr/local/sbin/lvyoumap-activate '${remote_archive}' '${GITHUB_SHA}'"
