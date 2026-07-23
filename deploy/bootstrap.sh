@@ -12,7 +12,7 @@ if [[ -z "${deploy_public_key}" || "${deploy_public_key}" != ssh-* ]]; then
   exit 1
 fi
 
-for command in node systemctl tar curl; do
+for command in node npm git systemctl tar curl flock; do
   if ! command -v "${command}" >/dev/null 2>&1; then
     echo "Required command is missing: ${command}" >&2
     exit 1
@@ -44,6 +44,15 @@ sed "s|__NODE_PATH__|${node_path}|g" \
 install -o root -g root -m 0755 \
   "${project_root}/deploy/activate-release.sh" \
   /usr/local/sbin/lvyoumap-activate
+install -o root -g root -m 0755 \
+  "${project_root}/deploy/update-from-github.sh" \
+  /usr/local/sbin/lvyoumap-update
+install -o root -g root -m 0644 \
+  "${project_root}/deploy/lvyoumap-update.service" \
+  /etc/systemd/system/lvyoumap-update.service
+install -o root -g root -m 0644 \
+  "${project_root}/deploy/lvyoumap-update.timer" \
+  /etc/systemd/system/lvyoumap-update.timer
 
 cat > /etc/sudoers.d/lvyoumap-deploy <<'EOF'
 deploy ALL=(root) NOPASSWD: /usr/local/sbin/lvyoumap-activate
@@ -56,6 +65,7 @@ fi
 
 systemctl daemon-reload
 systemctl enable lvyoumap.service
+systemctl enable lvyoumap-update.timer
 
 echo "Bootstrap completed."
-echo "Next: configure /etc/lvyoumap.env, Nginx, and GitHub deployment secrets."
+echo "Next: configure /etc/lvyoumap.env and Nginx, then start lvyoumap-update.timer."

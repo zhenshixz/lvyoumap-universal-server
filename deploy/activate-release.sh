@@ -70,6 +70,7 @@ if [[ "${healthy}" -ne 1 ]]; then
     mv -Tf "${current}.new" "${current}"
     systemctl restart lvyoumap.service
   fi
+  rm -rf -- "${release}"
   exit 1
 fi
 

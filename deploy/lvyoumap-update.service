@@ -1,0 +1,10 @@
+[Unit]
+Description=Check GitHub and update Lvyoumap
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/lvyoumap.env
+ExecStart=/usr/local/sbin/lvyoumap-update
+TimeoutStartSec=15min

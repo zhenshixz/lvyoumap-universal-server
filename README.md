@@ -7,7 +7,8 @@
 - Nginx直接提供`dist`中的页面、地图数据和图片。
 - Node.js仅提供`/api/health`和`/api/weather`。
 - 实时天气失败时，前端保留随版本发布的气候参考数据，网站不会白屏。
-- GitHub Actions负责构建、上传、健康检查和失败回滚。
+- 默认由服务器定时检查GitHub，发现新提交后才构建、健康检查和原子切换。
+- GitHub Actions推送部署作为可选方案保留。
 
 ## 本地运行
 
@@ -66,7 +67,26 @@ http://127.0.0.1:3000/api/weather?province=北京
 
 `deploy/bootstrap.sh`完成一次性服务器初始化；`deploy/activate-release.sh`负责原子发布、健康检查和失败回滚。宝塔存在时只需要把`deploy/nginx-site.conf`中的两个`location`规则合并到站点配置。
 
-## GitHub自动部署
+## GitHub Desktop自动部署
+
+公开仓库默认不需要GitHub Token、Actions Secrets或云厂商插件。`bootstrap.sh`会安装
+`lvyoumap-update.timer`，服务器每5分钟检查一次`main`：
+
+```bash
+sudo systemctl enable --now lvyoumap-update.timer
+sudo systemctl start lvyoumap-update.service
+```
+
+以后只需通过GitHub Desktop提交并Push。远端提交没有变化时不会重新构建；构建或健康检查失败时继续保留上一版。
+
+仓库地址和分支可在`/etc/lvyoumap.env`中通过以下变量调整：
+
+```text
+LVYOUMAP_REPOSITORY
+LVYOUMAP_BRANCH
+```
+
+## 可选的GitHub Actions推送部署
 
 工作流位于`.github/workflows/deploy-server.yml`。默认只构建和保存部署产物，不会连接服务器。
 
