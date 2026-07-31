@@ -116,6 +116,7 @@ body {
    2. 顶部导航栏 (tablet-header)
    ========================================== */
 .tablet-header {
+  flex: 0 0 54px;
   height: 54px;
   background-color: var(--header-bg);
   border-bottom: 1px solid var(--card-border);
@@ -312,11 +313,11 @@ body {
    3. 主页面容器 (main-container)
    ========================================== */
 .main-container {
-  flex: 1;
+  flex: 1 1 0;
   min-height: 0;
   display: grid;
   grid-template-columns: 58vw 42vw;
-  height: calc(100vh - 54px); /* 适应底部平板导航已注释后的全屏体验 */
+  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -1901,7 +1902,7 @@ body {
   .main-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 54px);
+    height: auto;
   }
   .map-panel {
     border-right: none;
@@ -3479,6 +3480,7 @@ body {
 @media (max-width: 768px) {
   /* Header Adjustments */
   .tablet-header {
+    flex-basis: 50px;
     padding: 0 10px;
     height: 50px;
   }
@@ -3525,7 +3527,7 @@ body {
   /* Main Container Layout */
   .main-container {
     flex-direction: column;
-    height: calc(100vh - 50px);
+    height: auto;
   }
   .map-panel {
     height: 38vh;
