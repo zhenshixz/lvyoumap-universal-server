@@ -1916,6 +1916,10 @@ body {
     flex: 1;
     height: 0; /* 激活 Flex 内部区域滚动 */
   }
+  .list-pagination {
+    gap: 8px;
+    padding: 8px 12px 4px;
+  }
   .map-controls {
     bottom: 20px; /* 调整控制按钮高度避开遮挡 */
   }
@@ -3730,7 +3734,7 @@ body {
   }
 
   .list-pagination {
-    padding: 12px 10px 40px 10px;
+    padding: 6px 10px 2px;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
     justify-content: flex-start !important;
