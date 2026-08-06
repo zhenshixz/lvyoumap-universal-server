@@ -1,0 +1,24 @@
+{
+  "amap_B025603ZSO": {
+    "image": "/assets/images/attractions/fujian_dajinhu_verified.jpg",
+    "image_source": {
+      "title": "20240205 Dajin Hu (111318)",
+      "author": "Yumeto",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240205_Dajin_Hu_(111318).jpg"
+    }
+  },
+  "amap_B025602JOT": {
+    "image": "/assets/images/attractions/fujian_taoyuandong_verified.jpg",
+    "image_source": {
+      "title": "2012 三明 永安 桃源洞",
+      "author": "张元柏",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_%E4%B8%89%E6%98%8E_%E6%B0%B8%E5%AE%89_%E6%A1%83%E6%BA%90%E6%B4%9E_-_panoramio.jpg"
+    }
+  }
+}

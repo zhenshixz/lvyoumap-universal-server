@@ -3,6 +3,7 @@ const path = require('path');
 
 const rootDir = path.join(__dirname, '..');
 const dbPath = path.join(rootDir, 'content', 'db.json');
+const imageOverridesPath = path.join(rootDir, 'content', 'image-overrides.json');
 const dataDir = path.join(rootDir, 'data');
 const provincesDir = path.join(dataDir, 'provinces');
 
@@ -24,6 +25,34 @@ function writeJson(filePath, value, { bom = false } = {}) {
   const content = `${bom ? '\uFEFF' : ''}${json}\r\n`;
   fs.writeFileSync(tempPath, content, 'utf8');
   fs.renameSync(tempPath, filePath);
+}
+
+function applyImageOverrides(provinces, overrides) {
+  const attractionsById = new Map();
+
+  for (const province of Object.values(provinces || {})) {
+    for (const attraction of province.attractions || []) {
+      if (attraction.id) attractionsById.set(attraction.id, attraction);
+    }
+  }
+
+  for (const [attractionId, override] of Object.entries(overrides || {})) {
+    const attraction = attractionsById.get(attractionId);
+    if (!attraction) {
+      throw new Error(`Image override references unknown attraction id: ${attractionId}`);
+    }
+    if (!override?.image) {
+      throw new Error(`Image override must provide an image path: ${attractionId}`);
+    }
+    if (override.image.startsWith('/')) {
+      const localImagePath = path.join(rootDir, override.image.slice(1));
+      if (!fs.existsSync(localImagePath)) {
+        throw new Error(`Image override file does not exist: ${override.image}`);
+      }
+    }
+
+    Object.assign(attraction, override);
+  }
 }
 
 function buildProvinceIndex(provinces) {
@@ -65,6 +94,7 @@ function buildSearchIndex(provinces) {
         intro: attraction.intro,
         address: attraction.address,
         image: attraction.image,
+        image_source: attraction.image_source,
         tags: attraction.tags,
       });
     }
@@ -76,6 +106,11 @@ function buildSearchIndex(provinces) {
 function main() {
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
   const provinces = db.provinces || {};
+  const imageOverrides = fs.existsSync(imageOverridesPath)
+    ? JSON.parse(fs.readFileSync(imageOverridesPath, 'utf8'))
+    : {};
+
+  applyImageOverrides(provinces, imageOverrides);
 
   fs.rmSync(provincesDir, { recursive: true, force: true });
   fs.mkdirSync(provincesDir, { recursive: true });
@@ -87,6 +122,7 @@ function main() {
   }
 
   console.log(`Generated ${Object.keys(provinces).length} province files and search index in ${path.relative(rootDir, dataDir)}`);
+  console.log(`Applied ${Object.keys(imageOverrides).length} reviewed image overrides.`);
 }
 
 main();

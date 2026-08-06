@@ -32,6 +32,8 @@ const hotCitiesData = [
 let localCuisineAndItineraries = {};
 const STATIC_DATA_VERSION = "20260723_universal_server_v3";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
+// 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
+const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
 
 let myChart = null;
 let currentSelectedProvince = "";
@@ -897,9 +899,57 @@ function initEventListeners() {
   });
 
   // 3.7 景点详情弹窗事件
-  document.getElementById("modal-close").addEventListener("click", closeModal);
+  const modalImage = document.getElementById("modal-img");
+  const modalImageExpand = document.getElementById("modal-image-expand");
+  const modalClose = document.getElementById("modal-close");
+  const modalBanner = document.querySelector("#detail-modal .modal-banner");
+
+  modalClose.addEventListener("click", () => {
+    if (isImmersiveImageViewerOpen()) {
+      closeImmersiveImageViewer();
+      return;
+    }
+    closeModal();
+  });
+  if (ENABLE_IMMERSIVE_IMAGE_VIEWER) {
+    modalImageExpand.hidden = false;
+    modalImage.addEventListener("click", (event) => {
+      if (isImmersiveImageViewerOpen()) return;
+      event.stopPropagation();
+      openImmersiveImageViewer();
+    });
+    modalImageExpand.addEventListener("click", (event) => {
+      event.stopPropagation();
+      openImmersiveImageViewer();
+    });
+    modalBanner.addEventListener("click", (event) => {
+      if (!isImmersiveImageViewerOpen()) return;
+      if (event.target.closest(".modal-close-btn, .modal-image-credit, .modal-image-expand")) return;
+      if (isPointOutsideContainedImage(modalImage, event.clientX, event.clientY)) {
+        closeImmersiveImageViewer();
+      }
+    });
+    modalImage.setAttribute("role", "button");
+    modalImage.setAttribute("tabindex", "0");
+    modalImage.setAttribute("aria-label", "查看景点大图");
+    modalImage.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openImmersiveImageViewer();
+      }
+    });
+  }
   document.getElementById("detail-modal").addEventListener("click", (e) => {
     if (e.target.id === "detail-modal") closeModal();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (isImmersiveImageViewerOpen()) {
+      closeImmersiveImageViewer();
+      return;
+    }
+    const detailModal = document.getElementById("detail-modal");
+    if (detailModal.style.display === "flex") closeModal();
   });
 
   // 3.8 弹窗内部选项卡切换
@@ -1865,7 +1915,21 @@ async function openDetailModal(attraction) {
 
   currentSelectedAttraction = attraction;
 
-  document.getElementById("modal-img").src = attraction.image;
+  const modalImage = document.getElementById("modal-img");
+  modalImage.src = attraction.image;
+  modalImage.alt = attraction.name;
+
+  const imageCredit = document.getElementById("modal-image-credit");
+  const imageSource = attraction.image_source;
+  if (imageSource?.sourceUrl) {
+    imageCredit.textContent = `图片：${imageSource.author || imageSource.provider} · ${imageSource.license || "查看来源"}`;
+    imageCredit.href = imageSource.sourceUrl;
+    imageCredit.hidden = false;
+  } else {
+    imageCredit.textContent = "";
+    imageCredit.removeAttribute("href");
+    imageCredit.hidden = true;
+  }
   document.getElementById("modal-title").textContent = attraction.name;
   document.getElementById("modal-level").textContent = formatAttractionLevel(attraction.level);
   document.getElementById("modal-hotness").textContent = attraction.hotness || "⭐⭐⭐⭐⭐";
@@ -2794,8 +2858,53 @@ function renderModalFeatureTags(attraction) {
   container.innerHTML = tags.map(tag => `<span>${tag}</span>`).join("");
 }
 
+// 沉浸式大图：复用现有详情层，避免出现“弹窗套弹窗”。
+function isImmersiveImageViewerOpen() {
+  return document.getElementById("detail-modal")?.classList.contains("image-viewer-active") || false;
+}
+
+function isPointOutsideContainedImage(image, clientX, clientY) {
+  const rect = image.getBoundingClientRect();
+  if (!image.naturalWidth || !image.naturalHeight || !rect.width || !rect.height) return false;
+
+  const naturalRatio = image.naturalWidth / image.naturalHeight;
+  const containerRatio = rect.width / rect.height;
+  let renderedWidth = rect.width;
+  let renderedHeight = rect.height;
+
+  if (naturalRatio > containerRatio) {
+    renderedHeight = rect.width / naturalRatio;
+  } else {
+    renderedWidth = rect.height * naturalRatio;
+  }
+
+  const left = rect.left + (rect.width - renderedWidth) / 2;
+  const right = left + renderedWidth;
+  const top = rect.top + (rect.height - renderedHeight) / 2;
+  const bottom = top + renderedHeight;
+  return clientX < left || clientX > right || clientY < top || clientY > bottom;
+}
+
+function openImmersiveImageViewer() {
+  if (!ENABLE_IMMERSIVE_IMAGE_VIEWER || isImmersiveImageViewerOpen()) return;
+  const modal = document.getElementById("detail-modal");
+  const closeButton = document.getElementById("modal-close");
+  modal.classList.add("image-viewer-active");
+  closeButton.title = "返回详情";
+  closeButton.setAttribute("aria-label", "返回景点详情");
+}
+
+function closeImmersiveImageViewer() {
+  const modal = document.getElementById("detail-modal");
+  const closeButton = document.getElementById("modal-close");
+  modal.classList.remove("image-viewer-active");
+  closeButton.title = "关闭";
+  closeButton.setAttribute("aria-label", "关闭景点详情");
+}
+
 // 关闭弹窗
 function closeModal() {
+  closeImmersiveImageViewer();
   document.getElementById("detail-modal").style.display = "none";
   
   const fills = ["scenery", "traffic", "cost", "service", "crowd"];
