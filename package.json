@@ -6,8 +6,9 @@
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node server/index.js",
-    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js",
-    "verify": "npm run check && npm run build && node scripts/verify-build.js"
+    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js && node --check scripts/report_core_attractions.js",
+    "report:core": "node scripts/report_core_attractions.js",
+    "verify": "npm run check && npm run build && node scripts/verify-build.js && npm run report:core"
   },
   "engines": {
     "node": ">=24"

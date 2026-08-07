@@ -1,0 +1,50 @@
+{
+  "贵州": [
+    {
+      "id": "manual_guizhou_xijiang_qianhu_miaozhai",
+      "name": "西江千户苗寨",
+      "city": "黔东南",
+      "rating": 4.3,
+      "reviewsCount": "2.5万",
+      "image": "/assets/images/attractions/guizhou_xijiang_qianhu_miaozhai_verified.jpg",
+      "description": "十余个苗族自然村寨依山相连，吊脚楼沿白水河层叠展开，适合体验苗族建筑、银饰、歌舞和村寨夜景。",
+      "intro": "依山而建的苗族村寨与层叠吊脚楼沿白水河展开，登上观景台可俯瞰村寨全景，夜景尤具代表性。",
+      "level": "国家4A级旅游景区",
+      "category": "民俗文化",
+      "tags": [
+        "苗族文化",
+        "古村寨",
+        "夜景"
+      ],
+      "address": "贵州省黔东南苗族侗族自治州雷山县西江镇南贵村",
+      "openHours": "开放时间随季节调整，以景区当日公告为准",
+      "tel": "4001538866",
+      "price": "门票及观光车价格以景区官方公告为准",
+      "tips": "村寨内石板路、坡道较多；如带老人或儿童，建议优先使用景区官方观光车，并在出发前确认当日运营路段。",
+      "guide_clothing": "村寨多石板路和坡道，建议穿防滑运动鞋；山区早晚温差明显，随身带轻薄外套和雨具。",
+      "guide_transport": "从游客中心进入后按现场指引换乘官方观光车；旺季部分路段可能调整或暂停运行，以景区公告为准。",
+      "guide_housing": "想看夜景可住寨内，重视安静和搬运行李则可住景区入口附近；旺季建议提前预订。",
+      "guide_food": "当地常见酸汤鱼、长桌宴、腊肉等苗族风味；体验长桌宴前建议确认内容和价格。",
+      "source_evidence": {
+        "source": "已核验",
+        "commentCount": "2.5万",
+        "basicInfoSources": [
+          "贵州省发改委：https://fgw.guizhou.gov.cn/zwgk/zdlyxx/jffw/zcwj/202601/P020260205655508332150.pdf",
+          "携程：https://you.ctrip.com/sight/leishan2345/44302.html",
+          "去哪儿：https://touch.travel.qunar.com/smartlist/7592763",
+          "大众点评：https://www.dianping.com/shop/24018083"
+        ],
+        "basicInfoUpdatedAt": "2026-08-07",
+        "note": "等级与所在地采用政府目录；OTA与大众点评仅作为热度、点评量和旅行体验参考。"
+      },
+      "image_source": {
+        "title": "Xijiang Qianhu Miaozhai.Skyline",
+        "author": "Popolon",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xijiang_Qianhu_Miaozhai.Skyline.jpg"
+      }
+    }
+  ]
+}

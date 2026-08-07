@@ -1,0 +1,120 @@
+{
+  "province": "贵州",
+  "checkedAt": "2026-08-07",
+  "method": "官方来源确认身份与等级；携程、去哪儿确认主流旅游认知；大众点评仅补充本地口碑存在性。OTA评分和票价不作为长期事实。",
+  "sources": {
+    "official_a_list": "https://drc.guizhou.gov.cn/xxgk/sqjs/gzfg/202405/t20240523_84672683.html",
+    "official_plan": "https://fgw.guizhou.gov.cn/zwgk/zdlyxx/ghjh/202602/t20260214_89548677.html",
+    "official_price_2026": "https://fgw.guizhou.gov.cn/zwgk/zdlyxx/jffw/zcwj/202601/P020260205655508332150.pdf",
+    "ctrip_guizhou": "https://gs.ctrip.com/html5/you/sight/guizhou100064.html",
+    "qunar_xijiang": "https://touch.travel.qunar.com/smartlist/7592763",
+    "dianping_xijiang": "https://www.dianping.com/shop/24018083"
+  },
+  "attractions": [
+    {
+      "key": "huangguoshu",
+      "name": "黄果树旅游景区",
+      "aliases": ["黄果树景区", "黄果树风景区", "黄果树旅游景区", "黄果树瀑布"],
+      "tier": "national",
+      "evidence": ["official_a_list", "ctrip_guizhou"]
+    },
+    {
+      "key": "fanjingshan",
+      "name": "梵净山",
+      "aliases": ["梵净山", "梵净山风景区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "ctrip_guizhou"]
+    },
+    {
+      "key": "libo_xiaoqikong",
+      "name": "荔波小七孔",
+      "aliases": ["荔波小七孔", "荔波小七孔景区", "小七孔", "小七孔景区", "荔波樟江风景名胜区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "ctrip_guizhou"]
+    },
+    {
+      "key": "xijiang_qianhu",
+      "name": "西江千户苗寨",
+      "aliases": ["西江千户苗寨", "西江苗寨", "千户苗寨"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan", "official_price_2026", "ctrip_guizhou", "qunar_xijiang", "dianping_xijiang"]
+    },
+    {
+      "key": "zhijindong",
+      "name": "织金洞",
+      "aliases": ["织金洞", "织金洞景区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "ctrip_guizhou"]
+    },
+    {
+      "key": "china_sky_eye",
+      "name": "中国天眼景区",
+      "aliases": ["中国天眼", "中国天眼景区", "中国天眼科普基地"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan", "ctrip_guizhou"]
+    },
+    {
+      "key": "qingyan",
+      "name": "青岩古镇",
+      "aliases": ["青岩古镇", "青岩古镇景区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "ctrip_guizhou"]
+    },
+    {
+      "key": "wanfenglin",
+      "name": "万峰林景区",
+      "aliases": ["万峰林", "万峰林景区", "兴义万峰林"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan", "ctrip_guizhou"]
+    },
+    {
+      "key": "zhaoxing",
+      "name": "肇兴侗寨",
+      "aliases": ["肇兴侗寨", "黎平肇兴侗寨"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan", "ctrip_guizhou", "qunar_xijiang"]
+    },
+    {
+      "key": "zunyi_meeting",
+      "name": "遵义会议会址",
+      "aliases": ["遵义会议会址", "遵义会议会址纪念馆", "遵义会议纪念馆"],
+      "tier": "national",
+      "evidence": ["official_plan"]
+    },
+    {
+      "key": "chishui_danxia",
+      "name": "赤水丹霞",
+      "aliases": ["赤水丹霞", "赤水丹霞旅游区", "赤水丹霞旅游区大瀑布"],
+      "tier": "national",
+      "evidence": ["official_a_list", "official_plan"]
+    },
+    {
+      "key": "baili_dujuan",
+      "name": "百里杜鹃",
+      "aliases": ["百里杜鹃", "中国百里杜鹃风景名胜区", "百里杜鹃风景名胜区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "official_plan"]
+    },
+    {
+      "key": "longgong",
+      "name": "龙宫",
+      "aliases": ["龙宫", "龙宫景区", "龙宫风景区"],
+      "tier": "national",
+      "evidence": ["official_a_list", "official_plan"]
+    },
+    {
+      "key": "zhenyuan",
+      "name": "镇远古城",
+      "aliases": ["镇远古城", "镇远古镇"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan", "qunar_xijiang"]
+    },
+    {
+      "key": "malinghe",
+      "name": "马岭河峡谷",
+      "aliases": ["马岭河峡谷", "马岭河峡谷景区", "马岭河大峡谷"],
+      "tier": "regional_icon",
+      "evidence": ["official_plan"]
+    }
+  ]
+}

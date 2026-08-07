@@ -4,6 +4,7 @@ const path = require('path');
 const rootDir = path.join(__dirname, '..');
 const dbPath = path.join(rootDir, 'content', 'db.json');
 const imageOverridesPath = path.join(rootDir, 'content', 'image-overrides.json');
+const manualAttractionsPath = path.join(rootDir, 'content', 'manual-attractions.json');
 const dataDir = path.join(rootDir, 'data');
 const provincesDir = path.join(dataDir, 'provinces');
 
@@ -53,6 +54,37 @@ function applyImageOverrides(provinces, overrides) {
 
     Object.assign(attraction, override);
   }
+}
+
+function mergeManualAttractions(provinces, manualAttractions) {
+  const ids = new Set();
+  for (const province of Object.values(provinces || {})) {
+    for (const attraction of province.attractions || []) {
+      if (attraction.id) ids.add(attraction.id);
+    }
+  }
+
+  let mergedCount = 0;
+  for (const [provinceName, additions] of Object.entries(manualAttractions || {})) {
+    const province = provinces[provinceName];
+    if (!province) throw new Error(`Manual attractions reference unknown province: ${provinceName}`);
+    if (!Array.isArray(additions)) throw new Error(`Manual attractions for ${provinceName} must be an array.`);
+
+    for (const attraction of additions) {
+      if (!attraction?.id || !attraction?.name || !attraction?.image) {
+        throw new Error(`Manual attraction in ${provinceName} must provide id, name and image.`);
+      }
+      if (ids.has(attraction.id)) throw new Error(`Duplicate attraction id: ${attraction.id}`);
+      if (attraction.image.startsWith('/')) {
+        const localImagePath = path.join(rootDir, attraction.image.slice(1));
+        if (!fs.existsSync(localImagePath)) throw new Error(`Manual attraction image does not exist: ${attraction.image}`);
+      }
+      province.attractions.push(attraction);
+      ids.add(attraction.id);
+      mergedCount += 1;
+    }
+  }
+  return mergedCount;
 }
 
 function buildProvinceIndex(provinces) {
@@ -109,7 +141,11 @@ function main() {
   const imageOverrides = fs.existsSync(imageOverridesPath)
     ? JSON.parse(fs.readFileSync(imageOverridesPath, 'utf8'))
     : {};
+  const manualAttractions = fs.existsSync(manualAttractionsPath)
+    ? JSON.parse(fs.readFileSync(manualAttractionsPath, 'utf8'))
+    : {};
 
+  const mergedManualCount = mergeManualAttractions(provinces, manualAttractions);
   applyImageOverrides(provinces, imageOverrides);
 
   fs.rmSync(provincesDir, { recursive: true, force: true });
@@ -122,6 +158,7 @@ function main() {
   }
 
   console.log(`Generated ${Object.keys(provinces).length} province files and search index in ${path.relative(rootDir, dataDir)}`);
+  console.log(`Merged ${mergedManualCount} reviewed manual attractions.`);
   console.log(`Applied ${Object.keys(imageOverrides).length} reviewed image overrides.`);
 }
 

@@ -30,10 +30,11 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260723_universal_server_v3";
+const STATIC_DATA_VERSION = "20260807_search_location_v1";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
+const IMMERSIVE_IMAGE_MAX_UPSCALE = 1.05;
 
 let myChart = null;
 let currentSelectedProvince = "";
@@ -938,6 +939,12 @@ function initEventListeners() {
         openImmersiveImageViewer();
       }
     });
+    modalImage.addEventListener("load", () => {
+      if (isImmersiveImageViewerOpen()) updateImmersiveImageQuality();
+    });
+    window.addEventListener("resize", () => {
+      if (isImmersiveImageViewerOpen()) updateImmersiveImageQuality();
+    });
   }
   document.getElementById("detail-modal").addEventListener("click", (e) => {
     if (e.target.id === "detail-modal") closeModal();
@@ -1524,6 +1531,14 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
     const reviewCountStr = realCommentCount.toString().includes('评价') ? realCommentCount : `${realCommentCount}条评价`;
     const formattedLevel = formatAttractionLevel(attr.level);
     const heritageStr = (formattedLevel.includes("5A") || attr.level.includes("世界文化遗产")) ? "世界文化遗产" : "国家级风景区";
+    const searchProvince = attr.provinceName || "";
+    const searchCity = attr.city && attr.city !== searchProvince ? attr.city : "";
+    const searchLocationText = searchProvince
+      ? [searchProvince, searchCity].filter(Boolean).join(" · ")
+      : "";
+    const searchLocationBadge = searchLocationText
+      ? `<span class="card-location-badge" title="${searchLocationText}"><span aria-hidden="true">📍</span>${searchLocationText}</span>`
+      : "";
     
     card.innerHTML = `
       <div class="card-img-wrapper">
@@ -1535,6 +1550,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
           <h4 class="card-name">${attr.name}</h4>
         </div>
         <div class="card-badges-row">
+          ${searchLocationBadge}
           <span class="card-badge-level">${formattedLevel}</span>
           <span class="card-badge-heritage">${heritageStr}</span>
         </div>
@@ -2885,6 +2901,34 @@ function isPointOutsideContainedImage(image, clientX, clientY) {
   return clientX < left || clientX > right || clientY < top || clientY > bottom;
 }
 
+function updateImmersiveImageQuality() {
+  const modal = document.getElementById("detail-modal");
+  const image = document.getElementById("modal-img");
+  const note = document.getElementById("modal-image-quality-note");
+  if (!modal || !image || !note || !image.naturalWidth || !image.naturalHeight) return;
+
+  const availableWidth = window.innerWidth;
+  const availableHeight = window.innerHeight;
+  const containScale = Math.min(
+    availableWidth / image.naturalWidth,
+    availableHeight / image.naturalHeight,
+  );
+  const shouldProtectNativeSize = containScale > IMMERSIVE_IMAGE_MAX_UPSCALE;
+
+  modal.classList.toggle("image-viewer-native-size", shouldProtectNativeSize);
+  if (shouldProtectNativeSize) {
+    modal.style.setProperty("--viewer-image-native-width", `${image.naturalWidth}px`);
+    modal.style.setProperty("--viewer-image-native-height", `${image.naturalHeight}px`);
+    note.textContent = `原图 ${image.naturalWidth}×${image.naturalHeight}，已按原始尺寸显示`;
+    note.hidden = false;
+  } else {
+    modal.style.removeProperty("--viewer-image-native-width");
+    modal.style.removeProperty("--viewer-image-native-height");
+    note.textContent = "";
+    note.hidden = true;
+  }
+}
+
 function openImmersiveImageViewer() {
   if (!ENABLE_IMMERSIVE_IMAGE_VIEWER || isImmersiveImageViewerOpen()) return;
   const modal = document.getElementById("detail-modal");
@@ -2892,12 +2936,18 @@ function openImmersiveImageViewer() {
   modal.classList.add("image-viewer-active");
   closeButton.title = "返回详情";
   closeButton.setAttribute("aria-label", "返回景点详情");
+  updateImmersiveImageQuality();
 }
 
 function closeImmersiveImageViewer() {
   const modal = document.getElementById("detail-modal");
   const closeButton = document.getElementById("modal-close");
-  modal.classList.remove("image-viewer-active");
+  const qualityNote = document.getElementById("modal-image-quality-note");
+  modal.classList.remove("image-viewer-active", "image-viewer-native-size");
+  modal.style.removeProperty("--viewer-image-native-width");
+  modal.style.removeProperty("--viewer-image-native-height");
+  qualityNote.hidden = true;
+  qualityNote.textContent = "";
   closeButton.title = "关闭";
   closeButton.setAttribute("aria-label", "关闭景点详情");
 }
