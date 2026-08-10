@@ -30,7 +30,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260807_search_location_v1";
+const STATIC_DATA_VERSION = "20260810_guizhou_core_v2";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
@@ -2543,7 +2543,7 @@ async function openDetailModal(attraction) {
         .map(line => line.trim())
         .filter(Boolean)
         .filter(line => !/^ai总结\d*篇笔记生成/.test(line))
-        .filter(line => !/餐饮|美食|住宿|酒店|饭店|需要我帮你|如果时间充裕|推荐吗/.test(line));
+        .filter(line => !/餐饮|美食|住宿|酒店|饭店|需要我帮你|如果需要.*帮你|大概计划|如果时间充裕|推荐吗/.test(line));
 
       return lines.map((line, idx) => {
         const hadBullet = /^[•·\-\d.、]\s*/.test(line);
@@ -2557,7 +2557,7 @@ async function openDetailModal(attraction) {
         if (idx === 0 && !hadBullet && headingText.length <= 36) {
           return `<h3>${clean}</h3>`;
         }
-        if (!hadBullet && /^[^：:]{2,24}$/.test(headingText) && /(路线|对比|门票|费用|技巧|避坑|注意|设施|贴士|建议|推荐)/.test(headingText)) {
+        if (!hadBullet && /^[^：:]{2,24}$/.test(headingText) && /(路线|行程|省力|原则|对比|门票|费用|技巧|避坑|注意|设施|贴士|建议|推荐)/.test(headingText)) {
           return `<h4>${clean}</h4>`;
         }
         if (hadBullet || /^[^：:]{2,18}[：:]/.test(headingText)) return `<li>${clean}</li>`;

@@ -1,15 +1,16 @@
 {
   "province": "贵州",
-  "checkedAt": "2026-08-07",
+  "checkedAt": "2026-08-10",
   "method": "官方来源确认身份与等级；携程、去哪儿确认主流旅游认知；大众点评仅补充本地口碑存在性。OTA评分和票价不作为长期事实。",
   "baselineCount": 15,
-  "recordCount": 129,
+  "recordCount": 134,
   "counts": {
-    "present": 10,
+    "present": 15,
     "review": 0,
-    "missing": 5
+    "missing": 0
   },
-  "coverage": 0.6667,
+  "coverage": 1,
+  "readyCount": 15,
   "items": [
     {
       "key": "huangguoshu",
@@ -25,7 +26,15 @@
           "id": "amap_B0FFHCXU0K",
           "name": "黄果树旅游景区",
           "city": "安顺",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -43,7 +52,15 @@
           "id": "amap_B0358001VZ",
           "name": "梵净山风景区",
           "city": "铜仁",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -61,13 +78,29 @@
           "id": "amap_B035600C1Q",
           "name": "小七孔景区",
           "city": "黔南布依族苗族",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         },
         {
           "id": "amap_B0FFFEA18T",
           "name": "荔波樟江风景名胜区",
           "city": "黔南布依族苗族",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -88,7 +121,15 @@
           "id": "manual_guizhou_xijiang_qianhu_miaozhai",
           "name": "西江千户苗寨",
           "city": "黔东南",
-          "dataLayer": "manual"
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -106,13 +147,29 @@
           "id": "amap_B0359003K3",
           "name": "织金洞景区",
           "city": "毕节",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         },
         {
           "id": "amap_B0FFMCEONZ",
           "name": "织金洞",
           "city": "毕节",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -124,8 +181,23 @@
         "official_plan",
         "ctrip_guizhou"
       ],
-      "status": "missing",
-      "matches": []
+      "status": "present",
+      "matches": [
+        {
+          "id": "manual_guizhou_china_sky_eye",
+          "name": "中国天眼景区",
+          "city": "黔南",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
+        }
+      ]
     },
     {
       "key": "qingyan",
@@ -141,7 +213,15 @@
           "id": "amap_B035300ESE",
           "name": "青岩古镇",
           "city": "贵阳",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -153,8 +233,23 @@
         "official_plan",
         "ctrip_guizhou"
       ],
-      "status": "missing",
-      "matches": []
+      "status": "present",
+      "matches": [
+        {
+          "id": "manual_guizhou_wanfenglin",
+          "name": "万峰林景区",
+          "city": "黔西南",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
+        }
+      ]
     },
     {
       "key": "zhaoxing",
@@ -165,8 +260,23 @@
         "ctrip_guizhou",
         "qunar_xijiang"
       ],
-      "status": "missing",
-      "matches": []
+      "status": "present",
+      "matches": [
+        {
+          "id": "manual_guizhou_zhaoxing_dong_village",
+          "name": "肇兴侗寨",
+          "city": "黔东南",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
+        }
+      ]
     },
     {
       "key": "zunyi_meeting",
@@ -181,7 +291,15 @@
           "id": "amap_B0FFH1ULF2",
           "name": "遵义会议会址纪念馆",
           "city": "遵义",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -199,13 +317,29 @@
           "id": "amap_B03540M3AW",
           "name": "赤水丹霞旅游区大瀑布",
           "city": "遵义",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         },
         {
           "id": "amap_B0FFHNDRYB",
           "name": "赤水丹霞旅游区",
           "city": "遵义",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -223,7 +357,15 @@
           "id": "amap_B03590P0RY",
           "name": "中国百里杜鹃风景名胜区",
           "city": "毕节",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -241,7 +383,15 @@
           "id": "amap_B03550I7MA",
           "name": "龙宫风景区",
           "city": "安顺",
-          "dataLayer": "db"
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
         }
       ]
     },
@@ -253,8 +403,23 @@
         "official_plan",
         "qunar_xijiang"
       ],
-      "status": "missing",
-      "matches": []
+      "status": "present",
+      "matches": [
+        {
+          "id": "manual_guizhou_zhenyuan_ancient_town",
+          "name": "镇远古城",
+          "city": "黔东南",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
+        }
+      ]
     },
     {
       "key": "malinghe",
@@ -263,8 +428,23 @@
       "evidence": [
         "official_plan"
       ],
-      "status": "missing",
-      "matches": []
+      "status": "present",
+      "matches": [
+        {
+          "id": "manual_guizhou_malinghe_canyon",
+          "name": "马岭河峡谷",
+          "city": "黔西南",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat"
+          }
+        }
+      ]
     }
   ]
 }

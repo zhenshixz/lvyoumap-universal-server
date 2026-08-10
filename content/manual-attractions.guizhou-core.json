@@ -1,0 +1,185 @@
+{
+  "贵州": [
+    {
+      "id": "manual_guizhou_china_sky_eye",
+      "name": "中国天眼景区",
+      "city": "黔南",
+      "rating": 4.6,
+      "reviewsCount": "1万+",
+      "image": "/assets/images/attractions/guizhou_china_sky_eye_verified.jpg",
+      "description": "依托500米口径球面射电望远镜建设的科普体验区，可通过天文体验馆、观景台和公开科普项目了解FAST及射电天文学。",
+      "intro": "以FAST为核心的天文科普目的地，参观实行预约和分区管理，适合亲子科学教育。",
+      "level": "国家4A级旅游景区",
+      "category": "科技科普",
+      "tags": ["天文科普", "亲子研学", "国之重器"],
+      "address": "贵州省黔南布依族苗族自治州平塘县克度镇航龙文化园",
+      "openHours": "参考开放时间08:30-18:00；预约、入场批次和设备检修安排以中国天眼景区当日公告为准",
+      "price": "景区按参观项目提供组合票，具体项目、优惠和摆渡车费用以官方预约页为准",
+      "tips": "核心观景区域有电子设备管理要求，提前查看寄存规定；带老人儿童应预留摆渡、安检和分批入场时间。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "山区风大且早晚温差明显，长袖叠穿防风外套，穿防滑运动鞋。",
+          "summer": "轻薄透气衣物、防晒帽和雨具并备，午后天气变化快。",
+          "winter": "保暖外套、围巾和防风层，观景平台停留时注意保暖。",
+          "tips": "参观涉及上下车和步行换乘，鞋底防滑比拍照造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "公共交通通常先到平塘县或克度镇，再换乘景区交通；自驾导航航龙文化园停车区。",
+          "internal_arrive": "游客中心完成预约核验和电子设备寄存后，按指定批次乘景区摆渡车前往观景区域。",
+          "internal_traffic": "核心区以官方摆渡和步行为主，不能自行驾车进入。",
+          "tips": "返程班次较固定，非自驾游客应提前确认当天末班接驳和县城交通。"
+        },
+        "housing": [
+          {"area": "克度镇", "desc": "距离景区近，适合赶早场或带老人儿童减少早晨转车。"},
+          {"area": "平塘县城", "desc": "住宿和餐饮选择更多，但当天往返需预留公路交通时间。"}
+        ],
+        "food": ["平塘坛子鱼", "布依族酸汤", "米豆腐", "贵州羊肉粉"],
+        "special_care": {
+          "elderly": "优先选择包含摆渡的基础科普项目，不连续叠加多个体验馆；排队时及时休息。",
+          "children": "提前解释电子设备寄存规则，准备纸质联系方式；低龄儿童以科普馆和观景平台为主。"
+        }
+      },
+      "lazy_ai_text": "带长辈和小孩参观中国天眼，最省力的方式是把行程压缩成游客中心、摆渡车、观景平台和科普馆四个环节，不在一天内叠加过多体验项目。\n\n推荐路线一：基础科普省力线\n\n航龙文化园游客中心 → 预约核验与电子设备寄存 → 官方摆渡车 → FAST观景平台 → 摆渡车返回 → 天文体验馆。\n\n这条路线把主要爬坡交给景区交通，适合第一次到访和带老人儿童的家庭。到达后先完成寄存和安检，不要临时在入口整理大量随身设备。观景平台按现场引导游览，拍摄和通讯设备规则以当天公告为准。\n\n推荐路线二：亲子半日线\n\n游客中心 → 天文体验馆 → 科普互动区域 → 午间休息 → 摆渡车前往观景平台 → 返回游客中心。\n\n先在室内了解FAST，再看实景，孩子更容易理解；老人也能把候车时间分散开。若遇大雨、检修或客流调整，可保留室内科普部分，不强行等待全部项目。\n\n省力提醒\n\n景区距离城市较远，真正容易疲劳的是公路往返、排队和换乘，不是单纯步行。建议预约较早批次，前一晚住克度镇或平塘县，非自驾游客先确认返程班次。山区天气变化快，观景平台备防风外套和防滑鞋。",
+      "lazy_ai_source": {"source": "multi-source-editorial-pending-xhs-verification", "prompt": "中国天眼 长辈小孩省力路线，不要无关内容（如餐饮推荐）", "updatedAt": "2026-08-10", "status": "待小红书点点复核替换"},
+      "lazy_routes": [
+        {"title": "基础科普省力线", "badge": "长辈友好", "suitability": "适合老人、儿童和第一次到访者", "nodes": ["航龙文化园游客中心", "预约核验与寄存", "官方摆渡车", "FAST观景平台", "天文体验馆"], "duration": "约4小时", "walking": "主要换乘和场馆步行，长距离由摆渡车完成", "physical": 1.5, "tips": ["提前完成预约并确认电子设备规则", "返程交通要在入园前确认"], "sourceTitle": "中国天眼景区官网", "sourceUrl": "https://zgtianyan.com/", "verifiedAt": "2026-08-10"},
+        {"title": "亲子研学半日线", "badge": "亲子优先", "suitability": "适合希望先理解再看实景的家庭", "nodes": ["游客中心", "天文体验馆", "科普互动区", "休息区", "观景平台"], "duration": "约半天", "walking": "室内场馆为主，观景平台按现场动线", "physical": 1.5, "tips": ["低龄儿童不要叠加太多收费体验", "天气或检修时以室内科普为主"], "sourceTitle": "平塘县中国天眼科普旅游规划资料", "sourceUrl": "https://www.gzpt.gov.cn/IGI/upload/file/2025/06/11/U020250611624916265022.pdf", "verifiedAt": "2026-08-10"}
+      ],
+      "lazy_tips": "提前预约并确认电子设备寄存、摆渡车和返程班次；临时检修或天气变化时以官方公告为准。",
+      "source_evidence": {"source": "官方与公开资料核验", "commentCount": "多平台参考", "basicInfoSources": ["中国天眼景区官网：https://zgtianyan.com/", "平塘县公开规划资料：https://www.gzpt.gov.cn/IGI/upload/file/2025/06/11/U020250611624916265022.pdf"], "basicInfoUpdatedAt": "2026-08-10", "note": "评分与点评量仅作列表排序参考；预约和票务以官网实时页面为准。"},
+      "image_source": {"title": "202508 FAST (Five-hundred-meter Aperture Spherical radio Telescope)", "author": "SCJiang", "provider": "Wikimedia Commons", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:202508_FAST_(Five-hundred-meter_Aperture_Spherical_radio_Telescope).jpg"}
+    },
+    {
+      "id": "manual_guizhou_wanfenglin",
+      "name": "万峰林景区",
+      "city": "黔西南",
+      "rating": 4.7,
+      "reviewsCount": "2万+",
+      "image": "/assets/images/attractions/guizhou_wanfenglin_verified.jpg",
+      "description": "兴义喀斯特峰林与田园村寨连成开阔景观，观景公路可俯瞰八卦田、纳灰村等代表性景观。",
+      "intro": "峰林、田园和村寨相互交织，乘观光车走高处观景线最省力。",
+      "level": "国家5A级旅游景区",
+      "category": "自然风光",
+      "tags": ["喀斯特峰林", "田园风光", "亲子观景"],
+      "address": "贵州省黔西南布依族苗族自治州兴义市万峰林街道",
+      "openHours": "开放时间随淡旺季调整，通常白天开放；售票和末班观光车以景区当日公告为准",
+      "price": "公开票务页参考门票60元、观光车50元；优惠和季节性活动以官方购票页为准",
+      "tips": "高处观景线与村寨骑行线不是一回事；带老人儿童优先乘观光车，不把长距离骑行和全程徒步塞进同一天。",
+      "guide_data": {
+        "clothing": {"spring_autumn": "薄外套叠穿长袖，早晚和观光车行驶时注意防风。", "summer": "速干衣、防晒帽和补水用品，雷阵雨时备轻便雨衣。", "winter": "保暖外套配防风层，阴天观景台体感偏冷。", "tips": "观景点上下车频繁，穿轻便防滑运动鞋。"},
+        "transport": {"external_arrive": "兴义市区可乘旅游公交、网约车前往将军峰广场游客中心；自驾按景区停车指引停放。", "internal_arrive": "高处核心观景线优先乘景区观光车，在指定站点下车看峰林和田园。", "internal_traffic": "纳灰村一带可步行或骑行，但带老幼建议只选短段，不与高处观景线重复。", "tips": "返程前确认末班车，旺季不要在非指定点等待观光车。"},
+        "housing": [{"area": "万峰林景区周边", "desc": "适合看清晨田园并减少往返，但订房前确认是否接送。"}, {"area": "兴义市区", "desc": "餐饮与交通更方便，适合带老人儿童和多景点联游。"}],
+        "food": ["兴义羊肉粉", "布依八大碗", "鸡肉汤圆", "杠子面"],
+        "special_care": {"elderly": "选观光车高处环线，在主要观景台短停，不走村寨长距离环线。", "children": "观景台边缘和上下车时看护好孩子；骑行只选低车流短段并佩戴护具。"}
+      },
+      "lazy_ai_text": "万峰林带长辈小孩最推荐高处观光车线。它能把将军峰、众星捧月、八卦田和纳灰村田园等代表性视角串起来，避免在村寨道路长时间步行。\n\n推荐路线一：观光车经典省力线\n\n将军峰广场游客中心 → 乘观光车 → 将军峰观景点 → 众星捧月观景点 → 八卦田观景点 → 纳灰村远眺 → 返回游客中心。\n\n全程约2至3小时，步行主要发生在各站观景台。老人可根据体力少下一两个站，孩子也不容易因长距离赶路疲劳。上车前确认当天停靠点和末班时间。\n\n推荐路线二：田园短游线\n\n游客中心附近 → 纳灰村入口 → 田园主路短段 → 村寨休息点 → 原路返回。\n\n这条线适合天气温和、还想近距离看稻田和村寨的家庭，但不要把完整骑行环线当成亲子省力路线。低龄儿童和腿脚不便的老人只走平缓短段，感觉疲劳就及时折返。\n\n省力提醒\n\n晴天中午观景台日晒强，夏季尽量早到；雨后路面湿滑，村寨小路不适合推大轮行李或赶路。若只有半天，保留观光车高处线即可，不必同时完成骑行和步行深度游。",
+      "lazy_ai_source": {"source": "multi-source-editorial-pending-xhs-verification", "prompt": "万峰林 长辈小孩省力路线，不要无关内容（如餐饮推荐）", "updatedAt": "2026-08-10", "status": "待小红书点点复核替换"},
+      "lazy_routes": [
+        {"title": "观光车经典省力线", "badge": "首次必选", "suitability": "适合老人、儿童和半日游", "nodes": ["将军峰广场", "将军峰观景点", "众星捧月", "八卦田", "纳灰村远眺"], "duration": "约2-3小时", "walking": "各观景台短距离步行", "physical": 1.5, "tips": ["优先购买观光车票", "确认当日停靠点和末班时间"], "sourceTitle": "万峰林景区票务信息", "sourceUrl": "https://www.wanfenglin.cn/piaowuxinxi.html", "verifiedAt": "2026-08-10"},
+        {"title": "纳灰村田园短游线", "badge": "亲子短线", "suitability": "适合天气舒适时补充田园体验", "nodes": ["游客中心", "纳灰村入口", "田园主路", "村寨休息点", "原路返回"], "duration": "约1.5小时", "walking": "只走平缓短段并随时折返", "physical": 2, "tips": ["不安排完整长距离骑行", "午后暴晒或下雨时取消"], "sourceTitle": "文化和旅游部万峰林5A公告", "sourceUrl": "https://zwgk.mct.gov.cn/zfxxgkml/zykf/202412/t20241227_957450.html", "verifiedAt": "2026-08-10"}
+      ],
+      "lazy_tips": "带老幼首选高处观光车线；只有半天时不要同时安排长距离骑行。",
+      "source_evidence": {"source": "官方与OTA交叉核验", "commentCount": "多平台参考", "basicInfoSources": ["万峰林景区票务页：https://www.wanfenglin.cn/piaowuxinxi.html", "文化和旅游部5A公告：https://zwgk.mct.gov.cn/zfxxgkml/zykf/202412/t20241227_957450.html"], "basicInfoUpdatedAt": "2026-08-10", "note": "等级采用文旅部公告；票价保留官方页面参考并提示实时核对。"},
+      "image_source": {"title": "WanFengLin-ShangNaHui2025-08", "author": "名字长的让人受不了", "provider": "Wikimedia Commons", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:WanFengLin-ShangNaHui2025-08.jpg"}
+    },
+    {
+      "id": "manual_guizhou_zhaoxing_dong_village",
+      "name": "肇兴侗寨",
+      "city": "黔东南",
+      "rating": 4.5,
+      "reviewsCount": "1万+",
+      "image": "/assets/images/attractions/guizhou_zhaoxing_dong_village_verified.jpg",
+      "description": "侗寨以鼓楼、花桥和密集木构民居著称，核心街区集中，适合体验侗族建筑、歌舞和村寨生活。",
+      "intro": "五座鼓楼与花桥构成核心游览线，寨内主街相对集中。",
+      "level": "国家4A级旅游景区",
+      "category": "民俗文化",
+      "tags": ["侗族文化", "鼓楼群", "古村寨"],
+      "address": "贵州省黔东南苗族侗族自治州黎平县肇兴镇肇兴村",
+      "openHours": "村寨全天可停留，检票、接驳和演出按景区时段运行；以当日公告为准",
+      "price": "政府目录参考门票80元、景区交通10元/单程；阶段性优惠及接驳政策以官方公告为准",
+      "tips": "木构村寨道路窄，雨天青石路湿滑；带老人儿童建议住主街附近并使用官方接驳。",
+      "guide_data": {
+        "clothing": {"spring_autumn": "长袖加薄外套，早晚湿凉，穿防滑运动鞋。", "summer": "透气衣物、防晒和雨具，寨内潮湿注意驱蚊。", "winter": "保暖外套和防滑鞋，木楼民宿提前确认取暖。", "tips": "青石板遇雨较滑，不穿硬底或高跟鞋。"},
+        "transport": {"external_arrive": "从江站距离景区较近，可按官方班次换乘接驳；自驾停游客中心停车区。", "internal_arrive": "游客中心到寨门按当天政策乘接驳车或步行，入住游客提前联系民宿确认下车点。", "internal_traffic": "寨内核心鼓楼群和主街以步行为主，路线集中，可分段休息。", "tips": "带行李不要直接走进深巷，先与住宿方确认接送。"},
+        "housing": [{"area": "寨内主街附近", "desc": "看夜景和演出方便，减少深巷台阶，但要确认隔音和行李接送。"}, {"area": "景区入口附近", "desc": "进出和停车更省力，适合只住一晚的家庭。"}],
+        "food": ["侗家腌鱼", "酸汤鱼", "糯米饭", "油茶"],
+        "special_care": {"elderly": "围绕鼓楼群和主街分段走，不追求全部村巷；中午回住宿休息。", "children": "花桥和溪边注意看护，观看表演提前确认时间，不在夜间拥挤街区追跑。"}
+      },
+      "lazy_ai_text": "肇兴侗寨的核心鼓楼和主街比较集中，带长辈小孩不需要走遍每条巷子。最省力的安排是接驳进寨后，以仁、义、礼、智、信鼓楼群和花桥为主，走到累就沿主街返回。\n\n推荐路线一：鼓楼主街轻松线\n\n景区接驳下车点 → 寨门 → 仁团鼓楼 → 主街 → 礼团与智团鼓楼 → 花桥 → 堂安方向观景点前止步 → 返回主街。\n\n路线约2至3小时，核心看点集中，适合老人和低龄儿童。不要为了集齐所有鼓楼反复钻小巷，遇到台阶多或路滑的支路直接放弃。\n\n推荐路线二：文化体验半日线\n\n寨门 → 鼓楼群 → 侗族文化展示点 → 午间休息 → 表演场周边 → 花桥夜景。\n\n演出时间和内容会调整，进寨后先确认当日场次，再决定是否等待。若孩子午睡或老人疲劳，可把白天步行和傍晚夜景拆开，中间回住宿休息。\n\n省力提醒\n\n从江站到景区的接驳和寨内入住下车点需要提前确认。木构村寨青石路雨天较滑，大件行李应交给住宿方接送。堂安梯田属于额外行程，不建议和鼓楼主街深度游放在同一个半天。",
+      "lazy_ai_source": {"source": "multi-source-editorial-pending-xhs-verification", "prompt": "肇兴侗寨 长辈小孩省力路线，不要无关内容（如餐饮推荐）", "updatedAt": "2026-08-10", "status": "待小红书点点复核替换"},
+      "lazy_routes": [
+        {"title": "鼓楼主街轻松线", "badge": "长辈友好", "suitability": "适合第一次到访和半日游", "nodes": ["接驳下车点", "寨门", "仁团鼓楼", "主街鼓楼群", "花桥"], "duration": "约2-3小时", "walking": "核心街区分段步行", "physical": 1.5, "tips": ["不为集齐鼓楼反复走支路", "雨天避开湿滑石板巷"], "sourceTitle": "黔东南州肇兴侗寨公开旅游资料", "sourceUrl": "https://www.qdnrd.gov.cn/rdyw/7041.jhtml", "verifiedAt": "2026-08-10"},
+        {"title": "文化体验半日线", "badge": "亲子体验", "suitability": "适合希望看表演和夜景的家庭", "nodes": ["寨门", "鼓楼群", "文化展示点", "休息点", "表演场", "花桥"], "duration": "约半天", "walking": "主街步行为主，中间安排休息", "physical": 2, "tips": ["先确认当天演出场次", "堂安梯田另安排半天"], "sourceTitle": "贵州广播电视台肇兴景区交通公告", "sourceUrl": "https://www.gzstv.com/a/6bc1b5b7965c4f128c80274de686103f", "verifiedAt": "2026-08-10"}
+      ],
+      "lazy_tips": "先确认接驳、演出和住宿下车点；核心鼓楼主街足够代表性，不必走遍所有支巷。",
+      "source_evidence": {"source": "政府与官方媒体核验", "commentCount": "多平台参考", "basicInfoSources": ["黔东南州公开资料：https://www.qdnrd.gov.cn/rdyw/7041.jhtml", "贵州价格目录：https://fgw.guizhou.gov.cn/zwgk/zdlyxx/jffw/zcwj/202601/P020260205655508332150.pdf", "贵州广播电视台：https://www.gzstv.com/a/6bc1b5b7965c4f128c80274de686103f"], "basicInfoUpdatedAt": "2026-08-10", "note": "票价采用政府目录参考，免费接驳等阶段性政策以当日公告为准。"},
+      "image_source": {"title": "Main street Zhaoxing village (2010)", "author": "Mill 1", "provider": "Wikimedia Commons", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Main_street_Zhaoxing_village_(2010).jpg"}
+    },
+    {
+      "id": "manual_guizhou_zhenyuan_ancient_town",
+      "name": "镇远古城",
+      "city": "黔东南",
+      "rating": 4.5,
+      "reviewsCount": "2万+",
+      "image": "/assets/images/attractions/guizhou_zhenyuan_ancient_town_verified.jpg",
+      "description": "舞阳河穿城而过，古巷、码头、青龙洞建筑群和沿河夜景共同构成镇远的代表性体验。",
+      "intro": "沿舞阳河分布的山水古城，核心老街适合平缓散步。",
+      "level": "中国历史文化名城",
+      "category": "古城古镇",
+      "tags": ["舞阳河", "古城夜景", "历史街巷"],
+      "address": "贵州省黔东南苗族侗族自治州镇远县舞阳镇",
+      "openHours": "古城公共街区全天开放；青龙洞、游船等单独项目按各自公告开放",
+      "price": "古城公共街区通常无需大门票；青龙洞、游船等单独项目另行收费，以官方当日公告为准",
+      "tips": "古城沿河主街较平缓，支巷和石屏山台阶多；带老人儿童建议不安排登山线。",
+      "guide_data": {
+        "clothing": {"spring_autumn": "薄外套配舒适步行鞋，河边夜间注意防风。", "summer": "透气衣物、防晒和驱蚊用品，午后避开暴晒。", "winter": "保暖外套，沿河湿冷时增加防风层。", "tips": "古巷青石路雨后湿滑，夜游穿防滑鞋。"},
+        "transport": {"external_arrive": "镇远站到古城可乘公交或网约车；自驾先确认住宿停车位置，核心街区不适合反复开车。", "internal_arrive": "以新大桥、祝圣桥和四方井一带作为步行起点，沿舞阳河分段游览。", "internal_traffic": "古城主街步行为主，游船为可选项目；石屏山属于额外登高线。", "tips": "旺季车辆通行和停车可能调整，入住前向酒店确认落客点。"},
+        "housing": [{"area": "舞阳河沿岸", "desc": "夜景方便，但订房时确认楼梯、电梯和临街噪声。"}, {"area": "古城外围或镇远站方向", "desc": "停车和进出更方便，适合自驾家庭。"}],
+        "food": ["红酸汤", "道菜", "豆花烤鱼", "米豆腐"],
+        "special_care": {"elderly": "只走沿河主街和祝圣桥周边，放弃石屏山及连续台阶古巷。", "children": "河岸和码头没有完全封闭时要牵好孩子，夜游避开人流最密集时段。"}
+      },
+      "lazy_ai_text": "镇远古城带长辈小孩最适合沿舞阳河走平缓主街，不需要爬石屏山，也不用把所有古巷一次走完。把古城拆成白天短步行和傍晚夜景两段，会比连续暴走轻松很多。\n\n推荐路线一：沿河经典省力线\n\n新大桥附近 → 河滨步道 → 祝圣桥 → 青龙洞外观 → 四方井古巷入口 → 沿主街返回。\n\n全程约2至3小时，主要是平路。青龙洞内部和古巷支路若台阶较多，可只看外观；老人累了就在祝圣桥或沿河休息，不强求完整环线。\n\n推荐路线二：傍晚夜景轻松线\n\n住宿点 → 河滨主街 → 祝圣桥亮灯区域 → 沿河观景点 → 原路返回。\n\n傍晚出门能避开白天暴晒，路线控制在1至1.5小时。带孩子不建议在人流最密集时靠近码头边缘，乘船前确认救生衣和末班时间。\n\n省力提醒\n\n石屏山和部分古巷是连续台阶，不属于老幼省力路线。自驾游客应提前确认住宿停车和落客点，核心街区旺季不适合频繁挪车。沿河住宿夜景好，但可能有楼梯和临街噪声，订房时要先问电梯、房间楼层和行李搬运。",
+      "lazy_ai_source": {"source": "multi-source-editorial-pending-xhs-verification", "prompt": "镇远古城 长辈小孩省力路线，不要无关内容（如餐饮推荐）", "updatedAt": "2026-08-10", "status": "待小红书点点复核替换"},
+      "lazy_routes": [
+        {"title": "沿河经典省力线", "badge": "平缓主线", "suitability": "适合老人、儿童和第一次到访者", "nodes": ["新大桥", "河滨步道", "祝圣桥", "青龙洞外观", "四方井入口"], "duration": "约2-3小时", "walking": "沿河平路为主", "physical": 1.5, "tips": ["青龙洞内部按体力决定", "不安排石屏山登高"], "sourceTitle": "黔东南州镇远古城旅游线路", "sourceUrl": "https://www.qdn.gov.cn/zwfw_5872270/bmlqfw/lyfw_5872345/lyxl/202505/t20250528_87934149.html", "verifiedAt": "2026-08-10"},
+        {"title": "傍晚夜景轻松线", "badge": "避晒夜游", "suitability": "适合夏季和短时夜游家庭", "nodes": ["住宿点", "河滨主街", "祝圣桥", "沿河观景点", "原路返回"], "duration": "约1-1.5小时", "walking": "平缓往返，可随时结束", "physical": 1, "tips": ["避开码头拥挤时段", "游船票务与末班时间现场确认"], "sourceTitle": "携程镇远古城景点资料", "sourceUrl": "https://you.ctrip.com/sight/zhenyuancounty1840/1410722.html", "verifiedAt": "2026-08-10"}
+      ],
+      "lazy_tips": "古城公共街区以沿河主线为主；石屏山、深巷和游船均为可选，不必全部叠加。",
+      "source_evidence": {"source": "政府与OTA交叉核验", "commentCount": "多平台参考", "basicInfoSources": ["黔东南州旅游线路：https://www.qdn.gov.cn/zwfw_5872270/bmlqfw/lyfw_5872345/lyxl/202505/t20250528_87934149.html", "携程：https://you.ctrip.com/sight/zhenyuancounty1840/1410722.html"], "basicInfoUpdatedAt": "2026-08-10", "note": "古城公共空间与单独收费景点区分表述。"},
+      "image_source": {"title": "Panoramic image of Zhenyuan Ancient Town", "author": "杰·影", "provider": "Wikimedia Commons", "license": "CC BY 2.5", "licenseUrl": "https://creativecommons.org/licenses/by/2.5/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_image_of_Zhenyuan_Ancient_Town.jpg"}
+    },
+    {
+      "id": "manual_guizhou_malinghe_canyon",
+      "name": "马岭河峡谷",
+      "city": "黔西南",
+      "rating": 4.6,
+      "reviewsCount": "1万+",
+      "image": "/assets/images/attractions/guizhou_malinghe_canyon_verified.jpg",
+      "description": "峡谷以瀑布群、钙华壁挂和深切河谷著称，核心游览需要下到谷底再返回。",
+      "intro": "瀑布密集的喀斯特峡谷，风景集中但台阶较多。",
+      "level": "国家4A级旅游景区",
+      "category": "峡谷瀑布",
+      "tags": ["峡谷", "瀑布群", "喀斯特"],
+      "address": "贵州省黔西南布依族苗族自治州兴义市马岭河峡谷景区",
+      "openHours": "开放时间和入园截止时间随季节、水情及维护调整，以景区官网和当日公告为准",
+      "price": "公开目录曾列门票及观光电梯项目，现行价格、优惠与开放状态以官方购票页为准",
+      "tips": "谷底湿滑且返程上坡，膝关节不适、心肺功能较弱或低龄儿童家庭应缩短路线；先确认电梯是否开放。",
+      "guide_data": {
+        "clothing": {"spring_autumn": "速干长袖加薄外套，瀑布水汽大，穿防滑鞋。", "summer": "透气速干衣、轻便雨衣和防晒用品，避免棉质厚衣。", "winter": "保暖防水外层，峡谷阴湿体感更冷。", "tips": "台阶和湿滑路面多，鞋底抓地力必须可靠。"},
+        "transport": {"external_arrive": "兴义市区可乘公交、旅游交通或网约车到景区入口；自驾按游客中心停车。", "internal_arrive": "进入峡谷前先确认电梯、开放路段和出口方向，按官方单向动线游览。", "internal_traffic": "峡谷内以步行台阶为主，电梯只能减少部分高度差，不能替代全部步行。", "tips": "不要把电梯理解为全程无障碍，老人出发前应评估返程体力。"},
+        "housing": [{"area": "兴义市区", "desc": "交通、餐饮和医疗更方便，适合带老幼当天往返。"}, {"area": "景区周边", "desc": "适合早到避开客流，但住宿选择较少，提前确认交通。"}],
+        "food": ["兴义羊肉粉", "刷把头", "鸡肉汤圆", "布依酸笋"],
+        "special_care": {"elderly": "只走入口至代表性瀑布的短线，优先使用开放的观光电梯，出现膝痛立即折返。", "children": "全程牵行，瀑布边和湿滑栈道不奔跑；低龄儿童不使用推车进入峡谷。"}
+      },
+      "lazy_ai_text": "马岭河峡谷不是完全平缓的景点，带长辈小孩要接受一个原则：只看代表性瀑布，不追求走完整个峡谷。即使观光电梯开放，谷内仍有台阶和湿滑栈道。\n\n推荐路线一：电梯辅助短线\n\n游客中心 → 确认电梯和开放路段 → 乘电梯下行 → 代表性瀑布观景段 → 原路返回电梯 → 出园。\n\n路线控制在2至3小时，适合膝关节尚可、能完成短距离台阶的老人和学龄儿童。到谷底后先设定折返点，不因前方还有瀑布就不断延长。\n\n推荐路线二：入口观景保守线\n\n游客中心 → 峡谷入口观景区 → 最近的安全观景点 → 休息 → 原路返回。\n\n适合电梯停运、雨天、老人腿脚较弱或低龄儿童家庭。看不到全部瀑布也比下谷后体力透支安全。\n\n省力与安全提醒\n\n出发前确认电梯是否运行、当天水情和关闭路段。峡谷水汽大，石阶和栈道容易湿滑，必须穿抓地力好的鞋，低龄儿童不建议推车。返程上坡比下行更累，应至少保留一半体力；膝关节、心肺或眩晕问题明显者可改去万峰林等观光车友好景点。",
+      "lazy_ai_source": {"source": "multi-source-editorial-pending-xhs-verification", "prompt": "马岭河峡谷 长辈小孩省力路线，不要无关内容（如餐饮推荐）", "updatedAt": "2026-08-10", "status": "待小红书点点复核替换"},
+      "lazy_routes": [
+        {"title": "电梯辅助短线", "badge": "控制体力", "suitability": "适合可走短段台阶的老人和学龄儿童", "nodes": ["游客中心", "电梯入口", "谷底主栈道", "代表性瀑布", "电梯返程"], "duration": "约2-3小时", "walking": "短段台阶与湿滑栈道", "physical": 2.5, "tips": ["先确认电梯运行状态", "提前设折返点并保留返程体力"], "sourceTitle": "马岭河峡谷景区官网", "sourceUrl": "https://www.malinghexiagu.com/", "verifiedAt": "2026-08-10"},
+        {"title": "入口观景保守线", "badge": "低体力备选", "suitability": "适合雨天、低龄儿童或腿脚较弱者", "nodes": ["游客中心", "峡谷入口", "近端观景点", "休息区", "原路返回"], "duration": "约1-1.5小时", "walking": "入口附近短距离往返", "physical": 1.5, "tips": ["雨大或路滑时不下谷", "不以走完全程为目标"], "sourceTitle": "贵州A级景区公开目录", "sourceUrl": "https://gd.huaxia.com/upload/resources/file/2022/05/09/296619.pdf", "verifiedAt": "2026-08-10"}
+      ],
+      "lazy_tips": "观光电梯不能替代谷内全部步行；先确认运行和水情，始终为返程保留一半体力。",
+      "source_evidence": {"source": "景区官网与政府目录核验", "commentCount": "多平台参考", "basicInfoSources": ["马岭河峡谷景区官网：https://www.malinghexiagu.com/", "贵州A级景区公开目录：https://gd.huaxia.com/upload/resources/file/2022/05/09/296619.pdf"], "basicInfoUpdatedAt": "2026-08-10", "note": "旧目录价格只作历史参考，页面不展示为固定现价。"},
+      "image_source": {"title": "马岭河峡谷内的瀑布-2007", "author": "Antigng", "provider": "Wikimedia Commons", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%A9%AC%E5%B2%AD%E6%B2%B3%E5%B3%A1%E8%B0%B7%E5%86%85%E7%9A%84%E7%80%91%E5%B8%83-2007.jpg"}
+    }
+  ]
+}

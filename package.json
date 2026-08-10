@@ -6,11 +6,24 @@
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node server/index.js",
-    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js && node --check scripts/report_core_attractions.js",
+    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js && node --check scripts/report_core_attractions.js && node --check scripts/xhs_lazy_guides.js && node --check scripts/maintenance_menu.js && node --check scripts/watch_xhs_progress.js",
     "report:core": "node scripts/report_core_attractions.js",
-    "verify": "npm run check && npm run build && node scripts/verify-build.js && npm run report:core"
+    "quality:guizhou": "node scripts/report_core_attractions.js --strict",
+    "xhs:login": "node scripts/xhs_lazy_guides.js --login",
+    "xhs:list:guizhou": "node scripts/xhs_lazy_guides.js --province=贵州 --list",
+    "xhs:recover": "node scripts/xhs_lazy_guides.js --recover-samples",
+    "xhs:guizhou": "node scripts/xhs_lazy_guides.js --province=贵州 --write --visible",
+    "xhs:global": "node scripts/xhs_lazy_guides.js --write --background --generate-after",
+    "xhs:stats": "node scripts/xhs_lazy_guides.js --stats",
+    "maintenance": "node scripts/maintenance_menu.js",
+    "verify": "npm run check && npm run build && node scripts/verify-build.js && npm run quality:guizhou"
   },
   "engines": {
     "node": ">=24"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.5.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }

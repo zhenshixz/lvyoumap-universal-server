@@ -5,6 +5,8 @@ const rootDir = path.join(__dirname, '..');
 const dbPath = path.join(rootDir, 'content', 'db.json');
 const imageOverridesPath = path.join(rootDir, 'content', 'image-overrides.json');
 const manualAttractionsPath = path.join(rootDir, 'content', 'manual-attractions.json');
+const attractionOverridesPath = path.join(rootDir, 'content', 'attraction-overrides.json');
+const lazyGuideOverridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
 const dataDir = path.join(rootDir, 'data');
 const provincesDir = path.join(dataDir, 'provinces');
 
@@ -26,6 +28,22 @@ function writeJson(filePath, value, { bom = false } = {}) {
   const content = `${bom ? '\uFEFF' : ''}${json}\r\n`;
   fs.writeFileSync(tempPath, content, 'utf8');
   fs.renameSync(tempPath, filePath);
+}
+
+function readManualAttractionLayers() {
+  const contentDir = path.join(rootDir, 'content');
+  const names = fs.readdirSync(contentDir)
+    .filter(name => /^manual-attractions(?:\.[a-z0-9_-]+)?\.json$/i.test(name))
+    .sort();
+  const merged = {};
+  for (const name of names) {
+    const layer = JSON.parse(fs.readFileSync(path.join(contentDir, name), 'utf8'));
+    for (const [provinceName, additions] of Object.entries(layer || {})) {
+      if (!Array.isArray(additions)) throw new Error(`${name}: ${provinceName} must be an array.`);
+      merged[provinceName] = [...(merged[provinceName] || []), ...additions];
+    }
+  }
+  return { merged, names };
 }
 
 function applyImageOverrides(provinces, overrides) {
@@ -56,6 +74,136 @@ function applyImageOverrides(provinces, overrides) {
   }
 }
 
+function isNonEmptyString(value) {
+  return typeof value === 'string' && value.trim().length > 0;
+}
+
+function deepMerge(target, patch) {
+  for (const [key, value] of Object.entries(patch || {})) {
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const current = target[key];
+      target[key] = deepMerge(current && typeof current === 'object' && !Array.isArray(current) ? current : {}, value);
+    } else {
+      target[key] = value;
+    }
+  }
+  return target;
+}
+
+function buildAttractionMap(provinces) {
+  const result = new Map();
+  for (const [provinceName, province] of Object.entries(provinces || {})) {
+    for (const attraction of province.attractions || []) {
+      if (attraction.id) result.set(attraction.id, { attraction, provinceName });
+    }
+  }
+  return result;
+}
+
+function applyAttractionOverrides(provinces, overrides, label, allowedFields = null) {
+  const byId = buildAttractionMap(provinces);
+  let count = 0;
+  for (const [attractionId, patch] of Object.entries(overrides || {})) {
+    const target = byId.get(attractionId);
+    if (!target) throw new Error(`${label} references unknown attraction id: ${attractionId}`);
+    if (!patch || typeof patch !== 'object' || Array.isArray(patch)) {
+      throw new Error(`${label} for ${attractionId} must be an object.`);
+    }
+    if (allowedFields) {
+      const invalid = Object.keys(patch).filter(field => !allowedFields.includes(field));
+      if (invalid.length) throw new Error(`${label} for ${attractionId} contains unsupported fields: ${invalid.join(', ')}`);
+    }
+    deepMerge(target.attraction, patch);
+    count += 1;
+  }
+  return count;
+}
+
+function validateLazyArticle(attraction, provinceName) {
+  requireManualField(attraction, provinceName, 'lazy_ai_text', attraction.lazy_ai_text);
+  const text = attraction.lazy_ai_text.trim();
+  if (text.length < 180 || !/(路线|游览顺序|省力|观光车|索道|接驳|步行)/.test(text)) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide a complete lazy_ai_text article.`);
+  }
+  const source = attraction.lazy_ai_source;
+  requireManualField(attraction, provinceName, 'lazy_ai_source.source', source?.source);
+  requireManualField(attraction, provinceName, 'lazy_ai_source.prompt', source?.prompt);
+  requireManualField(attraction, provinceName, 'lazy_ai_source.updatedAt', source?.updatedAt);
+}
+
+function requireManualField(attraction, provinceName, fieldPath, value) {
+  if (!isNonEmptyString(value)) {
+    throw new Error(`Manual attraction "${attraction.name || attraction.id || 'unknown'}" in ${provinceName} is missing ${fieldPath}.`);
+  }
+}
+
+function validateManualAttraction(attraction, provinceName) {
+  const requiredBasicFields = [
+    'id', 'name', 'city', 'image', 'description', 'intro', 'level', 'category',
+    'address', 'openHours', 'price', 'tips'
+  ];
+  for (const field of requiredBasicFields) {
+    requireManualField(attraction, provinceName, field, attraction?.[field]);
+  }
+  if (!Number.isFinite(Number(attraction.rating))) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide a numeric rating.`);
+  }
+  if (!Array.isArray(attraction.tags) || attraction.tags.length < 2) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 2 tags.`);
+  }
+
+  const guide = attraction.guide_data;
+  if (!guide || typeof guide !== 'object') {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide guide_data for the travel-guide tab.`);
+  }
+  for (const field of ['spring_autumn', 'summer', 'winter', 'tips']) {
+    requireManualField(attraction, provinceName, `guide_data.clothing.${field}`, guide.clothing?.[field]);
+  }
+  for (const field of ['external_arrive', 'internal_arrive', 'internal_traffic', 'tips']) {
+    requireManualField(attraction, provinceName, `guide_data.transport.${field}`, guide.transport?.[field]);
+  }
+  for (const field of ['elderly', 'children']) {
+    requireManualField(attraction, provinceName, `guide_data.special_care.${field}`, guide.special_care?.[field]);
+  }
+  if (!Array.isArray(guide.housing) || guide.housing.length < 1 || guide.housing.some(item => !isNonEmptyString(item?.area) || !isNonEmptyString(item?.desc))) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide complete guide_data.housing entries.`);
+  }
+  if (!Array.isArray(guide.food) || guide.food.length < 3 || guide.food.some(item => !isNonEmptyString(item))) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 3 guide_data.food entries.`);
+  }
+
+  if (!Array.isArray(attraction.lazy_routes) || attraction.lazy_routes.length < 2) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 2 verified lazy_routes.`);
+  }
+  for (const [index, route] of attraction.lazy_routes.entries()) {
+    for (const field of ['title', 'badge', 'suitability', 'duration', 'walking', 'sourceTitle', 'sourceUrl', 'verifiedAt']) {
+      requireManualField(attraction, provinceName, `lazy_routes[${index}].${field}`, route?.[field]);
+    }
+    if (!/^https:\/\//.test(route.sourceUrl)) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} has a non-HTTPS lazy route source.`);
+    }
+    if (!Array.isArray(route.nodes) || route.nodes.length < 4 || route.nodes.some(item => !isNonEmptyString(item))) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 4 route nodes.`);
+    }
+    if (!Array.isArray(route.tips) || route.tips.length < 2 || route.tips.some(item => !isNonEmptyString(item))) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 2 tips.`);
+    }
+    if (!Number.isFinite(Number(route.physical))) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide a physical score.`);
+    }
+  }
+  requireManualField(attraction, provinceName, 'lazy_tips', attraction.lazy_tips);
+  validateLazyArticle(attraction, provinceName);
+
+  const evidence = attraction.source_evidence;
+  if (!evidence || !Array.isArray(evidence.basicInfoSources) || evidence.basicInfoSources.length < 2) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 2 basic-info sources.`);
+  }
+  requireManualField(attraction, provinceName, 'source_evidence.basicInfoUpdatedAt', evidence.basicInfoUpdatedAt);
+  requireManualField(attraction, provinceName, 'image_source.sourceUrl', attraction.image_source?.sourceUrl);
+  requireManualField(attraction, provinceName, 'image_source.license', attraction.image_source?.license);
+}
+
 function mergeManualAttractions(provinces, manualAttractions) {
   const ids = new Set();
   for (const province of Object.values(provinces || {})) {
@@ -71,9 +219,7 @@ function mergeManualAttractions(provinces, manualAttractions) {
     if (!Array.isArray(additions)) throw new Error(`Manual attractions for ${provinceName} must be an array.`);
 
     for (const attraction of additions) {
-      if (!attraction?.id || !attraction?.name || !attraction?.image) {
-        throw new Error(`Manual attraction in ${provinceName} must provide id, name and image.`);
-      }
+      validateManualAttraction(attraction, provinceName);
       if (ids.has(attraction.id)) throw new Error(`Duplicate attraction id: ${attraction.id}`);
       if (attraction.image.startsWith('/')) {
         const localImagePath = path.join(rootDir, attraction.image.slice(1));
@@ -141,11 +287,23 @@ function main() {
   const imageOverrides = fs.existsSync(imageOverridesPath)
     ? JSON.parse(fs.readFileSync(imageOverridesPath, 'utf8'))
     : {};
-  const manualAttractions = fs.existsSync(manualAttractionsPath)
-    ? JSON.parse(fs.readFileSync(manualAttractionsPath, 'utf8'))
+  const manualLayers = readManualAttractionLayers();
+  const manualAttractions = manualLayers.merged;
+  const attractionOverrides = fs.existsSync(attractionOverridesPath)
+    ? JSON.parse(fs.readFileSync(attractionOverridesPath, 'utf8'))
+    : {};
+  const lazyGuideOverrides = fs.existsSync(lazyGuideOverridesPath)
+    ? JSON.parse(fs.readFileSync(lazyGuideOverridesPath, 'utf8'))
     : {};
 
   const mergedManualCount = mergeManualAttractions(provinces, manualAttractions);
+  const attractionOverrideCount = applyAttractionOverrides(provinces, attractionOverrides, 'Attraction override');
+  const lazyGuideOverrideCount = applyAttractionOverrides(
+    provinces,
+    lazyGuideOverrides,
+    'Lazy-guide override',
+    ['lazy_ai_text', 'lazy_ai_source']
+  );
   applyImageOverrides(provinces, imageOverrides);
 
   fs.rmSync(provincesDir, { recursive: true, force: true });
@@ -159,6 +317,9 @@ function main() {
 
   console.log(`Generated ${Object.keys(provinces).length} province files and search index in ${path.relative(rootDir, dataDir)}`);
   console.log(`Merged ${mergedManualCount} reviewed manual attractions.`);
+  console.log(`Manual layers: ${manualLayers.names.join(', ')}`);
+  console.log(`Applied ${attractionOverrideCount} reviewed attraction overrides.`);
+  console.log(`Applied ${lazyGuideOverrideCount} lazy-guide overrides.`);
   console.log(`Applied ${Object.keys(imageOverrides).length} reviewed image overrides.`);
 }
 

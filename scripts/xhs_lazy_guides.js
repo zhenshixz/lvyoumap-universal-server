@@ -1,0 +1,423 @@
+const fs = require('fs');
+const path = require('path');
+const readline = require('readline');
+const { spawnSync } = require('child_process');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+
+puppeteer.use(StealthPlugin());
+
+const rootDir = path.join(__dirname, '..');
+const runtimeDir = path.join(rootDir, '.runtime');
+const profileDir = path.join(runtimeDir, 'xhs-profile');
+const progressPath = path.join(runtimeDir, 'xhs-lazy-progress.json');
+const samplesPath = path.join(runtimeDir, 'xhs-lazy-samples.json');
+const stopPath = path.join(runtimeDir, 'xhs-lazy-stop.flag');
+const dbPath = path.join(rootDir, 'content', 'db.json');
+const manualPath = path.join(rootDir, 'content', 'manual-attractions.json');
+const overridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
+
+const args = new Map(process.argv.slice(2).map(arg => {
+  const match = arg.match(/^--([^=]+)=(.*)$/);
+  return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
+}));
+const loginMode = args.has('login');
+const listMode = args.has('list');
+const recoverMode = args.has('recover-samples');
+const statsMode = args.has('stats');
+const background = args.has('background');
+const generateAfter = args.has('generate-after');
+const visible = loginMode || args.has('visible');
+const write = args.has('write');
+const force = args.has('force');
+const provinceFilter = String(args.get('province') || '');
+const nameFilter = String(args.get('name') || '');
+const limit = Math.max(0, Number(args.get('limit') || 0));
+const loginTimeoutMs = Math.max(60000, Number(args.get('login-timeout') || 600000));
+const answerWaitMs = Math.max(12000, Number(args.get('answer-wait') || 45000));
+
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function readJson(filePath, fallback = {}) {
+  if (!fs.existsSync(filePath)) return fallback;
+  return JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, ''));
+}
+
+function atomicWriteJson(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  const tempPath = `${filePath}.tmp`;
+  fs.writeFileSync(tempPath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+  fs.renameSync(tempPath, filePath);
+}
+
+function writeProgress(patch) {
+  const current = readJson(progressPath, {});
+  const next = { ...current, ...patch, pid: process.pid, updatedAt: nowIso() };
+  if (next.total > 0) next.percent = Math.round(((next.index || 0) / next.total) * 1000) / 10;
+  atomicWriteJson(progressPath, next);
+}
+
+function compactText(text) {
+  return String(text || '')
+    .replace(/\r/g, '\n')
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function promptFor(attraction) {
+  const name = String(attraction.name || '').replace(/景区$/, '');
+  return `${name} 长辈小孩省力路线，不要无关内容（如餐饮推荐）`;
+}
+
+function cleanupAnswer(pageText, prompt) {
+  let raw = compactText(pageText);
+  const promptIndex = raw.indexOf(prompt);
+  if (promptIndex >= 0) raw = raw.slice(promptIndex + prompt.length);
+  raw = raw
+    .replace(/^搜索或者输入任何问题\s*/g, '')
+    .replace(/\n?活动\s*$/g, '')
+    .replace(/\n?展开更多\s*/g, '\n')
+    .replace(/\n?登录后推荐更懂你的笔记[\s\S]*$/g, '')
+    .replace(/^(根据小红书.*整理如下[:：]?\s*)/g, '')
+    .trim();
+  const lines = raw.split(/\n+/)
+    .map(line => line.trim())
+    .filter(Boolean)
+    .filter(line => !/餐饮|美食|住宿|酒店|饭店|需要我帮你|如果时间充裕|推荐吗|下一步/.test(line));
+  return compactText(lines.join('\n\n'));
+}
+
+function answerQuality(text) {
+  const answer = compactText(text);
+  const lines = answer.split(/\n+/).map(line => line.trim()).filter(Boolean);
+  const routeSignals = (answer.match(/路线|游览顺序|观光车|索道|接驳|电梯|扶梯|少走|步行/g) || []).length;
+  const audienceSignals = (answer.match(/老人|长辈|小孩|儿童|亲子/g) || []).length;
+  const safetySignals = (answer.match(/注意|避开|防滑|预约|公告|开放|体力|台阶/g) || []).length;
+  const sections = lines.filter(line => line.length <= 28 && /(路线|顺序|技巧|注意|提醒|建议|省力)/.test(line)).length;
+  const trailing = lines.at(-1) || '';
+  const complete = answer.length >= 500
+    && routeSignals >= 3
+    && audienceSignals >= 2
+    && safetySignals >= 1
+    && sections >= 1
+    && !(/(路线|技巧|注意事项|提醒|建议)$/.test(trailing) && trailing.length <= 16)
+    && !/登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|换个问题试试/.test(answer);
+  return { complete, length: answer.length, routeSignals, audienceSignals, safetySignals, sections };
+}
+
+function isExcludedName(name) {
+  return /(火车站|高铁站|汽车站|站前|停车场|停车区|服务区|售票处|卫生间|游客中心|服务中心|入口|出口|检票口|换乘中心|码头售票|普通广场)/.test(name)
+    || (/(站|停车场|服务区|售票处|卫生间|入口|出口|游客中心|服务中心|广场)$/.test(name) && !/天安门广场/.test(name));
+}
+
+function buildAllRecords() {
+  const db = readJson(dbPath, { provinces: {} });
+  const manual = {};
+  for (const name of fs.readdirSync(path.join(rootDir, 'content')).filter(item => /^manual-attractions(?:\.[a-z0-9_-]+)?\.json$/i.test(item)).sort()) {
+    const layer = readJson(path.join(rootDir, 'content', name), {});
+    for (const [provinceName, additions] of Object.entries(layer)) {
+      manual[provinceName] = [...(manual[provinceName] || []), ...(additions || [])];
+    }
+  }
+  const overrides = readJson(overridesPath, {});
+  const records = [];
+  const ids = new Set();
+  for (const [provinceName, province] of Object.entries(db.provinces || {})) {
+    for (const attraction of province.attractions || []) {
+      records.push({ provinceName, attraction: { ...attraction, ...(overrides[attraction.id] || {}) }, dataLayer: 'db' });
+      ids.add(attraction.id);
+    }
+  }
+  for (const [provinceName, additions] of Object.entries(manual || {})) {
+    for (const attraction of additions || []) {
+      if (ids.has(attraction.id)) continue;
+      records.push({ provinceName, attraction: { ...attraction, ...(overrides[attraction.id] || {}) }, dataLayer: 'manual' });
+      ids.add(attraction.id);
+    }
+  }
+  return records;
+}
+
+function isPendingTarget({ provinceName, attraction }) {
+    if (provinceFilter && provinceName !== provinceFilter) return false;
+    if (nameFilter && !String(attraction.name || '').includes(nameFilter)) return false;
+    if (isExcludedName(String(attraction.name || ''))) return false;
+    const alreadyXhs = attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat';
+    if (!force && alreadyXhs) return false;
+    return true;
+}
+
+function collectRecords() {
+  return buildAllRecords()
+    .filter(isPendingTarget)
+    .sort((a, b) => Number(b.attraction.rating || 0) - Number(a.attraction.rating || 0));
+}
+
+function printStats() {
+  const rows = buildAllRecords();
+  const byProvince = new Map();
+  for (const row of rows) {
+    if (provinceFilter && row.provinceName !== provinceFilter) continue;
+    const item = byProvince.get(row.provinceName) || { total: 0, excluded: 0, xhs: 0, pending: 0 };
+    item.total += 1;
+    if (isExcludedName(String(row.attraction.name || ''))) item.excluded += 1;
+    else if (row.attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat') item.xhs += 1;
+    else item.pending += 1;
+    byProvince.set(row.provinceName, item);
+  }
+  const result = [...byProvince.entries()]
+    .map(([province, value]) => ({ province, ...value }))
+    .sort((a, b) => b.pending - a.pending || a.province.localeCompare(b.province, 'zh-Hans-CN'));
+  const total = result.reduce((acc, row) => {
+    for (const key of ['total', 'excluded', 'xhs', 'pending']) acc[key] += row[key];
+    return acc;
+  }, { total: 0, excluded: 0, xhs: 0, pending: 0 });
+  console.log(JSON.stringify({ scope: provinceFilter || '全国', total, provinces: result }, null, 2));
+}
+
+function findBrowser() {
+  const candidates = [
+    process.env.CHROME_PATH,
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+    'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
+  ].filter(Boolean);
+  return candidates.find(candidate => fs.existsSync(candidate));
+}
+
+function loginRequiredText(text) {
+  return /登录探索更多内容|登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|扫码登录/.test(text);
+}
+
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function openBrowser() {
+  const executablePath = findBrowser();
+  if (!executablePath) throw new Error('Chrome or Edge was not found. Set CHROME_PATH and retry.');
+  fs.mkdirSync(runtimeDir, { recursive: true });
+  const browser = await puppeteer.launch({
+    executablePath,
+    headless: (visible || background) ? false : 'new',
+    userDataDir: profileDir,
+    protocolTimeout: 180000,
+    defaultViewport: { width: 1440, height: 1000 },
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-blink-features=AutomationControlled',
+      ...(background ? ['--window-position=-32000,-32000', '--window-size=1440,1000'] : []),
+    ],
+  });
+  const pages = await browser.pages();
+  const page = pages[0] || await browser.newPage();
+  page.setDefaultTimeout(60000);
+  page.setDefaultNavigationTimeout(60000);
+  return { browser, page };
+}
+
+async function waitForLogin(page) {
+  const started = Date.now();
+  while (Date.now() - started < loginTimeoutMs) {
+    const body = await page.evaluate(() => document.body.innerText || '').catch(() => '');
+    if (!loginRequiredText(body) && /点点|搜索或者输入任何问题|AI/.test(body)) return true;
+    await sleep(1500);
+  }
+  return false;
+}
+
+async function scrapeOne(page, target) {
+  const prompt = promptFor(target.attraction);
+  const url = `https://www.xiaohongshu.com/ai_chat_tab?searchKeyWord=${encodeURIComponent(prompt)}`;
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await sleep(1800);
+  const initialBody = await page.evaluate(() => document.body.innerText || '');
+  if (loginRequiredText(initialBody)) return { ok: false, reason: 'login_required', prompt };
+
+  const started = Date.now();
+  let best = '';
+  let stable = 0;
+  while (Date.now() - started < answerWaitMs) {
+    const body = await page.evaluate(() => document.body.innerText || '');
+    const answer = cleanupAnswer(body, prompt);
+    if (answer.length > best.length) {
+      best = answer;
+      stable = 0;
+    } else if (answer === best && answer.length > 0) {
+      stable += 1;
+    }
+    const quality = answerQuality(best);
+    if (quality.complete && stable >= 2) return { ok: true, prompt, answer: best, quality };
+    await sleep(1000);
+  }
+  return { ok: false, reason: 'incomplete_answer', prompt, answerPreview: best.slice(0, 1000), quality: answerQuality(best) };
+}
+
+function backupOverrides() {
+  if (!fs.existsSync(overridesPath)) return '';
+  const backupDir = path.join(runtimeDir, 'backups');
+  fs.mkdirSync(backupDir, { recursive: true });
+  const backupPath = path.join(backupDir, `lazy-guide-overrides.${nowIso().replace(/[:.]/g, '-')}.json`);
+  fs.copyFileSync(overridesPath, backupPath);
+  return backupPath;
+}
+
+async function runLogin() {
+  writeProgress({ status: 'login_waiting', message: '请在浏览器中扫码登录小红书点点。' });
+  const { browser, page } = await openBrowser();
+  try {
+    await page.goto('https://www.xiaohongshu.com/ai_chat_tab', { waitUntil: 'domcontentloaded', timeout: 60000 });
+    const loggedIn = await waitForLogin(page);
+    if (!loggedIn) throw new Error('等待登录超时，请重新运行登录命令。');
+    writeProgress({ status: 'login_ready', message: '登录状态已保存，可以运行全国或指定省份的增量采集。' });
+    console.log('Xiaohongshu login is ready. The profile was saved locally.');
+  } finally {
+    await browser.close().catch(() => {});
+  }
+}
+
+async function runCollection() {
+  const allTargets = collectRecords();
+  const targets = limit > 0 ? allTargets.slice(0, limit) : allTargets;
+  if (!targets.length) {
+    writeProgress({
+      status: 'done',
+      message: '当前范围没有待更新目标。',
+      scope: provinceFilter || '全国',
+      current: '',
+      index: 0,
+      total: 0,
+      percent: 0,
+      success: 0,
+      failed: 0,
+    });
+    console.log('No pending targets.');
+    return;
+  }
+  if (fs.existsSync(stopPath)) fs.rmSync(stopPath, { force: true });
+  const results = [];
+  let success = 0;
+  let failed = 0;
+  let backup = '';
+  let overrides = readJson(overridesPath, {});
+  writeProgress({
+    status: 'running',
+    message: write ? '正在增量采集并写入攻略覆盖层。' : '正在试跑，不写文件。',
+    scope: provinceFilter || '全国',
+    index: 0,
+    total: targets.length,
+    success,
+    failed,
+  });
+  const { browser, page } = await openBrowser();
+  try {
+    for (let index = 0; index < targets.length; index += 1) {
+      if (fs.existsSync(stopPath)) break;
+      const target = targets[index];
+      const current = `${target.provinceName}/${target.attraction.name}`;
+      writeProgress({ status: 'running', current, index, total: targets.length, success, failed });
+      let result;
+      try {
+        result = await scrapeOne(page, target);
+      } catch (error) {
+        result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction) };
+      }
+      results.push({ province: target.provinceName, id: target.attraction.id, name: target.attraction.name, ...result });
+      if (result.reason === 'login_required') {
+        writeProgress({ status: 'login_required', message: '登录已失效，请先运行 npm run xhs:login。', current, index, total: targets.length, success, failed });
+        break;
+      }
+      if (result.ok) {
+        success += 1;
+        if (write) {
+          if (!backup) backup = backupOverrides();
+          overrides[target.attraction.id] = {
+            lazy_ai_text: result.answer,
+            lazy_ai_source: {
+              source: 'xiaohongshu-dian-dian-ai-chat',
+              prompt: result.prompt,
+              updatedAt: nowIso(),
+            },
+          };
+          atomicWriteJson(overridesPath, overrides);
+        }
+      } else {
+        failed += 1;
+      }
+      atomicWriteJson(samplesPath, results.slice(-100));
+      writeProgress({ status: 'running', current, index: index + 1, total: targets.length, success, failed, backup });
+      await sleep(700);
+    }
+  } finally {
+    await browser.close().catch(() => {});
+  }
+  const stopped = fs.existsSync(stopPath);
+  const currentProgress = readJson(progressPath, {});
+  if (currentProgress.status !== 'login_required') {
+    writeProgress({ status: stopped ? 'stopped' : 'done', message: stopped ? '已在安全点停止。' : '采集完成。', success, failed, backup });
+  }
+  if (generateAfter && write && success > 0 && currentProgress.status !== 'login_required') {
+    writeProgress({ status: 'generating', message: '采集结果已保存，正在重新生成静态数据。', success, failed, backup });
+    const generated = spawnSync(process.execPath, [path.join('scripts', 'generate_static_data.js')], {
+      cwd: rootDir,
+      stdio: 'inherit',
+      shell: false,
+    });
+    if (generated.status !== 0) {
+      writeProgress({ status: 'error', message: '攻略已保存，但静态数据生成失败，请在总控中运行生成与校验。', success, failed, backup });
+      process.exitCode = 1;
+      return;
+    }
+    writeProgress({ status: stopped ? 'stopped' : 'done', message: stopped ? '已停止，成功结果已生成。' : '采集完成，静态数据已更新。', success, failed, backup });
+  }
+  if (failed > 0) process.exitCode = 2;
+}
+
+function recoverAcceptedSamples() {
+  const samples = readJson(samplesPath, []);
+  let overrides = readJson(overridesPath, {});
+  let backup = '';
+  let recovered = 0;
+  for (const row of samples) {
+    const answer = row.answer || row.answerPreview || '';
+    const quality = answerQuality(answer);
+    if (!row.id || overrides[row.id] || !quality.complete) continue;
+    if (!backup) backup = backupOverrides();
+    overrides[row.id] = {
+      lazy_ai_text: answer,
+      lazy_ai_source: {
+        source: 'xiaohongshu-dian-dian-ai-chat',
+        prompt: row.prompt,
+        updatedAt: nowIso(),
+      },
+    };
+    recovered += 1;
+  }
+  atomicWriteJson(overridesPath, overrides);
+  writeProgress({ status: 'recovered', message: `Recovered ${recovered} complete captured answers.`, recovered, backup });
+  console.log(`Recovered ${recovered} complete captured answers.`);
+}
+
+async function main() {
+  fs.mkdirSync(runtimeDir, { recursive: true });
+  if (loginMode) await runLogin();
+  else if (recoverMode) recoverAcceptedSamples();
+  else if (statsMode) printStats();
+  else if (listMode) {
+    const targets = collectRecords();
+    console.log(JSON.stringify(targets.map(target => ({ province: target.provinceName, id: target.attraction.id, name: target.attraction.name, source: target.attraction.lazy_ai_source?.source || 'missing' })), null, 2));
+  }
+  else await runCollection();
+}
+
+main().catch(error => {
+  writeProgress({ status: 'error', message: error.message, stack: error.stack });
+  console.error(error);
+  process.exitCode = 1;
+});

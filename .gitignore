@@ -12,6 +12,8 @@ release/
 *.tmp
 content/*.backup*.json
 progress.json
+.runtime/
+content/lazy-guide-overrides.backup*.json
 
 # Deployment archives and local platform state
 lvyoumap-universal-server-*.tar.gz

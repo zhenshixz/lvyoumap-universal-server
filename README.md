@@ -2,6 +2,8 @@
 
 这是中国旅游地图的通用云服务器版本。它不绑定阿里云、腾讯云、宝塔或特定CDN。
 
+项目架构、数据分层、小红书点点采集、贵州试点状态、验证和回撤规则统一记录在 [PROJECT_MAINTENANCE.md](PROJECT_MAINTENANCE.md)。后续数据迭代请先阅读该文件。
+
 ## 运行结构
 
 - Nginx直接提供`dist`中的页面、地图数据和图片。
@@ -119,5 +121,15 @@ data/provinces-index.json
 data/provinces/*.json
 data/search-index.json
 ```
+
+全国核心景点缺失时，可在`content/manual-attractions*.json`中按省做人工核验补充。人工新增记录不是只补列表卡片，必须一次性完成以下三部分：
+
+- 基本信息：地址、开放时间、票价、提示、来源和图片授权信息；
+- 旅行指南：`guide_data`中的穿衣、交通、住宿、美食、长辈和儿童建议；
+- 懒人攻略：完整文章式`lazy_ai_text`和可追溯`lazy_ai_source`，同时保留至少2条带节点、体力、注意事项、来源链接和核验日期的`lazy_routes`。
+
+`scripts/generate_static_data.js`会在构建时检查以上内容；任何一部分缺失都会阻止构建，避免新版景点在详情页回退到旧模板或“补全中”。信息易变的开放时间、票价和交通安排应写明“以景区当日公告为准”，并更新`source_evidence.basicInfoUpdatedAt`和路线的`verifiedAt`。
+
+小红书点点攻略不会直接修改全国基础库，而是写入`content/lazy-guide-overrides.json`覆盖层。双击`数据维护总控.bat`进入中文全国维护总控，可完成二维码登录、全国或指定省份增量采集、后台续跑、实时进度、安全停止、待更新统计和质量检查。已有合格点点攻略默认跳过，失败项不写入并留待下次续跑。
 
 部署文件名保持ASCII，避免Windows、Linux、ZIP、Nginx和对象存储之间的中文路径编码差异。
