@@ -1,0 +1,177 @@
+{
+  "province": "福建",
+  "checkedAt": "2026-08-10",
+  "method": "官方名录确认景区身份与等级；福建省规划和世界遗产体系确认文化与自然代表性；携程 Trip.Best、大众点评、小红书用于判断游客认知、真实讨论热度和体验痛点。口碑平台的评分、排名和笔记数量会变化，只作为是否进入核心候选的辅助证据，不作为票价、开放时间等长期事实。",
+  "sourcePolicy": {
+    "official": "用于确认名称、等级、城市、开放规则和其他事实",
+    "ota": "用于判断跨区域游客认知和长期预订热度",
+    "dianping": "用于判断本地口碑、到访密度和常见体验问题",
+    "xiaohongshu": "用于判断年轻及家庭游客关注度、路线需求和近期体验问题",
+    "restriction": "不得把动态评分、票价、帖子内容直接固化为永久事实"
+  },
+  "sources": {
+    "official_2025_a_list": "https://wlt.fujian.gov.cn/zwgk/sjfb/cgcx/AJJQ/202601/P020260105588644254919.xlsx",
+    "official_2024_new_5a": "https://zwgk.mct.gov.cn/zfxxgkml/zykf/202402/t20240206_951222.html",
+    "official_fujian_spatial_plan": "https://fdi.swt.fujian.gov.cn/uploadfiles/file/20240924/1727147498222780.pdf",
+    "ctrip_fujian": "https://you.ctrip.com/countrysightlist/fujian100038.html",
+    "tripbest_fujian": "https://tw.trip.com/toplist/tripbest/fujian-best-things-to-do-10071000389111/",
+    "dianping_gulangyu_sample": "https://m.dianping.com/discovery/400303074",
+    "xiaohongshu_fujian_search": "https://www.xiaohongshu.com/search_result?keyword=%E7%A6%8F%E5%BB%BA%E6%97%85%E6%B8%B8"
+  },
+  "attractions": [
+    {
+      "key": "gulangyu",
+      "name": "鼓浪屿风景名胜区",
+      "aliases": ["鼓浪屿", "鼓浪屿景区", "鼓浪屿风景名胜区"],
+      "city": "厦门",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "dianping_gulangyu_sample", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "wuyishan",
+      "name": "武夷山风景名胜区",
+      "aliases": ["武夷山", "武夷山景区", "武夷山风景名胜区", "武夷山国家公园"],
+      "city": "南平",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "taining",
+      "name": "泰宁风景旅游区",
+      "aliases": ["泰宁旅游区", "泰宁风景旅游区", "泰宁风景区"],
+      "city": "三明",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian"]
+    },
+    {
+      "key": "fujian_tulou_yongding",
+      "name": "福建土楼永定景区",
+      "aliases": ["福建土楼永定景区", "福建土楼（永定）旅游景区", "永定土楼"],
+      "city": "龙岩",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "fujian_tulou_nanjing",
+      "name": "福建土楼（南靖）景区",
+      "aliases": ["福建土楼(南靖)景区", "福建土楼（南靖）旅游景区", "南靖土楼"],
+      "city": "漳州",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "baishuiyang",
+      "name": "白水洋风景区",
+      "aliases": ["白水洋", "白水洋景区", "白水洋风景区"],
+      "city": "宁德",
+      "tier": "national",
+      "basis": ["official_5a"],
+      "evidence": ["official_2025_a_list", "ctrip_fujian"]
+    },
+    {
+      "key": "yuanyangxi",
+      "name": "鸳鸯溪景区",
+      "aliases": ["鸳鸯溪", "鸳鸯溪景区", "白水洋鸳鸯溪"],
+      "city": "宁德",
+      "tier": "national",
+      "basis": ["official_5a"],
+      "evidence": ["official_2025_a_list", "ctrip_fujian"]
+    },
+    {
+      "key": "qingyuanshan",
+      "name": "清源山",
+      "aliases": ["清源山", "清源山景区", "清源山国家重点风景名胜区"],
+      "city": "泉州",
+      "tier": "national",
+      "basis": ["official_5a", "world_heritage_context"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian"]
+    },
+    {
+      "key": "taimushan",
+      "name": "太姥山",
+      "aliases": ["太姥山", "太姥山景区", "太姥山国家级风景名胜区"],
+      "city": "宁德",
+      "tier": "national",
+      "basis": ["official_5a"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian"]
+    },
+    {
+      "key": "sanfangqixiang",
+      "name": "三坊七巷",
+      "aliases": ["三坊七巷", "三坊七巷景区", "三坊七巷历史文化街区"],
+      "city": "福州",
+      "tier": "national",
+      "basis": ["official_5a", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "gutian_meeting",
+      "name": "古田会议会址",
+      "aliases": ["古田旅游区", "古田会议会址", "古田会议旧址群"],
+      "city": "龙岩",
+      "tier": "national",
+      "basis": ["official_5a", "red_tourism"],
+      "evidence": ["official_2025_a_list", "ctrip_fujian"]
+    },
+    {
+      "key": "meizhou_island",
+      "name": "湄洲岛妈祖文化旅游区",
+      "aliases": ["湄洲岛妈祖文化旅游区", "湄洲岛国家旅游度假区", "湄洲岛", "妈祖文化园"],
+      "city": "莆田",
+      "tier": "national",
+      "basis": ["official_5a", "cultural_icon", "ota_popularity"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian"]
+    },
+    {
+      "key": "xiamen_botanical_garden",
+      "name": "厦门园林植物园",
+      "aliases": ["厦门园林植物园", "厦门园林植物园景区", "万石植物园"],
+      "city": "厦门",
+      "tier": "national",
+      "basis": ["official_5a", "ota_popularity", "social_popularity"],
+      "evidence": ["official_2024_new_5a", "official_2025_a_list", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "guanzhaishan",
+      "name": "冠豸山景区",
+      "aliases": ["冠豸山", "冠豸山景区", "冠豸山风景区"],
+      "city": "龙岩",
+      "tier": "national",
+      "basis": ["official_5a"],
+      "evidence": ["official_2025_a_list", "official_fujian_spatial_plan", "ctrip_fujian"]
+    },
+    {
+      "key": "pingtan_island",
+      "name": "平潭国际旅游岛",
+      "aliases": ["平潭国际旅游岛", "平潭岛", "海坛岛"],
+      "city": "福州",
+      "tier": "regional_icon",
+      "basis": ["ota_popularity", "social_popularity", "coastal_icon"],
+      "evidence": ["official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "quanzhou_kaiyuan_temple",
+      "name": "泉州开元寺",
+      "aliases": ["泉州开元寺", "泉州大开元寺", "开元寺"],
+      "city": "泉州",
+      "tier": "regional_icon",
+      "basis": ["world_heritage_context", "ota_popularity", "social_popularity"],
+      "evidence": ["official_fujian_spatial_plan", "ctrip_fujian", "xiaohongshu_fujian_search"]
+    },
+    {
+      "key": "xiapu_mudflat",
+      "name": "霞浦滩涂",
+      "preferredId": "manual_fujian_xiapu_mudflat",
+      "aliases": ["霞浦滩涂", "北岐滩涂", "霞浦北岐滩涂", "东壁滩涂"],
+      "city": "宁德",
+      "tier": "regional_icon",
+      "basis": ["photography_icon", "ota_popularity", "social_popularity"],
+      "evidence": ["official_fujian_spatial_plan", "ctrip_fujian", "tripbest_fujian", "xiaohongshu_fujian_search"]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "福建": [
+    {
+      "id": "manual_fujian_xiapu_mudflat",
+      "name": "霞浦滩涂",
+      "city": "宁德",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/fujian_xiapu_mudflat_verified.jpg",
+      "description": "霞浦沿海由北岐、东壁、小皓、花竹等多个观景点共同构成的滩涂摄影目的地，潮汐、养殖竹竿、渔船与晨昏光影是主要看点。",
+      "intro": "霞浦滩涂不是单一封闭景区，而是一组分散在海岸线上的摄影点。北岐偏日出，东壁偏日落，小皓和花竹适合结合潮汐与天气安排。",
+      "level": "滨海摄影目的地",
+      "category": "滨海风光",
+      "tags": [
+        "滩涂摄影",
+        "海岸风光",
+        "日出日落"
+      ],
+      "address": "福建省宁德市霞浦县北岐、东壁、小皓、花竹等沿海观景点",
+      "openHours": "各观景点多为开放式海岸空间；道路、观景平台和临时管控以当地当天公告为准",
+      "price": "多数开放式观景点可免费到访；停车、接驳、船班或村内服务以现场公示为准",
+      "tips": "先查天气、日出日落和潮汐，再选具体点位；不要把北岐、东壁等分散点当成步行可串联的单一景区。海边湿滑且风大，勿进入未开放滩涂和养殖作业区。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边早晚风大，建议防风外套、长裤和防滑运动鞋；清晨守候日出要多备一层。",
+          "summer": "轻薄速干衣物、防晒帽、防晒霜和饮水并备，午后注意雷雨和暴晒。",
+          "winter": "防风保暖外套、帽子和手套更实用，观景台长时间停留体感会明显低于县城。",
+          "tips": "观景点常有坡道、湿滑台阶和土路，鞋底防滑优先于拍照造型。"
+        },
+        "transport": {
+          "external_arrive": "高铁到霞浦站后，可在县城租车、包车或按当天班次换乘前往沿海村镇；自驾更适合串联分散点位。",
+          "internal_arrive": "北岐距县城相对近；东壁、小皓、花竹分布在不同方向，应按日出、日落和潮汐拆分线路。",
+          "internal_traffic": "各点之间以公路交通为主，不能依靠景区内部接驳一次走完；节假日和日落后要预留堵车时间。",
+          "tips": "包车或拼车前确认包含的点位、等待时间和返程地点；不要仅按直线距离估算。"
+        },
+        "housing": [
+          {
+            "area": "霞浦县城",
+            "desc": "餐饮和交通选择多，适合第一次到访及需要兼顾多条线路的家庭。"
+          },
+          {
+            "area": "东壁、三沙一带",
+            "desc": "适合看日落和第二天继续走东线，但房间、停车和餐饮应提前确认。"
+          },
+          {
+            "area": "北岐附近",
+            "desc": "适合清晨拍日出，能减少起早后的车程；住宿条件需按具体民宿核实。"
+          }
+        ],
+        "food": [
+          "霞浦海鲜",
+          "闽南糊",
+          "海蛎煎",
+          "地瓜杯",
+          "剑蛏"
+        ],
+        "special_care": {
+          "elderly": "优先选择车辆可接近的观景点，每天安排一个日出或日落主场即可；避免连续赶多个潮汐点。",
+          "children": "远离湿滑边坡、滩涂沟渠和养殖作业区；日出行程要保证保暖、早餐和休息。"
+        }
+      },
+      "lazy_ai_text": "霞浦滩涂不是一张门票覆盖的单一景区，而是多个沿海摄影点。带长辈和孩子最稳妥的方式，是一天只安排一条方向，不追着所有机位赶路。\n\n推荐路线一：北岐日出省力线\n\n霞浦县城 → 北岐观景点 → 返回县城早餐与休息 → 下午选择县城周边轻松活动。北岐离县城较近，适合第一次体验滩涂日出。出发前确认天气和日出时间，车辆尽量停在正规区域，不进入湿滑滩涂。\n\n推荐路线二：东线日落线\n\n霞浦县城 → 小皓或花竹 → 东壁日落 → 三沙或县城住宿。把东壁作为当天最后一站，避免看完日落再逆向赶多个点。老人和儿童可以减少中途停靠，把体力留给一个视野好的观景平台。\n\n省力提醒\n\n天气、潮汐和能见度比打卡数量更重要。各点之间主要靠公路移动，节假日停车和返程会变慢。海风、湿滑台阶和临时交通调整都可能影响体验，出发前应查看当地公告，并为返程留出余量。",
+      "lazy_ai_source": {
+        "source": "multi-source-editorial-pending-xhs-verification",
+        "prompt": "霞浦滩涂 长辈小孩省力路线，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-10",
+        "status": "待小红书点点复核替换"
+      },
+      "lazy_routes": [
+        {
+          "title": "北岐日出省力线",
+          "badge": "首次推荐",
+          "suitability": "适合长辈、儿童和第一次到霞浦的家庭",
+          "nodes": [
+            "霞浦县城",
+            "北岐观景点",
+            "县城早餐",
+            "午间休息"
+          ],
+          "duration": "约半天",
+          "walking": "以短距离坡道和观景平台步行为主",
+          "physical": 1.5,
+          "tips": [
+            "按日出时间倒推出发时间",
+            "海边湿滑，不下滩涂追机位"
+          ],
+          "sourceTitle": "福建省滨海休闲带民宿发展专项规划",
+          "sourceUrl": "https://wlt.fujian.gov.cn/zfxxgkzl/zfxxgkml/30qtyzdgkdzfxx/06zykf/202112/P020211223617140389003.pdf",
+          "verifiedAt": "2026-08-10"
+        },
+        {
+          "title": "小皓—东壁日落线",
+          "badge": "日落优先",
+          "suitability": "适合自驾或包车、希望减少折返的家庭",
+          "nodes": [
+            "霞浦县城",
+            "小皓滩涂",
+            "东壁观景点",
+            "三沙或县城"
+          ],
+          "duration": "约半天",
+          "walking": "点位间乘车，现场短距离步行",
+          "physical": 1.5,
+          "tips": [
+            "把东壁放在当天最后一站",
+            "日落后返程预留堵车时间"
+          ],
+          "sourceTitle": "携程霞浦景点与线路资料",
+          "sourceUrl": "https://gs.ctrip.com/html5/you/map/1154/list-sight.html",
+          "verifiedAt": "2026-08-10"
+        }
+      ],
+      "lazy_tips": "霞浦滩涂是分散目的地，先看天气、潮汐和日出日落，再选点位；一天一条方向比追完所有机位更适合家庭出行。",
+      "source_evidence": {
+        "source": "福建官方规划与主流OTA交叉核验",
+        "commentCount": "多平台参考",
+        "basicInfoSources": [
+          "福建省滨海休闲带民宿发展专项规划：https://wlt.fujian.gov.cn/zfxxgkzl/zfxxgkml/30qtyzdgkdzfxx/06zykf/202112/P020211223617140389003.pdf",
+          "福建文旅滨海线路资料：https://wlt.fujian.gov.cn/wldt/btdt/202507/t20250717_6968242.htm",
+          "携程霞浦景点列表：https://gs.ctrip.com/html5/you/map/1154/list-sight.html",
+          "去哪儿霞浦东线榜单：https://touch.travel.qunar.com/smartlist/7578794"
+        ],
+        "basicInfoUpdatedAt": "2026-08-10",
+        "note": "霞浦滩涂按分散目的地建模；开放、交通、潮汐和收费以当地当天信息为准。"
+      },
+      "image_source": {
+        "title": "Xiapu Sunrise",
+        "author": "Jay Huang",
+        "provider": "Wikimedia Commons / Flickr",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiapu_Sunrise_-_Flickr_-_Jaykhuang.jpg"
+      }
+    }
+  ]
+}

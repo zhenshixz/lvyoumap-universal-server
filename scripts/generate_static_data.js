@@ -204,6 +204,26 @@ function validateManualAttraction(attraction, provinceName) {
   requireManualField(attraction, provinceName, 'image_source.license', attraction.image_source?.license);
 }
 
+function normalizeAttractionName(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[·•（）()\-—_\s]/g, '')
+    .replace(/国家[345]a级旅游景区/g, '')
+    .replace(/国家级|国家重点|国家/g, '')
+    .replace(/旅游风景名胜区|旅游景区|旅游风景区|风景名胜区|风景旅游区|风景区|旅游区|景区$/g, '')
+    .trim();
+}
+
+function probablySameAttraction(left, right) {
+  const a = normalizeAttractionName(left);
+  const b = normalizeAttractionName(right);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  const shorter = a.length <= b.length ? a : b;
+  const longer = a.length > b.length ? a : b;
+  return shorter.length >= 2 && longer.endsWith(shorter) && longer.length - shorter.length <= 6;
+}
+
 function mergeManualAttractions(provinces, manualAttractions) {
   const ids = new Set();
   for (const province of Object.values(provinces || {})) {
@@ -221,6 +241,13 @@ function mergeManualAttractions(provinces, manualAttractions) {
     for (const attraction of additions) {
       validateManualAttraction(attraction, provinceName);
       if (ids.has(attraction.id)) throw new Error(`Duplicate attraction id: ${attraction.id}`);
+      const possibleDuplicate = province.attractions.find(existing => (
+        (!attraction.city || !existing.city || attraction.city === existing.city)
+        && probablySameAttraction(attraction.name, existing.name)
+      ));
+      if (possibleDuplicate) {
+        throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} probably duplicates existing "${possibleDuplicate.name}" (${possibleDuplicate.id}); use an override for the existing id instead.`);
+      }
       if (attraction.image.startsWith('/')) {
         const localImagePath = path.join(rootDir, attraction.image.slice(1));
         if (!fs.existsSync(localImagePath)) throw new Error(`Manual attraction image does not exist: ${attraction.image}`);
@@ -323,4 +350,11 @@ function main() {
   console.log(`Applied ${Object.keys(imageOverrides).length} reviewed image overrides.`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = {
+  deepMerge,
+  normalizeAttractionName,
+  probablySameAttraction,
+  validateManualAttraction,
+};

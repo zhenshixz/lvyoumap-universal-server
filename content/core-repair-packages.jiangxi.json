@@ -1,0 +1,231 @@
+{
+  "province": "江西",
+  "status": "applied",
+  "appliedAt": "2026-08-10T09:50:30.916Z",
+  "appliedAttractionIds": ["manual_jiangxi_guifeng", "manual_jiangxi_jinggangshan"],
+  "appliedOverrideIds": ["amap_B0FFKHIMXK"],
+  "reviewedAt": "2026-08-10",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片使用可追溯开放许可；点点懒人攻略由总控采集后才能通过最终质量闸门。",
+  "attractions": [
+    {
+      "baselineKey": "core_7620497bda",
+      "id": "manual_jiangxi_guifeng",
+      "name": "龟峰景区",
+      "city": "上饶",
+      "rating": 4.6,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/jiangxi_guifeng_verified.jpg",
+      "description": "弋阳龟峰以白垩纪丹霞地貌和大量酷似龟形的象形石闻名，是世界自然遗产“中国丹霞”的组成部分。",
+      "intro": "龟峰位于江西省上饶市弋阳县，峰林、峰丛、石柱和湖面相互映衬。景区既有靠近入口、相对省力的经典游览线，也有结合清水湖游船和骆驼峰一带的进阶路线。",
+      "level": "国家5A级旅游景区",
+      "category": "丹霞山水",
+      "tags": ["世界自然遗产", "丹霞地貌", "山水观光"],
+      "address": "江西省上饶市弋阳县320国道",
+      "openHours": "开放与停止入园时间会随季节和客流调整，出发前请通过景区官方渠道核对当日公告",
+      "price": "门票、观光车和游船可分项或组合销售，具体价格与优惠政策以官方购票渠道当日公示为准",
+      "tips": "带长辈和儿童优先走入口附近经典线；骆驼峰部分路段陡峭且有近垂直铁梯，恐高、膝关节不适或雨天不建议勉强登顶。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻薄防风外套、长裤和防滑运动鞋较实用，早晚及雨后体感偏凉。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午连续爬坡。",
+          "winter": "保暖外套、长裤和防滑鞋为主，湖边和山脊风大时体感更低。",
+          "tips": "丹霞山路、石阶和雨后路面可能湿滑，鞋底抓地力比拍照造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "可先到弋阳站或弋阳县城，再按当天班次换乘旅游交通、出租车或网约车前往；自驾导航到龟峰游客中心。",
+          "internal_arrive": "入园后先在游客中心确认观光车、游船和当日开放线路，再决定经典线或清水湖进阶线。",
+          "internal_traffic": "观光车可连接游客中心与主要换乘点；游船及部分山路是否开放以天气和现场调度为准。",
+          "tips": "返程前确认弋阳县城方向交通和末班时间，节假日给停车、排队和换乘留余量。"
+        },
+        "housing": [
+          {"area": "弋阳县城", "desc": "交通、餐饮选择较多，适合家庭和第二天转乘火车的游客。"},
+          {"area": "龟峰景区周边", "desc": "可减少早晨车程，但房型、餐饮和返程交通应提前确认。"}
+        ],
+        "food": ["弋阳年糕", "弋阳扣肉", "上饶鸡腿", "清明果"],
+        "special_care": {
+          "elderly": "优先选择观光车加经典游览一线，不把骆驼峰登顶作为必选；感觉膝累时及时原路返回。",
+          "children": "全程跟紧成人，不攀爬护栏外岩石；游船、临水和陡梯路段尤其注意看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典象形石省力线",
+          "badge": "家庭首选",
+          "suitability": "适合长辈、儿童和第一次到访者",
+          "nodes": ["游客中心", "双龟迎宾", "将军楼", "老人峰", "龟文化博物馆"],
+          "duration": "约3小时",
+          "walking": "以观光车衔接和常规石阶步行为主",
+          "physical": 2,
+          "tips": ["入园先确认当日观光车停靠点", "不为登高打卡临时转入陡峭支线"],
+          "sourceTitle": "携程龟峰风景名胜区游览资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yiyang2406/127481.html",
+          "verifiedAt": "2026-08-10"
+        },
+        {
+          "title": "清水湖山水进阶线",
+          "badge": "体力进阶",
+          "suitability": "适合体力较好、希望看湖山全景的游客",
+          "nodes": ["游客中心", "清水湖码头", "骆驼峰山脚", "八戒峰", "将军楼", "景区出口"],
+          "duration": "约大半天",
+          "walking": "乘船后有连续山路和台阶，骆驼峰登顶可按体力放弃",
+          "physical": 4,
+          "tips": ["先确认游船与进阶线路当天开放", "恐高者不走近垂直铁梯登顶段"],
+          "sourceTitle": "携程龟峰风景名胜区两条主游路说明",
+          "sourceUrl": "https://you.ctrip.com/sight/yiyang2406/127481.html",
+          "verifiedAt": "2026-08-10"
+        }
+      ],
+      "lazy_tips": "家庭出行先把经典线走完整，再按天气、开放情况和体力决定是否增加游船及骆驼峰一带；不要把进阶登高当作必完成项目。",
+      "source_evidence": {
+        "source": "文化和旅游部大众旅游服务与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务江西页：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangxi&type=0",
+          "携程龟峰风景名胜区：https://you.ctrip.com/sight/yiyang2406/127481.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-10",
+        "note": "开放、票价、观光车和游船为动态信息，页面不固化临时价格。"
+      },
+      "image_source": {
+        "title": "Yiyang Guifeng 2015.07.18 12-58-22",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yiyang_Guifeng_2015.07.18_12-58-22.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_46230a5d96",
+      "id": "manual_jiangxi_jinggangshan",
+      "name": "井冈山风景旅游区",
+      "city": "吉安",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/jiangxi_jinggangshan_verified.jpg",
+      "description": "井冈山是一处融合革命历史遗址、山岳森林和高山田园的国家5A级旅游景区，主要游览板块分散在茨坪、黄洋界、龙潭、大井、主峰等区域。",
+      "intro": "井冈山位于湘赣交界罗霄山脉中段，是中国革命根据地历史的重要见证地。景点之间距离较远，家庭出行宜以茨坪为住宿和换乘中心，按观光车线路分日游览。",
+      "level": "国家5A级旅游景区",
+      "category": "红色人文与山岳风光",
+      "tags": ["革命历史", "山岳森林", "红色旅游"],
+      "address": "江西省吉安市井冈山市茨坪镇",
+      "openHours": "各景点、纪念场馆和观光车运营时间不完全一致，临时关闭与交通管制以井冈山景区官方公告为准",
+      "price": "门票、观光车及部分体验项目政策可能调整，以井冈山景区官方购票渠道和现场公示为准",
+      "tips": "井冈山不是一个步行可走完的单点景区。第一次到访建议至少安排两天，以茨坪为中心分线游览，不在一天内追完黄洋界、龙潭、大井和主峰。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "山地早晚温差大，建议防风外套、长裤和防滑鞋；春季可备轻便雨具。",
+          "summer": "透气速干衣物、防晒和雨具并备，林区湿度大但山顶、车站空调环境可能偏凉。",
+          "winter": "保暖防风外套、帽子和防滑鞋更稳妥，遇低温雨雪应缩减山路行程。",
+          "tips": "即使夏季也建议带一件薄外套；纪念场馆参观衣着保持整洁庄重。"
+        },
+        "transport": {
+          "external_arrive": "井冈山机场距茨坪较远，可转机场交通；井冈山站到茨坪可按当日班次换乘。自驾到景区后仍建议先确认车辆通行和观光车政策。",
+          "internal_arrive": "以茨坪游客服务中心或观光车总站为换乘核心，按A、B、C线及专线分区游览。",
+          "internal_traffic": "A线连接小井、龙潭、百竹园、黄洋界；B线连接大井、水口；C线前往主峰，其他专线以官方当天调度为准。",
+          "tips": "上车前确认末班时间和返程站点；同一天优先选择一条主线，避免反复回总站换乘。"
+        },
+        "housing": [
+          {"area": "茨坪镇", "desc": "住宿、餐饮和观光车换乘最方便，适合第一次到访和家庭游客。"},
+          {"area": "龙市或茅坪片区", "desc": "适合重点安排会师与革命旧址线路，但与茨坪主景区之间的交通应提前核对。"}
+        ],
+        "food": ["红米饭", "南瓜汤", "烟笋烧肉", "井冈豆皮"],
+        "special_care": {
+          "elderly": "每天安排一条观光车主线，把纪念场馆和自然景点交替组合；龙潭等连续台阶路段按体力取舍。",
+          "children": "提前用简短历史背景帮助理解场馆内容；山路、瀑布和观景台区域全程由成人看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "黄洋界红色经典线",
+          "badge": "首次必看",
+          "suitability": "适合第一次到访、希望兼顾历史与自然的家庭",
+          "nodes": ["茨坪观光车总站", "小井", "龙潭或百竹园", "黄洋界", "茨坪"],
+          "duration": "约1天",
+          "walking": "景点间乘A线观光车，点内有台阶；龙潭可按体力缩短",
+          "physical": 2.5,
+          "tips": ["先看当天A线发班与末班时间", "带长辈时龙潭和百竹园不必全部走满"],
+          "sourceTitle": "井冈山景区官方交通线路",
+          "sourceUrl": "https://www.jgstour.com/article/service/219",
+          "verifiedAt": "2026-08-10"
+        },
+        {
+          "title": "大井—主峰分线休闲游",
+          "badge": "分线慢游",
+          "suitability": "适合住茨坪两晚、希望减少赶路的家庭",
+          "nodes": ["茨坪", "大井", "水口或返回休息", "主峰线路", "茨坪"],
+          "duration": "约1天，可拆为两个半天",
+          "walking": "B线和C线分开乘坐，点内短至中等距离步行",
+          "physical": 2,
+          "tips": ["大井、水口与主峰不要强行压成半天", "遇雨雾或临时管制优先保留场馆与茨坪城区行程"],
+          "sourceTitle": "井冈山景区官方交通与游览资料",
+          "sourceUrl": "https://www.jgstour.com/article/service/219",
+          "verifiedAt": "2026-08-10"
+        }
+      ],
+      "lazy_tips": "以茨坪为中心按观光车线路分日安排，比按景点名逐个追更省力；先确认当天开放、交通管制和末班车，再决定自然景点与纪念场馆的组合。",
+      "source_evidence": {
+        "source": "文化和旅游部大众旅游服务、井冈山管理局官网与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务江西页：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangxi&type=0",
+          "井冈山旅游网景区交通：https://www.jgstour.com/article/service/219",
+          "携程井冈山景点列表：https://you.ctrip.com/sight/jinggangshan171.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-10",
+        "note": "井冈山按多片区景区建模，动态票价、开放和观光车调度以官方当天公告为准。"
+      },
+      "image_source": {
+        "title": "井冈山大井附近 01",
+        "author": "Windmemories",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:井冈山大井附近_01.jpg"
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B0FFKHIMXK": {
+      "image": "/assets/images/attractions/jiangxi_wangxiangu_verified.jpg",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "山谷早晚偏凉，建议薄外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒和驱蚊用品并备，傍晚看夜景可带一件薄外套。",
+          "winter": "保暖防风外套和防滑鞋更实用，夜游体感会明显下降。",
+          "tips": "石阶、栈道和雨后路面较滑，不建议穿高跟鞋；婴儿车在多台阶区域使用不便。"
+        },
+        "transport": {
+          "external_arrive": "可先到上饶站，再按官方或正规平台当天信息选择景区直通车、客运、包车或自驾前往。",
+          "internal_arrive": "抵达游客中心后按当日开放入口和景交安排进谷，先确认夜游结束后的返程方式。",
+          "internal_traffic": "景区以步行、台阶和栈道游览为主，部分入口段可使用景交；具体停靠以现场为准。",
+          "tips": "夜景结束时客流集中，提前确认末班交通和集合点，不把网约车即时接单作为唯一返程方案。"
+        },
+        "housing": [
+          {"area": "望仙谷景区内", "desc": "方便体验清晨和夜景、减少往返，但价格、入住权益和行李接驳需提前确认。"},
+          {"area": "景区周边", "desc": "选择相对灵活，预订前确认是否提供接送及夜游后的返程时间。"},
+          {"area": "上饶城区", "desc": "交通和餐饮选择多，但往返路程较长，夜游后返程要预留时间。"}
+        ],
+        "food": ["上饶鸡腿", "铅山烫粉", "灯盏粿", "弋阳年糕"],
+        "special_care": {
+          "elderly": "以下午进园、主街和核心夜景为主，减少玻璃栈道及连续上下台阶；累时及时原路折返。",
+          "children": "台阶、临水和人流密集处全程看护；夜游注意保暖、补水和返程时间。"
+        }
+      },
+      "source_evidence": {
+        "basicInfoSources": [
+          "高德地图望仙谷POI：https://www.amap.com/",
+          "携程望仙谷景区资料：https://you.ctrip.com/sight/shangrao547/120251767.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-10",
+        "note": "开放、演出、票价和景交为动态信息，具体以景区当天公告为准。"
+      },
+      "image_source": {
+        "title": "Wangxiangu Scenic Area - 23 (July 19, 2025)",
+        "author": "茅野ふたば",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wangxiangu_Scenic_Area_-_23_(July_19,_2025).jpg"
+      }
+    }
+  }
+}

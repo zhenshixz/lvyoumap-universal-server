@@ -23,10 +23,21 @@
         "tips": "老城停车紧张，自驾先停外围停车场，不在预约临近时寻找路边车位。"
       },
       "housing": [
-        {"area": "红花岗老城", "desc": "步行到会址方便，适合早场预约，但订房前确认停车条件。"},
-        {"area": "遵义站或主城区", "desc": "交通和住宿选择多，可按预约时间网约车前往。"}
+        {
+          "area": "红花岗老城",
+          "desc": "步行到会址方便，适合早场预约，但订房前确认停车条件。"
+        },
+        {
+          "area": "遵义站或主城区",
+          "desc": "交通和住宿选择多，可按预约时间网约车前往。"
+        }
       ],
-      "food": ["遵义羊肉粉", "豆花面", "红油米皮", "恋爱豆腐果"],
+      "food": [
+        "遵义羊肉粉",
+        "豆花面",
+        "红油米皮",
+        "恋爱豆腐果"
+      ],
       "special_care": {
         "elderly": "选择开馆后较早预约时段，先看会址和核心陈列，减少长时间站立；轮椅及无障碍服务到场前向馆方确认。",
         "children": "用一至两个核心主题串联参观，不追求看完所有文字展板；在人流密集的单向动线中牵好孩子。"
@@ -39,6 +50,63 @@
       ],
       "basicInfoUpdatedAt": "2026-08-10",
       "note": "开放时段存在节假日和夜间调整，因此页面只保留预约原则并要求出发前核对。"
+    }
+  },
+  "amap_B0FFKHIMXK": {
+    "image": "/assets/images/attractions/jiangxi_wangxiangu_verified.jpg",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "山谷早晚偏凉，建议薄外套、长裤和防滑运动鞋。",
+        "summer": "速干衣、防晒和驱蚊用品并备，傍晚看夜景可带一件薄外套。",
+        "winter": "保暖防风外套和防滑鞋更实用，夜游体感会明显下降。",
+        "tips": "石阶、栈道和雨后路面较滑，不建议穿高跟鞋；婴儿车在多台阶区域使用不便。"
+      },
+      "transport": {
+        "external_arrive": "可先到上饶站，再按官方或正规平台当天信息选择景区直通车、客运、包车或自驾前往。",
+        "internal_arrive": "抵达游客中心后按当日开放入口和景交安排进谷，先确认夜游结束后的返程方式。",
+        "internal_traffic": "景区以步行、台阶和栈道游览为主，部分入口段可使用景交；具体停靠以现场为准。",
+        "tips": "夜景结束时客流集中，提前确认末班交通和集合点，不把网约车即时接单作为唯一返程方案。"
+      },
+      "housing": [
+        {
+          "area": "望仙谷景区内",
+          "desc": "方便体验清晨和夜景、减少往返，但价格、入住权益和行李接驳需提前确认。"
+        },
+        {
+          "area": "景区周边",
+          "desc": "选择相对灵活，预订前确认是否提供接送及夜游后的返程时间。"
+        },
+        {
+          "area": "上饶城区",
+          "desc": "交通和餐饮选择多，但往返路程较长，夜游后返程要预留时间。"
+        }
+      ],
+      "food": [
+        "上饶鸡腿",
+        "铅山烫粉",
+        "灯盏粿",
+        "弋阳年糕"
+      ],
+      "special_care": {
+        "elderly": "以下午进园、主街和核心夜景为主，减少玻璃栈道及连续上下台阶；累时及时原路折返。",
+        "children": "台阶、临水和人流密集处全程看护；夜游注意保暖、补水和返程时间。"
+      }
+    },
+    "source_evidence": {
+      "basicInfoSources": [
+        "高德地图望仙谷POI：https://www.amap.com/",
+        "携程望仙谷景区资料：https://you.ctrip.com/sight/shangrao547/120251767.html"
+      ],
+      "basicInfoUpdatedAt": "2026-08-10",
+      "note": "开放、演出、票价和景交为动态信息，具体以景区当天公告为准。"
+    },
+    "image_source": {
+      "title": "Wangxiangu Scenic Area - 23 (July 19, 2025)",
+      "author": "茅野ふたば",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wangxiangu_Scenic_Area_-_23_(July_19,_2025).jpg"
     }
   }
 }

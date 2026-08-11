@@ -1,429 +1,63 @@
 {
-  "province": "贵州",
+  "province": "福建",
   "checkedAt": "2026-08-10",
-  "method": "官方来源确认身份与等级；携程、去哪儿确认主流旅游认知；大众点评仅补充本地口碑存在性。OTA评分和票价不作为长期事实。",
-  "sourcePolicy": {},
-  "baselineCount": 15,
-  "recordCount": 134,
+  "method": "官方名录确认景区身份与等级；福建省规划和世界遗产体系确认文化与自然代表性；携程 Trip.Best、大众点评、小红书用于判断游客认知、真实讨论热度和体验痛点。口碑平台的评分、排名和笔记数量会变化，只作为是否进入核心候选的辅助证据，不作为票价、开放时间等长期事实。",
+  "sourcePolicy": {
+    "official": "用于确认名称、等级、城市、开放规则和其他事实",
+    "ota": "用于判断跨区域游客认知和长期预订热度",
+    "dianping": "用于判断本地口碑、到访密度和常见体验问题",
+    "xiaohongshu": "用于判断年轻及家庭游客关注度、路线需求和近期体验问题",
+    "restriction": "不得把动态评分、票价、帖子内容直接固化为永久事实"
+  },
+  "baselineCount": 17,
+  "recordCount": 209,
   "counts": {
-    "present": 15,
+    "present": 17,
     "review": 0,
     "missing": 0
   },
   "coverage": 1,
-  "readyCount": 15,
+  "readyCount": 17,
   "qualityBands": {
-    "stable": 6,
-    "improve": 9,
+    "stable": 1,
+    "improve": 16,
     "incomplete": 0,
     "priority": 0,
     "missing": 0,
     "review": 0
   },
   "issueCounts": {
-    "source.basicInfoTraceability": 8,
-    "image.sourceOrLicense": 9
+    "image.sourceOrLicense": 16,
+    "source.basicInfoTraceability": 15
   },
   "items": [
     {
-      "key": "huangguoshu",
-      "name": "黄果树旅游景区",
-      "city": "",
+      "key": "gulangyu",
+      "name": "鼓浪屿风景名胜区",
+      "city": "厦门",
       "tier": "national",
-      "basis": [],
+      "basis": [
+        "official_5a",
+        "world_heritage",
+        "ota_popularity",
+        "social_popularity"
+      ],
       "evidence": [
-        "official_a_list",
-        "ctrip_guizhou"
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "dianping_gulangyu_sample",
+        "xiaohongshu_fujian_search"
       ],
       "preferredId": "",
       "status": "present",
       "reason": "exact_alias",
       "matches": [
         {
-          "id": "amap_B0FFHCXU0K",
-          "name": "黄果树旅游景区",
-          "city": "安顺",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "fanjingshan",
-      "name": "梵净山",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "amap_B0358001VZ",
-          "name": "梵净山风景区",
-          "city": "铜仁",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "libo_xiaoqikong",
-      "name": "荔波小七孔",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "amap_B035600C1Q",
-      "status": "present",
-      "reason": "preferred_id",
-      "matches": [
-        {
-          "id": "amap_B035600C1Q",
-          "name": "小七孔景区",
-          "city": "黔南布依族苗族",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ],
-      "alternatives": [
-        {
-          "id": "amap_B0FFFEA18T",
-          "name": "荔波樟江风景名胜区",
-          "city": "黔南布依族苗族",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "xijiang_qianhu",
-      "name": "西江千户苗寨",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan",
-        "official_price_2026",
-        "ctrip_guizhou",
-        "qunar_xijiang",
-        "dianping_xijiang"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_xijiang_qianhu_miaozhai",
-          "name": "西江千户苗寨",
-          "city": "黔东南",
-          "dataLayer": "manual",
-          "quality": {
-            "ready": true,
-            "score": 100,
-            "band": "stable",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": true,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": []
-          }
-        }
-      ]
-    },
-    {
-      "key": "zhijindong",
-      "name": "织金洞",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "amap_B0359003K3",
-      "status": "present",
-      "reason": "preferred_id",
-      "matches": [
-        {
-          "id": "amap_B0359003K3",
-          "name": "织金洞景区",
-          "city": "毕节",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ],
-      "alternatives": [
-        {
-          "id": "amap_B0FFMCEONZ",
-          "name": "织金洞",
-          "city": "毕节",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "china_sky_eye",
-      "name": "中国天眼景区",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_china_sky_eye",
-          "name": "中国天眼景区",
-          "city": "黔南",
-          "dataLayer": "manual",
-          "quality": {
-            "ready": true,
-            "score": 100,
-            "band": "stable",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": true,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": []
-          }
-        }
-      ]
-    },
-    {
-      "key": "qingyan",
-      "name": "青岩古镇",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "amap_B035300ESE",
-          "name": "青岩古镇",
-          "city": "贵阳",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "wanfenglin",
-      "name": "万峰林景区",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan",
-        "ctrip_guizhou"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_wanfenglin",
-          "name": "万峰林景区",
-          "city": "黔西南",
-          "dataLayer": "manual",
-          "quality": {
-            "ready": true,
-            "score": 100,
-            "band": "stable",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": true,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": []
-          }
-        }
-      ]
-    },
-    {
-      "key": "zhaoxing",
-      "name": "肇兴侗寨",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan",
-        "ctrip_guizhou",
-        "qunar_xijiang"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_zhaoxing_dong_village",
-          "name": "肇兴侗寨",
-          "city": "黔东南",
-          "dataLayer": "manual",
-          "quality": {
-            "ready": true,
-            "score": 100,
-            "band": "stable",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": true,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": []
-          }
-        }
-      ]
-    },
-    {
-      "key": "zunyi_meeting",
-      "name": "遵义会议会址",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_plan"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "amap_B0FFH1ULF2",
-          "name": "遵义会议会址纪念馆",
-          "city": "遵义",
+          "id": "amap_B025003YN2",
+          "name": "鼓浪屿风景名胜区",
+          "city": "厦门",
           "dataLayer": "db",
           "quality": {
             "ready": true,
@@ -444,161 +78,673 @@
       ]
     },
     {
-      "key": "chishui_danxia",
-      "name": "赤水丹霞",
-      "city": "",
+      "key": "wuyishan",
+      "name": "武夷山风景名胜区",
+      "city": "南平",
       "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "official_plan"
+      "basis": [
+        "official_5a",
+        "world_heritage",
+        "ota_popularity",
+        "social_popularity"
       ],
-      "preferredId": "amap_B0FFHNDRYB",
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B025706YPD",
+          "name": "武夷山风景名胜区",
+          "city": "南平",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "taining",
+      "name": "泰宁风景旅游区",
+      "city": "三明",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "world_heritage"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0FFLB1TE3",
+          "name": "泰宁风景旅游区",
+          "city": "三明",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "fujian_tulou_yongding",
+      "name": "福建土楼永定景区",
+      "city": "龙岩",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "world_heritage",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0G1C7SAS8",
+          "name": "福建土楼永定景区",
+          "city": "龙岩",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "fujian_tulou_nanjing",
+      "name": "福建土楼（南靖）景区",
+      "city": "漳州",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "world_heritage",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0G0P9H6U9",
+          "name": "福建土楼(南靖)景区",
+          "city": "漳州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "baishuiyang",
+      "name": "白水洋风景区",
+      "city": "宁德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0FFKFB6BG",
+          "name": "白水洋风景区",
+          "city": "宁德",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "yuanyangxi",
+      "name": "鸳鸯溪景区",
+      "city": "宁德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0FFFS3JZK",
+          "name": "鸳鸯溪景区",
+          "city": "宁德",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "qingyuanshan",
+      "name": "清源山",
+      "city": "泉州",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "world_heritage_context"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0253012I0",
+          "name": "清源山国家重点风景名胜区",
+          "city": "泉州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "taimushan",
+      "name": "太姥山",
+      "city": "宁德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B02510269P",
+          "name": "太姥山国家级风景名胜区",
+          "city": "宁德",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "sanfangqixiang",
+      "name": "三坊七巷",
+      "city": "福州",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B024F0VEQ4",
+          "name": "三坊七巷",
+          "city": "福州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "gutian_meeting",
+      "name": "古田会议会址",
+      "city": "龙岩",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "red_tourism"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B025502B2U",
+          "name": "古田会议会址",
+          "city": "龙岩",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "meizhou_island",
+      "name": "湄洲岛妈祖文化旅游区",
+      "city": "莆田",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "cultural_icon",
+        "ota_popularity"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B02520ND6E",
+          "name": "湄洲岛国家旅游度假区",
+          "city": "莆田",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "xiamen_botanical_garden",
+      "name": "厦门园林植物园",
+      "city": "厦门",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_2024_new_5a",
+        "official_2025_a_list",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B025003OPX",
+          "name": "厦门园林植物园",
+          "city": "厦门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "guanzhaishan",
+      "name": "冠豸山景区",
+      "city": "龙岩",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "official_2025_a_list",
+        "official_fujian_spatial_plan",
+        "ctrip_fujian"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B025501M3Y",
+          "name": "冠豸山景区",
+          "city": "龙岩",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "pingtan_island",
+      "name": "平潭国际旅游岛",
+      "city": "福州",
+      "tier": "regional_icon",
+      "basis": [
+        "ota_popularity",
+        "social_popularity",
+        "coastal_icon"
+      ],
+      "evidence": [
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0FFI919GJ",
+          "name": "平潭国际旅游岛",
+          "city": "福州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "quanzhou_kaiyuan_temple",
+      "name": "泉州开元寺",
+      "city": "泉州",
+      "tier": "regional_icon",
+      "basis": [
+        "world_heritage_context",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "",
+      "status": "present",
+      "reason": "exact_alias",
+      "matches": [
+        {
+          "id": "amap_B0253016EC",
+          "name": "泉州大开元寺",
+          "city": "泉州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "xiapu_mudflat",
+      "name": "霞浦滩涂",
+      "city": "宁德",
+      "tier": "regional_icon",
+      "basis": [
+        "photography_icon",
+        "ota_popularity",
+        "social_popularity"
+      ],
+      "evidence": [
+        "official_fujian_spatial_plan",
+        "ctrip_fujian",
+        "tripbest_fujian",
+        "xiaohongshu_fujian_search"
+      ],
+      "preferredId": "manual_fujian_xiapu_mudflat",
       "status": "present",
       "reason": "preferred_id",
       "matches": [
         {
-          "id": "amap_B0FFHNDRYB",
-          "name": "赤水丹霞旅游区",
-          "city": "遵义",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ],
-      "alternatives": [
-        {
-          "id": "amap_B03540M3AW",
-          "name": "赤水丹霞旅游区大瀑布",
-          "city": "遵义",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "baili_dujuan",
-      "name": "百里杜鹃",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "official_plan"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "amap_B03590P0RY",
-          "name": "中国百里杜鹃风景名胜区",
-          "city": "毕节",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "longgong",
-      "name": "龙宫",
-      "city": "",
-      "tier": "national",
-      "basis": [],
-      "evidence": [
-        "official_a_list",
-        "official_plan"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "amap_B03550I7MA",
-          "name": "龙宫风景区",
-          "city": "安顺",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "zhenyuan",
-      "name": "镇远古城",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan",
-        "qunar_xijiang"
-      ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_zhenyuan_ancient_town",
-          "name": "镇远古城",
-          "city": "黔东南",
+          "id": "manual_fujian_xiapu_mudflat",
+          "name": "霞浦滩涂",
+          "city": "宁德",
           "dataLayer": "manual",
           "quality": {
             "ready": true,
@@ -614,41 +760,8 @@
             "issues": []
           }
         }
-      ]
-    },
-    {
-      "key": "malinghe",
-      "name": "马岭河峡谷",
-      "city": "",
-      "tier": "regional_icon",
-      "basis": [],
-      "evidence": [
-        "official_plan"
       ],
-      "preferredId": "",
-      "status": "present",
-      "reason": "exact_alias",
-      "matches": [
-        {
-          "id": "manual_guizhou_malinghe_canyon",
-          "name": "马岭河峡谷",
-          "city": "黔西南",
-          "dataLayer": "manual",
-          "quality": {
-            "ready": true,
-            "score": 100,
-            "band": "stable",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": true,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": []
-          }
-        }
-      ]
+      "alternatives": []
     }
   ]
 }

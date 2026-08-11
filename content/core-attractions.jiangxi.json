@@ -1,0 +1,541 @@
+{
+  "province": "江西",
+  "checkedAt": "2026-08-10",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A作为硬基线，国家级旅游度假区作为官方补充候选；携程与小红书用于判断跨区域认知和长期口碑。非5A至少命中两个维度才进入推荐清单，单源结果只进入待确认区。",
+  "sourcePolicy": {
+    "official": "确认国家5A身份与评定年份；国家级旅游度假区需再命中高德、携程或小红书之一才进入核心清单",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非5A需跨来源命中；单源候选不直接进入核心清单；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=jiangxi&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/jiangxi100054.html",
+    "amap_local_snapshot": "content/db.json"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 15,
+  "officialResortCandidateCount": 5,
+  "popularityCount": 6,
+  "existingRecordBoundCount": 19,
+  "existingRecordUnboundCount": 2,
+  "existingRecordUnboundNames": [
+    "龟峰景区",
+    "井冈山风景旅游区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 7,
+  "reviewCandidates": [
+    {
+      "name": "景德镇中国陶瓷博物馆",
+      "city": "",
+      "aliases": [
+        "景德镇中国陶瓷博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0
+    },
+    {
+      "name": "江西省博物馆",
+      "city": "南昌",
+      "aliases": [
+        "江西省博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0
+    },
+    {
+      "name": "御窑博物馆",
+      "city": "景德镇",
+      "aliases": [
+        "御窑博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0
+    },
+    {
+      "name": "葛仙村",
+      "city": "上饶",
+      "aliases": [
+        "葛仙村",
+        "葛仙村度假区"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 65,
+      "preferredId": "amap_B031900WXO"
+    },
+    {
+      "name": "海昏侯遗址公园",
+      "city": "南昌",
+      "aliases": [
+        "海昏侯遗址公园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0
+    },
+    {
+      "name": "白鹭洲书院",
+      "city": "吉安",
+      "aliases": [
+        "白鹭洲书院"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0
+    },
+    {
+      "name": "文昌里历史街区",
+      "city": "抚州",
+      "aliases": [
+        "文昌里历史街区"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0
+    }
+  ],
+  "attractions": [
+    {
+      "key": "core_b1c00ef433",
+      "name": "篁岭景区",
+      "preferredId": "amap_B03190QMY3",
+      "aliases": [
+        "篁岭景区",
+        "上饶市篁岭景区",
+        "篁岭"
+      ],
+      "city": "上饶",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_fcc6e182b6",
+      "name": "三百山景区",
+      "preferredId": "amap_B031D00L6E",
+      "aliases": [
+        "三百山景区",
+        "赣州市三百山景区",
+        "三百山"
+      ],
+      "city": "赣州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_022f3c177e",
+      "name": "庐山西海景区",
+      "preferredId": "amap_B031803ZLY",
+      "aliases": [
+        "庐山西海景区",
+        "九江市永修县庐山西海景区",
+        "庐山西海"
+      ],
+      "city": "九江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_f648bb65ca",
+      "name": "萍乡武功山景区",
+      "preferredId": "amap_B031F00C38",
+      "aliases": [
+        "萍乡武功山景区",
+        "萍乡市芦溪县萍乡武功山景区",
+        "萍乡武功山"
+      ],
+      "city": "萍乡",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_dfbfeecf63",
+      "name": "滕王阁旅游区",
+      "preferredId": "amap_B031701YGL",
+      "aliases": [
+        "滕王阁旅游区",
+        "南昌市东湖区滕王阁旅游区",
+        "滕王阁"
+      ],
+      "city": "南昌",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_7620497bda",
+      "name": "龟峰景区",
+      "preferredId": "manual_jiangxi_guifeng",
+      "aliases": [
+        "龟峰景区",
+        "上饶市弋阳县龟峰景区",
+        "龟峰"
+      ],
+      "city": "上饶",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_da448a5731",
+      "name": "大觉山景区",
+      "preferredId": "amap_B031A010JE",
+      "aliases": [
+        "大觉山景区",
+        "抚州市资溪县大觉山景区",
+        "大觉山"
+      ],
+      "city": "抚州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_247381b956",
+      "name": "明月山旅游区",
+      "preferredId": "amap_B031B0OXWL",
+      "aliases": [
+        "明月山旅游区",
+        "宜春市袁州区明月山旅游区",
+        "明月山"
+      ],
+      "city": "宜春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_f383d4932f",
+      "name": "共和国摇篮景区",
+      "preferredId": "amap_B0LAGUSR8Y",
+      "aliases": [
+        "共和国摇篮景区",
+        "赣州市瑞金市共和国摇篮景区",
+        "共和国摇篮"
+      ],
+      "city": "赣州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_13000c06e6",
+      "name": "古窑民俗博览区",
+      "preferredId": "amap_B031E0035B",
+      "aliases": [
+        "古窑民俗博览区",
+        "景德镇市昌江区古窑民俗博览区"
+      ],
+      "city": "景德镇",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_210c6c7530",
+      "name": "江湾景区",
+      "preferredId": "amap_B0FFF0F10H",
+      "aliases": [
+        "江湾景区",
+        "上饶市婺源县江湾景区",
+        "江湾"
+      ],
+      "city": "上饶",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_83160bcd86",
+      "name": "龙虎山风景名胜区",
+      "preferredId": "amap_B02BD0LUSF",
+      "aliases": [
+        "龙虎山风景名胜区",
+        "鹰潭市贵溪市龙虎山风景名胜区",
+        "龙虎山"
+      ],
+      "city": "鹰潭",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_33d3b45149",
+      "name": "三清山风景区",
+      "preferredId": "amap_B0319005FP",
+      "aliases": [
+        "三清山风景区",
+        "上饶市玉山县三清山风景区",
+        "三清山"
+      ],
+      "city": "上饶",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_46230a5d96",
+      "name": "井冈山风景旅游区",
+      "preferredId": "manual_jiangxi_jinggangshan",
+      "aliases": [
+        "井冈山风景旅游区",
+        "吉安市井冈山市井冈山风景旅游区",
+        "井冈山"
+      ],
+      "city": "吉安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_571ce25d83",
+      "name": "庐山风景名胜区",
+      "preferredId": "amap_B031803HUW",
+      "aliases": [
+        "庐山风景名胜区",
+        "九江市庐山市庐山风景名胜区",
+        "庐山"
+      ],
+      "city": "九江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_2d53e81690",
+      "name": "陶阳里旅游区",
+      "preferredId": "amap_B0LBACTXK3",
+      "aliases": [
+        "陶阳里旅游区",
+        "陶阳里",
+        "景德镇陶阳里历史文化旅游区"
+      ],
+      "city": "景德镇",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 8
+      }
+    },
+    {
+      "key": "core_ea8a011677",
+      "name": "望仙谷",
+      "preferredId": "amap_B0FFKHIMXK",
+      "aliases": [
+        "望仙谷",
+        "望仙谷景区"
+      ],
+      "city": "上饶",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": 17
+      }
+    },
+    {
+      "key": "core_70b10f0f2a",
+      "name": "婺女洲度假区",
+      "preferredId": "amap_B0I6YAU3C4",
+      "aliases": [
+        "婺女洲度假区"
+      ],
+      "city": "上饶",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 5
+      }
+    },
+    {
+      "key": "core_9f6a0d79fc",
+      "name": "陶溪川",
+      "preferredId": "amap_B0FFFHARV3",
+      "aliases": [
+        "陶溪川",
+        "陶溪川文创街区"
+      ],
+      "city": "景德镇",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 7
+      }
+    },
+    {
+      "key": "core_fa197ff51e",
+      "name": "万载古城",
+      "preferredId": "amap_B0FFKYAG1D",
+      "aliases": [
+        "万载古城"
+      ],
+      "city": "宜春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 23
+      }
+    },
+    {
+      "key": "core_ccf24ae37d",
+      "name": "南昌梅岭生态旅游度假区",
+      "preferredId": "amap_B031704Z7O",
+      "aliases": [
+        "南昌梅岭生态旅游度假区",
+        "梅岭生态旅游度假区"
+      ],
+      "city": "南昌",
+      "tier": "regional_icon",
+      "basis": [
+        "official_resort_cross_source"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 32
+      }
+    }
+  ]
+}

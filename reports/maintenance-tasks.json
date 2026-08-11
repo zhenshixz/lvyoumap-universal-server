@@ -1,0 +1,211 @@
+{
+  "generatedAt": "2026-08-10T09:50:31.858Z",
+  "scope": "江西",
+  "summary": {
+    "coreBlocking": 0,
+    "automaticPending": 0,
+    "recommendedImprovements": 18
+  },
+  "blocking": [],
+  "automatic": [],
+  "recommended": [
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B03190QMY3",
+      "name": "婺源篁岭景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031D00L6E",
+      "name": "三百山国家级风景名胜区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031803ZLY",
+      "name": "庐山西海风景名胜区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031F00C38",
+      "name": "萍乡武功山国家级风景名胜区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031701YGL",
+      "name": "滕王阁",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031A010JE",
+      "name": "大觉山风景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031B0OXWL",
+      "name": "宜春明月山国家级风景名胜区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0LAGUSR8Y",
+      "name": "共和国摇篮景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031E0035B",
+      "name": "景德镇古窑民俗博览区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0FFF0F10H",
+      "name": "江湾景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B02BD0LUSF",
+      "name": "龙虎山国家级旅游风景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0319005FP",
+      "name": "三清山国家级旅游风景区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031803HUW",
+      "name": "庐山国家级旅游风景名胜区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0LBACTXK3",
+      "name": "景德镇陶阳里历史文化旅游区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0I6YAU3C4",
+      "name": "婺女洲度假区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0FFFHARV3",
+      "name": "陶溪川文创街区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B0FFKYAG1D",
+      "name": "万载古城",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    },
+    {
+      "type": "quality_metadata",
+      "province": "江西",
+      "id": "amap_B031704Z7O",
+      "name": "梅岭生态旅游度假区",
+      "score": 90,
+      "issues": [
+        "source.basicInfoTraceability",
+        "image.sourceOrLicense"
+      ]
+    }
+  ]
+}

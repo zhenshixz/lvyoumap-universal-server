@@ -35,6 +35,7 @@ const nameFilter = String(args.get('name') || '');
 const limit = Math.max(0, Number(args.get('limit') || 0));
 const loginTimeoutMs = Math.max(60000, Number(args.get('login-timeout') || 600000));
 const answerWaitMs = Math.max(12000, Number(args.get('answer-wait') || 45000));
+const requestDelayMs = Math.max(3000, Number(args.get('request-delay') || 8000));
 
 function nowIso() {
   return new Date().toISOString();
@@ -100,7 +101,7 @@ function answerQuality(text) {
   const sections = lines.filter(line => line.length <= 28 && /(路线|顺序|技巧|注意|提醒|建议|省力)/.test(line)).length;
   const trailing = lines.at(-1) || '';
   const complete = answer.length >= 500
-    && routeSignals >= 3
+    && routeSignals >= 2
     && audienceSignals >= 2
     && safetySignals >= 1
     && sections >= 1
@@ -110,9 +111,21 @@ function answerQuality(text) {
 }
 
 function isExcludedName(name) {
-  return /(火车站|高铁站|汽车站|站前|停车场|停车区|服务区|售票处|卫生间|游客中心|服务中心|入口|出口|检票口|换乘中心|码头售票|普通广场)/.test(name)
-    || (/(站|停车场|服务区|售票处|卫生间|入口|出口|游客中心|服务中心|广场)$/.test(name) && !/天安门广场/.test(name));
+  return /(火车站|高铁站|汽车站|站前|停车场|停车区|服务区|售票处|卫生间|游客中心|服务中心|入口|出口|检票口|换乘中心|码头售票|普通广场|人民公园)/.test(name)
+    || (/(站|停车场|服务区|售票处|卫生间|入口|出口|游客中心|服务中心|广场|公园)$/.test(name) && !/天安门广场/.test(name));
 }
+
+function buildCorePreferredIds() {
+  const contentDir = path.join(rootDir, 'content');
+  const ids = new Set();
+  for (const name of fs.readdirSync(contentDir).filter(item => /^core-attractions\.[a-z0-9_-]+\.json$/i.test(item))) {
+    const baseline = readJson(path.join(contentDir, name), {});
+    for (const attraction of baseline.attractions || []) if (attraction.preferredId) ids.add(attraction.preferredId);
+  }
+  return ids;
+}
+
+const corePreferredIds = buildCorePreferredIds();
 
 function buildAllRecords() {
   const db = readJson(dbPath, { provinces: {} });
@@ -122,6 +135,14 @@ function buildAllRecords() {
     for (const [provinceName, additions] of Object.entries(layer)) {
       manual[provinceName] = [...(manual[provinceName] || []), ...(additions || [])];
     }
+  }
+  for (const name of fs.readdirSync(path.join(rootDir, 'content')).filter(item => /^core-repair-packages\.[a-z0-9_-]+\.json$/i.test(item)).sort()) {
+    const repairPackage = readJson(path.join(rootDir, 'content', name), {});
+    if (repairPackage.status !== 'reviewed' || !repairPackage.province) continue;
+    manual[repairPackage.province] = [
+      ...(manual[repairPackage.province] || []),
+      ...(repairPackage.attractions || []).map(({ baselineKey, ...attraction }) => ({ ...attraction, __repairPackage: true })),
+    ];
   }
   const overrides = readJson(overridesPath, {});
   const records = [];
@@ -135,7 +156,12 @@ function buildAllRecords() {
   for (const [provinceName, additions] of Object.entries(manual || {})) {
     for (const attraction of additions || []) {
       if (ids.has(attraction.id)) continue;
-      records.push({ provinceName, attraction: { ...attraction, ...(overrides[attraction.id] || {}) }, dataLayer: 'manual' });
+      const { __repairPackage, ...cleanAttraction } = attraction;
+      records.push({
+        provinceName,
+        attraction: { ...cleanAttraction, ...(overrides[attraction.id] || {}) },
+        dataLayer: __repairPackage ? 'repair-package' : 'manual',
+      });
       ids.add(attraction.id);
     }
   }
@@ -145,7 +171,7 @@ function buildAllRecords() {
 function isPendingTarget({ provinceName, attraction }) {
     if (provinceFilter && provinceName !== provinceFilter) return false;
     if (nameFilter && !String(attraction.name || '').includes(nameFilter)) return false;
-    if (isExcludedName(String(attraction.name || ''))) return false;
+    if (isExcludedName(String(attraction.name || '')) && !corePreferredIds.has(attraction.id)) return false;
     const alreadyXhs = attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat';
     if (!force && alreadyXhs) return false;
     return true;
@@ -164,7 +190,7 @@ function printStats() {
     if (provinceFilter && row.provinceName !== provinceFilter) continue;
     const item = byProvince.get(row.provinceName) || { total: 0, excluded: 0, xhs: 0, pending: 0 };
     item.total += 1;
-    if (isExcludedName(String(row.attraction.name || ''))) item.excluded += 1;
+    if (isExcludedName(String(row.attraction.name || '')) && !corePreferredIds.has(row.attraction.id)) item.excluded += 1;
     else if (row.attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat') item.xhs += 1;
     else item.pending += 1;
     byProvince.set(row.provinceName, item);
@@ -192,6 +218,10 @@ function findBrowser() {
 
 function loginRequiredText(text) {
   return /登录探索更多内容|登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|扫码登录/.test(text);
+}
+
+function restrictedText(text) {
+  return /访问受限|操作频繁|请求频繁|当前访问存在异常|网络环境存在风险|稍后再试|账号存在风险/.test(text);
 }
 
 async function sleep(ms) {
@@ -239,12 +269,14 @@ async function scrapeOne(page, target) {
   await sleep(1800);
   const initialBody = await page.evaluate(() => document.body.innerText || '');
   if (loginRequiredText(initialBody)) return { ok: false, reason: 'login_required', prompt };
+  if (restrictedText(initialBody)) return { ok: false, reason: 'restricted', prompt };
 
   const started = Date.now();
   let best = '';
   let stable = 0;
   while (Date.now() - started < answerWaitMs) {
     const body = await page.evaluate(() => document.body.innerText || '');
+    if (restrictedText(body)) return { ok: false, reason: 'restricted', prompt, answerPreview: best.slice(0, 1000) };
     const answer = cleanupAnswer(body, prompt);
     if (answer.length > best.length) {
       best = answer;
@@ -317,6 +349,17 @@ async function runCollection() {
   });
   const { browser, page } = await openBrowser();
   try {
+    await page.goto('https://www.xiaohongshu.com/explore', { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await sleep(3000);
+    const homeBody = await page.evaluate(() => document.body.innerText || '').catch(() => '');
+    if (loginRequiredText(homeBody)) {
+      writeProgress({ status: 'login_required', message: '登录已失效，请先在总控任务中心完成登录。', index: 0, total: targets.length, success, failed });
+      return;
+    }
+    if (restrictedText(homeBody)) {
+      writeProgress({ status: 'restricted', message: '小红书当前限制自动访问，任务已暂停；请稍后从总控继续，不要反复扫码。', index: 0, total: targets.length, success, failed });
+      return;
+    }
     for (let index = 0; index < targets.length; index += 1) {
       if (fs.existsSync(stopPath)) break;
       const target = targets[index];
@@ -328,9 +371,13 @@ async function runCollection() {
       } catch (error) {
         result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction) };
       }
-      results.push({ province: target.provinceName, id: target.attraction.id, name: target.attraction.name, ...result });
+      results.push({ province: target.provinceName, id: target.attraction.id, name: target.attraction.name, dataLayer: target.dataLayer, ...result });
       if (result.reason === 'login_required') {
         writeProgress({ status: 'login_required', message: '登录已失效，请先运行 npm run xhs:login。', current, index, total: targets.length, success, failed });
+        break;
+      }
+      if (result.reason === 'restricted') {
+        writeProgress({ status: 'restricted', message: '小红书触发访问限制，任务已安全暂停；已保存的结果不会丢失，请稍后续跑。', current, index, total: targets.length, success, failed });
         break;
       }
       if (result.ok) {
@@ -352,17 +399,28 @@ async function runCollection() {
       }
       atomicWriteJson(samplesPath, results.slice(-100));
       writeProgress({ status: 'running', current, index: index + 1, total: targets.length, success, failed, backup });
-      await sleep(700);
+      await sleep(requestDelayMs);
     }
   } finally {
     await browser.close().catch(() => {});
   }
   const stopped = fs.existsSync(stopPath);
-  const currentProgress = readJson(progressPath, {});
-  if (currentProgress.status !== 'login_required') {
-    writeProgress({ status: stopped ? 'stopped' : 'done', message: stopped ? '已在安全点停止。' : '采集完成。', success, failed, backup });
+  const finalProgress = readJson(progressPath, {});
+  if (!['login_required', 'restricted'].includes(finalProgress.status)) {
+    const status = stopped ? 'stopped' : (failed > 0 ? 'partial' : 'done');
+    const message = stopped ? '已在安全点停止。' : (failed > 0 ? '任务已完成，失败项保留到下次续跑。' : '采集完成。');
+    writeProgress({ status, message, success, failed, backup });
   }
-  if (generateAfter && write && success > 0 && currentProgress.status !== 'login_required') {
+  const hasPendingRepairPackage = results.some(row => row.ok && row.dataLayer === 'repair-package');
+  if (generateAfter && write && success > 0 && hasPendingRepairPackage && !['login_required', 'restricted'].includes(finalProgress.status)) {
+    writeProgress({
+      status: stopped ? 'stopped' : 'done',
+      message: '补全包攻略已保存；请回到总控进行质量闸门确认，批准写入后再生成发布数据。',
+      success,
+      failed,
+      backup,
+    });
+  } else if (generateAfter && write && success > 0 && !['login_required', 'restricted'].includes(finalProgress.status)) {
     writeProgress({ status: 'generating', message: '采集结果已保存，正在重新生成静态数据。', success, failed, backup });
     const generated = spawnSync(process.execPath, [path.join('scripts', 'generate_static_data.js')], {
       cwd: rootDir,

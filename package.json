@@ -6,9 +6,11 @@
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node server/index.js",
-    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js && node --check scripts/report_core_attractions.js && node --check scripts/xhs_lazy_guides.js && node --check scripts/maintenance_menu.js && node --check scripts/watch_xhs_progress.js",
-    "report:core": "node scripts/report_core_attractions.js",
-    "quality:guizhou": "node scripts/report_core_attractions.js --strict",
+    "check": "node --check app.js && node --check server/index.js && node --check server/weather-service.js && node --check scripts/build.js && node --check scripts/generate_static_data.js && node --check scripts/report_core_attractions.js && node --check scripts/create_maintenance_tasks.js && node --check scripts/collect_mct_core_candidates.js && node --check scripts/collect_ota_core_candidates.js && node --check scripts/build_core_baseline.js && node --check scripts/core_repair_pipeline.js && node --check scripts/xhs_core_candidates.js && node --check scripts/xhs_lazy_guides.js && node --check scripts/maintenance_menu.js && node --check scripts/watch_xhs_progress.js",
+    "report:core": "node scripts/report_core_attractions.js --all",
+    "report:core:fujian": "node scripts/report_core_attractions.js --province=福建",
+    "report:tasks": "node scripts/create_maintenance_tasks.js",
+    "quality:guizhou": "node scripts/report_core_attractions.js --province=贵州 --strict",
     "xhs:login": "node scripts/xhs_lazy_guides.js --login",
     "xhs:list:guizhou": "node scripts/xhs_lazy_guides.js --province=贵州 --list",
     "xhs:recover": "node scripts/xhs_lazy_guides.js --recover-samples",
@@ -16,7 +18,7 @@
     "xhs:global": "node scripts/xhs_lazy_guides.js --write --background --generate-after",
     "xhs:stats": "node scripts/xhs_lazy_guides.js --stats",
     "maintenance": "node scripts/maintenance_menu.js",
-    "verify": "npm run check && npm run build && node scripts/verify-build.js && npm run quality:guizhou"
+    "verify": "npm run check && npm run build && node scripts/verify-build.js && node scripts/report_core_attractions.js --all --strict"
   },
   "engines": {
     "node": ">=24"

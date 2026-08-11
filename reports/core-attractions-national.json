@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-08-11T01:15:13.507Z",
+  "provinceCount": 3,
+  "baselineCount": 53,
+  "present": 53,
+  "review": 0,
+  "missing": 0,
+  "readyCount": 53,
+  "provinces": [
+    {
+      "province": "福建",
+      "baselineCount": 17,
+      "counts": {
+        "present": 17,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 17,
+      "qualityBands": {
+        "stable": 1,
+        "improve": 16,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-fujian.json"
+    },
+    {
+      "province": "贵州",
+      "baselineCount": 15,
+      "counts": {
+        "present": 15,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 15,
+      "qualityBands": {
+        "stable": 6,
+        "improve": 9,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-guizhou.json"
+    },
+    {
+      "province": "江西",
+      "baselineCount": 21,
+      "counts": {
+        "present": 21,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 21,
+      "qualityBands": {
+        "stable": 3,
+        "improve": 18,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-jiangxi.json"
+    }
+  ]
+}

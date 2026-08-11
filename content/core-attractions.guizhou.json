@@ -28,6 +28,7 @@
     {
       "key": "libo_xiaoqikong",
       "name": "荔波小七孔",
+      "preferredId": "amap_B035600C1Q",
       "aliases": ["荔波小七孔", "荔波小七孔景区", "小七孔", "小七孔景区", "荔波樟江风景名胜区"],
       "tier": "national",
       "evidence": ["official_a_list", "ctrip_guizhou"]
@@ -42,6 +43,7 @@
     {
       "key": "zhijindong",
       "name": "织金洞",
+      "preferredId": "amap_B0359003K3",
       "aliases": ["织金洞", "织金洞景区"],
       "tier": "national",
       "evidence": ["official_a_list", "ctrip_guizhou"]
@@ -84,6 +86,7 @@
     {
       "key": "chishui_danxia",
       "name": "赤水丹霞",
+      "preferredId": "amap_B0FFHNDRYB",
       "aliases": ["赤水丹霞", "赤水丹霞旅游区", "赤水丹霞旅游区大瀑布"],
       "tier": "national",
       "evidence": ["official_a_list", "official_plan"]
