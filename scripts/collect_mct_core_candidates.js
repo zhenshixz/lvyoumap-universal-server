@@ -15,6 +15,8 @@ const provinceName = String(args.get('province') || '');
 const portalKeys = {
   西藏: 'xizang',
   内蒙古: 'neimenggu',
+  山西: 'sx',
+  陕西: 'shanxi',
 };
 
 function readJson(filePath, fallback = {}) {
@@ -40,7 +42,7 @@ function decodeText(value) {
 function expectedCount(html, label, unit) {
   const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = html.match(new RegExp(`${escaped}[^0-9]{0,12}(\\d+)${unit}`));
-  return match ? Number(match[1]) : 0;
+  return match ? Number(match[1]) : null;
 }
 
 function directString(record, field) {
@@ -85,6 +87,20 @@ function selectGroupByCount(groups, count, label, score) {
   return ranked[0].group;
 }
 
+function selectOptionalGroup(groups, count, label, score) {
+  if (count === 0) return { group: [], warning: '' };
+  try {
+    return { group: selectGroupByCount(groups, count, label, score), warning: '' };
+  } catch (error) {
+    const ranked = groups.map(group => ({ group, score: score(group) })).filter(item => item.score > 0).sort((a, b) => b.score - a.score || b.group.length - a.group.length);
+    if (!ranked.length) throw error;
+    return {
+      group: ranked[0].group,
+      warning: `${label}页面摘要为 ${count} 个，结构化记录实际解析到 ${ranked[0].group.length} 个；该来源只作为补充候选，不据此删除已有记录。`,
+    };
+  }
+}
+
 async function main() {
   if (!provinceName) throw new Error('请使用 --province=省份。');
   const db = readJson(path.join(contentDir, 'db.json'), { provinces: {} });
@@ -100,10 +116,11 @@ async function main() {
   const html = await response.text();
   const fiveACount = expectedCount(html, '国家5A级景区', '个');
   const resortCount = expectedCount(html, '国家级旅游度假区', '个');
-  if (!fiveACount || !resortCount) throw new Error('没有从页面摘要中解析到5A景区或国家级旅游度假区数量。');
+  if (!Number.isFinite(fiveACount) || fiveACount <= 0 || !Number.isFinite(resortCount)) throw new Error('没有从页面摘要中完整解析到5A景区或国家级旅游度假区数量。');
   const groups = extractGroups(html);
   const fiveA = selectGroupByCount(groups, fiveACount, '国家5A级景区', group => group.filter(item => !/度假区|酒店|饭店|宾馆/.test(item.name)).length);
-  const resorts = selectGroupByCount(groups, resortCount, '国家级旅游度假区', group => group.filter(item => /度假区/.test(item.name)).length);
+  const resortSelection = selectOptionalGroup(groups, resortCount, '国家级旅游度假区', group => group.filter(item => /度假区/.test(item.name)).length);
+  const resorts = resortSelection.group;
   const output = {
     province: provinceName,
     collectedAt: new Date().toISOString(),
@@ -113,10 +130,12 @@ async function main() {
     resortCount,
     fiveA,
     resorts,
+    warnings: resortSelection.warning ? [resortSelection.warning] : [],
   };
   const outputPath = path.join(runtimeDir, `core-official-${slug}.json`);
   writeJson(outputPath, output);
   console.log(`${provinceName}官方来源采集完成：5A景区 ${fiveA.length} 个，国家级旅游度假区 ${resorts.length} 个。`);
+  if (resortSelection.warning) console.log(`提示：${resortSelection.warning}`);
   console.log(`结果：${outputPath}`);
 }
 

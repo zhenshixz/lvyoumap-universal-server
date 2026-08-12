@@ -7,6 +7,8 @@ if not exist package.json goto missing_project
 where node >nul 2>nul
 if errorlevel 1 goto missing_node
 if not exist node_modules goto install_deps
+node -e "require.resolve('puppeteer-extra');require.resolve('puppeteer-extra-plugin-stealth');require.resolve('puppeteer-core')" >nul 2>nul
+if errorlevel 1 goto install_deps
 node scripts\maintenance_menu.js
 goto done
 

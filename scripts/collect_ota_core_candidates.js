@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { temporaryEventReason } = require('./core_candidate_quality');
 
 const rootDir = path.join(__dirname, '..');
 const runtimeDir = path.join(rootDir, '.runtime');
@@ -62,7 +63,7 @@ function parseTopAttractions(html) {
     if (!name || output.some(item => item.name === name)) continue;
     output.push({ name, rank: output.length + 1, url: decodeHtml(match[1]) });
   }
-  return output.slice(0, 20);
+  return output.slice(0, 30);
 }
 
 async function main() {
@@ -73,7 +74,13 @@ async function main() {
   const destination = await discoverCtripDestination(provinceName);
   const url = `https://you.ctrip.com/sightlist/${destination}.html`;
   const html = await fetchText(url);
-  const candidates = parseTopAttractions(html);
+  const rawCandidates = parseTopAttractions(html);
+  const rejectedCandidates = [];
+  const candidates = rawCandidates.filter(item => {
+    const reason = temporaryEventReason(item.name);
+    if (reason) rejectedCandidates.push({ ...item, reason });
+    return !reason;
+  }).slice(0, 20);
   if (candidates.length < 8) throw new Error(`携程榜单只解析到 ${candidates.length} 个候选，拒绝写入。`);
   const output = {
     province: provinceName,
@@ -81,10 +88,12 @@ async function main() {
     sourceUrl: url,
     updatedAt: new Date().toISOString(),
     candidates,
+    rejectedCandidates,
   };
   const filePath = path.join(runtimeDir, `core-ota-${province.id || provinceName}.json`);
   writeJson(filePath, output);
   console.log(`${provinceName}携程核心候选采集完成：${candidates.length} 个。`);
+  if (rejectedCandidates.length) console.log(`已过滤临时活动 ${rejectedCandidates.length} 个：${rejectedCandidates.map(item => item.name).join('、')}`);
   console.log(filePath);
 }
 

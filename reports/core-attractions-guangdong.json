@@ -1,0 +1,1786 @@
+{
+  "province": "广东",
+  "checkedAt": "2026-08-12",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "baselineCount": 44,
+  "recordCount": 360,
+  "counts": {
+    "present": 44,
+    "review": 0,
+    "missing": 0
+  },
+  "coverage": 1,
+  "readyCount": 44,
+  "qualityBands": {
+    "stable": 12,
+    "improve": 32,
+    "incomplete": 0,
+    "priority": 0,
+    "missing": 0,
+    "review": 0
+  },
+  "issueCounts": {
+    "source.basicInfoTraceability": 32,
+    "image.sourceOrLicense": 32
+  },
+  "items": [
+    {
+      "key": "core_fe9b496dd4",
+      "name": "万绿湖风景区",
+      "city": "河源",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_guangdong_wanlvhu",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_wanlvhu",
+          "name": "万绿湖风景区",
+          "city": "河源",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_880b244c13",
+      "name": "开平碉楼文化旅游区",
+      "city": "江门",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0JAXU8EB4",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0JAXU8EB4",
+          "name": "开平碉楼文化旅游区",
+          "city": "江门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_ed4b2d585d",
+      "name": "星湖旅游景区",
+      "city": "肇庆",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F60OP4E",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F60OP4E",
+          "name": "肇庆星湖风景名胜区",
+          "city": "肇庆",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_fd5dc2bac8",
+      "name": "惠州西湖旅游景区",
+      "city": "惠州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F003XP7",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F003XP7",
+          "name": "惠州西湖风景名胜区",
+          "city": "惠州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_808f389f35",
+      "name": "孙中山故里旅游区",
+      "city": "中山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_guangdong_sun_yat_sen_hometown",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_sun_yat_sen_hometown",
+          "name": "孙中山故里旅游区",
+          "city": "中山",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_ddca19954b",
+      "name": "海陵岛大角湾海上丝路旅游区",
+      "city": "阳江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_guangdong_hailing_dajiao_bay",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_hailing_dajiao_bay",
+          "name": "海陵岛大角湾海上丝路旅游区",
+          "city": "阳江",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_bd362db0e3",
+      "name": "长鹿旅游休博园",
+      "city": "佛山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F507HAK",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F507HAK",
+          "name": "长鹿旅游休博园",
+          "city": "佛山",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_1a15658f1d",
+      "name": "罗浮山景区",
+      "city": "惠州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F002J5M",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F002J5M",
+          "name": "罗浮山风景名胜区",
+          "city": "惠州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_be5421c3d8",
+      "name": "西樵山景区",
+      "city": "佛山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F5076F0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F5076F0",
+          "name": "西樵山风景名胜区",
+          "city": "佛山",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_cbf92ddb93",
+      "name": "丹霞山景区",
+      "city": "韶关",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02EF0IALW",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02EF0IALW",
+          "name": "中国丹霞山世界地质公园",
+          "city": "韶关",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_419a2caf01",
+      "name": "地下河旅游景区",
+      "city": "清远",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02FB024HU",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02FB024HU",
+          "name": "连州地下河",
+          "city": "清远",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_18a913df8e",
+      "name": "观澜湖休闲旅游区",
+      "city": "深圳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_guangdong_mission_hills",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_mission_hills",
+          "name": "观澜湖休闲旅游区",
+          "city": "深圳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_61ab40a259",
+      "name": "雁南飞茶田景区",
+      "city": "梅州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F103HUJ",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F103HUJ",
+          "name": "梅州雁南飞茶田景区",
+          "city": "梅州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0cd27dbbb6",
+      "name": "白云山景区",
+      "city": "广州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0014014AD",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0014014AD",
+          "name": "广州市白云山风景名胜区",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0b1779e828",
+      "name": "华侨城旅游度假区",
+      "city": "深圳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B02F37U4VE",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F37U4VE",
+          "name": "深圳华侨城旅游度假区",
+          "city": "深圳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c1d9ec5a92",
+      "name": "长隆旅游度假区",
+      "city": "广州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0FFFYPEE9",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFFYPEE9",
+          "name": "广州长隆旅游度假区",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_643bc90a2f",
+      "name": "珠海长隆海洋王国",
+      "city": "珠海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F40RARV",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F40RARV",
+          "name": "长隆海洋王国",
+          "city": "珠海",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a13a102614",
+      "name": "广州塔",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B00140WBI1",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B00140WBI1",
+          "name": "广州塔",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_91b378eefc",
+      "name": "广州长隆国际大马戏",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "official_attraction_site"
+      ],
+      "preferredId": "manual_guangdong_chimelong_circus",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_chimelong_circus",
+          "name": "广州长隆国际大马戏",
+          "city": "广州",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_fc4c6166f8",
+      "name": "日月贝",
+      "city": "珠海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0LKBDT6LJ",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0LKBDT6LJ",
+          "name": "珠海日月贝",
+          "city": "珠海",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_963acbeb88",
+      "name": "赤坎华侨古镇",
+      "city": "江门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02EE01XFU",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02EE01XFU",
+          "name": "赤坎·广东华侨国际旅游度假区",
+          "city": "江门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_6de434cd3f",
+      "name": "陈家祠",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_guangdong_chen_clan_hall",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_chen_clan_hall",
+          "name": "陈家祠",
+          "city": "广州",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_2a8f89a92e",
+      "name": "石室圣心大教堂",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_guangdong_sacred_heart_cathedral",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_sacred_heart_cathedral",
+          "name": "石室圣心大教堂",
+          "city": "广州",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e3f0f2692c",
+      "name": "广东省博物馆",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_guangdong_provincial_museum",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_provincial_museum",
+          "name": "广东省博物馆",
+          "city": "广州",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_107b30a2bc",
+      "name": "潮州古城",
+      "city": "潮州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_guangdong_chaozhou_ancient_city",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_chaozhou_ancient_city",
+          "name": "潮州古城",
+          "city": "潮州",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_1ed28c48d5",
+      "name": "宝墨园",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B00140J7CC",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B00140J7CC",
+          "name": "宝墨园",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_d063e5923e",
+      "name": "深圳世界之窗",
+      "city": "深圳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F37V2O5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F37V2O5",
+          "name": "深圳世界之窗",
+          "city": "深圳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_ae3169c209",
+      "name": "白水寨风景名胜区",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B00140UFJS",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B00140UFJS",
+          "name": "白水寨风景名胜区",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_16def06b2d",
+      "name": "深圳湾公园",
+      "city": "深圳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFFRDS71",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFFRDS71",
+          "name": "深圳湾公园",
+          "city": "深圳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_425a797a4c",
+      "name": "长隆野生动物世界",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B00141TJLD",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B00141TJLD",
+          "name": "长隆野生动物世界",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7e69d864b9",
+      "name": "广济桥",
+      "city": "潮州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B030000E1K",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B030000E1K",
+          "name": "广济桥",
+          "city": "潮州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c480bdca0d",
+      "name": "沙面岛",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFFAJYVI",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFFAJYVI",
+          "name": "沙面岛",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_6932b3da14",
+      "name": "永庆坊",
+      "city": "广州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0IUPDSJHU",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0IUPDSJHU",
+          "name": "永庆坊",
+          "city": "广州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_00672f1af8",
+      "name": "爱情邮局",
+      "city": "珠海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFHFANNQ",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFHFANNQ",
+          "name": "爱情邮局",
+          "city": "珠海",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c2fa9f5761",
+      "name": "清晖园",
+      "city": "佛山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F50766S",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F50766S",
+          "name": "清晖园",
+          "city": "佛山",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_fd59f19306",
+      "name": "佛山祖庙",
+      "city": "佛山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F50768W",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F50768W",
+          "name": "祖庙",
+          "city": "佛山",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_4bb877df4c",
+      "name": "南澳岛",
+      "city": "汕头",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F201YKC",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F201YKC",
+          "name": "南澳岛生态旅游区",
+          "city": "汕头",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0c22e11a27",
+      "name": "七星岩",
+      "city": "肇庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F60OA08",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F60OA08",
+          "name": "七星岩风景名胜区",
+          "city": "肇庆",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7326e53300",
+      "name": "大鹏所城",
+      "city": "深圳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F37VHXJ",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F37VHXJ",
+          "name": "大鹏所城",
+          "city": "深圳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c25c034828",
+      "name": "南风古灶",
+      "city": "佛山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B02F5076BA",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B02F5076BA",
+          "name": "南风古灶",
+          "city": "佛山",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_fc63266c91",
+      "name": "松口古镇",
+      "city": "梅州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFH0A8AL",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFH0A8AL",
+          "name": "松口古镇",
+          "city": "梅州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_4ac2dabe04",
+      "name": "珠海横琴长隆国际海洋度假区",
+      "city": "珠海",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "preferredId": "manual_guangdong_zhuhai_chimelong_resort",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_zhuhai_chimelong_resort",
+          "name": "珠海横琴长隆国际海洋度假区",
+          "city": "珠海",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_46241f51d5",
+      "name": "东部华侨城旅游度假区",
+      "city": "深圳",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "preferredId": "manual_guangdong_oct_east",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_oct_east",
+          "name": "东部华侨城旅游度假区",
+          "city": "深圳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_628327d350",
+      "name": "河源巴伐利亚庄园",
+      "city": "河源",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "preferredId": "manual_guangdong_bavaria_manor",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_guangdong_bavaria_manor",
+          "name": "河源巴伐利亚庄园",
+          "city": "河源",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

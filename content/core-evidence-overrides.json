@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "description": "仅保存经过人工核验的核心候选补充证据，不包含动态评分、票价或未经核验的搜索摘要。",
+  "provinces": {
+    "广东": [
+      {
+        "name": "广州长隆国际大马戏",
+        "city": "广州",
+        "source": "official_attraction_site",
+        "sourceTitle": "长隆国际大马戏官方网站｜广州长隆度假区",
+        "sourceUrl": "https://www.chimelong.com/gz/circus?from=gz",
+        "relation": "广州长隆旅游度假区内独立售票演艺项目",
+        "verifiedAt": "2026-08-12"
+      }
+    ]
+  }
+}

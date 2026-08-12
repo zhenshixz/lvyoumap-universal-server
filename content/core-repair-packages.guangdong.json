@@ -1,0 +1,1488 @@
+{
+  "province": "广东",
+  "status": "applied",
+  "createdAt": "2026-08-12T04:12:42.314Z",
+  "updatedAt": "2026-08-12T04:44:49.880Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "seedFile": "content/core-repair-seeds.guangdong.json",
+  "attractions": [
+    {
+      "baselineKey": "core_fe9b496dd4",
+      "id": "manual_guangdong_wanlvhu",
+      "name": "万绿湖风景区",
+      "city": "河源",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_wanlvhu_verified.jpg",
+      "description": "万绿湖位于河源市东源县，是以广阔湖面、绿色岛屿和优良水生态为核心的国家5A级旅游景区。",
+      "intro": "景区水域广、游览点分散，常规游览依赖游船串联龙凤岛、水月湾等湖区点位。家庭出行应先确认当日航线、班次和停靠点，再决定是否增加镜花缘等周边项目。",
+      "level": "国家5A级旅游景区",
+      "category": "湖泊山水",
+      "tags": [
+        "湖泊观光",
+        "游船",
+        "生态旅游"
+      ],
+      "address": "广东省河源市东源县新港镇港中路17号",
+      "openHours": "游船班次、停航时间和岛屿开放会随季节、天气及客流调整，以万绿湖景区当日公告为准",
+      "price": "门票、游船和组合项目按线路销售，优惠政策及当日价格以官方购票渠道公示为准",
+      "tips": "湖区游览受天气和船班影响明显；带长辈、儿童优先选择常规航线，不把多个外围项目强塞进同一天。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+        },
+        "transport": {
+          "external_arrive": "可先到河源东站或河源市区，再换乘出租车、网约车或正规旅游交通前往万绿湖游客中心；自驾按官方入口导航。",
+          "internal_arrive": "抵达游客中心后先确认当日售票、开船和返程时间，再进入码头候船。",
+          "internal_traffic": "核心湖区以游船串联岛屿和观景点，具体航线、停靠点与游览时长以当天调度为准。",
+          "tips": "节假日预留停车、取票和候船时间；最后一班返程船不要卡点。"
+        },
+        "housing": [
+          {
+            "area": "河源市区",
+            "desc": "餐饮和交通选择较多，适合家庭游客及第二天继续游览河源。"
+          },
+          {
+            "area": "万绿湖周边",
+            "desc": "可减少早晨车程，预订前确认到游客中心的距离和接送条件。"
+          }
+        ],
+        "food": [
+          "河源米粉",
+          "东江酿豆腐",
+          "客家盐焗鸡",
+          "五指毛桃汤"
+        ],
+        "special_care": {
+          "elderly": "优先选择停靠较少的常规游船线，上下船有人搀扶，避免连续叠加多个岛屿台阶。",
+          "children": "码头、船舷和临水平台全程由成人看护，按规定穿戴或使用安全设施。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "常规湖岛省力线",
+          "badge": "家庭首选",
+          "suitability": "适合长辈、儿童和第一次到访者",
+          "nodes": [
+            "万绿湖游客中心",
+            "旅游码头",
+            "龙凤岛",
+            "水月湾",
+            "旅游码头"
+          ],
+          "duration": "约半天",
+          "walking": "以游船衔接和岛上短距离步行为主",
+          "physical": 2,
+          "tips": [
+            "购票前确认实际停靠岛屿",
+            "返程船次至少提前一班候船"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "湖区加文化体验线",
+          "badge": "轻松一日",
+          "suitability": "适合时间充足、希望丰富内容的家庭",
+          "nodes": [
+            "游客中心",
+            "万绿湖游船",
+            "湖区岛屿",
+            "镜花缘旅游区",
+            "新港镇"
+          ],
+          "duration": "约1天",
+          "walking": "游船与景点步行结合，外围项目需另行换乘",
+          "physical": 2.5,
+          "tips": [
+            "先完成受船班约束的湖区行程",
+            "镜花缘是否开放及票务单独核对"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "先围绕船班安排湖区主体，再视时间增加岸上项目；遇大风、雷雨或停航，及时改为市区与周边室内行程。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "万绿湖景区官方网站：https://www.wanlvhu.cn/index.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "The Wanlv Lake at noon",
+        "author": "Boris1601050607",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Wanlv_Lake_at_noon.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_808f389f35",
+      "id": "manual_guangdong_sun_yat_sen_hometown",
+      "name": "孙中山故里旅游区",
+      "city": "中山",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_sun_yat_sen_hometown_verified.jpg",
+      "description": "孙中山故里旅游区以翠亨村及孙中山生平相关历史遗存为核心，串联故居纪念馆、中山城、辛亥革命纪念公园等点位。",
+      "intro": "这里不是单栋故居，而是分布在翠亨村一带的综合文化旅游区。第一次到访宜以孙中山故居纪念馆为主，按开放和预约情况再增加中山城或周边纪念点。",
+      "level": "国家5A级旅游景区",
+      "category": "历史人文",
+      "tags": [
+        "名人故居",
+        "近代历史",
+        "博物馆"
+      ],
+      "address": "广东省中山市南朗街道翠亨村",
+      "openHours": "各场馆开放日、入馆时段和预约政策并不完全相同，以孙中山故居纪念馆及旅游区官方公告为准",
+      "price": "公共纪念场馆与独立经营项目票务不同，免费预约、收费项目和优惠政策以各点位官方公示为准",
+      "tips": "先分清故居纪念馆、中山城等不同点位；不要按一个门票或一个开放时间理解整个旅游区。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "可从中山市区、珠海或广州南方向乘公共交通或自驾到翠亨村，跨城出发应预留换乘时间。",
+          "internal_arrive": "到达翠亨村后先前往故居纪念馆入口核验预约与开放，再按步行距离安排周边点位。",
+          "internal_traffic": "核心村落和纪念馆以步行为主，中山城及较远点位可另行换乘或驾车。",
+          "tips": "节假日优先预约核心场馆，返程公交班次和上车点提前确认。"
+        },
+        "housing": [
+          {
+            "area": "中山市区",
+            "desc": "住宿、餐饮和交通更稳定，适合把翠亨村安排为半天至一天行程。"
+          },
+          {
+            "area": "南朗或翠亨周边",
+            "desc": "靠近景区，适合串联珠海或深中通道方向行程。"
+          }
+        ],
+        "food": [
+          "石岐乳鸽",
+          "咀香园杏仁饼",
+          "沙溪扣肉",
+          "中山脆肉鲩"
+        ],
+        "special_care": {
+          "elderly": "以故居纪念馆和翠亨村平缓区域为主，减少在分散点位间反复换乘。",
+          "children": "先用简短人物时间线帮助理解展览，村道和人流密集区域跟紧成人。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "故居与翠亨村经典线",
+          "badge": "首次必看",
+          "suitability": "适合家庭、长辈和历史爱好者",
+          "nodes": [
+            "游客入口",
+            "孙中山故居纪念馆",
+            "孙中山故居",
+            "翠亨村史迹",
+            "纪念馆出口"
+          ],
+          "duration": "约3小时",
+          "walking": "村内平路与室内参观为主",
+          "physical": 1.5,
+          "tips": [
+            "核心场馆提前预约",
+            "馆内按规定拍摄并保持安静"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "故里文化一日线",
+          "badge": "内容进阶",
+          "suitability": "适合时间充足、希望完整了解近代史的游客",
+          "nodes": [
+            "故居纪念馆",
+            "翠亨村",
+            "辛亥革命纪念公园",
+            "中山城",
+            "南朗返程点"
+          ],
+          "duration": "约1天",
+          "walking": "步行和短途换乘结合",
+          "physical": 2,
+          "tips": [
+            "中山城票务和开放单独确认",
+            "不同点位闭馆时间不要混用"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "把故居纪念馆作为必选，其余点位按开放、体力和兴趣取舍；赶时间时不必为了“集齐”跨点位来回奔波。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "孙中山故里旅游区官方网站：https://www.sunzhongshanguli.com/"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Former Residence of Sun Yat-sen 1",
+        "author": "EditQ",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_Residence_of_Sun_Yat-sen_1.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_ddca19954b",
+      "id": "manual_guangdong_hailing_dajiao_bay",
+      "name": "海陵岛大角湾海上丝路旅游区",
+      "city": "阳江",
+      "rating": 4.6,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_hailing_dajiao_bay_verified.jpg",
+      "description": "旅游区以海陵岛大角湾滨海浴场为核心，并结合广东海上丝绸之路博物馆等海洋文化内容。",
+      "intro": "海陵岛点位分散，大角湾、海上丝绸之路博物馆和岛上观景点并非都在步行范围。家庭游应按天气和潮汐先安排核心海滨活动，再以车辆串联文化点位。",
+      "level": "国家5A级旅游景区",
+      "category": "滨海度假",
+      "tags": [
+        "海滨浴场",
+        "海洋文化",
+        "亲子度假"
+      ],
+      "address": "广东省阳江市江城区海陵岛闸坡镇海滨路",
+      "openHours": "浴场、水上项目、博物馆及岛上各点开放时间不同，受天气和海况影响时以现场与官方公告为准",
+      "price": "大角湾、博物馆和其他经营项目可能分别购票，组合票与优惠以官方渠道当日公示为准",
+      "tips": "只有在开放水域、救生员值守和允许下水时游泳；不要把野沙滩当作正式浴场。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "可从阳江市区或阳江站换乘正规客运、出租车或网约车到海陵岛；自驾节假日预留进岛拥堵时间。",
+          "internal_arrive": "以闸坡或大角湾为主要落脚点，先核对停车、浴场入口和当日海况。",
+          "internal_traffic": "岛上不同点位距离较远，以公交、自驾或正规包车串联，不建议全靠步行。",
+          "tips": "晚间与返程高峰提前叫车或确定停车点，海边项目不安排得过满。"
+        },
+        "housing": [
+          {
+            "area": "闸坡镇或大角湾周边",
+            "desc": "靠近餐饮和核心海滨区域，适合第一次到访。"
+          },
+          {
+            "area": "保利银滩一带",
+            "desc": "度假住宿选择较多，前往大角湾和博物馆需安排车辆。"
+          }
+        ],
+        "food": [
+          "阳江海鲜",
+          "闸坡鱼丸",
+          "阳江豆豉",
+          "猪肠碌"
+        ],
+        "special_care": {
+          "elderly": "以滨海步道、观景和博物馆为主，避免正午暴晒与湿滑礁石。",
+          "children": "仅在开放浴场和成人近距离看护下玩水，留意防晒、补水和离岸流提示。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "大角湾亲子半日线",
+          "badge": "玩水首选",
+          "suitability": "适合亲子和第一次到海陵岛的游客",
+          "nodes": [
+            "大角湾入口",
+            "游客服务区",
+            "开放浴场",
+            "滨海步道",
+            "闸坡镇"
+          ],
+          "duration": "约半天",
+          "walking": "沙滩和步道为主，玩水体力消耗视个人而定",
+          "physical": 2,
+          "tips": [
+            "入场先看海况与下水提示",
+            "儿童不离开成人手臂可及范围"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "滨海加南海Ⅰ号文化线",
+          "badge": "海洋文化",
+          "suitability": "适合不只想玩水的家庭",
+          "nodes": [
+            "大角湾",
+            "闸坡午餐",
+            "广东海上丝绸之路博物馆",
+            "十里银滩观景点",
+            "住宿区"
+          ],
+          "duration": "约1天",
+          "walking": "车辆串联，馆内与海边中等距离步行",
+          "physical": 2,
+          "tips": [
+            "博物馆预约与闭馆日提前核对",
+            "海边与室内项目错峰安排"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "晴天先看海况再决定玩水，雨天或风浪大优先博物馆；岛上点位不要用城市步行距离来估算。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "携程海陵岛大角湾资料：https://you.ctrip.com/sight/yangjiang363/23017.html",
+          "广东海上丝绸之路博物馆：https://www.msrmuseum.com/News/Detailed/225"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Yangjiang Hailing Dao Dajiao Wan 2013.09.15",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yangjiang_Hailing_Dao_Dajiao_Wan_2013.09.15_06-57-28.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_18a913df8e",
+      "id": "manual_guangdong_mission_hills",
+      "name": "观澜湖休闲旅游区",
+      "city": "深圳",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_mission_hills_verified.jpg",
+      "description": "深圳观澜湖休闲旅游区是集运动、度假、商业、亲子娱乐和文化体验于一体的国家5A级旅游景区。",
+      "intro": "旅游区范围较大，酒店、球会、观澜湖新城和不同娱乐项目各有入口与营业时间。出发前应先确定主目的，不适合把所有项目理解成一张通票。",
+      "level": "国家5A级旅游景区",
+      "category": "城市休闲度假",
+      "tags": [
+        "休闲度假",
+        "亲子娱乐",
+        "运动体验"
+      ],
+      "address": "广东省深圳市龙华区观澜高尔夫大道1号",
+      "openHours": "公共区域与各独立项目营业时间不同，以观澜湖官方网站及项目当天公告为准",
+      "price": "旅游区内酒店、运动、娱乐和商业项目分别定价，套票及优惠以官方预订渠道为准",
+      "tips": "先选一个主项目，再围绕用餐和商场补充；不要在不清楚入口位置时连续预订多个限时项目。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "可乘深圳地铁4号线到观澜湖站后换乘步行或接驳，也可从市区自驾或网约车前往具体项目入口。",
+          "internal_arrive": "导航时输入酒店、观澜湖新城或具体运动项目，不只输入旅游区总称。",
+          "internal_traffic": "不同功能区之间可步行、乘项目接驳或短途打车，具体以现场安排为准。",
+          "tips": "返程高峰和大型活动时预留叫车时间，先确认最后一个项目离哪个出口最近。"
+        },
+        "housing": [
+          {
+            "area": "观澜湖度假酒店",
+            "desc": "适合以度假和亲子项目为主、希望减少跨区交通的游客。"
+          },
+          {
+            "area": "龙华观澜片区",
+            "desc": "住宿选择更灵活，可结合地铁往返深圳其他区域。"
+          }
+        ],
+        "food": [
+          "客家酿豆腐",
+          "盐焗鸡",
+          "深圳早茶",
+          "潮汕牛肉火锅"
+        ],
+        "special_care": {
+          "elderly": "以商场、园区散步和休闲项目为主，避免连续跨区步行。",
+          "children": "游乐和运动项目先核对年龄、身高与陪同要求，室内外转换注意补水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "地铁友好亲子休闲线",
+          "badge": "轻松半日",
+          "suitability": "适合亲子、长辈和公共交通游客",
+          "nodes": [
+            "观澜湖地铁站",
+            "观澜湖新城",
+            "亲子体验项目",
+            "休闲餐饮区",
+            "地铁站"
+          ],
+          "duration": "约半天",
+          "walking": "室内外平缓步行，可按体力缩短",
+          "physical": 1.5,
+          "tips": [
+            "先核对目标项目所在楼层与预约",
+            "节假日用餐尽量错峰"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "酒店度假慢游线",
+          "badge": "住店度假",
+          "suitability": "适合安排一晚、以休闲为主的家庭",
+          "nodes": [
+            "度假酒店",
+            "园区休闲区",
+            "预约运动项目",
+            "观澜湖新城",
+            "酒店"
+          ],
+          "duration": "约1天至2天",
+          "walking": "接驳与分段步行为主",
+          "physical": 2,
+          "tips": [
+            "确认住店权益是否包含项目",
+            "不同园区的接驳时刻提前询问"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "观澜湖更像复合度假区而非单一路线景点；先明确亲子、运动、购物或住店中的主目标，体验会更稳定。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "深圳市A级旅游景区一览表：https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/content/post_11729449.html",
+          "观澜湖景区官方网站：https://www.missionhillschina.com/others/about-us/attraction_introduction/"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "观澜湖休闲旅游区景区介绍图",
+        "author": "观澜湖",
+        "provider": "观澜湖官方网站",
+        "license": "景区官方宣传资料，版权归原作者",
+        "licenseUrl": "https://www.missionhillschina.com/",
+        "sourceUrl": "https://www.missionhillschina.com/wp-content/uploads/2022/10/cang1.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_91b378eefc",
+      "id": "manual_guangdong_chimelong_circus",
+      "name": "广州长隆国际大马戏",
+      "city": "广州",
+      "rating": 4.8,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_chimelong_circus_verified.jpg",
+      "description": "广州长隆国际大马戏是长隆旅游度假区内的独立演艺项目，以大型舞台、杂技、特技和灯光舞美表演为核心。",
+      "intro": "大马戏有固定演出与入场节奏，和动物世界、欢乐世界不是同一张默认门票。合理做法是围绕演出时间反推晚餐、交通和入场，不把白天行程排到最后一分钟。",
+      "level": "大型主题演艺项目",
+      "category": "演艺娱乐",
+      "tags": [
+        "大型演出",
+        "亲子娱乐",
+        "夜间活动"
+      ],
+      "address": "广东省广州市番禺区汉溪大道东299号长隆旅游度假区",
+      "openHours": "演出日期、场次、检票与入场时间以广州长隆官方当天排期为准",
+      "price": "座区、日期和套票价格会调整，以长隆官方购票与订单说明为准",
+      "tips": "按订单场次提前到场；不同项目票种和入口不要混淆，散场后交通拥堵需预留时间。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "可乘广州地铁到汉溪长隆站后按官方指引换乘步行或接驳；自驾导航到大马戏对应停车区域。",
+          "internal_arrive": "进入度假区后按大马戏剧院标识前往，不从其他主题园入口排队。",
+          "internal_traffic": "度假区内以步行和官方接驳为主，演出前后客流集中。",
+          "tips": "至少为安检、取票和找座预留时间，散场时提前确定地铁或网约车集合点。"
+        },
+        "housing": [
+          {
+            "area": "长隆旅游度假区内",
+            "desc": "散场后返程最省力，适合亲子家庭和次日继续游园。"
+          },
+          {
+            "area": "汉溪长隆地铁站周边",
+            "desc": "交通和住宿选择较多，进出度假区较方便。"
+          }
+        ],
+        "food": [
+          "广式早茶",
+          "烧鹅",
+          "云吞面",
+          "顺德双皮奶"
+        ],
+        "special_care": {
+          "elderly": "优先选择进出方便的座区，演出前减少长时间排队，留意声光刺激。",
+          "children": "提前确认儿童票和身高规则；强声光、黑场和特技环节由家长陪同安抚。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "单看大马戏省力线",
+          "badge": "夜场首选",
+          "suitability": "适合只安排晚间演出的家庭",
+          "nodes": [
+            "汉溪长隆站",
+            "度假区入口",
+            "提前晚餐",
+            "大马戏剧院",
+            "返程集合点"
+          ],
+          "duration": "约半天",
+          "walking": "地铁接驳与场馆步行为主",
+          "physical": 1.5,
+          "tips": [
+            "以官方场次反推到达时间",
+            "散场前约定家人集合位置"
+          ],
+          "sourceTitle": "广州长隆国际大马戏官方网站",
+          "sourceUrl": "https://www.chimelong.com/gz/circus?from=gz",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "白天游园加大马戏线",
+          "badge": "长隆一日",
+          "suitability": "适合体力较好、已购组合产品的游客",
+          "nodes": [
+            "长隆主题园",
+            "下午提前离园",
+            "晚餐休息",
+            "大马戏剧院",
+            "酒店或地铁站"
+          ],
+          "duration": "约1天",
+          "walking": "白天游园步行量大，晚间场馆继续步行",
+          "physical": 3.5,
+          "tips": [
+            "白天项目提前收尾不要卡点",
+            "儿童午后安排休息避免过度疲劳"
+          ],
+          "sourceTitle": "广州长隆国际大马戏官方网站",
+          "sourceUrl": "https://www.chimelong.com/gz/circus?from=gz",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "大马戏最重要的是场次和入场节奏；若白天已游园，下午务必留休息与吃饭时间，不要用最后一个项目结束时间硬接演出。",
+      "quality_policy": {
+        "forbiddenTerms": [
+          "动物世界",
+          "欢乐世界",
+          "水上乐园",
+          "提前离场"
+        ]
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "广州长隆国际大马戏官方网站：https://www.chimelong.com/gz/circus?from=gz",
+          "携程长隆国际大马戏资料：https://you.ctrip.com/sight/guangzhou152/17079.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "2025 Chimelong International Circus 05",
+        "author": "Renek78",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Chimelong_International_Circus_05.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_6de434cd3f",
+      "id": "manual_guangdong_chen_clan_hall",
+      "name": "陈家祠",
+      "city": "广州",
+      "rating": 4.7,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_chen_clan_hall_verified.jpg",
+      "description": "陈家祠又称陈氏书院，是集中展示岭南建筑装饰和广东民间工艺的重要历史建筑。",
+      "intro": "参观重点在建筑本体的木雕、石雕、砖雕、陶塑、灰塑及馆内展览。空间不算巨大，但细节密集，适合留出稳定时间慢看，而不是只在门口拍照。",
+      "level": "全国重点文物保护单位",
+      "category": "古建筑与民间工艺",
+      "tags": [
+        "岭南建筑",
+        "民间工艺",
+        "历史文化"
+      ],
+      "address": "广东省广州市荔湾区中山七路恩龙里34号",
+      "openHours": "开放日、停止入馆和临时展览安排以陈家祠官方及广州市文化旅游部门公告为准",
+      "price": "门票与优惠政策以官方预约购票渠道当日公示为准",
+      "tips": "建筑细节比场地面积更值得看；高峰期先看中轴重点，再错峰进入两侧展厅。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "乘广州地铁1号线或8号线到陈家祠站，按指引步行前往；城市自驾停车不如地铁稳定。",
+          "internal_arrive": "从官方开放入口核票安检后进入，先查看当日展厅和参观动线。",
+          "internal_traffic": "院落和展厅均以步行为主，门槛、台阶和高峰人流需要留意。",
+          "tips": "与永庆坊、荔枝湾等荔湾景点串联时，优先使用地铁和步行，减少找停车位。"
+        },
+        "housing": [
+          {
+            "area": "荔湾老城",
+            "desc": "便于串联西关、永庆坊和上下九，适合人文路线。"
+          },
+          {
+            "area": "公园前或北京路一带",
+            "desc": "地铁换乘方便，适合继续游览广州中心城区。"
+          }
+        ],
+        "food": [
+          "艇仔粥",
+          "泮塘马蹄糕",
+          "广式早茶",
+          "云吞面"
+        ],
+        "special_care": {
+          "elderly": "按中轴和重点展厅慢游，院落门槛处注意抬脚，高峰时减少反复穿行。",
+          "children": "引导观察雕刻细节，不触摸文物和展品，在院落与展厅内避免奔跑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "建筑工艺精华线",
+          "badge": "首次必看",
+          "suitability": "适合第一次到访和家庭游客",
+          "nodes": [
+            "正门",
+            "首进院落",
+            "聚贤堂",
+            "后进展厅",
+            "出口文创区"
+          ],
+          "duration": "约2小时",
+          "walking": "院落与室内短距离步行",
+          "physical": 1.5,
+          "tips": [
+            "先看屋脊与廊间装饰再进展厅",
+            "高峰期中轴参观后再补两侧"
+          ],
+          "sourceTitle": "广州市荔湾区人民政府陈家祠介绍",
+          "sourceUrl": "https://www.lw.gov.cn/zjlw/lwdt/yzlw/content/post_9051669.html",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "陈家祠加西关文化线",
+          "badge": "老城半日",
+          "suitability": "适合喜欢岭南建筑和街区漫游的游客",
+          "nodes": [
+            "陈家祠",
+            "荔枝湾涌",
+            "永庆坊",
+            "粤剧艺术博物馆",
+            "上下九周边"
+          ],
+          "duration": "约半天",
+          "walking": "地铁与老城步行结合",
+          "physical": 2.5,
+          "tips": [
+            "午后炎热时把室内场馆放在中段",
+            "不同场馆闭馆日提前核对"
+          ],
+          "sourceTitle": "广州市荔湾区人民政府陈家祠介绍",
+          "sourceUrl": "https://www.lw.gov.cn/zjlw/lwdt/yzlw/content/post_9051669.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "陈家祠适合慢看雕刻和屋脊，不必赶；串联西关时控制步行范围，长辈同行可在荔枝湾与永庆坊之间择一。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "广州市荔湾区人民政府陈家祠介绍：https://www.lw.gov.cn/zjlw/lwdt/yzlw/content/post_9051669.html",
+          "携程陈家祠资料：https://you.ctrip.com/sight/guangzhou152/6772.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Chen Clan Ancestral Hall 2025.06 02",
+        "author": "Shujianyang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_02.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_2a8f89a92e",
+      "id": "manual_guangdong_sacred_heart_cathedral",
+      "name": "石室圣心大教堂",
+      "city": "广州",
+      "rating": 4.6,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_sacred_heart_cathedral_verified.jpg",
+      "description": "石室圣心大教堂是广州代表性的哥特式宗教建筑，以花岗岩结构、双塔立面和彩色玻璃闻名。",
+      "intro": "这里首先是正常使用中的宗教场所，其次才是游客参观点。参观应避开礼仪活动、服从现场秩序并保持安静，不将网络流传时段视为固定开放承诺。",
+      "level": "全国重点文物保护单位",
+      "category": "宗教建筑",
+      "tags": [
+        "哥特建筑",
+        "历史文化",
+        "城市人文"
+      ],
+      "address": "广东省广州市越秀区一德路旧部前56号",
+      "openHours": "参观开放与宗教活动安排可能调整，以现场公告和教堂管理方最新通知为准",
+      "price": "通常以宗教场所开放管理为准，如有预约或临时安排以现场公示为准",
+      "tips": "衣着得体并保持安静；礼仪活动期间不随意走动、拍摄或占用通道。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "可乘广州地铁到一德路站后步行前往，老城区道路与停车条件有限，不建议专程自驾。",
+          "internal_arrive": "从开放入口按现场指引进入，先查看是否正在举行宗教活动。",
+          "internal_traffic": "内部空间以步行为主，参观区域可能因活动临时调整。",
+          "tips": "与圣心大教堂同名或译名景点较多，导航确认广州越秀区一德路地址。"
+        },
+        "housing": [
+          {
+            "area": "海珠广场或北京路一带",
+            "desc": "地铁与餐饮方便，适合串联越秀老城景点。"
+          }
+        ],
+        "food": [
+          "广式早茶",
+          "云吞面",
+          "牛杂",
+          "糖水"
+        ],
+        "special_care": {
+          "elderly": "避开礼仪高峰与拥挤时段，参观以短时慢行为主。",
+          "children": "提前说明宗教场所礼仪，保持安静，不追跑和触碰设施。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "教堂建筑短线",
+          "badge": "轻松参观",
+          "suitability": "适合建筑爱好者和家庭",
+          "nodes": [
+            "一德路地铁站",
+            "教堂外立面",
+            "开放入口",
+            "内部参观区",
+            "一德路街区"
+          ],
+          "duration": "约1小时",
+          "walking": "城市街道与场馆短距离步行",
+          "physical": 1,
+          "tips": [
+            "到场先看开放公告",
+            "宗教活动期间服从管理"
+          ],
+          "sourceTitle": "广州市人民政府城市文化资料",
+          "sourceUrl": "https://www.gz.gov.cn/",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "越秀老城人文线",
+          "badge": "城市半日",
+          "suitability": "适合希望串联广州老城的游客",
+          "nodes": [
+            "石室圣心大教堂",
+            "一德路",
+            "海珠广场",
+            "北京路",
+            "南越王博物院王宫展区"
+          ],
+          "duration": "约半天",
+          "walking": "地铁与城市步行结合",
+          "physical": 2.5,
+          "tips": [
+            "炎热天气减少正午步行",
+            "各场馆预约和闭馆日分别核对"
+          ],
+          "sourceTitle": "广州市人民政府城市文化资料",
+          "sourceUrl": "https://www.gz.gov.cn/",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "把它当作仍在使用的宗教建筑而不是摄影棚；是否能进入、能否拍摄和停留范围都以现场为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "广州市人民政府城市文化资料：https://www.gz.gov.cn/",
+          "携程石室圣心大教堂资料：https://you.ctrip.com/sight/guangzhou152/6959.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "石室圣心大教堂 15",
+        "author": "神樂坂秀吉",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:石室圣心大教堂_15.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_e3f0f2692c",
+      "id": "manual_guangdong_provincial_museum",
+      "name": "广东省博物馆",
+      "city": "广州",
+      "rating": 4.8,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_provincial_museum_verified.jpg",
+      "description": "广东省博物馆位于珠江新城，是展示广东历史文化、自然资源和艺术收藏的重要综合博物馆。",
+      "intro": "馆内常设展与临时展内容丰富，热门日期实行分时预约。合理安排是先确保预约，再按兴趣选择两至三个重点展区，不把所有展厅都当作必须看完。",
+      "level": "国家一级博物馆",
+      "category": "博物馆",
+      "tags": [
+        "历史文化",
+        "自然展览",
+        "亲子研学"
+      ],
+      "address": "广东省广州市天河区珠江东路2号",
+      "openHours": "开放日、预约时段和停止入馆时间以广东省博物馆官方预约平台公告为准",
+      "price": "常设展通常按官方免费预约政策执行，临时收费展与活动以馆方公示为准",
+      "tips": "所有观众按馆方规则预约和验票；不要无预约直接前往热门时段。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "乘广州地铁到大剧院站或珠江新城站后按导航步行，公共交通通常比自驾找停车位稳定。",
+          "internal_arrive": "按预约入口和时段安检入馆，先查看当天开放展厅与活动。",
+          "internal_traffic": "馆内通过电梯、扶梯和展厅步行串联，亲子家庭可按楼层减少折返。",
+          "tips": "预约截图、有效证件和儿童信息提前准备，错过时段按馆方规则处理。"
+        },
+        "housing": [
+          {
+            "area": "珠江新城",
+            "desc": "靠近博物馆与花城广场，适合城市文化路线。"
+          },
+          {
+            "area": "体育西路一带",
+            "desc": "地铁换乘和餐饮选择丰富。"
+          }
+        ],
+        "food": [
+          "广式早茶",
+          "烧鹅",
+          "云吞面",
+          "煲仔饭"
+        ],
+        "special_care": {
+          "elderly": "利用电梯按重点展厅参观，避免在大馆内反复上下楼。",
+          "children": "选择自然资源和互动内容，不触摸展品，走散时到服务台集合。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "馆藏精华省力线",
+          "badge": "首次必看",
+          "suitability": "适合长辈、儿童和第一次到访者",
+          "nodes": [
+            "预约入口",
+            "服务台",
+            "广东历史文化展",
+            "自然资源展",
+            "出口"
+          ],
+          "duration": "约2至3小时",
+          "walking": "馆内平缓步行与电梯换层",
+          "physical": 1.5,
+          "tips": [
+            "入馆先拿导览或看楼层图",
+            "只选重点展避免疲劳"
+          ],
+          "sourceTitle": "广东省博物馆参观指南",
+          "sourceUrl": "https://www.gdmuseum.org.cn/col88/index",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "博物馆加花城广场线",
+          "badge": "城市半日",
+          "suitability": "适合希望兼顾室内与城市景观的游客",
+          "nodes": [
+            "广东省博物馆",
+            "广州图书馆外观",
+            "花城广场",
+            "海心沙",
+            "珠江新城地铁站"
+          ],
+          "duration": "约半天",
+          "walking": "室内参观加城市广场步行",
+          "physical": 2.5,
+          "tips": [
+            "夏季把户外步行放在傍晚",
+            "不要用广场游览挤压预约时段"
+          ],
+          "sourceTitle": "广东省博物馆参观指南",
+          "sourceUrl": "https://www.gdmuseum.org.cn/col88/index",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "预约成功是前提；馆内按兴趣取舍比追求全看完更适合家庭，傍晚再串联花城广场。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "广东省博物馆参观指南：https://www.gdmuseum.org.cn/col88/index",
+          "广东省人民政府场馆介绍：https://www.gd.gov.cn/gdywdt/zwzt/whlvc/cgjs/content/post_2208062.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "New Guangdong Provincial Museum overview",
+        "author": "圍棋一級",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Guangdong_Provincial_Museum_overview.JPG"
+      }
+    },
+    {
+      "baselineKey": "core_107b30a2bc",
+      "id": "manual_guangdong_chaozhou_ancient_city",
+      "name": "潮州古城",
+      "city": "潮州",
+      "rating": 4.8,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_chaozhou_ancient_city_verified.jpg",
+      "description": "潮州古城以牌坊街、广济门城楼、广济桥、开元寺和韩江滨水空间为代表，是潮州历史文化体验的核心区域。",
+      "intro": "古城是开放街区，不等同于数据库里已有的单体“潮州古城墙”。各文保点、桥梁和场馆有独立开放与票务，适合按步行圈分时游览。",
+      "level": "国家历史文化名城核心街区",
+      "category": "古城街区",
+      "tags": [
+        "历史街区",
+        "古桥城楼",
+        "潮州文化"
+      ],
+      "address": "广东省潮州市湘桥区太平路及环城东路一带",
+      "openHours": "古城街区全天开放，广济桥、城楼、寺庙和场馆开放时间各异，以各管理方公告为准",
+      "price": "开放街区无需统一门票，广济桥及独立场馆票务以官方公示为准",
+      "tips": "古城并非单一检票景区；先按广济桥开闭桥时间安排，再串联牌坊街和周边点位。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从潮汕站可乘正规公共交通、出租车或网约车到潮州古城；自驾应使用外围停车场。",
+          "internal_arrive": "以牌坊街、广济门或开元寺一带作为步行起点，避免车辆深入拥挤街巷。",
+          "internal_traffic": "核心区以步行为主，跨韩江或前往韩文公祠等点位可乘公交或短途车辆。",
+          "tips": "节假日实施交通管制时服从现场引导，返程车在外围约定上车点。"
+        },
+        "housing": [
+          {
+            "area": "牌坊街及古城周边",
+            "desc": "夜游和早晨散步方便，但注意隔音与车辆接送条件。"
+          },
+          {
+            "area": "潮州大道一带",
+            "desc": "现代酒店和停车更方便，往返古城需短途交通。"
+          }
+        ],
+        "food": [
+          "潮州牛肉火锅",
+          "潮州粿品",
+          "蚝烙",
+          "鸭母捻"
+        ],
+        "special_care": {
+          "elderly": "以牌坊街、开元寺和广济门平缓区域为主，减少高温时段连续步行。",
+          "children": "广济桥和韩江边全程看护，拥挤街区提前约定走散集合点。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古城经典步行线",
+          "badge": "首次必看",
+          "suitability": "适合第一次到潮州的家庭",
+          "nodes": [
+            "开元寺",
+            "牌坊街",
+            "广济门城楼",
+            "广济桥",
+            "韩江滨水区"
+          ],
+          "duration": "约半天",
+          "walking": "开放街区连续步行",
+          "physical": 2.5,
+          "tips": [
+            "广济桥时间提前核对",
+            "正午高温时进入室内休息"
+          ],
+          "sourceTitle": "潮州市人民政府古城旅游路线",
+          "sourceUrl": "https://www.chaozhou.gov.cn/ywdt/czyw/content/post_3707534.html",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "古城慢游美食线",
+          "badge": "轻松一日",
+          "suitability": "适合边逛边吃、不过度赶点的游客",
+          "nodes": [
+            "西马路",
+            "牌坊街",
+            "己略黄公祠",
+            "广济门",
+            "北堤夜景"
+          ],
+          "duration": "约1天",
+          "walking": "分段步行与休息结合",
+          "physical": 2,
+          "tips": [
+            "小吃少量多样避免一次吃太饱",
+            "宗祠场馆开放情况单独确认"
+          ],
+          "sourceTitle": "潮州市人民政府古城旅游路线",
+          "sourceUrl": "https://www.chaozhou.gov.cn/ywdt/czyw/content/post_3707534.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "把潮州古城当开放街区而非单体景区；围绕广济桥时刻表安排主线，其余街巷按体力自由增减。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "潮州市人民政府古城旅游路线：https://www.chaozhou.gov.cn/ywdt/czyw/content/post_3707534.html",
+          "广东省外事办公室潮州古城介绍：https://www.gdfao.gov.cn/zwgk/zdly/czs/content/post_1333422.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Chaozhou Guangji Men 2013.10.26",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaozhou_Guangji_Men_2013.10.26_15-20-21.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_4ac2dabe04",
+      "id": "manual_guangdong_zhuhai_chimelong_resort",
+      "name": "珠海横琴长隆国际海洋度假区",
+      "city": "珠海",
+      "rating": 4.8,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_zhuhai_chimelong_verified.jpg",
+      "description": "珠海横琴长隆国际海洋度假区以海洋王国为核心，并配套剧院、酒店和其他主题体验，是大型综合亲子度假区。",
+      "intro": "度假区项目多、面积大，海洋王国通常需要完整一天。演出、酒店权益和不同项目票种独立变化，家庭行程应围绕一项主园区安排。",
+      "level": "国家级旅游度假区",
+      "category": "海洋主题度假",
+      "tags": [
+        "海洋主题",
+        "亲子乐园",
+        "度假酒店"
+      ],
+      "address": "广东省珠海市香洲区横琴长隆大道1号",
+      "openHours": "各园区、剧院、酒店和演出开放时间以珠海长隆官方当日运营日历为准",
+      "price": "日期、园区、座区和酒店套票价格不同，以长隆官方订单说明为准",
+      "tips": "先确认具体园区和票种；海洋王国至少留一整天，热门演出和项目提前规划。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "可经珠海机场、珠海站或横琴口岸换乘公交、出租车或官方交通前往，节假日预留拥堵时间。",
+          "internal_arrive": "按海洋王国、剧院或酒店的具体入口导航，不以度假区总定位代替。",
+          "internal_traffic": "园区内以长距离步行和分区游览为主，酒店与项目之间按官方接驳安排。",
+          "tips": "入园前下载或查看官方地图，返程提前确认公交、口岸或网约车集合点。"
+        },
+        "housing": [
+          {
+            "area": "长隆度假区内酒店",
+            "desc": "适合两日亲子游，减少晚间演出后交通。"
+          },
+          {
+            "area": "横琴口岸或横琴镇",
+            "desc": "住宿选择更灵活，需安排往返园区交通。"
+          }
+        ],
+        "food": [
+          "横琴蚝",
+          "珠海海鲜",
+          "茶果",
+          "广式早茶"
+        ],
+        "special_care": {
+          "elderly": "使用园区休息区并减少跨区折返，强刺激项目按身体条件取舍。",
+          "children": "提前核对项目身高限制，佩戴联系方式，观演和人流高峰由成人近距离看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "海洋王国亲子一日线",
+          "badge": "首次首选",
+          "suitability": "适合第一次到访的亲子家庭",
+          "nodes": [
+            "海洋大街",
+            "海豚湾",
+            "鲸鲨馆",
+            "企鹅馆",
+            "夜间烟花或演出区"
+          ],
+          "duration": "约1天",
+          "walking": "园区长距离步行，按场次穿插休息",
+          "physical": 3,
+          "tips": [
+            "入园先记录演出时间",
+            "同一区域项目集中完成减少折返"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "度假区两日慢游线",
+          "badge": "省力度假",
+          "suitability": "适合幼儿、长辈同行和住店家庭",
+          "nodes": [
+            "度假酒店",
+            "海洋王国重点馆",
+            "午后回酒店休息",
+            "晚间演出",
+            "次日补游"
+          ],
+          "duration": "约2天",
+          "walking": "分两天完成，酒店接驳与园区步行结合",
+          "physical": 2.5,
+          "tips": [
+            "核对住店权益和入园规则",
+            "不要把所有表演压在同一天"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "海洋王国面积和信息量都很大，一天只追重点；幼儿与长辈同行优先两日慢游，不靠来回奔跑赶场。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "珠海长隆官方网站：https://www.chimelong.com/zh/",
+          "珠海长隆海洋王国官方网站：https://bk.chimelong.com/zh/oceankingdom/?from=zoo-plants"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Whale Shark Aquarium",
+        "author": "Ngchikit",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whale_Shark_Aquarium.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_46241f51d5",
+      "id": "manual_guangdong_oct_east",
+      "name": "东部华侨城旅游度假区",
+      "city": "深圳",
+      "rating": 4.6,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_oct_east_verified.jpg",
+      "description": "东部华侨城位于深圳盐田大梅沙后方山地，是融合山海观光、主题体验和度假设施的大型旅游度假区。",
+      "intro": "东部华侨城与南山区的深圳华侨城旅游度假区不是同一景区。这里山地面积大、项目与运营会调整，出发前必须确认实际开放园区、索道和接驳。",
+      "level": "国家级旅游度假区",
+      "category": "山海主题度假",
+      "tags": [
+        "山海观光",
+        "主题体验",
+        "休闲度假"
+      ],
+      "address": "广东省深圳市盐田区大梅沙环碧路",
+      "openHours": "园区、索道、演出及酒店运营可能调整，以东部华侨城官方当天公告为准",
+      "price": "开放项目、套票和交通产品按实际运营调整，以官方售票渠道为准",
+      "tips": "先确认当前开放范围再出发；不要拿十年前攻略中的园区和项目名称直接安排行程。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "可从深圳市区乘地铁和公交前往大梅沙片区，再按官方接驳进入；自驾节假日注意大梅沙预约和交通管制。",
+          "internal_arrive": "到达游客入口后先确认开放园区、接驳和索道情况。",
+          "internal_traffic": "山地园区依赖接驳车、索道和分段步行，运营情况受天气影响。",
+          "tips": "返程前确认末班接驳，雨雾天气不要强行安排高处观景。"
+        },
+        "housing": [
+          {
+            "area": "东部华侨城或大梅沙周边",
+            "desc": "便于度假和减少长距离返程，预订前确认酒店运营及接驳。"
+          },
+          {
+            "area": "盐田中心或地铁沿线",
+            "desc": "交通更稳定，可与海滨景点分开安排。"
+          }
+        ],
+        "food": [
+          "盐田海鲜",
+          "客家酿豆腐",
+          "盐焗鸡",
+          "潮汕牛肉火锅"
+        ],
+        "special_care": {
+          "elderly": "只选择明确开放且接驳方便的区域，减少山地台阶和跨区折返。",
+          "children": "项目身高限制提前核对，索道、山路和观景台由成人看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "山海观景省力线",
+          "badge": "家庭首选",
+          "suitability": "适合长辈与儿童同行",
+          "nodes": [
+            "游客入口",
+            "开放接驳站",
+            "核心观景区",
+            "休息餐饮区",
+            "返程接驳站"
+          ],
+          "duration": "约半天",
+          "walking": "接驳为主、分段步行",
+          "physical": 2,
+          "tips": [
+            "当天先问清开放范围",
+            "末班接驳时间拍照保存"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "东部华侨城加大梅沙线",
+          "badge": "山海一日",
+          "suitability": "适合天气稳定、体力较好的游客",
+          "nodes": [
+            "东部华侨城",
+            "核心开放园区",
+            "山海观景点",
+            "大梅沙海滨公园",
+            "盐田返程点"
+          ],
+          "duration": "约1天",
+          "walking": "接驳、山地和海滨步行结合",
+          "physical": 3,
+          "tips": [
+            "下午提前下山避免错过接驳",
+            "大梅沙预约和开放单独核对"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "东部华侨城运营变化较多，旧攻略只作参考；当天先确认“哪些区域真的开放”，再决定是否与大梅沙串联。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "深圳市A级旅游景区一览表：https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/content/post_11729448.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "深圳东部华侨城 OCT, Shenzhen",
+        "author": "wanghongliu",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:深圳东部华侨城_OCT,_Shenzhen_-_panoramio.jpg"
+      }
+    },
+    {
+      "baselineKey": "core_628327d350",
+      "id": "manual_guangdong_bavaria_manor",
+      "name": "河源巴伐利亚庄园",
+      "city": "河源",
+      "rating": 4.5,
+      "reviewsCount": "多平台热门",
+      "image": "/assets/images/attractions/guangdong_bavaria_manor_verified.jpg",
+      "description": "河源巴伐利亚庄园是融合温泉、亲子游乐、度假住宿和中西建筑风格的国家级旅游度假区。",
+      "intro": "庄园内项目分散且可能独立售票，游客体验通常围绕酒店、温泉或亲子乐园中的一项主产品展开。适合度假，不适合无计划地到场后再试图全部玩完。",
+      "level": "国家级旅游度假区",
+      "category": "温泉亲子度假",
+      "tags": [
+        "温泉度假",
+        "亲子乐园",
+        "主题建筑"
+      ],
+      "address": "广东省河源市源城区高埔岗龙源大道1号万洞旅游区",
+      "openHours": "庄园公共区域、温泉、黑森林乐园和演艺项目营业时间各异，以各项目官方当天公告为准",
+      "price": "住宿、温泉、乐园和演艺项目可能分别计价，套票权益以预订订单为准",
+      "tips": "预订前逐项确认包含内容；不要把住宿、温泉和乐园默认理解为全部互通。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "从河源东站或河源市区可乘出租车、网约车或自驾前往，公共交通班次有限时提前安排返程。",
+          "internal_arrive": "按所订酒店、温泉或乐园的具体前台导航，先办理核验再进入项目。",
+          "internal_traffic": "园区范围较大，可步行、乘园区交通或短途驾车，具体以住店和项目权益为准。",
+          "tips": "夜间项目结束前确定返程方式，住店客提前询问接驳和停车位置。"
+        },
+        "housing": [
+          {
+            "area": "巴伐利亚庄园内",
+            "desc": "适合温泉和亲子度假，预订时核对房型对应的项目权益。"
+          },
+          {
+            "area": "河源市区",
+            "desc": "餐饮与住宿更灵活，但往返庄园需车辆。"
+          }
+        ],
+        "food": [
+          "五指毛桃汤",
+          "客家酿豆腐",
+          "盐焗鸡",
+          "东江河鲜"
+        ],
+        "special_care": {
+          "elderly": "以温泉和低强度园区散步为主，泡汤时间和水温按身体情况控制。",
+          "children": "游乐设施核对年龄身高；温泉、泳池和湖边始终由成人近距离看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "亲子乐园半日线",
+          "badge": "亲子首选",
+          "suitability": "适合学龄儿童家庭",
+          "nodes": [
+            "庄园入口",
+            "黑森林乐园",
+            "亲子游乐区",
+            "园区餐饮",
+            "主题建筑区"
+          ],
+          "duration": "约半天",
+          "walking": "园区步行与游乐项目结合",
+          "physical": 2,
+          "tips": [
+            "先核对开放项目和身高限制",
+            "夏季避免连续暴晒"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "温泉度假慢游线",
+          "badge": "住店休闲",
+          "suitability": "适合长辈和希望放松的家庭",
+          "nodes": [
+            "度假酒店",
+            "园区散步",
+            "国医国药温泉",
+            "晚餐",
+            "酒店休息"
+          ],
+          "duration": "约1天至2天",
+          "walking": "低强度步行与泡汤休息结合",
+          "physical": 1.5,
+          "tips": [
+            "确认套票包含的温泉次数",
+            "长辈和儿童控制泡汤时长"
+          ],
+          "sourceTitle": "文化和旅游部大众旅游服务广东页",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "先明确这次是亲子乐园、温泉还是住店度假，再选对应产品；不同项目权益写进订单才算数。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部大众旅游服务广东页：https://lyfw.mct.gov.cn/site/special/province?pkey=guangdong&type=0",
+          "河源市全域旅游发展规划：https://www.heyuan.gov.cn/u/cms/web/201903/071620009w9k.pdf",
+          "携程巴伐利亚庄园黑森林乐园资料：https://you.ctrip.com/sight/heyuan350/98281719.html"
+        ],
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "巴伐利亚庄园景区入口",
+        "author": "广东万绿湖旅游经营管理有限公司",
+        "provider": "万绿湖旅游官网",
+        "license": "景区介绍资料，版权归原作者",
+        "licenseUrl": "https://www.wanlvhu.cn/show-15-215.html",
+        "sourceUrl": "https://www.wanlvhu.cn/uploads/uploads/image/2021/09/03/1630678865608563.jpg"
+      }
+    }
+  ],
+  "overrides": {},
+  "reviewedAt": "2026-08-12",
+  "reviewedAtIso": "2026-08-12T04:44:50.415Z",
+  "appliedAt": "2026-08-12T04:45:36.304Z",
+  "appliedAttractionIds": [
+    "manual_guangdong_wanlvhu",
+    "manual_guangdong_sun_yat_sen_hometown",
+    "manual_guangdong_hailing_dajiao_bay",
+    "manual_guangdong_mission_hills",
+    "manual_guangdong_chimelong_circus",
+    "manual_guangdong_chen_clan_hall",
+    "manual_guangdong_sacred_heart_cathedral",
+    "manual_guangdong_provincial_museum",
+    "manual_guangdong_chaozhou_ancient_city",
+    "manual_guangdong_zhuhai_chimelong_resort",
+    "manual_guangdong_oct_east",
+    "manual_guangdong_bavaria_manor"
+  ],
+  "appliedOverrideIds": []
+}

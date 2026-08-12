@@ -30,6 +30,9 @@ const generateAfter = args.has('generate-after');
 const visible = loginMode || args.has('visible');
 const write = args.has('write');
 const force = args.has('force');
+const repairOnly = args.has('repair-only');
+const refreshDynamic = args.has('refresh-dynamic');
+const sanitizeStored = args.has('sanitize-stored');
 const provinceFilter = String(args.get('province') || '');
 const nameFilter = String(args.get('name') || '');
 const limit = Math.max(0, Number(args.get('limit') || 0));
@@ -70,8 +73,11 @@ function compactText(text) {
 }
 
 function promptFor(attraction) {
-  const name = String(attraction.name || '').replace(/景区$/, '');
-  return `${name} 长辈小孩省力路线，不要无关内容（如餐饮推荐）`;
+  const name = String(attraction.name || '').trim();
+  if (/大马戏/.test(name)) {
+    return `只回答“${name}”这个独立演出项目截至当前仍可执行的长辈小孩省力观看攻略。不要写动物世界、欢乐世界、水上乐园或其他长隆园区路线；重点写入场前准备、适合长辈小孩的通用选座原则、观看注意事项和散场避拥挤方法。不要写固定座区编号、票价、固定开演时间、演出时长或临时场次，不建议提前离场；不确定的项目明确提醒查官方。`;
+  }
+  return `${name}完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）`;
 }
 
 function cleanupAnswer(pageText, prompt) {
@@ -89,25 +95,70 @@ function cleanupAnswer(pageText, prompt) {
     .map(line => line.trim())
     .filter(Boolean)
     .filter(line => !/餐饮|美食|住宿|酒店|饭店|需要我帮你|如果时间充裕|推荐吗|下一步/.test(line));
-  return compactText(lines.join('\n\n'));
+  return compactText(lines
+    .map(line => line
+      .replace(/^\d{1,2}:\d{2}\s*[-—–至]\s*\d{1,2}:\d{2}\s*/, '')
+      .replace(/\d{1,2}:\d{2}\s*左右/g, '客流较少时')
+      .replace(/\d{1,2}:\d{2}/g, '官方当日建议时段'))
+    .filter(line => !/(门票|票价|收费|半价|免票|免费|\d+(?:\.\d+)?\s*元|开放时间|闭馆时间|周[一二三四五六日].*(?:闭馆|开放|停演)|无限次)/.test(line))
+    .join('\n\n'));
 }
 
-function answerQuality(text) {
+function finalSanitizeAnswer(text) {
+  let answer = compactText(text)
+    .replace(/\d{1,2}:\d{2}\s*左右/g, '客流较少时')
+    .replace(/\d{1,2}:\d{2}/g, '官方当日建议时段')
+    .replace(/(?:上午|中午|下午|晚上|傍晚|夜间)\s*\d+(?:点|时)(?:半|左右)?/g, '当日较合适时段')
+    .replace(/\d+点左右/g, '当日较合适时段');
+  const blocks = answer.split(/\n{2,}/).map(block => block.trim()).filter(Boolean);
+  answer = blocks.filter(block => !/(你们这次|需要我(?:再)?帮你|还可以帮你|如果需要[，,]?我可以)/.test(block)).join('\n\n');
+  if (/大马戏/.test(answer)) {
+    answer = answer
+      .replace(/提前离场：[^\n]+/g, '散场安排：完整看完演出和谢幕后，再按现场工作人员引导分批离场；提前约好家人集合点和返程上车点。')
+      .replace(/不过\d+分钟的演出/g, '不过完整场次的演出')
+      .replace(/演出时长约\d+分钟/g, '演出时长以官方当日场次为准');
+  }
+  return compactText(answer);
+}
+
+function sanitizeStoredOverrides() {
+  const overrides = readJson(overridesPath, {});
+  let changed = 0;
+  for (const [id, value] of Object.entries(overrides)) {
+    if (!value?.lazy_ai_text) continue;
+    const next = finalSanitizeAnswer(value.lazy_ai_text);
+    if (next === value.lazy_ai_text) continue;
+    value.lazy_ai_text = next;
+    changed += 1;
+  }
+  if (changed) {
+    const backup = backupOverrides();
+    atomicWriteJson(overridesPath, overrides);
+    console.log(`已清理 ${changed} 条已存攻略中的固定时刻或对话式结尾。`);
+    if (backup) console.log(`备份：${backup}`);
+  } else {
+    console.log('已存攻略无需清理。');
+  }
+}
+
+function answerQuality(text, prompt = '') {
   const answer = compactText(text);
   const lines = answer.split(/\n+/).map(line => line.trim()).filter(Boolean);
   const routeSignals = (answer.match(/路线|游览顺序|观光车|索道|接驳|电梯|扶梯|少走|步行/g) || []).length;
   const audienceSignals = (answer.match(/老人|长辈|小孩|儿童|亲子/g) || []).length;
   const safetySignals = (answer.match(/注意|避开|防滑|预约|公告|开放|体力|台阶/g) || []).length;
   const sections = lines.filter(line => line.length <= 28 && /(路线|顺序|技巧|注意|提醒|建议|省力)/.test(line)).length;
+  const showMode = /大马戏|独立演出项目/.test(prompt);
+  const showSignals = (answer.match(/入场|选座|座位|观看|声光|散场|退场|出口/g) || []).length;
   const trailing = lines.at(-1) || '';
   const complete = answer.length >= 500
-    && routeSignals >= 2
+    && (showMode ? showSignals >= 5 : routeSignals >= 2)
     && audienceSignals >= 2
     && safetySignals >= 1
     && sections >= 1
     && !(/(路线|技巧|注意事项|提醒|建议)$/.test(trailing) && trailing.length <= 16)
     && !/登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|换个问题试试/.test(answer);
-  return { complete, length: answer.length, routeSignals, audienceSignals, safetySignals, sections };
+  return { complete, length: answer.length, routeSignals, showSignals, audienceSignals, safetySignals, sections };
 }
 
 function isExcludedName(name) {
@@ -138,7 +189,11 @@ function buildAllRecords() {
   }
   for (const name of fs.readdirSync(path.join(rootDir, 'content')).filter(item => /^core-repair-packages\.[a-z0-9_-]+\.json$/i.test(item)).sort()) {
     const repairPackage = readJson(path.join(rootDir, 'content', name), {});
-    if (repairPackage.status !== 'reviewed' || !repairPackage.province) continue;
+    // A repair package is intentionally exposed to Diandian while it is still
+    // collecting.  Requiring "reviewed" here created a deadlock: the package
+    // could not pass final review without a Diandian article, while Diandian
+    // could not see it until after final review.
+    if (!['collecting', 'reviewed'].includes(repairPackage.status) || !repairPackage.province) continue;
     manual[repairPackage.province] = [
       ...(manual[repairPackage.province] || []),
       ...(repairPackage.attractions || []).map(({ baselineKey, ...attraction }) => ({ ...attraction, __repairPackage: true })),
@@ -168,19 +223,27 @@ function buildAllRecords() {
   return records;
 }
 
-function isPendingTarget({ provinceName, attraction }) {
+function isPendingTarget({ provinceName, attraction, dataLayer }) {
     if (provinceFilter && provinceName !== provinceFilter) return false;
+    if (repairOnly && dataLayer !== 'repair-package') return false;
     if (nameFilter && !String(attraction.name || '').includes(nameFilter)) return false;
     if (isExcludedName(String(attraction.name || '')) && !corePreferredIds.has(attraction.id)) return false;
     const alreadyXhs = attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat';
-    if (!force && alreadyXhs) return false;
+    if (!force && alreadyXhs) {
+      if (!refreshDynamic) return false;
+      const text = String(attraction.lazy_ai_text || '');
+      if (!/(?:\d+(?:\.\d+)?\s*元|门票|票价|开放时间|闭馆时间|\d{1,2}:\d{2})/.test(text)) return false;
+    }
     return true;
 }
 
 function collectRecords() {
   return buildAllRecords()
     .filter(isPendingTarget)
-    .sort((a, b) => Number(b.attraction.rating || 0) - Number(a.attraction.rating || 0));
+    .sort((a, b) => {
+      const repairPriority = Number(b.dataLayer === 'repair-package') - Number(a.dataLayer === 'repair-package');
+      return repairPriority || Number(b.attraction.rating || 0) - Number(a.attraction.rating || 0);
+    });
 }
 
 function printStats() {
@@ -284,11 +347,13 @@ async function scrapeOne(page, target) {
     } else if (answer === best && answer.length > 0) {
       stable += 1;
     }
-    const quality = answerQuality(best);
-    if (quality.complete && stable >= 2) return { ok: true, prompt, answer: best, quality };
+    const sanitized = finalSanitizeAnswer(best);
+    const quality = answerQuality(sanitized, prompt);
+    if (quality.complete && stable >= 2) return { ok: true, prompt, answer: sanitized, quality };
     await sleep(1000);
   }
-  return { ok: false, reason: 'incomplete_answer', prompt, answerPreview: best.slice(0, 1000), quality: answerQuality(best) };
+  const sanitized = finalSanitizeAnswer(best);
+  return { ok: false, reason: 'incomplete_answer', prompt, answerPreview: sanitized.slice(0, 1000), quality: answerQuality(sanitized, prompt) };
 }
 
 function backupOverrides() {
@@ -346,6 +411,7 @@ async function runCollection() {
     total: targets.length,
     success,
     failed,
+    stack: '',
   });
   const { browser, page } = await openBrowser();
   try {
@@ -368,6 +434,12 @@ async function runCollection() {
       let result;
       try {
         result = await scrapeOne(page, target);
+        if (result.reason === 'incomplete_answer') {
+          writeProgress({ status: 'running', message: `${current} 回答不完整，等待 3 秒后自动刷新重试一次。`, current, index, total: targets.length, success, failed });
+          await sleep(3000);
+          const retry = await scrapeOne(page, target);
+          if (retry.ok || Number(retry.quality?.length || 0) > Number(result.quality?.length || 0)) result = retry;
+        }
       } catch (error) {
         result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction) };
       }
@@ -465,6 +537,7 @@ function recoverAcceptedSamples() {
 async function main() {
   fs.mkdirSync(runtimeDir, { recursive: true });
   if (loginMode) await runLogin();
+  else if (sanitizeStored) sanitizeStoredOverrides();
   else if (recoverMode) recoverAcceptedSamples();
   else if (statsMode) printStats();
   else if (listMode) {

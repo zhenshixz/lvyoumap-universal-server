@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-11T01:15:13.507Z",
-  "provinceCount": 3,
-  "baselineCount": 53,
-  "present": 53,
+  "generatedAt": "2026-08-12T06:16:39.187Z",
+  "provinceCount": 4,
+  "baselineCount": 97,
+  "present": 97,
   "review": 0,
   "missing": 0,
-  "readyCount": 53,
+  "readyCount": 97,
   "provinces": [
     {
       "province": "福建",
@@ -25,6 +25,25 @@
         "review": 0
       },
       "report": "reports\\core-attractions-fujian.json"
+    },
+    {
+      "province": "广东",
+      "baselineCount": 44,
+      "counts": {
+        "present": 44,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 44,
+      "qualityBands": {
+        "stable": 12,
+        "improve": 32,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-guangdong.json"
     },
     {
       "province": "贵州",

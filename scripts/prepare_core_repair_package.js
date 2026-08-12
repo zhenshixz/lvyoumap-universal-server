@@ -1,0 +1,149 @@
+const fs = require('fs');
+const path = require('path');
+
+const rootDir = path.join(__dirname, '..');
+const contentDir = path.join(rootDir, 'content');
+const args = new Map(process.argv.slice(2).map(arg => {
+  const match = arg.match(/^--([^=]+)=(.*)$/);
+  return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
+}));
+const province = String(args.get('province') || '').trim();
+if (!province) throw new Error('请使用 --province=省份 指定范围。');
+
+function readJson(filePath, fallback = null) {
+  if (!fs.existsSync(filePath)) return fallback;
+  return JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, ''));
+}
+
+function writeJsonAtomic(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  const tempPath = `${filePath}.tmp`;
+  fs.writeFileSync(tempPath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+  fs.renameSync(tempPath, filePath);
+}
+
+function provinceInfo(name) {
+  const db = readJson(path.join(contentDir, 'db.json'), { provinces: {} });
+  const entry = Object.entries(db.provinces || {}).find(([key]) => key === name);
+  return entry ? { slug: entry[1].slug || entry[1].id || '' } : null;
+}
+
+function clothing(profile) {
+  const profiles = {
+    coastal: {
+      spring_autumn: '海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。',
+      summer: '速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。',
+      winter: '准备防风外套和长裤，阴雨、海风较强时体感会明显降低。',
+      tips: '滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。',
+    },
+    indoor: {
+      spring_autumn: '以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。',
+      summer: '穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。',
+      winter: '常规保暖衣物即可，步行串联周边街区时注意天气变化。',
+      tips: '历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。',
+    },
+    resort: {
+      spring_autumn: '轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。',
+      summer: '速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。',
+      winter: '准备防风保暖外套和舒适步行鞋，早晚活动注意温差。',
+      tips: '大型度假区步行量容易被低估，鞋子舒适度比造型更重要。',
+    },
+    lake: {
+      spring_autumn: '湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。',
+      summer: '速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。',
+      winter: '准备保暖防风外套和长裤，湖面及码头体感温度通常更低。',
+      tips: '码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。',
+    },
+    urban: {
+      spring_autumn: '轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。',
+      summer: '透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。',
+      winter: '准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。',
+      tips: '城市街区步行和排队时间可能较长，优先穿软底防滑鞋。',
+    },
+  };
+  return profiles[profile] || profiles.urban;
+}
+
+function routeFromSeed(route, source, verifiedAt) {
+  return {
+    title: route.title,
+    badge: route.badge,
+    suitability: route.suitability,
+    nodes: route.nodes,
+    duration: route.duration,
+    walking: route.walking,
+    physical: route.physical,
+    tips: route.tips,
+    sourceTitle: route.sourceTitle || source.title,
+    sourceUrl: route.sourceUrl || source.url,
+    verifiedAt,
+  };
+}
+
+const info = provinceInfo(province);
+if (!info?.slug) throw new Error(`无法识别省份：${province}`);
+const seedPath = path.join(contentDir, `core-repair-seeds.${info.slug}.json`);
+const packagePath = path.join(contentDir, `core-repair-packages.${info.slug}.json`);
+const seed = readJson(seedPath);
+if (!seed || seed.province !== province || !Array.isArray(seed.attractions) || !seed.attractions.length) {
+  throw new Error(`缺少已核验种子资料：${seedPath}`);
+}
+const existing = readJson(packagePath);
+if (existing?.status === 'applied') {
+  console.log(`${province}补全包已应用，不重复生成。`);
+  process.exit(0);
+}
+const verifiedAt = seed.verifiedAt || new Date().toISOString().slice(0, 10);
+const attractions = seed.attractions.map(item => {
+  if (!item.sources?.length || item.sources.length < 2) throw new Error(`${item.name} 至少需要两个基本信息来源。`);
+  if (!item.routes?.length || item.routes.length < 2) throw new Error(`${item.name} 至少需要两条已核验路线。`);
+  return {
+    baselineKey: item.baselineKey,
+    id: item.id,
+    name: item.name,
+    city: item.city,
+    rating: item.rating,
+    reviewsCount: item.reviewsCount || '多平台热门',
+    image: item.image,
+    description: item.description,
+    intro: item.intro,
+    level: item.level,
+    category: item.category,
+    tags: item.tags,
+    address: item.address,
+    openHours: item.openHours,
+    price: item.price,
+    tips: item.tips,
+    guide_data: {
+      clothing: clothing(item.profile),
+      transport: item.transport,
+      housing: item.housing,
+      food: item.food,
+      special_care: item.specialCare,
+    },
+    lazy_routes: item.routes.map(route => routeFromSeed(route, item.sources[0], verifiedAt)),
+    lazy_tips: item.lazyTips,
+    quality_policy: item.lazyGuidePolicy || {},
+    source_evidence: {
+      source: item.sourceLabel || '文化和旅游主管部门、景区官方渠道与主流OTA交叉核验',
+      basicInfoSources: item.sources.map(source => `${source.title}：${source.url}`),
+      basicInfoUpdatedAt: verifiedAt,
+      note: item.sourceNote || '开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。',
+    },
+    image_source: item.imageSource,
+  };
+});
+const packageData = {
+  province,
+  status: 'collecting',
+  createdAt: existing?.createdAt || new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+  policy: '官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。',
+  seedFile: path.relative(rootDir, seedPath).replace(/\\/g, '/'),
+  attractions,
+  overrides: seed.overrides || {},
+};
+writeJsonAtomic(packagePath, packageData);
+console.log(`${province}补全包已建立：新增 ${attractions.length}，修复 ${Object.keys(packageData.overrides).length}。`);
+console.log(`状态：collecting（下一步只采集该补全包的点点攻略）。`);
+console.log(`文件：${packagePath}`);

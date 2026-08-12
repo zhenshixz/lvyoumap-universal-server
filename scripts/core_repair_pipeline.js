@@ -19,7 +19,7 @@ const args = new Map(process.argv.slice(2).map(arg => {
   return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
 }));
 const selectedProvince = String(args.get('province') || '');
-const mode = args.has('apply') ? 'apply' : args.has('check') ? 'check' : 'prepare';
+const mode = args.has('apply') ? 'apply' : args.has('check') ? 'check' : args.has('finalize') ? 'finalize' : 'prepare';
 
 function readJson(filePath, fallback = {}) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -161,14 +161,16 @@ function loadContext() {
   };
 }
 
-function validatePackage(context) {
+function validatePackage(context, options = {}) {
+  const requireReviewed = options.requireReviewed !== false;
   const packageData = readJson(context.packagePath, null);
   const errors = [];
   const readyAttractions = [];
   const readyOverrides = [];
   if (!packageData) return { packageData: null, errors: ['尚未建立补全包。'], readyAttractions, readyOverrides };
   if (packageData.province !== context.province) errors.push('补全包省份与当前省份不一致。');
-  if (packageData.status !== 'reviewed') errors.push('补全包尚未标记为 reviewed。');
+  if (requireReviewed && packageData.status !== 'reviewed') errors.push('补全包尚未完成最终复核。');
+  if (!requireReviewed && !['collecting', 'reviewed'].includes(packageData.status)) errors.push('补全包尚未进入资料采集阶段。');
   const lazyOverrides = readJson(path.join(contentDir, 'lazy-guide-overrides.json'));
   const existingById = new Map(context.records.map(item => [item.id, item]));
   for (const addition of packageData.attractions || []) {
@@ -191,7 +193,21 @@ function validatePackage(context) {
       continue;
     }
     const candidate = deepMerge(JSON.parse(JSON.stringify(addition)), lazyOverrides[addition.id] || {});
+    const policy = candidate.quality_policy || {};
+    const lazyText = String(candidate.lazy_ai_text || '');
+    const contentRisks = [];
+    if (/\d{1,2}[:：]\d{2}|(?:上午|中午|下午|晚上|傍晚|夜间)\s*\d+(?:点|时)|\d+点左右/.test(lazyText)) contentRisks.push('含固定时刻');
+    if (/\d+(?:\.\d+)?\s*元/.test(lazyText)) contentRisks.push('含固定价格');
+    if (/(你们这次|需要我(?:再)?帮你|还可以帮你|如果需要[，,]?我可以)/.test(lazyText)) contentRisks.push('含对话式结尾');
+    for (const term of policy.forbiddenTerms || []) {
+      if (term && lazyText.includes(term)) contentRisks.push(`含禁用内容“${term}”`);
+    }
+    if (contentRisks.length) {
+      errors.push(`${addition.name} 懒人攻略内容风险：${[...new Set(contentRisks)].join('、')}。请重新采集或人工复核。`);
+      continue;
+    }
     delete candidate.baselineKey;
+    delete candidate.quality_policy;
     try {
       validateManualAttraction(candidate, context.province);
       readyAttractions.push({ baselineItem, candidate });
@@ -261,11 +277,25 @@ function main() {
     console.log(fs.existsSync(context.packagePath) ? `检测到补全包：${context.packagePath}` : `尚无补全包；请按档案建立：${context.packagePath}`);
     return;
   }
-  const validation = validatePackage(context);
+  const validation = validatePackage(context, { requireReviewed: mode !== 'finalize' });
   if (validation.errors.length) {
     console.log('补全包尚未通过质量闸门：');
     validation.errors.forEach(error => console.log(`- ${error}`));
     process.exitCode = 2;
+    return;
+  }
+  if (mode === 'finalize') {
+    if (validation.packageData.status !== 'reviewed') {
+      const packageBackup = backup(context.packagePath);
+      validation.packageData.status = 'reviewed';
+      validation.packageData.reviewedAt = new Date().toISOString().slice(0, 10);
+      validation.packageData.reviewedAtIso = new Date().toISOString();
+      writeJsonAtomic(context.packagePath, validation.packageData);
+      console.log(`${context.province}补全包已通过全部质量闸门，状态已更新为 reviewed。`);
+      if (packageBackup) console.log(`原补全包备份：${packageBackup}`);
+    } else {
+      console.log(`${context.province}补全包已经是 reviewed 状态。`);
+    }
     return;
   }
   console.log(`质量闸门通过：新增 ${validation.readyAttractions.length}，修复 ${validation.readyOverrides.length}。`);
