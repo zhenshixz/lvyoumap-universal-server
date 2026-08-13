@@ -6,6 +6,7 @@ const {
   cityFromAddress,
   normalizeCity,
   normalizeName,
+  relatedAttraction,
   sameAttraction,
   temporaryEventReason,
 } = require('./core_candidate_quality');
@@ -67,6 +68,18 @@ function keyFor(name) {
 
 function aliasesFor(name, officialName = '') {
   const values = [name, officialName, name.replace(/(?:旅游景区|风景名胜区|风景旅游区|风景区|旅游区|景区)$/, '')].filter(Boolean);
+  for (const value of [name, officialName].filter(Boolean)) {
+    const parenthetical = value.match(/^(.{3,}?)[（(][^）)]+[）)]$/)?.[1];
+    if (parenthetical) values.push(parenthetical);
+    const parts = value.split(/[—-]/).map(part => part.replace(/(?:旅游景区|风景名胜区|风景旅游区|风景区|旅游区|景区)$/, '').trim()).filter(Boolean);
+    if (parts.length > 1) {
+      values.push(...parts);
+      const typeSuffix = parts.map(part => part.match(/(长城|古城|古镇|博物馆|公园|湖|山)$/)?.[1]).find(Boolean);
+      if (typeSuffix) {
+        for (const part of parts) if (!part.endsWith(typeSuffix)) values.push(`${part}${typeSuffix}`);
+      }
+    }
+  }
   return [...new Set(values)];
 }
 
@@ -84,8 +97,8 @@ function localMatchFor(name, city, records) {
 
 function findEntity(entities, name, city) {
   return entities.find(entity => (
-    sameAttraction(entity.name, name, entity.city, city)
-    || entity.aliases.some(alias => sameAttraction(alias, name, entity.city, city))
+    relatedAttraction(entity.name, name, entity.city, city)
+    || entity.aliases.some(alias => relatedAttraction(alias, name, entity.city, city))
   ));
 }
 
@@ -226,8 +239,8 @@ async function main() {
   // 后面只有当每一项都能在证据文件中找到对应结果时，才允许草稿进入可审批状态。
   const initialReviewEntities = entities.filter(entity => {
     const alreadyCovered = attractions.some(existing => (
-      sameAttraction(existing.name, entity.name, existing.city, entity.city)
-      || existing.aliases.some(alias => sameAttraction(alias, entity.name, existing.city, entity.city))
+      relatedAttraction(existing.name, entity.name, existing.city, entity.city)
+      || existing.aliases.some(alias => relatedAttraction(alias, entity.name, existing.city, entity.city))
     ));
     if (alreadyCovered) return false;
     const platforms = new Set(entity.sources.map(evidencePlatform));
@@ -270,8 +283,8 @@ async function main() {
   for (const entity of entities) {
     if (entity.coveredByCore) continue;
     if (attractions.some(existing => (
-      sameAttraction(existing.name, entity.name, existing.city, entity.city)
-      || existing.aliases.some(alias => sameAttraction(alias, entity.name, existing.city, entity.city))
+      relatedAttraction(existing.name, entity.name, existing.city, entity.city)
+      || existing.aliases.some(alias => relatedAttraction(alias, entity.name, existing.city, entity.city))
     ))) continue;
     const platforms = new Set(entity.sources.map(evidencePlatform));
     const crossPlatform = platforms.size >= 2;
@@ -346,8 +359,12 @@ async function main() {
     && officialCandidates.sourceUrl
     && secondaryComplete
   );
+  const blockingReviewCandidates = reviewCandidates.filter(item => (
+    item.sources.includes('ctrip_popularity') && item.otaRank > 0
+  ));
+  const observationCandidates = reviewCandidates.filter(item => !blockingReviewCandidates.includes(item));
   const qualityGate = {
-    passed: sourcesComplete && selectedIssues.length === 0 && reviewCandidates.length === 0,
+    passed: sourcesComplete && selectedIssues.length === 0 && blockingReviewCandidates.length === 0,
     sourcesComplete,
     selectedIssueCount: selectedIssues.length,
     selectedIssues,
@@ -357,7 +374,9 @@ async function main() {
     secondaryInputCandidateCount: initialReviewEntities.length,
     secondaryMissingInputNames,
     unresolvedAfterSecondaryCount: reviewCandidates.length,
-    note: '质量门禁检查最终入选项；首轮单源候选会先执行城市级二次补证，仍无法确认的项目保留为人工待确认，并阻止批准，避免重要候选被静默遗漏。',
+    blockingSingleSourceCount: blockingReviewCandidates.length,
+    observationCount: observationCandidates.length,
+    note: '质量门禁检查最终入选项；首轮单源候选先执行城市级二次补证，仍无法确认的项目进入观察池，不写入核心清单，也不阻断其他已确认景点。后续获得新证据时可自动晋级。',
   };
   const baseline = {
     province: provinceName,
@@ -400,6 +419,10 @@ async function main() {
     mergedDuplicateCount: deduplicated.mergedNames.length,
     mergedDuplicates: deduplicated.mergedNames,
     reviewCandidateCount: reviewCandidates.length,
+    blockingReviewCandidateCount: blockingReviewCandidates.length,
+    blockingReviewCandidates,
+    observationCandidateCount: observationCandidates.length,
+    observationCandidates,
     reviewCandidates,
     secondaryEvidenceSummary: secondaryEvidence.province === provinceName ? {
       candidateCount: secondaryEvidence.candidateCount || 0,
@@ -419,7 +442,7 @@ async function main() {
     console.log(`已过滤携程临时活动 ${qualityGate.filteredTemporaryOtaCount} 个：${qualityGate.filteredTemporaryOtaCandidates.map(item => item.name).join('、')}`);
   }
   console.log(`现有记录绑定：${baseline.existingRecordBoundCount} 个；现有库未命中：${baseline.existingRecordUnboundCount} 个${unboundAttractions.length ? `（${unboundAttractions.join('、')}）` : ''}；同ID/同规范名合并：${baseline.mergedDuplicateCount} 个。`);
-  console.log(`质量门禁：${qualityGate.passed ? '通过' : `未通过（${qualityGate.selectedIssueCount} 个入选项问题，${qualityGate.unresolvedAfterSecondaryCount} 个二次补证后仍待人工）`}。`);
+  console.log(`质量门禁：${qualityGate.passed ? `通过（观察池保留 ${qualityGate.observationCount} 个普通单源候选）` : `未通过（${qualityGate.selectedIssueCount} 个入选项问题，${qualityGate.blockingSingleSourceCount} 个高热度单源候选仍需补证）`}。`);
   for (const issue of qualityGate.selectedIssues) console.log(`  [阻断] ${issue.attraction}：${issue.type}`);
   console.log(`草稿：${draftPath}`);
   if (approve) {

@@ -3,6 +3,8 @@ const path = require('path');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
+const runtimeDir = path.join(rootDir, '.runtime');
+const reportDir = path.join(rootDir, 'reports');
 const args = new Map(process.argv.slice(2).map(arg => {
   const match = arg.match(/^--([^=]+)=(.*)$/);
   return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
@@ -80,13 +82,121 @@ function routeFromSeed(route, source, verifiedAt) {
   };
 }
 
+function safeId(value) {
+  let hash = 2166136261;
+  for (const char of String(value || '')) {
+    hash ^= char.codePointAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return `manual_${info.slug}_${(hash >>> 0).toString(16)}`;
+}
+
+function compactSources(item, baseline, official) {
+  const result = [];
+  const push = (title, url, kind) => {
+    if (!url || result.some(entry => entry.url === url)) return;
+    result.push({ title, url, kind });
+  };
+  if (item.officialRecord) {
+    push(official.source || '文化和旅游部大众旅游服务', official.sourceUrl, 'official_identity');
+  }
+  const baselineItem = (baseline.attractions || []).find(entry => entry.key === item.baselineKey);
+  const sourceUrls = baseline.sources || {};
+  for (const source of baselineItem?.evidence || []) {
+    const url = sourceUrls[source];
+    if (/^https:\/\//i.test(String(url || ''))) push(source, url, 'candidate_evidence');
+  }
+  for (const evidence of baselineItem?.secondaryEvidence || []) {
+    if (/^https:\/\//i.test(String(evidence.url || ''))) push(evidence.source || '二次补证', evidence.url, 'secondary_evidence');
+  }
+  return result;
+}
+
+function buildResearchWorkspace(dossier, baseline, official, existingPackage) {
+  const previousByKey = new Map((existingPackage?.attractions || []).map(item => [item.baselineKey, item]));
+  const attractions = (dossier.items || []).map(item => {
+    const previous = previousByKey.get(item.baselineKey) || {};
+    const officialRecord = item.officialRecord || {};
+    const baselineItem = (baseline.attractions || []).find(entry => entry.key === item.baselineKey) || {};
+    const discoveredSources = compactSources(item, baseline, official);
+    return {
+      ...previous,
+      baselineKey: item.baselineKey,
+      preferredId: previous.preferredId || baselineItem.preferredId || '',
+      id: previous.id || safeId(item.baselineKey || item.name),
+      name: item.name,
+      city: previous.city || item.city || province,
+      address: previous.address || officialRecord.address || '',
+      intro: previous.intro || officialRecord.introduce || '',
+      coordinates: previous.coordinates || (officialRecord.longitude && officialRecord.latitude ? {
+        longitude: officialRecord.longitude,
+        latitude: officialRecord.latitude,
+      } : undefined),
+      research: {
+        status: previous.research?.status || 'pending',
+        discoveredSources,
+        required: [
+          '基本信息至少两个可核验来源',
+          '开放与预约规则（动态内容只写官方核验提示）',
+          '旅行指南：交通、住宿区域、美食、长辈与儿童建议',
+          '至少两条可执行且有来源的路线',
+          '可追溯且许可明确的图片',
+          '小红书点点懒人攻略',
+        ],
+      },
+    };
+  });
+  const packageData = {
+    province,
+    status: 'researching',
+    createdAt: existingPackage?.createdAt || new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    policy: '研究阶段只保存已找到的事实和来源；缺失字段保持为空，不用旧模板或占位内容冒充完整资料。',
+    seedFile: path.relative(rootDir, seedPath).replace(/\\/g, '/'),
+    dossierFile: path.relative(rootDir, dossierPath).replace(/\\/g, '/'),
+    attractions,
+    overrides: existingPackage?.overrides || {},
+  };
+  writeJsonAtomic(researchWorkspacePath, packageData);
+  const researchReport = {
+    province,
+    status: 'researching',
+    generatedAt: packageData.updatedAt,
+    total: attractions.length,
+    instruction: '总控会先采集点点攻略；基本信息、路线和图片只有达到可核验标准后才会进入正式补全包。',
+    items: attractions.map(item => ({
+      baselineKey: item.baselineKey,
+      name: item.name,
+      city: item.city,
+      discoveredSourceCount: item.research.discoveredSources.length,
+      discoveredSources: item.research.discoveredSources,
+      hasOfficialBasicInfo: Boolean(item.address && item.intro),
+      pending: item.research.required,
+    })),
+  };
+  writeJsonAtomic(researchPath, researchReport);
+  console.log(`${province}资料研究任务已建立：${attractions.length} 个景点。`);
+  console.log('当前状态：researching（可先采集点点攻略；其余资料继续核验，未达标不会写入正式数据）。');
+  console.log(`研究报告：${researchPath}`);
+}
+
 const info = provinceInfo(province);
 if (!info?.slug) throw new Error(`无法识别省份：${province}`);
 const seedPath = path.join(contentDir, `core-repair-seeds.${info.slug}.json`);
 const packagePath = path.join(contentDir, `core-repair-packages.${info.slug}.json`);
+const dossierPath = path.join(runtimeDir, `core-repairs.${info.slug}.json`);
+const researchWorkspacePath = path.join(runtimeDir, `core-repair-research.${info.slug}.json`);
+const researchPath = path.join(reportDir, `core-research-${info.slug}.json`);
 const seed = readJson(seedPath);
 if (!seed || seed.province !== province || !Array.isArray(seed.attractions) || !seed.attractions.length) {
-  throw new Error(`缺少已核验种子资料：${seedPath}`);
+  const dossier = readJson(dossierPath);
+  const baseline = readJson(path.join(contentDir, `core-attractions.${info.slug}.json`));
+  const official = readJson(path.join(runtimeDir, `core-official-${info.slug}.json`), {});
+  if (!dossier?.items?.length || !baseline?.attractions?.length) {
+    throw new Error('缺少核心补全档案或已批准核心清单，请先执行数据体检。');
+  }
+  buildResearchWorkspace(dossier, baseline, official, readJson(researchWorkspacePath));
+  process.exit(0);
 }
 const existing = readJson(packagePath);
 if (existing?.status === 'applied') {
@@ -127,6 +237,7 @@ const attractions = seed.attractions.map(item => {
     source_evidence: {
       source: item.sourceLabel || '文化和旅游主管部门、景区官方渠道与主流OTA交叉核验',
       basicInfoSources: item.sources.map(source => `${source.title}：${source.url}`),
+      ratingSource: item.source_evidence?.ratingSource || null,
       basicInfoUpdatedAt: verifiedAt,
       note: item.sourceNote || '开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。',
     },

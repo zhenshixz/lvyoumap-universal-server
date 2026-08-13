@@ -1,26 +1,19 @@
 {
-  "generatedAt": "2026-08-12T06:15:18.777Z",
-  "scope": "广东",
+  "generatedAt": "2026-08-13T03:26:42.341Z",
+  "scope": "北京",
   "summary": {
     "coreBlocking": 0,
-    "automaticPending": 1,
-    "recommendedImprovements": 32
+    "automaticPending": 0,
+    "recommendedImprovements": 12
   },
   "blocking": [],
-  "automatic": [
-    {
-      "type": "xhs_lazy_guide",
-      "province": "广东",
-      "id": "amap_B030000G4N",
-      "name": "己略黄公祠"
-    }
-  ],
+  "automatic": [],
   "recommended": [
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0JAXU8EB4",
-      "name": "开平碉楼文化旅游区",
+      "province": "北京",
+      "id": "amap_B000A16E89",
+      "name": "圆明园遗址公园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -29,9 +22,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F60OP4E",
-      "name": "肇庆星湖风景名胜区",
+      "province": "北京",
+      "id": "amap_B000A886RE",
+      "name": "明十三陵景区",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -40,9 +33,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F003XP7",
-      "name": "惠州西湖风景名胜区",
+      "province": "北京",
+      "id": "amap_B000A7O1CU",
+      "name": "颐和园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -51,9 +44,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F507HAK",
-      "name": "长鹿旅游休博园",
+      "province": "北京",
+      "id": "amap_B000A81CB2",
+      "name": "天坛公园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -62,9 +55,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F002J5M",
-      "name": "罗浮山风景名胜区",
+      "province": "北京",
+      "id": "amap_B000A8UIN8",
+      "name": "故宫博物院",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -73,9 +66,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F5076F0",
-      "name": "西樵山风景名胜区",
+      "province": "北京",
+      "id": "amap_B000A83C1S",
+      "name": "天安门广场",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -84,9 +77,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02EF0IALW",
-      "name": "中国丹霞山世界地质公园",
+      "province": "北京",
+      "id": "amap_B0FFFAH7I9",
+      "name": "南锣鼓巷",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -95,9 +88,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02FB024HU",
-      "name": "连州地下河",
+      "province": "北京",
+      "id": "amap_B000A7BGMG",
+      "name": "雍和宫",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -106,9 +99,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F103HUJ",
-      "name": "梅州雁南飞茶田景区",
+      "province": "北京",
+      "id": "amap_B000A7O5PK",
+      "name": "什刹海",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -117,9 +110,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0014014AD",
-      "name": "广州市白云山风景名胜区",
+      "province": "北京",
+      "id": "amap_B000A7O684",
+      "name": "香山公园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -128,9 +121,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F37U4VE",
-      "name": "深圳华侨城旅游度假区",
+      "province": "北京",
+      "id": "amap_B000A7I1OL",
+      "name": "景山公园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",
@@ -139,229 +132,9 @@
     },
     {
       "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0FFFYPEE9",
-      "name": "广州长隆旅游度假区",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F40RARV",
-      "name": "长隆海洋王国",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B00140WBI1",
-      "name": "广州塔",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0LKBDT6LJ",
-      "name": "珠海日月贝",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02EE01XFU",
-      "name": "赤坎·广东华侨国际旅游度假区",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B00140J7CC",
-      "name": "宝墨园",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F37V2O5",
-      "name": "深圳世界之窗",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B00140UFJS",
-      "name": "白水寨风景名胜区",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0FFFRDS71",
-      "name": "深圳湾公园",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B00141TJLD",
-      "name": "长隆野生动物世界",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B030000E1K",
-      "name": "广济桥",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0FFFAJYVI",
-      "name": "沙面岛",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0IUPDSJHU",
-      "name": "永庆坊",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0FFHFANNQ",
-      "name": "爱情邮局",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F50766S",
-      "name": "清晖园",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F50768W",
-      "name": "祖庙",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F201YKC",
-      "name": "南澳岛生态旅游区",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F60OA08",
-      "name": "七星岩风景名胜区",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F37VHXJ",
-      "name": "大鹏所城",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B02F5076BA",
-      "name": "南风古灶",
-      "score": 90,
-      "issues": [
-        "source.basicInfoTraceability",
-        "image.sourceOrLicense"
-      ]
-    },
-    {
-      "type": "quality_metadata",
-      "province": "广东",
-      "id": "amap_B0FFH0A8AL",
-      "name": "松口古镇",
+      "province": "北京",
+      "id": "amap_B000A80UL1",
+      "name": "北海公园",
       "score": 90,
       "issues": [
         "source.basicInfoTraceability",

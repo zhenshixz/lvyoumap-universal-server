@@ -1,0 +1,130 @@
+{
+  "province": "北京",
+  "verifiedAt": "2026-08-12",
+  "policy": "基本资料采用景区官网、政府或文旅主管部门交叉核验；路线只使用稳定空间结构，不固化票价、开放时刻和临时活动；图片来自许可明确的开放图库并核验真实尺寸。",
+  "minorNotes": [
+    "大型复合景区的内部项目可能临时检修，路线节点保留但必须以当日官方公告为准。",
+    "博物馆临展会变更，路线只固定基本陈列或空间分区。",
+    "小红书攻略中的固定时刻、固定价格和对话式结尾在入库前自动过滤。"
+  ],
+  "attractions": {
+    "core_c5973bebed": {
+      "city": "北京",
+      "rating": 4.6,
+      "reviewsCount": "27条携程点评",
+      "ratingSource": {"platform": "携程", "title": "携程北京（通州）大运河文化旅游景区", "url": "https://you.ctrip.com/sight/beijing1/136024227.html", "verifiedAt": "2026-08-13"},
+      "description": "沿北运河串联博物馆、城市绿心、公园与运河文化空间的国家5A级旅游景区。",
+      "intro": "北京（通州）大运河文化旅游景区以北运河文化带为主轴，包含北京大运河博物馆、运河公园及城市副中心公共文化空间。景区范围较大，适合把室内文化参观与滨水休闲拆分组合。",
+      "level": "5A景区",
+      "category": "文化景区",
+      "tags": ["世界运河文化", "亲子研学", "滨水休闲"],
+      "address": "北京市通州区张家湾镇北运河桥南及北运河沿线",
+      "profile": "urban",
+      "externalArrive": "优先乘轨道交通到通州区，再按当天目的地换乘公交或打车；景区跨度大，不建议把所有子景点当成一个步行园区。",
+      "internalArrive": "北京大运河博物馆、城市绿心与运河公园应分别导航到对应入口。",
+      "internalTraffic": "同片区步行，跨片区使用公交、网约车或官方开放的接驳；游船是否运营以官方当日公告为准。",
+      "housingArea": "通州运河商务区或地铁6号线沿线",
+      "routes": [
+        {"title": "副中心文化建筑线", "badge": "室内省力", "nodes": ["北京大运河博物馆", "北京城市图书馆", "北京艺术中心外部公共空间", "城市绿心森林公园"], "duration": "半天", "walking": "文化建筑之间结合短程接驳，馆内以电梯和平路为主", "physical": 2, "tips": ["博物馆预约和入馆证件提前确认。", "三大建筑开放范围不同，不把未开放空间写入路线。"], "sourceTitle": "北京大运河博物馆", "sourceUrl": "https://www.canalmuseum.org.cn/index.html"},
+        {"title": "运河滨水慢游线", "badge": "户外休闲", "nodes": ["运河文化广场", "漕运码头", "大运河森林公园", "北运河滨水步道"], "duration": "半天", "walking": "滨水步行为主，可按体力缩短", "physical": 2, "tips": ["游船、码头和临水区域开放以官方当天信息为准。", "夏季防晒补水，雨雪或大风天减少临水停留。"], "sourceTitle": "北京市人民政府大运河文化旅游景区", "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html"}
+      ],
+      "sources": [
+        {"title": "文化和旅游部国家5A名录", "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"},
+        {"title": "北京大运河博物馆", "url": "https://www.canalmuseum.org.cn/index.html"},
+        {"title": "北京市人民政府大运河景区", "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html"},
+        {"title": "携程北京（通州）大运河文化旅游景区", "url": "https://you.ctrip.com/sight/beijing1/136024227.html"}
+      ],
+      "image": {"localPath": "/assets/images/attractions/beijing_grand_canal_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20Grand%20Canal%20Museum%20of%20Beijing.jpg?width=1600", "title": "The Grand Canal Museum of Beijing", "author": "E2568", "license": "CC0 1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Grand_Canal_Museum_of_Beijing.jpg"}
+    },
+    "core_f611f52be6": {
+      "city": "北京", "rating": 4.7, "reviewsCount": "582条去哪儿点评", "ratingSource": {"platform": "去哪儿", "title": "去哪儿奥林匹克公园", "url": "https://touch.go.qunar.com/poi/9475546", "verifiedAt": "2026-08-13"}, "description": "北京城市中轴线北端的大型公共空间，集中分布鸟巢、水立方与奥林匹克森林公园等地标。", "intro": "北京奥林匹克公园由场馆区、中心公共区和森林公园等片区构成，是北京2008年奥运会主要场地及城市中轴线延伸。公共区范围广，适合按场馆外景或森林公园两条路线分别游览。", "level": "5A景区", "category": "城市公园", "tags": ["奥运场馆", "城市中轴线", "亲子步行"], "address": "北京市朝阳区北辰东路15号及奥林匹克中心区", "profile": "urban", "externalArrive": "轨道交通8号线或15号线到奥林匹克公园站；游森林公园可按入口选择森林公园南门站。", "internalArrive": "场馆区与森林公园跨度较大，先选一条主线，避免往返。", "internalTraffic": "中心区以步行为主；进入鸟巢、水立方或奥林匹克塔需分别核对运营方当日规则。", "housingArea": "奥林匹克公园、安贞或地铁8号线沿线",
+      "routes": [
+        {"title": "奥运地标外景线", "nodes": ["奥林匹克公园站", "国家体育场外景", "国家游泳中心外景", "奥林匹克中心区公共空间"], "sourceTitle": "北京市人民政府北京奥林匹克公园", "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"},
+        {"title": "森林公园轻松线", "badge": "自然步行", "nodes": ["森林公园南门", "奥海", "南园湿地步道", "南园主入口"], "duration": "半天", "walking": "园路步行为主，按体力折返", "physical": 2, "tips": ["森林公园面积大，不与场馆深度参观强行拼成半天。", "高温、雨雪或大风天缩短户外路线。"], "sourceTitle": "北京市政府国际版奥林匹克森林公园", "sourceUrl": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562517.html"}
+      ],
+      "sources": [{"title": "文化和旅游部北京名录", "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0"}, {"title": "北京市人民政府北京奥林匹克公园", "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"}, {"title": "去哪儿奥林匹克公园", "url": "https://touch.go.qunar.com/poi/9475546"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_olympic_park_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beijing%20Olympic%20Green.jpg?width=1600", "title": "Beijing Olympic Green", "author": "Picrazy2", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Olympic_Green.jpg"}
+    },
+    "core_727a6ec8f0": {
+      "city": "北京", "description": "保存较完整的清代王府建筑群，以府邸、花园和清代王府文化展示为核心。", "intro": "恭王府博物馆依托清代恭王府遗址建立，府邸与花园共同构成参观主体。院落、台阶和狭窄通道较多，跟随官方导览方向可减少逆行与折返。", "level": "5A景区", "category": "历史建筑", "tags": ["清代王府", "古建筑", "博物馆"], "address": "北京市西城区前海西街17号", "profile": "urban", "externalArrive": "优先乘公共交通到什刹海周边后步行进入，胡同道路不适合依赖门口停车。", "internalArrive": "按官方入口、出口及单向游览提示进入。", "internalTraffic": "府邸和花园以步行为主，台阶和门槛较多。", "housingArea": "什刹海、西四或地铁6号线沿线",
+      "routes": [
+        {"title": "府邸主轴精华线", "nodes": ["一宫门", "银安殿", "嘉乐堂", "后罩楼", "花园入口"], "sourceTitle": "恭王府官方导览", "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"},
+        {"title": "花园慢游线", "nodes": ["西洋门", "独乐峰", "蝠池", "安善堂", "大戏楼"], "sourceTitle": "恭王府官方导览", "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"}
+      ],
+      "sources": [{"title": "文化和旅游部国家5A名录", "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"}, {"title": "文化和旅游部恭王府博物馆导览", "url": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_prince_gong_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Prince%20Gong%27s%20Mansion%20%282611721407%29.jpg?width=1600", "title": "Prince Gong's Mansion (2611721407)", "author": "Bridget Coila", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Gong%27s_Mansion_(2611721407).jpg"}
+    },
+    "core_1c0491df59": {
+      "city": "北京", "description": "由八达岭和慕田峪两个相距较远的长城片区共同组成的国家5A级旅游区。", "intro": "八达岭与慕田峪分别位于延庆和怀柔，是明长城北京段的重要开放景区。两个片区不宜在普通一日行程中强行串联，路线分别给出，游客应只选其一并核对预约、交通和开放墙段。", "level": "5A景区", "category": "世界遗产", "tags": ["万里长城", "世界遗产", "山地徒步"], "address": "北京市延庆区八达岭镇；北京市怀柔区渤海镇慕田峪村", "profile": "mountain", "externalArrive": "八达岭与慕田峪分别规划往返，可选铁路、公交、景区专线或自驾；不要把两个入口混用。", "internalArrive": "先到所选片区游客中心，再按当天开放墙段和索道接驳规划。", "internalTraffic": "步行台阶为主，可结合景区开放的索道、缆车或接驳减少爬升。", "housingArea": "北京市区交通枢纽附近；需早到时可选择延庆或怀柔对应片区",
+      "routes": [
+        {"title": "八达岭量力线", "badge": "八达岭", "nodes": ["八达岭游客中心", "城墙入口", "北四楼附近", "北七楼附近", "原路或开放交通下山"], "duration": "半天至一天", "walking": "连续台阶和坡道，按体力设置折返点", "physical": 4, "tips": ["只进入官方开放墙段，不走未开放野长城。", "索道、缆车和接驳运营以当天公告为准。"], "sourceTitle": "文化和旅游部国家5A名录", "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"},
+        {"title": "慕田峪量力线", "badge": "慕田峪", "nodes": ["慕田峪游客中心", "景区检票口", "开放登城口", "开放敌楼段", "原路或开放交通下山"], "duration": "半天至一天", "walking": "山地台阶较多，可用开放索道减少爬升", "physical": 4, "tips": ["八达岭与慕田峪相距较远，本路线只游慕田峪。", "未开发长城不进入，雨雪大风天谨慎登城。"], "sourceTitle": "北京市人民政府慕田峪长城", "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/gdwh/mtycc/202108/t20210805_2457343.html"}
+      ],
+      "sources": [{"title": "文化和旅游部国家5A名录", "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"}, {"title": "文化和旅游部北京旅游服务", "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_badaling_mutianyu_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Badaling%20from%20high%20up%20the%20Great%20Wall.jpg?width=1600", "title": "Badaling from high up the Great Wall", "author": "Daniel Case", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badaling_from_high_up_the_Great_Wall.jpg"}
+    },
+    "core_0e60523d7c": {
+      "city": "北京", "description": "集主题公园、城市大道与度假酒店于一体的大型主题度假区。", "intro": "北京环球度假区以环球影城主题公园为核心，包含多个主题景区和北京环球城市大道。项目开放、身高健康限制、演出及排队状态动态变化，路线只给出空间顺序与取舍原则。", "level": "热门主题度假区", "category": "主题乐园", "tags": ["电影主题", "亲子度假", "大型乐园"], "address": "北京市通州区梨园镇北京环球度假区", "profile": "resort", "externalArrive": "轨道交通7号线或八通线到环球度假区站，也可按官方交通指南自驾或使用公共交通。", "internalArrive": "入园前在官方应用核对预约、入园凭证、项目身高限制与当天运营。", "internalTraffic": "园区内步行为主，按主题区顺序减少折返；儿童推车和轮椅服务以现场为准。", "housingArea": "环球度假区或地铁7号线沿线",
+      "routes": [
+        {"title": "亲子温和体验线", "nodes": ["好莱坞", "小黄人乐园", "功夫熊猫盖世之地", "城市大道"], "sourceTitle": "北京环球度假区官网", "sourceUrl": "https://www.universalbeijingresort.com/zh_CN"},
+        {"title": "经典主题区环线", "nodes": ["变形金刚基地", "侏罗纪世界努布拉岛", "未来水世界", "哈利·波特的魔法世界", "城市大道"], "duration": "一天", "walking": "全天步行量大，按排队与演出状态动态取舍", "physical": 3, "tips": ["不把临时演出场次和排队时间固化到路线。", "健康、身高和乘坐限制以官方项目说明为准。"], "sourceTitle": "北京环球度假区官网", "sourceUrl": "https://www.universalbeijingresort.com/zh_CN"}
+      ],
+      "sources": [{"title": "北京环球度假区官网", "url": "https://www.universalbeijingresort.com/zh_CN"}, {"title": "北京市文化和旅游局北京环球度假区", "url": "https://s.visitbeijing.com.cn/attraction/120985"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_universal_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Universal%20Beijing%20Resort.jpg?width=1600", "title": "Universal Beijing Resort", "author": "Hhhh2", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Universal_Beijing_Resort.jpg"}
+    },
+    "core_d6869324ce": {
+      "city": "北京", "description": "北京奥林匹克公园内的国家游泳中心，兼具赛事场馆、建筑参观与水上体验功能。", "intro": "国家游泳中心因独特的膜结构外观被称为“水立方”，北京冬奥会期间完成冰水转换并形成“冰立方”。场馆参观、水上乐园和赛事活动由不同运营安排控制，应按当天开放范围选择。", "level": "奥运场馆", "category": "场馆参观", "tags": ["水立方", "奥运遗产", "亲子场馆"], "address": "北京市朝阳区天辰东路11号", "profile": "indoor", "externalArrive": "乘轨道交通到奥林匹克公园站后步行到场馆。", "internalArrive": "先到游客入口确认当天开放项目，场馆参观与水上项目不要混用票务信息。", "internalTraffic": "馆内按开放导览步行，周边可串联奥林匹克中心区公共空间。", "housingArea": "奥林匹克公园或地铁8号线沿线",
+      "routes": [
+        {"title": "场馆建筑参观线", "nodes": ["游客入口", "水立方外景", "开放参观区", "奥运主题展示区", "出口"], "sourceTitle": "北京市文化和旅游局水立方", "sourceUrl": "https://s.visitbeijing.com.cn/attraction/118018"},
+        {"title": "奥运中心区联游线", "nodes": ["奥林匹克公园站", "水立方外景", "中心区公共空间", "鸟巢外景", "奥林匹克公园站"], "sourceTitle": "北京市人民政府北京奥林匹克公园", "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"}
+      ],
+      "sources": [{"title": "北京市文化和旅游局水立方", "url": "https://s.visitbeijing.com.cn/attraction/118018"}, {"title": "北京市体育局国家游泳中心", "url": "https://tyj.beijing.gov.cn/bjsports/gzdt84/zwdt/10904136/index.html"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_water_cube_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lascar%20The%20Beijing%20National%20Aquatics%20Center%20%28Water%20Cube%29%20%284475631690%29.jpg?width=1600", "title": "The Beijing National Aquatics Center (Water Cube)", "author": "Jorge Láscar", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg"}
+    },
+    "core_7ff5b3d4e1": {
+      "city": "北京", "description": "以中华文明历史与国家文化记忆为核心的国家级综合博物馆。", "intro": "中国国家博物馆位于天安门广场东侧，以“古代中国”“复兴之路”等基本陈列为骨架，并持续推出专题和临时展览。场馆体量大，应先选基本陈列主线，再按余力增加专题展。", "level": "国家级博物馆", "category": "博物馆", "tags": ["古代中国", "国家历史", "亲子研学"], "address": "北京市东城区东长安街16号", "profile": "indoor", "externalArrive": "优先使用轨道交通到天安门东一带，提前核对广场区域安检和交通管制。", "internalArrive": "按预约入口和现场安检要求入馆，携带预约所用有效证件。", "internalTraffic": "馆内面积大，利用电梯和休息区，避免同时追完所有展厅。", "housingArea": "东单、前门或地铁1号线沿线",
+      "routes": [
+        {"title": "古代中国主线", "nodes": ["预约入口", "古代中国基本陈列", "中央大厅", "重点专题展区", "出口"], "sourceTitle": "中国国家博物馆简介", "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/"},
+        {"title": "复兴之路主线", "nodes": ["预约入口", "复兴之路基本陈列", "复兴之路新时代部分", "开放专题展", "出口"], "sourceTitle": "中国国家博物馆简介", "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/"}
+      ],
+      "sources": [{"title": "中国国家博物馆简介", "url": "https://www.chnmuseum.cn/gbgk/gbjj/"}, {"title": "中国国家博物馆服务", "url": "https://www.chnmuseum.cn/cg/"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_national_museum_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/National%20Museum%20of%20China%20building%201.jpg?width=1600", "title": "National Museum of China building 1", "author": "Pablo BM", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_China_building_1.jpg"}
+    },
+    "core_e279ad5c8b": {
+      "city": "北京", "description": "系统展示北京城市历史、建都史与地方文化的综合性博物馆。", "intro": "首都博物馆以北京城市历史文化为主线，常设展陈覆盖北京人居、建城和建都历程，并设有瓷器、玉器等专题陈列。展览调整时以官网当天信息为准。", "level": "国家一级博物馆", "category": "博物馆", "tags": ["北京历史", "古都文化", "亲子研学"], "address": "北京市西城区复兴门外大街16号", "profile": "indoor", "externalArrive": "乘轨道交通到木樨地一带后步行，按官网参观提示进入。", "internalArrive": "携带有效证件并按预约要求安检入馆。", "internalTraffic": "按楼层与展览主题分段参观，使用电梯减少长辈上下楼负担。", "housingArea": "复兴门、木樨地或地铁1号线沿线",
+      "routes": [
+        {"title": "古都北京主线", "nodes": ["观众入口", "古都北京历史文化篇", "古都北京城建篇", "开放专题展", "出口"], "sourceTitle": "首都博物馆基本陈列", "sourceUrl": "https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b"},
+        {"title": "精品专题线", "nodes": ["观众入口", "开放瓷器展区", "开放玉器展区", "其他开放专题陈列", "出口"], "sourceTitle": "首都博物馆展览陈列", "sourceUrl": "https://capitalmuseum.org.cn/exhibition"}
+      ],
+      "sources": [{"title": "首都博物馆简介", "url": "https://www.capitalmuseum.org.cn/article/e51d02b1bb844e60a14b06d6c12f12a0"}, {"title": "首都博物馆基本陈列", "url": "https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_capital_museum_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Capital%20Museum%20in%20Beijing.jpg?width=1600", "title": "Capital Museum in Beijing", "author": "PENG Yanan (Neo-Jay)", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capital_Museum_in_Beijing.jpg"}
+    },
+    "core_f475a26bb2": {
+      "city": "北京", "description": "以中国共产党领导的革命战争、兵器、军事历史与军事科技为基本陈列体系的国家级军事博物馆。", "intro": "中国人民革命军事博物馆位于复兴路，基本陈列包括中国共产党领导的革命战争、兵器、中国历代军事与军事科技等内容。展厅体量和展品信息密度高，建议按主题选择，不追求一次看完。", "level": "国家一级博物馆", "category": "博物馆", "tags": ["军事历史", "兵器陈列", "国防教育"], "address": "北京市海淀区复兴路9号", "profile": "indoor", "externalArrive": "乘地铁1号线或9号线到军事博物馆站，按官方预约及入口提示进馆。", "internalArrive": "准备预约凭证和有效证件，先确认当天开放展厅。", "internalTraffic": "馆内按主题展厅步行，重型装备和高密度展区预留休息时间。", "housingArea": "公主坟、木樨地或地铁1号线沿线",
+      "routes": [
+        {"title": "革命战争与兵器线", "nodes": ["观众入口", "中央大厅", "中国共产党领导的革命战争陈列", "兵器陈列", "出口"], "sourceTitle": "军博简介", "sourceUrl": "https://www.jb.mil.cn/jbgk/jbjj/"},
+        {"title": "军事历史与科技线", "nodes": ["观众入口", "中国历代军事陈列", "军事科技陈列", "开放主题展", "出口"], "sourceTitle": "军博官网展览", "sourceUrl": "https://eng.jb.mil.cn/"}
+      ],
+      "sources": [{"title": "中国人民革命军事博物馆简介", "url": "https://www.jb.mil.cn/jbgk/jbjj/"}, {"title": "军博参观信息", "url": "https://eng.jb.mil.cn/Visit/"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_military_museum_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Military%20Museum%20of%20the%20Chinese%20People%27s%20Revolution%20201709.jpg?width=1600", "title": "Military Museum of the Chinese People's Revolution 201709", "author": "Tyg728", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Military_Museum_of_the_Chinese_People%27s_Revolution_201709.jpg"}
+    },
+    "core_5fa28342e0": {
+      "city": "北京", "description": "连接正阳门、大栅栏与鲜鱼口等历史商业街区的北京中轴线传统街市。", "intro": "前门大街位于北京中轴线南段，是国家级旅游休闲街区及北京老城重要商业文化空间。适合与大栅栏、鲜鱼口和三里河等相邻街区串联，避免把商业门店清单固化为长期路线。", "level": "国家级旅游休闲街区", "category": "历史街区", "tags": ["北京中轴线", "老字号", "城市漫步"], "address": "北京市东城区前门大街，北起正阳门、南至珠市口一带", "profile": "urban", "externalArrive": "乘轨道交通到前门站或珠市口站，从路线一端进入可减少折返。", "internalArrive": "街区为开放城市空间，遇大型活动或交通管制时按现场引导。", "internalTraffic": "全程步行，可按体力在大栅栏、鲜鱼口或三里河提前结束。", "housingArea": "前门、崇文门或地铁2号线沿线",
+      "routes": [
+        {"title": "前门经典步行线", "nodes": ["正阳门", "前门大街北口", "大栅栏", "鲜鱼口", "珠市口"], "sourceTitle": "北京市文旅统计国家级旅游休闲街区", "sourceUrl": "https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf"},
+        {"title": "老城街巷延伸线", "nodes": ["前门大街", "北京坊", "杨梅竹斜街", "三里河公园", "珠市口"], "sourceTitle": "北京市文化和旅游局前门大街信息", "sourceUrl": "https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf"}
+      ],
+      "sources": [{"title": "北京市国家级旅游休闲街区统计", "url": "https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf"}, {"title": "北京市文化和旅游局景区名录", "url": "https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_qianmen_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Qianmen%20Dajie%20Walking%20Street%20and%20Qianmen%20Gate%20%289870538444%29.jpg?width=1600", "title": "Qianmen Dajie Walking Street and Qianmen Gate", "author": "Gary Todd", "license": "CC0 1.0", "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qianmen_Dajie_Walking_Street_and_Qianmen_Gate_(9870538444).jpg"}
+    },
+    "core_7efd3b3e65": {
+      "city": "北京", "rating": 4.7, "reviewsCount": "1.5万条携程点评", "ratingSource": {"platform": "携程", "title": "携程古北水镇", "url": "https://you.ctrip.com/sight/beijing1/1411592.html", "verifiedAt": "2026-08-13"}, "description": "依托北方山水、古镇街巷与司马台长城形成的综合性国际休闲旅游度假区。", "intro": "古北水镇位于北京密云，集古镇游览、住宿度假和司马台长城等体验于一体。度假区跨度大、日夜玩法不同，长城门票与索道等动态项目应单独核对官方信息。", "level": "国家级旅游度假区", "category": "古镇度假", "tags": ["古北水镇", "司马台长城", "夜景度假"], "address": "北京市密云区古北口镇司马台村古北水镇", "profile": "resort", "externalArrive": "从北京市区可按官网选择专线、铁路转公交或自驾；返程班次必须出发前复核。", "internalArrive": "先到游客服务中心办理入园与住宿手续，再按当天开放项目规划。", "internalTraffic": "镇内以步行为主，可按官方开放使用接驳车或游船；司马台长城另按体力选择索道。", "housingArea": "古北水镇度假区内或密云古北口片区",
+      "routes": [
+        {"title": "古镇文化慢游线", "nodes": ["游客服务中心", "司马小烧文化坊", "永顺染坊", "日月岛广场", "望京街"], "sourceTitle": "古北水镇官网", "sourceUrl": "https://www.wtown.com/pc/index.html"},
+        {"title": "古镇与司马台组合线", "badge": "量力选择", "nodes": ["游客服务中心", "古镇主街", "司马台长城入口", "官方开放长城段", "原路或开放交通返回"], "duration": "一天", "walking": "古镇平路与长城台阶组合，可只游古镇", "physical": 4, "tips": ["长城、索道和夜游开放以官方当日公告为准。", "长辈和幼童可不登长城，保留古镇慢游。"], "sourceTitle": "古北水镇官网旅行信息", "sourceUrl": "https://m.wtown.com/phone/discover/travel.html"}
+      ],
+      "sources": [{"title": "古北水镇官网简介", "url": "https://www.wtown.com/pc/about/index.html"}, {"title": "北京市政府北京古北水镇", "url": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260325_4566117.html"}, {"title": "古北水镇官网交通指南", "url": "https://www.wtown.com.cn/weixintest/index.php/Reservation/Help/trafficGuide.html"}, {"title": "携程古北水镇", "url": "https://you.ctrip.com/sight/beijing1/1411592.html"}],
+      "image": {"localPath": "/assets/images/attractions/beijing_gubei_verified.jpg", "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gubei%20Water%20Town%2007.jpg?width=1600", "title": "Gubei Water Town 07", "author": "Codas", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gubei_Water_Town_07.jpg"}
+    }
+  }
+}

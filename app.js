@@ -30,7 +30,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260810_guizhou_core_v2";
+const STATIC_DATA_VERSION = "20260813_beijing_preview_v3";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
@@ -1527,8 +1527,15 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
     else if (absoluteIndex === 2) rankClass = "rank-top3";
     
     const isFav = favorites.some(f => f.id === attr.id);
-    const realCommentCount = attr.source_evidence?.commentCount || attr.reviewsCount || `${(Math.floor((attr.rating - 3) * 5.3 * 10) / 10)}万`;
-    const reviewCountStr = realCommentCount.toString().includes('评价') ? realCommentCount : `${realCommentCount}条评价`;
+    const hasPublicRating = Number(attr.rating) > 0;
+    const realCommentCount = attr.source_evidence?.commentCount || attr.reviewsCount || '';
+    const commentCountText = String(realCommentCount).trim();
+    const sourcePlatform = attr.source_evidence?.ratingSource?.platform || '';
+    const legacyAmapSource = /^amap/i.test(String(attr.source_evidence?.source || ''));
+    const ratingPlatformText = /高德/.test(`${commentCountText}${sourcePlatform}`) || legacyAmapSource ? '高德地图' : '';
+    const reviewCountStr = ratingPlatformText || !commentCountText || /暂无|未公开|无公开|官方认证/.test(commentCountText)
+      ? (ratingPlatformText || '暂无公开评价')
+      : (/(评价|点评)$/.test(commentCountText) ? commentCountText : `${commentCountText.replace(/条$/, '')}条评价`);
     const formattedLevel = formatAttractionLevel(attr.level);
     const heritageStr = (formattedLevel.includes("5A") || attr.level.includes("世界文化遗产")) ? "世界文化遗产" : "国家级风景区";
     const searchProvince = attr.provinceName || "";
@@ -1555,7 +1562,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
           <span class="card-badge-heritage">${heritageStr}</span>
         </div>
         <div class="card-rating-row">
-          <span class="card-rating-star">★ ${attr.rating.toFixed(1)}</span>
+          <span class="card-rating-star">${hasPublicRating ? `★ ${Number(attr.rating).toFixed(1)}` : '暂无公开评分'}</span>
           <span class="card-review-count">(${reviewCountStr})</span>
         </div>
         <p class="card-excerpt">“${attr.intro}”</p>
@@ -1786,7 +1793,7 @@ async function toggleFavorite(attraction) {
       name: attraction.name,
       image: attraction.image,
       level: attraction.level,
-      rating: attraction.rating || 5.0,
+      rating: Number(attraction.rating) > 0 ? Number(attraction.rating) : 0,
       intro: attraction.intro || "已收藏景点",
       price: attraction.price || "免费",
       route: attraction.route || "",

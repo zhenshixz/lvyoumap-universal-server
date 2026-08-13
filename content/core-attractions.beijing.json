@@ -1,0 +1,675 @@
+{
+  "province": "北京",
+  "checkedAt": "2026-08-13",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/beijing1.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 7,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 3,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 3,
+    "note": "质量门禁检查最终入选项；首轮单源候选先执行城市级二次补证，仍无法确认的项目进入观察池，不写入核心清单，也不阻断其他已确认景点。后续获得新证据时可自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 9,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 14,
+  "existingRecordBoundCount": 12,
+  "existingRecordUnboundCount": 11,
+  "existingRecordUnboundNames": [
+    "北京（通州）大运河文化旅游景区",
+    "北京奥林匹克公园",
+    "恭王府景区",
+    "八达岭—慕田峪长城旅游区",
+    "北京环球度假区",
+    "水立方(国家游泳中心)",
+    "中国国家博物馆",
+    "首都博物馆",
+    "中国人民革命军事博物馆",
+    "前门大街",
+    "密云古北水镇国际休闲旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 3,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "observationCandidateCount": 3,
+  "observationCandidates": [
+    {
+      "name": "北京古代建筑博物馆",
+      "city": "北京",
+      "aliases": [
+        "北京古代建筑博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国考古博物馆",
+      "city": "北京",
+      "aliases": [
+        "中国考古博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国电影博物馆",
+      "city": "北京",
+      "aliases": [
+        "中国电影博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "北京古代建筑博物馆",
+      "city": "北京",
+      "aliases": [
+        "北京古代建筑博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国考古博物馆",
+      "city": "北京",
+      "aliases": [
+        "中国考古博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国电影博物馆",
+      "city": "北京",
+      "aliases": [
+        "中国电影博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 7,
+    "verifiedCount": 3,
+    "coveredByCoreCount": 1,
+    "unresolvedCount": 3,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_c5973bebed",
+      "name": "北京（通州）大运河文化旅游景区",
+      "preferredId": "manual_beijing_d8e441bc",
+      "aliases": [
+        "北京（通州）大运河文化旅游景区",
+        "北京（通州）大运河文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_0d1ed0af2f",
+      "name": "圆明园遗址公园景区",
+      "preferredId": "amap_B000A16E89",
+      "aliases": [
+        "圆明园遗址公园景区",
+        "圆明园遗址公园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_f611f52be6",
+      "name": "北京奥林匹克公园",
+      "preferredId": "manual_beijing_a19b4ec3",
+      "aliases": [
+        "北京奥林匹克公园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_727a6ec8f0",
+      "name": "恭王府景区",
+      "preferredId": "manual_beijing_bfb3e776",
+      "aliases": [
+        "恭王府景区",
+        "恭王府"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_0cf5f68e6f",
+      "name": "明十三陵景区",
+      "preferredId": "amap_B000A886RE",
+      "aliases": [
+        "明十三陵景区",
+        "明十三陵"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_1c0491df59",
+      "name": "八达岭—慕田峪长城旅游区",
+      "preferredId": "manual_beijing_56bc02b5",
+      "aliases": [
+        "八达岭—慕田峪长城旅游区",
+        "八达岭—慕田峪长城",
+        "八达岭",
+        "慕田峪长城",
+        "八达岭长城"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_b48c1eb978",
+      "name": "颐和园",
+      "preferredId": "amap_B000A7O1CU",
+      "aliases": [
+        "颐和园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_fb2bdee97e",
+      "name": "天坛公园",
+      "preferredId": "amap_B000A81CB2",
+      "aliases": [
+        "天坛公园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_7417a712dd",
+      "name": "故宫博物院",
+      "preferredId": "amap_B000A8UIN8",
+      "aliases": [
+        "故宫博物院"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_0e60523d7c",
+      "name": "北京环球度假区",
+      "preferredId": "manual_beijing_444c6734",
+      "aliases": [
+        "北京环球度假区"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d6869324ce",
+      "name": "水立方(国家游泳中心)",
+      "preferredId": "manual_beijing_c7b88d5",
+      "aliases": [
+        "水立方(国家游泳中心)",
+        "水立方"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7ff5b3d4e1",
+      "name": "中国国家博物馆",
+      "preferredId": "manual_beijing_9bb56b1e",
+      "aliases": [
+        "中国国家博物馆"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e279ad5c8b",
+      "name": "首都博物馆",
+      "preferredId": "manual_beijing_c5a64407",
+      "aliases": [
+        "首都博物馆"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "北京",
+          "page": 6,
+          "name": "首都博物馆",
+          "url": "https://you.ctrip.com/sight/beijing1/5159.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f475a26bb2",
+      "name": "中国人民革命军事博物馆",
+      "preferredId": "manual_beijing_c0bc1eb6",
+      "aliases": [
+        "中国人民革命军事博物馆"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "北京",
+          "page": 4,
+          "name": "中国人民革命军事博物馆",
+          "url": "https://you.ctrip.com/sight/beijing1/62723.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5fa28342e0",
+      "name": "前门大街",
+      "preferredId": "manual_beijing_b8c2b7d",
+      "aliases": [
+        "前门大街"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "北京",
+          "page": 3,
+          "name": "前门大街",
+          "url": "https://you.ctrip.com/sight/beijing1/107634.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_703dcbe917",
+      "name": "天安门广场",
+      "preferredId": "amap_B000A83C1S",
+      "aliases": [
+        "天安门广场"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3555c1aea5",
+      "name": "南锣鼓巷",
+      "preferredId": "amap_B0FFFAH7I9",
+      "aliases": [
+        "南锣鼓巷"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 8
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cc0e2564a6",
+      "name": "雍和宫",
+      "preferredId": "amap_B000A7BGMG",
+      "aliases": [
+        "雍和宫"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_de57292e50",
+      "name": "什刹海",
+      "preferredId": "amap_B000A7O5PK",
+      "aliases": [
+        "什刹海"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7445b4a1e4",
+      "name": "香山公园",
+      "preferredId": "amap_B000A7O684",
+      "aliases": [
+        "香山公园"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 16
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e84e7809cf",
+      "name": "景山公园",
+      "preferredId": "amap_B000A7I1OL",
+      "aliases": [
+        "景山公园"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 20
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fa4dce720f",
+      "name": "北海公园",
+      "preferredId": "amap_B000A80UL1",
+      "aliases": [
+        "北海公园"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 21
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7efd3b3e65",
+      "name": "密云古北水镇国际休闲旅游度假区",
+      "preferredId": "manual_beijing_e83aed65",
+      "aliases": [
+        "密云古北水镇国际休闲旅游度假区"
+      ],
+      "city": "北京",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

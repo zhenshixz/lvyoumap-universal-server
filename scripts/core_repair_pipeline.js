@@ -171,7 +171,10 @@ function validatePackage(context, options = {}) {
   if (packageData.province !== context.province) errors.push('补全包省份与当前省份不一致。');
   if (requireReviewed && packageData.status !== 'reviewed') errors.push('补全包尚未完成最终复核。');
   if (!requireReviewed && !['collecting', 'reviewed'].includes(packageData.status)) errors.push('补全包尚未进入资料采集阶段。');
-  const lazyOverrides = readJson(path.join(contentDir, 'lazy-guide-overrides.json'));
+  const lazyOverrides = {
+    ...readJson(path.join(contentDir, 'lazy-guide-overrides.json')),
+    ...readJson(path.join(runtimeDir, 'core-lazy-guide-overrides.json')),
+  };
   const existingById = new Map(context.records.map(item => [item.id, item]));
   for (const addition of packageData.attractions || []) {
     const baselineItem = context.baseline.attractions.find(item => item.key === addition.baselineKey);

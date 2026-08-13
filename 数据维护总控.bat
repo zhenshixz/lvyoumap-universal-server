@@ -3,6 +3,9 @@ chcp 65001 >nul
 setlocal
 cd /d "%~dp0"
 title China Tourism Map - National Data Maintenance
+echo Project: lvyoumap-universal-serverbeta ^(local beta workspace^)
+echo Path: %CD%
+echo.
 if not exist package.json goto missing_project
 where node >nul 2>nul
 if errorlevel 1 goto missing_node

@@ -5,6 +5,7 @@ const {
   cityFromAddress,
   normalizeCity,
   normalizeName,
+  relatedAttraction,
   sameAttraction,
   temporaryEventReason,
 } = require('./core_candidate_quality');
@@ -77,7 +78,7 @@ function compactEvidenceName(value, city = '') {
 }
 
 function evidenceNameMatch(left, right, city = '') {
-  if (sameAttraction(left, right, city, city)) return true;
+  if (relatedAttraction(left, right, city, city)) return true;
   const a = compactEvidenceName(left, city);
   const b = compactEvidenceName(right, city);
   if (!a || !b) return false;
@@ -114,7 +115,16 @@ function uniqueLocalMatch(candidate, records) {
 function findCoveredCore(candidate, coreAttractions) {
   return coreAttractions.find(item => (
     citiesCompatible(candidate.city, item.city)
-    && evidenceNameMatch(candidate.name, item.name, candidate.city || item.city)
+    && (
+      relatedAttraction(candidate.name, item.name, candidate.city, item.city)
+      || (item.aliases || []).some(alias => relatedAttraction(candidate.name, alias, candidate.city, item.city))
+      || (item.aliases || []).some(alias => {
+        const parent = normalizeName(alias);
+        const child = normalizeName(candidate.name);
+        const remainder = child.startsWith(parent) ? child.slice(parent.length) : '';
+        return parent.length >= 3 && /^(?:嬉水|水上|主题|儿童|森林|冰雪)?(?:乐园|公园|景区|游乐园)$/.test(remainder);
+      })
+    )
   ));
 }
 
@@ -263,7 +273,7 @@ async function main() {
   const output = {
     province: provinceName,
     collectedAt: new Date().toISOString(),
-    policy: '首轮单源候选使用官方身份、城市级携程分页和高德本地POI进行定向补证；城市与名称必须同时匹配。',
+    policy: '首轮单源候选使用官方身份、城市级携程分页和高德本地POI进行定向补证；组合景区、括号别名与品牌度假区名称会归并。仍只有单源的候选进入观察池，不直接纳入。',
     sourceAvailability: {
       mctOfficial: true,
       amapLocalSnapshot: true,

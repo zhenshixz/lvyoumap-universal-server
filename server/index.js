@@ -1,10 +1,14 @@
 const fs = require('fs');
 const http = require('http');
+const os = require('os');
 const path = require('path');
 const { getWeather, getStatus } = require('./weather-service');
 
 const rootDir = path.resolve(__dirname, '..');
-const distDir = path.join(rootDir, 'dist');
+const configuredStaticDir = process.env.STATIC_DIR
+  ? path.resolve(process.env.STATIC_DIR)
+  : path.join(rootDir, 'dist');
+const distDir = configuredStaticDir;
 const host = process.env.HOST || '127.0.0.1';
 const port = Number(process.env.PORT || 3000);
 const startedAt = Date.now();
@@ -75,7 +79,8 @@ const server = http.createServer(async (request, response) => {
   if (request.method === 'GET' && url.pathname === '/api/health') {
     sendJson(response, 200, {
       success: true,
-      service: 'lvyoumap-universal-server',
+      service: process.env.SERVICE_NAME || 'lvyoumap-universal-server',
+      staticDir: path.relative(rootDir, distDir).replace(/\\/g, '/'),
       uptimeSeconds: Math.floor((Date.now() - startedAt) / 1000),
       weather: getStatus(),
     });
@@ -112,7 +117,32 @@ const server = http.createServer(async (request, response) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`Lvyoumap server listening on http://${host}:${port}`);
+  const localUrl = `http://127.0.0.1:${port}`;
+  const lanAddresses = Object.values(os.networkInterfaces())
+    .flat()
+    .filter(item => item && item.family === 'IPv4' && !item.internal)
+    .map(item => item.address)
+    .filter((address, index, all) => all.indexOf(address) === index);
+
+  console.log('');
+  console.log('Lvyoumap preview server is ready.');
+  console.log(`Local:   ${localUrl}`);
+  if (host === '0.0.0.0' || host === '::') {
+    if (lanAddresses.length) {
+      lanAddresses.forEach(address => console.log(`LAN:     http://${address}:${port}`));
+    } else {
+      console.log('LAN:     No active IPv4 network address found.');
+    }
+  }
+  console.log(`Health:  ${localUrl}/api/health`);
+
+  http.get(`${localUrl}/api/health`, response => {
+    response.resume();
+    if (response.statusCode === 200) console.log('[OK] Health check passed.');
+    else console.error(`[ERROR] Health check returned HTTP ${response.statusCode}.`);
+  }).on('error', error => {
+    console.error(`[ERROR] Health check failed: ${error.message}`);
+  });
 });
 
 function shutdown(signal) {

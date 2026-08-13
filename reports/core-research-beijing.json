@@ -1,0 +1,301 @@
+{
+  "province": "北京",
+  "status": "researching",
+  "generatedAt": "2026-08-12T07:12:51.932Z",
+  "total": 11,
+  "instruction": "总控会先采集点点攻略；基本信息、路线和图片只有达到可核验标准后才会进入正式补全包。",
+  "items": [
+    {
+      "baselineKey": "core_c5973bebed",
+      "name": "北京（通州）大运河文化旅游景区",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": true,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_f611f52be6",
+      "name": "北京奥林匹克公园",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": true,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_727a6ec8f0",
+      "name": "恭王府景区",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": true,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_1c0491df59",
+      "name": "八达岭—慕田峪长城旅游区",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": true,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_0e60523d7c",
+      "name": "北京环球度假区",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/beijing1.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_d6869324ce",
+      "name": "水立方(国家游泳中心)",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/beijing1.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_7ff5b3d4e1",
+      "name": "中国国家博物馆",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/beijing1.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_e279ad5c8b",
+      "name": "首都博物馆",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/beijing1/5159.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_f475a26bb2",
+      "name": "中国人民革命军事博物馆",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/beijing1/62723.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_5fa28342e0",
+      "name": "前门大街",
+      "city": "北京",
+      "discoveredSourceCount": 2,
+      "discoveredSources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/beijing1/107634.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    },
+    {
+      "baselineKey": "core_7efd3b3e65",
+      "name": "密云古北水镇国际休闲旅游度假区",
+      "city": "北京",
+      "discoveredSourceCount": 1,
+      "discoveredSources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "kind": "official_identity"
+        }
+      ],
+      "hasOfficialBasicInfo": false,
+      "pending": [
+        "基本信息至少两个可核验来源",
+        "开放与预约规则（动态内容只写官方核验提示）",
+        "旅行指南：交通、住宿区域、美食、长辈与儿童建议",
+        "至少两条可执行且有来源的路线",
+        "可追溯且许可明确的图片",
+        "小红书点点懒人攻略"
+      ]
+    }
+  ]
+}

@@ -7,7 +7,8 @@ const progressPath = path.join(rootDir, '.runtime', 'xhs-lazy-progress.json');
 const logPath = path.join(rootDir, '.runtime', 'xhs-lazy-process.log');
 const statusNames = {
   starting: '正在启动后台任务', login_waiting: '等待扫码登录', login_ready: '登录状态可用', running: '正在采集',
-  generating: '正在生成数据', done: '已完成', stopped: '已安全停止',
+  generating: '正在生成数据', done: '当前子任务已完成',
+  guide_done: '懒人攻略采集已完成（非整省验收）', stopped: '已安全停止',
   login_required: '登录已失效', error: '发生错误', recovered: '已恢复采集结果',
 };
 

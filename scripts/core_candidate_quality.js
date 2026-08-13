@@ -72,6 +72,47 @@ function normalizeName(value) {
   return name.trim();
 }
 
+function safeParentheticalBase(value) {
+  const text = decodeHtmlEntities(value);
+  const match = text.match(/^(.{3,}?)[（(]([^）)]+)[）)]$/);
+  if (!match) return '';
+  const qualifier = match[2];
+  if (/(?:东|西|南|北|一|二|三|四|五|一期|二期|区|馆|院|门|楼|峰|谷|湖|山)$/.test(qualifier)) return '';
+  return normalizeName(match[1]);
+}
+
+function attractionRoot(value) {
+  return normalizeName(value)
+    .replace(/(?:国际)?(?:旅游)?度假区$/, '')
+    .replace(/(?:主题)?(?:乐园|影城)$/, '')
+    .trim();
+}
+
+function relatedAttraction(left, right, leftCity = '', rightCity = '') {
+  if (sameAttraction(left, right, leftCity, rightCity)) return true;
+  if (!citiesCompatible(leftCity, rightCity)) return false;
+  const normalizedLeft = normalizeName(left);
+  const normalizedRight = normalizeName(right);
+  const leftBase = safeParentheticalBase(left);
+  const rightBase = safeParentheticalBase(right);
+  if (leftBase && leftBase === normalizedRight) return true;
+  if (rightBase && rightBase === normalizedLeft) return true;
+  const a = attractionRoot(left);
+  const b = attractionRoot(right);
+  if (a && b && a === b && a.length >= 4) return true;
+  const isComposite = value => /[与和、,，\/—\-·]/.test(String(value));
+  const leftComposite = isComposite(left);
+  const rightComposite = isComposite(right);
+  if (leftComposite === rightComposite) return false;
+  const composite = leftComposite ? left : right;
+  const single = leftComposite ? right : left;
+  const singleName = normalizeName(single);
+  if (!singleName) return false;
+  const singleRoot = attractionRoot(single);
+  return String(composite).split(/[与和、,，\/—\-·]/).map(attractionRoot).filter(Boolean)
+    .some(part => part.length >= 3 && part === singleRoot);
+}
+
 function comparisonName(value, city = '') {
   let name = normalizeName(value);
   const normalizedCity = normalizeCity(city);
@@ -110,6 +151,7 @@ module.exports = {
   decodeHtmlEntities,
   normalizeCity,
   normalizeName,
+  relatedAttraction,
   sameAttraction,
   temporaryEventReason,
 };

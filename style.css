@@ -2656,7 +2656,7 @@ body {
 /* 住宿建议网格 - 改为立式卡片布局防止横向字折叠 */
 .hotel-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 10px;
 }
 

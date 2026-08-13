@@ -16,6 +16,7 @@ const stopPath = path.join(runtimeDir, 'xhs-lazy-stop.flag');
 const dbPath = path.join(rootDir, 'content', 'db.json');
 const manualPath = path.join(rootDir, 'content', 'manual-attractions.json');
 const overridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
+const repairOverridesPath = path.join(runtimeDir, 'core-lazy-guide-overrides.json');
 
 const args = new Map(process.argv.slice(2).map(arg => {
   const match = arg.match(/^--([^=]+)=(.*)$/);
@@ -193,13 +194,23 @@ function buildAllRecords() {
     // collecting.  Requiring "reviewed" here created a deadlock: the package
     // could not pass final review without a Diandian article, while Diandian
     // could not see it until after final review.
-    if (!['collecting', 'reviewed'].includes(repairPackage.status) || !repairPackage.province) continue;
+    if (!['researching', 'collecting', 'reviewed'].includes(repairPackage.status) || !repairPackage.province) continue;
     manual[repairPackage.province] = [
       ...(manual[repairPackage.province] || []),
       ...(repairPackage.attractions || []).map(({ baselineKey, ...attraction }) => ({ ...attraction, __repairPackage: true })),
     ];
   }
-  const overrides = readJson(overridesPath, {});
+  if (fs.existsSync(runtimeDir)) {
+    for (const name of fs.readdirSync(runtimeDir).filter(item => /^core-repair-research\.[a-z0-9_-]+\.json$/i.test(item)).sort()) {
+      const research = readJson(path.join(runtimeDir, name), {});
+      if (research.status !== 'researching' || !research.province) continue;
+      manual[research.province] = [
+        ...(manual[research.province] || []),
+        ...(research.attractions || []).map(({ baselineKey, ...attraction }) => ({ ...attraction, __repairPackage: true })),
+      ];
+    }
+  }
+  const overrides = { ...readJson(overridesPath, {}), ...readJson(repairOverridesPath, {}) };
   const records = [];
   const ids = new Set();
   for (const [provinceName, province] of Object.entries(db.provinces || {})) {
@@ -227,7 +238,11 @@ function isPendingTarget({ provinceName, attraction, dataLayer }) {
     if (provinceFilter && provinceName !== provinceFilter) return false;
     if (repairOnly && dataLayer !== 'repair-package') return false;
     if (nameFilter && !String(attraction.name || '').includes(nameFilter)) return false;
-    if (isExcludedName(String(attraction.name || '')) && !corePreferredIds.has(attraction.id)) return false;
+    // Generic POI filtering must not discard an approved core-repair target.
+    // New repair records intentionally have a fresh manual ID, so checking only
+    // preferredId caused names ending in "公园" (for example 北京奥林匹克公园)
+    // to disappear from the repair queue.
+    if (dataLayer !== 'repair-package' && isExcludedName(String(attraction.name || '')) && !corePreferredIds.has(attraction.id)) return false;
     const alreadyXhs = attraction.lazy_ai_source?.source === 'xiaohongshu-dian-dian-ai-chat';
     if (!force && alreadyXhs) {
       if (!refreshDynamic) return false;
@@ -402,7 +417,8 @@ async function runCollection() {
   let success = 0;
   let failed = 0;
   let backup = '';
-  let overrides = readJson(overridesPath, {});
+  const targetOverridesPath = repairOnly ? repairOverridesPath : overridesPath;
+  let overrides = readJson(targetOverridesPath, {});
   writeProgress({
     status: 'running',
     message: write ? '正在增量采集并写入攻略覆盖层。' : '正在试跑，不写文件。',
@@ -455,7 +471,7 @@ async function runCollection() {
       if (result.ok) {
         success += 1;
         if (write) {
-          if (!backup) backup = backupOverrides();
+          if (!backup && !repairOnly) backup = backupOverrides();
           overrides[target.attraction.id] = {
             lazy_ai_text: result.answer,
             lazy_ai_source: {
@@ -464,7 +480,7 @@ async function runCollection() {
               updatedAt: nowIso(),
             },
           };
-          atomicWriteJson(overridesPath, overrides);
+          atomicWriteJson(targetOverridesPath, overrides);
         }
       } else {
         failed += 1;
@@ -486,8 +502,8 @@ async function runCollection() {
   const hasPendingRepairPackage = results.some(row => row.ok && row.dataLayer === 'repair-package');
   if (generateAfter && write && success > 0 && hasPendingRepairPackage && !['login_required', 'restricted'].includes(finalProgress.status)) {
     writeProgress({
-      status: stopped ? 'stopped' : 'done',
-      message: '补全包攻略已保存；请回到总控进行质量闸门确认，批准写入后再生成发布数据。',
+      status: stopped ? 'stopped' : 'guide_done',
+      message: '本轮懒人攻略已保存；这不代表整省补全完成。基本信息、路线、合规图片和来源全部通过后，才会开放网页验收。',
       success,
       failed,
       backup,

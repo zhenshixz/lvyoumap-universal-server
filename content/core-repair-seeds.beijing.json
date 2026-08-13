@@ -1,0 +1,2457 @@
+{
+  "province": "北京",
+  "verifiedAt": "2026-08-13",
+  "policy": "关键字段、两条路线、两个来源和可追溯高清图为硬门槛；动态信息不固化；小问题记录但不阻断。",
+  "attractions": [
+    {
+      "baselineKey": "core_c5973bebed",
+      "id": "manual_beijing_d8e441bc",
+      "name": "北京（通州）大运河文化旅游景区",
+      "city": "北京",
+      "rating": 4.6,
+      "reviewsCount": "27条携程点评",
+      "image": "/assets/images/attractions/beijing_grand_canal_verified.jpg",
+      "description": "沿北运河串联博物馆、城市绿心、公园与运河文化空间的国家5A级旅游景区。",
+      "intro": "北京（通州）大运河文化旅游景区以北运河文化带为主轴，包含北京大运河博物馆、运河公园及城市副中心公共文化空间。景区范围较大，适合把室内文化参观与滨水休闲拆分组合。",
+      "level": "5A景区",
+      "category": "文化景区",
+      "tags": [
+        "世界运河文化",
+        "亲子研学",
+        "滨水休闲"
+      ],
+      "address": "北京市通州区张家湾镇北运河桥南及北运河沿线",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "文化和旅游部国家5A名录",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        },
+        {
+          "title": "北京大运河博物馆",
+          "url": "https://www.canalmuseum.org.cn/index.html"
+        },
+        {
+          "title": "北京市人民政府大运河景区",
+          "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html"
+        },
+        {
+          "title": "携程北京（通州）大运河文化旅游景区",
+          "url": "https://you.ctrip.com/sight/beijing1/136024227.html"
+        }
+      ],
+      "routes": [
+        {
+          "title": "副中心文化建筑线",
+          "badge": "室内省力",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北京大运河博物馆",
+            "北京城市图书馆",
+            "北京艺术中心外部公共空间",
+            "城市绿心森林公园"
+          ],
+          "duration": "半天",
+          "walking": "文化建筑之间结合短程接驳，馆内以电梯和平路为主",
+          "physical": 2,
+          "tips": [
+            "博物馆预约和入馆证件提前确认。",
+            "三大建筑开放范围不同，不把未开放空间写入路线。"
+          ],
+          "sourceTitle": "北京大运河博物馆",
+          "sourceUrl": "https://www.canalmuseum.org.cn/index.html"
+        },
+        {
+          "title": "运河滨水慢游线",
+          "badge": "户外休闲",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "运河文化广场",
+            "漕运码头",
+            "大运河森林公园",
+            "北运河滨水步道"
+          ],
+          "duration": "半天",
+          "walking": "滨水步行为主，可按体力缩短",
+          "physical": 2,
+          "tips": [
+            "游船、码头和临水区域开放以官方当天信息为准。",
+            "夏季防晒补水，雨雪或大风天减少临水停留。"
+          ],
+          "sourceTitle": "北京市人民政府大运河文化旅游景区",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html"
+        }
+      ],
+      "transport": {
+        "external_arrive": "优先乘轨道交通到通州区，再按当天目的地换乘公交或打车；景区跨度大，不建议把所有子景点当成一个步行园区。",
+        "internal_arrive": "北京大运河博物馆、城市绿心与运河公园应分别导航到对应入口。",
+        "internal_traffic": "同片区步行，跨片区使用公交、网约车或官方开放的接驳；游船是否运营以官方当日公告为准。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "通州运河商务区或地铁6号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议优先选择北线平路漫步，馆内可服务台免费租借轮椅；",
+        "children": "长辈建议优先选择北线平路漫步，馆内可服务台免费租借轮椅；儿童建议在南线逛博物馆互动展，或在森林公园无动力乐园挖沙玩耍\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "The Grand Canal Museum of Beijing",
+        "author": "E2568",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Grand_Canal_Museum_of_Beijing.jpg",
+        "width": 1920,
+        "height": 1265
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "优先乘轨道交通到通州区，再按当天目的地换乘公交或打车；景区跨度大，不建议把所有子景点当成一个步行园区。",
+          "internal_arrive": "北京大运河博物馆、城市绿心与运河公园应分别导航到对应入口。",
+          "internal_traffic": "同片区步行，跨片区使用公交、网约车或官方开放的接驳；游船是否运营以官方当日公告为准。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "通州运河商务区或地铁6号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议优先选择北线平路漫步，馆内可服务台免费租借轮椅；",
+          "children": "长辈建议优先选择北线平路漫步，馆内可服务台免费租借轮椅；儿童建议在南线逛博物馆互动展，或在森林公园无动力乐园挖沙玩耍\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "副中心文化建筑线",
+          "badge": "室内省力",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北京大运河博物馆",
+            "北京城市图书馆",
+            "北京艺术中心外部公共空间",
+            "城市绿心森林公园"
+          ],
+          "duration": "半天",
+          "walking": "文化建筑之间结合短程接驳，馆内以电梯和平路为主",
+          "physical": 2,
+          "tips": [
+            "博物馆预约和入馆证件提前确认。",
+            "三大建筑开放范围不同，不把未开放空间写入路线。"
+          ],
+          "sourceTitle": "北京大运河博物馆",
+          "sourceUrl": "https://www.canalmuseum.org.cn/index.html",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "运河滨水慢游线",
+          "badge": "户外休闲",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "运河文化广场",
+            "漕运码头",
+            "大运河森林公园",
+            "北运河滨水步道"
+          ],
+          "duration": "半天",
+          "walking": "滨水步行为主，可按体力缩短",
+          "physical": 2,
+          "tips": [
+            "游船、码头和临水区域开放以官方当天信息为准。",
+            "夏季防晒补水，雨雪或大风天减少临水停留。"
+          ],
+          "sourceTitle": "北京市人民政府大运河文化旅游景区",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结53篇笔记生成\n\n带长辈和小孩去大运河景区，最怕的就是“走路太多”和“项目太累”。这条路线主打“多坐车船、少走路、多休息”，把景区的核心子景点串联起来，全程平路为主，推车和轮椅都友好。\n\n方案一：半天精华省力游（主打游船+室内，不费腿）\n\n适合时间紧凑、不想走太多路的家庭，核心体验是“坐船看景+室内吹空调”。\n\n上午：前往北京大运河博物馆。馆内空间开阔、有电梯且空调足，按“二层核心展→三层沉浸展→一层收尾”的顺序逛，非常省力。逛完可去旁边的北京城市图书馆的少年儿童馆休息。\n\n下午：前往大运河公园二号码头乘游船。坐船是全程最省力的方式，60分钟航程穿越多座大桥，船上有一层观景和二层拍照区，还有语音导游，长辈小孩都能轻松欣赏两岸风光。\n\n傍晚：下船后漫步千荷泻露桥。这座桥是白色波浪造型，傍晚吹着河风看落日非常舒服，桥上风大凉快，拍城市水景也很出片。\n\n方案二：全天深度休闲游（自然+古建+游乐，节奏慢）\n\n适合想待一整天、让小孩充分放电的家庭，户外与室内结合，张弛有度。\n\n中午：在公园内草坪野餐，或点外卖在门口取餐，避开正午暴晒。\n\n下午：坐游船或摆渡船过河，前往大韵河游乐园。这里有适合低幼的旋转木马、逍遥水母，也有大孩子喜欢的花果山漂流，可以按需购买套票。玩累了就坐小火车穿梭园区。\n\n傍晚：前往西海子公园或燃灯塔片区。看看红墙古塔与城市高楼的同框，在公园步道散步消食，感受古今交融的氛围，轻松结束一天。\n\n长辈小孩专属省力贴士\n\n交通接驳：景区范围很大，子景点之间建议开车往返或打车，不要尝试全程步行。公园内可租自行车，也可坐园区小火车。\n\n设施准备：博物馆和公园都支持推婴儿车，部分区域可租借轮椅；建议自带水杯和零食，户外补给点较少。\n\n天气预警：游船会受天气影响，如遇暴雨或大风四级及以上可能会停航，出发前建议通过官方小程序确认当日通航情况。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "北京（通州）大运河文化旅游景区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:13:09.906Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部国家5A名录：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "北京大运河博物馆：https://www.canalmuseum.org.cn/index.html",
+          "北京市人民政府大运河景区：https://www.beijing.gov.cn/renwen/rwzyd/qxdw/qyyhxzdy/cymt/202309/t20230922_3264916.html",
+          "携程北京（通州）大运河文化旅游景区：https://you.ctrip.com/sight/beijing1/136024227.html"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程北京（通州）大运河文化旅游景区",
+          "url": "https://you.ctrip.com/sight/beijing1/136024227.html",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "The Grand Canal Museum of Beijing",
+        "author": "E2568",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Grand_Canal_Museum_of_Beijing.jpg",
+        "width": 1920,
+        "height": 1265
+      }
+    },
+    {
+      "baselineKey": "core_f611f52be6",
+      "id": "manual_beijing_a19b4ec3",
+      "name": "北京奥林匹克公园",
+      "city": "北京",
+      "rating": 4.7,
+      "reviewsCount": "582条去哪儿点评",
+      "image": "/assets/images/attractions/beijing_olympic_park_verified.jpg",
+      "description": "北京城市中轴线北端的大型公共空间，集中分布鸟巢、水立方与奥林匹克森林公园等地标。",
+      "intro": "北京奥林匹克公园由场馆区、中心公共区和森林公园等片区构成，是北京2008年奥运会主要场地及城市中轴线延伸。公共区范围广，适合按场馆外景或森林公园两条路线分别游览。",
+      "level": "5A景区",
+      "category": "城市公园",
+      "tags": [
+        "奥运场馆",
+        "城市中轴线",
+        "亲子步行"
+      ],
+      "address": "北京市朝阳区北辰东路15号及奥林匹克中心区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "文化和旅游部北京名录",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0"
+        },
+        {
+          "title": "北京市人民政府北京奥林匹克公园",
+          "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"
+        },
+        {
+          "title": "去哪儿奥林匹克公园",
+          "url": "https://touch.go.qunar.com/poi/9475546"
+        }
+      ],
+      "routes": [
+        {
+          "title": "奥运地标外景线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "奥林匹克公园站",
+            "国家体育场外景",
+            "国家游泳中心外景",
+            "奥林匹克中心区公共空间"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市人民政府北京奥林匹克公园",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"
+        },
+        {
+          "title": "森林公园轻松线",
+          "badge": "自然步行",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "森林公园南门",
+            "奥海",
+            "南园湿地步道",
+            "南园主入口"
+          ],
+          "duration": "半天",
+          "walking": "园路步行为主，按体力折返",
+          "physical": 2,
+          "tips": [
+            "森林公园面积大，不与场馆深度参观强行拼成半天。",
+            "高温、雨雪或大风天缩短户外路线。"
+          ],
+          "sourceTitle": "北京市政府国际版奥林匹克森林公园",
+          "sourceUrl": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562517.html"
+        }
+      ],
+      "transport": {
+        "external_arrive": "轨道交通8号线或15号线到奥林匹克公园站；游森林公园可按入口选择森林公园南门站。",
+        "internal_arrive": "场馆区与森林公园跨度较大，先选一条主线，避免往返。",
+        "internal_traffic": "中心区以步行为主；进入鸟巢、水立方或奥林匹克塔需分别核对运营方当日规则。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "奥林匹克公园、安贞或地铁8号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议走路线B，在奥森散步、仰山观景，避开高强度步行；",
+        "children": "长辈建议走路线B，在奥森散步、仰山观景，避开高强度步行；儿童推荐科技馆互动体验与南园划船，傍晚在广场看鸟巢亮灯\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Beijing Olympic Green",
+        "author": "Picrazy2",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Olympic_Green.jpg",
+        "width": 1920,
+        "height": 1099
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "轨道交通8号线或15号线到奥林匹克公园站；游森林公园可按入口选择森林公园南门站。",
+          "internal_arrive": "场馆区与森林公园跨度较大，先选一条主线，避免往返。",
+          "internal_traffic": "中心区以步行为主；进入鸟巢、水立方或奥林匹克塔需分别核对运营方当日规则。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "奥林匹克公园、安贞或地铁8号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议走路线B，在奥森散步、仰山观景，避开高强度步行；",
+          "children": "长辈建议走路线B，在奥森散步、仰山观景，避开高强度步行；儿童推荐科技馆互动体验与南园划船，傍晚在广场看鸟巢亮灯\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "奥运地标外景线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "奥林匹克公园站",
+            "国家体育场外景",
+            "国家游泳中心外景",
+            "奥林匹克中心区公共空间"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市人民政府北京奥林匹克公园",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "森林公园轻松线",
+          "badge": "自然步行",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "森林公园南门",
+            "奥海",
+            "南园湿地步道",
+            "南园主入口"
+          ],
+          "duration": "半天",
+          "walking": "园路步行为主，按体力折返",
+          "physical": 2,
+          "tips": [
+            "森林公园面积大，不与场馆深度参观强行拼成半天。",
+            "高温、雨雪或大风天缩短户外路线。"
+          ],
+          "sourceTitle": "北京市政府国际版奥林匹克森林公园",
+          "sourceUrl": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562517.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结51篇笔记生成\n\n带长辈和小孩逛奥林匹克公园，最怕的就是“走断腿”和“找不到厕所”。这条路线主打全程平坦、少爬坡、多休息，把核心地标和自然休闲串成一条不走回头路的线，轻松又出片。\n\n下午场：地标打卡与中轴漫步（官方当日建议时段-官方当日建议时段）\n\n地铁直达核心区：乘坐地铁8号线或15号线至奥林匹克公园站，从D口出站，步行约5分钟即可直达中轴线核心景观道，避免长途步行。\n\n鸟巢与水立方外观：沿着宽阔平缓的中轴线步道，先前往国家体育场（鸟巢）外景打卡，在东侧大台阶或龙形水系岸边拍摄建筑全貌与水面倒影；随后步行5分钟抵达国家游泳中心（水立方），白天通透的气泡外墙非常清新。仅在外围拍照无需购票，省时省力。\n\n下沉花园休整：步行至中轴线上的下沉花园，这里植被丰富、有长椅可供休息，还能俯瞰地下商业空间，是长辈小孩补充水分、短暂歇脚的绝佳中转站。\n\n傍晚场：登高望远与日落光影（官方当日建议时段-官方当日建议时段）\n\n奥林匹克塔观景：沿景观大道向北走到园区东北端，抵达标志性的奥林匹克塔。如果长辈体力允许，可以购票登顶246米高空，在日落时分俯瞰奥体全景和北京中轴线；若不想登高，在塔底西侧观景台拍摄“大钉子”外景与晚霞同框同样非常出片。\n\n北顶娘娘庙反差体验：从水立方北侧步行几步即可到达这座明代古寺。红墙古槐被现代奥运场馆环绕，古今交融的独特景致不仅好拍，而且院内平地较多，适合长辈慢慢踱步感受氛围。\n\n夜间场：绝美夜景与闭环收尾（官方当日建议时段-官方当日建议时段）\n\n中轴夜景漫步：晚上客流较少时，全场建筑准时亮灯。从奥林匹克塔沿中轴景观大道向南折返，一路解锁鸟巢的暖光、水立方的梦幻蓝光以及湖面光影倒影，步步皆景。\n\n玲珑塔夜景收尾：在鸟巢正北的玲珑塔前广场拍摄夜景广角，塔身彩灯变换，是拍摄鸟巢和水立方夜景同框的最佳观景平台，最后从鸟巢南门附近结束行程，完美闭环。\n\n自然休闲备选：奥森南园省力版\n\n如果长辈小孩更喜欢自然风光而非建筑打卡，可下午直接前往奥林匹克森林公园南园（地铁8号线森林公园南门站）。\n\n奥海环湖散步：沿奥海大湖的5公里塑胶跑道漫步，路面平坦无陡坡，夏天可看荷花，傍晚适合看日落。\n\n仰山平缓登顶：仰山海拔不高，步道平缓，轻松登顶后可在“天境”观景台俯瞰鸟巢、水立方和城市全景，毫无爬山压力。\n\n湿地木栈道：临水木栈道树荫密集，不怕晒，还能看小鱼野鸭，适合铺个野餐垫（注意南园目前通常不允许搭帐篷，可带野餐垫）慢慢休息。\n\n省力与避坑关键提示\n\n代步工具：园区面积较大，建议在现场租赁观光电瓶车穿梭于各景点间；公共区也配置了无障碍电瓶车和轮椅，可前往游客中心咨询租借。\n\n无障碍设施：公共区累计配置了186处无障碍设施，包括无障碍卫生间、坡道和专用安检通道，推婴儿车或使用轮椅非常友好。\n\n代步车限制：奥森公园内除老年人、残疾人、儿童使用的轮椅和婴儿车外，通常禁止其他滑板车、儿童自行车等代步车入园，请提前规划。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "北京奥林匹克公园完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:13:30.515Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部北京名录：https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0",
+          "北京市人民政府北京奥林匹克公园：https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html",
+          "去哪儿奥林匹克公园：https://touch.go.qunar.com/poi/9475546"
+        ],
+        "ratingSource": {
+          "platform": "去哪儿",
+          "title": "去哪儿奥林匹克公园",
+          "url": "https://touch.go.qunar.com/poi/9475546",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Beijing Olympic Green",
+        "author": "Picrazy2",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beijing_Olympic_Green.jpg",
+        "width": 1920,
+        "height": 1099
+      }
+    },
+    {
+      "baselineKey": "core_727a6ec8f0",
+      "id": "manual_beijing_bfb3e776",
+      "name": "恭王府景区",
+      "city": "北京",
+      "rating": 4.7,
+      "reviewsCount": "36382条携程点评",
+      "image": "/assets/images/attractions/beijing_prince_gong_verified.jpg",
+      "description": "保存较完整的清代王府建筑群，以府邸、花园和清代王府文化展示为核心。",
+      "intro": "恭王府博物馆依托清代恭王府遗址建立，府邸与花园共同构成参观主体。院落、台阶和狭窄通道较多，跟随官方导览方向可减少逆行与折返。",
+      "level": "5A景区",
+      "category": "历史建筑",
+      "tags": [
+        "清代王府",
+        "古建筑",
+        "博物馆"
+      ],
+      "address": "北京市西城区前海西街17号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "文化和旅游部国家5A名录",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        },
+        {
+          "title": "文化和旅游部恭王府博物馆导览",
+          "url": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"
+        }
+      ],
+      "routes": [
+        {
+          "title": "府邸主轴精华线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一宫门",
+            "银安殿",
+            "嘉乐堂",
+            "后罩楼",
+            "花园入口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "恭王府官方导览",
+          "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"
+        },
+        {
+          "title": "花园慢游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西洋门",
+            "独乐峰",
+            "蝠池",
+            "安善堂",
+            "大戏楼"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "恭王府官方导览",
+          "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml"
+        }
+      ],
+      "transport": {
+        "external_arrive": "优先乘公共交通到什刹海周边后步行进入，胡同道路不适合依赖门口停车。",
+        "internal_arrive": "按官方入口、出口及单向游览提示进入。",
+        "internal_traffic": "府邸和花园以步行为主，台阶和门槛较多。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "什刹海、西四或地铁6号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议穿防滑鞋，花园台阶多，可租讲解器边走边听；",
+        "children": "长辈建议穿防滑鞋，花园台阶多，可租讲解器边走边听；儿童可设计找蝙蝠图案寻宝游戏，增加趣味性，累了随时在亭台休息，不必强求走完所有角落\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Prince Gong's Mansion (2611721407)",
+        "author": "Bridget Coila",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Gong%27s_Mansion_(2611721407).jpg",
+        "width": 1920,
+        "height": 1280
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "优先乘公共交通到什刹海周边后步行进入，胡同道路不适合依赖门口停车。",
+          "internal_arrive": "按官方入口、出口及单向游览提示进入。",
+          "internal_traffic": "府邸和花园以步行为主，台阶和门槛较多。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "什刹海、西四或地铁6号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议穿防滑鞋，花园台阶多，可租讲解器边走边听；",
+          "children": "长辈建议穿防滑鞋，花园台阶多，可租讲解器边走边听；儿童可设计找蝙蝠图案寻宝游戏，增加趣味性，累了随时在亭台休息，不必强求走完所有角落\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "府邸主轴精华线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一宫门",
+            "银安殿",
+            "嘉乐堂",
+            "后罩楼",
+            "花园入口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "恭王府官方导览",
+          "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "花园慢游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西洋门",
+            "独乐峰",
+            "蝠池",
+            "安善堂",
+            "大戏楼"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "恭王府官方导览",
+          "sourceUrl": "https://www.pgm.org.cn/pgm/daolan/daolan.shtml",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结33篇笔记生成\n\n带长辈和小孩逛恭王府确实得讲究策略，毕竟里面面积不小，走错路或者排长队很容易让人腰酸背痛。我帮你整理了一条全程不走回头路、兼顾核心看点与省力需求的完整路线，大概2到2.5小时就能轻松逛完。\n\n省力游览路线（一宫门进，南门出）\n\n府邸区（中轴与西路）：从一宫门进入后，依次游览银安殿、嘉乐堂、葆光室、锡晋斋，最后到达后罩楼。这部分主要是看王府的礼仪建筑和奢华起居，路面相对平整。\n\n过渡区：从后罩楼穿过西洋门，正式进入后花园。\n\n花园区（核心与精华）：进入花园后，依次游览独乐峰、蝠池、安善堂，然后前往福字碑（秘云洞）。接着走平步青云路到达邀月台，最后参观大戏楼，从南门 exit。\n\n核心看点与省力细节\n\n银安殿：王府的正殿，气势恢宏，可以简单看看绿色琉璃瓦和王府的仪式感，不用久留。\n\n锡晋斋：全屋用金丝楠木打造，用料堪比皇宫，室内有隔断雕花，凑近还能闻到淡淡木香，是府邸区最值得细看的建筑。\n\n后罩楼：国内王府中最长的楼，俗称“99间半”，朝南的44扇雕花窗形状各不相同。如果中间正门人多，可以从左侧绕行至后方。\n\n西洋门：北京现存唯一的汉白玉石西洋拱门，中西合璧风格，也是拍照很出片的标志性建筑。\n\n蝠池与福字碑：蝠池形状像蝙蝠，寓意“福”；秘云洞内的福字碑是康熙御笔，需要排队触摸，建议长辈小孩稍微在边上歇脚，等人流少了再去。\n\n大戏楼：全木质榫卯结构无铁钉，自带天然扩音效果，坐在里面听戏非常清晰，可以作为行程的完美收官。\n\n专属长辈小孩的避坑提示\n\n错峰摸福：福字碑是全天人流最密集的地方，下午旅行团扎堆。如果时间允许，建议开门第一时间冲过去，或者安排在最后逛，避开高峰。\n\n灵活跳过：如果长辈体力有限，花园里的独乐峰、牡丹园、流杯亭等小景可以快速路过，不用强求每个院子都进。\n\n关于讲解：自己逛容易走马观花，门口有很多拉客的临时讲解，建议提前讲好价格，或者在官方渠道租讲解器，边走边听更省力。\n\n设施准备：园内有直饮水，可以自带水杯；花园里台阶和坡道较多，一定要让长辈和小孩穿舒适的平底鞋。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "恭王府景区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:14:41.809Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部国家5A名录：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "文化和旅游部恭王府博物馆导览：https://www.pgm.org.cn/pgm/daolan/daolan.shtml"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 恭王府景区 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/5174.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Prince Gong's Mansion (2611721407)",
+        "author": "Bridget Coila",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Gong%27s_Mansion_(2611721407).jpg",
+        "width": 1920,
+        "height": 1280
+      }
+    },
+    {
+      "baselineKey": "core_1c0491df59",
+      "id": "manual_beijing_56bc02b5",
+      "name": "八达岭—慕田峪长城旅游区",
+      "city": "北京",
+      "rating": 4.7,
+      "reviewsCount": "61319条携程点评",
+      "image": "/assets/images/attractions/beijing_badaling_mutianyu_verified.jpg",
+      "description": "由八达岭和慕田峪两个相距较远的长城片区共同组成的国家5A级旅游区。",
+      "intro": "八达岭与慕田峪分别位于延庆和怀柔，是明长城北京段的重要开放景区。两个片区不宜在普通一日行程中强行串联，路线分别给出，游客应只选其一并核对预约、交通和开放墙段。",
+      "level": "5A景区",
+      "category": "世界遗产",
+      "tags": [
+        "万里长城",
+        "世界遗产",
+        "山地徒步"
+      ],
+      "address": "北京市延庆区八达岭镇；北京市怀柔区渤海镇慕田峪村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "文化和旅游部国家5A名录",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        },
+        {
+          "title": "文化和旅游部北京旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0"
+        }
+      ],
+      "routes": [
+        {
+          "title": "八达岭量力线",
+          "badge": "八达岭",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "八达岭游客中心",
+            "城墙入口",
+            "北四楼附近",
+            "北七楼附近",
+            "原路或开放交通下山"
+          ],
+          "duration": "半天至一天",
+          "walking": "连续台阶和坡道，按体力设置折返点",
+          "physical": 4,
+          "tips": [
+            "只进入官方开放墙段，不走未开放野长城。",
+            "索道、缆车和接驳运营以当天公告为准。"
+          ],
+          "sourceTitle": "文化和旅游部国家5A名录",
+          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        },
+        {
+          "title": "慕田峪量力线",
+          "badge": "慕田峪",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "慕田峪游客中心",
+            "景区检票口",
+            "开放登城口",
+            "开放敌楼段",
+            "原路或开放交通下山"
+          ],
+          "duration": "半天至一天",
+          "walking": "山地台阶较多，可用开放索道减少爬升",
+          "physical": 4,
+          "tips": [
+            "八达岭与慕田峪相距较远，本路线只游慕田峪。",
+            "未开发长城不进入，雨雪大风天谨慎登城。"
+          ],
+          "sourceTitle": "北京市人民政府慕田峪长城",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/gdwh/mtycc/202108/t20210805_2457343.html"
+        }
+      ],
+      "transport": {
+        "external_arrive": "八达岭与慕田峪分别规划往返，可选铁路、公交、景区专线或自驾；不要把两个入口混用。",
+        "internal_arrive": "先到所选片区游客中心，再按当天开放墙段和索道接驳规划。",
+        "internal_traffic": "步行台阶为主，可结合景区开放的索道、缆车或接驳减少爬升。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "北京市区交通枢纽附近；需早到时可选择延庆或怀柔对应片区",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "优先选封闭缆车上下，避开陡坡和滑道；",
+        "children": "长辈优先选封闭缆车上下，避开陡坡和滑道；儿童建议1.2米以下免票陪同，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Badaling from high up the Great Wall",
+        "author": "Daniel Case",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badaling_from_high_up_the_Great_Wall.jpg",
+        "width": 1920,
+        "height": 1362
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "八达岭与慕田峪分别规划往返，可选铁路、公交、景区专线或自驾；不要把两个入口混用。",
+          "internal_arrive": "先到所选片区游客中心，再按当天开放墙段和索道接驳规划。",
+          "internal_traffic": "步行台阶为主，可结合景区开放的索道、缆车或接驳减少爬升。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "北京市区交通枢纽附近；需早到时可选择延庆或怀柔对应片区",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "优先选封闭缆车上下，避开陡坡和滑道；",
+          "children": "长辈优先选封闭缆车上下，避开陡坡和滑道；儿童建议1.2米以下免票陪同，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "八达岭量力线",
+          "badge": "八达岭",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "八达岭游客中心",
+            "城墙入口",
+            "北四楼附近",
+            "北七楼附近",
+            "原路或开放交通下山"
+          ],
+          "duration": "半天至一天",
+          "walking": "连续台阶和坡道，按体力设置折返点",
+          "physical": 4,
+          "tips": [
+            "只进入官方开放墙段，不走未开放野长城。",
+            "索道、缆车和接驳运营以当天公告为准。"
+          ],
+          "sourceTitle": "文化和旅游部国家5A名录",
+          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "慕田峪量力线",
+          "badge": "慕田峪",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "慕田峪游客中心",
+            "景区检票口",
+            "开放登城口",
+            "开放敌楼段",
+            "原路或开放交通下山"
+          ],
+          "duration": "半天至一天",
+          "walking": "山地台阶较多，可用开放索道减少爬升",
+          "physical": 4,
+          "tips": [
+            "八达岭与慕田峪相距较远，本路线只游慕田峪。",
+            "未开发长城不进入，雨雪大风天谨慎登城。"
+          ],
+          "sourceTitle": "北京市人民政府慕田峪长城",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/gdwh/mtycc/202108/t20210805_2457343.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结45篇笔记生成\n\n带长辈和小孩同时逛八达岭和慕田峪，确实需要好好规划一下体力分配！这两大景区都各有非常成熟的省力工具，只要选对路线，长辈和小孩都能轻松体验“不到长城非好汉”。\n\n八达岭长城：南线地面缆车极简闭环\n\n八达岭北线台阶极陡且人流量巨大，带长辈小孩强烈建议直接锁死南线，全程平缓且排队时间短。\n\n交通与入园：自驾优先导航至熊乐园停车场，离南线缆车入口极近，避免去滚天沟或岔西停车场走长途暴晒接驳路。若坐高铁，出站后乘坐超长扶梯或无障碍电梯直达地面。\n\n上山方式：乘坐南线地面缆车（全封闭轨道车），不晃不恐高，6分钟直达南四楼核心观景台。\n\n游览路线：从南四楼出发，步行至南五、南六敌楼。这段路以下坡和平路为主，台阶平缓，适合慢慢拍照。逛完后原路折返至南四楼。\n\n下山方式：乘坐地面缆车原路下山。若体力极好且想体验趣味，也可步行至北四楼下山乘坐滑车，但长辈建议直接缆车往返最稳妥。\n\n慕田峪长城：西线缆车+中线滑道全景线\n\n慕田峪植被覆盖率高、人少景美，坡度相对温柔，是带老小游长城的优选。\n\n交通与入园：务必购买景区摆渡车往返票，5分钟直达登山口，省去步行30分钟的体力消耗。\n\n上山方式：乘坐西线封闭缆车，直达14号敌楼。封闭车厢安全感强，几分钟即可登顶制高点。\n\n游览路线：从14号敌楼向东步行至6号敌楼。这段约1.5公里的路程80%为下坡和平路，坡度舒缓。若长辈体力好，可向西尝试前往20号好汉坡，但19至20号坡度达70°，需手脚并用，建议量力而行至18号折返。\n\n下山方式：抵达6号敌楼后，乘坐1580米旱地滑道下山。速度可自行控制，有趣且不吓人，小朋友会非常喜欢。\n\n核心避坑与注意事项\n\n年龄与身高限制：60周岁及以上老人无法乘坐滑道，长辈需选择索道或缆车下山；1.2米以下儿童乘坐滑道需成人同乘。\n\n天气预警：滑道和开放式索道在雨天、大风等恶劣天气下会临时关闭，出行前务必查看天气预报，并提前确认运营状态。\n\n物资准备：长城上座椅稀少且无遮挡，建议自带温水、高热量零食，并为长辈准备折叠凳；山顶风大，可备一件薄外套。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "八达岭—慕田峪长城旅游区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:15:02.227Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "文化和旅游部国家5A名录：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "文化和旅游部北京旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=beijing&type=0"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 八达岭—慕田峪长城旅游区 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/230.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Badaling from high up the Great Wall",
+        "author": "Daniel Case",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badaling_from_high_up_the_Great_Wall.jpg",
+        "width": 1920,
+        "height": 1362
+      }
+    },
+    {
+      "baselineKey": "core_0e60523d7c",
+      "id": "manual_beijing_444c6734",
+      "name": "北京环球度假区",
+      "city": "北京",
+      "rating": 4.6,
+      "reviewsCount": "74440条携程点评",
+      "image": "/assets/images/attractions/beijing_universal_verified.jpg",
+      "description": "集主题公园、城市大道与度假酒店于一体的大型主题度假区。",
+      "intro": "北京环球度假区以环球影城主题公园为核心，包含多个主题景区和北京环球城市大道。项目开放、身高健康限制、演出及排队状态动态变化，路线只给出空间顺序与取舍原则。",
+      "level": "热门主题度假区",
+      "category": "主题乐园",
+      "tags": [
+        "电影主题",
+        "亲子度假",
+        "大型乐园"
+      ],
+      "address": "北京市通州区梨园镇北京环球度假区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "resort",
+      "sources": [
+        {
+          "title": "北京环球度假区官网",
+          "url": "https://www.universalbeijingresort.com/zh_CN"
+        },
+        {
+          "title": "北京市文化和旅游局北京环球度假区",
+          "url": "https://s.visitbeijing.com.cn/attraction/120985"
+        }
+      ],
+      "routes": [
+        {
+          "title": "亲子温和体验线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "好莱坞",
+            "小黄人乐园",
+            "功夫熊猫盖世之地",
+            "城市大道"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京环球度假区官网",
+          "sourceUrl": "https://www.universalbeijingresort.com/zh_CN"
+        },
+        {
+          "title": "经典主题区环线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "变形金刚基地",
+            "侏罗纪世界努布拉岛",
+            "未来水世界",
+            "哈利·波特的魔法世界",
+            "城市大道"
+          ],
+          "duration": "一天",
+          "walking": "全天步行量大，按排队与演出状态动态取舍",
+          "physical": 3,
+          "tips": [
+            "不把临时演出场次和排队时间固化到路线。",
+            "健康、身高和乘坐限制以官方项目说明为准。"
+          ],
+          "sourceTitle": "北京环球度假区官网",
+          "sourceUrl": "https://www.universalbeijingresort.com/zh_CN"
+        }
+      ],
+      "transport": {
+        "external_arrive": "轨道交通7号线或八通线到环球度假区站，也可按官方交通指南自驾或使用公共交通。",
+        "internal_arrive": "入园前在官方应用核对预约、入园凭证、项目身高限制与当天运营。",
+        "internal_traffic": "园区内步行为主，按主题区顺序减少折返；儿童推车和轮椅服务以现场为准。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "环球度假区或地铁7号线沿线",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议避开霸天虎过山车等刺激项目，多安排看演出与室内漫步；",
+        "children": "长辈建议避开霸天虎过山车等刺激项目，多安排看演出与室内漫步；儿童务必租用推车，优先选择小黄人与功夫熊猫等低刺激项目\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Universal Beijing Resort",
+        "author": "Hhhh2",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Universal_Beijing_Resort.jpg",
+        "width": 1920,
+        "height": 2356
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "大型度假区步行量容易被低估，舒适鞋和分层穿搭比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "轨道交通7号线或八通线到环球度假区站，也可按官方交通指南自驾或使用公共交通。",
+          "internal_arrive": "入园前在官方应用核对预约、入园凭证、项目身高限制与当天运营。",
+          "internal_traffic": "园区内步行为主，按主题区顺序减少折返；儿童推车和轮椅服务以现场为准。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "环球度假区或地铁7号线沿线",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议避开霸天虎过山车等刺激项目，多安排看演出与室内漫步；",
+          "children": "长辈建议避开霸天虎过山车等刺激项目，多安排看演出与室内漫步；儿童务必租用推车，优先选择小黄人与功夫熊猫等低刺激项目\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "亲子温和体验线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "好莱坞",
+            "小黄人乐园",
+            "功夫熊猫盖世之地",
+            "城市大道"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京环球度假区官网",
+          "sourceUrl": "https://www.universalbeijingresort.com/zh_CN",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "经典主题区环线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "变形金刚基地",
+            "侏罗纪世界努布拉岛",
+            "未来水世界",
+            "哈利·波特的魔法世界",
+            "城市大道"
+          ],
+          "duration": "一天",
+          "walking": "全天步行量大，按排队与演出状态动态取舍",
+          "physical": 3,
+          "tips": [
+            "不把临时演出场次和排队时间固化到路线。",
+            "健康、身高和乘坐限制以官方项目说明为准。"
+          ],
+          "sourceTitle": "北京环球度假区官网",
+          "sourceUrl": "https://www.universalbeijingresort.com/zh_CN",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结57篇笔记生成\n\n带长辈和小孩去环球度假区，主打一个“不费腿、不折腾、体验好”，完全不用去跟年轻人拼手速排队！这份覆盖全园的逆时针省力路线，节奏舒缓，老人小孩都能轻松跟上。\n\n上午：暖场与轻松入园\n\n好莱坞大道：入园后先不急着冲大项目，去看一场《灯光，摄像，开拍！》。这是全园排队最短的沉浸式特效体验，模拟台风和火灾场景，老少皆宜，非常适合用来“暖机”。\n\n小黄人乐园：顺着路线走进小黄人区，先玩《超萌漩漩涡》，类似小飞象，排队快且低幼友好；接着全家一起体验《小黄人闹翻天》，这是4D沉浸式观影，座椅会随剧情晃动，但不算刺激，长辈小孩都能玩。\n\n中午：全室内避暑回血\n\n功夫熊猫盖世之地：中午太阳大，直接钻进这个全室内、恒温且光线昏暗的园区，简直是天然的避暑午睡房。推荐玩《神龙大侠之旅》，坐船看实景动画，最后有个温和的小俯冲，非常舒缓；还有《炫转武侠》这种中国风旋转木马，排队都很快。\n\n错峰午餐：在功夫熊猫园区或附近的餐厅错峰吃饭，避开12点到1点的就餐高峰，不用排长队。\n\n下午：震撼演出与温和探险\n\n未来水世界：看一场《未来水世界特技表演》，场景搭建和爆炸水花非常震撼。如果想不被泼水，记得选后排的“干区”座位；带长辈的话，提醒他们在剧场内走台阶时注意安全，不要跑动。\n\n哈利·波特的魔法世界：下午去逛逛魔法街区，氛围感极佳。身体允许的长辈可以挑战《哈利波特与禁忌之旅》（需122cm以上），这是全园经典项目，如果怕黑可以闭眼玩；不敢玩的可以坐《鹰马飞行》，这是小型户外过山车，不失重且观景视野好。\n\n侏罗纪世界：体验《侏罗纪世界大冒险》，乘车穿越恐龙岛，场景逼真但不吓人。如果长辈觉得刺激，可以在园区的室内儿童游乐区休息，或者去和《奇遇迅猛龙》拍照互动。\n\n傍晚：巡游压轴与夜景收尾\n\n环球大巡游：傍晚气温舒适，卡点看花车巡游，和各个IP人偶互动，氛围感拉满，不用暴晒占位。\n\n变形金刚基地：刷一下《大黄蜂回旋机》，这是温和的旋转类项目；喜欢科技感的可以看《火种源争夺战》（3D沉浸对战，略带眩晕）。\n\n夜间灯光秀：晚上在哈利·波特园区看《霍格沃茨城堡灯光秀》，视觉效果绝美，作为一天的完美收尾。\n\n省力与无障碍贴士\n\n爱心通行卡：如果长辈腿脚不便，入园后可在游客服务中心凭相关证明办理爱心卡。排队超30分钟的项目可预约返回时间，不用一直站着排队，还能走快速通道。\n\n童车与轮椅：强烈建议租儿童推车，哪怕小孩平时不坐，当天步数也超多；园区也有轮椅租赁，且大部分项目都有无障碍通道和专用电梯。\n\n身高与禁忌：提前在官方APP查看项目身高要求，霸天虎过山车等刺激项目不建议长辈和矮小儿童尝试；禁忌之旅和火种源争夺战可能会有轻微眩晕感，易晕车者需斟酌。\n\n长辈和小孩的具体年龄和身高大概是多少？如果有特殊的身高限制或身体情况，我可以帮你再微调一下项目取舍。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "北京环球度假区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:15:23.677Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "北京环球度假区官网：https://www.universalbeijingresort.com/zh_CN",
+          "北京市文化和旅游局北京环球度假区：https://s.visitbeijing.com.cn/attraction/120985"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 北京环球度假区 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/2045497.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Universal Beijing Resort",
+        "author": "Hhhh2",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Universal_Beijing_Resort.jpg",
+        "width": 1920,
+        "height": 2356
+      }
+    },
+    {
+      "baselineKey": "core_d6869324ce",
+      "id": "manual_beijing_c7b88d5",
+      "name": "水立方(国家游泳中心)",
+      "city": "北京",
+      "rating": 4.2,
+      "reviewsCount": "2704条携程点评",
+      "image": "/assets/images/attractions/beijing_water_cube_verified.jpg",
+      "description": "北京奥林匹克公园内的国家游泳中心，兼具赛事场馆、建筑参观与水上体验功能。",
+      "intro": "国家游泳中心因独特的膜结构外观被称为“水立方”，北京冬奥会期间完成冰水转换并形成“冰立方”。场馆参观、水上乐园和赛事活动由不同运营安排控制，应按当天开放范围选择。",
+      "level": "奥运场馆",
+      "category": "场馆参观",
+      "tags": [
+        "水立方",
+        "奥运遗产",
+        "亲子场馆"
+      ],
+      "address": "北京市朝阳区天辰东路11号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "北京市文化和旅游局水立方",
+          "url": "https://s.visitbeijing.com.cn/attraction/118018"
+        },
+        {
+          "title": "北京市体育局国家游泳中心",
+          "url": "https://tyj.beijing.gov.cn/bjsports/gzdt84/zwdt/10904136/index.html"
+        }
+      ],
+      "routes": [
+        {
+          "title": "场馆建筑参观线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客入口",
+            "水立方外景",
+            "开放参观区",
+            "奥运主题展示区",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文化和旅游局水立方",
+          "sourceUrl": "https://s.visitbeijing.com.cn/attraction/118018"
+        },
+        {
+          "title": "奥运中心区联游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "奥林匹克公园站",
+            "水立方外景",
+            "中心区公共空间",
+            "鸟巢外景",
+            "奥林匹克公园站"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市人民政府北京奥林匹克公园",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html"
+        }
+      ],
+      "transport": {
+        "external_arrive": "乘轨道交通到奥林匹克公园站后步行到场馆。",
+        "internal_arrive": "先到游客入口确认当天开放项目，场馆参观与水上项目不要混用票务信息。",
+        "internal_traffic": "馆内按开放导览步行，周边可串联奥林匹克中心区公共空间。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "奥林匹克公园或地铁8号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议走室内省力线，全场无障碍且温度适宜，65岁以上免票；",
+        "children": "长辈建议走室内省力线，全场无障碍且温度适宜，65岁以上免票；儿童推荐夏季前往B1层嬉水乐园，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "The Beijing National Aquatics Center (Water Cube)",
+        "author": "Jorge Láscar",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+        "width": 1920,
+        "height": 1275
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "乘轨道交通到奥林匹克公园站后步行到场馆。",
+          "internal_arrive": "先到游客入口确认当天开放项目，场馆参观与水上项目不要混用票务信息。",
+          "internal_traffic": "馆内按开放导览步行，周边可串联奥林匹克中心区公共空间。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "奥林匹克公园或地铁8号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议走室内省力线，全场无障碍且温度适宜，65岁以上免票；",
+          "children": "长辈建议走室内省力线，全场无障碍且温度适宜，65岁以上免票；儿童推荐夏季前往B1层嬉水乐园，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "场馆建筑参观线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客入口",
+            "水立方外景",
+            "开放参观区",
+            "奥运主题展示区",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文化和旅游局水立方",
+          "sourceUrl": "https://s.visitbeijing.com.cn/attraction/118018",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "奥运中心区联游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "奥林匹克公园站",
+            "水立方外景",
+            "中心区公共空间",
+            "鸟巢外景",
+            "奥林匹克公园站"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市人民政府北京奥林匹克公园",
+          "sourceUrl": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/alpkgy/202309/t20230919_3262335.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结24篇笔记生成\n\n带长辈和小孩去水立方，主打一个“少走弯路、多坐少站、全程无障碍”，帮你整理了一条完整又省力的游览路线，照着走不费腿！\n\n交通与入口选择\n\n打车（最省力）：直接定位“国家游泳中心西门”或“6号门”，下车就是近馆入口，不用扛着东西多走路，对长辈和小孩非常友好。\n\n地铁：乘坐8号线到奥林匹克公园站，从H口或B2口出站，步行约5分钟即可到达，出口距离场馆较近，少走冤枉路。\n\n自驾：可导航至“奥林匹克公园中心区P2停车场”或“水立方地下停车场”，车位相对充足，且离入口近。\n\n完整省力游览路线\n\n6号门进馆：从6号门进入，门口就有旱地冰壶体验区，有个巨大的毛绒冰壶，长辈小孩可以简单互动打卡。\n\n一层比赛大厅看光影秀：往北走从S6入口进观众席，尽量选中间位置。在这里可以观看“水之光”光影秀（约10分钟），回顾奥运高光时刻，长辈们通常很喜欢，坐着看也不累。具体场次请以现场公示为准。\n\n文创店与走廊漫步：从二层下来靠近7号门处，逛逛文创店，收集一下专属的双奥纪念印章。接着往北走过泳池区，走过画展走廊，尽头左侧有国旗与奥运开幕盛景照，适合全家合影。\n\n长辈小孩专属项目推荐\n\n水之光光影秀：全程坐着观看，约10分钟，内容涵盖夏奥和冬奥回忆，非常适合作为参观的开场，不费体力又有教育意义。\n\n水立方嬉水乐园：如果是夏季或开放期前往，可以单独购票进入。室内恒温28℃，长辈可以逛造浪池浅水区和梦幻漂流，水流平缓；小孩可以玩浅水区喷泉滑梯、魔方城堡儿童滑道和海底总动员低幼区，安全又好玩。\n\n无障碍设施：整个场馆全场无障碍，如果需要坐轮椅，参观起来也非常顺畅，不用担心台阶问题。\n\n实用避坑贴士\n\n亮灯时间：建筑亮灯一般在客流较少时开始，客流较少时关闭。建议客流较少时到，找好机位等亮灯，刚亮灯时灯光最柔和，出片率最高。\n\n装备准备：场馆内水比较贵，建议自带水杯；如果打算去嬉水乐园，一定要自备泳衣、泳帽、防滑袜和浴巾，场馆内不提供这些物品。\n\n周边衔接：逛完水立方，可以顺便在奥林匹克公园中轴线散步，看看鸟巢夜景和玲珑塔，全程都是平缓步道，晚上风大记得给长辈带件薄外套。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "水立方(国家游泳中心)完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:15:43.343Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "北京市文化和旅游局水立方：https://s.visitbeijing.com.cn/attraction/118018",
+          "北京市体育局国家游泳中心：https://tyj.beijing.gov.cn/bjsports/gzdt84/zwdt/10904136/index.html"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 水立方(国家游泳中心) 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/52627.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "The Beijing National Aquatics Center (Water Cube)",
+        "author": "Jorge Láscar",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lascar_The_Beijing_National_Aquatics_Center_(Water_Cube)_(4475631690).jpg",
+        "width": 1920,
+        "height": 1275
+      }
+    },
+    {
+      "baselineKey": "core_7ff5b3d4e1",
+      "id": "manual_beijing_9bb56b1e",
+      "name": "中国国家博物馆",
+      "city": "北京",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/beijing_national_museum_verified.jpg",
+      "description": "以中华文明历史与国家文化记忆为核心的国家级综合博物馆。",
+      "intro": "中国国家博物馆位于天安门广场东侧，以“古代中国”“复兴之路”等基本陈列为骨架，并持续推出专题和临时展览。场馆体量大，应先选基本陈列主线，再按余力增加专题展。",
+      "level": "国家级博物馆",
+      "category": "博物馆",
+      "tags": [
+        "古代中国",
+        "国家历史",
+        "亲子研学"
+      ],
+      "address": "北京市东城区东长安街16号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "中国国家博物馆简介",
+          "url": "https://www.chnmuseum.cn/gbgk/gbjj/"
+        },
+        {
+          "title": "中国国家博物馆服务",
+          "url": "https://www.chnmuseum.cn/cg/"
+        }
+      ],
+      "routes": [
+        {
+          "title": "古代中国主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "预约入口",
+            "古代中国基本陈列",
+            "中央大厅",
+            "重点专题展区",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "中国国家博物馆简介",
+          "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/"
+        },
+        {
+          "title": "复兴之路主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "预约入口",
+            "复兴之路基本陈列",
+            "复兴之路新时代部分",
+            "开放专题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "中国国家博物馆简介",
+          "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/"
+        }
+      ],
+      "transport": {
+        "external_arrive": "优先使用轨道交通到天安门东一带，提前核对广场区域安检和交通管制。",
+        "internal_arrive": "按预约入口和现场安检要求入馆，携带预约所用有效证件。",
+        "internal_traffic": "馆内面积大，利用电梯和休息区，避免同时追完所有展厅。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "东单、前门或地铁1号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议走爱心通道、优先看复兴之路和古代中国，馆内较冷注意保暖；",
+        "children": "长辈建议走爱心通道、优先看复兴之路和古代中国，馆内较冷注意保暖；儿童建议3-6岁玩动物纹饰找一找游戏，7-9岁做时间轴拼图，10岁以上配合讲解深度参观，馆内可带2万毫安内充电宝但展厅不可使用\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "National Museum of China building 1",
+        "author": "Pablo BM",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_China_building_1.jpg",
+        "width": 1920,
+        "height": 1280
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "优先使用轨道交通到天安门东一带，提前核对广场区域安检和交通管制。",
+          "internal_arrive": "按预约入口和现场安检要求入馆，携带预约所用有效证件。",
+          "internal_traffic": "馆内面积大，利用电梯和休息区，避免同时追完所有展厅。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "东单、前门或地铁1号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议走爱心通道、优先看复兴之路和古代中国，馆内较冷注意保暖；",
+          "children": "长辈建议走爱心通道、优先看复兴之路和古代中国，馆内较冷注意保暖；儿童建议3-6岁玩动物纹饰找一找游戏，7-9岁做时间轴拼图，10岁以上配合讲解深度参观，馆内可带2万毫安内充电宝但展厅不可使用\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古代中国主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "预约入口",
+            "古代中国基本陈列",
+            "中央大厅",
+            "重点专题展区",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "中国国家博物馆简介",
+          "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "复兴之路主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "预约入口",
+            "复兴之路基本陈列",
+            "复兴之路新时代部分",
+            "开放专题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "中国国家博物馆简介",
+          "sourceUrl": "https://www.chnmuseum.cn/gbgk/gbjj/",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结58篇笔记生成\n\n带长辈和小孩逛国博，最怕的就是走断腿和排队排崩溃。国博非常大，想要省力又看完精华，核心秘诀就是“抓大放小+逆向错峰+善用电梯”。\n\n核心省力策略\n\n绿色通道：如果有60岁以上的长辈，可以直接走门口的爱心/绿色通道，免排队入馆（一位老人可带一位陪同人员），能省下半小时以上的排队时间。\n\n电梯避坑：国博的垂直电梯在高峰期排队极长。建议先坐扶梯上到3楼或4楼，再转乘直梯下到B1层，这样能完美避开主电梯的长龙。\n\n逆序参观：不要按正常时间顺序从远古开始看，而是从B1层的“出口”反向进入，先看清朝和明代，第一时间看到最惊艳的凤冠，再往回倒序逛，人流少且体验好。\n\n完整省力游览动线\n\n北门入馆与二层起步：从地铁1号线天安门东站D口出，走北门入馆。先不急着下地下一层，直接去二层看看“风展红旗如画”等红色经典展览，或者在中央大厅简单打卡，节奏比较舒缓。\n\nB1层核心精华（古代中国）：通过“3楼/4楼转直梯”或“南2门直梯”的方式下到B1层。从文创店通道反向进入古代中国展厅。必看后母戊鼎、四羊方尊、金缕玉衣和孝端皇后九龙九凤冠。这个展厅是连通的，没有子展厅分割，逛起来不用来回折返。\n\n四层专题精选：坐电梯上到四层，这里空间划分清晰、节奏舒缓。推荐挑选“古代服饰文化展”（有虚拟试穿互动，小孩喜欢）或“古代瓷器展”，辨识度高且不枯燥。\n\n三层特展补充：最后去三层，看看近期的热门特展（如李静训展或三星堆相关特展），这里相对安静，适合长辈慢慢看。逛完后从就近出口离馆。\n\n贴心避坑与补给提醒\n\n轮椅与婴儿车：馆内提供轮椅和婴儿车租赁（需押金），但电动轮椅不能入内（需拆电池）。高峰期轮椅非常抢手，建议尽早去服务台租借。\n\n讲解建议：不要租那种干巴巴的讲解器，长辈和小孩容易走神。可以在小程序预约公益讲解，或者给小孩买一本带手电筒的国宝手册，玩“文物寻宝”游戏。\n\n休息与补给：馆内空调很足，记得给长辈和小孩带件薄外套。展厅内禁止饮食，可以自带少量零食和水，逛累了去三楼的大片休息区或楼梯台阶坐会儿。入馆后记得先在一楼大厅扫码存包，解放双手。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "中国国家博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:16:53.836Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中国国家博物馆简介：https://www.chnmuseum.cn/gbgk/gbjj/",
+          "中国国家博物馆服务：https://www.chnmuseum.cn/cg/"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 中国国家博物馆",
+          "url": "https://www.amap.com/place/B000A83U0P",
+          "poiId": "B000A83U0P",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "National Museum of China building 1",
+        "author": "Pablo BM",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Museum_of_China_building_1.jpg",
+        "width": 1920,
+        "height": 1280
+      }
+    },
+    {
+      "baselineKey": "core_e279ad5c8b",
+      "id": "manual_beijing_c5a64407",
+      "name": "首都博物馆",
+      "city": "北京",
+      "rating": 4.8,
+      "reviewsCount": "1224条携程点评",
+      "image": "/assets/images/attractions/beijing_capital_museum_verified.jpg",
+      "description": "系统展示北京城市历史、建都史与地方文化的综合性博物馆。",
+      "intro": "首都博物馆以北京城市历史文化为主线，常设展陈覆盖北京人居、建城和建都历程，并设有瓷器、玉器等专题陈列。展览调整时以官网当天信息为准。",
+      "level": "国家一级博物馆",
+      "category": "博物馆",
+      "tags": [
+        "北京历史",
+        "古都文化",
+        "亲子研学"
+      ],
+      "address": "北京市西城区复兴门外大街16号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "首都博物馆简介",
+          "url": "https://www.capitalmuseum.org.cn/article/e51d02b1bb844e60a14b06d6c12f12a0"
+        },
+        {
+          "title": "首都博物馆基本陈列",
+          "url": "https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b"
+        }
+      ],
+      "routes": [
+        {
+          "title": "古都北京主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "古都北京历史文化篇",
+            "古都北京城建篇",
+            "开放专题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "首都博物馆基本陈列",
+          "sourceUrl": "https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b"
+        },
+        {
+          "title": "精品专题线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "开放瓷器展区",
+            "开放玉器展区",
+            "其他开放专题陈列",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "首都博物馆展览陈列",
+          "sourceUrl": "https://capitalmuseum.org.cn/exhibition"
+        }
+      ],
+      "transport": {
+        "external_arrive": "乘轨道交通到木樨地一带后步行，按官网参观提示进入。",
+        "internal_arrive": "携带有效证件并按预约要求安检入馆。",
+        "internal_traffic": "按楼层与展览主题分段参观，使用电梯减少长辈上下楼负担。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "复兴门、木樨地或地铁1号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议多利用直梯和每层休息长凳，重点逛民俗展和青铜展，文字较少的展区慢看；",
+        "children": "长辈建议多利用直梯和每层休息长凳，重点逛民俗展和青铜展，文字较少的展区慢看；儿童建议从民俗展入手，通史展重点看造型奇特的文物，可自带水杯和零食，B1层有简餐和亲子考古挖宝体验\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Capital Museum in Beijing",
+        "author": "PENG Yanan (Neo-Jay)",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capital_Museum_in_Beijing.jpg",
+        "width": 1920,
+        "height": 1440
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "乘轨道交通到木樨地一带后步行，按官网参观提示进入。",
+          "internal_arrive": "携带有效证件并按预约要求安检入馆。",
+          "internal_traffic": "按楼层与展览主题分段参观，使用电梯减少长辈上下楼负担。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "复兴门、木樨地或地铁1号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议多利用直梯和每层休息长凳，重点逛民俗展和青铜展，文字较少的展区慢看；",
+          "children": "长辈建议多利用直梯和每层休息长凳，重点逛民俗展和青铜展，文字较少的展区慢看；儿童建议从民俗展入手，通史展重点看造型奇特的文物，可自带水杯和零食，B1层有简餐和亲子考古挖宝体验\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古都北京主线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "古都北京历史文化篇",
+            "古都北京城建篇",
+            "开放专题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "首都博物馆基本陈列",
+          "sourceUrl": "https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "精品专题线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "开放瓷器展区",
+            "开放玉器展区",
+            "其他开放专题陈列",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "首都博物馆展览陈列",
+          "sourceUrl": "https://capitalmuseum.org.cn/exhibition",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结43篇笔记生成\n\n带长辈和小孩逛博物馆，最讲究的就是“少走回头路、多坐多休息”。首都博物馆的布局其实对老人小孩非常友好，只要规划好动线，全程基本不用爬坡爬楼梯，轻松又能看完精华。\n\n核心省力动线（先方厅后圆厅）\n\n推荐采用“西区方厅由下往上，东区圆厅由下往上”的顺路走法，全程依赖直梯，不走回头路。\n\n方厅（西区）：2层 ➡️ 3层 ➡️ 4层 ➡️ 5层\n\n圆厅（东区）：4层 ➡️ 5层 ➡️ 6层\n\n各楼层核心看点\n\n方厅2层（北京通史陈列）：按时间线串联北京历史，从史前到辽金，镇馆之宝金代铜坐龙等都在此处，是理清历史脉络的起点。\n\n方厅3层（北京通史陈列）：衔接2层时间线，聚焦元明清至近代，见证北京成为大一统王朝首都的全过程，金银器和清代龙袍非常震撼。\n\n方厅4层（老北京戏园展）：还原了老北京戏台和观众席，氛围感很好，长辈走累了可以在这里坐下来听听戏，歇歇脚。\n\n方厅5层（老北京民俗展）：全馆最接地气的一层，还原了胡同、四合院和老婚房，长辈看了有共鸣，小孩也觉得好玩，拍照非常出片。\n\n圆厅4层（燕地青铜艺术展）：集中展示古燕国的青铜礼器，纹饰神秘高级，是看硬核文物的核心区域。\n\n圆厅5层（古代玉器艺术展）：光影设计极美，历代宫廷玉雕集中在此，温润静谧，适合慢慢欣赏。\n\n圆厅6层（北京古代佛塔文物展）：全馆最高处，展示精美塔刹，环境幽静，非常适合作为看展结束后的收尾。\n\n专属省力与避坑贴士\n\n直梯优先：馆内各楼层均有滚梯和直梯，老人、推婴儿车或携带重物者务必优先选直梯，上下楼无压力。但要注意，圆厅的扶梯通常只能单向上行，建议直接坐直梯到对应楼层，避免走冤枉路。\n\n休息与补给：每层都有大量休息长凳和直饮水机，可自带水杯。B1层有简餐区和文创店，逛累了随时能吃饭休息。馆内冷气较足，建议给长辈和小孩带件薄外套。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "首都博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:17:13.383Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "首都博物馆简介：https://www.capitalmuseum.org.cn/article/e51d02b1bb844e60a14b06d6c12f12a0",
+          "首都博物馆基本陈列：https://www.capitalmuseum.org.cn/exhibition/c6c19ad37dc64b829b9d7f5a4c36a66b"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 首都博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/5159.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Capital Museum in Beijing",
+        "author": "PENG Yanan (Neo-Jay)",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capital_Museum_in_Beijing.jpg",
+        "width": 1920,
+        "height": 1440
+      }
+    },
+    {
+      "baselineKey": "core_f475a26bb2",
+      "id": "manual_beijing_c0bc1eb6",
+      "name": "中国人民革命军事博物馆",
+      "city": "北京",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/beijing_military_museum_verified.jpg",
+      "description": "以中国共产党领导的革命战争、兵器、军事历史与军事科技为基本陈列体系的国家级军事博物馆。",
+      "intro": "中国人民革命军事博物馆位于复兴路，基本陈列包括中国共产党领导的革命战争、兵器、中国历代军事与军事科技等内容。展厅体量和展品信息密度高，建议按主题选择，不追求一次看完。",
+      "level": "国家一级博物馆",
+      "category": "博物馆",
+      "tags": [
+        "军事历史",
+        "兵器陈列",
+        "国防教育"
+      ],
+      "address": "北京市海淀区复兴路9号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "中国人民革命军事博物馆简介",
+          "url": "https://www.jb.mil.cn/jbgk/jbjj/"
+        },
+        {
+          "title": "军博参观信息",
+          "url": "https://eng.jb.mil.cn/Visit/"
+        }
+      ],
+      "routes": [
+        {
+          "title": "革命战争与兵器线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "中央大厅",
+            "中国共产党领导的革命战争陈列",
+            "兵器陈列",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "军博简介",
+          "sourceUrl": "https://www.jb.mil.cn/jbgk/jbjj/"
+        },
+        {
+          "title": "军事历史与科技线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "中国历代军事陈列",
+            "军事科技陈列",
+            "开放主题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "军博官网展览",
+          "sourceUrl": "https://eng.jb.mil.cn/"
+        }
+      ],
+      "transport": {
+        "external_arrive": "乘地铁1号线或9号线到军事博物馆站，按官方预约及入口提示进馆。",
+        "internal_arrive": "准备预约凭证和有效证件，先确认当天开放展厅。",
+        "internal_traffic": "馆内按主题展厅步行，重型装备和高密度展区预留休息时间。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "公主坟、木樨地或地铁1号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "可凭60岁及以上身份证走绿色通道免预约，每人可带2名家属，建议从一层右侧馆开始逛，最后去B1；",
+        "children": "长辈可凭60岁及以上身份证走绿色通道免预约，每人可带2名家属，建议从一层右侧馆开始逛，最后去B1；儿童7至14岁需成人代为预约，6岁以下随成人现场登记，可带婴儿车，建议只逛一层和B1，控制在2.5小时内避免疲劳\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Military Museum of the Chinese People's Revolution 201709",
+        "author": "Tyg728",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Military_Museum_of_the_Chinese_People%27s_Revolution_201709.jpg",
+        "width": 1920,
+        "height": 1280
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "乘地铁1号线或9号线到军事博物馆站，按官方预约及入口提示进馆。",
+          "internal_arrive": "准备预约凭证和有效证件，先确认当天开放展厅。",
+          "internal_traffic": "馆内按主题展厅步行，重型装备和高密度展区预留休息时间。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "公主坟、木樨地或地铁1号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "可凭60岁及以上身份证走绿色通道免预约，每人可带2名家属，建议从一层右侧馆开始逛，最后去B1；",
+          "children": "长辈可凭60岁及以上身份证走绿色通道免预约，每人可带2名家属，建议从一层右侧馆开始逛，最后去B1；儿童7至14岁需成人代为预约，6岁以下随成人现场登记，可带婴儿车，建议只逛一层和B1，控制在2.5小时内避免疲劳\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "革命战争与兵器线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "中央大厅",
+            "中国共产党领导的革命战争陈列",
+            "兵器陈列",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "军博简介",
+          "sourceUrl": "https://www.jb.mil.cn/jbgk/jbjj/",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "军事历史与科技线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观众入口",
+            "中国历代军事陈列",
+            "军事科技陈列",
+            "开放主题展",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "军博官网展览",
+          "sourceUrl": "https://eng.jb.mil.cn/",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结45篇笔记生成\n\n带长辈和小孩逛军博确实得讲究策略，毕竟场馆很大，走马观花容易累，合理规划才能让大家都有好体验。\n\n核心省力游览路线\n\n推荐“先上后下、电梯直达”的不走回头路方案，全程约 3-4 小时，节奏轻松：\n\n南门入园：进馆后先在一层中央大厅感受视觉震撼，仰拍穹顶红星和悬挂的功勋战机。\n\n二层展厅：乘坐扶梯或电梯上二层，参观革命历史陈列和轻武器长廊，整面枪械墙非常吸睛。\n\n三层专题馆：继续上三层，逛抗美援朝战争馆和军事艺术展区，适合给孩子做红色教育。\n\n负一层收尾：最后乘电梯下到 B1，看坦克、装甲车和火炮等重型装备，这是小朋友停留最久的区域，逛完直接就近离场。\n\n各楼层核心看点\n\n一层（大国重器）：进门直面巨型穹顶，必看轰-6轰炸机、东风系列导弹、P-51野马战斗机（开国大典“飞两遍”的那架）以及U-2侦察机残骸。中庭空间极大，适合广角仰拍。\n\n二层（历史与轻武）：包含革命战争文物和超长枪械陈列墙，还有开国大典礼服等珍贵展品，窗边光影柔和，适合安静观看。\n\n三层（红色记忆）：主打抗美援朝专题，有志愿军缴获的“北极熊团”团旗、战地书信等，以及《开国大典》等经典油画，氛围庄重。\n\n负一层（钢铁洪流）：陆军重武器主场，功臣号坦克（开国大典第一辆受阅坦克）、99A主战坦克、各式火炮和潜艇舱实景都在这里，低角度拍摄很有工业冷硬感。\n\n长辈小孩专属避坑贴士\n\n绿色通道福利：60岁以上长辈凭身份证原件可走现场绿色通道（免线上抢票），并最多携带2名亲属同行；6岁以下幼儿随已预约成人现场登记即可入馆。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "中国人民革命军事博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:17:31.801Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中国人民革命军事博物馆简介：https://www.jb.mil.cn/jbgk/jbjj/",
+          "军博参观信息：https://eng.jb.mil.cn/Visit/"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 中国人民革命军事博物馆",
+          "url": "https://www.amap.com/place/B000A7S1GC",
+          "poiId": "B000A7S1GC",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Military Museum of the Chinese People's Revolution 201709",
+        "author": "Tyg728",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Military_Museum_of_the_Chinese_People%27s_Revolution_201709.jpg",
+        "width": 1920,
+        "height": 1280
+      }
+    },
+    {
+      "baselineKey": "core_5fa28342e0",
+      "id": "manual_beijing_b8c2b7d",
+      "name": "前门大街",
+      "city": "北京",
+      "rating": 4.6,
+      "reviewsCount": "1735条携程点评",
+      "image": "/assets/images/attractions/beijing_qianmen_verified.jpg",
+      "description": "连接正阳门、大栅栏与鲜鱼口等历史商业街区的北京中轴线传统街市。",
+      "intro": "前门大街位于北京中轴线南段，是国家级旅游休闲街区及北京老城重要商业文化空间。适合与大栅栏、鲜鱼口和三里河等相邻街区串联，避免把商业门店清单固化为长期路线。",
+      "level": "国家级旅游休闲街区",
+      "category": "历史街区",
+      "tags": [
+        "北京中轴线",
+        "老字号",
+        "城市漫步"
+      ],
+      "address": "北京市东城区前门大街，北起正阳门、南至珠市口一带",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "北京市国家级旅游休闲街区统计",
+          "url": "https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf"
+        },
+        {
+          "title": "北京市文化和旅游局景区名录",
+          "url": "https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf"
+        }
+      ],
+      "routes": [
+        {
+          "title": "前门经典步行线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正阳门",
+            "前门大街北口",
+            "大栅栏",
+            "鲜鱼口",
+            "珠市口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文旅统计国家级旅游休闲街区",
+          "sourceUrl": "https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf"
+        },
+        {
+          "title": "老城街巷延伸线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "前门大街",
+            "北京坊",
+            "杨梅竹斜街",
+            "三里河公园",
+            "珠市口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文化和旅游局前门大街信息",
+          "sourceUrl": "https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf"
+        }
+      ],
+      "transport": {
+        "external_arrive": "乘轨道交通到前门站或珠市口站，从路线一端进入可减少折返。",
+        "internal_arrive": "街区为开放城市空间，遇大型活动或交通管制时按现场引导。",
+        "internal_traffic": "全程步行，可按体力在大栅栏、鲜鱼口或三里河提前结束。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "前门、崇文门或地铁2号线沿线",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议多利用休息椅和铛铛车省力，\n\n活动",
+        "children": "长辈建议多利用休息椅和铛铛车省力，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Qianmen Dajie Walking Street and Qianmen Gate",
+        "author": "Gary Todd",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qianmen_Dajie_Walking_Street_and_Qianmen_Gate_(9870538444).jpg",
+        "width": 1920,
+        "height": 1280
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "乘轨道交通到前门站或珠市口站，从路线一端进入可减少折返。",
+          "internal_arrive": "街区为开放城市空间，遇大型活动或交通管制时按现场引导。",
+          "internal_traffic": "全程步行，可按体力在大栅栏、鲜鱼口或三里河提前结束。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "前门、崇文门或地铁2号线沿线",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议多利用休息椅和铛铛车省力，\n\n活动",
+          "children": "长辈建议多利用休息椅和铛铛车省力，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "前门经典步行线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正阳门",
+            "前门大街北口",
+            "大栅栏",
+            "鲜鱼口",
+            "珠市口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文旅统计国家级旅游休闲街区",
+          "sourceUrl": "https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "老城街巷延伸线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "前门大街",
+            "北京坊",
+            "杨梅竹斜街",
+            "三里河公园",
+            "珠市口"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "北京市文化和旅游局前门大街信息",
+          "sourceUrl": "https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结60篇笔记生成\n\n带长辈和小孩逛前门，主打一个“少走路、多体验、随时能歇脚”，这条路线全程平缓，节奏舒缓，大概 3-4 小时就能轻松走完。\n\n路线概览\n\n分步游玩详解\n\n前门大街与铛铛车：沿着主街往南走，路面平整。强烈建议带长辈小孩坐一下复古铛铛车，不用自己走完全程，车上还有讲解，一路路过铁道博物馆等景点，省力又有趣。\n\n北京坊与 PageOne 书店：走到前门大街西侧就是北京坊，这里建筑现代且宽敞。推荐去 PageOne 书店，二楼有儿童绘本区，三楼落地窗能同时拍到正阳门和 CBD，是绝佳的空调歇脚地。\n\n杨梅竹斜街与三里河公园：最后去杨梅竹斜街走走，这条街文艺且人少，适合慢慢喝咖啡。时间充裕的话，再去三里河公园转转，这里有小桥流水和锦鲤，被称为“二环内的小江南”，长辈会很喜欢这种惬意的氛围。\n\n省力与避坑贴士\n\n交通接驳：全程尽量利用铛铛车或接驳车代替步行，主街两头都有售票点。如果长辈体力有限，坐完铛铛车就可以直接找地方休息，不用强求走完所有子景点。\n\n休息设施：前门大街主路上有很多休息座椅，北京坊和书店内也有充足的座位和母婴室，随时可以停下来喝水歇脚。\n\n购物避坑：街边拉客的“便宜一日游”或不明特产店直接拒绝，老字号认准正规牌匾，买东西前看清价格。\n\n时间建议：推荐下午 4 点后到达，避开正午暴晒，傍晚亮灯后夜景氛围感更好，也不用担心长辈小孩在烈日下中暑。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "前门大街完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:17:50.195Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "北京市国家级旅游休闲街区统计：https://whlyj.beijing.gov.cn/zwgk/zxgs/tjxx/202310/P020231101524098158279.pdf",
+          "北京市文化和旅游局景区名录：https://whlyj.beijing.gov.cn/zfxxgkpt/zdgk/zfcg/202603/P020260327524602973266.pdf"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 前门大街 详情页",
+          "url": "https://you.ctrip.com/sight/beijing1/107634.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Qianmen Dajie Walking Street and Qianmen Gate",
+        "author": "Gary Todd",
+        "provider": "Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qianmen_Dajie_Walking_Street_and_Qianmen_Gate_(9870538444).jpg",
+        "width": 1920,
+        "height": 1280
+      }
+    },
+    {
+      "baselineKey": "core_7efd3b3e65",
+      "id": "manual_beijing_e83aed65",
+      "name": "密云古北水镇国际休闲旅游度假区",
+      "city": "北京",
+      "rating": 4.7,
+      "reviewsCount": "1.5万条携程点评",
+      "image": "/assets/images/attractions/beijing_gubei_verified.jpg",
+      "description": "依托北方山水、古镇街巷与司马台长城形成的综合性国际休闲旅游度假区。",
+      "intro": "古北水镇位于北京密云，集古镇游览、住宿度假和司马台长城等体验于一体。度假区跨度大、日夜玩法不同，长城门票与索道等动态项目应单独核对官方信息。",
+      "level": "国家级旅游度假区",
+      "category": "古镇度假",
+      "tags": [
+        "古北水镇",
+        "司马台长城",
+        "夜景度假"
+      ],
+      "address": "北京市密云区古北口镇司马台村古北水镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "resort",
+      "sources": [
+        {
+          "title": "古北水镇官网简介",
+          "url": "https://www.wtown.com/pc/about/index.html"
+        },
+        {
+          "title": "北京市政府北京古北水镇",
+          "url": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260325_4566117.html"
+        },
+        {
+          "title": "古北水镇官网交通指南",
+          "url": "https://www.wtown.com.cn/weixintest/index.php/Reservation/Help/trafficGuide.html"
+        },
+        {
+          "title": "携程古北水镇",
+          "url": "https://you.ctrip.com/sight/beijing1/1411592.html"
+        }
+      ],
+      "routes": [
+        {
+          "title": "古镇文化慢游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客服务中心",
+            "司马小烧文化坊",
+            "永顺染坊",
+            "日月岛广场",
+            "望京街"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "古北水镇官网",
+          "sourceUrl": "https://www.wtown.com/pc/index.html"
+        },
+        {
+          "title": "古镇与司马台组合线",
+          "badge": "量力选择",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客服务中心",
+            "古镇主街",
+            "司马台长城入口",
+            "官方开放长城段",
+            "原路或开放交通返回"
+          ],
+          "duration": "一天",
+          "walking": "古镇平路与长城台阶组合，可只游古镇",
+          "physical": 4,
+          "tips": [
+            "长城、索道和夜游开放以官方当日公告为准。",
+            "长辈和幼童可不登长城，保留古镇慢游。"
+          ],
+          "sourceTitle": "古北水镇官网旅行信息",
+          "sourceUrl": "https://m.wtown.com/phone/discover/travel.html"
+        }
+      ],
+      "transport": {
+        "external_arrive": "从北京市区可按官网选择专线、铁路转公交或自驾；返程班次必须出发前复核。",
+        "internal_arrive": "先到游客服务中心办理入园与住宿手续，再按当天开放项目规划。",
+        "internal_traffic": "镇内以步行为主，可按官方开放使用接驳车或游船；司马台长城另按体力选择索道。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "古北水镇度假区内或密云古北口片区",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "北京烤鸭",
+        "老北京炸酱面",
+        "艾窝窝",
+        "驴打滚"
+      ],
+      "specialCare": {
+        "elderly": "建议多利用摆渡车和摇橹船减少步行，傍晚登长城避开日晒，夜间泡温泉解乏；",
+        "children": "长辈建议多利用摆渡车和摇橹船减少步行，傍晚登长城避开日晒，夜间泡温泉解乏；儿童可安排童玩馆、扎染体验、踩水街等活动，建议带腰凳或平衡车，婴儿推车在石板路和客栈内不便使用\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Gubei Water Town 07",
+        "author": "Codas",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gubei_Water_Town_07.jpg",
+        "width": 1920,
+        "height": 1440
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "大型度假区步行量容易被低估，舒适鞋和分层穿搭比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "从北京市区可按官网选择专线、铁路转公交或自驾；返程班次必须出发前复核。",
+          "internal_arrive": "先到游客服务中心办理入园与住宿手续，再按当天开放项目规划。",
+          "internal_traffic": "镇内以步行为主，可按官方开放使用接驳车或游船；司马台长城另按体力选择索道。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "古北水镇度假区内或密云古北口片区",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "北京烤鸭",
+          "老北京炸酱面",
+          "艾窝窝",
+          "驴打滚"
+        ],
+        "special_care": {
+          "elderly": "建议多利用摆渡车和摇橹船减少步行，傍晚登长城避开日晒，夜间泡温泉解乏；",
+          "children": "长辈建议多利用摆渡车和摇橹船减少步行，傍晚登长城避开日晒，夜间泡温泉解乏；儿童可安排童玩馆、扎染体验、踩水街等活动，建议带腰凳或平衡车，婴儿推车在石板路和客栈内不便使用\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古镇文化慢游线",
+          "badge": "顺路少折返",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客服务中心",
+            "司马小烧文化坊",
+            "永顺染坊",
+            "日月岛广场",
+            "望京街"
+          ],
+          "duration": "半天",
+          "walking": "以平路步行为主，点位间按现场接驳",
+          "physical": 2,
+          "tips": [
+            "先完成核心点位，再按体力增加支线。",
+            "开放区域、预约与接驳以官方当日公告为准。"
+          ],
+          "sourceTitle": "古北水镇官网",
+          "sourceUrl": "https://www.wtown.com/pc/index.html",
+          "verifiedAt": "2026-08-12"
+        },
+        {
+          "title": "古镇与司马台组合线",
+          "badge": "量力选择",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客服务中心",
+            "古镇主街",
+            "司马台长城入口",
+            "官方开放长城段",
+            "原路或开放交通返回"
+          ],
+          "duration": "一天",
+          "walking": "古镇平路与长城台阶组合，可只游古镇",
+          "physical": 4,
+          "tips": [
+            "长城、索道和夜游开放以官方当日公告为准。",
+            "长辈和幼童可不登长城，保留古镇慢游。"
+          ],
+          "sourceTitle": "古北水镇官网旅行信息",
+          "sourceUrl": "https://m.wtown.com/phone/discover/travel.html",
+          "verifiedAt": "2026-08-12"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结37篇笔记生成\n\n带长辈和小孩去古北水镇，主打一个“不费腿、不赶场、随时能歇脚”，这条路线把水镇、长城和夜景都串起来了，全程平缓好走，累了就坐船或摆渡车，非常适合家庭慢游。\n\nDay 1：水镇慢游与夜景盛宴\n\n入园与摇橹船：从游客中心入园后，建议直接去雁归码头坐摇橹船。长辈和小孩不用走路，伴着微风泛舟汤河上，一路直达鸳鸯湖码头（长城脚下），全程约15分钟，既省力又能沉浸式感受水乡氛围。\n\n长城索道体验：下船后前往司马台长城，强烈建议乘坐往返索道。缆车上去后还需步行一段平缓的长城路段到5-8号敌楼，这里是精华景观段，拍照非常出片。如果长辈腿脚不太好，可以在索道休息区等候，避免攀爬陡峭台阶。\n\n水镇核心区漫步：傍晚从长城下来，沿着望京街和汤市街慢慢逛。这条路线店铺集中，可以尝尝古北烤红薯、萝卜丝饼等小吃，顺便参观司马小烧酒坊和永顺染坊，让孩子体验一下手工扎染。\n\nDay 2：民俗文化与清晨水乡\n\n清晨无人大街：第二天早上不用早起，趁着游客少，在青石板路上慢悠悠散步。清晨的水镇非常安静，空气特别好，适合拍空镜大片。\n\n民俗景点串联：前往震远镖局看看古代镖局场景，接着去八旗会馆了解满族文化，室内展览有趣且不用晒太阳。随后逛逛英华书院，体验一下活字印刷术，最后到月老祠旁边听听“喊泉”，小朋友通常会玩得很开心。\n\n山顶俯瞰全景：中午前乘坐景区摆渡车（需中转）前往山顶教堂。这里可以俯瞰整个水镇和远处的长城，是全镇最佳的观景台。拍完照后顺着路慢慢走回日月岛广场，准备返程。\n\n省力与避坑提醒\n\n演出时间：夜间的无人机表演和水舞秀时间会随季节和天气调整，建议入园时拿一份纸质导览图，或者在官方小程序查看当天的具体演艺时间表，避免跑空。\n\n母婴设施：景区内有母婴室（如赶集咖啡厅后面、披萨店休息室），但数量不多，建议提前留意位置，带好保温杯随时补充温水。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "密云古北水镇国际休闲旅游度假区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-12T07:18:08.629Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "古北水镇官网简介：https://www.wtown.com/pc/about/index.html",
+          "北京市政府北京古北水镇：https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260325_4566117.html",
+          "古北水镇官网交通指南：https://www.wtown.com.cn/weixintest/index.php/Reservation/Help/trafficGuide.html",
+          "携程古北水镇：https://you.ctrip.com/sight/beijing1/1411592.html"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程古北水镇",
+          "url": "https://you.ctrip.com/sight/beijing1/1411592.html",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-12",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Gubei Water Town 07",
+        "author": "Codas",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gubei_Water_Town_07.jpg",
+        "width": 1920,
+        "height": 1440
+      }
+    }
+  ]
+}

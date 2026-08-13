@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
+const crypto = require('crypto');
 const { spawn, spawnSync } = require('child_process');
 
 const rootDir = path.join(__dirname, '..');
@@ -25,7 +26,12 @@ const statusNames = {
   login_ready: '登录状态可用',
   running: '正在采集',
   generating: '正在生成数据',
-  done: '已完成',
+  done: '当前子任务已完成',
+  guide_done: '懒人攻略采集已完成（非整省验收）',
+  experience_done: '结构化旅行资料已完成，正在补齐基本资料与图片',
+  research_required: '旧版人工证据前置状态（再次开始会自动迁移并续跑）',
+  retry_ready: '部分来源暂未取到，断点已保存，可直接继续',
+  preview_ready: '完整资料预览已就绪，等待最终确认',
   partial: '部分完成，可继续补全',
   stopped: '已安全停止',
   login_required: '登录已失效',
@@ -33,6 +39,12 @@ const statusNames = {
   error: '发生错误',
   recovered: '已恢复采集结果',
 };
+
+function localEnvHasAmapKey() {
+  const filePath = path.join(rootDir, '.env');
+  if (!fs.existsSync(filePath)) return false;
+  return fs.readFileSync(filePath, 'utf8').split(/\r?\n/).some(line => /^\s*AMAP_WEB_SERVICE_KEY\s*=\s*\S+/.test(line));
+}
 
 function writeJsonAtomic(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -55,6 +67,32 @@ function readJson(filePath, fallback = {}) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, ''));
   } catch {
     return fallback;
+  }
+}
+
+function previewBuildFingerprint() {
+  try {
+    const hash = crypto.createHash('sha256');
+    for (const relativePath of ['index.html', 'app.js', 'style.css']) {
+      const filePath = path.join(rootDir, 'dist', relativePath);
+      if (!fs.existsSync(filePath)) return '';
+      hash.update(relativePath);
+      hash.update(fs.readFileSync(filePath));
+    }
+    return hash.digest('hex');
+  } catch {
+    return '';
+  }
+}
+
+function processIsRunning(pid) {
+  const numericPid = Number(pid || 0);
+  if (!numericPid) return false;
+  try {
+    process.kill(numericPid, 0);
+    return true;
+  } catch {
+    return false;
   }
 }
 
@@ -114,6 +152,8 @@ function checkJavaScript() {
     'scripts/xhs_lazy_guides.js', 'scripts/maintenance_menu.js',
     'scripts/watch_xhs_progress.js', 'scripts/create_maintenance_tasks.js',
     'scripts/core_repair_pipeline.js', 'scripts/prepare_core_repair_package.js',
+    'scripts/research_core_repairs.js', 'scripts/complete_province_pipeline.js',
+    'scripts/generate_core_preview.js', 'scripts/stop_core_preview.js',
     'scripts/national_core_queue.js',
   ];
   for (const file of files) {
@@ -139,6 +179,20 @@ function showProgress() {
   console.log(`成功：${progress.success || 0}　失败：${progress.failed || 0}`);
   if (progress.current) console.log(`当前：${progress.current}`);
   if (progress.message) console.log(`说明：${progress.message}`);
+  if (progress.previewUrl) console.log(`预览：${progress.previewUrl}`);
+  if (progress.status === 'guide_done') {
+    const province = normalizeProvinceName(String(progress.scope || '').replace(/核心缺失景点补全包$/u, ''));
+    if (province) {
+      const info = provinceInfo(province);
+      const research = readJson(path.join(runtimeDir, `core-repair-research.${info.slug}.json`), null);
+      if (research?.status === 'researching') {
+        const attractions = research.attractions || [];
+        const basicReady = attractions.filter(item => item.address && item.intro).length;
+        console.log(`整省阶段：完整资料待补全（基本信息 ${basicReady}/${attractions.length}，路线和合规图片尚未全部核验）`);
+        console.log('网页验收：尚未开放；完整资料通过门禁后才生成待验收预览。');
+      }
+    }
+  }
   if (progress.updatedAt) console.log(`更新时间：${new Date(progress.updatedAt).toLocaleString('zh-CN')}`);
   console.log(`日志：${logPath}`);
   console.log('------------------------------------------------');
@@ -162,9 +216,9 @@ function startBackground(province = '', options = {}) {
     fs.truncateSync(logPath, 0);
   }
   const logFd = fs.openSync(logPath, 'a');
-  const args = [path.join('scripts', 'xhs_lazy_guides.js'), '--write', '--background', '--generate-after'];
-  if (province) args.push(`--province=${province}`);
-  if (options.repairOnly) args.push('--repair-only');
+  const args = options.repairOnly
+    ? [path.join('scripts', 'complete_province_pipeline.js'), `--province=${province}`]
+    : [path.join('scripts', 'xhs_lazy_guides.js'), '--write', '--background', '--generate-after', ...(province ? [`--province=${province}`] : [])];
   const child = spawn(process.execPath, args, {
     cwd: rootDir,
     detached: true,
@@ -174,7 +228,7 @@ function startBackground(province = '', options = {}) {
   writeJsonAtomic(progressPath, {
     status: 'starting',
     message: '后台任务已启动，正在准备待更新清单。',
-    scope: options.repairOnly ? `${province}核心缺失景点补全包` : (province || '全国'),
+    scope: options.repairOnly ? `${province}核心景点完整补全` : (province || '全国'),
     index: 0,
     total: 0,
     success: 0,
@@ -275,7 +329,7 @@ async function ensureCoreBaseline(rl, province) {
   printStep(5, 6, '为单源重要景点补充第二份证据');
   if (!runNode('collect_secondary_core_evidence.js', [`--province=${province}`], { quiet: true })) return false;
   const secondary = readJson(path.join(runtimeDir, `core-secondary-evidence-${info.slug}.json`), {});
-  console.log(`      确认 ${secondary.verifiedCount || 0} 个；已有核心覆盖 ${secondary.coveredByCoreCount || 0} 个；仍待人工 ${secondary.unresolvedCount || 0} 个。`);
+  console.log(`      确认 ${secondary.verifiedCount || 0} 个；已有核心覆盖 ${secondary.coveredByCoreCount || 0} 个；进入观察池 ${secondary.unresolvedCount || 0} 个。`);
 
   printStep(6, 6, '生成最终草稿并执行质量门禁');
   // 将城市级携程分页、高德唯一POI及官方度假区证据回填后重新生成最终草稿。
@@ -284,12 +338,11 @@ async function ensureCoreBaseline(rl, province) {
   const draft = readJson(draftPath, null);
   if (!draft || draft.baselineStatus !== 'multi_source_ready') {
     console.log('      未通过：草稿材料不完整，因此暂时不能批准。');
-    if (draft?.reviewCandidates?.length) {
-      console.log('      原因：以下景点完成二次补证后仍只有一个可靠来源：');
-      draft.reviewCandidates.forEach(item => console.log(`        - ${item.name}${item.city ? `（${item.city}）` : ''}`));
+    if (draft?.blockingReviewCandidates?.length) {
+      console.log('      阻断项：以下省榜高热度景点完成二次补证后仍只有一个可靠来源：');
+      draft.blockingReviewCandidates.forEach(item => console.log(`        - ${item.name}${item.city ? `（${item.city}）` : ''}`));
     }
-    console.log('      下一步：系统不会丢弃这些知名候选，也不会让它们绕过门禁。');
-    console.log('              请补充景点官网、政府文旅页或可靠口碑平台的可核验页面后重新运行。');
+    console.log('      系统不会丢弃这些候选，也不会让它们绕过门禁；质量问题修复后可重新运行。');
     console.log('      当前草稿已保留，本次没有修改正式清单。');
     return false;
   }
@@ -299,7 +352,7 @@ async function ensureCoreBaseline(rl, province) {
   console.log(`核心景点：${draft.attractions.length} 个`);
   console.log(`已匹配现有资料：${draft.existingRecordBoundCount || 0} 个`);
   console.log(`需要后续补全资料：${draft.existingRecordUnboundCount || 0} 个`);
-  console.log(`二次补证后仍待人工：${draft.reviewCandidateCount || 0} 个`);
+  console.log(`单源观察池：${draft.observationCandidateCount || 0} 个（保留但暂不纳入）`);
   console.log(`质量门禁：${draft.qualityGate?.passed ? '通过' : '未通过'}`);
   console.log('说明：这里只确认“哪些景点属于核心名单”，不代表景点完整资料已经补齐。');
 
@@ -310,9 +363,9 @@ async function ensureCoreBaseline(rl, province) {
     console.log('\n下一阶段需要补全完整资料：');
     draft.existingRecordUnboundNames.forEach(name => console.log(`  - ${name}`));
   }
-  if (draft.reviewCandidates?.length) {
-    console.log('\n仍需人工核验，暂不纳入：');
-    draft.reviewCandidates.forEach(item => console.log(`  - ${item.name}${item.city ? `（${item.city}）` : ''}`));
+  if (draft.observationCandidates?.length) {
+    console.log('\n单源观察池（不阻断本省继续，后续有新证据会自动晋级）：');
+    draft.observationCandidates.forEach(item => console.log(`  - ${item.name}${item.city ? `（${item.city}）` : ''}`));
   }
   console.log('=======================================================');
   const approval = await ask(rl, '确认把以上草稿设为该省核心清单？请输入 Y 批准，其他键取消：');
@@ -371,19 +424,37 @@ async function runHealthCheck(rl, province = '') {
   if (!runNode('core_repair_pipeline.js', [`--province=${province}`], { quiet: true })) return false;
   const packagePath = path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`);
   let repairPackage = readJson(packagePath, null);
+  const researchWorkspacePath = path.join(runtimeDir, `core-repair-research.${info.slug}.json`);
+  let researchWorkspace = readJson(researchWorkspacePath, null);
   const dossier = readJson(path.join(runtimeDir, `core-repairs.${info.slug}.json`), {});
   console.log(`      需要处理 ${dossier.blockerCount || 0} 个核心景点。`);
   if (!repairPackage && dossier.blockerCount > 0) {
     const prepared = runNode('prepare_core_repair_package.js', [`--province=${province}`], { quiet: true });
-    if (prepared) repairPackage = readJson(packagePath, null);
+    if (prepared) {
+      repairPackage = readJson(packagePath, null);
+      researchWorkspace = readJson(researchWorkspacePath, null);
+    }
   }
-  const statusLabels = { collecting: '稳定资料已备齐，待采集点点懒人攻略', reviewed: '补全包已复核，准备质量校验', applied: '补全包已经应用' };
-  if (!repairPackage) {
+  const statusLabels = {
+    researching: '资料研究任务已建立，可先采集点点攻略；基本信息、路线和图片继续核验',
+    collecting: '稳定资料已备齐，待采集点点懒人攻略',
+    reviewed: '补全包已复核，准备质量校验',
+    applied: '补全包已经应用',
+  };
+  const repairState = repairPackage || researchWorkspace;
+  if (!repairState) {
     console.log('      当前阶段：补全档案已经生成，完整补全包尚未建立。');
     console.log('      下一步：为这些景点补齐基本信息、旅行指南、懒人攻略、可靠图片和来源。');
     console.log('      保护措施：不生成占位内容，不直接新增，不影响现有正常景点。');
   } else {
-    console.log(`      当前阶段：${statusLabels[repairPackage.status] || `补全包状态 ${repairPackage.status || '未知'}`}。`);
+    console.log(`      当前阶段：${statusLabels[repairState.status] || `补全包状态 ${repairState.status || '未知'}`}。`);
+  }
+  if (repairState?.status === 'researching') {
+    const research = readJson(path.join(rootDir, 'reports', `core-research-${info.slug}.json`), {});
+    const sourced = (research.items || []).filter(item => item.discoveredSourceCount >= 2).length;
+    const officialBasic = (research.items || []).filter(item => item.hasOfficialBasicInfo).length;
+    console.log(`      研究进度：${research.total || repairState.attractions?.length || 0} 个待补；${officialBasic} 个已有官方基础信息，${sourced} 个已有至少两条候选来源。`);
+    console.log('      下一步可先采集点点攻略；基本信息、路线和图片未核验完整前不会写入正式数据。');
   }
   if (repairPackage?.status === 'collecting') {
     const repairTargets = runNode('xhs_lazy_guides.js', [`--province=${province}`, '--repair-only', '--list'], { quiet: true });
@@ -397,14 +468,19 @@ async function runHealthCheck(rl, province = '') {
       console.log(`      待采集点点攻略 ${pending.length} 个；下一步会只处理这批缺失景点。`);
     }
   }
-  if (repairPackage?.status === 'reviewed' && runNode('core_repair_pipeline.js', [`--province=${province}`, '--check'], { quiet: true })) {
-    const approval = await ask(rl, '补全包已通过全部质量闸门，是否写入正式数据层？请输入 Y 批准，其他键暂不写入：');
-    if (/^y$/i.test(approval)) {
-      if (!runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply'], { quiet: true })) return false;
-      if (!runNode('report_core_attractions.js', reportArgs, { quiet: true })) return false;
-      if (!runNode('create_maintenance_tasks.js', taskArgs, { quiet: true })) return false;
-      console.log('      补全包已经写入；原文件已自动备份，可回撤。');
-    }
+  if (repairPackage?.status === 'reviewed') {
+    if (!runNode('core_repair_pipeline.js', [`--province=${province}`, '--check'], { quiet: true })) return false;
+    const previewState = readJson(path.join(runtimeDir, 'previews', info.slug, 'state.json'), null);
+    const currentBuildFingerprint = previewBuildFingerprint();
+    const previewNeedsRebuild = previewState?.status !== 'ready'
+      || !processIsRunning(previewState?.pid)
+      || !currentBuildFingerprint
+      || previewState.buildFingerprint !== currentBuildFingerprint
+      || new Date(previewState.generatedAt || 0).getTime() < new Date(repairPackage.updatedAt || 0).getTime();
+    if (previewNeedsRebuild && !runNode('generate_core_preview.js', [`--province=${province}`], { quiet: true })) return false;
+    const preview = readJson(path.join(runtimeDir, 'previews', info.slug, 'state.json'), null);
+    console.log(`      隔离预览已就绪：${preview?.previewUrl || '生成失败'}`);
+    console.log('      体检只报告状态，不会在这里写入 beta。请从主菜单 [2] 进入最终验收。');
   }
   console.log('\n体检完成：结果已经保存。返回主菜单后可选择“开始 / 继续增量补全”。');
   return true;
@@ -417,13 +493,115 @@ function provinceCollectionMode(province) {
   const hasMissingIdentity = (report.items || []).some(item => item.status === 'missing' || item.status === 'review');
   if (!hasMissingIdentity) return { allowed: true, repairOnly: false };
   const repairPackage = readJson(path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`), null);
-  if (['collecting', 'reviewed'].includes(repairPackage?.status) && Array.isArray(repairPackage.attractions) && repairPackage.attractions.length) {
-    return { allowed: true, repairOnly: repairPackage.status === 'collecting' };
+  const researchWorkspace = readJson(path.join(runtimeDir, `core-repair-research.${info.slug}.json`), null);
+  if (['researching', 'collecting', 'reviewed'].includes(repairPackage?.status) && Array.isArray(repairPackage.attractions) && repairPackage.attractions.length) {
+    return { allowed: true, repairOnly: ['researching', 'collecting'].includes(repairPackage.status) };
+  }
+  if (researchWorkspace?.status === 'researching' && Array.isArray(researchWorkspace.attractions) && researchWorkspace.attractions.length) {
+    return { allowed: true, repairOnly: true };
   }
   console.log('\n发现真实缺失景点，但尚无已复核的补全包。');
   console.log('当前还不能开始攻略采集，因为缺失景点尚未具备基本信息、图片和路线框架。');
   console.log('请先完成补全包；为避免重名、错图和旧模板数据，本次不会直接自动新增。');
   return { allowed: false, repairOnly: false };
+}
+
+function previewStateFor(province) {
+  const info = provinceInfo(province);
+  if (!info) return null;
+  const packagePath = path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`);
+  const repairPackage = readJson(packagePath, null);
+  const preview = readJson(path.join(runtimeDir, 'previews', info.slug, 'state.json'), null);
+  if (repairPackage?.status !== 'reviewed' || preview?.status !== 'ready') return null;
+  if (!processIsRunning(preview.pid)) return null;
+  const packageIds = (repairPackage.attractions || []).map(item => item.id).sort();
+  const previewIds = (preview.attractionIds || []).slice().sort();
+  if (JSON.stringify(packageIds) !== JSON.stringify(previewIds)) return null;
+  if (new Date(preview.generatedAt).getTime() < new Date(repairPackage.updatedAt).getTime()) return null;
+  const currentBuildFingerprint = previewBuildFingerprint();
+  if (!currentBuildFingerprint || preview.buildFingerprint !== currentBuildFingerprint) return null;
+  if (localEnvHasAmapKey() && preview.ratingMode !== 'live-amap-enabled') return null;
+  return { info, repairPackage, preview };
+}
+
+function openUrl(url) {
+  if (!url) return false;
+  try {
+    const child = process.platform === 'win32'
+      ? spawn('explorer.exe', [url], { detached: true, stdio: 'ignore', windowsHide: false })
+      : spawn('xdg-open', [url], { detached: true, stdio: 'ignore' });
+    child.unref();
+    return true;
+  } catch (error) {
+    console.log(`无法自动打开浏览器，请手动访问：${url}`);
+    return false;
+  }
+}
+
+function buildSelectedProvince(province) {
+  const info = provinceInfo(province);
+  console.log('\n正在写入 beta 并重新生成可访问数据……');
+  if (!runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply'])) return false;
+  if (!runNode('generate_static_data.js')) return false;
+  if (!checkJavaScript()) return false;
+  if (!runNode('build.js')) return false;
+  if (!runNode('verify-build.js')) return false;
+  if (!runNode('report_core_attractions.js', [`--province=${province}`, '--strict'])) return false;
+  runNode('create_maintenance_tasks.js', [`--province=${province}`], { quiet: true });
+  runNode('stop_core_preview.js', [`--province=${province}`], { quiet: true });
+  writeJsonAtomic(progressPath, {
+    status: 'done',
+    stage: 'applied',
+    scope: `${province}核心景点完整补全`,
+    message: `${province}已写入 beta，静态数据、构建与省级严格验收全部通过。`,
+    index: 5,
+    total: 5,
+    percent: 100,
+    success: info ? readJson(path.join(rootDir, 'reports', `core-attractions-${info.slug}.json`), {}).readyCount || 0 : 0,
+    failed: 0,
+    updatedAt: new Date().toISOString(),
+  });
+  return true;
+}
+
+async function runProvinceCompletion(rl, province) {
+  const provinceMeta = provinceInfo(province);
+  const previousPreview = provinceMeta
+    ? readJson(path.join(runtimeDir, 'previews', provinceMeta.slug, 'state.json'), null)
+    : null;
+  if (localEnvHasAmapKey() && previousPreview?.ratingMode !== 'live-amap-enabled') {
+    console.log('\n检测到新配置的高德 Web 服务 Key，先刷新该省评分证据并重建隔离预览。');
+    console.log('这一步不会写入 beta；完成后再次选择该省进行最终验收。');
+    return startBackground(province, { repairOnly: true });
+  }
+  const ready = previewStateFor(province);
+  if (ready) {
+    console.log(`\n============================================================`);
+    console.log(`${province}完整补全 · 最终验收`);
+    console.log('============================================================');
+    console.log(`待写入景点：${ready.repairPackage.attractions.length} 个`);
+    printNamesByCity(ready.repairPackage.attractions);
+    console.log(`\n隔离预览：${ready.preview.previewUrl}`);
+    openUrl(ready.preview.previewUrl);
+    console.log('请在预览中逐项检查：基本信息、旅行指南、懒人攻略和大图。');
+    const approval = await ask(rl, '确认无误并写入 beta？请输入 Y 批准，其他键暂不写入：');
+    if (!/^y$/i.test(approval)) {
+      console.log('已保留 reviewed 补全包和隔离预览，beta 数据未修改。');
+      return true;
+    }
+    return buildSelectedProvince(province);
+  }
+
+  if (!await runHealthCheck(rl, province)) return false;
+  const afterHealth = previewStateFor(province);
+  if (afterHealth) {
+    console.log('\n隔离预览已生成。再次从主菜单选择 [2] 和同一省份即可完成最终验收。');
+    openUrl(afterHealth.preview.previewUrl);
+    return true;
+  }
+  const mode = provinceCollectionMode(province);
+  if (!mode.allowed) return false;
+  return startBackground(province, { repairOnly: mode.repairOnly });
 }
 
 function menu() {
@@ -553,10 +731,7 @@ async function main() {
       const scope = await chooseScope(rl);
       if (scope?.type === 'province') {
         const province = scope.provinces[0];
-        if (await runHealthCheck(rl, province)) {
-          const mode = provinceCollectionMode(province);
-          if (mode.allowed) startBackground(province, { repairOnly: mode.repairOnly });
-        }
+        await runProvinceCompletion(rl, province);
       } else if (scope) {
         await runNationalScope(rl, scope, true);
       }

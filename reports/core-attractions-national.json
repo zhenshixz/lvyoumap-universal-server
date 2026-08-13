@@ -1,12 +1,31 @@
 {
-  "generatedAt": "2026-08-12T06:16:39.187Z",
-  "provinceCount": 4,
-  "baselineCount": 97,
-  "present": 97,
+  "generatedAt": "2026-08-13T03:29:20.099Z",
+  "provinceCount": 5,
+  "baselineCount": 120,
+  "present": 120,
   "review": 0,
   "missing": 0,
-  "readyCount": 97,
+  "readyCount": 120,
   "provinces": [
+    {
+      "province": "北京",
+      "baselineCount": 23,
+      "counts": {
+        "present": 23,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 23,
+      "qualityBands": {
+        "stable": 11,
+        "improve": 12,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-beijing.json"
+    },
     {
       "province": "福建",
       "baselineCount": 17,
