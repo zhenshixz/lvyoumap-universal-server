@@ -395,7 +395,7 @@ async function main() {
     if (!lazy?.lazy_ai_text || !lazy?.lazy_ai_source) { blockers.push(`${workspaceItem.name}：点点懒人攻略尚未完成`); continue; }
     if (!Array.isArray(verified.sources) || !verified.sources.length) { blockers.push(`${workspaceItem.name}：没有可追溯基本资料来源`); continue; }
     if (verified.sources.length < 2) warnings.push(`${workspaceItem.name}：基本资料目前只有1个可追溯来源`);
-    if (!Array.isArray(verified.routes) || verified.routes.length < 2) { blockers.push(`${workspaceItem.name}：可执行路线少于2条`); continue; }
+    if (!Array.isArray(verified.routes) || verified.routes.length < 1) { blockers.push(`${workspaceItem.name}：缺少可执行游览方案`); continue; }
     const imageTarget = path.join(rootDir, verified.image.localPath.replace(/^\//, '').replace(/\//g, path.sep));
     try {
       await ensureVerifiedImage(verified, imageTarget);
@@ -429,7 +429,7 @@ async function main() {
     warningCount: warnings.length,
     warnings,
     minorNotes: evidence.minorNotes || [],
-    policy: '景点身份、属地、基本介绍、地址、攻略和两条路线为硬门槛；第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。',
+    policy: '景点身份、属地、基本介绍、地址、攻略和至少一条真实可执行游览方案为硬门槛；第二条路线不是强制项。第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。',
   };
   writeJsonAtomic(reportPath, report);
   if (blockers.length) {

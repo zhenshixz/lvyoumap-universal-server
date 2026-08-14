@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
+const { classifyStageResult, sleepSync, stagePolicy } = require('./pipeline_resilience');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
@@ -55,14 +56,45 @@ function isolatePendingGuides(packageData, researchData) {
   console.log(`已将 ${province} 未批准景点攻略迁入隔离断点层，不影响普通构建。`);
 }
 
-function run(script, scriptArgs = []) {
-  const result = spawnSync(process.execPath, [path.join('scripts', script), ...scriptArgs], {
-    cwd: rootDir,
-    stdio: 'inherit',
-    shell: false,
-  });
-  if (result.error) throw result.error;
-  if (result.status !== 0) throw new Error(`${script} 执行失败（退出码 ${result.status}）。`);
+class PipelineStageError extends Error {
+  constructor(message, kind = 'hard', exitCode = 1) {
+    super(message);
+    this.kind = kind;
+    this.exitCode = exitCode;
+  }
+}
+
+function run(script, scriptArgs = [], options = {}) {
+  const policy = { ...stagePolicy(script), ...options };
+  for (let attempt = 1; attempt <= policy.maxAttempts; attempt += 1) {
+    const result = spawnSync(process.execPath, [path.join('scripts', script), ...scriptArgs], {
+      cwd: rootDir,
+      stdio: 'inherit',
+      shell: false,
+    });
+    if (result.error) throw new PipelineStageError(result.error.message, 'hard', 1);
+    const progress = script.startsWith('xhs_') ? readJson(progressPath, {}) : {};
+    const classification = classifyStageResult({ status: result.status, progress });
+    if (classification.kind === 'complete') return true;
+    if (classification.retry && attempt < policy.maxAttempts) {
+      const pendingText = progress.pendingNames?.length ? `，剩余 ${progress.pendingNames.length} 项` : '';
+      writeProgress({
+        status: 'running',
+        message: `${script} 本轮只完成部分数据${pendingText}；${Math.round(policy.delayMs / 1000)} 秒后自动续跑（${attempt + 1}/${policy.maxAttempts}）。`,
+      });
+      console.log(`\n${script} 已保存断点，短暂等待后自动续跑，不需要人工处理。`);
+      sleepSync(policy.delayMs);
+      continue;
+    }
+    const messages = {
+      user_action: progress.message || '需要完成平台登录或稍后解除访问限制。',
+      stopped: '任务已在安全点停止。',
+      retryable: `${script} 已保存所有成功断点，当前仍有少数项目待续跑。`,
+      hard: `${script} 发生不可自动恢复的程序或数据错误（退出码 ${result.status}）。`,
+    };
+    throw new PipelineStageError(messages[classification.kind], classification.kind, classification.exitCode);
+  }
+  return false;
 }
 
 function info() {
@@ -146,11 +178,11 @@ function main() {
   researchData = readJson(researchPath);
   if (pendingGuides(packageData, researchData).length) throw new Error('仍有点点攻略未采集成功；已保存断点，下次可继续。');
 
-  writeProgress({ status: 'running', stage: 'experience', message: '正在补齐两条结构化路线、交通、住宿与长辈儿童建议。', index: 2, total: 7, percent: 29 });
+  writeProgress({ status: 'running', stage: 'experience', message: '正在补齐至少一条可执行游览方案、交通、住宿与长辈儿童建议。', index: 2, total: 7, percent: 29 });
   if (packageData?.status !== 'reviewed') {
     const manualEvidence = readJson(path.join(contentDir, `core-repair-evidence.${slug}.json`), { attractions: {} });
     const readyManual = new Set(Object.entries(manualEvidence.attractions || {})
-      .filter(([, value]) => value?.sources?.length >= 2 && value?.routes?.length >= 2 && value?.image?.downloadUrl)
+      .filter(([, value]) => value?.sources?.length >= 2 && value?.routes?.length >= 1 && value?.image?.downloadUrl)
       .map(([key]) => key));
     const experience = readJson(path.join(runtimeDir, `core-experience-evidence.${slug}.json`), { attractions: {} });
     const researchItems = researchData?.attractions || [];
@@ -196,8 +228,15 @@ try {
   const current = readJson(progressPath, {});
   if (!['login_required', 'restricted', 'stopped'].includes(current.status)) {
     const pendingText = current.pendingNames?.length ? ` 待续跑：${current.pendingNames.join('、')}。` : '';
-    writeProgress({ status: 'retry_ready', message: `${error.message}${pendingText} 已保留全部成功断点；再次选择“开始/继续”会从失败项续跑。`, pid: process.pid });
+    const retryable = error.kind === 'retryable';
+    writeProgress({
+      status: retryable ? 'retry_ready' : 'error',
+      message: retryable
+        ? `${error.message}${pendingText} 已保留全部成功断点；在总控再次选择“开始/继续”即可续跑，不需要修改文件或返回对话。`
+        : `${error.message}${pendingText} 这是需要修复的关键错误，普通资料缺失不会进入此状态。`,
+      pid: process.pid,
+    });
   }
   console.error(`省级完整补全失败：${error.message}`);
-  process.exitCode = 1;
+  process.exitCode = error.exitCode || 1;
 }

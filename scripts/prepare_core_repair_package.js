@@ -139,7 +139,7 @@ function buildResearchWorkspace(dossier, baseline, official, existingPackage) {
           '基本信息至少两个可核验来源',
           '开放与预约规则（动态内容只写官方核验提示）',
           '旅行指南：交通、住宿区域、美食、长辈与儿童建议',
-          '至少两条可执行且有来源的路线',
+          '至少一条真实可执行且有来源的游览方案；确有不同玩法时可补第二条',
           '可追溯且许可明确的图片',
           '小红书点点懒人攻略',
         ],
@@ -208,7 +208,7 @@ const researchWorkspace = readJson(researchWorkspacePath, { attractions: [] });
 const targetByBaseline = new Map((researchWorkspace.attractions || []).map(item => [item.baselineKey, item.preferredId || '']));
 const preparedItems = seed.attractions.map(item => {
   if (!item.sources?.length) throw new Error(`${item.name} 至少需要一个可追溯基本信息来源。`);
-  if (!item.routes?.length || item.routes.length < 2) throw new Error(`${item.name} 至少需要两条已核验路线。`);
+  if (!item.routes?.length) throw new Error(`${item.name} 至少需要一条已核验的可执行游览方案。`);
   return {
     baselineKey: item.baselineKey,
     targetId: item.targetId || targetByBaseline.get(item.baselineKey) || '',

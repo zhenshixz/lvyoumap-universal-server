@@ -33,7 +33,7 @@ function isAmapAttractionPoi(record) {
   if (/(?:交通设施服务|停车场|公交车站|住宿服务|餐饮服务|购物服务|售票处|公共设施|公司企业|医疗保健服务)/.test(type)) {
     return false;
   }
-  return /(?:风景名胜|博物馆|纪念馆|游乐场|公园广场|城市广场|旅游景点)/.test(type);
+  return /(?:风景名胜|博物馆|纪念馆|图书馆|美术馆|科技馆|文化馆|展览馆|游乐场|主题乐园|水上活动中心|公园广场|城市广场|旅游景点)/.test(type);
 }
 
 function localAmapRating(target, records) {

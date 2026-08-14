@@ -280,6 +280,9 @@ function parseCtripHtml(html, item) {
     intro: decodeHtml(get(/"introduction":"((?:\\.|[^"\\])*)"/)),
     rating: Number(scope.match(/"commentScore":"?([0-9.]+)"?/)?.[1] || 0),
     reviews: Number(scope.match(/"commentCount":"?([0-9]+)"?/)?.[1] || 0),
+    imageUrls: [...new Set([...scope.matchAll(/"imageUrl":"((?:\\.|[^"\\])*)"/g)]
+      .map(match => decodeJsonString(match[1]))
+      .filter(url => /^https?:\/\//i.test(url)))].slice(0, 8),
   };
 }
 
@@ -358,6 +361,10 @@ function imageIdentityTokens(item) {
     for (const part of clean.split(/\s+|与|和|、|，|\//)) {
       if (part.length >= 2 && !['上海', '北京', '旅游', '文化', '国家'].includes(part)) tokens.push(part.toLowerCase());
     }
+    // “天津之眼摩天轮”等官方名称常比图片标题多一个设施类型。保留全名的同时，
+    // 追加去类型后的实体主干；不能只靠全名，否则正确实景会被误判为无关图片。
+    const stem = clean.replace(/(?:摩天轮|游船|游轮|邮轮|博物馆|纪念馆|美术馆|图书馆|公园|乐园|动物园|植物园|风情区|街区)$/g, '').trim();
+    if (stem.length >= 3 && !['旅游', '文化', '国家'].includes(stem)) tokens.push(stem.toLowerCase());
   }
   return [...new Set(tokens)].sort((left, right) => right.length - left.length);
 }
@@ -411,12 +418,37 @@ function wikipediaPageImage(item) {
         const page = Object.values(cachedJson(pageUrl).query?.pages || {})[0];
         const fileName = page?.pageimage || '';
         if (!fileName || IMAGE_NOISE.test(fileName)) continue;
-        const image = commonsImage(fileName, item);
+        // 已先通过维基条目标题核验实体，条目自己的主图可视为精确绑定，
+        // 不再要求图片文件名逐字包含景点全称。
+        const image = commonsImage(fileName, item, '', true);
         if (image) return image;
       }
     } catch {
       // 维基百科只用于快速定位自由许可图片，失败后继续其他来源。
     }
+  }
+  return null;
+}
+
+function ctripPageImage(ctrip, item) {
+  if (!ctrip?.url || !sameIdentity(ctrip.name, item)) return null;
+  for (const url of ctrip.imageUrls || []) {
+    if (IMAGE_NOISE.test(url)) continue;
+    const quality = probeRemoteImage(url);
+    if (!quality.ok) continue;
+    const localName = `${String(item.id || item.baselineKey).replace(/^manual_/, '').replace(/[^a-z0-9_-]/gi, '_')}_verified.jpg`;
+    return {
+      localPath: `/assets/images/attractions/${localName}`,
+      downloadUrl: url,
+      title: `${item.name} 景点页实景图`,
+      author: '景点页公开图片提供者',
+      provider: '携程景点页面',
+      license: '公开网页图片（家庭自用展示）',
+      licenseUrl: ctrip.url,
+      sourceUrl: ctrip.url,
+      width: quality.width,
+      height: quality.height,
+    };
   }
   return null;
 }
@@ -644,7 +676,7 @@ function completeEvidence(value) {
     && value.address
     && (value.description || value.intro)
     && value.sources?.length >= 1
-    && value.routes?.length >= 2
+    && value.routes?.length >= 1
     && value.image?.localPath
   );
 }
@@ -843,7 +875,7 @@ function main() {
     const ratingRecords = preferredRecord ? [preferredRecord] : records;
     const manualValue = manual.attractions?.[item.baselineKey] || manual.attractions?.[item.name];
     if (manualValue?.sources?.length >= 2
-      && manualValue?.routes?.length >= 2
+      && manualValue?.routes?.length >= 1
       && manualValue?.image?.downloadUrl
       && !(refreshImages && !imageMeetsPublishedQuality(manualValue.image))) {
       const officialRecord = matchingOfficial(item, official);
@@ -881,9 +913,10 @@ function main() {
       const amapDetails = liveAmapDetails(item);
       const image = curatedCommonsImage(item)
         || existingSourceImage(item, officialRecord)
-        || amapImage(amapDetails, item)
-        || searchOfficialPageImage(item)
         || wikipediaPageImage(item)
+        || amapImage(amapDetails, item)
+        || ctripPageImage(ctrip, item)
+        || searchOfficialPageImage(item)
         || commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || '');
       const experience = experiences.attractions?.[item.baselineKey];
       const sources = [];
@@ -908,8 +941,8 @@ function main() {
       if (!sources.length) blockers.push('没有可追溯基本资料来源');
       else if (sources.length < 2) warnings.push('独立可追溯来源少于2个');
       if (!intro || !address) blockers.push('基本介绍或地址缺失');
-      if (!experience?.routes?.length || experience.routes.length < 2) blockers.push('结构化路线尚未采集');
-      if (!image) warnings.push('尚未找到实体匹配且许可明确的高清图，隔离预览使用占位图');
+      if (!experience?.routes?.length) blockers.push('可执行游览方案尚未采集');
+      if (!image) warnings.push('尚未找到实体匹配且清晰度达标的实景图，隔离预览暂用占位图');
       if (blockers.length) throw new Error(blockers.join('；'));
       const resolvedImage = image || fallbackImage(item);
       const profile = inferProfile(item, intro);

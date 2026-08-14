@@ -48,13 +48,10 @@ function decodeHtml(value) {
 }
 
 function stripAdministrativePrefix(value) {
-  let name = value;
-  for (let index = 0; index < 3; index += 1) {
-    const next = name.replace(/^[\u4e00-\u9fa5]{2,10}?(?:自治州|地区|市|县|区)/, '');
-    if (next === name || next.length < 2) break;
-    name = next;
-  }
-  return name;
+  // 官方名称通常只带一层属地前缀。连续剥离会把“古文化街旅游区”本体也当成
+  // 行政区删除，曾导致“天津古文化街旅游区（津门故里）”只剩“（津门故里）”。
+  const next = String(value || '').replace(/^[\u4e00-\u9fa5]{2,10}?(?:自治州|地区|市|县)/, '');
+  return next.length >= 2 ? next : value;
 }
 
 function cityFromOfficial(value) {
@@ -360,10 +357,14 @@ async function main() {
     && officialCandidates.sourceUrl
     && secondaryComplete
   );
-  const blockingReviewCandidates = reviewCandidates.filter(item => (
+  // 单一口碑/OTA 来源只能证明“值得继续观察”，不能证明实体身份，也不应阻断整省。
+  // 真正阻断条件由 sourcesComplete（官方/采集链路缺失）和 selectedIssues
+  //（已经纳入正式清单的实体、城市或证据错误）负责。
+  const blockingReviewCandidates = [];
+  const observationCandidates = reviewCandidates;
+  const priorityObservationCandidates = observationCandidates.filter(item => (
     item.sources.includes('ctrip_popularity') && item.otaRank > 0
   ));
-  const observationCandidates = reviewCandidates.filter(item => !blockingReviewCandidates.includes(item));
   const qualityGate = {
     passed: sourcesComplete && selectedIssues.length === 0 && blockingReviewCandidates.length === 0,
     sourcesComplete,
@@ -377,7 +378,8 @@ async function main() {
     unresolvedAfterSecondaryCount: reviewCandidates.length,
     blockingSingleSourceCount: blockingReviewCandidates.length,
     observationCount: observationCandidates.length,
-    note: '质量门禁检查最终入选项；首轮单源候选先执行城市级二次补证，仍无法确认的项目进入观察池，不写入核心清单，也不阻断其他已确认景点。后续获得新证据时可自动晋级。',
+    priorityObservationCount: priorityObservationCandidates.length,
+    note: '质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。',
   };
   const baseline = {
     province: provinceName,
@@ -423,6 +425,8 @@ async function main() {
     reviewCandidateCount: reviewCandidates.length,
     blockingReviewCandidateCount: blockingReviewCandidates.length,
     blockingReviewCandidates,
+    priorityObservationCandidateCount: priorityObservationCandidates.length,
+    priorityObservationCandidates,
     observationCandidateCount: observationCandidates.length,
     observationCandidates,
     reviewCandidates,

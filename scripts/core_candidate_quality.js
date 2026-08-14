@@ -103,6 +103,18 @@ function relatedAttraction(left, right, leftCity = '', rightCity = '') {
   const a = attractionRoot(left);
   const b = attractionRoot(right);
   if (a && b && a === b && a.length >= 4) return true;
+  // 品牌/行政前缀可能不同，但“航母主题公园”这类长且具辨识度的实体尾名一致时，
+  // 应视作同一景点。门槛设为 5 个汉字，避免只因“博物馆/公园/乐园”误合并。
+  let commonSuffix = '';
+  const maxSuffix = Math.min(normalizedLeft.length, normalizedRight.length);
+  for (let length = 1; length <= maxSuffix; length += 1) {
+    const suffix = normalizedLeft.slice(-length);
+    if (normalizedRight.endsWith(suffix)) commonSuffix = suffix;
+    else break;
+  }
+  if (commonSuffix.length >= 5 && /(?:主题公园|旅游区|风景区|度假区|博物馆|纪念馆|图书馆|美术馆|科技馆|海洋馆|动物园|植物园|水上乐园|海滩水公园)$/.test(commonSuffix)) {
+    return true;
+  }
   const isComposite = value => /[与和、,，\/—\-·]/.test(String(value));
   const leftComposite = isComposite(left);
   const rightComposite = isComposite(right);
@@ -119,10 +131,17 @@ function relatedAttraction(left, right, leftCity = '', rightCity = '') {
 function comparisonName(value, city = '') {
   let name = normalizeName(value);
   const normalizedCity = normalizeCity(city);
-  const prefixes = normalizedCity ? [`${normalizedCity}市`, `${normalizedCity}地区`, normalizedCity] : [];
+  if (normalizedCity && name.startsWith(`${normalizedCity}市`)) {
+    name = `${normalizedCity}${name.slice(normalizedCity.length + 1)}`;
+  }
+  const prefixes = normalizedCity ? [`${normalizedCity}地区`, normalizedCity] : [];
   const prefix = prefixes.find(item => name.startsWith(item) && name.length > item.length + 1);
   if (prefix) {
-    name = name.slice(prefix.length);
+    const remainder = name.slice(prefix.length);
+    // “天津博物馆”里的“天津”是实体名称的一部分。若剥掉后只剩通用设施类型，
+    // 会把它误并到同城任意博物馆/公园。只有剩余名称仍有可辨识专名时才去城市前缀。
+    const genericOnly = /^(?:博物馆|图书馆|美术馆|科技馆|文化馆|纪念馆|展览馆|体育馆|大剧院|公园|湿地公园|森林公园|地质公园|动物园|植物园|海洋馆|水族馆|欢乐谷|主题公园|游乐园|水上乐园|海滩水公园|广场|古城|古镇)$/;
+    if (!genericOnly.test(remainder)) name = remainder;
   }
   return name;
 }

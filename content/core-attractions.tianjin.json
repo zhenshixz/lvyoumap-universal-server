@@ -1,0 +1,730 @@
+{
+  "province": "天津",
+  "checkedAt": "2026-08-14",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=tianjin&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/tianjin154.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 12,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 0,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 0,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 2,
+  "officialResortCandidateCount": 0,
+  "popularityCount": 22,
+  "existingRecordBoundCount": 10,
+  "existingRecordUnboundCount": 14,
+  "existingRecordUnboundNames": [
+    "天津古文化街旅游区（津门故里）",
+    "天津玛雅海滩水公园",
+    "国家海洋博物馆",
+    "天津之眼摩天轮",
+    "瓷房子",
+    "意大利风情旅游区",
+    "西开教堂",
+    "津湾广场",
+    "解放桥",
+    "静园",
+    "李叔同故居纪念馆",
+    "天津博物馆",
+    "天津自然博物馆",
+    "滨海图书馆"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 0,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 0,
+  "observationCandidates": [],
+  "reviewCandidates": [],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 12,
+    "verifiedCount": 11,
+    "coveredByCoreCount": 1,
+    "unresolvedCount": 0,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_f50cf46499",
+      "name": "盘山风景名胜区",
+      "preferredId": "amap_B00160E3FW",
+      "aliases": [
+        "盘山风景名胜区",
+        "盘山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_b911e3c407",
+      "name": "天津古文化街旅游区（津门故里）",
+      "preferredId": "",
+      "aliases": [
+        "天津古文化街旅游区（津门故里）",
+        "天津古文化街旅游区"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_d2332398b9",
+      "name": "独乐寺",
+      "preferredId": "amap_B001605643",
+      "aliases": [
+        "独乐寺"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_f14d5fcad4",
+      "name": "天津玛雅海滩水公园",
+      "preferredId": "manual_tianjin_757e9315",
+      "aliases": [
+        "天津玛雅海滩水公园"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFJ8Q4S4",
+          "name": "天津玛雅海滩水公园",
+          "city": "天津市",
+          "type": "体育休闲服务;休闲场所;水上活动中心",
+          "url": "https://www.amap.com/place/B0FFJ8Q4S4",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_9a1dee90ad",
+      "name": "泰达航母主题公园",
+      "preferredId": "amap_B001611WYT",
+      "aliases": [
+        "泰达航母主题公园",
+        "天津泰达航母主题公园"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 11
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6554b15a31",
+      "name": "国家海洋博物馆",
+      "preferredId": "manual_tianjin_bf7acc24",
+      "aliases": [
+        "国家海洋博物馆"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_f2a6a3d738",
+      "name": "天津之眼摩天轮",
+      "preferredId": "manual_tianjin_ca56e456",
+      "aliases": [
+        "天津之眼摩天轮"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2275b36ec4",
+      "name": "瓷房子",
+      "preferredId": "manual_tianjin_6a7b1c4a",
+      "aliases": [
+        "瓷房子"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_24e29b412f",
+      "name": "海河游船",
+      "preferredId": "amap_B0016127V6",
+      "aliases": [
+        "海河游船",
+        "海河游船(天津站码头)"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B0016127V6",
+          "name": "海河游船(天津站码头)",
+          "city": "天津"
+        }
+      ]
+    },
+    {
+      "key": "core_48c1adead4",
+      "name": "意大利风情旅游区",
+      "preferredId": "manual_tianjin_3f57d344",
+      "aliases": [
+        "意大利风情旅游区",
+        "意大利风情"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 2,
+          "name": "意大利风情区",
+          "url": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_3789e9f48a",
+      "name": "西开教堂",
+      "preferredId": "manual_tianjin_16684229",
+      "aliases": [
+        "西开教堂"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 4,
+          "name": "西开教堂",
+          "url": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9a28077514",
+      "name": "津湾广场",
+      "preferredId": "manual_tianjin_638d78ef",
+      "aliases": [
+        "津湾广场"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 4,
+          "name": "津湾广场",
+          "url": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_104d1fa471",
+      "name": "解放桥",
+      "preferredId": "manual_tianjin_e607b2fc",
+      "aliases": [
+        "解放桥"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 6,
+          "name": "解放桥",
+          "url": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c034057aa8",
+      "name": "静园",
+      "preferredId": "manual_tianjin_38d50e8d",
+      "aliases": [
+        "静园"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 2,
+          "name": "静园",
+          "url": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_bbd5ae1542",
+      "name": "李叔同故居纪念馆",
+      "preferredId": "manual_tianjin_da2ee596",
+      "aliases": [
+        "李叔同故居纪念馆"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 10,
+          "name": "李叔同故居纪念馆",
+          "url": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_83b82dd2ea",
+      "name": "天津博物馆",
+      "preferredId": "manual_tianjin_2748fba2",
+      "aliases": [
+        "天津博物馆"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 3,
+          "name": "天津博物馆",
+          "url": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_55498e10e1",
+      "name": "天津自然博物馆",
+      "preferredId": "manual_tianjin_cba726",
+      "aliases": [
+        "天津自然博物馆"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "天津",
+          "page": 7,
+          "name": "天津自然博物馆",
+          "url": "https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b587fb77ba",
+      "name": "滨海图书馆",
+      "preferredId": "manual_tianjin_ca536ee4",
+      "aliases": [
+        "滨海图书馆"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFIAOAXK",
+          "name": "滨海图书馆中心馆",
+          "city": "天津市",
+          "type": "科教文化服务;图书馆;图书馆",
+          "url": "https://www.amap.com/place/B0FFIAOAXK",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_5ee9187e2f",
+      "name": "天津动物园",
+      "preferredId": "amap_B00160D2AW",
+      "aliases": [
+        "天津动物园"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 13
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d5e2d85475",
+      "name": "五大道文化旅游区",
+      "preferredId": "amap_B00160E5VJ",
+      "aliases": [
+        "五大道文化旅游区",
+        "五大道文化",
+        "天津五大道文化旅游区"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b7cd36bd1e",
+      "name": "张园",
+      "preferredId": "amap_B0016162R9",
+      "aliases": [
+        "张园"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 26
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cdb7e3b96e",
+      "name": "杨柳青古镇",
+      "preferredId": "amap_B0FFGUGCT6",
+      "aliases": [
+        "杨柳青古镇"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 15
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7da12772a6",
+      "name": "黄崖关长城",
+      "preferredId": "amap_B001605KTI",
+      "aliases": [
+        "黄崖关长城",
+        "黄崖关长城风景区"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 20
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4ed5d7885a",
+      "name": "东疆亲海公园",
+      "preferredId": "amap_B0FFJHVIUA",
+      "aliases": [
+        "东疆亲海公园"
+      ],
+      "city": "天津",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 32
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

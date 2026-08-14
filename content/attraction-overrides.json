@@ -247,5 +247,134 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B0016127V6": {
+    "id": "amap_B0016127V6",
+    "name": "海河游船",
+    "city": "天津",
+    "rating": 4.8,
+    "reviewsCount": "4740条携程点评",
+    "image": "/assets/images/attractions/tianjin_f9d5fec6_verified.jpg",
+    "description": "海河游船集中了天津游的精华，一路上既可感受天津时代的变迁，也可欣赏到现代都市的摩登大厦。一条海河，已概括了天津的历史。",
+    "intro": "海河游船集中了天津游的精华，一路上既可感受天津时代的变迁，也可欣赏到现代都市的摩登大厦。一条海河，已概括了天津的历史。",
+    "level": "热门景点",
+    "category": "水上观光",
+    "tags": [
+      "水上观光",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "天津市河北区李公祠大街永乐码头(大悲院)（具体登船地点请留意各船次信息）",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+        "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+        "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+        "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+      },
+      "transport": {
+        "external_arrive": "地铁3/4号线津湾广场站D口出最方便；自驾可停津湾地下停车场或周边恒隆/天河城停车场",
+        "internal_arrive": "首选津湾码头（夜景C位、交通最便捷），其次天津站码头或古文化街码头，按就近原则选择即可",
+        "internal_traffic": "游船内部无额外交通，船舱与甲板自由走动；若选日景环线游可在4个码头各上下船1次",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住津湾广场或天津站附近，步行即可到码头，游船结束后顺路进站或逛夜景",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "special_care": {
+        "elderly": "建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；",
+        "children": "长辈建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；儿童建议选白天或傍晚班次，甲板平稳可拍照，沿河有小吃和休息座椅，1.\n\n活动"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "游船躺平观光线（0体力版）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "津湾码头/天津站码头",
+          "解放桥",
+          "北安桥",
+          "狮子林桥",
+          "天津之眼",
+          "原码头返回"
+        ],
+        "duration": "半天",
+        "walking": "全程基本无步行，登船后在船舱或甲板休息观赏",
+        "physical": 1,
+        "tips": [
+          "全程约50分钟，船舱有空调和卫生间，二层露天甲板适合拍照",
+          "冬季海河结冰会停运，具体运营以官方当日公告为准"
+        ],
+        "sourceTitle": "携程旅行 海河游船 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "verifiedAt": "2026-08-14"
+      },
+      {
+        "title": "沿河夜景漫步线（轻松Citywalk版）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "津湾广场",
+          "解放桥",
+          "北安桥",
+          "狮子林桥",
+          "天津之眼"
+        ],
+        "duration": "半天",
+        "walking": "沿河石板路平坦，全程约2-3小时，可随时坐休息椅",
+        "physical": 3,
+        "tips": [
+          "官方当日建议时段左右亮灯，官方当日建议时段-官方当日建议时段灯光秀氛围最佳",
+          "河风较大，建议带薄外套"
+        ],
+        "sourceTitle": "携程旅行 海河游船 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "verifiedAt": "2026-08-14"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+        "携程旅行 海河游船 详情页：https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 海河游船 详情页",
+        "url": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "verifiedAt": "2026-08-14"
+      },
+      "basicInfoUpdatedAt": "2026-08-14",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "海河游船 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+      "width": 2000,
+      "height": 1332
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

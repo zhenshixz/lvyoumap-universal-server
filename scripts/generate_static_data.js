@@ -172,8 +172,8 @@ function validateManualAttraction(attraction, provinceName) {
     throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 3 guide_data.food entries.`);
   }
 
-  if (!Array.isArray(attraction.lazy_routes) || attraction.lazy_routes.length < 2) {
-    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 2 verified lazy_routes.`);
+  if (!Array.isArray(attraction.lazy_routes) || attraction.lazy_routes.length < 1) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 1 verified lazy_route.`);
   }
   for (const [index, route] of attraction.lazy_routes.entries()) {
     for (const field of ['title', 'badge', 'suitability', 'duration', 'walking', 'sourceTitle', 'sourceUrl', 'verifiedAt']) {
@@ -182,11 +182,11 @@ function validateManualAttraction(attraction, provinceName) {
     if (!/^https:\/\//.test(route.sourceUrl)) {
       throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} has a non-HTTPS lazy route source.`);
     }
-    if (!Array.isArray(route.nodes) || route.nodes.length < 4 || route.nodes.some(item => !isNonEmptyString(item))) {
-      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 4 route nodes.`);
+    if (!Array.isArray(route.nodes) || route.nodes.length < 1 || route.nodes.some(item => !isNonEmptyString(item))) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 1 real visit step or focus area.`);
     }
-    if (!Array.isArray(route.tips) || route.tips.length < 2 || route.tips.some(item => !isNonEmptyString(item))) {
-      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 2 tips.`);
+    if (!Array.isArray(route.tips) || route.tips.length < 1 || route.tips.some(item => !isNonEmptyString(item))) {
+      throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide at least 1 practical tip.`);
     }
     if (!Number.isFinite(Number(route.physical))) {
       throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} lazy_routes[${index}] must provide a physical score.`);

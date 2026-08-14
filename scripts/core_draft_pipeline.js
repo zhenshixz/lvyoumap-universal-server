@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 const { relatedAttraction } = require('./core_candidate_quality');
+const { classifyStageResult, sleepSync, stagePolicy } = require('./pipeline_resilience');
 
 const rootDir = path.join(__dirname, '..');
 const runtimeDir = path.join(rootDir, '.runtime');
@@ -12,13 +13,23 @@ function readJson(filePath, fallback = null) {
 }
 
 function runScript(script, province, extraArgs = [], quiet = true) {
-  const result = spawnSync(process.execPath, [path.join('scripts', script), `--province=${province}`, ...extraArgs], {
-    cwd: rootDir,
-    stdio: quiet ? 'pipe' : 'inherit',
-    encoding: quiet ? 'utf8' : undefined,
-    shell: false,
-  });
-  return { ok: result.status === 0, output: quiet ? [result.stdout, result.stderr].filter(Boolean).join('\n').trim() : '' };
+  const policy = stagePolicy(script);
+  let last = { ok: false, output: '', status: 1, kind: 'hard' };
+  for (let attempt = 1; attempt <= policy.maxAttempts; attempt += 1) {
+    const result = spawnSync(process.execPath, [path.join('scripts', script), `--province=${province}`, ...extraArgs], {
+      cwd: rootDir,
+      stdio: quiet ? 'pipe' : 'inherit',
+      encoding: quiet ? 'utf8' : undefined,
+      shell: false,
+    });
+    const output = quiet ? [result.stdout, result.stderr].filter(Boolean).join('\n').trim() : '';
+    const classification = classifyStageResult({ status: result.status, detail: output });
+    last = { ok: classification.kind === 'complete', output, status: result.status, kind: classification.kind, attempt };
+    if (last.ok || !classification.retry || attempt >= policy.maxAttempts) return last;
+    if (!quiet) console.log(`${script} 暂时未完整，${Math.round(policy.delayMs / 1000)} 秒后自动重试。`);
+    sleepSync(policy.delayMs);
+  }
+  return last;
 }
 
 function sameDraftItem(left, right) {

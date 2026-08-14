@@ -1,0 +1,3300 @@
+{
+  "province": "天津",
+  "verifiedAt": "2026-08-14",
+  "policy": "景点身份、属地、基本介绍、地址、攻略和至少一条真实可执行游览方案为硬门槛；第二条路线不是强制项。第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。",
+  "attractions": [
+    {
+      "baselineKey": "core_f14d5fcad4",
+      "targetId": "",
+      "id": "manual_tianjin_757e9315",
+      "name": "天津玛雅海滩水公园",
+      "city": "天津",
+      "rating": 4.8,
+      "reviewsCount": "1436条携程点评",
+      "image": "/assets/images/attractions/tianjin_757e9315_verified.jpg",
+      "description": "天津玛雅海滩水公园占地达15万平米，以世界三大未解之谜之一的远古玛雅文明为主题， \\n公园拥有占地面积13000平方米，可同时容纳1万人戏水游乐的玛雅风情造浪池--玛雅海滩， \\n全新打造逾6000平方米以海洋生物、丛林文化、玛雅文化为主题的儿童戏水区--欢乐岛， \\n以及占地3500平方米、多彩缤纷的巨型水寨--卡巴水寨等八项高水准水上游乐设施，与利用膜结构技术打造的大型室内恒温水公园共同构成全新的天津玛雅海滩水公园。",
+      "intro": "天津玛雅海滩水公园占地达15万平米，以世界三大未解之谜之一的远古玛雅文明为主题， \\n公园拥有占地面积13000平方米，可同时容纳1万人戏水游乐的玛雅风情造浪池--玛雅海滩， \\n全新打造逾6000平方米以海洋生物、丛林文化、玛雅文化为主题的儿童戏水区--欢乐岛， \\n以及占地3500平方米、多彩缤纷的巨型水寨--卡巴水寨等八项高水准水上游乐设施，与利用膜结构技术打造的大型室内恒温水公园共同构成全新的天津玛雅海滩水公园。",
+      "level": "热门景点",
+      "category": "室内恒温水乐园与室外主题水上公园",
+      "tags": [
+        "室内恒温水乐园与室外主题水上公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市东丽区之光大道2号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/tianjin154.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "amap_live_web_service",
+          "url": "https://www.amap.com/place/B0FFJ8Q4S4",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "携程旅行 天津玛雅海滩水公园 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online"
+        }
+      ],
+      "routes": [
+        {
+          "title": "亲子合家欢省力线（带低龄娃首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "儿童迷你滑道",
+            "欢乐水屋",
+            "懒人河漂流",
+            "欢乐岛",
+            "玛雅海滩造浪池"
+          ],
+          "duration": "半天",
+          "walking": "适中（室内室外交替，中途可多次休息）",
+          "physical": 2,
+          "tips": [
+            "全程无惊险刺激滑道，以温和戏水为主",
+            "中途有星空SPA休息区，累了随时歇脚，带娃一整天也不疲惫"
+          ],
+          "sourceTitle": "携程旅行 天津玛雅海滩水公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online"
+        },
+        {
+          "title": "成人刺激挑战线（胆大年轻人专属）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "飓风大喇叭",
+            "疯狂魔鬼鱼",
+            "巨蟒探险",
+            "极速鲨吻",
+            "旋涡巨碗"
+          ],
+          "duration": "半天",
+          "walking": "较大（需往返室外高空滑道区与室内场馆）",
+          "physical": 5,
+          "tips": [
+            "开园前1小时冲刺激区几乎零排队",
+            "正午转战室内恒温区避暑，傍晚再回造浪池参加电音派对"
+          ],
+          "sourceTitle": "携程旅行 天津玛雅海滩水公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "自驾门口有超大停车场（收费费用以官方当日公告为准/天）；公共交通可乘地铁2号线至空港地铁站B口，有免费接驳车每半小时直达园区",
+        "internal_arrive": "入园右手边为更衣淋浴区，左手边为奇幻漂流项目，建议先存行李再轻装游玩",
+        "internal_traffic": "园区内步行为主，部分区域有免费接驳车；漂流圈可在各寄存点存取",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "园区周边有玛雅嘉途酒店（含门票及接送服务），也可选择东丽湖周边酒店",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议优先体验室内恒温区的懒人河漂流、星空SPA泡池及玛雅海滩造浪浅池，避开正午暴晒，累了可随时在休息区躺平；",
+        "children": "长辈建议优先体验室内恒温区的懒人河漂流、星空SPA泡池及玛雅海滩造浪浅池，避开正午暴晒，累了可随时在休息区躺平；儿童建议必备涉水鞋防烫防滑，1.2米以下免票，低幼宝宝可玩欢乐岛、儿童迷你滑道及翻江倒海，家长需贴身跟随并穿戴免费提供的浮力衣\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津玛雅海滩水公园 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFJ8Q4S4",
+        "width": 2000,
+        "height": 1382
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "自驾门口有超大停车场（收费费用以官方当日公告为准/天）；公共交通可乘地铁2号线至空港地铁站B口，有免费接驳车每半小时直达园区",
+          "internal_arrive": "入园右手边为更衣淋浴区，左手边为奇幻漂流项目，建议先存行李再轻装游玩",
+          "internal_traffic": "园区内步行为主，部分区域有免费接驳车；漂流圈可在各寄存点存取",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "园区周边有玛雅嘉途酒店（含门票及接送服务），也可选择东丽湖周边酒店",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议优先体验室内恒温区的懒人河漂流、星空SPA泡池及玛雅海滩造浪浅池，避开正午暴晒，累了可随时在休息区躺平；",
+          "children": "长辈建议优先体验室内恒温区的懒人河漂流、星空SPA泡池及玛雅海滩造浪浅池，避开正午暴晒，累了可随时在休息区躺平；儿童建议必备涉水鞋防烫防滑，1.2米以下免票，低幼宝宝可玩欢乐岛、儿童迷你滑道及翻江倒海，家长需贴身跟随并穿戴免费提供的浮力衣\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "亲子合家欢省力线（带低龄娃首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "儿童迷你滑道",
+            "欢乐水屋",
+            "懒人河漂流",
+            "欢乐岛",
+            "玛雅海滩造浪池"
+          ],
+          "duration": "半天",
+          "walking": "适中（室内室外交替，中途可多次休息）",
+          "physical": 2,
+          "tips": [
+            "全程无惊险刺激滑道，以温和戏水为主",
+            "中途有星空SPA休息区，累了随时歇脚，带娃一整天也不疲惫"
+          ],
+          "sourceTitle": "携程旅行 天津玛雅海滩水公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "成人刺激挑战线（胆大年轻人专属）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "飓风大喇叭",
+            "疯狂魔鬼鱼",
+            "巨蟒探险",
+            "极速鲨吻",
+            "旋涡巨碗"
+          ],
+          "duration": "半天",
+          "walking": "较大（需往返室外高空滑道区与室内场馆）",
+          "physical": 5,
+          "tips": [
+            "开园前1小时冲刺激区几乎零排队",
+            "正午转战室内恒温区避暑，傍晚再回造浪池参加电音派对"
+          ],
+          "sourceTitle": "携程旅行 天津玛雅海滩水公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结74篇笔记生成\n\n带长辈和小孩去水上乐园，主打一个“不费腿、不暴晒、不排队”，天津玛雅海滩水公园的室内室外结合玩法其实非常友好，帮你整理了一条全程少走路、节奏舒缓的路线，直接抄作业。\n\n上午：室内恒温区（避开暴晒，老少皆宜）\n\n棕榈海滩：进园后先直奔室内区，这里是3000㎡的室内造浪池，水位温和，不怕晒。长辈可以坐在沙滩椅上休息，小孩能在浅水区踩水，非常省心。\n\n懒人河：在室内区租个泳圈，全家一起躺平漂流。水流平缓，没有急弯陡坡，沿路有树荫遮阳，一圈大概25分钟，是难得的放松时光。\n\n儿童滑道与欢乐水屋：室内还有专为低龄儿童设计的低缓小滑梯和喷水元素，坡度平缓，安全系数高，小朋友可以连刷好几遍。\n\n下午：室外休闲区（温和戏水，亲子互动）\n\n卡巴水寨：转战室外，这里有3500㎡的巨型水寨，覆盖遮阳棚和雾森降温。里面有多个温和的小滑梯和巨型蓄水桶（定时倾倒），大人小孩都能玩，不用排长队。\n\n欢乐岛：6000㎡的海洋主题戏水区，配备小滑梯、西瓜球、漂浮玩具等，还有超多的遮阳棚。适合小孩打水仗、玩球，长辈在旁边看着也不晒。\n\n星空SPA泡池：如果长辈玩累了，可以来这里歇脚休息。环境清幽，适合泡在水里聊聊天，彻底避开正午的暴晒。\n\n傍晚：造浪池狂欢（氛围拉满，轻松收尾）\n\n夜场电音派对：如果买的是全天票，傍晚可以蹲一场水上电音派对。灯光、DJ加上漫天水花，氛围感直接拉满，玩完洗个热水澡就能轻松回家。\n\n长辈小孩专属省力贴士\n\n必带装备：一定要穿涉水鞋！园区地面暴晒后很烫，且浅滩湿滑，涉水鞋防滑又不影响玩项目；随身带条速干浴巾，出水后及时披上，避免温差着凉。\n\n洗浴设施：园区有专门的亲子淋浴间（分母子、父女），空间大且提供洗发沐浴用品，但吹风机可能需要排队，想省时间可以自带便携吹风机。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "天津玛雅海滩水公园完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:14:36.829Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+          "amap_live_web_service：https://www.amap.com/place/B0FFJ8Q4S4",
+          "携程旅行 天津玛雅海滩水公园 详情页：https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 天津玛雅海滩水公园 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/4714345.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津玛雅海滩水公园 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFJ8Q4S4",
+        "width": 2000,
+        "height": 1382
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_6554b15a31",
+      "targetId": "",
+      "id": "manual_tianjin_bf7acc24",
+      "name": "国家海洋博物馆",
+      "city": "天津",
+      "rating": 4.5,
+      "reviewsCount": "4037条携程点评",
+      "image": "/assets/images/attractions/tianjin_bf7acc24_verified.jpg",
+      "description": "国家海洋博物馆坐落于天津市滨海新区中新生态城滨海旅游区域，由国家海洋局与天津市人民政府共建。 国家海洋博物馆展厅面积2.3万平方米，通过6大展区、16个展厅和3.6万余件珍贵藏品，全面展现了自然生态、历史人文、科学技术等多维视角下人类与海洋相互依存、和谐共生的密切关系。",
+      "intro": "国家海洋博物馆坐落于天津市滨海新区中新生态城滨海旅游区域，由国家海洋局与天津市人民政府共建。 国家海洋博物馆展厅面积2.3万平方米，通过6大展区、16个展厅和3.6万余件珍贵藏品，全面展现了自然生态、历史人文、科学技术等多维视角下人类与海洋相互依存、和谐共生的密切关系。",
+      "level": "博物馆",
+      "category": "博物馆",
+      "tags": [
+        "博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市滨海新区中新生态城海轩道377号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/tianjin154.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "携程旅行 国家海洋博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q10926046 实体页",
+          "url": "https://www.wikidata.org/wiki/Q10926046"
+        },
+        {
+          "title": "高德地图 国家海洋博物馆",
+          "url": "https://www.amap.com/place/B0FFG7TPYR",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "3小时亲子精华省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙的时代",
+            "今日海洋",
+            "海洋与天文",
+            "远古海洋",
+            "户外平台"
+          ],
+          "duration": "半天",
+          "walking": "约8000步",
+          "physical": 2,
+          "tips": [
+            "按三楼到一楼自上而下顺序游览，不走回头路",
+            "重点看巨型鲸鲨和恐龙化石，低幼宝宝可跳过纯科普展厅"
+          ],
+          "sourceTitle": "携程旅行 国家海洋博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online"
+        },
+        {
+          "title": "4.5小时深度全览线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙的时代",
+            "航海发现之旅",
+            "今日海洋",
+            "远古海洋",
+            "海洋灾害体验厅",
+            "从风帆到行轮",
+            "海洋与天文",
+            "中华海洋文明"
+          ],
+          "duration": "半天",
+          "walking": "约12000步",
+          "physical": 4,
+          "tips": [
+            "适合对历史科普感兴趣的青少年或成人",
+            "海洋灾害厅有定时造浪体验，需提前查当日场次避免错过"
+          ],
+          "sourceTitle": "携程旅行 国家海洋博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "自驾导航至国家海洋博物馆停车场（费用以官方当日公告为准/小时，费用以官方当日公告为准封顶）；地铁9号线东海路站换乘公交127路或972路，或打车约15分钟",
+        "internal_arrive": "安检存包后直接乘电梯至二楼大厅（有蛟龙号模型），从二楼开始游览最省力，避免从一楼逐层往上爬",
+        "internal_traffic": "馆内三层贯通，主要靠扶梯和电梯连接；入口可免费租借婴儿车和轮椅；建议穿舒适运动鞋，全程步行较多",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在中新生态城（距馆近，民宿性价比高）或滨海新区（餐饮交通更便利，距馆约20公里打车30分钟）",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议避开声光电冲击强的海洋灾害厅，\n\n活动",
+        "children": "长辈建议避开声光电冲击强的海洋灾害厅，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "国家海洋博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFG7TPYR",
+        "width": 2000,
+        "height": 1500
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至国家海洋博物馆停车场（费用以官方当日公告为准/小时，费用以官方当日公告为准封顶）；地铁9号线东海路站换乘公交127路或972路，或打车约15分钟",
+          "internal_arrive": "安检存包后直接乘电梯至二楼大厅（有蛟龙号模型），从二楼开始游览最省力，避免从一楼逐层往上爬",
+          "internal_traffic": "馆内三层贯通，主要靠扶梯和电梯连接；入口可免费租借婴儿车和轮椅；建议穿舒适运动鞋，全程步行较多",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在中新生态城（距馆近，民宿性价比高）或滨海新区（餐饮交通更便利，距馆约20公里打车30分钟）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议避开声光电冲击强的海洋灾害厅，\n\n活动",
+          "children": "长辈建议避开声光电冲击强的海洋灾害厅，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "3小时亲子精华省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙的时代",
+            "今日海洋",
+            "海洋与天文",
+            "远古海洋",
+            "户外平台"
+          ],
+          "duration": "半天",
+          "walking": "约8000步",
+          "physical": 2,
+          "tips": [
+            "按三楼到一楼自上而下顺序游览，不走回头路",
+            "重点看巨型鲸鲨和恐龙化石，低幼宝宝可跳过纯科普展厅"
+          ],
+          "sourceTitle": "携程旅行 国家海洋博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "4.5小时深度全览线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙的时代",
+            "航海发现之旅",
+            "今日海洋",
+            "远古海洋",
+            "海洋灾害体验厅",
+            "从风帆到行轮",
+            "海洋与天文",
+            "中华海洋文明"
+          ],
+          "duration": "半天",
+          "walking": "约12000步",
+          "physical": 4,
+          "tips": [
+            "适合对历史科普感兴趣的青少年或成人",
+            "海洋灾害厅有定时造浪体验，需提前查当日场次避免错过"
+          ],
+          "sourceTitle": "携程旅行 国家海洋博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结62篇笔记生成\n\n带长辈和小孩去国家海洋博物馆，最核心的原则就是“抓大放小”，千万别想着把十几个展厅全刷完，场馆超级大，走回头路绝对会累到崩溃。\n\n为你整理了一条“自上而下、不走回头路”的省力精华路线，全程对推车和轮椅友好，重点看视觉冲击力强、互动性高的展区，兼顾长辈的科普需求和小孩的趣味性。\n\n省力游览路线（约3-4小时）\n\n二楼·龙的时代：进门安检存包后，直接乘电梯到二楼。这里有很多巨型恐龙和史前海洋生物骨架，还有会动会吼的仿真霸王龙，视觉非常震撼，长辈和小孩都会觉得很有意思。\n\n三楼·今日海洋：从二楼乘扶梯上三楼，这是整个馆的“颜值担当”。有9.4米长的鲸鲨标本和8.3米的大王乌贼标本，还有五彩斑斓的贝壳墙，色彩丰富，小孩全程目不转睛，长辈拍照也很出片。\n\n三楼·海洋与天文：同层参观，这里有梦幻的星空穹顶和九大行星模型，灯光柔和，氛围感很好，逛累了可以在这里安静地休息一下，看看宇宙科普。\n\n一楼·远古海洋：乘扶梯下到一楼，按地质年代展陈的超长化石长廊，有三叶虫、菊石等古生物化石，科普氛围足，展区宽敞人相对少，适合慢慢走。\n\n一楼·海洋灾害体验厅：这里有模拟台风、海啸的声光互动和造浪池，寓教于乐。不过音效和灯光冲击力强，如果长辈或小孩比较胆小，可以在门口看看或者快速通过。\n\n户外平台与咖啡厅收尾：最后去二楼的抱抱地球咖啡馆，有一面正对大海的网红落地窗，可以坐着喝杯水、吹吹海风，看看室外的军舰和海景，轻松结束行程。\n\n长辈小孩专属避坑指南\n\n果断跳过的展厅：中华海洋文明（偏文史、灯光暗，小孩易害怕）、航海发现之旅（专业性太强，文字多）、海洋天文（如果时间紧可跳过）。\n\n关于推车：场馆极大，全程走路至少2万步起步，强烈建议在门口租或自带婴儿车/轮椅，全程无台阶，推车非常方便。\n\n穿衣与补给：馆内空调恒温偏冷，一定要给长辈和小孩带薄外套；建议自带保温杯和小零食，馆内餐厅价格偏高且排队。\n\n行前必备提醒\n\n证件：务必携带所有人身份证原件，刷证入场。\n\n长辈的年龄大概是多少？如果年纪比较大或者腿脚不太方便，我可以再帮你微调一下路线，把需要走楼梯或步数较多的环节再精简一下。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "国家海洋博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:15:48.340Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 国家海洋博物馆 详情页：https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online",
+          "Wikidata Q10926046 实体页：https://www.wikidata.org/wiki/Q10926046",
+          "高德地图 国家海洋博物馆：https://www.amap.com/place/B0FFG7TPYR"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 国家海洋博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/5382354.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "国家海洋博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFG7TPYR",
+        "width": 2000,
+        "height": 1500
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_f2a6a3d738",
+      "targetId": "",
+      "id": "manual_tianjin_ca56e456",
+      "name": "天津之眼摩天轮",
+      "city": "天津",
+      "rating": 4.6,
+      "reviewsCount": "14525条携程点评",
+      "image": "/assets/images/attractions/tianjin_ca56e456_verified.jpg",
+      "description": "天津之眼摩天轮是一座横跨在海河上的摩天轮，就像是桥上的一只眼睛，这里也是天津有名的标志之一，每到夜晚华灯初上时，天津之眼摩天轮的彩灯柔美，无数游客会来到这里，拍摄全景或是乘坐观光，享受别样的浪漫。 游玩天津之眼摩天轮一般有两种方式，乘坐或是远观拍照。",
+      "intro": "天津之眼摩天轮是一座横跨在海河上的摩天轮，就像是桥上的一只眼睛，这里也是天津有名的标志之一，每到夜晚华灯初上时，天津之眼摩天轮的彩灯柔美，无数游客会来到这里，拍摄全景或是乘坐观光，享受别样的浪漫。 游玩天津之眼摩天轮一般有两种方式，乘坐或是远观拍照。",
+      "level": "热门景点",
+      "category": "城市地标观光",
+      "tags": [
+        "城市地标观光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市红桥区三岔河口永乐桥上",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/tianjin154.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "携程旅行 天津之眼摩天轮 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q750548 实体页",
+          "url": "https://www.wikidata.org/wiki/Q750548"
+        }
+      ],
+      "routes": [
+        {
+          "title": "室内展厅+摩天轮+拍照省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "天津六百年展厅",
+            "天津之眼摩天轮座舱",
+            "金刚桥观景平台",
+            "永乐桥步行平台"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "建议先逛桥下展厅看微缩沙盘，再登舱体验，最后去金刚桥拍全景",
+            "白天座舱有空调且人少，带小孩可备零食安抚情绪"
+          ],
+          "sourceTitle": "携程旅行 天津之眼摩天轮 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online"
+        },
+        {
+          "title": "海河游船+街区休闲半日线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "永乐码头海河游船",
+            "天津之眼摩天轮",
+            "古文化街或意式风情街",
+            "中山路美食街"
+          ],
+          "duration": "半天",
+          "walking": "约2500米",
+          "physical": 3,
+          "tips": [
+            "游船建议选甲板最后一排拍桥景无遮挡",
+            "傍晚登舱可兼顾日落与夜景，节假日需提前线上预约"
+          ],
+          "sourceTitle": "携程旅行 天津之眼摩天轮 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁3号线中山路站B口或1号线西北角站步行可达；公交至永乐桥站；自驾可停七马路道路停车位（费用以官方当日公告为准/小时）",
+        "internal_arrive": "推荐从天津之眼摩天轮桥下空间B区进入，先参观天津六百年展厅，再前往登舱口",
+        "internal_traffic": "摩天轮座舱内缓速旋转，全程无需步行；周边可骑行亲子共享单车前往邻近街区",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐天津之眼假日酒店、逸扉酒店（天津之眼店）或建国铂萃（天津之眼店），部分河景房可直接俯瞰摩天轮夜景",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议白天乘坐，\n\n活动",
+        "children": "长辈建议白天乘坐，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津之眼北1.jpg",
+        "author": "KangTyngrwey",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E4%B9%8B%E7%9C%BC%E5%8C%971.jpg",
+        "width": 3645,
+        "height": 2250
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁3号线中山路站B口或1号线西北角站步行可达；公交至永乐桥站；自驾可停七马路道路停车位（费用以官方当日公告为准/小时）",
+          "internal_arrive": "推荐从天津之眼摩天轮桥下空间B区进入，先参观天津六百年展厅，再前往登舱口",
+          "internal_traffic": "摩天轮座舱内缓速旋转，全程无需步行；周边可骑行亲子共享单车前往邻近街区",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐天津之眼假日酒店、逸扉酒店（天津之眼店）或建国铂萃（天津之眼店），部分河景房可直接俯瞰摩天轮夜景",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议白天乘坐，\n\n活动",
+          "children": "长辈建议白天乘坐，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "室内展厅+摩天轮+拍照省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "天津六百年展厅",
+            "天津之眼摩天轮座舱",
+            "金刚桥观景平台",
+            "永乐桥步行平台"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "建议先逛桥下展厅看微缩沙盘，再登舱体验，最后去金刚桥拍全景",
+            "白天座舱有空调且人少，带小孩可备零食安抚情绪"
+          ],
+          "sourceTitle": "携程旅行 天津之眼摩天轮 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "海河游船+街区休闲半日线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "永乐码头海河游船",
+            "天津之眼摩天轮",
+            "古文化街或意式风情街",
+            "中山路美食街"
+          ],
+          "duration": "半天",
+          "walking": "约2500米",
+          "physical": 3,
+          "tips": [
+            "游船建议选甲板最后一排拍桥景无遮挡",
+            "傍晚登舱可兼顾日落与夜景，节假日需提前线上预约"
+          ],
+          "sourceTitle": "携程旅行 天津之眼摩天轮 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结59篇笔记生成\n\n带长辈和小孩去天津玩，主打一个“少走弯路、多坐车子”，这份把天津之眼和海河沿线串起来的省力路线，直接抄作业！\n\n省力拍照：不用挤在桥头，导航到金刚桥，沿着坡道往下走，这里是公认最出片且人少的封神机位；或者去永乐码头的两堵高墙处，开手机长焦拍层次感。\n\n夜间：海河夜游与代步逛城\n\n游船看景：如果长辈走路实在费劲，强烈推荐在海河边坐海河游船。不用自己走，坐在船上吹着河风看两岸亮灯，非常惬意（注意提前查好末班船时间，避免跑空）。\n\n三蹦子代步：如果想去意式风情区或古文化街逛逛，建议在景区门口找正规的三轮代步车（记得提前划好价格），让老人小孩坐着听讲解，避免长途步行。\n\n下午备选：五大道与室内科普\n\n室内避暑：如果是夏天或天气不好，直接改去天津自然博物馆或国家海洋博物馆，全程室内有空调，还能边玩边学，对带娃家庭极其友好。\n\n省力与避坑提醒\n\n天气影响：摩天轮在大风、暴雨或雾霾天气会临时停运，出发前一定要看天气预报，不确定时提前打官方电话确认。\n\n交通建议：天津之眼周边没有地铁站直达，建议打车或骑共享单车，尽量别自驾，附近停车既贵又难。\n\n行李寄存：如果是赶高铁前玩，可以用小程序找附近的行李寄存点，存完包一身轻地去玩。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "天津之眼摩天轮完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:16:07.767Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 天津之眼摩天轮 详情页：https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online",
+          "Wikidata Q750548 实体页：https://www.wikidata.org/wiki/Q750548"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 天津之眼摩天轮 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/56364.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津之眼北1.jpg",
+        "author": "KangTyngrwey",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E4%B9%8B%E7%9C%BC%E5%8C%971.jpg",
+        "width": 3645,
+        "height": 2250
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_2275b36ec4",
+      "targetId": "",
+      "id": "manual_tianjin_6a7b1c4a",
+      "name": "瓷房子",
+      "city": "天津",
+      "rating": 4.3,
+      "reviewsCount": "6324条携程点评",
+      "image": "/assets/images/attractions/tianjin_6a7b1c4a_verified.jpg",
+      "description": "瓷房子是一座动用了无数私藏古瓷器、汉白玉石雕、水晶、玛瑙、古董装饰而成的法式建筑。房子的墙上密密麻麻贴满了精美的中国古代瓷器，庭院和楼内堆满了古董，铺天盖地的瓷器古董常让初到瓷房子的游客眼花缭乱。",
+      "intro": "瓷房子是一座动用了无数私藏古瓷器、汉白玉石雕、水晶、玛瑙、古董装饰而成的法式建筑。房子的墙上密密麻麻贴满了精美的中国古代瓷器，庭院和楼内堆满了古董，铺天盖地的瓷器古董常让初到瓷房子的游客眼花缭乱。",
+      "level": "热门景点",
+      "category": "人文博物馆/特色建筑",
+      "tags": [
+        "人文博物馆/特色建筑",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市和平区劝业场街道赤峰道72号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/tianjin154.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "携程旅行 瓷房子 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q11178439 实体页",
+          "url": "https://www.wikidata.org/wiki/Q11178439"
+        },
+        {
+          "title": "高德地图 瓷房子",
+          "url": "https://www.amap.com/place/B001611ODN",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典全景深度游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马路对面全景仰拍",
+            "入口平安墙",
+            "双彩琉璃狮与黄铜福鹿",
+            "二楼八角凉亭与瓷画",
+            "三楼红木螺钿家具",
+            "四楼瓷片名画与露台",
+            "屋顶巨型瓷龙",
+            "出口北魏佛首相"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 4,
+          "tips": [
+            "建议较合适时段开门首波入园，避开人流高峰",
+            "内部旋转楼梯窄陡，需穿平底防滑鞋",
+            "建议跟随免费讲解员参观，了解古董背后的故事"
+          ],
+          "sourceTitle": "携程旅行 瓷房子 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online"
+        },
+        {
+          "title": "家庭省力外观打卡游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马路对面全景仰拍",
+            "入口平安墙",
+            "外墙瓷龙与瓷猫管道",
+            "二楼露台光影",
+            "周边张学良故居或滨江道步行街"
+          ],
+          "duration": "半天",
+          "walking": "约0.5公里",
+          "physical": 2,
+          "tips": [
+            "若仅拍照打卡，在马路对面及门口即可拍摄全景，无需购票入内",
+            "傍晚亮灯后外观色彩更梦幻，适合夜间路过打卡"
+          ],
+          "sourceTitle": "携程旅行 瓷房子 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁3/4号线和平路站D口出站，步行约5至8分钟可达；公交可至中心公园站或赤峰道山东路站；自驾建议停放至恒隆广场或天河城等周边商场，老城区道路狭窄且门口暂无专用停车场",
+        "internal_arrive": "正门位于赤峰道72号，入口处的双彩琉璃狮为镇店之宝；若携带大件行李，建议提前寄存，场馆空间紧凑不便通行",
+        "internal_traffic": "场馆为四层法式洋楼结构，内部无电梯，需通过中庭旋转楼梯逐层上行，楼梯较窄陡，需注意安全",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐选择滨江道或五大道附近商圈，下楼即地铁，去瓷房子及各大景点均较近，且周边餐饮丰富，适合家庭休息",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议跟随免费讲解慢游，\n\n活动",
+        "children": "长辈建议跟随免费讲解慢游，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津的瓷房子.jpg",
+        "author": "TJArchi-Studio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E7%9A%84%E7%93%B7%E6%88%BF%E5%AD%90.jpg",
+        "width": 3840,
+        "height": 2571
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁3/4号线和平路站D口出站，步行约5至8分钟可达；公交可至中心公园站或赤峰道山东路站；自驾建议停放至恒隆广场或天河城等周边商场，老城区道路狭窄且门口暂无专用停车场",
+          "internal_arrive": "正门位于赤峰道72号，入口处的双彩琉璃狮为镇店之宝；若携带大件行李，建议提前寄存，场馆空间紧凑不便通行",
+          "internal_traffic": "场馆为四层法式洋楼结构，内部无电梯，需通过中庭旋转楼梯逐层上行，楼梯较窄陡，需注意安全",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择滨江道或五大道附近商圈，下楼即地铁，去瓷房子及各大景点均较近，且周边餐饮丰富，适合家庭休息",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议跟随免费讲解慢游，\n\n活动",
+          "children": "长辈建议跟随免费讲解慢游，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典全景深度游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马路对面全景仰拍",
+            "入口平安墙",
+            "双彩琉璃狮与黄铜福鹿",
+            "二楼八角凉亭与瓷画",
+            "三楼红木螺钿家具",
+            "四楼瓷片名画与露台",
+            "屋顶巨型瓷龙",
+            "出口北魏佛首相"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 4,
+          "tips": [
+            "建议较合适时段开门首波入园，避开人流高峰",
+            "内部旋转楼梯窄陡，需穿平底防滑鞋",
+            "建议跟随免费讲解员参观，了解古董背后的故事"
+          ],
+          "sourceTitle": "携程旅行 瓷房子 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "家庭省力外观打卡游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马路对面全景仰拍",
+            "入口平安墙",
+            "外墙瓷龙与瓷猫管道",
+            "二楼露台光影",
+            "周边张学良故居或滨江道步行街"
+          ],
+          "duration": "半天",
+          "walking": "约0.5公里",
+          "physical": 2,
+          "tips": [
+            "若仅拍照打卡，在马路对面及门口即可拍摄全景，无需购票入内",
+            "傍晚亮灯后外观色彩更梦幻，适合夜间路过打卡"
+          ],
+          "sourceTitle": "携程旅行 瓷房子 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结43篇笔记生成\n\n带长辈和小孩去天津瓷房子，主打一个“少走路、多看点、不折腾”，这份省力路线请收好。\n\n瓷房子内部省力动线\n\n外观打卡（门口区域）：进门先拍由635个古瓷瓶垒砌的“平安墙”，寓意好且适合全家合影；抬头看外墙盘旋的768米巨型瓷龙，龙身拼有“CHINA”字样，视觉非常震撼。\n\n一楼大厅：这里陈列着各个朝代的古董家具和生活用品，空间相对宽敞，长辈可以慢慢看，小孩也不会觉得憋屈。\n\n二楼阳台：可以近距离看到经过改造的“瓷路虎”越野车，造型独特，孩子通常会觉得很新奇。\n\n屋顶露台：如果长辈体力允许，可以慢慢走上顶楼，俯瞰整栋瓷楼全貌，是拍摄建筑全景的最佳机位。若腿脚不便，在二楼即可折返。\n\n周边串联轻松游\n\n瓷房子位于和平区核心地带，周边景点密集，非常适合步行或短途打车串联，不用长途奔波。\n\n五大道文化旅游区：从瓷房子打车或坐地铁过去不远。建议直接乘坐观光马车游览，不用自己走路，车上配有讲解，能轻松看完各国建筑群，对老人小孩非常友好。\n\n省力与避坑提醒\n\n楼梯陡峭：瓷房子内部的旋转楼梯又窄又陡，务必给长辈和小孩穿防滑平底鞋，上下楼时注意搀扶。\n\n文物保护：馆内墙面全是瓷片和玛瑙，严禁触摸，既容易划伤手也会损坏文物，看的时候提醒家人保持距离。\n\n交通停车：老城区道路狭窄，不建议自驾到门口。建议坐地铁3号线到和平路站D口，步行200米直达；若开车可停在恒隆广场等周边商场停车场。\n\n时间选择：建议当日较合适时段开门第一波入园，或者当日较合适时段以后，避开中午旅行团高峰，体验感会好很多。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "瓷房子完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:16:26.391Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 瓷房子 详情页：https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online",
+          "Wikidata Q11178439 实体页：https://www.wikidata.org/wiki/Q11178439",
+          "高德地图 瓷房子：https://www.amap.com/place/B001611ODN"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 瓷房子 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/64504.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津的瓷房子.jpg",
+        "author": "TJArchi-Studio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E7%9A%84%E7%93%B7%E6%88%BF%E5%AD%90.jpg",
+        "width": 3840,
+        "height": 2571
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_24e29b412f",
+      "targetId": "amap_B0016127V6",
+      "id": "amap_B0016127V6",
+      "name": "海河游船",
+      "city": "天津",
+      "rating": 4.8,
+      "reviewsCount": "4740条携程点评",
+      "image": "/assets/images/attractions/tianjin_f9d5fec6_verified.jpg",
+      "description": "海河游船集中了天津游的精华，一路上既可感受天津时代的变迁，也可欣赏到现代都市的摩登大厦。一条海河，已概括了天津的历史。",
+      "intro": "海河游船集中了天津游的精华，一路上既可感受天津时代的变迁，也可欣赏到现代都市的摩登大厦。一条海河，已概括了天津的历史。",
+      "level": "热门景点",
+      "category": "水上观光",
+      "tags": [
+        "水上观光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市河北区李公祠大街永乐码头(大悲院)（具体登船地点请留意各船次信息）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/tianjin154.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "携程旅行 海河游船 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online"
+        }
+      ],
+      "routes": [
+        {
+          "title": "游船躺平观光线（0体力版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾码头/天津站码头",
+            "解放桥",
+            "北安桥",
+            "狮子林桥",
+            "天津之眼",
+            "原码头返回"
+          ],
+          "duration": "半天",
+          "walking": "全程基本无步行，登船后在船舱或甲板休息观赏",
+          "physical": 1,
+          "tips": [
+            "全程约50分钟，船舱有空调和卫生间，二层露天甲板适合拍照",
+            "冬季海河结冰会停运，具体运营以官方当日公告为准"
+          ],
+          "sourceTitle": "携程旅行 海河游船 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online"
+        },
+        {
+          "title": "沿河夜景漫步线（轻松Citywalk版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场",
+            "解放桥",
+            "北安桥",
+            "狮子林桥",
+            "天津之眼"
+          ],
+          "duration": "半天",
+          "walking": "沿河石板路平坦，全程约2-3小时，可随时坐休息椅",
+          "physical": 3,
+          "tips": [
+            "官方当日建议时段左右亮灯，官方当日建议时段-官方当日建议时段灯光秀氛围最佳",
+            "河风较大，建议带薄外套"
+          ],
+          "sourceTitle": "携程旅行 海河游船 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁3/4号线津湾广场站D口出最方便；自驾可停津湾地下停车场或周边恒隆/天河城停车场",
+        "internal_arrive": "首选津湾码头（夜景C位、交通最便捷），其次天津站码头或古文化街码头，按就近原则选择即可",
+        "internal_traffic": "游船内部无额外交通，船舱与甲板自由走动；若选日景环线游可在4个码头各上下船1次",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住津湾广场或天津站附近，步行即可到码头，游船结束后顺路进站或逛夜景",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；",
+        "children": "长辈建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；儿童建议选白天或傍晚班次，甲板平稳可拍照，沿河有小吃和休息座椅，1.\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "海河游船 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "width": 2000,
+        "height": 1332
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁3/4号线津湾广场站D口出最方便；自驾可停津湾地下停车场或周边恒隆/天河城停车场",
+          "internal_arrive": "首选津湾码头（夜景C位、交通最便捷），其次天津站码头或古文化街码头，按就近原则选择即可",
+          "internal_traffic": "游船内部无额外交通，船舱与甲板自由走动；若选日景环线游可在4个码头各上下船1次",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住津湾广场或天津站附近，步行即可到码头，游船结束后顺路进站或逛夜景",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；",
+          "children": "长辈建议选游船躺平线，不费膝盖，船舱有座位可歇脚，优先买优待票；儿童建议选白天或傍晚班次，甲板平稳可拍照，沿河有小吃和休息座椅，1.\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "游船躺平观光线（0体力版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾码头/天津站码头",
+            "解放桥",
+            "北安桥",
+            "狮子林桥",
+            "天津之眼",
+            "原码头返回"
+          ],
+          "duration": "半天",
+          "walking": "全程基本无步行，登船后在船舱或甲板休息观赏",
+          "physical": 1,
+          "tips": [
+            "全程约50分钟，船舱有空调和卫生间，二层露天甲板适合拍照",
+            "冬季海河结冰会停运，具体运营以官方当日公告为准"
+          ],
+          "sourceTitle": "携程旅行 海河游船 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "沿河夜景漫步线（轻松Citywalk版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场",
+            "解放桥",
+            "北安桥",
+            "狮子林桥",
+            "天津之眼"
+          ],
+          "duration": "半天",
+          "walking": "沿河石板路平坦，全程约2-3小时，可随时坐休息椅",
+          "physical": 3,
+          "tips": [
+            "官方当日建议时段左右亮灯，官方当日建议时段-官方当日建议时段灯光秀氛围最佳",
+            "河风较大，建议带薄外套"
+          ],
+          "sourceTitle": "携程旅行 海河游船 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结49篇笔记生成\n\n带长辈和小孩出游，主打一个“不费腿、不折腾”，海河游船绝对是天津最省心的选择，坐着船就把精华景点全看了。\n\n核心省力路线：经典夜游往返线\n\n这是最适合长辈和小孩的“0步行”路线，全程不用走冤枉路，舒舒服服躺平看风景。\n\n登船码头：首选津湾码头或天津站码头。这两个码头交通最便利，且只有这里的船会直接从解放桥下穿过，体验感最好。\n\n游览路线：从码头出发 ➡️ 途经解放桥、北安桥、狮子林桥等6座风格各异的桥梁 ➡️ 远观意风区、津湾广场 ➡️ 到达最远端天津之眼摩天轮掉头 ➡️ 原路返回起点码头。\n\n<image 搜索 words>旅行景点+海河游船天津之眼>时长体验全程约）50分钟）不。中途）））））不下）船不），））哪里从上从）哪里）回）），））））全程）））船）平稳舱）））））内）有））））空电子））））））））听）导）讲解）））），）老人喝喝））））水儿童）））喝）歇）喝歇）温水软））沙发）））））歇）脚））））））））））））））））））））））最佳））））））））））建议）））））选）1）9）））））））夜3））0）））））班次）））））登）））））））））船日）））））））））））可以））））））看）晚霞晚霞）），）））））返））））））华）航）霓虹时霓虹）））））霓虹）刚好）灯光）碰上）））））））一张）初））双）票）霓虹））））夜））视觉）享受））））））））））甲板）））错）））））开））））前半））段）））先）））人）在挤）船）舱靠）内）靠））坐）））），））））甲板后半）段）））再去）））人）））））拍照），）））））少）船）））至））在）天津甲））甲板））之眼）））））下方））））掉头掉头）））））是））））））最佳抓拍）抓拍）））时机）））。\n\n备选灵活路线：日景环线自由游\n\n如果长辈小孩想中途下船逛逛，不打算一直坐船，可以选择日景环线。\n\n玩法机制：白天官方当日建议时段至官方当日建议时段内，可在永乐码头、古文化街码头、天津站码头、意风区码头这四个站点自由上下船各一次。\n\n旅行景点+海河游船古文化街码头>）适合）行程场景）））：比如在）先古永乐）文码头））上））逛街码头）））），）、）））下）听）））到）古相声）））））））天津）炸码头街）、））））））泥））））））古泥）买人））大）张））））麻花））码头））），）），））再）顺）））上））意船）到）））天津）））））码头）风））、）区）瓷）坐逛码头））））））））码头））））最后）））））回）房子））））），）永乐电子））码头））））。））））注意）））））））））））必须）按）））））））））固定）））））））回开）时间）））））码按时））船上）），）））））））））））不）））））））））能）随便）））））））））中途）））））随便）下））））不））回））））的）））普通））单））票往返））））））））））））））））））））））））避）坑））））提））贴士票））））））））））））））小程序）一定要））））））））））提前））海）））提前1）买）））小程序）））-））实名夜景））））3）买）））天）购票）票））））））））登）），））））海））、）周末））船）））需））））老人抢）））携带）））））有效提前儿童）身份证）））））））、））））携带））当天）凭））码二维码）或））））身份证））上午）））核验录））））））1身份证）））））））））、））））））））））））））））））））河））提前））））1）5））））录））））分钟视频））））抵达））））））身份证）））））码）码头））））））便于）从容微））））））））登）凉）））））船））））））））河））））））））））带）））））））））））））））））））薄））））））））河外套）））、））））防晒））、））如果墨镜忘）））夏天）））））））））））））））））带）））））））））））））））））））））带））））））））））身份证）））））河））））占））））））帽子）））座）））去）防晒））））））后））））））））））））））冬季）甲板）））））））））））停）））拍照））））**",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "海河游船完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:17:53.051Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tianjin154.html",
+          "携程旅行 海河游船 详情页：https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 海河游船 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "海河游船 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/112796.html?poiType=66&scene=online",
+        "width": 2000,
+        "height": 1332
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_48c1adead4",
+      "targetId": "",
+      "id": "manual_tianjin_3f57d344",
+      "name": "意大利风情旅游区",
+      "city": "天津",
+      "rating": 4.7,
+      "reviewsCount": "5038条携程点评",
+      "image": "/assets/images/attractions/tianjin_3f57d344_verified.jpg",
+      "description": "意大利风情区位于天津市中心，这里有200余栋地中海风格的典雅建筑。漫步其中，就像行走在浪漫的欧洲小镇，众多的名人故居、影视剧取景地也为游人的旅程增色不少。",
+      "intro": "意大利风情区位于天津市中心，这里有200余栋地中海风格的典雅建筑。漫步其中，就像行走在浪漫的欧洲小镇，众多的名人故居、影视剧取景地也为游人的旅程增色不少。",
+      "level": "热门景点",
+      "category": "开放式历史文化街区",
+      "tags": [
+        "开放式历史文化街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市河北区自由道25号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "高德地图 天津意大利风情旅游区",
+          "url": "https://www.amap.com/place/B00160F6ZS",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典人文建筑线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "圣心堂旧址",
+            "原意大利兵营",
+            "曹禺故居",
+            "梁启超纪念馆",
+            "但丁广场",
+            "马可波罗广场"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "故居类场馆下午官方当日建议时段左右停止入内，建议白天参观",
+            "主街餐饮较多，小巷老宅更有味道"
+          ],
+          "sourceTitle": "携程旅行 意大利风情旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online"
+        },
+        {
+          "title": "休闲漫步拍照线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "但丁广场",
+            "马可波罗广场",
+            "钟书阁",
+            "安吉里胡同",
+            "海河亲水平台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "傍晚官方当日建议时段后开逛，夕阳加夜景氛围最佳",
+            "广场可喂鸽子，注意看护小孩靠近水边安全"
+          ],
+          "sourceTitle": "携程旅行 意大利风情旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2号线建国道站B口出站即达；公交5、8、27、634、635、802、805路至意式风情区站或附近站点",
+        "internal_arrive": "从建国道B口进入最顺路，也可从天津站南广场沿海河亲水平台步行约10分钟抵达",
+        "internal_traffic": "街区全程平路，适合步行或推婴儿车；可租电动三轮车代步绕弯，价格需提前协商",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "风情街周边快捷酒店（如自由道7号如家）、星级酒店（如自由道15号凯德大酒店），或步行10分钟可达的海河悦榕庄酒店",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议避开主街高峰，多逛小巷老宅，可坐三轮车听讲解省力；",
+        "children": "长辈建议避开主街高峰，多逛小巷老宅，可坐三轮车听讲解省力；儿童推荐马可波罗广场喷泉撒欢、\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "意大利风情旅游区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+        "width": 1920,
+        "height": 1281
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线建国道站B口出站即达；公交5、8、27、634、635、802、805路至意式风情区站或附近站点",
+          "internal_arrive": "从建国道B口进入最顺路，也可从天津站南广场沿海河亲水平台步行约10分钟抵达",
+          "internal_traffic": "街区全程平路，适合步行或推婴儿车；可租电动三轮车代步绕弯，价格需提前协商",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "风情街周边快捷酒店（如自由道7号如家）、星级酒店（如自由道15号凯德大酒店），或步行10分钟可达的海河悦榕庄酒店",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议避开主街高峰，多逛小巷老宅，可坐三轮车听讲解省力；",
+          "children": "长辈建议避开主街高峰，多逛小巷老宅，可坐三轮车听讲解省力；儿童推荐马可波罗广场喷泉撒欢、\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典人文建筑线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "圣心堂旧址",
+            "原意大利兵营",
+            "曹禺故居",
+            "梁启超纪念馆",
+            "但丁广场",
+            "马可波罗广场"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "故居类场馆下午官方当日建议时段左右停止入内，建议白天参观",
+            "主街餐饮较多，小巷老宅更有味道"
+          ],
+          "sourceTitle": "携程旅行 意大利风情旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "休闲漫步拍照线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "但丁广场",
+            "马可波罗广场",
+            "钟书阁",
+            "安吉里胡同",
+            "海河亲水平台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "傍晚官方当日建议时段后开逛，夕阳加夜景氛围最佳",
+            "广场可喂鸽子，注意看护小孩靠近水边安全"
+          ],
+          "sourceTitle": "携程旅行 意大利风情旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结51篇笔记生成\n\n带长辈和小孩逛天津意风区，主打一个“不费腿、不绕路、随时能歇脚”，这条平路环线刚好适合慢慢晃。\n\n省力顺路行程\n\n上午起步（地铁B口出）：从建国道意风区地铁站B口出站，先看圣心堂旧址，接着去原意大利兵营拍红砖拱廊，全程平路，推婴儿车或轮椅都友好。\n\n故居慢逛（室内歇脚）：顺着路逛曹禺故居纪念馆和梁启超纪念馆（含饮冰室），这两个点可以进屋吹空调、看展品，让长辈和小孩坐下来歇歇腿，感受下历史氛围。\n\n广场打卡（户外放松）：出来往马可波罗广场走，看看和平女神像和喷泉，小孩可以在广场边撒欢；接着路过飞狮许愿池和但丁广场，拍拍欧式街景。\n\n书店与夜景（收尾）：下午去钟书阁拍个“魔法书店”大片，一层有咖啡区能坐着休息。傍晚顺着海河亲水平台散步，看看北安桥夜景，轻松结束。\n\n核心省力Tips\n\n全程平路：意风区面积不大，核心景点都在步行区内，石板路虽然有点凹凸，但整体没有大台阶，对长辈和小孩很友好。\n\n代步工具：如果长辈实在走不动，路边可以租电动三轮车代步，价格几十到一百多不等，可以提前和车夫谈好路线和价格。\n\n错峰出行：建议早上9点半以后或当日较合适时段后再来，避开人流高峰，拍照也更好看，钟书阁也是9点半才开门。\n\n避坑与注意事项\n\n官方核实：部分故居或展览馆可能会有临时的闭馆维护或活动调整，出发前建议稍微查一下官方公众号的最新公告。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "意大利风情旅游区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:18:12.658Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+          "高德地图 天津意大利风情旅游区：https://www.amap.com/place/B00160F6ZS"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 意大利风情旅游区 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "意大利风情旅游区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/tianjin154/110319.html?poiType=3&scene=online",
+        "width": 1920,
+        "height": 1281
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_3789e9f48a",
+      "targetId": "",
+      "id": "manual_tianjin_16684229",
+      "name": "西开教堂",
+      "city": "天津",
+      "rating": 4.7,
+      "reviewsCount": "857条携程点评",
+      "image": "/assets/images/attractions/tianjin_16684229_verified.jpg",
+      "description": "西开教堂位于繁华的滨江道商业街的南端，始建于1917年，是天主教天津教区的主教堂。教堂建筑风格庄重大气，教堂内的雕塑也都繁复精美，另外弥撒和天主教节日的活动对外开放，可以参与其中，感受浓厚的宗教氛围。",
+      "intro": "西开教堂位于繁华的滨江道商业街的南端，始建于1917年，是天主教天津教区的主教堂。教堂建筑风格庄重大气，教堂内的雕塑也都繁复精美，另外弥撒和天主教节日的活动对外开放，可以参与其中，感受浓厚的宗教氛围。",
+      "level": "热门景点",
+      "category": "人文历史景点 / 宗教建筑",
+      "tags": [
+        "人文历史景点 / 宗教建筑",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市和平区西宁道13号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q2598346 实体页",
+          "url": "https://www.wikidata.org/wiki/Q2598346"
+        }
+      ],
+      "routes": [
+        {
+          "title": "教堂内部核心参观",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正门台阶拍全景",
+            "进入主堂观穹顶与彩绘玻璃",
+            "沿长椅拍拱顶纵深感",
+            "侧面矮墙拍三穹顶"
+          ],
+          "duration": "半天",
+          "walking": "约200米",
+          "physical": 1,
+          "tips": [
+            "弥撒期间暂停参观，建议避开",
+            "较合适时段阳光透过彩窗光影最美",
+            "衣着得体，不穿吊带短裤拖鞋，内部轻声慢步"
+          ],
+          "sourceTitle": "携程旅行 西开教堂 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online"
+        },
+        {
+          "title": "周边商圈Citywalk",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西开教堂",
+            "滨江道步行街",
+            "瓷房子",
+            "五大道风情旅游区"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 3,
+          "tips": [
+            "全程步行加骑行，适合半天时间",
+            "周边景点距离近，骑单车最方便",
+            "晚上瓷房子亮灯后拍照好看"
+          ],
+          "sourceTitle": "携程旅行 西开教堂 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁1号线或3号线营口道站B1口，步行约300米；公交多路停靠滨江道站或贵州路站；自驾建议停国际商场停车场，周边主干道禁停",
+        "internal_arrive": "导航至东南1门或正门，免费无需预约，过安检即可进入；弥撒时段入口可能调整，以现场引导为准",
+        "internal_traffic": "教堂内部为十字形步行空间，无内部交通工具，沿主通道参观即可",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐津湾广场或滨江道附近，交通便利、美食集中，距教堂步行可达",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议上午前往，避开人流高峰，教堂内平路无台阶，休息区较多；",
+        "children": "长辈建议上午前往，避开人流高峰，教堂内平路无台阶，休息区较多；儿童可感受彩绘玻璃与建筑童话感，门口滨江道可买小吃，注意保持安静不奔跑\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "西开教堂铭牌.jpg",
+        "author": "Xrdtj",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%BC%80%E6%95%99%E5%A0%82%E9%93%AD%E7%89%8C.jpg",
+        "width": 2592,
+        "height": 1936
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线或3号线营口道站B1口，步行约300米；公交多路停靠滨江道站或贵州路站；自驾建议停国际商场停车场，周边主干道禁停",
+          "internal_arrive": "导航至东南1门或正门，免费无需预约，过安检即可进入；弥撒时段入口可能调整，以现场引导为准",
+          "internal_traffic": "教堂内部为十字形步行空间，无内部交通工具，沿主通道参观即可",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐津湾广场或滨江道附近，交通便利、美食集中，距教堂步行可达",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议上午前往，避开人流高峰，教堂内平路无台阶，休息区较多；",
+          "children": "长辈建议上午前往，避开人流高峰，教堂内平路无台阶，休息区较多；儿童可感受彩绘玻璃与建筑童话感，门口滨江道可买小吃，注意保持安静不奔跑\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "教堂内部核心参观",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正门台阶拍全景",
+            "进入主堂观穹顶与彩绘玻璃",
+            "沿长椅拍拱顶纵深感",
+            "侧面矮墙拍三穹顶"
+          ],
+          "duration": "半天",
+          "walking": "约200米",
+          "physical": 1,
+          "tips": [
+            "弥撒期间暂停参观，建议避开",
+            "较合适时段阳光透过彩窗光影最美",
+            "衣着得体，不穿吊带短裤拖鞋，内部轻声慢步"
+          ],
+          "sourceTitle": "携程旅行 西开教堂 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "周边商圈Citywalk",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西开教堂",
+            "滨江道步行街",
+            "瓷房子",
+            "五大道风情旅游区"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 3,
+          "tips": [
+            "全程步行加骑行，适合半天时间",
+            "周边景点距离近，骑单车最方便",
+            "晚上瓷房子亮灯后拍照好看"
+          ],
+          "sourceTitle": "携程旅行 西开教堂 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结44篇笔记生成\n\n带长辈和小孩去天津玩，最怕的就是“特种兵式暴走”，这条以西开教堂为核心的半日省力路线，全程平路为主、节奏舒缓，刚好能让长辈和小孩轻松感受天津的欧式风情。\n\n上午：静谧教堂与商圈漫步\n\n滨江道步行街：从教堂出来直接步入步行街，全程平路，推轮椅或带小孩走路都很方便。可以在这里稍作休息，买点特色小吃垫垫肚子，不用刻意逛大商场，感受氛围即可。\n\n下午：五大道坐马车看洋楼\n\n五大道风情区：从滨江道打车或坐短途公交前往五大道，拒绝走路暴走！直接带长辈去民园广场坐复古马车，大概30-40分钟，车上有讲解，能轻松看完重庆道、大理道等精华洋楼，长辈听着故事非常惬意。\n\n民园广场：下车后在广场的阶梯草坪坐一会儿，吹吹风看看人，不用强求逛完所有故居，保持悠闲节奏最重要。\n\n傍晚：瓷房子外拍与海河夜景\n\n瓷房子：傍晚前往瓷房子，这座用无数古瓷片镶嵌的法式洋楼在亮灯后非常震撼。建议只在外面拍照打卡即可，不用买票进去，既省力又能拍出大片感。\n\n津湾广场与海河：晚上沿着海河走到津湾广场，这里从解放桥到津湾广场全是平路，没台阶，推轮椅也方便。看看夜景、吹吹海风，长辈和小孩都会觉得非常舒服。\n\n省力与避坑提醒\n\n交通衔接：西开教堂到五大道、瓷房子距离不远，但带长辈建议直接打车或骑共享单车，少走冤枉路。\n\n穿着建议：虽然路线省力，但还是建议给长辈和小孩穿舒适的平底鞋。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "西开教堂完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:18:31.161Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online",
+          "Wikidata Q2598346 实体页：https://www.wikidata.org/wiki/Q2598346"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 西开教堂 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/10630.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西开教堂铭牌.jpg",
+        "author": "Xrdtj",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%BC%80%E6%95%99%E5%A0%82%E9%93%AD%E7%89%8C.jpg",
+        "width": 2592,
+        "height": 1936
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_9a28077514",
+      "targetId": "",
+      "id": "manual_tianjin_638d78ef",
+      "name": "津湾广场",
+      "city": "天津",
+      "rating": 4.7,
+      "reviewsCount": "347条携程点评",
+      "image": "/assets/images/attractions/tianjin_638d78ef_verified.jpg",
+      "description": "津湾广场于天津市中心，火车站对面，正好是海河边的一个河湾处。这里也是天津市区繁华的地带之一，因此这里便成为了欣赏天津城市景观好的去处。",
+      "intro": "津湾广场于天津市中心，火车站对面，正好是海河边的一个河湾处。这里也是天津市区繁华的地带之一，因此这里便成为了欣赏天津城市景观好的去处。",
+      "level": "热门景点",
+      "category": "城市广场/海河夜景/欧式建筑群",
+      "tags": [
+        "城市广场/海河夜景/欧式建筑群",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市和平区滨江道1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q10381230 实体页",
+          "url": "https://www.wikidata.org/wiki/Q10381230"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典夜景打卡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场亲水平台",
+            "解放桥",
+            "津湾大剧院",
+            "国图津湾文创空间"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "建议在官方当日建议时段-官方当日建议时段蓝调时刻到达，此时天空深蓝且建筑灯光刚亮，拍照最出片",
+            "22点左右灯光渐灭，建议早点前往"
+          ],
+          "sourceTitle": "携程旅行 津湾广场 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online"
+        },
+        {
+          "title": "海河休闲省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场D口",
+            "海河亲水步道",
+            "解放北路金融街",
+            "天津站前广场"
+          ],
+          "duration": "半天",
+          "walking": "约1公里",
+          "physical": 2,
+          "tips": [
+            "天津站前广场是看对岸灯光秀的最佳点位，人比解放桥少很多",
+            "沿河步道平坦，适合推车或慢走"
+          ],
+          "sourceTitle": "携程旅行 津湾广场 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁3/9号线津湾广场站D口出站即达；自驾可停嘉里汇商场或津湾广场地下停车场，河边禁停",
+        "internal_arrive": "推荐从地铁3号线津湾广场站D口或C口出站，距离广场最近；若从天津站过来，可往南4出站口方向走，步行过解放桥约5分钟",
+        "internal_traffic": "广场及周边为步行区域，建议结合共享单车沿解放北路或海河步道骑行游览",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐津湾广场或滨江道附近，如宜必思酒店（距地铁D口极近）、漫心酒店（原洋行旧址，风格独特）、喜来登酒店（设施新，近直通车上车点）",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议走海河休闲线，沿河步道平坦不费腿，累了可坐路边椅子休息，\n\n活动",
+        "children": "长辈建议走海河休闲线，沿河步道平坦不费腿，累了可坐路边椅子休息，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "津湾广场 20190906 184335 Richtone(HDR).jpg",
+        "author": "David290",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B4%A5%E6%B9%BE%E5%B9%BF%E5%9C%BA_20190906_184335_Richtone(HDR).jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁3/9号线津湾广场站D口出站即达；自驾可停嘉里汇商场或津湾广场地下停车场，河边禁停",
+          "internal_arrive": "推荐从地铁3号线津湾广场站D口或C口出站，距离广场最近；若从天津站过来，可往南4出站口方向走，步行过解放桥约5分钟",
+          "internal_traffic": "广场及周边为步行区域，建议结合共享单车沿解放北路或海河步道骑行游览",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐津湾广场或滨江道附近，如宜必思酒店（距地铁D口极近）、漫心酒店（原洋行旧址，风格独特）、喜来登酒店（设施新，近直通车上车点）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议走海河休闲线，沿河步道平坦不费腿，累了可坐路边椅子休息，\n\n活动",
+          "children": "长辈建议走海河休闲线，沿河步道平坦不费腿，累了可坐路边椅子休息，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典夜景打卡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场亲水平台",
+            "解放桥",
+            "津湾大剧院",
+            "国图津湾文创空间"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "建议在官方当日建议时段-官方当日建议时段蓝调时刻到达，此时天空深蓝且建筑灯光刚亮，拍照最出片",
+            "22点左右灯光渐灭，建议早点前往"
+          ],
+          "sourceTitle": "携程旅行 津湾广场 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "海河休闲省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾广场D口",
+            "海河亲水步道",
+            "解放北路金融街",
+            "天津站前广场"
+          ],
+          "duration": "半天",
+          "walking": "约1公里",
+          "physical": 2,
+          "tips": [
+            "天津站前广场是看对岸灯光秀的最佳点位，人比解放桥少很多",
+            "沿河步道平坦，适合推车或慢走"
+          ],
+          "sourceTitle": "携程旅行 津湾广场 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结49篇笔记生成\n\n带长辈和小孩逛津湾广场，主打一个“不费腿、不赶路、随时能歇”，海河边吹吹风看看夜景就特别舒服。\n\n为你整理了一条全程平缓、室内外结合的省力路线，大概需要2-3小时，直接照着走就行：\n\n下午时段：地标打卡与室内休整\n\n世纪钟与解放桥：从地铁天津站或津湾广场站出来，先逛世纪钟广场。这里全是平地，非常适合推婴儿车或让老人慢慢走。接着步行至解放桥，站在桥上看看海河和游船，给长辈和小孩讲讲百年铁桥的故事，视野开阔也不累。\n\n国图津湾文创空间：如果天气太热、太冷或者下雨，直接拐进津湾广场6号楼的国图津湾文创空间。里面有一整层超大的儿童阅读区，绘本多、有软垫和小沙发，老人也能在二楼安静坐坐。空间明亮温馨，还能逛逛天津特色文创，是完美的“中途避难所”。\n\n傍晚时段：海河漫步与夜景欣赏\n\n津湾广场亲水平台：傍晚时分（蓝调时刻），沿着海河南岸的亲水平台慢慢走。这里路面平缓，没有台阶，一路都能拍到津湾广场欧式建筑群和河面的倒影。沿途到处都是椅子石墩，走累了随时坐下吹吹晚风。\n\n海河游船（可选）：如果长辈小孩精力还够，可以去津湾码头坐海河游船。坐在船舱里全程空调，40分钟左右看两岸灯光，不用自己走路，非常省心。（注：游船受季节和天气影响较大，出发前建议提前确认当天是否运营）。\n\n省力与避坑小贴士\n\n交通建议：强烈建议坐地铁，避免堵车和找停车位的烦恼。如果天气好，也可以骑带儿童座椅的共享单车，从津湾广场出发沿河骑行很惬意。\n\n无障碍提示：地铁津湾广场站B口有无障碍装置，但可能需要工作人员帮忙拎一下婴儿车，建议提前联系站内工作人员协助。\n\n防蚊与安全：海河边夏天蚊子比较多，记得带防蚊液；晚上看夜景时注意远离河边栏杆，安全第一。\n\n活动确认：津湾广场偶尔会有市集或露天电影等活动，具体场次和区域开放情况建议出发前关注一下“天津津湾广场”的官方动态，避免跑空。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "津湾广场完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:19:41.871Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online",
+          "Wikidata Q10381230 实体页：https://www.wikidata.org/wiki/Q10381230"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 津湾广场 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/145547.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "津湾广场 20190906 184335 Richtone(HDR).jpg",
+        "author": "David290",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B4%A5%E6%B9%BE%E5%B9%BF%E5%9C%BA_20190906_184335_Richtone(HDR).jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_104d1fa471",
+      "targetId": "",
+      "id": "manual_tianjin_e607b2fc",
+      "name": "解放桥",
+      "city": "天津",
+      "rating": 4.8,
+      "reviewsCount": "328条携程点评",
+      "image": "/assets/images/attractions/tianjin_e607b2fc_verified.jpg",
+      "description": "解放桥又称万国桥，建于1927年，天津市的标志性建筑之一，也是海河跨桥中一座可开启的桥。解放桥连接着河北区的世纪钟广场与和平区的解放北路，位于天津火车站与解放北路之间的海河上，是一座全钢结构可开启的桥梁。",
+      "intro": "解放桥又称万国桥，建于1927年，天津市的标志性建筑之一，也是海河跨桥中一座可开启的桥。解放桥连接着河北区的世纪钟广场与和平区的解放北路，位于天津火车站与解放北路之间的海河上，是一座全钢结构可开启的桥梁。",
+      "level": "热门景点",
+      "category": "城市地标/历史桥梁/观景打卡",
+      "tags": [
+        "城市地标/历史桥梁/观景打卡",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市和平区解放北路与张自忠路交口",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q1134699 实体页",
+          "url": "https://www.wikidata.org/wiki/Q1134699"
+        },
+        {
+          "title": "高德地图 解放桥",
+          "url": "https://www.amap.com/place/B0FFI8KFI4",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典夜景漫步线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "世纪钟",
+            "津湾广场",
+            "解放桥",
+            "北安桥"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "傍晚官方当日建议时段左右亮灯，蓝调时刻最出片",
+            "周末官方当日建议时段左右可能开桥，以官方当日公告为准"
+          ],
+          "sourceTitle": "携程旅行 解放桥 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online"
+        },
+        {
+          "title": "海河游船省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾码头",
+            "海河游船",
+            "解放桥桥洞",
+            "古文化街码头",
+            "原路返回"
+          ],
+          "duration": "半天",
+          "walking": "约0.5公里",
+          "physical": 1,
+          "tips": [
+            "游船可躺平看两岸桥梁与建筑",
+            "提前在官方小程序实名购票，首选日落航次"
+          ],
+          "sourceTitle": "携程旅行 解放桥 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁3/9号线津湾广场站D口出站即达；或地铁2/3/9号线天津站步行过桥约5分钟",
+        "internal_arrive": "从天津站南广场出站，直走即可看到世纪钟与解放桥，动线最顺",
+        "internal_traffic": "景点集中，建议步行+共享单车；带长辈可乘坐景区三蹦子或海河游船",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "天津站附近或五大道、小白楼区域，出行便利且靠近核心景点",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议乘坐三蹦子或海河游船减少步行，避免暴走；",
+        "children": "长辈建议乘坐三蹦子或海河游船减少步行，避免暴走；儿童推荐海河游船和民园广场大草坪，可坐观光巴士随上随下\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "解放桥 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFI8KFI4",
+        "width": 1536,
+        "height": 2048
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁3/9号线津湾广场站D口出站即达；或地铁2/3/9号线天津站步行过桥约5分钟",
+          "internal_arrive": "从天津站南广场出站，直走即可看到世纪钟与解放桥，动线最顺",
+          "internal_traffic": "景点集中，建议步行+共享单车；带长辈可乘坐景区三蹦子或海河游船",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "天津站附近或五大道、小白楼区域，出行便利且靠近核心景点",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议乘坐三蹦子或海河游船减少步行，避免暴走；",
+          "children": "长辈建议乘坐三蹦子或海河游船减少步行，避免暴走；儿童推荐海河游船和民园广场大草坪，可坐观光巴士随上随下\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典夜景漫步线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "世纪钟",
+            "津湾广场",
+            "解放桥",
+            "北安桥"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "傍晚官方当日建议时段左右亮灯，蓝调时刻最出片",
+            "周末官方当日建议时段左右可能开桥，以官方当日公告为准"
+          ],
+          "sourceTitle": "携程旅行 解放桥 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "海河游船省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "津湾码头",
+            "海河游船",
+            "解放桥桥洞",
+            "古文化街码头",
+            "原路返回"
+          ],
+          "duration": "半天",
+          "walking": "约0.5公里",
+          "physical": 1,
+          "tips": [
+            "游船可躺平看两岸桥梁与建筑",
+            "提前在官方小程序实名购票，首选日落航次"
+          ],
+          "sourceTitle": "携程旅行 解放桥 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结83篇笔记生成\n\n路线概览与交通\n\n路线顺序：世纪钟广场 ➡️ 解放桥 ➡️ 津湾广场 ➡️ 海河游船（可选）。\n\n交通建议：全程地铁+步行+游船，无需打车。地铁3/9号线到津湾广场站，或2号线到天津站，出站即达。\n\n详细行程安排\n\n世纪钟广场：从天津站或津湾广场地铁站出来，步行几分钟就能到。这里有一座巨大的机械齿轮钟，是天津的地标之一。广场地面平坦，长辈可以坐在长椅上休息，小孩也能在开阔地跑动，非常适合做第一站的轻松打卡。\n\n解放桥漫步：从世纪钟广场沿着平路走到解放桥。这座百年铁桥是天津的经典地标，钢铁结构很有工业复古感。带长辈小孩不需要走完全程，在桥头或桥中间拍拍照、吹吹海河的风就足够了。如果是周末或节假日晚上，还有机会看到震撼的“开桥”仪式（具体开桥时间建议提前查官方公告）。\n\n津湾广场休闲：过桥后就是津湾广场，这里的欧式建筑群在晚上亮灯后非常出片。广场上有亲水平台和多个休息区，长辈可以坐着看海河倒影，小孩可以在安全区域活动。广场内还有书店和文创区，如果长辈走累了，也可以进去逛逛歇脚。\n\n海河游船（省力核心）：这是带老小最推荐的环节！在津湾码头直接登船，不用自己走路，舒舒服服坐在船舱里或二层甲板上，就能一路看完海河两岸的桥梁和万国建筑群。船程平稳，空调充足，看累了还能进舱喝水休息，绝对是0负担的无痛观光。\n\n省力与避坑提醒\n\n防蚊防摔：海河边夏天蚊子多，一定要给长辈和小孩带好防蚊液；河边路面夜间可能较滑，提醒长辈注意安全，远离河边边缘。\n\n开桥时间：解放桥偶尔会有开桥表演，但并非每天都有，建议出发前通过官方渠道查询当天的具体安排，避免跑空。\n\n共享单车：如果长辈体力尚可，想多逛几个点，可以在景点之间骑共享单车，天津地势平坦，骑行很轻松，但要注意不要骑到非机动车禁行区。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "解放桥完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:20:00.292Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online",
+          "Wikidata Q1134699 实体页：https://www.wikidata.org/wiki/Q1134699",
+          "高德地图 解放桥：https://www.amap.com/place/B0FFI8KFI4"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 解放桥 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/1556051.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "解放桥 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFI8KFI4",
+        "width": 1536,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_c034057aa8",
+      "targetId": "",
+      "id": "manual_tianjin_38d50e8d",
+      "name": "静园",
+      "city": "天津",
+      "rating": 4.7,
+      "reviewsCount": "4008条携程点评",
+      "image": "/assets/images/attractions/tianjin_38d50e8d_verified.jpg",
+      "description": "静园，始建于1921年，初名乾园，为北洋政府驻日公使陆宗舆的私宅。1929年到1931年，末代皇帝溥仪携皇后婉容，淑妃文绣于此居住。",
+      "intro": "静园，始建于1921年，初名乾园，为北洋政府驻日公使陆宗舆的私宅。1929年到1931年，末代皇帝溥仪携皇后婉容，淑妃文绣于此居住。",
+      "level": "热门景点",
+      "category": "历史风貌建筑/名人故居",
+      "tags": [
+        "历史风貌建筑/名人故居",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市和平区鞍山道70号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q15926315 实体页",
+          "url": "https://www.wikidata.org/wiki/Q15926315"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典游览路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "主楼",
+            "游廊",
+            "静园修复展览馆",
+            "爱新觉罗溥仪展览馆",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "建议租用语音讲解或跟随人工团听故事细节",
+            "拍照推荐走到喷水池前拍主楼全景，楼前角度较受限"
+          ],
+          "sourceTitle": "携程旅行 静园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online"
+        },
+        {
+          "title": "深度历史路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "爱新觉罗溥仪展览馆",
+            "主楼",
+            "西跨院",
+            "静园修复展览馆",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "先看展览馆了解生平再参观故居更有代入感",
+            "可参与实景解谜游戏《遗踪》增加互动体验，耗时约2至3小时"
+          ],
+          "sourceTitle": "携程旅行 静园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁1号线鞍山道站A或D口出，步行约200至500米",
+        "internal_arrive": "从正门进入，进门右手边为溥仪展览馆，左手边为主楼和花园",
+        "internal_traffic": "园区面积较小，全程步行即可，无内部交通工具",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在和平区五大道或滨江道附近，距离静园步行或骑行可达，周边餐饮和交通便利",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "需注意主楼为砖木结构楼梯，上下楼需慢行，建议租借讲解器减少走动询问；",
+        "children": "长辈需注意主楼为砖木结构楼梯，上下楼需慢行，建议租借讲解器减少走动询问；儿童可通过实景解谜游戏增加参与感，园内禁止携带食品但设有文创店可休息\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "静园.jpg",
+        "author": "TJArchi-Studio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%9D%99%E5%9B%AD.jpg",
+        "width": 3840,
+        "height": 2571
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线鞍山道站A或D口出，步行约200至500米",
+          "internal_arrive": "从正门进入，进门右手边为溥仪展览馆，左手边为主楼和花园",
+          "internal_traffic": "园区面积较小，全程步行即可，无内部交通工具",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在和平区五大道或滨江道附近，距离静园步行或骑行可达，周边餐饮和交通便利",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "需注意主楼为砖木结构楼梯，上下楼需慢行，建议租借讲解器减少走动询问；",
+          "children": "长辈需注意主楼为砖木结构楼梯，上下楼需慢行，建议租借讲解器减少走动询问；儿童可通过实景解谜游戏增加参与感，园内禁止携带食品但设有文创店可休息\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典游览路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "主楼",
+            "游廊",
+            "静园修复展览馆",
+            "爱新觉罗溥仪展览馆",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "建议租用语音讲解或跟随人工团听故事细节",
+            "拍照推荐走到喷水池前拍主楼全景，楼前角度较受限"
+          ],
+          "sourceTitle": "携程旅行 静园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "深度历史路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "爱新觉罗溥仪展览馆",
+            "主楼",
+            "西跨院",
+            "静园修复展览馆",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "先看展览馆了解生平再参观故居更有代入感",
+            "可参与实景解谜游戏《遗踪》增加互动体验，耗时约2至3小时"
+          ],
+          "sourceTitle": "携程旅行 静园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结29篇笔记生成\n\n带长辈和小孩逛静园确实需要精打细算体力，好在静园本身面积不大、全程平路，只要路线规划对，1小时左右就能轻松逛完不费腿。\n\n省力游览路线\n\n入口 → 溥仪展览馆（放映厅） → 主楼（一楼议事厅/餐厅/卧室 → 二楼书房/寝室） → 游廊 → 静园修复展览馆 → 文创店 → 出口\n\n各点位省力详解\n\n入口与溥仪展览馆：进门右手边的平房是溥仪简介和放映厅，这里有视频循环播放，长辈和小孩可以坐着看完纪录片，对历史背景有个初步了解，既省力又能快速进入状态。\n\n主楼（核心区域）：正对大门的是三层西班牙式加日式风格主楼。一楼参观议事厅、花厅、大餐厅、小餐厅以及文绣卧室；二楼参观祠堂、溥仪和婉容的书房与寝室。主楼内都是平路，但楼梯相对较窄，建议长辈慢慢走，小孩注意看护。三楼目前不开放，不用往上找路。\n\n游廊与修复展览馆：从主楼出来经过游廊，前往静园修复展览馆。这里介绍了静园从大杂院恢复原貌的过程，有复原前后的图片对比，走平路即可，适合慢慢看。\n\n文创店与出口：最后路过文创店可以盖个章留念，然后从出口离开，全程不走回头路。\n\n长辈小孩专属贴士\n\n无障碍与推车：园区内基本为平路，婴儿推车可以顺畅通行；但主楼内部楼梯较窄，如果长辈腿脚不便，建议在楼下主要房间参观即可，不用强求上二楼。\n\n防暑与休息：夏季天津较热，但静园室内场馆都有空调，体感比较舒适。园内有喷水池和角落长椅，走累了随时可以坐下休息。\n\n联票与串联：静园和隔壁的张园距离非常近，可以在售票窗口购买联票，比单独买更划算。如果长辈体力允许，逛完静园后可以顺路去张园看一场《津门往事》沉浸演出（需提前确认当天场次）。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "静园完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:20:18.855Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online",
+          "Wikidata Q15926315 实体页：https://www.wikidata.org/wiki/Q15926315"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 静园 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/10672.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "静园.jpg",
+        "author": "TJArchi-Studio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%9D%99%E5%9B%AD.jpg",
+        "width": 3840,
+        "height": 2571
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_bbd5ae1542",
+      "targetId": "",
+      "id": "manual_tianjin_da2ee596",
+      "name": "李叔同故居纪念馆",
+      "city": "天津",
+      "rating": 4.7,
+      "reviewsCount": "209条携程点评",
+      "image": "/assets/images/attractions/tianjin_da2ee596_verified.jpg",
+      "description": "李叔同（故居）纪念馆是为了纪念中国近代文化先驱、一代佛学宗师李叔同（弘一大师）而修建的一座专题性纪念馆，位于天津市河北区海河东路与滨海道交口处，天津市文物保护单位，3A级景区，总占地面积4000平方米，分为园林和故居两部分，是我市一处独具特色的文博场馆。 园林占地面积2600平方米，由太湖石假山、人工湖、纪念亭和凉亭等组成。",
+      "intro": "李叔同（故居）纪念馆是为了纪念中国近代文化先驱、一代佛学宗师李叔同（弘一大师）而修建的一座专题性纪念馆，位于天津市河北区海河东路与滨海道交口处，天津市文物保护单位，3A级景区，总占地面积4000平方米，分为园林和故居两部分，是我市一处独具特色的文博场馆。 园林占地面积2600平方米，由太湖石假山、人工湖、纪念亭和凉亭等组成。",
+      "level": "热门景点",
+      "category": "人文历史纪念馆",
+      "tags": [
+        "人文历史纪念馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市河北区粮店后街60号院内(海河东路与滨海道交口)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "高德地图 李叔同故居纪念馆",
+          "url": "https://www.amap.com/place/B001615ZK6",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典人文全景线（适合首次参观）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "纪念亭",
+            "进士第",
+            "桐达钱庄",
+            "存朴堂",
+            "起居室",
+            "洋书房",
+            "中书房",
+            "意园"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "严格按展厅时间线顺序游览，完整了解大师生平",
+            "馆内8个展室均有空调，夏季避暑舒适"
+          ],
+          "sourceTitle": "携程旅行 李叔同故居纪念馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online"
+        },
+        {
+          "title": "园林静心休闲线（适合喜欢拍照散步）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "园林入口",
+            "太湖石假山",
+            "人工湖",
+            "长亭",
+            "纪念亭",
+            "故居回廊",
+            "书法碑刻"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 1,
+          "tips": [
+            "雨后青石板路氛围感极佳，适合新中式穿搭拍照",
+            "园林清幽静谧，闹中取静"
+          ],
+          "sourceTitle": "携程旅行 李叔同故居纪念馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2号线建国道站步行可达，或4号线东南角站；自驾导航至\"天津市河北区海河东路与滨海道交口\"，附近有停车场",
+        "internal_arrive": "从海河东路正门进入，先逛园林区再进故居展区，动线最顺不绕路",
+        "internal_traffic": "景区全程平路无台阶，四组院落呈\"田\"字型格局，步行即可轻松串联所有展区",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在河北区或和平区海河沿岸，步行或骑行即可到达，方便串联意式风情区等周边景点",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "可重点参观纪念亭与8大展厅，\n\n活动",
+        "children": "长辈可重点参观纪念亭与8大展厅，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "李叔同故居纪念馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B001615ZK6",
+        "width": 1500,
+        "height": 2000
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线建国道站步行可达，或4号线东南角站；自驾导航至\"天津市河北区海河东路与滨海道交口\"，附近有停车场",
+          "internal_arrive": "从海河东路正门进入，先逛园林区再进故居展区，动线最顺不绕路",
+          "internal_traffic": "景区全程平路无台阶，四组院落呈\"田\"字型格局，步行即可轻松串联所有展区",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在河北区或和平区海河沿岸，步行或骑行即可到达，方便串联意式风情区等周边景点",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "可重点参观纪念亭与8大展厅，\n\n活动",
+          "children": "长辈可重点参观纪念亭与8大展厅，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典人文全景线（适合首次参观）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "纪念亭",
+            "进士第",
+            "桐达钱庄",
+            "存朴堂",
+            "起居室",
+            "洋书房",
+            "中书房",
+            "意园"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "严格按展厅时间线顺序游览，完整了解大师生平",
+            "馆内8个展室均有空调，夏季避暑舒适"
+          ],
+          "sourceTitle": "携程旅行 李叔同故居纪念馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "园林静心休闲线（适合喜欢拍照散步）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "园林入口",
+            "太湖石假山",
+            "人工湖",
+            "长亭",
+            "纪念亭",
+            "故居回廊",
+            "书法碑刻"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 1,
+          "tips": [
+            "雨后青石板路氛围感极佳，适合新中式穿搭拍照",
+            "园林清幽静谧，闹中取静"
+          ],
+          "sourceTitle": "携程旅行 李叔同故居纪念馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结29篇笔记生成\n\n带长辈和小孩逛李叔同故居纪念馆，主打一个“少走路、多歇脚、不绕弯”，这条路线把园林和故居都串起来了，全程平缓好走，很适合全家慢慢逛。\n\n园林休闲区（平缓散步，约30分钟）\n\n入园漫步：从大门进入后，先走园林区。这里地势平坦，有太湖石假山、人工湖和长廊，长辈可以慢慢走，小孩也能在空旷处看看风景。\n\n纪念亭静思：走到弘一大师纪念亭，亭中有李叔同铜像，背后影壁刻着“华枝春满，天心月圆”，适合在这里拍张全家福，顺便歇脚。\n\n故居展厅区（室内参观，约60分钟）\n\n四进院落与展厅：穿过园林进入故居主体，这里是“田”字形四合院格局，全程室内或连廊，不用晒太阳。建议顺着8个主题展厅的顺序走，涵盖生平、艺术和佛学成就，有空调吹，长辈小孩都不容易累。\n\n重点复原场景：必看桐达钱庄、洋书房和意园。洋书房是中西混搭风格，意园则是少年李叔同读书的地方，环境清幽，很适合慢慢看。\n\n文创与收尾（轻松互动，约15分钟）\n\n盖章与休息：参观完最后走到文创店，可以买点明信片盖纪念章（建议自带本子）。店里能坐下休息，长辈也能喝口水缓一缓。\n\n偶遇小猫咪：故居里常有几只猫咪晒太阳，长辈小孩都喜欢，但记得提醒孩子不要逗弄或喂食，静静拍照就好。\n\n省力与避坑提醒\n\n沉浸式项目：如果晚上想体验“叔同之夜”沉浸式项目，需要单独购票，且适合大一点的孩子，长辈可根据体力自行决定。\n\n交通建议：老城区道路较窄，自驾停车可能不太方便，带长辈小孩更推荐打车或坐地铁前往。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "李叔同故居纪念馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:20:37.338Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online",
+          "高德地图 李叔同故居纪念馆：https://www.amap.com/place/B001615ZK6"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 李叔同故居纪念馆 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/10650.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "李叔同故居纪念馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B001615ZK6",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_83b82dd2ea",
+      "targetId": "",
+      "id": "manual_tianjin_2748fba2",
+      "name": "天津博物馆",
+      "city": "天津",
+      "rating": 4.6,
+      "reviewsCount": "520条携程点评",
+      "image": "/assets/images/attractions/tianjin_2748fba2_verified.jpg",
+      "description": "天津博物馆位于河西区，是天津市主要的综合博物馆，也是了解天津的去处。馆内展品丰富，玉器、瓷器和书画收藏，雪景寒林图、黄玉猪龙、隋白釉双龙柄联腹传瓶、西周太保鼎等文物都可以在这里看到。",
+      "intro": "天津博物馆位于河西区，是天津市主要的综合博物馆，也是了解天津的去处。馆内展品丰富，玉器、瓷器和书画收藏，雪景寒林图、黄玉猪龙、隋白釉双龙柄联腹传瓶、西周太保鼎等文物都可以在这里看到。",
+      "level": "博物馆",
+      "category": "博物馆",
+      "tags": [
+        "博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市河西区平江道62号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q936345 实体页",
+          "url": "https://www.wikidata.org/wiki/Q936345"
+        },
+        {
+          "title": "高德地图 天津博物馆",
+          "url": "https://www.amap.com/place/B0016160NE",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "精华省力线（自上而下）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "五楼专题展厅",
+            "二楼耀世奇珍",
+            "三楼中华百年看天津",
+            "一楼天津人文的由来"
+          ],
+          "duration": "半天",
+          "walking": "约2至2.5小时",
+          "physical": 2,
+          "tips": [
+            "进门直接坐直梯冲5楼，从上往下逛不走回头路",
+            "二楼镇馆之宝全集中，建议重点细看"
+          ],
+          "sourceTitle": "携程旅行 天津博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online"
+        },
+        {
+          "title": "亲子互动线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "三楼中华百年看天津",
+            "二楼耀世奇珍",
+            "一楼天津人文的由来",
+            "文创区"
+          ],
+          "duration": "半天",
+          "walking": "约2至3小时",
+          "physical": 2,
+          "tips": [
+            "三楼民国街景复原孩子爱看",
+            "一楼有互动解谜游戏可参与",
+            "文创区可免费盖章"
+          ],
+          "sourceTitle": "携程旅行 天津博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁5/6号线文化中心站K口出步行5分钟；公交655/868路直达；自驾可停文化中心停车场",
+        "internal_arrive": "进门右手边有免费超大存包处，28寸行李箱也能存，建议先寄存再逛",
+        "internal_traffic": "馆内设自动扶梯和直梯，每层均可过轮椅和推车，全程无障碍",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住文化中心商圈或五大道附近，步行或骑车可达，周边餐饮购物方便",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "可租轮椅、\n\n活动",
+        "children": "长辈可租轮椅、\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津博物馆2.jpg",
+        "author": "Tyngrwey",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%8D%9A%E7%89%A9%E9%A6%862.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁5/6号线文化中心站K口出步行5分钟；公交655/868路直达；自驾可停文化中心停车场",
+          "internal_arrive": "进门右手边有免费超大存包处，28寸行李箱也能存，建议先寄存再逛",
+          "internal_traffic": "馆内设自动扶梯和直梯，每层均可过轮椅和推车，全程无障碍",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住文化中心商圈或五大道附近，步行或骑车可达，周边餐饮购物方便",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "可租轮椅、\n\n活动",
+          "children": "长辈可租轮椅、\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "精华省力线（自上而下）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "五楼专题展厅",
+            "二楼耀世奇珍",
+            "三楼中华百年看天津",
+            "一楼天津人文的由来"
+          ],
+          "duration": "半天",
+          "walking": "约2至2.5小时",
+          "physical": 2,
+          "tips": [
+            "进门直接坐直梯冲5楼，从上往下逛不走回头路",
+            "二楼镇馆之宝全集中，建议重点细看"
+          ],
+          "sourceTitle": "携程旅行 天津博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "亲子互动线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "三楼中华百年看天津",
+            "二楼耀世奇珍",
+            "一楼天津人文的由来",
+            "文创区"
+          ],
+          "duration": "半天",
+          "walking": "约2至3小时",
+          "physical": 2,
+          "tips": [
+            "三楼民国街景复原孩子爱看",
+            "一楼有互动解谜游戏可参与",
+            "文创区可免费盖章"
+          ],
+          "sourceTitle": "携程旅行 天津博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结47篇笔记生成\n\n带长辈和小孩逛博物馆，最讲究“少走路、多坐歇、抓精华”。天津博物馆的布局对“省力党”非常友好，全程电梯通达，不用爬楼。为你整理了一条从上往下逛、不走回头路的完整省力路线。\n\n核心省力路线（从上往下逛）\n\n建议进门后直接坐直梯冲最高层，然后逐层往下走，这样既符合文物逻辑，又能避免反复上下楼。全程预留 2.5-3 小时，节奏最舒服。\n\n5楼（专题精华区）：直奔聚赏珍玉（古代玉器陈列）和瓷都芳华（明清景德镇窑瓷器）。这里的玉器通透、瓷器精美，灯光柔和，长辈通常很喜欢，慢慢看约 1 小时。\n\n2楼（镇馆之宝核心区）：这是全馆最精华的耀世奇珍展厅！西周太保鼎、乾隆珐琅彩芍药雉鸡图玉壶春瓶、翡翠蝈蝈白菜等国宝全在这里。不用到处找，一个大厅全看完，约 1 小时。\n\n3楼（近代史互动区）：参观中华百年看天津。这里有老天津卫租界街景复原、大沽口大炮等场景，互动性较强，小朋友不会觉得枯燥，快速逛约 0.5 小时。\n\n1楼（起源与收尾）：看看《天津人文的由来》，了解天津从远古到明清的历史。逛完直接在一楼文创店盖章、买周边，然后从大厅出口离开，约 0.5 小时。\n\n长辈小孩专属省力细节\n\n注意事项\n\n拍照规范：馆内可以拍照，但请务必关闭闪光灯，以保护文物。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "天津博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:42:55.258Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online",
+          "Wikidata Q936345 实体页：https://www.wikidata.org/wiki/Q936345",
+          "高德地图 天津博物馆：https://www.amap.com/place/B0016160NE"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 天津博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/136271.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津博物馆2.jpg",
+        "author": "Tyngrwey",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%8D%9A%E7%89%A9%E9%A6%862.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_55498e10e1",
+      "targetId": "",
+      "id": "manual_tianjin_cba726",
+      "name": "天津自然博物馆",
+      "city": "天津",
+      "rating": 4.8,
+      "reviewsCount": "410条携程点评",
+      "image": "/assets/images/attractions/tianjin_cba726_verified.jpg",
+      "description": "天津自然博物馆在原北疆博物院基础上建立，是我国历史较长、藏品较丰富的地矿、生物学科类自然博物馆。博物馆里较有特色的藏品是各个时代的标本，共有38万件之多，涉及动物、植物、古生物、古人类、地质等多种学科，居全国同类博物馆前列。",
+      "intro": "天津自然博物馆在原北疆博物院基础上建立，是我国历史较长、藏品较丰富的地矿、生物学科类自然博物馆。博物馆里较有特色的藏品是各个时代的标本，共有38万件之多，涉及动物、植物、古生物、古人类、地质等多种学科，居全国同类博物馆前列。",
+      "level": "博物馆",
+      "category": "自然科学博物馆、亲子科普、室内游览",
+      "tags": [
+        "自然科学博物馆、亲子科普、室内游览",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "天津市河西区友谊路31号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q15903989 实体页",
+          "url": "https://www.wikidata.org/wiki/Q15903989"
+        },
+        {
+          "title": "高德地图 天津自然博物馆",
+          "url": "https://www.amap.com/place/B001607SDH",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "三层直达·家庭省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一层大厅（巨型恐龙骨架打卡）",
+            "乘坐直梯至三层（家园·生态展区，看七大洲动物标本）",
+            "乘坐直梯至二层（家园·生命展区，看生命演化与化石）",
+            "返回一层（自然探索中心或蝴蝶园互动）",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约2000米",
+          "physical": 2,
+          "tips": [
+            "建议早上9点开馆即入，此时人流最少；馆内冷气较足，建议给长辈和儿童带一件薄外套；一层服务台可免费领取纪念门票和集章册。"
+          ],
+          "sourceTitle": "携程旅行 天津自然博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "乘坐地铁5/6/11号线至文化中心站，步行约5分钟可达；自驾可停放文化中心地下停车场或西侧地面停车场，但周末车位较紧张，建议优先选择公共交通。",
+        "internal_arrive": "从一层正门大厅进入，进门右侧有存物柜可寄存背包和外套，左侧服务台可租赁婴儿车并领取导览图，轻装上阵更省力。",
+        "internal_traffic": "馆内共三层，各楼层之间主要依靠直梯和扶梯连接，推婴儿车或轮椅必须使用直梯，请勿乘坐扶梯。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议选择在河西区文化中心周边，或距离较近的和平区、南开区商圈，周边有万象城等购物中心，餐饮和住宿选择丰富，逛完馆后吃饭休息很方便。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "二层非洲展区设有休息长凳和播放区，可边看边坐；全程多利用直梯，避免频繁爬楼",
+        "children": "一层有收费的自然探索中心（淘气堡）和活体蝴蝶园，适合低幼宝宝放电；可租赁儿童专用的VR探究镜讲解器，比传统语音导览更有趣。"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津自然博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B001607SDH",
+        "width": 1647,
+        "height": 1647
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁5/6/11号线至文化中心站，步行约5分钟可达；自驾可停放文化中心地下停车场或西侧地面停车场，但周末车位较紧张，建议优先选择公共交通。",
+          "internal_arrive": "从一层正门大厅进入，进门右侧有存物柜可寄存背包和外套，左侧服务台可租赁婴儿车并领取导览图，轻装上阵更省力。",
+          "internal_traffic": "馆内共三层，各楼层之间主要依靠直梯和扶梯连接，推婴儿车或轮椅必须使用直梯，请勿乘坐扶梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议选择在河西区文化中心周边，或距离较近的和平区、南开区商圈，周边有万象城等购物中心，餐饮和住宿选择丰富，逛完馆后吃饭休息很方便。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "二层非洲展区设有休息长凳和播放区，可边看边坐；全程多利用直梯，避免频繁爬楼",
+          "children": "一层有收费的自然探索中心（淘气堡）和活体蝴蝶园，适合低幼宝宝放电；可租赁儿童专用的VR探究镜讲解器，比传统语音导览更有趣。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "三层直达·家庭省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一层大厅（巨型恐龙骨架打卡）",
+            "乘坐直梯至三层（家园·生态展区，看七大洲动物标本）",
+            "乘坐直梯至二层（家园·生命展区，看生命演化与化石）",
+            "返回一层（自然探索中心或蝴蝶园互动）",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约2000米",
+          "physical": 2,
+          "tips": [
+            "建议早上9点开馆即入，此时人流最少；馆内冷气较足，建议给长辈和儿童带一件薄外套；一层服务台可免费领取纪念门票和集章册。"
+          ],
+          "sourceTitle": "携程旅行 天津自然博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结33篇笔记生成\n\n带长辈和小孩逛博物馆，最讲究的就是“少走路、多休息、不绕路”。天津自然博物馆整体动线很清晰，只要规划好楼层顺序，完全能实现“坐着电梯上下，站着看展”的省力模式。\n\n核心省力游览路线\n\n推荐采用“先上后下”的逆人流路线，全程少爬楼梯，重点突出：\n\n直梯上3楼：进门直接找直梯上三楼，先看《家园·生态》展区。这里按七大洲生态场景复原，有非洲草原、极地冰原等，动物标本非常逼真，长辈看着不累，小孩也觉得像在看真实动物园。\n\n扶梯下2楼：看完三楼，顺着扶梯或直梯下到二楼《家园·生命》展区。这是馆内的精华，展示了38亿年的生命演化，有各类古生物化石和恐龙骨架。可以重点看寒武纪化石和哺乳动物区，互动装置也多，小孩能边玩边学。\n\n长辈小孩专属省力贴士\n\n婴儿车与直梯：馆内面积较大，建议带小宝宝的一定要租婴儿车（一楼服务台可登记租赁，具体以当天库存为准）。注意婴儿车只能走直梯，扶梯是不允许推车的，每层直梯位置离厕所不远，比较好找。\n\n休息与补给：馆内每层都有直饮水，可以自带水杯。一楼有恐龙餐厅提供简餐，但性价比一般，建议自带些小零食。逛累了可以在各层的休息区坐坐，或者去一楼的自然探索中心让孩子玩互动游戏。\n\n注意事项与周边联动\n\n周边联玩：博物馆位于天津文化中心内，和天津博物馆、天津美术馆挨得很近。如果长辈和小孩体力还好，可以安排半天时间一起逛逛，全程室内空调，不用来回奔波。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "天津自然博物馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:23:34.515Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online",
+          "Wikidata Q15903989 实体页：https://www.wikidata.org/wiki/Q15903989",
+          "高德地图 天津自然博物馆：https://www.amap.com/place/B001607SDH"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 天津自然博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/tianjin154/18011.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津自然博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B001607SDH",
+        "width": 1647,
+        "height": 1647
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_b587fb77ba",
+      "targetId": "",
+      "id": "manual_tianjin_ca536ee4",
+      "name": "滨海图书馆",
+      "city": "天津",
+      "rating": 4.1,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/tianjin_ca536ee4_verified.jpg",
+      "description": "滨海图书馆位于旭升路347号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "滨海图书馆位于旭升路347号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "公共文化场馆/网红打卡地",
+      "tags": [
+        "公共文化场馆/网红打卡地",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "旭升路347号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "amap_live_web_service",
+          "url": "https://www.amap.com/place/B0FFIAOAXK",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q109412428 实体页",
+          "url": "https://www.wikidata.org/wiki/Q109412428"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典打卡速览线（约1-1.5小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门安检入馆",
+            "一楼中庭拍“滨海之眼”全景",
+            "沿书山阶梯边走边拍",
+            "二楼侧廊俯拍打卡",
+            "结束离场"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "一楼书山高处书籍多为装饰布景，请勿攀爬抽拉",
+            "馆内严禁带单反相机和自拍杆，仅支持手机静音拍照"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        },
+        {
+          "title": "深度阅读文化线（约2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一楼亲子阅览区",
+            "二楼文学自习区",
+            "三楼社科阅览区及朗读亭",
+            "四楼蒋子龙文学馆及外文文献区",
+            "结束离场"
+          ],
+          "duration": "半天",
+          "walking": "约2000米",
+          "physical": 3,
+          "tips": [
+            "二至三楼为安静自习区，请保持轻声",
+            "四楼文学馆玻璃墙手稿设计很有真实感，适合慢慢欣赏"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁9号线市民广场站A5口出，打车或骑行约10分钟；自驾导航滨海文化中心地下停车场，车位充足",
+        "internal_arrive": "建议从滨海文化中心西门进入，地下通道直达图书馆，不用日晒走路；需携带身份证刷证安检入馆",
+        "internal_traffic": "馆内共6层（地上5层地下1层），各楼层之间主要依靠电梯和扶梯通行，书山阶梯可步行上下但需注意安全",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "周边有万达广场，餐饮购物方便；如需住宿可选择滨海新区市区酒店，或前往塘沽区选择更多样",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "狗不理包子",
+        "十八街麻花",
+        "锅巴菜",
+        "耳朵眼炸糕"
+      ],
+      "specialCare": {
+        "elderly": "建议多利用电梯，可在三楼朗读亭或四楼安静阅览区体验文化；",
+        "children": "长辈建议多利用电梯，可在三楼朗读亭或四楼安静阅览区体验文化；儿童建议直奔一楼亲子阅览区，有丰富绘本和小车造型书架，馆内配有母婴室和儿童马桶，但需提醒孩子14岁以下请勿攀爬书山台阶\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "天津滨海图书馆 矫正版.jpg",
+        "author": "CNHowey",
+        "provider": "Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E6%BB%A8%E6%B5%B7%E5%9B%BE%E4%B9%A6%E9%A6%86_%E7%9F%AB%E6%AD%A3%E7%89%88.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁9号线市民广场站A5口出，打车或骑行约10分钟；自驾导航滨海文化中心地下停车场，车位充足",
+          "internal_arrive": "建议从滨海文化中心西门进入，地下通道直达图书馆，不用日晒走路；需携带身份证刷证安检入馆",
+          "internal_traffic": "馆内共6层（地上5层地下1层），各楼层之间主要依靠电梯和扶梯通行，书山阶梯可步行上下但需注意安全",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "周边有万达广场，餐饮购物方便；如需住宿可选择滨海新区市区酒店，或前往塘沽区选择更多样",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "狗不理包子",
+          "十八街麻花",
+          "锅巴菜",
+          "耳朵眼炸糕"
+        ],
+        "special_care": {
+          "elderly": "建议多利用电梯，可在三楼朗读亭或四楼安静阅览区体验文化；",
+          "children": "长辈建议多利用电梯，可在三楼朗读亭或四楼安静阅览区体验文化；儿童建议直奔一楼亲子阅览区，有丰富绘本和小车造型书架，馆内配有母婴室和儿童马桶，但需提醒孩子14岁以下请勿攀爬书山台阶\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典打卡速览线（约1-1.5小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门安检入馆",
+            "一楼中庭拍“滨海之眼”全景",
+            "沿书山阶梯边走边拍",
+            "二楼侧廊俯拍打卡",
+            "结束离场"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "一楼书山高处书籍多为装饰布景，请勿攀爬抽拉",
+            "馆内严禁带单反相机和自拍杆，仅支持手机静音拍照"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "深度阅读文化线（约2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一楼亲子阅览区",
+            "二楼文学自习区",
+            "三楼社科阅览区及朗读亭",
+            "四楼蒋子龙文学馆及外文文献区",
+            "结束离场"
+          ],
+          "duration": "半天",
+          "walking": "约2000米",
+          "physical": 3,
+          "tips": [
+            "二至三楼为安静自习区，请保持轻声",
+            "四楼文学馆玻璃墙手稿设计很有真实感，适合慢慢欣赏"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结31篇笔记生成\n\n带长辈和小孩去滨海图书馆，主打一个“不费腿、不折腾、室内恒温”，这份完整景区的省力路线请收好！\n\n交通与入场准备\n\n停车与入场：自驾直接导航“滨海文化中心地下停车场”，车位充足且停好车后走地下通道直达图书馆，全程不用日晒雨淋，对长辈小孩非常友好。\n\n完整省力游览路线\n\n图书馆一楼中庭（打卡核心）：进门直奔一楼中庭，这里是拍“滨海之眼”和书山全景的最佳机位。长辈可以在这里坐坐歇脚，小孩也能在平地上活动，不用爬高。\n\n图书馆二楼儿童区与侧廊：乘坐电梯上二楼，这里有专门的儿童图书借阅室，绘本很多，适合带小孩安静看一会儿。想拍照的话，可以在二楼侧廊俯拍中庭，画面更干净。\n\n图书馆四楼蒋子龙文学馆：如果长辈对文化感兴趣，可以坐电梯上四楼逛逛蒋子龙文学馆，有手稿和奖章展示，玻璃墙设计很有质感，全程平路无台阶。\n\n连廊步行至科技馆与美术馆：图书馆、科技馆、美术馆全在滨海文化中心内连通，不用挪车。顺着连廊慢慢走到科技馆（互动体验强，适合小孩）和美术馆（经常有高质量展览，安静出片），全程室内空调，轻松不晒。\n\n关键避坑与注意事项\n\n严禁攀爬台阶：图书馆的“书山”阶梯虽然好看，但台阶较陡，官方明确提示14岁以下请勿攀爬，长辈走也一定要抓紧护栏，安全第一。\n\n高层书籍为贴纸：中庭高层的“书”其实是装饰贴纸，不能抽，真书主要在一楼和二楼，不要带着小孩盲目往上找书。\n\n着装要求：馆内不能穿拖鞋和吊带，建议给长辈和小孩穿舒适的运动鞋和得体衣物。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "滨海图书馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-14T03:23:52.977Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B0FFIAOAXK",
+          "Wikidata Q109412428 实体页：https://www.wikidata.org/wiki/Q109412428"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 滨海图书馆中心馆",
+          "url": "https://www.amap.com/place/B0FFIAOAXK",
+          "poiId": "B0FFIAOAXK",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "天津滨海图书馆 矫正版.jpg",
+        "author": "CNHowey",
+        "provider": "Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E6%BB%A8%E6%B5%B7%E5%9B%BE%E4%B9%A6%E9%A6%86_%E7%9F%AB%E6%AD%A3%E7%89%88.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    }
+  ],
+  "warnings": []
+}

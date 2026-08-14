@@ -13,10 +13,14 @@ const cases = [
   ['外滩', '外滩万国建筑群', true, '目的地与其常见建筑群名称应归并'],
   ['外滩', '北外滩滨江', false, '相邻但不同的滨水目的地不得归并'],
   ['上海乐高乐园®度假区', '上海乐高乐园度假区', true, '注册商标符号不应造成重复实体'],
+  ['天津博物馆', '国家海洋博物馆', false, '同城通用场馆类型不能掩盖不同专名', '天津'],
+  ['天津市博物馆', '天津博物馆', true, '行政区市字差异不应造成重复实体', '天津'],
+  ['中国航母主题公园', '天津泰达航母主题公园', true, '长且具辨识度的同一实体尾名应归并', '天津'],
+  ['天津博物馆', '天津自然博物馆', false, '只有通用博物馆后缀相同不得归并', '天津'],
 ];
 
-for (const [left, right, expected, message] of cases) {
-  const actual = relatedAttraction(left, right, '测试市', '测试市');
+for (const [left, right, expected, message, city = '测试市'] of cases) {
+  const actual = relatedAttraction(left, right, city, city);
   assert.strictEqual(actual, expected, `${message}: ${left} / ${right}`);
 }
 

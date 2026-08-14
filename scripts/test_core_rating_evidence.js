@@ -3,6 +3,8 @@ const { applyRatingFallback, isAmapAttractionPoi, liveAmapRating, localAmapRatin
 
 assert.strictEqual(isAmapAttractionPoi({ type: '风景名胜;风景名胜;纪念馆' }), true);
 assert.strictEqual(isAmapAttractionPoi({ type: '体育休闲服务;休闲场所;游乐场' }), true);
+assert.strictEqual(isAmapAttractionPoi({ type: '体育休闲服务;休闲场所;水上活动中心' }), true);
+assert.strictEqual(isAmapAttractionPoi({ type: '科教文化服务;图书馆;图书馆' }), true);
 assert.strictEqual(isAmapAttractionPoi({ type: '交通设施服务;公交车站;公交车站相关' }), false);
 assert.strictEqual(isAmapAttractionPoi({ type: '交通设施服务;停车场;公共停车场' }), false);
 assert.strictEqual(isAmapAttractionPoi({ type: '生活服务;售票处;公园景点售票处' }), false);

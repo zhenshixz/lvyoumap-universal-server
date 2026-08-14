@@ -13,6 +13,7 @@ const args = new Map(process.argv.slice(2).map(arg => {
   return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
 }));
 const provinceName = String(args.get('province') || '');
+let statusPath = '';
 
 function readJson(filePath, fallback = {}) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -24,6 +25,11 @@ function writeJson(filePath, value) {
   const tempPath = `${filePath}.tmp`;
   fs.writeFileSync(tempPath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
   fs.renameSync(tempPath, filePath);
+}
+
+function writeStatus(patch) {
+  if (!statusPath) return;
+  writeJson(statusPath, { province: provinceName, ...patch, updatedAt: new Date().toISOString() });
 }
 
 function findBrowser() {
@@ -95,6 +101,8 @@ async function main() {
   const db = readJson(path.join(rootDir, 'content', 'db.json'), { provinces: {} });
   const province = db.provinces?.[provinceName];
   if (!province) throw new Error(`基础数据库中没有找到省份：${provinceName}`);
+  statusPath = path.join(runtimeDir, `core-popularity-${province.id || provinceName}.status.json`);
+  writeStatus({ status: 'running', message: '正在采集长期口碑核心候选。' });
   const executablePath = findBrowser();
   if (!executablePath) throw new Error('没有找到 Chrome 或 Edge。');
   fs.mkdirSync(runtimeDir, { recursive: true });
@@ -153,6 +161,7 @@ async function main() {
             candidates: parsed.slice(0, 25),
           };
           writeJson(filePath, output);
+          writeStatus({ status: 'done', count: output.candidates.length, message: '长期口碑核心候选采集完成。' });
           console.log(`${provinceName}口碑核心候选采集完成：${output.candidates.length} 个。`);
           console.log(filePath);
           return;
@@ -185,12 +194,14 @@ async function main() {
         candidates: collected.slice(0, 25),
       };
       writeJson(filePath, output);
+      writeStatus({ status: 'done', count: output.candidates.length, message: '长期口碑核心候选经自动重试合并完成。' });
       console.log(`${provinceName}口碑核心候选经重试合并完成：${output.candidates.length} 个。`);
       console.log(filePath);
       return;
     }
     const partialPath = path.join(runtimeDir, `core-popularity-${province.id || provinceName}.partial.json`);
     writeJson(partialPath, { province: provinceName, prompt, updatedAt: new Date().toISOString(), attempts: attemptStats, candidates: collected, rawAnswers: attemptAnswers });
+    writeStatus({ status: 'retry_ready', count: collected.length, message: '回答仍不完整，诊断草稿和断点已保留。' });
     throw new Error(`连续3次回答均不完整，合并后只有 ${collected.length} 个候选；诊断草稿已保留。`);
   } finally {
     await browser.close().catch(() => {});
@@ -198,6 +209,12 @@ async function main() {
 }
 
 main().catch(error => {
+  const userAction = /未登录|登录状态失效|限制访问|访问受限|安全验证|验证码/u.test(error.message);
+  const retryable = userAction || /不完整|超时|timeout|network|navigation|closed/i.test(error.message);
+  writeStatus({
+    status: userAction ? (/登录/u.test(error.message) ? 'login_required' : 'restricted') : (retryable ? 'retry_ready' : 'error'),
+    message: error.message,
+  });
   console.error(`口碑候选采集失败：${error.message}`);
-  process.exitCode = 1;
+  process.exitCode = retryable ? 2 : 1;
 });

@@ -18,7 +18,6 @@ const args = new Map(process.argv.slice(2).map(arg => {
 }));
 const province = String(args.get('province') || '').trim();
 const limit = Math.max(0, Number(args.get('limit') || 0));
-if (!province) throw new Error('请使用 --province=省份。');
 
 function readJson(filePath, fallback = null) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -77,7 +76,7 @@ function compact(value) {
 }
 
 function promptFor(item) {
-  return `请只整理“${item.name}”（${item.city || province}）截至当前仍稳定可执行的景区结构和家庭省力游览信息。不要混入同名异地、母景区外的项目，不写票价、固定开放时间、临时演出、班次和排队时间；不确定的动态信息写“以官方当日公告为准”。“景点全称”必须原样复制为“${item.name}”。严格输出以下17个标签；即使平台合并换行，也必须保留每个标签，不要标题、序号、表格或多余解释：\n景点全称：${item.name}\n景点类型：\n路线A标题：\n路线A节点：节点1＞节点2＞节点3＞节点4\n路线A体力：1到5的整数\n路线A步行：\n路线A提示：提示1｜提示2\n路线B标题：\n路线B节点：节点1＞节点2＞节点3＞节点4\n路线B体力：1到5的整数\n路线B步行：\n路线B提示：提示1｜提示2\n外部到达：\n入口建议：\n内部交通：\n住宿区域：\n长辈儿童：分别写长辈与儿童的实用建议。`;
+  return `请只整理“${item.name}”（${item.city || province}）截至当前仍稳定可执行的景区结构和家庭省力游览信息。不要混入同名异地、母景区外的项目，不写票价、固定开放时间、临时演出、班次和排队时间；不确定的动态信息写“以官方当日公告为准”。“景点全称”必须原样复制为“${item.name}”。至少给出1条真实可执行的游览方案；路线节点按景点实际填写，可以是楼层、展区、街区、观赏重点或活动顺序，不强求数量。只有确实存在明显不同的第二种玩法时才填写路线B，否则路线B各项写“不适用”，禁止为了凑数虚构节点。严格输出以下17个标签；即使平台合并换行，也必须保留每个标签，不要标题、序号、表格或多余解释：\n景点全称：${item.name}\n景点类型：\n路线A标题：\n路线A节点：按实际填写游览顺序或重点\n路线A体力：1到5的整数\n路线A步行：\n路线A提示：至少1条实用提示\n路线B标题：无明显第二种玩法时写不适用\n路线B节点：\n路线B体力：\n路线B步行：\n路线B提示：\n外部到达：\n入口建议：\n内部交通：\n住宿区域：\n长辈儿童：长辈建议：……；儿童建议：……。两项都必须写。`;
 }
 
 function answerAfterPrompt(body, prompt) {
@@ -109,6 +108,33 @@ function splitList(value, separators = /[＞>→|｜、]/) {
   return String(value || '').split(separators).map(item => item.trim()).filter(Boolean);
 }
 
+function usableText(value) {
+  const text = String(value || '').trim();
+  return Boolean(text && !/^(?:无|暂无|不适用|没有|无固定路线)$/u.test(text));
+}
+
+function routeIsUsable(route) {
+  return usableText(route?.title)
+    && Array.isArray(route?.nodes)
+    && route.nodes.some(usableText)
+    && Number(route?.physical) >= 1
+    && usableText(route?.walking)
+    && Array.isArray(route?.tips)
+    && route.tips.some(usableText);
+}
+
+function failureQuality(failure) {
+  const answerLength = compact(failure?.answerPreview).length;
+  const issuePenalty = Array.isArray(failure?.issues) ? failure.issues.length * 25 : 0;
+  return answerLength - issuePenalty;
+}
+
+function chooseBetterFailure(previous, next) {
+  if (!previous) return next;
+  if (!next) return previous;
+  return failureQuality(next) > failureQuality(previous) ? next : previous;
+}
+
 function parseAnswer(answer, target) {
   const identity = labeled(answer, '景点全称');
   const expected = normalizeAttractionName(target.name);
@@ -131,13 +157,14 @@ function parseAnswer(answer, target) {
     walking: sanitizeDynamic(labeled(answer, '路线B步行')),
     tips: splitList(sanitizeDynamic(labeled(answer, '路线B提示')), /[|｜]/),
   };
-  const family = labeled(answer, '长辈儿童');
-  const elderly = family.match(/长辈[：:]?([^；;。]+(?:[。；;][^儿童\n]*)?)/)?.[1]?.trim() || family;
-  const children = family.match(/儿童[：:]?(.+)$/)?.[1]?.trim() || family;
+  const family = labeled(answer, '长辈儿童').replace(/\s*活动\s*$/u, '').trim();
+  const elderly = family.match(/长辈(?:建议)?[：:]?\s*([\s\S]*?)(?=儿童(?:建议)?[：:]?)/u)?.[1]?.replace(/[；;。\s]+$/u, '').trim() || '';
+  const children = family.match(/儿童(?:建议)?[：:]?\s*([\s\S]+)$/u)?.[1]?.trim() || '';
+  const routeCandidates = [routeA, routeB];
   const value = {
     identity,
     category: labeled(answer, '景点类型'),
-    routes: [routeA, routeB],
+    routes: routeCandidates.filter(routeIsUsable),
     externalArrive: sanitizeDynamic(labeled(answer, '外部到达')),
     internalArrive: sanitizeDynamic(labeled(answer, '入口建议')),
     internalTraffic: sanitizeDynamic(labeled(answer, '内部交通')),
@@ -147,9 +174,7 @@ function parseAnswer(answer, target) {
   const issues = [];
   if (!identityCompatible) issues.push(`景点身份不一致（回答：${identity || '空'}）`);
   if (!value.category) issues.push('缺少景点类型');
-  for (const [index, route] of value.routes.entries()) {
-    if (!route.title || route.nodes.length < 4 || !route.physical || !route.walking || route.tips.length < 2) issues.push(`路线${index ? 'B' : 'A'}不完整`);
-  }
+  if (!value.routes.length) issues.push('缺少可执行游览方案');
   for (const key of ['externalArrive', 'internalArrive', 'internalTraffic', 'housingArea']) if (!value[key]) issues.push(`缺少${key}`);
   if (!elderly || !children) issues.push('长辈儿童建议不完整');
   return { complete: issues.length === 0, issues, value };
@@ -188,7 +213,7 @@ async function collectOne(page, target) {
       }
       const parsed = parseAnswer(best, target);
       if (parsed.complete) return { ok: true, prompt: basePrompt, raw: best, ...parsed.value };
-      bestFailure = { ok: false, issues: parsed.issues, answerPreview: best.slice(0, 2000) };
+      bestFailure = chooseBetterFailure(bestFailure, { ok: false, issues: parsed.issues, answerPreview: best.slice(0, 2000) });
       if (Date.now() - lastGrowth > (best ? 3000 : 7000)) {
         if (!resumed && await resumeIfPossible(page)) {
           resumed = true;
@@ -203,6 +228,7 @@ async function collectOne(page, target) {
 }
 
 async function main() {
+  if (!province) throw new Error('请使用 --province=省份。');
   const info = provinceInfo();
   if (!info) throw new Error(`无法识别省份：${province}`);
   const workspacePath = path.join(runtimeDir, `core-repair-research.${info.slug}.json`);
@@ -234,7 +260,7 @@ async function main() {
   const pendingAll = workspace.attractions.filter(item => !output.attractions[item.baselineKey]?.routes?.length);
   const pending = limit ? pendingAll.slice(0, limit) : pendingAll;
   if (!pending.length) {
-    writeProgress({ status: 'experience_done', stage: 'experience', message: `${province}结构化旅行资料已齐。`, index: workspace.attractions.length, total: workspace.attractions.length, success: workspace.attractions.length, failed: 0 });
+    writeProgress({ status: 'experience_done', stage: 'experience', message: `${province}结构化旅行资料已齐。`, current: '', pendingNames: [], index: workspace.attractions.length, total: workspace.attractions.length, success: workspace.attractions.length, failed: 0 });
     console.log(`${province}结构化旅行资料已齐，不重复采集。`);
     return;
   }
@@ -262,7 +288,7 @@ async function main() {
     for (let index = 0; index < pending.length; index += 1) {
       if (fs.existsSync(stopPath)) break;
       const item = pending[index];
-      writeProgress({ status: 'running', stage: 'experience', message: '正在采集两条可解析路线与家庭出行结构。', current: `${province}/${item.name}`, index, total: pending.length, success, failed });
+      writeProgress({ status: 'running', stage: 'experience', message: '正在采集至少一条可执行游览方案与家庭出行结构。', current: `${province}/${item.name}`, index, total: pending.length, success, failed });
       const result = await collectOne(page, item);
       if (result.fatal) throw Object.assign(new Error(result.fatal === 'login_required' ? '小红书登录状态失效。' : '小红书当前限制访问。'), { code: result.fatal });
       if (result.ok) {
@@ -270,7 +296,9 @@ async function main() {
         delete output.failures[item.baselineKey];
         success += 1;
       } else {
-        output.failures[item.baselineKey] = { name: item.name, ...result, updatedAt: new Date().toISOString() };
+        const previousFailure = output.failures[item.baselineKey];
+        const nextFailure = { name: item.name, ...result, updatedAt: new Date().toISOString() };
+        output.failures[item.baselineKey] = chooseBetterFailure(previousFailure, nextFailure);
         failed += 1;
       }
       output.updatedAt = new Date().toISOString();
@@ -302,12 +330,16 @@ async function main() {
     console.log(`${province}结构化旅行资料完成 ${workspace.attractions.length - remaining.length}/${workspace.attractions.length}；待续跑：${remainingNames.join('、')}。`);
     process.exitCode = 2;
   } else {
-    writeProgress({ status: 'experience_done', stage: 'experience', message: `${province}结构化旅行资料已完成。`, index: workspace.attractions.length, total: workspace.attractions.length, success: workspace.attractions.length, failed: 0 });
+    writeProgress({ status: 'experience_done', stage: 'experience', message: `${province}结构化旅行资料已完成。`, current: '', pendingNames: [], index: workspace.attractions.length, total: workspace.attractions.length, success: workspace.attractions.length, failed: 0 });
     console.log(`${province}结构化旅行资料已完成：${workspace.attractions.length}/${workspace.attractions.length}。`);
   }
 }
 
-main().catch(error => {
-  console.error(`结构化旅行资料采集失败：${error.message}`);
-  process.exitCode = process.exitCode || 1;
-});
+if (require.main === module) {
+  main().catch(error => {
+    console.error(`结构化旅行资料采集失败：${error.message}`);
+    process.exitCode = process.exitCode || 1;
+  });
+}
+
+module.exports = { chooseBetterFailure, parseAnswer, promptFor, routeIsUsable };

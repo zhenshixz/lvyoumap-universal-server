@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 const { runCoreDraftPipeline } = require('./core_draft_pipeline');
+const { classifyStageResult, sleepSync, stagePolicy } = require('./pipeline_resilience');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
@@ -87,12 +88,26 @@ function initializeState() {
 }
 
 function runNode(script, province, extraArgs = []) {
-  const result = spawnSync(process.execPath, [path.join('scripts', script), `--province=${province}`, ...extraArgs], {
-    cwd: rootDir,
-    stdio: 'inherit',
-    shell: false,
-  });
-  return result.status === 0;
+  const policy = stagePolicy(script);
+  let last = { ok: false, kind: 'hard', status: 1 };
+  for (let attempt = 1; attempt <= policy.maxAttempts; attempt += 1) {
+    const result = spawnSync(process.execPath, [path.join('scripts', script), `--province=${province}`, ...extraArgs], {
+      cwd: rootDir,
+      stdio: 'inherit',
+      shell: false,
+    });
+    const db = readJson(path.join(contentDir, 'db.json'), { provinces: {} });
+    const slug = db.provinces?.[province]?.id || province;
+    const stageState = script === 'xhs_core_candidates.js'
+      ? readJson(path.join(runtimeDir, `core-popularity-${slug}.status.json`), {})
+      : {};
+    const classification = classifyStageResult({ status: result.status, progress: stageState });
+    last = { ok: classification.kind === 'complete', kind: classification.kind, status: result.status };
+    if (last.ok || !classification.retry || attempt >= policy.maxAttempts) return last;
+    console.log(`${script} 已保存断点，${Math.round(policy.delayMs / 1000)} 秒后自动续跑。`);
+    sleepSync(policy.delayMs);
+  }
+  return last;
 }
 
 function refreshEntry(entry) {
@@ -118,13 +133,13 @@ function collectStatic(state) {
     if (limit && processed >= limit) break;
     console.log(`\n========== ${entry.province}：官方与OTA ========== `);
     entry.lastError = '';
-    if (!entry.officialReady && !runNode('collect_mct_core_candidates.js', entry.province)) {
+    if (!entry.officialReady && !runNode('collect_mct_core_candidates.js', entry.province).ok) {
       entry.lastError = 'official_collection_failed';
       refreshEntry(entry);
       save(state);
       continue;
     }
-    if (!entry.otaReady && !runNode('collect_ota_core_candidates.js', entry.province)) {
+    if (!entry.otaReady && !runNode('collect_ota_core_candidates.js', entry.province).ok) {
       entry.lastError = 'ota_collection_failed';
       refreshEntry(entry);
       save(state);
@@ -145,19 +160,25 @@ function collectXhs(state) {
     if (!entry.officialReady || !entry.otaReady || entry.xhsReady) continue;
     if (limit && processed >= limit) break;
     console.log(`\n========== ${entry.province}：小红书口碑候选 ========== `);
-    entry.lastError = runNode('xhs_core_candidates.js', entry.province) ? '' : 'xhs_collection_failed';
+    const xhsRun = runNode('xhs_core_candidates.js', entry.province);
+    entry.lastError = xhsRun.ok ? '' : 'xhs_collection_failed';
     refreshEntry(entry);
     save(state);
     if (entry.lastError) {
-      console.log('口碑采集失败或受限，本批次在安全点停止；下次可从当前省份继续。');
-      break;
+      if (xhsRun.kind === 'user_action' || xhsRun.kind === 'stopped') {
+        console.log('平台登录失效、访问受限或收到安全停止请求；本批次在安全点暂停。');
+        break;
+      }
+      console.log(`${entry.province}本轮口碑采集未完成，断点已保留；队列继续处理其他省份。`);
+      continue;
     }
     // 先生成首轮草稿以暴露单源候选，再定向补证并重建最终草稿。
     const pipeline = runCoreDraftPipeline({ province: entry.province, slug: entry.slug, quiet: false });
     if (!pipeline.ok) {
       entry.lastError = 'draft_build_failed';
       save(state);
-      break;
+      console.log(`${entry.province}草稿生成未完成，已记录诊断；队列继续处理其他省份。`);
+      continue;
     }
     refreshEntry(entry);
     save(state);

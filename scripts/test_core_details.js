@@ -19,6 +19,7 @@ assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}
 assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}], routes: [{}, {}], image: { localPath: '/assets/images/default-thumbnail.jpg', placeholder: true } }), '单一来源与明确占位图应作为非阻断警告进入隔离预览');
 assert(!completeEvidence({ address: '地址', sources: [{}] }), '残缺断点不得误判完成');
 assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
+assert(imageIdentityTokens({ name: '天津之眼摩天轮', city: '天津' }).includes('天津之眼'), '设施型景点图片搜索应同时保留实体主干');
 const imagePage = {
   title: 'File:Street View of Wukang Road, Shanghai.JPG',
   imageinfo: [{ width: 4912, height: 3264, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' }, ImageDescription: { value: '武康路街景，上海' } } }],
@@ -31,13 +32,14 @@ const mapPage = {
 assert(commonsSemanticScore(mapPage, { name: '武康路街区', city: '上海' }) < 0, '地图和导览图不得作为景点实景图');
 
 const ctripFixture = [
-  '{"poiName":"目标景区","districtName":"北京","commentScore":4.7,"commentCount":321,"address":"目标地址","introduction":"目标介绍"}',
+  '{"poiName":"目标景区","districtName":"北京","commentScore":4.7,"commentCount":321,"address":"目标地址","introduction":"目标介绍","imageUrl":"https://example.com/target.jpg"}',
   '{"poiName":"相邻热门景区","districtName":"北京","commentScore":4.9,"commentCount":99999,"address":"其他地址","introduction":"其他介绍"}',
 ].join(',');
 const parsedCtrip = parseCtripHtml(ctripFixture, { name: '目标景区', city: '北京' });
 assert.strictEqual(parsedCtrip.rating, 4.7, '评分必须来自同一 POI');
 assert.strictEqual(parsedCtrip.reviews, 321, '点评数必须来自同一 POI');
 assert.strictEqual(parsedCtrip.address, '目标地址', '基本资料必须来自同一 POI');
+assert.deepStrictEqual(parsedCtrip.imageUrls, ['https://example.com/target.jpg'], '景点页主图必须限定在同一 POI 数据段');
 
 const amapRating = localAmapRating(
   { name: '北京环球度假区', city: '北京' },
