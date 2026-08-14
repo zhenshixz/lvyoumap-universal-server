@@ -264,9 +264,9 @@ async function main() {
       continue;
     }
     for (const evidence of result.evidences || []) {
-      if (!['amap_secondary_match', 'ctrip_city_sightlist', 'dianping_public_listing', 'official_attraction_site'].includes(evidence.source)) continue;
+      if (!['amap_secondary_match', 'amap_live_web_service', 'ctrip_city_sightlist', 'dianping_public_listing', 'official_attraction_site'].includes(evidence.source)) continue;
       if (!entity.sources.includes(evidence.source)) entity.sources.push(evidence.source);
-      if (evidence.source === 'amap_secondary_match' && evidence.id) {
+      if (['amap_secondary_match', 'amap_live_web_service'].includes(evidence.source) && evidence.id) {
         const recordIndex = records.findIndex(record => record.id === evidence.id);
         if (recordIndex >= 0) {
           entity.preferredId = evidence.id;
@@ -316,6 +316,7 @@ async function main() {
         ...(item.sources.includes('ctrip_city_sightlist') ? ['ctrip_city_sightlist'] : []),
         ...(item.sources.includes('xiaohongshu_popularity') ? ['xiaohongshu_core_candidates'] : []),
         ...(item.amapRank ? ['amap_local_snapshot'] : []),
+        ...(item.sources.includes('amap_live_web_service') ? ['amap_live_web_service'] : []),
         ...(item.sources.includes('dianping_public_listing') ? ['dianping_public_listing'] : []),
         ...(item.sources.includes('official_attraction_site') ? ['official_attraction_site'] : []),
       ],
@@ -406,6 +407,7 @@ async function main() {
       ctripCityPages: Boolean(secondaryEvidence.sourceAvailability?.ctripCityPages),
       xiaohongshu: Boolean(popularity.candidates?.length),
       amapLocalSnapshot: true,
+      amapLiveWebService: Boolean(secondaryEvidence.sourceAvailability?.amapLiveWebService),
       dianping: Boolean(secondaryEvidence.sourceAvailability?.dianping),
     },
     qualityGate,

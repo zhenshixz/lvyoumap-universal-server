@@ -287,8 +287,19 @@ async function main() {
   }
   const remaining = workspace.attractions.filter(item => !output.attractions[item.baselineKey]?.routes?.length);
   if (remaining.length) {
-    writeProgress({ status: 'retry_ready', stage: 'experience', message: `${remaining.length}项已保存断点，可直接继续。`, index: workspace.attractions.length - remaining.length, total: workspace.attractions.length, success: workspace.attractions.length - remaining.length, failed: remaining.length });
-    console.log(`${province}结构化旅行资料完成 ${workspace.attractions.length - remaining.length}/${workspace.attractions.length}；失败项已保留，下次自动续跑。`);
+    const remainingNames = remaining.map(item => item.name);
+    writeProgress({
+      status: 'retry_ready',
+      stage: 'experience',
+      message: `待续跑：${remainingNames.join('、')}。其余成功断点已保存，下次只处理这些项目。`,
+      current: remainingNames.length === 1 ? `${province}/${remainingNames[0]}` : '',
+      pendingNames: remainingNames,
+      index: workspace.attractions.length - remaining.length,
+      total: workspace.attractions.length,
+      success: workspace.attractions.length - remaining.length,
+      failed: remaining.length,
+    });
+    console.log(`${province}结构化旅行资料完成 ${workspace.attractions.length - remaining.length}/${workspace.attractions.length}；待续跑：${remainingNames.join('、')}。`);
     process.exitCode = 2;
   } else {
     writeProgress({ status: 'experience_done', stage: 'experience', message: `${province}结构化旅行资料已完成。`, index: workspace.attractions.length, total: workspace.attractions.length, success: workspace.attractions.length, failed: 0 });

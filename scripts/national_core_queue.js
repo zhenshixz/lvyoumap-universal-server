@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
+const { runCoreDraftPipeline } = require('./core_draft_pipeline');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
@@ -152,9 +153,8 @@ function collectXhs(state) {
       break;
     }
     // 先生成首轮草稿以暴露单源候选，再定向补证并重建最终草稿。
-    if (!runNode('build_core_baseline.js', entry.province, ['--ignore-secondary'])
-      || !runNode('collect_secondary_core_evidence.js', entry.province)
-      || !runNode('build_core_baseline.js', entry.province)) {
+    const pipeline = runCoreDraftPipeline({ province: entry.province, slug: entry.slug, quiet: false });
+    if (!pipeline.ok) {
       entry.lastError = 'draft_build_failed';
       save(state);
       break;
@@ -173,9 +173,8 @@ function buildReadyDrafts(state) {
     if (!entry.officialReady || !entry.otaReady || !entry.xhsReady) continue;
     if (entry.draftReady && entry.secondaryReady) continue;
     console.log(`\n========== ${entry.province}：生成多源草稿 ========== `);
-    const ready = runNode('build_core_baseline.js', entry.province, ['--ignore-secondary'])
-      && runNode('collect_secondary_core_evidence.js', entry.province)
-      && runNode('build_core_baseline.js', entry.province);
+    const pipeline = runCoreDraftPipeline({ province: entry.province, slug: entry.slug, quiet: false });
+    const ready = pipeline.ok;
     entry.lastError = ready ? '' : 'draft_build_failed';
     refreshEntry(entry);
     save(state);

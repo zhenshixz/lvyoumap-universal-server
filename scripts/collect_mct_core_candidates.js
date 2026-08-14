@@ -60,6 +60,8 @@ function extractGroups(html) {
         type: match[2],
         name: decodeText(match[3]),
         picture: picture ? decodeText(picture[1]) : '',
+        website: directString(body, 'web_link_url'),
+        appointmentUrl: directString(body, 'appointment_link_url'),
         longitude: directString(body, 'longitude'),
         latitude: directString(body, 'latitude'),
         address: directString(body, 'address'),

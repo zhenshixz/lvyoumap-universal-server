@@ -27,6 +27,15 @@ function sameRatingIdentity(target, record) {
     && Math.abs(left.length - right.length) <= 4;
 }
 
+function isAmapAttractionPoi(record) {
+  const type = String(record?.type || '');
+  if (!type) return false;
+  if (/(?:交通设施服务|停车场|公交车站|住宿服务|餐饮服务|购物服务|售票处|公共设施|公司企业|医疗保健服务)/.test(type)) {
+    return false;
+  }
+  return /(?:风景名胜|博物馆|纪念馆|游乐场|公园广场|城市广场|旅游景点)/.test(type);
+}
+
 function localAmapRating(target, records) {
   const matches = (records || []).filter(record => (
     Number(record.rating) > 0
@@ -63,7 +72,11 @@ function liveAmapRating(target, pois) {
     city: Array.isArray(poi.cityname) ? poi.cityname[0] : (poi.cityname || poi.pname || target.city),
     rating: Number(poi.business?.rating || 0),
   }));
-  const matches = candidates.filter(record => Number(record.rating) > 0 && sameRatingIdentity(target, record));
+  const matches = candidates.filter(record => (
+    Number(record.rating) > 0
+    && isAmapAttractionPoi(record)
+    && sameRatingIdentity(target, record)
+  ));
   const unique = [...new Map(matches.map(item => [item.id, item])).values()];
   if (unique.length !== 1) {
     return {
@@ -105,6 +118,7 @@ function applyRatingFallback(value, fallback) {
 module.exports = {
   applyRatingFallback,
   hasVerifiedRating,
+  isAmapAttractionPoi,
   liveAmapRating,
   localAmapRating,
   sameRatingIdentity,

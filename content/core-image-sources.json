@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "commonsFiles": {
+    "上海": {
+      "广富林文化遗址": "Guangfulin Site.JPG",
+      "上海佘山国家旅游度假区": "Sheshan Shanghai.jpg"
+    }
+  },
+  "sources": {
+    "上海": {
+      "西沙明珠湖景区": [
+        "https://english.shanghai.gov.cn/en-ScenicSpots/20240207/88d56c8a059548fc9fb74c2214a6203c.html"
+      ],
+      "广富林文化遗址": [
+        "https://www.shanghai.gov.cn/sjq/20220901/3a447eb6f5574d9e971073994ae3a26b.html"
+      ],
+      "上海国际旅游度假区": [
+        "https://www.shanghai.gov.cn/citywalk/20260625/5e1391517f264edf84fcf852ff32ee91.html"
+      ],
+      "上海佘山国家旅游度假区": [
+        "https://www.meet-in-shanghai.net/cn/tourist-resort/shanghai-sheshan-national-tourism-resort-403449/"
+      ]
+    }
+  }
+}

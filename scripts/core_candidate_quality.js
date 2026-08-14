@@ -64,9 +64,12 @@ function cityFromAddress(address, knownCities = []) {
 function normalizeName(value) {
   let name = decodeHtmlEntities(value)
     .toLowerCase()
-    .replace(/[·•（）()\-—_\s]/g, '')
+    .replace(/[·•（）()\-—_\s®™]/g, '')
     .replace(/国家[345]a级旅游景区/g, '')
-    .replace(/国家级|国家重点|国家/g, '');
+    .replace(/国家级|国家重点|国家/g, '')
+    // Common destination aliases such as “外滩万国建筑群” refer to the
+    // destination itself. Keep the rule narrow so “北外滩滨江” remains distinct.
+    .replace(/万国建筑群$/, '');
   const suffix = /(?:国际海洋旅游度假区|国际旅游度假区|旅游度假区|旅游风景名胜区|旅游景区|旅游风景区|风景名胜区|风景旅游区|风景区|度假区|旅游区|景区)$/;
   while (suffix.test(name)) name = name.replace(suffix, '');
   return name.trim();

@@ -9,6 +9,7 @@ const {
   sameAttraction,
   temporaryEventReason,
 } = require('./core_candidate_quality');
+const { isAmapAttractionPoi, sameRatingIdentity } = require('./core_rating_evidence');
 
 const rootDir = path.join(__dirname, '..');
 const runtimeDir = path.join(rootDir, '.runtime');
@@ -18,6 +19,18 @@ const args = new Map(process.argv.slice(2).map(arg => {
 }));
 const provinceName = String(args.get('province') || '');
 const maxPages = Math.max(1, Math.min(15, Number(args.get('max-pages') || 10)));
+
+function loadLocalEnv(filePath) {
+  if (!fs.existsSync(filePath)) return;
+  for (const line of fs.readFileSync(filePath, 'utf8').split(/\r?\n/)) {
+    const match = line.match(/^\s*([A-Z][A-Z0-9_]*)\s*=\s*(.*)\s*$/);
+    if (!match || process.env[match[1]]) continue;
+    process.env[match[1]] = match[2].replace(/^(?:"(.*)"|'(.*)')$/, '$1$2').trim();
+  }
+}
+
+loadLocalEnv(path.join(rootDir, '.env'));
+const amapWebServiceKey = String(process.env.AMAP_WEB_SERVICE_KEY || '').trim();
 
 function readJson(filePath, fallback = {}) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -29,6 +42,17 @@ function writeJson(filePath, value) {
   const tempPath = `${filePath}.tmp`;
   fs.writeFileSync(tempPath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
   fs.renameSync(tempPath, filePath);
+}
+
+function isRecentIso(value, days = 30) {
+  const time = Date.parse(String(value || ''));
+  return Number.isFinite(time) && Date.now() - time < days * 24 * 60 * 60 * 1000;
+}
+
+function reusableEvidence(evidence) {
+  if (!evidence?.source) return false;
+  if (evidence.source === 'amap_live_web_service') return Boolean(evidence.type && isAmapAttractionPoi(evidence));
+  return ['ctrip_city_sightlist', 'dianping_public_listing', 'official_attraction_site', 'amap_secondary_match'].includes(evidence.source);
 }
 
 function decodeHtml(value) {
@@ -200,6 +224,55 @@ async function collectCtripEvidence(candidates, provincePageUrl) {
   return { matches, warnings };
 }
 
+async function collectLiveAmapEvidence(candidates) {
+  const matches = new Map();
+  const warnings = [];
+  if (!amapWebServiceKey) return { matches, warnings, enabled: false };
+  for (const candidate of candidates) {
+    try {
+      const url = new URL('https://restapi.amap.com/v5/place/text');
+      url.searchParams.set('key', amapWebServiceKey);
+      url.searchParams.set('keywords', candidate.name);
+      url.searchParams.set('region', candidate.city || provinceName);
+      url.searchParams.set('city_limit', 'true');
+      url.searchParams.set('show_fields', 'business');
+      url.searchParams.set('page_size', '10');
+      url.searchParams.set('output', 'json');
+      const response = await fetch(url, {
+        headers: { 'user-agent': 'Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0' },
+        signal: AbortSignal.timeout(15000),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      if (String(data.status) !== '1') throw new Error(data.info || data.infocode || '接口返回失败');
+      const pois = (data.pois || []).map(poi => ({
+        ...poi,
+        city: Array.isArray(poi.cityname) ? poi.cityname[0] : (poi.cityname || poi.pname || candidate.city || provinceName),
+      }));
+      const unique = [...new Map(pois
+        .filter(poi => (
+          isAmapAttractionPoi(poi)
+          && sameRatingIdentity({ ...candidate, city: candidate.city || provinceName }, poi)
+        ))
+        .map(poi => [poi.id, poi])).values()];
+      if (unique.length !== 1) continue;
+      const poi = unique[0];
+      matches.set(candidate.name, {
+        source: 'amap_live_web_service',
+        id: poi.id,
+        name: poi.name,
+        city: poi.city,
+        type: poi.type,
+        url: `https://www.amap.com/place/${encodeURIComponent(poi.id)}`,
+        verifiedAt: new Date().toISOString().slice(0, 10),
+      });
+    } catch (error) {
+      warnings.push(`${candidate.name} 高德实时补证失败：${error.message}`);
+    }
+  }
+  return { matches, warnings, enabled: true };
+}
+
 async function main() {
   if (!provinceName) throw new Error('请使用 --province=省份。');
   const db = readJson(path.join(rootDir, 'content', 'db.json'), { provinces: {} });
@@ -214,6 +287,8 @@ async function main() {
   const records = province.attractions || [];
   const manualEvidence = readJson(path.join(rootDir, 'content', 'core-evidence-overrides.json'), { provinces: {} });
   const provinceEvidence = manualEvidence.provinces?.[provinceName] || [];
+  const previousEvidence = readJson(path.join(runtimeDir, `core-secondary-evidence-${slug}.json`), null);
+  const canReusePrevious = previousEvidence?.province === provinceName && isRecentIso(previousEvidence.collectedAt, 30);
   const candidates = (draft.reviewCandidates || []).map(item => ({
     ...item,
     city: inferCandidateCity(item, officialCandidates, records),
@@ -269,7 +344,29 @@ async function main() {
     result.evidences.push(hit);
     result.status = 'verified';
   }
+  const stillUnresolved = results.filter(item => item.status === 'unresolved');
+  const liveAmap = await collectLiveAmapEvidence(stillUnresolved);
+  for (const result of stillUnresolved) {
+    const hit = liveAmap.matches.get(result.name);
+    if (!hit) continue;
+    result.evidences.push(hit);
+    result.status = 'verified';
+  }
   const unresolved = results.filter(item => item.status === 'unresolved');
+  if (canReusePrevious) {
+    for (const result of unresolved) {
+      const previous = (previousEvidence.results || []).find(item => (
+        item.status === 'verified'
+        && relatedAttraction(result.name, item.name, result.city, item.city)
+      ));
+      const evidences = (previous?.evidences || []).filter(reusableEvidence);
+      if (!evidences.length) continue;
+      result.evidences.push(...evidences);
+      result.status = 'verified';
+      result.reusedFromVerifiedCache = true;
+    }
+  }
+  const finalUnresolved = results.filter(item => item.status === 'unresolved');
   const output = {
     province: provinceName,
     collectedAt: new Date().toISOString(),
@@ -277,6 +374,7 @@ async function main() {
     sourceAvailability: {
       mctOfficial: true,
       amapLocalSnapshot: true,
+      amapLiveWebService: liveAmap.enabled,
       ctripCityPages: Boolean(ota.sourceUrl),
       curatedOfficialPages: Boolean(provinceEvidence.length),
       dianping: false,
@@ -285,9 +383,10 @@ async function main() {
     candidateCount: candidates.length,
     verifiedCount: results.filter(item => item.status === 'verified').length,
     coveredByCoreCount: results.filter(item => item.status === 'covered_by_core').length,
-    unresolvedCount: unresolved.length,
-    unresolvedNames: unresolved.map(item => item.name),
-    warnings: ctrip.warnings,
+    reusedVerifiedCount: results.filter(item => item.reusedFromVerifiedCache).length,
+    unresolvedCount: finalUnresolved.length,
+    unresolvedNames: finalUnresolved.map(item => item.name),
+    warnings: [...ctrip.warnings, ...liveAmap.warnings],
     results,
   };
   const outputPath = path.join(runtimeDir, `core-secondary-evidence-${slug}.json`);

@@ -2,7 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 const { normalizeName, relatedAttraction } = require('./core_candidate_quality');
-const { applyRatingFallback, hasVerifiedRating, liveAmapRating, localAmapRating } = require('./core_rating_evidence');
+const {
+  applyRatingFallback,
+  hasVerifiedRating,
+  isAmapAttractionPoi,
+  liveAmapRating,
+  localAmapRating,
+  sameRatingIdentity,
+} = require('./core_rating_evidence');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
@@ -15,6 +22,7 @@ const province = String(args.get('province') || '').trim();
 const useManualEvidence = !args.has('no-manual');
 const refresh = args.has('refresh');
 const refreshRatings = args.has('refresh-ratings');
+const refreshImages = args.has('refresh-images');
 
 function loadLocalEnv(filePath) {
   if (!fs.existsSync(filePath)) return;
@@ -27,6 +35,7 @@ function loadLocalEnv(filePath) {
 
 loadLocalEnv(path.join(rootDir, '.env'));
 const amapWebServiceKey = String(process.env.AMAP_WEB_SERVICE_KEY || '').trim();
+const curatedImageSources = readJson(path.join(contentDir, 'core-image-sources.json'), { sources: {} });
 
 function readJson(filePath, fallback = null) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -81,13 +90,79 @@ function curlJson(url) {
   return JSON.parse(curlText(url));
 }
 
+const imageProbeCache = new Map();
+
+function jpegDimensions(buffer) {
+  let offset = 2;
+  while (offset + 9 < buffer.length) {
+    if (buffer[offset] !== 0xff) { offset += 1; continue; }
+    const marker = buffer[offset + 1];
+    if (marker === 0xd8 || marker === 0xd9 || marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) {
+      offset += 2;
+      continue;
+    }
+    const length = buffer.readUInt16BE(offset + 2);
+    if ([0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf].includes(marker)) {
+      return { height: buffer.readUInt16BE(offset + 5), width: buffer.readUInt16BE(offset + 7) };
+    }
+    if (!length || marker === 0xda) break;
+    offset += 2 + length;
+  }
+  return null;
+}
+
+function bufferDimensions(buffer) {
+  if (buffer.length < 24) return null;
+  if (buffer.slice(0, 2).toString('hex') === 'ffd8') return jpegDimensions(buffer);
+  if (buffer.slice(1, 4).toString() === 'PNG') {
+    return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+  }
+  return null;
+}
+
+function probeRemoteImage(url) {
+  if (imageProbeCache.has(url)) return imageProbeCache.get(url);
+  const curlArgs = [
+    '--location', '--fail', '--silent', '--show-error', '--ssl-no-revoke',
+    '--max-time', '30', '--retry', '1', '--retry-all-errors',
+    '--user-agent', 'Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0',
+  ];
+  const proxy = windowsProxy();
+  if (proxy) curlArgs.push('--proxy', proxy);
+  curlArgs.push(url);
+  const result = spawnSync(process.platform === 'win32' ? 'curl.exe' : 'curl', curlArgs, {
+    windowsHide: true,
+    maxBuffer: 20 * 1024 * 1024,
+  });
+  const dimensions = result.status === 0 ? bufferDimensions(result.stdout || Buffer.alloc(0)) : null;
+  const quality = {
+    ok: Boolean(dimensions && dimensions.width >= 1200 && dimensions.height >= 700 && result.stdout.length >= 100 * 1024),
+    width: dimensions?.width || 0,
+    height: dimensions?.height || 0,
+    bytes: result.stdout?.length || 0,
+  };
+  imageProbeCache.set(url, quality);
+  return quality;
+}
+
+const requestCache = new Map();
+
+function cachedText(url) {
+  if (!requestCache.has(url)) requestCache.set(url, curlText(url, 1));
+  return requestCache.get(url);
+}
+
+function cachedJson(url) {
+  return JSON.parse(cachedText(url));
+}
+
 function liveAmapPois(item) {
   if (!amapWebServiceKey) return { pois: [], mode: 'disabled' };
   const preferredId = String(item.preferredId || '').replace(/^amap_/i, '');
   const request = parameters => {
     const url = new URL(parameters.path);
     url.searchParams.set('key', amapWebServiceKey);
-    url.searchParams.set('show_fields', 'business');
+    url.searchParams.set('show_fields', 'business,photos');
     url.searchParams.set('output', 'json');
     for (const [key, value] of Object.entries(parameters.query)) if (value) url.searchParams.set(key, value);
     const result = curlJson(url.toString());
@@ -218,8 +293,10 @@ function parseCtrip(url, item) {
 }
 
 function matchingOfficial(item, official) {
-  return [...(official.fiveA || []), ...(official.resorts || [])]
-    .find(record => sameIdentity(record.name, item)) || null;
+  const fiveA = (official.fiveA || []).find(record => sameIdentity(record.name, item));
+  if (fiveA) return { ...fiveA, officialKind: 'fiveA' };
+  const resort = (official.resorts || []).find(record => sameIdentity(record.name, item));
+  return resort ? { ...resort, officialKind: 'resort' } : null;
 }
 
 function matchingCtripUrl(item, ota, secondary) {
@@ -271,6 +348,186 @@ function usableCommonsPage(page) {
     && Number(info.height || 0) >= 700;
 }
 
+const IMAGE_NOISE = /(?:map|地图|导览|guide|route|路线|logo|标志|icon|图标|poster|海报|ticket|门票|qr|二维码|diagram|示意|plan|规划|station|站台|platform|concourse|地铁|metro|pdf|svg)/i;
+
+function imageIdentityTokens(item) {
+  const suffixes = /(?:国家)?[345]A?级?(?:旅游)?(?:景区|旅游区|风景区|度假区)|国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|风景名胜区|风景区|景区|街区/g;
+  const tokens = [];
+  for (const alias of allAliases(item)) {
+    const clean = String(alias || '').replace(/[®™•·（）()—–\-_]/g, ' ').replace(suffixes, ' ').trim();
+    for (const part of clean.split(/\s+|与|和|、|，|\//)) {
+      if (part.length >= 2 && !['上海', '北京', '旅游', '文化', '国家'].includes(part)) tokens.push(part.toLowerCase());
+    }
+  }
+  return [...new Set(tokens)].sort((left, right) => right.length - left.length);
+}
+
+function commonsSemanticScore(page, item) {
+  const info = page?.imageinfo?.[0];
+  if (!info) return -1000;
+  const meta = info.extmetadata || {};
+  const haystack = decodeHtml([
+    page.title,
+    meta.ImageDescription?.value,
+    meta.ObjectName?.value,
+    meta.Categories?.value,
+  ].filter(Boolean).join(' ')).toLowerCase();
+  if (IMAGE_NOISE.test(haystack)) return -1000;
+  const tokens = imageIdentityTokens(item);
+  const matched = tokens.filter(token => haystack.includes(token));
+  if (!matched.length && !sameIdentity(String(page.title || '').replace(/^File:/i, ''), item)) return -1000;
+  const cityMatch = item.city && haystack.includes(String(item.city).toLowerCase());
+  return commonsPageScore(page, item) + matched.reduce((score, token) => score + Math.min(28, token.length * 5), 0) + (cityMatch ? 14 : 0);
+}
+
+function wikipediaImageQueries(item) {
+  const result = [];
+  for (const query of allAliases(item).slice(0, 4)) {
+    try {
+      const url = `https://zh.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&utf8=1&origin=*`;
+      for (const hit of (curlJson(url).query?.search || []).slice(0, 3)) {
+        const title = decodeHtml(hit.title || '');
+        const snippet = decodeHtml(hit.snippet || '');
+        const combined = `${title} ${snippet}`;
+        const tokens = imageIdentityTokens(item);
+        if (tokens.some(token => combined.toLowerCase().includes(token))) result.push(title);
+      }
+    } catch {
+      // Wikipedia 是图片别名增强源，失败时继续使用现有名称，不阻断资料闭环。
+    }
+  }
+  return [...new Set(result)];
+}
+
+function wikipediaPageImage(item) {
+  for (const query of allAliases(item).slice(0, 3)) {
+    try {
+      const searchUrl = `https://zh.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&utf8=1&origin=*`;
+      const hits = (cachedJson(searchUrl).query?.search || []).slice(0, 4);
+      for (const hit of hits) {
+        const title = decodeHtml(hit.title || '');
+        if (!sameIdentity(title, item)) continue;
+        const pageUrl = `https://zh.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=pageimages&piprop=original%7Cname&format=json&origin=*`;
+        const page = Object.values(cachedJson(pageUrl).query?.pages || {})[0];
+        const fileName = page?.pageimage || '';
+        if (!fileName || IMAGE_NOISE.test(fileName)) continue;
+        const image = commonsImage(fileName, item);
+        if (image) return image;
+      }
+    } catch {
+      // 维基百科只用于快速定位自由许可图片，失败后继续其他来源。
+    }
+  }
+  return null;
+}
+
+function curatedCommonsImage(item) {
+  const fileName = curatedImageSources.commonsFiles?.[province]?.[item.name];
+  if (!fileName) return null;
+  try { return commonsImage(fileName, item, '', true); } catch { return null; }
+}
+
+function absoluteHttpUrl(value, pageUrl) {
+  const decoded = decodeHtml(value).replace(/\\\//g, '/').replace(/\\/g, '/').trim();
+  if (!decoded || /^data:/i.test(decoded)) return '';
+  try {
+    const url = new URL(decoded, pageUrl);
+    return /^https?:$/i.test(url.protocol) ? url.toString() : '';
+  } catch { return ''; }
+}
+
+function trustedOfficialPage(pageUrl, item) {
+  try {
+    const host = new URL(pageUrl).hostname.toLowerCase();
+    if (/\.gov\.cn$|\.mct\.gov\.cn$/.test(host)) return true;
+    const curated = curatedImageSources.sources?.[province]?.[item.name] || [];
+    if (curated.some(url => {
+      try { return new URL(url).hostname.toLowerCase() === host; } catch { return false; }
+    })) return true;
+    return (item.research?.discoveredSources || []).some(source => {
+      try { return new URL(source.url).hostname.toLowerCase() === host && /official|government|scenic/i.test(source.kind || source.title || ''); }
+      catch { return false; }
+    });
+  } catch { return false; }
+}
+
+function imageFromOfficialPage(pageUrl, item) {
+  if (!pageUrl || !trustedOfficialPage(pageUrl, item)) return null;
+  try {
+    const html = cachedText(pageUrl);
+    const title = decodeHtml(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
+    const bodyIdentity = `${title} ${decodeHtml(html).slice(0, 12000)}`;
+    const curatedExact = (curatedImageSources.sources?.[province]?.[item.name] || []).includes(pageUrl);
+    if (!curatedExact && !sameIdentity(title, item) && !imageIdentityTokens(item).some(token => bodyIdentity.toLowerCase().includes(token))) return null;
+    const candidates = [];
+    const add = (url, score, label = '') => {
+      const absolute = absoluteHttpUrl(url, pageUrl);
+      if (!absolute || IMAGE_NOISE.test(`${absolute} ${label}`) || !/\.(?:jpe?g|png|webp)(?:\?|$)/i.test(absolute)) return;
+      candidates.push({ url: absolute, score, label });
+    };
+    for (const match of html.matchAll(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)["'][^>]+content=["']([^"']+)["']/gi)) add(match[1], 100, '页面主图');
+    for (const match of html.matchAll(/<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["'](?:og:image|twitter:image)["']/gi)) add(match[1], 100, '页面主图');
+    for (const match of html.matchAll(/<img\b([^>]+)>/gi)) {
+      const attrs = match[1];
+      const src = attrs.match(/(?:src|data-src|data-original)=["']([^"']+)["']/i)?.[1];
+      const label = attrs.match(/(?:alt|title)=["']([^"']*)["']/i)?.[1] || '';
+      const identity = imageIdentityTokens(item).some(token => decodeHtml(label).toLowerCase().includes(token));
+      add(src, identity ? 85 : (/cmsres|[\\/]uploads?[\\/]/i.test(src || '') ? 55 : 20), label);
+    }
+    const selected = candidates
+      .sort((left, right) => right.score - left.score)
+      .slice(0, 8)
+      .find(candidate => candidate.score >= 50 && probeRemoteImage(candidate.url).ok);
+    if (!selected) return null;
+    const dimensions = probeRemoteImage(selected.url);
+    const localName = `${String(item.id || item.baselineKey).replace(/^manual_/, '').replace(/[^a-z0-9_-]/gi, '_')}_verified.jpg`;
+    return {
+      localPath: `/assets/images/attractions/${localName}`,
+      downloadUrl: selected.url,
+      title: `${item.name} 官方页面实景图`,
+      author: '来源机构',
+      provider: '政府或景区官方页面',
+      license: '官方公开景区介绍资料，版权归来源机构',
+      licenseUrl: pageUrl,
+      sourceUrl: pageUrl,
+      width: dimensions.width,
+      height: dimensions.height,
+    };
+  } catch { return null; }
+}
+
+function existingSourceImage(item, officialRecord) {
+  const curated = curatedImageSources.sources?.[province]?.[item.name] || [];
+  const urls = [...curated, officialRecord?.website, ...(item.research?.discoveredSources || []).map(source => source.url)]
+    .filter(Boolean)
+    .filter(url => !/lyfw\.mct\.gov\.cn\/site\/special\/province/i.test(url));
+  for (const url of [...new Set(urls)]) {
+    const image = imageFromOfficialPage(url, item);
+    if (image) return image;
+  }
+  return null;
+}
+
+function searchOfficialPageImage(item) {
+  try {
+    const query = `${item.name} ${item.city || province} 景区`;
+    const html = cachedText(`https://cn.bing.com/search?q=${encodeURIComponent(query)}&setlang=zh-hans&cc=cn`);
+    const links = [...html.matchAll(/<li class="b_algo"[\s\S]*?<h2[^>]*><a[^>]+href="([^"]+)"[^>]*>/gi)]
+      .map(match => decodeHtml(match[1]))
+      .filter(url => {
+        try { return /\.gov\.cn$/i.test(new URL(url).hostname); } catch { return false; }
+      })
+      .slice(0, 5);
+    for (const url of links) {
+      const image = imageFromOfficialPage(url, item);
+      if (image) return image;
+    }
+  } catch {
+    // 搜索引擎只负责发现政府来源页；网络或结果异常时继续自由图库，不阻断。
+  }
+  return null;
+}
+
 function commonsPageScore(page, item) {
   const info = page.imageinfo[0];
   const ratio = Number(info.width || 0) / Math.max(1, Number(info.height || 0));
@@ -281,7 +538,7 @@ function commonsPageScore(page, item) {
   return nameScore + landscapeScore + resolutionScore;
 }
 
-function commonsImage(fileName, item, categoryName = '') {
+function commonsImage(fileName, item, categoryName = '', trustedExactFile = false) {
   let pages = [];
   if (fileName) {
     const url = `https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(`File:${fileName}`)}&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=2000&format=json&origin=*`;
@@ -294,14 +551,22 @@ function commonsImage(fileName, item, categoryName = '') {
       .sort((left, right) => commonsPageScore(right, item) - commonsPageScore(left, item));
   }
   if (!pages.length) {
-    for (const query of allAliases(item)) {
+    // 只尝试少量高相关名称；旧逻辑为每个别名再跑 Wikipedia 搜索，单景点会产生几十次请求。
+    const queries = [...new Set(allAliases(item).slice(0, 3))];
+    for (const query of queries) {
       const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(`${query} filetype:bitmap`)}&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&iiurlwidth=2000&format=json&origin=*`;
       const found = Object.values(curlJson(url).query?.pages || {}).filter(usableCommonsPage);
-      const exact = found.find(page => sameIdentity(String(page.title || '').replace(/^File:/i, ''), item));
-      if (exact) { pages = [exact]; break; }
+      const ranked = found
+        .map(page => ({ page, score: commonsSemanticScore(page, item) }))
+        .filter(candidate => candidate.score >= 45)
+        .sort((left, right) => right.score - left.score);
+      if (ranked.length) pages.push(...ranked.map(candidate => candidate.page));
     }
   }
-  const page = pages[0];
+  pages = [...new Map(pages.map(page => [page.pageid || page.title, page])).values()]
+    .filter(usableCommonsPage)
+    .sort((left, right) => commonsSemanticScore(right, item) - commonsSemanticScore(left, item));
+  const page = trustedExactFile ? pages[0] : pages.find(candidate => commonsSemanticScore(candidate, item) >= 45);
   const info = page?.imageinfo?.[0];
   if (!page || !info) return null;
   const meta = info.extmetadata || {};
@@ -324,12 +589,14 @@ function commonsImage(fileName, item, categoryName = '') {
   };
 }
 
-function inferProfile(name, intro) {
-  const text = `${name} ${intro}`;
+function inferProfile(item, intro) {
+  const geographicNoise = [province, item.city].filter(Boolean);
+  let text = `${item.name} ${intro}`;
+  for (const value of geographicNoise) text = text.replaceAll(value, '');
   if (/山|峰|峡谷|长城|森林|徒步/.test(text)) return 'mountain';
   if (/海|岛|沙滩|滨海/.test(text)) return 'coastal';
   if (/湖|运河|湿地|水乡/.test(text)) return 'lake';
-  if (/乐园|度假区|影城|动物世界/.test(text)) return 'resort';
+  if (/乐园|度假区|影城|动物世界|动物园/.test(text)) return 'resort';
   if (/博物馆|纪念馆|美术馆|场馆|故居|教堂/.test(text)) return 'indoor';
   return 'urban';
 }
@@ -347,8 +614,8 @@ function inferCategory(name, intro) {
 }
 
 function levelFor(item, officialRecord) {
-  if (officialRecord && String(officialRecord.type || '').toLowerCase() === 'f') return '5A景区';
-  if (officialRecord) return '国家级旅游度假区';
+  if (officialRecord?.officialKind === 'fiveA') return '5A景区';
+  if (officialRecord?.officialKind === 'resort') return '国家级旅游度假区';
   if (/博物馆/.test(item.name)) return '博物馆';
   return '热门景点';
 }
@@ -376,11 +643,115 @@ function completeEvidence(value) {
     value
     && value.address
     && (value.description || value.intro)
-    && value.sources?.length >= 2
+    && value.sources?.length >= 1
     && value.routes?.length >= 2
     && value.image?.localPath
-    && value.image?.downloadUrl
   );
+}
+
+function imageMeetsPublishedQuality(image) {
+  return Boolean(
+    image
+    && !image.placeholder
+    && Number(image.width || 0) >= 1200
+    && Number(image.height || 0) >= 700
+    && image.downloadUrl
+  );
+}
+
+function reusableEvidence(value) {
+  if (!completeEvidence(value)) return false;
+  if (refreshImages && !imageMeetsPublishedQuality(value.image)) return false;
+  return true;
+}
+
+function discoveredSources(item) {
+  return (item.research?.discoveredSources || [])
+    .filter(source => /^https:\/\//i.test(String(source?.url || '')))
+    .map(source => ({
+      title: source.title || '核心清单核验来源',
+      url: source.url,
+      kind: source.kind || 'core_candidate_evidence',
+    }));
+}
+
+function fallbackImage(item) {
+  return {
+    localPath: '/assets/images/default-thumbnail.jpg',
+    downloadUrl: '',
+    title: `${item.name} 图片待补充`,
+    author: '中国旅游地图项目',
+    provider: '项目通用占位图',
+    license: '项目内置资源（非景点实景）',
+    licenseUrl: 'https://xzmap.xzbest.site/',
+    sourceUrl: 'https://xzmap.xzbest.site/',
+    width: 1024,
+    height: 682,
+    placeholder: true,
+  };
+}
+
+function liveAmapDetails(item) {
+  if (!amapWebServiceKey) return null;
+  try {
+    const response = liveAmapPois(item);
+    const matches = (response.pois || []).filter(poi => {
+      const record = {
+        ...poi,
+        city: Array.isArray(poi.cityname) ? poi.cityname[0] : (poi.cityname || poi.pname || item.city),
+      };
+      return isAmapAttractionPoi(record) && sameRatingIdentity(item, record);
+    });
+    let unique = [...new Map(matches.map(poi => [poi.id, poi])).values()];
+    if (unique.length > 1) {
+      const exact = unique.filter(poi => normalizeName(poi.name) === normalizeName(item.name));
+      if (exact.length === 1) unique = exact;
+    }
+    if (unique.length !== 1) return null;
+    const poi = unique[0];
+    const aliases = [poi.name, poi.business?.alias].filter(Boolean).map(normalizeName);
+    const related = (response.pois || []).filter(candidate => {
+      if (!isAmapAttractionPoi(candidate)) return false;
+      const name = normalizeName(candidate.name);
+      return aliases.some(alias => alias && name && (alias === name || alias.includes(name) || name.includes(alias)));
+    });
+    return {
+      address: Array.isArray(poi.address) ? poi.address[0] : String(poi.address || ''),
+      photos: [...new Map([poi, ...related]
+        .flatMap(candidate => candidate.photos || [])
+        .filter(photo => photo?.url)
+        .map(photo => [photo.url, photo])).values()],
+      source: {
+        title: `高德地图 ${poi.name || item.name}`,
+        url: `https://www.amap.com/place/${encodeURIComponent(poi.id)}`,
+        kind: 'amap_live_web_service',
+      },
+    };
+  } catch {
+    return null;
+  }
+}
+
+function amapImage(amapDetails, item) {
+  if (!amapDetails?.photos?.length || !amapDetails.source) return null;
+  for (const photo of amapDetails.photos.slice(0, 9)) {
+    const quality = probeRemoteImage(String(photo.url).replace(/^http:/i, 'https:'));
+    if (!quality.ok) continue;
+    const localName = `${String(item.id || item.baselineKey).replace(/^manual_/, '').replace(/[^a-z0-9_-]/gi, '_')}_verified.jpg`;
+    return {
+      localPath: `/assets/images/attractions/${localName}`,
+      downloadUrl: String(photo.url).replace(/^http:/i, 'https:'),
+      title: `${item.name} 高德地图实景图`,
+      author: '高德地图用户或商户',
+      provider: '高德地图',
+      license: '高德开放平台地点图片资料，版权归原作者或来源方',
+      licenseUrl: 'https://lbs.amap.com/api/webservice/summary',
+      sourceUrl: amapDetails.source.url,
+      width: quality.width,
+      height: quality.height,
+    };
+  }
+  return null;
 }
 
 function neutralizeUnverifiedRating(value) {
@@ -428,6 +799,20 @@ function refreshRatingEvidence(value, item, records, ctripUrl = '') {
   return clean;
 }
 
+function refreshStableMetadata(value, item, officialRecord) {
+  const sources = [...(value.sources || [])];
+  for (const source of discoveredSources(item)) {
+    if (!sources.some(current => current.url === source.url)) sources.push(source);
+  }
+  const intro = value.intro || value.description || item.intro || '';
+  return {
+    ...value,
+    sources,
+    level: levelFor(item, officialRecord),
+    profile: inferProfile(item, intro),
+  };
+}
+
 function main() {
   if (!province) throw new Error('请使用 --province=省份。');
   const db = readJson(path.join(contentDir, 'db.json'), { provinces: {} });
@@ -457,8 +842,12 @@ function main() {
       : null;
     const ratingRecords = preferredRecord ? [preferredRecord] : records;
     const manualValue = manual.attractions?.[item.baselineKey] || manual.attractions?.[item.name];
-    if (manualValue?.sources?.length >= 2 && manualValue?.routes?.length >= 2 && manualValue?.image?.downloadUrl) {
-      let merged = mergeManual(output.attractions[item.baselineKey] || {}, manualValue);
+    if (manualValue?.sources?.length >= 2
+      && manualValue?.routes?.length >= 2
+      && manualValue?.image?.downloadUrl
+      && !(refreshImages && !imageMeetsPublishedQuality(manualValue.image))) {
+      const officialRecord = matchingOfficial(item, official);
+      let merged = refreshStableMetadata(mergeManual(output.attractions[item.baselineKey] || {}, manualValue), item, officialRecord);
       if (refreshRatings) {
         merged = refreshRatingEvidence(merged, item, ratingRecords, matchingCtripUrl(item, ota, secondary));
       }
@@ -468,7 +857,9 @@ function main() {
       console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：复用已核验覆盖资料${refreshRatings ? `，评分来源=${merged.ratingSource?.platform || '暂无可靠评分'}` : ''}。`);
       continue;
     }
-    if (!refresh && completeEvidence(output.attractions[item.baselineKey])) {
+    if (!refresh && reusableEvidence(output.attractions[item.baselineKey])) {
+      const officialRecord = matchingOfficial(item, official);
+      output.attractions[item.baselineKey] = refreshStableMetadata(output.attractions[item.baselineKey], item, officialRecord);
       if (refreshRatings) {
         output.attractions[item.baselineKey] = refreshRatingEvidence(
           output.attractions[item.baselineKey],
@@ -487,30 +878,41 @@ function main() {
       const ctripUrl = matchingCtripUrl(item, ota, secondary);
       const ctrip = ctripUrl ? parseCtrip(ctripUrl, item) : null;
       const wikidata = findWikidata(item);
-      const image = commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || '');
+      const amapDetails = liveAmapDetails(item);
+      const image = curatedCommonsImage(item)
+        || existingSourceImage(item, officialRecord)
+        || amapImage(amapDetails, item)
+        || searchOfficialPageImage(item)
+        || wikipediaPageImage(item)
+        || commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || '');
       const experience = experiences.attractions?.[item.baselineKey];
       const sources = [];
       const pushSource = source => {
         if (!source?.url || sources.some(value => value.url === source.url)) return;
         sources.push(source);
       };
+      for (const source of discoveredSources(item)) pushSource(source);
       if (officialRecord && official.sourceUrl) pushSource({ title: official.source || '文化和旅游部大众旅游服务', url: official.sourceUrl });
       if (ctrip) pushSource({ title: ctrip.title, url: ctrip.url });
       if (wikidata) pushSource({ title: `Wikidata ${wikidata.id} 实体页`, url: `https://www.wikidata.org/wiki/${wikidata.id}` });
+      if (amapDetails?.source) pushSource(amapDetails.source);
       const routeSource = ctrip ? { title: ctrip.title, url: ctrip.url } : sources[0];
-      const address = ctrip?.address || officialRecord?.address || item.address;
+      const address = ctrip?.address || officialRecord?.address || amapDetails?.address || item.address;
       const verifiedLevel = levelFor(item, officialRecord);
       const conservativeIntro = address
         ? `${item.name}位于${address}，是已通过名称、属地和来源交叉核验的${verifiedLevel}。具体开放范围、预约和交通安排以景区官方当日公告为准。`
         : `${item.name}是${item.city || province}的${verifiedLevel}，具体开放范围、预约和交通安排以景区官方当日公告为准。`;
       const intro = ctrip?.intro || officialRecord?.introduce || item.intro || conservativeIntro;
       const blockers = [];
-      if (sources.length < 2) blockers.push('独立可追溯来源少于2个');
+      const warnings = [];
+      if (!sources.length) blockers.push('没有可追溯基本资料来源');
+      else if (sources.length < 2) warnings.push('独立可追溯来源少于2个');
       if (!intro || !address) blockers.push('基本介绍或地址缺失');
       if (!experience?.routes?.length || experience.routes.length < 2) blockers.push('结构化路线尚未采集');
-      if (!image) blockers.push('尚未找到实体匹配且许可明确的高清图');
+      if (!image) warnings.push('尚未找到实体匹配且许可明确的高清图，隔离预览使用占位图');
       if (blockers.length) throw new Error(blockers.join('；'));
-      const profile = inferProfile(item.name, intro);
+      const resolvedImage = image || fallbackImage(item);
+      const profile = inferProfile(item, intro);
       const category = experience.category || inferCategory(item.name, intro);
       const ctripEvidence = {
         city: ctrip?.city || item.city || province,
@@ -540,7 +942,8 @@ function main() {
         specialCare: experience.specialCare,
         routes: routesFromExperience(experience, routeSource),
         sources,
-        image,
+        image: resolvedImage,
+        qualityWarnings: warnings,
         verifiedAt: new Date().toISOString().slice(0, 10),
       };
       output.attractions[item.baselineKey].ratingAudit = {
@@ -550,7 +953,7 @@ function main() {
           : { status: 'not-used', reason: amapEvidence.reason, liveFailure: amapEvidence.liveFailure, candidates: amapEvidence.candidates || [] },
       };
       delete output.failures[item.baselineKey];
-      console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：基本资料、路线和授权图片已闭环。`);
+      console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：关键资料已闭环${warnings.length ? `；警告：${warnings.join('；')}` : '。'}`);
     } catch (error) {
       output.failures[item.baselineKey] = { name: item.name, message: error.message, updatedAt: new Date().toISOString() };
       console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：待续跑（${error.message}）。`);
@@ -558,11 +961,12 @@ function main() {
     output.updatedAt = new Date().toISOString();
     writeJsonAtomic(outputPath, output);
   }
-  output.ready = workspace.attractions.filter(item => output.attractions[item.baselineKey]?.sources?.length >= 2).length;
+  output.ready = workspace.attractions.filter(item => completeEvidence(output.attractions[item.baselineKey])).length;
   output.total = workspace.attractions.length;
+  output.warningCount = workspace.attractions.reduce((count, item) => count + (output.attractions[item.baselineKey]?.qualityWarnings?.length || 0), 0);
   output.updatedAt = new Date().toISOString();
   writeJsonAtomic(outputPath, output);
-  console.log(`${province}可核验完整资料：${output.ready}/${output.total}。断点文件：${path.relative(rootDir, outputPath)}`);
+  console.log(`${province}关键资料闭环：${output.ready}/${output.total}；非阻断警告 ${output.warningCount} 条。断点文件：${path.relative(rootDir, outputPath)}`);
   if (output.ready !== output.total) process.exitCode = 2;
 }
 
@@ -573,4 +977,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { allAliases, completeEvidence, parseCtripHtml, sameIdentity };
+module.exports = { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseCtripHtml, sameIdentity };

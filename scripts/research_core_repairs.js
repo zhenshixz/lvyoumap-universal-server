@@ -191,6 +191,10 @@ function imageDimensions(filePath) {
 }
 
 async function ensureVerifiedImage(verified, imageTarget) {
+  if (verified.image?.placeholder) {
+    if (!fs.existsSync(imageTarget)) throw new Error('项目通用占位图不存在');
+    return;
+  }
   const validExisting = () => {
     if (!fs.existsSync(imageTarget)) return false;
     const dimensions = imageDimensions(imageTarget);
@@ -242,7 +246,8 @@ function buildAttraction(workspaceItem, evidence, foods, lazy) {
   const guide = guideDefaults(evidence);
   return {
     baselineKey: workspaceItem.baselineKey,
-    id: workspaceItem.id,
+    targetId: workspaceItem.preferredId || '',
+    id: workspaceItem.preferredId || workspaceItem.id,
     name: workspaceItem.name,
     city: evidence.city || workspaceItem.city || province,
     rating: Number.isFinite(Number(evidence.rating)) ? Number(evidence.rating) : 0,
@@ -307,6 +312,10 @@ function buildAttraction(workspaceItem, evidence, foods, lazy) {
       width: evidence.image.width,
       height: evidence.image.height,
     },
+    quality_status: {
+      reviewRequired: Boolean(evidence.qualityWarnings?.length),
+      warnings: evidence.qualityWarnings || [],
+    },
   };
 }
 
@@ -363,12 +372,13 @@ async function main() {
   const evidenceEntries = Object.entries(evidence.attractions);
   if (!evidenceEntries.length) throw new Error(`自动核验证据清单为空：${evidenceLabel}`);
   const malformedEvidence = evidenceEntries
-    .filter(([, item]) => !item || typeof item !== 'object' || !item.city || !item.description || !item.image?.downloadUrl)
+    .filter(([, item]) => !item || typeof item !== 'object' || !item.city || !item.description || !item.image?.localPath)
     .map(([key]) => key);
   if (malformedEvidence.length) {
     throw new Error(`自动核验证据清单含无效条目：${malformedEvidence.join('、')}`);
   }
   const blockers = [];
+  const warnings = [];
   const items = [];
   const foods = (info.data.foods || []).map(item => item.name).filter(Boolean).slice(0, 4);
   writeJsonAtomic(progressPath, { province, stage: 'researching', current: '', completed: 0, total: workspace.attractions.length, updatedAt: new Date().toISOString() });
@@ -383,17 +393,23 @@ async function main() {
     writeJsonAtomic(progressPath, { province, stage: 'researching', current: workspaceItem.name, completed: index, total: workspace.attractions.length, updatedAt: new Date().toISOString() });
     if (!verified) { blockers.push(`${workspaceItem.name}：没有已核验证据条目`); continue; }
     if (!lazy?.lazy_ai_text || !lazy?.lazy_ai_source) { blockers.push(`${workspaceItem.name}：点点懒人攻略尚未完成`); continue; }
-    if (!Array.isArray(verified.sources) || verified.sources.length < 2) { blockers.push(`${workspaceItem.name}：基本资料来源少于2个`); continue; }
+    if (!Array.isArray(verified.sources) || !verified.sources.length) { blockers.push(`${workspaceItem.name}：没有可追溯基本资料来源`); continue; }
+    if (verified.sources.length < 2) warnings.push(`${workspaceItem.name}：基本资料目前只有1个可追溯来源`);
     if (!Array.isArray(verified.routes) || verified.routes.length < 2) { blockers.push(`${workspaceItem.name}：可执行路线少于2条`); continue; }
     const imageTarget = path.join(rootDir, verified.image.localPath.replace(/^\//, '').replace(/\//g, path.sep));
     try {
       await ensureVerifiedImage(verified, imageTarget);
       const dimensions = imageDimensions(imageTarget);
-      if (!dimensions || dimensions.width < 1200 || dimensions.height < 700) throw new Error(`真实尺寸不足（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
-      if (fs.statSync(imageTarget).size < 100 * 1024) throw new Error('图片文件过小');
+      if (!verified.image?.placeholder) {
+        if (!dimensions || dimensions.width < 1200 || dimensions.height < 700) throw new Error(`真实尺寸不足（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
+        if (fs.statSync(imageTarget).size < 100 * 1024) throw new Error('图片文件过小');
+      } else {
+        warnings.push(`${workspaceItem.name}：隔离预览暂用通用占位图，正式发布前建议补充授权实景图`);
+      }
       verified.image.width = dimensions.width;
       verified.image.height = dimensions.height;
       const item = buildAttraction(workspaceItem, verified, foods, lazy);
+      item.qualityWarnings = [...new Set([...(verified.qualityWarnings || []), ...warnings.filter(value => value.startsWith(`${workspaceItem.name}：`))])];
       const clean = JSON.parse(JSON.stringify(item));
       delete clean.baselineKey;
       delete clean.quality_policy;
@@ -410,8 +426,10 @@ async function main() {
     ready: items.length,
     blockerCount: blockers.length,
     blockers,
+    warningCount: warnings.length,
+    warnings,
     minorNotes: evidence.minorNotes || [],
-    policy: '关键字段、两条路线、两个来源和可追溯高清图为硬门槛；动态信息不固化；小问题记录但不阻断。',
+    policy: '景点身份、属地、基本介绍、地址、攻略和两条路线为硬门槛；第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。',
   };
   writeJsonAtomic(reportPath, report);
   if (blockers.length) {
@@ -421,11 +439,11 @@ async function main() {
     process.exitCode = 2;
     return;
   }
-  writeJsonAtomic(seedPath, { province, verifiedAt: new Date().toISOString().slice(0, 10), policy: report.policy, attractions: items });
+  writeJsonAtomic(seedPath, { province, verifiedAt: new Date().toISOString().slice(0, 10), policy: report.policy, attractions: items, warnings });
   const prepared = spawnSync(process.execPath, [path.join('scripts', 'prepare_core_repair_package.js'), `--province=${province}`], { cwd: rootDir, stdio: 'inherit', shell: false });
   if (prepared.status !== 0) throw new Error('完整补全包生成失败。');
   writeJsonAtomic(progressPath, { province, stage: 'package_ready', current: '', completed: items.length, total: items.length, report: path.relative(rootDir, reportPath).replace(/\\/g, '/'), updatedAt: new Date().toISOString() });
-  console.log(`${province}完整资料已备齐：${items.length}/${items.length}；补全包进入质量门禁。`);
+  console.log(`${province}关键资料已备齐：${items.length}/${items.length}；非阻断警告 ${warnings.length} 条，补全包进入质量门禁与隔离预览。`);
 }
 
 main().catch(error => {

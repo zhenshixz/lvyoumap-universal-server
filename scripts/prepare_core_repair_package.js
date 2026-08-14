@@ -204,11 +204,14 @@ if (existing?.status === 'applied') {
   process.exit(0);
 }
 const verifiedAt = seed.verifiedAt || new Date().toISOString().slice(0, 10);
-const attractions = seed.attractions.map(item => {
-  if (!item.sources?.length || item.sources.length < 2) throw new Error(`${item.name} 至少需要两个基本信息来源。`);
+const researchWorkspace = readJson(researchWorkspacePath, { attractions: [] });
+const targetByBaseline = new Map((researchWorkspace.attractions || []).map(item => [item.baselineKey, item.preferredId || '']));
+const preparedItems = seed.attractions.map(item => {
+  if (!item.sources?.length) throw new Error(`${item.name} 至少需要一个可追溯基本信息来源。`);
   if (!item.routes?.length || item.routes.length < 2) throw new Error(`${item.name} 至少需要两条已核验路线。`);
   return {
     baselineKey: item.baselineKey,
+    targetId: item.targetId || targetByBaseline.get(item.baselineKey) || '',
     id: item.id,
     name: item.name,
     city: item.city,
@@ -242,19 +245,37 @@ const attractions = seed.attractions.map(item => {
       note: item.sourceNote || '开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。',
     },
     image_source: item.imageSource,
+    quality_status: {
+      reviewRequired: Boolean(item.qualityWarnings?.length),
+      warnings: item.qualityWarnings || [],
+    },
   };
 });
+const attractions = preparedItems.filter(item => !item.targetId).map(item => {
+  const clean = { ...item };
+  delete clean.targetId;
+  return clean;
+});
+const overrides = { ...(seed.overrides || {}) };
+for (const item of preparedItems.filter(value => value.targetId)) {
+  const targetId = item.targetId;
+  const patch = { ...item, id: targetId };
+  delete patch.baselineKey;
+  delete patch.targetId;
+  overrides[targetId] = { ...(overrides[targetId] || {}), ...patch };
+}
 const packageData = {
   province,
-  status: 'collecting',
+  status: existing?.status === 'reviewed' ? 'reviewed' : 'collecting',
   createdAt: existing?.createdAt || new Date().toISOString(),
   updatedAt: new Date().toISOString(),
   policy: '官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。',
+  warnings: seed.warnings || [],
   seedFile: path.relative(rootDir, seedPath).replace(/\\/g, '/'),
   attractions,
-  overrides: seed.overrides || {},
+  overrides,
 };
 writeJsonAtomic(packagePath, packageData);
-console.log(`${province}补全包已建立：新增 ${attractions.length}，修复 ${Object.keys(packageData.overrides).length}。`);
+console.log(`${province}补全包已建立：新增 ${attractions.length}，增强现有 ${Object.keys(packageData.overrides).length}。`);
 console.log(`状态：collecting（下一步只采集该补全包的点点攻略）。`);
 console.log(`文件：${packagePath}`);

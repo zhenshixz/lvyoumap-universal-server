@@ -1,0 +1,4527 @@
+{
+  "province": "上海",
+  "verifiedAt": "2026-08-14",
+  "policy": "景点身份、属地、基本介绍、地址、攻略和两条路线为硬门槛；第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。",
+  "attractions": [
+    {
+      "baselineKey": "core_b208812afc",
+      "targetId": "",
+      "id": "manual_shanghai_5666f18e",
+      "name": "西沙明珠湖景区",
+      "city": "上海",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shanghai_5666f18e_verified.jpg",
+      "description": "西沙明珠湖景区位于世界最大河口冲积沙岛、中国第三大岛——崇明岛的西南端，由明珠湖和西沙湿地组成，总面积7.8平方公里。景区具有独特秀美的湿地、湖泊、森林自然风光和特色的水陆体育竞技休闲旅游，使其成为了一个知名的国家生态旅游示范区。",
+      "intro": "西沙明珠湖景区位于世界最大河口冲积沙岛、中国第三大岛——崇明岛的西南端，由明珠湖和西沙湿地组成，总面积7.8平方公里。景区具有独特秀美的湿地、湖泊、森林自然风光和特色的水陆体育竞技休闲旅游，使其成为了一个知名的国家生态旅游示范区。",
+      "level": "5A景区",
+      "category": "生态湿地/湖泊/国家5A级旅游景区",
+      "tags": [
+        "生态湿地/湖泊/国家5A级旅游景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "上海市崇明区三华公路333号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "高德地图 西沙明珠湖景区",
+          "url": "https://www.amap.com/place/B00155R3U3",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "轻松休闲半日游（明珠湖核心区）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正门停车场",
+            "大雁放飞基地",
+            "环湖步道",
+            "无动力儿童乐园"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "建议直接购买景区游览车票（费用以官方当日公告为准），沿途可下车，省时省力",
+            "大雁放飞每天官方当日建议时段和官方当日建议时段两场，雨天可能取消，需提前20分钟占位",
+            "租车点只在北码头，进门后先租车再游玩，避免走冤枉路"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "深度自然一日游（明珠湖+西沙湿地）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西沙湿地木栈道",
+            "望江亭",
+            "彩虹桥",
+            "明珠湖环湖步道",
+            "红杉林游船"
+          ],
+          "duration": "半天",
+          "walking": "约6公里",
+          "physical": 4,
+          "tips": [
+            "西沙湿地到明珠湖正门相隔3公里，需自驾或乘车往返",
+            "望江亭看日落很美，但天黑后沿路无路灯，务必提前规划返程时间",
+            "湿地木栈道下有很多小螃蟹，可带小鱼钩体验钓蟹，记得放回滩涂"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        }
+      ],
+      "transport": {
+        "external_arrive": "自驾最方便，市区出发约2小时，导航至\"西沙明珠湖景区正门停车场\"；公共交通需从宝杨路/石洞口码头乘船至崇明南门港，再转乘南牛线公交，但岛上交通不便，推荐自驾",
+        "internal_arrive": "明珠湖区域导航\"西沙明珠湖景区正门停车场\"（三华公路333号），西沙湿地导航\"堡湖路588号\"，两个入口相隔3公里，建议根据行程选择停车点",
+        "internal_traffic": "景区游览车（费用以官方当日公告为准，沿途可下车）、自行车（费用以官方当日公告为准/小时，北码头租赁）、电动船（水上森林游览，约100-费用以官方当日公告为准/次）、水陆两栖车（费用以官方当日公告为准）",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区周边有崇明由由喜来登酒店等，距景区约20分钟车程，适合计划两天游玩的家庭",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议优先乘坐游览车，避免长时间步行，湿地木栈道推车友好；",
+        "children": "长辈建议优先乘坐游览车，避免长时间步行，湿地木栈道推车友好；儿童推荐无动力乐园（巨型滑梯、沙坑、秋千免费玩）、大雁投喂（6元饲料）和钓螃蟹体验，建议带防蚊液、外套和充足饮水\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "西沙明珠湖景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B00155R3U3",
+        "width": 1834,
+        "height": 2445
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "自驾最方便，市区出发约2小时，导航至\"西沙明珠湖景区正门停车场\"；公共交通需从宝杨路/石洞口码头乘船至崇明南门港，再转乘南牛线公交，但岛上交通不便，推荐自驾",
+          "internal_arrive": "明珠湖区域导航\"西沙明珠湖景区正门停车场\"（三华公路333号），西沙湿地导航\"堡湖路588号\"，两个入口相隔3公里，建议根据行程选择停车点",
+          "internal_traffic": "景区游览车（费用以官方当日公告为准，沿途可下车）、自行车（费用以官方当日公告为准/小时，北码头租赁）、电动船（水上森林游览，约100-费用以官方当日公告为准/次）、水陆两栖车（费用以官方当日公告为准）",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区周边有崇明由由喜来登酒店等，距景区约20分钟车程，适合计划两天游玩的家庭",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议优先乘坐游览车，避免长时间步行，湿地木栈道推车友好；",
+          "children": "长辈建议优先乘坐游览车，避免长时间步行，湿地木栈道推车友好；儿童推荐无动力乐园（巨型滑梯、沙坑、秋千免费玩）、大雁投喂（6元饲料）和钓螃蟹体验，建议带防蚊液、外套和充足饮水\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "轻松休闲半日游（明珠湖核心区）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正门停车场",
+            "大雁放飞基地",
+            "环湖步道",
+            "无动力儿童乐园"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "建议直接购买景区游览车票（费用以官方当日公告为准），沿途可下车，省时省力",
+            "大雁放飞每天官方当日建议时段和官方当日建议时段两场，雨天可能取消，需提前20分钟占位",
+            "租车点只在北码头，进门后先租车再游玩，避免走冤枉路"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "深度自然一日游（明珠湖+西沙湿地）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西沙湿地木栈道",
+            "望江亭",
+            "彩虹桥",
+            "明珠湖环湖步道",
+            "红杉林游船"
+          ],
+          "duration": "半天",
+          "walking": "约6公里",
+          "physical": 4,
+          "tips": [
+            "西沙湿地到明珠湖正门相隔3公里，需自驾或乘车往返",
+            "望江亭看日落很美，但天黑后沿路无路灯，务必提前规划返程时间",
+            "湿地木栈道下有很多小螃蟹，可带小鱼钩体验钓蟹，记得放回滩涂"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结34篇笔记生成\n\n西沙明珠湖景区由明珠湖和西沙湿地两大区域组成，面积很大，带长辈和小孩确实不能靠“硬走”，必须借助交通工具。为你整理了一条全程省力、覆盖核心景点的完整游玩路线。\n\n上午：明珠湖观雁与水上森林\n\n大雁放飞：从明珠湖正门进，步行约10分钟到达放飞点。每天上午官方当日建议时段和下午官方当日建议时段各有一场，上百只大雁编队起飞非常震撼。建议提前10-20分钟去占前排位置，表演结束后可以买饲料投喂互动。如果下雨，放飞可能会取消，出发前建议向官方确认。\n\n水上森林游船：看完大雁后，前往码头乘坐游船穿行水上森林。船桨划过水杉林，倒影很美，长辈小孩不用走路就能沉浸式体验自然，还能在船上拍照。\n\n下午：环湖骑行与湿地吸氧\n\n环湖休闲骑行：从北码头或南码头租借自行车（推荐单人自行车或带儿童座的车型，比双人踩踏板省力太多）。沿着专用骑行道环湖，一路看水杉、黑天鹅，风景丝滑。如果长辈实在不想骑车，可以在景区购买游览车票，随上随下，省去步行之苦。\n\n西沙湿地栈道：骑行或乘车经过彩虹桥进入西沙湿地区域。沿着木栈道漫步，两旁是芦苇荡和水杉林，栈道下有很多小螃蟹，小朋友可以带个小鱼钩体验钓螃蟹的乐趣。走到观景台还能俯瞰长江口，视野非常开阔。\n\n省力避坑与交通提醒\n\n停车与衔接：两个区域虽然内部有彩虹桥连通，但距离较远，强烈建议自驾。车停在明珠湖正门停车场，玩完湿地如果不想走回头路，要注意湿地出口离停车场有几公里，晚上没有路灯，打车也不方便，务必预留好返程时间或原路返回。\n\n租车与补给：园内租车点主要集中在北码头和南码头，进门后先确认租车位置再走，避免走冤枉路。另外，景区内补给站较少，建议自带足量的水和零食。\n\n设施细节：湿地里的M型桥台阶较陡，推婴儿车或腿脚不便的长辈尽量走桥下；园内厕所较多且干净，无动力儿童乐园也能让小孩充分放电。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "西沙明珠湖景区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:03:02.314Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 西沙明珠湖景区：https://www.amap.com/place/B00155R3U3"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 西沙明珠湖景区",
+          "url": "https://www.amap.com/place/B00155R3U3",
+          "poiId": "B00155R3U3",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西沙明珠湖景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B00155R3U3",
+        "width": 1834,
+        "height": 2445
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_8b7e0ca171",
+      "targetId": "",
+      "id": "manual_shanghai_d9fb268a",
+      "name": "中国共产党一大•二大•四大纪念馆景区",
+      "city": "上海",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shanghai_d9fb268a_verified.jpg",
+      "description": "中共“一大”原址是两栋砖木结构的两层石库门楼房，一栋是一大代表李汉俊的家宅，另一栋是一大代表在上海的住所--博文女校。中共“二大”会址是始建于1915年的石库门民居，曾是时任中央局宣传主任李达的寓所。",
+      "intro": "中共“一大”原址是两栋砖木结构的两层石库门楼房，一栋是一大代表李汉俊的家宅，另一栋是一大代表在上海的住所--博文女校。中共“二大”会址是始建于1915年的石库门民居，曾是时任中央局宣传主任李达的寓所。",
+      "level": "5A景区",
+      "category": "红色文化纪念馆/国家5A级旅游景区",
+      "tags": [
+        "红色文化纪念馆/国家5A级旅游景区",
+        "室内参观",
+        "官方名录"
+      ],
+      "address": "中共一大会址位于上海市兴业路76号、中共二大会址位于上海老成都北路7弄30号、中共四大纪念馆坐落于上海市虹口区四川北路绿地公园内",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典半日精华线（适合首次到访）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "中共一大会址",
+            "中共一大纪念馆",
+            "中共二大会址纪念馆",
+            "中共四大纪念馆"
+          ],
+          "duration": "半天",
+          "walking": "约3公里（含馆际地铁换乘步行）",
+          "physical": 4,
+          "tips": [
+            "三大馆分布在不同区，需乘坐地铁跨区",
+            "建议上午先逛一大会址与纪念馆，下午依次前往二大与四大",
+            "全程约需5至6小时，需穿舒适运动鞋"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "家庭省力室内线（适合长辈与儿童）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "中共一大纪念馆",
+            "中共一大会址",
+            "中共二大会址纪念馆",
+            "中共四大纪念馆"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（馆内以电梯与扶梯为主）",
+          "physical": 2,
+          "tips": [
+            "一大纪念馆全程室内恒温，适合怕热人群",
+            "儿童可参与AR互动与盖章打卡，长辈可跟随免费定时讲解",
+            "每馆预留1.5小时左右，节奏舒缓不赶场"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁1号线至一大会址·黄陂南路站；地铁14号线至南京西路站；地铁10号线至四川北路站；各馆周边停车紧张，建议公共交通出行",
+        "internal_arrive": "一大纪念馆从黄陂南路374号东1门进；一大会址从兴业路76号进；二大会址从老成都北路7弄30号进；四大纪念馆从四川北路1468号四川北路公园内进",
+        "internal_traffic": "馆内以步行、扶梯和电梯为主；馆际之间乘坐地铁换乘，单程约10至20分钟",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐黄浦区新天地/人民广场附近（靠近一大会址），或静安区南京西路附近（靠近二大会址），交通便利且餐饮选择丰富",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议优先跟随馆内免费定时讲解，减少自行看展的体力消耗；",
+        "children": "长辈建议优先跟随馆内免费定时讲解，减少自行看展的体力消耗；儿童可领取寻访手册参与盖章打卡，馆内有多媒体互动设备，建议提前讲解背景知识增强代入感\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "上海中共二大纪念馆2019.jpg",
+        "author": "ScareCriterion12",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%85%B1%E4%BA%8C%E5%A4%A7%E7%BA%AA%E5%BF%B5%E9%A6%862019.jpg",
+        "width": 3840,
+        "height": 2359
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线至一大会址·黄陂南路站；地铁14号线至南京西路站；地铁10号线至四川北路站；各馆周边停车紧张，建议公共交通出行",
+          "internal_arrive": "一大纪念馆从黄陂南路374号东1门进；一大会址从兴业路76号进；二大会址从老成都北路7弄30号进；四大纪念馆从四川北路1468号四川北路公园内进",
+          "internal_traffic": "馆内以步行、扶梯和电梯为主；馆际之间乘坐地铁换乘，单程约10至20分钟",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐黄浦区新天地/人民广场附近（靠近一大会址），或静安区南京西路附近（靠近二大会址），交通便利且餐饮选择丰富",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议优先跟随馆内免费定时讲解，减少自行看展的体力消耗；",
+          "children": "长辈建议优先跟随馆内免费定时讲解，减少自行看展的体力消耗；儿童可领取寻访手册参与盖章打卡，馆内有多媒体互动设备，建议提前讲解背景知识增强代入感\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典半日精华线（适合首次到访）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "中共一大会址",
+            "中共一大纪念馆",
+            "中共二大会址纪念馆",
+            "中共四大纪念馆"
+          ],
+          "duration": "半天",
+          "walking": "约3公里（含馆际地铁换乘步行）",
+          "physical": 4,
+          "tips": [
+            "三大馆分布在不同区，需乘坐地铁跨区",
+            "建议上午先逛一大会址与纪念馆，下午依次前往二大与四大",
+            "全程约需5至6小时，需穿舒适运动鞋"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "家庭省力室内线（适合长辈与儿童）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "中共一大纪念馆",
+            "中共一大会址",
+            "中共二大会址纪念馆",
+            "中共四大纪念馆"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（馆内以电梯与扶梯为主）",
+          "physical": 2,
+          "tips": [
+            "一大纪念馆全程室内恒温，适合怕热人群",
+            "儿童可参与AR互动与盖章打卡，长辈可跟随免费定时讲解",
+            "每馆预留1.5小时左右，节奏舒缓不赶场"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结33篇笔记生成\n\n带长辈和小孩逛红色纪念馆，最怕的就是走太多路、站太久或者太热。这条路线我特意帮你把“省力”和“室内恒温”放在了第一位，三个馆全串联，节奏也刚刚好。\n\n上午：中共一大纪念馆与一大会址\n\n建议早上9点开门就进，先逛室内恒温的中共一大纪念馆，主展厅在负一层，动线清晰，还有多媒体互动，长辈和小孩看都不觉得枯燥。逛完大概1个多小时，出门左转步行几分钟就是中共一大会址旧址，看看石库门建筑和18平米的会议室。这里空间较小，没有空调，建议快速参观，把体力留给后面。\n\n中午：商圈休整与能量补充\n\n一大纪念馆周边就是新天地商圈，这里平路多、商场多，长辈走累了随时能找地方坐。中午可以在商场里解决，选择多且环境舒适，方便长辈小孩休息回血。\n\n下午：中共二大与四大纪念馆\n\n下午坐地铁前往中共二大会址纪念馆，这里走廊两侧有长椅，随时能歇脚，参观约1.5小时。接着坐地铁去虹口的中共四大纪念馆，馆内有沉浸式剧场和AR互动，小孩会很喜欢。逛完刚好傍晚，可以在四川北路公园附近走走。\n\n省力与避坑指南\n\n交通接驳：三个馆之间距离较远，千万别步行串联，全部坐地铁。一大在1号线/10号线，二大在1号线/2号线，四大在3号线/4号线/10号线，地铁直达最省力。\n\n安检提醒：馆内严禁携带饮料，门口有寄存处，进门先存好水杯，避免安检排队时手忙脚乱。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "中国共产党一大•二大•四大纪念馆景区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:03:21.444Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "上海中共二大纪念馆2019.jpg",
+        "author": "ScareCriterion12",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%B5%B7%E4%B8%AD%E5%85%B1%E4%BA%8C%E5%A4%A7%E7%BA%AA%E5%BF%B5%E9%A6%862019.jpg",
+        "width": 3840,
+        "height": 2359
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_7a80723243",
+      "targetId": "",
+      "id": "manual_shanghai_4775351e",
+      "name": "上海科技馆",
+      "city": "上海",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shanghai_4775351e_verified.jpg",
+      "description": "上海科技馆坐落于上海浦东新区行政文化中心的世纪广场。上海科技馆的每个展区都是一个人们关注的社会话题；每个展品，都是一个引人入胜的互动游戏。",
+      "intro": "上海科技馆坐落于上海浦东新区行政文化中心的世纪广场。上海科技馆的每个展区都是一个人们关注的社会话题；每个展品，都是一个引人入胜的互动游戏。",
+      "level": "5A景区",
+      "category": "科普博物馆",
+      "tags": [
+        "科普博物馆",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "上海市浦东新区世纪大道2000号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "Wikidata Q855376 实体页",
+          "url": "https://www.wikidata.org/wiki/Q855376"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典高效省力线（适合成人/大童/长辈）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "3F飞行探秘",
+            "3F神奇的我",
+            "2F共生星球",
+            "2F明日行者",
+            "1F材料魔方",
+            "1F智慧之光"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 3,
+          "tips": [
+            "建议早上9点开馆直奔3楼，避开下午人流高峰",
+            "馆内空调偏凉，建议带件薄外套"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "低龄亲子放电线（适合3-8岁儿童）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1F一米世界",
+            "1F智慧之光",
+            "3F神奇的我",
+            "2F明日行者"
+          ],
+          "duration": "半天",
+          "walking": "约1万步",
+          "physical": 2,
+          "tips": [
+            "一米世界限时70分钟清场，需现场排队",
+            "食物的旅行适合低龄娃，小学以上不建议浪费预约名额"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2号线上海科技馆站7号或8号口，穿过地下商场直达6号门（免淋雨）｜自驾停花木时光里停车场，费用以官方当日公告为准/小时",
+        "internal_arrive": "带身份证原件直接刷证入馆，未带需去售票口换纸质票再安检｜打车定位2号门最近",
+        "internal_traffic": "馆内每层均为弧形动线，电梯充足，全程可推婴儿车",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "周边推荐上海浦东嘉里城酒店或上海浦东华美达广场酒店，距馆步行约10分钟",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议避开3楼硬核互动排队，重点逛2楼共生星球和1楼智慧之光看定点演示｜儿童建议优先预约一米世界和食物的旅行，备上湿巾和替换衣物\n\n活动",
+        "children": "长辈建议避开3楼硬核互动排队，重点逛2楼共生星球和1楼智慧之光看定点演示｜儿童建议优先预约一米世界和食物的旅行，备上湿巾和替换衣物\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Station Artwork on Shanghai S&T Museum Stat. 20241201 02.jpg",
+        "author": "Nat4Eben",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Station_Artwork_on_Shanghai_S%26T_Museum_Stat._20241201_02.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线上海科技馆站7号或8号口，穿过地下商场直达6号门（免淋雨）｜自驾停花木时光里停车场，费用以官方当日公告为准/小时",
+          "internal_arrive": "带身份证原件直接刷证入馆，未带需去售票口换纸质票再安检｜打车定位2号门最近",
+          "internal_traffic": "馆内每层均为弧形动线，电梯充足，全程可推婴儿车",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "周边推荐上海浦东嘉里城酒店或上海浦东华美达广场酒店，距馆步行约10分钟",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议避开3楼硬核互动排队，重点逛2楼共生星球和1楼智慧之光看定点演示｜儿童建议优先预约一米世界和食物的旅行，备上湿巾和替换衣物\n\n活动",
+          "children": "长辈建议避开3楼硬核互动排队，重点逛2楼共生星球和1楼智慧之光看定点演示｜儿童建议优先预约一米世界和食物的旅行，备上湿巾和替换衣物\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典高效省力线（适合成人/大童/长辈）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "3F飞行探秘",
+            "3F神奇的我",
+            "2F共生星球",
+            "2F明日行者",
+            "1F材料魔方",
+            "1F智慧之光"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 3,
+          "tips": [
+            "建议早上9点开馆直奔3楼，避开下午人流高峰",
+            "馆内空调偏凉，建议带件薄外套"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "低龄亲子放电线（适合3-8岁儿童）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1F一米世界",
+            "1F智慧之光",
+            "3F神奇的我",
+            "2F明日行者"
+          ],
+          "duration": "半天",
+          "walking": "约1万步",
+          "physical": 2,
+          "tips": [
+            "一米世界限时70分钟清场，需现场排队",
+            "食物的旅行适合低龄娃，小学以上不建议浪费预约名额"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结50篇笔记生成\n\n带长辈和小孩去上海科技馆，主打一个“不费腿、不瞎逛、体验好”。新馆升级后互动项目超多，但面积也很大，只要路线规划对，老少都能玩得轻松。\n\n这里为你整理了一条从上往下、不走回头路的省力路线，覆盖全馆核心展区：\n\n三楼：航空与人体奥秘（开馆先冲）\n\n飞行探秘：有1:1仿真大飞机和模拟驾驶，大一点的孩子会很喜欢。VR跳伞和四轴平衡器比较刺激，但要注意有1.4米的身高限制，长辈可以在旁边看模型。\n\n神奇的我：有很多人体互动游戏，比如脑控小车。必约项目《食物的旅行》是坐小火车模拟消化过程，非常适合低龄小孩，但长辈可能会觉得略幼稚，可灵活调整。\n\n探索之光：偏硬核科普，有相对论剧场和量子基因展，适合对科学感兴趣的大孩子，长辈如果累了可以在这边找个休息区坐坐。\n\n二楼：生态与机器人（视觉震撼）\n\n共生星球：有超大的悬浮地球装置，拍照很出片。里面的《六度剧场》沉浸式体验很好，能直观感受地球生态，长辈和小孩都能看懂。\n\n明日行者：机器人含量最高的展区，有机械臂涂鸦和定时机器人表演，科技感十足，互动性很强，小孩通常会看得目不转睛。\n\n一楼：低龄乐园与物理实验（轻松收尾）\n\n一米世界：专为3-8岁设计的迷你乐园，玩水、玩沙、模拟超市都有，单场玩70分钟，旁边还有家长休息区，是长辈能坐着歇脚、小孩疯狂放电的好地方。\n\n智慧之光：经典物理互动区，有怒发冲冠、能量穿梭机等，台板高度设计合理，小孩能自己够到操作，长辈看着也有趣。\n\n材料魔方：可以触摸700多种材料，超导赛车和磁流体芭蕾的定时表演视觉效果很酷炫，不用懂原理也能看热闹。\n\n雨林秘境：室内热带雨林氛围，有吊桥和岩洞，声效逼真，适合慢慢散步逛，人相对较少，比较省力。\n\nB1层：影院放松（完美收官）\n\n巨幕/球幕影院：如果长辈和小孩走累了，可以单独购票看一场球幕或巨幕电影，座椅躺倒、穹幕压下来，视觉震撼，还能顺便休息两个小时。建议选《月球基地》等自然科普类，音效较大，怕黑的小孩需斟酌。\n\n省力与避坑核心提示\n\n身高限制：三楼的VR跳伞、四轴平衡器以及一楼的高空骑行，均要求1.4米以上，带小孩排队前务必先看身高牌，避免白排队。\n\n错峰技巧：周末三楼互动项目排队极长，建议开馆直奔三楼，下午再逛一二楼；或者周末直接以一二楼为主，三楼走马观花。\n\n二次进出：如果中途想出去吃饭，可以在门口刷脸登记，之后直接刷脸回馆，不用重新排队安检。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海科技馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:03:41.679Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "Wikidata Q855376 实体页：https://www.wikidata.org/wiki/Q855376",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Station Artwork on Shanghai S&T Museum Stat. 20241201 02.jpg",
+        "author": "Nat4Eben",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Station_Artwork_on_Shanghai_S%26T_Museum_Stat._20241201_02.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_2e9a529fb7",
+      "targetId": "amap_B00152F15F",
+      "id": "amap_B00152F15F",
+      "name": "上海野生动物园",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "126791条携程点评",
+      "image": "/assets/images/attractions/shanghai_7586922f_verified.jpg",
+      "description": "欢迎来到上海野生动物园，这里将唤起您心中对于大自然的美好向往与满满好奇，我们也将为您诠释一座人与动物和谐共处的美好家园。 作为国内首批5A级旅游景区，一直以来，我们都在努力拉近人与自然之间的距离。",
+      "intro": "欢迎来到上海野生动物园，这里将唤起您心中对于大自然的美好向往与满满好奇，我们也将为您诠释一座人与动物和谐共处的美好家园。 作为国内首批5A级旅游景区，一直以来，我们都在努力拉近人与自然之间的距离。",
+      "level": "5A景区",
+      "category": "野生动物园 / 亲子景区 / 5A级景区",
+      "tags": [
+        "野生动物园 / 亲子景区 / 5A级景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "上海市浦东新区宣桥镇南六公路178号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "resort",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "携程旅行 上海野生动物园 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q6140007 实体页",
+          "url": "https://www.wikidata.org/wiki/Q6140007"
+        },
+        {
+          "title": "mct_national_5a_2025",
+          "url": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典高效不走回头路线（适合早入园）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "火烈鸟湖",
+            "车入区免费大巴",
+            "天鹅湖",
+            "太阳广场",
+            "百兽山剧场",
+            "大熊猫馆",
+            "长颈鹿雅苑",
+            "袋鼠坡",
+            "小动物乐园"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 4,
+          "tips": [
+            "较合适时段入园先冲猛兽区大巴，动物最活跃",
+            "百兽山剧场每日仅官方当日建议时段一场，需提前15分钟占位",
+            "免费大巴建议坐右侧靠窗前排，视野最佳"
+          ],
+          "sourceTitle": "携程旅行 上海野生动物园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online"
+        },
+        {
+          "title": "懒人错峰省力路线（适合睡懒觉）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "火烈鸟湖",
+            "步行区萌宠线",
+            "海狮剧场",
+            "午餐休息",
+            "车入区大巴",
+            "长颈鹿投喂",
+            "水域探秘游船",
+            "儿童乐园"
+          ],
+          "duration": "半天",
+          "walking": "约8千步",
+          "physical": 2,
+          "tips": [
+            "较合适时段后再入园，下午错峰坐大巴几乎不用排队",
+            "水域探秘坐船看河马和水鸟，冷气足适合避暑",
+            "儿童乐园摩天轮、过山车等12项设施已免费"
+          ],
+          "sourceTitle": "携程旅行 上海野生动物园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "自驾导航至P2停车场（离正门最近，费用以官方当日公告为准/天）；地铁16号线野生动物园站，换乘浦东125路或惠南6路公交",
+        "internal_arrive": "进门后先往左走，直奔车入区大巴排队点，不要在步行区停留，上午动物活跃度最高",
+        "internal_traffic": "免费大巴（车入区，含在门票内）｜付费投喂车（费用以官方当日公告为准普通，费用以官方当日公告为准VIP）｜电瓶车（费用以官方当日公告为准/成人）｜电动车（费用以官方当日公告为准/小时）｜游船（水域探秘费用以官方当日公告为准）",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "园区内无住宿；周边有美伦酒店等（步行约10分钟），主打商务便捷，适合过夜中转",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；",
+        "children": "长辈建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；儿童建议门口租婴儿车（60元/天），可玩免费儿童乐园，投喂动物选长颈鹿和袋鼠体验好，园内麦当劳有儿童餐可选\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Shanghai Wild Animal Park Main Entrance.jpg",
+        "author": "周一楠",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghai_Wild_Animal_Park_Main_Entrance.jpg",
+        "width": 1920,
+        "height": 1440
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "大型度假区步行量容易被低估，舒适鞋和分层穿搭比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至P2停车场（离正门最近，费用以官方当日公告为准/天）；地铁16号线野生动物园站，换乘浦东125路或惠南6路公交",
+          "internal_arrive": "进门后先往左走，直奔车入区大巴排队点，不要在步行区停留，上午动物活跃度最高",
+          "internal_traffic": "免费大巴（车入区，含在门票内）｜付费投喂车（费用以官方当日公告为准普通，费用以官方当日公告为准VIP）｜电瓶车（费用以官方当日公告为准/成人）｜电动车（费用以官方当日公告为准/小时）｜游船（水域探秘费用以官方当日公告为准）",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "园区内无住宿；周边有美伦酒店等（步行约10分钟），主打商务便捷，适合过夜中转",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；",
+          "children": "长辈建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；儿童建议门口租婴儿车（60元/天），可玩免费儿童乐园，投喂动物选长颈鹿和袋鼠体验好，园内麦当劳有儿童餐可选\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典高效不走回头路线（适合早入园）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "火烈鸟湖",
+            "车入区免费大巴",
+            "天鹅湖",
+            "太阳广场",
+            "百兽山剧场",
+            "大熊猫馆",
+            "长颈鹿雅苑",
+            "袋鼠坡",
+            "小动物乐园"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 4,
+          "tips": [
+            "较合适时段入园先冲猛兽区大巴，动物最活跃",
+            "百兽山剧场每日仅官方当日建议时段一场，需提前15分钟占位",
+            "免费大巴建议坐右侧靠窗前排，视野最佳"
+          ],
+          "sourceTitle": "携程旅行 上海野生动物园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "懒人错峰省力路线（适合睡懒觉）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "火烈鸟湖",
+            "步行区萌宠线",
+            "海狮剧场",
+            "午餐休息",
+            "车入区大巴",
+            "长颈鹿投喂",
+            "水域探秘游船",
+            "儿童乐园"
+          ],
+          "duration": "半天",
+          "walking": "约8千步",
+          "physical": 2,
+          "tips": [
+            "较合适时段后再入园，下午错峰坐大巴几乎不用排队",
+            "水域探秘坐船看河马和水鸟，冷气足适合避暑",
+            "儿童乐园摩天轮、过山车等12项设施已免费"
+          ],
+          "sourceTitle": "携程旅行 上海野生动物园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结50篇笔记生成\n\n带长辈和小孩逛上海野生动物园，最怕的就是走断腿还错过精华。为你整理了一条全程少走路、多坐车、看表演的省力路线，轻松玩遍全园！\n\n上午行程：车行区与经典剧场\n\n入园与火烈鸟打卡：正门入园后，先路过火烈鸟湖区简单打卡，粉色火烈鸟非常出片，不用过多停留。\n\n海狮剧场：步行前往海狮剧场观看表演（平日通常有官方当日建议时段和官方当日建议时段两场，周末可能增设），提前15分钟占位，室内有空调，长辈小孩坐着看很轻松。\n\n下午行程：步行区精华与午休缓冲\n\n午餐与午休：推荐在老虎餐厅就餐，靠窗位置可以一边吃饭一边看老虎，或者在附近的麦当劳解决。饭后让长辈和小孩在婴儿车或休息区睡个午觉，恢复体力。\n\n太阳广场表演：前往太阳广场观看“解密大自然”表演（通常有官方当日建议时段、官方当日建议时段、官方当日建议时段场次），户外场地，可以看到猎豹赛跑等精彩项目，建议提前占位。\n\n王牌动物展区：下午依次打卡大熊猫馆、长颈鹿雅苑、袋鼠坡和亚洲象展区。路线顺畅，树荫较多，可以慢慢逛，想投喂长颈鹿或袋鼠可现场购买饲料。\n\n萌宠收尾：傍晚光线柔和时，去狐猴岛、小动物乐园或卡皮巴拉乐园转转，这时候动物也比较活跃，最后慢慢往正门方向走，轻松出园。\n\n省力与避坑贴士\n\n错峰技巧：如果不想早上排长队坐大巴，可以下午客流较少时再去坐猛兽区大巴，几乎不用排队，末班车通常在客流较少时。\n\n互动时间：动物投喂互动一般在官方当日建议时段就截止了，如果想喂动物，一定要在下午表演前完成，不要等到看完百兽山剧场再去。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海野生动物园完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:04:01.239Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "携程旅行 上海野生动物园 详情页：https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+          "Wikidata Q6140007 实体页：https://www.wikidata.org/wiki/Q6140007",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 上海野生动物园 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Shanghai Wild Animal Park Main Entrance.jpg",
+        "author": "周一楠",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghai_Wild_Animal_Park_Main_Entrance.jpg",
+        "width": 1920,
+        "height": 1440
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_a5a3032ebf",
+      "targetId": "",
+      "id": "manual_shanghai_2193b925",
+      "name": "上海中心大厦",
+      "city": "上海",
+      "rating": 4.6,
+      "reviewsCount": "11522条携程点评",
+      "image": "/assets/images/attractions/shanghai_2193b925_verified.jpg",
+      "description": "上海中心大厦位于中国上海浦东陆家嘴金融贸易区核心区，是一幢集商务、办公、酒店、商业、娱乐、观光等功能的超高层建筑，建筑总高度632米，地上127层，地下5层。作为陆家嘴核心区超高层建筑群的收官之作，“上海中心”已成为上海金融服务业的重要载体。",
+      "intro": "上海中心大厦位于中国上海浦东陆家嘴金融贸易区核心区，是一幢集商务、办公、酒店、商业、娱乐、观光等功能的超高层建筑，建筑总高度632米，地上127层，地下5层。作为陆家嘴核心区超高层建筑群的收官之作，“上海中心”已成为上海金融服务业的重要载体。",
+      "level": "热门景点",
+      "category": "城市观景地标",
+      "tags": [
+        "城市观景地标",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市浦东新区陆家嘴银城中路501号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "携程旅行 上海中心大厦 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q18547 实体页",
+          "url": "https://www.wikidata.org/wiki/Q18547"
+        },
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/shanghai2.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典登顶观景线（适合首次打卡）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "B1层展示厅",
+            "B2层高速电梯",
+            "118层上海之巅观光厅",
+            "126层上海慧眼阻尼器"
+          ],
+          "duration": "半天",
+          "walking": "约1500米（含楼层间步行）",
+          "physical": 3,
+          "tips": [
+            "建议傍晚前往，可一次看日落与夜景",
+            "118层人多，119层人少可错峰拍照"
+          ],
+          "sourceTitle": "携程旅行 上海中心大厦 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online"
+        },
+        {
+          "title": "云端书院休闲线（适合轻松打卡）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "2号门入口",
+            "52层朵云书院",
+            "南北观景角",
+            "周边商场"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "需提前在小程序预约",
+            "观景台需凭店内消费小票进入"
+          ],
+          "sourceTitle": "携程旅行 上海中心大厦 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2/14号线陆家嘴站6号或9A口出站步行约5分钟；自驾可停大厦地下停车场（南门进入）",
+        "internal_arrive": "观光游客从B1层售票处进入；朵云书院游客从2号门侧门进入，有专人引导",
+        "internal_traffic": "B2层乘坐18米/秒超高速电梯，约55秒直达118层；楼层间以电梯为主，部分区域可步行",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "陆家嘴商圈（上海国金中心、正大广场周边），步行可达大厦，餐饮购物便利",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议乘坐高速电梯时做吞咽动作缓解耳压，118层有休息区可缓步观景；",
+        "children": "长辈建议乘坐高速电梯时做吞咽动作缓解耳压，118层有休息区可缓步观景；儿童建议B1层科普展厅看阻尼器模型，118层天空邮局和许愿树互动性强，母婴室在118层及B1层\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Far view of Shanghai Financial Tower (36396493196).jpg",
+        "author": "shankar s. from Dubai, united arab emirates",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Far_view_of_Shanghai_Financial_Tower_(36396493196).jpg",
+        "width": 3840,
+        "height": 2543
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁2/14号线陆家嘴站6号或9A口出站步行约5分钟；自驾可停大厦地下停车场（南门进入）",
+          "internal_arrive": "观光游客从B1层售票处进入；朵云书院游客从2号门侧门进入，有专人引导",
+          "internal_traffic": "B2层乘坐18米/秒超高速电梯，约55秒直达118层；楼层间以电梯为主，部分区域可步行",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "陆家嘴商圈（上海国金中心、正大广场周边），步行可达大厦，餐饮购物便利",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议乘坐高速电梯时做吞咽动作缓解耳压，118层有休息区可缓步观景；",
+          "children": "长辈建议乘坐高速电梯时做吞咽动作缓解耳压，118层有休息区可缓步观景；儿童建议B1层科普展厅看阻尼器模型，118层天空邮局和许愿树互动性强，母婴室在118层及B1层\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典登顶观景线（适合首次打卡）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "B1层展示厅",
+            "B2层高速电梯",
+            "118层上海之巅观光厅",
+            "126层上海慧眼阻尼器"
+          ],
+          "duration": "半天",
+          "walking": "约1500米（含楼层间步行）",
+          "physical": 3,
+          "tips": [
+            "建议傍晚前往，可一次看日落与夜景",
+            "118层人多，119层人少可错峰拍照"
+          ],
+          "sourceTitle": "携程旅行 上海中心大厦 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "云端书院休闲线（适合轻松打卡）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "2号门入口",
+            "52层朵云书院",
+            "南北观景角",
+            "周边商场"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "需提前在小程序预约",
+            "观景台需凭店内消费小票进入"
+          ],
+          "sourceTitle": "携程旅行 上海中心大厦 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结68篇笔记生成\n\n带长辈和小孩去上海中心，最怕的就是排队久、走路多、电梯耳压大。这条路线主打一个“全程电梯+少走路+不折腾”，让全家都能轻松感受云端魅力。\n\n大厦内部省力游览动线\n\nB1层城市主题展厅：从入口进入后，先带家人看看这里。有陆家嘴高楼介绍和上海中心建造史，光影质感很好，还能提前了解大楼的“前世今生”，长辈小孩都能看懂，全程不用爬楼梯。\n\n超高速电梯直达118层：在B2层乘坐吉尼斯纪录的超高速电梯（18米/秒），55秒直达546米的118层。提醒长辈和小孩在电梯上升时做吞咽动作，缓解耳压不适。\n\n118层上海之巅观光厅：这是核心观景层，360°环形落地窗无死角俯瞰魔都。顺时针看浦东三件套，逆时针看黄浦江。可以带小孩在“心锁云间”写心愿卡，或者去“天空邮局”寄张云端明信片，互动性强且不费腿。\n\n119层分流与预约：从118层步行上1层即到119层，这里人相对较少，也是观景和休息的好地方。如果买了126层阻尼器联票，需要在这里的自助机先预约参观时间，避免错过场次。\n\n126层阻尼器光影秀：坐电梯上到125层“天时632艺术空间”，再步行至126层。这里能看到重达1000吨的“定海神针”阻尼器实物，还有沉浸式光影演绎，科技感拉满，小孩通常会看得很入迷。看完后原路返回电梯下楼即可。\n\n专属长辈小孩的省力贴士\n\n天气与错峰：出发前务必查实时天气和能见度，阴雨天或雾霾天上去容易白茫茫一片。建议下午4-5点入场，既能看白天城景，又能等日落和亮灯，不用起得太早也不用熬太晚。\n\n如果长辈小孩登完高还想在附近逛逛，可以安排这两个不费力的点：\n\n52层朵云书院：提前在小程序预约，点一杯饮品就能在高空落地窗前看三件套和江景，人少安静，适合慢慢休息。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海中心大厦完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:04:21.807Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 上海中心大厦 详情页：https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online",
+          "Wikidata Q18547 实体页：https://www.wikidata.org/wiki/Q18547",
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanghai2.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 上海中心大厦 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/1827363.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Far view of Shanghai Financial Tower (36396493196).jpg",
+        "author": "shankar s. from Dubai, united arab emirates",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Far_view_of_Shanghai_Financial_Tower_(36396493196).jpg",
+        "width": 3840,
+        "height": 2543
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_3b51b27693",
+      "targetId": "",
+      "id": "manual_shanghai_90a2017d",
+      "name": "外滩",
+      "city": "上海",
+      "rating": 4.8,
+      "reviewsCount": "157114条携程点评",
+      "image": "/assets/images/attractions/shanghai_90a2017d_verified.jpg",
+      "description": "外滩位于黄浦江畔，全长约1.5公里，是上海城市象征意义的景点，风格迥异的万国建筑群和浦江夜景是它的精华所在。 外滩矗立着几十幢风格迥异的古典复兴大楼，知名的中国银行大楼、上海和平饭店、海关大楼、汇丰银行大楼等再现了昔日“远东华尔街”的风采。",
+      "intro": "外滩位于黄浦江畔，全长约1.5公里，是上海城市象征意义的景点，风格迥异的万国建筑群和浦江夜景是它的精华所在。 外滩矗立着几十幢风格迥异的古典复兴大楼，知名的中国银行大楼、上海和平饭店、海关大楼、汇丰银行大楼等再现了昔日“远东华尔街”的风采。",
+      "level": "热门景点",
+      "category": "城市观光/历史建筑/江景夜景",
+      "tags": [
+        "城市观光/历史建筑/江景夜景",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市黄浦区中山东一路北至外白渡桥、南至十六铺码头",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "携程旅行 外滩 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q125474 实体页",
+          "url": "https://www.wikidata.org/wiki/Q125474"
+        },
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/shanghai2.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典省力休闲线（北外滩进，避开人潮）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北外滩滨江绿地",
+            "外白渡桥",
+            "外滩观景平台",
+            "陈毅广场"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "建议从北外滩一路向南走，人少路平，推婴儿车无压力",
+            "晚上看亮灯不要从南京路步行街挤上观景台，直接导航外滩9号或11号口快速上平台"
+          ],
+          "sourceTitle": "携程旅行 外滩 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online"
+        },
+        {
+          "title": "轮渡跨江观景线（高性价比不费腿）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "金陵东路渡口",
+            "东金线轮渡",
+            "东昌路渡口",
+            "陆家嘴环形天桥"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 1,
+          "tips": [
+            "费用以官方当日公告为准轮渡二楼甲板看江景绝佳，东金线官方当日建议时段左右停运，想看夜景需选择东复线",
+            "下船后在天桥可一次性拍全东方明珠和三件套"
+          ],
+          "sourceTitle": "携程旅行 外滩 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2号线/10号线至南京东路站，或12号线至国际客运中心站；自驾建议停BFC外滩金融中心或置地广场地下车库",
+        "internal_arrive": "晚上优先从外滩9号或11号口进入观景平台，避开南京东路站的大客流和限流",
+        "internal_traffic": "可乘坐外滩观光巴士（一日票24小时通用），或花费用以官方当日公告为准乘坐轮渡横渡黄浦江",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐南京东路或人民广场附近，地铁沿线出行最方便；追求性价比和清净可选北外滩附近",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议多坐观光巴士和轮渡，少步行，傍晚去豫园老街逛市井烟火；",
+        "children": "长辈建议多坐观光巴士和轮渡，少步行，傍晚去豫园老街逛市井烟火；儿童首选北外滩滨江，步道平坦可跑动，有游乐场和大邮轮，全程推婴儿车无压力\n\n你们大概计划白天去还是晚上去看夜景？如果是晚上，我可以帮你补充一些周边适合家庭聚餐的餐厅建议。\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Promenade du Bund.jpg",
+        "author": "Georgio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Promenade_du_Bund.jpg",
+        "width": 1748,
+        "height": 1162
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线/10号线至南京东路站，或12号线至国际客运中心站；自驾建议停BFC外滩金融中心或置地广场地下车库",
+          "internal_arrive": "晚上优先从外滩9号或11号口进入观景平台，避开南京东路站的大客流和限流",
+          "internal_traffic": "可乘坐外滩观光巴士（一日票24小时通用），或花费用以官方当日公告为准乘坐轮渡横渡黄浦江",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐南京东路或人民广场附近，地铁沿线出行最方便；追求性价比和清净可选北外滩附近",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议多坐观光巴士和轮渡，少步行，傍晚去豫园老街逛市井烟火；",
+          "children": "长辈建议多坐观光巴士和轮渡，少步行，傍晚去豫园老街逛市井烟火；儿童首选北外滩滨江，步道平坦可跑动，有游乐场和大邮轮，全程推婴儿车无压力\n\n你们大概计划白天去还是晚上去看夜景？如果是晚上，我可以帮你补充一些周边适合家庭聚餐的餐厅建议。\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力休闲线（北外滩进，避开人潮）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北外滩滨江绿地",
+            "外白渡桥",
+            "外滩观景平台",
+            "陈毅广场"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "建议从北外滩一路向南走，人少路平，推婴儿车无压力",
+            "晚上看亮灯不要从南京路步行街挤上观景台，直接导航外滩9号或11号口快速上平台"
+          ],
+          "sourceTitle": "携程旅行 外滩 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "轮渡跨江观景线（高性价比不费腿）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "金陵东路渡口",
+            "东金线轮渡",
+            "东昌路渡口",
+            "陆家嘴环形天桥"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 1,
+          "tips": [
+            "费用以官方当日公告为准轮渡二楼甲板看江景绝佳，东金线官方当日建议时段左右停运，想看夜景需选择东复线",
+            "下船后在天桥可一次性拍全东方明珠和三件套"
+          ],
+          "sourceTitle": "携程旅行 外滩 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结59篇笔记生成\n\n带长辈和小孩逛外滩，最核心的原则就是“少走回头路、多坐交通工具、避开人挤人”。这条路线从人少的北外滩开始，一路慢逛到经典外滩，再坐轮渡过江看浦东，全程平缓好走，节奏轻松。\n\n第一站：北外滩（人少景美，轻松起步）\n\n建议从地铁12号线国际客运中心站出发，先逛北外滩滨江绿地。这里相比传统外滩人少很多，江风舒服，还有镜面“小巨蛋”可以打卡。沿着江边栈道一路慢走，能同时看到外滩万国建筑和陆家嘴三件套，沿途休息长椅很多，累了随时坐下歇脚，非常适合长辈和小孩调整状态。\n\n第二站：外滩经典段（慢逛万国建筑）\n\n带小孩和长辈强烈建议坐轮渡过江，既省钱又能吹江风看全景。可以从金陵东路渡口或公平路渡口上船，扫码即可乘坐，大概5分钟就到达浦东的东昌路渡口。小朋友通常会非常喜欢坐船的体验，而且完全不用走路过隧道或挤地铁。\n\n第四站：陆家嘴（近距离打卡地标）\n\n下船后沿着拾步街慢慢走，就能近距离感受东方明珠和陆家嘴三件套的震撼。陆家嘴区域的步行天桥非常平缓，推婴儿车或轮椅都毫无压力。如果还想逛商场吹空调，可以前往国金中心或正大广场，全程电梯覆盖，休息设施完善。\n\n省力与避坑提醒\n\n错峰出行：晚上看夜景尽量避开南京东路步行街主路的人流，可以直接导航到外滩观景平台9号或11号口快速上平台，逛完再从步行街附近的口下来。\n\n交通建议：外滩周边打车非常堵，优先选择地铁；如果长辈体力有限，可以在关键节点之间选择打车或无障碍商务车衔接。\n\n时间把控：轮渡运营时间通常在晚上客流较少时结束，如果计划坐轮渡，请务必提前确认当天的具体收渡时间，避免跑空。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "外滩完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:05:31.488Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 外滩 详情页：https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online",
+          "Wikidata Q125474 实体页：https://www.wikidata.org/wiki/Q125474",
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanghai2.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 外滩 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/736.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Promenade du Bund.jpg",
+        "author": "Georgio",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Promenade_du_Bund.jpg",
+        "width": 1748,
+        "height": 1162
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_5475407097",
+      "targetId": "",
+      "id": "manual_shanghai_16d4e2e9",
+      "name": "豫园",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "54907条携程点评",
+      "image": "/assets/images/attractions/shanghai_16d4e2e9_verified.jpg",
+      "description": "豫园位于上海豫园旅游商业区的东北部，与上海城隍庙、上海豫园旅游商城毗邻，是知名的江南古典园林，闻名中外的名胜古迹。1982年被批准成为“全国重点文物保护单位”。",
+      "intro": "豫园位于上海豫园旅游商业区的东北部，与上海城隍庙、上海豫园旅游商城毗邻，是知名的江南古典园林，闻名中外的名胜古迹。1982年被批准成为“全国重点文物保护单位”。",
+      "level": "热门景点",
+      "category": "江南古典园林",
+      "tags": [
+        "江南古典园林",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市黄浦区福佑路168号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "携程旅行 豫园 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q1328025 实体页",
+          "url": "https://www.wikidata.org/wiki/Q1328025"
+        },
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/shanghai2.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典南门进省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "三穗堂",
+            "仰山堂",
+            "大假山",
+            "玉玲珑",
+            "点春堂",
+            "会景楼",
+            "九曲桥"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "南门入园顺路不绕圈",
+            "大假山可登顶俯瞰全园",
+            "九曲桥连接湖心亭适合拍照"
+          ],
+          "sourceTitle": "携程旅行 豫园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online"
+        },
+        {
+          "title": "北门进深度文化线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "内园",
+            "点春堂",
+            "玉华堂",
+            "万花楼",
+            "鱼乐榭",
+            "三穗堂",
+            "九曲桥"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "内园较幽静适合慢逛",
+            "点春堂有历史陈列",
+            "鱼乐榭临池观锦鲤很惬意"
+          ],
+          "sourceTitle": "携程旅行 豫园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁10号线/14号线豫园站，1号口靠近北门、7号口靠近南门，步行约5至10分钟直达",
+        "internal_arrive": "带长辈或小孩推荐从南门进，路线平缓；想避开人流可选北门进，排队相对较少",
+        "internal_traffic": "园区内全部步行，无代步车，建议穿舒适鞋子",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在黄浦区人民广场或外滩附近，步行或骑车即可到达，周边餐饮和交通都很方便",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议避开周一闭园日，园内步道雨天较滑需慢行，可带折叠凳在鱼乐榭或湖心亭休息；",
+        "children": "长辈建议避开周一闭园日，园内步道雨天较滑需慢行，可带折叠凳在鱼乐榭或湖心亭休息；儿童可在九曲桥喂锦鲤、体验画糖人捏泥人等传统游戏，园区内有自助寄存柜可存放婴儿车\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "2024-Apr Shanghai Yu Yuan Garden 豫园 - img 20.jpg",
+        "author": "Chainwit.",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_Yu_Yuan_Garden_%E8%B1%AB%E5%9B%AD_-_img_20.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁10号线/14号线豫园站，1号口靠近北门、7号口靠近南门，步行约5至10分钟直达",
+          "internal_arrive": "带长辈或小孩推荐从南门进，路线平缓；想避开人流可选北门进，排队相对较少",
+          "internal_traffic": "园区内全部步行，无代步车，建议穿舒适鞋子",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在黄浦区人民广场或外滩附近，步行或骑车即可到达，周边餐饮和交通都很方便",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议避开周一闭园日，园内步道雨天较滑需慢行，可带折叠凳在鱼乐榭或湖心亭休息；",
+          "children": "长辈建议避开周一闭园日，园内步道雨天较滑需慢行，可带折叠凳在鱼乐榭或湖心亭休息；儿童可在九曲桥喂锦鲤、体验画糖人捏泥人等传统游戏，园区内有自助寄存柜可存放婴儿车\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典南门进省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "三穗堂",
+            "仰山堂",
+            "大假山",
+            "玉玲珑",
+            "点春堂",
+            "会景楼",
+            "九曲桥"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "南门入园顺路不绕圈",
+            "大假山可登顶俯瞰全园",
+            "九曲桥连接湖心亭适合拍照"
+          ],
+          "sourceTitle": "携程旅行 豫园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "北门进深度文化线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "内园",
+            "点春堂",
+            "玉华堂",
+            "万花楼",
+            "鱼乐榭",
+            "三穗堂",
+            "九曲桥"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "内园较幽静适合慢逛",
+            "点春堂有历史陈列",
+            "鱼乐榭临池观锦鲤很惬意"
+          ],
+          "sourceTitle": "携程旅行 豫园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结51篇笔记生成\n\n白天：古典园林慢游（约1.5-2小时）\n\n这条路线主打平路多、少爬坡，能看完江南园林的核心精华。\n\n推荐入园方式：建议从北门进（排队相对少，且先逛内园比较清静），或者从南门进（最经典的正门路线）。\n\n游览动线：北门入园 ➡️ 内园（小巧精致，平路多） ➡️ 点春堂 ➡️ 玉玲珑（江南名石） ➡️ 大假山（可登顶俯瞰，但长辈若腿脚不便可在山脚仰山堂休息） ➡️ 三穗堂 ➡️南门出园。\n\n路线优势：全程不走回头路，从北门到南门一路下坡或平路为主，逛完正好从南门出来直通商业街，衔接自然。\n\n傍晚至夜间：商城老街与九曲桥（约1-2小时）\n\n晚上园林会闭园，但外围的豫园商城和老街亮灯后更有氛围，且全程平路，非常适合散步。\n\n游览动线：从园林南门出来后 ➡️ 豫园老街（感受市井氛围） ➡️ 九曲桥与湖心亭（核心打卡点，晚上灯光倒影很美） ➡️ 中心广场与黄金广场（看大型灯组装置） ➡️ 从商城1号门或2号门出。\n\n路线优势：九曲桥实行单向通行，跟着人流走不绕路；商城内路面平整，长辈小孩走起来不累，还能顺便买点伴手礼。\n\n省力与避坑提醒\n\n关于推车：如果带婴幼儿，建议带轻便好折叠的推车。园内多为凹凸石板路和少量楼梯，重型推车推行会比较费力。\n\n安全注意：九曲桥和园林水池边部分区域没有遮拦，且石头可能湿滑，带小孩时务必牵好，不要让孩子在池边奔跑。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "豫园完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:05:49.880Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 豫园 详情页：https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online",
+          "Wikidata Q1328025 实体页：https://www.wikidata.org/wiki/Q1328025",
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanghai2.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 豫园 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/740.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "2024-Apr Shanghai Yu Yuan Garden 豫园 - img 20.jpg",
+        "author": "Chainwit.",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_Yu_Yuan_Garden_%E8%B1%AB%E5%9B%AD_-_img_20.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_83baceaa69",
+      "targetId": "",
+      "id": "manual_shanghai_80dc7d78",
+      "name": "上海乐高乐园®度假区",
+      "city": "上海",
+      "rating": 4.6,
+      "reviewsCount": "2975条携程点评",
+      "image": "/assets/images/attractions/shanghai_80dc7d78_verified.jpg",
+      "description": "上海乐高乐园®度假区是专为2-12岁亲子家庭打造的旅游综合目的地，园内由八大主题区组成的主题乐园及一座配套主题度假酒店构成。在这里，您将找到全球乐高乐园经典游乐项目和全新特色主题区，充满中国传统文化和海派元素的玩乐体验，还有超75个各类互动游乐设施、精彩演出和娱乐景点正等着您！",
+      "intro": "上海乐高乐园®度假区是专为2-12岁亲子家庭打造的旅游综合目的地，园内由八大主题区组成的主题乐园及一座配套主题度假酒店构成。在这里，您将找到全球乐高乐园经典游乐项目和全新特色主题区，充满中国传统文化和海派元素的玩乐体验，还有超75个各类互动游乐设施、精彩演出和娱乐景点正等着您！",
+      "level": "热门景点",
+      "category": "主题乐园",
+      "tags": [
+        "主题乐园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市金山区枫泾镇乐缤路999号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "ctrip_province_sightlist",
+          "url": "https://you.ctrip.com/sightlist/shanghai2.html",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "official_attraction_site",
+          "url": "https://whlyj.sh.gov.cn/cysc/20250515/4379a035397f448c8d5b8e764a004f0e.html",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "携程旅行 上海乐高乐园®度假区 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online"
+        },
+        {
+          "title": "高德地图 上海乐高乐园度假区",
+          "url": "https://www.amap.com/place/B0JBLMU234",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典逆时针刷园线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "积木街道",
+            "乐高城市区",
+            "乐高好朋友区",
+            "悟空小侠区",
+            "幻影忍者区",
+            "乐高城堡区",
+            "创想世界",
+            "奇趣积木城"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 4,
+          "tips": [
+            "入园先冲乐高大飞车和热门水上项目",
+            "下午错峰玩城市区和心湖城",
+            "傍晚坐游船看夜景"
+          ],
+          "sourceTitle": "携程旅行 上海乐高乐园®度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online"
+        },
+        {
+          "title": "低幼避暑省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "积木街道",
+            "奇趣积木城",
+            "乐高城市区",
+            "创想世界迷你天地",
+            "乐高城堡区",
+            "幻影忍者区"
+          ],
+          "duration": "半天",
+          "walking": "约8千步",
+          "physical": 2,
+          "tips": [
+            "多利用室内拼搭区避暑休息",
+            "优先玩低龄友好项目",
+            "可出园去对面商场吃饭"
+          ],
+          "sourceTitle": "携程旅行 上海乐高乐园®度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "自驾导航至爱琴海缤纷里P1停车场，商场消费可免停车费；高铁至金山北站后乘乐园双层巴士直达",
+        "internal_arrive": "提前在官方小程序录入人脸刷脸入园，小包走人工通道更快，入园左手边可租童车",
+        "internal_traffic": "园区步行为主，可乘坐乐高城市火车环园观光休息",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "官方乐高乐园酒店（步行近、可无限次进出）或金山区民宿（性价比高、部分含接送）",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议多逛迷你天地和4D影院等室内项目，\n\n活动",
+        "children": "长辈建议多逛迷你天地和4D影院等室内项目，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Legoland Shanghai Entrance 20260322.jpg",
+        "author": "4084470 0.smil",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legoland_Shanghai_Entrance_20260322.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至爱琴海缤纷里P1停车场，商场消费可免停车费；高铁至金山北站后乘乐园双层巴士直达",
+          "internal_arrive": "提前在官方小程序录入人脸刷脸入园，小包走人工通道更快，入园左手边可租童车",
+          "internal_traffic": "园区步行为主，可乘坐乐高城市火车环园观光休息",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "官方乐高乐园酒店（步行近、可无限次进出）或金山区民宿（性价比高、部分含接送）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议多逛迷你天地和4D影院等室内项目，\n\n活动",
+          "children": "长辈建议多逛迷你天地和4D影院等室内项目，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典逆时针刷园线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "积木街道",
+            "乐高城市区",
+            "乐高好朋友区",
+            "悟空小侠区",
+            "幻影忍者区",
+            "乐高城堡区",
+            "创想世界",
+            "奇趣积木城"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 4,
+          "tips": [
+            "入园先冲乐高大飞车和热门水上项目",
+            "下午错峰玩城市区和心湖城",
+            "傍晚坐游船看夜景"
+          ],
+          "sourceTitle": "携程旅行 上海乐高乐园®度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "低幼避暑省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "积木街道",
+            "奇趣积木城",
+            "乐高城市区",
+            "创想世界迷你天地",
+            "乐高城堡区",
+            "幻影忍者区"
+          ],
+          "duration": "半天",
+          "walking": "约8千步",
+          "physical": 2,
+          "tips": [
+            "多利用室内拼搭区避暑休息",
+            "优先玩低龄友好项目",
+            "可出园去对面商场吃饭"
+          ],
+          "sourceTitle": "携程旅行 上海乐高乐园®度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结53篇笔记生成\n\n带长辈和小孩去乐园，主打一个“不费腿、不暴晒、节奏慢”，上海乐高乐园其实对低幼和长辈非常友好，只要路线规划对，全家都能轻松玩一天。\n\n为你整理了一条覆盖全园子景点、兼顾避暑与省力的顺时针游览路线：\n\n上午场：温和项目与低幼互动（避开暴晒）\n\n乐高城市区：步行前往。初级驾驶学院让孩子开小车拿“驾照”，仪式感强；海岸警卫学院两人开船，体验平稳；城市火车站坐小火车环游园区，长辈可以坐着看风景，不用走路。\n\n中午场：室内避暑与错峰休整\n\n创想世界：中午最热的时候躲进室内。迷你天地用千万块积木复刻全国地标，有动态灯光特效，吹着空调慢慢逛半小时；随后乘坐乐高游船，平平稳稳绕中心园区一圈，看水上积木布景，非常省力。\n\n下午场：国风体验与轻度刺激\n\n幻影忍者与城堡区：凯的空中竞技坐飞艇转圈还能打枪，速度温和；小龙飞车是低配版过山车，速度不快轨道不高，适合想体验轻微刺激的小孩和胆大的长辈；皇家竞技场则是骑乐高小马，绕圈体验感满分。\n\n傍晚场：全景俯瞰与完美收尾\n\n创想世界·观光塔：傍晚时分登顶，可以俯瞰整座乐园全景，看灯光逐渐亮起，视觉效果很好，且不限身高。\n\n闭园前刷项目：快闭园时热门项目排队人巨少，可以带长辈小孩二刷喜欢的温和项目，或者去警察总部拼积木休息，轻松收尾。\n\n长辈小孩专属省力贴士\n\n代步工具：入口右手边可租借童车或轮椅（需押金），园区虽不大但走一天也费腿，强烈建议租用，还能放包和外套。\n\n关爱通行卡：如果长辈有行动不便情况，可凭相关证件在游客服务中心登记关爱通行卡，排队30分钟以内的项目可直接走快速通道。\n\n防蚊防晒：园区绿植多，蚊子较多，务必带好驱蚊水；室内项目空调较冷，建议给小孩带件小外套。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海乐高乐园®度假区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:07:01.132Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanghai2.html",
+          "official_attraction_site：https://whlyj.sh.gov.cn/cysc/20250515/4379a035397f448c8d5b8e764a004f0e.html",
+          "携程旅行 上海乐高乐园®度假区 详情页：https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online",
+          "高德地图 上海乐高乐园度假区：https://www.amap.com/place/B0JBLMU234"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 上海乐高乐园®度假区 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/149628236.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Legoland Shanghai Entrance 20260322.jpg",
+        "author": "4084470 0.smil",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legoland_Shanghai_Entrance_20260322.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_28641f589c",
+      "targetId": "",
+      "id": "manual_shanghai_2806c175",
+      "name": "武康路街区",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "814条携程点评",
+      "image": "/assets/images/attractions/shanghai_2806c175_verified.jpg",
+      "description": "武康路位于上海市徐汇区，原名福开森路，以美国传教士约翰·福开森命名。武康路南北连接了繁忙的淮海中路和幽静的华山路，是一条有37处历史建筑的“中国历史文化名街”。",
+      "intro": "武康路位于上海市徐汇区，原名福开森路，以美国传教士约翰·福开森命名。武康路南北连接了繁忙的淮海中路和幽静的华山路，是一条有37处历史建筑的“中国历史文化名街”。",
+      "level": "热门景点",
+      "category": "历史文化街区、城市漫步街区",
+      "tags": [
+        "历史文化街区、城市漫步街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市徐汇区武康路与湖南路交叉口",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典地标打卡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "武康大楼",
+            "宋庆龄故居",
+            "武康庭",
+            "罗密欧阳台",
+            "安福路"
+          ],
+          "duration": "半天",
+          "walking": "约2.5公里，纯步行45分钟，含拍照打卡约2-3小时",
+          "physical": 3,
+          "tips": [
+            "建议较合适时段前抵达避开人流高峰",
+            "武康大楼路口拍照注意交通安全，不要站在马路中间",
+            "沿途咖啡店多，可随时歇脚"
+          ],
+          "sourceTitle": "携程旅行 武康路街区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online"
+        },
+        {
+          "title": "家庭省力休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "武康大楼",
+            "武康路旅游咨询中心",
+            "武康庭",
+            "安福路",
+            "911双层巴士"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里，走走停停约1.5-2小时",
+          "physical": 2,
+          "tips": [
+            "可搭乘911双层巴士从武康路直达外滩，省力不暴走",
+            "武康庭红砖庭院适合休息拍照",
+            "安福路潮店密集，适合慢慢逛"
+          ],
+          "sourceTitle": "携程旅行 武康路街区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁10/11号线交通大学站7号口，步行约5分钟到达武康大楼。不建议自驾，周边停车极难且下午易拥堵。",
+        "internal_arrive": "从武康大楼（淮海中路与武康路交叉口）开始，沿武康路向北步行至安福路，不走回头路。",
+        "internal_traffic": "街区全程步行，可骑行共享单车穿梭。也可乘坐911路双层巴士观光，下层可推婴儿车。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在徐汇区淮海中路附近或静安区南京西路商圈，步行或地铁一站可达，周边餐饮购物便利。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议放慢节奏，多利用沿途咖啡馆休息，可重点参观宋庆龄故居等文化景点，避开正午暴晒时段；",
+        "children": "长辈建议放慢节奏，多利用沿途咖啡馆休息，可重点参观宋庆龄故居等文化景点，避开正午暴晒时段；儿童建议全程使用婴儿车，沿途树荫较多但夏季仍需注意防晒，可安排双层巴士观光减少步行，武康路391弄的三千vintage中古店有宝可梦元素，小朋友会感兴趣。\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "393 Wukang Road.JPG",
+        "author": "Livelikerw",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:393_Wukang_Road.JPG",
+        "width": 3840,
+        "height": 2552
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "地铁10/11号线交通大学站7号口，步行约5分钟到达武康大楼。不建议自驾，周边停车极难且下午易拥堵。",
+          "internal_arrive": "从武康大楼（淮海中路与武康路交叉口）开始，沿武康路向北步行至安福路，不走回头路。",
+          "internal_traffic": "街区全程步行，可骑行共享单车穿梭。也可乘坐911路双层巴士观光，下层可推婴儿车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在徐汇区淮海中路附近或静安区南京西路商圈，步行或地铁一站可达，周边餐饮购物便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议放慢节奏，多利用沿途咖啡馆休息，可重点参观宋庆龄故居等文化景点，避开正午暴晒时段；",
+          "children": "长辈建议放慢节奏，多利用沿途咖啡馆休息，可重点参观宋庆龄故居等文化景点，避开正午暴晒时段；儿童建议全程使用婴儿车，沿途树荫较多但夏季仍需注意防晒，可安排双层巴士观光减少步行，武康路391弄的三千vintage中古店有宝可梦元素，小朋友会感兴趣。\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典地标打卡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "武康大楼",
+            "宋庆龄故居",
+            "武康庭",
+            "罗密欧阳台",
+            "安福路"
+          ],
+          "duration": "半天",
+          "walking": "约2.5公里，纯步行45分钟，含拍照打卡约2-3小时",
+          "physical": 3,
+          "tips": [
+            "建议较合适时段前抵达避开人流高峰",
+            "武康大楼路口拍照注意交通安全，不要站在马路中间",
+            "沿途咖啡店多，可随时歇脚"
+          ],
+          "sourceTitle": "携程旅行 武康路街区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "家庭省力休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "武康大楼",
+            "武康路旅游咨询中心",
+            "武康庭",
+            "安福路",
+            "911双层巴士"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里，走走停停约1.5-2小时",
+          "physical": 2,
+          "tips": [
+            "可搭乘911双层巴士从武康路直达外滩，省力不暴走",
+            "武康庭红砖庭院适合休息拍照",
+            "安福路潮店密集，适合慢慢逛"
+          ],
+          "sourceTitle": "携程旅行 武康路街区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结52篇笔记生成\n\n带长辈和小孩逛武康路，主打一个“不费腿、不赶场、随时能歇脚”，这条路线全程平缓、树荫多，走走停停大概2-3小时，节奏非常友好。\n\n省力漫步路线（从南到北不走回头路）\n\n起点：地铁交通大学站：乘坐10/11号线到交通大学站7号口出，出口附近有便利店，可以提前买好水和零食补给。\n\n第一站：武康大楼：步行约3-5分钟即可到达。建议不在路口硬挤，去马路对面的人行道或花坛旁拍全景，避开人流高峰。\n\n第二站：宋庆龄故居：步行约3分钟。红瓦白墙的法式花园洋房，长辈通常会比较感兴趣。里面环境清幽，有饮品店可以歇脚。\n\n第四站：武康庭：步行约7分钟。红砖庭院加绿植环绕，里面有很多文艺小店和咖啡店，非常适合走累了坐下来休息、吹空调。\n\n第五站：罗密欧阳台与wiggle wiggle：步行约10分钟。西班牙式小阳台很有法式浪漫感；彩色独栋的wiggle wiggle旗舰店对小朋友非常友好，满眼多巴胺色彩，能逛很久。\n\n交通与代步小妙招\n\n避坑与注意事项\n\n如厕问题：武康路沿线公共厕所较少且标识不明显，建议尽量在商场、大型咖啡店或旅游咨询中心解决，不要等到急需时再找。\n\n错峰出行：节假日或周末下午武康大楼人非常多，建议工作日上午或早上9点前出发，光线好且人少，体验感会好很多。\n\n防晒防蚊：虽然梧桐树荫多，但白天依然较晒，记得给长辈和孩子带好帽子；夏季路边蚊虫较多，建议备点驱蚊液。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "武康路街区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:07:18.533Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 武康路街区 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/132538.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "393 Wukang Road.JPG",
+        "author": "Livelikerw",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:393_Wukang_Road.JPG",
+        "width": 3840,
+        "height": 2552
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_0555ce0eaa",
+      "targetId": "",
+      "id": "manual_shanghai_6b483edb",
+      "name": "朱家角古镇",
+      "city": "上海",
+      "rating": 4.6,
+      "reviewsCount": "4363条携程点评",
+      "image": "/assets/images/attractions/shanghai_6b483edb_verified.jpg",
+      "description": "朱家角古镇景区位于上海市青浦区，紧靠淀山湖风景区，是典型的江南水乡古镇，街道小巷间水路纵横，环境十分优雅。镇上有园林古迹等景点，还有众多传统特色小吃和小资店铺，是上海周边游览古镇的首 选之地。",
+      "intro": "朱家角古镇景区位于上海市青浦区，紧靠淀山湖风景区，是典型的江南水乡古镇，街道小巷间水路纵横，环境十分优雅。镇上有园林古迹等景点，还有众多传统特色小吃和小资店铺，是上海周边游览古镇的首 选之地。",
+      "level": "热门景点",
+      "category": "江南水乡古镇",
+      "tags": [
+        "江南水乡古镇",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市青浦区朱家角镇课植园路555号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典全览省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "课植园",
+            "和心园",
+            "放生桥",
+            "北大街",
+            "大清邮局",
+            "城隍庙",
+            "圆津禅院"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 3,
+          "tips": [
+            "不走回头路，涵盖园林古桥老街寺庙等精华",
+            "建议较合适时段后入园避开人流高峰"
+          ],
+          "sourceTitle": "携程旅行 朱家角古镇 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online"
+        },
+        {
+          "title": "家庭休闲慢逛线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北门入口",
+            "课植园",
+            "放生桥",
+            "大清邮局",
+            "泰安桥",
+            "漕河街",
+            "西井街"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "适合带长辈儿童慢节奏游览",
+            "河边步道人少景美可随时歇脚"
+          ],
+          "sourceTitle": "携程旅行 朱家角古镇 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁17号线朱家角站1号口出，步行约15分钟或乘1510路公交直达；自驾导航朱家角游客中心停车场，停车费费用以官方当日公告为准/天",
+        "internal_arrive": "推荐从北门游客中心进入，路面平整方便推车，可免费领取景区导览册；若只想购买特产可从南入口进更近",
+        "internal_traffic": "古镇内以步行和手摇船为主，手摇船可在城隍庙、北大街、课植园码头乘坐，200至费用以官方当日公告为准每船；地铁站口也可乘电动木船费用以官方当日公告为准每人直达核心区",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "可选择古镇内临水民宿体验枕水而居，或古镇外围酒店如上海辰茂度假酒店步行200米进镇且可停车",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议从北口进入，课植园和心园等园林均设轮椅通道，放生桥泰安桥旁有平缓坡道，游客中心可免费租借轮椅，沿途休息座椅多随时歇脚；",
+        "children": "长辈建议从北口进入，课植园和心园等园林均设轮椅通道，放生桥泰安桥旁有平缓坡道，游客中心可免费租借轮椅，沿途休息座椅多随时歇脚；儿童建议全程牵手远离河边，备驱蚊液和软底防滑鞋，推荐课植园喂鱼、大清邮局盖章、摇橹船体验，小吃选清淡款控制食量\n\n你这次是带长辈还是带小孩一起去？我可以帮你再细化一下对应的节奏和休息点安排。\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "朱家角古镇-站在放生桥上.jpg",
+        "author": "Jiangshang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E5%AE%B6%E8%A7%92%E5%8F%A4%E9%95%87-%E7%AB%99%E5%9C%A8%E6%94%BE%E7%94%9F%E6%A1%A5%E4%B8%8A.jpg",
+        "width": 2592,
+        "height": 4608
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "地铁17号线朱家角站1号口出，步行约15分钟或乘1510路公交直达；自驾导航朱家角游客中心停车场，停车费费用以官方当日公告为准/天",
+          "internal_arrive": "推荐从北门游客中心进入，路面平整方便推车，可免费领取景区导览册；若只想购买特产可从南入口进更近",
+          "internal_traffic": "古镇内以步行和手摇船为主，手摇船可在城隍庙、北大街、课植园码头乘坐，200至费用以官方当日公告为准每船；地铁站口也可乘电动木船费用以官方当日公告为准每人直达核心区",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择古镇内临水民宿体验枕水而居，或古镇外围酒店如上海辰茂度假酒店步行200米进镇且可停车",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议从北口进入，课植园和心园等园林均设轮椅通道，放生桥泰安桥旁有平缓坡道，游客中心可免费租借轮椅，沿途休息座椅多随时歇脚；",
+          "children": "长辈建议从北口进入，课植园和心园等园林均设轮椅通道，放生桥泰安桥旁有平缓坡道，游客中心可免费租借轮椅，沿途休息座椅多随时歇脚；儿童建议全程牵手远离河边，备驱蚊液和软底防滑鞋，推荐课植园喂鱼、大清邮局盖章、摇橹船体验，小吃选清淡款控制食量\n\n你这次是带长辈还是带小孩一起去？我可以帮你再细化一下对应的节奏和休息点安排。\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典全览省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "课植园",
+            "和心园",
+            "放生桥",
+            "北大街",
+            "大清邮局",
+            "城隍庙",
+            "圆津禅院"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 3,
+          "tips": [
+            "不走回头路，涵盖园林古桥老街寺庙等精华",
+            "建议较合适时段后入园避开人流高峰"
+          ],
+          "sourceTitle": "携程旅行 朱家角古镇 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "家庭休闲慢逛线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北门入口",
+            "课植园",
+            "放生桥",
+            "大清邮局",
+            "泰安桥",
+            "漕河街",
+            "西井街"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "适合带长辈儿童慢节奏游览",
+            "河边步道人少景美可随时歇脚"
+          ],
+          "sourceTitle": "携程旅行 朱家角古镇 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结37篇笔记生成\n\n带长辈和小孩逛古镇，核心就是“能坐船不走路，能平路不上桥”，朱家角整体对推车和轮椅还算友好，只要路线规划对，完全不用费腿。\n\n为你整理了一条不走回头路、全程平缓的完整省力路线：\n\n省力游览路线\n\n起点（游客中心）：从古镇北入口（游客中心）进入，这里路面平整无台阶，方便轮椅或婴儿车直接通行。建议先在游客中心服务台拿一份纸质导览册，方便随时对照休息点。\n\n课植园：古镇最大的私家园林，亭台楼阁很精致，园内路面平整，非常适合长辈慢慢逛、小孩在绿地跑跳。\n\n和心园：比课植园小，但一步一景，有很多来自全国的文物藏品，人少清静，逛起来不累。\n\n放生桥：朱家角的灵魂地标，上海最大的五孔石拱桥。桥面较宽，但毕竟有台阶，推婴儿车或轮椅需要稍微抬一下（台阶不高，两人配合即可）。站在桥顶能俯瞰整个古镇河道，拍照最出片。\n\n圆津禅院与城隍庙：沿着主街平缓路段漫步即可。圆津禅院是元代古寺，临水而建，比较清净；城隍庙里有300年古银杏和无钉斗拱古戏台，长辈通常比较喜欢这类传统文化景点。\n\n大清邮局：华东地区仅存的大清邮局官办旧址，一楼可以寄明信片、盖复古邮戳，后面还有临河院子，适合坐下来喝杯茶歇脚。\n\n避坑与实用提醒\n\n推车与轮椅：古镇主街（北大街、漕河街）和大部分园林路面平整，可推婴儿车和轮椅；但石板路在雨天易滑，过石桥必须抬车，建议带轻便款推车。\n\n休息与补给：街巷沿途设有休息座椅，阿婆茶楼、江南第一茶楼以及大清邮局都可以随时坐下喝茶歇脚；建议自带一些饮用水，路边小店价格略高。\n\n官方确认：摇橹船运营时间、部分内部景点的无障碍通道细节以及临时演出场次，建议出行前致电景区游客中心确认，以免跑空。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "朱家角古镇完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:07:38.530Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 朱家角古镇 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/14903.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "朱家角古镇-站在放生桥上.jpg",
+        "author": "Jiangshang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E5%AE%B6%E8%A7%92%E5%8F%A4%E9%95%87-%E7%AB%99%E5%9C%A8%E6%94%BE%E7%94%9F%E6%A1%A5%E4%B8%8A.jpg",
+        "width": 2592,
+        "height": 4608
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_3480fccecc",
+      "targetId": "",
+      "id": "manual_shanghai_602dfe9",
+      "name": "北外滩滨江",
+      "city": "上海",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shanghai_602dfe9_verified.jpg",
+      "description": "北外滩滨江位于东大名路558-678，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "北外滩滨江位于东大名路558-678，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "滨江绿地、观景步道、城市公园",
+      "tags": [
+        "滨江绿地、观景步道、城市公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "东大名路558-678",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "amap_live_web_service",
+          "url": "https://www.amap.com/place/B00156NZVG",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "Wikidata Q109411869 实体页",
+          "url": "https://www.wikidata.org/wiki/Q109411869"
+        }
+      ],
+      "routes": [
+        {
+          "title": "遛娃休闲省力线（日落+夜景）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "银色小巨蛋",
+            "Manner Coffee国客滨江店",
+            "国客中心西港池小黄框",
+            "公平路渡口"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（1.5-2小时）",
+          "physical": 2,
+          "tips": [
+            "全程平坦无台阶，婴儿车畅通",
+            "江边风大，建议备薄外套",
+            "傍晚官方当日建议时段出发可一次性收获日落与蓝调夜景"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        },
+        {
+          "title": "复古Citywalk人文线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "邮政博物馆",
+            "乍浦路桥",
+            "世界会客厅",
+            "滨江观景平台"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（2-2.5小时）",
+          "physical": 3,
+          "tips": [
+            "邮政博物馆官方当日建议时段闭馆需注意时间",
+            "桥上可能临时管控，江边同样可拍三件套同框",
+            "避开外滩人流，节奏更松弛"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁12号线国际客运中心站3号口，步行5-8分钟直达；自驾可导航白玉兰广场或北外滩来福士",
+        "internal_arrive": "推荐从国客中心或白玉兰广场南门进入，快速直达滨江核心区域，避免走错到拥挤的外滩平台",
+        "internal_traffic": "全程步行，沿江步道宽阔笔直，无台阶设计，适合推车和轮椅通行",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "北外滩附近（近地铁12号线）或南京东路/外滩区域（交通便利，可步行至景区）",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "推荐走路线A，长椅多可随时休息，江边吹风不暴晒；",
+        "children": "长辈推荐走路线A，长椅多可随时休息，江边吹风不暴晒；儿童推荐银色小巨蛋游乐场和公平路渡口2元轮渡体验，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "北外滩滨江绿地.jpg",
+        "author": "Antigng",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%A4%96%E6%BB%A9%E6%BB%A8%E6%B1%9F%E7%BB%BF%E5%9C%B0.jpg",
+        "width": 1920,
+        "height": 2560
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁12号线国际客运中心站3号口，步行5-8分钟直达；自驾可导航白玉兰广场或北外滩来福士",
+          "internal_arrive": "推荐从国客中心或白玉兰广场南门进入，快速直达滨江核心区域，避免走错到拥挤的外滩平台",
+          "internal_traffic": "全程步行，沿江步道宽阔笔直，无台阶设计，适合推车和轮椅通行",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "北外滩附近（近地铁12号线）或南京东路/外滩区域（交通便利，可步行至景区）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "推荐走路线A，长椅多可随时休息，江边吹风不暴晒；",
+          "children": "长辈推荐走路线A，长椅多可随时休息，江边吹风不暴晒；儿童推荐银色小巨蛋游乐场和公平路渡口2元轮渡体验，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "遛娃休闲省力线（日落+夜景）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "银色小巨蛋",
+            "Manner Coffee国客滨江店",
+            "国客中心西港池小黄框",
+            "公平路渡口"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（1.5-2小时）",
+          "physical": 2,
+          "tips": [
+            "全程平坦无台阶，婴儿车畅通",
+            "江边风大，建议备薄外套",
+            "傍晚官方当日建议时段出发可一次性收获日落与蓝调夜景"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "复古Citywalk人文线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "邮政博物馆",
+            "乍浦路桥",
+            "世界会客厅",
+            "滨江观景平台"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（2-2.5小时）",
+          "physical": 3,
+          "tips": [
+            "邮政博物馆官方当日建议时段闭馆需注意时间",
+            "桥上可能临时管控，江边同样可拍三件套同框",
+            "避开外滩人流，节奏更松弛"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结49篇笔记生成\n\n带长辈和小孩逛北外滩，选这里真的太明智了！相比外滩的人山人海，这里步道平坦宽敞、人少清静，全程对婴儿车和轮椅都超级友好，主打一个松弛不费腿。\n\n为你整理了一条全程不走回头路的省力顺向动线，大概 1.5 到 2 小时就能轻松走完，刚好从日落蓝调时刻过渡到璀璨夜景：\n\n路线详细动线\n\n起点：地铁与白玉兰广场。乘坐地铁 12 号线到国际客运中心站，从 3 号口出站直达白玉兰广场。这里空间大、有直梯，可以先让长辈和小孩在商场里休息一下、补补水，再从容前往江边。\n\n第一站：银色小巨蛋与魔都矩阵。导航至北外滩滨江绿地的小巨蛋，这是镜面球体打卡地，背后就是陆家嘴三件套。旁边的魔都矩阵有分层攀爬架和滑梯，低龄宝宝也有专属区域，江边步道开阔，小朋友可以安全地跑动。\n\n第二站：滨江观景平台与 Manner 咖啡。沿着江边平坦步道漫步，无遮挡直面黄浦江和东方明珠。走累了可以去 Manner Coffee（国客滨江店）落地窗边歇脚，正对江景，不用消费也能在门口感受氛围。\n\n终点：乍浦路桥与外白渡桥。如果体力充足，可以沿苏州河畔慢慢走到乍浦路桥，这里能一键集齐陆家嘴三件套、外白渡桥和邮政博物馆的复古同框。拍完照就就近坐地铁返程，避免走太远。\n\n省力与无障碍贴士\n\n无障碍设施：整条滨江步道平整无台阶，推车毫无压力。在公平路轮渡站附近和“北外滩最佳摄影点”标识旁，都设有专门的无障碍电梯和坡道，完全不用抬轮椅或推车。\n\n补给与安全：滨江商铺相对较少，建议自带水杯和小零食；江边晚风偏大，晚上记得给长辈和小孩备一件薄外套；在江边栏杆处务必看好小朋友，不要攀爬。\n\n时间建议：强烈建议在傍晚 客流较少时出发，边走边拍 1.5 小时，完美衔接日落、蓝调时刻和夜景亮灯，不用起太早也不用熬夜。\n\n如果长辈体力有限，走到 Manner Coffee 或轮渡站就可以直接折返或坐地铁，不用强求走完全程。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "北外滩滨江完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:07:56.488Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B00156NZVG",
+          "Wikidata Q109411869 实体页：https://www.wikidata.org/wiki/Q109411869"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 北外滩滨江绿地",
+          "url": "https://www.amap.com/place/B00156NZVG",
+          "poiId": "B00156NZVG",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "北外滩滨江绿地.jpg",
+        "author": "Antigng",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%A4%96%E6%BB%A9%E6%BB%A8%E6%B1%9F%E7%BB%BF%E5%9C%B0.jpg",
+        "width": 1920,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_802fc393ef",
+      "targetId": "",
+      "id": "manual_shanghai_c741b3a2",
+      "name": "新天地",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "2357条携程点评",
+      "image": "/assets/images/attractions/shanghai_c741b3a2_verified.jpg",
+      "description": "靠近淮海路的新天地由老上海石库门弄堂改造而成，如今不仅成为了中外游客的必到之地，更是本地年轻人经常光顾的时尚场所。白天来此看美女街拍，悠闲品味下午茶，晚上则可以穿梭于各个酒吧之间，体验夜上海的生活。",
+      "intro": "靠近淮海路的新天地由老上海石库门弄堂改造而成，如今不仅成为了中外游客的必到之地，更是本地年轻人经常光顾的时尚场所。白天来此看美女街拍，悠闲品味下午茶，晚上则可以穿梭于各个酒吧之间，体验夜上海的生活。",
+      "level": "热门景点",
+      "category": "城市文化休闲街区、石库门建筑、潮流商圈",
+      "tags": [
+        "城市文化休闲街区、石库门建筑、潮流商圈",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市黄浦区马当路119号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "coastal",
+      "sources": [
+        {
+          "title": "携程旅行 新天地 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q1326515 实体页",
+          "url": "https://www.wikidata.org/wiki/Q1326515"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典石库门与湖景休闲线（省力首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一大会址·新天地站",
+            "中共一大会址纪念馆",
+            "新天地北里石库门街区",
+            "太平湖公园",
+            "新天地南里商圈"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "全程平坦无台阶，推车无障碍",
+            "傍晚亮灯后氛围感最佳，适合慢走拍照"
+          ],
+          "sourceTitle": "携程旅行 新天地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online"
+        },
+        {
+          "title": "潮流商圈与艺术深度线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "黄陂南路站",
+            "新天地广场",
+            "新天地时尚一期",
+            "新天地时尚二期",
+            "K11购物艺术中心",
+            "马当路站"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "室内外结合，商场内可休息用餐",
+            "B3有美术馆，适合喜欢艺术和潮牌的年轻人"
+          ],
+          "sourceTitle": "携程旅行 新天地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁1/14号线一大会址·黄陂南路站，或10/13号线一大会址·新天地站，步行2至5分钟可达；自驾可停复兴广场等地下停车场，节假日建议公共交通出行",
+        "internal_arrive": "带长辈或儿童推荐从一大会址·新天地站6号口出，直达时尚二期入口；想先看历史建筑可从黄陂南路站1号口出，先逛一大会址再往北里走",
+        "internal_traffic": "街区为步行步行街，内部无交通工具，全程靠步行，各商圈之间有连廊或地下通道衔接",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在黄浦区淮海中路、老西门或新天地周边，步行即可到达，雨天不用淋雨，周边餐饮和交通都非常便利",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议穿平底鞋，多利用商场和咖啡馆休息，\n\n活动",
+        "children": "长辈建议穿平底鞋，多利用商场和咖啡馆休息，\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Peet's Coffee at Xintiandi, Shanghai, China (54272979833).jpg",
+        "author": "Juan Antonio Segal",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peet%27s_Coffee_at_Xintiandi,_Shanghai,_China_(54272979833).jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁1/14号线一大会址·黄陂南路站，或10/13号线一大会址·新天地站，步行2至5分钟可达；自驾可停复兴广场等地下停车场，节假日建议公共交通出行",
+          "internal_arrive": "带长辈或儿童推荐从一大会址·新天地站6号口出，直达时尚二期入口；想先看历史建筑可从黄陂南路站1号口出，先逛一大会址再往北里走",
+          "internal_traffic": "街区为步行步行街，内部无交通工具，全程靠步行，各商圈之间有连廊或地下通道衔接",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在黄浦区淮海中路、老西门或新天地周边，步行即可到达，雨天不用淋雨，周边餐饮和交通都非常便利",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议穿平底鞋，多利用商场和咖啡馆休息，\n\n活动",
+          "children": "长辈建议穿平底鞋，多利用商场和咖啡馆休息，\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典石库门与湖景休闲线（省力首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一大会址·新天地站",
+            "中共一大会址纪念馆",
+            "新天地北里石库门街区",
+            "太平湖公园",
+            "新天地南里商圈"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "全程平坦无台阶，推车无障碍",
+            "傍晚亮灯后氛围感最佳，适合慢走拍照"
+          ],
+          "sourceTitle": "携程旅行 新天地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "潮流商圈与艺术深度线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "黄陂南路站",
+            "新天地广场",
+            "新天地时尚一期",
+            "新天地时尚二期",
+            "K11购物艺术中心",
+            "马当路站"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "室内外结合，商场内可休息用餐",
+            "B3有美术馆，适合喜欢艺术和潮牌的年轻人"
+          ],
+          "sourceTitle": "携程旅行 新天地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结46篇笔记生成\n\n带长辈和小孩逛新天地，确实得把节奏放慢，主打一个“不费腿、有得看、随时能歇脚”。帮你整理了一条覆盖核心区域、全程平缓好走的省力路线，直接抄作业！\n\n路线总览与交通\n\n推荐从 地铁10/13号线“一大会址·新天地”站 出发，6号口出来最顺。全程不走回头路，一路从历史文化逛到潮流商圈，最后从地铁返程，对长辈和小孩非常友好。\n\n详细行程节奏\n\n下午：潮流商圈与艺术打卡吃饱喝足后，进入 新天地时尚一期 和 二期 逛逛。这里全是室内商场，不用风吹日晒。二期B2层的APM CUBE韩国街很好逛，一期有各种高颜值潮牌和玩偶店。如果长辈对逛街不感兴趣，可以带他们去 K11购物艺术中心 看看展览，或者去天台拍张石库门全景。\n\n傍晚：光影街区与轻松返程傍晚时分去 新天地东台里 走走，这里的灯光装置和街区氛围感很好，冬天还有各种节日艺术展。逛得差不多了，直接从商场或地铁站返程，不用走冤枉路。\n\n省力与避坑小贴士\n\n无障碍与休息：整个街区路面基本平整，石库门部分巷子稍窄，但主路都很宽敞。商场内洗手间和休息区较多，建议每逛一小时就进商场歇歇脚。\n\n避开人流：节假日石库门主街人比较多，如果想拍干净的照片，可以往太平湖方向或商场二楼的走廊走走，视角更好且人少。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "新天地完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:08:18.912Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 新天地 详情页：https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online",
+          "Wikidata Q1326515 实体页：https://www.wikidata.org/wiki/Q1326515",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 新天地 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/18739.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Peet's Coffee at Xintiandi, Shanghai, China (54272979833).jpg",
+        "author": "Juan Antonio Segal",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peet%27s_Coffee_at_Xintiandi,_Shanghai,_China_(54272979833).jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_5d68545525",
+      "targetId": "",
+      "id": "manual_shanghai_b99f629e",
+      "name": "思南公馆",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "624条携程点评",
+      "image": "/assets/images/attractions/shanghai_b99f629e_verified.jpg",
+      "description": "思南公馆名字来源于思南路。该区域从上世纪20年代开始开发，随后的十年间，辣斐德路以南，马斯南路（今思南路）以东，吕班路（今重庆南路）以西地区的花园洋房陆续建成，吸引了大批当时的军政要员、企业家、专业人士和知名艺术家迁入，使该地区成为当时上流社会的居停和汇聚之所。",
+      "intro": "思南公馆名字来源于思南路。该区域从上世纪20年代开始开发，随后的十年间，辣斐德路以南，马斯南路（今思南路）以东，吕班路（今重庆南路）以西地区的花园洋房陆续建成，吸引了大批当时的军政要员、企业家、专业人士和知名艺术家迁入，使该地区成为当时上流社会的居停和汇聚之所。",
+      "level": "热门景点",
+      "category": "历史风貌街区、开放式博物馆",
+      "tags": [
+        "历史风貌街区、开放式博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市黄浦区思南路51、53、55、57、59、61号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "携程旅行 思南公馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q16928527 实体页",
+          "url": "https://www.wikidata.org/wiki/Q16928527"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典人文建筑漫游线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "思南露天博物馆",
+            "思南书局",
+            "时光弄堂",
+            "周公馆"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "扫码听老洋房导览故事",
+            "较合适时段梧桐光影最适合拍照"
+          ],
+          "sourceTitle": "携程旅行 思南公馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online"
+        },
+        {
+          "title": "亲子休闲轻松遛娃线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "思南公馆中央广场",
+            "思南书局",
+            "复兴公园",
+            "星巴克臻选"
+          ],
+          "duration": "半天",
+          "walking": "约1公里",
+          "physical": 2,
+          "tips": [
+            "复兴公园有大草坪和儿童游乐区",
+            "书局地下一层可租借儿童绘本"
+          ],
+          "sourceTitle": "携程旅行 思南公馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁10/13号线一大会址·新天地站步行约600米；自驾导航思南公馆停车场（重庆南路258号）",
+        "internal_arrive": "从重庆南路停车场入口或思南路与复兴中路交叉口进入，周边停车相对便利",
+        "internal_traffic": "开放式街区，全程步行，路面平坦无台阶障碍",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "周边新天地、淮海路商圈酒店密集，步行可达",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议优先乘坐电梯上下楼，沿途多处长椅可休息；",
+        "children": "长辈建议优先乘坐电梯上下楼，沿途多处长椅可休息；儿童建议带推车，复兴公园有滑梯和旋转木马，书局可借阅绘本\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Sinan Mansions, Shanghai.jpg",
+        "author": "钉钉",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinan_Mansions,_Shanghai.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁10/13号线一大会址·新天地站步行约600米；自驾导航思南公馆停车场（重庆南路258号）",
+          "internal_arrive": "从重庆南路停车场入口或思南路与复兴中路交叉口进入，周边停车相对便利",
+          "internal_traffic": "开放式街区，全程步行，路面平坦无台阶障碍",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "周边新天地、淮海路商圈酒店密集，步行可达",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议优先乘坐电梯上下楼，沿途多处长椅可休息；",
+          "children": "长辈建议优先乘坐电梯上下楼，沿途多处长椅可休息；儿童建议带推车，复兴公园有滑梯和旋转木马，书局可借阅绘本\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典人文建筑漫游线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "思南露天博物馆",
+            "思南书局",
+            "时光弄堂",
+            "周公馆"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "扫码听老洋房导览故事",
+            "较合适时段梧桐光影最适合拍照"
+          ],
+          "sourceTitle": "携程旅行 思南公馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "亲子休闲轻松遛娃线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "思南公馆中央广场",
+            "思南书局",
+            "复兴公园",
+            "星巴克臻选"
+          ],
+          "duration": "半天",
+          "walking": "约1公里",
+          "physical": 2,
+          "tips": [
+            "复兴公园有大草坪和儿童游乐区",
+            "书局地下一层可租借儿童绘本"
+          ],
+          "sourceTitle": "携程旅行 思南公馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结32篇笔记生成\n\n带长辈和小孩逛思南公馆，确实得避开“暴走”模式，主打一个慢节奏、少台阶、随时能歇脚。思南公馆其实不是单一景点，而是一片开放式街区，我帮你整理了一条覆盖核心子景点的省力路线，全程平路为主，不用爬高，走走停停大概 2-3 小时。\n\n第一阶段：思南公馆街区漫步（平路为主，随时歇脚）\n\n思南露天博物馆：从街区入口开始，这里是中国首家无围墙博物馆。整条街都是展品，每栋老洋房外墙都有专属二维码，扫码就能听语音导览，长辈不用跟着讲解员赶时间，自己按节奏听故事。\n\n时光弄堂：在街区里找找这条 30 米长的弄堂，有图文和镜面装置，小孩会觉得挺好玩，拍照也很出片，全程不用上下楼梯。\n\n街区洋房与街景：沿着红砖步道慢慢走，看看爬满藤蔓的鹅卵石墙和百年梧桐。街区里有很多咖啡馆和休息区，走累了随时能坐下，不用一直赶路。\n\n第二阶段：人文书店与红色旧址（室内为主，避开日晒）\n\n思南书局：由冯玉祥旧居改造的三层法式洋房。一楼和二楼有很多书和靠窗卡座，可以点杯咖啡坐着看街景；三楼有作家沙龙。这里室内空间多，适合长辈安静休息，小孩也能看看儿童图书天地。\n\n第三阶段：法式公园自然放空（彻底放松，小孩撒欢）\n\n复兴公园：从周公馆步行约 5-7 分钟即可到达。这是上海唯一保存完整的法式园林，有大片的草坪、喷泉和花坛。长辈可以坐在长椅上晒太阳看大爷大妈跳舞，小孩可以去小小儿童乐园玩滑梯或坐旋转木马，彻底放松。\n\n省力与避坑提醒\n\n闭馆提醒：孙中山故居纪念馆目前处于修整闭馆状态，建议去之前再查一下官方是否重新开放；思南书局诗歌店（教堂改造店）近期也有闭店情况，如果特意想去，建议提前确认。\n\n交通与装备：建议地铁 10 号线或 13 号线到新天地站，步行约 10 分钟。街区全是平路，但洋房绿植多，建议给小孩带驱蚊液；如果长辈腿脚不便，街区部分路段可以考虑带轻便推车。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "思南公馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:08:39.435Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 思南公馆 详情页：https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online",
+          "Wikidata Q16928527 实体页：https://www.wikidata.org/wiki/Q16928527",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 思南公馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/147878.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Sinan Mansions, Shanghai.jpg",
+        "author": "钉钉",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinan_Mansions,_Shanghai.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_48579acb80",
+      "targetId": "",
+      "id": "manual_shanghai_557ae3d0",
+      "name": "老场坊",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shanghai_557ae3d0_verified.jpg",
+      "description": "老场坊位于沙泾路10号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "老场坊位于沙泾路10号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "工业历史建筑 / 创意产业园区 / 免费开放景点",
+      "tags": [
+        "工业历史建筑 / 创意产业园区 / 免费开放景点",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "沙泾路10号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "urban",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "amap_live_web_service",
+          "url": "https://www.amap.com/place/B00155LPBC",
+          "kind": "secondary_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典建筑探秘线（中轴线深度游）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "主入口复古石墙",
+            "螺旋牛道与伞形柱",
+            "空中廊桥迷宫",
+            "四楼空中舞台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "建筑内部路径复杂如迷宫，建议在一楼服务台领取免费地图按图行走",
+            "下午官方当日建议时段-官方当日建议时段阳光穿透镂空花窗会形成光柱，是最佳光影拍摄时间"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        },
+        {
+          "title": "家庭省力观景线（电梯直达顶楼）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "左侧电梯直达顶楼",
+            "空中舞台俯瞰全景",
+            "法式窄旋梯",
+            "副楼与大烟囱外围"
+          ],
+          "duration": "半天",
+          "walking": "约0.8公里",
+          "physical": 2,
+          "tips": [
+            "适合带长辈或小孩，减少爬楼梯次数",
+            "顶楼穹顶视野开阔，傍晚蓝调时刻可同拍建筑与陆家嘴天际线"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁4号线/10号线海伦路站2号口出站，步行约650米（8-10分钟）；公交6路、13路、17路在周家嘴路高阳路站或溧阳路周家嘴路站下车，步行5分钟可达",
+        "internal_arrive": "从溧阳路主入口进入，门口有“1933”复古石墙可打卡；服务台可拿免费地图，避免在迷宫内迷路",
+        "internal_traffic": "园区内以步行探索为主，内部设有电梯可直达顶楼，减少爬楼梯负担；廊桥与旋梯交错，部分台阶坡度较陡，需注意脚下安全",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "周边虹口区住宿选择较多，推荐住在北外滩或四川北路商圈，距离老场坊打车起步价，逛完可顺路看江景夜景；若追求高性价比，可乘坐地铁前往人民广场或南京东路附近入住",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议穿防滑平底鞋，内部阴冷可备薄外套，优先走省力路线并多利用电梯；",
+        "children": "长辈建议穿防滑平底鞋，内部阴冷可备薄外套，优先走省力路线并多利用电梯；儿童可在安全区域体验迷宫探索乐趣，园区内宠物友好，可牵绳入园，周末常有市集活动可参与（具体以官方当日公告为准）\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "2024-Apr Shanghai 1933 Old Millfun (Old Slaughterhouse) 1933老场坊 - img 01.jpg",
+        "author": "Chainwit.",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_01.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁4号线/10号线海伦路站2号口出站，步行约650米（8-10分钟）；公交6路、13路、17路在周家嘴路高阳路站或溧阳路周家嘴路站下车，步行5分钟可达",
+          "internal_arrive": "从溧阳路主入口进入，门口有“1933”复古石墙可打卡；服务台可拿免费地图，避免在迷宫内迷路",
+          "internal_traffic": "园区内以步行探索为主，内部设有电梯可直达顶楼，减少爬楼梯负担；廊桥与旋梯交错，部分台阶坡度较陡，需注意脚下安全",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "周边虹口区住宿选择较多，推荐住在北外滩或四川北路商圈，距离老场坊打车起步价，逛完可顺路看江景夜景；若追求高性价比，可乘坐地铁前往人民广场或南京东路附近入住",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议穿防滑平底鞋，内部阴冷可备薄外套，优先走省力路线并多利用电梯；",
+          "children": "长辈建议穿防滑平底鞋，内部阴冷可备薄外套，优先走省力路线并多利用电梯；儿童可在安全区域体验迷宫探索乐趣，园区内宠物友好，可牵绳入园，周末常有市集活动可参与（具体以官方当日公告为准）\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典建筑探秘线（中轴线深度游）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "主入口复古石墙",
+            "螺旋牛道与伞形柱",
+            "空中廊桥迷宫",
+            "四楼空中舞台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "建筑内部路径复杂如迷宫，建议在一楼服务台领取免费地图按图行走",
+            "下午官方当日建议时段-官方当日建议时段阳光穿透镂空花窗会形成光柱，是最佳光影拍摄时间"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "家庭省力观景线（电梯直达顶楼）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "左侧电梯直达顶楼",
+            "空中舞台俯瞰全景",
+            "法式窄旋梯",
+            "副楼与大烟囱外围"
+          ],
+          "duration": "半天",
+          "walking": "约0.8公里",
+          "physical": 2,
+          "tips": [
+            "适合带长辈或小孩，减少爬楼梯次数",
+            "顶楼穹顶视野开阔，傍晚蓝调时刻可同拍建筑与陆家嘴天际线"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结44篇笔记生成\n\n带长辈和小孩去老场坊，最怕的就是里面那些错综复杂的楼梯和坡道。给你整理了一条不走回头路、少爬楼梯的“平路优先”省力路线，既能看完核心建筑，又不会让腿脚受罪。\n\n省力游览路线（全程平缓为主）\n\n主入口与伞形柱大厅：从溧阳路主入口进入，先在一楼平路区域欣赏最具特色的伞形柱。这些柱子支撑着整个无梁楼盖，长辈可以慢慢看建筑细节，小孩也能在开阔的空间里走走，不用急着上楼。\n\n原始牛道与防滑坡道：顺着平缓的斜坡（曾经的牛道）慢慢走。这里做了防滑设计，坡度比较友好，不用爬陡梯就能感受历史痕迹，非常适合长辈和小孩边走边拍。\n\n空中廊桥迷宫（二楼层）：走到二楼区域后，沿着平直的廊桥漫步。这里纵横交错，能拍出很强的纵深感。如果长辈觉得累，可以在二楼的休息区或咖啡厅坐坐，小孩也能在安全区域看看周围的创意小店。\n\n副楼与外围街区：如果体力还有剩余，可以走出主楼，去对面的副楼和周边的沙泾路、柘皋路桥转转。外面有大烟囱和红砖房，视野开阔不闷热，还能顺便拍一组复古街景。\n\n长辈小孩专属避坑提醒\n\n坚决不穿高跟鞋：里面的楼梯和坡道虽然防滑，但坡度较陡且光影交错，一定要给长辈和小孩穿最舒服的平底鞋或运动鞋。\n\n放弃高层打卡点：像四楼的空中舞台和法式窄旋梯需要爬较多楼梯，且部分台阶较陡，带长辈小孩建议直接放弃，在一二楼平路看同样出片。\n\n光影与时间：建议下午 3 点到 5 点去，阳光透过花格窗会有漂亮的光柱。但夏天下午较热，如果长辈怕晒，可以选工作日上午，人少又凉快。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "老场坊完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:08:57.899Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B00155LPBC"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 1933老场坊",
+          "url": "https://www.amap.com/place/B00155LPBC",
+          "poiId": "B00155LPBC",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "2024-Apr Shanghai 1933 Old Millfun (Old Slaughterhouse) 1933老场坊 - img 01.jpg",
+        "author": "Chainwit.",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_01.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_5eb13c9f5e",
+      "targetId": "",
+      "id": "manual_shanghai_ebfa1907",
+      "name": "上海天文馆",
+      "city": "上海",
+      "rating": 4.8,
+      "reviewsCount": "8963条携程点评",
+      "image": "/assets/images/attractions/shanghai_ebfa1907_verified.jpg",
+      "description": "位于临港滴水湖畔的上海天文馆于2021年7月18日起正式对公众开放，展馆建筑面积3.8万平方米，主建筑以优美的螺旋形态模仿天体运行轨道，圆洞天窗、倒转穹顶和球幕影院构成标志性的“三体”结构，共同诠释天体运行规律。展馆以“塑造完整宇宙观”为愿景，主展区分“家园”“宇宙”“征程”三个部分，激发人们的好奇心，鼓励人们感受星空，理解宇宙。",
+      "intro": "位于临港滴水湖畔的上海天文馆于2021年7月18日起正式对公众开放，展馆建筑面积3.8万平方米，主建筑以优美的螺旋形态模仿天体运行轨道，圆洞天窗、倒转穹顶和球幕影院构成标志性的“三体”结构，共同诠释天体运行规律。展馆以“塑造完整宇宙观”为愿景，主展区分“家园”“宇宙”“征程”三个部分，激发人们的好奇心，鼓励人们感受星空，理解宇宙。",
+      "level": "热门景点",
+      "category": "科普博物馆/天文主题展馆",
+      "tags": [
+        "科普博物馆/天文主题展馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市浦东新区临港大道380号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "lake",
+      "sources": [
+        {
+          "title": "携程旅行 上海天文馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online"
+        },
+        {
+          "title": "Wikidata Q30595198 实体页",
+          "url": "https://www.wikidata.org/wiki/Q30595198"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "常规省力全景线（适合上午场，约3-4小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "家园展区（1F）",
+            "宇宙展区（2F）",
+            "征程展区（2F-3F）",
+            "临展区（B1）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 3,
+          "tips": [
+            "进馆后第一时间预约展项课程",
+            "建议穿运动鞋",
+            "可自带食物在休息区食用"
+          ],
+          "sourceTitle": "携程旅行 上海天文馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online"
+        },
+        {
+          "title": "下午场精简线（适合睡饱错峰，约2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "家园展区（1F）",
+            "球幕影院",
+            "征程展区（2F-3F）",
+            "好奇星球（B1）"
+          ],
+          "duration": "半天",
+          "walking": "约1万步",
+          "physical": 2,
+          "tips": [
+            "适合周六下午场",
+            "优先约人工讲解+球幕电影",
+            "不赶场更轻松"
+          ],
+          "sourceTitle": "携程旅行 上海天文馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁16号线滴水湖站4号口出站步行约800米；自驾导航\"上海天文馆停车场\"，节假日建议早到",
+        "internal_arrive": "刷身份证入园，1F检票入口右后方有自助存包柜，建议轻装上阵",
+        "internal_traffic": "馆内设有无障碍电梯，可全程推行婴儿车，各展区之间有扶梯连接",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "滴水湖周边酒店较多，适合安排一日游；市区往返单程约2小时，建议预留充足时间",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议重点逛家园展区和征程展区，互动装置多且知识浅显，可租电子导览器；",
+        "children": "长辈建议重点逛家园展区和征程展区，互动装置多且知识浅显，可租电子导览器；儿童建议优先好奇星球（3-8岁专属）、\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Shanghaitianwenguan.jpg",
+        "author": "Brookqi",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghaitianwenguan.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁16号线滴水湖站4号口出站步行约800米；自驾导航\"上海天文馆停车场\"，节假日建议早到",
+          "internal_arrive": "刷身份证入园，1F检票入口右后方有自助存包柜，建议轻装上阵",
+          "internal_traffic": "馆内设有无障碍电梯，可全程推行婴儿车，各展区之间有扶梯连接",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "滴水湖周边酒店较多，适合安排一日游；市区往返单程约2小时，建议预留充足时间",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议重点逛家园展区和征程展区，互动装置多且知识浅显，可租电子导览器；",
+          "children": "长辈建议重点逛家园展区和征程展区，互动装置多且知识浅显，可租电子导览器；儿童建议优先好奇星球（3-8岁专属）、\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "常规省力全景线（适合上午场，约3-4小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "家园展区（1F）",
+            "宇宙展区（2F）",
+            "征程展区（2F-3F）",
+            "临展区（B1）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 3,
+          "tips": [
+            "进馆后第一时间预约展项课程",
+            "建议穿运动鞋",
+            "可自带食物在休息区食用"
+          ],
+          "sourceTitle": "携程旅行 上海天文馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "下午场精简线（适合睡饱错峰，约2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口",
+            "家园展区（1F）",
+            "球幕影院",
+            "征程展区（2F-3F）",
+            "好奇星球（B1）"
+          ],
+          "duration": "半天",
+          "walking": "约1万步",
+          "physical": 2,
+          "tips": [
+            "适合周六下午场",
+            "优先约人工讲解+球幕电影",
+            "不赶场更轻松"
+          ],
+          "sourceTitle": "携程旅行 上海天文馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结89篇笔记生成\n\n带长辈和小孩去天文馆，最怕的就是走马观花还累得脚底发烫。上海天文馆整体非常大，设计了一条“一路向上再向下”的顺路动线，全程基本不用走回头路，主打一个坐着看、躺着玩。\n\n核心省力游览路线\n\n1F 家园展区：进门先感受傅科摆和巨型地球模拟器，互动装置多且知识浅显，长辈小孩都能轻松看懂。重点体验光学天象厅（懒人沙发躺着看星空）或飞越银河系剧场（动感座椅，沉浸式太空穿越）。\n\n2F 宇宙展区：顺着电梯上楼，探索时空、引力和黑洞。这里的“星际穿越长廊”光影效果很好，还有陨石墙可以近距离触摸，沉浸感强但不用太多体力。\n\n3F 征程展区：继续上楼，这里聚焦人类航天史。最核心的是1:1还原的天和核心舱，可以进舱体验宇航员的睡眠舱和生活设施，小朋友通常会非常喜欢。看完后沿着旋转楼梯慢慢走回1F，顺便俯瞰中庭全景。\n\nB1 临展与休息：最后下到负一层，逛逛临时展览（如近期的陨石展），或者带小孩去“好奇星球”儿童乐园（适合低龄宝宝攀爬放电）。逛完在B1餐厅解决午餐，或者直接坐着休息准备离场。\n\n馆内项目预约提醒\n\n进入场馆检票后，才能通过官方公众号预约内部的特色展项课程。每人每天通常最多可预约2项，热门项目如飞越银河系、航向火星等非常抢手，建议入馆后第一时间操作。如果约不到，光学天象厅和假如剧场也是不错的备选，适合全年龄段轻松体验。\n\n长辈小孩专属避坑贴士\n\n讲解服务：如果长辈对科普比较感兴趣，强烈建议在现场或小程序预约人工讲解服务（约90分钟），老师带着走主线，不用自己瞎琢磨路线，大人小孩都省心。\n\n快速通道：70岁以上老人及行动不便者，入馆时可以使用绿色检票通道，不用排长队。\n\n衣物与饮食：馆内空调较足，建议给长辈带件薄外套；可以自带水杯和少量零食，在休息区补充能量。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海天文馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:09:15.221Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 上海天文馆 详情页：https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online",
+          "Wikidata Q30595198 实体页：https://www.wikidata.org/wiki/Q30595198",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 上海天文馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/69572753.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Shanghaitianwenguan.jpg",
+        "author": "Brookqi",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghaitianwenguan.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_608bc2b919",
+      "targetId": "",
+      "id": "manual_shanghai_177dbc3d",
+      "name": "浦东美术馆",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "2889条携程点评",
+      "image": "/assets/images/attractions/shanghai_177dbc3d_verified.jpg",
+      "description": "浦东美术馆（MAP）由陆家嘴集团投资、建设和运营，由法国著名建筑师、普利兹克奖得主让·努维尔设计，于2017年9月26日启动建设，2021年7月正式向公众开放。浦东美术馆位于小陆家嘴滨江核心区，是一座拥有6个楼层，30米高的现代建筑，向西延伸到黄浦江畔，向东经由花园广场连接东方明珠，形成了3万平米的美术馆领地。",
+      "intro": "浦东美术馆（MAP）由陆家嘴集团投资、建设和运营，由法国著名建筑师、普利兹克奖得主让·努维尔设计，于2017年9月26日启动建设，2021年7月正式向公众开放。浦东美术馆位于小陆家嘴滨江核心区，是一座拥有6个楼层，30米高的现代建筑，向西延伸到黄浦江畔，向东经由花园广场连接东方明珠，形成了3万平米的美术馆领地。",
+      "level": "热门景点",
+      "category": "美术馆、艺术展览、观景露台",
+      "tags": [
+        "美术馆、艺术展览、观景露台",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市浦东新区滨江大道2777号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "indoor",
+      "sources": [
+        {
+          "title": "携程旅行 浦东美术馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online"
+        },
+        {
+          "title": "Wikidata Q109260108 实体页",
+          "url": "https://www.wikidata.org/wiki/Q109260108"
+        },
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典精华省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "B1鲸鱼的致敬",
+            "2F莫兰迪独白",
+            "3F镜厅与窗景",
+            "5F屋顶露台",
+            "1F文创区"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "避开人流高峰，先上3楼再下2楼",
+            "每层厕所旁都有拍东方明珠的隐藏窗景机位",
+            "馆内空调偏凉，建议带薄外套"
+          ],
+          "sourceTitle": "携程旅行 浦东美术馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online"
+        },
+        {
+          "title": "亲子遛娃放电线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1F中央展厅",
+            "2F影音报告厅",
+            "4F大地之眼少儿创艺之城",
+            "3F镜厅",
+            "5F露台"
+          ],
+          "duration": "半天",
+          "walking": "约1.2公里",
+          "physical": 2,
+          "tips": [
+            "4楼有免费积木搭建区可解放家长",
+            "儿童画具仅限铅笔蜡笔彩铅，水彩类需存门口",
+            "服务台可领亲子探索手册"
+          ],
+          "sourceTitle": "携程旅行 浦东美术馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁2/14号线陆家嘴站1号口出，上行人天桥步行约5分钟；自驾可停富都滨江停车场等附近停车场，持当日门票享1小时免费停车",
+        "internal_arrive": "东门为主观众入口，安检后可寄存大件行李于B1，小件放正门入口存包柜，纯钥匙开关对老人友好",
+        "internal_traffic": "馆内全电梯覆盖，各楼层间可乘电梯或扶梯，无需爬楼",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住陆家嘴或滨江大道附近，步行即可到达，方便夜场结束后休息",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议优先乘电梯、在2楼报告厅看纪录片休息；",
+        "children": "长辈建议优先乘电梯、在2楼报告厅看纪录片休息；儿童建议重点逛4楼游乐区，自带蜡笔彩铅写生，预留3至4小时轻松逛\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "浦东美术馆.jpg",
+        "author": "Lt2818",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B5%A6%E4%B8%9C%E7%BE%8E%E6%9C%AF%E9%A6%86.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁2/14号线陆家嘴站1号口出，上行人天桥步行约5分钟；自驾可停富都滨江停车场等附近停车场，持当日门票享1小时免费停车",
+          "internal_arrive": "东门为主观众入口，安检后可寄存大件行李于B1，小件放正门入口存包柜，纯钥匙开关对老人友好",
+          "internal_traffic": "馆内全电梯覆盖，各楼层间可乘电梯或扶梯，无需爬楼",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住陆家嘴或滨江大道附近，步行即可到达，方便夜场结束后休息",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议优先乘电梯、在2楼报告厅看纪录片休息；",
+          "children": "长辈建议优先乘电梯、在2楼报告厅看纪录片休息；儿童建议重点逛4楼游乐区，自带蜡笔彩铅写生，预留3至4小时轻松逛\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典精华省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "B1鲸鱼的致敬",
+            "2F莫兰迪独白",
+            "3F镜厅与窗景",
+            "5F屋顶露台",
+            "1F文创区"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "避开人流高峰，先上3楼再下2楼",
+            "每层厕所旁都有拍东方明珠的隐藏窗景机位",
+            "馆内空调偏凉，建议带薄外套"
+          ],
+          "sourceTitle": "携程旅行 浦东美术馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        {
+          "title": "亲子遛娃放电线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1F中央展厅",
+            "2F影音报告厅",
+            "4F大地之眼少儿创艺之城",
+            "3F镜厅",
+            "5F露台"
+          ],
+          "duration": "半天",
+          "walking": "约1.2公里",
+          "physical": 2,
+          "tips": [
+            "4楼有免费积木搭建区可解放家长",
+            "儿童画具仅限铅笔蜡笔彩铅，水彩类需存门口",
+            "服务台可领亲子探索手册"
+          ],
+          "sourceTitle": "携程旅行 浦东美术馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-13"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结27篇笔记生成\n\n带长辈和小孩逛美术馆，最怕的就是路线绕、走路多、找不到休息点。浦东美术馆整体对老人小孩非常友好，全程室内、无障碍通道完善、电梯充足，只要走对动线，完全能实现“不费腿”的沉浸式看展。\n\n为你整理了一条由下往上、循序渐进的省力路线，全程不用走回头路：\n\nB1层：深海沉浸，轻松开场\n\n核心体验：直奔中央展厅《鲸鱼的致敬》。这里有高达3层的巨型鲸鱼装置，建议带长辈和小孩直接躺在圆形沙发上，从下往上仰望，配合空灵的鲸鱼声效，氛围感极强且完全不用走路。\n\n省力提示：这里是纯沉浸式体验，坐着就能看完，非常适合作为开场，让老人小孩先适应馆内的环境。\n\n1F至2F：温柔色彩与经典大赏\n\n核心体验：乘坐直梯上到1F和2F，参观《莫兰迪：独白》或奥赛大展《缔造现代》。莫兰迪展的低饱和色调非常治愈，节奏缓慢；奥赛展则有复刻的奥赛大钟和众多大师真迹。\n\n省力提示：2楼设有放映厅，如果长辈走累了，可以进去坐一会儿看展览介绍片。此外，2楼东侧洗手间旁有一个“东方明珠框景窗”，能精准框住东方明珠，不用挤人就能拍地标合影。\n\n3F：镜厅光影与江景交融\n\n核心体验：前往3楼镜厅，这里是超大落地玻璃搭配镜面反射，白天和夜晚的光影截然不同，直面黄浦江和外滩万国建筑群。同时可以参观建筑大师《让·努维尔》特展，看看建筑模型和图纸。\n\n省力提示：镜厅空间高挑，通风较好。3楼也有纸质票打印处和小纪念品商店，可以顺便补给。\n\n4F：童趣互动与专属歇脚地\n\n省力提示：这是全馆最“解放家长”的一层，长辈也可以在这里找个落地窗位置歇脚，看看外面的风景，不用全程硬撑。\n\n顶楼露台：360度全景收尾\n\n核心体验：最后乘坐电梯直达顶楼360°开放式露台。这里可以近距离对望东方明珠，俯瞰外滩夜景。如果是傍晚前往，还能顺便等一场日落和官方当日建议时段的外滩亮灯。\n\n省力提示：室外傍晚风可能较大，建议给长辈和小孩带一件薄外套防风。\n\n全程省力与避坑细节\n\n动线原则：一定要由下往上逛（B1→1F→2F→3F→4F→顶楼），顺着电梯和扶梯自然上行，避免上下反复折腾。\n\n温度提醒：馆内冷气开得很足，尤其是B1躺看和高层展厅，务必给长辈和小孩备一件薄外套。\n\n避雷提醒：5楼露台有时因天气或维护长期关闭，如果去之前发现不开放，直接在顶楼露台或3楼镜厅看景即可，不用特意上楼寻找；部分沉浸式舞蹈空间需要脱鞋进入，轮椅或行动不便的长辈可在门口观看。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "浦东美术馆完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:09:34.801Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "携程旅行 浦东美术馆 详情页：https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online",
+          "Wikidata Q109260108 实体页：https://www.wikidata.org/wiki/Q109260108",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 浦东美术馆 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/124908212.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-13"
+        },
+        "basicInfoUpdatedAt": "2026-08-13",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "浦东美术馆.jpg",
+        "author": "Lt2818",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B5%A6%E4%B8%9C%E7%BE%8E%E6%9C%AF%E9%A6%86.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_79eb5d0712",
+      "targetId": "",
+      "id": "manual_shanghai_b2ca241b",
+      "name": "广富林文化遗址",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "7617条携程点评",
+      "image": "/assets/images/attractions/shanghai_b2ca241b_verified.jpg",
+      "description": "广富林文化遗址的远古文明在科学考古中得到初步证实。早在四五千年前的新石器时代晚期，当地就已经普遍种植水稻，这一发现表明了当地具有先进的农业生产方式。",
+      "intro": "广富林文化遗址的远古文明在科学考古中得到初步证实。早在四五千年前的新石器时代晚期，当地就已经普遍种植水稻，这一发现表明了当地具有先进的农业生产方式。",
+      "level": "热门景点",
+      "category": "历史文化遗址、园林公园、博物馆",
+      "tags": [
+        "历史文化遗址、园林公园、博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "上海市松江区广富林路3260弄",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "lake",
+      "sources": [
+        {
+          "title": "xiaohongshu_core_candidates",
+          "url": "https://www.xiaohongshu.com/ai_chat_tab",
+          "kind": "candidate_evidence"
+        },
+        {
+          "title": "ctrip_city_sightlist",
+          "url": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online",
+          "kind": "secondary_evidence"
+        },
+        {
+          "title": "高德地图 上海广富林文化遗址",
+          "url": "https://www.amap.com/place/B0FFF0JR9H",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "省力精华休闲线（约3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "朱雀门",
+            "集贤坊",
+            "骨针广场",
+            "知也禅寺",
+            "富林塔",
+            "朵云书院",
+            "一尺花园"
+          ],
+          "duration": "半天",
+          "walking": "约5000步",
+          "physical": 2,
+          "tips": [
+            "全程平路为主，多座椅可歇脚",
+            "适合带长辈或低龄儿童，纯逛景拍照不累人"
+          ],
+          "sourceTitle": "携程旅行 广富林文化遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online"
+        },
+        {
+          "title": "深度文化全景线（约5小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "湖底停车场",
+            "广富林文化展示馆",
+            "考古遗址展示馆",
+            "古陶艺术馆",
+            "木艺展示馆",
+            "知也禅寺",
+            "关帝庙",
+            "城隍庙",
+            "黑渡口"
+          ],
+          "duration": "半天",
+          "walking": "约10000步以上",
+          "physical": 4,
+          "tips": [
+            "需购买展馆联票",
+            "周一室内展馆闭馆（户外正常开放）",
+            "建议穿舒适平底鞋"
+          ],
+          "sourceTitle": "携程旅行 广富林文化遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁9号线松江大学城站，出站打车约15分钟；或乘松江15路/24路公交直达。自驾导航“朱雀门”或“湖底停车场”，周边有专属停车场，停车费以官方当日公告为准。",
+        "internal_arrive": "推荐从朱雀门或湖底停车场进入，离核心展馆和餐饮区最近，带娃或行李最省心；若想免费停车可导航广富林郊野公园7号门，但步行距离较远。",
+        "internal_traffic": "园区较大，可步行游览，也可根据官方当日公告乘坐园区接驳车；展馆入口均设有无障碍通道，方便轮椅通行。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "园区内有广富林宰相府酒店（江南园林风格，有专属通道步行入园）和广富林希尔顿酒店，适合想安排两日游的家庭。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议多利用园区石椅休息，可去知也禅寺吃素斋祈福；",
+        "children": "长辈建议多利用园区石椅休息，可去知也禅寺吃素斋祈福；儿童建议携带推车（主路好推），可去湖边喂锦鲤、\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "Guangfulin Site.JPG",
+        "author": "Fayhoo",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guangfulin_Site.JPG",
+        "width": 2144,
+        "height": 1424
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "以舒适、防滑和便于长时间步行为先；历史建筑、纪念场馆内保持衣着整洁得体。"
+        },
+        "transport": {
+          "external_arrive": "地铁9号线松江大学城站，出站打车约15分钟；或乘松江15路/24路公交直达。自驾导航“朱雀门”或“湖底停车场”，周边有专属停车场，停车费以官方当日公告为准。",
+          "internal_arrive": "推荐从朱雀门或湖底停车场进入，离核心展馆和餐饮区最近，带娃或行李最省心；若想免费停车可导航广富林郊野公园7号门，但步行距离较远。",
+          "internal_traffic": "园区较大，可步行游览，也可根据官方当日公告乘坐园区接驳车；展馆入口均设有无障碍通道，方便轮椅通行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "园区内有广富林宰相府酒店（江南园林风格，有专属通道步行入园）和广富林希尔顿酒店，适合想安排两日游的家庭。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议多利用园区石椅休息，可去知也禅寺吃素斋祈福；",
+          "children": "长辈建议多利用园区石椅休息，可去知也禅寺吃素斋祈福；儿童建议携带推车（主路好推），可去湖边喂锦鲤、\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "省力精华休闲线（约3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "朱雀门",
+            "集贤坊",
+            "骨针广场",
+            "知也禅寺",
+            "富林塔",
+            "朵云书院",
+            "一尺花园"
+          ],
+          "duration": "半天",
+          "walking": "约5000步",
+          "physical": 2,
+          "tips": [
+            "全程平路为主，多座椅可歇脚",
+            "适合带长辈或低龄儿童，纯逛景拍照不累人"
+          ],
+          "sourceTitle": "携程旅行 广富林文化遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "深度文化全景线（约5小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "湖底停车场",
+            "广富林文化展示馆",
+            "考古遗址展示馆",
+            "古陶艺术馆",
+            "木艺展示馆",
+            "知也禅寺",
+            "关帝庙",
+            "城隍庙",
+            "黑渡口"
+          ],
+          "duration": "半天",
+          "walking": "约10000步以上",
+          "physical": 4,
+          "tips": [
+            "需购买展馆联票",
+            "周一室内展馆闭馆（户外正常开放）",
+            "建议穿舒适平底鞋"
+          ],
+          "sourceTitle": "携程旅行 广富林文化遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结38篇笔记生成\n\n带长辈和小孩去广富林，最核心的诉求就是“少走弯路、少爬楼梯、随时能歇脚”。广富林园区确实不小，但整体以平路为主，只要路线规划对，全家都能逛得舒服。\n\n为你整理了一条涵盖核心景点的“逆时针省力环线”，全程不走回头路，节奏轻松：\n\n入园与交通建议\n\n省力游览路线\n\n朱雀门 ➡️ 集贤坊 ➡️ 城隍庙/关帝庙 ➡️ 骨针广场 ➡️ 知也禅寺 ➡️ 富林塔 ➡️ 广富林文化展示馆（水下博物馆） ➡️ 朵云书院 ➡️ 考古遗址展示馆 ➡️ 返程\n\n这条路线大致呈逆时针方向，能覆盖园区最精华的徽派建筑、仿唐古建和核心展馆，且主路都很平坦，非常适合推婴儿车或轮椅（注意：园区仅允许无脚踏板婴儿车和非电动残疾人轮椅进入，其他带轮工具需寄存）。\n\n沿途核心亮点与歇脚点\n\n集贤坊：白墙黛瓦的徽派建筑群，临水而建，水面倒影非常出片，适合刚入园时慢慢拍。\n\n城隍庙与关帝庙：明代风格的古建群，人相对较少，环境清幽，长辈通常会比较喜欢这种祈福氛围。\n\n知也禅寺与富林塔：仿唐建筑群，红墙黛瓦极具视觉冲击力。富林塔是园区地标，不过塔内不能登顶，在楼下拍照即可；禅寺内还有素斋可以歇脚用餐。\n\n广富林文化展示馆：也就是著名的水下博物馆，整个展厅沉入水下，沉浸感很强，能全景了解上海历史。这是园区最值得花钱逛的展馆，建议预留1-2小时。\n\n朵云书院：藏在徽派古宅里的书店，环境雅致，非常适合走累了坐下来喝杯咖啡、吹吹风，是全程最佳的“强制休息站”。\n\n长辈小孩专属避坑贴士\n\n关于推车与轮椅：园区主路都是石板路，虽然能推车但会有点颠，建议带减震好一点的推车。园区内楼梯较少，但个别展馆或区域可能有台阶，建议提前在游客服务中心确认无障碍通道情况。\n\n不确定事项提醒：园区内的接驳车运营时间、部分展馆的临时闭馆维护或素斋供应时间可能会有调整，建议到达后先在游客服务中心拿一份最新地图，或向工作人员确认当天的具体情况。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "广富林文化遗址完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:10:45.006Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online",
+          "高德地图 上海广富林文化遗址：https://www.amap.com/place/B0FFF0JR9H"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 广富林文化遗址 详情页",
+          "url": "https://you.ctrip.com/sight/shanghai2/111500.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Guangfulin Site.JPG",
+        "author": "Fayhoo",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guangfulin_Site.JPG",
+        "width": 2144,
+        "height": 1424
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_ad292c1eb7",
+      "targetId": "",
+      "id": "manual_shanghai_38436581",
+      "name": "上海国际旅游度假区",
+      "city": "上海",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shanghai_38436581_verified.jpg",
+      "description": "上海国际旅游度假区位于浦东中部，规划面积24.7平方公里，是上海“城市东西向发展轴”和浦东“南北科技创新走廊”的交汇带，是上海建设世界著名旅游城市和浦东打造引领区最具想象力的承载区域。度假区地理位置优越、交通便捷，区域内不仅有中国内地首座迪士尼主题乐园及多家酒店，还有迪士尼小镇、4A级旅游景区比斯特上海购物村、薰衣草公园等休闲餐饮配套设施。",
+      "intro": "上海国际旅游度假区位于浦东中部，规划面积24.7平方公里，是上海“城市东西向发展轴”和浦东“南北科技创新走廊”的交汇带，是上海建设世界著名旅游城市和浦东打造引领区最具想象力的承载区域。度假区地理位置优越、交通便捷，区域内不仅有中国内地首座迪士尼主题乐园及多家酒店，还有迪士尼小镇、4A级旅游景区比斯特上海购物村、薰衣草公园等休闲餐饮配套设施。",
+      "level": "国家级旅游度假区",
+      "category": "综合性旅游度假区（主题乐园、商业街区、生态公园、主题酒店）",
+      "tags": [
+        "综合性旅游度假区（主题乐园、商业街区、生态公园、主题酒店）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "上海市浦东新区黄赵路310号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "resort",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "Wikidata Q97352149 实体页",
+          "url": "https://www.wikidata.org/wiki/Q97352149"
+        }
+      ],
+      "routes": [
+        {
+          "title": "经典不走回头路路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "米奇大街",
+            "疯狂动物城",
+            "宝藏湾",
+            "探险岛",
+            "奇想花园",
+            "梦幻世界",
+            "玩具总动员",
+            "明日世界"
+          ],
+          "duration": "半天",
+          "walking": "约2万步以上",
+          "physical": 5,
+          "tips": [
+            "建议开园即入，优先冲热门项目",
+            "傍晚反向刷项目，避开烟花高峰人流"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "家庭休闲省力路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "星愿公园",
+            "迪士尼小镇",
+            "上海迪士尼乐园（轻松项目+演出）",
+            "比斯特上海购物村"
+          ],
+          "duration": "半天",
+          "walking": "约8000步左右",
+          "physical": 2,
+          "tips": [
+            "星愿公园免费且适合低幼",
+            "多安排室内剧场演出歇脚",
+            "错峰用餐"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁11号线至迪士尼站；自驾至度假区停车场；出租车至西公交枢纽",
+        "internal_arrive": "推荐从西公交枢纽或小型车停车场步行入园，比地铁1号口绕湖路线更近",
+        "internal_traffic": "酒店免费穿梭巴士；度假区内轮渡；部分路段可租代步车",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "官方主题酒店（乐园酒店、玩具总动员酒店）及周边万怡等连锁酒店",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "推荐加勒比海盗、飞跃地平线、旋转木马等低刺激项目，多利用剧场休息；",
+        "children": "长辈推荐加勒比海盗、飞跃地平线、旋转木马等低刺激项目，多利用剧场休息；儿童建议租推车，注意身高限制，优先玩热力追踪和小矮人矿山车\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "上海国际旅游度假区 官方页面实景图",
+        "author": "来源机构",
+        "provider": "政府或景区官方页面",
+        "license": "官方公开景区介绍资料，版权归来源机构",
+        "licenseUrl": "https://www.shanghai.gov.cn/citywalk/20260625/5e1391517f264edf84fcf852ff32ee91.html",
+        "sourceUrl": "https://www.shanghai.gov.cn/citywalk/20260625/5e1391517f264edf84fcf852ff32ee91.html",
+        "width": 1920,
+        "height": 1080
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "大型度假区步行量容易被低估，舒适鞋和分层穿搭比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "地铁11号线至迪士尼站；自驾至度假区停车场；出租车至西公交枢纽",
+          "internal_arrive": "推荐从西公交枢纽或小型车停车场步行入园，比地铁1号口绕湖路线更近",
+          "internal_traffic": "酒店免费穿梭巴士；度假区内轮渡；部分路段可租代步车",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "官方主题酒店（乐园酒店、玩具总动员酒店）及周边万怡等连锁酒店",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "推荐加勒比海盗、飞跃地平线、旋转木马等低刺激项目，多利用剧场休息；",
+          "children": "长辈推荐加勒比海盗、飞跃地平线、旋转木马等低刺激项目，多利用剧场休息；儿童建议租推车，注意身高限制，优先玩热力追踪和小矮人矿山车\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典不走回头路路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "米奇大街",
+            "疯狂动物城",
+            "宝藏湾",
+            "探险岛",
+            "奇想花园",
+            "梦幻世界",
+            "玩具总动员",
+            "明日世界"
+          ],
+          "duration": "半天",
+          "walking": "约2万步以上",
+          "physical": 5,
+          "tips": [
+            "建议开园即入，优先冲热门项目",
+            "傍晚反向刷项目，避开烟花高峰人流"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "家庭休闲省力路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "星愿公园",
+            "迪士尼小镇",
+            "上海迪士尼乐园（轻松项目+演出）",
+            "比斯特上海购物村"
+          ],
+          "duration": "半天",
+          "walking": "约8000步左右",
+          "physical": 2,
+          "tips": [
+            "星愿公园免费且适合低幼",
+            "多安排室内剧场演出歇脚",
+            "错峰用餐"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结52篇笔记生成\n\n带长辈和小孩去上海国际旅游度假区，主打一个“不费腿、不费心”，把体力留给最值得的地方。度假区不止有迪士尼乐园，还包括迪士尼小镇和星愿公园，以下是一条覆盖完整景区的省力动线。\n\n上午：乐园温和项目与沉浸体验\n\n入园与准备：建议睡到自然醒，当日较合适时段入园。进门后第一时间在APP预约室内演出（如米奇妙游童话书），并租借轮椅或儿童推车（园区很大，推车不仅能坐人，还能放包，非常省力）。\n\n首选温和大项：先前往疯狂动物城玩热力追踪，上午排队相对较短，沉浸式乘车体验长辈小孩都能接受；接着去梦幻世界玩小飞侠天空奇遇和旋转蜂蜜罐，节奏舒缓且梦幻。\n\n经典沉浸项目：中午前往宝藏湾体验加勒比海盗·沉落宝藏之战，这是裸眼海战大场面，不剧烈但视觉震撼，长辈普遍好评。\n\n下午：看演出、花车与错峰休息\n\n室内演出避暑：下午气温较高或人多的时候，安排看一场室内演出（如米奇妙游童话书或冰雪奇缘：欢唱盛会），既能吹空调休息，又能感受氛围。\n\n花车巡游：提前20分钟在巡游路线中段找个舒服的位置，不用死挤前排，看角色互动和音乐氛围就很好了。\n\n水上慢游：傍晚前往晶彩奇航，坐船穿行在童话故事中，慢悠悠水上游览，可以坐着歇脚，非常适合刷完项目后舒缓双脚。\n\n晚间：烟花与反向刷项目\n\n错峰看烟花：晚上城堡烟花秀是压轴大戏。建议提前在奇想花园找个位置，或者在小镇的高处餐厅边吃边看。\n\n反向刷项目：如果长辈和小孩还有体力，在别人排队看烟花时，可以反向去刷一些夜间排队较短的项目（如七个小矮人矿山车），体验VIP包场感。\n\n省力与避坑提醒\n\n项目取舍：创极速光轮、抱抱龙冲天赛车等刺激项目不适合长辈，建议在外部拍照打卡即可。\n\n演出预约：部分室内演出在旺季需要当天在APP提前预约，进园后记得先看一眼APP的预约页面，避免跑空。\n\n交通建议：如果自驾，建议提前预约小镇停车场，步行到入口较近，能少走很多路；如果坐地铁，11号线迪士尼站1号口出站步行即可。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海国际旅游度假区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:11:05.569Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "Wikidata Q97352149 实体页：https://www.wikidata.org/wiki/Q97352149"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "上海国际旅游度假区 官方页面实景图",
+        "author": "来源机构",
+        "provider": "政府或景区官方页面",
+        "license": "官方公开景区介绍资料，版权归来源机构",
+        "licenseUrl": "https://www.shanghai.gov.cn/citywalk/20260625/5e1391517f264edf84fcf852ff32ee91.html",
+        "sourceUrl": "https://www.shanghai.gov.cn/citywalk/20260625/5e1391517f264edf84fcf852ff32ee91.html",
+        "width": 1920,
+        "height": 1080
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    },
+    {
+      "baselineKey": "core_db0d68d55e",
+      "targetId": "",
+      "id": "manual_shanghai_327cce2",
+      "name": "上海佘山国家旅游度假区",
+      "city": "上海",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shanghai_327cce2_verified.jpg",
+      "description": "佘山国家旅游度假区拥有上海唯一的自然山林资源，可览“九峰十二山”的独特风景。度假区内有余山国家森林公园、月湖雕塑公园、上海欢乐谷、玛雅海滩水公园、上海天文博物馆等景点。",
+      "intro": "佘山国家旅游度假区拥有上海唯一的自然山林资源，可览“九峰十二山”的独特风景。度假区内有余山国家森林公园、月湖雕塑公园、上海欢乐谷、玛雅海滩水公园、上海天文博物馆等景点。",
+      "level": "国家级旅游度假区",
+      "category": "国家级旅游度假区（核心为生态山林与人文景观）",
+      "tags": [
+        "国家级旅游度假区（核心为生态山林与人文景观）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "上海市松江区林荫路1999号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "profile": "mountain",
+      "sources": [
+        {
+          "title": "中华人民共和国文化和旅游部大众旅游服务",
+          "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "kind": "official_identity"
+        },
+        {
+          "title": "Wikidata Q97183012 实体页",
+          "url": "https://www.wikidata.org/wiki/Q97183012"
+        },
+        {
+          "title": "高德地图 佘山国家旅游度假区",
+          "url": "https://www.amap.com/place/B00155L7QD",
+          "kind": "amap_live_web_service"
+        }
+      ],
+      "routes": [
+        {
+          "title": "东西双山轻徒步吸氧线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "东佘山南大门",
+            "竹林栈道",
+            "乾隆古道",
+            "西大门",
+            "西佘山北大门",
+            "秀道者塔",
+            "上海天文博物馆",
+            "佘山天主教堂",
+            "东大门"
+          ],
+          "duration": "半天",
+          "walking": "约3.5公里",
+          "physical": 3,
+          "tips": [
+            "东西佘山仅隔一条马路，步行5分钟即可换乘",
+            "全程基本在树荫下，体感温度较低，建议穿防滑运动鞋"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        },
+        {
+          "title": "西佘山人文缓坡省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西佘山北大门",
+            "秀道者塔",
+            "上海天文博物馆",
+            "佘山天主教堂",
+            "苦路",
+            "地震科普馆",
+            "东大门"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "台阶主要集中在入口一段，后续多为平缓坡道和木栈道",
+            "适合带低幼宝宝或长辈轻松遛弯"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0"
+        }
+      ],
+      "transport": {
+        "external_arrive": "地铁9号线佘山站出站，可换乘公交或打车前往；自驾可导航至“佘山国家森林公园1号停车场”或“西大门停车场”",
+        "internal_arrive": "推荐从东佘山南大门或西佘山北大门进入，这两个入口停车场距离核心景点更近，步行最省力",
+        "internal_traffic": "景区内各景点主要靠步行串联；节假日或特定周末，地铁站附近可能提供前往景区的免费接驳车，具体以官方当日公告为准",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐选择佘山世茂艾美酒店（亲子设施丰富，有泳池和松鼠乐园）、佘山世茂洲际酒店（深坑酒店特色体验）或巴塞罗那国际度假酒店（毗邻欢乐谷）",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "specialCare": {
+        "elderly": "建议走路线B，缓坡多台阶少，下山时注意放慢速度保护膝盖；",
+        "children": "长辈建议走路线B，缓坡多台阶少，下山时注意放慢速度保护膝盖；儿童可沿途在竹林捡树叶、体验挖笋，天文博物馆和地震科普馆互动性强，适合科普启蒙\n\n活动"
+      },
+      "lazyTips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "imageSource": {
+        "title": "上海佘山国家旅游度假区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B00155L7QD",
+        "width": 4032,
+        "height": 3024
+      },
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "采用轻便分层穿搭，准备薄外套和舒适防滑步行鞋，按天气及时增减。",
+          "summer": "穿透气速干衣物，准备防晒、补水和便携雨具；室内空调环境另备薄外套。",
+          "winter": "穿保暖防风外套、长裤和防滑鞋，室内外连续游览时采用便于增减的分层穿搭。",
+          "tips": "山地台阶、坡道和冬季结冰会增加难度，穿防滑鞋并避免雨雪天勉强攀登。"
+        },
+        "transport": {
+          "external_arrive": "地铁9号线佘山站出站，可换乘公交或打车前往；自驾可导航至“佘山国家森林公园1号停车场”或“西大门停车场”",
+          "internal_arrive": "推荐从东佘山南大门或西佘山北大门进入，这两个入口停车场距离核心景点更近，步行最省力",
+          "internal_traffic": "景区内各景点主要靠步行串联；节假日或特定周末，地铁站附近可能提供前往景区的免费接驳车，具体以官方当日公告为准",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择佘山世茂艾美酒店（亲子设施丰富，有泳池和松鼠乐园）、佘山世茂洲际酒店（深坑酒店特色体验）或巴塞罗那国际度假酒店（毗邻欢乐谷）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "八宝鸭",
+          "排骨年糕",
+          "红烧肉",
+          "响油鳝糊"
+        ],
+        "special_care": {
+          "elderly": "建议走路线B，缓坡多台阶少，下山时注意放慢速度保护膝盖；",
+          "children": "长辈建议走路线B，缓坡多台阶少，下山时注意放慢速度保护膝盖；儿童可沿途在竹林捡树叶、体验挖笋，天文博物馆和地震科普馆互动性强，适合科普启蒙\n\n活动"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "东西双山轻徒步吸氧线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "东佘山南大门",
+            "竹林栈道",
+            "乾隆古道",
+            "西大门",
+            "西佘山北大门",
+            "秀道者塔",
+            "上海天文博物馆",
+            "佘山天主教堂",
+            "东大门"
+          ],
+          "duration": "半天",
+          "walking": "约3.5公里",
+          "physical": 3,
+          "tips": [
+            "东西佘山仅隔一条马路，步行5分钟即可换乘",
+            "全程基本在树荫下，体感温度较低，建议穿防滑运动鞋"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "西佘山人文缓坡省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西佘山北大门",
+            "秀道者塔",
+            "上海天文博物馆",
+            "佘山天主教堂",
+            "苦路",
+            "地震科普馆",
+            "东大门"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "台阶主要集中在入口一段，后续多为平缓坡道和木栈道",
+            "适合带低幼宝宝或长辈轻松遛弯"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "lazy_ai_text": "ai总结49篇笔记生成\n\n带长辈和小孩去佘山，主打一个“不费腿、不赶路、多吸氧”，帮你整理了一条覆盖核心子景点的省力路线，全程树荫多、台阶少，节奏轻松。\n\n东佘山自然吸氧段（平缓入门）\n\n入园起点：导航至东佘山南大门（自驾可停东佘山停车场或1号停车场，离入口较近）。\n\n核心路线：南大门进 ➡️ 368级登山道（台阶平缓，走几分钟即到） ➡️ 白石山亭（休息观景） ➡️ 竹林栈道（木栈道平铺，对膝盖非常友好，适合小孩捡树叶） ➡️ 乾隆古道 ➡️ 北高峰观光平台（视野开阔） ➡️ 西大门出。\n\n体验亮点：东佘山海拔72米左右，主打竹林和自然风光，全程基本无陡坡，走走停停约1-1.5小时，长辈和小孩都不会觉得累。\n\n西佘山人文登顶段（核心打卡）\n\n无缝衔接：从东佘山西大门出来后，过马路步行约100-150米，按指示牌从西佘山北大门入园。\n\n核心路线：北大门进 ➡️ 秀道者塔（北宋古塔，拍照出片） ➡️ 盘山绿荫道 ➡️ 上海天文博物馆（百年望远镜，亲子科普必去） ➡️ 佘山圣母大殿（远东第一教堂，红砖琉璃窗） ➡️ 木栈道/苦路下山 ➡️ 东大门出。\n\n体验亮点：西佘山海拔100米，人文景点密集。天文博物馆和圣母大殿是核心，步道以缓坡和木栈道为主，累了随时有休息亭，游玩约1.5-2小时。\n\n外围轻松联动段（视体力可选）\n\n如果长辈和小孩体力尚可，想多逛一个非爬山类景点，可以下午联动去广富林遗址。\n\n交通方式：从佘山打车或自驾前往（约15分钟）。\n\n省力玩法：广富林主打水下博物馆和园林，园区较大，建议入园后租用观光车或轮椅，重点看水下博物馆和宰相府，平路多，不费腿且非常出片。\n\n长辈小孩专属省力Tips\n\n无障碍提示：东、西佘山主景区步道虽有缓坡但整体无障碍设施有限，若长辈需全程轮椅，建议仅选择西佘山部分平缓路段或只在山脚公园活动，具体无障碍通道情况建议提前致电景区确认。\n\n避坑提醒：西佘山圣母大殿室内严禁拍照；山上只有小卖部，水价稍高，建议自带矿泉水和少量零食；蚊虫较多，务必带好驱蚊液。",
+      "lazy_ai_source": {
+        "source": "xiaohongshu-dian-dian-ai-chat",
+        "prompt": "上海佘山国家旅游度假区完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+        "updatedAt": "2026-08-13T09:11:26.009Z"
+      },
+      "quality_policy": {
+        "forbiddenTerms": []
+      },
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与开放知识库交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+          "Wikidata Q97183012 实体页：https://www.wikidata.org/wiki/Q97183012",
+          "高德地图 佘山国家旅游度假区：https://www.amap.com/place/B00155L7QD"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 佘山国家旅游度假区",
+          "url": "https://www.amap.com/place/B00155L7QD",
+          "poiId": "B00155L7QD",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价、交通和演出属于动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "上海佘山国家旅游度假区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B00155L7QD",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "qualityWarnings": []
+    }
+  ],
+  "warnings": []
+}

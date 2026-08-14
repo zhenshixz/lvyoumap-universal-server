@@ -196,8 +196,11 @@ function validateManualAttraction(attraction, provinceName) {
   validateLazyArticle(attraction, provinceName);
 
   const evidence = attraction.source_evidence;
-  if (!evidence || !Array.isArray(evidence.basicInfoSources) || evidence.basicInfoSources.length < 2) {
-    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 2 basic-info sources.`);
+  if (!evidence || !Array.isArray(evidence.basicInfoSources) || evidence.basicInfoSources.length < 1) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} must provide at least 1 traceable basic-info source.`);
+  }
+  if (evidence.basicInfoSources.length < 2 && !attraction.quality_status?.reviewRequired) {
+    throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} has only 1 basic-info source and must be explicitly marked for review.`);
   }
   requireManualField(attraction, provinceName, 'source_evidence.basicInfoUpdatedAt', evidence.basicInfoUpdatedAt);
   requireManualField(attraction, provinceName, 'image_source.sourceUrl', attraction.image_source?.sourceUrl);

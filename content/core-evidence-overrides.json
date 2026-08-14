@@ -12,6 +12,17 @@
         "relation": "广州长隆旅游度假区内独立售票演艺项目",
         "verifiedAt": "2026-08-12"
       }
+    ],
+    "上海": [
+      {
+        "name": "上海乐高乐园度假区",
+        "city": "上海",
+        "source": "official_attraction_site",
+        "sourceTitle": "上海市文化和旅游局：上海乐高乐园度假区将于7月5日开园",
+        "sourceUrl": "https://whlyj.sh.gov.cn/cysc/20250515/4379a035397f448c8d5b8e764a004f0e.html",
+        "relation": "上海市文化和旅游局确认的长期运营主题度假区",
+        "verifiedAt": "2026-08-13"
+      }
     ]
   }
 }

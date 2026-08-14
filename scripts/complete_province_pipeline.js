@@ -80,6 +80,16 @@ function pendingGuides(packageData, researchData) {
   return items.filter(item => lazy[item.id]?.lazy_ai_source?.source !== 'xiaohongshu-dian-dian-ai-chat');
 }
 
+function packageHasPlaceholderImages(packageData) {
+  const items = [
+    ...(packageData?.attractions || []),
+    ...Object.values(packageData?.overrides || {}),
+  ];
+  return items.some(item => item.image === '/assets/images/default-thumbnail.jpg'
+    || item.image_source?.provider === '项目通用占位图'
+    || item.imageSource?.provider === '项目通用占位图');
+}
+
 function checkStop() {
   if (!fs.existsSync(stopPath)) return;
   writeProgress({ status: 'stopped', message: '已在阶段切换处安全停止；成功结果已保留，下次可继续。' });
@@ -108,6 +118,19 @@ function main() {
   if (packageData?.status === 'applied') {
     writeProgress({ status: 'done', stage: 'applied', message: `${province}补全包已经写入 beta，无需重复执行。`, index: 5, total: 5, percent: 100 });
     return;
+  }
+  if (packageData?.status === 'reviewed' && !packageHasPlaceholderImages(packageData)) {
+    writeProgress({ status: 'generating', stage: 'preview', message: '补全包已通过质量门禁，正在恢复或重建隔离预览。', index: 6, total: 7, percent: 86 });
+    run('generate_core_preview.js', [`--province=${province}`]);
+    const preview = readJson(path.join(runtimeDir, 'previews', slug, 'state.json'));
+    if (preview?.status !== 'ready') throw new Error('隔离预览未能进入 ready 状态。');
+    const totalItems = (packageData.attractions?.length || 0) + Object.keys(packageData.overrides || {}).length;
+    writeProgress({ status: 'preview_ready', stage: 'preview', message: `隔离预览已就绪：${preview.previewUrl}。回到总控再次选择该省完成最终确认。`, index: 7, total: 7, percent: 100, success: totalItems, failed: 0, previewUrl: preview.previewUrl });
+    console.log(`${province}已复用 reviewed 补全包并恢复隔离预览；没有重复联网采集，尚未写入 beta。`);
+    return;
+  }
+  if (packageData?.status === 'reviewed' && packageHasPlaceholderImages(packageData)) {
+    console.log(`${province}补全包仍含占位图：自动进入补图续跑，不重复采集点点攻略和路线。`);
   }
 
   writeProgress({ status: 'running', stage: 'guide', message: '正在补齐缺失景点的点点懒人攻略。', index: 1, total: 5, percent: 20 });
@@ -144,7 +167,7 @@ function main() {
   // 评分证据属于可独立更新的数据层。即便完整资料包此前已经 reviewed，
   // 也必须执行一次来源绑定刷新，避免旧断点永久保留 0 分或无来源评分。
   writeProgress({ status: 'running', stage: 'facts', message: '正在交叉核验基本资料，并按“可靠OTA优先、高德唯一同实体兜底”刷新评分。', index: 3, total: 7, percent: 43 });
-  run('collect_core_details.js', [`--province=${province}`, '--refresh-ratings']);
+  run('collect_core_details.js', [`--province=${province}`, '--refresh-ratings', '--refresh-images']);
   checkStop();
   writeProgress({ status: 'running', stage: 'package', message: '正在下载授权高清图并重新生成完整景点资料包。', index: 4, total: 7, percent: 57 });
   run('research_core_repairs.js', [`--province=${province}`]);
@@ -152,7 +175,7 @@ function main() {
   checkStop();
 
   writeProgress({ status: 'running', stage: 'quality', message: '正在执行完整字段、身份重复、来源和内容风险质量门禁。', index: 5, total: 7, percent: 71 });
-  if (packageData?.status !== 'reviewed') run('core_repair_pipeline.js', [`--province=${province}`, '--finalize']);
+  run('core_repair_pipeline.js', [`--province=${province}`, '--finalize']);
   packageData = readJson(packagePath);
   if (packageData?.status !== 'reviewed') throw new Error('补全包未进入 reviewed 状态。');
   checkStop();
@@ -162,7 +185,8 @@ function main() {
   const preview = readJson(path.join(runtimeDir, 'previews', slug, 'state.json'));
   if (preview?.status !== 'ready') throw new Error('隔离预览未能进入 ready 状态。');
 
-  writeProgress({ status: 'preview_ready', stage: 'preview', message: `隔离预览已就绪：${preview.previewUrl}。回到总控再次选择该省完成最终确认。`, index: 7, total: 7, percent: 100, success: packageData.attractions?.length || 0, failed: 0, previewUrl: preview.previewUrl });
+  const totalItems = (packageData.attractions?.length || 0) + Object.keys(packageData.overrides || {}).length;
+  writeProgress({ status: 'preview_ready', stage: 'preview', message: `隔离预览已就绪：${preview.previewUrl}。回到总控再次选择该省完成最终确认。`, index: 7, total: 7, percent: 100, success: totalItems, failed: 0, previewUrl: preview.previewUrl });
   console.log(`${province}一键补全已运行到隔离预览；尚未写入 beta。`);
 }
 
@@ -171,7 +195,8 @@ try {
 } catch (error) {
   const current = readJson(progressPath, {});
   if (!['login_required', 'restricted', 'stopped'].includes(current.status)) {
-    writeProgress({ status: 'retry_ready', message: `${error.message} 已保留全部成功断点；再次选择“开始/继续”会从失败项续跑。`, pid: process.pid });
+    const pendingText = current.pendingNames?.length ? ` 待续跑：${current.pendingNames.join('、')}。` : '';
+    writeProgress({ status: 'retry_ready', message: `${error.message}${pendingText} 已保留全部成功断点；再次选择“开始/继续”会从失败项续跑。`, pid: process.pid });
   }
   console.error(`省级完整补全失败：${error.message}`);
   process.exitCode = 1;

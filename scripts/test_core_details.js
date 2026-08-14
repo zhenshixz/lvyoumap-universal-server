@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { allAliases, completeEvidence, parseCtripHtml, sameIdentity } = require('./collect_core_details');
+const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseCtripHtml, sameIdentity } = require('./collect_core_details');
 const { localAmapRating } = require('./core_rating_evidence');
 
 const cases = [
@@ -16,7 +16,19 @@ for (const [candidate, item] of cases) {
 assert(!sameIdentity('上海欢乐谷', { name: '北京欢乐谷', city: '北京' }), '异地同类景点不得误合并');
 assert(allAliases({ name: '八达岭—慕田峪长城旅游区' }).includes('慕田峪长城'), '复合景区应产生组成景点别名');
 assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}, {}], routes: [{}, {}], image: { localPath: '/a.jpg', downloadUrl: 'https://example.com/a.jpg' } }), '完整断点应可复用');
+assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}], routes: [{}, {}], image: { localPath: '/assets/images/default-thumbnail.jpg', placeholder: true } }), '单一来源与明确占位图应作为非阻断警告进入隔离预览');
 assert(!completeEvidence({ address: '地址', sources: [{}] }), '残缺断点不得误判完成');
+assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
+const imagePage = {
+  title: 'File:Street View of Wukang Road, Shanghai.JPG',
+  imageinfo: [{ width: 4912, height: 3264, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' }, ImageDescription: { value: '武康路街景，上海' } } }],
+};
+assert(commonsSemanticScore(imagePage, { name: '武康路街区', city: '上海' }) >= 45, '英文文件名和中文描述应能匹配同一景点');
+const mapPage = {
+  title: 'File:武康路旅游导览地图.png',
+  imageinfo: [{ width: 3000, height: 2000, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' } } }],
+};
+assert(commonsSemanticScore(mapPage, { name: '武康路街区', city: '上海' }) < 0, '地图和导览图不得作为景点实景图');
 
 const ctripFixture = [
   '{"poiName":"目标景区","districtName":"北京","commentScore":4.7,"commentCount":321,"address":"目标地址","introduction":"目标介绍"}',

@@ -108,5 +108,144 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wangxiangu_Scenic_Area_-_23_(July_19,_2025).jpg"
     }
+  },
+  "amap_B00152F15F": {
+    "id": "amap_B00152F15F",
+    "name": "上海野生动物园",
+    "city": "上海",
+    "rating": 4.7,
+    "reviewsCount": "126791条携程点评",
+    "image": "/assets/images/attractions/shanghai_7586922f_verified.jpg",
+    "description": "欢迎来到上海野生动物园，这里将唤起您心中对于大自然的美好向往与满满好奇，我们也将为您诠释一座人与动物和谐共处的美好家园。 作为国内首批5A级旅游景区，一直以来，我们都在努力拉近人与自然之间的距离。",
+    "intro": "欢迎来到上海野生动物园，这里将唤起您心中对于大自然的美好向往与满满好奇，我们也将为您诠释一座人与动物和谐共处的美好家园。 作为国内首批5A级旅游景区，一直以来，我们都在努力拉近人与自然之间的距离。",
+    "level": "5A景区",
+    "category": "野生动物园 / 亲子景区 / 5A级景区",
+    "tags": [
+      "野生动物园 / 亲子景区 / 5A级景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "上海市浦东新区宣桥镇南六公路178号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+        "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+        "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+        "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至P2停车场（离正门最近，费用以官方当日公告为准/天）；地铁16号线野生动物园站，换乘浦东125路或惠南6路公交",
+        "internal_arrive": "进门后先往左走，直奔车入区大巴排队点，不要在步行区停留，上午动物活跃度最高",
+        "internal_traffic": "免费大巴（车入区，含在门票内）｜付费投喂车（费用以官方当日公告为准普通，费用以官方当日公告为准VIP）｜电瓶车（费用以官方当日公告为准/成人）｜电动车（费用以官方当日公告为准/小时）｜游船（水域探秘费用以官方当日公告为准）",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "园区内无住宿；周边有美伦酒店等（步行约10分钟），主打商务便捷，适合过夜中转",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "八宝鸭",
+        "排骨年糕",
+        "红烧肉",
+        "响油鳝糊"
+      ],
+      "special_care": {
+        "elderly": "建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；",
+        "children": "长辈建议租电瓶车代步，多利用剧场休息，优先看百兽山和海狮剧场；儿童建议门口租婴儿车（60元/天），可玩免费儿童乐园，投喂动物选长颈鹿和袋鼠体验好，园内麦当劳有儿童餐可选\n\n活动"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "经典高效不走回头路线（适合早入园）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "火烈鸟湖",
+          "车入区免费大巴",
+          "天鹅湖",
+          "太阳广场",
+          "百兽山剧场",
+          "大熊猫馆",
+          "长颈鹿雅苑",
+          "袋鼠坡",
+          "小动物乐园"
+        ],
+        "duration": "半天",
+        "walking": "约1.5万步",
+        "physical": 4,
+        "tips": [
+          "较合适时段入园先冲猛兽区大巴，动物最活跃",
+          "百兽山剧场每日仅官方当日建议时段一场，需提前15分钟占位",
+          "免费大巴建议坐右侧靠窗前排，视野最佳"
+        ],
+        "sourceTitle": "携程旅行 上海野生动物园 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-14"
+      },
+      {
+        "title": "懒人错峰省力路线（适合睡懒觉）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "火烈鸟湖",
+          "步行区萌宠线",
+          "海狮剧场",
+          "午餐休息",
+          "车入区大巴",
+          "长颈鹿投喂",
+          "水域探秘游船",
+          "儿童乐园"
+        ],
+        "duration": "半天",
+        "walking": "约8千步",
+        "physical": 2,
+        "tips": [
+          "较合适时段后再入园，下午错峰坐大巴几乎不用排队",
+          "水域探秘坐船看河马和水鸟，冷气足适合避暑",
+          "儿童乐园摩天轮、过山车等12项设施已免费"
+        ],
+        "sourceTitle": "携程旅行 上海野生动物园 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-14"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+        "携程旅行 上海野生动物园 详情页：https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+        "Wikidata Q6140007 实体页：https://www.wikidata.org/wiki/Q6140007",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 上海野生动物园 详情页",
+        "url": "https://you.ctrip.com/sight/shanghai2/758.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-13"
+      },
+      "basicInfoUpdatedAt": "2026-08-14",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Shanghai Wild Animal Park Main Entrance.jpg",
+      "author": "周一楠",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghai_Wild_Animal_Park_Main_Entrance.jpg",
+      "width": 1920,
+      "height": 1440
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

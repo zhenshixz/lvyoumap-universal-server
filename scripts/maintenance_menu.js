@@ -3,6 +3,7 @@ const path = require('path');
 const readline = require('readline');
 const crypto = require('crypto');
 const { spawn, spawnSync } = require('child_process');
+const { runCoreDraftPipeline } = require('./core_draft_pipeline');
 
 const rootDir = path.join(__dirname, '..');
 const runtimeDir = path.join(rootDir, '.runtime');
@@ -178,6 +179,7 @@ function showProgress() {
   console.log(`进度：${index}/${total}${total ? `（${progress.percent || 0}%）` : ''}`);
   console.log(`成功：${progress.success || 0}　失败：${progress.failed || 0}`);
   if (progress.current) console.log(`当前：${progress.current}`);
+  if (progress.pendingNames?.length) console.log(`待续跑：${progress.pendingNames.join('、')}`);
   if (progress.message) console.log(`说明：${progress.message}`);
   if (progress.previewUrl) console.log(`预览：${progress.previewUrl}`);
   if (progress.status === 'guide_done') {
@@ -285,6 +287,29 @@ function isFresh(filePath, days) {
   return Date.now() - fs.statSync(filePath).mtimeMs < days * 24 * 60 * 60 * 1000;
 }
 
+function validOfficialCache(value) {
+  return Boolean(value?.province && Array.isArray(value.fiveA) && value.fiveA.length && Array.isArray(value.resorts) && value.sourceUrl);
+}
+
+function validOtaCache(value) {
+  return Boolean(value?.province && Array.isArray(value.candidates) && value.candidates.length && value.sourceUrl);
+}
+
+function collectWithCacheFallback({ label, filePath, maxAgeDays, valid, script, province }) {
+  const cached = readJson(filePath, null);
+  if (isFresh(filePath, maxAgeDays) && valid(cached)) {
+    console.log(`      复用${maxAgeDays}天内有效缓存，避免重复联网。`);
+    return cached;
+  }
+  if (runNode(script, [`--province=${province}`], { quiet: true })) return readJson(filePath, null);
+  if (valid(cached)) {
+    console.log(`      ${label}刷新暂时失败，已安全复用上次有效缓存。`);
+    return cached;
+  }
+  console.log(`      ${label}当前不可用且没有有效缓存，已保留断点；下次可直接继续。`);
+  return null;
+}
+
 async function ensureCoreBaseline(rl, province) {
   if (!province) return true;
   const info = provinceInfo(province);
@@ -297,13 +322,27 @@ async function ensureCoreBaseline(rl, province) {
   console.log('============================================================');
 
   printStep(1, 6, '采集文旅部官方名单');
-  if (!runNode('collect_mct_core_candidates.js', [`--province=${province}`], { quiet: true })) return false;
-  const official = readJson(path.join(runtimeDir, `core-official-${info.slug}.json`), {});
+  const official = collectWithCacheFallback({
+    label: '文旅部官方来源',
+    filePath: path.join(runtimeDir, `core-official-${info.slug}.json`),
+    maxAgeDays: 30,
+    valid: validOfficialCache,
+    script: 'collect_mct_core_candidates.js',
+    province,
+  });
+  if (!official) return false;
   console.log(`      完成：5A景区 ${official.fiveA?.length || 0} 个，国家级旅游度假区 ${official.resorts?.length || 0} 个。`);
 
   printStep(2, 6, '采集携程长期热门候选');
-  if (!runNode('collect_ota_core_candidates.js', [`--province=${province}`], { quiet: true })) return false;
-  const ota = readJson(path.join(runtimeDir, `core-ota-${info.slug}.json`), {});
+  const ota = collectWithCacheFallback({
+    label: '携程长期榜单',
+    filePath: path.join(runtimeDir, `core-ota-${info.slug}.json`),
+    maxAgeDays: 30,
+    valid: validOtaCache,
+    script: 'collect_ota_core_candidates.js',
+    province,
+  });
+  if (!ota) return false;
   console.log(`      完成：长期景点 ${ota.candidates?.length || 0} 个，过滤临时活动 ${ota.rejectedCandidates?.length || 0} 个。`);
 
   printStep(3, 6, '采集小红书长期口碑候选');
@@ -319,23 +358,30 @@ async function ensureCoreBaseline(rl, province) {
     console.log(`      完成：长期口碑候选 ${xhs.candidates?.length || 0} 个。`);
   }
 
-  printStep(4, 6, '交叉匹配并找出单源候选');
-  // 首轮草稿只负责找出需要二次补证的单源重要候选，不能直接进入审批。
-  if (!runNode('build_core_baseline.js', [`--province=${province}`, '--ignore-secondary'], { quiet: true })) return false;
-  const initialDraftPath = path.join(runtimeDir, `core-attractions.${info.slug}.draft.json`);
-  const initialDraft = readJson(initialDraftPath, {});
+  printStep(4, 6, '交叉匹配、二次补证与状态自检');
+  const pipeline = runCoreDraftPipeline({
+    province,
+    slug: info.slug,
+    quiet: true,
+    onStage(stage, attempt, errors = []) {
+      if (stage === 'retry') console.log(`      检测到旧断点不一致，正在自动重建（${errors.join('；')}）。`);
+      else if (attempt === 1 && stage === 'initial') console.log('      正在生成同批首轮草稿。');
+    },
+  });
+  if (!pipeline.ok) {
+    console.log(`      自动恢复未完成：${pipeline.detail || pipeline.code}`);
+    console.log('      已保留现有成功断点；下次直接选择本省即可续跑。');
+    return false;
+  }
+  const initialDraft = pipeline.initialDraft;
+  const secondary = pipeline.secondary;
   console.log(`      首轮纳入 ${initialDraft.attractions?.length || 0} 个；需要二次补证 ${initialDraft.reviewCandidateCount || 0} 个。`);
 
-  printStep(5, 6, '为单源重要景点补充第二份证据');
-  if (!runNode('collect_secondary_core_evidence.js', [`--province=${province}`], { quiet: true })) return false;
-  const secondary = readJson(path.join(runtimeDir, `core-secondary-evidence-${info.slug}.json`), {});
+  printStep(5, 6, '核验二次证据与观察池');
   console.log(`      确认 ${secondary.verifiedCount || 0} 个；已有核心覆盖 ${secondary.coveredByCoreCount || 0} 个；进入观察池 ${secondary.unresolvedCount || 0} 个。`);
 
   printStep(6, 6, '生成最终草稿并执行质量门禁');
-  // 将城市级携程分页、高德唯一POI及官方度假区证据回填后重新生成最终草稿。
-  if (!runNode('build_core_baseline.js', [`--province=${province}`], { quiet: true })) return false;
-  const draftPath = path.join(runtimeDir, `core-attractions.${info.slug}.draft.json`);
-  const draft = readJson(draftPath, null);
+  const draft = pipeline.draft;
   if (!draft || draft.baselineStatus !== 'multi_source_ready') {
     console.log('      未通过：草稿材料不完整，因此暂时不能批准。');
     if (draft?.blockingReviewCandidates?.length) {
@@ -514,7 +560,10 @@ function previewStateFor(province) {
   const preview = readJson(path.join(runtimeDir, 'previews', info.slug, 'state.json'), null);
   if (repairPackage?.status !== 'reviewed' || preview?.status !== 'ready') return null;
   if (!processIsRunning(preview.pid)) return null;
-  const packageIds = (repairPackage.attractions || []).map(item => item.id).sort();
+  const packageIds = [
+    ...(repairPackage.attractions || []).map(item => item.id),
+    ...Object.keys(repairPackage.overrides || {}),
+  ].sort();
   const previewIds = (preview.attractionIds || []).slice().sort();
   if (JSON.stringify(packageIds) !== JSON.stringify(previewIds)) return null;
   if (new Date(preview.generatedAt).getTime() < new Date(repairPackage.updatedAt).getTime()) return null;
@@ -569,7 +618,10 @@ async function runProvinceCompletion(rl, province) {
   const previousPreview = provinceMeta
     ? readJson(path.join(runtimeDir, 'previews', provinceMeta.slug, 'state.json'), null)
     : null;
-  if (localEnvHasAmapKey() && previousPreview?.ratingMode !== 'live-amap-enabled') {
+  // A missing preview is a new province, not an old preview that needs a rating refresh.
+  // Without this guard, configuring an AMap key skips core-baseline creation and starts
+  // the repair pipeline before the province has an approved core list.
+  if (shouldRefreshRatingPreview(localEnvHasAmapKey(), previousPreview)) {
     console.log('\n检测到新配置的高德 Web 服务 Key，先刷新该省评分证据并重建隔离预览。');
     console.log('这一步不会写入 beta；完成后再次选择该省进行最终验收。');
     return startBackground(province, { repairOnly: true });
@@ -579,8 +631,13 @@ async function runProvinceCompletion(rl, province) {
     console.log(`\n============================================================`);
     console.log(`${province}完整补全 · 最终验收`);
     console.log('============================================================');
-    console.log(`待写入景点：${ready.repairPackage.attractions.length} 个`);
-    printNamesByCity(ready.repairPackage.attractions);
+    const totalItems = (ready.repairPackage.attractions?.length || 0) + Object.keys(ready.repairPackage.overrides || {}).length;
+    console.log(`待写入景点：${totalItems} 个（新增 ${ready.repairPackage.attractions?.length || 0}，增强现有 ${Object.keys(ready.repairPackage.overrides || {}).length}）`);
+    printNamesByCity(ready.repairPackage.attractions || []);
+    if (ready.repairPackage.warnings?.length) {
+      console.log(`\n非阻断警告 ${ready.repairPackage.warnings.length} 条（请在隔离预览重点检查）：`);
+      ready.repairPackage.warnings.forEach(value => console.log(`- ${value}`));
+    }
     console.log(`\n隔离预览：${ready.preview.previewUrl}`);
     openUrl(ready.preview.previewUrl);
     console.log('请在预览中逐项检查：基本信息、旅行指南、懒人攻略和大图。');
@@ -743,7 +800,15 @@ async function main() {
   rl.close();
 }
 
-main().catch(error => {
-  console.error(`总控运行失败：${error.message}`);
-  process.exitCode = 1;
-});
+function shouldRefreshRatingPreview(hasAmapKey, previousPreview) {
+  return Boolean(hasAmapKey && previousPreview && previousPreview.ratingMode !== 'live-amap-enabled');
+}
+
+if (require.main === module) {
+  main().catch(error => {
+    console.error(`总控运行失败：${error.message}`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { shouldRefreshRatingPreview };

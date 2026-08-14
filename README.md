@@ -114,6 +114,8 @@ DEPLOY_KNOWN_HOSTS
 
 ## 数据维护
 
+全国核心景点补全采用三级质量门禁：身份错配、重复、关键字段/攻略/路线缺失会阻断；第二来源或授权实景图暂缺仅作为隔离预览警告；体验增强项进入后续任务。警告不会被静默忽略，最终写入 beta 前仍需人工查看隔离预览并确认。完整规则见 [PROJECT_MAINTENANCE.md](PROJECT_MAINTENANCE.md)。
+
 `content/db.json`是景点内容维护源，只在构建阶段读取，不会发布到`dist`或公开网站。构建过程生成：
 
 ```text
@@ -143,5 +145,7 @@ data/search-index.json
 本地验收请双击 `start_dev.bat`。该启动器使用稳定 Node 服务而不是监听全目录的 nodemon，启动前检查路径、Node 和构建产物；缺少 `dist` 时自动构建。启动成功后会显示 `http://127.0.0.1:3000`、可用的局域网地址和健康检查结果。手机和平板需与电脑连接同一局域网并访问显示的 LAN 地址。
 
 日常流程固定为：只在 `lvyoumap-universal-serverbeta` 运行总控和验收；确认后将源代码、审核内容和图片同步到 `lvyoumap-universal-server`，再通过 GitHub Desktop 提交。可安全重新生成并清理的目录是 `dist`、`.runtime/previews`和旧 `release`发布包；不得清理 `.runtime/xhs-profile`、断点状态、审核证据或备份，否则会丢失登录态或续跑能力。
+
+需要把已验收的 beta 内容复制到正式 Git 时，可在 beta 根目录双击 `sync_to_formal_git.bat`。工具会自动比较两个目录，只同步程序、审核内容、生成数据和资源文件中的新增/变化项；`.runtime`、`dist`、`reports`、`node_modules`、`.env`、日志及临时文件始终排除。复制前会显示完整清单并要求输入一次 `Y`，覆盖文件会备份到 `.runtime/promotion-backups`，复制后逐文件校验。工具不会提交、推送或部署，完成后仍由使用者在 GitHub Desktop 中检查并提交。
 
 部署文件名保持ASCII，避免Windows、Linux、ZIP、Nginx和对象存储之间的中文路径编码差异。
