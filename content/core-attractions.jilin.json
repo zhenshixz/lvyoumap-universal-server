@@ -1,0 +1,1000 @@
+{
+  "province": "吉林",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/jilin100031.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 18,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 14,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 14,
+    "priorityObservationCount": 2,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 9,
+  "officialResortCandidateCount": 2,
+  "popularityCount": 12,
+  "existingRecordBoundCount": 11,
+  "existingRecordUnboundCount": 10,
+  "existingRecordUnboundNames": [
+    "大安嫩江湾旅游区",
+    "前郭查干湖景区",
+    "世界雕塑公园景区",
+    "伪满皇宫博物馆",
+    "长白山景区",
+    "长春冰雪新天地",
+    "松花湖",
+    "北大湖滑雪度假区",
+    "莲花山滑雪场",
+    "高句丽王城、王陵及贵族墓葬"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 14,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 2,
+  "priorityObservationCandidates": [
+    {
+      "name": "长白山聚龙火山温泉",
+      "city": "",
+      "aliases": [
+        "长白山聚龙火山温泉"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长春电影制片厂",
+      "city": "",
+      "aliases": [
+        "长春电影制片厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 14,
+  "observationCandidates": [
+    {
+      "name": "长白山聚龙火山温泉",
+      "city": "",
+      "aliases": [
+        "长白山聚龙火山温泉"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长春电影制片厂",
+      "city": "",
+      "aliases": [
+        "长春电影制片厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "延吉水上市场",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "延吉水上市场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "关东影视城",
+      "city": "沈阳市（注",
+      "aliases": [
+        "关东影视城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "延边博物馆",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "延边博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "吉林文庙",
+      "city": "吉林",
+      "aliases": [
+        "吉林文庙"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "集安古城",
+      "city": "通化",
+      "aliases": [
+        "集安古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "万龙滑雪场",
+      "city": "吉林",
+      "aliases": [
+        "万龙滑雪场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松江河古镇",
+      "city": "白山",
+      "aliases": [
+        "松江河古镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "靖宇县城",
+      "city": "白山",
+      "aliases": [
+        "靖宇县城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "图们口岸",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "图们口岸"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "珲春防川风景区",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "珲春防川风景区",
+        "珲春防川"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长白朝鲜族自治县",
+      "city": "白山",
+      "aliases": [
+        "长白朝鲜族自治县"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "前郭尔罗斯蒙古族自治县",
+      "city": "松原",
+      "aliases": [
+        "前郭尔罗斯蒙古族自治县"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "长白山聚龙火山温泉",
+      "city": "",
+      "aliases": [
+        "长白山聚龙火山温泉"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长春电影制片厂",
+      "city": "",
+      "aliases": [
+        "长春电影制片厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "延吉水上市场",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "延吉水上市场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "关东影视城",
+      "city": "沈阳市（注",
+      "aliases": [
+        "关东影视城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "延边博物馆",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "延边博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "吉林文庙",
+      "city": "吉林",
+      "aliases": [
+        "吉林文庙"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "集安古城",
+      "city": "通化",
+      "aliases": [
+        "集安古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "万龙滑雪场",
+      "city": "吉林",
+      "aliases": [
+        "万龙滑雪场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松江河古镇",
+      "city": "白山",
+      "aliases": [
+        "松江河古镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "靖宇县城",
+      "city": "白山",
+      "aliases": [
+        "靖宇县城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "图们口岸",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "图们口岸"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "珲春防川风景区",
+      "city": "延边朝鲜族",
+      "aliases": [
+        "珲春防川风景区",
+        "珲春防川"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长白朝鲜族自治县",
+      "city": "白山",
+      "aliases": [
+        "长白朝鲜族自治县"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "前郭尔罗斯蒙古族自治县",
+      "city": "松原",
+      "aliases": [
+        "前郭尔罗斯蒙古族自治县"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 18,
+    "verifiedCount": 4,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 14,
+    "warnings": [
+      "携程省级页未发现 延边朝鲜族 的城市入口。",
+      "携程省级页未发现 沈阳市（注 的城市入口。",
+      "吉林文庙 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "靖宇县城 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "图们口岸 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "珲春防川风景区 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_7c5c2fa8a6",
+      "name": "大安嫩江湾旅游区",
+      "preferredId": "manual_jilin_313b694b",
+      "aliases": [
+        "大安嫩江湾旅游区",
+        "白城市大安嫩江湾旅游区",
+        "大安嫩江湾"
+      ],
+      "city": "白城",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_3c4c09b635",
+      "name": "前郭查干湖景区",
+      "preferredId": "manual_jilin_3de53c87",
+      "aliases": [
+        "前郭查干湖景区",
+        "松原市前郭查干湖景区",
+        "前郭查干湖"
+      ],
+      "city": "松原",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_07b28f0262",
+      "name": "高句丽文物古迹旅游景区",
+      "preferredId": "amap_B01B3009BY",
+      "aliases": [
+        "高句丽文物古迹旅游景区",
+        "通化市高句丽文物古迹旅游景区",
+        "高句丽文物古迹"
+      ],
+      "city": "通化",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_83764a6890",
+      "name": "世界雕塑公园景区",
+      "preferredId": "manual_jilin_121ede7f",
+      "aliases": [
+        "世界雕塑公园景区",
+        "长春市世界雕塑公园景区",
+        "世界雕塑公园"
+      ],
+      "city": "长春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_f822a3e202",
+      "name": "延边州六鼎山文化旅游区",
+      "preferredId": "amap_B05990M5KK",
+      "aliases": [
+        "延边州六鼎山文化旅游区",
+        "延边州六鼎山文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_22d854c8e5",
+      "name": "长影世纪城景区",
+      "preferredId": "amap_B01AF0C3KB",
+      "aliases": [
+        "长影世纪城景区",
+        "长春市长影世纪城景区",
+        "长影世纪城"
+      ],
+      "city": "长春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_ecec597e86",
+      "name": "净月潭景区",
+      "preferredId": "amap_B01AF085RR",
+      "aliases": [
+        "净月潭景区",
+        "长春市净月潭景区",
+        "净月潭"
+      ],
+      "city": "长春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_9c01916c7d",
+      "name": "伪满皇宫博物馆",
+      "preferredId": "manual_jilin_fd41516",
+      "aliases": [
+        "伪满皇宫博物馆",
+        "长春市伪满皇宫博物馆"
+      ],
+      "city": "长春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_1808cbd49a",
+      "name": "长白山景区",
+      "preferredId": "manual_jilin_cc743cad",
+      "aliases": [
+        "长白山景区",
+        "延边朝鲜族自治州长白山景区",
+        "长白山"
+      ],
+      "city": "延边朝鲜族",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_8cd7e960de",
+      "name": "伪满皇宫博物院",
+      "preferredId": "amap_B01AF0ZDGM",
+      "aliases": [
+        "伪满皇宫博物院"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_80dd45b8c1",
+      "name": "长春冰雪新天地",
+      "preferredId": "manual_jilin_6966281e",
+      "aliases": [
+        "长春冰雪新天地"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_83e55bc8af",
+      "name": "长白山华美胜地旅游度假区",
+      "preferredId": "amap_B0FFLAQZV3",
+      "aliases": [
+        "长白山华美胜地旅游度假区",
+        "长白山华美胜地度假区"
+      ],
+      "city": "白山",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 11
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4b3c845bf5",
+      "name": "松花湖",
+      "preferredId": "manual_jilin_22f024d9",
+      "aliases": [
+        "松花湖"
+      ],
+      "city": "吉林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "吉林",
+          "page": 2,
+          "name": "中旅松花湖度假区",
+          "url": "https://you.ctrip.com/sight/jilincity267/1673651.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a71eb63982",
+      "name": "北大湖滑雪度假区",
+      "preferredId": "manual_jilin_18bf3e1b",
+      "aliases": [
+        "北大湖滑雪度假区"
+      ],
+      "city": "吉林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "吉林",
+          "page": 4,
+          "name": "北大湖滑雪度假区",
+          "url": "https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_17d74ad33f",
+      "name": "莲花山滑雪场",
+      "preferredId": "manual_jilin_bc0da8dd",
+      "aliases": [
+        "莲花山滑雪场"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "长春",
+          "page": 3,
+          "name": "莲花山滑雪场",
+          "url": "https://you.ctrip.com/sight/changchun216/10671.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f85ac47d5a",
+      "name": "高句丽王城、王陵及贵族墓葬",
+      "preferredId": "manual_jilin_fadecc8d",
+      "aliases": [
+        "高句丽王城、王陵及贵族墓葬"
+      ],
+      "city": "通化",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "通化",
+          "page": 3,
+          "name": "高句丽王城",
+          "url": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_37927633a2",
+      "name": "长春动植物公园",
+      "preferredId": "amap_B01AF0CMBW",
+      "aliases": [
+        "长春动植物公园",
+        "长春市动植物公园"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cffc557671",
+      "name": "图们国门景区",
+      "preferredId": "amap_B0KRXZSHS8",
+      "aliases": [
+        "图们国门景区",
+        "图们国门"
+      ],
+      "city": "延边朝鲜族",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 42
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_37c0682337",
+      "name": "长春世界雕塑园",
+      "preferredId": "amap_B01AF09Z8B",
+      "aliases": [
+        "长春世界雕塑园"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d60980e53d",
+      "name": "长影旧址博物馆",
+      "preferredId": "amap_B0FFFDRU1K",
+      "aliases": [
+        "长影旧址博物馆"
+      ],
+      "city": "长春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 27
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_11c16384e8",
+      "name": "延吉中国朝鲜族民俗园",
+      "preferredId": "amap_B0599000UQ",
+      "aliases": [
+        "延吉中国朝鲜族民俗园",
+        "中国朝鲜族民俗园"
+      ],
+      "city": "延边朝鲜族",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 40
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

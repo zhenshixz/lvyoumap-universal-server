@@ -705,5 +705,213 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B01B3009BY": {
+    "id": "amap_B01B3009BY",
+    "name": "高句丽文物古迹旅游景区",
+    "city": "通化",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/jilin_e8a47b0a_verified.jpg",
+    "description": "高句丽文物古迹旅游景区位于吉林省集安市，是高句丽王朝的遗迹。景区主要景点包括丸都山城、王陵(14座)及贵族墓葬(26座)。",
+    "intro": "高句丽文物古迹旅游景区位于吉林省集安市，是高句丽王朝的遗迹。景区主要景点包括丸都山城、王陵(14座)及贵族墓葬(26座)。",
+    "level": "5A景区",
+    "category": "世界文化遗产、历史遗迹、5A级景区",
+    "tags": [
+      "世界文化遗产、历史遗迹、5A级景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "通化市集安市通胜街道",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至各景点停车场；或乘高铁至通化站/集安站后打车前往，市区到各景区有公交或出租车可达。",
+        "internal_arrive": "建议从好太王碑景区开始游览，位置相对居中，周边停车方便，逛完后可顺路前往长寿王陵。",
+        "internal_traffic": "三个景点之间无景区接驳车，需自驾、打车或包车；丸都山城内可步行参观，部分区域有电瓶车可选（以官方当日公告为准）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "集安市区（靠近鸭绿江畔、大吉他广场附近），步行或打车前往各景区均较方便。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "乌拉满族火锅",
+        "查干湖炖鱼",
+        "延吉冷面",
+        "吉林参鸡汤"
+      ],
+      "special_care": {
+        "elderly": "好太王碑和长寿王陵地势平坦，可推车或轮椅；丸都山城部分路段需爬坡，建议量力而行，在观景台和山下墓区参观即可",
+        "children": "遗址类景点较抽象，建议提前了解高句丽历史或请讲解，增强趣味性；可结合集安博物馆（免费、刷身份证进入）做\"历史预习\"，孩子更容易理解。\n\n补充一点：禹山贵族墓地目前已关闭，只能在围栏外参观；集安博物馆虽不在景区联票内，但距离市区近、免费开放，是了解高句丽历史的好去处，建议安排在游览前或游览后。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "三景点串联省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "好太王碑",
+          "长寿王陵",
+          "丸都山城"
+        ],
+        "duration": "半天",
+        "walking": "约2-3小时",
+        "physical": 3,
+        "tips": [
+          "三个景点之间距离较远，建议自驾或打车前往；好太王碑和长寿王陵相距约1.5公里，可步行或打车衔接；丸都山城地势较高，部分路段需爬坡，建议穿舒适的运动鞋。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "高德地图 高句丽文物古迹旅游景区：https://www.amap.com/place/B01B3009BY"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 高句丽文物古迹旅游景区",
+        "url": "https://www.amap.com/place/B01B3009BY",
+        "poiId": "B01B3009BY",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "通化高句丽文物古迹旅游景区藏着\"东方金字塔\"的震撼,冬日雪景 历史",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4486058977312606427",
+      "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4486058977312606427",
+      "width": 1296,
+      "height": 1728
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0KRXZSHS8": {
+    "id": "amap_B0KRXZSHS8",
+    "name": "图们国门景区",
+    "city": "图们",
+    "rating": 4.7,
+    "reviewsCount": "377条携程点评",
+    "image": "/assets/images/attractions/jilin_1b729b5a_verified.jpg",
+    "description": "图们国门景区是吉林立关较早、历史较长的“百年口岸”，是货运输口岸，分为铁路口岸和公路口岸，年过货能力为560万吨。",
+    "intro": "图们国门景区是吉林立关较早、历史较长的“百年口岸”，是货运输口岸，分为铁路口岸和公路口岸，年过货能力为560万吨。",
+    "level": "热门景点",
+    "category": "边境人文/观景",
+    "tags": [
+      "边境人文/观景",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "延边朝鲜族自治州图们市图们江广场南",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "可乘坐高铁至图们北站，出站后乘坐9路公交车直达口岸；或打车前往，车程约15分钟。自驾可导航至图们国门景区，周边有免费停车场。",
+        "internal_arrive": "建议从口岸大街主入口进入，沿图们江广场南侧步行，路线平缓且沿途打卡点集中。",
+        "internal_traffic": "景区内部主要以步行游览为主，部分路段可乘坐观光车（具体以官方当日公告为准）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "图们市较小，建议住在市中心或图们口岸附近，出行方便且能品尝到地道的延边美食。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "乌拉满族火锅",
+        "查干湖炖鱼",
+        "延吉冷面",
+        "吉林参鸡汤"
+      ],
+      "special_care": {
+        "elderly": "路线整体平缓，但登高至日光山南阳亭有一定坡度，建议长辈在平缓区域观景或乘坐观光车",
+        "children": "景区内有儿童乐园和无动力游乐设施，适合低幼和大童玩耍，可让孩子用望远镜观察对岸，增加趣味性。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "国门打卡与登高远眺省力线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "口岸大街入口 ➡️ 图们口岸与国门主体（可登二楼观景） ➡️ 86号界碑（网红打卡点） ➡️ 日光山南阳亭（登高俯瞰图们江与对岸风貌）"
+        ],
+        "duration": "半天",
+        "walking": "约2-3公里",
+        "physical": 2,
+        "tips": [
+          "在边境区域严禁越界拍照或使用长焦镜头对准朝方区域，以免引发安全问题；建议携带望远镜在观景台远眺。"
+        ],
+        "sourceTitle": "携程旅行 图们国门景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "ctrip_province_sightlist：https://you.ctrip.com/sightlist/jilin100031.html",
+        "携程旅行 图们国门景区 详情页：https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+        "高德地图 图们国门：https://www.amap.com/place/B0KRXZSHS8"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 图们国门景区 详情页",
+        "url": "https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "图们国门景区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B0KRXZSHS8",
+      "width": 1536,
+      "height": 2048
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

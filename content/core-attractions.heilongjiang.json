@@ -1,0 +1,871 @@
+{
+  "province": "黑龙江",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/heilongjiang100055.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 10,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 3,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 7,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 19,
+  "existingRecordBoundCount": 15,
+  "existingRecordUnboundCount": 11,
+  "existingRecordUnboundNames": [
+    "扎龙生态旅游区",
+    "虎头旅游景区",
+    "哈尔滨冰雪大世界",
+    "北极村",
+    "中央大街",
+    "龙江第一湾",
+    "漠河舞厅",
+    "横道河子小镇",
+    "瑷珲历史陈列馆",
+    "虎头要塞",
+    "亚布力滑雪旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 3,
+  "priorityObservationCandidates": [
+    {
+      "name": "哈药六版画博物馆",
+      "city": "",
+      "aliases": [
+        "哈药六版画博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "哈药集团制药六厂",
+      "city": "",
+      "aliases": [
+        "哈药集团制药六厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松花江观光索道",
+      "city": "",
+      "aliases": [
+        "松花江观光索道"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "哈药六版画博物馆",
+      "city": "",
+      "aliases": [
+        "哈药六版画博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "哈药集团制药六厂",
+      "city": "",
+      "aliases": [
+        "哈药集团制药六厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松花江观光索道",
+      "city": "",
+      "aliases": [
+        "松花江观光索道"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "圣·索菲亚大教堂",
+      "city": "哈尔滨",
+      "aliases": [
+        "圣·索菲亚大教堂"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "哈药六版画博物馆",
+      "city": "",
+      "aliases": [
+        "哈药六版画博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "哈药集团制药六厂",
+      "city": "",
+      "aliases": [
+        "哈药集团制药六厂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松花江观光索道",
+      "city": "",
+      "aliases": [
+        "松花江观光索道"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "圣·索菲亚大教堂",
+      "city": "哈尔滨",
+      "aliases": [
+        "圣·索菲亚大教堂"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 10,
+    "verifiedCount": 6,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_2197258baa",
+      "name": "扎龙生态旅游区",
+      "preferredId": "manual_heilongjiang_a617449b",
+      "aliases": [
+        "扎龙生态旅游区",
+        "齐齐哈尔市扎龙生态旅游区",
+        "扎龙生态"
+      ],
+      "city": "齐齐哈尔",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_8b880a851d",
+      "name": "虎头旅游景区",
+      "preferredId": "manual_heilongjiang_b2cd2a20",
+      "aliases": [
+        "虎头旅游景区",
+        "鸡西市虎头旅游景区",
+        "虎头"
+      ],
+      "city": "鸡西",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_1416ec8c93",
+      "name": "北极村旅游景区",
+      "preferredId": "amap_B0I165VGI0",
+      "aliases": [
+        "北极村旅游景区",
+        "大兴安岭地区北极村旅游景区",
+        "北极村"
+      ],
+      "city": "大兴安岭",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_07a0a59a9f",
+      "name": "林海奇石景区",
+      "preferredId": "amap_B01CA0LTJJ",
+      "aliases": [
+        "林海奇石景区",
+        "伊春市林海奇石景区",
+        "林海奇石"
+      ],
+      "city": "伊春",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_408eca239e",
+      "name": "镜泊湖景区",
+      "preferredId": "amap_B01C5006A0",
+      "aliases": [
+        "镜泊湖景区",
+        "牡丹江市镜泊湖景区",
+        "镜泊湖"
+      ],
+      "city": "牡丹江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_68aeee205f",
+      "name": "五大连池景区",
+      "preferredId": "amap_B01C800786",
+      "aliases": [
+        "五大连池景区",
+        "黑河市五大连池景区",
+        "五大连池"
+      ],
+      "city": "黑河",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_d0fab8585c",
+      "name": "太阳岛景区",
+      "preferredId": "amap_B01C30003A",
+      "aliases": [
+        "太阳岛景区",
+        "哈尔滨市太阳岛景区",
+        "太阳岛"
+      ],
+      "city": "哈尔滨",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_6dd327d8c3",
+      "name": "哈尔滨冰雪大世界",
+      "preferredId": "manual_heilongjiang_f37d1bd1",
+      "aliases": [
+        "哈尔滨冰雪大世界"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e456f0bbf7",
+      "name": "伏尔加庄园",
+      "preferredId": "amap_B01C317XIL",
+      "aliases": [
+        "伏尔加庄园",
+        "哈尔滨伏尔加庄园"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 24
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_14057d7abe",
+      "name": "北极村",
+      "preferredId": "manual_heilongjiang_2d3dd1db",
+      "aliases": [
+        "北极村"
+      ],
+      "city": "漠河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e39c330595",
+      "name": "中央大街",
+      "preferredId": "manual_heilongjiang_a3377f38",
+      "aliases": [
+        "中央大街"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "哈尔滨",
+          "page": 1,
+          "name": "中央大街",
+          "url": "https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_df0d9c0e42",
+      "name": "龙江第一湾",
+      "preferredId": "manual_heilongjiang_f1c1a84c",
+      "aliases": [
+        "龙江第一湾"
+      ],
+      "city": "漠河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "漠河",
+          "page": 1,
+          "name": "龙江第一湾风景区",
+          "url": "https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d26f72bf0e",
+      "name": "漠河舞厅",
+      "preferredId": "manual_heilongjiang_8971fe93",
+      "aliases": [
+        "漠河舞厅"
+      ],
+      "city": "漠河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "漠河",
+          "page": 1,
+          "name": "漠河舞厅",
+          "url": "https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_6fa791dba4",
+      "name": "横道河子小镇",
+      "preferredId": "manual_heilongjiang_a062da66",
+      "aliases": [
+        "横道河子小镇"
+      ],
+      "city": "牡丹江",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0KKT5PKVJ",
+          "name": "横道河子小镇游乐场",
+          "city": "牡丹江市",
+          "type": "体育休闲服务;休闲场所;游乐场",
+          "url": "https://www.amap.com/place/B0KKT5PKVJ",
+          "verifiedAt": "2026-08-17"
+        }
+      ]
+    },
+    {
+      "key": "core_14e2f3d45e",
+      "name": "瑷珲历史陈列馆",
+      "preferredId": "manual_heilongjiang_50e8dc40",
+      "aliases": [
+        "瑷珲历史陈列馆"
+      ],
+      "city": "黑河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "黑河",
+          "page": 2,
+          "name": "黑河市瑷珲历史陈列馆",
+          "url": "https://you.ctrip.com/sight/heihe265/5069240.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b2aa96ce61",
+      "name": "虎头要塞",
+      "preferredId": "manual_heilongjiang_900291db",
+      "aliases": [
+        "虎头要塞"
+      ],
+      "city": "鸡西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0KRVZFXEL",
+          "name": "虎头要塞暗堡",
+          "city": "鸡西市",
+          "type": "风景名胜;风景名胜;风景名胜",
+          "url": "https://www.amap.com/place/B0KRVZFXEL",
+          "verifiedAt": "2026-08-17"
+        }
+      ]
+    },
+    {
+      "key": "core_fa50661d20",
+      "name": "金祖峰景区",
+      "preferredId": "amap_B0FFJMMVI3",
+      "aliases": [
+        "金祖峰景区",
+        "金祖峰"
+      ],
+      "city": "伊春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 42
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_382618f087",
+      "name": "侵华日军第七三一部队遗址",
+      "preferredId": "amap_B01C30J40L",
+      "aliases": [
+        "侵华日军第七三一部队遗址"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fada74a09f",
+      "name": "东北虎林园",
+      "preferredId": "amap_B01C30J5FG",
+      "aliases": [
+        "东北虎林园"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2484c413ff",
+      "name": "哈尔滨极地公园",
+      "preferredId": "amap_B0H64SH3ZX",
+      "aliases": [
+        "哈尔滨极地公园"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ffd17af97c",
+      "name": "扎龙自然保护区",
+      "preferredId": "amap_B01C400MXJ",
+      "aliases": [
+        "扎龙自然保护区",
+        "扎龙国家级自然保护区"
+      ],
+      "city": "齐齐哈尔",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 10
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4011030b95",
+      "name": "金山鹿苑",
+      "preferredId": "amap_B01CA0LV0G",
+      "aliases": [
+        "金山鹿苑",
+        "飞泷金山鹿苑"
+      ],
+      "city": "伊春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 39
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_840c5d92d3",
+      "name": "茅兰沟国家森林公园",
+      "preferredId": "amap_B01CA002TU",
+      "aliases": [
+        "茅兰沟国家森林公园"
+      ],
+      "city": "伊春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 40
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d2b9da39f3",
+      "name": "嘉荫恐龙国家地质公园",
+      "preferredId": "amap_B01CA00395",
+      "aliases": [
+        "嘉荫恐龙国家地质公园",
+        "黑龙江嘉荫恐龙国家地质公园"
+      ],
+      "city": "伊春",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 73
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5cf4b53e0d",
+      "name": "黑瞎子岛",
+      "preferredId": "amap_B0FFGL74WR",
+      "aliases": [
+        "黑瞎子岛",
+        "黑瞎子岛旅游区"
+      ],
+      "city": "佳木斯",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 79
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b8892e1b03",
+      "name": "亚布力滑雪旅游度假区",
+      "preferredId": "manual_heilongjiang_430d9b4d",
+      "aliases": [
+        "亚布力滑雪旅游度假区"
+      ],
+      "city": "哈尔滨",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

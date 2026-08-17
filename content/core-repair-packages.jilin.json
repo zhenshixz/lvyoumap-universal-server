@@ -1,0 +1,1371 @@
+{
+  "province": "吉林",
+  "status": "applied",
+  "createdAt": "2026-08-17T08:30:25.237Z",
+  "updatedAt": "2026-08-17T08:30:25.237Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [],
+  "seedFile": "content/core-repair-seeds.jilin.json",
+  "attractions": [
+    {
+      "baselineKey": "core_7c5c2fa8a6",
+      "id": "manual_jilin_313b694b",
+      "name": "大安嫩江湾旅游区",
+      "city": "白城",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_313b694b_verified.jpg",
+      "description": "嫩江湾旅游区地处吉林省大安市，距城区仅1公里。景区总面积3.5平方公里，有老坎子码头、辽皇观鱼台、华夷同风院等大小景点百余处。",
+      "intro": "嫩江湾旅游区地处吉林省大安市，距城区仅1公里。景区总面积3.5平方公里，有老坎子码头、辽皇观鱼台、华夷同风院等大小景点百余处。",
+      "level": "5A景区",
+      "category": "国家5A级旅游景区、国家湿地公园",
+      "tags": [
+        "国家5A级旅游景区、国家湿地公园",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "吉林省白城市大安市大安经济开发区嫩江北街",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾：导航至\"大安市嫩江湾旅游区南门\"，景区停车场大且免费，长春出发约2.5小时直达。\n\n高铁：长春站至大安站/大安北站约2小时，出站打车10余分钟可达景区。\n\n市内公交：大安市内2路、5路、6路等公交可直达景区各门。",
+          "internal_arrive": "推荐从南门进入，南门是两条观光车线路的起点和终点，交通最便利，周边设施也最完善。",
+          "internal_traffic": "观光车：费用以官方当日公告为准全天不限次乘坐，1号线游览南区（小环线），2号线游览北区（大环线），全线游览可在辽皇观鱼台换乘。\n游船：老坎子码头可乘游船（费用以官方当日公告为准）欣赏湿地生态；捺钵岛接驳船（费用以官方当日公告为准）可登岛体验。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "大安市区距离景区仅1公里，推荐选择市区内的连锁酒店（如汉庭、7天、花色酒店等），性价比高，周边餐饮选择多；若追求安静可选择景区附近的嫩江湾大酒店。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "全程以观光车为主，避免长时间步行；辽皇观鱼台登高可俯瞰全景，但台阶较多，建议量力而行；景区内卫生间干净整洁，有纸巾，设施完善",
+          "children": "萌宠乐园有羊驼、小兔子等小动物可互动；渔猎博物馆可了解鱼类知识，适合亲子研学；浪漫沙滩和湿地栈道适合孩子跑跳玩耍。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南区精华小环线（省力首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门（乘坐1号线观光车）",
+            "八角铜镜",
+            "华夷同风院（江南园林风格，适合汉服拍照）",
+            "辽皇观鱼台（登高俯瞰嫩江全景，可敲钟祈福）",
+            "南门"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里（以观光车为主，局部步行）",
+          "physical": 2,
+          "tips": [
+            "1号线为普通接驳车，站点密集，适合带长辈和儿童的家庭；华夷同风院是辽代萧皇后行宫，雕梁玉栋，拍照很出片。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "北区湿地人文大环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门（乘坐2号线观光车）",
+            "辽皇观鱼台（换乘点）",
+            "地藏寺",
+            "浪漫沙滩",
+            "老坎子码头（可乘游船）",
+            "渔猎博物馆（了解辽金鱼猎文化）",
+            "嫩江之眼",
+            "龙石广场",
+            "南门"
+          ],
+          "duration": "半天",
+          "walking": "约2至3公里（观光车+局部步行）",
+          "physical": 3,
+          "tips": [
+            "2号线为空调大巴，覆盖北区主要景点；老坎子码头可乘游船欣赏湿地风光，渔猎博物馆有珍稀鱼类标本，适合亲子研学。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "大安嫩江湾湿地,春秋生态美哭,白城必去!",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://baijiahao.baidu.com/s?id=1843023568373369633&wfr=spider&for=pc",
+        "sourceUrl": "http://baijiahao.baidu.com/s?id=1843023568373369633&wfr=spider&for=pc",
+        "width": 1242,
+        "height": 805
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_3c4c09b635",
+      "id": "manual_jilin_3de53c87",
+      "name": "前郭查干湖景区",
+      "city": "松原",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/jilin_3de53c87_verified.jpg",
+      "description": "查干湖，蒙古语为“查干淖尔”，意为白色圣洁的湖，位于吉林省西北部的前郭尔罗斯蒙古族自治县境内，处于嫩江与霍林河交汇的水网地区，南北长37公里，东西平均宽17公里，总面积500平方公里，年均蓄水量7亿立方米，是全国十大淡水湖之一，也是吉林省最大的内陆湖泊。湖区现有鸟类16目47科239种，有国家一级保护的丹顶鹤、白头鹤、东方白鹳等9种，有国家二级保护的黑脸琵鹭、灰鹤、雀鹰等35种。",
+      "intro": "查干湖，蒙古语为“查干淖尔”，意为白色圣洁的湖，位于吉林省西北部的前郭尔罗斯蒙古族自治县境内，处于嫩江与霍林河交汇的水网地区，南北长37公里，东西平均宽17公里，总面积500平方公里，年均蓄水量7亿立方米，是全国十大淡水湖之一，也是吉林省最大的内陆湖泊。湖区现有鸟类16目47科239种，有国家一级保护的丹顶鹤、白头鹤、东方白鹳等9种，有国家二级保护的黑脸琵鹭、灰鹤、雀鹰等35种。",
+      "level": "5A景区",
+      "category": "自然湖泊与人文古迹结合的5A级景区",
+      "tags": [
+        "自然湖泊与人文古迹结合的5A级景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "吉林省松原市前郭尔罗斯蒙古族自治县圣水路与运河东街交叉路口往北约150米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“查干湖景区南门”最方便；公共交通可乘高铁至松原站，再打车或乘坐景区直通车前往。",
+          "internal_arrive": "推荐从南门进入，周边景点密集，停车方便，且多数户外公共区域免费开放。",
+          "internal_traffic": "景区内景点间距较远，建议自驾或乘坐景区观光车；也可在部分区域租用电单车或自行车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "查干湖镇（景区周边）或松原市区（酒店选择更多，距景区约40分钟车程）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "路线平缓，多利用观光车和电梯，在希望广场和引松广场吹风看湖景即可，避免长时间步行",
+          "children": "渔猎文化博物馆可了解非遗文化，希望广场有水上项目，沿途可观察野鸭和荷花，互动性强。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南区精华省力游（人文+湖景）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "妙音寺（藏传佛教寺院，红墙古殿祈福） ➡️ 引松广场（水利纪念地标，开阔平地散步） ➡️ 郭尔罗斯王爷府（复原蒙古族王府建筑，了解民俗历史） ➡️ 鸿鹄楼（5层仿古塔楼，登高俯瞰查干湖全景） ➡️ 查干湖渔猎文化博物馆（千年渔猎非遗展品与冬捕文化） ➡️ 希望广场（超大观景平台直面湖面，傍晚看日落）"
+          ],
+          "duration": "半天",
+          "walking": "约3-5公里",
+          "physical": 2,
+          "tips": [
+            "景区景点分散，建议自驾或购买观光车票（费用以官方当日公告为准）串联各点，避免走回头路；鸿鹄楼免费开放，是俯瞰湖景的绝佳机位。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 查干湖景区：https://www.amap.com/place/B01B600LWY"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 查干湖景区",
+          "url": "https://www.amap.com/place/B01B600LWY",
+          "poiId": "B01B600LWY",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "前郭查干湖景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B01B600LWY",
+        "width": 1200,
+        "height": 1199
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_83764a6890",
+      "id": "manual_jilin_121ede7f",
+      "name": "世界雕塑公园景区",
+      "city": "长春",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_121ede7f_verified.jpg",
+      "description": "长春世界雕塑园集自然山水与人文景观于一体，包括长春雕塑艺术馆、松山韩蓉非洲艺术收藏博物馆、魏小明艺术馆、长春雕塑博物馆和雕塑体验馆等景点。",
+      "intro": "长春世界雕塑园集自然山水与人文景观于一体，包括长春雕塑艺术馆、松山韩蓉非洲艺术收藏博物馆、魏小明艺术馆、长春雕塑博物馆和雕塑体验馆等景点。",
+      "level": "5A景区",
+      "category": "城市公园、雕塑艺术展馆、国家5A级景区",
+      "tags": [
+        "城市公园、雕塑艺术展馆、国家5A级景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "长春市南关区人民大街9518号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁1号线至市政府站（B口或C口出），步行约5至10分钟可达；或乘坐公交G270路等至雕塑公园站。",
+          "internal_arrive": "推荐从西门（亚泰大街门）或南门（人民大街门）进入，西门靠近游客中心、观光车站点及停车场，南门对面即是大型购物中心，方便用餐和补给。",
+          "internal_traffic": "园区内设有观光车，票价费用以官方当日公告为准，可多次乘坐，各主要展馆和广场均设站点，适合带老人和儿童的家庭省力游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在人民大街沿线或市政府商圈附近，交通便利，周边餐饮和购物配套完善，方便前往景区。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "园区内长椅较多，可边走边歇，重点参观室内展馆，室外广场和湖边漫步时注意防滑和防晒",
+          "children": "摩尔湖有黑天鹅和荷花，春天广场和友谊广场空间开阔，可带些小玩具或风筝，馆内也可让孩子感受艺术氛围，培养审美。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "四馆串联+摩尔湖环游省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西门（游客中心）",
+            "长春雕塑艺术馆",
+            "长春雕塑博物馆（建议从4楼逐层往下逛）",
+            "松山韩蓉非洲艺术收藏博物馆",
+            "魏小明艺术馆",
+            "摩尔湖及五洲壁",
+            "春天广场",
+            "南门出"
+          ],
+          "duration": "半天",
+          "walking": "约3至4小时（全程步行）",
+          "physical": 3,
+          "tips": [
+            "园区较大，务必穿舒适运动鞋；若体力有限，可在西门购买观光车票（费用以官方当日公告为准）代步，观光车沿外环行驶，各展馆及广场均有站点，但需注意部分站点为单向停靠，上车前确认方向。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "长春世界雕塑公园:从繁华到冷清,5a级景区的转型之路",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://travel.sohu.com/a/787016194_100250366",
+        "sourceUrl": "http://travel.sohu.com/a/787016194_100250366",
+        "width": 1797,
+        "height": 1198
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_9c01916c7d",
+      "id": "manual_jilin_fd41516",
+      "name": "伪满皇宫博物馆",
+      "city": "长春",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_fd41516_verified.jpg",
+      "description": "伪满皇宫博物院是中国末代皇帝爱新觉罗·溥仪称帝“满洲国”的宫廷旧址，是日本殖民统治中国东北十四年的历史见证，也是近代长春城市变迁的地标式建筑群。博物院形成了宫廷旧址博物馆+旅游景区的格局。",
+      "intro": "伪满皇宫博物院是中国末代皇帝爱新觉罗·溥仪称帝“满洲国”的宫廷旧址，是日本殖民统治中国东北十四年的历史见证，也是近代长春城市变迁的地标式建筑群。博物院形成了宫廷旧址博物馆+旅游景区的格局。",
+      "level": "5A景区",
+      "category": "历史遗址 / 博物馆 / 爱国主义教育基地",
+      "tags": [
+        "历史遗址 / 博物馆 / 爱国主义教育基地",
+        "室内参观",
+        "官方名录"
+      ],
+      "address": "长春市南关区光复北路5号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "长春轻轨 3 号线 / 4 号线\"伪满皇宫站\"B口或D口步行约 200 米直达；公交 264 路也可到达。",
+          "internal_arrive": "建议从正门莱薰门（南门）入园，顺着红线指引走，路线最顺；若从东门进会错过游客中心和文创店。",
+          "internal_traffic": "园区内各建筑之间有通道互联，全程步行即可，无内部观光车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在宽城区或南关区，距离景区较近，交通便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "部分楼栋（如缉熙楼、勤民楼、同德殿）均为二层且无电梯，长辈可重点参观一楼展区，或选择同德殿、东御花园等相对平缓的区域；65 周岁及以上老人凭身份证可免票预约",
+          "children": "可租电子讲解器或跟随官方讲解，让历史故事更生动；东御花园有锦鲤和露天泳池，适合孩子短暂休息放松；14 岁以下未成年人须有成年人陪护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "不走回头路经典省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "莱薰门入园",
+            "兴运门（打卡定格时钟）",
+            "勤民楼（办公区，看兰花御座与天井）",
+            "缉熙楼（生活区，看婉容与谭玉龄居室）",
+            "怀远楼（祭祖祠堂）",
+            "嘉乐殿（《从皇帝到公民》展馆）",
+            "同德殿（全园最豪华大殿，看水晶灯与彩色玻璃长廊）",
+            "东御花园（日式园林",
+            "锦鲤池",
+            "防空洞休整）",
+            "书画楼（古籍字画）",
+            "东北沦陷史陈列馆（压轴看史料，看完直接出园）"
+          ],
+          "duration": "半天",
+          "walking": "约 2 公里",
+          "physical": 3,
+          "tips": [
+            "东北沦陷史陈列馆为单向参观，看完无法折返主楼，务必放在最后；馆内多处有楼梯且无电梯，建议穿平底舒适鞋子。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "长春伪满皇宫博物馆:航展期间必游之地",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4900004867550510092",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4900004867550510092",
+        "width": 1440,
+        "height": 1050
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_1808cbd49a",
+      "id": "manual_jilin_cc743cad",
+      "name": "长白山景区",
+      "city": "安图",
+      "rating": 4.5,
+      "reviewsCount": "4648条携程点评",
+      "image": "/assets/images/attractions/jilin_cc743cad_verified.jpg",
+      "description": "长白山景区主要分为北、西、南三大景区，分开售票。长白山天池是景区的必赏之景，也是众多游客心中的祈福圣地。",
+      "intro": "长白山景区主要分为北、西、南三大景区，分开售票。长白山天池是景区的必赏之景，也是众多游客心中的祈福圣地。",
+      "level": "5A景区",
+      "category": "山岳自然风景区",
+      "tags": [
+        "山岳自然风景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "吉林省延边朝鲜族自治州安图县(长白山自然保护区)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐高铁至长白山站（距北坡约20分钟车程），或飞抵延吉机场后拼车/包车前往（约2.5小时）。",
+          "internal_arrive": "选择北坡游客中心（位于二道白河镇），景点最全且无需大量徒步，最适合家庭省力游。",
+          "internal_traffic": "全程需换乘景区环保车，前往天池主峰需额外换乘倒站越野车，私家车不可进山。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "二道白河镇，餐饮丰富、交通便利、性价比高，是游玩北坡的首选住宿地。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "天池主峰务必选择B线观景，仅需步行几分钟即可到达最佳拍照点，避免攀爬楼梯",
+          "children": "沿途可品尝温泉鸡蛋，在绿渊潭和地下森林观察自然生态，建议自备零食和饮用水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "北坡天池+瀑布家庭省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北坡游客中心",
+            "乘坐环保车至换乘中心",
+            "换乘倒站车登顶天池主峰（走B线观景）",
+            "乘坐环保车至长白瀑布",
+            "漫步聚龙温泉群",
+            "乘坐环保车至绿渊潭",
+            "乘坐环保车至地下森林（走部分平缓木栈道）",
+            "返程"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（天池主峰B线及温泉群观景栈道，均为平缓步道）",
+          "physical": 2,
+          "tips": [
+            "建议优先上午冲天池，午后极易起雾；山顶风大温差大，务必携带防风薄外套；景区内禁止打伞，建议备一次性雨衣。"
+          ],
+          "sourceTitle": "携程旅行 长白山景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/antu643/136031.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 长白山景区 详情页：https://you.ctrip.com/sight/antu643/136031.html?poiType=3&scene=online",
+          "高德地图 长白山风景区：https://www.amap.com/place/B0L3UMH0E4"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 长白山景区 详情页",
+          "url": "https://you.ctrip.com/sight/antu643/136031.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "长白山景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0L3UMH0E4",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_80dd45b8c1",
+      "id": "manual_jilin_6966281e",
+      "name": "长春冰雪新天地",
+      "city": "长春",
+      "rating": 4.4,
+      "reviewsCount": "1510条携程点评",
+      "image": "/assets/images/attractions/jilin_6966281e_verified.jpg",
+      "description": "2025-2026雪季，第七届长春冰雪新天地总占地面积156万平方米，主题为“冰雪福耀中华 民族大团结”。景区规划雪莲飞舞区、锦绣华夏区、冰天大福地、云宫雾凇区、冰雪嬉乐荟、冰雪娱乐区、冰雪竞技区、北极冰川8大主题区域，冰雕雪塑将达到200+座。",
+      "intro": "2025-2026雪季，第七届长春冰雪新天地总占地面积156万平方米，主题为“冰雪福耀中华 民族大团结”。景区规划雪莲飞舞区、锦绣华夏区、冰天大福地、云宫雾凇区、冰雪嬉乐荟、冰雪娱乐区、冰雪竞技区、北极冰川8大主题区域，冰雕雪塑将达到200+座。",
+      "level": "热门景点",
+      "category": "冰雪主题乐园、户外游乐景区",
+      "tags": [
+        "冰雪主题乐园、户外游乐景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林省长春市二道区泉眼大街旁",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通2号线至雾开河大街站C口出站，换乘接驳1号线公交车直达园区；或从长春站乘坐冰雪2号线直达（约40分钟）；龙嘉机场可乘直通车（约20分钟）。自驾导航\"长春冰雪新天地\"，园区提供3000+免费车位。",
+          "internal_arrive": "推荐从北门（1号门）入园，热门项目1314米雪漂流和布达拉宫大漂流分别在入口左右两侧，入园后可快速分流，减少排队时间。",
+          "internal_traffic": "园区内有穿梭巴士（费用以官方当日公告为准，随招随停），适合体力有限的家庭；也可步行游览，部分路段铺有地毯，但部分区域需爬坡，建议穿防滑雪地靴。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在东方广场附近（如佳泰亚朵酒店），距地铁站近，打车到景区约30-费用以官方当日公告为准；或选择天定山公寓（有景区班车，但需注意班车时间和早餐供应时间）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "优先乘坐园区穿梭巴士，减少步行；多利用暖屋休息，避免长时间暴露在低温中；可重点游览冰雕展区，大滑梯项目视体力选择",
+          "children": "1.4米以上可玩大部分大项目，1.4米以下有亲子小滑梯和冰上娱乐区；建议自带滑雪屁垫，穿防水雪地靴和手套，注意保暖。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "10点入园省力畅玩版（白天+夜景双体验）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北门入园",
+            "1314米珠穆朗玛雪漂流",
+            "布达拉宫大漂流",
+            "天定彩滑",
+            "520米激情冰滑梯",
+            "冰雪娱乐区（冰上碰碰车",
+            "冰爬犁等）",
+            "锦绣华夏区（各省地标冰雕打卡）",
+            "云宫雾凇区",
+            "观景台俯瞰夜景亮灯全景"
+          ],
+          "duration": "半天",
+          "walking": "约8000-10000步",
+          "physical": 3,
+          "tips": [
+            "建议10点入园先冲热门大项目，此时排队时间最短；园区内有多处暖屋（22℃恒温）可休息、接热水，建议自带保温杯；官方当日建议时段左右园区亮灯，亮灯后再滑一次520米冰滑梯视觉效果更佳。"
+          ],
+          "sourceTitle": "携程旅行 长春冰雪新天地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/changchun216/5689343.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/jilin100031.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 长春冰雪新天地 详情页：https://you.ctrip.com/sight/changchun216/5689343.html?poiType=66&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 长春冰雪新天地 详情页",
+          "url": "https://you.ctrip.com/sight/changchun216/5689343.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "长春冰雪新天地 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/changchun216/5689343.html?poiType=66&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/changchun216/5689343.html?poiType=66&scene=online",
+        "width": 3750,
+        "height": 2800
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4b3c845bf5",
+      "id": "manual_jilin_22f024d9",
+      "name": "松花湖",
+      "city": "吉林市",
+      "rating": 4.7,
+      "reviewsCount": "607条携程点评",
+      "image": "/assets/images/attractions/jilin_22f024d9_verified.jpg",
+      "description": "中旅松花湖度假区是以四季旅游为特色、滑雪运动为主题、家庭度假为核心的四季度假区。 \\n冬季依托国际级滑雪场主打滑雪度假服务，春、夏、秋三季依托自身资源及完善的配套与服务，联合国家风景区松花湖，提供综合山地度假产品。",
+      "intro": "中旅松花湖度假区是以四季旅游为特色、滑雪运动为主题、家庭度假为核心的四季度假区。 \\n冬季依托国际级滑雪场主打滑雪度假服务，春、夏、秋三季依托自身资源及完善的配套与服务，联合国家风景区松花湖，提供综合山地度假产品。",
+      "level": "热门景点",
+      "category": "湖光山色、自然生态、亲子休闲",
+      "tags": [
+        "湖光山色、自然生态、亲子休闲",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林省吉林市丰满区青山大街888号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾从吉林市市区出发约30分钟，长春出发约1.5-2小时；公交可乘K3路或旅游专线至景区入口。",
+          "internal_arrive": "推荐导航至坝东码头，省去二次换乘摆渡车的时间；若去度假区则直接导航至松花湖度假区游客中心。",
+          "internal_traffic": "景区内有环保摆渡车连接码头；乘船前往五虎岛或卧龙潭；度假区内可乘缆车上山，部分酒店住客免费。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "松花湖度假区内（西武王子大饭店、瞻云酒店、青山公寓等，方便看日出和游玩）；或口前镇民宿（性价比高，距离景区约11公里）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "优先选择五虎岛乘船线或度假区缆车线，避免爬山；船上和山顶风大，备好防风外套",
+          "children": "五虎岛有儿童游乐设施，度假区有萌宠乐园和彩虹滑道，低幼家庭更适合这两条路线。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "五虎岛乘船休闲游（家庭省力首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "坝东码头乘船",
+            "五虎岛",
+            "观景塔俯瞰全景",
+            "儿童游乐区",
+            "湖滨栈道漫步"
+          ],
+          "duration": "半天",
+          "walking": "约1-2公里，地势平缓",
+          "physical": 2,
+          "tips": [
+            "乘船单程约1.5小时，建议自备零食和水；选择二层船舱更舒适；五虎岛适合低龄儿童和老人，全程无陡峭路段。"
+          ],
+          "sourceTitle": "携程旅行 松花湖 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jilincity267/1673651.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "松花湖度假区缆车登顶游（亲子观景轻松线）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "度假区山脚乘缆车",
+            "山顶观景台",
+            "森之舞台拍照",
+            "萌宠乐园喂小鹿",
+            "Manner咖啡观景"
+          ],
+          "duration": "半天",
+          "walking": "约1公里，山顶区域平坦",
+          "physical": 2,
+          "tips": [
+            "缆车约13分钟登顶，山顶风大建议带外套；萌宠乐园可自备胡萝卜喂动物；度假区内餐饮选择有限，建议提前规划。"
+          ],
+          "sourceTitle": "携程旅行 松花湖 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jilincity267/1673651.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/jilincity267/1673651.html?poiType=3&scene=online",
+          "高德地图 吉林松花湖国家风景名胜区：https://www.amap.com/place/B01B0025CD"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 松花湖 详情页",
+          "url": "https://you.ctrip.com/sight/jilincity267/1673651.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "松花湖 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B01B0025CD",
+        "width": 2000,
+        "height": 1126
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a71eb63982",
+      "id": "manual_jilin_18bf3e1b",
+      "name": "北大湖滑雪度假区",
+      "city": "永吉",
+      "rating": 4.6,
+      "reviewsCount": "352条携程点评",
+      "image": "/assets/images/attractions/jilin_18bf3e1b_verified.jpg",
+      "description": "北大湖滑雪度假区位于吉林省吉林市，距吉林市区53公里，距龙嘉国际机场126公里，2019年被国家体育总局评为冰雪旅游类“国家体育产业示范单位”。地处世界黄金滑雪带，大滑雪山体落差870米，积雪日可达160天，北大湖滑雪度假区雪道好、雪质佳、积雪深、雪期长，现有27条雪道，雪道总长度48公里，雪道总面积126公顷。",
+      "intro": "北大湖滑雪度假区位于吉林省吉林市，距吉林市区53公里，距龙嘉国际机场126公里，2019年被国家体育总局评为冰雪旅游类“国家体育产业示范单位”。地处世界黄金滑雪带，大滑雪山体落差870米，积雪日可达160天，北大湖滑雪度假区雪道好、雪质佳、积雪深、雪期长，现有27条雪道，雪道总长度48公里，雪道总面积126公顷。",
+      "level": "热门景点",
+      "category": "滑雪度假区/避暑度假",
+      "tags": [
+        "滑雪度假区/避暑度假",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林省吉林市永吉县北大湖镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "飞机可飞往长春龙嘉机场，后乘景区直通车或包车前往（约1.5至2小时）；高铁可至吉林站，后转乘接驳车或打车前往。",
+          "internal_arrive": "从雪具大厅进入，大厅内集中了租赁、餐饮和索道换乘，是度假区的核心枢纽。",
+          "internal_traffic": "度假区内提供免费摆渡车，部分酒店可滑进滑出，缆车和魔毯是上山的主要交通方式。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐百万石温泉酒店、Club Med北大湖度假村、北美时光度假酒店、山湖居酒店等，多位于度假区内，方便滑雪和休闲。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "选择滑进滑出的酒店，减少步行和搬运装备的劳累；多体验缆车观光和温泉放松，避免高强度滑雪",
+          "children": "优先在魔毯区和初级道练习，可聘请专业教练保障安全；夏季可体验山地滑车、绳网乐园和浅溪捞鱼等亲子项目。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲游（雪道体验+温泉放松）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "雪具大厅（租赁装备/寄存）",
+            "魔毯区（新手/儿童适应）",
+            "星光大道（超长初级道体验）",
+            "G索缆车（登顶俯瞰山林全景）",
+            "极乐汤温泉（泡汤解乏）",
+            "度假区酒店休息"
+          ],
+          "duration": "半天",
+          "walking": "约1000米（主要在雪具大厅与酒店间）",
+          "physical": 2,
+          "tips": [
+            "建议住在度假区内酒店，出门即雪道，省去来回奔波的体力消耗。"
+          ],
+          "sourceTitle": "携程旅行 北大湖滑雪度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 北大湖滑雪度假区 详情页",
+          "url": "https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "北大湖滑雪度假区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/yongji1446019/17805.html?poiType=66&scene=online",
+        "width": 2048,
+        "height": 1151
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_17d74ad33f",
+      "id": "manual_jilin_bc0da8dd",
+      "name": "莲花山滑雪场",
+      "city": "长春",
+      "rating": 4.3,
+      "reviewsCount": "219条携程点评",
+      "image": "/assets/images/attractions/jilin_bc0da8dd_verified.jpg",
+      "description": "莲花山滑雪场目前是长春地区人气较旺的滑雪场之一。它地处长春市二道区四家乡青山村，距长春市区约39公里，距长春龙嘉国际机场约20公里，交通极其便捷，是全国高、中级滑雪场距离中心城市较近的滑雪场。",
+      "intro": "莲花山滑雪场目前是长春地区人气较旺的滑雪场之一。它地处长春市二道区四家乡青山村，距长春市区约39公里，距长春龙嘉国际机场约20公里，交通极其便捷，是全国高、中级滑雪场距离中心城市较近的滑雪场。",
+      "level": "热门景点",
+      "category": "滑雪场 / 冰雪娱乐景区\n游览路线方案",
+      "tags": [
+        "滑雪场 / 冰雪娱乐景区\n游览路线方案",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林省长春市二道区莲花山度假区四家乡青山村雪场西街",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“莲花山滑雪场”停车场；公共交通可乘地铁2号线至雾开河大街站，换乘666路冰雪直通车直达；长春站和龙嘉机场有滑雪直通车（班次较少，建议提前确认）。",
+          "internal_arrive": "自驾推荐从雪场西街或雪场东街进入，注意雪季期间部分路段可能实行单向通行管控，请服从现场交通指挥。",
+          "internal_traffic": "雪场内设有2条高山吊椅索道和4条拖牵索道（魔毯），可快速将游客送达各雪道起始点。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "雪场周边有天银湖酒店、“莲”酒店、莲花山商务中心及俄罗斯风情别墅群等，可容纳数千人入住；也可选择住在市区，往返更便捷。\n长辈与儿童建议\n长辈建议：可乘坐缆车或魔毯上山，在二楼观景台或露台休息区俯瞰雪场全景，避免剧烈运动；雪场内设有快餐厅和中餐包房，方便随时补充能量。\n儿童建议：儿童有专门的雪具大厅和教学区，坡度较缓且与成人区分离，安全性高；建议为孩子租赁护臀等护具，并聘请专业教练陪同教学，避免在初级道与其他游客碰撞。\n实用避坑提示",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "可乘坐缆车或魔毯上山，在二楼观景台或露台休息区俯瞰雪场全景，避免剧烈运动；雪场内设有快餐厅和中餐包房，方便随时补充能量",
+          "children": "儿童有专门的雪具大厅和教学区，坡度较缓且与成人区分离，安全性高；建议为孩子租赁护臀等护具，并聘请专业教练陪同教学，避免在初级道与其他游客碰撞。\n实用避坑提示"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲游（适合新手与长辈）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "大众雪具大厅（换装领装备）",
+            "青少年雪具大厅及儿童教学区",
+            "初级雪道（魔毯上山体验）",
+            "二楼休息区观景与餐饮",
+            "中级雪道（缆车上山体验）",
+            "雪场露台俯瞰全景"
+          ],
+          "duration": "半天",
+          "walking": "约 1000 米",
+          "physical": 2,
+          "tips": [
+            "二楼休息区视野开阔，可全景俯瞰雪场，适合家长休息并照看孩子；建议自带保温杯和保暖手套，雪场内租赁装备排队时间较长。"
+          ],
+          "sourceTitle": "携程旅行 莲花山滑雪场 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/changchun216/10671.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/changchun216/10671.html?poiType=66&scene=online",
+          "高德地图 长春莲花山：https://www.amap.com/place/B0G2K4QUJ5"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 莲花山滑雪场 详情页",
+          "url": "https://you.ctrip.com/sight/changchun216/10671.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "莲花山滑雪场 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0G2K4QUJ5",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_f85ac47d5a",
+      "id": "manual_jilin_fadecc8d",
+      "name": "高句丽王城、王陵及贵族墓葬",
+      "city": "集安",
+      "rating": 5,
+      "reviewsCount": "11条携程点评",
+      "image": "/assets/images/attractions/jilin_fadecc8d_verified.jpg",
+      "description": "这里的古墓具有历史价值意义，墙面壁画美轮美奂，是高句丽王朝的遗迹，值得一观。",
+      "intro": "这里的古墓具有历史价值意义，墙面壁画美轮美奂，是高句丽王朝的遗迹，值得一观。",
+      "level": "热门景点",
+      "category": "世界文化遗产 / 历史遗址 / 博物馆",
+      "tags": [
+        "世界文化遗产 / 历史遗址 / 博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林省通化集安市集青公路与将军路交汇处",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "集安市有高铁站（集安站），也可自驾前往；市区到各景区需打车或自驾，公交班次较少，建议包车或自驾更灵活。",
+          "internal_arrive": "建议从长寿王陵或好太王碑入口进入，这两个景区地势平坦，适合作为家庭游的起点；丸都山城入口较远，可放在最后或放弃。",
+          "internal_traffic": "各景区之间有 1.5-8 公里不等，无景区接驳车，需自驾、打车或包车串联游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在集安市区（如鸭绿江畔或大吉他广场附近），餐饮和住宿选择多，晚上可看灯光秀，去各景区也方便。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "优先选择路线A，全程平缓可推轮椅；租讲解器了解历史；避免去丸都山城爬坡",
+          "children": "在长寿王陵和好太王碑区域可轻松行走，注意看护；可结合集安市博物馆（八瓣莲花状建筑）进行历史启蒙。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "核心王陵与石碑省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "长寿王陵（东方金字塔）",
+            "好太王碑及好太王陵"
+          ],
+          "duration": "半天",
+          "walking": "约 1.5 公里（两景区间可步行或打车）",
+          "physical": 2,
+          "tips": [
+            "好太王碑和长寿王陵距离很近，景区内地势平坦，非常适合带长辈和儿童慢慢逛，建议租讲解器或请导游，否则容易“只看石头不看门道”。"
+          ],
+          "sourceTitle": "携程旅行 高句丽王城、王陵及贵族墓葬 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "丸都山城与古墓群深度游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "丸都山城（瞭望台",
+            "宫殿遗址）",
+            "洞沟古墓群（山城下墓区）"
+          ],
+          "duration": "半天",
+          "walking": "约 2-3 公里（山城内需爬坡，墓区面积大）",
+          "physical": 4,
+          "tips": [
+            "丸都山城需要一定的体力爬坡，且部分路段可能因维修或积雪封闭，建议长辈和儿童量力而行，或只在山下墓区平缓地带游览。"
+          ],
+          "sourceTitle": "携程旅行 高句丽王城、王陵及贵族墓葬 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 高句丽王城、王陵及贵族墓葬 详情页",
+          "url": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "高句丽王城、王陵及贵族墓葬 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/jian2467/1830624.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1667
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B01B3009BY": {
+      "id": "amap_B01B3009BY",
+      "name": "高句丽文物古迹旅游景区",
+      "city": "通化",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/jilin_e8a47b0a_verified.jpg",
+      "description": "高句丽文物古迹旅游景区位于吉林省集安市，是高句丽王朝的遗迹。景区主要景点包括丸都山城、王陵(14座)及贵族墓葬(26座)。",
+      "intro": "高句丽文物古迹旅游景区位于吉林省集安市，是高句丽王朝的遗迹。景区主要景点包括丸都山城、王陵(14座)及贵族墓葬(26座)。",
+      "level": "5A景区",
+      "category": "世界文化遗产、历史遗迹、5A级景区",
+      "tags": [
+        "世界文化遗产、历史遗迹、5A级景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "通化市集安市通胜街道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至各景点停车场；或乘高铁至通化站/集安站后打车前往，市区到各景区有公交或出租车可达。",
+          "internal_arrive": "建议从好太王碑景区开始游览，位置相对居中，周边停车方便，逛完后可顺路前往长寿王陵。",
+          "internal_traffic": "三个景点之间无景区接驳车，需自驾、打车或包车；丸都山城内可步行参观，部分区域有电瓶车可选（以官方当日公告为准）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "集安市区（靠近鸭绿江畔、大吉他广场附近），步行或打车前往各景区均较方便。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "好太王碑和长寿王陵地势平坦，可推车或轮椅；丸都山城部分路段需爬坡，建议量力而行，在观景台和山下墓区参观即可",
+          "children": "遗址类景点较抽象，建议提前了解高句丽历史或请讲解，增强趣味性；可结合集安博物馆（免费、刷身份证进入）做\"历史预习\"，孩子更容易理解。\n\n补充一点：禹山贵族墓地目前已关闭，只能在围栏外参观；集安博物馆虽不在景区联票内，但距离市区近、免费开放，是了解高句丽历史的好去处，建议安排在游览前或游览后。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "三景点串联省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "好太王碑",
+            "长寿王陵",
+            "丸都山城"
+          ],
+          "duration": "半天",
+          "walking": "约2-3小时",
+          "physical": 3,
+          "tips": [
+            "三个景点之间距离较远，建议自驾或打车前往；好太王碑和长寿王陵相距约1.5公里，可步行或打车衔接；丸都山城地势较高，部分路段需爬坡，建议穿舒适的运动鞋。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 高句丽文物古迹旅游景区：https://www.amap.com/place/B01B3009BY"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 高句丽文物古迹旅游景区",
+          "url": "https://www.amap.com/place/B01B3009BY",
+          "poiId": "B01B3009BY",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "通化高句丽文物古迹旅游景区藏着\"东方金字塔\"的震撼,冬日雪景 历史",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4486058977312606427",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4486058977312606427",
+        "width": 1296,
+        "height": 1728
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    "amap_B0KRXZSHS8": {
+      "id": "amap_B0KRXZSHS8",
+      "name": "图们国门景区",
+      "city": "图们",
+      "rating": 4.7,
+      "reviewsCount": "377条携程点评",
+      "image": "/assets/images/attractions/jilin_1b729b5a_verified.jpg",
+      "description": "图们国门景区是吉林立关较早、历史较长的“百年口岸”，是货运输口岸，分为铁路口岸和公路口岸，年过货能力为560万吨。",
+      "intro": "图们国门景区是吉林立关较早、历史较长的“百年口岸”，是货运输口岸，分为铁路口岸和公路口岸，年过货能力为560万吨。",
+      "level": "热门景点",
+      "category": "边境人文/观景",
+      "tags": [
+        "边境人文/观景",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "延边朝鲜族自治州图们市图们江广场南",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐高铁至图们北站，出站后乘坐9路公交车直达口岸；或打车前往，车程约15分钟。自驾可导航至图们国门景区，周边有免费停车场。",
+          "internal_arrive": "建议从口岸大街主入口进入，沿图们江广场南侧步行，路线平缓且沿途打卡点集中。",
+          "internal_traffic": "景区内部主要以步行游览为主，部分路段可乘坐观光车（具体以官方当日公告为准）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "图们市较小，建议住在市中心或图们口岸附近，出行方便且能品尝到地道的延边美食。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "路线整体平缓，但登高至日光山南阳亭有一定坡度，建议长辈在平缓区域观景或乘坐观光车",
+          "children": "景区内有儿童乐园和无动力游乐设施，适合低幼和大童玩耍，可让孩子用望远镜观察对岸，增加趣味性。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "国门打卡与登高远眺省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "口岸大街入口 ➡️ 图们口岸与国门主体（可登二楼观景） ➡️ 86号界碑（网红打卡点） ➡️ 日光山南阳亭（登高俯瞰图们江与对岸风貌）"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里",
+          "physical": 2,
+          "tips": [
+            "在边境区域严禁越界拍照或使用长焦镜头对准朝方区域，以免引发安全问题；建议携带望远镜在观景台远眺。"
+          ],
+          "sourceTitle": "携程旅行 图们国门景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/jilin100031.html",
+          "携程旅行 图们国门景区 详情页：https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+          "高德地图 图们国门：https://www.amap.com/place/B0KRXZSHS8"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 图们国门景区 详情页",
+          "url": "https://you.ctrip.com/sight/tumen2466/142480.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "图们国门景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0KRXZSHS8",
+        "width": 1536,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "reviewedAt": "2026-08-17",
+  "reviewedAtIso": "2026-08-17T08:30:25.864Z",
+  "appliedAt": "2026-08-17T08:33:14.982Z",
+  "appliedAttractionIds": [
+    "manual_jilin_313b694b",
+    "manual_jilin_3de53c87",
+    "manual_jilin_121ede7f",
+    "manual_jilin_fd41516",
+    "manual_jilin_cc743cad",
+    "manual_jilin_6966281e",
+    "manual_jilin_22f024d9",
+    "manual_jilin_18bf3e1b",
+    "manual_jilin_bc0da8dd",
+    "manual_jilin_fadecc8d"
+  ],
+  "appliedOverrideIds": [
+    "amap_B01B3009BY",
+    "amap_B0KRXZSHS8"
+  ]
+}
