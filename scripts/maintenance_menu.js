@@ -37,6 +37,7 @@ const statusNames = {
   stopped: '已安全停止',
   login_required: '登录已失效',
   restricted: '平台限制访问，已安全暂停',
+  decision_required: '存在景点身份歧义，等待总控选择',
   error: '发生错误',
   recovered: '已恢复采集结果',
 };
@@ -328,6 +329,81 @@ function provinceInfo(provinceName) {
 function isFresh(filePath, days) {
   if (!fs.existsSync(filePath)) return false;
   return Date.now() - fs.statSync(filePath).mtimeMs < days * 24 * 60 * 60 * 1000;
+}
+
+function identityConflictFiles() {
+  if (!fs.existsSync(runtimeDir)) return [];
+  return fs.readdirSync(runtimeDir)
+    .filter(name => /^core-identity-conflicts\.[a-z0-9_-]+\.json$/i.test(name))
+    .map(name => ({ filePath: path.join(runtimeDir, name), data: readJson(path.join(runtimeDir, name), {}) }))
+    .filter(item => item.data?.pending?.length);
+}
+
+async function resolveIdentityConflicts(rl) {
+  const files = identityConflictFiles();
+  if (!files.length) {
+    console.log('\n当前没有待处理的景点身份歧义。');
+    return true;
+  }
+  let selected = files[0];
+  if (files.length > 1) {
+    console.log('\n待处理省份：');
+    files.forEach((item, index) => console.log(`[${index + 1}] ${item.data.province}（${item.data.pending.length} 项）`));
+    const selection = Number(await ask(rl, '请选择省份编号，输入 0 返回：'));
+    if (!selection) return false;
+    selected = files[selection - 1];
+    if (!selected) {
+      console.log('编号无效。');
+      return false;
+    }
+  }
+  const decisionsPath = path.join(rootDir, 'content', 'core-identity-decisions.json');
+  const decisions = readJson(decisionsPath, { version: 1, provinces: {} });
+  decisions.version = 1;
+  decisions.provinces ||= {};
+  decisions.provinces[selected.data.province] ||= {};
+  const unresolved = [];
+  for (const conflict of selected.data.pending) {
+    console.log('\n============================================================');
+    console.log(`待补景点：${conflict.incoming.name}（${conflict.incoming.city || '城市待核验'}）`);
+    console.log(`原因：${conflict.reason}`);
+    console.log('请选择它与现有记录的关系：');
+    conflict.existing.forEach((item, index) => console.log(`[${index + 1}] 同一景点，增强现有：${item.name}（${item.city || '城市待核验'}，${item.id}）`));
+    const keepNew = conflict.existing.length + 1;
+    console.log(`[${keepNew}] 不是同一景点，保留为独立新景点`);
+    console.log('[0] 暂缓本项，稍后再决定');
+    const answer = Number(await ask(rl, '请选择：'));
+    if (answer >= 1 && answer <= conflict.existing.length) {
+      const existing = conflict.existing[answer - 1];
+      decisions.provinces[selected.data.province][conflict.baselineKey] = {
+        action: 'enhance_existing', existingId: existing.id,
+        incomingName: conflict.incoming.name, existingName: existing.name,
+        decidedAt: new Date().toISOString(),
+      };
+      console.log(`已记录：${conflict.incoming.name} 将增强现有 ${existing.name}。`);
+    } else if (answer === keepNew) {
+      decisions.provinces[selected.data.province][conflict.baselineKey] = {
+        action: 'keep_new', incomingName: conflict.incoming.name,
+        decidedAt: new Date().toISOString(),
+      };
+      console.log(`已记录：${conflict.incoming.name} 保留为独立新景点。`);
+    } else {
+      unresolved.push(conflict);
+      console.log('已暂缓，不会写入或误合并。');
+    }
+    writeJsonAtomic(decisionsPath, decisions);
+  }
+  writeJsonAtomic(selected.filePath, { ...selected.data, pending: unresolved, updatedAt: new Date().toISOString() });
+  if (!unresolved.length) {
+    const progress = readJson(progressPath, {});
+    writeJsonAtomic(progressPath, {
+      ...progress,
+      status: 'retry_ready',
+      message: `${selected.data.province}身份歧义已在总控完成选择；返回主菜单按 [2] 继续即可自动续跑。`,
+      updatedAt: new Date().toISOString(),
+    });
+  }
+  return true;
 }
 
 function validOfficialCache(value) {
@@ -649,8 +725,39 @@ function restoreFiles(snapshot) {
   }
 }
 
+function reportItemReady(item) {
+  return item?.status === 'present' && (item.matches || []).some(match => match.quality?.ready === true);
+}
+
+function validateIncrementalRelease(beforeReport, afterReport, repairPackage) {
+  const beforeIssues = new Set((beforeReport?.items || []).filter(item => !reportItemReady(item)).map(item => item.key));
+  const afterItems = new Map((afterReport?.items || []).map(item => [item.key, item]));
+  const expectedKeys = new Set([
+    ...(repairPackage?.attractions || []).map(item => item.baselineKey),
+    ...Object.values(repairPackage?.overrides || {}).map(item => item.baselineKey),
+  ].filter(Boolean));
+  const unresolvedApproved = [...expectedKeys].filter(key => !reportItemReady(afterItems.get(key)));
+  const newRegressions = [...afterItems.values()]
+    .filter(item => !reportItemReady(item) && !beforeIssues.has(item.key))
+    .map(item => item.key);
+  const historicalIssues = [...afterItems.values()]
+    .filter(item => !reportItemReady(item) && beforeIssues.has(item.key) && !expectedKeys.has(item.key))
+    .map(item => item.key);
+  return {
+    passed: unresolvedApproved.length === 0 && newRegressions.length === 0,
+    expectedCount: expectedKeys.size,
+    unresolvedApproved,
+    newRegressions,
+    historicalIssues,
+  };
+}
+
 function buildSelectedProvince(province) {
   const info = provinceInfo(province);
+  runNode('report_core_attractions.js', [`--province=${province}`], { quiet: true });
+  const reportPath = path.join(rootDir, 'reports', `core-attractions-${info.slug}.json`);
+  const beforeReport = readJson(reportPath, { items: [] });
+  const repairPackage = readJson(path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`), {});
   const transactionFiles = [
     path.join(rootDir, 'content', `manual-attractions.${info.slug}-core.json`),
     path.join(rootDir, 'content', 'attraction-overrides.json'),
@@ -658,16 +765,28 @@ function buildSelectedProvince(province) {
     path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`),
   ];
   const snapshot = captureFiles(transactionFiles);
-  console.log('\n正在写入 beta 并重新生成可访问数据……');
+  const alreadyApplied = repairPackage.status === 'applied';
+  console.log(alreadyApplied
+    ? '\n检测到该补全包已写入 beta，正在执行幂等重建与验收……'
+    : '\n正在写入 beta 并重新生成可访问数据……');
   const steps = [
-    () => runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply']),
+    ...(!alreadyApplied ? [() => runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply'])] : []),
     () => runNode('generate_static_data.js'),
     () => checkJavaScript(),
     () => runNode('build.js'),
     () => runNode('verify-build.js'),
-    () => runNode('report_core_attractions.js', [`--province=${province}`, '--strict']),
+    () => runNode('report_core_attractions.js', [`--province=${province}`]),
   ];
-  if (!steps.every(step => step())) {
+  let incrementalGate = null;
+  const pipelinePassed = steps.every(step => step());
+  if (pipelinePassed) {
+    incrementalGate = validateIncrementalRelease(beforeReport, readJson(reportPath, { items: [] }), repairPackage);
+    if (!incrementalGate.passed) {
+      if (incrementalGate.unresolvedApproved.length) console.log(`本次批准项仍未就绪：${incrementalGate.unresolvedApproved.join('、')}`);
+      if (incrementalGate.newRegressions.length) console.log(`本次写入引入新问题：${incrementalGate.newRegressions.join('、')}`);
+    }
+  }
+  if (!pipelinePassed || !incrementalGate?.passed) {
     console.log(`\n${province}最终验收未通过，正在自动回滚本次写入……`);
     restoreFiles(snapshot);
     runNode('generate_static_data.js', [], { quiet: true });
@@ -675,13 +794,17 @@ function buildSelectedProvince(province) {
     console.log('已恢复到批准前状态；隔离预览和已采集资料仍保留，可修复后继续，不会留下半成品。');
     return false;
   }
+  console.log(`增量验收通过：本次批准的 ${incrementalGate.expectedCount} 个核心项均已就绪，且未引入新问题。`);
+  if (incrementalGate.historicalIssues.length) {
+    console.log(`另有 ${incrementalGate.historicalIssues.length} 个批准前已存在的待治理项，已保留到维护任务，不阻断本次合格写入。`);
+  }
   runNode('create_maintenance_tasks.js', [`--province=${province}`], { quiet: true });
   runNode('stop_core_preview.js', [`--province=${province}`], { quiet: true });
   writeJsonAtomic(progressPath, {
     status: 'done',
     stage: 'applied',
     scope: `${province}核心景点完整补全`,
-    message: `${province}已写入 beta，静态数据、构建与省级严格验收全部通过。`,
+    message: `${province}已写入 beta，静态数据、构建与本次增量验收全部通过。`,
     index: 5,
     total: 5,
     percent: 100,
@@ -842,12 +965,14 @@ async function taskCenter(rl) {
   console.log('[2] 打开当前任务（运行中看进度，待验收打开隔离预览）');
   console.log('[3] 登录 / 刷新小红书点点状态');
   console.log('[4] 安全停止后台任务');
+  console.log('[5] 处理景点身份歧义（同名、跨城市、多实体）');
   console.log('[0] 返回');
   const action = await ask(rl, '请选择：');
   if (action === '1') showProgress();
   else if (action === '2') openCurrentTaskView();
   else if (action === '3') runNode('xhs_lazy_guides.js', ['--login']);
   else if (action === '4') stopSafely();
+  else if (action === '5') await resolveIdentityConflicts(rl);
 }
 
 async function main() {
@@ -890,4 +1015,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { shouldRefreshRatingPreview, provinceFromProgress };
+module.exports = { shouldRefreshRatingPreview, provinceFromProgress, validateIncrementalRelease, buildSelectedProvince };

@@ -32,4 +32,55 @@ assert.equal(existing.packageData.attractions.length, 0, '旧库已有同名实�
 assert(existing.packageData.overrides['amap-existing'], '应自动转换为旧记录的增强覆盖');
 assert.equal(existing.actions[0].type, 'convert_addition_to_override');
 
+const baselineBound = healAdditionsAgainstExisting({ attractions: [{
+  ...specific,
+  id: 'new-road',
+  baselineKey: 'core-road',
+  name: '张北草原天路',
+  city: '张北',
+  source_evidence: { basicInfoSources: ['https://example.com/new-road'] },
+}], overrides: {} }, {
+  attractions: [{ id: 'amap-road', name: '草原天路', city: '张家口' }],
+}, {
+  attractions: [{ key: 'core-road', name: '张北草原天路', aliases: ['草原天路'] }],
+});
+assert.equal(baselineBound.packageData.attractions.length, 0, '已批准核心清单唯一命中时应自动增强旧记录');
+assert(baselineBound.packageData.overrides['amap-road']);
+
+const ambiguousBaseline = healAdditionsAgainstExisting({ attractions: [{
+  ...specific, id: 'new-museum', baselineKey: 'core-museum', name: '城市博物馆', city: '甲市',
+}], overrides: {} }, {
+  attractions: [
+    { id: 'museum-a', name: '城市博物馆东馆', city: '甲市' },
+    { id: 'museum-b', name: '城市博物馆西馆', city: '甲市' },
+  ],
+}, {
+  attractions: [{ key: 'core-museum', name: '城市博物馆', aliases: [] }],
+});
+assert.equal(ambiguousBaseline.packageData.attractions.length, 1, '核心清单同时命中多个实体时不得自动合并');
+
+const explicitDecision = healAdditionsAgainstExisting({ attractions: [{
+  ...specific, id: 'new-museum', baselineKey: 'core-museum', name: '城市博物馆', city: '甲市',
+}], overrides: {} }, {
+  attractions: [
+    { id: 'museum-a', name: '城市博物馆东馆', city: '甲市' },
+    { id: 'museum-b', name: '城市博物馆西馆', city: '甲市' },
+  ],
+}, {
+  attractions: [{ key: 'core-museum', name: '城市博物馆', aliases: [] }],
+}, {
+  'core-museum': { action: 'enhance_existing', existingId: 'museum-b' },
+});
+assert.equal(explicitDecision.packageData.attractions.length, 0, '总控明确选择后应转换为指定旧记录的增强覆盖');
+assert(explicitDecision.packageData.overrides['museum-b']);
+
+const keepDistinct = healAdditionsAgainstExisting({ attractions: [{
+  ...specific, id: 'new-museum', baselineKey: 'core-museum', name: '城市博物馆', city: '甲市',
+}], overrides: {} }, {
+  attractions: [{ id: 'museum-a', name: '城市博物馆', city: '甲市' }],
+}, {}, {
+  'core-museum': { action: 'keep_new' },
+});
+assert.equal(keepDistinct.packageData.attractions.length, 1, '总控明确判定为独立景点后不得再自动合并');
+
 console.log('核心补全包自愈测试通过。');

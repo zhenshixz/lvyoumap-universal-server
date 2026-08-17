@@ -8,11 +8,13 @@ const {
   validateManualAttraction,
 } = require('./generate_static_data');
 const { getQuality } = require('./report_core_attractions');
+const { healAdditionsAgainstExisting, healPackageDuplicates } = require('./core_package_self_heal');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
 const runtimeDir = path.join(rootDir, '.runtime');
 const reportDir = path.join(rootDir, 'reports');
+const identityDecisionsPath = path.join(contentDir, 'core-identity-decisions.json');
 
 const args = new Map(process.argv.slice(2).map(arg => {
   const match = arg.match(/^--([^=]+)=(.*)$/);
@@ -164,6 +166,7 @@ function loadContext() {
 function validatePackage(context, options = {}) {
   const requireReviewed = options.requireReviewed !== false;
   const packageData = readJson(context.packagePath, null);
+  const identityDecisions = readJson(identityDecisionsPath, { provinces: {} }).provinces?.[context.province] || {};
   const errors = [];
   const readyAttractions = [];
   const readyOverrides = [];
@@ -191,7 +194,7 @@ function validatePackage(context, options = {}) {
       continue;
     }
     const duplicate = context.records.find(record => recordMatchesBaseline(record, baselineItem));
-    if (duplicate) {
+    if (duplicate && identityDecisions[addition.baselineKey]?.action !== 'keep_new') {
       errors.push(`新增项 ${addition.name} 疑似重复现有 ${duplicate.name}（${duplicate.id}），禁止新增。`);
       continue;
     }
@@ -230,12 +233,52 @@ function validatePackage(context, options = {}) {
     try {
       const quality = getQuality(candidate);
       if (!quality.ready || quality.issues.length) throw new Error(`修复项 ${current.name} 仍未通过：${quality.issues.join(', ')}`);
-      readyOverrides.push({ id, patch });
+      readyOverrides.push({ id, patch, baselineKey: patch.baselineKey || '' });
     } catch (error) {
       errors.push(error.message);
     }
   }
   return { packageData, errors, readyAttractions, readyOverrides };
+}
+
+function selfHealPackage(context) {
+  const packageData = readJson(context.packagePath, null);
+  if (!packageData) return [];
+  const decisions = readJson(identityDecisionsPath, { provinces: {} }).provinces?.[context.province] || {};
+  const deduplicated = healPackageDuplicates(packageData);
+  const aligned = healAdditionsAgainstExisting(
+    deduplicated.packageData,
+    { attractions: context.records },
+    context.baseline,
+    decisions,
+  );
+  const actions = [...deduplicated.actions, ...aligned.actions];
+  const pending = [];
+  for (const item of aligned.packageData.attractions || []) {
+    if (decisions[item.baselineKey]?.action === 'keep_new') continue;
+    const baselineItem = context.baseline.attractions.find(candidate => candidate.key === item.baselineKey);
+    if (!baselineItem) continue;
+    const candidates = context.records.filter(record => recordMatchesBaseline(record, baselineItem));
+    if (!candidates.length) continue;
+    pending.push({
+      baselineKey: item.baselineKey,
+      incoming: { id: item.id, name: item.name, city: item.city || '' },
+      existing: candidates.map(candidate => ({ id: candidate.id, name: candidate.name, city: candidate.city || '', dataFile: candidate.dataFile || '' })),
+      reason: candidates.length > 1 ? '核心清单同时命中多个现有实体' : '名称接近但缺少足够同实体证据',
+    });
+  }
+  const conflictPath = path.join(runtimeDir, `core-identity-conflicts.${context.slug}.json`);
+  writeJsonAtomic(conflictPath, { province: context.province, updatedAt: new Date().toISOString(), pending });
+  if (!actions.length) return { actions: [], pending, conflictPath };
+  const packageBackup = backup(context.packagePath);
+  writeJsonAtomic(context.packagePath, {
+    ...aligned.packageData,
+    updatedAt: new Date().toISOString(),
+    selfHealActions: [...(packageData.selfHealActions || []), ...actions],
+  });
+  console.log(`质量门禁已自动修复 ${actions.length} 个唯一同实体重复项。`);
+  if (packageBackup) console.log(`原补全包备份：${packageBackup}`);
+  return { actions, pending, conflictPath };
 }
 
 function applyPackage(context, validation) {
@@ -259,6 +302,11 @@ function applyPackage(context, validation) {
 
   const baselineBackup = backup(context.baselinePath);
   for (const { baselineItem, candidate } of validation.readyAttractions) baselineItem.preferredId = candidate.id;
+  for (const { id, baselineKey } of validation.readyOverrides) {
+    if (!baselineKey) continue;
+    const baselineItem = context.baseline.attractions.find(item => item.key === baselineKey);
+    if (baselineItem) baselineItem.preferredId = id;
+  }
   context.baseline.checkedAt = new Date().toISOString().slice(0, 10);
   writeJsonAtomic(context.baselinePath, context.baseline);
   const packageBackup = backup(context.packagePath);
@@ -278,6 +326,14 @@ function main() {
   console.log(`档案：${context.dossierPath}`);
   if (mode === 'prepare') {
     console.log(fs.existsSync(context.packagePath) ? `检测到补全包：${context.packagePath}` : `尚无补全包；请按档案建立：${context.packagePath}`);
+    return;
+  }
+  const selfHeal = selfHealPackage(context);
+  if (selfHeal.pending.length) {
+    console.log('发现需要业务确认的景点身份歧义：');
+    selfHeal.pending.forEach(item => console.log(`- ${item.incoming.name}：${item.existing.map(value => `${value.name}（${value.city || '城市待核验'}）`).join('、')}`));
+    console.log('请在总控 [3] 任务中心选择“处理景点身份歧义”，完成后再按 [2] 继续。');
+    process.exitCode = 2;
     return;
   }
   const validation = validatePackage(context, { requireReviewed: mode !== 'finalize' });

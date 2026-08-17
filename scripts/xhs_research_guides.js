@@ -194,15 +194,15 @@ async function resumeIfPossible(page) {
 async function collectOne(page, target) {
   const basePrompt = promptFor(target);
   let bestFailure = null;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
     const prompt = attempt === 1 ? basePrompt : `${basePrompt}\n这是第${attempt}次尝试，请从头完整输出17行。`;
     await page.goto(`https://www.xiaohongshu.com/ai_chat_tab?searchKeyWord=${encodeURIComponent(prompt)}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await sleep(1400);
+    await sleep(700);
     let best = '';
     let lastGrowth = Date.now();
     let resumed = false;
     const started = Date.now();
-    while (Date.now() - started < 22000) {
+    while (Date.now() - started < 16000) {
       const body = await page.evaluate(() => document.body.innerText || '').catch(() => '');
       if (loginRequired(body)) return { ok: false, fatal: 'login_required' };
       if (restricted(body)) return { ok: false, fatal: 'restricted' };
@@ -214,15 +214,15 @@ async function collectOne(page, target) {
       const parsed = parseAnswer(best, target);
       if (parsed.complete) return { ok: true, prompt: basePrompt, raw: best, ...parsed.value };
       bestFailure = chooseBetterFailure(bestFailure, { ok: false, issues: parsed.issues, answerPreview: best.slice(0, 2000) });
-      if (Date.now() - lastGrowth > (best ? 3000 : 7000)) {
+      if (Date.now() - lastGrowth > (best ? 2200 : 5000)) {
         if (!resumed && await resumeIfPossible(page)) {
           resumed = true;
           lastGrowth = Date.now();
         } else break;
       }
-      await sleep(700);
+      await sleep(500);
     }
-    if (attempt < 3) await sleep(2500);
+    if (attempt < 2) await sleep(800);
   }
   return bestFailure || { ok: false, issues: ['未获得有效回答'] };
 }
@@ -304,7 +304,7 @@ async function main() {
       output.updatedAt = new Date().toISOString();
       writeJsonAtomic(outputPath, output);
       writeProgress({ status: 'running', stage: 'experience', current: `${province}/${item.name}`, index: index + 1, total: pending.length, success, failed });
-      await sleep(5000);
+      await sleep(2000);
     }
   } catch (error) {
     if (error.code === 'login_required') writeProgress({ status: 'login_required', message: error.message, success, failed });

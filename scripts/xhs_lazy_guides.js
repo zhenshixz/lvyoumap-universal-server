@@ -38,8 +38,8 @@ const provinceFilter = String(args.get('province') || '');
 const nameFilter = String(args.get('name') || '');
 const limit = Math.max(0, Number(args.get('limit') || 0));
 const loginTimeoutMs = Math.max(60000, Number(args.get('login-timeout') || 600000));
-const answerWaitMs = Math.max(12000, Number(args.get('answer-wait') || 45000));
-const requestDelayMs = Math.max(3000, Number(args.get('request-delay') || 8000));
+const answerWaitMs = Math.max(12000, Number(args.get('answer-wait') || 20000));
+const requestDelayMs = Math.max(1200, Number(args.get('request-delay') || 2500));
 
 function nowIso() {
   return new Date().toISOString();
@@ -152,11 +152,13 @@ function answerQuality(text, prompt = '') {
   const showMode = /大马戏|独立演出项目/.test(prompt);
   const showSignals = (answer.match(/入场|选座|座位|观看|声光|散场|退场|出口/g) || []).length;
   const trailing = lines.at(-1) || '';
-  const complete = answer.length >= 500
-    && (showMode ? showSignals >= 5 : routeSignals >= 2)
-    && audienceSignals >= 2
+  // 点点经常用连续段落而非小标题作答。旧门槛强制 500 字、2 个路线词和
+  // 独立小标题，会把已经完整的 5~10 秒回答误判失败，随后白等到超时再刷新。
+  const complete = answer.length >= 280
+    && (showMode ? showSignals >= 3 : routeSignals >= 1)
+    && audienceSignals >= 1
     && safetySignals >= 1
-    && sections >= 1
+    && (sections >= 1 || lines.length >= 5)
     && !(/(路线|技巧|注意事项|提醒|建议)$/.test(trailing) && trailing.length <= 16)
     && !/登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|换个问题试试/.test(answer);
   return { complete, length: answer.length, routeSignals, showSignals, audienceSignals, safetySignals, sections };
@@ -344,7 +346,7 @@ async function scrapeOne(page, target) {
   const prompt = promptFor(target.attraction);
   const url = `https://www.xiaohongshu.com/ai_chat_tab?searchKeyWord=${encodeURIComponent(prompt)}`;
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-  await sleep(1800);
+  await sleep(700);
   const initialBody = await page.evaluate(() => document.body.innerText || '');
   if (loginRequiredText(initialBody)) return { ok: false, reason: 'login_required', prompt };
   if (restrictedText(initialBody)) return { ok: false, reason: 'restricted', prompt };
@@ -352,6 +354,8 @@ async function scrapeOne(page, target) {
   const started = Date.now();
   let best = '';
   let stable = 0;
+  let lastGrowth = Date.now();
+  let resumed = false;
   while (Date.now() - started < answerWaitMs) {
     const body = await page.evaluate(() => document.body.innerText || '');
     if (restrictedText(body)) return { ok: false, reason: 'restricted', prompt, answerPreview: best.slice(0, 1000) };
@@ -359,13 +363,30 @@ async function scrapeOne(page, target) {
     if (answer.length > best.length) {
       best = answer;
       stable = 0;
+      lastGrowth = Date.now();
     } else if (answer === best && answer.length > 0) {
       stable += 1;
     }
     const sanitized = finalSanitizeAnswer(best);
     const quality = answerQuality(sanitized, prompt);
     if (quality.complete && stable >= 2) return { ok: true, prompt, answer: sanitized, quality };
-    await sleep(1000);
+    if (Date.now() - lastGrowth > (best ? 2200 : 5000)) {
+      const continued = !resumed && await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+        const buttons = [...document.querySelectorAll('button,[role="button"]')];
+        const button = buttons.find(node => /^(继续生成|继续回答|继续|重试|再试一次)$/.test((node.innerText || node.textContent || '').trim()) && node.getBoundingClientRect().height > 0);
+        if (!button) return false;
+        button.click();
+        return true;
+      }).catch(() => false);
+      if (continued) {
+        resumed = true;
+        lastGrowth = Date.now();
+      } else if (best && stable >= 4) {
+        break;
+      }
+    }
+    await sleep(500);
   }
   const sanitized = finalSanitizeAnswer(best);
   return { ok: false, reason: 'incomplete_answer', prompt, answerPreview: sanitized.slice(0, 1000), quality: answerQuality(sanitized, prompt) };
@@ -451,8 +472,8 @@ async function runCollection() {
       try {
         result = await scrapeOne(page, target);
         if (result.reason === 'incomplete_answer') {
-          writeProgress({ status: 'running', message: `${current} 回答不完整，等待 3 秒后自动刷新重试一次。`, current, index, total: targets.length, success, failed });
-          await sleep(3000);
+          writeProgress({ status: 'running', message: `${current} 首次回答尚未完整，正在快速刷新重试一次。`, current, index, total: targets.length, success, failed });
+          await sleep(800);
           const retry = await scrapeOne(page, target);
           if (retry.ok || Number(retry.quality?.length || 0) > Number(result.quality?.length || 0)) result = retry;
         }

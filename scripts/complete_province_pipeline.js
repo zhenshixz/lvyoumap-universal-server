@@ -234,12 +234,15 @@ try {
   main();
 } catch (error) {
   const current = readJson(progressPath, {});
-  if (!['login_required', 'restricted', 'stopped'].includes(current.status)) {
+  if (!['login_required', 'restricted', 'decision_required', 'stopped'].includes(current.status)) {
     const pendingText = current.pendingNames?.length ? ` 待续跑：${current.pendingNames.join('、')}。` : '';
     const retryable = error.kind === 'retryable';
+    const decisionRequired = error.kind === 'user_action' && /身份歧义|业务确认/u.test(error.message);
     writeProgress({
-      status: retryable ? 'retry_ready' : 'error',
-      message: retryable
+      status: decisionRequired ? 'decision_required' : retryable ? 'retry_ready' : 'error',
+      message: decisionRequired
+        ? `${error.message} 请在总控 [3] 任务中心处理后，再按 [2] 自动续跑。`
+        : retryable
         ? `${error.message}${pendingText} 已保留全部成功断点；在总控再次选择“开始/继续”即可续跑，不需要修改文件或返回对话。`
         : `${error.message}${pendingText} 这是需要修复的关键错误，普通资料缺失不会进入此状态。`,
       pid: process.pid,

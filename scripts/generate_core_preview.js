@@ -150,7 +150,13 @@ async function main() {
   if (packageData?.status !== 'reviewed') throw new Error(`${province}补全包尚未通过质量闸门。`);
   const healed = healPackageDuplicates(packageData);
   const baseProvincePath = path.join(rootDir, 'dist', 'data', 'provinces', `${info.slug}.json`);
-  const aligned = healAdditionsAgainstExisting(healed.packageData, readJson(baseProvincePath, { attractions: [] }));
+  const identityDecisions = readJson(path.join(contentDir, 'core-identity-decisions.json'), { provinces: {} }).provinces?.[province] || {};
+  const aligned = healAdditionsAgainstExisting(
+    healed.packageData,
+    readJson(baseProvincePath, { attractions: [] }),
+    readJson(path.join(contentDir, `core-attractions.${info.slug}.json`), {}),
+    identityDecisions,
+  );
   const selfHealActions = [...healed.actions, ...aligned.actions];
   if (selfHealActions.length) {
     const backupDir = path.join(runtimeDir, 'backups');
@@ -179,6 +185,9 @@ async function main() {
     validateManualAttraction(candidate, province);
     return candidate;
   });
+  const keepNewIds = new Set((packageData.attractions || [])
+    .filter(item => identityDecisions[item.baselineKey]?.action === 'keep_new')
+    .map(item => item.id));
   const overrideEntries = Object.entries(packageData.overrides || {});
   if (!additions.length && !overrideEntries.length) throw new Error('补全包中没有可预览景点。');
 
@@ -195,7 +204,7 @@ async function main() {
   if (!provinceData?.attractions) throw new Error(`预览基础数据不存在：${provincePath}`);
   for (const addition of additions) {
     const duplicate = provinceData.attractions.find(item => item.id === addition.id || probablySameAttraction(item.name, addition.name));
-    if (duplicate) throw new Error(`隔离预览发现疑似重复：${addition.name} / ${duplicate.name}`);
+    if (duplicate && !keepNewIds.has(addition.id)) throw new Error(`隔离预览发现疑似重复：${addition.name} / ${duplicate.name}`);
     provinceData.attractions.push(addition);
     if (addition.image.startsWith('/')) {
       const source = path.join(rootDir, addition.image.slice(1));

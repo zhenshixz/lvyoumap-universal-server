@@ -376,5 +376,112 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B0FFF91YEQ": {
+    "baselineKey": "core_8ca9a63c73",
+    "id": "amap_B0FFF91YEQ",
+    "name": "张北草原天路",
+    "city": "张北",
+    "rating": 4.7,
+    "reviewsCount": "1731条携程点评",
+    "image": "/assets/images/attractions/hebei_bb944a73_verified.jpg",
+    "description": "草原天路位于张家口市张北县和崇礼县的交界处，西起张北县城南侧的野狐岭，东至崇礼县桦皮岭处。这条地处坝上草原的公路两旁景色十分优美，有草原、风车、梯田、桦树林等多种美景。",
+    "intro": "草原天路位于张家口市张北县和崇礼县的交界处，西起张北县城南侧的野狐岭，东至崇礼县桦皮岭处。这条地处坝上草原的公路两旁景色十分优美，有草原、风车、梯田、桦树林等多种美景。",
+    "level": "热门景点",
+    "category": "自驾风光公路 / 草原自然景区",
+    "tags": [
+      "自驾风光公路 / 草原自然景区",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "河北省张家口市张北县油篓沟乡黄花坪村",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾为主，北京出发约3.5小时；可高铁至张家口站后租车前往。",
+        "internal_arrive": "推荐从桦皮岭入口进、野狐岭出口出，反向行驶避开主流车流，路况平缓且观景台多在右手边，停车更方便。",
+        "internal_traffic": "必须自驾或包车，沿途无公共交通；普通家用轿车即可通行，全程柏油路。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "张北县城（配套齐全、性价比高）或沿线草原民宿/星空屋（体验感好，建议提前确认被褥保暖性）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "避暑山庄凉粉",
+        "正定八大碗",
+        "柴沟堡熏肉",
+        "金凤扒鸡"
+      ],
+      "special_care": {
+        "elderly": "坝上昼夜温差大，早晚需备薄冲锋衣；沿途观景台步行少，适合慢节奏自驾",
+        "children": "备好驱蚊液和防晒用品；可体验骑马、"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "桦皮岭进野狐岭出·家庭反向省力一日游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "桦皮岭入口",
+          "花海梯田",
+          "阎片山",
+          "大好河山观景台",
+          "塞北梯田",
+          "野狐岭出口"
+        ],
+        "duration": "半天",
+        "walking": "约30分钟（各观景台及阎片山缓坡步行）",
+        "physical": 2,
+        "tips": [
+          "建议较合适时段进入天路，此时雾气散去光线最佳；全程限速30km/h，弯道多需慢行；出发前务必加满油，沿途无加油站。"
+        ],
+        "sourceTitle": "携程旅行 张北草原天路 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "ctrip_city_sightlist：https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 张北草原天路 详情页",
+        "url": "https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "张北草原天路 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online",
+      "width": 2048,
+      "height": 1534
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

@@ -109,16 +109,41 @@ function healPackageDuplicates(packageData) {
   };
 }
 
-function healAdditionsAgainstExisting(packageData, provinceData) {
+function aliasesForBaseline(item) {
+  return [item?.name, ...(item?.aliases || [])].filter(Boolean);
+}
+
+function matchesBaselineIdentity(candidate, baselineItem) {
+  return aliasesForBaseline(baselineItem).some(alias => probablySameAttraction(candidate?.name, alias));
+}
+
+function healAdditionsAgainstExisting(packageData, provinceData, baselineData = {}, decisions = {}) {
   const additions = [];
   const overrides = clone(packageData?.overrides || {});
   const actions = [];
   for (const item of packageData?.attractions || []) {
-    const existing = (provinceData?.attractions || []).find(candidate => {
+    const records = provinceData?.attractions || [];
+    const decision = decisions[item.baselineKey] || null;
+    if (decision?.action === 'keep_new') {
+      additions.push(clone(item));
+      continue;
+    }
+    const baselineItem = (baselineData?.attractions || []).find(candidate => candidate.key === item.baselineKey);
+    const uniqueBaselineMatches = baselineItem
+      ? records.filter(candidate => matchesBaselineIdentity(candidate, baselineItem))
+      : [];
+    const decidedExisting = decision?.action === 'enhance_existing'
+      ? records.find(candidate => candidate.id === decision.existingId)
+      : null;
+    const existing = decidedExisting || records.find(candidate => {
       if (candidate.id && candidate.id === item.id) return true;
-      if (String(candidate.city || '') !== String(item.city || '')) return false;
       const exactName = normalizeAttractionName(candidate.name) === normalizeAttractionName(item.name);
-      return exactName || (probablySameAttraction(candidate.name, item.name) && sharesStrongEvidence(candidate, item));
+      if (exactName) return true;
+      const sameCity = String(candidate.city || '') === String(item.city || '');
+      if (sameCity && probablySameAttraction(candidate.name, item.name) && sharesStrongEvidence(candidate, item)) return true;
+      // 核心清单的名称/别名已经过人工批准。若新增项和底库都只命中该清单
+      // 的同一个唯一实体，可安全转成增强覆盖；多个命中仍保留给人工判断。
+      return uniqueBaselineMatches.length === 1 && uniqueBaselineMatches[0] === candidate;
     });
     if (!existing) {
       additions.push(clone(item));
@@ -134,7 +159,11 @@ function healAdditionsAgainstExisting(packageData, provinceData) {
       keptName: patch.name,
       removedId: originalId,
       removedName: item.name,
-      reason: '现有库已存在同实体记录，自动转换为增强覆盖',
+      reason: decidedExisting
+        ? '已在总控确认与现有景点为同一实体，自动转换为增强覆盖'
+        : uniqueBaselineMatches.length === 1 && uniqueBaselineMatches[0] === existing
+        ? '已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖'
+        : '现有库已存在同实体记录，自动转换为增强覆盖',
     });
   }
   return {

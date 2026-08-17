@@ -5,6 +5,7 @@ const rootDir = path.join(__dirname, '..');
 const dbPath = path.join(rootDir, 'content', 'db.json');
 const imageOverridesPath = path.join(rootDir, 'content', 'image-overrides.json');
 const manualAttractionsPath = path.join(rootDir, 'content', 'manual-attractions.json');
+const identityDecisionsPath = path.join(rootDir, 'content', 'core-identity-decisions.json');
 const attractionOverridesPath = path.join(rootDir, 'content', 'attraction-overrides.json');
 const lazyGuideOverridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
 const dataDir = path.join(rootDir, 'data');
@@ -227,7 +228,7 @@ function probablySameAttraction(left, right) {
   return shorter.length >= 2 && longer.endsWith(shorter) && longer.length - shorter.length <= 6;
 }
 
-function mergeManualAttractions(provinces, manualAttractions) {
+function mergeManualAttractions(provinces, manualAttractions, identityDecisions = {}) {
   const ids = new Set();
   for (const province of Object.values(provinces || {})) {
     for (const attraction of province.attractions || []) {
@@ -248,7 +249,11 @@ function mergeManualAttractions(provinces, manualAttractions) {
         (!attraction.city || !existing.city || attraction.city === existing.city)
         && probablySameAttraction(attraction.name, existing.name)
       ));
-      if (possibleDuplicate) {
+      const keepDistinct = Object.values(identityDecisions.provinces?.[provinceName] || {}).some(decision => (
+        decision?.action === 'keep_new'
+        && normalizeAttractionName(decision.incomingName) === normalizeAttractionName(attraction.name)
+      ));
+      if (possibleDuplicate && !keepDistinct) {
         throw new Error(`Manual attraction "${attraction.name}" in ${provinceName} probably duplicates existing "${possibleDuplicate.name}" (${possibleDuplicate.id}); use an override for the existing id instead.`);
       }
       if (attraction.image.startsWith('/')) {
@@ -325,8 +330,11 @@ function main() {
   const lazyGuideOverrides = fs.existsSync(lazyGuideOverridesPath)
     ? JSON.parse(fs.readFileSync(lazyGuideOverridesPath, 'utf8'))
     : {};
+  const identityDecisions = fs.existsSync(identityDecisionsPath)
+    ? JSON.parse(fs.readFileSync(identityDecisionsPath, 'utf8').replace(/^\uFEFF/, ''))
+    : { provinces: {} };
 
-  const mergedManualCount = mergeManualAttractions(provinces, manualAttractions);
+  const mergedManualCount = mergeManualAttractions(provinces, manualAttractions, identityDecisions);
   const attractionOverrideCount = applyAttractionOverrides(provinces, attractionOverrides, 'Attraction override');
   const lazyGuideOverrideCount = applyAttractionOverrides(
     provinces,

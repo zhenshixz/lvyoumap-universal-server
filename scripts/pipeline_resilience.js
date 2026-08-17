@@ -1,4 +1,4 @@
-const USER_ACTION_STATUSES = new Set(['login_required', 'restricted']);
+const USER_ACTION_STATUSES = new Set(['login_required', 'restricted', 'decision_required']);
 const SAFE_STOP_STATUSES = new Set(['stopped']);
 
 const retryablePatterns = [
@@ -10,6 +10,7 @@ const retryablePatterns = [
 const userActionPatterns = [
   /登录状态失效|请.*登录|扫码登录|login required/i,
   /限制访问|访问受限|安全验证|验证码|restricted/i,
+  /身份歧义|业务确认|处理景点身份歧义/u,
 ];
 
 const hardFailurePatterns = [

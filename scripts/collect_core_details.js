@@ -14,6 +14,7 @@ const {
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
 const runtimeDir = path.join(rootDir, '.runtime');
+const progressPath = path.join(runtimeDir, 'xhs-lazy-progress.json');
 const args = new Map(process.argv.slice(2).map(arg => {
   const match = arg.match(/^--([^=]+)=(.*)$/);
   return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
@@ -49,6 +50,20 @@ function writeJsonAtomic(filePath, value) {
   fs.renameSync(temporary, filePath);
 }
 
+function writeDetailProgress(item, index, total, step) {
+  const current = readJson(progressPath, {});
+  writeJsonAtomic(progressPath, {
+    ...current,
+    status: 'running',
+    stage: 'facts',
+    current: `${province}/${item.name}`,
+    message: `基本资料交叉核验 ${index + 1}/${total}：${item.name} · ${step}`,
+    detailIndex: index + 1,
+    detailTotal: total,
+    updatedAt: new Date().toISOString(),
+  });
+}
+
 function windowsProxy() {
   if (process.env.MAINTENANCE_HTTPS_PROXY) return process.env.MAINTENANCE_HTTPS_PROXY;
   if (process.platform !== 'win32') return '';
@@ -66,12 +81,12 @@ function windowsProxy() {
   return /^https?:\/\//i.test(endpoint) ? endpoint : `http://${endpoint}`;
 }
 
-function curlText(url, attempts = 3) {
+function curlText(url, attempts = 1) {
   let lastError = '';
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     const curlArgs = [
       '--location', '--fail', '--silent', '--show-error', '--ssl-no-revoke',
-      '--max-time', '45', '--retry', '2', '--retry-all-errors', '--retry-delay', '1',
+      '--connect-timeout', '4', '--max-time', '12', '--retry', '0',
       '--user-agent', 'Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0',
     ];
     const proxy = windowsProxy();
@@ -124,7 +139,7 @@ function probeRemoteImage(url) {
   if (imageProbeCache.has(url)) return imageProbeCache.get(url);
   const curlArgs = [
     '--location', '--fail', '--silent', '--show-error', '--ssl-no-revoke',
-    '--max-time', '30', '--retry', '1', '--retry-all-errors',
+    '--connect-timeout', '4', '--max-time', '10', '--retry', '0', '--range', '0-2097151',
     '--user-agent', 'Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0',
   ];
   const proxy = windowsProxy();
@@ -154,6 +169,10 @@ function cachedText(url) {
 
 function cachedJson(url) {
   return JSON.parse(cachedText(url));
+}
+
+function optionalLookup(callback) {
+  try { return callback(); } catch { return null; }
 }
 
 function liveAmapPois(item) {
@@ -608,7 +627,7 @@ function parseBingImageResults(html) {
 function browserJson(url) {
   const curlArgs = [
     '--location', '--fail', '--silent', '--show-error', '--ssl-no-revoke', '--compressed',
-    '--max-time', '25', '--retry', '1', '--retry-all-errors',
+    '--connect-timeout', '4', '--max-time', '12', '--retry', '0',
     '--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
     '--header', 'Accept: application/json,text/plain,*/*',
     '--header', 'Accept-Language: zh-CN,zh;q=0.9',
@@ -988,6 +1007,7 @@ function main() {
   output.failures ||= {};
   for (let index = 0; index < workspace.attractions.length; index += 1) {
     const item = workspace.attractions[index];
+    writeDetailProgress(item, index, workspace.attractions.length, '检查断点与已核验资料');
     const preferredRecord = item.preferredId
       ? records.find(record => record.id === item.preferredId)
       : null;
@@ -1025,20 +1045,32 @@ function main() {
       continue;
     }
     try {
+      writeDetailProgress(item, index, workspace.attractions.length, '优先核验官方、高德与 OTA 快速来源');
       const officialRecord = matchingOfficial(item, official);
       const ctripUrl = matchingCtripUrl(item, ota, secondary);
-      const ctrip = ctripUrl ? parseCtrip(ctripUrl, item) : null;
-      const wikidata = findWikidata(item);
+      const ctrip = ctripUrl ? optionalLookup(() => parseCtrip(ctripUrl, item)) : null;
       const amapDetails = liveAmapDetails(item);
-      const image = curatedCommonsImage(item)
+      let image = curatedCommonsImage(item)
         || officialRecordImage(officialRecord, item, official.sourceUrl)
         || existingSourceImage(item, officialRecord)
-        || wikipediaPageImage(item)
         || amapImage(amapDetails, item)
-        || ctripPageImage(ctrip, item)
-        || searchOfficialPageImage(item)
-        || commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || '')
-        || searchEngineImage(item);
+        || ctripPageImage(ctrip, item);
+      const quickSourceCount = discoveredSources(item).length
+        + Number(Boolean(officialRecord && official.sourceUrl))
+        + Number(Boolean(ctrip))
+        + Number(Boolean(amapDetails?.source));
+      let wikidata = null;
+      if (!image) {
+        writeDetailProgress(item, index, workspace.attractions.length, '快速来源无合格实景图，切换百科与搜索引擎');
+        image = wikipediaPageImage(item) || searchOfficialPageImage(item);
+      }
+      // 只有快速来源不足以交叉验证，或仍需 Commons 图片时才访问 Wikidata。
+      // 旧流程每个景点都串行查询多个别名，失效网络会无意义地拖慢数分钟。
+      if (quickSourceCount < 2 || !image) wikidata = optionalLookup(() => findWikidata(item));
+      if (!image) {
+        image = optionalLookup(() => commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || ''))
+          || optionalLookup(() => searchEngineImage(item));
+      }
       const experience = experiences.attractions?.[item.baselineKey];
       const sources = [];
       const pushSource = source => {
@@ -1107,6 +1139,7 @@ function main() {
           : { status: 'not-used', reason: amapEvidence.reason, liveFailure: amapEvidence.liveFailure, candidates: amapEvidence.candidates || [] },
       };
       delete output.failures[item.baselineKey];
+      writeDetailProgress(item, index, workspace.attractions.length, '核验完成，已保存断点');
       console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：关键资料已闭环${warnings.length ? `；警告：${warnings.join('；')}` : '。'}`);
     } catch (error) {
       output.failures[item.baselineKey] = { name: item.name, message: error.message, updatedAt: new Date().toISOString() };

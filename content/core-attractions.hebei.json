@@ -1,0 +1,780 @@
+{
+  "province": "河北",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=hebei&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/hebei100059.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 4,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 1,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 1,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 13,
+  "officialResortCandidateCount": 2,
+  "popularityCount": 15,
+  "existingRecordBoundCount": 22,
+  "existingRecordUnboundCount": 6,
+  "existingRecordUnboundNames": [
+    "南湖·开滦旅游景区",
+    "河北博物院",
+    "张北草原天路",
+    "暖泉古镇",
+    "古莲花池",
+    "崇礼冰雪旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 1,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "百里天路",
+      "city": "",
+      "aliases": [
+        "百里天路"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 1,
+  "observationCandidates": [
+    {
+      "name": "百里天路",
+      "city": "",
+      "aliases": [
+        "百里天路"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "百里天路",
+      "city": "",
+      "aliases": [
+        "百里天路"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 4,
+    "verifiedCount": 3,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 1,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_41e8b98e1d",
+      "name": "衡水湖旅游景区",
+      "preferredId": "amap_B0HRDUYBPM",
+      "aliases": [
+        "衡水湖旅游景区",
+        "衡水市衡水湖旅游景区",
+        "衡水湖"
+      ],
+      "city": "衡水",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_c0891de1a4",
+      "name": "南湖·开滦旅游景区",
+      "preferredId": "manual_hebei_dc8b294d",
+      "aliases": [
+        "南湖·开滦旅游景区",
+        "唐山市南湖·开滦旅游景区",
+        "南湖·开滦"
+      ],
+      "city": "唐山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_6b8aba9c90",
+      "name": "金山岭长城景区",
+      "preferredId": "amap_B013A00S2S",
+      "aliases": [
+        "金山岭长城景区",
+        "承德市金山岭长城景区",
+        "金山岭长城"
+      ],
+      "city": "承德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_d17ecfea26",
+      "name": "清西陵景区",
+      "preferredId": "amap_B0138039Y9",
+      "aliases": [
+        "清西陵景区",
+        "保定市清西陵景区",
+        "清西陵"
+      ],
+      "city": "保定",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_8aa5653bb1",
+      "name": "山海关景区",
+      "preferredId": "amap_B0FFFXBQWR",
+      "aliases": [
+        "山海关景区",
+        "秦皇岛市山海关景区",
+        "山海关"
+      ],
+      "city": "秦皇岛",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007/2018年"
+    },
+    {
+      "key": "core_09210a4612",
+      "name": "白石山景区",
+      "preferredId": "amap_B0138028TD",
+      "aliases": [
+        "白石山景区",
+        "保定市白石山景区",
+        "白石山"
+      ],
+      "city": "保定",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_468b5b94d5",
+      "name": "广府古城景区",
+      "preferredId": "amap_B013600EA5",
+      "aliases": [
+        "广府古城景区",
+        "邯郸市广府古城景区",
+        "广府古城"
+      ],
+      "city": "邯郸",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_c5abea089b",
+      "name": "娲皇宫景区",
+      "preferredId": "amap_B0136018IX",
+      "aliases": [
+        "娲皇宫景区",
+        "邯郸市娲皇宫景区",
+        "娲皇宫"
+      ],
+      "city": "邯郸",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_8548046116",
+      "name": "清东陵景区",
+      "preferredId": "amap_B013B03CT8",
+      "aliases": [
+        "清东陵景区",
+        "唐山市清东陵景区",
+        "清东陵"
+      ],
+      "city": "唐山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_d7e6961aa0",
+      "name": "西柏坡景区",
+      "preferredId": "amap_B0FFJWR71A",
+      "aliases": [
+        "西柏坡景区",
+        "石家庄市西柏坡景区",
+        "西柏坡"
+      ],
+      "city": "石家庄",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_fd13ab0ab9",
+      "name": "野三坡景区",
+      "preferredId": "amap_B013800G75",
+      "aliases": [
+        "野三坡景区",
+        "保定市野三坡景区",
+        "野三坡"
+      ],
+      "city": "保定",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_eef1c49475",
+      "name": "白洋淀景区",
+      "preferredId": "amap_B013800ZH8",
+      "aliases": [
+        "白洋淀景区",
+        "保定市白洋淀景区",
+        "白洋淀"
+      ],
+      "city": "保定",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_84a8ae2a47",
+      "name": "承德避暑山庄及周围寺庙景区",
+      "preferredId": "amap_B013A0000B",
+      "aliases": [
+        "承德避暑山庄及周围寺庙景区",
+        "承德市承德避暑山庄及周围寺庙景区",
+        "承德避暑山庄及周围寺庙"
+      ],
+      "city": "承德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_7f6e1e27d6",
+      "name": "阿那亚·秦皇岛",
+      "preferredId": "amap_B0FFH2IWY4",
+      "aliases": [
+        "阿那亚·秦皇岛",
+        "阿那亚礼堂"
+      ],
+      "city": "秦皇岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 23
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fb7e5fe56c",
+      "name": "河北博物院",
+      "preferredId": "manual_hebei_a27526a9",
+      "aliases": [
+        "河北博物院"
+      ],
+      "city": "石家庄",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_817f0c54ca",
+      "name": "老龙头",
+      "preferredId": "amap_B0FFG1TL6H",
+      "aliases": [
+        "老龙头",
+        "山海关景区·老龙头"
+      ],
+      "city": "秦皇岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d3696b9eb4",
+      "name": "正定古城",
+      "preferredId": "amap_B0G34YQXXW",
+      "aliases": [
+        "正定古城"
+      ],
+      "city": "石家庄",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 9
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8ca9a63c73",
+      "name": "张北草原天路",
+      "preferredId": "amap_B0FFF91YEQ",
+      "aliases": [
+        "张北草原天路"
+      ],
+      "city": "张家口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0FFF91YEQ",
+              "name": "草原天路",
+              "city": "张家口"
+            },
+            {
+              "id": "amap_B0KRKC78EI",
+              "name": "张北草原",
+              "city": "张家口"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0FFF91YEQ",
+              "name": "草原天路",
+              "city": "张家口"
+            },
+            {
+              "id": "amap_B0KRKC78EI",
+              "name": "张北草原",
+              "city": "张家口"
+            }
+          ]
+        },
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "张家口",
+          "page": 1,
+          "name": "草原天路",
+          "url": "https://you.ctrip.com/sight/zhangbei2575/1415275.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b23253462d",
+      "name": "暖泉古镇",
+      "preferredId": "manual_hebei_73c9c55e",
+      "aliases": [
+        "暖泉古镇"
+      ],
+      "city": "张家口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "张家口",
+          "page": 2,
+          "name": "暖泉古镇",
+          "url": "https://you.ctrip.com/sight/yucounty2565/135073.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fce78a97a4",
+      "name": "古莲花池",
+      "preferredId": "manual_hebei_bfe06fc2",
+      "aliases": [
+        "古莲花池"
+      ],
+      "city": "保定",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "保定",
+          "page": 1,
+          "name": "莲池书院博物馆(古莲花池)",
+          "url": "https://you.ctrip.com/sight/baoding459/143746656.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_6b362e191b",
+      "name": "隆兴寺",
+      "preferredId": "amap_B013704EGH",
+      "aliases": [
+        "隆兴寺"
+      ],
+      "city": "石家庄",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 10
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_18e2500720",
+      "name": "河头老街",
+      "preferredId": "amap_B013B0QGF1",
+      "aliases": [
+        "河头老街"
+      ],
+      "city": "唐山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 11
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5e5ad78eb9",
+      "name": "只有红楼梦·戏剧幻城",
+      "preferredId": "amap_B0FFK0NEP2",
+      "aliases": [
+        "只有红楼梦·戏剧幻城"
+      ],
+      "city": "廊坊",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 14
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b501bddf10",
+      "name": "秦皇岛市北戴河度假区",
+      "preferredId": "amap_B0KRK983XQ",
+      "aliases": [
+        "秦皇岛市北戴河度假区",
+        "北戴河海滩"
+      ],
+      "city": "秦皇岛",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 21
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_f90d6a1ac1",
+      "name": "响堂山石窟",
+      "preferredId": "amap_B01360168L",
+      "aliases": [
+        "响堂山石窟"
+      ],
+      "city": "邯郸",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 67
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e718fdc8f3",
+      "name": "大境门",
+      "preferredId": "amap_B013901QY8",
+      "aliases": [
+        "大境门",
+        "大境门景区"
+      ],
+      "city": "张家口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 122
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a35c54f5df",
+      "name": "易水湖",
+      "preferredId": "amap_B01380PD30",
+      "aliases": [
+        "易水湖",
+        "易水湖景区"
+      ],
+      "city": "保定",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 162
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_331f2b0cfc",
+      "name": "崇礼冰雪旅游度假区",
+      "preferredId": "manual_hebei_794561dc",
+      "aliases": [
+        "崇礼冰雪旅游度假区"
+      ],
+      "city": "张家口",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

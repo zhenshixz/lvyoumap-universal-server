@@ -148,7 +148,12 @@ function matchBaselineItem(item, records) {
 
   if (item.preferredId) {
     const preferred = records.find(record => record.id === item.preferredId);
-    if (preferred && cityMatches([preferred])) {
+    // preferredId is written only after the isolated preview has been approved.
+    // The record set is already scoped to one province, while `city` may use a
+    // prefecture, county or district label.  Do not turn an approved identity
+    // binding back into a review merely because those administrative levels
+    // differ (for example 张家口 vs 蔚县).
+    if (preferred) {
       return {
         status: 'present',
         reason: 'preferred_id',
