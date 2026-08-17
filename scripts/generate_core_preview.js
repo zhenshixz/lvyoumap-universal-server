@@ -1,9 +1,11 @@
 const fs = require('fs');
 const http = require('http');
+const net = require('net');
 const path = require('path');
 const crypto = require('crypto');
 const { spawn } = require('child_process');
 const { validateManualAttraction, probablySameAttraction } = require('./generate_static_data');
+const { healAdditionsAgainstExisting, healPackageDuplicates } = require('./core_package_self_heal');
 
 const rootDir = path.join(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
@@ -24,6 +26,13 @@ function readJson(filePath, fallback = null) {
 function writeJson(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+}
+
+function writeJsonAtomic(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  const temporary = `${filePath}.tmp`;
+  fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+  fs.renameSync(temporary, filePath);
 }
 
 function previewBuildFingerprint() {
@@ -53,11 +62,52 @@ function merge(target, patch) {
   return target;
 }
 
-function stopPrevious(statePath) {
-  const state = readJson(statePath);
-  const pid = Number(state?.pid || 0);
-  if (!pid) return;
-  try { process.kill(pid); } catch {}
+function stopAllPreviousPreviews() {
+  const previewsRoot = path.join(runtimeDir, 'previews');
+  if (!fs.existsSync(previewsRoot)) return;
+  for (const directory of fs.readdirSync(previewsRoot, { withFileTypes: true })) {
+    if (!directory.isDirectory() || directory.name.endsWith('.next')) continue;
+    const statePath = path.join(previewsRoot, directory.name, 'state.json');
+    const state = readJson(statePath);
+    const pid = Number(state?.pid || 0);
+    if (pid) {
+      try { process.kill(pid); } catch {}
+    }
+    if (state) writeJsonAtomic(statePath, { ...state, status: 'stopped', stoppedAt: new Date().toISOString() });
+  }
+}
+
+function portAvailable(value) {
+  return new Promise(resolve => {
+    const server = net.createServer();
+    server.once('error', () => resolve(false));
+    server.once('listening', () => server.close(() => resolve(true)));
+    server.listen(value, '127.0.0.1');
+  });
+}
+
+async function startPreviewService(siteDir, preferredPort, serviceName) {
+  let lastError = null;
+  for (let offset = 0; offset < 5; offset += 1) {
+    const candidatePort = preferredPort + offset;
+    if (!await portAvailable(candidatePort)) continue;
+    const child = spawn(process.execPath, [path.join('server', 'index.js')], {
+      cwd: rootDir,
+      detached: true,
+      stdio: 'ignore',
+      windowsHide: true,
+      env: { ...process.env, HOST: '127.0.0.1', PORT: String(candidatePort), STATIC_DIR: siteDir, SERVICE_NAME: serviceName },
+    });
+    child.unref();
+    try {
+      await waitForHealth(`http://127.0.0.1:${candidatePort}/api/health`);
+      return { child, port: candidatePort };
+    } catch (error) {
+      lastError = error;
+      try { process.kill(child.pid); } catch {}
+    }
+  }
+  throw lastError || new Error(`端口 ${preferredPort}-${preferredPort + 4} 均不可用，预览服务无法启动。`);
 }
 
 function waitForHealth(url, attempts = 30) {
@@ -96,8 +146,28 @@ async function main() {
   const info = provinceInfo(province);
   if (!info) throw new Error(`无法识别省份：${province}`);
   const packagePath = path.join(contentDir, `core-repair-packages.${info.slug}.json`);
-  const packageData = readJson(packagePath);
+  let packageData = readJson(packagePath);
   if (packageData?.status !== 'reviewed') throw new Error(`${province}补全包尚未通过质量闸门。`);
+  const healed = healPackageDuplicates(packageData);
+  const baseProvincePath = path.join(rootDir, 'dist', 'data', 'provinces', `${info.slug}.json`);
+  const aligned = healAdditionsAgainstExisting(healed.packageData, readJson(baseProvincePath, { attractions: [] }));
+  const selfHealActions = [...healed.actions, ...aligned.actions];
+  if (selfHealActions.length) {
+    const backupDir = path.join(runtimeDir, 'backups');
+    fs.mkdirSync(backupDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    fs.copyFileSync(packagePath, path.join(backupDir, `${path.basename(packagePath)}.${stamp}.self-heal.bak`));
+    packageData = {
+      ...aligned.packageData,
+      updatedAt: new Date().toISOString(),
+      selfHealActions: [...(packageData.selfHealActions || []), ...selfHealActions],
+    };
+    writeJsonAtomic(packagePath, packageData);
+    for (const action of selfHealActions) {
+      const label = action.type === 'convert_addition_to_override' ? '自动转为增强覆盖' : '自动合并重复景点';
+      console.log(`${label}：${action.removedName} → ${action.keptName}（${action.reason}）。`);
+    }
+  }
   const lazyOverrides = {
     ...readJson(path.join(contentDir, 'lazy-guide-overrides.json'), {}),
     ...readJson(path.join(runtimeDir, 'core-lazy-guide-overrides.json'), {}),
@@ -113,11 +183,11 @@ async function main() {
   if (!additions.length && !overrideEntries.length) throw new Error('补全包中没有可预览景点。');
 
   const previewRoot = path.join(runtimeDir, 'previews', info.slug);
-  const siteDir = path.join(previewRoot, 'site');
+  const stagingRoot = `${previewRoot}.next`;
+  let siteDir = path.join(stagingRoot, 'site');
   const statePath = path.join(previewRoot, 'state.json');
-  stopPrevious(statePath);
-  if (fs.existsSync(previewRoot)) fs.rmSync(previewRoot, { recursive: true, force: true });
-  fs.mkdirSync(previewRoot, { recursive: true });
+  if (fs.existsSync(stagingRoot)) fs.rmSync(stagingRoot, { recursive: true, force: true });
+  fs.mkdirSync(stagingRoot, { recursive: true });
   fs.cpSync(path.join(rootDir, 'dist'), siteDir, { recursive: true });
 
   const provincePath = path.join(siteDir, 'data', 'provinces', `${info.slug}.json`);
@@ -179,21 +249,36 @@ async function main() {
 
   const appPath = path.join(siteDir, 'app.js');
   fs.appendFileSync(appPath, `\n;(() => { const q = new URLSearchParams(location.search).get('previewSearch'); if (!q) return; const run = () => { const el = document.getElementById('global-search'); if (!el) return setTimeout(run, 200); el.value = q; el.dispatchEvent(new Event('input', { bubbles: true })); }; setTimeout(run, 500); })();\n`, 'utf8');
-  const previewUrl = `http://127.0.0.1:${port}`;
   const previewItems = [...additions, ...previewOverrides];
+  // 所有数据校验通过后才停止旧预览；失败时旧预览仍可继续验收。
+  stopAllPreviousPreviews();
+  await new Promise(resolve => setTimeout(resolve, 250));
+  if (fs.existsSync(previewRoot)) fs.rmSync(previewRoot, { recursive: true, force: true });
+  fs.renameSync(stagingRoot, previewRoot);
+  siteDir = path.join(previewRoot, 'site');
+  const service = await startPreviewService(siteDir, port, `lvyoumap-preview-${info.slug}`);
+  const previewUrl = `http://127.0.0.1:${service.port}`;
   fs.writeFileSync(path.join(siteDir, 'preview.html'), previewHtml(previewItems, previewUrl, packageData.warnings || []), 'utf8');
-
-  const child = spawn(process.execPath, [path.join('server', 'index.js')], {
-    cwd: rootDir,
-    detached: true,
-    stdio: 'ignore',
-    windowsHide: true,
-    env: { ...process.env, HOST: '127.0.0.1', PORT: String(port), STATIC_DIR: siteDir, SERVICE_NAME: `lvyoumap-preview-${info.slug}` },
-  });
-  child.unref();
-  await waitForHealth(`${previewUrl}/api/health`);
-  const state = { province, slug: info.slug, pid: child.pid, port, siteDir, previewUrl: `${previewUrl}/preview.html`, status: 'ready', generatedAt: new Date().toISOString(), buildFingerprint: previewBuildFingerprint(), attractionIds: previewItems.map(item => item.id), ratingMode: localEnvHasAmapKey() ? 'live-amap-enabled' : 'local-snapshot' };
+  const state = { province, slug: info.slug, pid: service.child.pid, port: service.port, siteDir, previewUrl: `${previewUrl}/preview.html`, status: 'ready', generatedAt: new Date().toISOString(), buildFingerprint: previewBuildFingerprint(), attractionIds: previewItems.map(item => item.id), ratingMode: localEnvHasAmapKey() ? 'live-amap-enabled' : 'local-snapshot', selfHealActions };
   writeJson(statePath, state);
+  const progressPath = path.join(runtimeDir, 'xhs-lazy-progress.json');
+  const progress = readJson(progressPath, {});
+  if (!progress.scope || String(progress.scope).startsWith(province)) {
+    writeJsonAtomic(progressPath, {
+      ...progress,
+      status: 'preview_ready',
+      stage: 'preview',
+      message: `隔离预览已就绪：${state.previewUrl}。回到总控再次选择该省完成最终确认。`,
+      scope: `${province}核心景点完整补全`,
+      index: 7,
+      total: 7,
+      percent: 100,
+      success: previewItems.length,
+      failed: 0,
+      previewUrl: state.previewUrl,
+      updatedAt: new Date().toISOString(),
+    });
+  }
   console.log(`${province}隔离预览已生成：新增 ${additions.length}，增强现有 ${previewOverrides.length}。`);
   console.log(`预览清单：${state.previewUrl}`);
   console.log('预览不会修改 beta 正式数据。');

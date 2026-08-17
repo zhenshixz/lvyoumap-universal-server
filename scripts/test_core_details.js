@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseCtripHtml, sameIdentity } = require('./collect_core_details');
+const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, sameIdentity } = require('./collect_core_details');
 const { localAmapRating } = require('./core_rating_evidence');
 
 const cases = [
@@ -16,8 +16,10 @@ for (const [candidate, item] of cases) {
 assert(!sameIdentity('上海欢乐谷', { name: '北京欢乐谷', city: '北京' }), '异地同类景点不得误合并');
 assert(allAliases({ name: '八达岭—慕田峪长城旅游区' }).includes('慕田峪长城'), '复合景区应产生组成景点别名');
 assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}, {}], routes: [{}, {}], image: { localPath: '/a.jpg', downloadUrl: 'https://example.com/a.jpg' } }), '完整断点应可复用');
-assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}], routes: [{}, {}], image: { localPath: '/assets/images/default-thumbnail.jpg', placeholder: true } }), '单一来源与明确占位图应作为非阻断警告进入隔离预览');
+assert(!completeEvidence({ address: '地址', description: '介绍', sources: [{}], routes: [{}, {}], image: { localPath: '/assets/images/default-thumbnail.jpg', placeholder: true } }), '占位图不得被判定为完整资料');
 assert(!completeEvidence({ address: '地址', sources: [{}] }), '残缺断点不得误判完成');
+assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小三峡'), '全角连接符复合景区应产生组成景点别名');
+assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小小三峡'), '全角连接符复合景区应保留第二个组成景点别名');
 assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
 assert(imageIdentityTokens({ name: '天津之眼摩天轮', city: '天津' }).includes('天津之眼'), '设施型景点图片搜索应同时保留实体主干');
 const imagePage = {
@@ -30,6 +32,11 @@ const mapPage = {
   imageinfo: [{ width: 3000, height: 2000, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' } } }],
 };
 assert(commonsSemanticScore(mapPage, { name: '武康路街区', city: '上海' }) < 0, '地图和导览图不得作为景点实景图');
+
+const bingFixture = '<a class="iusc" m="{&quot;murl&quot;:&quot;https://example.com/scenic.jpg&quot;,&quot;purl&quot;:&quot;https://example.com/page&quot;,&quot;t&quot;:&quot;小三峡实景&quot;}"></a>';
+assert.deepStrictEqual(parseBingImageResults(bingFixture), [{ imageUrl: 'https://example.com/scenic.jpg', sourceUrl: 'https://example.com/page', title: '小三峡实景' }], '公开图片搜索结果应解析原图和来源页');
+const baiduFixture = { data: [{ fromPageTitle: '<strong>天津之眼</strong>实景', width: 1920, height: 1080, replaceUrl: [{ ObjURL: 'https://example.com/tianjin-eye.jpg', FromURL: 'https://example.com/tianjin-eye' }] }] };
+assert.deepStrictEqual(parseBaiduImageResults(baiduFixture), [{ imageUrl: 'https://example.com/tianjin-eye.jpg', sourceUrl: 'https://example.com/tianjin-eye', title: '天津之眼实景', declaredWidth: 1920, declaredHeight: 1080 }], '百度图片结果应解析高清原图、来源页和实体标题');
 
 const ctripFixture = [
   '{"poiName":"目标景区","districtName":"北京","commentScore":4.7,"commentCount":321,"address":"目标地址","introduction":"目标介绍","imageUrl":"https://example.com/target.jpg"}',

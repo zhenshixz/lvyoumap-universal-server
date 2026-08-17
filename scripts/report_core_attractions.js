@@ -85,7 +85,10 @@ function getQuality(record) {
   };
   const basicSources = record.source_evidence?.basicInfoSources;
   const sourceCount = Array.isArray(basicSources) ? basicSources.length : 0;
-  const sourceComplete = record.dataLayer !== 'manual' || sourceCount >= 2;
+  const reviewedSingleSource = record.dataLayer === 'manual'
+    && sourceCount === 1
+    && record.quality_status?.reviewRequired === true;
+  const sourceComplete = record.dataLayer !== 'manual' || sourceCount >= 2 || reviewedSingleSource;
   const imageSourceComplete = Boolean(record.image_source?.sourceUrl && record.image_source?.license);
   const imageResolvable = /^https?:\/\//i.test(String(record.image || ''))
     || (String(record.image || '').startsWith('/') && fs.existsSync(path.join(rootDir, String(record.image).replace(/^\//, ''))));
@@ -98,6 +101,7 @@ function getQuality(record) {
   for (const [key, value] of Object.entries(guideChecks)) if (!value) issues.push(`guide.${key}`);
   for (const [key, value] of Object.entries(lazyChecks)) if (!value) issues.push(`lazy.${key}`);
   if (!sourceComplete) issues.push('source.basicInfo');
+  else if (reviewedSingleSource) issues.push('source.basicInfoSingleSource');
   else if (sourceCount === 0) issues.push('source.basicInfoTraceability');
   if (!imageResolvable) issues.push('image.unresolvable');
   if (!imageSourceComplete) issues.push('image.sourceOrLicense');

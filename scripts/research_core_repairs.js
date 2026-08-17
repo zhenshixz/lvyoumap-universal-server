@@ -191,9 +191,8 @@ function imageDimensions(filePath) {
 }
 
 async function ensureVerifiedImage(verified, imageTarget) {
-  if (verified.image?.placeholder) {
-    if (!fs.existsSync(imageTarget)) throw new Error('项目通用占位图不存在');
-    return;
+  if (verified.image?.placeholder || /default-thumbnail/i.test(verified.image?.localPath || '') || !verified.image?.downloadUrl) {
+    throw new Error('真实景点图片尚未补齐；该景点已保留为可续跑断点');
   }
   const validExisting = () => {
     if (!fs.existsSync(imageTarget)) return false;
@@ -400,12 +399,8 @@ async function main() {
     try {
       await ensureVerifiedImage(verified, imageTarget);
       const dimensions = imageDimensions(imageTarget);
-      if (!verified.image?.placeholder) {
-        if (!dimensions || dimensions.width < 1200 || dimensions.height < 700) throw new Error(`真实尺寸不足（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
-        if (fs.statSync(imageTarget).size < 100 * 1024) throw new Error('图片文件过小');
-      } else {
-        warnings.push(`${workspaceItem.name}：隔离预览暂用通用占位图，正式发布前建议补充授权实景图`);
-      }
+      if (!dimensions || dimensions.width < 1200 || dimensions.height < 700) throw new Error(`真实尺寸不足（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
+      if (fs.statSync(imageTarget).size < 100 * 1024) throw new Error('图片文件过小');
       verified.image.width = dimensions.width;
       verified.image.height = dimensions.height;
       const item = buildAttraction(workspaceItem, verified, foods, lazy);

@@ -10,6 +10,7 @@ assert.equal(classifyStageResult({ status: 1, detail: '小红书登录状态失�
 assert.equal(classifyStageResult({ status: 1, detail: '小红书当前限制访问。' }).kind, 'user_action');
 assert.equal(classifyStageResult({ status: 1, detail: 'SyntaxError: Unexpected token' }).kind, 'hard');
 assert.equal(stagePolicy('xhs_lazy_guides.js').maxAttempts, 2);
-assert.equal(stagePolicy('generate_core_preview.js').maxAttempts, 1);
+assert.equal(stagePolicy('generate_core_preview.js').maxAttempts, 2);
+assert.equal(classifyStageResult({ status: 1, detail: 'listen EADDRINUSE 127.0.0.1:3108' }).kind, 'retryable');
 
 console.log('Pipeline resilience tests passed.');

@@ -2,7 +2,7 @@ const USER_ACTION_STATUSES = new Set(['login_required', 'restricted']);
 const SAFE_STOP_STATUSES = new Set(['stopped']);
 
 const retryablePatterns = [
-  /timeout|timed out|econnreset|econnrefused|enotfound|socket hang up/i,
+  /timeout|timed out|econnreset|econnrefused|enotfound|eaddrinuse|ebusy|eperm|socket hang up/i,
   /network|navigation|target closed|browser.*closed/i,
   /退出码\s*2|待续跑|回答不完整|部分来源暂未取到/u,
 ];
@@ -52,6 +52,7 @@ function stagePolicy(script) {
     'collect_secondary_core_evidence.js': { maxAttempts: 2, delayMs: 1800 },
     'collect_mct_core_candidates.js': { maxAttempts: 2, delayMs: 1800 },
     'collect_ota_core_candidates.js': { maxAttempts: 2, delayMs: 1800 },
+    'generate_core_preview.js': { maxAttempts: 2, delayMs: 800 },
   };
   return policies[script] || { maxAttempts: 1, delayMs: 0 };
 }

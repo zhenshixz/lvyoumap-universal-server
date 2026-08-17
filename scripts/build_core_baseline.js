@@ -142,12 +142,26 @@ function mergeDuplicateAttractions(items) {
     const existing = merged.find(candidate => (
       (item.preferredId && candidate.preferredId === item.preferredId)
       || (canonical && normalizeName(candidate.name) === canonical && citiesCompatible(candidate.city, item.city))
+      || (() => {
+        const candidateCanonical = normalizeName(candidate.name);
+        const oneNameContainsTheOther = canonical.length >= 3
+          && candidateCanonical.length >= 3
+          && (canonical.endsWith(candidateCanonical) || candidateCanonical.endsWith(canonical));
+        const hasOfficialIdentity = [...(item.basis || []), ...(candidate.basis || [])].includes('official_5a');
+        return oneNameContainsTheOther && hasOfficialIdentity && citiesCompatible(candidate.city, item.city);
+      })()
     ));
     if (!existing) {
       merged.push(item);
       continue;
     }
-    existing.aliases = [...new Set([...(existing.aliases || []), item.name, ...(item.aliases || [])])];
+    const previousName = existing.name;
+    if (!existing.preferredId && item.preferredId) {
+      existing.name = item.name;
+      existing.preferredId = item.preferredId;
+      existing.city = item.city || existing.city;
+    }
+    existing.aliases = [...new Set([...(existing.aliases || []), previousName, item.name, ...(item.aliases || [])])];
     existing.basis = [...new Set([...(existing.basis || []), ...(item.basis || [])])];
     existing.evidence = [...new Set([...(existing.evidence || []), ...(item.evidence || [])])];
     mergedNames.push({ kept: existing.name, merged: item.name, preferredId: existing.preferredId || '' });

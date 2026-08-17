@@ -1,0 +1,1073 @@
+{
+  "province": "重庆",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/chongqing158.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 18,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 12,
+  "officialResortCandidateCount": 3,
+  "popularityCount": 22,
+  "existingRecordBoundCount": 4,
+  "existingRecordUnboundCount": 29,
+  "existingRecordUnboundNames": [
+    "武陵山大裂谷景区",
+    "濯水景区",
+    "龙缸景区",
+    "四面山景区",
+    "金佛山景区",
+    "万盛黑山谷-龙鳞石海风景区",
+    "桃花源旅游景区",
+    "小三峡－小小三峡旅游区",
+    "大足石刻景区",
+    "黑山谷风景区",
+    "两江小渡",
+    "重庆欢乐谷",
+    "重庆建川海疆博物馆",
+    "重庆动物园",
+    "洪崖洞民俗风貌区",
+    "武隆喀斯特旅游区",
+    "长江索道",
+    "解放碑步行街",
+    "三峡博物馆",
+    "洪崖洞",
+    "湖广会馆",
+    "磁器口古镇",
+    "南山一棵树",
+    "人民大礼堂",
+    "山城巷",
+    "南滨路",
+    "巴蜀古代建筑博物馆",
+    "石柱黄水旅游度假区",
+    "仙女山旅游度假区"
+  ],
+  "mergedDuplicateCount": 1,
+  "mergedDuplicates": [
+    {
+      "kept": "武隆喀斯特旅游区",
+      "merged": "喀斯特旅游区",
+      "preferredId": "manual_chongqing_df2d366a"
+    }
+  ],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "武隆天生三桥",
+      "city": "",
+      "aliases": [
+        "武隆天生三桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "武隆天生三桥",
+      "city": "",
+      "aliases": [
+        "武隆天生三桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "龙门浩老街",
+      "city": "重庆",
+      "aliases": [
+        "龙门浩老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "涪陵816核工厂",
+      "city": "重庆",
+      "aliases": [
+        "涪陵816核工厂"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "金刚碑古村",
+      "city": "重庆",
+      "aliases": [
+        "金刚碑古村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "武隆天生三桥",
+      "city": "",
+      "aliases": [
+        "武隆天生三桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "龙门浩老街",
+      "city": "重庆",
+      "aliases": [
+        "龙门浩老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "涪陵816核工厂",
+      "city": "重庆",
+      "aliases": [
+        "涪陵816核工厂"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "金刚碑古村",
+      "city": "重庆",
+      "aliases": [
+        "金刚碑古村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 18,
+    "verifiedCount": 14,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": [
+      "武隆天生三桥 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "龙门浩老街 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_b753ebad95",
+      "name": "武陵山大裂谷景区",
+      "preferredId": "manual_chongqing_f7f30cb4",
+      "aliases": [
+        "武陵山大裂谷景区",
+        "武陵山大裂谷"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_068b4e40a8",
+      "name": "白帝城•瞿塘峡景区",
+      "preferredId": "amap_B001707JK6",
+      "aliases": [
+        "白帝城•瞿塘峡景区",
+        "白帝城•瞿塘峡"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_88613d279d",
+      "name": "濯水景区",
+      "preferredId": "manual_chongqing_c5bced2b",
+      "aliases": [
+        "濯水景区",
+        "濯水"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_71641650b6",
+      "name": "阿依河景区",
+      "preferredId": "amap_B00178XI6D",
+      "aliases": [
+        "阿依河景区",
+        "阿依河"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_94c37d6414",
+      "name": "龙缸景区",
+      "preferredId": "manual_chongqing_371c39f0",
+      "aliases": [
+        "龙缸景区",
+        "龙缸"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_40ee136da8",
+      "name": "四面山景区",
+      "preferredId": "manual_chongqing_3b5b7c42",
+      "aliases": [
+        "四面山景区",
+        "四面山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_95a441cace",
+      "name": "金佛山景区",
+      "preferredId": "manual_chongqing_8e2e0927",
+      "aliases": [
+        "金佛山景区",
+        "金佛山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_b434dd2b06",
+      "name": "万盛黑山谷-龙鳞石海风景区",
+      "preferredId": "manual_chongqing_77aae67c",
+      "aliases": [
+        "万盛黑山谷-龙鳞石海风景区",
+        "万盛黑山谷-龙鳞石海",
+        "万盛黑山谷",
+        "龙鳞石海"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_4e4cdc388c",
+      "name": "桃花源旅游景区",
+      "preferredId": "manual_chongqing_d8bedb9e",
+      "aliases": [
+        "桃花源旅游景区",
+        "桃花源"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_ef72b16f95",
+      "name": "小三峡－小小三峡旅游区",
+      "preferredId": "manual_chongqing_6bf561ee",
+      "aliases": [
+        "小三峡－小小三峡旅游区",
+        "小三峡－小小三峡"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_aa95b91208",
+      "name": "大足石刻景区",
+      "preferredId": "manual_chongqing_b47de5fd",
+      "aliases": [
+        "大足石刻景区",
+        "大足石刻"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_e1618786ef",
+      "name": "黑山谷风景区",
+      "preferredId": "manual_chongqing_de89188",
+      "aliases": [
+        "黑山谷风景区",
+        "黑山谷"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B001786WBL",
+          "name": "黑山谷风景区",
+          "city": "重庆市",
+          "type": "风景名胜;风景名胜;国家级景点",
+          "url": "https://www.amap.com/place/B001786WBL",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_760db3ca90",
+      "name": "两江小渡",
+      "preferredId": "manual_chongqing_e15622ac",
+      "aliases": [
+        "两江小渡"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0H0T7PE92",
+          "name": "两江小渡",
+          "city": "重庆市",
+          "type": "风景名胜;风景名胜相关;旅游景点",
+          "url": "https://www.amap.com/place/B0H0T7PE92",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_71fedcc4ed",
+      "name": "重庆欢乐谷",
+      "preferredId": "manual_chongqing_e245886d",
+      "aliases": [
+        "重庆欢乐谷"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFHN5PG7",
+          "name": "重庆欢乐谷",
+          "city": "重庆市",
+          "type": "体育休闲服务;休闲场所;游乐场",
+          "url": "https://www.amap.com/place/B0FFHN5PG7",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_372aa2278e",
+      "name": "重庆建川海疆博物馆",
+      "preferredId": "manual_chongqing_210cfbf7",
+      "aliases": [
+        "重庆建川海疆博物馆"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0H2MZ18OP",
+          "name": "重庆建川海疆博物馆",
+          "city": "重庆市",
+          "type": "科教文化服务;博物馆;博物馆",
+          "url": "https://www.amap.com/place/B0H2MZ18OP",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_410931fae8",
+      "name": "重庆动物园",
+      "preferredId": "manual_chongqing_adf89f93",
+      "aliases": [
+        "重庆动物园"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6d22d822b7",
+      "name": "洪崖洞民俗风貌区",
+      "preferredId": "manual_chongqing_c7f18736",
+      "aliases": [
+        "洪崖洞民俗风貌区"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFG8V7SH",
+          "name": "洪崖洞民俗风貌区",
+          "city": "重庆市",
+          "type": "风景名胜;风景名胜;风景名胜",
+          "url": "https://www.amap.com/place/B0FFG8V7SH",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_aa6bf6ebf2",
+      "name": "武隆喀斯特旅游区",
+      "preferredId": "manual_chongqing_df2d366a",
+      "aliases": [
+        "武隆喀斯特旅游区",
+        "武隆喀斯特"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d0d9952abe",
+      "name": "长江索道",
+      "preferredId": "manual_chongqing_cfeae3e2",
+      "aliases": [
+        "长江索道"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c56e1c94a2",
+      "name": "解放碑步行街",
+      "preferredId": "manual_chongqing_37dbafb4",
+      "aliases": [
+        "解放碑步行街"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_35c8bf0470",
+      "name": "三峡博物馆",
+      "preferredId": "manual_chongqing_60df849f",
+      "aliases": [
+        "三峡博物馆"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 3,
+          "name": "三峡博物馆",
+          "url": "https://you.ctrip.com/sight/chongqing158/45804.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_1f5050946c",
+      "name": "洪崖洞",
+      "preferredId": "manual_chongqing_5ed92eee",
+      "aliases": [
+        "洪崖洞"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 1,
+          "name": "洪崖洞民俗风貌区",
+          "url": "https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_083c0d9780",
+      "name": "湖广会馆",
+      "preferredId": "manual_chongqing_e7aae751",
+      "aliases": [
+        "湖广会馆"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 2,
+          "name": "重庆湖广会馆",
+          "url": "https://you.ctrip.com/sight/chongqing158/43819.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b39660751a",
+      "name": "磁器口古镇",
+      "preferredId": "manual_chongqing_d45f0f3f",
+      "aliases": [
+        "磁器口古镇"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 2,
+          "name": "磁器口古镇",
+          "url": "https://you.ctrip.com/sight/chongqing158/43811.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c805429cd6",
+      "name": "南山一棵树",
+      "preferredId": "manual_chongqing_8ad4f7ab",
+      "aliases": [
+        "南山一棵树"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 6,
+          "name": "南山一棵树观景台",
+          "url": "https://you.ctrip.com/sight/chongqing158/45792.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fa8671aabf",
+      "name": "人民大礼堂",
+      "preferredId": "manual_chongqing_7a5b9c32",
+      "aliases": [
+        "人民大礼堂"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 1,
+          "name": "人民大礼堂",
+          "url": "https://you.ctrip.com/sight/chongqing158/10395.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4b298c3f86",
+      "name": "山城巷",
+      "preferredId": "manual_chongqing_cdb45d6e",
+      "aliases": [
+        "山城巷"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 5,
+          "name": "山城巷历史文化风貌区",
+          "url": "https://you.ctrip.com/sight/chongqing158/65963918.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_06b9c08127",
+      "name": "南滨路",
+      "preferredId": "manual_chongqing_5c1a73f",
+      "aliases": [
+        "南滨路"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "重庆",
+          "page": 5,
+          "name": "南滨路",
+          "url": "https://you.ctrip.com/sight/chongqing158/132848.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_53ffe7b83d",
+      "name": "巴蜀古代建筑博物馆",
+      "preferredId": "manual_chongqing_d4bb1ed2",
+      "aliases": [
+        "巴蜀古代建筑博物馆"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFILAM16",
+          "name": "巴蜀古代建筑博物馆",
+          "city": "重庆市",
+          "type": "科教文化服务;博物馆;博物馆",
+          "url": "https://www.amap.com/place/B0FFILAM16",
+          "verifiedAt": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "key": "core_da57122d2b",
+      "name": "乌江画廊",
+      "preferredId": "amap_B0FFIGDZNT",
+      "aliases": [
+        "乌江画廊",
+        "乌江画廊景区"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 10
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_52968aaab2",
+      "name": "重庆丰都南天湖旅游度假区",
+      "preferredId": "amap_B0H3DURBUA",
+      "aliases": [
+        "重庆丰都南天湖旅游度假区"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4b490910f8",
+      "name": "石柱黄水旅游度假区",
+      "preferredId": "manual_chongqing_286c6146",
+      "aliases": [
+        "石柱黄水旅游度假区"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_947576d2ab",
+      "name": "仙女山旅游度假区",
+      "preferredId": "manual_chongqing_fc9f182a",
+      "aliases": [
+        "仙女山旅游度假区"
+      ],
+      "city": "重庆",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

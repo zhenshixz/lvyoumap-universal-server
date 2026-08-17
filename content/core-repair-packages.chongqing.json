@@ -1,0 +1,3340 @@
+{
+  "province": "重庆",
+  "status": "applied",
+  "createdAt": "2026-08-14T08:11:30.255Z",
+  "updatedAt": "2026-08-14T09:46:57.128Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "石柱黄水旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.chongqing.json",
+  "attractions": [
+    {
+      "baselineKey": "core_b753ebad95",
+      "id": "manual_chongqing_f7f30cb4",
+      "name": "武陵山大裂谷景区",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/chongqing_f7f30cb4_verified.jpg",
+      "description": "武陵山大裂谷景区位于重庆市涪陵区城东南约40公里的武陵山乡境内，武陵山系西北尾端，乌江下游东岸，景区创建面积9平方公里。景区平均海拔1300米，最高处1980米，山势奇峻多姿，原生植被丰富，种类繁多，共有2000余种野生植物和200余种野生动物；空气清新宜人，生态环境优良，山、林、泉、洞、瀑、崖、湖、潭、峡、坑、缝一应俱全，旅游资源十分丰富。",
+      "intro": "武陵山大裂谷景区位于重庆市涪陵区城东南约40公里的武陵山乡境内，武陵山系西北尾端，乌江下游东岸，景区创建面积9平方公里。景区平均海拔1300米，最高处1980米，山势奇峻多姿，原生植被丰富，种类繁多，共有2000余种野生植物和200余种野生动物；空气清新宜人，生态环境优良，山、林、泉、洞、瀑、崖、湖、潭、峡、坑、缝一应俱全，旅游资源十分丰富。",
+      "level": "5A景区",
+      "category": "自然峡谷/避暑徒步",
+      "tags": [
+        "自然峡谷/避暑徒步",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市涪陵区武陵乡",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“武陵山大裂谷游客中心”，重庆主城出发约2小时；公共交通可乘高铁至涪陵北站后转乘景区直通车。",
+          "internal_arrive": "自驾推荐停D区停车场或小车停车场，紧邻游客中心，下车即入园；公共交通需在游客中心取票并换乘摆渡车。",
+          "internal_traffic": "摆渡车（游客中心往返入口）+ 索道（上下行）+ 观光电瓶车（峡谷内平路段），建议购买全套套票，省力且不走回头路。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "预算充足可选景区内武陵云海国际酒店或枳人客栈（步行10分钟入园）；性价比之选为山下的白涛镇民宿，餐饮选择较多。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程几乎无爬坡，索道加电瓶车规避陡峭山路，穿防滑鞋并带薄外套防地缝着凉",
+          "children": "沿途可见野生猕猴和萌宠，需全程看护，保持安全距离不投喂逗弄。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力小环线（精华直达）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "摆渡车",
+            "塘垭口下行索道",
+            "观光电瓶车",
+            "情人谷",
+            "青天峡地缝",
+            "老君洞",
+            "时空隧道",
+            "平安阁上行索道",
+            "摆渡车返程"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "小环线避开3公里陡坡，直击地缝精华；晴天官方当日建议时段-官方当日建议时段在地缝可拍到丁达尔光束，建议卡点进谷。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 武陵山大裂谷景区：https://www.amap.com/place/B00170I3ZA"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 武陵山大裂谷景区",
+          "url": "https://www.amap.com/place/B00170I3ZA",
+          "poiId": "B00170I3ZA",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "武陵山大裂谷景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B00170I3ZA",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_88613d279d",
+      "id": "manual_chongqing_c5bced2b",
+      "name": "濯水景区",
+      "city": "重庆",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/chongqing_c5bced2b_verified.jpg",
+      "description": "濯水景区地处乌江第一大支流——阿蓬江畔，为阿蓬江国家湿地公园的重要组成部分。景区内江河交汇，濯水古镇风华悠远，风雨廊桥跨江河、连两岸、通三地，蒲花暗河蜿蜒曲折，婀娜多姿，水上三桥犹如鬼斧神工。",
+      "intro": "濯水景区地处乌江第一大支流——阿蓬江畔，为阿蓬江国家湿地公园的重要组成部分。景区内江河交汇，濯水古镇风华悠远，风雨廊桥跨江河、连两岸、通三地，蒲花暗河蜿蜒曲折，婀娜多姿，水上三桥犹如鬼斧神工。",
+      "level": "5A景区",
+      "category": "5A级古镇与喀斯特自然景区",
+      "tags": [
+        "5A级古镇与喀斯特自然景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市黔江区濯水镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“濯水古镇景区游客中心”；高铁至黔江站后，在武陵山旅游集散中心乘大巴（费用以官方当日公告为准）直达古镇。",
+          "internal_arrive": "自驾车建议停在游客中心停车场，换乘景区摆渡车前往各景点，避免山路驾驶；公共交通游客可直接在古镇服务站开始行程。",
+          "internal_traffic": "景区游客中心与蒲花暗河之间有摆渡大巴；暗河出口返回时可选乘电瓶车或小火车，建议在风雨廊桥站点下车以便直接进入古镇。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐入住濯水古镇内的民宿或酒店，方便欣赏风雨廊桥夜景及感受清晨宁静，部分民宿顶楼可俯瞰廊桥全貌。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "古镇青石板路平缓，风雨廊桥可坐着吹风休息，蒲花暗河多为下坡路，整体对长辈较友好，但平衡感较差的老人需谨慎行走台阶",
+          "children": "暗河乘船体验像地心探险，孩子通常很喜欢，古镇内也可体验复古小火车环线，全程穿救生衣，安全平稳。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古镇人文+暗河探秘省力一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "濯水古镇青石板老街与土家吊脚楼",
+            "濯水风雨廊桥（白天观景）",
+            "蒲花暗河（乘船穿越地下河与天生三桥）",
+            "濯水风雨廊桥（夜间赏灯）"
+          ],
+          "duration": "半天",
+          "walking": "约5公里（蒲花暗河段多为下坡台阶，古镇段平缓）",
+          "physical": 2,
+          "tips": [
+            "蒲花暗河全程约2小时，乘船仅10分钟但沿途溶洞景观震撼；洞内恒温22℃且光线暗，建议穿防滑鞋并带薄外套；节假日可考虑乘坐玻璃滑梯（费用以官方当日公告为准）直通渡口以缩短排队时间。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 濯水景区：https://www.amap.com/place/B0G2AC5J5Z"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 濯水景区",
+          "url": "https://www.amap.com/place/B0G2AC5J5Z",
+          "poiId": "B0G2AC5J5Z",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "濯水景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0G2AC5J5Z",
+        "width": 2848,
+        "height": 1509
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_94c37d6414",
+      "id": "manual_chongqing_371c39f0",
+      "name": "龙缸景区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_371c39f0_verified.jpg",
+      "description": "龙缸是一个长轴距离304～326米、短轴距离178～183米、深度达335米的椭圆形天坑，这一深度位居中国第三位，世界第五位。缸内壁如削，壁缝松柏横卧，古藤倒垂，缸底四季吐翠，百鸟争鸣。",
+      "intro": "龙缸是一个长轴距离304～326米、短轴距离178～183米、深度达335米的椭圆形天坑，这一深度位居中国第三位，世界第五位。缸内壁如削，壁缝松柏横卧，古藤倒垂，缸底四季吐翠，百鸟争鸣。",
+      "level": "5A景区",
+      "category": "自然地质/5A景区",
+      "tags": [
+        "自然地质/5A景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市云阳县清水土家族自治乡",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“云阳龙缸景区北门”或“南门”，重庆主城出发约3.5至4小时；公共交通可乘高铁至云阳站，再转乘景区直通车或大巴（滚动发车，末班约官方当日建议时段）。",
+          "internal_arrive": "推荐从北门进入，配套设施更完善；若遇节假日北门停车场饱和，可听从工作人员指引从南门进入。",
+          "internal_traffic": "景区观光车必买，费用以官方当日公告为准不限次数乘坐，可覆盖主要景点接驳，大幅节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区北门附近有多家民宿和酒店，假期政府会管控价格，食宿选择适中；若追求更多餐饮选择，可返回云阳县城住宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "以观光车接驳为主，重点游览龙洞（恒温避暑）和云端廊桥，避开陡峭爬升路段",
+          "children": "可体验云端飞车等温和刺激项目，在戏猴台观赏温顺猕猴，沿途栈道平缓适合亲子轻徒步。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力精华游（观光车+轻徒步）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "天河广场",
+            "观光车",
+            "云端廊桥",
+            "返回天河广场",
+            "观光车",
+            "龙洞",
+            "戏猴台",
+            "龙缸天坑",
+            "映月洞",
+            "月影栈道",
+            "牵手栈道",
+            "天河广场"
+          ],
+          "duration": "半天",
+          "walking": "约3公里（多为平缓步道和缓下坡）",
+          "physical": 2,
+          "tips": [
+            "观光车是省力核心，在天河广场可分两线乘坐，建议上午先走云端廊桥线，下午走龙缸天坑线，路线顺畅不走回头路。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆云阳龙缸景区游玩指南 🌟 景区基本信息: 云阳龙缸景区距离县城",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4315564516757956566",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4315564516757956566",
+        "width": 1200,
+        "height": 1569
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_40ee136da8",
+      "id": "manual_chongqing_3b5b7c42",
+      "name": "四面山景区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_3b5b7c42_verified.jpg",
+      "description": "四面山风景区拥有“丹霞地貌”的特征，极具观赏价值。四面山风景区主要有望乡台、土地岩、龙潭湖、洪海、珍珠湖等核心景区，自然景观独特、生态环境优美、旅游资源丰富，是休闲度假优选的旅游目的地。",
+      "intro": "四面山风景区拥有“丹霞地貌”的特征，极具观赏价值。四面山风景区主要有望乡台、土地岩、龙潭湖、洪海、珍珠湖等核心景区，自然景观独特、生态环境优美、旅游资源丰富，是休闲度假优选的旅游目的地。",
+      "level": "5A景区",
+      "category": "自然山水、避暑度假、亲子徒步",
+      "tags": [
+        "自然山水、避暑度假、亲子徒步",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市江津区四面山镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "重庆主城自驾约1.5至2小时；公共交通可乘轻轨至江跳线圣泉寺站，再换乘景区大巴或顺风车。",
+          "internal_arrive": "推荐导航至四面山游客中心（北门）或东门，北门配套齐全且靠近核心景点，东门靠近大洪海，吃饭住宿选择更多。",
+          "internal_traffic": "景区景点分散，强烈建议自驾；若不自驾，可在游客中心乘坐景交车前往各景点，单程费用以官方当日公告为准。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "大洪海周边（如山林度假酒店、碧水山庄）适合家庭躺平避暑，配套农家乐多；四面山镇（东门/北门附近）餐饮选择更丰富。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "优先选择望乡台栈道、大洪海坐船等平缓路线，避免水口寺等需要长时间爬坡下坡的景点",
+          "children": "珍珠湖浅滩玩水安全且有大树遮阴，龙潭湖乘船观猴趣味性强，但需全程看护并收好随身物品。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭休闲省力一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "望乡台瀑布（乘电瓶车入园，走平缓栈道观瀑）",
+            "珍珠湖（浅滩踩水",
+            "丛林淘气堡）",
+            "龙潭湖猴公园（乘船游湖",
+            "观野生猕猴）"
+          ],
+          "duration": "半天",
+          "walking": "约3公里（多为平缓栈道或石板路）",
+          "physical": 2,
+          "tips": [
+            "景区内可自驾直达各景点，建议直接导航北门或东门，每个景点停车费费用以官方当日公告为准；望乡台较合适时段最容易看到彩虹，建议上午前往。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "寻龙道亲子徒步体验",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心（北门）乘船",
+            "猴公园",
+            "四条石龙",
+            "竹林秘境",
+            "终点领奖牌"
+          ],
+          "duration": "半天",
+          "walking": "约9公里（全程石板路，部分陡坡）",
+          "physical": 3,
+          "tips": [
+            "适合有徒步经验的大童家庭，中途有补给点但厕所较少，建议自备饮水和零食，切勿手提零食以免被猴子抢。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "Wikidata Q7517768 实体页：https://www.wikidata.org/wiki/Q7517768",
+          "高德地图 四面山景区：https://www.amap.com/place/B00170I91F"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "The Great Red Sea in Simian Mountain,Jiangjin,Chongqing.JPG",
+        "author": "Chen Hualin",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Great_Red_Sea_in_Simian_Mountain,Jiangjin,Chongqing.JPG",
+        "width": 2272,
+        "height": 1520
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_95a441cace",
+      "id": "manual_chongqing_8e2e0927",
+      "name": "金佛山景区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_8e2e0927_verified.jpg",
+      "description": "金佛山景区因喀斯特世界自然遗产、生物多样性、佛教文化三大奇观闻名于世。景区具有原始独特的自然风貌，雄险怪奇的岩体造型，神秘幽深的洞宫地府，变幻莫测的气象景观，惊险刺激的绝壁栈道，历史悠久的唐寺庙群，融山、水、林、泉、洞为一体，集雄、奇、险、秀于一身。",
+      "intro": "金佛山景区因喀斯特世界自然遗产、生物多样性、佛教文化三大奇观闻名于世。景区具有原始独特的自然风貌，雄险怪奇的岩体造型，神秘幽深的洞宫地府，变幻莫测的气象景观，惊险刺激的绝壁栈道，历史悠久的唐寺庙群，融山、水、林、泉、洞为一体，集雄、奇、险、秀于一身。",
+      "level": "5A景区",
+      "category": "山岳型自然风景区",
+      "tags": [
+        "山岳型自然风景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市南川区三泉镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至西坡、北坡或南门停车场；公共交通可乘高铁至南川北站，出站后换乘大巴前往景区。",
+          "internal_arrive": "家庭省力首选西坡或北坡，西坡景点更集中，北坡人相对较少；南门自驾虽可直接到山顶，但门票和交通费用较高。",
+          "internal_traffic": "景区观光大巴（往返费用以官方当日公告为准）、索道（往返费用以官方当日公告为准）、山顶观光车（费用以官方当日公告为准），建议购买套票更划算。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "山脚下天星小镇或南门周边民宿（性价比高，适合吃晚饭）；山顶有金佛山两江假日酒店等（方便看日出和避暑，但价格较高）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程以平路和缓坡为主，避免前往金佛顶等需爬陡梯的区域，在药池坝草甸休息即可",
+          "children": "云端步道沿途常有不怕人的小松鼠，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "西坡索道云端漫步省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西坡游客中心乘观光大巴至西坡索道下站乘坐索道上山金龟朝阳观景台云端步道（绝壁栈道）燕子洞灵观洞药池坝古佛洞药池坝乘山顶观光车至牵牛坪步行至西坡索道下站下山"
+          ],
+          "duration": "半天",
+          "walking": "约4至5公里（多为平路或缓坡）",
+          "physical": 2,
+          "tips": [
+            "索道通常在下午官方当日建议时段至官方当日建议时段左右停运，建议上午出发并控制游玩时间；古佛洞内温度极低，务必随身携带薄外套；山顶物价较高，建议自带饮用水和零食。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "北坡索道直达休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北坡索道下站乘索道上山药池坝草甸与湖泊古佛洞羊口洞云端步道金龟朝阳牵牛坪乘观光大巴返回北坡索道下站下山"
+          ],
+          "duration": "半天",
+          "walking": "约3至4公里",
+          "physical": 2,
+          "tips": [
+            "北坡全程依赖索道，无徒步登山道，适合完全不想爬坡的家庭；自驾需注意北坡停车场距离索道口较远，建议定位北坡索道下站。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "Wikidata Q3321893 实体页：https://www.wikidata.org/wiki/Q3321893",
+          "高德地图 金佛山国家风景名胜区：https://www.amap.com/place/B001786UY2"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Jinfoshan - 0216.jpg",
+        "author": "Shallowell",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jinfoshan_-_0216.jpg",
+        "width": 3648,
+        "height": 2736
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_b434dd2b06",
+      "id": "manual_chongqing_77aae67c",
+      "name": "万盛黑山谷-龙鳞石海风景区",
+      "city": "重庆",
+      "rating": 4.4,
+      "reviewsCount": "4664条携程点评",
+      "image": "/assets/images/attractions/chongqing_77aae67c_verified.jpg",
+      "description": "黑山谷风景区（Black Valley），国家AAAAA级旅游景区，森林公园，地质公园，中国休闲名山，中国绿色低碳旅游休闲胜地，亚洲大中华区具魅力风景名胜区，重庆市“巴渝新十二景”，重庆市环保示范景区。 \\n \\n景区地理坐标为东经106°58'26\\\"，北纬28°51'46\\\"，地处云贵高原向四川盆地过渡的大娄山余脉，位于重庆市万盛经济技术开发区黑山镇境内，距重庆城区63公里，景区面积100平方公里，山顶与谷底高差1200米，峡谷长1",
+      "intro": "黑山谷风景区（Black Valley），国家AAAAA级旅游景区，森林公园，地质公园，中国休闲名山，中国绿色低碳旅游休闲胜地，亚洲大中华区具魅力风景名胜区，重庆市“巴渝新十二景”，重庆市环保示范景区。 \\n \\n景区地理坐标为东经106°58'26\\\"，北纬28°51'46\\\"，地处云贵高原向四川盆地过渡的大娄山余脉，位于重庆市万盛经济技术开发区黑山镇境内，距重庆城区63公里，景区面积100平方公里，山顶与谷底高差1200米，峡谷长1",
+      "level": "5A景区",
+      "category": "自然山水与地质奇观",
+      "tags": [
+        "自然山水与地质奇观",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市万盛经开区黑山镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“黑山谷南门游客中心”；公共交通可在重庆四公里枢纽站乘坐直达大巴，车程约2小时。",
+          "internal_arrive": "自驾强烈推荐从南门进、北门出，全程下坡不费腿；若从北门进则全程上坡，对长辈和儿童极不友好。",
+          "internal_traffic": "景区内含三层交通，下行索道（南门至谷底）、观光车（叠翠楼至北门）、摆渡大巴（北门至游客中心或南门），可根据体力组合购买。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议入住万盛城区（靠近万盛老街，餐饮丰富）或黑山谷南门附近的民宿与酒店，方便次日入园。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "优先乘坐索道和观光车，减少膝盖磨损，穿防滑鞋并备薄外套",
+          "children": "在鲤鱼潭等浅滩安全玩水，备好换洗衣物和捞鱼网，全程注意栈道青苔防滑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "黑山谷南门进北门出省力穿越线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门入园",
+            "下行索道（可选）",
+            "神龙瀑布",
+            "神龙洞",
+            "糍粑房补给点",
+            "飞珠溅玉瀑布",
+            "渝黔分界桥",
+            "网红浮桥",
+            "飞鱼瀑",
+            "鲤鱼潭浅滩玩水",
+            "叠翠楼观光车乘车点",
+            "北门",
+            "北门游客中心"
+          ],
+          "duration": "半天",
+          "walking": "约7至8公里核心栈道",
+          "physical": 3,
+          "tips": [
+            "南门进全程下坡和平路最省力，叠翠楼之后约6公里为无风景柏油路，强烈建议乘坐观光车跳过；索道可省去1小时下坡石阶，但会错过部分瀑布景观，视体力取舍。"
+          ],
+          "sourceTitle": "携程旅行 万盛黑山谷-龙鳞石海风景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "龙鳞石海地表石林与溶洞休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门入园",
+            "香炉山",
+            "桃花坞",
+            "千塔林",
+            "石鼓广场",
+            "水石林",
+            "天门洞",
+            "北门"
+          ],
+          "duration": "半天",
+          "walking": "约5至6公里",
+          "physical": 3,
+          "tips": [
+            "天门洞为天然溶洞，每30分钟开放一次并由导游带领进入，参观约20分钟，需注意景区关门前的最后开放时间；香炉山部分路段台阶较陡，建议量力而行。"
+          ],
+          "sourceTitle": "携程旅行 万盛黑山谷-龙鳞石海风景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 万盛黑山谷-龙鳞石海风景区 详情页：https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "Wikidata Q56271834 实体页：https://www.wikidata.org/wiki/Q56271834"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 万盛黑山谷-龙鳞石海风景区 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "万盛黑山谷-龙鳞石海风景区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+        "width": 1668,
+        "height": 2500
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4e4cdc388c",
+      "id": "manual_chongqing_d8bedb9e",
+      "name": "桃花源旅游景区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_d8bedb9e_verified.jpg",
+      "description": "桃花源景区位于重庆避暑胜地酉阳县城近郊的大山之中，被认为是陶渊明《桃花源记》的原型地。景区由世外桃源、太古洞、酉州古城、桃花源国家森林公园、二酉山等等景点组成。",
+      "intro": "桃花源景区位于重庆避暑胜地酉阳县城近郊的大山之中，被认为是陶渊明《桃花源记》的原型地。景区由世外桃源、太古洞、酉州古城、桃花源国家森林公园、二酉山等等景点组成。",
+      "level": "5A景区",
+      "category": "自然风光、人文古迹、亲子研学",
+      "tags": [
+        "自然风光、人文古迹、亲子研学",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市酉阳土家族苗族自治县龙泉大道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至“桃花源广场”或“酉州古城南门停车场”，车位充足；若乘高铁可至酉阳站，再打车约25分钟到达；乘大巴可在重庆汽车总站坐车至酉阳后转乘公交。",
+          "internal_arrive": "强烈建议从南门进（导航桃花源广场），步行即入口。不要导航到游客中心，那里是出口，走过去比较远。",
+          "internal_traffic": "景区内有中转大巴（费用以官方当日公告为准）和迷你轻轨（费用以官方当日公告为准）可通往景区大门；内部还有观光车（费用以官方当日公告为准）可乘坐，建议合理利用接驳工具节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在酉阳县城或酉州古城周边，步行可达景区，晚餐和看夜景都更方便；若追求清幽，也可选择景区内的山林民宿，但需提前确认接驳车时间。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "优先选择省力休闲线，避开太古洞的长距离爬升，在村落中喝茶体验土家风情即可",
+          "children": "可以在潜村体验打糍粑、喂小动物，前半段的田园风光对孩子很有吸引力，但需注意洞内湿滑安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲线（不走太古洞）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "桃花源广场",
+            "酉州古城南门",
+            "山洞（世外桃源入口）",
+            "潜村",
+            "靖节村",
+            "五柳村",
+            "陶公祠",
+            "乘坐景区接驳车返回南门"
+          ],
+          "duration": "半天",
+          "walking": "约3000-4000步",
+          "physical": 2,
+          "tips": [
+            "这条路线主打轻松不费腿，全程在田园和村落中漫步，适合带长辈或小孩的家庭。如果不想走回头路，可以在陶公祠附近选择原路折返，或者在景区内乘坐接驳车回到南门取车。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "经典全景穿越线（含太古洞）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "桃花源广场",
+            "酉州古城南门",
+            "山洞",
+            "潜村",
+            "靖节村",
+            "五柳村",
+            "陶公祠",
+            "太古洞",
+            "北门出口",
+            "乘坐接驳车返回南门"
+          ],
+          "duration": "半天",
+          "walking": "约10000步以上",
+          "physical": 4,
+          "tips": [
+            "太古洞是单向通行，全长约3公里，洞内台阶较多且湿滑，恒温14-17度。建议穿防滑运动鞋，洞内带好饮水，体力一般的小朋友或长辈建议绕行，不要硬走。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "Wikidata Q910739 实体页：https://www.wikidata.org/wiki/Q910739"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "何以重庆丨酉阳:何处不是桃花源",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://news.sohu.com/a/938811440_121620820",
+        "sourceUrl": "http://news.sohu.com/a/938811440_121620820",
+        "width": 3690,
+        "height": 2460
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_aa6bf6ebf2",
+      "id": "manual_chongqing_df2d366a",
+      "name": "武隆喀斯特旅游区",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "4999条携程点评",
+      "image": "/assets/images/attractions/chongqing_df2d366a_verified.jpg",
+      "description": "武隆喀斯特旅游区位于重庆市武隆县境内，长江支流乌江下游，属于典型的喀斯特地貌，宏大的天生桥群、面积巨大的天坑、险峻幽深的地缝。你可以下到百米深的天坑内，向上仰望，四周绝壁如云；也可以去地缝中的谷底，沿着岩壁顺着暗河前行；感受自然的神奇。",
+      "intro": "武隆喀斯特旅游区位于重庆市武隆县境内，长江支流乌江下游，属于典型的喀斯特地貌，宏大的天生桥群、面积巨大的天坑、险峻幽深的地缝。你可以下到百米深的天坑内，向上仰望，四周绝壁如云；也可以去地缝中的谷底，沿着岩壁顺着暗河前行；感受自然的神奇。",
+      "level": "5A景区",
+      "category": "自然山水与喀斯特地貌",
+      "tags": [
+        "自然山水与喀斯特地貌",
+        "经典景点",
+        "官方名录",
+        "自然山水/喀斯特地貌"
+      ],
+      "address": "重庆市武隆区银杏大道32号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至武隆南站后换乘大巴，或自驾导航至仙女山游客中心",
+          "internal_arrive": "私家车不可直达景区，必须先在仙女山游客中心换乘统一中转大巴",
+          "internal_traffic": "景区间及内部依靠中转大巴与观光车，人满发车",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在仙女山镇（游客中心附近），餐饮便利且距景区近",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "天生三桥相对平缓，但龙水峡地缝台阶多且湿滑，长辈建议量力而行或在地缝中段折返",
+          "children": "地缝内水雾大易着凉，需备换洗衣物，全程注意防滑与安全"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "天坑地缝经典省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心乘景交车至天生三桥入口",
+            "乘坐80米旋转观光电梯直降谷底",
+            "天龙桥",
+            "天福官驿观景台",
+            "青龙桥",
+            "黑龙桥",
+            "乘电瓶车或步行出景区",
+            "换乘景交车至龙水峡地缝",
+            "沿峡谷栈道下行游览",
+            "银河飞瀑",
+            "一线天",
+            "出口乘大巴返回游客中心"
+          ],
+          "duration": "半天",
+          "walking": "约4-5公里（全程下坡为主，部分平路）",
+          "physical": 3,
+          "tips": [
+            "天生三桥出口有费用以官方当日公告为准观光车可选，带长辈或小孩建议乘坐，避免全程爬上行台阶消耗体力；地缝内瀑布水汽大，建议备雨披和防滑鞋。"
+          ],
+          "sourceTitle": "携程旅行 喀斯特旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/112663.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "仙女山休闲吸氧线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心换乘大巴前往仙女山",
+            "乘坐观光小火车抵达大草原",
+            "漫步波浪公路与跑马场",
+            "原路返回"
+          ],
+          "duration": "半天",
+          "walking": "约2小时",
+          "physical": 2,
+          "tips": [
+            "小火车仅停靠大草原和跑马场核心点，不想走路可全程坐车；夏季高山草原气温较低，需备薄外套。"
+          ],
+          "sourceTitle": "携程旅行 武隆喀斯特旅游区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/112663.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "携程旅行 武隆喀斯特旅游区 详情页：https://you.ctrip.com/sight/chongqing158/112663.html?poiType=3&scene=online",
+          "高德地图 武隆喀斯特旅游区：https://www.amap.com/place/B00178VNLG",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 喀斯特旅游区 详情页：https://you.ctrip.com/sight/chongqing158/112663.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 武隆喀斯特旅游区 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/112663.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Wulongtianshengsanqiao.JPG",
+        "author": "Brookqi",
+        "provider": "Wikimedia Commons",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wulongtianshengsanqiao.JPG",
+        "width": 1504,
+        "height": 1000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "self_heal": {
+        "mergedDuplicateIds": [
+          "manual_chongqing_8056facf"
+        ],
+        "mergedAliases": [
+          "喀斯特旅游区"
+        ],
+        "reason": "同省近似名称且共享同一 OTA/高德实体来源，自动合并"
+      }
+    },
+    {
+      "baselineKey": "core_ef72b16f95",
+      "id": "manual_chongqing_6bf561ee",
+      "name": "小三峡－小小三峡旅游区",
+      "city": "重庆",
+      "rating": 4.1,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/chongqing_6bf561ee_verified.jpg",
+      "description": "巫山小三峡是大宁河下游流经巫山境内的龙门峡、巴雾峡、滴翠峡的总称，峡谷全长60公里。巫山小小三峡位于大宁河滴翠峡处的支流马渡河上，是长滩峡、秦王峡、三撑峡的总称，全长15公里。",
+      "intro": "巫山小三峡是大宁河下游流经巫山境内的龙门峡、巴雾峡、滴翠峡的总称，峡谷全长60公里。巫山小小三峡位于大宁河滴翠峡处的支流马渡河上，是长滩峡、秦王峡、三撑峡的总称，全长15公里。",
+      "level": "5A景区",
+      "category": "自然山水峡谷风景区",
+      "tags": [
+        "自然山水峡谷风景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "小三峡：重庆市巫山县宁江路 小小三峡：重庆市巫山县大宁河滴翠峡马渡河上",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "外地游客可乘高铁至巫山站，出站后乘坐802路公交或打车直达小三峡游客中心；自驾可导航至“巫山小三峡游客中心”。",
+          "internal_arrive": "认准官方游客中心（宁江路），进大厅购票或扫码后，往右手尽头走坐电梯下4楼检票口，拒绝路边黑车带路。",
+          "internal_traffic": "景区内无其他内部交通工具，全程依靠官方游船和乌篷船游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在巫山县城滨江路或神女大道附近，步行即可到达码头，周边餐饮和夜景便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程乘船无需爬山，节奏平缓，游船配有卫生间，非常适合腿脚不便的长辈",
+          "children": "全程坐船风景较好，但往返需3.5至4小时，建议为低龄儿童准备零食和玩具，避免其感到无聊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "全程游船省力休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心登大船",
+            "龙门峡",
+            "巴雾峡",
+            "滴翠峡",
+            "换乘乌篷船游览小小三峡",
+            "原路返程"
+          ],
+          "duration": "半天",
+          "walking": "几乎为零（全程乘船，仅在换船时短距离上下台阶）",
+          "physical": 1,
+          "tips": [
+            "建议提前半小时到码头检票，以便挑选二楼靠窗沙发位；江面风大，需备薄外套；上下陡窄楼梯时注意扶好扶手，听从船员指挥。"
+          ],
+          "sourceTitle": "mct_national_5a_2025",
+          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "Wikidata Q13963887 实体页：https://www.wikidata.org/wiki/Q13963887",
+          "高德地图 小小三峡：https://www.amap.com/place/B001793Q64"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 小小三峡",
+          "url": "https://www.amap.com/place/B001793Q64",
+          "poiId": "B001793Q64",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆 三峡-小三峡 - panoramio.jpg",
+        "author": "Nyx Ning",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86_%E4%B8%89%E5%B3%A1-%E5%B0%8F%E4%B8%89%E5%B3%A1_-_panoramio.jpg",
+        "width": 2848,
+        "height": 2136
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_aa95b91208",
+      "id": "manual_chongqing_b47de5fd",
+      "name": "大足石刻景区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_b47de5fd_verified.jpg",
+      "description": "大足石刻是唐末、宋初时期的宗教摩崖石刻，以佛教题材为主，尤以北山摩崖造像和宝顶山摩崖造像最为著名，是中国著名的古代石刻艺术。1999年，以北山、宝顶山、南山、石篆山、石门山为代表的大足石刻被列入世界文化遗产。",
+      "intro": "大足石刻是唐末、宋初时期的宗教摩崖石刻，以佛教题材为主，尤以北山摩崖造像和宝顶山摩崖造像最为著名，是中国著名的古代石刻艺术。1999年，以北山、宝顶山、南山、石篆山、石门山为代表的大足石刻被列入世界文化遗产。",
+      "level": "5A景区",
+      "category": "人文古迹、世界文化遗产",
+      "tags": [
+        "人文古迹、世界文化遗产",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市大足区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至大足石刻游客中心，门口停车场车位充足；高铁到重庆西站后转乘至大足南站，出站打车约50分钟；也可在重庆主城乘坐景区直通车直达。",
+          "internal_arrive": "首次游览建议从游客中心进入，先录人脸再坐大巴上山，流程最顺畅；若有免票人群（18岁以下、65岁以上）必须在游客中心换票验证后再上山。",
+          "internal_traffic": "游客中心到山上需乘景区大巴，博物馆到石刻段可乘观光车（可少走800米）；下山从宝顶老街乘摆渡车返回游客中心。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可住宝顶山景区内（如观堂酒店，离博物馆近）或大足城区（餐饮选择更多，距景区几公里）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程有石阶但较平缓，穿舒适平底鞋即可，建议请讲解或租导览器，避免走马观花",
+          "children": "景区有免费互动游戏可获交子兑换小礼品，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭经典省力一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心（观看数字电影）",
+            "大足石刻博物馆",
+            "宝顶山大佛湾（千手观音",
+            "卧佛",
+            "圆觉洞等）",
+            "圣寿寺",
+            "宝顶老街",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约2公里，全程平缓步道",
+          "physical": 3,
+          "tips": [
+            "建议较合适时段前在游客中心观看4K和球幕电影，提前了解石刻历史；可扫码购买费用以官方当日公告为准电子讲解或请人工讲解，不然只看石头容易看不懂。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "Wikidata Q651278 实体页：https://www.wikidata.org/wiki/Q651278"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "大足石刻.JPG",
+        "author": "Gisling",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E8%B6%B3%E7%9F%B3%E5%88%BB.JPG",
+        "width": 2353,
+        "height": 1558
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_e1618786ef",
+      "id": "manual_chongqing_de89188",
+      "name": "黑山谷风景区",
+      "city": "重庆",
+      "rating": 4.4,
+      "reviewsCount": "4664条携程点评",
+      "image": "/assets/images/attractions/chongqing_de89188_verified.jpg",
+      "description": "黑山谷风景区（Black Valley），国家AAAAA级旅游景区，森林公园，地质公园，中国休闲名山，中国绿色低碳旅游休闲胜地，亚洲大中华区具魅力风景名胜区，重庆市“巴渝新十二景”，重庆市环保示范景区。 \\n \\n景区地理坐标为东经106°58'26\\\"，北纬28°51'46\\\"，地处云贵高原向四川盆地过渡的大娄山余脉，位于重庆市万盛经济技术开发区黑山镇境内，距重庆城区63公里，景区面积100平方公里，山顶与谷底高差1200米，峡谷长1",
+      "intro": "黑山谷风景区（Black Valley），国家AAAAA级旅游景区，森林公园，地质公园，中国休闲名山，中国绿色低碳旅游休闲胜地，亚洲大中华区具魅力风景名胜区，重庆市“巴渝新十二景”，重庆市环保示范景区。 \\n \\n景区地理坐标为东经106°58'26\\\"，北纬28°51'46\\\"，地处云贵高原向四川盆地过渡的大娄山余脉，位于重庆市万盛经济技术开发区黑山镇境内，距重庆城区63公里，景区面积100平方公里，山顶与谷底高差1200米，峡谷长1",
+      "level": "5A景区",
+      "category": "峡谷避暑、自然山水、亲子玩水",
+      "tags": [
+        "峡谷避暑、自然山水、亲子玩水",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市万盛经开区黑山镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至黑山谷南门游客中心或八角游客中心，重庆主城出发约1.5至2小时；公共交通可在四公里枢纽站乘大巴至万盛，再换乘106路或113路公交到达景区。",
+          "internal_arrive": "家庭游览强烈建议南门进、北门出，全程下坡更省力；若只想在浅滩玩水不徒步，可从北门进，沿溪水走平路，玩完原路返回。",
+          "internal_traffic": "景区含下行索道（单程费用以官方当日公告为准）、谷内观光车（南门至北门费用以官方当日公告为准）及谷外接驳大巴（南北门往返游客中心费用以官方当日公告为准），建议组合乘坐以节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐南门附近民宿或山顶民宿，视野好且更凉快；若追求餐饮便利和性价比，可选择万盛城区或游客中心周边的商务酒店。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "首选索道加观光车组合，减少下坡和爬楼梯对膝盖的压力，沿途服务区多可随时休息",
+          "children": "适合3岁以上能自主行走的孩子，需自备溯溪鞋、"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南门进北门出省力经典线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门入园",
+            "下行索道（省1小时下坡）",
+            "神龙瀑布",
+            "飞鱼瀑",
+            "渝黔分界桥",
+            "24座浮桥群",
+            "鲤鱼潭（浅滩玩水）",
+            "叠翠楼",
+            "观光车至北门",
+            "接驳大巴返程"
+          ],
+          "duration": "半天",
+          "walking": "约4.5公里精华栈道",
+          "physical": 2,
+          "tips": [
+            "叠翠楼之后约6公里为柏油公路且风景一般，建议直接乘坐费用以官方当日公告为准观光车到北门，省体力不绕路；务必穿防滑运动鞋，栈道和溪边青苔较多易滑倒。"
+          ],
+          "sourceTitle": "携程旅行 黑山谷风景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "amap_live_web_service：https://www.amap.com/place/B001786WBL",
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "携程旅行 黑山谷风景区 详情页：https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 黑山谷风景区 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "黑山谷风景区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10347.html?poiType=3&scene=online",
+        "width": 1668,
+        "height": 2500
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_760db3ca90",
+      "id": "manual_chongqing_e15622ac",
+      "name": "两江小渡",
+      "city": "重庆",
+      "rating": 4.7,
+      "reviewsCount": "1246条携程点评",
+      "image": "/assets/images/attractions/chongqing_e15622ac_verified.jpg",
+      "description": "两江小渡是一处集水上观光、文化体验与休闲娱乐于一体的综合性景区，位于重庆市中心的两江交汇处，以其独特的渡船体验和壮丽的山水景观吸引着众多游客。这里不仅是欣赏重庆城市风貌的窗口，更是一个让游客在江水中感受山水与城市魅力的独特空间，适合家庭出游、朋友聚会或独自探索的旅行者。",
+      "intro": "两江小渡是一处集水上观光、文化体验与休闲娱乐于一体的综合性景区，位于重庆市中心的两江交汇处，以其独特的渡船体验和壮丽的山水景观吸引着众多游客。这里不仅是欣赏重庆城市风貌的窗口，更是一个让游客在江水中感受山水与城市魅力的独特空间，适合家庭出游、朋友聚会或独自探索的旅行者。",
+      "level": "热门景点",
+      "category": "水上轮渡观光",
+      "tags": [
+        "水上轮渡观光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区嘉陵江滨江路98号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁小什字站4A口（洪崖洞码头）；地铁弹子石站（弹子石码头）",
+          "internal_arrive": "洪崖洞码头从11楼坐电梯到B1停车场，沿标识直达；弹子石码头从长嘉汇购物公园南门步行5分钟",
+          "internal_traffic": "船分两层，一楼空调座，二楼露天甲板",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "解放碑或南滨路附近",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程电梯和平缓步道，无需爬坡上坎，船上有空调和座椅，非常省力",
+          "children": "1.2米以下免票，甲板需专人看护防跌落，可自带零食和水"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "渝中-南岸跨江省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "洪崖洞码头登船",
+            "二楼甲板观赏千厮门大桥与来福士",
+            "一楼空调座休息",
+            "弹子石码头下船",
+            "长嘉汇弹子石老街"
+          ],
+          "duration": "半天",
+          "walking": "较少（码头至老街有平缓步道）",
+          "physical": 2,
+          "tips": [
+            "建议提前在小程序购票，节假日需提前15分钟到码头；登船后先上二楼拍照，再回一楼坐空调座，避免闷热拥挤。"
+          ],
+          "sourceTitle": "携程旅行 两江小渡 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/118732016.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "amap_live_web_service：https://www.amap.com/place/B0H0T7PE92",
+          "携程旅行 两江小渡 详情页：https://you.ctrip.com/sight/chongqing158/118732016.html?poiType=66&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 两江小渡 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/118732016.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "两江小渡 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0H0T7PE92",
+        "width": 1438,
+        "height": 810
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_71fedcc4ed",
+      "id": "manual_chongqing_e245886d",
+      "name": "重庆欢乐谷",
+      "city": "重庆",
+      "rating": 4.8,
+      "reviewsCount": "14286条携程点评",
+      "image": "/assets/images/attractions/chongqing_e245886d_verified.jpg",
+      "description": "重庆欢乐谷是一个占地约50万平方米的大型游乐园，分为六大主题区：欢乐时光、超级飞侠训练营、重庆欢乐谷-滨海湾主题区、恐龙森林、老重庆和河谷矿山小镇。每个区域都精心设计，提供丰富多样的娱乐体验，适合不同年龄层的游客。",
+      "intro": "重庆欢乐谷是一个占地约50万平方米的大型游乐园，分为六大主题区：欢乐时光、超级飞侠训练营、重庆欢乐谷-滨海湾主题区、恐龙森林、老重庆和河谷矿山小镇。每个区域都精心设计，提供丰富多样的娱乐体验，适合不同年龄层的游客。",
+      "level": "热门景点",
+      "category": "山地主题乐园",
+      "tags": [
+        "山地主题乐园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市两江新区金渝大道29号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "轨道交通6号线欢乐谷站4A出口，步行约5至8分钟；自驾可停园区收费停车场。",
+          "internal_arrive": "正门入园，左侧为低刺激亲子区，右侧为刺激项目区。",
+          "internal_traffic": "园区内可租赁单人、双人婴儿车及电车（按小时计费）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "华侨城嘉途酒店（位于乐园门口，部分房型可看摩天轮）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "优先选择旋转木马、重庆之眼摩天轮、多多攀爬营地等温和项目，中午可前往室内剧场或餐厅避暑休息",
+          "children": "超级飞侠训练营90%项目身高限制在90至100厘米以上，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭亲子省力休闲游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入园乘坐电梯直达底层",
+            "超级飞侠训练营",
+            "乐迪山城追击",
+            "小爱空中救援",
+            "旋转木马",
+            "海洋G指令儿童剧",
+            "重庆之眼摩天轮"
+          ],
+          "duration": "半天",
+          "walking": "约8000步",
+          "physical": 2,
+          "tips": [
+            "入园后靠右走，沿无障碍通道连续乘坐三部电梯直达最底层的超级飞侠训练营，可避免爬坡；园区面积大，建议门口租婴儿车或露营车。"
+          ],
+          "sourceTitle": "携程旅行 重庆欢乐谷 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/2486251.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "amap_live_web_service：https://www.amap.com/place/B0FFHN5PG7",
+          "携程旅行 重庆欢乐谷 详情页：https://you.ctrip.com/sight/chongqing158/2486251.html?poiType=66&scene=online",
+          "Wikidata Q28224500 实体页：https://www.wikidata.org/wiki/Q28224500"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 重庆欢乐谷 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/2486251.html?poiType=66&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆欢乐谷 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFHN5PG7",
+        "width": 1428,
+        "height": 1904
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_372aa2278e",
+      "id": "manual_chongqing_210cfbf7",
+      "name": "重庆建川海疆博物馆",
+      "city": "重庆",
+      "rating": 4.5,
+      "reviewsCount": "1087条携程点评",
+      "image": "/assets/images/attractions/chongqing_210cfbf7_verified.jpg",
+      "description": "重庆建川海疆博物馆由重庆海军博物馆和166舰陈列馆共同组成，166舰是中国研制建造的051G2型（北约代号：旅大Ⅲ级）导弹驱逐舰，是人民海军首型具备作战指挥功能的现代化驱逐舰。该舰于1987年10月31日在大连造船厂开工，1990年10月18日下水，1991年11月21日交付南海舰队，1992年6月6日正式命名为“珠海”号，2020年8月28日在湛江退役。",
+      "intro": "重庆建川海疆博物馆由重庆海军博物馆和166舰陈列馆共同组成，166舰是中国研制建造的051G2型（北约代号：旅大Ⅲ级）导弹驱逐舰，是人民海军首型具备作战指挥功能的现代化驱逐舰。该舰于1987年10月31日在大连造船厂开工，1990年10月18日下水，1991年11月21日交付南海舰队，1992年6月6日正式命名为“珠海”号，2020年8月28日在湛江退役。",
+      "level": "博物馆",
+      "category": "军事主题博物馆 / 国防教育基地 / 4A级景区",
+      "tags": [
+        "军事主题博物馆 / 国防教育基地 / 4A级景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市九龙坡区谢家湾街道杨家坪九滨路7号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“重庆建川海疆博物馆停车场”；公共交通可乘轨道2号线至谢家湾站，转乘476路公交至九龙滨江广场站步行到达；也可从洪崖洞码头乘坐“半岛小渡”轮渡至九龙渡口。",
+          "internal_arrive": "建议从码头广场入口进入，先近距离观赏166舰全貌，再按先室外登舰、后室内展馆的顺序游览，体力分配更合理。",
+          "internal_traffic": "景区内部主要为步行步道，从建川博物馆聚落到海疆博物馆相距约1公里，带小宝宝或长辈建议直接打车或自驾分段前往，避免长距离爬坡。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区位于九龙坡区九滨路，周边多为居民区，建议住宿选择杨家坪商圈或靠近轨道交通2号线沿线，餐饮和交通更便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "军舰楼梯陡峭且无无障碍设施，长辈若体力不佳可主要在码头广场和室内展馆参观，登舰需量力而行",
+          "children": "馆内有大量仿真海军模型和互动展区，非常适合科普，但需提醒孩子未经允许不要触摸展品，江边玩耍时注意防滑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "登舰探秘与海疆历史经典线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "码头广场（观赏军舰全景）",
+            "登166舰（参观甲板武器",
+            "驾驶室",
+            "水兵宿舍等舱室）",
+            "166舰光辉历程展（了解服役历史）",
+            "人民海军向前进—民间记忆展（室内三层展馆，看海军发展模型与史料）",
+            "九龙滩广场或江边步道（休息散步）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（含登舰及馆内步行）",
+          "physical": 3,
+          "tips": [
+            "军舰内部通道狭窄且楼梯陡峭，务必穿舒适平底鞋，全程牵好小朋友；军舰上和馆内洗手间较少，建议入园前或码头广场先解决；江边风大且日晒强，注意防晒保暖，建议自带饮用水。"
+          ],
+          "sourceTitle": "携程旅行 重庆建川海疆博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/5716423.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "amap_live_web_service：https://www.amap.com/place/B0H2MZ18OP",
+          "携程旅行 重庆建川海疆博物馆 详情页：https://you.ctrip.com/sight/chongqing158/5716423.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 重庆建川海疆博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/5716423.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆建川海疆博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/chongqing158/5716423.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/chongqing158/5716423.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1535
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_410931fae8",
+      "id": "manual_chongqing_adf89f93",
+      "name": "重庆动物园",
+      "city": "重庆",
+      "rating": 4.7,
+      "reviewsCount": "15418条携程点评",
+      "image": "/assets/images/attractions/chongqing_adf89f93_verified.jpg",
+      "description": "重庆动物园位于九龙坡区杨家坪，是重庆市较大的综合性公园，主要承担“野生动物移地保护的重要基地、科普宣传教育的活课堂、市民参观游览的优美园地、野生动物科学研究的重要场所”四大功能。 \\n重庆动物园的动物种类挺齐全，有熊猫、长颈鹿、狮子、斑马、大象、老虎、鳄鱼、猩猩等。",
+      "intro": "重庆动物园位于九龙坡区杨家坪，是重庆市较大的综合性公园，主要承担“野生动物移地保护的重要基地、科普宣传教育的活课堂、市民参观游览的优美园地、野生动物科学研究的重要场所”四大功能。 \\n重庆动物园的动物种类挺齐全，有熊猫、长颈鹿、狮子、斑马、大象、老虎、鳄鱼、猩猩等。",
+      "level": "热门景点",
+      "category": "动物园/自然生态",
+      "tags": [
+        "动物园/自然生态",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市九龙坡区西郊一村1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通2号线至动物园站1号口出站，步行约100米即可到达东二门；自驾可导航至东一门停车场或周边印象汇商圈，但车位较紧张，建议优先选择公共交通。",
+          "internal_arrive": "推荐从东二门（正门）进入，检票速度快且距离熊猫馆最近；若自驾可走东一门，人相对较少但距离核心展区稍远。",
+          "internal_traffic": "园区全程以步行为主，入口处可租赁儿童推车（费用以官方当日公告为准/30分钟）和共享四轮代步车（费用以官方当日公告为准/30分钟）；园区内坡道和台阶较多，部分路段推车需绕行无障碍通道。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择杨家坪商圈或九龙坡区靠近地铁站的酒店，出行便利且周边餐饮丰富；若追求高品质住宿，可考虑市区解放碑或观音桥商圈，乘坐轨道交通2号线直达。",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "园区内坡道和楼梯较多，建议穿着舒适平底鞋，可在大门口租赁代步车节省体力，沿途饮水机充足可随时补水",
+          "children": "推荐优先参观熊猫馆、可爱动物区和恐龙谷，园区设有儿童乐园，可提前准备一些零食和水，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力精华游（东二门进顺时针）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "东二门",
+            "熊猫馆",
+            "金鱼馆",
+            "两栖爬行馆",
+            "可爱动物区",
+            "猴馆与猩猩馆",
+            "猛兽区（虎山/熊山）",
+            "河马馆与犀牛馆",
+            "大象馆与长颈鹿馆",
+            "恐龙谷",
+            "东二门出"
+          ],
+          "duration": "半天",
+          "walking": "约2至3公里",
+          "physical": 3,
+          "tips": [
+            "建议早上8点开门即入园，较合适时段至10点半是熊猫最活跃的进食时间；下午熊猫多午休，建议错峰前往。"
+          ],
+          "sourceTitle": "携程旅行 重庆动物园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10377.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 重庆动物园 详情页：https://you.ctrip.com/sight/chongqing158/10377.html?poiType=3&scene=online",
+          "Wikidata Q10563866 实体页：https://www.wikidata.org/wiki/Q10563866",
+          "高德地图 重庆动物园：https://www.amap.com/place/B001701F98"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 重庆动物园 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/10377.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Main entrance, Chongqing Zoo, China.JPG",
+        "author": "Jpbowen",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Main_entrance,_Chongqing_Zoo,_China.JPG",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_6d22d822b7",
+      "id": "manual_chongqing_c7f18736",
+      "name": "洪崖洞民俗风貌区",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "8651条携程点评",
+      "image": "/assets/images/attractions/chongqing_c7f18736_verified.jpg",
+      "description": "洪崖洞民俗风貌区是逛山城老街、观赏两江风光、品尝当地美食的好去处。洪崖洞民俗风貌区位于渝中区沧白路，长江、嘉陵江两江交汇的滨江地带，以具有巴渝传统建筑特色的“吊脚楼”为主体，依山就势，沿江而建。",
+      "intro": "洪崖洞民俗风貌区是逛山城老街、观赏两江风光、品尝当地美食的好去处。洪崖洞民俗风貌区位于渝中区沧白路，长江、嘉陵江两江交汇的滨江地带，以具有巴渝传统建筑特色的“吊脚楼”为主体，依山就势，沿江而建。",
+      "level": "热门景点",
+      "category": "人文景观/城市风貌街区",
+      "tags": [
+        "人文景观/城市风貌街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区朝天门街道嘉陵江滨江路88号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通1号线或6号线至小什字站，从9号口出站步行约10分钟可达11楼入口；打车建议定位重医附二院体检中心或沧白路，避开景区正门拥堵。",
+          "internal_arrive": "首选11楼主入口（靠近沧白路），地势平坦无需爬坡；若需从江边出发可导航至北门（1楼），但向上游览较耗体力。",
+          "internal_traffic": "各楼层之间有直梯、扶梯和步梯连接，高峰期直梯排队较长，建议结合步梯下行；景区无内部收费快速通道。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐解放碑或临江附近商圈，步行可达景区且周边餐饮交通配套成熟，方便晚上逛完随时休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "优先走11楼到1楼的顺坡路线，路面相对平整，中途可在4楼或9楼找座位休息，避免长时间爬楼梯",
+          "children": "5楼重逢1980街区有怀旧互动元素，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "高层进低层出·家庭省力夜景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "11楼城市阳台（俯瞰两江全景）",
+            "9至10楼异域美食回廊（江景咖啡）",
+            "5楼重逢1980街区（80年代情境）",
+            "4楼巴渝美食街（小吃补给）",
+            "1楼滴翠广场与滨江路（近距离仰拍吊脚楼）"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "建议从上层往下逛，减少爬坡消耗；晚上11楼电梯排队较长，可走附近超市旁的隐藏电梯直达1楼。"
+          ],
+          "sourceTitle": "携程旅行 洪崖洞民俗风貌区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "amap_live_web_service：https://www.amap.com/place/B0FFG8V7SH",
+          "携程旅行 洪崖洞民俗风貌区 详情页：https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "Wikidata Q32171478 实体页：https://www.wikidata.org/wiki/Q32171478"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 洪崖洞民俗风貌区 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "202308 Hongya Cave at night from Qiansimen Bridge.jpg",
+        "author": "Jonashtand",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:202308_Hongya_Cave_at_night_from_Qiansimen_Bridge.jpg",
+        "width": 3840,
+        "height": 2160
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_d0d9952abe",
+      "id": "manual_chongqing_cfeae3e2",
+      "name": "长江索道",
+      "city": "重庆",
+      "rating": 4.2,
+      "reviewsCount": "17569条携程点评",
+      "image": "/assets/images/attractions/chongqing_cfeae3e2_verified.jpg",
+      "description": "长江索道，已经成为了山城的代表性项目。索道起于渝中区长安寺（新华路），横跨长江至南岸区的上新街（龙门浩）。",
+      "intro": "长江索道，已经成为了山城的代表性项目。索道起于渝中区长安寺（新华路），横跨长江至南岸区的上新街（龙门浩）。",
+      "level": "热门景点",
+      "category": "城市交通观光类景区",
+      "tags": [
+        "城市交通观光类景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区新华路151号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "北站（渝中区）靠近地铁1/6号线小什字站5B口；南站（南岸区）靠近地铁6号线上新街站2号口。",
+          "internal_arrive": "带老人小孩优先选择南站（上新街）入口，排队压力小，周边有龙门浩老街可边走边逛，节奏更舒缓。",
+          "internal_traffic": "站内通过电梯往返楼层，乘坐索道轿厢横跨长江，全程无其他内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在解放碑或南滨路附近，方便索道前后衔接其他行程，避免长途折返。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "排队和进出站需站立步行，膝盖不适者建议错峰或放弃",
+          "children": "提前观察孩子是否怕高，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南岸到渝中·反向省力过江线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南岸售票处与邀月台休憩区",
+            "二楼影视文化墙等候区",
+            "乘坐索道轿厢（抢右侧窗边位）",
+            "渝中北站出站",
+            "步行白象居打卡",
+            "前往解放碑或湖广会馆片区"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "强烈建议提前在官方公众号预约南站单程票，可实时查看排队人数；南站排队人数通常远少于北站，能大幅节省家庭出游体力。"
+          ],
+          "sourceTitle": "携程旅行 长江索道 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/109940.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 长江索道 详情页：https://you.ctrip.com/sight/chongqing158/109940.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 长江索道 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/109940.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "长江索道 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/chongqing158/109940.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/chongqing158/109940.html?poiType=3&scene=online",
+        "width": 1920,
+        "height": 1280
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_c56e1c94a2",
+      "id": "manual_chongqing_37dbafb4",
+      "name": "解放碑步行街",
+      "city": "重庆",
+      "rating": 4.7,
+      "reviewsCount": "5605条携程点评",
+      "image": "/assets/images/attractions/chongqing_37dbafb4_verified.jpg",
+      "description": "解放碑步行街是重庆较为繁华的商业圈，这里百货公司、酒店数量众多，是购物、美食和走走逛逛的好去处，更是打望重庆美女的好去处。步行街位于渝中区，以解放碑为中心，包括周边的民权路、邹容路和八一路等。",
+      "intro": "解放碑步行街是重庆较为繁华的商业圈，这里百货公司、酒店数量众多，是购物、美食和走走逛逛的好去处，更是打望重庆美女的好去处。步行街位于渝中区，以解放碑为中心，包括周边的民权路、邹容路和八一路等。",
+      "level": "热门景点",
+      "category": "城市地标 / 商业步行街 / 历史文化街区",
+      "tags": [
+        "城市地标 / 商业步行街 / 历史文化街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区邹容路100号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通1号线或6号线至小什字站（5A/5B出口），或2号线至临江门站（D出口），步行约3至5分钟即可到达；公交可至解放碑站或较场口站；自驾可导航至国泰优活广场或英利大融城地下停车场，但节假日车位紧张，优先推荐地铁出行。",
+          "internal_arrive": "推荐从民权路或邹容路主入口进入，地势相对平缓，周边商场和洗手间分布密集，适合家庭起步；若从较场口方向进入，需注意部分路段有台阶。",
+          "internal_traffic": "步行是主要方式，商圈已构建“一带六横七纵”步行系统，包含3个空中连廊和地下环道；魁星楼可乘电梯从22楼直达1楼，体验“1楼即22楼”的魔幻地形；自驾车辆可通过解放碑地下环道串联各楼宇停车场，减少地面拥堵。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择解放碑或较场口附近的酒店，下楼即可逛吃，去周边景点步行或打车都很便捷，方便老人孩子在午后随时回酒店休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "尽量利用商场电梯和地下连廊避免爬坡，傍晚可乘坐两江游船替代步行看夜景，晚餐选择能坐下的正餐而非排队网红店",
+          "children": "安排WFC观景台高空俯瞰、魁星楼魔幻电梯体验，并在八一路好吃街品尝山城小汤圆等温和小吃，途中多利用商场作为中转休息站。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "地标打卡与美食休闲省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "人民解放纪念碑",
+            "八一路好吃街",
+            "国泰艺术中心",
+            "魁星楼",
+            "商圈空中连廊"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（含上下电梯与连廊步行）",
+          "physical": 3,
+          "tips": [
+            "重庆地形高低起伏，建议穿舒适平底鞋；每走20至30分钟可进商场或咖啡店休息，避免老人孩子连续爬坡；晚上7至9点碑体灯光秀效果最佳，具体以官方当日公告为准。"
+          ],
+          "sourceTitle": "携程旅行 解放碑步行街 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10386.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 解放碑步行街 详情页：https://you.ctrip.com/sight/chongqing158/10386.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 解放碑步行街 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/10386.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Ximending rainbow crossing 201910.jpg",
+        "author": "Volksabstimmung",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ximending_rainbow_crossing_201910.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_35c8bf0470",
+      "id": "manual_chongqing_60df849f",
+      "name": "三峡博物馆",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "1118条携程点评",
+      "image": "/assets/images/attractions/chongqing_60df849f_verified.jpg",
+      "description": "三峡博物馆位于重庆人民广场西侧，三峡博物馆内收藏有巴蜀青铜器、汉代雕塑艺术品等各类文物上万件，展示了这座山城的发展历史。三峡博物馆内的《壮丽三峡》展厅里，还收集了大量三峡库区的实物，真实再现了三峡原貌。",
+      "intro": "三峡博物馆位于重庆人民广场西侧，三峡博物馆内收藏有巴蜀青铜器、汉代雕塑艺术品等各类文物上万件，展示了这座山城的发展历史。三峡博物馆内的《壮丽三峡》展厅里，还收集了大量三峡库区的实物，真实再现了三峡原貌。",
+      "level": "博物馆",
+      "category": "博物馆、历史艺术类综合性展馆",
+      "tags": [
+        "博物馆、历史艺术类综合性展馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区人民路236号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线或10号线至曾家岩站，从3号口出站步行约5分钟直达；也可乘公交至大礼堂站或学田湾站。自驾不建议，周边车位紧张。",
+          "internal_arrive": "从正门进入，门口有免费自助寄存柜和专人看管的超大件行李寄存区，过安检后入馆。",
+          "internal_traffic": "馆内每层均有直梯和扶梯，建议全程使用直梯上下楼，避免爬楼梯消耗体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在解放碑或洪崖洞附近，距离博物馆仅十几分钟车程，逛完可顺路串联游玩。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程有电梯和座椅，节奏可慢，一楼大厅乌杨汉阙和壮丽三峡实景布景很适合拍照",
+          "children": "可利用儿童版语音导览，一楼有互动体验区，出口处可带小本子收集文物印章。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "四楼下行省力精华游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "进门左转乘直梯至4楼历代书画/瓷器展厅",
+            "3楼西南民族民俗风情与巴蜀汉代雕塑展厅",
+            "2楼重庆·城市之路展厅",
+            "1楼壮丽三峡核心展厅（含360°环幕电影）",
+            "1楼文创店盖章与休息"
+          ],
+          "duration": "半天",
+          "walking": "约1.5至2公里",
+          "physical": 3,
+          "tips": [
+            "进门务必先左转坐直梯上4楼，再逐层往下逛，全程不爬楼最省力；建议租电子讲解器或扫码听免费AI语音导览，带娃有儿童版故事引导更有趣。"
+          ],
+          "sourceTitle": "携程旅行 三峡博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/45804.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/45804.html?poiType=3&scene=online",
+          "Wikidata Q10872783 实体页：https://www.wikidata.org/wiki/Q10872783",
+          "高德地图 重庆中国三峡博物馆：https://www.amap.com/place/B001709RVF"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 三峡博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/45804.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Chongqing Zhongguo Sanxia Bowuguan 2014.04.21 11-11-06.jpg",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chongqing_Zhongguo_Sanxia_Bowuguan_2014.04.21_11-11-06.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_1f5050946c",
+      "id": "manual_chongqing_5ed92eee",
+      "name": "洪崖洞",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "8651条携程点评",
+      "image": "/assets/images/attractions/chongqing_5ed92eee_verified.jpg",
+      "description": "洪崖洞民俗风貌区是逛山城老街、观赏两江风光、品尝当地美食的好去处。洪崖洞民俗风貌区位于渝中区沧白路，长江、嘉陵江两江交汇的滨江地带，以具有巴渝传统建筑特色的“吊脚楼”为主体，依山就势，沿江而建。",
+      "intro": "洪崖洞民俗风貌区是逛山城老街、观赏两江风光、品尝当地美食的好去处。洪崖洞民俗风貌区位于渝中区沧白路，长江、嘉陵江两江交汇的滨江地带，以具有巴渝传统建筑特色的“吊脚楼”为主体，依山就势，沿江而建。",
+      "level": "热门景点",
+      "category": "民俗风貌区/夜景地标",
+      "tags": [
+        "民俗风貌区/夜景地标",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区朝天门街道嘉陵江滨江路88号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁1号线或6号线至小什字站9号口出站步行可达；或乘坐2号线至临江门站，经地下通道步行前往。",
+          "internal_arrive": "优先从11楼（城市阳台）进入，与马路平街，最省力；若想避开正门人流，可导航至重医附二院体检中心，坐电梯直达1楼江边。",
+          "internal_traffic": "景区共11层，各楼层间主要依靠直梯和步梯衔接，人多时直梯需排队，可结合步梯下行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在解放碑或临江门附近，步行即可到达景区，方便休息和往返。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "尽量利用直梯上下，在11楼平台或4楼餐饮区多休息，避免在拥挤台阶处停留",
+          "children": "5楼重逢1980街区有怀旧氛围适合打卡，1楼江边可看江景，注意台阶安全，避免奔跑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "自上而下省力全景游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "11楼城市阳台（俯瞰全景）",
+            "5楼重逢1980街区",
+            "4楼美食街",
+            "1楼滴翠广场与滨江路",
+            "千厮门大桥观景"
+          ],
+          "duration": "半天",
+          "walking": "中等（约2-3小时）",
+          "physical": 2,
+          "tips": [
+            "建议穿平底鞋，全程以直梯结合步梯下行，避免爬坡；较合适时段后旅行团离场，拍照更出片且不用挤。"
+          ],
+          "sourceTitle": "携程旅行 洪崖洞 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "Wikidata Q32171478 实体页：https://www.wikidata.org/wiki/Q32171478",
+          "高德地图 洪崖洞高空观光：https://www.amap.com/place/B0KGUCIQBJ"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 洪崖洞 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/50223.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "202308 Hongya Cave at night from Qiansimen Bridge.jpg",
+        "author": "Jonashtand",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:202308_Hongya_Cave_at_night_from_Qiansimen_Bridge.jpg",
+        "width": 3840,
+        "height": 2160
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_083c0d9780",
+      "id": "manual_chongqing_e7aae751",
+      "name": "湖广会馆",
+      "city": "重庆",
+      "rating": 4.5,
+      "reviewsCount": "5345条携程点评",
+      "image": "/assets/images/attractions/chongqing_e7aae751_verified.jpg",
+      "description": "重庆湖广会馆坐落于重庆市渝中区长江河畔的古东水门一侧，由高墙环绕的禹王宫、齐安公所、广东公所三大会馆组成。重庆湖广会馆始建于清乾隆年间，历经乾隆到光绪年间的不断改建、扩建，始成今天规模，距今已有近300年历史。",
+      "intro": "重庆湖广会馆坐落于重庆市渝中区长江河畔的古东水门一侧，由高墙环绕的禹王宫、齐安公所、广东公所三大会馆组成。重庆湖广会馆始建于清乾隆年间，历经乾隆到光绪年间的不断改建、扩建，始成今天规模，距今已有近300年历史。",
+      "level": "热门景点",
+      "category": "人文历史/古建筑群",
+      "tags": [
+        "人文历史/古建筑群",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区长滨路芭蕉园1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁1号线或6号线至小什字站，从8号口出站步行约8-10分钟直达；也可乘坐公交至湖广会馆站或道门口站。",
+          "internal_arrive": "从正门（东门）进入，进门后先参观移民博物馆了解“湖广填四川”历史背景，后续游览会更有代入感。",
+          "internal_traffic": "景区内部为阶梯式山地四合院布局，各展馆之间通过石阶和回廊连接，需步行上下台阶，无内部代步工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住宿解放碑或朝天门附近，距离景区近且交通便利，逛完可顺路步行至滨江路看江景。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "馆内台阶较多，建议穿防滑舒适的鞋子，可询问工作人员有无无障碍通道或电梯辅助",
+          "children": "移民博物馆内有地图和老物件展示，适合给孩子讲解历史课本延伸知识，齐安公所戏台可体验盖碗茶和非遗表演，增加互动趣味性。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力顺时针精华游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "移民博物馆",
+            "雕刻博物馆",
+            "齐安公所",
+            "广东公所",
+            "渝州书院",
+            "禹王宫",
+            "江畔观景台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（景区依山而建，台阶较多）",
+          "physical": 3,
+          "tips": [
+            "建议顺时针游览，可减少部分上下坡；较合适时段光线柔和，最适合在黄墙和戏台拍照。"
+          ],
+          "sourceTitle": "携程旅行 湖广会馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/43819.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/43819.html?poiType=3&scene=online",
+          "Wikidata Q16078575 实体页：https://www.wikidata.org/wiki/Q16078575",
+          "高德地图 湖广会馆：https://www.amap.com/place/B0017822LZ"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 湖广会馆 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/43819.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Chongqing Huguang Huiguan 2014.04.21 13-14-42.jpg",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chongqing_Huguang_Huiguan_2014.04.21_13-14-42.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_b39660751a",
+      "id": "manual_chongqing_d45f0f3f",
+      "name": "磁器口古镇",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "14430条携程点评",
+      "image": "/assets/images/attractions/chongqing_d45f0f3f_verified.jpg",
+      "description": "来磁器口古镇，这个当年热闹的水陆码头，踩踩青石板路，品尝当地的美食小吃，找个茶馆坐坐，感受下老重庆的风土人情。因为距离市区很近，如今的磁器口古镇也是市民休闲娱乐的好去处。",
+      "intro": "来磁器口古镇，这个当年热闹的水陆码头，踩踩青石板路，品尝当地的美食小吃，找个茶馆坐坐，感受下老重庆的风土人情。因为距离市区很近，如今的磁器口古镇也是市民休闲娱乐的好去处。",
+      "level": "热门景点",
+      "category": "历史文化古镇",
+      "tags": [
+        "历史文化古镇",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市沙坪坝区磁南街1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线磁器口站1号口出步行约5分钟；自驾导航磁器口后街停车场（节假日停车较难，优先推荐地铁）。",
+          "internal_arrive": "首选后街入口（大茶壶广场），地势平坦、人相对较少；若从主街东门进，建议早9点前或较合适时段后错峰。",
+          "internal_traffic": "古镇内以步行游览为主，部分路段可乘坐观光大巴（以官方当日公告为准）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "古镇内民宿（如雾公馆、华舫酒店）可俯瞰夜景但隔音一般；追求安静可选沙坪坝区或沙滨路附近酒店。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "走平路为主，避免深入陡坡小巷；可在露天茶楼歇脚喝茶，感受老重庆慢生活",
+          "children": "后街文创小店、糖画捏面人等非遗体验较有趣；但青石板路不适合推婴儿车，建议轻装上阵。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "后街平路省力休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "磁器口后街入口（大茶壶广场）",
+            "磁器口老街入口",
+            "钟家院",
+            "翰林院",
+            "宝善宫",
+            "和美大院",
+            "宝轮寺",
+            "码头观江（迎龙门）",
+            "后街出口"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 3,
+          "tips": [
+            "建议从后街入口进，全程平路多、台阶少，推婴儿车或带老人也友好；逛完主街从后街出，避开正门人流高峰。"
+          ],
+          "sourceTitle": "携程旅行 磁器口古镇 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/43811.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/43811.html?poiType=3&scene=online",
+          "高德地图 磁器口古镇：https://www.amap.com/place/B00170IFE4"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 磁器口古镇 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/43811.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆磁器口古镇远眺.jpg",
+        "author": "Xiumuzidiao",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E7%A3%81%E5%99%A8%E5%8F%A3%E5%8F%A4%E9%95%87%E8%BF%9C%E7%9C%BA.jpg",
+        "width": 3556,
+        "height": 2666
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_c805429cd6",
+      "id": "manual_chongqing_8ad4f7ab",
+      "name": "南山一棵树",
+      "city": "重庆",
+      "rating": 4.3,
+      "reviewsCount": "1693条携程点评",
+      "image": "/assets/images/attractions/chongqing_8ad4f7ab_verified.jpg",
+      "description": "南山一棵树观景台位于重庆南岸区南山上，包括一棵树观景亭和野外休闲区，可同时容纳上千人，是观赏山城夜景的地点之一。 \\n站在观景台上，远远望去，重庆渝中区万家灯火；环抱的两江，流光溢彩；飞跨的长桥，轮廓清晰；层见叠出，错落有致，色彩缤纷的整座城市，在夜空的衬托下美轮美奂，光彩夺目。",
+      "intro": "南山一棵树观景台位于重庆南岸区南山上，包括一棵树观景亭和野外休闲区，可同时容纳上千人，是观赏山城夜景的地点之一。 \\n站在观景台上，远远望去，重庆渝中区万家灯火；环抱的两江，流光溢彩；飞跨的长桥，轮廓清晰；层见叠出，错落有致，色彩缤纷的整座城市，在夜空的衬托下美轮美奂，光彩夺目。",
+      "level": "热门景点",
+      "category": "城市观景台",
+      "tags": [
+        "城市观景台",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市南岸区龙黄公路南山风景区内",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "公共交通可乘轨道6号线至上新街站，换乘公交384路至崇文路站或南山站步行到达；自驾或打车可直接导航景区停车场（周末盘山路较堵，建议错峰）。",
+          "internal_arrive": "推荐从2号口进入，距离核心观景区域更近，步行更省力。",
+          "internal_traffic": "观景阁内配备电梯，可直达高层，减少爬楼消耗；各观景平台之间通过木质栈道和石阶连接。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在南滨路（离景区近，夜景好）或解放碑/观音桥（市区交通美食方便，打车上山约30分钟）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "景区台阶较多，建议穿防滑运动鞋，观景阁可乘电梯节省体力",
+          "children": "环形观景台有不锈钢围栏，需全程看护；野外休闲区有健身项目，可让孩子简单活动。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "日落转夜景经典省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入园步行至观景亭（初步俯瞰全景）",
+            "沿指示牌下行至观景阁（乘电梯至6楼，再步行至7楼天台）",
+            "前往环形观景台（围绕黄桷树的木质栈道主打卡点）",
+            "野外休闲区（简单休憩或健身）"
+          ],
+          "duration": "半天",
+          "walking": "约500米（景区内多为平缓步道与台阶）",
+          "physical": 3,
+          "tips": [
+            "建议较合适时段入园，可先看日落晚霞，再等全城亮灯；山顶傍晚风大降温，建议带薄外套。"
+          ],
+          "sourceTitle": "携程旅行 南山一棵树 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/45792.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/45792.html?poiType=3&scene=online",
+          "高德地图 南山一棵树景区：https://www.amap.com/place/B0FFGAMI8G"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 南山一棵树 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/45792.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "南山一棵树 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFGAMI8G",
+        "width": 1706,
+        "height": 1279
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_fa8671aabf",
+      "id": "manual_chongqing_7a5b9c32",
+      "name": "人民大礼堂",
+      "city": "重庆",
+      "rating": 4.5,
+      "reviewsCount": "1270条携程点评",
+      "image": "/assets/images/attractions/chongqing_7a5b9c32_verified.jpg",
+      "description": "人民大礼堂位于人民路，建于1950年代，是一座精美的仿古民族建筑群，也是重庆的标志建筑物之一。人民大礼堂采用了明清的建筑特色，传统的中轴线对称，在外观上仿造北京天坛祈年殿。",
+      "intro": "人民大礼堂位于人民路，建于1950年代，是一座精美的仿古民族建筑群，也是重庆的标志建筑物之一。人民大礼堂采用了明清的建筑特色，传统的中轴线对称，在外观上仿造北京天坛祈年殿。",
+      "level": "热门景点",
+      "category": "人文历史/地标建筑",
+      "tags": [
+        "人文历史/地标建筑",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区人民路173号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁10号线大礼堂站1号口或4号口出站步行直达；地铁2号线曾家岩站3号口出站步行约8至10分钟。",
+          "internal_arrive": "建议从人民广场正门进入；若想拍小众视角，可先从马鞍山堂里逛起再顺坡下行。",
+          "internal_traffic": "内部各楼层之间需通过楼梯上下，暂无电梯等无障碍内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择解放碑或七星岗附近，交通便利且周边餐饮丰富，适合家庭休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "广场平坦开阔，适合慢逛；内部参观可搭配对面三峡博物馆（室内有空调）避暑歇脚；建议穿防滑舒适的平底鞋",
+          "children": "广场空间大适合奔跑；内部穹顶和红色座椅阵列能直观感受建筑震撼，适合科普教育。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "马鞍山堂里至大礼堂全程下坡省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马鞍山堂里（红墙与礼堂远景同框）",
+            "大礼堂正广场（中轴线全景仰拍）",
+            "大礼堂内部（一楼大厅仰拍穹顶",
+            "二层至四层环形看台俯瞰）",
+            "人民广场"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 2,
+          "tips": [
+            "从马鞍山堂里到大礼堂广场全程为下坡路，非常省力；内部每层都有楼梯可上，四楼往下拍的视野最佳。"
+          ],
+          "sourceTitle": "携程旅行 人民大礼堂 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/10395.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/10395.html?poiType=3&scene=online",
+          "Wikidata Q10563872 实体页：https://www.wikidata.org/wiki/Q10563872"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 人民大礼堂 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/10395.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆市人民大礼堂正门.jpg",
+        "author": "Iswzo",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E5%B8%82%E4%BA%BA%E6%B0%91%E5%A4%A7%E7%A4%BC%E5%A0%82%E6%AD%A3%E9%97%A8.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4b298c3f86",
+      "id": "manual_chongqing_cdb45d6e",
+      "name": "山城巷",
+      "city": "重庆",
+      "rating": 4.6,
+      "reviewsCount": "38条携程点评",
+      "image": "/assets/images/attractions/chongqing_cdb45d6e_verified.jpg",
+      "description": "山城巷历史文化风貌区里有斑驳的旧墙，城市少有的烟火气以及凝固的时光。它代表了重庆特色的生活方式，就像北京的胡同，上海的里弄一样，这里藏着老重庆的过去。",
+      "intro": "山城巷历史文化风貌区里有斑驳的旧墙，城市少有的烟火气以及凝固的时光。它代表了重庆特色的生活方式，就像北京的胡同，上海的里弄一样，这里藏着老重庆的过去。",
+      "level": "热门景点",
+      "category": "历史文化街区、城市步道",
+      "tags": [
+        "历史文化街区、城市步道",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市渝中区南纪门街道中兴路234号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线或10号线至七星岗站1号口，步行约8至10分钟经通远门至领事巷；或打车直接定位“渝中区佳实养老院”直达山顶入口。",
+          "internal_arrive": "强烈推荐从山顶的领事巷或佳实养老院入口进，全程下坡；避开山脚下中兴路正门入口，以免一路爬陡坡。",
+          "internal_traffic": "景区内部主要为石板路和台阶，无观光车；若不想走台阶，可在游客中心乘坐内部观光电梯上下。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在解放碑、较场口或十八梯附近，逛完山城巷可步行前往，打车也更方便。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程下坡对膝盖较友好，但台阶依然较多，务必穿防滑平底鞋，沿途可找老茶馆喝杯坝坝茶休息",
+          "children": "老建筑、图书馆的梭梭滩和巷子里的猫咪能吸引孩子兴趣，但部分阶梯较窄，不建议带婴儿车。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "自上而下全程下坡省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "领事巷入口（或导航佳实养老院）",
+            "仁爱堂旧址与荒野花园",
+            "山城时光里图书馆",
+            "爱情小巷与“这很山城”红砖墙",
+            "悬空崖壁栈道",
+            "山城巷老街",
+            "中兴路出口（可顺路步行至十八梯）"
+          ],
+          "duration": "半天",
+          "walking": "全程约1.5至1.7公里，纯走路约20分钟，边走边逛建议预留2至3小时",
+          "physical": 2,
+          "tips": [
+            "必须从上往下走，全程下坡不费腿；千万别从中兴路山下入口往上爬，全是陡坡。建议较合适时段入园，一次集齐日光老街、江边日落和夜景。"
+          ],
+          "sourceTitle": "携程旅行 山城巷 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/65963918.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        {
+          "title": "观光电梯一键直达懒人游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "打车至山城巷游客中心（中兴路山下）",
+            "游客中心大厅乘坐直达6楼观光电梯",
+            "出电梯即达悬空栈道与主街",
+            "顺路下坡逛回电梯口或从中兴路离开"
+          ],
+          "duration": "半天",
+          "walking": "仅需少量平路步行，基本无爬坡爬梯",
+          "physical": 1,
+          "tips": [
+            "适合体力极弱或不想走任何台阶的人群，电梯可一键直达山顶核心区域，逛完原路返回坐电梯下山即可。"
+          ],
+          "sourceTitle": "携程旅行 山城巷 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/65963918.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/65963918.html?poiType=3&scene=online",
+          "Wikidata Q110107001 实体页：https://www.wikidata.org/wiki/Q110107001",
+          "高德地图 山城巷记忆馆：https://www.amap.com/place/B0IR37JO41"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 山城巷 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/65963918.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "山城巷上区.jpg",
+        "author": "🌈",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E5%9F%8E%E5%B7%B7%E4%B8%8A%E5%8C%BA.jpg",
+        "width": 3120,
+        "height": 4160
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_06b9c08127",
+      "id": "manual_chongqing_5c1a73f",
+      "name": "南滨路",
+      "city": "重庆",
+      "rating": 4.7,
+      "reviewsCount": "265条携程点评",
+      "image": "/assets/images/attractions/chongqing_5c1a73f_verified.jpg",
+      "description": "重庆南滨路处于重庆市的中心地位，它北临长江，背依南山，可观渝中夜景；历史悠久的巴渝文化、宗教文化、开埠文化、大禹文化、码头文化、抗战遗址文化如珍珠般遍布沿线，使南滨路获得了“重庆外滩”的美誉。南滨路旅游观光区集防洪护岸、城市道路、旧城改造和餐饮、娱乐、休闲为一体的城市观光休闲景观大道。",
+      "intro": "重庆南滨路处于重庆市的中心地位，它北临长江，背依南山，可观渝中夜景；历史悠久的巴渝文化、宗教文化、开埠文化、大禹文化、码头文化、抗战遗址文化如珍珠般遍布沿线，使南滨路获得了“重庆外滩”的美誉。南滨路旅游观光区集防洪护岸、城市道路、旧城改造和餐饮、娱乐、休闲为一体的城市观光休闲景观大道。",
+      "level": "热门景点",
+      "category": "城市滨江休闲街区",
+      "tags": [
+        "城市滨江休闲街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆市南岸区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "轨道交通6号线上新街站、环线弹子石站；自驾可停沿线公共停车场或长嘉汇地下车库。",
+          "internal_arrive": "推荐从上新街站1号口出，进入下浩里后一路下坡；或从弹子石站3号口出，由高处往低处逛，最省力。",
+          "internal_traffic": "沿江步道平坦，适合步行或租用共享电动车；景点间距稍远时可乘坐373、375路公交接驳。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "南滨路沿线江景酒店、东原1891商圈或长嘉汇附近，方便夜间散步与休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程步道平缓、树荫多、长椅密集，适合慢行；可搭配重庆规划展览馆室内避暑",
+          "children": "江边浅滩玩沙、萌宠互动、草坪野餐，低幼可推婴儿车；注意防晒防蚊与江边安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典江景省力漫游线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙门浩老街",
+            "下浩里",
+            "南滨路钟楼广场",
+            "呼归石花阶公园",
+            "长嘉汇购物公园"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 2,
+          "tips": [
+            "建议从轨道交通6号线上新街站出发，一路往弹子石方向下行，全程下坡不费腿；较合适时段开始游览，既能看日落又能衔接夜景。"
+          ],
+          "sourceTitle": "携程旅行 南滨路 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/132848.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chongqing158/132848.html?poiType=3&scene=online",
+          "Wikidata Q13681228 实体页：https://www.wikidata.org/wiki/Q13681228"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 南滨路 详情页",
+          "url": "https://you.ctrip.com/sight/chongqing158/132848.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "南濱路鐘樓.jpg",
+        "author": "虹色分子",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E6%BF%B1%E8%B7%AF%E9%90%98%E6%A8%93.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_53ffe7b83d",
+      "id": "manual_chongqing_d4bb1ed2",
+      "name": "巴蜀古代建筑博物馆",
+      "city": "重庆",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/chongqing_d4bb1ed2_verified.jpg",
+      "description": "巴蜀古代建筑博物馆位于陈家桥街道白鹤村，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "巴蜀古代建筑博物馆位于陈家桥街道白鹤村，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "博物馆",
+      "category": "博物馆、古建筑、园林式展馆",
+      "tags": [
+        "博物馆、古建筑、园林式展馆",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "陈家桥街道白鹤村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通1号线至陈家桥站2号口，步行约15分钟；或自驾导航至博物馆，门口有免费停车场。",
+          "internal_arrive": "门口登记身份证即可免费入馆，无需提前预约，刷证或扫码进入。",
+          "internal_traffic": "馆内为三进院落布局，全程步行参观，无内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在沙坪坝区或大学城附近（如高新天街、熙街周边），逛完可顺便吃晚饭，住宿选择丰富且性价比高。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "园区多为平路但部分有台阶，建议穿防滑舒适的鞋子，放慢节奏欣赏",
+          "children": "馆内有建筑模型和工具墙，可引导孩子观察榫卯结构，结合周边冯玉祥旧居一起逛，半日行程轻松不累。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古建匠心与庭院光影慢游线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "室外露天展区（清代大龙门",
+            "宋代石像生",
+            "柱础石） ➡️ 室内展厅（《巴蜀遗构》常设展，看木雕",
+            "藻井",
+            "砖瓦构件） ➡️ 庭院回廊（拍红墙绿瓦光影",
+            "看木匠工具墙）"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（馆内多为平路，部分区域有台阶）",
+          "physical": 2,
+          "tips": [
+            "建议提前了解一些古建基础知识或预约讲解，能更好看懂展品背后的故事；馆内老木头可能有轻微气味，呼吸道敏感者建议备口罩。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B0FFILAM16"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 巴蜀古代建筑博物馆",
+          "url": "https://www.amap.com/place/B0FFILAM16",
+          "poiId": "B0FFILAM16",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-14"
+        },
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "巴蜀古代建筑博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFILAM16",
+        "width": 1440,
+        "height": 1724
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4b490910f8",
+      "id": "manual_chongqing_286c6146",
+      "name": "石柱黄水旅游度假区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_286c6146_verified.jpg",
+      "description": "石柱黄水旅游度假区位于重庆市石柱土家族自治县S404，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "石柱黄水旅游度假区位于重庆市石柱土家族自治县S404，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "国家级旅游度假区（森林避暑/自然生态/土家文化）",
+      "tags": [
+        "国家级旅游度假区（森林避暑/自然生态/土家文化）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市石柱土家族自治县S404",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至黄水镇，全程柏油路轿车无压力；公共交通可乘高铁至黄水站，出站换乘大巴直达镇上。",
+          "internal_arrive": "自驾优先选镇中心或酒店免费停车场；高铁出行出站后坐专线大巴，招手即停的观光车（2-费用以官方当日公告为准）方便代步。",
+          "internal_traffic": "镇内观光车招手即停，三人以上建议网约车；去大风堡等外围景区可坐旅游大巴或包车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "黄水镇中心（配套全/吃饭方便）或森林度假酒店（环境静/近景区）。",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "步道平缓无陡坡，适合慢节奏吸氧，但早晚温差大需备长袖",
+          "children": "森林蚊虫少，"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "林湖休闲省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "毕兹卡绿宫（林间吊床/森林秋千）",
+            "月亮湖（泛舟游湖）",
+            "太阳湖（湖边散步）",
+            "大风堡（木栈道吸氧/玻璃观景台）",
+            "土家风情街（晚餐/夜市）"
+          ],
+          "duration": "半天",
+          "walking": "约8000步",
+          "physical": 2,
+          "tips": [
+            "毕兹卡绿宫全程树荫且步道平缓，推婴儿车友好；月亮湖泛舟体感凉爽，傍晚湖边风大需备薄外套。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆石柱黄水两日游:避暑胜地全攻略",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3748772392842228897",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3748772392842228897",
+        "width": 1440,
+        "height": 1050
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "石柱黄水旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_947576d2ab",
+      "id": "manual_chongqing_fc9f182a",
+      "name": "仙女山旅游度假区",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_fc9f182a_verified.jpg",
+      "description": "度假区位于武隆仙女山中部，毗邻世界自然遗产地、国家5A级景区天生三桥和仙女山国家森林公园。自然条件优越，森林覆盖率达80%以上，年均气温17.4摄氏度。",
+      "intro": "度假区位于武隆仙女山中部，毗邻世界自然遗产地、国家5A级景区天生三桥和仙女山国家森林公园。自然条件优越，森林覆盖率达80%以上，年均气温17.4摄氏度。",
+      "level": "国家级旅游度假区",
+      "category": "自然山水、避暑度假",
+      "tags": [
+        "自然山水、避暑度假",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "重庆市武隆区向阳水库附近",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航“仙女山观光火车站”或“树顶漫步”；公共交通可高铁至武隆南站，出站右转乘蓝色大巴至仙女山游客中心，再换乘景区大巴。",
+          "internal_arrive": "建议从游客接待中心入园，此处可换乘景区大巴进入核心区域，自驾车也可停在附近停车场。",
+          "internal_traffic": "景区观光小火车（单向环线，停靠大草原站、遛马场站）；部分区域可乘坐景区大巴；私家车在核心草原区域禁入。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内酒店（推窗见景，环境静谧，价格偏高）；仙女镇游客中心周边民宿（性价比高，吃喝方便）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程可依赖小火车和景区大巴，避免长距离徒步，注意早晚温差和防滑",
+          "children": "大草原可喂小动物，树顶漫步有无动力设施，建议用腰凳代替婴儿车（部分路段有台阶）。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "小火车+草原+树顶漫步省力经典线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "树顶漫步（空中栈道",
+            "森林之眼俯瞰全景）",
+            "仙女山大草原（看牛羊",
+            "草地野餐）",
+            "波浪公路（网红起伏公路打卡）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（主要依靠观光小火车衔接，步行距离短）",
+          "physical": 2,
+          "tips": [
+            "小火车是单向环线，必须在指定站点上下车，纸质票全程通用别弄丢；草原和公路无遮挡，防晒和薄外套必带。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "verifiedAt": "2026-08-14"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
+          "Wikidata Q10884241 实体页：https://www.wikidata.org/wiki/Q10884241",
+          "高德地图 仙女山国家级旅游度假区：https://www.amap.com/place/B0FFLAGWZ7"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-14",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "仙女山街道，2023年.jpg",
+        "author": "苍穹一粟",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BB%99%E5%A5%B3%E5%B1%B1%E8%A1%97%E9%81%93%EF%BC%8C2023%E5%B9%B4.jpg",
+        "width": 3840,
+        "height": 1920
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {},
+  "selfHealActions": [
+    {
+      "type": "merge_duplicate_additions",
+      "keptId": "manual_chongqing_df2d366a",
+      "keptName": "武隆喀斯特旅游区",
+      "removedId": "manual_chongqing_8056facf",
+      "removedName": "喀斯特旅游区",
+      "reason": "同省近似名称且共享同一 OTA/高德实体来源，自动合并"
+    }
+  ],
+  "appliedAt": "2026-08-17T01:30:15.849Z",
+  "appliedAttractionIds": [
+    "manual_chongqing_f7f30cb4",
+    "manual_chongqing_c5bced2b",
+    "manual_chongqing_371c39f0",
+    "manual_chongqing_3b5b7c42",
+    "manual_chongqing_8e2e0927",
+    "manual_chongqing_77aae67c",
+    "manual_chongqing_d8bedb9e",
+    "manual_chongqing_df2d366a",
+    "manual_chongqing_6bf561ee",
+    "manual_chongqing_b47de5fd",
+    "manual_chongqing_de89188",
+    "manual_chongqing_e15622ac",
+    "manual_chongqing_e245886d",
+    "manual_chongqing_210cfbf7",
+    "manual_chongqing_adf89f93",
+    "manual_chongqing_c7f18736",
+    "manual_chongqing_cfeae3e2",
+    "manual_chongqing_37dbafb4",
+    "manual_chongqing_60df849f",
+    "manual_chongqing_5ed92eee",
+    "manual_chongqing_e7aae751",
+    "manual_chongqing_d45f0f3f",
+    "manual_chongqing_8ad4f7ab",
+    "manual_chongqing_7a5b9c32",
+    "manual_chongqing_cdb45d6e",
+    "manual_chongqing_5c1a73f",
+    "manual_chongqing_d4bb1ed2",
+    "manual_chongqing_286c6146",
+    "manual_chongqing_fc9f182a"
+  ],
+  "appliedOverrideIds": []
+}

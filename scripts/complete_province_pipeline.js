@@ -69,12 +69,18 @@ function run(script, scriptArgs = [], options = {}) {
   for (let attempt = 1; attempt <= policy.maxAttempts; attempt += 1) {
     const result = spawnSync(process.execPath, [path.join('scripts', script), ...scriptArgs], {
       cwd: rootDir,
-      stdio: 'inherit',
+      stdio: ['inherit', 'pipe', 'pipe'],
+      encoding: 'utf8',
+      maxBuffer: 80 * 1024 * 1024,
+      windowsHide: true,
       shell: false,
     });
+    if (result.stdout) process.stdout.write(result.stdout);
+    if (result.stderr) process.stderr.write(result.stderr);
     if (result.error) throw new PipelineStageError(result.error.message, 'hard', 1);
     const progress = script.startsWith('xhs_') ? readJson(progressPath, {}) : {};
-    const classification = classifyStageResult({ status: result.status, progress });
+    const detail = `${result.stdout || ''}\n${result.stderr || ''}`;
+    const classification = classifyStageResult({ status: result.status, progress, detail });
     if (classification.kind === 'complete') return true;
     if (classification.retry && attempt < policy.maxAttempts) {
       const pendingText = progress.pendingNames?.length ? `，剩余 ${progress.pendingNames.length} 项` : '';
@@ -154,6 +160,7 @@ function main() {
   if (packageData?.status === 'reviewed' && !packageHasPlaceholderImages(packageData)) {
     writeProgress({ status: 'generating', stage: 'preview', message: '补全包已通过质量门禁，正在恢复或重建隔离预览。', index: 6, total: 7, percent: 86 });
     run('generate_core_preview.js', [`--province=${province}`]);
+    packageData = readJson(packagePath);
     const preview = readJson(path.join(runtimeDir, 'previews', slug, 'state.json'));
     if (preview?.status !== 'ready') throw new Error('隔离预览未能进入 ready 状态。');
     const totalItems = (packageData.attractions?.length || 0) + Object.keys(packageData.overrides || {}).length;
@@ -162,7 +169,7 @@ function main() {
     return;
   }
   if (packageData?.status === 'reviewed' && packageHasPlaceholderImages(packageData)) {
-    console.log(`${province}补全包仍含占位图：自动进入补图续跑，不重复采集点点攻略和路线。`);
+    console.log(`${province}仍有景点缺少真实图片：自动只续跑图片补全，不重复采集点点攻略和路线。`);
   }
 
   writeProgress({ status: 'running', stage: 'guide', message: '正在补齐缺失景点的点点懒人攻略。', index: 1, total: 5, percent: 20 });
@@ -214,6 +221,7 @@ function main() {
 
   writeProgress({ status: 'generating', stage: 'preview', message: '质量门禁通过，正在生成隔离预览。', index: 6, total: 7, percent: 86 });
   run('generate_core_preview.js', [`--province=${province}`]);
+  packageData = readJson(packagePath);
   const preview = readJson(path.join(runtimeDir, 'previews', slug, 'state.json'));
   if (preview?.status !== 'ready') throw new Error('隔离预览未能进入 ready 状态。');
 

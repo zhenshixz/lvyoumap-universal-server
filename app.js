@@ -208,7 +208,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   await loadInitialData();
   initEventListeners();
   initRegionControls();
-  initProvinceDropdown();
   initAuthSession();
 });
 
@@ -276,7 +275,6 @@ async function loadInitialData() {
 
   // 3. 初始化并渲染地图
   updateFavoritesCount();
-  populateProvinceDropdown();
   initMap();
 }
 
@@ -1160,9 +1158,8 @@ async function selectProvince(provinceName) {
 
   // 数据渲染
   document.getElementById("dest-img").src = destData.image;
-  document.getElementById("dest-title").innerHTML = `${destData.province} <span style="font-size: 14px; opacity: 0.8; margin-left: 2px;">▾</span>`;
+  document.getElementById("dest-title").textContent = destData.province;
   document.getElementById("dest-desc").textContent = destData.description;
-  populateProvinceDropdown();
   renderMapWithOptions();
   
   // 先立即显示随版本发布的参考数据；实时接口失败时页面仍保持可用。
@@ -3340,49 +3337,7 @@ function initRegionControls() {
   });
 }
 
-// 14. 初始化快捷省份选择下拉框
-function initProvinceDropdown() {
-  const dropdown = document.getElementById("province-dropdown");
-  const destTitle = document.getElementById("dest-title");
-  
-  if (!dropdown || !destTitle) return;
-  
-  destTitle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const isShowing = dropdown.style.display === "block";
-    dropdown.style.display = isShowing ? "none" : "block";
-  });
-  
-  document.addEventListener("click", () => {
-    dropdown.style.display = "none";
-  });
-}
-
-// 15. 填充并更新省份下拉框选项
-function populateProvinceDropdown() {
-  const dropdown = document.getElementById("province-dropdown");
-  if (!dropdown || !window.tourismData) return;
-  
-  dropdown.innerHTML = "";
-  
-  // 添加拼音/名字升序排序，使列表一目了然
-  Object.keys(window.tourismData).sort((a, b) => a.localeCompare(b, 'zh')).forEach(provName => {
-    const item = document.createElement("div");
-    item.className = "province-dropdown-item";
-    if (provName === currentSelectedProvince) {
-      item.classList.add("active");
-    }
-    item.textContent = provName;
-    item.addEventListener("click", (e) => {
-      e.stopPropagation();
-      dropdown.style.display = "none";
-      selectProvince(provName);
-    });
-    dropdown.appendChild(item);
-  });
-}
-
-// 16. 高性能后台图片预加载引擎 (支持按需懒加载数据并缓存图片)
+// 14. 高性能后台图片预加载引擎 (支持按需懒加载数据并缓存图片)
 const prefetchedProvinces = new Set();
 async function prefetchProvinceImages(provinceName) {
   if (prefetchedProvinces.has(provinceName)) return;

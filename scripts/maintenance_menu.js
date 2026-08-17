@@ -257,6 +257,49 @@ function openProgressWindow() {
   console.log('\n已打开持续进度窗口；在该窗口按 Q 可关闭。');
 }
 
+function provinceFromProgress(progress = {}) {
+  const rawScope = String(progress.scope || progress.province || '')
+    .replace(/核心景点完整补全|核心缺失景点补全包|核心景点补全包|核心景点补全/u, '')
+    .trim();
+  return normalizeProvinceName(rawScope);
+}
+
+function openCurrentTaskView() {
+  const progress = readJson(progressPath, null);
+  if (!progress) {
+    console.log('\n暂无当前任务。请先从主菜单选择 [1] 体检或 [2] 开始补全。');
+    return false;
+  }
+
+  const province = provinceFromProgress(progress);
+  if (province) {
+    let ready = previewStateFor(province);
+    if (!ready && progress.status === 'preview_ready') {
+      console.log(`\n${province}隔离预览服务未运行或版本已更新，正在自动恢复……`);
+      if (runNode('generate_core_preview.js', [`--province=${province}`], { quiet: true })) {
+        ready = previewStateFor(province);
+      }
+    }
+    if (ready?.preview?.previewUrl) {
+      console.log(`\n正在打开${province}隔离预览：${ready.preview.previewUrl}`);
+      if (!openUrl(ready.preview.previewUrl)) console.log(`请手动访问：${ready.preview.previewUrl}`);
+      return true;
+    }
+    if (progress.status === 'preview_ready') {
+      console.log(`\n${province}隔离预览自动恢复失败，请从主菜单选择 [2] 和${province}重新生成；补全数据不会丢失。`);
+      return false;
+    }
+  }
+
+  if (progress.status === 'preview_ready' && progress.previewUrl) {
+    console.log(`\n正在打开隔离预览：${progress.previewUrl}`);
+    return openUrl(progress.previewUrl);
+  }
+
+  openProgressWindow();
+  return true;
+}
+
 function stopSafely() {
   fs.mkdirSync(runtimeDir, { recursive: true });
   if (!currentTaskIsRunning()) {
@@ -587,15 +630,51 @@ function openUrl(url) {
   }
 }
 
+function captureFiles(filePaths) {
+  return filePaths.map(filePath => ({
+    filePath,
+    existed: fs.existsSync(filePath),
+    content: fs.existsSync(filePath) ? fs.readFileSync(filePath) : null,
+  }));
+}
+
+function restoreFiles(snapshot) {
+  for (const item of snapshot) {
+    if (item.existed) {
+      fs.mkdirSync(path.dirname(item.filePath), { recursive: true });
+      fs.writeFileSync(item.filePath, item.content);
+    } else if (fs.existsSync(item.filePath)) {
+      fs.rmSync(item.filePath, { force: true });
+    }
+  }
+}
+
 function buildSelectedProvince(province) {
   const info = provinceInfo(province);
+  const transactionFiles = [
+    path.join(rootDir, 'content', `manual-attractions.${info.slug}-core.json`),
+    path.join(rootDir, 'content', 'attraction-overrides.json'),
+    path.join(rootDir, 'content', `core-attractions.${info.slug}.json`),
+    path.join(rootDir, 'content', `core-repair-packages.${info.slug}.json`),
+  ];
+  const snapshot = captureFiles(transactionFiles);
   console.log('\n正在写入 beta 并重新生成可访问数据……');
-  if (!runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply'])) return false;
-  if (!runNode('generate_static_data.js')) return false;
-  if (!checkJavaScript()) return false;
-  if (!runNode('build.js')) return false;
-  if (!runNode('verify-build.js')) return false;
-  if (!runNode('report_core_attractions.js', [`--province=${province}`, '--strict'])) return false;
+  const steps = [
+    () => runNode('core_repair_pipeline.js', [`--province=${province}`, '--apply']),
+    () => runNode('generate_static_data.js'),
+    () => checkJavaScript(),
+    () => runNode('build.js'),
+    () => runNode('verify-build.js'),
+    () => runNode('report_core_attractions.js', [`--province=${province}`, '--strict']),
+  ];
+  if (!steps.every(step => step())) {
+    console.log(`\n${province}最终验收未通过，正在自动回滚本次写入……`);
+    restoreFiles(snapshot);
+    runNode('generate_static_data.js', [], { quiet: true });
+    runNode('build.js', [], { quiet: true });
+    console.log('已恢复到批准前状态；隔离预览和已采集资料仍保留，可修复后继续，不会留下半成品。');
+    return false;
+  }
   runNode('create_maintenance_tasks.js', [`--province=${province}`], { quiet: true });
   runNode('stop_core_preview.js', [`--province=${province}`], { quiet: true });
   writeJsonAtomic(progressPath, {
@@ -760,13 +839,13 @@ async function runNationalScope(rl, scope, collect) {
 async function taskCenter(rl) {
   console.log('\n---------------- 任务中心 ----------------');
   console.log('[1] 查看当前进度');
-  console.log('[2] 打开持续进度窗口');
+  console.log('[2] 打开当前任务（运行中看进度，待验收打开隔离预览）');
   console.log('[3] 登录 / 刷新小红书点点状态');
   console.log('[4] 安全停止后台任务');
   console.log('[0] 返回');
   const action = await ask(rl, '请选择：');
   if (action === '1') showProgress();
-  else if (action === '2') openProgressWindow();
+  else if (action === '2') openCurrentTaskView();
   else if (action === '3') runNode('xhs_lazy_guides.js', ['--login']);
   else if (action === '4') stopSafely();
 }
@@ -811,4 +890,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { shouldRefreshRatingPreview };
+module.exports = { shouldRefreshRatingPreview, provinceFromProgress };
