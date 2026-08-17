@@ -63,6 +63,32 @@ function fillMissing(primary, secondary, key = '') {
   return primary;
 }
 
+function verifiedExistingRating(existing) {
+  if (Number(existing?.rating) <= 0) return null;
+  const documented = existing?.source_evidence?.ratingSource;
+  if (documented?.url) {
+    return {
+      rating: Number(existing.rating),
+      reviewsCount: existing.reviewsCount || '已有可追溯评分',
+      ratingSource: clone(documented),
+    };
+  }
+  const poiId = String(existing?.id || '').replace(/^amap_/i, '');
+  if (!poiId || poiId === String(existing?.id || '')) return null;
+  return {
+    rating: Number(existing.rating),
+    reviewsCount: '高德地图',
+    ratingSource: {
+      platform: '高德地图',
+      title: `高德地图 ${existing.name}`,
+      url: `https://www.amap.com/place/${encodeURIComponent(poiId)}`,
+      poiId,
+      evidenceMode: 'existing-amap-record',
+      verifiedAt: new Date().toISOString().slice(0, 10),
+    },
+  };
+}
+
 function mergeDuplicatePair(left, right) {
   const primary = itemScore(left) >= itemScore(right) ? left : right;
   const secondary = primary === left ? right : left;
@@ -121,8 +147,29 @@ function healAdditionsAgainstExisting(packageData, provinceData, baselineData = 
   const additions = [];
   const overrides = clone(packageData?.overrides || {});
   const actions = [];
+  const records = provinceData?.attractions || [];
+  for (const [id, patch] of Object.entries(overrides)) {
+    if (Number(patch?.rating) > 0 && patch?.source_evidence?.ratingSource?.url) continue;
+    const existing = records.find(candidate => candidate.id === id);
+    const inheritedRating = verifiedExistingRating(existing);
+    if (!inheritedRating) continue;
+    patch.rating = inheritedRating.rating;
+    patch.reviewsCount = inheritedRating.reviewsCount;
+    patch.source_evidence ||= {};
+    patch.source_evidence.ratingSource = inheritedRating.ratingSource;
+    patch.ratingAudit = {
+      selected: inheritedRating.ratingSource.platform,
+      status: 'inherited-from-existing-override',
+      existingId: existing.id,
+    };
+    actions.push({
+      type: 'inherit_existing_rating',
+      keptId: existing.id,
+      keptName: patch.name || existing.name,
+      reason: '增强覆盖已绑定唯一现有实体，继承其可追溯评分',
+    });
+  }
   for (const item of packageData?.attractions || []) {
-    const records = provinceData?.attractions || [];
     const decision = decisions[item.baselineKey] || null;
     if (decision?.action === 'keep_new') {
       additions.push(clone(item));
@@ -152,6 +199,23 @@ function healAdditionsAgainstExisting(packageData, provinceData, baselineData = 
     const patch = clone(item);
     const originalId = patch.id;
     patch.id = existing.id;
+    // Identity healing happens after the normal rating collection stage. Once a
+    // candidate is proven to enhance one exact existing POI, preserve that POI's
+    // traceable rating instead of replacing it with an artificial zero.
+    if (Number(patch.rating) <= 0 || !patch.source_evidence?.ratingSource?.url) {
+      const inheritedRating = verifiedExistingRating(existing);
+      if (inheritedRating) {
+        patch.rating = inheritedRating.rating;
+        patch.reviewsCount = inheritedRating.reviewsCount;
+        patch.source_evidence ||= {};
+        patch.source_evidence.ratingSource = inheritedRating.ratingSource;
+        patch.ratingAudit = {
+          selected: inheritedRating.ratingSource.platform,
+          status: 'inherited-after-identity-heal',
+          existingId: existing.id,
+        };
+      }
+    }
     overrides[existing.id] = fillMissing(patch, overrides[existing.id] || {});
     actions.push({
       type: 'convert_addition_to_override',

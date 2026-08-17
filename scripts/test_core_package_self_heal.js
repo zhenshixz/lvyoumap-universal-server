@@ -32,6 +32,27 @@ assert.equal(existing.packageData.attractions.length, 0, '旧库已有同名实�
 assert(existing.packageData.overrides['amap-existing'], '应自动转换为旧记录的增强覆盖');
 assert.equal(existing.actions[0].type, 'convert_addition_to_override');
 
+const inheritedRating = healAdditionsAgainstExisting({ attractions: [{
+  ...specific,
+  id: 'incoming-hukou',
+  rating: 0,
+  reviewsCount: '暂无公开评价',
+  source_evidence: { basicInfoSources: [source], ratingSource: null },
+}], overrides: {} }, {
+  attractions: [{ id: 'amap_B01650A2TH', name: '武隆喀斯特旅游区', city: '重庆', rating: 4.8, reviewsCount: '官方认证' }],
+});
+assert.equal(inheritedRating.packageData.overrides.amap_B01650A2TH.rating, 4.8, '转为现有高德 POI 增强时应继承原有评分');
+assert.equal(inheritedRating.packageData.overrides.amap_B01650A2TH.source_evidence.ratingSource.platform, '高德地图');
+assert.match(inheritedRating.packageData.overrides.amap_B01650A2TH.source_evidence.ratingSource.url, /B01650A2TH/);
+
+const repairedReviewedOverride = healAdditionsAgainstExisting({ attractions: [], overrides: {
+  amap_B01650A2TH: { id: 'amap_B01650A2TH', name: '黄河壶口瀑布旅游区', rating: 0, reviewsCount: '暂无公开评价', source_evidence: { ratingSource: null } },
+} }, {
+  attractions: [{ id: 'amap_B01650A2TH', name: '山西黄河壶口瀑布旅游区', city: '临汾', rating: 4.8 }],
+});
+assert.equal(repairedReviewedOverride.packageData.overrides.amap_B01650A2TH.rating, 4.8, '已建立的增强覆盖也应自愈继承底库评分');
+assert.equal(repairedReviewedOverride.actions[0].type, 'inherit_existing_rating');
+
 const baselineBound = healAdditionsAgainstExisting({ attractions: [{
   ...specific,
   id: 'new-road',

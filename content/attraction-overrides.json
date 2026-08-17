@@ -483,5 +483,227 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B01650A2TH": {
+    "baselineKey": "core_b439c23e7d",
+    "id": "amap_B01650A2TH",
+    "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+    "city": "山西",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/shanxi_a214e03b_verified.jpg",
+    "description": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+    "intro": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+    "level": "5A景区",
+    "category": "自然山水、瀑布峡谷",
+    "tags": [
+      "自然山水、瀑布峡谷",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "山西省吉县城西45公里",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至\"壶口客栈\"或\"黄龙寺\"（靠近北门，可少排队），或导航至\"山西黄河壶口瀑布景区游客中心\"（南门）；从临汾西站出发可乘坐直通车或包车前往，车程约2小时。",
+        "internal_arrive": "推荐从北门（壶口客栈附近）进入，人少、排队短，且可节省景交车费用；若从南门游客中心进入，则必须乘坐景交车前往核心区。",
+        "internal_traffic": "景区内有景交车（摆渡车）往返游客中心与主瀑布观景台，车程约5-15分钟，带老人和儿童强烈建议乘坐，不要步行。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "可选择景区附近的民宿或酒店（如壶口客栈、望河楼大酒店），距离游客中心1-2公里，方便次日早入园；若追求更完善的餐饮和住宿条件，可住在吉县县城，车程约1.5小时。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "平遥牛肉",
+        "山西过油肉",
+        "太原头脑",
+        "大同兔头"
+      ],
+      "special_care": {
+        "elderly": "全程尽量乘坐景交车，避免长时间步行；瀑布附近风大、水雾重，注意保暖和防滑，穿舒适的运动鞋",
+        "children": "准备雨衣和手机防水袋，避免被水雾淋湿；可给孩子准备换洗衣物和消毒湿巾，游玩后及时清理。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "山西侧核心观景省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心",
+          "景交车",
+          "主观景台",
+          "龙洞",
+          "十里龙槽"
+        ],
+        "duration": "半天",
+        "walking": "约1公里",
+        "physical": 2,
+        "tips": [
+          "景区较大，强烈建议购买景交车票，步行距离较长且暴晒；靠近瀑布水雾极大，务必准备雨衣、手机防水袋和防滑鞋；晴天上午9-11点光线好，容易看到彩虹。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sx&type=0",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sx&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 山西黄河壶口瀑布旅游区",
+        "url": "https://www.amap.com/place/B01650A2TH",
+        "poiId": "B01650A2TH",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Hukou Waterfall.jpg",
+      "author": "Leruswing",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hukou_Waterfall.jpg",
+      "width": 3758,
+      "height": 2465
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-from-existing-override",
+      "existingId": "amap_B01650A2TH"
+    }
+  },
+  "amap_B019B0AN7O": {
+    "id": "amap_B019B0AN7O",
+    "name": "大连星海广场",
+    "city": "大连",
+    "rating": 4.9,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/liaoning_13332142_verified.jpg",
+    "description": "大连星海广场位于中山路572号(西南路口)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "大连星海广场位于中山路572号(西南路口)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "城市地标广场、海滨公园",
+    "tags": [
+      "城市地标广场、海滨公园",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "中山路572号(西南路口)",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "乘坐地铁 1 号线至星海广场站 A2 口，出站步行约 700-1000 米可达海边；打车可直接定位“百年城雕”以减少步行距离；自驾可停周边地下停车场，但节假日车位紧张，建议优先公共交通。",
+        "internal_arrive": "推荐从地铁 A2 口出站后前往百年城雕，或直接打车定位百年城雕，这里是拍跨海大桥全景的最佳机位，且能少走很多冤枉路。",
+        "internal_traffic": "广场内部面积广阔，可租赁双人自行车或电动代步车代步；若纯步行，建议穿舒适的平底鞋。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "星海广场周边酒店密集，步行即可到达海边和广场，非常适合家庭住宿，周边餐饮和便利店也很齐全。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "海鲜焖子",
+        "锦州烧烤",
+        "沟帮子熏鸡",
+        "老边饺子"
+      ],
+      "special_care": {
+        "elderly": "海边风大且早晚温差明显，务必准备薄外套防风；木栈道和沙滩行走时注意防滑，避免去礁石区；看喷泉和灯光秀时尽量提前占位，避免拥挤",
+        "children": "可提前准备火腿肠或面包喂海鸥，注意不要用手直接捏着喂以免被啄伤；星海湾浴场为沙石混合滩，建议穿涉水鞋防扎脚；海边游乐场项目按次收费，适合亲子互动，但需注意看护安全。\n\n你们这次去大连大概有几个人同行，打算玩几天？"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "傍晚日落与夜景省力闭环游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "百年城雕（拍跨海大桥全景与千人脚印浮雕）",
+          "滨海木栈道（散步吹风",
+          "喂海鸥）",
+          "星海湾浴场（浅逛踩水）",
+          "海边游乐场（体验落日飞车",
+          "秋千等）",
+          "广场中心区域（看音乐喷泉与跨海大桥夜景灯光秀）"
+        ],
+        "duration": "半天",
+        "walking": "约 2 公里（建议结合代步工具）",
+        "physical": 2,
+        "tips": [
+          "强烈建议下午 官方当日建议时段 后到达，一次覆盖日落、晚霞、夜景和喷泉，避开正午暴晒；广场极大，切勿全程徒步横穿草坪，直奔南端海边城雕最省力。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 星海广场：https://www.amap.com/place/B019B0AN7O"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 星海广场",
+        "url": "https://www.amap.com/place/B019B0AN7O",
+        "poiId": "B019B0AN7O",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Xinghai Square .jpg",
+      "author": "HSJ233",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xinghai_Square_.jpg",
+      "width": 3840,
+      "height": 2504
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

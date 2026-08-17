@@ -82,7 +82,14 @@ function promptFor(item) {
 function answerAfterPrompt(body, prompt) {
   const text = compact(body);
   const index = text.indexOf(prompt);
-  return compact(index >= 0 ? text.slice(index + prompt.length) : text);
+  return compact(index >= 0 ? text.slice(index + prompt.length) : text)
+    .replace(/\n?活动\s*$/u, '')
+    .trim();
+}
+
+function isTransientAnswer(text) {
+  const value = compact(text).replace(/\n?活动\s*$/u, '').trim();
+  return !value || /^(?:问题分析中|正在分析(?:问题)?|正在思考(?:中)?|正在生成(?:回答)?|生成中|加载中|请稍候)[.。…]*$/u.test(value);
 }
 
 const OUTPUT_LABELS = ['景点全称', '景点类型', '路线A标题', '路线A节点', '路线A体力', '路线A步行', '路线A提示', '路线B标题', '路线B节点', '路线B体力', '路线B步行', '路线B提示', '外部到达', '入口建议', '内部交通', '住宿区域', '长辈儿童'];
@@ -158,8 +165,16 @@ function parseAnswer(answer, target) {
     tips: splitList(sanitizeDynamic(labeled(answer, '路线B提示')), /[|｜]/),
   };
   const family = labeled(answer, '长辈儿童').replace(/\s*活动\s*$/u, '').trim();
-  const elderly = family.match(/长辈(?:建议)?[：:]?\s*([\s\S]*?)(?=儿童(?:建议)?[：:]?)/u)?.[1]?.replace(/[；;。\s]+$/u, '').trim() || '';
-  const children = family.match(/儿童(?:建议)?[：:]?\s*([\s\S]+)$/u)?.[1]?.trim() || '';
+  const elderly = (
+    family.match(/长辈(?:建议)?[：:]?\s*([\s\S]*?)(?=儿童(?:建议)?[：:]?)/u)?.[1]
+    || answer.match(/(?:^|\s)长辈建议[：:]\s*([\s\S]*?)(?=\s+儿童建议[：:])/u)?.[1]
+    || ''
+  ).replace(/[；;。\s]+$/u, '').trim();
+  const children = (
+    family.match(/儿童(?:建议)?[：:]?\s*([\s\S]+)$/u)?.[1]
+    || answer.match(/(?:^|\s)儿童建议[：:]\s*([\s\S]+?)\s*$/u)?.[1]
+    || ''
+  ).replace(/\s*活动\s*$/u, '').trim();
   const routeCandidates = [routeA, routeB];
   const value = {
     identity,
@@ -176,7 +191,10 @@ function parseAnswer(answer, target) {
   if (!value.category) issues.push('缺少景点类型');
   if (!value.routes.length) issues.push('缺少可执行游览方案');
   for (const key of ['externalArrive', 'internalArrive', 'internalTraffic', 'housingArea']) if (!value[key]) issues.push(`缺少${key}`);
-  if (!elderly || !children) issues.push('长辈儿童建议不完整');
+  // Keep the gate semantic and tolerant: short but complete advice is valid;
+  // only empty fragments or visibly truncated punctuation are rejected.
+  const careComplete = value => value.length >= 4 && !/[，、；：,:;]$/u.test(value);
+  if (!careComplete(elderly) || !careComplete(children)) issues.push('长辈儿童建议不完整');
   return { complete: issues.length === 0, issues, value };
 }
 
@@ -194,37 +212,46 @@ async function resumeIfPossible(page) {
 async function collectOne(page, target) {
   const basePrompt = promptFor(target);
   let bestFailure = null;
-  for (let attempt = 1; attempt <= 2; attempt += 1) {
+  const attempts = [];
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
     const prompt = attempt === 1 ? basePrompt : `${basePrompt}\n这是第${attempt}次尝试，请从头完整输出17行。`;
+    if (attempt > 1) {
+      await page.goto('about:blank', { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => {});
+      await sleep(350);
+    }
     await page.goto(`https://www.xiaohongshu.com/ai_chat_tab?searchKeyWord=${encodeURIComponent(prompt)}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await sleep(700);
     let best = '';
     let lastGrowth = Date.now();
     let resumed = false;
+    let sawTransient = false;
     const started = Date.now();
-    while (Date.now() - started < 16000) {
+    while (Date.now() - started < 28000) {
       const body = await page.evaluate(() => document.body.innerText || '').catch(() => '');
       if (loginRequired(body)) return { ok: false, fatal: 'login_required' };
       if (restricted(body)) return { ok: false, fatal: 'restricted' };
       const answer = answerAfterPrompt(body, prompt);
-      if (answer.length > best.length) {
+      if (isTransientAnswer(answer)) {
+        sawTransient = sawTransient || Boolean(answer);
+      } else if (answer.length > best.length) {
         best = answer;
         lastGrowth = Date.now();
       }
       const parsed = parseAnswer(best, target);
-      if (parsed.complete) return { ok: true, prompt: basePrompt, raw: best, ...parsed.value };
+      if (parsed.complete) return { ok: true, prompt: basePrompt, raw: best, attempts: [...attempts, { attempt, reason: 'ok', length: best.length }], ...parsed.value };
       bestFailure = chooseBetterFailure(bestFailure, { ok: false, issues: parsed.issues, answerPreview: best.slice(0, 2000) });
-      if (Date.now() - lastGrowth > (best ? 2200 : 5000)) {
+      if (best && Date.now() - lastGrowth > 3200) {
         if (!resumed && await resumeIfPossible(page)) {
           resumed = true;
           lastGrowth = Date.now();
-        } else break;
+        }
       }
       await sleep(500);
     }
-    if (attempt < 2) await sleep(800);
+    attempts.push({ attempt, reason: best ? 'incomplete_answer' : (sawTransient ? 'analysis_only' : 'empty_answer'), length: best.length });
+    if (attempt < 3) await sleep(best ? 800 : 1200);
   }
-  return bestFailure || { ok: false, issues: ['未获得有效回答'] };
+  return { ...(bestFailure || { ok: false, issues: ['未获得有效回答'] }), attempts };
 }
 
 async function main() {
@@ -240,6 +267,26 @@ async function main() {
   output.version = 1;
   output.attractions ||= {};
   output.failures ||= {};
+  // Re-check saved checkpoints with the current parser. This prevents an old,
+  // overly permissive parser from permanently marking truncated answers done.
+  for (const item of workspace.attractions) {
+    const saved = output.attractions[item.baselineKey];
+    if (!saved?.raw) continue;
+    const checked = parseAnswer(saved.raw, item);
+    if (checked.complete) {
+      output.attractions[item.baselineKey] = { ...saved, ...checked.value };
+      continue;
+    }
+    output.failures[item.baselineKey] = chooseBetterFailure(output.failures[item.baselineKey], {
+      name: item.name,
+      ok: false,
+      issues: checked.issues,
+      answerPreview: saved.raw,
+      attempts: saved.attempts || [],
+      updatedAt: new Date().toISOString(),
+    });
+    delete output.attractions[item.baselineKey];
+  }
   for (const item of workspace.attractions) {
     const failed = output.failures[item.baselineKey];
     if (!failed?.answerPreview || output.attractions[item.baselineKey]?.routes?.length) continue;
@@ -342,4 +389,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { chooseBetterFailure, parseAnswer, promptFor, routeIsUsable };
+module.exports = { chooseBetterFailure, isTransientAnswer, parseAnswer, promptFor, routeIsUsable };

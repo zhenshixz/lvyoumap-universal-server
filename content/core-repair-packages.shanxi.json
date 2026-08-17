@@ -1,0 +1,603 @@
+{
+  "province": "山西",
+  "status": "applied",
+  "createdAt": "2026-08-17T06:47:48.369Z",
+  "updatedAt": "2026-08-17T07:02:18.579Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [],
+  "seedFile": "content/core-repair-seeds.shanxi.json",
+  "attractions": [
+    {
+      "baselineKey": "core_6727e196f5",
+      "id": "manual_shanxi_c1104813",
+      "name": "山西博物院",
+      "city": "太原",
+      "rating": 4.8,
+      "reviewsCount": "3259条携程点评",
+      "image": "/assets/images/attractions/shanxi_c1104813_verified.jpg",
+      "description": "“五千年历史看山西”，位于太原市滨河西路的山西博物院，荟萃了山西文物的精华。山西博物院由主馆和四角辅楼组成，其中主馆外形像斗又像鼎，是游客参观院内藏品的主要场所。",
+      "intro": "“五千年历史看山西”，位于太原市滨河西路的山西博物院，荟萃了山西文物的精华。山西博物院由主馆和四角辅楼组成，其中主馆外形像斗又像鼎，是游客参观院内藏品的主要场所。",
+      "level": "热门景点",
+      "category": "博物馆",
+      "tags": [
+        "博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "太原市万柏林区滨河西路北段13号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线太原理工大学站C口步行约10分钟；公交69路、865路直达省博物院站；自驾可导航东门或北门，但车位紧张，建议绿色出行。",
+          "internal_arrive": "主馆东门为常规入口，凭预约码和身份证入馆；60岁以上老人、军人等优待人群可凭有效证件从南门登记入馆。",
+          "internal_traffic": "馆内设有电梯和扶梯，可直达各楼层，方便行李寄存和轮椅推行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在迎泽区或万柏林区滨河西路沿线，距离博物院较近，周边餐饮和交通配套完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "平遥牛肉",
+          "山西过油肉",
+          "太原头脑",
+          "大同兔头"
+        ],
+        "special_care": {
+          "elderly": "馆内可租借轮椅，一层有休息区和免费直饮水，建议放慢节奏，重点看二层和三层核心展厅",
+          "children": "可租童车，带孩子在二层找“愤怒的小鸟”鸮卣和晋侯鸟尊，三层看胡人吃饼骑驼俑，增加互动趣味性。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "精华省力游（2F→3F→4F→1F）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "二层（文明摇篮",
+            "夏商踪迹",
+            "晋国霸业）",
+            "三层（民族熔炉",
+            "佛风遗韵",
+            "戏曲故乡",
+            "天下晋商）",
+            "四层（土木华章等专题展厅）",
+            "一层（临时特展",
+            "文创商店）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步",
+          "physical": 3,
+          "tips": [
+            "建议从二层开始逛，核心镇馆之宝集中在二层和三层，逛完再上四层，最后到一层休息和盖章，不走回头路。"
+          ],
+          "sourceTitle": "携程旅行 山西博物院 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online",
+          "高德地图 山西博物院：https://www.amap.com/place/B015F031GS"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 山西博物院 详情页",
+          "url": "https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "山西博物院 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1365
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a6d283a96b",
+      "id": "manual_shanxi_c319249d",
+      "name": "北齐壁画博物馆",
+      "city": "太原",
+      "rating": 4.8,
+      "reviewsCount": "439条携程点评",
+      "image": "/assets/images/attractions/shanxi_c319249d_verified.jpg",
+      "description": "太原北齐壁画博物馆是一座依托徐显秀墓进行原址保护及展示的墓葬壁画专题遗址类博物馆，位于山西省太原市迎泽区，总占地面积2万平方米，其中包括展馆3830平方米，壁画保护研究中心1525平方米。作为一座集历史、艺术和文化于一体的博物馆，这里为游客提供了一个深入了解中国古代壁画艺术和北齐文化的窗口。",
+      "intro": "太原北齐壁画博物馆是一座依托徐显秀墓进行原址保护及展示的墓葬壁画专题遗址类博物馆，位于山西省太原市迎泽区，总占地面积2万平方米，其中包括展馆3830平方米，壁画保护研究中心1525平方米。作为一座集历史、艺术和文化于一体的博物馆，这里为游客提供了一个深入了解中国古代壁画艺术和北齐文化的窗口。",
+      "level": "博物馆",
+      "category": "遗址类墓葬壁画专题博物馆",
+      "tags": [
+        "遗址类墓葬壁画专题博物馆",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "山西省太原市迎泽区南十方街与东峰路交汇处往西150米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至\"太原北齐壁画博物馆\"正门入口，东侧有免费停车场；公共交通可乘坐Y7旅游专线直达，或乘地铁1号线至南十方街站后步行约2公里（建议打车前往）。",
+          "internal_arrive": "务必定位到博物馆正门入口，从右侧斜坡上去，避免从马路边标识处下车，否则需走很长一段路和台阶，对长辈和儿童不友好。",
+          "internal_traffic": "全馆仅一层，三个展厅均为平层设计，无楼梯和电梯，全程无障碍，适合推轮椅和婴儿车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在迎泽区或太原南站附近，距博物馆打车约10-20分钟，方便串联市区其他景点。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "平遥牛肉",
+          "山西过油肉",
+          "太原头脑",
+          "大同兔头"
+        ],
+        "special_care": {
+          "elderly": "馆内全程平层无障碍，门口可免费领取轮椅；建议跟随公益讲解或租用语音导览器（20元/台），否则容易\"看连环画\"",
+          "children": "自带空白集章本在文创区免费盖章（28枚），带小放大镜观察壁画细节，用寻宝游戏引导孩子找\"蒙娜丽莎马\"和胡人乐舞，互动性强。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "一馆三展厅省力平层游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口安检",
+            "文创盖章区",
+            "一号展厅「别都华彩」",
+            "二号展厅「一眼千年」（体验VR沉浸式墓室漫游）",
+            "三号展厅「简易标美」",
+            "室外小园林休息"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "馆内恒温偏凉，建议随身带薄外套；二号展厅VR设备数量有限，建议进馆后优先体验；公益讲解时间为官方当日建议时段和官方当日建议时段（节假日可能加场），可在西侧服务台提前5分钟集合；真迹展厅严禁开闪光灯拍照。"
+          ],
+          "sourceTitle": "携程旅行 北齐壁画博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 北齐壁画博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "北齐壁画博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1365
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_9360849216",
+      "id": "manual_shanxi_fee2975d",
+      "name": "运城盐湖",
+      "city": "运城",
+      "rating": 4.3,
+      "reviewsCount": "1107条携程点评",
+      "image": "/assets/images/attractions/shanxi_fee2975d_verified.jpg",
+      "description": "中国死海（运城盐湖）景区，地处山西晋南盆地。运城盐湖南依苍翠高峻的中条山，西接黄河古渡，湖光山色，景色奇特。",
+      "intro": "中国死海（运城盐湖）景区，地处山西晋南盆地。运城盐湖南依苍翠高峻的中条山，西接黄河古渡，湖光山色，景色奇特。",
+      "level": "热门景点",
+      "category": "自然湖泊/地质奇观/康养体验",
+      "tags": [
+        "自然湖泊/地质奇观/康养体验",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "运城市盐湖区城南（距离池神庙3公里处）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至“11号大铁门”或“22号堤”，周边有免费或收费停车场；高铁至运城北站后，可乘16路公交或打车前往景区。",
+          "internal_arrive": "强烈推荐导航至“11号大铁门”，这是最省力的核心入口。若导航至“盐湖园”或“东湖早市”需横穿街道或走较长滨湖大道，带老人小孩较累。",
+          "internal_traffic": "景区内有观光车（费用以官方当日公告为准往返），也可骑共享单车，但不推荐双人自行车（调度费较高）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在东湖早市对面或盐湖欢乐世界附近（如希漫酒店、奥臻酒店），去早市和盐湖都很方便；若需深度体验康养项目，可选择景区内的听涛阁酒店。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "平遥牛肉",
+          "山西过油肉",
+          "太原头脑",
+          "大同兔头"
+        ],
+        "special_care": {
+          "elderly": "推荐体验盐水漂浮和温泉水疗，对关节友好，但注意保暖和补水",
+          "children": "可体验黑泥浴和矿盐理疗（像玩泥巴和挖沙子），但8岁以下儿童不建议参与盐水漂浮，需备好泳衣、泳帽和泳镜。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "11号大铁门粉色盐湖省力打卡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "11号大铁门（乘观光车）",
+            "粉色盐湖核心观赏区",
+            "006号灯杆"
+          ],
+          "duration": "半天",
+          "walking": "约500米（主要依靠观光车）",
+          "physical": 2,
+          "tips": [
+            "11号大铁门进门后务必乘坐观光车（往返费用以官方当日公告为准），内部土路较长且暴晒，不建议步行。拍照建议选在下午阳光充足时，湖面粉色更通透。"
+          ],
+          "sourceTitle": "携程旅行 运城盐湖 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "22号堤与观景台环湖自驾线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "22号堤入口",
+            "沿湖步道",
+            "盐池观景台",
+            "池神庙（外观）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里",
+          "physical": 3,
+          "tips": [
+            "适合自驾随走随停，沿途可近距离触摸盐湖。观景台可远眺盐池全景与中条山，视野开阔。"
+          ],
+          "sourceTitle": "携程旅行 运城盐湖 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 运城盐湖 详情页",
+          "url": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "运城盐湖 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online",
+        "width": 4328,
+        "height": 2885
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_fe40b6a95e",
+      "id": "manual_shanxi_c59b3e16",
+      "name": "浊漳河谷古建群",
+      "city": "平顺",
+      "rating": 5,
+      "reviewsCount": "2条携程点评",
+      "image": "/assets/images/attractions/shanxi_c59b3e16_verified.jpg",
+      "description": "浊漳河谷古建群位于山西省长治市平顺县浊漳河(常辛线北200米)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "浊漳河谷古建群位于山西省长治市平顺县浊漳河(常辛线北200米)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "古建筑群 / 访古研学 / 自驾风景道",
+      "tags": [
+        "古建筑群 / 访古研学 / 自驾风景道",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "山西省长治市平顺县浊漳河(常辛线北200米)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "仅支持自驾或包车，从长治市区出发约 1.5 小时，全程省道及乡道，路况较好但部分村路狭窄，会车需谨慎慢行。",
+          "internal_arrive": "从长治市区出发，建议以 原起寺 或 大云院 为第一站，这两个点卫生间条件好、停车场较大，适合作为整条路线的补给和出发起点。",
+          "internal_traffic": "全程自驾，各景点之间有省道串联；大云院和龙门寺部分路段需换乘村内摆渡车（费用以官方当日公告为准），也可步行前往。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在 平顺县城 或 长治市区，若行程衔接 八泉峡 等周边景点，可选择在虹霓村或八泉峡附近入住民宿。 长辈建议：选择路线 A 中坡度平缓的景点（如原起寺、大云院、龙门寺），避开需要爬山的路线；穿防滑平底鞋，备好常用药品；若体力有限，可只选龙门寺和大云院两站深度游览。 儿童建议：古建门槛较高，儿童可能觉得枯燥，建议重点带他们看 龙门寺 的六朝建筑和 大云院 的五代壁画，提前给孩子看相关纪录片或绘本，提升兴趣；注意防晒和防蚊。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "平遥牛肉",
+          "山西过油肉",
+          "太原头脑",
+          "大同兔头"
+        ],
+        "special_care": {
+          "elderly": "选择路线 A 中坡度平缓的景点（如原起寺、大云院、龙门寺），避开需要爬山的路线；穿防滑平底鞋，备好常用药品；若体力有限，可只选龙门寺和大云院两站深度游览",
+          "children": "古建门槛较高，儿童可能觉得枯燥，建议重点带他们看 龙门寺 的六朝建筑和 大云院 的五代壁画，提前给孩子看相关纪录片或绘本，提升兴趣；注意防晒和防蚊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "河谷精华一日游（天台庵→原起寺→大云院→淳化寺→龙门寺）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "天台庵（五代木构）",
+            "原起寺（宋代大殿+青龙宝塔）",
+            "大云院（五代壁画+七宝塔）",
+            "淳化寺（金代大殿）",
+            "龙门寺（六朝古建博物馆）"
+          ],
+          "duration": "半天",
+          "walking": "约 2.5 公里（含龙门寺从停车场步行至寺门的 400 米缓坡）",
+          "physical": 3,
+          "tips": [
+            "免费古建（如佛头寺、回龙寺、夏禹神祠）多在 官方当日建议时段–官方当日建议时段 午休锁门，收费景点一般不午休，建议上午先逛免费点、中午集中逛收费点。\n大云院和龙门寺部分路段需换乘 费用以官方当日公告为准摆渡车或步行，建议让长辈和儿童乘坐摆渡车省力。\n龙门寺建议拼讲解（约 费用以官方当日公告为准），有人讲解比自行观看更有收获。\n河谷补给点少，建议自带饮水和零食；原起寺和大云院的卫生间条件较好，可优先解决。"
+          ],
+          "sourceTitle": "携程旅行 浊漳河谷古建群 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/pingshun1446132/148931016.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/pingshun1446132/148931016.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 浊漳河谷古建群 详情页",
+          "url": "https://you.ctrip.com/sight/pingshun1446132/148931016.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "山西长治平顺县浊漳河谷古建群,可称为中国古建爱好者必须要来的一处",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4106713262420408925",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4106713262420408925",
+        "width": 2624,
+        "height": 3488
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B01650A2TH": {
+      "baselineKey": "core_b439c23e7d",
+      "id": "amap_B01650A2TH",
+      "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "city": "山西",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shanxi_a214e03b_verified.jpg",
+      "description": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+      "intro": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+      "level": "5A景区",
+      "category": "自然山水、瀑布峡谷",
+      "tags": [
+        "自然山水、瀑布峡谷",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "山西省吉县城西45公里",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至\"壶口客栈\"或\"黄龙寺\"（靠近北门，可少排队），或导航至\"山西黄河壶口瀑布景区游客中心\"（南门）；从临汾西站出发可乘坐直通车或包车前往，车程约2小时。",
+          "internal_arrive": "推荐从北门（壶口客栈附近）进入，人少、排队短，且可节省景交车费用；若从南门游客中心进入，则必须乘坐景交车前往核心区。",
+          "internal_traffic": "景区内有景交车（摆渡车）往返游客中心与主瀑布观景台，车程约5-15分钟，带老人和儿童强烈建议乘坐，不要步行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择景区附近的民宿或酒店（如壶口客栈、望河楼大酒店），距离游客中心1-2公里，方便次日早入园；若追求更完善的餐饮和住宿条件，可住在吉县县城，车程约1.5小时。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "平遥牛肉",
+          "山西过油肉",
+          "太原头脑",
+          "大同兔头"
+        ],
+        "special_care": {
+          "elderly": "全程尽量乘坐景交车，避免长时间步行；瀑布附近风大、水雾重，注意保暖和防滑，穿舒适的运动鞋",
+          "children": "准备雨衣和手机防水袋，避免被水雾淋湿；可给孩子准备换洗衣物和消毒湿巾，游玩后及时清理。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "山西侧核心观景省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "景交车",
+            "主观景台",
+            "龙洞",
+            "十里龙槽"
+          ],
+          "duration": "半天",
+          "walking": "约1公里",
+          "physical": 2,
+          "tips": [
+            "景区较大，强烈建议购买景交车票，步行距离较长且暴晒；靠近瀑布水雾极大，务必准备雨衣、手机防水袋和防滑鞋；晴天上午9-11点光线好，容易看到彩虹。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sx&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sx&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 山西黄河壶口瀑布旅游区",
+          "url": "https://www.amap.com/place/B01650A2TH",
+          "poiId": "B01650A2TH",
+          "evidenceMode": "existing-amap-record",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Hukou Waterfall.jpg",
+        "author": "Leruswing",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hukou_Waterfall.jpg",
+        "width": 3758,
+        "height": 2465
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "ratingAudit": {
+        "selected": "高德地图",
+        "status": "inherited-from-existing-override",
+        "existingId": "amap_B01650A2TH"
+      }
+    }
+  },
+  "selfHealActions": [
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B01650A2TH",
+      "keptName": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "removedId": "manual_shanxi_a214e03b",
+      "removedName": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    },
+    {
+      "type": "inherit_existing_rating",
+      "keptId": "amap_B01650A2TH",
+      "keptName": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "reason": "增强覆盖已绑定唯一现有实体，继承其可追溯评分"
+    }
+  ],
+  "reviewedAt": "2026-08-17",
+  "reviewedAtIso": "2026-08-17T06:47:49.093Z",
+  "appliedAt": "2026-08-17T07:14:16.057Z",
+  "appliedAttractionIds": [
+    "manual_shanxi_c1104813",
+    "manual_shanxi_c319249d",
+    "manual_shanxi_fee2975d",
+    "manual_shanxi_c59b3e16"
+  ],
+  "appliedOverrideIds": [
+    "amap_B01650A2TH"
+  ]
+}

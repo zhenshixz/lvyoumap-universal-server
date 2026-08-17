@@ -38,7 +38,7 @@ const provinceFilter = String(args.get('province') || '');
 const nameFilter = String(args.get('name') || '');
 const limit = Math.max(0, Number(args.get('limit') || 0));
 const loginTimeoutMs = Math.max(60000, Number(args.get('login-timeout') || 600000));
-const answerWaitMs = Math.max(12000, Number(args.get('answer-wait') || 20000));
+const answerWaitMs = Math.max(18000, Number(args.get('answer-wait') || 26000));
 const requestDelayMs = Math.max(1200, Number(args.get('request-delay') || 2500));
 
 function nowIso() {
@@ -162,6 +162,23 @@ function answerQuality(text, prompt = '') {
     && !(/(路线|技巧|注意事项|提醒|建议)$/.test(trailing) && trailing.length <= 16)
     && !/登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|换个问题试试/.test(answer);
   return { complete, length: answer.length, routeSignals, showSignals, audienceSignals, safetySignals, sections };
+}
+
+function isTransientAnswer(text) {
+  const value = compactText(text);
+  return !value || /^(?:问题分析中|正在分析(?:问题)?|正在思考(?:中)?|正在生成(?:回答)?|生成中|加载中|请稍候)[.。…]*$/.test(value);
+}
+
+function retryPlan(result) {
+  if (!result || result.ok) return null;
+  if (['login_required', 'restricted'].includes(result.reason)) return null;
+  if (['analysis_only', 'empty_answer', 'navigation_error'].includes(result.reason)) {
+    return { delay: 1200, resetPage: true, label: '页面停留在分析状态，重置会话后重试' };
+  }
+  if (result.reason === 'incomplete_answer') {
+    return { delay: 800, resetPage: false, label: '回答已生成但不完整，继续生成后重试' };
+  }
+  return { delay: 1500, resetPage: true, label: '页面状态异常，重置后重试' };
 }
 
 function isExcludedName(name) {
@@ -342,8 +359,11 @@ async function waitForLogin(page) {
   return false;
 }
 
-async function scrapeOne(page, target) {
-  const prompt = promptFor(target.attraction);
+async function scrapeOne(page, target, options = {}) {
+  const basePrompt = promptFor(target.attraction);
+  const prompt = options.attempt > 1
+    ? `${basePrompt}。请直接给出完整攻略正文，不要停留在分析过程。`
+    : basePrompt;
   const url = `https://www.xiaohongshu.com/ai_chat_tab?searchKeyWord=${encodeURIComponent(prompt)}`;
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
   await sleep(700);
@@ -356,11 +376,14 @@ async function scrapeOne(page, target) {
   let stable = 0;
   let lastGrowth = Date.now();
   let resumed = false;
+  let sawTransient = false;
   while (Date.now() - started < answerWaitMs) {
     const body = await page.evaluate(() => document.body.innerText || '');
     if (restrictedText(body)) return { ok: false, reason: 'restricted', prompt, answerPreview: best.slice(0, 1000) };
     const answer = cleanupAnswer(body, prompt);
-    if (answer.length > best.length) {
+    if (isTransientAnswer(answer)) {
+      sawTransient = sawTransient || Boolean(answer);
+    } else if (answer.length > best.length) {
       best = answer;
       stable = 0;
       lastGrowth = Date.now();
@@ -369,8 +392,10 @@ async function scrapeOne(page, target) {
     }
     const sanitized = finalSanitizeAnswer(best);
     const quality = answerQuality(sanitized, prompt);
-    if (quality.complete && stable >= 2) return { ok: true, prompt, answer: sanitized, quality };
-    if (Date.now() - lastGrowth > (best ? 2200 : 5000)) {
+    if (quality.complete && stable >= 2) return { ok: true, prompt: basePrompt, answer: sanitized, quality };
+    // “问题分析中”是点点生成前的正常过渡态，不能按静止正文处理。
+    // 只有真实正文已经出现且停止增长后，才尝试点击“继续生成”。
+    if (best && Date.now() - lastGrowth > 3200) {
       const continued = !resumed && await page.evaluate(() => {
         window.scrollTo(0, document.body.scrollHeight);
         const buttons = [...document.querySelectorAll('button,[role="button"]')];
@@ -382,14 +407,13 @@ async function scrapeOne(page, target) {
       if (continued) {
         resumed = true;
         lastGrowth = Date.now();
-      } else if (best && stable >= 4) {
-        break;
       }
     }
     await sleep(500);
   }
   const sanitized = finalSanitizeAnswer(best);
-  return { ok: false, reason: 'incomplete_answer', prompt, answerPreview: sanitized.slice(0, 1000), quality: answerQuality(sanitized, prompt) };
+  const reason = best ? 'incomplete_answer' : (sawTransient ? 'analysis_only' : 'empty_answer');
+  return { ok: false, reason, prompt: basePrompt, answerPreview: sanitized.slice(0, 1000), quality: answerQuality(sanitized, basePrompt) };
 }
 
 function backupOverrides() {
@@ -470,13 +494,23 @@ async function runCollection() {
       writeProgress({ status: 'running', current, index, total: targets.length, success, failed });
       let result;
       try {
-        result = await scrapeOne(page, target);
-        if (result.reason === 'incomplete_answer') {
-          writeProgress({ status: 'running', message: `${current} 首次回答尚未完整，正在快速刷新重试一次。`, current, index, total: targets.length, success, failed });
-          await sleep(800);
-          const retry = await scrapeOne(page, target);
+        result = await scrapeOne(page, target, { attempt: 1 });
+        const attempts = [{ reason: result.reason || 'ok', length: Number(result.quality?.length || result.answer?.length || 0) }];
+        const maxAttempts = ['analysis_only', 'empty_answer'].includes(result.reason) ? 3 : 2;
+        for (let attempt = 2; !result.ok && attempt <= maxAttempts; attempt += 1) {
+          const plan = retryPlan(result);
+          if (!plan) break;
+          writeProgress({ status: 'running', message: `${current} ${plan.label}（${attempt}/${maxAttempts}）。`, current, index, total: targets.length, success, failed });
+          await sleep(plan.delay);
+          if (plan.resetPage) {
+            await page.goto('about:blank', { waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => {});
+            await sleep(350);
+          }
+          const retry = await scrapeOne(page, target, { attempt });
+          attempts.push({ reason: retry.reason || 'ok', length: Number(retry.quality?.length || retry.answer?.length || 0) });
           if (retry.ok || Number(retry.quality?.length || 0) > Number(result.quality?.length || 0)) result = retry;
         }
+        result.attempts = attempts;
       } catch (error) {
         result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction) };
       }
@@ -584,8 +618,12 @@ async function main() {
   else await runCollection();
 }
 
-main().catch(error => {
-  writeProgress({ status: 'error', message: error.message, stack: error.stack });
-  console.error(error);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch(error => {
+    writeProgress({ status: 'error', message: error.message, stack: error.stack });
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { answerQuality, isTransientAnswer, retryPlan };

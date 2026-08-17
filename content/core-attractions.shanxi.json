@@ -1,0 +1,782 @@
+{
+  "province": "山西",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=sx&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/shanxi100056.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 5,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 1,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 1,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 12,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 17,
+  "existingRecordBoundCount": 24,
+  "existingRecordUnboundCount": 5,
+  "existingRecordUnboundNames": [
+    "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+    "山西博物院",
+    "北齐壁画博物馆",
+    "运城盐湖",
+    "浊漳河谷古建群"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 1,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "晋祠博物馆",
+      "city": "",
+      "aliases": [
+        "晋祠博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 1,
+  "observationCandidates": [
+    {
+      "name": "晋祠博物馆",
+      "city": "",
+      "aliases": [
+        "晋祠博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "晋祠博物馆",
+      "city": "",
+      "aliases": [
+        "晋祠博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 5,
+    "verifiedCount": 4,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 1,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_f346bcb08e",
+      "name": "乔家大院景区",
+      "preferredId": "amap_B016200AUC",
+      "aliases": [
+        "乔家大院景区",
+        "晋中市乔家大院景区",
+        "乔家大院"
+      ],
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014/2024年"
+    },
+    {
+      "key": "core_441f7ecbf4",
+      "name": "晋祠天龙山景区",
+      "preferredId": "amap_B0I625GZO3",
+      "aliases": [
+        "晋祠天龙山景区",
+        "太原市晋祠天龙山景区",
+        "晋祠天龙山"
+      ],
+      "city": "太原",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_b439c23e7d",
+      "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "preferredId": "amap_B01650A2TH",
+      "aliases": [
+        "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+        "黄河壶口瀑布旅游区"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_e8c6af63e7",
+      "name": "云丘山景区",
+      "preferredId": "amap_B01650WRUX",
+      "aliases": [
+        "云丘山景区",
+        "临汾市云丘山景区",
+        "云丘山"
+      ],
+      "city": "临汾",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_9e880c3f86",
+      "name": "太行山大峡谷八泉峡景区",
+      "preferredId": "amap_B0163005LD",
+      "aliases": [
+        "太行山大峡谷八泉峡景区",
+        "长治市太行山大峡谷八泉峡景区",
+        "太行山大峡谷八泉峡"
+      ],
+      "city": "长治",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_161ce83675",
+      "name": "洪洞大槐树寻根祭祖园旅游景区",
+      "preferredId": "amap_B01650A0W3",
+      "aliases": [
+        "洪洞大槐树寻根祭祖园旅游景区",
+        "临汾市洪洞大槐树寻根祭祖园旅游景区",
+        "洪洞大槐树寻根祭祖园"
+      ],
+      "city": "临汾",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_4a25376427",
+      "name": "雁门关景区",
+      "preferredId": "amap_B015E00DWA",
+      "aliases": [
+        "雁门关景区",
+        "忻州市雁门关景区",
+        "雁门关"
+      ],
+      "city": "忻州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_5e14356802",
+      "name": "平遥古城景区",
+      "preferredId": "amap_B016200MKK",
+      "aliases": [
+        "平遥古城景区",
+        "晋中市平遥古城景区",
+        "平遥古城"
+      ],
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_afe5c28236",
+      "name": "绵山风景区",
+      "preferredId": "amap_B01620MOKY",
+      "aliases": [
+        "绵山风景区",
+        "晋中市绵山风景区",
+        "绵山"
+      ],
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_00ae995167",
+      "name": "皇城相府生态文化旅游区",
+      "preferredId": "amap_B0164001EG",
+      "aliases": [
+        "皇城相府生态文化旅游区",
+        "晋城市皇城相府生态文化旅游区",
+        "皇城相府生态文化"
+      ],
+      "city": "晋城",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_7f30bd0ddc",
+      "name": "五台山风景名胜区",
+      "preferredId": "amap_B015E015ED",
+      "aliases": [
+        "五台山风景名胜区",
+        "忻州市五台山风景名胜区",
+        "五台山"
+      ],
+      "city": "忻州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_805f5ec8a5",
+      "name": "云冈石窟景区",
+      "preferredId": "amap_B0160001P5",
+      "aliases": [
+        "云冈石窟景区",
+        "大同市云冈石窟景区",
+        "云冈石窟"
+      ],
+      "city": "大同",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_a4d474cf65",
+      "name": "应县木塔景区",
+      "preferredId": "amap_B015D00MZ0",
+      "aliases": [
+        "应县木塔景区",
+        "应县木塔"
+      ],
+      "city": "朔州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_04a228ee91",
+      "name": "小西天",
+      "preferredId": "amap_B0165005K0",
+      "aliases": [
+        "小西天"
+      ],
+      "city": "临汾",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a3f679dc74",
+      "name": "悬空寺",
+      "preferredId": "amap_B0FFF3LXOW",
+      "aliases": [
+        "悬空寺"
+      ],
+      "city": "大同",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 14
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6727e196f5",
+      "name": "山西博物院",
+      "preferredId": "manual_shanxi_c1104813",
+      "aliases": [
+        "山西博物院"
+      ],
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "太原",
+          "page": 1,
+          "name": "山西博物院",
+          "url": "https://you.ctrip.com/sight/taiyuan167/66076.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a6d283a96b",
+      "name": "北齐壁画博物馆",
+      "preferredId": "manual_shanxi_c319249d",
+      "aliases": [
+        "北齐壁画博物馆"
+      ],
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "太原",
+          "page": 1,
+          "name": "太原北齐壁画博物馆",
+          "url": "https://you.ctrip.com/sight/taiyuan167/5704422.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9360849216",
+      "name": "运城盐湖",
+      "preferredId": "manual_shanxi_fee2975d",
+      "aliases": [
+        "运城盐湖"
+      ],
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "运城",
+          "page": 1,
+          "name": "运城盐湖",
+          "url": "https://you.ctrip.com/sight/yuncheng397/51439.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fe40b6a95e",
+      "name": "浊漳河谷古建群",
+      "preferredId": "manual_shanxi_c59b3e16",
+      "aliases": [
+        "浊漳河谷古建群"
+      ],
+      "city": "长治",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "长治",
+          "page": 5,
+          "name": "浊漳河",
+          "url": "https://you.ctrip.com/sight/pingshun1446132/148931016.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9b4b56903f",
+      "name": "晋祠",
+      "preferredId": "amap_B015F02AH1",
+      "aliases": [
+        "晋祠",
+        "晋祠景区"
+      ],
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_db4837cfc9",
+      "name": "华严寺",
+      "preferredId": "amap_B0160007IG",
+      "aliases": [
+        "华严寺"
+      ],
+      "city": "大同",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 5
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_19e6aa4bc3",
+      "name": "忻州古城",
+      "preferredId": "amap_B0FFKEPDL8",
+      "aliases": [
+        "忻州古城"
+      ],
+      "city": "忻州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 24
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_435dac98c0",
+      "name": "王家大院",
+      "preferredId": "amap_B016200MX2",
+      "aliases": [
+        "王家大院",
+        "山西灵石王家大院"
+      ],
+      "city": "晋中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 11
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_570c0f8726",
+      "name": "双林寺",
+      "preferredId": "amap_B016200M7A",
+      "aliases": [
+        "双林寺"
+      ],
+      "city": "晋中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5019f2b051",
+      "name": "广胜寺",
+      "preferredId": "amap_B01650A5H5",
+      "aliases": [
+        "广胜寺"
+      ],
+      "city": "临汾",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 20
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e66af8fb51",
+      "name": "佛光寺",
+      "preferredId": "amap_B015E014LT",
+      "aliases": [
+        "佛光寺"
+      ],
+      "city": "忻州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 26
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e3bc8549ca",
+      "name": "永乐宫",
+      "preferredId": "amap_B01670038O",
+      "aliases": [
+        "永乐宫"
+      ],
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 76
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2fce797fd9",
+      "name": "解州关帝庙",
+      "preferredId": "amap_B0FFGSOEKN",
+      "aliases": [
+        "解州关帝庙"
+      ],
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 150
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3f6ba94c7c",
+      "name": "晋城太行锡崖沟旅游度假区",
+      "preferredId": "amap_B0FFI00XHI",
+      "aliases": [
+        "晋城太行锡崖沟旅游度假区",
+        "锡崖沟"
+      ],
+      "city": "晋城",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 158
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

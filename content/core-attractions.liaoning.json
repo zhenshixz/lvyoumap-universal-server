@@ -1,0 +1,938 @@
+{
+  "province": "辽宁",
+  "checkedAt": "2026-08-17",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/liaoning100061.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 13,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 3,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 7,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 20,
+  "existingRecordBoundCount": 15,
+  "existingRecordUnboundCount": 12,
+  "existingRecordUnboundNames": [
+    "千山景区",
+    "沈阳植物园",
+    "沈阳故宫",
+    "辽宁省博物馆",
+    "张氏帅府",
+    "旅顺口",
+    "丹东绿江村",
+    "朝阳牛河梁遗址",
+    "辽阳白塔",
+    "辽阳汉魏壁画馆",
+    "阜新海棠山",
+    "大连长山群岛旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 3,
+  "priorityObservationCandidates": [
+    {
+      "name": "“九•一八”历史博物馆",
+      "city": "",
+      "aliases": [
+        "“九•一八”历史博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方城文化旅游区",
+      "city": "",
+      "aliases": [
+        "沈阳方城文化旅游区",
+        "沈阳方城文化"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方特欢乐世界",
+      "city": "",
+      "aliases": [
+        "沈阳方特欢乐世界"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "“九•一八”历史博物馆",
+      "city": "",
+      "aliases": [
+        "“九•一八”历史博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方城文化旅游区",
+      "city": "",
+      "aliases": [
+        "沈阳方城文化旅游区",
+        "沈阳方城文化"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方特欢乐世界",
+      "city": "",
+      "aliases": [
+        "沈阳方特欢乐世界"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九一八事变博物馆",
+      "city": "沈阳",
+      "aliases": [
+        "九一八事变博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "“九•一八”历史博物馆",
+      "city": "",
+      "aliases": [
+        "“九•一八”历史博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方城文化旅游区",
+      "city": "",
+      "aliases": [
+        "沈阳方城文化旅游区",
+        "沈阳方城文化"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "沈阳方特欢乐世界",
+      "city": "",
+      "aliases": [
+        "沈阳方特欢乐世界"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九一八事变博物馆",
+      "city": "沈阳",
+      "aliases": [
+        "九一八事变博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 13,
+    "verifiedCount": 9,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_4b6d4d414c",
+      "name": "五女山景区",
+      "preferredId": "amap_B019E00MN0",
+      "aliases": [
+        "五女山景区",
+        "本溪市五女山景区",
+        "五女山"
+      ],
+      "city": "本溪",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_921ce06f5f",
+      "name": "红海滩风景廊道景区",
+      "preferredId": "amap_B0FFJ8TVJ0",
+      "aliases": [
+        "红海滩风景廊道景区",
+        "盘锦市红海滩风景廊道景区",
+        "红海滩风景廊道"
+      ],
+      "city": "盘锦",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_794b915b53",
+      "name": "千山景区",
+      "preferredId": "manual_liaoning_784fdc74",
+      "aliases": [
+        "千山景区",
+        "鞍山市千山景区",
+        "千山"
+      ],
+      "city": "鞍山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_15b8365124",
+      "name": "本溪水洞景区",
+      "preferredId": "amap_B019E00LBV",
+      "aliases": [
+        "本溪水洞景区",
+        "本溪市本溪水洞景区",
+        "本溪水洞"
+      ],
+      "city": "本溪",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_de69836778",
+      "name": "金石滩景区",
+      "preferredId": "amap_B0FFFGVLRG",
+      "aliases": [
+        "金石滩景区",
+        "大连市金石滩景区",
+        "金石滩"
+      ],
+      "city": "大连",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_a185ef0319",
+      "name": "老虎滩海洋公园—老虎滩极地馆",
+      "preferredId": "amap_B019B0226E",
+      "aliases": [
+        "老虎滩海洋公园—老虎滩极地馆",
+        "大连市老虎滩海洋公园—老虎滩极地馆",
+        "老虎滩海洋公园",
+        "老虎滩极地馆",
+        "老虎滩极地馆公园",
+        "大连市老虎滩海洋公园"
+      ],
+      "city": "大连",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_a2e045884d",
+      "name": "沈阳植物园",
+      "preferredId": "manual_liaoning_75f79c7e",
+      "aliases": [
+        "沈阳植物园",
+        "沈阳市沈阳植物园"
+      ],
+      "city": "沈阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_784db122a2",
+      "name": "沈阳故宫",
+      "preferredId": "manual_liaoning_f944e59e",
+      "aliases": [
+        "沈阳故宫"
+      ],
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_570e4a523f",
+      "name": "辽宁省博物馆",
+      "preferredId": "manual_liaoning_e2803ad9",
+      "aliases": [
+        "辽宁省博物馆"
+      ],
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5cd064e95b",
+      "name": "丹东鸭绿江断桥",
+      "preferredId": "amap_B019F009YS",
+      "aliases": [
+        "丹东鸭绿江断桥",
+        "鸭绿江断桥"
+      ],
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 110
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B019F0063B",
+              "name": "鸭绿江风景名胜区",
+              "city": "丹东"
+            },
+            {
+              "id": "amap_B019F009YS",
+              "name": "鸭绿江断桥",
+              "city": "丹东"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B019F009YS",
+          "name": "鸭绿江断桥",
+          "city": "丹东"
+        }
+      ]
+    },
+    {
+      "key": "core_f5cba71cbd",
+      "name": "营口盖州团山海洋公园",
+      "preferredId": "amap_B01A10HUYL",
+      "aliases": [
+        "营口盖州团山海洋公园",
+        "辽宁团山国家级海洋公园"
+      ],
+      "city": "营口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 144
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B01A10HUYL",
+          "name": "辽宁团山国家级海洋公园",
+          "city": "营口"
+        }
+      ]
+    },
+    {
+      "key": "core_f9bf8b5350",
+      "name": "张氏帅府",
+      "preferredId": "manual_liaoning_44dbd58d",
+      "aliases": [
+        "张氏帅府"
+      ],
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "沈阳",
+          "page": 6,
+          "name": "张氏帅府-大青楼",
+          "url": "https://you.ctrip.com/sight/shenyang155/1696091.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_bc10976c79",
+      "name": "旅顺口",
+      "preferredId": "manual_liaoning_318093d6",
+      "aliases": [
+        "旅顺口"
+      ],
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "大连",
+          "page": 5,
+          "name": "旅顺口风景名胜区",
+          "url": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_21f8454c67",
+      "name": "丹东绿江村",
+      "preferredId": "manual_liaoning_84bdbfa1",
+      "aliases": [
+        "丹东绿江村"
+      ],
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "丹东",
+          "page": 2,
+          "name": "绿江村",
+          "url": "https://you.ctrip.com/sight/kuandian2137/1941984.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_ae84bcb89a",
+      "name": "朝阳牛河梁遗址",
+      "preferredId": "manual_liaoning_785b4886",
+      "aliases": [
+        "朝阳牛河梁遗址"
+      ],
+      "city": "朝阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "朝阳",
+          "page": 1,
+          "name": "牛河梁遗址博物馆",
+          "url": "https://you.ctrip.com/sight/jianping2132/3372283.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b1e5953ed8",
+      "name": "辽阳白塔",
+      "preferredId": "manual_liaoning_8b95a2a2",
+      "aliases": [
+        "辽阳白塔"
+      ],
+      "city": "辽阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFKK6MTM",
+          "name": "辽阳白塔",
+          "city": "辽阳市",
+          "type": "风景名胜;风景名胜;风景名胜",
+          "url": "https://www.amap.com/place/B0FFKK6MTM",
+          "verifiedAt": "2026-08-17"
+        }
+      ]
+    },
+    {
+      "key": "core_0a54a4fc6f",
+      "name": "辽阳汉魏壁画馆",
+      "preferredId": "manual_liaoning_db48c217",
+      "aliases": [
+        "辽阳汉魏壁画馆"
+      ],
+      "city": "辽阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "辽阳",
+          "page": 2,
+          "name": "辽阳汉魏壁画馆",
+          "url": "https://you.ctrip.com/sight/liaoyang881/4569946.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_077556cbda",
+      "name": "阜新海棠山",
+      "preferredId": "manual_liaoning_262d28df",
+      "aliases": [
+        "阜新海棠山"
+      ],
+      "city": "阜新",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "阜新",
+          "page": 1,
+          "name": "海棠山风景区",
+          "url": "https://you.ctrip.com/sight/fuxincounty1446031/72422.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_2cc4c275ef",
+      "name": "张学良旧居",
+      "preferredId": "amap_B001804BB9",
+      "aliases": [
+        "张学良旧居",
+        "张学良旧居陈列馆"
+      ],
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c6b42f2ba5",
+      "name": "大连星海广场",
+      "preferredId": "amap_B019B0AN7O",
+      "aliases": [
+        "大连星海广场",
+        "星海广场"
+      ],
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_f3fa12298d",
+      "name": "大连海昌东方水城",
+      "preferredId": "amap_B019B143HI",
+      "aliases": [
+        "大连海昌东方水城",
+        "海昌·东方水城"
+      ],
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 8
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_44fc591799",
+      "name": "大连森林动物园",
+      "preferredId": "amap_B019B0332D",
+      "aliases": [
+        "大连森林动物园"
+      ],
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 37
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_868b518334",
+      "name": "丹东凤凰山",
+      "preferredId": "amap_B019F00SJX",
+      "aliases": [
+        "丹东凤凰山",
+        "凤凰山"
+      ],
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 61
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cd5412cab6",
+      "name": "葫芦岛兴城古城",
+      "preferredId": "amap_B01AD0HY3R",
+      "aliases": [
+        "葫芦岛兴城古城",
+        "兴城古城"
+      ],
+      "city": "葫芦岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 68
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c872e6945b",
+      "name": "锦州笔架山",
+      "preferredId": "amap_B0FFH0Y1D3",
+      "aliases": [
+        "锦州笔架山",
+        "锦州市笔架山风景区"
+      ],
+      "city": "锦州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 75
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_512555cc32",
+      "name": "朝阳鸟化石国家地质公园",
+      "preferredId": "amap_B01A505NOM",
+      "aliases": [
+        "朝阳鸟化石国家地质公园",
+        "辽宁朝阳鸟化石国家地质公园"
+      ],
+      "city": "朝阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 84
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_514a0254a4",
+      "name": "大连长山群岛旅游度假区",
+      "preferredId": "manual_liaoning_99803960",
+      "aliases": [
+        "大连长山群岛旅游度假区"
+      ],
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

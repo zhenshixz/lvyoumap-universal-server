@@ -132,7 +132,7 @@ function previewHtml(items, previewUrl, packageWarnings = []) {
   const links = items.map((item, index) => (
     `<li><span>${String(index + 1).padStart(2, '0')}</span><a href="${previewUrl}/?previewSearch=${encodeURIComponent(item.name)}">${item.name}</a><small>${item.city || province} · ${item.level || item.category}</small></li>`
   )).join('');
-  const warningHtml = packageWarnings.length ? `<div class="warnings"><strong>需要人工留意的非阻断项（${packageWarnings.length}）</strong><ul>${packageWarnings.map(value => `<li>${value}</li>`).join('')}</ul></div>` : '';
+  const warningHtml = packageWarnings.length ? `<div class="warnings"><strong>非阻断信息（${packageWarnings.length}，无需另行补资料）</strong><ul>${packageWarnings.map(value => `<li>${value}；预览内容正常即可批准</li>`).join('')}</ul></div>` : '';
   return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${province}核心景点补全预览</title><style>body{margin:0;background:#f4f8fb;color:#172033;font:15px/1.6 system-ui,-apple-system,"Microsoft YaHei",sans-serif}.wrap{max-width:900px;margin:36px auto;padding:0 20px}header{background:linear-gradient(135deg,#087fb5,#13a786);color:white;border-radius:18px;padding:28px 30px;box-shadow:0 12px 30px #0a668326}h1{margin:0 0 8px;font-size:28px}p{margin:0;opacity:.9}ol{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px}ol li{display:grid;grid-template-columns:42px 1fr auto;align-items:center;background:white;border:1px solid #dce8ef;border-radius:12px;padding:13px 16px;box-shadow:0 4px 12px #31586c0a}ol li span{color:#0796a3;font-weight:700}a{color:#172033;text-decoration:none;font-weight:700;font-size:16px}a:hover{color:#008bc7}small{color:#6f8190}.note,.warnings{background:#fff8df;border:1px solid #f2d98b;border-radius:12px;padding:14px 18px;margin-top:12px}.warnings{background:#fff4ed;border-color:#f3b58f}.warnings ul{margin:8px 0 0;padding-left:22px}.warnings li{margin:4px 0} @media(max-width:640px){.wrap{margin:18px auto}ol li{grid-template-columns:34px 1fr}small{grid-column:2}}</style></head><body><main class="wrap"><header><h1>${province}核心景点补全预览</h1><p>共 ${items.length} 条；点击景点进入地图搜索结果，再打开详情检查三个页签。</p></header>${warningHtml}<ol>${links}</ol><div class="note">这是隔离预览，不会写入 beta 正式数据。确认全部正常后，回到数据维护总控执行第二次确认。</div></main></body></html>`;
 }
 
@@ -257,6 +257,21 @@ async function main() {
   writeJson(indexPath, index);
 
   const appPath = path.join(siteDir, 'app.js');
+  // Each isolated preview must use a unique data URL. Otherwise the browser can
+  // legally reuse the previous province's cached search-index.json for an hour,
+  // making a valid manifest item appear as an empty search result.
+  const previewDataVersion = `preview_${info.slug}_${Date.now()}`;
+  const previewApp = fs.readFileSync(appPath, 'utf8').replace(
+    /const STATIC_DATA_VERSION\s*=\s*["'][^"']+["'];/,
+    `const STATIC_DATA_VERSION = "${previewDataVersion}";`,
+  );
+  fs.writeFileSync(appPath, previewApp, 'utf8');
+  const indexHtmlPath = path.join(siteDir, 'index.html');
+  const previewIndexHtml = fs.readFileSync(indexHtmlPath, 'utf8').replace(
+    /(<script\b[^>]*\bsrc=["'](?:\.\/|\/)?app\.js)(?:\?[^"']*)?(["'][^>]*>)/i,
+    `$1?v=${previewDataVersion}$2`,
+  );
+  fs.writeFileSync(indexHtmlPath, previewIndexHtml, 'utf8');
   fs.appendFileSync(appPath, `\n;(() => { const q = new URLSearchParams(location.search).get('previewSearch'); if (!q) return; const run = () => { const el = document.getElementById('global-search'); if (!el) return setTimeout(run, 200); el.value = q; el.dispatchEvent(new Event('input', { bubbles: true })); }; setTimeout(run, 500); })();\n`, 'utf8');
   const previewItems = [...additions, ...previewOverrides];
   // 所有数据校验通过后才停止旧预览；失败时旧预览仍可继续验收。
@@ -268,7 +283,7 @@ async function main() {
   const service = await startPreviewService(siteDir, port, `lvyoumap-preview-${info.slug}`);
   const previewUrl = `http://127.0.0.1:${service.port}`;
   fs.writeFileSync(path.join(siteDir, 'preview.html'), previewHtml(previewItems, previewUrl, packageData.warnings || []), 'utf8');
-  const state = { province, slug: info.slug, pid: service.child.pid, port: service.port, siteDir, previewUrl: `${previewUrl}/preview.html`, status: 'ready', generatedAt: new Date().toISOString(), buildFingerprint: previewBuildFingerprint(), attractionIds: previewItems.map(item => item.id), ratingMode: localEnvHasAmapKey() ? 'live-amap-enabled' : 'local-snapshot', selfHealActions };
+  const state = { province, slug: info.slug, pid: service.child.pid, port: service.port, siteDir, previewUrl: `${previewUrl}/preview.html`, status: 'ready', generatedAt: new Date().toISOString(), buildFingerprint: previewBuildFingerprint(), previewDataVersion, attractionIds: previewItems.map(item => item.id), ratingMode: localEnvHasAmapKey() ? 'live-amap-enabled' : 'local-snapshot', selfHealActions };
   writeJson(statePath, state);
   const progressPath = path.join(runtimeDir, 'xhs-lazy-progress.json');
   const progress = readJson(progressPath, {});

@@ -1,0 +1,1474 @@
+{
+  "province": "辽宁",
+  "status": "applied",
+  "createdAt": "2026-08-17T07:25:18.853Z",
+  "updatedAt": "2026-08-17T07:25:18.854Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "大连长山群岛旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.liaoning.json",
+  "attractions": [
+    {
+      "baselineKey": "core_794b915b53",
+      "id": "manual_liaoning_784fdc74",
+      "name": "千山景区",
+      "city": "鞍山",
+      "rating": 4.7,
+      "reviewsCount": "8621条携程点评",
+      "image": "/assets/images/attractions/liaoning_784fdc74_verified.jpg",
+      "description": "千山南临渤海，北接长白山，是有名的道教胜地。因为这里由近千座形似莲花的奇峰组成而得名，自然风光十分秀丽。",
+      "intro": "千山南临渤海，北接长白山，是有名的道教胜地。因为这里由近千座形似莲花的奇峰组成而得名，自然风光十分秀丽。",
+      "level": "5A景区",
+      "category": "自然山水、宗教文化、5A景区",
+      "tags": [
+        "自然山水、宗教文化、5A景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "鞍山市千山区千山东路79号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“千山正门”或“千山转盘站”，停车费费用以官方当日公告为准/天；公共交通可乘火车至鞍山站，换乘8路公交直达千山正门。",
+          "internal_arrive": "推荐从正门进入，配套设施完善，且便于乘坐观光车接驳，切勿导航至“南大门”以免走错。",
+          "internal_traffic": "景区内有观光车（单程费用以官方当日公告为准）和索道（如五佛顶索道、天上天索道），可大幅减少步行爬升，建议根据体力灵活组合使用。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择鞍山市区（如鞍山站或钢都广场附近）或景区周边的农家乐与酒店，市区餐饮和交通更便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "尽量利用观光车和索道直达高处，重点游览无量观和龙泉寺等平缓区域，避免陡峭台阶",
+          "children": "木栈道旁的溪流和夹扁石很有趣，可准备零食和驱蚊用品，低龄儿童建议使用背带。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "正门-无量观-天上天省力休闲环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正门",
+            "观光车至无量观站",
+            "无量观广场",
+            "夹扁石",
+            "一步登天",
+            "天上天",
+            "原路返回或坐索道下山"
+          ],
+          "duration": "半天",
+          "walking": "约3-4公里",
+          "physical": 2,
+          "tips": [
+            "夹扁石在节假日容易排队，若不愿等待可从左侧循环路绕行；观光车票单程单次有效，中途下车再坐需重新购票。"
+          ],
+          "sourceTitle": "携程旅行 千山景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/anshan229/17751.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 千山景区 详情页：https://you.ctrip.com/sight/anshan229/17751.html?poiType=3&scene=online",
+          "高德地图 千山风景区：https://www.amap.com/place/B019C013EW"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 千山景区 详情页",
+          "url": "https://you.ctrip.com/sight/anshan229/17751.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "千山景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B019C013EW",
+        "width": 1536,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a2e045884d",
+      "id": "manual_liaoning_75f79c7e",
+      "name": "沈阳植物园",
+      "city": "沈阳",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/liaoning_75f79c7e_verified.jpg",
+      "description": "沈阳市植物园（沈阳世博园）栽植露地木本植物、露地草本植物和温室植物2000余种。园区内汇集、展示了东北、西北、华北及内蒙古地区植物资源，是东北地区植物种类和数量最多的综合性植物展园。",
+      "intro": "沈阳市植物园（沈阳世博园）栽植露地木本植物、露地草本植物和温室植物2000余种。园区内汇集、展示了东北、西北、华北及内蒙古地区植物资源，是东北地区植物种类和数量最多的综合性植物展园。",
+      "level": "5A景区",
+      "category": "5A级旅游景区、植物园、生态休闲公园",
+      "tags": [
+        "5A级旅游景区、植物园、生态休闲公园",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "沈阳市浑南区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁1号线至植物园站A口出，步行约600米可达4号门（西门）；或至双马站出，步行约700米可达6号门（南门）。自驾可导航至正门1号停车场、西门或南门停车场，停车费费用以官方当日公告为准/辆。",
+          "internal_arrive": "推荐从4号门（西门）进，离核心地标百合塔和花海近；带小孩的家庭也可选择从6号门（南门）进，紧邻儿童游乐场，游玩更便捷。",
+          "internal_traffic": "园区内有观光车（按站点停靠，平日费用以官方当日公告为准，节假日费用以官方当日公告为准）和电动代步车租赁（三人座平日费用以官方当日公告为准/3小时，节假日费用以官方当日公告为准/3小时）。代步车需提前在门口租赁，节假日去晚了容易排队或无车可租。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "园区周边无密集酒店群，建议住在地铁1号线沿线或浑南区市区，交通便利且选择更多。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "务必乘坐观光车或租代步车，减少步行；可重点游览百合塔和花卉展园，避开陡峭路段",
+          "children": "森林乐园的无动力滑梯、攀爬网和浮桥非常适合孩子放电；1.3米以下儿童免票，可自备挖沙工具等小玩具。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力核心游（4号门进6号门出）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "4号门（西门）入园",
+            "百合园",
+            "百合塔（可登顶俯瞰全景）",
+            "宿根花卉园",
+            "科普馆",
+            "森林乐园（无动力游乐场及浮桥）",
+            "6号门（南门）出"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步（建议租代步车）",
+          "physical": 3,
+          "tips": [
+            "园区极大，务必在入口处领取纸质地图；建议租电动车或乘坐观光车代步，避免全程徒步消耗体力；园内餐饮较少且价格偏高，建议自备充足的水和零食。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "Wikidata Q17028819 实体页：https://www.wikidata.org/wiki/Q17028819"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "功夫茶:沈阳植物园,植物观赏,精品园林和人文景观于一体",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://news.sohu.com/a/930278574_122365627",
+        "sourceUrl": "http://news.sohu.com/a/930278574_122365627",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_784db122a2",
+      "id": "manual_liaoning_f944e59e",
+      "name": "沈阳故宫",
+      "city": "沈阳",
+      "rating": 4.7,
+      "reviewsCount": "35750条携程点评",
+      "image": "/assets/images/attractions/liaoning_f944e59e_verified.jpg",
+      "description": "沈阳故宫位于沈阳市沈河区，是中国现存完整的两座宫殿建筑群之一。后金入关前的皇宫，也是清朝迁都北京后的盛京行宫（也称奉天行宫）。",
+      "intro": "沈阳故宫位于沈阳市沈河区，是中国现存完整的两座宫殿建筑群之一。后金入关前的皇宫，也是清朝迁都北京后的盛京行宫（也称奉天行宫）。",
+      "level": "热门景点",
+      "category": "皇家宫殿/古建筑群",
+      "tags": [
+        "皇家宫殿/古建筑群",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "沈阳市沈河区沈阳路171号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁1号线至“中街站”或“怀远门站”，出站步行约5-10分钟即可到达；自驾可导航至故宫周边停车场，但节假日车位紧张，建议优先选择公共交通。",
+          "internal_arrive": "推荐从大清门（正门）进入，门口有免费寄存柜和武功坊游客中心可寄存大件行李，寄存后步行几十米即可入园。",
+          "internal_traffic": "景区内部面积不大，主要依靠步行游览，整体路线设计为单向或环线，不易走回头路。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在中街步行街或怀远门地铁站附近，交通便利，逛完故宫可顺路去中街吃饭，或步行前往张氏帅府联游。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "景区内有部分坡道可推车，但凤凰楼及建筑内部门槛较多，长辈尽量放缓节奏，重点游览中轴线",
+          "children": "可租讲解器听故事，或购买文创雪糕增加趣味性，注意在景区内备好小零食和水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "中路核心+东路特色+西路文化（省力不回头）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "大清门",
+            "崇政殿",
+            "凤凰楼",
+            "清宁宫",
+            "大政殿",
+            "十王亭",
+            "文溯阁",
+            "嘉荫堂"
+          ],
+          "duration": "半天",
+          "walking": "约1.5-2公里",
+          "physical": 2,
+          "tips": [
+            "建议租电子讲解器或扫码听语音导览，了解建筑背后的历史故事；景区内台阶和门槛较多，务必穿舒适运动鞋；尽量在开馆时入园，避开旅行团高峰。"
+          ],
+          "sourceTitle": "携程旅行 沈阳故宫 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9216.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 沈阳故宫 详情页：https://you.ctrip.com/sight/shenyang155/9216.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 沈阳故宫 详情页",
+          "url": "https://you.ctrip.com/sight/shenyang155/9216.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "沈阳故宫 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/shenyang155/9216.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9216.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1723
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_570e4a523f",
+      "id": "manual_liaoning_e2803ad9",
+      "name": "辽宁省博物馆",
+      "city": "沈阳",
+      "rating": 4.9,
+      "reviewsCount": "1799条携程点评",
+      "image": "/assets/images/attractions/liaoning_e2803ad9_verified.jpg",
+      "description": "辽宁省博物馆坐落于沈阳市南郊，目前拥有11万余件藏品。目前一楼主要设有明清玉器瓷器展、中国古代碑志展、欧洲玻璃艺术珍品展、辽宁民间绣品展以及一些名人书画展等临时展览。",
+      "intro": "辽宁省博物馆坐落于沈阳市南郊，目前拥有11万余件藏品。目前一楼主要设有明清玉器瓷器展、中国古代碑志展、欧洲玻璃艺术珍品展、辽宁民间绣品展以及一些名人书画展等临时展览。",
+      "level": "博物馆",
+      "category": "博物馆",
+      "tags": [
+        "博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "辽宁省沈阳市浑南区智慧三街157号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线省博物馆站D口出站步行约150米直达；公交130、108、100路等至省博物馆站；自驾可停馆内停车场或浑南新城中央公园地下停车场。",
+          "internal_arrive": "西门为唯一检票入口，刷身份证入馆，安检后右转即为免费存包处。",
+          "internal_traffic": "馆内各层有直梯和扶梯，建议乘直梯直达3楼后自上而下游览，避免折返。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住浑南区（距馆近）或青年大街沿线（地铁2号线直达，周边餐饮购物方便）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "重点逛3F古代辽宁展和1F明清瓷器展，累了随时在楼层休息区或1楼餐厅歇脚，不赶场",
+          "children": "可提前准备\"寻宝游戏\"清单，让孩子找玉猪龙、鸭形玻璃注等镇馆之宝，2楼儿童馆免费开放（需提前预约），互动性强。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "3F→2F→1F 省力精华路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "3F 15-19号厅（古代辽宁展，镇馆之宝集中地）",
+            "2F 11号厅（辽代陶瓷展）和12号厅（满族民俗展）",
+            "1F 7号厅（明清瓷器精品展）",
+            "1F 文创店"
+          ],
+          "duration": "半天",
+          "walking": "约6000-8000步",
+          "physical": 2,
+          "tips": [
+            "进馆后先寄存行李，穿平底鞋，自带水杯（每层有免费直饮水）；镇馆之宝前人多，需耐心排队拍照。"
+          ],
+          "sourceTitle": "携程旅行 辽宁省博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9238.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 辽宁省博物馆 详情页：https://you.ctrip.com/sight/shenyang155/9238.html?poiType=3&scene=online",
+          "高德地图 辽宁省博物馆：https://www.amap.com/place/B00181CCPS"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 辽宁省博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/shenyang155/9238.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "辽宁省博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/shenyang155/9238.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9238.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1367
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_f9bf8b5350",
+      "id": "manual_liaoning_44dbd58d",
+      "name": "张氏帅府",
+      "city": "沈阳",
+      "rating": 4.6,
+      "reviewsCount": "192条携程点评",
+      "image": "/assets/images/attractions/liaoning_44dbd58d_verified.jpg",
+      "description": "张氏帅府-大青楼是张氏帅府的标志性建筑，建于1918-1922年，为仿罗马式建筑，因该楼采用青砖建造，故称张氏帅府-大青楼。张氏帅府-大青楼高37米，是当时奉天城的高点之一。",
+      "intro": "张氏帅府-大青楼是张氏帅府的标志性建筑，建于1918-1922年，为仿罗马式建筑，因该楼采用青砖建造，故称张氏帅府-大青楼。张氏帅府-大青楼高37米，是当时奉天城的高点之一。",
+      "level": "热门景点",
+      "category": "名人故居 / 历史建筑 / 博物馆",
+      "tags": [
+        "名人故居 / 历史建筑 / 博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "沈阳市沈河区朝阳街少帅府巷46号张氏帅府内",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁 1 号线中街站或怀远门站，步行约 10 - 15 分钟可达；公交多条线路可达大南门站。",
+          "internal_arrive": "从帅府正门（南门）进入，门口有张学良雕像可打卡；入口右手边有免费寄存柜，大件行李可寄存。",
+          "internal_traffic": "全步行游览，无内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐中街商圈或沈阳故宫周边，步行可达帅府，餐饮和休息选择多。\n\n长辈建议：院内多为露天院落，夏季暴晒较耗体力，建议早场或下午晚些时候游览，避开正午；部分展厅有空调可歇脚，不要全程赶路。\n\n儿童建议：可租儿童版语音导览或请讲解，用故事化方式讲解老虎厅事件、张学良生平，增强代入感；赵一荻故居庭院适合拍照打卡，可穿民国风或新中式服装。\n\n补充一点：张氏帅府距离沈阳故宫步行约 10 分钟，可安排上下午连游，但建议分两天或留足体力，避免暴走疲劳。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "院内多为露天院落，夏季暴晒较耗体力，建议早场或下午晚些时候游览，避开正午；部分展厅有空调可歇脚，不要全程赶路",
+          "children": "可租儿童版语音导览或请讲解，用故事化方式讲解老虎厅事件、张学良生平，增强代入感；赵一荻故居庭院适合拍照打卡，可穿民国风或新中式服装。\n\n补充一点：张氏帅府距离沈阳故宫步行约 10 分钟，可安排上下午连游，但建议分两天或留足体力，避免暴走疲劳。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "中路→东路→院外省力主线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口正门",
+            "三进四合院（一进院",
+            "二进院",
+            "三进院）",
+            "大青楼（老虎厅",
+            "张学良办公室）",
+            "小青楼",
+            "帅府花园",
+            "赵一荻故居",
+            "沈阳金融博物馆"
+          ],
+          "duration": "半天",
+          "walking": "约 1.5 - 2 小时，院内全步行，无爬坡",
+          "physical": 2,
+          "tips": [
+            "建议租电子讲解或请官方导游，孩子更容易听懂；大青楼内部空间较小，人多时容易拥挤，可错峰进入；部分展厅有空调，走累了可进屋歇脚，避免全程暴晒。"
+          ],
+          "sourceTitle": "携程旅行 张氏帅府 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/1696091.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/shenyang155/1696091.html?poiType=3&scene=online",
+          "高德地图 张氏帅府博物馆：https://www.amap.com/place/B0FFJH89KM"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 张氏帅府 详情页",
+          "url": "https://you.ctrip.com/sight/shenyang155/1696091.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "张氏帅府 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFJH89KM",
+        "width": 1280,
+        "height": 851
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_bc10976c79",
+      "id": "manual_liaoning_318093d6",
+      "name": "旅顺口",
+      "city": "大连",
+      "rating": 4.3,
+      "reviewsCount": "3条携程点评",
+      "image": "/assets/images/attractions/liaoning_318093d6_verified.jpg",
+      "description": "旅顺口风景名胜区位于中国辽宁省大连市的南端，是一个以其丰富的历史遗迹和自然美景而闻名地区。作为中国北方重要的港口城市，旅顺口不仅在历史上具有战略意义，也以其独特的地理位置和风景吸引着无数游客。",
+      "intro": "旅顺口风景名胜区位于中国辽宁省大连市的南端，是一个以其丰富的历史遗迹和自然美景而闻名地区。作为中国北方重要的港口城市，旅顺口不仅在历史上具有战略意义，也以其独特的地理位置和风景吸引着无数游客。",
+      "level": "热门景点",
+      "category": "历史人文、山海风光、亲子科普",
+      "tags": [
+        "历史人文、山海风光、亲子科普",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "辽宁省大连市旅顺口区得胜街道辽东半岛南端东临黄海西濒渤海",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从大连市区可乘坐地铁1号线至河口站，换乘12号线直达旅顺站；自驾前往约1小时车程，景点间停车相对方便。",
+          "internal_arrive": "旅顺博物馆建议从西三门进入，位置精准不绕路；日俄监狱旧址博物馆和旅顺博物馆均需提前预约并刷身份证入园。",
+          "internal_traffic": "旅顺区内景点之间距离较远，建议以打车或自驾为主，单程费用通常在费用以官方当日公告为准左右，比乘坐公交更省时省力，切勿乘坐出站拉客的黑车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在太阳沟或白玉山附近，距离核心人文景点近，周边餐饮和商超配套完善，性价比高，方便老人和儿童休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "行程尽量避开陡峭爬坡，白玉山可乘观光车；日俄监狱氛围沉重，可根据长辈身体状况和接受度酌情安排",
+          "children": "旅顺潜艇博物馆和大连狮虎园非常适合亲子科普，可让孩子近距离接触真实潜艇和猛兽，建议带上驱蚊液和防晒帽。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "太阳沟人文漫步与军港轻游（省力版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "太阳沟风景区（漫步百年老洋房街区）",
+            "旅顺博物馆（参观主馆与分馆）",
+            "日俄监狱旧址博物馆（感受历史）",
+            "军港游园（海边吹风看军舰）"
+          ],
+          "duration": "半天",
+          "walking": "较少，以平路漫步和室内参观为主",
+          "physical": 2,
+          "tips": [
+            "旅顺博物馆和日俄监狱旧址均需提前在官方公众号预约，周一通常闭馆，请避开周一出行；军港游园部分区域禁止拍照，请遵守现场规定。"
+          ],
+          "sourceTitle": "携程旅行 旅顺口 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "白玉山俯瞰与潜艇科普深度游（需体力版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "白玉山景区（登顶俯瞰旅顺军港全景）",
+            "旅顺潜艇博物馆（登真实退役潜艇内部）",
+            "黄渤海分界线旅游风景区（眺望双色海奇观）"
+          ],
+          "duration": "半天",
+          "walking": "较多，白玉山有爬坡，黄渤海分界线部分路段有台阶",
+          "physical": 4,
+          "tips": [
+            "白玉山可乘坐观光车直达山顶以节省体力；黄渤海分界线受天气和潮汐影响较大，建议出发前确认当日能否清晰看到分界线。"
+          ],
+          "sourceTitle": "携程旅行 旅顺口 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 旅顺口 详情页",
+          "url": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "旅顺口 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/dalian4/145729969.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1666
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_21f8454c67",
+      "id": "manual_liaoning_84bdbfa1",
+      "name": "丹东绿江村",
+      "city": "宽甸",
+      "rating": 4.4,
+      "reviewsCount": "98条携程点评",
+      "image": "/assets/images/attractions/liaoning_84bdbfa1_verified.jpg",
+      "description": "绿江村因油菜花、水没地而被世人知晓，渔翁撒网是这江上一景，蓝天白云、绿水青山的原生态是这里的特征。它位于宽甸满族自治县东部山区，鸭绿江水与浑江水在这里交汇，这里是中朝两国的交界处，同时也是辽宁与吉林两省的交汇处。",
+      "intro": "绿江村因油菜花、水没地而被世人知晓，渔翁撒网是这江上一景，蓝天白云、绿水青山的原生态是这里的特征。它位于宽甸满族自治县东部山区，鸭绿江水与浑江水在这里交汇，这里是中朝两国的交界处，同时也是辽宁与吉林两省的交汇处。",
+      "level": "热门景点",
+      "category": "自然山水/边境乡村/摄影风光",
+      "tags": [
+        "自然山水/边境乡村/摄影风光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "丹东市宽甸满族自治县振江镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "建议自驾前往，从丹东市区出发约1.5至2小时车程；沿途经过G331国道及盘山公路，风景极佳但弯道较多，需注意驾驶安全。",
+          "internal_arrive": "导航至“丹东绿江村”即可，进村后根据民宿位置或江边观景台指示前往。",
+          "internal_traffic": "村内道路多为乡间小路，建议自驾或步行；前往神仙顶等较远景点可咨询民宿老板是否有当地车辆接送。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "村内农家民宿及客栈，多为村民自营，建议优先选择临江房型，推开窗即可欣赏江景。 长辈建议：选择江边平缓的木栈道散步，或坐在民宿观景平台品茶看江，避免攀爬陡峭山路；注意江边早晚温差，及时增减衣物。 儿童建议：可在江边露营基地安全区域玩耍、观察江面渔船；体验老渔翁撒网互动，感受自然与渔家文化；注意看护，避免靠近深水区。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "选择江边平缓的木栈道散步，或坐在民宿观景平台品茶看江，避免攀爬陡峭山路；注意江边早晚温差，及时增减衣物",
+          "children": "可在江边露营基地安全区域玩耍、观察江面渔船；体验老渔翁撒网互动，感受自然与渔家文化；注意看护，避免靠近深水区。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "江边休闲省力观景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "民宿江景平台或江边露营基地（静赏江景",
+            "日落）",
+            "江边木栈道漫步（呼吸新鲜空气",
+            "看对岸朝鲜风光）",
+            "观看老渔翁江边撒网表演（体验边境渔家文化，需提前预约）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里",
+          "physical": 2,
+          "tips": [
+            "江边早晚温差较大，建议带件薄外套；观看撒网表演务必提前向民宿老板预约并确认具体时间，以免错过。"
+          ],
+          "sourceTitle": "携程旅行 丹东绿江村 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/kuandian2137/1941984.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        {
+          "title": "神仙顶登高俯瞰全景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "自驾或乘坐当地车辆前往神仙顶山脚",
+            "沿步道登山至山顶（俯瞰鸭绿江与浑江交汇及大转弯壮阔全景）",
+            "拍摄日出或云海（天气晴好时极佳）"
+          ],
+          "duration": "半天",
+          "walking": "约2至3公里（含登山路段）",
+          "physical": 4,
+          "tips": [
+            "登山路段部分为土路和石阶，建议穿防滑运动鞋；山顶风大且温度较低，需备好防风保暖衣物；若遇阴天或多雾天气，建议放弃登山，改为在村内休闲。 路线B提示：不适用"
+          ],
+          "sourceTitle": "携程旅行 丹东绿江村 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/kuandian2137/1941984.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/kuandian2137/1941984.html?poiType=3&scene=online",
+          "高德地图 绿江村小天池：https://www.amap.com/place/B0HUOHFZS4"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 丹东绿江村 详情页",
+          "url": "https://you.ctrip.com/sight/kuandian2137/1941984.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "丹东绿江村 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0HUOHFZS4",
+        "width": 2032,
+        "height": 1524
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_ae84bcb89a",
+      "id": "manual_liaoning_785b4886",
+      "name": "朝阳牛河梁遗址",
+      "city": "建平",
+      "rating": 4.1,
+      "reviewsCount": "9条携程点评",
+      "image": "/assets/images/attractions/liaoning_785b4886_verified.jpg",
+      "description": "牛河梁遗址博物馆在辽宁省朝阳市境内的凌源市和建平县交界处，东经119度30分，北纬41度20分。属新石器时代晚期的红山文化，距今5500年到5000年。",
+      "intro": "牛河梁遗址博物馆在辽宁省朝阳市境内的凌源市和建平县交界处，东经119度30分，北纬41度20分。属新石器时代晚期的红山文化，距今5500年到5000年。",
+      "level": "热门景点",
+      "category": "国家考古遗址公园、博物馆、史前文化遗址",
+      "tags": [
+        "国家考古遗址公园、博物馆、史前文化遗址",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "辽宁省朝阳市建平县富山街道张福店村3-75号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“牛河梁国家考古遗址公园”，停车场收费；或乘高铁至建平站，出站后乘坐景区旅游专线公交（费用以官方当日公告为准，车程20分钟）前往。",
+          "internal_arrive": "游客服务中心（可购票、购买观光车票、寄存行李、聘请讲解）",
+          "internal_traffic": "景区观光车（费用以官方当日公告为准），在博物馆后门、女神庙、第二地点等站点循环乘车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住宿在朝阳市区（如双塔区），餐饮和交通更便利；若赶高铁可选择建平站附近民宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "全程有观光车和平缓步道，对长辈友好，但需注意防晒和携带饮用水",
+          "children": "可结合初中历史课本知识实地研学，博物馆内有VR体验，建议听讲解以激发孩子对考古的兴趣。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "核心遗址与博物馆省力全景游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心购票及寄存行李",
+            "牛河梁遗址博物馆（综合馆）",
+            "第一地点（女神庙）保护展示馆",
+            "第二地点（祭坛",
+            "积石冢）保护展示馆",
+            "红山文化展示中心（苏秉琦纪念馆）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（主要依靠观光车接驳，馆内为平缓步道）",
+          "physical": 2,
+          "tips": [
+            "园区内各景点距离较远且露天无树荫，务必购买观光车票；建议聘请人工讲解或租用语音导览，否则遗址和文物较难看懂。"
+          ],
+          "sourceTitle": "携程旅行 朝阳牛河梁遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jianping2132/3372283.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/jianping2132/3372283.html?poiType=3&scene=online",
+          "高德地图 牛河梁遗址博物馆：https://www.amap.com/place/B0FFGPY30N"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 朝阳牛河梁遗址 详情页",
+          "url": "https://you.ctrip.com/sight/jianping2132/3372283.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "朝阳牛河梁遗址 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFGPY30N",
+        "width": 1242,
+        "height": 797
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_b1e5953ed8",
+      "id": "manual_liaoning_8b95a2a2",
+      "name": "辽阳白塔",
+      "city": "辽阳",
+      "rating": 4.3,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/liaoning_8b95a2a2_verified.jpg",
+      "description": "辽阳白塔位于中华大街一段60号白塔公园，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "辽阳白塔位于中华大街一段60号白塔公园，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "人文古迹、公园",
+      "tags": [
+        "人文古迹、公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "中华大街一段60号白塔公园",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至辽阳站，出站步行约400米（5-8分钟）即可直达公园；市内可乘公交1/2/7/13/31路至白塔公园站。",
+          "internal_arrive": "推荐从白塔公园南门或西门进入，南门正对白塔主广场，拍照和绕塔最方便。",
+          "internal_traffic": "白塔公园与广佑寺内部均为步行游览，园区平坦，无需额外交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在白塔区中华大街或辽阳火车站附近，距离景区步行可达，周边餐饮和交通都很便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "全程平坦无陡峭台阶，绕塔和逛寺庙节奏舒缓，适合慢走静心",
+          "children": "塔影湖可喂鱼（自带或购买鱼食），公园内有小火车和儿童乐园，互动性强，不易感到枯燥。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "白塔古建与禅意祈福省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "白塔公园南门广场（广角仰拍全景）",
+            "塔影湖（观赏白塔倒影）",
+            "辽阳白塔（顺时针绕塔祈福，细看须弥座砖雕与飞天浮雕）",
+            "广佑寺（参观巨型青石牌坊",
+            "大雄宝殿鎏金坐佛）",
+            "圆通禅院（瞻仰千手观音像）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "辽阳白塔为实心古塔，严禁登塔，切勿相信路边商贩“付费登塔”的骗局；绕塔祈福请遵循本地习俗顺时针行走。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B0FFKK6MTM"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 辽阳白塔",
+          "url": "https://www.amap.com/place/B0FFKK6MTM",
+          "poiId": "B0FFKK6MTM",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "辽阳白塔 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFKK6MTM",
+        "width": 1434,
+        "height": 1698
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0a54a4fc6f",
+      "id": "manual_liaoning_db48c217",
+      "name": "辽阳汉魏壁画馆",
+      "city": "辽阳",
+      "rating": 4.7,
+      "reviewsCount": "5条携程点评",
+      "image": "/assets/images/attractions/liaoning_db48c217_verified.jpg",
+      "description": "辽阳汉魏壁画馆位于辽阳博物馆东侧，这里收藏有壁画拓片以及壁画墓出土文物，逼真的还原了两座壁画墓，展现了古代人的富足生活。",
+      "intro": "辽阳汉魏壁画馆位于辽阳博物馆东侧，这里收藏有壁画拓片以及壁画墓出土文物，逼真的还原了两座壁画墓，展现了古代人的富足生活。",
+      "level": "热门景点",
+      "category": "博物馆/人文历史",
+      "tags": [
+        "博物馆/人文历史",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "辽宁省辽阳市白塔区辽阳老城内东四道街中心路2号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至“辽阳博物馆”或“辽阳汉魏壁画馆”，附近有停车场；公共交通可乘坐公交至“彭公馆站”或“三道街站”步行前往。",
+          "internal_arrive": "从辽阳博物馆东侧或老城内东四道街入口进入，与辽阳博物馆、辽阳民俗博物馆相邻，可串联参观。",
+          "internal_traffic": "馆内面积不大，约800㎡，单层单展区，全程步行游览即可。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在辽阳市白塔区或老城区附近，距离景区步行或打车起步价可达，周边餐饮和住宿配套完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "馆内全程平路无台阶，光线较暗需慢行，可搭配辽阳博物馆通史展一起看",
+          "children": "壁画中的车马出行、宴饮庖厨、百戏杂技等场景生动有趣，像看“汉代动画片”，适合给孩子做历史启蒙。\n\n（注：具体开放时间、讲解场次及预约要求以官方当日公告为准。）"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "沉浸式探秘汉魏贵族生活",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1:1复原墓室（鹅房壁画墓/北园一号墓模型）",
+            "1:1仿真壁画与摹本（车马出行图/宴饮观舞图等）",
+            "出土文物展区（银手镯/铜带钩/五铢钱等）"
+          ],
+          "duration": "半天",
+          "walking": "约200米",
+          "physical": 1,
+          "tips": [
+            "馆内为保护壁画光线偏暗，建议穿防滑舒适的鞋；拍照严禁使用闪光灯。"
+          ],
+          "sourceTitle": "携程旅行 辽阳汉魏壁画馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/liaoyang881/4569946.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/liaoyang881/4569946.html?poiType=3&scene=online",
+          "高德地图 辽阳汉魏壁画馆：https://www.amap.com/place/B0FFFPWOJ6"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 辽阳汉魏壁画馆 详情页",
+          "url": "https://you.ctrip.com/sight/liaoyang881/4569946.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "辽阳汉魏壁画馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFPWOJ6",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_077556cbda",
+      "id": "manual_liaoning_262d28df",
+      "name": "阜新海棠山",
+      "city": "阜新县",
+      "rating": 4.6,
+      "reviewsCount": "375条携程点评",
+      "image": "/assets/images/attractions/liaoning_262d28df_verified.jpg",
+      "description": "海棠山风景区位于阜新市东南22公里，是东北三大名山之一医巫闾山的后尾之主峰。这里风光四季皆美：春季可赏满山杜鹃、樱桃、杏花争艳竞放；夏季清凉幽静，是避暑佳地；秋季可见满山红叶，秋意甚美；而冬季的银装素裹让人犹如身处仙境。",
+      "intro": "海棠山风景区位于阜新市东南22公里，是东北三大名山之一医巫闾山的后尾之主峰。这里风光四季皆美：春季可赏满山杜鹃、樱桃、杏花争艳竞放；夏季清凉幽静，是避暑佳地；秋季可见满山红叶，秋意甚美；而冬季的银装素裹让人犹如身处仙境。",
+      "level": "热门景点",
+      "category": "国家森林公园、4A级景区、藏传佛教文化名山",
+      "tags": [
+        "国家森林公园、4A级景区、藏传佛教文化名山",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "阜新市阜新蒙古族自治县大板镇大板村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可直接导航至“海棠山风景区”，距阜新市区约22公里；公共交通可从阜新市区乘坐公交或拼车前往景区大门。",
+          "internal_arrive": "建议从景区正门（东门）进入，沿途设施较完善，导览图清晰。",
+          "internal_traffic": "景区提供观光车服务（费用以官方当日公告为准单程），可直达半山腰，适合体力有限的游客，具体运营情况以官方当日公告为准。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择山脚下的海棠山村农家乐（主营蒙餐与东北菜），或返回阜新市区住宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "可乘坐观光车节省体力，沿途台阶较多，建议佩戴护膝，在平缓的普安寺区域和摩崖造像群周边游览即可",
+          "children": "沿途可观察奇松怪石和摩崖石刻，但需注意台阶安全，避免在陡峭路段奔跑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "普安寺与摩崖造像经典省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "景区正门",
+            "莲花池",
+            "普安寺（措钦大殿",
+            "钟鼓楼",
+            "千年古松）",
+            "摩崖造像群",
+            "上师顶（主峰）",
+            "下山"
+          ],
+          "duration": "半天",
+          "walking": "约3-4小时",
+          "physical": 3,
+          "tips": [
+            "景区岔路口较多，部分路段无指示牌，建议沿主路或跟随指示牌前行；山上补给点较少，建议自备充足饮用水和干粮。"
+          ],
+          "sourceTitle": "携程旅行 阜新海棠山 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/fuxincounty1446031/72422.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/fuxincounty1446031/72422.html?poiType=3&scene=online",
+          "高德地图 海棠山风景区：https://www.amap.com/place/B01A204GMV"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 阜新海棠山 详情页",
+          "url": "https://you.ctrip.com/sight/fuxincounty1446031/72422.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "阜新海棠山 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B01A204GMV",
+        "width": 2048,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_514a0254a4",
+      "id": "manual_liaoning_99803960",
+      "name": "大连长山群岛旅游度假区",
+      "city": "大连",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/liaoning_99803960_verified.jpg",
+      "description": "大连长山群岛旅游度假区位于大连市长海县长海獐子岛福满渔家民宿北侧约170米，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "大连长山群岛旅游度假区位于大连市长海县长海獐子岛福满渔家民宿北侧约170米，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "海岛度假区",
+      "tags": [
+        "海岛度假区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "大连市长海县长海獐子岛福满渔家民宿北侧约170米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾或高铁至皮口站后打车到皮口港乘船进岛（滚装船约1小时，快艇约35分钟）；或从大连周水子机场直飞长海机场（航班较少，需提前确认）",
+          "internal_arrive": "首选皮口港-鸳鸯港航线，船次密集，下船后民宿或出租车接送方便",
+          "internal_traffic": "岛上出租车（多一口价）、公交车、共享电动车，打车较方便，建议留司机电话便于后续用车",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "饮牛湾黄金海岸附近（出门即海，但餐饮选择少）；四块石湾公园及镇里（购物就餐方便，去海边需短途打车）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "选慢船减少晕船，穿防滑运动鞋，避免礁石区行走，注意防晒",
+          "children": "备沙滩鞋、小桶和铲子赶海，提前查潮汐表，景区礁石区禁止下海玩水。\n\n补充提醒：海岛天气多变，大风大雾可能停航，务必提前关注天气预报和船期公告；岛上物价略高，可自带部分零食和水；赶海时注意礁石锋利，穿溯溪鞋或厚底沙滩鞋更安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "大小长山岛家庭慢游3日省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "Day1 皮口港乘船至鸳鸯港",
+            "四块石湾公园（散步看海）",
+            "饮牛湾黄金海岸（玩沙看日落）；Day2 长山跨海大桥（观景）",
+            "小水口森林公园（临海木栈道",
+            "玻璃栈道",
+            "翡翠谷）；Day3 祈祥园（海蚀地貌）",
+            "三官庙大滩或金蟾港（退潮赶海）"
+          ],
+          "duration": "半天",
+          "walking": "约1万至1.5万步/日",
+          "physical": 2,
+          "tips": [
+            "提前查好潮汐表再安排赶海；上船前备好火腿肠喂海鸥；小水口森林公园无小卖部，需自带水和零食"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "美丽中国|探访辽宁大连长山群岛候鸟栖息地 美丽中国|探访辽宁大连",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://www.sohu.com/a/1056674236_267106",
+        "sourceUrl": "http://www.sohu.com/a/1056674236_267106",
+        "width": 4455,
+        "height": 2970
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "大连长山群岛旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B019B0AN7O": {
+      "id": "amap_B019B0AN7O",
+      "name": "大连星海广场",
+      "city": "大连",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/liaoning_13332142_verified.jpg",
+      "description": "大连星海广场位于中山路572号(西南路口)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "大连星海广场位于中山路572号(西南路口)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "城市地标广场、海滨公园",
+      "tags": [
+        "城市地标广场、海滨公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "中山路572号(西南路口)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐地铁 1 号线至星海广场站 A2 口，出站步行约 700-1000 米可达海边；打车可直接定位“百年城雕”以减少步行距离；自驾可停周边地下停车场，但节假日车位紧张，建议优先公共交通。",
+          "internal_arrive": "推荐从地铁 A2 口出站后前往百年城雕，或直接打车定位百年城雕，这里是拍跨海大桥全景的最佳机位，且能少走很多冤枉路。",
+          "internal_traffic": "广场内部面积广阔，可租赁双人自行车或电动代步车代步；若纯步行，建议穿舒适的平底鞋。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "星海广场周边酒店密集，步行即可到达海边和广场，非常适合家庭住宿，周边餐饮和便利店也很齐全。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "海鲜焖子",
+          "锦州烧烤",
+          "沟帮子熏鸡",
+          "老边饺子"
+        ],
+        "special_care": {
+          "elderly": "海边风大且早晚温差明显，务必准备薄外套防风；木栈道和沙滩行走时注意防滑，避免去礁石区；看喷泉和灯光秀时尽量提前占位，避免拥挤",
+          "children": "可提前准备火腿肠或面包喂海鸥，注意不要用手直接捏着喂以免被啄伤；星海湾浴场为沙石混合滩，建议穿涉水鞋防扎脚；海边游乐场项目按次收费，适合亲子互动，但需注意看护安全。\n\n你们这次去大连大概有几个人同行，打算玩几天？"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "傍晚日落与夜景省力闭环游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "百年城雕（拍跨海大桥全景与千人脚印浮雕）",
+            "滨海木栈道（散步吹风",
+            "喂海鸥）",
+            "星海湾浴场（浅逛踩水）",
+            "海边游乐场（体验落日飞车",
+            "秋千等）",
+            "广场中心区域（看音乐喷泉与跨海大桥夜景灯光秀）"
+          ],
+          "duration": "半天",
+          "walking": "约 2 公里（建议结合代步工具）",
+          "physical": 2,
+          "tips": [
+            "强烈建议下午 官方当日建议时段 后到达，一次覆盖日落、晚霞、夜景和喷泉，避开正午暴晒；广场极大，切勿全程徒步横穿草坪，直奔南端海边城雕最省力。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-17"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 星海广场：https://www.amap.com/place/B019B0AN7O"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 星海广场",
+          "url": "https://www.amap.com/place/B019B0AN7O",
+          "poiId": "B019B0AN7O",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-17"
+        },
+        "basicInfoUpdatedAt": "2026-08-17",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Xinghai Square .jpg",
+        "author": "HSJ233",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xinghai_Square_.jpg",
+        "width": 3840,
+        "height": 2504
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "reviewedAt": "2026-08-17",
+  "reviewedAtIso": "2026-08-17T07:25:19.463Z",
+  "appliedAt": "2026-08-17T08:15:07.111Z",
+  "appliedAttractionIds": [
+    "manual_liaoning_784fdc74",
+    "manual_liaoning_75f79c7e",
+    "manual_liaoning_f944e59e",
+    "manual_liaoning_e2803ad9",
+    "manual_liaoning_44dbd58d",
+    "manual_liaoning_318093d6",
+    "manual_liaoning_84bdbfa1",
+    "manual_liaoning_785b4886",
+    "manual_liaoning_8b95a2a2",
+    "manual_liaoning_db48c217",
+    "manual_liaoning_262d28df",
+    "manual_liaoning_99803960"
+  ],
+  "appliedOverrideIds": [
+    "amap_B019B0AN7O"
+  ]
+}
