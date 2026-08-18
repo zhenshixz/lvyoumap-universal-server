@@ -301,11 +301,29 @@ function applyPackage(context, validation) {
   if (validation.readyOverrides.length) writeJsonAtomic(overridePath, overrides);
 
   const baselineBackup = backup(context.baselinePath);
-  for (const { baselineItem, candidate } of validation.readyAttractions) baselineItem.preferredId = candidate.id;
-  for (const { id, baselineKey } of validation.readyOverrides) {
+  for (const { baselineItem, candidate } of validation.readyAttractions) {
+    baselineItem.preferredId = candidate.id;
+    const mergedKeys = candidate.self_heal?.mergedBaselineKeys || [];
+    const mergedAliases = candidate.self_heal?.mergedAliases || [];
+    for (const item of context.baseline.attractions) {
+      if (mergedKeys.includes(item.key)
+        || mergedAliases.some(alias => probablySameAttraction(item.name, alias))) {
+        item.preferredId = candidate.id;
+      }
+    }
+  }
+  for (const { id, patch, baselineKey } of validation.readyOverrides) {
     if (!baselineKey) continue;
     const baselineItem = context.baseline.attractions.find(item => item.key === baselineKey);
     if (baselineItem) baselineItem.preferredId = id;
+    const mergedKeys = patch.self_heal?.mergedBaselineKeys || [];
+    const mergedAliases = patch.self_heal?.mergedAliases || [];
+    for (const item of context.baseline.attractions) {
+      if (mergedKeys.includes(item.key)
+        || mergedAliases.some(alias => probablySameAttraction(item.name, alias))) {
+        item.preferredId = id;
+      }
+    }
   }
   context.baseline.checkedAt = new Date().toISOString().slice(0, 10);
   writeJsonAtomic(context.baselinePath, context.baseline);

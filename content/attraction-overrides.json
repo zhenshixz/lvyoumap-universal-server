@@ -913,5 +913,450 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B020705EL7": {
+    "baselineKey": "core_2d57399555",
+    "id": "amap_B020705EL7",
+    "name": "春秋淹城旅游区",
+    "city": "常州",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/jiangsu_4b616929_verified.jpg",
+    "description": "中国春秋淹城旅游区是国内保存较完整、形制独特的春秋时期地面城池遗址。旅游区分为五大区块：春秋淹城遗址、淹城春秋乐园、淹城野生动物世界、淹城传统商业街坊和淹城宝林禅寺。",
+    "intro": "中国春秋淹城旅游区是国内保存较完整、形制独特的春秋时期地面城池遗址。旅游区分为五大区块：春秋淹城遗址、淹城春秋乐园、淹城野生动物世界、淹城传统商业街坊和淹城宝林禅寺。",
+    "level": "5A景区",
+    "category": "历史遗址、自然风光、亲子户外",
+    "tags": [
+      "历史遗址、自然风光、亲子户外",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "常州市武进区湖塘镇延政中大道",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+        "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+        "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+        "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“春秋淹城旅游区东停车场”或“西门”；公共交通可乘坐常州地铁1号线至延政大道站，出站后换乘公交14路或旅游区免费专线区间车到达。",
+        "internal_arrive": "推荐从西门进入，靠近探险营地和大草坪，停车方便且适合家庭休闲起步。",
+        "internal_traffic": "遗址公园内可乘坐景交车（费用以官方当日公告为准）游览内城和外城有景点的区域；也可选择乘船游览内城河（电动船或人工摇橹船，需另付费）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在常州市武进区周边，距离景区较近，餐饮和住宿选择较多，方便游玩后休息。",
+          "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+        }
+      ],
+      "food": [
+        "无锡排骨",
+        "松鼠桂鱼",
+        "金陵盐水鸭",
+        "扬州炒饭"
+      ],
+      "special_care": {
+        "elderly": "遗址区平缓但范围大，建议多利用景交车和游船，避免长时间步行，在博物馆和大草坪可多休息",
+        "children": "探险营地有适合不同身高的关卡，皮划艇和大草坪撒欢很放电，博物馆可科普历史，注意做好防蚊防晒。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "遗址慢游与亲子探险省力线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "淹城博物馆（看春秋独木舟等文物）",
+          "三城三河遗址（沿外城河漫步或乘景交车）",
+          "乘船游览内城河（水上视角看古城）",
+          "沃普·淹城探险营地（儿童体验高空探险或皮划艇）",
+          "大草坪露营休息"
+        ],
+        "duration": "半天",
+        "walking": "中等（遗址区较大，建议结合景交车与游船）",
+        "physical": 3,
+        "tips": [
+          "遗址公园和春秋乐园是分开的，买票时注意别买错；园内餐饮较少，建议自带零食和水；可租电子讲解器或扫码听语音导览了解历史。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "高德地图 中国春秋淹城旅游区：https://www.amap.com/place/B020705EL7"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 中国春秋淹城旅游区",
+        "url": "https://www.amap.com/place/B020705EL7",
+        "poiId": "B020705EL7",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "春秋淹城旅游区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B020705EL7",
+      "width": 2000,
+      "height": 1500
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0FFF4WG7B": {
+    "baselineKey": "core_beebc9e75a",
+    "id": "amap_B0FFF4WG7B",
+    "name": "云龙湖景区",
+    "city": "徐州",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/jiangsu_456a32a7_verified.jpg",
+    "description": "云龙湖旅游景区位于徐州市区西南部，是以云龙山水自然景观为特色，以两汉文化、名士文化、宗教文化、军事文化为主要内容，集科普、观光、游览、休闲、生态等综合功能为一体的城市型旅游景区。景区内云龙山绵延九节，状若游龙，素称徐州名胜之冠。",
+    "intro": "云龙湖旅游景区位于徐州市区西南部，是以云龙山水自然景观为特色，以两汉文化、名士文化、宗教文化、军事文化为主要内容，集科普、观光、游览、休闲、生态等综合功能为一体的城市型旅游景区。景区内云龙山绵延九节，状若游龙，素称徐州名胜之冠。",
+    "level": "5A景区",
+    "category": "自然湖泊、城市公园、5A级旅游景区",
+    "tags": [
+      "自然湖泊、城市公园、5A级旅游景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "徐州市泉山区湖南路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "地铁：3号线矿大文昌校区站4号口，打车起步价直达；2号线师大云龙站1号口步行约10分钟。\n公交：游1路、39路、游2路、34路等至云龙湖站或湖东路站下车。\n自驾：可导航至滨湖公园东门停车场、金山公园停车场、诗博园停车场或音乐厅周边停车场，周末节假日建议错峰停车。",
+        "internal_arrive": "推荐从滨湖公园东门或水晶宫码头进入，周边停车相对便利，且靠近万人沙滩和环湖步道起点，适合家庭轻松起步。",
+        "internal_traffic": "共享单车/电动车：景区内及周边共享单车充足，环湖骑行是最省力且自由的游览方式。\n游船：水晶宫码头有电动游船和环湖游船，可乘船游览湖面风光，适合不想走路的家庭。\n观光车：前往湖心岛水上世界等区域有专线观光车和免费接驳车，凭票可乘坐。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在云龙湖周边（如滨湖公园、音乐厅附近）的酒店，出门即可散步看湖景；也可选择市区（如彭城广场、苏宁广场周边）的酒店，餐饮和交通更便利，打车到景区约15-20分钟。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "无锡排骨",
+        "松鼠桂鱼",
+        "金陵盐水鸭",
+        "扬州炒饭"
+      ],
+      "special_care": {
+        "elderly": "全程平路无陡坡，水杉步道和环湖栈道非常适合散步；可乘坐游船或索道省力观景；避开正午高温时段，选择傍晚湖风凉爽时游玩",
+        "children": "万人沙滩沙质细腻，可挖沙玩水；云龙湖水上世界有水族馆和户外嬉水区；滨湖公园儿童乐园有大型无动力设施，免费且树荫多，适合全天遛娃。\n\n你这次去徐州是打算带长辈一起，还是主要带小朋友？如果是带小朋友，我可以帮你再细化一下沙滩和水上世界的游玩重点。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "环湖休闲省力线（半日游）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "滨湖公园东门",
+          "万人沙滩",
+          "水杉步道",
+          "苏公塔",
+          "沉水廊道",
+          "徐州音乐厅"
+        ],
+        "duration": "半天",
+        "walking": "约3-4公里，全程平路无陡坡，可推婴儿车",
+        "physical": 2,
+        "tips": [
+          "建议上午或傍晚前往，避开正午暴晒；步道蚊虫偏多，夏季务必带驱蚊液；可扫共享单车或电动车环湖骑行，随停随拍。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 徐州云龙湖旅游景区",
+        "url": "https://www.amap.com/place/B0FFF4WG7B",
+        "poiId": "B0FFF4WG7B",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Yunlong Mountain 6.jpg",
+      "author": "H2v5o68z",
+      "provider": "Wikimedia Commons",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yunlong_Mountain_6.jpg",
+      "width": 3840,
+      "height": 2757
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B0FFF4WG7B"
+    }
+  },
+  "amap_B02000K8HU": {
+    "baselineKey": "core_6a869bedb2",
+    "id": "amap_B02000K8HU",
+    "name": "太湖旅游区",
+    "city": "苏州",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/jiangsu_47479dfe_verified.jpg",
+    "description": "苏州吴中太湖旅游区位于天堂苏州西南隅的太湖之滨，境内有中国碧螺春之乡东山景区，穹窿山景区和旺山景区。古镇、古村、古岛等历史人文景观，宛如点缀在太湖山水间的颗颗明珠。",
+    "intro": "苏州吴中太湖旅游区位于天堂苏州西南隅的太湖之滨，境内有中国碧螺春之乡东山景区，穹窿山景区和旺山景区。古镇、古村、古岛等历史人文景观，宛如点缀在太湖山水间的颗颗明珠。",
+    "level": "5A景区",
+    "category": "国家湿地公园 / 自然生态 / 亲子休闲",
+    "tags": [
+      "国家湿地公园 / 自然生态 / 亲子休闲",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "苏州市吴中区香山街道",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“太湖湿地公园东门”（车位充足且免费，建议早点去）；公共交通可乘地铁3号线至铜墩站，再打车或换乘快线3路。",
+        "internal_arrive": "强烈推荐从东门进，距离大熊猫馆最近，入园即可直奔核心看点，避免长途跋涉。",
+        "internal_traffic": "园内可租双人电动车或自行车；也可乘坐古风游船（连接熊猫馆、鹿岛等码头），省去步行劳累。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "若计划住一晚，可选择太湖国家旅游度假区东入口文旅商业区（近太湖游客中心，交通便利），或西山岛沉思湾、横山岛周边的湖景民宿（适合看日落和慢节奏度假）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "无锡排骨",
+        "松鼠桂鱼",
+        "金陵盐水鸭",
+        "扬州炒饭"
+      ],
+      "special_care": {
+        "elderly": "推荐乘坐游船和骑行，避免爬山；可在大草坪或临湖茶咖馆休息看景，节奏舒缓",
+        "children": "熊猫馆和鹿岛庄园是孩子的最爱，可准备一些胡萝卜或鹿饼体验投喂，大草坪适合奔跑撒欢。\n\n如果你有更具体的出行天数或偏好（比如想逛古村或看日落），可以随时告诉我，我来帮你进一步调整！"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "太湖湿地熊猫与鹿岛省力休闲游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "东门入园",
+          "大熊猫科普馆",
+          "荷塘木栈道",
+          "租车骑行至游船码头",
+          "乘游船登鹿岛",
+          "鹿岛步行回东门大草坪"
+        ],
+        "duration": "半天",
+        "walking": "约2-3公里（建议园内租车代步）",
+        "physical": 2,
+        "tips": [
+          "园区面积较大，带娃或长辈务必在东门租亲子代步车或自行车；上午去熊猫馆熊猫更活跃，下午多在休息。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "高德地图 太湖国家级风景名胜区：https://www.amap.com/place/B0LKX7OMB4"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 苏州太湖国家湿地公园",
+        "url": "https://www.amap.com/place/B0FFFS366B",
+        "poiId": "B0FFFS366B",
+        "evidenceMode": "local-amap-snapshot",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "太湖旅游区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B0LKX7OMB4",
+      "width": 4320,
+      "height": 5760
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0202154UD": {
+    "baselineKey": "core_9227528f18",
+    "id": "amap_B0202154UD",
+    "name": "瘦西湖风景区",
+    "city": "扬州",
+    "rating": 4.7,
+    "reviewsCount": "81124条携程点评",
+    "image": "/assets/images/attractions/jiangsu_18bcca77_verified.jpg",
+    "description": "“烟花三月下扬州”，春季来扬州，一定要去瘦西湖看看。它是一段狭长的河流，在这里，你既可以沿河而行享受自然美景，也可以走进亭台楼阁，品味历代文人墨客的诗画墨宝，你也可以坐上船，感受当年乾隆皇帝游湖的逍遥心情。",
+    "intro": "“烟花三月下扬州”，春季来扬州，一定要去瘦西湖看看。它是一段狭长的河流，在这里，你既可以沿河而行享受自然美景，也可以走进亭台楼阁，品味历代文人墨客的诗画墨宝，你也可以坐上船，感受当年乾隆皇帝游湖的逍遥心情。",
+    "level": "5A景区",
+    "category": "5A级古典园林风景区",
+    "tags": [
+      "5A级古典园林风景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "扬州市邗江区大虹桥路28号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+        "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+        "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+        "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至南门（柳湖路或虹桥坊停车场），或打车至南门/西门；公共交通可乘坐公交至瘦西湖南门站。",
+        "internal_arrive": "首选南门入园，进门即是游船码头，距离核心景点最近，最省力。",
+        "internal_traffic": "景区内有观光车（南线费用以官方当日公告为准，连接南门、童乐园、白塔、二十四桥；北线费用以官方当日公告为准，连接东门、北门）和游船（摇橹船、电动大船、自驾电动船）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐南门附近或东关街周边，步行即可入园，周边餐饮丰富，交通便利。 长辈建议：全程以游船和观光车为主，减少步行；在熙春台或湖边茶社休息喝茶；避开较合适时段至较合适时段的旅行团高峰。 儿童建议：可带面包在游船上喂天鹅和野鸭；景区内有童乐园（滑梯、沙池等无动力设施）可放电；建议携带轻便婴儿车，但需注意部分石板路略有颠簸。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "无锡排骨",
+        "松鼠桂鱼",
+        "金陵盐水鸭",
+        "扬州炒饭"
+      ],
+      "special_care": {
+        "elderly": "全程以游船和观光车为主，减少步行；在熙春台或湖边茶社休息喝茶；避开上午10点至下午3点的旅行团高峰",
+        "children": "可带面包在游船上喂天鹅和野鸭；景区内有童乐园（滑梯、沙池等无动力设施）可放电；建议携带轻便婴儿车，但需注意部分石板路略有颠簸。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "南门乘船至二十四桥精华省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "南门入园",
+          "乘游船至二十四桥码头",
+          "熙春台观景",
+          "二十四桥",
+          "五亭桥",
+          "白塔",
+          "徐园",
+          "小金山",
+          "长堤春柳",
+          "北门出园"
+        ],
+        "duration": "半天",
+        "walking": "约1.5-2公里",
+        "physical": 2,
+        "tips": [
+          "南门进园后直接乘船到二十四桥，可省去3公里石板路；摇橹船约40分钟，电动大船约15-20分钟，带老人小孩首选电动大船，随到随走不排队。"
+        ],
+        "sourceTitle": "携程旅行 瘦西湖风景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/yangzhou12/1891.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 瘦西湖风景区 详情页：https://you.ctrip.com/sight/yangzhou12/1891.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 瘦西湖风景区 详情页",
+        "url": "https://you.ctrip.com/sight/yangzhou12/1891.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-17"
+      },
+      "basicInfoUpdatedAt": "2026-08-17",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "瘦西湖风景区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/yangzhou12/1891.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/yangzhou12/1891.html?poiType=3&scene=online",
+      "width": 1280,
+      "height": 854
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

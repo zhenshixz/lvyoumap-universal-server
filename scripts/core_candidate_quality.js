@@ -70,7 +70,10 @@ function normalizeName(value) {
     // Common destination aliases such as “外滩万国建筑群” refer to the
     // destination itself. Keep the rule narrow so “北外滩滨江” remains distinct.
     .replace(/万国建筑群$/, '');
-  const suffix = /(?:国际海洋旅游度假区|国际旅游度假区|旅游度假区|旅游风景名胜区|旅游景区|旅游风景区|风景名胜区|风景旅游区|风景区|度假区|旅游区|景区)$/;
+  // 同一个目的地在官方名录、地图 POI 和口碑平台中经常使用不同类型后缀，
+  // 例如“溱湖旅游景区”与“溱湖国家湿地公园”。归一化时只剥离末尾
+  // 的设施类型，仍保留实体专名与城市约束，避免把同城不同公园误合并。
+  const suffix = /(?:国际海洋旅游度假区|国际旅游度假区|旅游度假区|旅游风景名胜区|旅游景区|旅游风景区|风景名胜区|风景旅游区|国家湿地公园|湿地公园|国家森林公园|森林公园|国家地质公园|地质公园|风景区|度假区|旅游区|景区)$/;
   while (suffix.test(name)) name = name.replace(suffix, '');
   return name.trim();
 }

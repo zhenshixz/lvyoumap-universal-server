@@ -22,6 +22,7 @@ assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小�
 assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小小三峡'), '全角连接符复合景区应保留第二个组成景点别名');
 assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
 assert(imageIdentityTokens({ name: '天津之眼摩天轮', city: '天津' }).includes('天津之眼'), '设施型景点图片搜索应同时保留实体主干');
+assert(imageIdentityTokens({ name: '溱湖国家湿地公园', city: '泰州' }).includes('溱湖'), '公园型 POI 应保留景点实体主干用于图片核验');
 const imagePage = {
   title: 'File:Street View of Wukang Road, Shanghai.JPG',
   imageinfo: [{ width: 4912, height: 3264, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' }, ImageDescription: { value: '武康路街景，上海' } } }],

@@ -373,7 +373,7 @@ function usableCommonsPage(page) {
 const IMAGE_NOISE = /(?:map|地图|导览|guide|route|路线|logo|标志|icon|图标|poster|海报|ticket|门票|qr|二维码|diagram|示意|plan|规划|station|站台|platform|concourse|地铁|metro|pdf|svg)/i;
 
 function imageIdentityTokens(item) {
-  const suffixes = /(?:国家)?[345]A?级?(?:旅游)?(?:景区|旅游区|风景区|度假区)|国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|旅游区|风景名胜区|风景区|景区|街区/g;
+  const suffixes = /(?:国家)?[345]A?级?(?:旅游)?(?:景区|旅游区|风景区|度假区)|国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|旅游区|风景名胜区|国家湿地公园|湿地公园|国家森林公园|森林公园|国家地质公园|地质公园|风景区|景区|街区/g;
   const tokens = [];
   for (const alias of allAliases(item)) {
     const clean = String(alias || '').replace(/[®™•·（）()—–\-_]/g, ' ').replace(suffixes, ' ').trim();

@@ -16,6 +16,14 @@ const records = [
 ];
 
 assert(sameRatingIdentity({ name: '环球度假区', city: '北京' }, records[0]), '同城标准别名应匹配');
+assert(sameRatingIdentity(
+  { name: '溱湖旅游景区', aliases: ['泰州市溱湖旅游景区', '溱湖'], city: '泰州' },
+  { name: '溱湖国家湿地公园', city: '泰州' },
+), '同城同实体的景区/湿地公园后缀差异应自动合并');
+assert(!sameRatingIdentity(
+  { name: '溱湖旅游景区', aliases: ['溱湖'], city: '泰州' },
+  { name: '溱湖国家湿地公园', city: '其他城市' },
+), '跨城市同名实体不得自动合并');
 assert(!sameRatingIdentity({ name: '八达岭—慕田峪长城旅游区', city: '北京' }, records[1]), '组合景区不得继承单一组成景点评分');
 assert.strictEqual(localAmapRating({ name: '北京环球度假区', city: '北京' }, records).rating, 4.8);
 assert.strictEqual(localAmapRating({ name: '八达岭—慕田峪长城旅游区', city: '北京' }, records).rating, 0);

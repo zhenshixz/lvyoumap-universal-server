@@ -98,6 +98,12 @@ function mergeDuplicatePair(left, right) {
   merged.self_heal = {
     ...(merged.self_heal || {}),
     mergedDuplicateIds: [...new Set([...(merged.self_heal?.mergedDuplicateIds || []), secondary.id].filter(Boolean))],
+    mergedBaselineKeys: [...new Set([
+      ...(merged.self_heal?.mergedBaselineKeys || []),
+      primary.baselineKey,
+      ...(secondary.self_heal?.mergedBaselineKeys || []),
+      secondary.baselineKey,
+    ].filter(Boolean))],
     mergedAliases: [...new Set([...(merged.self_heal?.mergedAliases || []), secondary.name].filter(Boolean))],
     reason: '同省近似名称且共享同一 OTA/高德实体来源，自动合并',
   };

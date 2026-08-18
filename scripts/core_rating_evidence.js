@@ -12,19 +12,23 @@ function compactName(value, city = '') {
   }
   return name
     .replace(/(?:国家)?[345]a级(?:旅游)?(?:景区|旅游区|风景区|度假区)$/i, '')
-    .replace(/国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|风景名胜区|风景区|旅游区|景区$/g, '')
+    .replace(/国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|风景名胜区|国家湿地公园|湿地公园|国家森林公园|森林公园|国家地质公园|地质公园|风景区|旅游区|景区$/g, '')
     .trim();
 }
 
 function sameRatingIdentity(target, record) {
   if (!target || !record || !citiesCompatible(target.city, record.city)) return false;
-  if (isCompositeName(target.name) !== isCompositeName(record.name)) return false;
-  const left = compactName(target.name, target.city);
   const right = compactName(record.name, record.city);
-  if (!left || !right) return false;
-  if (left === right) return true;
-  return sameAttraction(target.name, record.name, target.city, record.city)
-    && Math.abs(left.length - right.length) <= 4;
+  if (!right) return false;
+  const targetNames = [...new Set([target.name, ...(target.aliases || [])].filter(Boolean))];
+  return targetNames.some(targetName => {
+    if (isCompositeName(targetName) !== isCompositeName(record.name)) return false;
+    const left = compactName(targetName, target.city);
+    if (!left) return false;
+    if (left === right) return true;
+    return sameAttraction(targetName, record.name, target.city, record.city)
+      && Math.abs(left.length - right.length) <= 4;
+  });
 }
 
 function isAmapAttractionPoi(record) {

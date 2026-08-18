@@ -19,6 +19,25 @@ assert.equal(healed.packageData.attractions[0].name, '武隆喀斯特旅游区',
 assert.equal(healed.packageData.attractions[0].lazy_routes.length, 2, '合并不得丢失更完整路线');
 assert.equal(healed.actions.length, 1);
 
+const qinhuSource = '高德地图：https://www.amap.com/place/B020B01K5Q';
+const qinhu = healPackageDuplicates({ attractions: [
+  {
+    id: 'qinhu-official', baselineKey: 'core_qinhu_official', name: '溱湖旅游景区', city: '泰州',
+    source_evidence: { basicInfoSources: [qinhuSource] },
+  },
+  {
+    id: 'qinhu-ota', baselineKey: 'core_qinhu_ota', name: '泰州溱湖湿地', city: '泰州',
+    source_evidence: { basicInfoSources: [qinhuSource] },
+  },
+] });
+assert.equal(qinhu.packageData.attractions.length, 1, '同城共享同一高德实体的景区/湿地别名不得重复新增');
+assert.equal(qinhu.actions[0].type, 'merge_duplicate_additions');
+assert.deepEqual(
+  [...qinhu.packageData.attractions[0].self_heal.mergedBaselineKeys].sort(),
+  ['core_qinhu_official', 'core_qinhu_ota'],
+  '合并后必须保留全部核心清单键，避免最终验收把别名误报为缺失',
+);
+
 const ambiguous = healPackageDuplicates({ attractions: [
   { ...generic, id: 'a', source_evidence: { basicInfoSources: ['普通来源：https://example.com/a'] } },
   { ...specific, id: 'b', source_evidence: { basicInfoSources: ['普通来源：https://example.com/b'] } },
