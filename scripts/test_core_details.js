@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, sameIdentity } = require('./collect_core_details');
+const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity } = require('./collect_core_details');
 const { localAmapRating } = require('./core_rating_evidence');
 
 const cases = [
@@ -20,6 +20,17 @@ assert(!completeEvidence({ address: '地址', description: '介绍', sources: [{
 assert(!completeEvidence({ address: '地址', sources: [{}] }), '残缺断点不得误判完成');
 assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小三峡'), '全角连接符复合景区应产生组成景点别名');
 assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小小三峡'), '全角连接符复合景区应保留第二个组成景点别名');
+assert(allAliases({ name: '溪口－滕头旅游景区' }).includes('溪口'), '双字组成景点也应作为高德别名检索词');
+assert(allAliases({ name: '溪口－滕头旅游景区' }).includes('滕头'), '复合景区第二个双字实体不得遗漏');
+const cityAddress = resolveVerifiedAddress(
+  { name: '溪口－滕头旅游景区', city: '宁波', research: { discoveredSources: [{ url: 'https://example.com/official' }] } },
+  null,
+  { name: '宁波市溪口-滕头旅游景区' },
+  null,
+  '浙江',
+);
+assert.strictEqual(cityAddress.precision, 'city', '权威来源已确认属地时，缺门牌应降级为城市级地址而不是无限续跑');
+assert(cityAddress.value.startsWith('宁波'), '城市级地址必须明确展示已核验属地');
 assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
 assert(imageIdentityTokens({ name: '天津之眼摩天轮', city: '天津' }).includes('天津之眼'), '设施型景点图片搜索应同时保留实体主干');
 assert(imageIdentityTokens({ name: '溱湖国家湿地公园', city: '泰州' }).includes('溱湖'), '公园型 POI 应保留景点实体主干用于图片核验');

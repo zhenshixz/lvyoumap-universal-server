@@ -1358,5 +1358,629 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B023B06P06": {
+    "baselineKey": "core_2c3d4e6660",
+    "id": "amap_B023B06P06",
+    "name": "西溪湿地旅游区",
+    "city": "杭州",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/zhejiang_49d10b6_verified.jpg",
+    "description": "西溪湿地是一个集城市湿地、农耕湿地、文化湿地于一体的国家湿地公园。景区总面积约11.5平方公里，分为东部湿地生态保护培育区、中部湿地生态旅游休闲区和西部湿地生态景观封育区。",
+    "intro": "西溪湿地是一个集城市湿地、农耕湿地、文化湿地于一体的国家湿地公园。景区总面积约11.5平方公里，分为东部湿地生态保护培育区、中部湿地生态旅游休闲区和西部湿地生态景观封育区。",
+    "level": "5A景区",
+    "category": "国家湿地公园、5A级旅游景区",
+    "tags": [
+      "国家湿地公园、5A级旅游景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "浙江省杭州市西湖区留下镇天目山路518号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+        "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+        "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+        "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
+      },
+      "transport": {
+        "external_arrive": "地铁3号线至“西溪湿地南站”（近周家村入口）或“东岳站”（近博物馆）；地铁19号线至“西溪湿地北站”（近北门）。自驾可导航至“周家村停车场”或“高庄停车场”。",
+        "internal_arrive": "带老人儿童首选“周家村入口”（收费区主入口，码头集中，坐船最方便）；若不想买门票，选“北门”或“东岳站”附近进入免费区。",
+        "internal_traffic": "电瓶船（费用以官方当日公告为准，可随上随下）、摇橹船（费用以官方当日公告为准/小时/船，2-6人包船）、观光车（10-费用以官方当日公告为准，连接各主要入口和景点）、嘻嘻小火车（连接博物馆与高庄）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "蒋村慢生活街区周边（餐饮便利，氛围好）、西溪湿地周边酒店（环境清幽，推窗见景）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "西湖醋鱼",
+        "东坡肉",
+        "龙井虾仁",
+        "杭州小笼包"
+      ],
+      "special_care": {
+        "elderly": "全程以游船和观光车代步，避免长时间步行；高庄和河渚街有长椅可歇脚，注意防蚊防晒",
+        "children": "中国湿地博物馆有AR导览和互动展项，适合科普；烟水渔庄有大草坪和攀爬架可放电；全程路面平坦，婴儿车可畅行。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "水陆结合·经典省力精华游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "周家村入口",
+          "电瓶船/摇橹船",
+          "烟水渔庄",
+          "深潭口",
+          "观光车",
+          "高庄",
+          "河渚街"
+        ],
+        "duration": "半天",
+        "walking": "少（以游船和观光车代步为主，仅在各景点内短途漫步）",
+        "physical": 2,
+        "tips": [
+          "强烈建议购买电瓶船票或包摇橹船，这是西溪湿地最省力的核心方式；电瓶船可随上随下，覆盖烟水渔庄、深潭口等核心水域景点，比纯步行轻松太多。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      },
+      {
+        "title": "免费休闲·博物馆与江南园林慢游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "中国湿地博物馆",
+          "福堤",
+          "高庄",
+          "河渚街",
+          "蒋村慢生活街区"
+        ],
+        "duration": "半天",
+        "walking": "中等（主要在免费区沿堤和园林步道步行，路面平坦）",
+        "physical": 3,
+        "tips": [
+          "中国湿地博物馆室内展陈丰富，适合中午避暑；福堤和高庄人少清幽，适合喜欢安静和拍照的家庭；全程无需门票，性价比高。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "Wikidata Q112311151 实体页：https://www.wikidata.org/wiki/Q112311151"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 西溪国家湿地公园",
+        "url": "https://www.amap.com/place/B023B06P06",
+        "poiId": "B023B06P06",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "杭州西溪湿地:自然与人文的完美交融 🌿",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4231402292010671781",
+      "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4231402292010671781",
+      "width": 1706,
+      "height": 2530
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B023B06P06"
+    }
+  },
+  "amap_B0FFM8RADW": {
+    "baselineKey": "core_e6dab7a50f",
+    "id": "amap_B0FFM8RADW",
+    "name": "德清莫干山国际旅游度假区",
+    "city": "湖州",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/zhejiang_3e10ad34_verified.jpg",
+    "description": "莫干山是中国四大避暑胜地之一，历史文化底蕴深厚，自然生态资源优越，南北朝文学家沈约、庾信等人都与莫干山有不解之缘。莫干山现留存两百多幢近现代建筑，被誉为“万国建筑博物馆”，是全国重点文保单位。",
+    "intro": "莫干山是中国四大避暑胜地之一，历史文化底蕴深厚，自然生态资源优越，南北朝文学家沈约、庾信等人都与莫干山有不解之缘。莫干山现留存两百多幢近现代建筑，被誉为“万国建筑博物馆”，是全国重点文保单位。",
+    "level": "国家级旅游度假区",
+    "category": "自然山水、人文别墅、避暑度假",
+    "tags": [
+      "自然山水、人文别墅、避暑度假",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "浙江省湖州市德清县三莫线辅路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至\"莫干山旅游集散中心（庾村）\"；高铁至\"德清站\"后打车约 30 分钟抵达庾村。",
+        "internal_arrive": "从庾村旅游集散中心乘景交车上山，避免自驾盘山公路，省时省力。",
+        "internal_traffic": "景区内景交车串联各核心景点，单买游览车 费用以官方当日公告为准，建议购买联票更划算。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "山上可选择芦花荡饭店、皇后饭店等，步行可达核心景点；山下庾村周边民宿密集，吃喝便利，适合自驾游客。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "西湖醋鱼",
+        "东坡肉",
+        "龙井虾仁",
+        "杭州小笼包"
+      ],
+      "special_care": {
+        "elderly": "以景交车代步，避开剑池后山等陡坡路段，选择芦花荡公园、武陵村等平缓区域",
+        "children": "剑池木栈道安全、溪水浅，适合孩子踩水；庾村广场喂鸽子、文创街逛小店，轻松不费体力。\n\n补充说明：莫干山景区内步道整体平缓，但部分区域（如大坑景区、蒋公古道）徒步强度较大，带老人小孩建议只选核心平缓景点；竹林蚊虫多，务必备好驱蚊液和防晒用品。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "莫干山风景区景交车省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "庾村旅游集散中心（乘景交车上山）",
+          "毛主席下榻处（皇后饭店）",
+          "旭光台（俯瞰竹海云海）",
+          "武陵村（民国别墅群）",
+          "白云山馆",
+          "芦花荡公园",
+          "荫山街换乘中心",
+          "剑池（四叠飞瀑）"
+        ],
+        "duration": "半天",
+        "walking": "约 2-3 公里（以景交车为主，景点间步行平缓）",
+        "physical": 2,
+        "tips": [
+          "建议提前购买景车联票，山上景点间游览车 费用以官方当日公告为准，可任意站点上下；注意景交车运营时间，避免错过末班车。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      },
+      {
+        "title": "庾村文化市集慢逛休闲游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "庾村广场（喂白鸽",
+          "打卡复古钟楼）",
+          "莫干山老车站",
+          "莫干山美术馆",
+          "庾村步行街（文创小店",
+          "咖啡馆）"
+        ],
+        "duration": "半天",
+        "walking": "约 1 公里（全程平地，适合推车）",
+        "physical": 1,
+        "tips": [
+          "庾村街区为平地，老人小孩轻松漫步；街边有各类小吃和咖啡馆，可随时休息补给。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 莫干山国际旅游度假区：https://www.amap.com/place/B0FFM8RADW"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 莫干山国际旅游度假区",
+        "url": "https://www.amap.com/place/B0FFM8RADW",
+        "poiId": "B0FFM8RADW",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "德清莫干山国际旅游度假区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B0FFM8RADW",
+      "width": 1536,
+      "height": 2048
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B023A009B5": {
+    "baselineKey": "core_d020542e6e",
+    "id": "amap_B023A009B5",
+    "name": "廿八都古镇",
+    "city": "江山",
+    "rating": 4.3,
+    "reviewsCount": "1792条携程点评",
+    "image": "/assets/images/attractions/zhejiang_9e243bac_verified.jpg",
+    "description": "廿八都古镇地处浙西、福建和江西的交界处，当地人常用“一脚踏三省”来形容这里。北面的仙霞关，南面的枫岭关将廿八都古镇阻隔在一个近乎封闭的环境里，而这里的文化却表现出令人诧异的开放与多元，游人比较集中的廿八都古镇的3600多人分属69种姓氏，很有意思。",
+    "intro": "廿八都古镇地处浙西、福建和江西的交界处，当地人常用“一脚踏三省”来形容这里。北面的仙霞关，南面的枫岭关将廿八都古镇阻隔在一个近乎封闭的环境里，而这里的文化却表现出令人诧异的开放与多元，游人比较集中的廿八都古镇的3600多人分属69种姓氏，很有意思。",
+    "level": "热门景点",
+    "category": "历史文化名镇、明清古建筑群",
+    "tags": [
+      "历史文化名镇、明清古建筑群",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "浙江省衢州市江山市枫岭路1号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至“浔里村村委会”或“廿八都古镇”，景区有停车场；高铁可至“江山站”，出站后乘坐景区直通车或打车前往。",
+        "internal_arrive": "推荐从古镇北门进入，沿主街向南步行，路线平缓且顺路。",
+        "internal_traffic": "古镇内部以步行石板路为主，无其他交通工具。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在古镇内的民宿（多为老宅改造，推窗见溪水），或景区外步行3分钟左右的民宿（性价比更高，且17点后入住可免门票）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "西湖醋鱼",
+        "东坡肉",
+        "龙井虾仁",
+        "杭州小笼包"
+      ],
+      "special_care": {
+        "elderly": "主街地势平缓，适合慢走；但成功亭和部分古宅有台阶，建议量力而行，穿防滑平底鞋",
+        "children": "可带娃在豆腐工坊体验磨豆浆，或在古镇内参与NPC互动闯关游戏，增加趣味性；枫溪边可玩水，建议备好水枪。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "枫溪老街漫步与全景俯瞰省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "珠坡桥",
+          "枫溪老街（浔里街）",
+          "文昌宫",
+          "成功亭",
+          "东升桥"
+        ],
+        "duration": "半天",
+        "walking": "约1.5公里",
+        "physical": 2,
+        "tips": [
+          "古镇主街呈一字型分布，建议从北门进入，一路向南步行，不走回头路；成功亭可俯瞰全镇，但需爬台阶，长辈可根据体力选择是否登顶。"
+        ],
+        "sourceTitle": "携程旅行 廿八都古镇 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "ctrip_city_sightlist：https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 廿八都古镇 详情页",
+        "url": "https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "廿八都古镇 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online",
+      "width": 6048,
+      "height": 4024
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B02430HZD8": {
+    "baselineKey": "core_f834ced397",
+    "id": "amap_B02430HZD8",
+    "name": "东阳卢宅",
+    "city": "东阳",
+    "rating": 4.6,
+    "reviewsCount": "1048条携程点评",
+    "image": "/assets/images/attractions/zhejiang_c053fd3b_verified.jpg",
+    "description": "东阳卢宅景区就在东阳东汽车东站对面，这占地几千平米的古建筑群，由当地的卢氏家族历经五百多年建成。东阳以木雕闻名，而宅内不同时期的彩绘、牛腿、雀替不乏精品，很有可看性。",
+    "intro": "东阳卢宅景区就在东阳东汽车东站对面，这占地几千平米的古建筑群，由当地的卢氏家族历经五百多年建成。东阳以木雕闻名，而宅内不同时期的彩绘、牛腿、雀替不乏精品，很有可看性。",
+    "level": "热门景点",
+    "category": "明清古建筑群、国家4A级旅游景区、全国重点文物保护单位\n游览方案",
+    "tags": [
+      "明清古建筑群、国家4A级旅游景区、全国重点文物保护单位\n游览方案",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "浙江省金华市东阳市卢宅街与花厅路交叉口西北100米",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“东阳卢宅景区”，门口有停车场；高铁到义乌站后转乘808路公交或打车约30分钟可达；东阳城区内乘1/2/3路公交到“卢宅”站步行5分钟。",
+        "internal_arrive": "从正门（石牌坊群）进入，依次穿过三座牌坊，仪式感强且不走回头路。",
+        "internal_traffic": "全程步行，宅内为青石板路和台阶，建议穿防滑平底鞋。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "卢宅街或人民路附近，方便步行前往景区；若计划去横店，可住东阳城区或横店周边。\n长辈儿童友好建议\n长辈建议：宅内台阶和石板路较多，建议穿防滑鞋、带根拐杖；可重点逛肃雍堂、嘉会堂等核心厅堂，不必强求走完九进院落；建议请讲解，边走边听边休息。\n儿童建议：可在牌坊群玩“找狮子/找花纹”小游戏；在非遗工坊体验木雕DIY或拓印；给娃讲牌匾和木雕上的故事（如九狮戏球、八仙过海），增加趣味性。\n注意事项",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "西湖醋鱼",
+        "东坡肉",
+        "龙井虾仁",
+        "杭州小笼包"
+      ],
+      "special_care": {
+        "elderly": "宅内台阶和石板路较多，建议穿防滑鞋、带根拐杖；可重点逛肃雍堂、嘉会堂等核心厅堂，不必强求走完九进院落；建议请讲解，边走边听边休息",
+        "children": "可在牌坊群玩“找狮子/找花纹”小游戏；在非遗工坊体验木雕DIY或拓印；给娃讲牌匾和木雕上的故事（如九狮戏球、八仙过海），增加趣味性。\n注意事项"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "中轴线精华省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "景区入口石牌坊群（风纪世家",
+          "大方伯",
+          "旌表贞洁）",
+          "捷报门",
+          "国光门",
+          "肃雍堂（核心，看羊角灯与木雕）",
+          "乐寿堂",
+          "世雍堂",
+          "嘉会堂（看九狮戏球木雕）",
+          "东吟堂",
+          "树德堂",
+          "卢宅老街（感受烟火气）"
+        ],
+        "duration": "半天",
+        "walking": "约2公里（全程平缓，石板路为主）",
+        "physical": 3,
+        "tips": [
+          "建议请人工讲解或租电子导览，木雕和牌匾背后的故事很多，听讲解体验会大幅提升；较合适时段后光线斜射，适合拍照。"
+        ],
+        "sourceTitle": "携程旅行 东阳卢宅 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "ctrip_city_sightlist：https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 东阳卢宅 详情页",
+        "url": "https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "东阳卢宅 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online",
+      "width": 4606,
+      "height": 3009
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B023B07SNT": {
+    "baselineKey": "core_315ac429fc",
+    "id": "amap_B023B07SNT",
+    "name": "浙江湘湖旅游度假区",
+    "city": "杭州",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/zhejiang_82c8c680_verified.jpg",
+    "description": "濒临钱塘江与富春江、浦阳江的三江汇合处，素有“三江活码头”之称。拥有四个国家4A级旅游景区，其中湖湘景区集湖光山色为一体，有跨湖桥、下孙、定山七大景群等50多个景区。",
+    "intro": "濒临钱塘江与富春江、浦阳江的三江汇合处，素有“三江活码头”之称。拥有四个国家4A级旅游景区，其中湖湘景区集湖光山色为一体，有跨湖桥、下孙、定山七大景群等50多个景区。",
+    "level": "国家级旅游度假区",
+    "category": "湖泊度假区、文化遗址、自然生态",
+    "tags": [
+      "湖泊度假区、文化遗址、自然生态",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "杭州市萧山区风情大道2758号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "地铁1号线湘湖站C口出站即达；自驾可导航至湖山广场停车场或荷花庄停车场。",
+        "internal_arrive": "带娃或长辈建议从湖山广场或荷花庄入口进，设施完善且平路多；徒步爱好者可从湘庄停车场进入竹坞探幽。",
+        "internal_traffic": "景区内有观光电瓶车（按站收费）、环湖游船（可单程或环线）、共享单车，也可在码头乘船前往跨湖桥遗址博物馆。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区内可选湘湖逍遥庄园、开元森泊、沐心岛房车度假营；预算有限可选地铁1号线附近的连锁酒店。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "西湖醋鱼",
+        "东坡肉",
+        "龙井虾仁",
+        "杭州小笼包"
+      ],
+      "special_care": {
+        "elderly": "推荐路线A，全程平路少走路，坐船和逛博物馆不费体力",
+        "children": "荷花庄浅滩玩水、看天鹅、博物馆互动考古体验非常吸引小朋友，建议备好驱蚊液和换洗衣物。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "湖景游船+室内展馆省力休闲线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "湖山广场（乘游船）",
+          "跨湖桥遗址博物馆（室内参观）",
+          "荷花庄（浅滩踩水）",
+          "天鹅栖息地（观鸟）"
+        ],
+        "duration": "半天",
+        "walking": "约1公里",
+        "physical": 1,
+        "tips": [
+          "游船和博物馆内部有空调，适合怕晒怕热的家庭；浅滩踩水建议带防滑凉鞋和替换袜子。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      },
+      {
+        "title": "竹海古城轻徒步吸氧线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "竹坞探幽（竹林吸氧）",
+          "卧薪尝胆遗址（山脊平路）",
+          "越王城遗址（古城墙）",
+          "城山广场（俯瞰湘湖）"
+        ],
+        "duration": "半天",
+        "walking": "约4公里",
+        "physical": 3,
+        "tips": [
+          "全程树荫覆盖，但部分路段为原生态土路，建议穿防滑鞋并携带驱蚊液。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 湘湖国家旅游度假区",
+        "url": "https://www.amap.com/place/B023B07SNT",
+        "poiId": "B023B07SNT",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "那就来杭州的浙江湘湖旅游度假区吧!",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4366235132181451796",
+      "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4366235132181451796",
+      "width": 2048,
+      "height": 1364
+    },
+    "quality_status": {
+      "reviewRequired": true,
+      "warnings": [
+        "独立可追溯来源少于2个",
+        "浙江湘湖旅游度假区：基本资料目前只有1个可追溯来源"
+      ]
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B023B07SNT"
+    }
   }
 }

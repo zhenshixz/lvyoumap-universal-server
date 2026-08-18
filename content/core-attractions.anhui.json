@@ -1,0 +1,748 @@
+{
+  "province": "安徽",
+  "checkedAt": "2026-08-18",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/anhui100068.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 4,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 3,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 3,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 13,
+  "officialResortCandidateCount": 2,
+  "popularityCount": 14,
+  "existingRecordBoundCount": 22,
+  "existingRecordUnboundCount": 5,
+  "existingRecordUnboundNames": [
+    "古徽州文化旅游区",
+    "皖南古村落－西递宏村",
+    "西递",
+    "黄山黟县国际乡村旅游度假区",
+    "合肥市巢湖半汤温泉养生度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 3,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 3,
+  "observationCandidates": [
+    {
+      "name": "寿县古城",
+      "city": "六安",
+      "aliases": [
+        "寿县古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "凤阳博物馆",
+      "city": "滁州",
+      "aliases": [
+        "凤阳博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "屯溪老街",
+      "city": "黄山",
+      "aliases": [
+        "屯溪老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "寿县古城",
+      "city": "六安",
+      "aliases": [
+        "寿县古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "凤阳博物馆",
+      "city": "滁州",
+      "aliases": [
+        "凤阳博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "屯溪老街",
+      "city": "黄山",
+      "aliases": [
+        "屯溪老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 4,
+    "verifiedCount": 1,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 3,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_5584c489df",
+      "name": "琅琊山景区",
+      "preferredId": "amap_B0FFF5TWX9",
+      "aliases": [
+        "琅琊山景区",
+        "滁州市琅琊山景区",
+        "琅琊山"
+      ],
+      "city": "滁州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_65991f40fa",
+      "name": "长江采石矶文化生态旅游区",
+      "preferredId": "amap_B022B002B3",
+      "aliases": [
+        "长江采石矶文化生态旅游区",
+        "马鞍山市长江采石矶文化生态旅游区",
+        "长江采石矶文化生态"
+      ],
+      "city": "马鞍山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_a34ea83ba5",
+      "name": "万佛湖风景区",
+      "preferredId": "amap_B023401C2A",
+      "aliases": [
+        "万佛湖风景区",
+        "六安市万佛湖风景区",
+        "万佛湖"
+      ],
+      "city": "六安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_df8e9c4b28",
+      "name": "方特旅游区",
+      "preferredId": "amap_B0JRGC16US",
+      "aliases": [
+        "方特旅游区",
+        "芜湖市方特旅游区",
+        "方特"
+      ],
+      "city": "芜湖",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_b5d6f94570",
+      "name": "三河古镇景区",
+      "preferredId": "amap_B02270I45I",
+      "aliases": [
+        "三河古镇景区",
+        "合肥市三河古镇景区",
+        "三河古镇"
+      ],
+      "city": "合肥",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_775ebb6257",
+      "name": "古徽州文化旅游区",
+      "preferredId": "manual_anhui_1a20932b",
+      "aliases": [
+        "古徽州文化旅游区",
+        "黄山市古徽州文化旅游区",
+        "古徽州文化"
+      ],
+      "city": "黄山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_331bd0c007",
+      "name": "八里河风景区",
+      "preferredId": "amap_B06160260A",
+      "aliases": [
+        "八里河风景区",
+        "阜阳市八里河风景区",
+        "八里河"
+      ],
+      "city": "阜阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_66bd0f5e25",
+      "name": "龙川景区",
+      "preferredId": "amap_B02330NW3E",
+      "aliases": [
+        "龙川景区",
+        "宣城市龙川景区",
+        "龙川"
+      ],
+      "city": "宣城",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_9ee64d72ac",
+      "name": "天堂寨旅游景区",
+      "preferredId": "amap_B0FFF5R94N",
+      "aliases": [
+        "天堂寨旅游景区",
+        "六安市天堂寨旅游景区",
+        "天堂寨"
+      ],
+      "city": "六安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_a72e61a266",
+      "name": "皖南古村落－西递宏村",
+      "preferredId": "manual_anhui_9dc5aa6c",
+      "aliases": [
+        "皖南古村落－西递宏村",
+        "黄山市皖南古村落－西递宏村"
+      ],
+      "city": "黄山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_8e95a5c179",
+      "name": "天柱山风景区",
+      "preferredId": "amap_B022C002C5",
+      "aliases": [
+        "天柱山风景区",
+        "安庆市天柱山风景区",
+        "天柱山"
+      ],
+      "city": "安庆",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_7059e35be2",
+      "name": "九华山风景区",
+      "preferredId": "amap_B023600447",
+      "aliases": [
+        "九华山风景区",
+        "池州市九华山风景区",
+        "九华山"
+      ],
+      "city": "池州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_505555d0ad",
+      "name": "黄山风景区",
+      "preferredId": "amap_B022F0ML6Z",
+      "aliases": [
+        "黄山风景区",
+        "黄山市黄山风景区",
+        "黄山"
+      ],
+      "city": "黄山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_68a9f83b4a",
+      "name": "宏村景区",
+      "preferredId": "amap_B022F00F44",
+      "aliases": [
+        "宏村景区",
+        "宏村"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 20
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_331570a0d7",
+      "name": "呈坎",
+      "preferredId": "amap_B022F00VO4",
+      "aliases": [
+        "呈坎"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 22
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_36e39eef74",
+      "name": "徽州古城",
+      "preferredId": "amap_B022F00F50",
+      "aliases": [
+        "徽州古城"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 21
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d11dbf3232",
+      "name": "西递",
+      "preferredId": "manual_anhui_66ff1171",
+      "aliases": [
+        "西递"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7600b8bc81",
+      "name": "齐云山景区",
+      "preferredId": "amap_B022F00DWD",
+      "aliases": [
+        "齐云山景区",
+        "齐云山"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 24
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_86da6ffe83",
+      "name": "安庆古城",
+      "preferredId": "amap_B0FFM18UGE",
+      "aliases": [
+        "安庆古城",
+        "安庆古城·倒扒狮历史文化街区"
+      ],
+      "city": "安庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 99
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B0FFM18UGE",
+          "name": "安庆古城·倒扒狮历史文化街区",
+          "city": "安庆"
+        }
+      ]
+    },
+    {
+      "key": "core_52840da0c3",
+      "name": "西溪南古村落",
+      "preferredId": "amap_B0FFH6CZXM",
+      "aliases": [
+        "西溪南古村落"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 25
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7ae95a8ed4",
+      "name": "黎阳in巷",
+      "preferredId": "amap_B0FFFJW6DF",
+      "aliases": [
+        "黎阳in巷"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 27
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_dd3e418943",
+      "name": "巢湖",
+      "preferredId": "amap_B02350OBEA",
+      "aliases": [
+        "巢湖",
+        "巢湖国家重点风景名胜区"
+      ],
+      "city": "合肥",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 37
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cc4663b9ce",
+      "name": "翡翠谷",
+      "preferredId": "amap_B022F002DP",
+      "aliases": [
+        "翡翠谷"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 84
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0ad0a5c083",
+      "name": "花亭湖",
+      "preferredId": "amap_B022C03ICY",
+      "aliases": [
+        "花亭湖",
+        "中国花亭湖风景名胜区"
+      ],
+      "city": "安庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 94
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cb123053b3",
+      "name": "明皇陵",
+      "preferredId": "amap_B022600377",
+      "aliases": [
+        "明皇陵"
+      ],
+      "city": "滁州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 204
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ae0df75b27",
+      "name": "黄山黟县国际乡村旅游度假区",
+      "preferredId": "manual_anhui_8f4d8666",
+      "aliases": [
+        "黄山黟县国际乡村旅游度假区"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fddd426458",
+      "name": "合肥市巢湖半汤温泉养生度假区",
+      "preferredId": "manual_anhui_72138b78",
+      "aliases": [
+        "合肥市巢湖半汤温泉养生度假区"
+      ],
+      "city": "合肥",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

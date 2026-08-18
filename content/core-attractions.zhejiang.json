@@ -1,0 +1,1098 @@
+{
+  "province": "浙江",
+  "checkedAt": "2026-08-18",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/zhejiang100065.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 3,
+    "filteredTemporaryOtaCandidates": [
+      {
+        "name": "湖州 · 潮音风暴超级演唱会-湖州站",
+        "rank": 1,
+        "url": "https://you.ctrip.com/sight/huzhou68/156453844.html?poiType=66&scene=online",
+        "reason": "临时演出、赛事或活动，不属于长期景点"
+      },
+      {
+        "name": "嵊州 · 2026氧气BAOBAO音乐节",
+        "rank": 2,
+        "url": "https://you.ctrip.com/sight/shengzhou553/156453504.html?poiType=66&scene=online",
+        "reason": "临时演出、赛事或活动，不属于长期景点"
+      },
+      {
+        "name": "杭州 · 孙燕姿《就在日落以后》巡回演唱会",
+        "rank": 4,
+        "url": "https://you.ctrip.com/sight/hangzhou14/156376485.html?poiType=66&scene=online",
+        "reason": "临时演出、赛事或活动，不属于长期景点"
+      }
+    ],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 7,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 22,
+  "officialResortCandidateCount": 9,
+  "popularityCount": 18,
+  "existingRecordBoundCount": 30,
+  "existingRecordUnboundCount": 10,
+  "existingRecordUnboundNames": [
+    "西溪湿地旅游区",
+    "溪口－滕头旅游景区",
+    "乌镇古镇旅游区",
+    "德清莫干山国际旅游度假区",
+    "廿八都古镇",
+    "东阳卢宅",
+    "湖州吴兴西塞山旅游度假区",
+    "泰顺廊桥-氡泉旅游度假区",
+    "湖州市安吉灵峰旅游度假区",
+    "浙江湘湖旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "严州古城",
+      "city": "杭州",
+      "aliases": [
+        "严州古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "宁波博物馆",
+      "city": "宁波",
+      "aliases": [
+        "宁波博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "临海古城",
+      "city": "台州",
+      "aliases": [
+        "临海古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松阳古村落",
+      "city": "丽水",
+      "aliases": [
+        "松阳古村落"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "严州古城",
+      "city": "杭州",
+      "aliases": [
+        "严州古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "宁波博物馆",
+      "city": "宁波",
+      "aliases": [
+        "宁波博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "临海古城",
+      "city": "台州",
+      "aliases": [
+        "临海古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "松阳古村落",
+      "city": "丽水",
+      "aliases": [
+        "松阳古村落"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 7,
+    "verifiedCount": 3,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_15d93e5a32",
+      "name": "双龙风景旅游区",
+      "preferredId": "amap_B02430HWAH",
+      "aliases": [
+        "双龙风景旅游区",
+        "金华市双龙风景旅游区",
+        "双龙"
+      ],
+      "city": "金华",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_cac68a2b1d",
+      "name": "云和梯田景区",
+      "preferredId": "amap_B024215MX7",
+      "aliases": [
+        "云和梯田景区",
+        "丽水市云和梯田景区",
+        "云和梯田"
+      ],
+      "city": "丽水",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_a35430facf",
+      "name": "台州府城文化旅游区",
+      "preferredId": "amap_B0FFKPYR64",
+      "aliases": [
+        "台州府城文化旅游区",
+        "台州市台州府城文化旅游区",
+        "台州府城文化"
+      ],
+      "city": "台州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_c92372279e",
+      "name": "刘伯温故里景区",
+      "preferredId": "amap_B0G3KCN3WJ",
+      "aliases": [
+        "刘伯温故里景区",
+        "温州市刘伯温故里景区",
+        "刘伯温故里"
+      ],
+      "city": "温州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_82c135989a",
+      "name": "缙云仙都景区",
+      "preferredId": "amap_B024200C92",
+      "aliases": [
+        "缙云仙都景区",
+        "丽水市缙云仙都景区",
+        "缙云仙都"
+      ],
+      "city": "丽水",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_feb0a52b9b",
+      "name": "天一阁•月湖景区",
+      "preferredId": "amap_B0FFK2ZI40",
+      "aliases": [
+        "天一阁•月湖景区",
+        "宁波市天一阁•月湖景区",
+        "天一阁•月湖"
+      ],
+      "city": "宁波",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_5d932b0044",
+      "name": "江郎山•廿八都旅游区",
+      "preferredId": "amap_B023A009B5",
+      "aliases": [
+        "江郎山•廿八都旅游区",
+        "衢州市江郎山•廿八都旅游区",
+        "江郎山•廿八都"
+      ],
+      "city": "衢州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_9f1194ca4e",
+      "name": "西塘古镇旅游景区",
+      "preferredId": "amap_B023D02T2B",
+      "aliases": [
+        "西塘古镇旅游景区",
+        "嘉兴市西塘古镇旅游景区",
+        "西塘古镇"
+      ],
+      "city": "嘉兴",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_8b98f9cda6",
+      "name": "神仙居景区",
+      "preferredId": "amap_B0FFGLW1SP",
+      "aliases": [
+        "神仙居景区",
+        "台州市神仙居景区",
+        "神仙居"
+      ],
+      "city": "台州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_6fdd6dce63",
+      "name": "天台山景区",
+      "preferredId": "amap_B02400SPSI",
+      "aliases": [
+        "天台山景区",
+        "台州市天台山景区",
+        "天台山"
+      ],
+      "city": "台州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_04fe3d3a1f",
+      "name": "南浔古镇景区",
+      "preferredId": "amap_B023C0OMFN",
+      "aliases": [
+        "南浔古镇景区",
+        "湖州市南浔古镇景区",
+        "南浔古镇"
+      ],
+      "city": "湖州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_e6070f9e80",
+      "name": "根宫佛国文化旅游区",
+      "preferredId": "amap_B023A1546R",
+      "aliases": [
+        "根宫佛国文化旅游区",
+        "衢州市根宫佛国文化旅游区",
+        "根宫佛国文化"
+      ],
+      "city": "衢州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_ab07366a5d",
+      "name": "鲁迅故里•沈园景区",
+      "preferredId": "amap_B023F02PG3",
+      "aliases": [
+        "鲁迅故里•沈园景区",
+        "绍兴市鲁迅故里•沈园景区",
+        "鲁迅故里•沈园"
+      ],
+      "city": "绍兴",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_2c3d4e6660",
+      "name": "西溪湿地旅游区",
+      "preferredId": "amap_B023B06P06",
+      "aliases": [
+        "西溪湿地旅游区",
+        "杭州市西溪湿地旅游区",
+        "西溪湿地"
+      ],
+      "city": "杭州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_5b829ae57c",
+      "name": "南湖旅游区",
+      "preferredId": "amap_B023D02T8E",
+      "aliases": [
+        "南湖旅游区",
+        "嘉兴市南湖旅游区",
+        "南湖"
+      ],
+      "city": "嘉兴",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_1e935dc9f3",
+      "name": "横店影视城景区",
+      "preferredId": "amap_B02430HUMW",
+      "aliases": [
+        "横店影视城景区",
+        "金华市横店影视城景区",
+        "横店影视城"
+      ],
+      "city": "金华",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2010年"
+    },
+    {
+      "key": "core_05a5c6386c",
+      "name": "溪口－滕头旅游景区",
+      "preferredId": "manual_zhejiang_206eb3eb",
+      "aliases": [
+        "溪口－滕头旅游景区",
+        "宁波市溪口－滕头旅游景区",
+        "溪口－滕头"
+      ],
+      "city": "宁波",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2010年"
+    },
+    {
+      "key": "core_94799a166d",
+      "name": "乌镇古镇旅游区",
+      "preferredId": "manual_zhejiang_65caa79",
+      "aliases": [
+        "乌镇古镇旅游区",
+        "嘉兴市乌镇古镇旅游区",
+        "乌镇古镇"
+      ],
+      "city": "嘉兴",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2010年"
+    },
+    {
+      "key": "core_37d8609083",
+      "name": "千岛湖风景区",
+      "preferredId": "amap_B0FFFYF0GP",
+      "aliases": [
+        "千岛湖风景区",
+        "杭州市千岛湖风景区",
+        "千岛湖"
+      ],
+      "city": "杭州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2010年"
+    },
+    {
+      "key": "core_fc0576b53d",
+      "name": "普陀山风景区",
+      "preferredId": "amap_B02445IKZ7",
+      "aliases": [
+        "普陀山风景区",
+        "舟山市普陀山风景区",
+        "普陀山"
+      ],
+      "city": "舟山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_141fdcf824",
+      "name": "雁荡山风景区",
+      "preferredId": "amap_B024105U52",
+      "aliases": [
+        "雁荡山风景区",
+        "温州市雁荡山风景区",
+        "雁荡山"
+      ],
+      "city": "温州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_4a922c3c6f",
+      "name": "杭州西湖风景区",
+      "preferredId": "amap_B023B13L9M",
+      "aliases": [
+        "杭州西湖风景区",
+        "杭州市杭州西湖风景区",
+        "杭州西湖"
+      ],
+      "city": "杭州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_bc151b2438",
+      "name": "灵隐飞来峰景区",
+      "preferredId": "amap_B023B05MJE",
+      "aliases": [
+        "灵隐飞来峰景区",
+        "灵隐飞来峰",
+        "飞来峰"
+      ],
+      "city": "杭州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 43
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B023B05MJE",
+          "name": "飞来峰",
+          "city": "杭州"
+        }
+      ]
+    },
+    {
+      "key": "core_e6dab7a50f",
+      "name": "德清莫干山国际旅游度假区",
+      "preferredId": "amap_B0FFM8RADW",
+      "aliases": [
+        "德清莫干山国际旅游度假区"
+      ],
+      "city": "湖州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0G23SCQ3S",
+              "name": "莫干山风景名胜区",
+              "city": "湖州"
+            },
+            {
+              "id": "amap_B0FFM8RADW",
+              "name": "莫干山国际旅游度假区",
+              "city": "湖州"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d020542e6e",
+      "name": "廿八都古镇",
+      "preferredId": "amap_B023A009B5",
+      "aliases": [
+        "廿八都古镇"
+      ],
+      "city": "衢州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "衢州",
+          "page": 1,
+          "name": "廿八都古镇",
+          "url": "https://you.ctrip.com/sight/jiangshan1000/16771.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f834ced397",
+      "name": "东阳卢宅",
+      "preferredId": "amap_B02430HZD8",
+      "aliases": [
+        "东阳卢宅"
+      ],
+      "city": "金华",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "金华",
+          "page": 2,
+          "name": "东阳卢宅景区",
+          "url": "https://you.ctrip.com/sight/dongyang608/17289.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_26a1414b19",
+      "name": "衢州古城文化旅游区",
+      "preferredId": "amap_B0IBMHDPIO",
+      "aliases": [
+        "衢州古城文化旅游区",
+        "衢州古城文化"
+      ],
+      "city": "衢州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 40
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0908876291",
+      "name": "朱家尖风景区",
+      "preferredId": "amap_B02445IOBS",
+      "aliases": [
+        "朱家尖风景区",
+        "朱家尖",
+        "朱家尖景区"
+      ],
+      "city": "舟山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 25
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0e0815878e",
+      "name": "灵隐寺",
+      "preferredId": "amap_B023B02842",
+      "aliases": [
+        "灵隐寺"
+      ],
+      "city": "杭州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e2ef079ca3",
+      "name": "东极岛",
+      "preferredId": "amap_B024464EPF",
+      "aliases": [
+        "东极岛",
+        "东极岛景区"
+      ],
+      "city": "舟山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 26
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0164777e01",
+      "name": "东钱湖旅游度假区",
+      "preferredId": "amap_B023E05BXK",
+      "aliases": [
+        "东钱湖旅游度假区",
+        "东钱湖风景名胜区"
+      ],
+      "city": "宁波",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 33
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3d97fd6333",
+      "name": "国清寺",
+      "preferredId": "amap_B024005IHI",
+      "aliases": [
+        "国清寺"
+      ],
+      "city": "台州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 38
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_94a6874139",
+      "name": "太湖旅游度假区",
+      "preferredId": "amap_B023C02ME4",
+      "aliases": [
+        "太湖旅游度假区",
+        "湖州太湖旅游度假区"
+      ],
+      "city": "湖州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 74
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_05e77db346",
+      "name": "楠溪江",
+      "preferredId": "amap_B024104089",
+      "aliases": [
+        "楠溪江",
+        "楠溪江风景名胜区"
+      ],
+      "city": "温州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 84
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_eec00f0b08",
+      "name": "鉴湖旅游度假区",
+      "preferredId": "amap_B023F02KB5",
+      "aliases": [
+        "鉴湖旅游度假区",
+        "鉴湖景区"
+      ],
+      "city": "绍兴",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 137
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d2eb01b26d",
+      "name": "古堰画乡",
+      "preferredId": "amap_B02420IO8C",
+      "aliases": [
+        "古堰画乡",
+        "古堰画乡旅游度假区"
+      ],
+      "city": "丽水",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 235
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_984b973358",
+      "name": "湖州吴兴西塞山旅游度假区",
+      "preferredId": "manual_zhejiang_ccea4c37",
+      "aliases": [
+        "湖州吴兴西塞山旅游度假区"
+      ],
+      "city": "湖州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_48c5a63e80",
+      "name": "泰顺廊桥-氡泉旅游度假区",
+      "preferredId": "manual_zhejiang_fae85aa4",
+      "aliases": [
+        "泰顺廊桥-氡泉旅游度假区",
+        "泰顺廊桥",
+        "氡泉旅游度假区"
+      ],
+      "city": "温州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4b062df43f",
+      "name": "湖州市安吉灵峰旅游度假区",
+      "preferredId": "manual_zhejiang_323eac56",
+      "aliases": [
+        "湖州市安吉灵峰旅游度假区"
+      ],
+      "city": "湖州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_315ac429fc",
+      "name": "浙江湘湖旅游度假区",
+      "preferredId": "amap_B023B07SNT",
+      "aliases": [
+        "浙江湘湖旅游度假区"
+      ],
+      "city": "杭州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

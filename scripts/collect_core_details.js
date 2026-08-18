@@ -192,17 +192,23 @@ function liveAmapPois(item) {
     const pois = request({ path: 'https://restapi.amap.com/v5/place/detail', query: { id: preferredId } });
     if (pois.length) return { pois, mode: 'preferred-poi-id' };
   }
-  const pois = request({
-    path: 'https://restapi.amap.com/v5/place/text',
-    query: {
-      keywords: item.name,
-      region: item.city || province,
-      city_limit: 'true',
-      page_size: '10',
-      page_num: '1',
-    },
-  });
-  return { pois, mode: 'text-search' };
+  const collected = [];
+  for (const keyword of allAliases(item).slice(0, 4)) {
+    const pois = request({
+      path: 'https://restapi.amap.com/v5/place/text',
+      query: {
+        keywords: keyword,
+        region: item.city || province,
+        city_limit: 'true',
+        page_size: '10',
+        page_num: '1',
+      },
+    });
+    collected.push(...pois);
+    const hasSameEntity = pois.some(poi => isAmapAttractionPoi(poi) && sameIdentity(poi.name, item));
+    if (hasSameEntity) break;
+  }
+  return { pois: [...new Map(collected.map(poi => [poi.id, poi])).values()], mode: 'alias-text-search' };
 }
 
 function resolveAmapRating(item, records) {
@@ -253,7 +259,7 @@ function allAliases(item) {
       .replace(/(?:国家)?[345]A?级?(?:旅游)?(?:景区|旅游区|风景区|度假区)$/i, '')
       .replace(/国际休闲旅游度假区|国际旅游度假区|旅游度假区|文化旅游景区|旅游景区|旅游区|风景名胜区|风景区|景区$/g, '')
       .trim();
-    if (clean.length >= 3) values.push(clean);
+    if (clean.length >= 2) values.push(clean);
   }
   const known = [
     [/大运河/, ['北京大运河博物馆', '大运河博物馆']],
@@ -861,6 +867,19 @@ function discoveredSources(item) {
     }));
 }
 
+function resolveVerifiedAddress(item, ctrip, officialRecord, amapDetails, fallbackProvince = province) {
+  const exact = ctrip?.address || officialRecord?.address || amapDetails?.address || item.address;
+  if (exact) return { value: exact, precision: 'exact', warning: '' };
+  const city = item.city || fallbackProvince;
+  const hasAuthority = Boolean(officialRecord || discoveredSources(item).length);
+  if (!city || !hasAuthority) return { value: '', precision: 'missing', warning: '' };
+  return {
+    value: `${city}（具体入口请以景区官方导航与当日公告为准）`,
+    precision: 'city',
+    warning: '仅核验到城市级属地，具体入口需以景区官方导航为准',
+  };
+}
+
 function liveAmapDetails(item) {
   if (!amapWebServiceKey) return null;
   try {
@@ -1083,7 +1102,8 @@ function main() {
       if (wikidata) pushSource({ title: `Wikidata ${wikidata.id} 实体页`, url: `https://www.wikidata.org/wiki/${wikidata.id}` });
       if (amapDetails?.source) pushSource(amapDetails.source);
       const routeSource = ctrip ? { title: ctrip.title, url: ctrip.url } : sources[0];
-      const address = ctrip?.address || officialRecord?.address || amapDetails?.address || item.address;
+      const resolvedAddress = resolveVerifiedAddress(item, ctrip, officialRecord, amapDetails);
+      const address = resolvedAddress.value;
       const verifiedLevel = levelFor(item, officialRecord);
       const conservativeIntro = address
         ? `${item.name}位于${address}，是已通过名称、属地和来源交叉核验的${verifiedLevel}。具体开放范围、预约和交通安排以景区官方当日公告为准。`
@@ -1093,6 +1113,7 @@ function main() {
       const warnings = [];
       if (!sources.length) blockers.push('没有可追溯基本资料来源');
       else if (sources.length < 2) warnings.push('独立可追溯来源少于2个');
+      if (resolvedAddress.warning) warnings.push(resolvedAddress.warning);
       if (!intro || !address) blockers.push('基本介绍或地址缺失');
       if (!experience?.routes?.length) blockers.push('可执行游览方案尚未采集');
       if (!image) blockers.push('真实景点图片尚未补齐；已保留本景点断点，下次只续跑图片搜索');
@@ -1120,6 +1141,7 @@ function main() {
         category,
         tags: [...new Set([category, profile === 'indoor' ? '室内参观' : '经典景点', officialRecord ? '官方名录' : '口碑热门'])],
         address,
+        addressPrecision: resolvedAddress.precision,
         profile,
         externalArrive: experience.externalArrive,
         internalArrive: experience.internalArrive,
@@ -1164,4 +1186,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, sameIdentity };
+module.exports = { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity };
