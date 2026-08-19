@@ -1,0 +1,1216 @@
+{
+  "province": "云南",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=yunnan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/yunnan100007.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 18,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 5,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 5,
+    "priorityObservationCount": 4,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 10,
+  "officialResortCandidateCount": 5,
+  "popularityCount": 27,
+  "existingRecordBoundCount": 15,
+  "existingRecordUnboundCount": 22,
+  "existingRecordUnboundNames": [
+    "和顺古镇景区",
+    "文山州普者黑旅游景区",
+    "火山热海旅游区",
+    "昆明世博园景区",
+    "迪庆州普达措国家公园",
+    "西双版纳州中科院西双版纳热带植物园",
+    "玉溪抚仙湖旅游度假区",
+    "梅里雪山",
+    "雨崩村",
+    "建水古城",
+    "腾冲热海",
+    "纳帕海",
+    "香格里拉独克宗古城",
+    "云南省博物馆",
+    "大理博物馆",
+    "石屏古城",
+    "滇池海埂大坝",
+    "苍山",
+    "蓝月谷",
+    "德宏芒市孔雀湖旅游度假区",
+    "阳宗海旅游度假区",
+    "西双版纳旅游度假区"
+  ],
+  "mergedDuplicateCount": 1,
+  "mergedDuplicates": [
+    {
+      "kept": "文山州普者黑旅游景区",
+      "merged": "普者黑",
+      "preferredId": ""
+    }
+  ],
+  "reviewCandidateCount": 5,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 4,
+  "priorityObservationCandidates": [
+    {
+      "name": "怒江大峡谷",
+      "city": "",
+      "aliases": [
+        "怒江大峡谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "世界恐龙谷",
+      "city": "",
+      "aliases": [
+        "世界恐龙谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "朱家花园",
+      "city": "",
+      "aliases": [
+        "朱家花园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香格里拉巴拉格宗风景名胜区",
+      "city": "",
+      "aliases": [
+        "香格里拉巴拉格宗风景名胜区",
+        "香格里拉巴拉格宗"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 5,
+  "observationCandidates": [
+    {
+      "name": "怒江大峡谷",
+      "city": "",
+      "aliases": [
+        "怒江大峡谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "世界恐龙谷",
+      "city": "",
+      "aliases": [
+        "世界恐龙谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "朱家花园",
+      "city": "",
+      "aliases": [
+        "朱家花园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香格里拉巴拉格宗风景名胜区",
+      "city": "",
+      "aliases": [
+        "香格里拉巴拉格宗风景名胜区",
+        "香格里拉巴拉格宗"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "元阳梯田",
+      "city": "红河",
+      "aliases": [
+        "元阳梯田"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "怒江大峡谷",
+      "city": "",
+      "aliases": [
+        "怒江大峡谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "世界恐龙谷",
+      "city": "",
+      "aliases": [
+        "世界恐龙谷"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "朱家花园",
+      "city": "",
+      "aliases": [
+        "朱家花园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香格里拉巴拉格宗风景名胜区",
+      "city": "",
+      "aliases": [
+        "香格里拉巴拉格宗风景名胜区",
+        "香格里拉巴拉格宗"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "元阳梯田",
+      "city": "红河",
+      "aliases": [
+        "元阳梯田"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 18,
+    "verifiedCount": 13,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 5,
+    "warnings": [
+      "香格里拉巴拉格宗风景名胜区 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_d2e3dee754",
+      "name": "和顺古镇景区",
+      "preferredId": "amap_B036B005AX",
+      "aliases": [
+        "和顺古镇景区",
+        "腾冲市和顺古镇景区",
+        "和顺古镇"
+      ],
+      "city": "腾冲",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_7516162e3c",
+      "name": "文山州普者黑旅游景区",
+      "preferredId": "manual_yunnan_9e486e7c",
+      "aliases": [
+        "文山州普者黑旅游景区",
+        "文山州普者黑",
+        "普者黑"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "mct_national_5a_2025",
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_8045ef3727",
+      "name": "火山热海旅游区",
+      "preferredId": "manual_yunnan_5597824e",
+      "aliases": [
+        "火山热海旅游区",
+        "保山市火山热海旅游区",
+        "火山热海"
+      ],
+      "city": "保山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_4e9dbb894f",
+      "name": "昆明世博园景区",
+      "preferredId": "manual_yunnan_6007dcac",
+      "aliases": [
+        "昆明世博园景区",
+        "昆明市昆明世博园景区",
+        "昆明世博园"
+      ],
+      "city": "昆明",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_588103c464",
+      "name": "迪庆州普达措国家公园",
+      "preferredId": "manual_yunnan_fa0b9c2d",
+      "aliases": [
+        "迪庆州普达措国家公园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_88dd0aca8b",
+      "name": "西双版纳州中科院西双版纳热带植物园",
+      "preferredId": "manual_yunnan_206c83a6",
+      "aliases": [
+        "西双版纳州中科院西双版纳热带植物园"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_e58de73b49",
+      "name": "大理州崇圣寺三塔文化旅游区",
+      "preferredId": "amap_B0368000BF",
+      "aliases": [
+        "大理州崇圣寺三塔文化旅游区",
+        "大理州崇圣寺三塔文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_f868f28ae1",
+      "name": "丽江古城景区",
+      "preferredId": "amap_B0378008PR",
+      "aliases": [
+        "丽江古城景区",
+        "丽江市丽江古城景区",
+        "丽江古城"
+      ],
+      "city": "丽江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_461af14d6f",
+      "name": "玉龙雪山景区",
+      "preferredId": "amap_B0378008FA",
+      "aliases": [
+        "玉龙雪山景区",
+        "丽江市玉龙雪山景区",
+        "玉龙雪山"
+      ],
+      "city": "丽江",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_1cd7f39204",
+      "name": "石林风景区",
+      "preferredId": "amap_B036705Y72",
+      "aliases": [
+        "石林风景区",
+        "昆明市石林风景区",
+        "石林"
+      ],
+      "city": "昆明",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_4c310d6253",
+      "name": "沙溪古镇",
+      "preferredId": "amap_B03680I3LO",
+      "aliases": [
+        "沙溪古镇"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 13
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_961fe8b44b",
+      "name": "大理古城旅游度假区",
+      "preferredId": "amap_B0FFFZH0RQ",
+      "aliases": [
+        "大理古城旅游度假区",
+        "大理古城"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 10
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9c28947c64",
+      "name": "玉溪抚仙湖旅游度假区",
+      "preferredId": "manual_yunnan_bd272868",
+      "aliases": [
+        "玉溪抚仙湖旅游度假区"
+      ],
+      "city": "玉溪",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2528a26ca8",
+      "name": "梅里雪山",
+      "preferredId": "manual_yunnan_fee73e0d",
+      "aliases": [
+        "梅里雪山"
+      ],
+      "city": "迪庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "迪庆",
+          "page": 2,
+          "name": "梅里雪山国家公园",
+          "url": "https://you.ctrip.com/sight/deqin2178/75423.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_6ce43b1bd0",
+      "name": "雨崩村",
+      "preferredId": "manual_yunnan_3d79cccf",
+      "aliases": [
+        "雨崩村"
+      ],
+      "city": "迪庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "迪庆",
+          "page": 2,
+          "name": "雨崩村",
+          "url": "https://you.ctrip.com/sight/deqin2178/75427.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_096f406eef",
+      "name": "建水古城",
+      "preferredId": "manual_yunnan_33a966ba",
+      "aliases": [
+        "建水古城"
+      ],
+      "city": "红河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "红河",
+          "page": 1,
+          "name": "建水古城",
+          "url": "https://you.ctrip.com/sight/jianshui2151/17549.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4c9d0539ee",
+      "name": "腾冲热海",
+      "preferredId": "manual_yunnan_a3c0c536",
+      "aliases": [
+        "腾冲热海"
+      ],
+      "city": "保山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "保山",
+          "page": 1,
+          "name": "腾冲热海风景区",
+          "url": "https://you.ctrip.com/sight/tengchong696/15094.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c8f1b1267e",
+      "name": "纳帕海",
+      "preferredId": "manual_yunnan_588eb1b8",
+      "aliases": [
+        "纳帕海"
+      ],
+      "city": "迪庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "迪庆",
+          "page": 1,
+          "name": "纳帕海(依拉草原)",
+          "url": "https://you.ctrip.com/sight/shangrila106/4211.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9adce80749",
+      "name": "香格里拉独克宗古城",
+      "preferredId": "manual_yunnan_c701e8f",
+      "aliases": [
+        "香格里拉独克宗古城"
+      ],
+      "city": "迪庆",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "迪庆",
+          "page": 1,
+          "name": "独克宗古城",
+          "url": "https://you.ctrip.com/sight/shangrila106/77032.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c141b75d19",
+      "name": "云南省博物馆",
+      "preferredId": "manual_yunnan_e93fe024",
+      "aliases": [
+        "云南省博物馆"
+      ],
+      "city": "昆明",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "昆明",
+          "page": 1,
+          "name": "云南省博物馆",
+          "url": "https://you.ctrip.com/sight/kunming29/17866.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fd45059e4f",
+      "name": "大理博物馆",
+      "preferredId": "manual_yunnan_496b59a1",
+      "aliases": [
+        "大理博物馆"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "大理",
+          "page": 10,
+          "name": "大理市博物馆",
+          "url": "https://you.ctrip.com/sight/dalicity1445616/1416652.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_13937fa607",
+      "name": "石屏古城",
+      "preferredId": "manual_yunnan_5656866c",
+      "aliases": [
+        "石屏古城"
+      ],
+      "city": "红河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "红河",
+          "page": 3,
+          "name": "石屏古城",
+          "url": "https://you.ctrip.com/sight/shiping2191/1416891.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b9ffcff8d0",
+      "name": "滇池海埂大坝",
+      "preferredId": "manual_yunnan_8dda570d",
+      "aliases": [
+        "滇池海埂大坝"
+      ],
+      "city": "昆明",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "昆明",
+          "page": 2,
+          "name": "海埂大坝",
+          "url": "https://you.ctrip.com/sight/kunming29/120220.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_066c7878b2",
+      "name": "苍山",
+      "preferredId": "manual_yunnan_2134aef2",
+      "aliases": [
+        "苍山"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "大理",
+          "page": 1,
+          "name": "苍山",
+          "url": "https://you.ctrip.com/sight/dalicity1445616/3039.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c2041451bc",
+      "name": "蓝月谷",
+      "preferredId": "amap_B0378157WA",
+      "aliases": [
+        "蓝月谷"
+      ],
+      "city": "丽江",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "丽江",
+          "page": 1,
+          "name": "蓝月谷",
+          "url": "https://you.ctrip.com/sight/yulong1446279/109863.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d7799360a2",
+      "name": "云南民族村",
+      "preferredId": "amap_B036706Y83",
+      "aliases": [
+        "云南民族村"
+      ],
+      "city": "昆明",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 73
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9f467e43e5",
+      "name": "滇池",
+      "preferredId": "amap_B0FFFPCY9E",
+      "aliases": [
+        "滇池"
+      ],
+      "city": "昆明",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5b26783b0b",
+      "name": "曼听御花园",
+      "preferredId": "amap_B02B300DRK",
+      "aliases": [
+        "曼听御花园",
+        "曼听御花园景区"
+      ],
+      "city": "西双版纳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_173c9108be",
+      "name": "喜洲古镇",
+      "preferredId": "amap_B0FFH27SSH",
+      "aliases": [
+        "喜洲古镇"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_24209c5cf8",
+      "name": "虎跳峡",
+      "preferredId": "amap_B03781591H",
+      "aliases": [
+        "虎跳峡",
+        "丽江虎跳峡景区"
+      ],
+      "city": "丽江",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 35
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3b9bd8d496",
+      "name": "束河古镇",
+      "preferredId": "amap_B0378157WN",
+      "aliases": [
+        "束河古镇",
+        "束河古镇-九鼎龙潭"
+      ],
+      "city": "丽江",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 38
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_69ebdd44fa",
+      "name": "洱海",
+      "preferredId": "amap_B0KGLSSJRT",
+      "aliases": [
+        "洱海"
+      ],
+      "city": "大理",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 43
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bcaacd44bb",
+      "name": "泸沽湖",
+      "preferredId": "amap_B0G0ACV2B2",
+      "aliases": [
+        "泸沽湖"
+      ],
+      "city": "丽江",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 91
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4e742995b8",
+      "name": "和顺古镇",
+      "preferredId": "amap_B036B005AX",
+      "aliases": [
+        "和顺古镇",
+        "和顺古镇景区"
+      ],
+      "city": "保山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 123
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_44c6847c88",
+      "name": "德宏芒市孔雀湖旅游度假区",
+      "preferredId": "manual_yunnan_d94245f8",
+      "aliases": [
+        "德宏芒市孔雀湖旅游度假区"
+      ],
+      "city": "德宏傣族景颇族",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3e09d692f3",
+      "name": "阳宗海旅游度假区",
+      "preferredId": "manual_yunnan_5584f7e2",
+      "aliases": [
+        "阳宗海旅游度假区"
+      ],
+      "city": "昆明",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d2183bd8db",
+      "name": "西双版纳旅游度假区",
+      "preferredId": "manual_yunnan_1d997dbf",
+      "aliases": [
+        "西双版纳旅游度假区"
+      ],
+      "city": "西双版纳傣族",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

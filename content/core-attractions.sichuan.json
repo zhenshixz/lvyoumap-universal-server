@@ -1,0 +1,1001 @@
+{
+  "province": "四川",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/sichuan100009.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 11,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 6,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 6,
+    "priorityObservationCount": 2,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 18,
+  "officialResortCandidateCount": 5,
+  "popularityCount": 13,
+  "existingRecordBoundCount": 17,
+  "existingRecordUnboundCount": 14,
+  "existingRecordUnboundNames": [
+    "甘孜州海螺沟景区",
+    "朱德故里景区",
+    "阆中古城旅游景区",
+    "羌城旅游区",
+    "阿坝州黄龙风景名胜区",
+    "青城山－都江堰旅游景区",
+    "三星堆博物馆",
+    "自贡恐龙博物馆",
+    "西昌邛海泸山",
+    "安岳石刻",
+    "建川博物馆聚落",
+    "武侯祠锦里",
+    "成都西岭雪山-花水湾旅游度假区",
+    "成都天府青城康养休闲旅游度假区"
+  ],
+  "mergedDuplicateCount": 1,
+  "mergedDuplicates": [
+    {
+      "kept": "九寨沟风景区",
+      "merged": "九寨沟风景区",
+      "preferredId": "amap_B0345001JL"
+    }
+  ],
+  "reviewCandidateCount": 6,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 2,
+  "priorityObservationCandidates": [
+    {
+      "name": "杜甫草堂",
+      "city": "",
+      "aliases": [
+        "杜甫草堂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "武侯祠",
+      "city": "",
+      "aliases": [
+        "武侯祠"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 6,
+  "observationCandidates": [
+    {
+      "name": "杜甫草堂",
+      "city": "",
+      "aliases": [
+        "杜甫草堂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "武侯祠",
+      "city": "",
+      "aliases": [
+        "武侯祠"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九寨沟",
+      "city": "阿坝州",
+      "aliases": [
+        "九寨沟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄龙",
+      "city": "阿坝州",
+      "aliases": [
+        "黄龙"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "贡嘎雪山",
+      "city": "甘孜州",
+      "aliases": [
+        "贡嘎雪山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "色达佛学院",
+      "city": "甘孜州",
+      "aliases": [
+        "色达佛学院"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "杜甫草堂",
+      "city": "",
+      "aliases": [
+        "杜甫草堂"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "武侯祠",
+      "city": "",
+      "aliases": [
+        "武侯祠"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九寨沟",
+      "city": "阿坝州",
+      "aliases": [
+        "九寨沟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄龙",
+      "city": "阿坝州",
+      "aliases": [
+        "黄龙"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "贡嘎雪山",
+      "city": "甘孜州",
+      "aliases": [
+        "贡嘎雪山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "色达佛学院",
+      "city": "甘孜州",
+      "aliases": [
+        "色达佛学院"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 11,
+    "verifiedCount": 5,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 6,
+    "warnings": [
+      "携程省级页未发现 阿坝州 的城市入口。",
+      "携程省级页未发现 甘孜州 的城市入口。"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_d831501ebc",
+      "name": "天台山景区",
+      "preferredId": "amap_B001C05U4W",
+      "aliases": [
+        "天台山景区",
+        "成都市天台山景区",
+        "天台山"
+      ],
+      "city": "成都",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_4953f0b209",
+      "name": "阿坝州四姑娘山景区",
+      "preferredId": "amap_B0345001CJ",
+      "aliases": [
+        "阿坝州四姑娘山景区",
+        "阿坝州四姑娘山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_eb8c579004",
+      "name": "安仁古镇景区",
+      "preferredId": "amap_B0FFF09PVK",
+      "aliases": [
+        "安仁古镇景区",
+        "成都市安仁古镇景区",
+        "安仁古镇"
+      ],
+      "city": "成都",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_f70a53d0d1",
+      "name": "甘孜州稻城亚丁旅游景区",
+      "preferredId": "amap_B03440N0U0",
+      "aliases": [
+        "甘孜州稻城亚丁旅游景区",
+        "甘孜州稻城亚丁"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_7ce71bc9dc",
+      "name": "光雾山旅游景区",
+      "preferredId": "amap_B033B001LZ",
+      "aliases": [
+        "光雾山旅游景区",
+        "巴中市光雾山旅游景区",
+        "光雾山"
+      ],
+      "city": "巴中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_6d6b456fb9",
+      "name": "碧峰峡旅游景区",
+      "preferredId": "amap_B0343005NY",
+      "aliases": [
+        "碧峰峡旅游景区",
+        "雅安市碧峰峡旅游景区",
+        "碧峰峡"
+      ],
+      "city": "雅安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_721d4b2db3",
+      "name": "甘孜州海螺沟景区",
+      "preferredId": "manual_sichuan_6e6e42cc",
+      "aliases": [
+        "甘孜州海螺沟景区",
+        "甘孜州海螺沟"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_6b587ee8b5",
+      "name": "朱德故里景区",
+      "preferredId": "manual_sichuan_13168a82",
+      "aliases": [
+        "朱德故里景区",
+        "南充市朱德故里景区",
+        "朱德故里"
+      ],
+      "city": "南充",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_75acf4b6c5",
+      "name": "剑门蜀道剑门关旅游景区",
+      "preferredId": "amap_B0FFF4NWIQ",
+      "aliases": [
+        "剑门蜀道剑门关旅游景区",
+        "广元市剑门蜀道剑门关旅游景区",
+        "剑门蜀道剑门关"
+      ],
+      "city": "广元",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_ee2bac4bdf",
+      "name": "邓小平故里旅游区",
+      "preferredId": "amap_B033A00EG2",
+      "aliases": [
+        "邓小平故里旅游区",
+        "广安市邓小平故里旅游区",
+        "邓小平故里"
+      ],
+      "city": "广安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_367d325a81",
+      "name": "阆中古城旅游景区",
+      "preferredId": "manual_sichuan_d49d85d9",
+      "aliases": [
+        "阆中古城旅游景区",
+        "南充市阆中古城旅游景区",
+        "阆中古城"
+      ],
+      "city": "南充",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_4477ae7ce6",
+      "name": "阿坝州汶川特别旅游区",
+      "preferredId": "amap_B0FFFCOQVK",
+      "aliases": [
+        "阿坝州汶川特别旅游区",
+        "阿坝州汶川特别"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_c7eb99c633",
+      "name": "羌城旅游区",
+      "preferredId": "manual_sichuan_786662df",
+      "aliases": [
+        "羌城旅游区",
+        "绵阳市羌城旅游区",
+        "羌城"
+      ],
+      "city": "绵阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_7e34a80bb6",
+      "name": "阿坝州黄龙风景名胜区",
+      "preferredId": "amap_B0345003WC",
+      "aliases": [
+        "阿坝州黄龙风景名胜区",
+        "阿坝州黄龙"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_dd2524a2e3",
+      "name": "乐山大佛景区",
+      "preferredId": "amap_B034100387",
+      "aliases": [
+        "乐山大佛景区",
+        "乐山市乐山大佛景区",
+        "乐山大佛"
+      ],
+      "city": "乐山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_b97cd75e61",
+      "name": "九寨沟风景区",
+      "preferredId": "amap_B0345001JL",
+      "aliases": [
+        "阿坝州九寨沟景区",
+        "阿坝州九寨沟",
+        "九寨沟风景区",
+        "九寨沟"
+      ],
+      "city": "阿坝",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "mct_national_5a_2025",
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_6eef982863",
+      "name": "峨眉山景区",
+      "preferredId": "amap_B03410OH95",
+      "aliases": [
+        "峨眉山景区",
+        "乐山市峨眉山景区",
+        "峨眉山"
+      ],
+      "city": "乐山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_d0abf32683",
+      "name": "青城山－都江堰旅游景区",
+      "preferredId": "amap_B001C06PA9",
+      "aliases": [
+        "青城山－都江堰旅游景区",
+        "成都市青城山－都江堰旅游景区",
+        "青城山－都江堰"
+      ],
+      "city": "成都",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_537dcdf889",
+      "name": "成都大熊猫繁育研究基地",
+      "preferredId": "amap_B001C7WE5S",
+      "aliases": [
+        "成都大熊猫繁育研究基地"
+      ],
+      "city": "成都",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_339e0c5c41",
+      "name": "三星堆博物馆",
+      "preferredId": "manual_sichuan_69f3f1d1",
+      "aliases": [
+        "三星堆博物馆"
+      ],
+      "city": "德阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_07603e82fa",
+      "name": "宜宾蜀南竹海旅游度假区",
+      "preferredId": "amap_B033F008RE",
+      "aliases": [
+        "宜宾蜀南竹海旅游度假区",
+        "蜀南竹海"
+      ],
+      "city": "宜宾",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 141
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B033F008RE",
+              "name": "蜀南竹海",
+              "city": "宜宾"
+            },
+            {
+              "id": "amap_B0FFFZIWU8",
+              "name": "蜀南竹海-翡翠长廊",
+              "city": "宜宾"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e2aa93e2dd",
+      "name": "自贡恐龙博物馆",
+      "preferredId": "manual_sichuan_87ba45dd",
+      "aliases": [
+        "自贡恐龙博物馆"
+      ],
+      "city": "自贡",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "自贡",
+          "page": 1,
+          "name": "自贡恐龙博物馆",
+          "url": "https://you.ctrip.com/sight/zigong575/63819.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_043ebcf2ef",
+      "name": "西昌邛海泸山",
+      "preferredId": "amap_B03420P0NN",
+      "aliases": [
+        "西昌邛海泸山"
+      ],
+      "city": "凉山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "凉山",
+          "page": 2,
+          "name": "邛海泸山风景区",
+          "url": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f9c0c48566",
+      "name": "安岳石刻",
+      "preferredId": "manual_sichuan_e0f275d",
+      "aliases": [
+        "安岳石刻"
+      ],
+      "city": "资阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "资阳",
+          "page": 1,
+          "name": "安岳石刻",
+          "url": "https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5ae6ff7e5c",
+      "name": "建川博物馆聚落",
+      "preferredId": "amap_B0K1ZZQK7U",
+      "aliases": [
+        "建川博物馆聚落"
+      ],
+      "city": "成都",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "成都",
+          "page": 7,
+          "name": "四川建川博物馆聚落",
+          "url": "https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_6863f8e218",
+      "name": "武侯祠锦里",
+      "preferredId": "manual_sichuan_e14414de",
+      "aliases": [
+        "武侯祠锦里"
+      ],
+      "city": "成都",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "成都",
+          "page": 1,
+          "name": "武侯祠",
+          "url": "https://you.ctrip.com/sight/chengdu104/4227.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a65d40b1ce",
+      "name": "瓦屋山景区",
+      "preferredId": "amap_B07290N2CF",
+      "aliases": [
+        "瓦屋山景区",
+        "瓦屋山",
+        "瓦屋山风景区"
+      ],
+      "city": "眉山",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 70
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bf98b54d01",
+      "name": "邛海旅游度假区",
+      "preferredId": "amap_B034201L46",
+      "aliases": [
+        "邛海旅游度假区",
+        "邛海国家级旅游度假区"
+      ],
+      "city": "凉山彝族",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 82
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_813889308a",
+      "name": "兴文石海",
+      "preferredId": "amap_B033F00ZHP",
+      "aliases": [
+        "兴文石海",
+        "兴文石海洞乡旅游区"
+      ],
+      "city": "宜宾",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 142
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ddfac65595",
+      "name": "成都西岭雪山-花水湾旅游度假区",
+      "preferredId": "manual_sichuan_17552bbf",
+      "aliases": [
+        "成都西岭雪山-花水湾旅游度假区",
+        "成都西岭雪山",
+        "花水湾旅游度假区",
+        "花水湾旅游度假区山"
+      ],
+      "city": "成都",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cbf934db88",
+      "name": "成都天府青城康养休闲旅游度假区",
+      "preferredId": "manual_sichuan_a3efdaf6",
+      "aliases": [
+        "成都天府青城康养休闲旅游度假区"
+      ],
+      "city": "成都",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

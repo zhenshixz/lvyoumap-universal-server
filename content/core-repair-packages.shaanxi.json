@@ -1,0 +1,1266 @@
+{
+  "province": "陕西",
+  "status": "applied",
+  "createdAt": "2026-08-19T07:45:26.505Z",
+  "updatedAt": "2026-08-19T07:45:27.086Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "商洛市牛背梁旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.shaanxi.json",
+  "attractions": [
+    {
+      "baselineKey": "core_cfb96fcfb5",
+      "id": "manual_shaanxi_c60e975f",
+      "name": "金丝峡景区",
+      "city": "商洛",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shaanxi_c60e975f_verified.jpg",
+      "description": "景区内有白龙峡、黑龙峡、青龙峡、石燕寨和丹江源五大景区。金丝峡以窄、幽、秀、奇而闻名，河流密布，森林茂密，野生动植物繁多，原始生态保存完好，是秦岭地区最完整的嶂谷地质构造。",
+      "intro": "景区内有白龙峡、黑龙峡、青龙峡、石燕寨和丹江源五大景区。金丝峡以窄、幽、秀、奇而闻名，河流密布，森林茂密，野生动植物繁多，原始生态保存完好，是秦岭地区最完整的嶂谷地质构造。",
+      "level": "5A景区",
+      "category": "峡谷自然风光",
+      "tags": [
+        "峡谷自然风光",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "陕西省商洛市商南县金丝峡镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至金丝峡游客中心或陆督门停车场，走沪陕高速G40在金丝峡出口下道；公共交通可从西安客运站乘大巴至商南县，再转乘班车至金丝峡镇。",
+          "internal_arrive": "建议从游客中心乘坐景交车直达山顶栗园门入园，从上往下走最省力。",
+          "internal_traffic": "景区内需购买景交车，往返游客中心与栗园门、陆督门，单程车程约30-40分钟。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "金丝峡镇及游客中心周边有大量民宿和经济型酒店，距离景区近，方便次日入园。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "全程下坡栈道相对平缓，但部分路段有台阶，需穿防滑鞋、放慢速度护膝盖，不建议攀登石燕寨",
+          "children": "峡谷溪水清澈、浅滩多，适合带水枪和捞鱼网玩水捞鱼，沿途补给点可买零食补充体力。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "栗园门进陆督门出省力下坡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "栗园门",
+            "丹江源（十三级叠瀑",
+            "锁龙瀑布）",
+            "黑龙峡（一线天",
+            "金狮洞）",
+            "白龙峡（马刨泉",
+            "白龙湖）",
+            "陆督门"
+          ],
+          "duration": "半天",
+          "walking": "约8公里",
+          "physical": 2,
+          "tips": [
+            "全程以下坡栈道为主，保护膝盖；建议穿防滑运动鞋，带薄外套和驱蚊液，沿途浅滩多，可备水枪和捞鱼网让儿童玩水。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 金丝峡景区：https://www.amap.com/place/B039200432"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "金丝峡景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B039200432",
+        "width": 1536,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_3e016c0941",
+      "id": "manual_shaanxi_aa9480cb",
+      "name": "陕西历史博物馆",
+      "city": "西安",
+      "rating": 4.8,
+      "reviewsCount": "33285条携程点评",
+      "image": "/assets/images/attractions/shaanxi_aa9480cb_verified.jpg",
+      "description": "历史背景： \\n陕西历史博物馆位于大雁塔的西北侧，是西安的名片性景点之一。博物馆筹建于1983年，1986年夏天动工，1991年6月20日正式建成开放，并定名陕西历史博物馆。",
+      "intro": "历史背景： \\n陕西历史博物馆位于大雁塔的西北侧，是西安的名片性景点之一。博物馆筹建于1983年，1986年夏天动工，1991年6月20日正式建成开放，并定名陕西历史博物馆。",
+      "level": "博物馆",
+      "category": "博物馆/通史展馆",
+      "tags": [
+        "博物馆/通史展馆",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "陕西省西安市雁塔区小寨东路91号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "推荐乘坐地铁2号线或3号线至小寨站E口出，向东步行约7-8分钟；或乘地铁3号线或4号线至大雁塔站，向西步行约10分钟。自驾车位非常紧张，不建议开车前往。",
+          "internal_arrive": "大多数游客从南门排队进入，若不想排长队可尝试从西1门（团队入口）进入，散客也可通行，人相对较少。",
+          "internal_traffic": "馆内主要靠步行，各展厅之间有电梯和楼梯连接，负一楼有餐厅和休息区，可中途补充体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在小寨、大雁塔或赛格购物中心周边，交通便利，逛完馆后吃饭和休息的选择多。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "馆内步行较多，可带件薄外套防空调受凉，若体力有限可重点逛第四展厅（大唐遗宝）和第三展厅（唐三彩），控制总时长在2小时左右",
+          "children": "带童车（馆内也可免费租借），租青少年版语音讲解器，或提前准备“寻宝手册”让孩子按图索骥找镇馆之宝，保持兴趣不喊累。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "顺时序通史精华游（2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门进",
+            "一楼第一展厅（史前",
+            "周",
+            "秦）",
+            "二楼第二展厅（汉",
+            "魏晋南北朝）",
+            "二楼第三展厅（隋唐",
+            "宋元明清）",
+            "一楼第四展厅（大唐遗宝·何家村窖藏）"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里",
+          "physical": 3,
+          "tips": [
+            "建议租借电子讲解或跟人工讲解，听懂故事才能读懂文物；穿舒适的运动鞋，馆内空调较足可带件薄外套。"
+          ],
+          "sourceTitle": "携程旅行 陕西历史博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/xian7/1446.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanxi100057.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 陕西历史博物馆 详情页：https://you.ctrip.com/sight/xian7/1446.html?poiType=3&scene=online",
+          "高德地图 陕西历史博物馆：https://www.amap.com/place/B001D03PEX"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 陕西历史博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/xian7/1446.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "陕西历史博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/xian7/1446.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/xian7/1446.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1667
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_eb401f4947",
+      "id": "manual_shaanxi_592e669d",
+      "name": "碑林博物馆",
+      "city": "西安",
+      "rating": 4.7,
+      "reviewsCount": "10546条携程点评",
+      "image": "/assets/images/attractions/shaanxi_592e669d_verified.jpg",
+      "description": "西安碑林博物馆位于文昌门附近，馆内由碑林、石刻艺术等部分组成，其中由历代碑石、墓志组成的碑林是馆内的亮点，其中包括颜真卿、柳公权、怀素等书法名家的碑刻，还有《石台孝经》和《开成石经》两块唐代碑刻。 \\n收藏的碑刻中，精品众多 \\n在西安碑林博物馆内，你能够欣赏到历朝历代的碑刻和墓志，这里收藏的碑刻和墓志时间跨度长达2000多年。",
+      "intro": "西安碑林博物馆位于文昌门附近，馆内由碑林、石刻艺术等部分组成，其中由历代碑石、墓志组成的碑林是馆内的亮点，其中包括颜真卿、柳公权、怀素等书法名家的碑刻，还有《石台孝经》和《开成石经》两块唐代碑刻。 \\n收藏的碑刻中，精品众多 \\n在西安碑林博物馆内，你能够欣赏到历朝历代的碑刻和墓志，这里收藏的碑刻和墓志时间跨度长达2000多年。",
+      "level": "博物馆",
+      "category": "博物馆/历史文化/书法石刻",
+      "tags": [
+        "博物馆/历史文化/书法石刻",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "西安市碑林区三学街15号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "地铁2号线永宁门站A2或D2口步行约15分钟；或地铁2/6号线钟楼站步行约7分钟；公交14/23路至文昌门站。",
+          "internal_arrive": "推荐从北门（新馆）进，人少且动线合理；若请官方讲解需从南门进，南门有官方讲解服务。",
+          "internal_traffic": "馆内以步行为主，新老馆之间有露天步道连接，建议穿舒适的运动鞋；新馆内各层有电梯，老馆部分展室需走楼梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在南门（永宁门）或钟楼附近，步行或骑车即可到达，周边餐饮和交通都很方便。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "馆内空调较凉，建议带件薄外套；B2层有电梯可直达，避免爬楼梯；可租轮椅或让家人陪同慢走，每层都有休息区可歇脚",
+          "children": "昭陵六骏的战马故事、李小孩石棺的雕刻、AR互动装置都很吸引孩子，可提前给孩子讲讲战马和书法的故事；文创店有拓印体验，能让孩子动手感受传统文化。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "北门进南门出·新馆老馆精华省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北门进",
+            "新馆B2（昭陵六骏",
+            "大秦景教流行中国碑）",
+            "新馆1层（颜真卿",
+            "柳公权等名碑）",
+            "新馆B1（汉字书法简史）",
+            "出新馆",
+            "老馆石台孝经碑亭",
+            "老馆第一展室（开成石经）",
+            "石刻艺术室（李寿石椁",
+            "献陵石犀）",
+            "石刻艺术馆（长安佛韵）",
+            "景云钟",
+            "大夏石马",
+            "南门出"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万至2万步",
+          "physical": 3,
+          "tips": [
+            "强烈建议从北门进，人少且路线顺，能把最精华的新馆在讲解团扎堆前看完；馆内部分展区过道较窄，不建议背大体积背包；可提前在B站看白雪松的讲解视频预习，现场体验更好。"
+          ],
+          "sourceTitle": "携程旅行 碑林博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/xian7/140439.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/xian7/140439.html?poiType=3&scene=online",
+          "高德地图 西安碑林博物馆：https://www.amap.com/place/B001D06484"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 碑林博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/xian7/140439.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "碑林博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B001D06484",
+        "width": 2048,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a8d16a5c01",
+      "id": "manual_shaanxi_3803752b",
+      "name": "黎坪国家森林公园",
+      "city": "汉中",
+      "rating": 4.6,
+      "reviewsCount": "523条携程点评",
+      "image": "/assets/images/attractions/shaanxi_3803752b_verified.jpg",
+      "description": "黎坪森林公园是以森林景观、地貌景观、水体景观以及现代人文景观为主体，集山景、林景、水景、气候景观和田园风光观为一体的山岳型省级森林公园。园区山峦叠嶂、沟壑纵横，一山一势，倾绿泄翠，西流河峡谷横贯其中，既有奇石险峰之壮美，又有古树清流之秀丽，被专家誉为巴山深处的“绿色明珠”、“东方瑞士”、“石林奇境、碧水天堂”。",
+      "intro": "黎坪森林公园是以森林景观、地貌景观、水体景观以及现代人文景观为主体，集山景、林景、水景、气候景观和田园风光观为一体的山岳型省级森林公园。园区山峦叠嶂、沟壑纵横，一山一势，倾绿泄翠，西流河峡谷横贯其中，既有奇石险峰之壮美，又有古树清流之秀丽，被专家誉为巴山深处的“绿色明珠”、“东方瑞士”、“石林奇境、碧水天堂”。",
+      "level": "热门景点",
+      "category": "自然风光 / 森林峡谷 / 地质奇观",
+      "tags": [
+        "自然风光 / 森林峡谷 / 地质奇观",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "陕西省汉中市南郑区黎坪镇汉黎路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾从汉中市区出发经汉黎路约 1.5-2 小时直达，沿途盘山路弯多，需谨慎驾驶；公共交通可在汉中高铁站旁客运枢纽站乘坐旅游直通车，早上 官方当日建议时段 发车，下午返程，具体班次以官方当日公告为准。",
+          "internal_arrive": "自驾导航设\"黎坪国家森林公园南门\"，不要跑错到北门。",
+          "internal_traffic": "景区观光车通票随上随下，单循环运行，每个景点均可下车游玩，下车后按顺序前往下一站。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内有黎坪假日酒店，条件较好，距景区大门步行约 3 分钟；景区外及黎坪镇有多家农家乐和民宿，人均 费用以官方当日公告为准左右，可品尝腊肉炒竹笋、橡子凉粉、土鸡汤等陕南农家菜。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "红尘峡栈道平缓、沿溪流而行，80 岁以上老人也能轻松走完；中华龙山可乘车直达观景入口，无需爬陡坡；避免走天梯等陡峭路段，全程以观光车接驳为主",
+          "children": "可在山涧溪流边踩水、捡鹅卵石，感受自然乐趣；中华龙山的龙鳞岩层和海底石城的喀斯特地貌适合科普；注意防滑，穿运动鞋，山里温差大需备薄外套。\n\n补充提醒：山里比市区低 5-8℃，建议穿防滑运动鞋和轻薄防风外套；景区内禁止携带宠物入园，禁止吸烟；如遇恶劣天气或景区临时调整，请以官方当日公告为准。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力环线（观光车+轻徒步）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "剑峡",
+            "玉带河",
+            "枫林瀑布",
+            "红尘峡",
+            "中华龙山",
+            "海底石城",
+            "天书崖",
+            "景区出口"
+          ],
+          "duration": "半天",
+          "walking": "约 4-5 公里（以观光车接驳为主，各景点间步行约 20-60 分钟不等）",
+          "physical": 3,
+          "tips": [
+            "必须购买观光车票，景区单循环运行，每站可下车游玩；建议把时间多留给红尘峡和中华龙山，这两个是核心景点；自带干粮和水，景区内餐饮选择少且偏贵。"
+          ],
+          "sourceTitle": "携程旅行 黎坪国家森林公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online",
+          "高德地图 黎坪景区：https://www.amap.com/place/B0MR0LJMUS"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 黎坪国家森林公园 详情页",
+          "url": "https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "黎坪国家森林公园 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1366
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0fb785aa19",
+      "id": "manual_shaanxi_b234f2d1",
+      "name": "陕西考古博物馆",
+      "city": "西安",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shaanxi_b234f2d1_verified.jpg",
+      "description": "陕西考古博物馆位于文苑南路与终南大道交汇处东北侧，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "陕西考古博物馆位于文苑南路与终南大道交汇处东北侧，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "博物馆",
+      "category": "考古学科专题博物馆、室内展厅+室外石刻展区",
+      "tags": [
+        "考古学科专题博物馆、室内展厅+室外石刻展区",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "文苑南路与终南大道交汇处东北侧",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“陕西考古博物馆”，有免费停车场；公共交通可乘地铁2号线至何家营站B口出站打车约10-15分钟直达，或至韦曲南站换乘738路公交。",
+          "internal_arrive": "南门进，入口处有免费存包柜可寄存大件行李，凭身份证刷证入馆。",
+          "internal_traffic": "馆内为步行参观，各楼层通过电梯和楼梯连接，带老人儿童建议走电梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "博物馆位置较偏，周边餐饮和住宿不便，建议住在西安市区（如钟楼、大雁塔附近），游玩结束后返回市区就餐休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "65周岁及以上老人免预约，凭身份证直接入馆，馆内可租轮椅，建议跟随志愿者讲解节省体力",
+          "children": "6周岁及以下儿童免预约，1名成人最多可带2名，馆内有模拟考古、文物修复观摩等互动体验，建议租电子讲解器或带娃听讲解。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "一楼至三楼顺层省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门进",
+            "1楼考古历程篇",
+            "1楼文化谱系篇",
+            "2楼考古发现篇一（核心展区）",
+            "3楼考古发现篇二",
+            "3楼文保科技篇",
+            "室外石刻展区"
+          ],
+          "duration": "半天",
+          "walking": "约1.5-2公里",
+          "physical": 3,
+          "tips": [
+            "馆内无正餐，仅有自动售货机，建议自带饮用水和小零食；展厅空调较足，建议带一件薄外套；可租电子讲解器（费用以官方当日公告为准）或关注大厅屏幕的志愿者讲解时间。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "amap_live_web_service：https://www.amap.com/place/B0FFIPVQRV"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 陕西考古博物馆",
+          "url": "https://www.amap.com/place/B0FFIPVQRV",
+          "poiId": "B0FFIPVQRV",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "陕西考古博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFIPVQRV",
+        "width": 3648,
+        "height": 2736
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_260e42c7c9",
+      "id": "manual_shaanxi_e3d7e99c",
+      "name": "留坝老街",
+      "city": "留坝",
+      "rating": 3.7,
+      "reviewsCount": "11条携程点评",
+      "image": "/assets/images/attractions/shaanxi_e3d7e99c_verified.jpg",
+      "description": "留坝老街是一条充满历史韵味的古街。这里保留了许多明清时期的建筑，每一处都透露着浓厚的古镇风情。",
+      "intro": "留坝老街是一条充满历史韵味的古街。这里保留了许多明清时期的建筑，每一处都透露着浓厚的古镇风情。",
+      "level": "热门景点",
+      "category": "明清古街、非遗文化街区、休闲美食街",
+      "tags": [
+        "明清古街、非遗文化街区、休闲美食街",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "陕西省汉中市留坝县紫柏路163号东70米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“留坝老街”或“留坝县城”，周边有专属停车场及县人大停车场，停车相对方便；公共交通可先抵达汉中市，再转乘大巴至留坝县城，随后步行或打车前往。",
+          "internal_arrive": "建议从老街中段或靠近县人大停车场的入口进入，周边餐饮和休息设施较多，方便随时补给。",
+          "internal_traffic": "老街内部为青石板路，全程步行游览，无其他内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "首选留坝老街周边的民宿或县城酒店，步行即可逛古街夜景、吃小吃，生活便利；若追求山野静谧，也可选择县城周边的精品民宿，但需自驾出行。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "老街步道平缓，无爬山压力，书房和茶馆适合长辈喝茶休憩，非遗体验活动节奏舒缓",
+          "children": "老电影博物馆和非遗工坊互动性强，适合亲子研学，傍晚的灯笼长廊和活字墙拍照出片，可让孩子体验剪纸等手作。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "老街漫步与非遗室内轻游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "青石板老街（漫步感受明清古建与潺潺溪水）",
+            "留坝书房（老建筑内休憩翻阅）",
+            "留坝老电影博物馆（参观复古胶片与老放映设备）",
+            "非遗文创展示厅与剪纸工坊（体验拓染",
+            "漆扇等手作）",
+            "活字墙与灯笼长廊（拍照打卡，傍晚夜景最佳）",
+            "紫柏河畔（散步吹风）"
+          ],
+          "duration": "半天",
+          "walking": "约1-2公里",
+          "physical": 2,
+          "tips": [
+            "老街全长约750米至1.2公里，整体平缓无陡坡，非常适合家庭慢逛；若遇雨天，可重点安排在书房、老电影博物馆和非遗工坊等室内点位，全程步行可达，无需奔波。"
+          ],
+          "sourceTitle": "携程旅行 留坝老街 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/liuba2761/133966353.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/liuba2761/133966353.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 留坝老街 详情页",
+          "url": "https://you.ctrip.com/sight/liuba2761/133966353.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "留坝老街:古韵悠长的历史体验地 留坝老街,位于陕西省汉中市留坝县,是",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4966659293881394612",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4966659293881394612",
+        "width": 1440,
+        "height": 2530
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_c34daf47a3",
+      "id": "manual_shaanxi_e3f9fc13",
+      "name": "汉江源景区",
+      "city": "宁强",
+      "rating": 3.8,
+      "reviewsCount": "72条携程点评",
+      "image": "/assets/images/attractions/shaanxi_e3f9fc13_verified.jpg",
+      "description": "陕西汉江之源景区旅游开发有限公司成立于2017年6月，承担着陕西汉江源景区的综合开发运营，拟投资资金15亿元，致力于将汉江源景区建设成为5A级旅游景区及生态康养度假区。 \\n汉江源景区是长江支流汉江的源头，也是国家南水北调工程水源保护地。",
+      "intro": "陕西汉江之源景区旅游开发有限公司成立于2017年6月，承担着陕西汉江源景区的综合开发运营，拟投资资金15亿元，致力于将汉江源景区建设成为5A级旅游景区及生态康养度假区。 \\n汉江源景区是长江支流汉江的源头，也是国家南水北调工程水源保护地。",
+      "level": "热门景点",
+      "category": "自然风光、峡谷瀑布、森林避暑",
+      "tags": [
+        "自然风光、峡谷瀑布、森林避暑",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "陕西省汉中市宁强县汉源街道二道河村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航\"汉江源景区东门\"，距宁强高速出口约10公里；高铁至宁强南站后，可乘6路公交直达东门。",
+          "internal_arrive": "东门入园，配套最完善，索道和观光车衔接顺畅。",
+          "internal_traffic": "云海索道（上山）、观光车（区间转运）、森林滑道（下山）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内汉江院子等民宿，或宁强县城酒店。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "全程索道+观光车+滑道组合，避免爬陡坡，天香寨可休息观景",
+          "children": "石缸幽潭可捞小鱼小虾，森林滑道趣味性强，建议备溯溪鞋和玩雪玩具。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "索道+观光车省力休闲游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "东门",
+            "云海索道",
+            "天香寨",
+            "石缸幽潭",
+            "观光车",
+            "森林滑道",
+            "下山"
+          ],
+          "duration": "半天",
+          "walking": "约2小时",
+          "physical": 2,
+          "tips": [
+            "索道可俯瞰峡谷全貌，森林滑道下山好玩又省力，适合带老人小孩的家庭。"
+          ],
+          "sourceTitle": "携程旅行 汉江源景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 汉江源景区 详情页",
+          "url": "https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "汉江源景区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online",
+        "width": 12811,
+        "height": 7719
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0adbb938c6",
+      "id": "manual_shaanxi_a1f52acd",
+      "name": "商洛市牛背梁旅游度假区",
+      "city": "商洛",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shaanxi_a1f52acd_verified.jpg",
+      "description": "牛背梁旅游度假区是集休闲度假、户外拓展、康体养生、文化体验于一体的旅游度假区。牛背梁旅游度假区度假产品多样，住宿接待设施类型丰富，有酒店、山庄、民宿、农家乐等，高中低档配比合理，呈现复合型多层次的度假住宿设施体系。",
+      "intro": "牛背梁旅游度假区是集休闲度假、户外拓展、康体养生、文化体验于一体的旅游度假区。牛背梁旅游度假区度假产品多样，住宿接待设施类型丰富，有酒店、山庄、民宿、农家乐等，高中低档配比合理，呈现复合型多层次的度假住宿设施体系。",
+      "level": "国家级旅游度假区",
+      "category": "国家森林公园、山水观光、避暑",
+      "tags": [
+        "国家森林公园、山水观光、避暑",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "陕西省商洛市柞水县211国道与营盘立交交叉口西约120米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航\"牛背梁游客中心\"，走包茂高速过终南山隧道，营盘出口下再走约5公里；西安出发约1.5小时。景区停车场车位充足，周末建议10点前到避开拥堵。",
+          "internal_arrive": "游客中心购票入园，建议提前线上购票更划算；务必携带身份证原件，可在游客中心免费升级年卡，一年内不限次免票入园。",
+          "internal_traffic": "景交车单程费用以官方当日公告为准（必买，盘山约30分钟，纯徒步极累）；索道上行费用以官方当日公告为准、下行费用以官方当日公告为准、往返费用以官方当日公告为准（自愿乘坐）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区周边有终南山寨（免费逛，餐饮较多）、营盘镇农家乐，适合游玩后用餐或留宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "推荐只逛羚牛谷，全程3.7公里平缓木栈道无陡坡，可坐景交车直达羚牛谷服务区后原路折返，零登山压力",
+          "children": "羚牛谷沿途有多处浅滩可踩水玩水，建议带溯溪鞋、替换衣物、水枪和小捞网，全程看护孩子远离深水区域。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "羚牛谷+六尺岭省力全景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "景交车（约30分钟）",
+            "羚牛谷服务区（索道下站）",
+            "乘坐索道上行（约10分钟）",
+            "骆驼峰观景台",
+            "六尺岭步道下行",
+            "月亮垭服务区",
+            "景交车返回游客中心"
+          ],
+          "duration": "半天",
+          "walking": "约3.8公里（六尺岭下行台阶路）",
+          "physical": 3,
+          "tips": [
+            "索道下行票只能在窗口购买，建议提前规划；山顶风大温度低，务必带薄外套；官方当日建议时段停止入园，务必早出发避免赶末班车。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "牛背梁一日游:自然氧吧与美食体验 🌳 景点介绍: 牛背梁位于商洛",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4407142561315484222",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4407142561315484222",
+        "width": 1920,
+        "height": 1048
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "商洛市牛背梁旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B0JRDR86PU": {
+      "id": "amap_B0JRDR86PU",
+      "name": "延安革命纪念地景区",
+      "city": "延安",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shaanxi_6e027bc_verified.jpg",
+      "description": "延安革命纪念地景区由宝塔山、枣园革命旧址、杨家岭革命旧址、中共中央西北局旧址、延安革命纪念馆组成。景区是延安445处革命遗存中的经典代表，是全国重点文物保护单位，全国爱国主义、革命传统、延安精神三大教育示范基地，全国首批红色旅游经典景区。",
+      "intro": "延安革命纪念地景区由宝塔山、枣园革命旧址、杨家岭革命旧址、中共中央西北局旧址、延安革命纪念馆组成。景区是延安445处革命遗存中的经典代表，是全国重点文物保护单位，全国爱国主义、革命传统、延安精神三大教育示范基地，全国首批红色旅游经典景区。",
+      "level": "5A景区",
+      "category": "红色旅游、革命纪念地、历史文化",
+      "tags": [
+        "红色旅游、革命纪念地、历史文化",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "陕西省延安市宝塔区王家坪路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至延安站，出站可乘公交或打车前往各景点；自驾可直接导航至各景区停车场，市区景点停车费约 费用以官方当日公告为准/次。",
+          "internal_arrive": "延安革命纪念馆和宝塔山景区入口人流较大，建议早到避开高峰；枣园和杨家岭相对清静，可灵活安排时间。",
+          "internal_traffic": "市区景点之间距离较近，打车均价 10-费用以官方当日公告为准；也可乘坐公交 K13 路、K1 路等串联各景点；部分景点间可步行或骑行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在宝塔区（宝塔山/二道街夜市附近），出行和逛夜市方便；或选在新区（如万达附近），停车便利、环境安静，适合家庭自驾。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "延安无障碍设施完善，部分景区可推轮椅；建议携带折叠轮椅、常用药物，避免长时间爬山，宝塔山可乘摆渡车上下",
+          "children": "纪念馆内可让孩子抽角色卡沉浸式找文物，枣园绿树成荫像大公园适合遛娃，整体节奏放慢，边走边讲革命小故事。\n\n补充一点：延安昼夜温差大、气候干燥，建议带防风外套和保湿用品；景点多为室内或园林式，整体对家庭出游较友好，但杨家岭部分路面略不平，推婴儿车需注意。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力一日游（纪念馆+旧址+宝塔山）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "延安革命纪念馆（室内展馆，系统了解延安十三年历史）",
+            "王家坪革命旧址（步行可达，军委旧址）",
+            "杨家岭革命旧址（中共七大会址",
+            "中央大礼堂）",
+            "枣园革命旧址（园林式旧址，环境清幽）",
+            "宝塔山（傍晚登塔俯瞰全城夜景）"
+          ],
+          "duration": "半天",
+          "walking": "约 6000 步",
+          "physical": 3,
+          "tips": [
+            "所有革命旧址和纪念馆均免费但需提前在\"延安革命纪念地\"公众号实名预约，务必携带身份证；宝塔山建议傍晚前往，可看日落和夜景灯光秀。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 延安革命纪念地景区：https://www.amap.com/place/B0JRDR86PU"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 延安革命纪念地景区",
+          "url": "https://www.amap.com/place/B0JRDR86PU",
+          "poiId": "B0JRDR86PU",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "延安革命纪念地景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0JRDR86PU",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    "amap_B038F0124H": {
+      "baselineKey": "core_4ec7009e1b",
+      "id": "amap_B038F0124H",
+      "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "city": "陕西",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/shaanxi_5a1e6d47_verified.jpg",
+      "description": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+      "intro": "黄河壶口瀑布东临山西省临汾市吉县壶口镇，西临陕西省延安市宜川县壶口镇，为两省共有旅游景区，因其气势雄浑而享誉中外。黄河壶口瀑布旅游区是以壶口瀑布为中心的风景区，集黄河峡谷、黄土高原、古塬村寨为一体，展现了黄河流域壮美的自然景观和丰富多彩的历史文化积淀。",
+      "level": "5A景区",
+      "category": "自然山水/瀑布",
+      "tags": [
+        "自然山水/瀑布",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "陕西省延安市宜川县壶口镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“陕西壶口瀑布景区游客中心停车场”，从延安出发约2至2.5小时；公共交通可在延安汽车南站乘坐专线大巴直达景区游客中心。",
+          "internal_arrive": "建议从陕西侧游客中心进入，此处设施完善，停车方便，且必须乘坐景区摆渡车前往核心观瀑区，不建议步行。",
+          "internal_traffic": "景区内必须乘坐摆渡车（往返），车程约15分钟，将游客从游客中心运送至核心观瀑区。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐入住宜川县城（餐饮、住宿设施完善，性价比高）或景区附近的陕旅云尚·观瀑舫酒店（可步行入园，部分房型可观瀑）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "陕西侧地势高、视野开阔，无需像山西侧那样下到龙洞，对膝盖更友好；注意防滑，水雾大时避免在护栏边久站",
+          "children": "让孩子感受黄河奔腾的自然课堂，但水声巨大，若孩子害怕可准备耳塞；备好换洗衣物以防被水雾打湿。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "陕西侧全景省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "乘坐摆渡车",
+            "主观景台（50元人民币取景地）",
+            "多个高低观景平台",
+            "十里龙槽俯瞰"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（以摆渡车为主，核心观景台之间步行距离短）",
+          "physical": 2,
+          "tips": [
+            "陕西侧地势较高，适合俯瞰全景，水雾极大，务必穿防滑鞋并备好雨衣和手机防水袋，尽量避开正午暴晒时段。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 陕西黄河壶口瀑布旅游区",
+          "url": "https://www.amap.com/place/B038F0124H",
+          "poiId": "B038F0124H",
+          "evidenceMode": "existing-amap-record",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Hukou Waterfall.jpg",
+        "author": "Leruswing",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hukou_Waterfall.jpg",
+        "width": 3758,
+        "height": 2465
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "ratingAudit": {
+        "selected": "高德地图",
+        "status": "inherited-after-identity-heal",
+        "existingId": "amap_B038F0124H"
+      }
+    },
+    "amap_B0FFG9N8E4": {
+      "baselineKey": "core_17d8fbd39f",
+      "id": "amap_B0FFG9N8E4",
+      "name": "韩城古城",
+      "city": "韩城",
+      "rating": 4.6,
+      "reviewsCount": "194条携程点评",
+      "image": "/assets/images/attractions/shaanxi_c9169045_verified.jpg",
+      "description": "韩城古城建于隋唐时期，金大定四年土筑城墙，明崇祯十三年（1640），由本市人当朝宰相薛国观奏朝廷批准，倡议地方官员、绅士捐资改土城墙为砖城墙。 城四门门楼额东日“东带黄河”，西日“梁奕西襟”，南日“溥彼韩城”，北日“龙门胜地”。",
+      "intro": "韩城古城建于隋唐时期，金大定四年土筑城墙，明崇祯十三年（1640），由本市人当朝宰相薛国观奏朝廷批准，倡议地方官员、绅士捐资改土城墙为砖城墙。 城四门门楼额东日“东带黄河”，西日“梁奕西襟”，南日“溥彼韩城”，北日“龙门胜地”。",
+      "level": "热门景点",
+      "category": "古建筑群、历史街区",
+      "tags": [
+        "古建筑群、历史街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "陕西省渭南市韩城市学巷45号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从西安乘坐动车约2小时可达韩城站，出站打车约10分钟到古城；自驾走京昆高速约2.5小时。",
+          "internal_arrive": "推荐从东门（靠近文庙）或南门（韩城门）进入古城，周边有停车场，步行即可到达核心景区。",
+          "internal_traffic": "古城内最适合步行游览；古城外围或前往周边景点可选择打车或共享电单车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在古城周边的文渊阁酒店或隐贤驿民宿，步行可达核心景区，出行方便且配套齐全。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "腊汁肉夹馍",
+          "牛羊肉泡馍",
+          "陕西凉皮",
+          "Biangbiang面"
+        ],
+        "special_care": {
+          "elderly": "古城内多为平路，但部分庙宇有台阶，建议长辈穿防滑鞋，放慢节奏边走边歇",
+          "children": "文庙内可参与拓印等互动体验，城隍庙戏台有民俗表演，能让孩子在游玩中感受历史文化。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古城三庙与老街深度慢游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "文庙（五龙照壁",
+            "泮池",
+            "大成殿",
+            "1500年古柏）",
+            "东营庙",
+            "城隍庙（琉璃九龙照壁",
+            "戏台）",
+            "九郎庙",
+            "北营庙",
+            "庆善寺",
+            "状元府",
+            "金城大街（逛吃",
+            "买花椒酸奶）",
+            "韩城门",
+            "毓秀桥"
+          ],
+          "duration": "半天",
+          "walking": "约2至3小时",
+          "physical": 2,
+          "tips": [
+            "古城三庙（文庙+东营庙+城隍庙）建议购买联票游览，动线顺畅不折返；古城内多为青石板路，务必穿舒适平底鞋；可租借讲解或蹭听讲解，深入了解古建背后的历史故事。"
+          ],
+          "sourceTitle": "携程旅行 韩城古城 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 韩城古城 详情页",
+          "url": "https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "韩城古城 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online",
+        "width": 1200,
+        "height": 800
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "selfHealActions": [
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B038F0124H",
+      "keptName": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "removedId": "manual_shaanxi_5a1e6d47",
+      "removedName": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    },
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B0FFG9N8E4",
+      "keptName": "韩城古城",
+      "removedId": "manual_shaanxi_c9169045",
+      "removedName": "韩城古城",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    }
+  ],
+  "reviewedAt": "2026-08-19",
+  "reviewedAtIso": "2026-08-19T07:45:27.099Z",
+  "appliedAt": "2026-08-19T07:47:56.782Z",
+  "appliedAttractionIds": [
+    "manual_shaanxi_c60e975f",
+    "manual_shaanxi_aa9480cb",
+    "manual_shaanxi_592e669d",
+    "manual_shaanxi_3803752b",
+    "manual_shaanxi_b234f2d1",
+    "manual_shaanxi_e3d7e99c",
+    "manual_shaanxi_e3f9fc13",
+    "manual_shaanxi_a1f52acd"
+  ],
+  "appliedOverrideIds": [
+    "amap_B0JRDR86PU",
+    "amap_B038F0124H",
+    "amap_B0FFG9N8E4"
+  ]
+}

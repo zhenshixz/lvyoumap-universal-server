@@ -1,0 +1,1660 @@
+{
+  "province": "四川",
+  "status": "applied",
+  "createdAt": "2026-08-19T06:33:15.448Z",
+  "updatedAt": "2026-08-19T06:36:14.385Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "成都西岭雪山-花水湾旅游度假区：基本资料目前只有1个可追溯来源",
+    "成都天府青城康养休闲旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.sichuan.json",
+  "attractions": [
+    {
+      "baselineKey": "core_721d4b2db3",
+      "id": "manual_sichuan_6e6e42cc",
+      "name": "甘孜州海螺沟景区",
+      "city": "四川",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/sichuan_6e6e42cc_verified.jpg",
+      "description": "海螺沟景区位于青藏高原东南缘，贡嘎山东坡，处于四川省甘孜藏族自治州的泸定、康定、九龙和雅安市的石棉4县交界区，面积906.13平方公里，由海螺沟、燕子沟、磨子沟、南门关沟、雅家埂、磨西台地六个景区组成，是 国家级风景名胜区、国家级自然保护区、国家地质公园、国家森林公园、中国唯一的冰川森林公园和国家生态旅游示范区，是古代通往藏区的茶马古道的必经之地。",
+      "intro": "海螺沟景区位于青藏高原东南缘，贡嘎山东坡，处于四川省甘孜藏族自治州的泸定、康定、九龙和雅安市的石棉4县交界区，面积906.13平方公里，由海螺沟、燕子沟、磨子沟、南门关沟、雅家埂、磨西台地六个景区组成，是 国家级风景名胜区、国家级自然保护区、国家地质公园、国家森林公园、中国唯一的冰川森林公园和国家生态旅游示范区，是古代通往藏区的茶马古道的必经之地。",
+      "level": "5A景区",
+      "category": "冰川、雪山、原始森林、温泉",
+      "tags": [
+        "冰川、雪山、原始森林、温泉",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "甘孜藏族自治州泸定县磨西镇磨西古街348号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“磨西古镇”或“海螺沟景区游客中心”，从成都出发约3.5-4小时；也可在成都新南门车站等乘坐大巴直达磨西镇。",
+          "internal_arrive": "统一从景区游客中心检票进沟，私家车通常不能直接开进景区，需换乘观光车。",
+          "internal_traffic": "景区内跨度大，必须乘坐观光车（约50分钟到干河坝）；干河坝至四号营地需乘索道（约20分钟）；三号营地至冰川城门洞可乘电瓶车（费用以官方当日公告为准往返）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在磨西古镇（海拔约1650米，住宿餐饮选择多，不易高反）或三号营地（海拔约2940米，部分酒店可躺观日照金山）。 长辈建议：尽量控制在三号营地及以下活动，避免前往四号营地以防高反；随身携带便携氧气，走路放慢节奏，注意保暖防风。 儿童建议：低龄儿童（如5岁以下）建议止步三号营地，在原始森林栈道徒步吸氧即可；若去四号营地需密切观察孩子状态，备好保暖衣物和热食。\n\n家庭省力避坑补充",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "尽量控制在三号营地及以下活动，避免前往四号营地以防高反；随身携带便携氧气，走路放慢节奏，注意保暖防风",
+          "children": "低龄儿童（如5岁以下）建议止步三号营地，在原始森林栈道徒步吸氧即可；若去四号营地需密切观察孩子状态，备好保暖衣物和热食。\n\n家庭省力避坑补充"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "晴天冲顶看冰川与贡嘎全景（省力观景线）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "景区游客中心",
+            "乘坐观光车至干河坝",
+            "乘坐索道上四号营地",
+            "打卡20",
+            "21号观景台（看大冰瀑布与贡嘎主峰）",
+            "乘坐索道返回干河坝",
+            "沿森林栈道徒步至三号营地",
+            "乘坐观光车出景区"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里（主要为平缓栈道）",
+          "physical": 3,
+          "tips": [
+            "晴天上午能见度更高，建议尽早进沟；四号营地海拔约3600米，动作要慢，注意防寒保暖；景区内无售便携氧气，建议提前在山下买好带上山。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "HailuogouGlacierPanorama.jpg",
+        "author": "Oliver Ren",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HailuogouGlacierPanorama.jpg",
+        "width": 3840,
+        "height": 1572
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_6b587ee8b5",
+      "id": "manual_sichuan_13168a82",
+      "name": "朱德故里景区",
+      "city": "南充",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/sichuan_13168a82_verified.jpg",
+      "description": "朱德故里景区位于四川省南充市仪陇县东部，规划面积约5.6平方公里。景区内有国家级文保单位3处：朱德故居、朱德诞生地、丁氏庄园。",
+      "intro": "朱德故里景区位于四川省南充市仪陇县东部，规划面积约5.6平方公里。景区内有国家级文保单位3处：朱德故居、朱德诞生地、丁氏庄园。",
+      "level": "5A景区",
+      "category": "红色旅游、名人故居、客家文化、5A级景区",
+      "tags": [
+        "红色旅游、名人故居、客家文化、5A级景区",
+        "室内参观",
+        "官方名录"
+      ],
+      "address": "南充市仪陇县马鞍镇大湾路47号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“朱德故里景区游客中心”或“北门”，停车场充足；公共交通可先到仪陇县城或马鞍镇，再换乘当地班车或打车前往景区。",
+          "internal_arrive": "推荐从北门进入，距离核心展馆纪念馆和故居更近，步行距离短；若从游客中心（南门）进入，需全程依赖观光车。",
+          "internal_traffic": "景区内必须乘坐观光车，各景点之间有固定站点，可随意上下，司机通常会询问是否有下车需求。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内有多家客家风格民宿和酒店（如德乡慢村民宿、玉麓大酒店等），环境清幽；也可选择住在马鞍镇上，餐饮和住宿选择更多。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "全程乘坐观光车代步，避免长时间步行，各景点内部路面平缓，适合长辈慢节奏游览",
+          "children": "国防教育园有坦克、飞机等实物装备展示，能激发孩子兴趣，适合开展爱国主义教育。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "精华省力游（观光车环线）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北门/游客中心",
+            "朱德同志故居纪念馆",
+            "朱德故居",
+            "朱德诞生地",
+            "丁氏庄园",
+            "客家博览园",
+            "国防教育园"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（主要在各景点内部短途步行）",
+          "physical": 2,
+          "tips": [
+            "景区面积很大，务必购买观光车票（费用以官方当日公告为准），车票当天有效可多次乘坐，上车需检票，请妥善保管；北门离纪念馆和故居更近，适合想先参观核心展馆的游客。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 朱德故里景区：https://www.amap.com/place/B033100V9P"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 朱德故里景区",
+          "url": "https://www.amap.com/place/B033100V9P",
+          "poiId": "B033100V9P",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "朱德故里景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B033100V9P",
+        "width": 1242,
+        "height": 930
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_367d325a81",
+      "id": "manual_sichuan_d49d85d9",
+      "name": "阆中古城旅游景区",
+      "city": "南充",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/sichuan_d49d85d9_verified.jpg",
+      "description": "阆中古城位于四川盆地东北缘、嘉陵江中游，有2300多年的建城历史，为古代巴国蜀国军事重镇。古城有张飞庙、永安寺、五龙庙、滕王阁、观音寺、巴巴寺、大佛寺、川北道贡院等8处全国重点文物保护单位；有邵家湾墓群、文笔塔、石室观摩崖造像、雷神洞摩崖造像、牛王洞摩崖造像、红四方面军总政治部旧址、华光楼等22处省级文物保护单位。",
+      "intro": "阆中古城位于四川盆地东北缘、嘉陵江中游，有2300多年的建城历史，为古代巴国蜀国军事重镇。古城有张飞庙、永安寺、五龙庙、滕王阁、观音寺、巴巴寺、大佛寺、川北道贡院等8处全国重点文物保护单位；有邵家湾墓群、文笔塔、石室观摩崖造像、雷神洞摩崖造像、牛王洞摩崖造像、红四方面军总政治部旧址、华光楼等22处省级文物保护单位。",
+      "level": "5A景区",
+      "category": "人文古迹、古城街区、风水文化",
+      "tags": [
+        "人文古迹、古城街区、风水文化",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "南充市阆中市阆水中路33号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至阆中站，出站打车约10-15分钟可达古城；自驾可导航至古城周边停车场（如状元坊停车场或北门公交站），古城内不通车，建议将车停在酒店或外围停车场后步行入城。",
+          "internal_arrive": "推荐从状元坊或澄清门入城，此处靠近主街和核心景点，方便快速进入游览节奏。",
+          "internal_traffic": "古城核心区面积适中，全程步行即可；若体力有限，可乘坐古城内的人力三轮车代步，或购买联票后乘坐景区观光车往返核心景点。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "古城内明清院落民宿（推窗见古街，氛围感好，但部分老宅隔音一般）；古城外新城酒店（设施较新，性价比高，适合对睡眠质量要求高的家庭）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "古城街道平坦，适合慢节奏散步，可多利用茶馆、醋泡脚店休息；建议避开中天楼和华光楼的陡峭楼梯，在楼下远眺即可",
+          "children": "贡院可体验仿古科举，地质矿物博览馆有大型矿石标本和夜明珠，适合科普遛娃；沿途可品尝张飞牛肉、锅盔夹凉粉等小吃，增加游玩趣味。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古城核心人文省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "中天楼（俯瞰古城棋盘街巷）",
+            "汉桓侯祠（张飞庙，感受三国文化）",
+            "清代贡院（体验古代科举考场）",
+            "川北道署（参观古代官衙建筑）",
+            "文庙（感受儒家文化，红墙拍照）",
+            "华光楼（登楼远眺嘉陵江S形江湾与古城全景）"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里",
+          "physical": 3,
+          "tips": [
+            "古城内多为青石板路，务必穿平底防滑鞋；中天楼与华光楼二选一登楼即可，避免重复爬高消耗体力。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 阆中古城：https://www.amap.com/place/B033102997"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "阆中古城旅游景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B033102997",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_c7eb99c633",
+      "id": "manual_sichuan_786662df",
+      "name": "羌城旅游区",
+      "city": "绵阳",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/sichuan_786662df_verified.jpg",
+      "description": "旅游区位于四川盆地西北部北川羌族自治县，由北川地震遗址区、北川新县城，北川地震纪念馆、北川羌族民俗博物馆、吉娜羌寨、维斯特游客中心等景点组成。旅游区位于绵阳市北川羌族自治县境内，由地震纪念地、大爱文化观赏区和禹羌文化体验区三大部分组成，总面积6.01平方公里。",
+      "intro": "旅游区位于四川盆地西北部北川羌族自治县，由北川地震遗址区、北川新县城，北川地震纪念馆、北川羌族民俗博物馆、吉娜羌寨、维斯特游客中心等景点组成。旅游区位于绵阳市北川羌族自治县境内，由地震纪念地、大爱文化观赏区和禹羌文化体验区三大部分组成，总面积6.01平方公里。",
+      "level": "5A景区",
+      "category": "5A级人文纪念与民族文化综合景区",
+      "tags": [
+        "5A级人文纪念与民族文化综合景区",
+        "室内参观",
+        "官方名录"
+      ],
+      "address": "绵阳市北川羌族自治县任家坪村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至北川巴拿恰或北川老县城地震遗址；公共交通可在绵阳汽车总站乘坐前往北川的班车。",
+          "internal_arrive": "建议从北川巴拿恰或羌城旅游区游客中心进入，周边停车和配套设施较为完善。",
+          "internal_traffic": "景区各景点间距离不远，可乘坐景区内部公交、共享电单车或包车往返。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住宿在北川新县城（永昌镇）或吉娜羌寨周边的民宿与酒店，条件较好且方便就餐。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "路线A整体平缓，但老县城遗址面积较大，建议长辈量力而行，可请讲解员陪同",
+          "children": "博物馆和纪念馆是很好的科普与教育基地，可引导孩子了解历史与民族文化，注意在遗址区做好心理疏导。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "缅怀铭记与羌风休闲省力一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北川巴拿恰（逛羌族风格步行街，感受烟火气）",
+            "羌族民俗博物馆（了解羌族历史与非遗文化）",
+            "5.12汶川特大地震纪念馆（缅怀纪念，感受抗震救灾精神）",
+            "北川老县城地震遗址（原貌保留的灾难遗址，铭记历史）"
+          ],
+          "duration": "半天",
+          "walking": "约3公里",
+          "physical": 2,
+          "tips": [
+            "建议穿舒适的运动鞋；在纪念馆和遗址区请保持安静，以示尊重；部分场馆可能需要凭身份证入内，请随身携带证件。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Sichuan.Mao xian.Zhongguo guqiangcheng.jpg",
+        "author": "Popolon",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sichuan.Mao_xian.Zhongguo_guqiangcheng.jpg",
+        "width": 3840,
+        "height": 2543
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_339e0c5c41",
+      "id": "manual_sichuan_69f3f1d1",
+      "name": "三星堆博物馆",
+      "city": "广汉",
+      "rating": 4.5,
+      "reviewsCount": "17894条携程点评",
+      "image": "/assets/images/attractions/sichuan_69f3f1d1_verified.jpg",
+      "description": "三星堆博物馆位于全国重点文物保护单位三星堆遗址东北角，地处历史文化名城四川省广汉市城西鸭子河畔，南距成都38公里，北距德阳26公里，是我国一座大型现代化的专题性遗址博物馆。博物馆于1992年8月奠基，1997年10月正式开放。",
+      "intro": "三星堆博物馆位于全国重点文物保护单位三星堆遗址东北角，地处历史文化名城四川省广汉市城西鸭子河畔，南距成都38公里，北距德阳26公里，是我国一座大型现代化的专题性遗址博物馆。博物馆于1992年8月奠基，1997年10月正式开放。",
+      "level": "博物馆",
+      "category": "博物馆/人文历史",
+      "tags": [
+        "博物馆/人文历史",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "德阳市广汉市西安路133号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "高铁至广汉北站，出站打车约15分钟；或从成都乘坐景区直通车直达；自驾可停双层停车场，过通道即到展馆。",
+          "internal_arrive": "从游客中心进入，可在此免费寄存大件行李；安检后刷身份证入馆，建议携带好个人证件。",
+          "internal_traffic": "馆内主要依靠步行，1号馆一层、二层及负一层之间有直梯和扶梯连接，老人和带婴儿车的家庭可全程使用直梯，避免爬楼梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择住在广汉市区（餐饮性价比高，距离馆约10分钟车程），或住在成都市区（第二天再前往，高铁仅18分钟）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "游客中心可免费租借轮椅，沿途休息座椅较多，建议走半小时就坐下歇息；60岁以上老人凭身份证免票，建议请人工讲解或租讲解器，否则容易看不懂",
+          "children": "馆内有免费互动体验区（如发冠试戴、服装上色等），能极大提升孩子兴趣；可租用儿童版讲解器，或提前给孩子看相关科普绘本和纪录片做铺垫。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "错峰省力反向游览路线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "进门直奔1号馆二楼【天地人神】展区（打卡青铜神树",
+            "纵目面具",
+            "太阳轮形器）",
+            "下楼至一楼【巍然王都】展区（看青铜大立人",
+            "黄金面具",
+            "金杖",
+            "陶猪）",
+            "继续逛一楼【世纪逐梦】展区（了解考古发掘史）",
+            "前往3号馆【文物修复馆】（观摩文物修复现场）",
+            "最后逛1号馆负一层文创区（盖章",
+            "买纪念品）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5-2万步",
+          "physical": 3,
+          "tips": [
+            "开馆后直接上二楼可完美避开旅行团大部队；馆内空调较冷，建议备一件薄外套；务必穿舒适的运动鞋。"
+          ],
+          "sourceTitle": "携程旅行 三星堆博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/guanghan1349/48854.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/sichuan100009.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 三星堆博物馆 详情页：https://you.ctrip.com/sight/guanghan1349/48854.html?poiType=3&scene=online",
+          "高德地图 三星堆博物馆：https://www.amap.com/place/B034600ZUS"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 三星堆博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/guanghan1349/48854.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "三星堆博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B034600ZUS",
+        "width": 2304,
+        "height": 1728
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_e2aa93e2dd",
+      "id": "manual_sichuan_87ba45dd",
+      "name": "自贡恐龙博物馆",
+      "city": "自贡",
+      "rating": 4.6,
+      "reviewsCount": "6268条携程点评",
+      "image": "/assets/images/attractions/sichuan_87ba45dd_verified.jpg",
+      "description": "自贡恐龙博物馆位于自贡市东北部，建在“大山铺恐龙化石群遗址”上。它是我国专门性恐龙博物馆，被誉为\\\"东方龙宫\\\"，来这里可以了解与恐龙有关的各种知识。",
+      "intro": "自贡恐龙博物馆位于自贡市东北部，建在“大山铺恐龙化石群遗址”上。它是我国专门性恐龙博物馆，被誉为\\\"东方龙宫\\\"，来这里可以了解与恐龙有关的各种知识。",
+      "level": "博物馆",
+      "category": "遗址博物馆、科普展馆",
+      "tags": [
+        "遗址博物馆、科普展馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "四川省自贡市大安区燊海井路4段268号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至自贡站后打车约15分钟；或乘坐公交35路直达；自驾可停对面方特地下停车场（博物馆停车场暂未开放）。",
+          "internal_arrive": "从龙山景观处入园，先感受侏罗纪氛围，再进入主展馆。",
+          "internal_traffic": "馆内以步行和直行电梯为主，无内部观光车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "自流井五星街或东方广场附近，交通便利，靠近美食街，前往博物馆有公交或旅游专线。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "全程平路为主，有电梯，体力消耗小，适合长辈慢游",
+          "children": "探秘馆AR互动和模拟挖掘项目丰富，可租儿童讲解器或童车，边玩边学。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力精华游（2-3小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "龙山景观",
+            "化石遗址厅",
+            "恐龙世界厅",
+            "恐龙探秘馆",
+            "户外雕塑打卡"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "全程平地较多，有直行电梯，可推轻便推车；馆内空调足，建议带薄外套；建议租电子讲解器，有儿童通俗版本。"
+          ],
+          "sourceTitle": "携程旅行 自贡恐龙博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/zigong575/63819.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/zigong575/63819.html?poiType=3&scene=online",
+          "高德地图 自贡恐龙博物馆：https://www.amap.com/place/B032D0003C"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 自贡恐龙博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/zigong575/63819.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "自贡恐龙博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B032D0003C",
+        "width": 1368,
+        "height": 1824
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_f9c0c48566",
+      "id": "manual_sichuan_e0f275d",
+      "name": "安岳石刻",
+      "city": "安岳",
+      "rating": 4.5,
+      "reviewsCount": "108条携程点评",
+      "image": "/assets/images/attractions/sichuan_e0f275d_verified.jpg",
+      "description": "安岳石刻，始于南北朝（公元521年前后），盛于唐、五代和宋。距今已有1300年历史。",
+      "intro": "安岳石刻，始于南北朝（公元521年前后），盛于唐、五代和宋。距今已有1300年历史。",
+      "level": "热门景点",
+      "category": "人文历史/摩崖石刻/宗教文化",
+      "tags": [
+        "人文历史/摩崖石刻/宗教文化",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "四川省资阳市安岳县桂花街毗卢洞文物景区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾最方便，从成都或重庆出发约2小时；无直达公共交通，建议包车或租车。",
+          "internal_arrive": "毗卢洞导航\"毗卢洞文物景区\"；圆觉洞导航\"圆觉洞北门停车场\"；茗山寺导航\"茗山寺\"，有停车场。",
+          "internal_traffic": "各景点之间距离较远，需自驾或包车，无景区接驳车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "安岳县城（餐饮和住宿选择多，去南北线都方便）",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "圆觉洞和毗卢洞相对成熟，坡度不大，适合长辈；茗山寺部分路段较陡，建议长辈量力而行",
+          "children": "可结合安岳石窟数字展示中心的互动光影体验，增加趣味性；全程需看护好，勿触摸石刻。\n\n路线A详细安排（南线精华+县城省力一日游）\n上午 毗卢洞：核心看点是被誉为\"东方维纳斯\"的水月观音（紫竹观音），跷腿闲坐的姿态非常自然优雅。旁边还有柳本尊十炼图，像叙事连环画一样保存完整。整体景点小而精，游览约30-60分钟即可。\n上午 华严洞：距离毗卢洞车程约10-20分钟。这里是安岳规模最大的单体石窟，华严三圣巨型造像气势恢宏，宋代菩萨造像雕刻精美。游览约30分钟。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南线精华+县城省力一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "毗卢洞（水月观音）",
+            "华严洞（华严三圣）",
+            "茗山寺（风蚀造像）",
+            "圆觉洞（净瓶观音）"
+          ],
+          "duration": "半天",
+          "walking": "约2000米（各景点内部平缓步道为主）",
+          "physical": 3,
+          "tips": [
+            "建议自驾或包车，景点间车程约15-50分钟；部分石窟需文保员开门，建议白天早到；穿防滑运动鞋。"
+          ],
+          "sourceTitle": "携程旅行 安岳石刻 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 安岳石刻 详情页",
+          "url": "https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "安岳石刻 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/anyue3092/128160.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1438
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_6863f8e218",
+      "id": "manual_sichuan_e14414de",
+      "name": "武侯祠锦里",
+      "city": "成都",
+      "rating": 4.6,
+      "reviewsCount": "28469条携程点评",
+      "image": "/assets/images/attractions/sichuan_e14414de_verified.jpg",
+      "description": "成都武侯祠是纪念刘备、诸葛亮等蜀汉英雄人物庙宇所在。它肇始于蜀汉昭烈帝章武元年（221年）刘备惠陵修建时，在修建惠陵的同时也修建了汉昭烈庙。",
+      "intro": "成都武侯祠是纪念刘备、诸葛亮等蜀汉英雄人物庙宇所在。它肇始于蜀汉昭烈帝章武元年（221年）刘备惠陵修建时，在修建惠陵的同时也修建了汉昭烈庙。",
+      "level": "热门景点",
+      "category": "历史文化景区与民俗商业街区",
+      "tags": [
+        "历史文化景区与民俗商业街区",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "四川省成都市武侯区武侯祠大街231号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁3/5号线高升桥站或10号线武侯祠站，出站步行约10分钟可达；自驾可导航至武侯祠博物馆地下停车场。",
+          "internal_arrive": "从武侯祠正大门进入，游览完文物区后，从侧门直接连通进入锦里古街，不走回头路。",
+          "internal_traffic": "景区内无内部交通工具，全程步行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择武侯祠大街附近或春熙路/太古里商圈，交通便利且配套成熟。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "武侯祠内中轴线平缓少陡坡，树荫多且随处有座椅，适合慢逛",
+          "children": "可租赁遛娃车，红墙竹影和锦里的小吃、非遗手作（如糖画、皮影）能增加孩子的游玩兴趣，注意在锦里人多时牵好孩子。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典联游不绕路",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "武侯祠正门",
+            "唐碑（三绝碑）",
+            "文臣武将廊",
+            "汉昭烈庙（刘备殿）",
+            "诸葛亮殿",
+            "三义庙",
+            "红墙夹道",
+            "惠陵",
+            "锦里古街"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "建议租赁讲解器或请导游，能更好理解三国历史典故；锦里古街全天免费，但傍晚亮灯后氛围更佳，建议下午逛武侯祠，傍晚进锦里。"
+          ],
+          "sourceTitle": "携程旅行 武侯祠锦里 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chengdu104/4227.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chengdu104/4227.html?poiType=3&scene=online",
+          "高德地图 武侯祠锦里中心：https://www.amap.com/place/B0JUBMFWLO"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 武侯祠锦里 详情页",
+          "url": "https://you.ctrip.com/sight/chengdu104/4227.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "武侯祠锦里 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0JUBMFWLO",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_ddfac65595",
+      "id": "manual_sichuan_17552bbf",
+      "name": "成都西岭雪山-花水湾旅游度假区",
+      "city": "成都",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/sichuan_17552bbf_verified.jpg",
+      "description": "成都西岭雪山-花水湾旅游度假区位于成都市大邑县西岭镇、花水湾镇，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "成都西岭雪山-花水湾旅游度假区位于成都市大邑县西岭镇、花水湾镇，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "自然山水、温泉度假、避暑滑雪",
+      "tags": [
+        "自然山水、温泉度假、避暑滑雪",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "成都市大邑县西岭镇、花水湾镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾从成都出发约1.5-2小时，导航至\"西岭雪山风景名胜区\"（后山）或\"花水湾温泉度假小镇\"；公共交通可在茶店子客运站乘大巴直达，或高铁至大邑站后换乘旅游专线。",
+          "internal_arrive": "后山（滑雪场景区）为绝大多数游客首选，索道直达轻松省力；前山（大飞水景区）为纯徒步溯溪路线，耗时较长，一日游不推荐。",
+          "internal_traffic": "后山游客中心乘鸳鸯池索道至鸳鸯池接待中心，换乘景区免费摆渡车至映雪广场；映雪广场可再乘日月坪索道登顶。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "花水湾温泉小镇（酒店、民宿集中，泡温泉方便，适合晚上放松）；西岭雪山映雪广场附近（方便次日早起上山，但价格较高）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "选择后山索道游览，避免高强度徒步；日月坪海拔较高，注意防高反，备好保暖衣物和常用药",
+          "children": "映雪广场有亲子嬉雪区、滑草等项目，适合放电；温泉泡浴时间控制在20分钟以内，及时补水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "后山省力观景+花水湾温泉休闲两日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "鸳鸯池索道",
+            "映雪广场",
+            "日月坪索道",
+            "日月坪",
+            "阴阳界",
+            "下山",
+            "花水湾温泉小镇"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里（日月坪至阴阳界平缓木栈道）",
+          "physical": 2,
+          "tips": [
+            "日月坪海拔3250米，建议慢走防高反；山顶天气多变，出发前查看官方天气预报，若大雾可只在映雪广场游玩；务必在索道停运前下山。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "中国四川成都西岭雪山花水湾度假村风光 - 旅行摄影杨小蟹 - 图虫",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://tuchong.com/6876448/113191314/",
+        "sourceUrl": "http://tuchong.com/6876448/113191314/",
+        "width": 1200,
+        "height": 806
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "成都西岭雪山-花水湾旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_cbf934db88",
+      "id": "manual_sichuan_a3efdaf6",
+      "name": "成都天府青城康养休闲旅游度假区",
+      "city": "成都",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/sichuan_a3efdaf6_verified.jpg",
+      "description": "度假区气候四季分明、温和宜人，以道家养生文化为主题，以世界文化遗产青城山—都江堰、世界自然遗产大熊猫栖息地、都江堰世界灌溉工程遗产为依托，有优美的山地风光和川西田园风光。",
+      "intro": "度假区气候四季分明、温和宜人，以道家养生文化为主题，以世界文化遗产青城山—都江堰、世界自然遗产大熊猫栖息地、都江堰世界灌溉工程遗产为依托，有优美的山地风光和川西田园风光。",
+      "level": "国家级旅游度假区",
+      "category": "康养度假、自然山水、道教文化",
+      "tags": [
+        "康养度假、自然山水、道教文化",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "四川省成都市都江堰市青城山大道辅路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从成都市区可乘坐成灌快铁至青城山站（约30分钟），出站后换乘公交或景区直通车前往；自驾可导航至青城山综合停车场或泰安古镇。",
+          "internal_arrive": "前山推荐从新山门进入，配套完善；后山推荐从泰安古镇登山口进入，沿途可逛古镇休整。",
+          "internal_traffic": "景区内设有观光车和索道，前山可乘船渡月城湖，后山有金骊索道和翠映湖渡船，具体运营情况以官方当日公告为准。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "青城山镇街区（生活配套齐全、餐饮选择多）、前山山脚（距景区近、出行方便）、后山泰安古镇（环境清幽、适合度假）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "优先选择前山索道上下或后山短途溯溪，避免长时间攀爬陡坡；住宿可选带私汤或康养配套的酒店，泡汤放松",
+          "children": "后山五龙沟玩水、龙隐峡栈道观景对小朋友较友好，可准备水枪、捞网等玩具；全程需牵紧孩子，注意防滑防蚊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "前山道教人文省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "新山门",
+            "月城湖",
+            "步云廊索道",
+            "上清宫",
+            "老君阁",
+            "朝阳洞",
+            "天师洞",
+            "五洞天",
+            "天然图画",
+            "新山门"
+          ],
+          "duration": "半天",
+          "walking": "约6.5公里",
+          "physical": 3,
+          "tips": [
+            "建议索道单程上山、徒步下山，既能节省体力又能避免长时间下坡伤膝盖；索道有固定停运时间，请注意合理安排下山节奏，以官方当日公告为准。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "后山自然溯溪休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "泰安古镇",
+            "五龙沟",
+            "三潭雾泉",
+            "龙隐峡栈道",
+            "又一村",
+            "金骊索道",
+            "返回泰安古镇"
+          ],
+          "duration": "半天",
+          "walking": "约6公里",
+          "physical": 3,
+          "tips": [
+            "后山沿途溪流瀑布多，夏季避暑效果好，但石阶和栈道易长青苔湿滑，务必穿防滑鞋；金骊索道有固定停运时间，建议较合适时段前抵达又一村准备乘坐，以官方当日公告为准。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "带宝贝探秘成都天府青城康养休闲旅游度假区",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://m.dianping.com/ugcdetail/196107869?sceneType=0&bizType=29&msource=baiduappugc",
+        "sourceUrl": "http://m.dianping.com/ugcdetail/196107869?sceneType=0&bizType=29&msource=baiduappugc",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "成都天府青城康养休闲旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B0345003WC": {
+      "baselineKey": "core_7e34a80bb6",
+      "id": "amap_B0345003WC",
+      "name": "阿坝州黄龙风景名胜区",
+      "city": "四川",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/sichuan_dfd66b2b_verified.jpg",
+      "description": "黄龙，这颗闪烁在四川松潘的高原明珠，以其妩媚秀丽，清新柔美 ，含蓄空灵，一尘不染的清流彩池，使你享受牧歌式的大自然情趣，以及宁静的、田园诗般的轻松。在景点核心处还设有观景台，结构精巧，古朴典雅，各具特色。",
+      "intro": "黄龙，这颗闪烁在四川松潘的高原明珠，以其妩媚秀丽，清新柔美 ，含蓄空灵，一尘不染的清流彩池，使你享受牧歌式的大自然情趣，以及宁静的、田园诗般的轻松。在景点核心处还设有观景台，结构精巧，古朴典雅，各具特色。",
+      "level": "5A景区",
+      "category": "自然风景区（高原钙华池群、雪山、森林、峡谷）",
+      "tags": [
+        "自然风景区（高原钙华池群、雪山、森林、峡谷）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "阿坝藏族羌族自治州松潘县黄龙乡",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至黄龙风景区停车场；高铁可至黄龙九寨站，出站换乘大巴或拼车前往；九寨沟口、九黄机场有直通车直达景区。",
+          "internal_arrive": "从游客中心检票入园，乘坐免费摆渡车前往索道站或徒步入口；建议8点前入园，避开旅行团人流，光线也更适合拍照。",
+          "internal_traffic": "免费摆渡车（游客中心至索道站）、上行索道、景区观光车（索道上站至五彩池路段）、下行木栈道步行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "黄龙景区门口（如瑟尔嵯酒店等，方便但选择少）；九寨沟沟口（海拔更低，住宿选择多、设施完善，更适合家庭住宿休整）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "全程慢走不跑跳，每20分钟休息5分钟；备好氧气瓶和葡萄糖，出现胸闷头晕立刻停下吸氧休息；建议先游九寨沟适应海拔再前往黄龙",
+          "children": "穿防滑运动鞋，备足零食和温水；全程看护，不要翻越护栏踩踏钙华池；不建议使用折叠推车，台阶较多不便推行。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "索道上+观光车+徒步下山（黄金省力线）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "免费摆渡车",
+            "红岩关索道上行",
+            "望龙坪",
+            "景区观光车",
+            "黄龙古寺",
+            "五彩池（高处观景台俯瞰全景）",
+            "争艳池",
+            "娑萝映彩池",
+            "明镜倒影池",
+            "盆景池",
+            "金沙铺地",
+            "洗身洞",
+            "莲台飞瀑",
+            "飞瀑流辉",
+            "迎宾池",
+            "景区出口"
+          ],
+          "duration": "半天",
+          "walking": "约4至5公里（下山栈道，平缓下坡）",
+          "physical": 2,
+          "tips": [
+            "五彩池建议上午前往，阳光照射下池水色彩最丰富；下索道后务必乘坐观光车，步行上坡海拔爬升大、高反风险高；沿途有吸氧屋，可花费用以官方当日公告为准购买吸管吸氧缓解不适。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 黄龙国家级风景名胜区",
+          "url": "https://www.amap.com/place/B0345003WC",
+          "poiId": "B0345003WC",
+          "evidenceMode": "existing-amap-record",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "壮丽辉煌七十年 感恩奋进新阿坝_专题_四川在线",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://topic.scol.com.cn/2023/23abxcf/",
+        "sourceUrl": "https://topic.scol.com.cn/2023/23abxcf/",
+        "width": 1700,
+        "height": 1273
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      },
+      "ratingAudit": {
+        "selected": "高德地图",
+        "status": "inherited-after-identity-heal",
+        "existingId": "amap_B0345003WC"
+      }
+    },
+    "amap_B001C06PA9": {
+      "baselineKey": "core_d0abf32683",
+      "id": "amap_B001C06PA9",
+      "name": "青城山－都江堰旅游景区",
+      "city": "都江堰",
+      "rating": 4.6,
+      "reviewsCount": "31013条携程点评",
+      "image": "/assets/images/attractions/sichuan_bcbedada_verified.jpg",
+      "description": "青城山素有“青城天下幽”的美誉，分前山和后山两部分，前山是它的主体，道教文化、文物古迹多集中在这里，这里也是一般游客口中的“青城山”；后山以自然风光取胜，是度假休闲的好去处。 \\n \\n景区前山以常观、青城前山-上清宫为核心，宫观相望。",
+      "intro": "青城山素有“青城天下幽”的美誉，分前山和后山两部分，前山是它的主体，道教文化、文物古迹多集中在这里，这里也是一般游客口中的“青城山”；后山以自然风光取胜，是度假休闲的好去处。 \\n \\n景区前山以常观、青城前山-上清宫为核心，宫观相望。",
+      "level": "5A景区",
+      "category": "自然与人文复合型景区（道教名山与古代水利工程）",
+      "tags": [
+        "自然与人文复合型景区（道教名山与古代水利工程）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "四川省成都市都江堰市青城山镇青城山路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从成都市区可乘地铁2/6号线至犀浦站，站内无缝换乘成灌城际高铁，约30分钟可达青城山站或离堆公园站。",
+          "internal_arrive": "青城山推荐从新山门（前山）进，配套完善；都江堰推荐从6号门（秦堰楼）进，全程下坡最省力。",
+          "internal_traffic": "青城山内有观光车（山门至停车场）、月城湖游船和索道；都江堰景区内有观光车连接各核心景点，可根据排队情况灵活选择步行或乘车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在都江堰城区（近南桥、灌县古城，吃喝方便，夜景好）或青城山镇（近景区，环境清幽，适合泡汤度假）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "优先选择路线A和路线B的省力方案，充分利用观光车、索道和游船，避免长时间爬台阶；备好薄外套和防滑鞋，每1.5小时休息一次",
+          "children": "都江堰适合做地理和历史科普，请讲解员能让孩子直观理解古人治水智慧；青城山蚊虫较多，务必备好驱蚊液和防晒帽。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "青城山前山“躺平修仙”省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "新山门",
+            "观光车",
+            "月城湖（乘船）",
+            "索道",
+            "上清宫",
+            "老君阁",
+            "原路索道下山",
+            "月城湖乘船",
+            "观光车出山"
+          ],
+          "duration": "半天",
+          "walking": "约3-4小时（含交通工具排队与休息）",
+          "physical": 2,
+          "tips": [
+            "索道和游船有运营时间限制，建议提前确认当日末班时间，避免滞留山上；山上部分台阶较陡，务必穿防滑舒适的运动鞋。"
+          ],
+          "sourceTitle": "携程旅行 青城山－都江堰旅游景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "都江堰“从上往下”全程下坡线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "秦堰楼（6号门）入园",
+            "俯瞰都江堰全景",
+            "二王庙",
+            "安澜索桥",
+            "鱼嘴分水堤",
+            "飞沙堰",
+            "宝瓶口",
+            "离堆公园南门出"
+          ],
+          "duration": "半天",
+          "walking": "约2-3小时",
+          "physical": 2,
+          "tips": [
+            "都江堰水利工程非常考验空间想象力，强烈建议请专业讲解员或租讲解器，否则很难看懂“鱼嘴分水、飞沙堰排沙、宝瓶口引水”的千年智慧；秦堰楼内部台阶较窄，注意避让。"
+          ],
+          "sourceTitle": "携程旅行 青城山－都江堰旅游景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
+          "携程旅行 青城山－都江堰旅游景区 详情页：https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 青城山－都江堰旅游景区 详情页",
+          "url": "https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "青城山－都江堰旅游景区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/dujiangyan911/62960.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1839
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    "amap_B03420P0NN": {
+      "baselineKey": "core_043ebcf2ef",
+      "id": "amap_B03420P0NN",
+      "name": "西昌邛海泸山",
+      "city": "西昌",
+      "rating": 4.4,
+      "reviewsCount": "61条携程点评",
+      "image": "/assets/images/attractions/sichuan_be41d673_verified.jpg",
+      "description": "邛海泸山风景区在彝族自治州四川省凉山彝族自治州首府西昌市境内，是国家AAAA级旅游景区。在2005年山体面积6509km²，湖面面积27.9km²。",
+      "intro": "邛海泸山风景区在彝族自治州四川省凉山彝族自治州首府西昌市境内，是国家AAAA级旅游景区。在2005年山体面积6509km²，湖面面积27.9km²。",
+      "level": "热门景点",
+      "category": "自然山水、人文古迹、湖滨休闲",
+      "tags": [
+        "自然山水、人文古迹、湖滨休闲",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "凉山彝族自治州西昌市海滨中路28号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐高铁至西昌西站，出站后打车或乘坐公交前往景区（约20至30分钟）；若自驾可直接导航至泸山正门或邛海各湿地公园入口。",
+          "internal_arrive": "去泸山建议导航至“泸山风景区正门”或“邛海公园站”；去邛海环湖建议从“月色风情小镇”或“观鸟岛湿地公园”入口进入。",
+          "internal_traffic": "泸山山脚至光福寺可乘观光车（费用以官方当日公告为准）；上下山推荐“索道上+滑道下”联票；邛海周边可租电助力车（约40至费用以官方当日公告为准/天）环湖骑行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "预算充足首选邛海宾馆或邛海17度度假区（出门即湖边，方便老人小孩休息）；追求性价比和夜游可选建昌古城附近民宿；离泸山正门近可选月色风情小镇。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "泸山尽量利用观光车和索道代步，避免攀爬陡峭路段；邛海边找家咖啡厅晒太阳、看海鸥，节奏放慢",
+          "children": "在安全距离内观察野生猕猴，注意不要让孩子单独靠近；在沙滩玩沙、在栈道喂海鸥，做好防晒和防蚊措施。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "泸山索道滑道省力观海线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "泸山景区正门（乘观光车）",
+            "光福寺",
+            "邛海观景平台（俯瞰全景）",
+            "凉山彝族奴隶社会博物馆（参观人文历史）",
+            "森林滑道（体验下山）",
+            "邛海公园（湖边散步）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里",
+          "physical": 2,
+          "tips": [
+            "山上野生猕猴较多，千万不要手提塑料袋或当面拿取食物，以免被抢或抓伤；建议早上9点前到达，避开索道和滑道排队高峰。"
+          ],
+          "sourceTitle": "携程旅行 西昌邛海泸山 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "邛海环湖电助力车休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "月色风情小镇（租电助力车）",
+            "大石板村（拍彝族风情照）",
+            "金鳞沙滩（玩沙看日落）",
+            "观鸟岛湿地公园（亲水栈道散步）"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（主要在景点内短途步行）",
+          "physical": 2,
+          "tips": [
+            "环湖全程较长，强烈建议租电助力车，不要全程徒步；西昌紫外线极强，务必做好物理防晒（帽子、墨镜、防晒衣），傍晚湖边风大，建议备一件薄外套。"
+          ],
+          "sourceTitle": "携程旅行 西昌邛海泸山 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 西昌邛海泸山 详情页",
+          "url": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西昌邛海泸山 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/xichang592/5141131.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1620
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    "amap_B0K1ZZQK7U": {
+      "baselineKey": "core_5ae6ff7e5c",
+      "id": "amap_B0K1ZZQK7U",
+      "name": "建川博物馆聚落",
+      "city": "大邑",
+      "rating": 4.7,
+      "reviewsCount": "2739条携程点评",
+      "image": "/assets/images/attractions/sichuan_5f9897f6_verified.jpg",
+      "description": "四川建川博物馆聚落，是国内规模较大的民间博物馆，这里有抗战、民俗、红色年代和地震四大系列。聚落中的建筑，都出自名家之手，欣赏这些风格各异的建筑，本身就是一大享受。",
+      "intro": "四川建川博物馆聚落，是国内规模较大的民间博物馆，这里有抗战、民俗、红色年代和地震四大系列。聚落中的建筑，都出自名家之手，欣赏这些风格各异的建筑，本身就是一大享受。",
+      "level": "博物馆",
+      "category": "博物馆群、爱国主义教育基地、5A级景区",
+      "tags": [
+        "博物馆群、爱国主义教育基地、5A级景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "成都市大邑县安仁镇迎宾路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“四川建川博物馆聚落大门东停车场”，车位充足；公共交通可乘高铁至大邑站，出站打车约20分钟到达。",
+          "internal_arrive": "从游客中心进入，建议在现场人工窗口购买优惠票或通票，网购票需在机器兑换纸质票，注意每个馆进馆时都要验票打孔，且每个馆只能进出一次，切勿弄丢纸质票。",
+          "internal_traffic": "园区观光车费用以官方当日公告为准，全天不限次乘坐，非常节省体力，是带老人和儿童游览的必备项目。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "园区内有建川民宿·逸居，环境清幽；园区外安仁古镇有更多民宿和酒店选择，出行更灵活。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "牦牛肉干",
+          "藏家烤全羊",
+          "酥油茶"
+        ],
+        "special_care": {
+          "elderly": "优先选择核心展馆，可租用AI讲解器或请人工讲解，避免长时间阅读文字展板",
+          "children": "带小孩可避开内容过于沉重的展馆（如日本侵华罪行馆、不屈战俘馆），可多逛国防兵器馆和民俗系列馆，增加互动体验。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "核心精华省力游（约3-4小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "观光车",
+            "中流砥柱馆",
+            "正面战场馆",
+            "川军抗战馆",
+            "中国老兵手印广场",
+            "5.12抗震救灾纪念馆",
+            "中国壮士群雕广场"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 3,
+          "tips": [
+            "园区极大，务必购买费用以官方当日公告为准观光车票不限次乘坐，每个馆门口可招手或让司机对讲机呼叫接送；建议穿舒适运动鞋。"
+          ],
+          "sourceTitle": "携程旅行 建川博物馆聚落 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online",
+          "高德地图 四川建川博物馆聚落：https://www.amap.com/place/B001C80TG4"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 建川博物馆聚落 详情页",
+          "url": "https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "建川博物馆聚落 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/dayi3130/71986.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1446
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "selfHealActions": [
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B0345003WC",
+      "keptName": "阿坝州黄龙风景名胜区",
+      "removedId": "manual_sichuan_dfd66b2b",
+      "removedName": "阿坝州黄龙风景名胜区",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    },
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B001C06PA9",
+      "keptName": "青城山－都江堰旅游景区",
+      "removedId": "manual_sichuan_bcbedada",
+      "removedName": "青城山－都江堰旅游景区",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    },
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B03420P0NN",
+      "keptName": "西昌邛海泸山",
+      "removedId": "manual_sichuan_be41d673",
+      "removedName": "西昌邛海泸山",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    },
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B0K1ZZQK7U",
+      "keptName": "建川博物馆聚落",
+      "removedId": "manual_sichuan_5f9897f6",
+      "removedName": "建川博物馆聚落",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    }
+  ],
+  "reviewedAt": "2026-08-19",
+  "reviewedAtIso": "2026-08-19T06:36:14.401Z",
+  "appliedAt": "2026-08-19T07:15:38.191Z",
+  "appliedAttractionIds": [
+    "manual_sichuan_6e6e42cc",
+    "manual_sichuan_13168a82",
+    "manual_sichuan_d49d85d9",
+    "manual_sichuan_786662df",
+    "manual_sichuan_69f3f1d1",
+    "manual_sichuan_87ba45dd",
+    "manual_sichuan_e0f275d",
+    "manual_sichuan_e14414de",
+    "manual_sichuan_17552bbf",
+    "manual_sichuan_a3efdaf6"
+  ],
+  "appliedOverrideIds": [
+    "amap_B0345003WC",
+    "amap_B001C06PA9",
+    "amap_B03420P0NN",
+    "amap_B0K1ZZQK7U"
+  ]
+}

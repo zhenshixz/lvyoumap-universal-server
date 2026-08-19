@@ -1,0 +1,873 @@
+{
+  "province": "陕西",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/shanxi100057.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 10,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 2,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 14,
+  "officialResortCandidateCount": 2,
+  "popularityCount": 14,
+  "existingRecordBoundCount": 18,
+  "existingRecordUnboundCount": 10,
+  "existingRecordUnboundNames": [
+    "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+    "金丝峡景区",
+    "陕西历史博物馆",
+    "碑林博物馆",
+    "黎坪国家森林公园",
+    "陕西考古博物馆",
+    "留坝老街",
+    "韩城古城",
+    "汉江源景区",
+    "商洛市牛背梁旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 2,
+  "priorityObservationCandidates": [
+    {
+      "name": "秦岭四宝科学公园",
+      "city": "",
+      "aliases": [
+        "秦岭四宝科学公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "《长恨歌》演出",
+      "city": "",
+      "aliases": [
+        "《长恨歌》演出"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "秦岭四宝科学公园",
+      "city": "",
+      "aliases": [
+        "秦岭四宝科学公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "《长恨歌》演出",
+      "city": "",
+      "aliases": [
+        "《长恨歌》演出"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长恨歌实景演出",
+      "city": "西安",
+      "aliases": [
+        "长恨歌实景演出"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "驼铃传奇秀",
+      "city": "西安",
+      "aliases": [
+        "驼铃传奇秀"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "秦岭四宝科学公园",
+      "city": "",
+      "aliases": [
+        "秦岭四宝科学公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "《长恨歌》演出",
+      "city": "",
+      "aliases": [
+        "《长恨歌》演出"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长恨歌实景演出",
+      "city": "西安",
+      "aliases": [
+        "长恨歌实景演出"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "驼铃传奇秀",
+      "city": "西安",
+      "aliases": [
+        "驼铃传奇秀"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 10,
+    "verifiedCount": 6,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": [
+      "长恨歌实景演出 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "驼铃传奇秀 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_47e27597cf",
+      "name": "乾陵景区",
+      "preferredId": "amap_B038E01WUG",
+      "aliases": [
+        "乾陵景区",
+        "咸阳市乾陵景区",
+        "乾陵"
+      ],
+      "city": "咸阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_2440b0b6ef",
+      "name": "延川黄河乾坤湾景区",
+      "preferredId": "amap_B038F0NTIW",
+      "aliases": [
+        "延川黄河乾坤湾景区",
+        "延安市延川黄河乾坤湾景区",
+        "延川黄河乾坤湾"
+      ],
+      "city": "延安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_4ec7009e1b",
+      "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "preferredId": "amap_B038F0124H",
+      "aliases": [
+        "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+        "黄河壶口瀑布旅游区"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_f53eac303c",
+      "name": "大明宫旅游景区",
+      "preferredId": "amap_B001D0ZYYD",
+      "aliases": [
+        "大明宫旅游景区",
+        "西安市大明宫旅游景区",
+        "大明宫"
+      ],
+      "city": "西安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_639187d162",
+      "name": "延安革命纪念地景区",
+      "preferredId": "amap_B0JRDR86PU",
+      "aliases": [
+        "延安革命纪念地景区",
+        "延安市延安革命纪念地景区",
+        "延安革命纪念地"
+      ],
+      "city": "延安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_91c1a4ab75",
+      "name": "城墙•碑林历史文化景区",
+      "preferredId": "amap_B0KROZSZG0",
+      "aliases": [
+        "城墙•碑林历史文化景区",
+        "西安市城墙•碑林历史文化景区",
+        "城墙•碑林历史文化"
+      ],
+      "city": "西安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_eebc17b67a",
+      "name": "太白山旅游景区",
+      "preferredId": "amap_B039500BA7",
+      "aliases": [
+        "太白山旅游景区",
+        "宝鸡市太白山旅游景区",
+        "太白山"
+      ],
+      "city": "宝鸡",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_cfb96fcfb5",
+      "name": "金丝峡景区",
+      "preferredId": "manual_shaanxi_c60e975f",
+      "aliases": [
+        "金丝峡景区",
+        "商洛市金丝峡景区",
+        "金丝峡"
+      ],
+      "city": "商洛",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_c6ad49cf66",
+      "name": "法门文化景区",
+      "preferredId": "amap_B039501F9R",
+      "aliases": [
+        "法门文化景区",
+        "宝鸡市法门文化景区",
+        "法门文化"
+      ],
+      "city": "宝鸡",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_4520cbade8",
+      "name": "华山风景区",
+      "preferredId": "amap_B0391003ON",
+      "aliases": [
+        "华山风景区",
+        "渭南市华山风景区",
+        "华山"
+      ],
+      "city": "渭南",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_8aa4425544",
+      "name": "大雁塔－大唐芙蓉园景区",
+      "preferredId": "amap_B001D092BB",
+      "aliases": [
+        "大雁塔－大唐芙蓉园景区",
+        "西安市大雁塔－大唐芙蓉园景区",
+        "大雁塔－大唐芙蓉园"
+      ],
+      "city": "西安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_cf85ae737a",
+      "name": "黄帝陵景区",
+      "preferredId": "amap_B038F001UQ",
+      "aliases": [
+        "黄帝陵景区",
+        "延安市黄帝陵景区",
+        "黄帝陵"
+      ],
+      "city": "延安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_25853fb6e1",
+      "name": "华清宫景区",
+      "preferredId": "amap_B001D006F1",
+      "aliases": [
+        "华清宫景区",
+        "西安市华清宫景区",
+        "华清宫"
+      ],
+      "city": "西安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_9184b63e75",
+      "name": "秦始皇帝陵博物院景区",
+      "preferredId": "amap_B001D09OYW",
+      "aliases": [
+        "秦始皇帝陵博物院景区",
+        "西安市秦始皇帝陵博物院景区",
+        "秦始皇帝陵博物院"
+      ],
+      "city": "西安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_870ddf4a12",
+      "name": "陕西波浪谷景区",
+      "preferredId": "amap_B0FFHN76EW",
+      "aliases": [
+        "陕西波浪谷景区",
+        "陕西波浪谷"
+      ],
+      "city": "榆林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 42
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_35d2a6b7e0",
+      "name": "西安城墙",
+      "preferredId": "amap_B001D0WP6V",
+      "aliases": [
+        "西安城墙"
+      ],
+      "city": "西安",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3e016c0941",
+      "name": "陕西历史博物馆",
+      "preferredId": "manual_shaanxi_aa9480cb",
+      "aliases": [
+        "陕西历史博物馆"
+      ],
+      "city": "西安",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_13eff4bed6",
+      "name": "大唐不夜城",
+      "preferredId": "amap_B001D0VWAX",
+      "aliases": [
+        "大唐不夜城"
+      ],
+      "city": "西安",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_eb401f4947",
+      "name": "碑林博物馆",
+      "preferredId": "manual_shaanxi_592e669d",
+      "aliases": [
+        "碑林博物馆"
+      ],
+      "city": "西安",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "西安",
+          "page": 2,
+          "name": "西安碑林博物馆",
+          "url": "https://you.ctrip.com/sight/xian7/140439.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a8d16a5c01",
+      "name": "黎坪国家森林公园",
+      "preferredId": "manual_shaanxi_3803752b",
+      "aliases": [
+        "黎坪国家森林公园"
+      ],
+      "city": "汉中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "汉中",
+          "page": 1,
+          "name": "黎坪森林公园",
+          "url": "https://you.ctrip.com/sight/hanzhong486/54314.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_0fb785aa19",
+      "name": "陕西考古博物馆",
+      "preferredId": "manual_shaanxi_b234f2d1",
+      "aliases": [
+        "陕西考古博物馆"
+      ],
+      "city": "西安",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFIPVQRV",
+          "name": "陕西考古博物馆",
+          "city": "西安市",
+          "type": "科教文化服务;博物馆;博物馆",
+          "url": "https://www.amap.com/place/B0FFIPVQRV",
+          "verifiedAt": "2026-08-19"
+        }
+      ]
+    },
+    {
+      "key": "core_260e42c7c9",
+      "name": "留坝老街",
+      "preferredId": "manual_shaanxi_e3d7e99c",
+      "aliases": [
+        "留坝老街"
+      ],
+      "city": "汉中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "汉中",
+          "page": 3,
+          "name": "留坝老街",
+          "url": "https://you.ctrip.com/sight/liuba2761/133966353.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_17d8fbd39f",
+      "name": "韩城古城",
+      "preferredId": "amap_B0FFG9N8E4",
+      "aliases": [
+        "韩城古城"
+      ],
+      "city": "韩城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "韩城",
+          "page": 1,
+          "name": "韩城古城",
+          "url": "https://you.ctrip.com/sight/hancheng120420/1830939.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c34daf47a3",
+      "name": "汉江源景区",
+      "preferredId": "manual_shaanxi_e3f9fc13",
+      "aliases": [
+        "汉江源景区",
+        "汉江源"
+      ],
+      "city": "汉中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "汉中",
+          "page": 2,
+          "name": "汉江源景区",
+          "url": "https://you.ctrip.com/sight/ningqiang2731/2590695.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fa2ad55e12",
+      "name": "法门寺",
+      "preferredId": "amap_B0FFGWO56F",
+      "aliases": [
+        "法门寺"
+      ],
+      "city": "宝鸡",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 66
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8a91c6868f",
+      "name": "青木川古镇",
+      "preferredId": "amap_B03940OFOD",
+      "aliases": [
+        "青木川古镇"
+      ],
+      "city": "汉中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 89
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_40079f5fac",
+      "name": "兴汉胜境",
+      "preferredId": "amap_B0FFI8KIVR",
+      "aliases": [
+        "兴汉胜境",
+        "兴汉胜境景区"
+      ],
+      "city": "汉中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 91
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0adbb938c6",
+      "name": "商洛市牛背梁旅游度假区",
+      "preferredId": "manual_shaanxi_a1f52acd",
+      "aliases": [
+        "商洛市牛背梁旅游度假区"
+      ],
+      "city": "商洛",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

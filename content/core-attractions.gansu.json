@@ -1,0 +1,1027 @@
+{
+  "province": "甘肃",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/gansu100060.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 1,
+    "filteredTemporaryOtaCandidates": [
+      {
+        "name": "兰州 · 薛之谦2026《万兽之王》巡回演唱会",
+        "rank": 1,
+        "url": "https://you.ctrip.com/sight/lanzhou231/156453468.html?poiType=66&scene=online",
+        "reason": "临时演出、赛事或活动，不属于长期景点"
+      }
+    ],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 18,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 9,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 9,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 8,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 19,
+  "existingRecordBoundCount": 11,
+  "existingRecordUnboundCount": 16,
+  "existingRecordUnboundNames": [
+    "甘南州冶力关旅游区",
+    "官鹅沟景区",
+    "临夏州炳灵寺世界文化遗产旅游区",
+    "崆峒山风景名胜区",
+    "扎尕那",
+    "甘肃省博物馆",
+    "敦煌莫高窟",
+    "张掖丹霞地质公园",
+    "鸣沙山月牙泉",
+    "拉卜楞寺",
+    "南佐遗址",
+    "锁阳城遗址",
+    "敦煌古城",
+    "黄河风情线",
+    "官鹅沟",
+    "临夏永靖刘家峡旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 9,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 9,
+  "observationCandidates": [
+    {
+      "name": "雅丹魔鬼城",
+      "city": "敦煌",
+      "aliases": [
+        "雅丹魔鬼城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "郎木寺",
+      "city": "碌曲",
+      "aliases": [
+        "郎木寺"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "炳灵寺石窟",
+      "city": "永靖",
+      "aliases": [
+        "炳灵寺石窟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "水帘洞石窟",
+      "city": "武山",
+      "aliases": [
+        "水帘洞石窟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "甘南草原",
+      "city": "甘南州",
+      "aliases": [
+        "甘南草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "正宁路夜市",
+      "city": "兰州",
+      "aliases": [
+        "正宁路夜市"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "七彩丹霞观景台",
+      "city": "临泽",
+      "aliases": [
+        "七彩丹霞观景台"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "扁都口生态旅游区",
+      "city": "民乐",
+      "aliases": [
+        "扁都口生态旅游区",
+        "扁都口生态"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "冶力关",
+      "city": "康乐",
+      "aliases": [
+        "冶力关"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "雅丹魔鬼城",
+      "city": "敦煌",
+      "aliases": [
+        "雅丹魔鬼城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "郎木寺",
+      "city": "碌曲",
+      "aliases": [
+        "郎木寺"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "炳灵寺石窟",
+      "city": "永靖",
+      "aliases": [
+        "炳灵寺石窟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "水帘洞石窟",
+      "city": "武山",
+      "aliases": [
+        "水帘洞石窟"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "甘南草原",
+      "city": "甘南州",
+      "aliases": [
+        "甘南草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "正宁路夜市",
+      "city": "兰州",
+      "aliases": [
+        "正宁路夜市"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "七彩丹霞观景台",
+      "city": "临泽",
+      "aliases": [
+        "七彩丹霞观景台"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "扁都口生态旅游区",
+      "city": "民乐",
+      "aliases": [
+        "扁都口生态旅游区",
+        "扁都口生态"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "冶力关",
+      "city": "康乐",
+      "aliases": [
+        "冶力关"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 18,
+    "verifiedCount": 9,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 9,
+    "warnings": [
+      "携程省级页未发现 碌曲 的城市入口。",
+      "携程省级页未发现 永靖 的城市入口。",
+      "携程省级页未发现 武山 的城市入口。",
+      "携程省级页未发现 甘南州 的城市入口。",
+      "携程省级页未发现 临泽 的城市入口。",
+      "携程省级页未发现 民乐 的城市入口。",
+      "携程省级页未发现 康乐 的城市入口。",
+      "水帘洞石窟 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "扁都口生态旅游区 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_07f017063a",
+      "name": "甘南州冶力关旅游区",
+      "preferredId": "manual_gansu_a2a56db6",
+      "aliases": [
+        "甘南州冶力关旅游区",
+        "甘南州冶力关"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_90a29b9dcb",
+      "name": "官鹅沟景区",
+      "preferredId": "manual_gansu_a69f4dce",
+      "aliases": [
+        "官鹅沟景区",
+        "陇南市官鹅沟景区",
+        "官鹅沟"
+      ],
+      "city": "陇南",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_d513f46318",
+      "name": "临夏州炳灵寺世界文化遗产旅游区",
+      "preferredId": "manual_gansu_e1c62934",
+      "aliases": [
+        "临夏州炳灵寺世界文化遗产旅游区",
+        "临夏州炳灵寺世界文化遗产"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_b324cc32b7",
+      "name": "七彩丹霞景区",
+      "preferredId": "amap_B0FFF63UG9",
+      "aliases": [
+        "七彩丹霞景区",
+        "张掖市七彩丹霞景区",
+        "七彩丹霞"
+      ],
+      "city": "张掖",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_03178870bd",
+      "name": "鸣沙山月牙泉景区",
+      "preferredId": "amap_B03A9000ZN",
+      "aliases": [
+        "鸣沙山月牙泉景区",
+        "酒泉市鸣沙山月牙泉景区",
+        "鸣沙山月牙泉"
+      ],
+      "city": "酒泉",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_c141b213f4",
+      "name": "麦积山景区",
+      "preferredId": "amap_B03AA005RR",
+      "aliases": [
+        "麦积山景区",
+        "天水市麦积山景区",
+        "麦积山"
+      ],
+      "city": "天水",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_ecfc480d73",
+      "name": "崆峒山风景名胜区",
+      "preferredId": "manual_gansu_88cc2a5e",
+      "aliases": [
+        "崆峒山风景名胜区",
+        "平凉市崆峒山风景名胜区",
+        "崆峒山"
+      ],
+      "city": "平凉",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_eb75eaa146",
+      "name": "嘉峪关文物景区",
+      "preferredId": "amap_B079100049",
+      "aliases": [
+        "嘉峪关文物景区",
+        "嘉峪关市嘉峪关文物景区",
+        "嘉峪关文物"
+      ],
+      "city": "嘉峪关",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_b05ef9fe66",
+      "name": "扎尕那",
+      "preferredId": "manual_gansu_cfada5f3",
+      "aliases": [
+        "扎尕那"
+      ],
+      "city": "迭部",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bbd4cc1398",
+      "name": "嘉峪关关城",
+      "preferredId": "amap_B0HDHGB3WJ",
+      "aliases": [
+        "嘉峪关关城",
+        "嘉峪关关城景区"
+      ],
+      "city": "嘉峪关",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 52
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_21f38cf356",
+      "name": "甘肃省博物馆",
+      "preferredId": "manual_gansu_f0ba2cac",
+      "aliases": [
+        "甘肃省博物馆"
+      ],
+      "city": "兰州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a0c544c459",
+      "name": "敦煌莫高窟",
+      "preferredId": "amap_B03A900102",
+      "aliases": [
+        "敦煌莫高窟"
+      ],
+      "city": "敦煌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "敦煌",
+          "page": 1,
+          "name": "莫高窟",
+          "url": "https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_dea459fc6e",
+      "name": "张掖丹霞地质公园",
+      "preferredId": "manual_gansu_ede3bf11",
+      "aliases": [
+        "张掖丹霞地质公园"
+      ],
+      "city": "张掖",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "张掖",
+          "page": 2,
+          "name": "张掖丹霞国家地质公园",
+          "url": "https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_544047ef4b",
+      "name": "鸣沙山月牙泉",
+      "preferredId": "amap_B03A9000ZN",
+      "aliases": [
+        "鸣沙山月牙泉"
+      ],
+      "city": "敦煌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "敦煌",
+          "page": 1,
+          "name": "鸣沙山月牙泉",
+          "url": "https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c6718defe3",
+      "name": "拉卜楞寺",
+      "preferredId": "manual_gansu_7b6637c1",
+      "aliases": [
+        "拉卜楞寺"
+      ],
+      "city": "夏河",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "夏河",
+          "page": 1,
+          "name": "拉卜楞寺",
+          "url": "https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c56a683787",
+      "name": "南佐遗址",
+      "preferredId": "manual_gansu_46baad23",
+      "aliases": [
+        "南佐遗址"
+      ],
+      "city": "庆阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "庆阳",
+          "page": 2,
+          "name": "南佐遗址",
+          "url": "https://you.ctrip.com/sight/qingyang834/61219.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c1532b1da7",
+      "name": "锁阳城遗址",
+      "preferredId": "manual_gansu_bc481a26",
+      "aliases": [
+        "锁阳城遗址"
+      ],
+      "city": "瓜州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "瓜州",
+          "page": 1,
+          "name": "锁阳城遗址",
+          "url": "https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_2c72db500a",
+      "name": "敦煌古城",
+      "preferredId": "amap_B03A913N0I",
+      "aliases": [
+        "敦煌古城"
+      ],
+      "city": "敦煌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "敦煌",
+          "page": 1,
+          "name": "敦煌古城",
+          "url": "https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c043a24b83",
+      "name": "黄河风情线",
+      "preferredId": "manual_gansu_a56c0711",
+      "aliases": [
+        "黄河风情线"
+      ],
+      "city": "兰州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "兰州",
+          "page": 3,
+          "name": "兰州黄河风情线大景区",
+          "url": "https://you.ctrip.com/sight/lanzhou231/149990551.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_0e9d2e2a08",
+      "name": "官鹅沟",
+      "preferredId": "manual_gansu_a69f4dce",
+      "aliases": [
+        "官鹅沟"
+      ],
+      "city": "宕昌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "宕昌",
+          "page": 1,
+          "name": "官鹅沟大景区",
+          "url": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d9c80c688b",
+      "name": "雕塑大地之子",
+      "preferredId": "amap_B0FFJPEQU2",
+      "aliases": [
+        "雕塑大地之子"
+      ],
+      "city": "酒泉",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 66
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d7c9ec6a89",
+      "name": "莫高窟",
+      "preferredId": "amap_B03A900102",
+      "aliases": [
+        "莫高窟",
+        "莫高窟景区"
+      ],
+      "city": "酒泉",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6a73cbd2f6",
+      "name": "兰州水墨丹霞旅游景区",
+      "preferredId": "amap_B0G2GUM2CU",
+      "aliases": [
+        "兰州水墨丹霞旅游景区",
+        "兰州水墨丹霞"
+      ],
+      "city": "兰州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 23
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_69bd5a04cd",
+      "name": "平山湖大峡谷",
+      "preferredId": "amap_B0FFFDRSFW",
+      "aliases": [
+        "平山湖大峡谷"
+      ],
+      "city": "张掖",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 9
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c8df9f310e",
+      "name": "黄河楼",
+      "preferredId": "amap_B0FFIQHIJN",
+      "aliases": [
+        "黄河楼"
+      ],
+      "city": "兰州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 29
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c54f350ad5",
+      "name": "黄河石林",
+      "preferredId": "amap_B03AF002D7",
+      "aliases": [
+        "黄河石林",
+        "黄河石林国家地质公园"
+      ],
+      "city": "白银",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 104
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2b34b9e9be",
+      "name": "临夏永靖刘家峡旅游度假区",
+      "preferredId": "manual_gansu_f214838e",
+      "aliases": [
+        "临夏永靖刘家峡旅游度假区"
+      ],
+      "city": "临夏回族",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}
