@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "provinces": {
+    "山东": {
+      "core_f9d2046a9e": {
+        "action": "keep_new",
+        "incomingName": "蓬莱阁-三仙山-八仙过海旅游区",
+        "decidedAt": "2026-08-18T09:00:03.780Z"
+      }
+    }
+  }
+}

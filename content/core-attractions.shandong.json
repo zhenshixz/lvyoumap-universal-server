@@ -1,0 +1,1173 @@
+{
+  "province": "山东",
+  "checkedAt": "2026-08-18",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/shandong100039.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 10,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 2,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 2,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 16,
+  "officialResortCandidateCount": 6,
+  "popularityCount": 27,
+  "existingRecordBoundCount": 27,
+  "existingRecordUnboundCount": 16,
+  "existingRecordUnboundNames": [
+    "奥帆海洋文化旅游区",
+    "黄河口生态旅游区",
+    "台儿庄古城景区",
+    "蓬莱阁-三仙山-八仙过海旅游区",
+    "三孔景区",
+    "青州博物馆",
+    "山东博物馆",
+    "长岛",
+    "黄河入海口",
+    "微山湖红荷湿地",
+    "曲水亭街",
+    "荣成好运角旅游度假区",
+    "烟台市蓬莱旅游度假区",
+    "海阳旅游度假区",
+    "凤凰岛旅游度假区",
+    "日照山海天旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 2,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "青岛啤酒博物馆",
+      "city": "",
+      "aliases": [
+        "青岛啤酒博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 2,
+  "observationCandidates": [
+    {
+      "name": "青岛啤酒博物馆",
+      "city": "",
+      "aliases": [
+        "青岛啤酒博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国陶瓷琉璃馆",
+      "city": "淄博",
+      "aliases": [
+        "中国陶瓷琉璃馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "青岛啤酒博物馆",
+      "city": "",
+      "aliases": [
+        "青岛啤酒博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国陶瓷琉璃馆",
+      "city": "淄博",
+      "aliases": [
+        "中国陶瓷琉璃馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 10,
+    "verifiedCount": 8,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 2,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_a8129a01ce",
+      "name": "周村古商城景区",
+      "preferredId": "amap_B021504JNV",
+      "aliases": [
+        "周村古商城景区",
+        "淄博市周村古商城景区",
+        "周村古商城"
+      ],
+      "city": "淄博",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_145efe8515",
+      "name": "奥帆海洋文化旅游区",
+      "preferredId": "amap_B0IRFH663O",
+      "aliases": [
+        "奥帆海洋文化旅游区",
+        "青岛市奥帆海洋文化旅游区",
+        "奥帆海洋文化"
+      ],
+      "city": "青岛",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_c3d41e93c2",
+      "name": "微山湖旅游区",
+      "preferredId": "amap_B02190AN5F",
+      "aliases": [
+        "微山湖旅游区",
+        "济宁市微山湖旅游区",
+        "微山湖"
+      ],
+      "city": "济宁",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_c2e15030b9",
+      "name": "萤火虫水洞•地下大峡谷旅游区",
+      "preferredId": "amap_B0FFHDM6TE",
+      "aliases": [
+        "萤火虫水洞•地下大峡谷旅游区",
+        "临沂市萤火虫水洞•地下大峡谷旅游区",
+        "萤火虫水洞•地下大峡谷"
+      ],
+      "city": "临沂",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_ad5ce92a83",
+      "name": "黄河口生态旅游区",
+      "preferredId": "manual_shandong_6ac1aa14",
+      "aliases": [
+        "黄河口生态旅游区",
+        "东营市黄河口生态旅游区",
+        "黄河口生态"
+      ],
+      "city": "东营",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_1275a42387",
+      "name": "威海华夏城景区",
+      "preferredId": "amap_B02770IVCC",
+      "aliases": [
+        "威海华夏城景区",
+        "威海市威海华夏城景区",
+        "威海华夏城"
+      ],
+      "city": "威海",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_96270e1891",
+      "name": "青州古城景区",
+      "preferredId": "amap_B0FFFTL0U1",
+      "aliases": [
+        "青州古城景区",
+        "潍坊市青州古城景区",
+        "青州古城"
+      ],
+      "city": "潍坊",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_e097dc269b",
+      "name": "沂蒙山旅游区",
+      "preferredId": "amap_B0FFGNSOSW",
+      "aliases": [
+        "沂蒙山旅游区",
+        "沂蒙山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_1d2a172e18",
+      "name": "天下第一泉景区",
+      "preferredId": "amap_B0FFIOSQ2K",
+      "aliases": [
+        "天下第一泉景区",
+        "济南市天下第一泉景区",
+        "天下第一泉"
+      ],
+      "city": "济南",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_e0787ca8c3",
+      "name": "台儿庄古城景区",
+      "preferredId": "manual_shandong_45a9ef78",
+      "aliases": [
+        "台儿庄古城景区",
+        "枣庄市台儿庄古城景区",
+        "台儿庄古城"
+      ],
+      "city": "枣庄",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_e127b17cdb",
+      "name": "南山景区",
+      "preferredId": "amap_B021704THC",
+      "aliases": [
+        "南山景区",
+        "烟台市南山景区",
+        "南山"
+      ],
+      "city": "烟台",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_461b3c6ded",
+      "name": "刘公岛景区",
+      "preferredId": "amap_B0FFF6BKO3",
+      "aliases": [
+        "刘公岛景区",
+        "威海市刘公岛景区",
+        "刘公岛"
+      ],
+      "city": "威海",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_6f2409d919",
+      "name": "崂山景区",
+      "preferredId": "amap_B021407PX0",
+      "aliases": [
+        "崂山景区",
+        "青岛市崂山景区",
+        "崂山"
+      ],
+      "city": "青岛",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_b8ee007c6f",
+      "name": "明故城三孔旅游区",
+      "preferredId": "amap_B02190148D",
+      "aliases": [
+        "明故城三孔旅游区",
+        "济宁市明故城三孔旅游区",
+        "明故城三孔"
+      ],
+      "city": "济宁",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_f9d2046a9e",
+      "name": "蓬莱阁-三仙山-八仙过海旅游区",
+      "preferredId": "manual_shandong_20820f4b",
+      "aliases": [
+        "蓬莱阁-三仙山-八仙过海旅游区",
+        "烟台市蓬莱阁-三仙山-八仙过海旅游区",
+        "蓬莱阁-三仙山-八仙过海",
+        "蓬莱阁",
+        "三仙山",
+        "八仙过海",
+        "蓬莱阁山",
+        "八仙过海山",
+        "烟台市蓬莱阁",
+        "烟台市蓬莱阁山"
+      ],
+      "city": "烟台",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_aa72a68f16",
+      "name": "泰山景区",
+      "preferredId": "amap_B021A01HBT",
+      "aliases": [
+        "泰山景区",
+        "泰安市泰山景区",
+        "泰山"
+      ],
+      "city": "泰安",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_4d87d8e71c",
+      "name": "趵突泉景区",
+      "preferredId": "amap_B021305SHC",
+      "aliases": [
+        "趵突泉景区",
+        "趵突泉"
+      ],
+      "city": "济南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fed7e73dd0",
+      "name": "沂蒙山云蒙景区(蒙山国家森林公园)",
+      "preferredId": "amap_B0FFFX2K0Q",
+      "aliases": [
+        "沂蒙山云蒙景区(蒙山国家森林公园)",
+        "沂蒙山云蒙景区"
+      ],
+      "city": "临沂",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 142
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4bb4d154a7",
+      "name": "大明湖景区",
+      "preferredId": "amap_B021307W9S",
+      "aliases": [
+        "大明湖景区",
+        "大明湖",
+        "大明湖景区-超然楼"
+      ],
+      "city": "济南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 39
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B021307W9S",
+          "name": "大明湖景区-超然楼",
+          "city": "济南"
+        }
+      ]
+    },
+    {
+      "key": "core_160d874967",
+      "name": "三孔景区",
+      "preferredId": "manual_shandong_d7f68961",
+      "aliases": [
+        "三孔景区",
+        "三孔"
+      ],
+      "city": "济宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0L0S7KMI3",
+          "name": "三孔景区",
+          "city": "济宁市",
+          "type": "风景名胜;风景名胜相关;旅游景点",
+          "url": "https://www.amap.com/place/B0L0S7KMI3",
+          "verifiedAt": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "key": "core_793cc71816",
+      "name": "青州博物馆",
+      "preferredId": "manual_shandong_d967f8b9",
+      "aliases": [
+        "青州博物馆"
+      ],
+      "city": "潍坊",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "潍坊",
+          "page": 1,
+          "name": "青州博物馆",
+          "url": "https://you.ctrip.com/sight/qingzhou898/1494046.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5fa6439c9c",
+      "name": "山东博物馆",
+      "preferredId": "manual_shandong_1fc3997a",
+      "aliases": [
+        "山东博物馆"
+      ],
+      "city": "济南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "济南",
+          "page": 1,
+          "name": "山东博物馆",
+          "url": "https://you.ctrip.com/sight/jinan128/5412.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_119b1a0f34",
+      "name": "长岛",
+      "preferredId": "manual_shandong_f4306bdd",
+      "aliases": [
+        "长岛"
+      ],
+      "city": "烟台",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "烟台",
+          "page": 3,
+          "name": "长岛旅游景区",
+          "url": "https://you.ctrip.com/sight/yantai170/140608567.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_64e47fee54",
+      "name": "黄河入海口",
+      "preferredId": "manual_shandong_70ab940a",
+      "aliases": [
+        "黄河入海口"
+      ],
+      "city": "东营",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "东营",
+          "page": 1,
+          "name": "黄河入海口",
+          "url": "https://you.ctrip.com/sight/dongying612/5140687.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_3e9acb6cab",
+      "name": "微山湖红荷湿地",
+      "preferredId": "manual_shandong_39d43ac8",
+      "aliases": [
+        "微山湖红荷湿地"
+      ],
+      "city": "枣庄",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "枣庄",
+          "page": 1,
+          "name": "滕州微山湖红荷湿地",
+          "url": "https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a81157895b",
+      "name": "曲水亭街",
+      "preferredId": "manual_shandong_e7f22498",
+      "aliases": [
+        "曲水亭街"
+      ],
+      "city": "济南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "济南",
+          "page": 2,
+          "name": "曲水亭街",
+          "url": "https://you.ctrip.com/sight/jinan128/110242.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a42a8bf263",
+      "name": "曲阜三孔景区",
+      "preferredId": "amap_B02190A8QE",
+      "aliases": [
+        "曲阜三孔景区",
+        "曲阜三孔",
+        "曲阜三孔景区-孔府"
+      ],
+      "city": "济宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 115
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_96e6f79a54",
+      "name": "栈桥",
+      "preferredId": "amap_B0FFG19SSX",
+      "aliases": [
+        "栈桥",
+        "栈桥景区"
+      ],
+      "city": "青岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 5
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9a4bdf4d43",
+      "name": "八大关",
+      "preferredId": "amap_B0214024B4",
+      "aliases": [
+        "八大关",
+        "八大关风景区"
+      ],
+      "city": "青岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2b564135ef",
+      "name": "青岛海底世界",
+      "preferredId": "amap_B0214082FI",
+      "aliases": [
+        "青岛海底世界"
+      ],
+      "city": "青岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 70
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_98dffabb31",
+      "name": "养马岛",
+      "preferredId": "amap_B02170253C",
+      "aliases": [
+        "养马岛"
+      ],
+      "city": "烟台",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 29
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8bde8a5745",
+      "name": "布鲁威斯号",
+      "preferredId": "amap_B0KUFCRUR2",
+      "aliases": [
+        "布鲁威斯号",
+        "布鲁威斯号搁浅巨轮"
+      ],
+      "city": "威海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 40
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6aade85e4c",
+      "name": "海岱楼钟书阁",
+      "preferredId": "amap_B0FFLAA569",
+      "aliases": [
+        "海岱楼钟书阁",
+        "海岱楼"
+      ],
+      "city": "淄博",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 50
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3487432ef1",
+      "name": "烟台金沙滩旅游度假区",
+      "preferredId": "amap_B0JDRPKTHC",
+      "aliases": [
+        "烟台金沙滩旅游度假区",
+        "金沙滩海滨公园"
+      ],
+      "city": "烟台",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 173
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bde3ea39cf",
+      "name": "成山头",
+      "preferredId": "amap_B027700015",
+      "aliases": [
+        "成山头",
+        "成山头国家重点风景名胜区"
+      ],
+      "city": "威海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 182
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_489ac27639",
+      "name": "尼山圣境",
+      "preferredId": "amap_B0FFGLX9LT",
+      "aliases": [
+        "尼山圣境",
+        "尼山圣境景区"
+      ],
+      "city": "济宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 187
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_74bc97f834",
+      "name": "红叶柿岩",
+      "preferredId": "amap_B0GROU5FBZ",
+      "aliases": [
+        "红叶柿岩",
+        "山东文旅·红叶柿岩旅游区"
+      ],
+      "city": "淄博",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 228
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_801779d966",
+      "name": "井塘古村",
+      "preferredId": "amap_B0FFJOBW9V",
+      "aliases": [
+        "井塘古村",
+        "青州井塘古村景区"
+      ],
+      "city": "潍坊",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 270
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_693bd08bc9",
+      "name": "荣成好运角旅游度假区",
+      "preferredId": "manual_shandong_6f962ee1",
+      "aliases": [
+        "荣成好运角旅游度假区"
+      ],
+      "city": "威海",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ae23d97a2a",
+      "name": "烟台市蓬莱旅游度假区",
+      "preferredId": "manual_shandong_79d00f04",
+      "aliases": [
+        "烟台市蓬莱旅游度假区"
+      ],
+      "city": "烟台",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e9382fdaaa",
+      "name": "海阳旅游度假区",
+      "preferredId": "manual_shandong_45bb0ee3",
+      "aliases": [
+        "海阳旅游度假区"
+      ],
+      "city": "烟台",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_53a9d4401e",
+      "name": "凤凰岛旅游度假区",
+      "preferredId": "manual_shandong_3de3ab8f",
+      "aliases": [
+        "凤凰岛旅游度假区"
+      ],
+      "city": "青岛",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8b350ddfb3",
+      "name": "日照山海天旅游度假区",
+      "preferredId": "manual_shandong_f3289b4c",
+      "aliases": [
+        "日照山海天旅游度假区"
+      ],
+      "city": "日照",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

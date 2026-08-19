@@ -155,7 +155,7 @@ function findCoveredCore(candidate, coreAttractions) {
 function inferCandidateCity(candidate, officialCandidates, records) {
   if (candidate.city) return normalizeCity(candidate.city);
   const official = [...(officialCandidates.fiveA || []), ...(officialCandidates.resorts || [])]
-    .find(item => normalizeName(item.name) === normalizeName(candidate.name));
+    .find(item => evidenceNameMatch(item.name, candidate.name));
   if (official?.address) return cityFromAddress(official.address, records.map(item => item.city));
   const local = uniqueLocalMatch(candidate, records).match;
   return normalizeCity(local?.city || '');

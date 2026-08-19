@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-const { normalizeAttractionName } = require('./generate_static_data');
+const { normalizeAttractionName, probablySameAttraction } = require('./generate_static_data');
 
 puppeteer.use(StealthPlugin());
 
@@ -142,14 +142,23 @@ function chooseBetterFailure(previous, next) {
   return failureQuality(next) > failureQuality(previous) ? next : previous;
 }
 
+function answerIdentityCompatible(identity, target) {
+  const actual = normalizeAttractionName(identity);
+  if (!actual) return false;
+  return [target?.name, ...(target?.aliases || [])].filter(Boolean).some(name => {
+    const expected = normalizeAttractionName(name);
+    return Boolean(expected && (
+      expected === actual
+      || expected.includes(actual)
+      || actual.includes(expected)
+      || probablySameAttraction(name, identity)
+    ));
+  });
+}
+
 function parseAnswer(answer, target) {
   const identity = labeled(answer, '景点全称');
-  const expected = normalizeAttractionName(target.name);
-  const actual = normalizeAttractionName(identity);
-  const authoritativeIdentity = (target.research?.discoveredSources || []).some(source => source.kind === 'official_identity');
-  const identityCompatible = Boolean(expected && actual && (
-    expected === actual || expected.includes(actual) || actual.includes(expected)
-  )) || (authoritativeIdentity && Boolean(identity));
+  const identityCompatible = answerIdentityCompatible(identity, target);
   const routeA = {
     title: labeled(answer, '路线A标题'),
     nodes: splitList(labeled(answer, '路线A节点')),
@@ -389,4 +398,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { chooseBetterFailure, isTransientAnswer, parseAnswer, promptFor, routeIsUsable };
+module.exports = { answerIdentityCompatible, chooseBetterFailure, isTransientAnswer, parseAnswer, promptFor, routeIsUsable };

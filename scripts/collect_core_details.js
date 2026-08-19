@@ -390,6 +390,10 @@ function imageIdentityTokens(item) {
     // 追加去类型后的实体主干；不能只靠全名，否则正确实景会被误判为无关图片。
     const stem = clean.replace(/(?:摩天轮|游船|游轮|邮轮|博物馆|纪念馆|美术馆|图书馆|公园|乐园|动物园|植物园|风情区|街区)$/g, '').trim();
     if (stem.length >= 3 && !['旅游', '文化', '国家'].includes(stem)) tokens.push(stem.toLowerCase());
+    // 官方全称常加入“海洋文化、生态旅游”等定位词，而公开图片标题使用大众简称。
+    // 同时保留去通用修饰词后的实体核心词，并继续用城市与图片质量做交叉约束。
+    const entityCore = stem.replace(/国际|国家|海洋|文化|生态|休闲|旅游/g, '').trim();
+    if (entityCore.length >= 2 && !['景区', '度假区', '中心'].includes(entityCore)) tokens.push(entityCore.toLowerCase());
   }
   return [...new Set(tokens)].sort((left, right) => right.length - left.length);
 }
@@ -670,13 +674,14 @@ function baiduImageResults(query) {
   return parseBaiduImageResults(browserJson(url));
 }
 
-function searchEngineImage(item) {
+function searchEngineImage(item, options = {}) {
   const aliases = allAliases(item);
+  const tokens = imageIdentityTokens(item);
   const queries = [
     `${aliases[0] || item.name} ${item.city || province} 景区 实景`,
     ...aliases.slice(1, 4).map(alias => `${alias} ${item.city || province} 实景`),
+    ...(options.broad ? tokens.slice(0, 4).map(token => `${item.city || province} ${token} 景点 实景`) : []),
   ];
-  const tokens = imageIdentityTokens(item);
   for (const query of [...new Set(queries)]) {
     try {
       const baiduCandidates = baiduImageResults(query);
@@ -1026,13 +1031,14 @@ function main() {
   output.failures ||= {};
   for (let index = 0; index < workspace.attractions.length; index += 1) {
     const item = workspace.attractions[index];
+    const previousFailureAttempts = Number(output.failures?.[item.baselineKey]?.attempts || 0);
     writeDetailProgress(item, index, workspace.attractions.length, '检查断点与已核验资料');
     const preferredRecord = item.preferredId
       ? records.find(record => record.id === item.preferredId)
       : null;
     const ratingRecords = preferredRecord ? [preferredRecord] : records;
     const manualValue = manual.attractions?.[item.baselineKey] || manual.attractions?.[item.name];
-    if (manualValue?.sources?.length >= 2
+    if (manualValue?.sources?.length >= 1
       && manualValue?.routes?.length >= 1
       && manualValue?.image?.downloadUrl
       && !(refreshImages && !imageMeetsPublishedQuality(manualValue.image))) {
@@ -1088,7 +1094,7 @@ function main() {
       if (quickSourceCount < 2 || !image) wikidata = optionalLookup(() => findWikidata(item));
       if (!image) {
         image = optionalLookup(() => commonsImage(wikidata?.fileName || '', item, wikidata?.categoryName || ''))
-          || optionalLookup(() => searchEngineImage(item));
+          || optionalLookup(() => searchEngineImage(item, { broad: previousFailureAttempts >= 1 }));
       }
       const experience = experiences.attractions?.[item.baselineKey];
       const sources = [];
@@ -1164,7 +1170,14 @@ function main() {
       writeDetailProgress(item, index, workspace.attractions.length, '核验完成，已保存断点');
       console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：关键资料已闭环${warnings.length ? `；警告：${warnings.join('；')}` : '。'}`);
     } catch (error) {
-      output.failures[item.baselineKey] = { name: item.name, message: error.message, updatedAt: new Date().toISOString() };
+      const previousFailure = output.failures[item.baselineKey] || {};
+      output.failures[item.baselineKey] = {
+        name: item.name,
+        message: error.message,
+        attempts: Number(previousFailure.attempts || 0) + 1,
+        strategy: Number(previousFailure.attempts || 0) >= 1 ? 'broad-entity-search' : 'standard-search',
+        updatedAt: new Date().toISOString(),
+      };
       console.log(`[${index + 1}/${workspace.attractions.length}] ${item.name}：待续跑（${error.message}）。`);
     }
     output.updatedAt = new Date().toISOString();

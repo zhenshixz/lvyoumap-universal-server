@@ -1,0 +1,908 @@
+{
+  "province": "河南",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/henan100058.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 1,
+    "filteredTemporaryOtaCandidates": [
+      {
+        "name": "郑州 · 十个勤天2026《贰零贰贰》巡回演唱会",
+        "rank": 2,
+        "url": "https://you.ctrip.com/sight/zhengzhou157/156453488.html?poiType=66&scene=online",
+        "reason": "临时演出、赛事或活动，不属于长期景点"
+      }
+    ],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 7,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 2,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 17,
+  "officialResortCandidateCount": 3,
+  "popularityCount": 13,
+  "existingRecordBoundCount": 17,
+  "existingRecordUnboundCount": 13,
+  "existingRecordUnboundNames": [
+    "嵖岈山旅游景区",
+    "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
+    "老君山－鸡冠洞旅游区",
+    "尧山－中原大佛景区",
+    "殷墟景区",
+    "云台山－神农山－青天河风景区",
+    "嵩山少林景区",
+    "河南博物院",
+    "洛阳古墓博物馆",
+    "浚县古城",
+    "郑州银基国际旅游度假区",
+    "三门峡市天鹅湖旅游度假区",
+    "尧山温泉旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 2,
+  "priorityObservationCandidates": [
+    {
+      "name": "宋都皇城旅游度假区",
+      "city": "",
+      "aliases": [
+        "宋都皇城旅游度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "洛阳博物馆",
+      "city": "",
+      "aliases": [
+        "洛阳博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "宋都皇城旅游度假区",
+      "city": "",
+      "aliases": [
+        "宋都皇城旅游度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "洛阳博物馆",
+      "city": "",
+      "aliases": [
+        "洛阳博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新县西河古村",
+      "city": "信阳",
+      "aliases": [
+        "新县西河古村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "胖东来",
+      "city": "许昌",
+      "aliases": [
+        "胖东来"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "宋都皇城旅游度假区",
+      "city": "",
+      "aliases": [
+        "宋都皇城旅游度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "洛阳博物馆",
+      "city": "",
+      "aliases": [
+        "洛阳博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新县西河古村",
+      "city": "信阳",
+      "aliases": [
+        "新县西河古村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "胖东来",
+      "city": "许昌",
+      "aliases": [
+        "胖东来"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 7,
+    "verifiedCount": 3,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": [
+      "胖东来 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_d52b0b8393",
+      "name": "宝泉旅游区",
+      "preferredId": "amap_B0J1NZI42C",
+      "aliases": [
+        "宝泉旅游区",
+        "新乡市宝泉旅游区",
+        "宝泉"
+      ],
+      "city": "新乡",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_b13e507b61",
+      "name": "太昊伏羲陵文化旅游区",
+      "preferredId": "amap_B0L39SRI93",
+      "aliases": [
+        "太昊伏羲陵文化旅游区",
+        "周口市太昊伏羲陵文化旅游区",
+        "太昊伏羲陵文化"
+      ],
+      "city": "周口",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_934fcf9144",
+      "name": "鸡公山景区",
+      "preferredId": "amap_B0178006G5",
+      "aliases": [
+        "鸡公山景区",
+        "信阳市鸡公山景区",
+        "鸡公山"
+      ],
+      "city": "信阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_c813256346",
+      "name": "八里沟景区",
+      "preferredId": "amap_B0FFGWHX6N",
+      "aliases": [
+        "八里沟景区",
+        "新乡市八里沟景区",
+        "八里沟"
+      ],
+      "city": "新乡",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_285a9ce4f7",
+      "name": "芒砀山汉文化旅游景区",
+      "preferredId": "amap_B017200VNQ",
+      "aliases": [
+        "芒砀山汉文化旅游景区",
+        "商丘市芒砀山汉文化旅游景区",
+        "芒砀山汉文化"
+      ],
+      "city": "商丘",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_1990cf7234",
+      "name": "红旗渠－太行大峡谷旅游景区",
+      "preferredId": "amap_B017401QH1",
+      "aliases": [
+        "红旗渠－太行大峡谷旅游景区",
+        "安阳市红旗渠－太行大峡谷旅游景区",
+        "红旗渠－太行大峡谷"
+      ],
+      "city": "安阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_63adc0d6ef",
+      "name": "嵖岈山旅游景区",
+      "preferredId": "manual_henan_4cf7277",
+      "aliases": [
+        "嵖岈山旅游景区",
+        "驻马店市嵖岈山旅游景区",
+        "嵖岈山"
+      ],
+      "city": "驻马店",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_2d8d54c1b7",
+      "name": "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
+      "preferredId": "amap_B0G3VXEC4B",
+      "aliases": [
+        "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
+        "南阳市西峡恐龙遗迹园-伏牛山-老界岭旅游区",
+        "西峡恐龙遗迹园-伏牛山-老界岭",
+        "西峡恐龙遗迹园",
+        "伏牛山",
+        "老界岭",
+        "西峡恐龙遗迹园山",
+        "老界岭山",
+        "南阳市西峡恐龙遗迹园",
+        "南阳市西峡恐龙遗迹园山"
+      ],
+      "city": "南阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_1b3c5a6862",
+      "name": "龙潭大峡谷景区",
+      "preferredId": "amap_B017B01FQ9",
+      "aliases": [
+        "龙潭大峡谷景区",
+        "洛阳市龙潭大峡谷景区",
+        "龙潭大峡谷"
+      ],
+      "city": "洛阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_7c3b777ff9",
+      "name": "老君山－鸡冠洞旅游区",
+      "preferredId": "manual_henan_2ab7d82e",
+      "aliases": [
+        "老君山－鸡冠洞旅游区",
+        "洛阳市老君山－鸡冠洞旅游区",
+        "老君山－鸡冠洞"
+      ],
+      "city": "洛阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_6c63eeba5a",
+      "name": "尧山－中原大佛景区",
+      "preferredId": "manual_henan_60783292",
+      "aliases": [
+        "尧山－中原大佛景区",
+        "平顶山市尧山－中原大佛景区",
+        "尧山－中原大佛"
+      ],
+      "city": "平顶山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_0a43ceab2b",
+      "name": "清明上河园景区",
+      "preferredId": "amap_B017A00OOX",
+      "aliases": [
+        "清明上河园景区",
+        "开封市清明上河园景区",
+        "清明上河园"
+      ],
+      "city": "开封",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_b91cbeac76",
+      "name": "白云山景区",
+      "preferredId": "amap_B017B01MXL",
+      "aliases": [
+        "白云山景区",
+        "洛阳市白云山景区",
+        "白云山"
+      ],
+      "city": "洛阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_6989eb7e72",
+      "name": "殷墟景区",
+      "preferredId": "manual_henan_d1f3ec17",
+      "aliases": [
+        "殷墟景区",
+        "安阳市殷墟景区",
+        "殷墟"
+      ],
+      "city": "安阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_d848072ea5",
+      "name": "云台山－神农山－青天河风景区",
+      "preferredId": "manual_henan_9ef49495",
+      "aliases": [
+        "云台山－神农山－青天河风景区",
+        "焦作市云台山－神农山－青天河风景区",
+        "云台山－神农山－青天河"
+      ],
+      "city": "焦作",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_c0bce70fc1",
+      "name": "龙门石窟景区",
+      "preferredId": "amap_B017B00X4D",
+      "aliases": [
+        "龙门石窟景区",
+        "洛阳市龙门石窟景区",
+        "龙门石窟"
+      ],
+      "city": "洛阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_1c7e7d0167",
+      "name": "嵩山少林景区",
+      "preferredId": "amap_B017308CXT",
+      "aliases": [
+        "嵩山少林景区",
+        "郑州市嵩山少林景区",
+        "嵩山少林"
+      ],
+      "city": "郑州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_951480033e",
+      "name": "万岁山武侠城",
+      "preferredId": "amap_B0FFFPMU10",
+      "aliases": [
+        "万岁山武侠城"
+      ],
+      "city": "开封",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_dc8cc6d152",
+      "name": "只有河南·戏剧幻城",
+      "preferredId": "amap_B0FFKEZM5H",
+      "aliases": [
+        "只有河南·戏剧幻城"
+      ],
+      "city": "郑州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0aff341f98",
+      "name": "河南博物院",
+      "preferredId": "manual_henan_b9e84119",
+      "aliases": [
+        "河南博物院"
+      ],
+      "city": "郑州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "郑州",
+          "page": 1,
+          "name": "河南博物院",
+          "url": "https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_3227e85f95",
+      "name": "洛阳古墓博物馆",
+      "preferredId": "manual_henan_93bc648d",
+      "aliases": [
+        "洛阳古墓博物馆"
+      ],
+      "city": "洛阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "洛阳",
+          "page": 1,
+          "name": "洛阳古墓博物馆",
+          "url": "https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b8328a6787",
+      "name": "浚县古城",
+      "preferredId": "manual_henan_f412adc1",
+      "aliases": [
+        "浚县古城"
+      ],
+      "city": "鹤壁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "鹤壁",
+          "page": 1,
+          "name": "浚县古城",
+          "url": "https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_77bee29fcd",
+      "name": "白马寺",
+      "preferredId": "amap_B017B00LMC",
+      "aliases": [
+        "白马寺"
+      ],
+      "city": "洛阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d8ed1ae0c6",
+      "name": "洛邑古城",
+      "preferredId": "amap_B0FFHUC3GQ",
+      "aliases": [
+        "洛邑古城"
+      ],
+      "city": "洛阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 13
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_63c8733831",
+      "name": "应天门",
+      "preferredId": "amap_B0LANMV3E0",
+      "aliases": [
+        "应天门"
+      ],
+      "city": "洛阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 14
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b270dbf538",
+      "name": "商丘古城",
+      "preferredId": "amap_B0FFGDYZGH",
+      "aliases": [
+        "商丘古城"
+      ],
+      "city": "商丘",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 62
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9c7799a8ef",
+      "name": "神垕古镇",
+      "preferredId": "amap_B0FFHOKWJJ",
+      "aliases": [
+        "神垕古镇"
+      ],
+      "city": "许昌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 199
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e44df01ac4",
+      "name": "郑州银基国际旅游度假区",
+      "preferredId": "manual_henan_b8b8d8cd",
+      "aliases": [
+        "郑州银基国际旅游度假区"
+      ],
+      "city": "郑州",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0f306813d8",
+      "name": "三门峡市天鹅湖旅游度假区",
+      "preferredId": "manual_henan_7fa05c4c",
+      "aliases": [
+        "三门峡市天鹅湖旅游度假区"
+      ],
+      "city": "三门峡",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B018E0NEHP",
+              "name": "天鹅湖国家城市湿地公园",
+              "city": "三门峡"
+            },
+            {
+              "id": "amap_B0G1RA258P",
+              "name": "三门峡天鹅湖旅游度假区",
+              "city": "三门峡"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c2b11ec45b",
+      "name": "尧山温泉旅游度假区",
+      "preferredId": "manual_henan_6ad24665",
+      "aliases": [
+        "尧山温泉旅游度假区"
+      ],
+      "city": "平顶山",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

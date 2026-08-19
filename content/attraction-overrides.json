@@ -1982,5 +1982,679 @@
       "status": "inherited-after-identity-heal",
       "existingId": "amap_B023B07SNT"
     }
+  },
+  "amap_B02190AN5F": {
+    "id": "amap_B02190AN5F",
+    "name": "微山湖旅游区",
+    "city": "滕州",
+    "rating": 4.2,
+    "reviewsCount": "1459条携程点评",
+    "image": "/assets/images/attractions/shandong_f8edb16e_verified.jpg",
+    "description": "滕州微山湖红荷湿地景区地处微山湖东北部的滕州市滨湖镇境内，是中国较大的荷花观赏地和北方的天然湿地。每年七月中旬至八月中旬，这里万顷红荷盛放，风光旖旎，是赏荷摄影的胜地。",
+    "intro": "滕州微山湖红荷湿地景区地处微山湖东北部的滕州市滨湖镇境内，是中国较大的荷花观赏地和北方的天然湿地。每年七月中旬至八月中旬，这里万顷红荷盛放，风光旖旎，是赏荷摄影的胜地。",
+    "level": "5A景区",
+    "category": "5A级湖泊湿地与人文纪念景区",
+    "tags": [
+      "5A级湖泊湿地与人文纪念景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "山东省枣庄市滕州市滨湖镇湖东大堤路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“微山岛轮渡码头”或“国泰渔村码头”；非自驾可先至微山县城再打车前往码头。",
+        "internal_arrive": "推荐自驾车辆直接开上轮渡（五座车往返费用以官方当日公告为准，车上人员免票），随到随走，省去在岛上找车或步行的麻烦。",
+        "internal_traffic": "岛内景点分散，推荐乘坐景区观光车（按固定线路游览，随叫随停）；也可自驾车环岛游览，岛内各景点停车场免费。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "微山岛上的民宿和酒店（如码头周边村落、荷香园假日酒店、湖枫慢舍民宿等），建议提前预订并确认是否包含接送服务。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "九转大肠",
+        "把子肉",
+        "爆炒腰花",
+        "奶汤蒲菜"
+      ],
+      "special_care": {
+        "elderly": "微子文化苑的望湖阁可乘电梯登顶，无需爬楼；荷园乘船游览轻松不费腿，非常适合长辈",
+        "children": "铁道游击队纪念园空间开阔适合跑跳；荷园坐船采莲蓬、博浪湾沙滩玩沙都能让孩子玩得开心。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "微山岛经典省力一日游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "微山岛轮渡码头登岛",
+          "微子文化苑（登望湖阁俯瞰全景）",
+          "铁道游击队纪念园",
+          "荷园（乘画舫船赏荷采摘）",
+          "环湖路看日落",
+          "乘轮渡离岛"
+        ],
+        "duration": "半天",
+        "walking": "约500米",
+        "physical": 2,
+        "tips": [
+          "上岛后务必乘坐观光车代步，不要步行前往各景点；荷园坐船采摘莲蓬是核心体验，建议提前和船家确认好包船价格和路线。"
+        ],
+        "sourceTitle": "携程旅行 微山湖旅游区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 微山湖旅游区 详情页：https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online",
+        "高德地图 微山湖旅游区：https://www.amap.com/place/B02190AN5F"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 微山湖旅游区 详情页",
+        "url": "https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "微山湖旅游区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/tengzhou1371/125420.html?poiType=3&scene=online",
+      "width": 1500,
+      "height": 1091
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0GROU5FBZ": {
+    "id": "amap_B0GROU5FBZ",
+    "name": "红叶柿岩",
+    "city": "淄博",
+    "rating": 4.7,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/shandong_d5a88646_verified.jpg",
+    "description": "红叶柿岩位于域城镇和尚房村6号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "红叶柿岩位于域城镇和尚房村6号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "山岳自然风景区、古村落",
+    "tags": [
+      "山岳自然风景区、古村落",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "域城镇和尚房村6号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "建议自驾，导航至“东游客中心”（东门）停车，车位相对充足且距离检票口近；若停南门步行距离较远。",
+        "internal_arrive": "首选东门入园，路线更顺、步行更少；南门入园需先走较长距离才能到达观光车站点，对体力消耗较大。",
+        "internal_traffic": "景区内有8号线（东门至云桥，费用以官方当日公告为准单程）和1号线（东门至南门，费用以官方当日公告为准单程）观光车，均为单程票；半山腰至山顶可乘坐飞天魔毯（费用以官方当日公告为准）无痛登顶。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区内及周边有民宿，但旺季或节假日房源紧张，建议提前预订；也可选择住在博山城区，自驾前往景区约 20-30 分钟。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "九转大肠",
+        "把子肉",
+        "爆炒腰花",
+        "奶汤蒲菜"
+      ],
+      "special_care": {
+        "elderly": "建议全程乘坐观光车和魔毯，避免攀爬陡峭台阶；柿岩古村和颜神里街区地势相对平缓，适合慢走休息",
+        "children": "玻璃水滑道和山地滑车深受孩子喜爱，但需注意安全并穿戴好雨衣；古村石板路较多，建议不要推婴儿车，以免颠簸。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "东门进山·无痛登顶与漂流下山省力线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "东游客中心",
+          "8号线观光车（至云桥）",
+          "飞天魔毯",
+          "齐长城文化长廊",
+          "圆梦塔",
+          "玻璃水滑道",
+          "柿岩古村",
+          "颜神里复古街区"
+        ],
+        "duration": "半天",
+        "walking": "约 4-5 公里（主要依靠观光车和魔毯代步，减少陡坡攀爬）",
+        "physical": 3,
+        "tips": [
+          "8号线观光车是单程票，下山需另购；玻璃水滑道会溅水，景区通常免费提供雨衣，建议穿防滑运动鞋。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 山东文旅·红叶柿岩旅游区：https://www.amap.com/place/B0GROU5FBZ"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 山东文旅·红叶柿岩旅游区",
+        "url": "https://www.amap.com/place/B0GROU5FBZ",
+        "poiId": "B0GROU5FBZ",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "c8roe\">淄博红叶柿岩旅游区位于山东省淄博市,为国家3a级旅游景区位",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://baike.baidu.com/item/%E6%B7%84%E5%8D%9A%E7%BA%A2%E5%8F%B6%E6%9F%BF%E5%B2%A9%E6%97%85%E6%B8%B8%E5%8C%BA/58837969",
+      "sourceUrl": "http://baike.baidu.com/item/%E6%B7%84%E5%8D%9A%E7%BA%A2%E5%8F%B6%E6%9F%BF%E5%B2%A9%E6%97%85%E6%B8%B8%E5%8C%BA/58837969",
+      "width": 2000,
+      "height": 1333
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0IRFH663O": {
+    "baselineKey": "core_145efe8515",
+    "id": "amap_B0IRFH663O",
+    "name": "奥帆海洋文化旅游区",
+    "city": "青岛",
+    "rating": 4.7,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/shandong_2d6925d4_verified.jpg",
+    "description": "青岛奥帆海洋文化旅游区位于山东省青岛市市南区，景区面积5.25K㎡，由海底世界和奥帆中心两大区域组成。奥帆中心作为2008年北京奥运会、残奥会帆船比赛场地，拥有全国唯一一处帆船类奥运文化遗产，奥运会、上合峰会、海军节等重大节会也为奥帆中心留下了众多宝贵的文化资源。",
+    "intro": "青岛奥帆海洋文化旅游区位于山东省青岛市市南区，景区面积5.25K㎡，由海底世界和奥帆中心两大区域组成。奥帆中心作为2008年北京奥运会、残奥会帆船比赛场地，拥有全国唯一一处帆船类奥运文化遗产，奥运会、上合峰会、海军节等重大节会也为奥帆中心留下了众多宝贵的文化资源。",
+    "level": "5A景区",
+    "category": "5A级滨海休闲旅游区",
+    "tags": [
+      "5A级滨海休闲旅游区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "山东省青岛市市南区澳门路121号甲",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "地铁2号线燕儿岛路站或3号线五四广场站，步行约10-15分钟可达；自驾可导航至干船坞停车场。",
+        "internal_arrive": "推荐从奥帆中心1号门或火炬码头附近进入，距离核心景点和游船码头最近。",
+        "internal_traffic": "景区内有沿海岸线行驶的观光车（单程或全程），可随上随下；奥帆中心与海底世界片区之间有海陆通勤游船。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "市南区沿海一线（如海尔洲际酒店、中航游艇会酒店等，部分酒店有后门直达奥帆中心，带娃更方便）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "九转大肠",
+        "把子肉",
+        "爆炒腰花",
+        "奶汤蒲菜"
+      ],
+      "special_care": {
+        "elderly": "全程多平路，情人坝栈道推轮椅友好，可多利用观光车和游船省力，避免长时间暴晒",
+        "children": "奥帆博物馆有亲子互动区，海边有儿童乐园可玩沙，游船可喂海鸥，但海上风大需注意保暖和防滑。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "下午至傍晚省力休闲游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "旗阵广场与奥运火炬打卡",
+          "奥帆博物馆室内研学",
+          "情人坝观景栈道散步",
+          "乘坐海上游船看日落与夜景",
+          "浮山湾灯光秀观赏"
+        ],
+        "duration": "半天",
+        "walking": "约1.5公里",
+        "physical": 2,
+        "tips": [
+          "建议较合适时段入园，既能避开正午暴晒，又能一次性领略白天蔚蓝大海与夜晚璀璨灯光；海上风大，务必准备防风外套。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
+        "verifiedAt": "2026-08-18"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 青岛奥帆海洋文化旅游区",
+        "url": "https://www.amap.com/place/B0IRFH663O",
+        "poiId": "B0IRFH663O",
+        "evidenceMode": "local-amap-snapshot",
+        "verifiedAt": "2026-08-18"
+      },
+      "basicInfoUpdatedAt": "2026-08-18",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "青岛市奥帆海洋文化旅游区",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://baike.baidu.com/item/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%A5%A5%E5%B8%86%E6%B5%B7%E6%B4%8B%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA/64833243",
+      "sourceUrl": "http://baike.baidu.com/item/%E9%9D%92%E5%B2%9B%E5%B8%82%E5%A5%A5%E5%B8%86%E6%B5%B7%E6%B4%8B%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA/64833243",
+      "width": 2705,
+      "height": 1944
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0G3VXEC4B": {
+    "baselineKey": "core_2d8d54c1b7",
+    "id": "amap_B0G3VXEC4B",
+    "name": "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
+    "city": "南阳",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/henan_7cfba65b_verified.jpg",
+    "description": "景区位于河南省南阳市西峡县，主要有老界岭和恐龙遗迹园两大主景区，是中国南阳伏牛山世界地质公园的精髓和核心，是国家级自然保护区，位于中国南北气候的分界线，是长江流域和黄河流域的分水岭，是一个集观光体验、科普科考、休闲度假于一体的综合性旅游目的地。",
+    "intro": "景区位于河南省南阳市西峡县，主要有老界岭和恐龙遗迹园两大主景区，是中国南阳伏牛山世界地质公园的精髓和核心，是国家级自然保护区，位于中国南北气候的分界线，是长江流域和黄河流域的分水岭，是一个集观光体验、科普科考、休闲度假于一体的综合性旅游目的地。",
+    "level": "5A景区",
+    "category": "科普研学、山岳自然、避暑休闲",
+    "tags": [
+      "科普研学、山岳自然、避暑休闲",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "南阳市西峡县丹水镇",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾：导航至“西峡恐龙遗迹园南门”或“老界岭西门停车场”，停车便利。\n公共交通：高铁至南阳东站后，转乘大巴或包车前往西峡县；或从南阳汽车西站乘班车至太平镇（老界岭）。",
+        "internal_arrive": "恐龙遗迹园：建议从南门入园，门口有大型停车场，入园后直接购买观光车票。\n老界岭：建议从西门（骆驼峰停车场）入园，目前东门可能处于关闭状态，具体以官方当日公告为准。",
+        "internal_traffic": "恐龙遗迹园：园区较大，强烈建议购买费用以官方当日公告为准的环线观光车票，可直达各核心展馆，省去爬坡走路。\n老界岭：必须乘坐景交车（费用以官方当日公告为准）到达索道下站；建议购买往返索道票直达山顶；下山可选择费用以官方当日公告为准的山地滑道，对膝盖非常友好。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "西峡县城：餐饮选择多，性价比高，适合第一天游玩恐龙园后入住。\n太平镇/老界岭山下：多为民宿和农家乐，适合第二天一早进山避暑，部分民宿可能赠送景区门票或索道票，预订前需确认。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "河南烩面",
+        "逍遥镇胡辣汤",
+        "开封灌汤包",
+        "道口烧鸡"
+      ],
+      "special_care": {
+        "elderly": "老界岭徒步上山路段陡峭且无风景，务必乘坐索道上山；下山尽量使用滑道或索道，避免膝盖受损；山顶气温较低，需备薄外套",
+        "children": "恐龙园全程平路，可推婴儿车，仿真恐龙和互动剧场孩子很喜欢；老界岭分水岭是极佳的地理科普点，但需注意防风保暖，带好零食和水。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "两日科普避暑省力游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "Day 1 恐龙探秘：地质科普广场",
+          "恐龙蛋化石博物馆（可体验9D飞跃剧场）",
+          "乘坐观光车",
+          "中国西峡恐龙馆（看巨型阿根廷龙骨架）",
+          "恐龙蛋遗址馆（236米地下隧道看原生化石）",
+          "户外仿真恐龙园\nDay 2 伏牛吸氧：乘坐景交车至索道下站",
+          "索道上山",
+          "分水岭（一脚踏南北打卡）",
+          "1830云顶咖啡观景",
+          "神女峰观景台",
+          "乘坐山地滑道下山"
+        ],
+        "duration": "半天",
+        "walking": "约3000米（主要在山顶栈道和室内展馆）",
+        "physical": 2,
+        "tips": [
+          "两个景区相距约40-50分钟车程，建议第一天住西峡县城，第二天住太平镇或老界岭山下，避免每天折返跑。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 中国西峡恐龙遗迹园",
+        "url": "https://www.amap.com/place/B0G3VXEC4B",
+        "poiId": "B0G3VXEC4B",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "伏牛山老界岭恐龙遗迹园旅游区 西峡恐龙遗迹园,这个位于河南省南阳",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5215625620281569844",
+      "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5215625620281569844",
+      "width": 1419,
+      "height": 1064
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B0G3VXEC4B"
+    }
+  },
+  "amap_B017308CXT": {
+    "baselineKey": "core_1c7e7d0167",
+    "id": "amap_B017308CXT",
+    "name": "嵩山少林景区",
+    "city": "登封",
+    "rating": 4.5,
+    "reviewsCount": "17311条携程点评",
+    "image": "/assets/images/attractions/henan_32fe064_verified.jpg",
+    "description": "都说“天下武功出少林”，别说从小深受少林功夫影响的国人，许多国际友人到了河南，也都会去嵩山少林景区看看。这里不仅是天下武林圣地，也是佛教禅宗祖庭。",
+    "intro": "都说“天下武功出少林”，别说从小深受少林功夫影响的国人，许多国际友人到了河南，也都会去嵩山少林景区看看。这里不仅是天下武林圣地，也是佛教禅宗祖庭。",
+    "level": "5A景区",
+    "category": "人文古迹、自然山水",
+    "tags": [
+      "人文古迹、自然山水",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "河南省郑州市登封市G207嵩山少林风景区",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至“嵩山少林寺景区生态停车场”或“少林武僧塑像”附近停车场；从郑州出发自驾约1.5-2小时。公共交通可在郑州中心汽车站或郑州东站高铁长途汽车枢纽站乘坐大巴至登封客运总站，再转乘当地交通工具前往景区。",
+        "internal_arrive": "建议从少林寺游客中心（少室山入口）进入，此处配套完善，且能顺路游览核心人文景点，避开三皇寨入口的长距离爬升。",
+        "internal_traffic": "景区内主要依靠观光车（摆渡车）和索道。观光车连接游客中心、武术馆、少林寺和塔林；少林索道连接塔林附近与书册崖，是省力看全景的核心工具。景区内也可租赁四人电动小观光车代步。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在登封市区（如嵩阳书院游客中心附近），酒店选择多、餐饮丰富且性价比高；若追求便捷，也可选择景区外的农家乐或周边酒店，但条件相对基础。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "河南烩面",
+        "逍遥镇胡辣汤",
+        "开封灌汤包",
+        "道口烧鸡"
+      ],
+      "special_care": {
+        "elderly": "全程以观光车和索道代步，避免攀登好汉坡和陡峭台阶，在少林寺常住院和塔林等平缓区域慢走游览，注意膝盖保暖",
+        "children": "下午错峰入园可避开暴晒和人流，全程平坦路段较多，婴儿车基本可通行；务必备好零食、水和驱蚊液，切勿带幼童前往书册崖狭窄栈道。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "少室山精华省力游（索道+观光车）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "景区游客中心",
+          "乘坐观光车",
+          "少林寺武术馆（观看功夫表演）",
+          "少林寺常住院（山门",
+          "大雄宝殿",
+          "藏经阁）",
+          "塔林",
+          "少林索道",
+          "书册崖（观景拍照）",
+          "原路索道下山",
+          "乘坐观光车返程"
+        ],
+        "duration": "半天",
+        "walking": "约4-5公里（平缓步道为主）",
+        "physical": 2,
+        "tips": [
+          "建议购买观光车往返票，从游客中心到索道站距离较远，坐车能省下大量体力；书册崖风景绝佳但栈道较窄，带幼儿的家庭建议在平台休息，不要让幼儿进入狭窄栈道。"
+        ],
+        "sourceTitle": "携程旅行 嵩山少林景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 嵩山少林景区 详情页：https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
+        "高德地图 嵩山少林牌坊：https://www.amap.com/place/B0FFFP1MWC"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 嵩山少林景区 详情页",
+        "url": "https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "嵩山少林景区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B0FFFP1MWC",
+      "width": 2304,
+      "height": 1728
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B02CE00USF": {
+    "baselineKey": "core_a7d4f02481",
+    "id": "amap_B02CE00USF",
+    "name": "恩施州腾龙洞景区",
+    "city": "湖北",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/hubei_d76f8c38_verified.jpg",
+    "description": "腾龙洞是中国已探明的最大溶洞，在世界已探明的最长洞穴中排名第七是世界特级洞穴之一。景区由水洞、旱洞、鲇鱼洞、凉风洞、独家寨及三个龙门、化仙坑等景点组成。",
+    "intro": "腾龙洞是中国已探明的最大溶洞，在世界已探明的最长洞穴中排名第七是世界特级洞穴之一。景区由水洞、旱洞、鲇鱼洞、凉风洞、独家寨及三个龙门、化仙坑等景点组成。",
+    "level": "5A景区",
+    "category": "溶洞、5A级景区、世界地质公园",
+    "tags": [
+      "溶洞、5A级景区、世界地质公园",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "恩施土家族苗族自治州利川市腾龙大道1号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至\"腾龙洞西北侧地面停车场\"或\"土家地坑吊锅\"，直达景区入口，避免停在游客中心（需再花费用以官方当日公告为准坐景交车）。高铁可至利川站，出站打车约10分钟到景区。",
+        "internal_arrive": "直接开到景区入口停车场，不要导航到游客中心，可省下费用以官方当日公告为准的景交车费用。",
+        "internal_traffic": "洞内电瓶车单程费用以官方当日公告为准，建议购买单程票，节省体力去后洞，返程步行看演出。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "利川市区（距景区4-6公里），建议选连锁酒店，卫生更有保障。 长辈建议：洞内步行路段较多，建议购买电瓶车；若体力有限，可只走到《夷水丽川》剧场观看演出，不必去后洞。 儿童建议：洞内温度低，务必穿外套；前洞有NPC互动可参与；全程不能推婴儿车，建议带轻便推车或背带。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "清蒸武昌鱼",
+        "排骨藕汤",
+        "三鲜豆皮",
+        "武汉热干面"
+      ],
+      "special_care": {
+        "elderly": "洞内步行路段较多，建议购买电瓶车；若体力有限，可只走到《夷水丽川》剧场观看演出，不必去后洞",
+        "children": "洞内温度低，务必穿外套；前洞有NPC互动可参与；全程不能推婴儿车，建议带轻便推车或背带。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "家庭省力核心游（含必看演出）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "景区入口",
+          "卧龙吞江瀑布",
+          "腾龙洞主洞口",
+          "乘坐洞内电瓶车",
+          "后洞（龙宫等）",
+          "观看《夷水丽川》歌舞秀",
+          "步行出洞"
+        ],
+        "duration": "半天",
+        "walking": "约3000步（全程约3-4小时）",
+        "physical": 3,
+        "tips": [
+          "洞内恒温14-18℃，务必给老人和儿童准备薄外套；洞内地面湿滑，穿防滑耐脏的鞋子，裤腿不要拖地。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 腾龙洞",
+        "url": "https://www.amap.com/place/B02CE00USF",
+        "poiId": "B02CE00USF",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Tenglong Cave.jpg",
+      "author": "Whisper of the heart",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenglong_Cave.jpg",
+      "width": 3840,
+      "height": 5120
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B02CE00USF"
+    }
   }
 }

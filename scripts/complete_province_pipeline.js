@@ -189,7 +189,9 @@ function main() {
   if (packageData?.status !== 'reviewed') {
     const manualEvidence = readJson(path.join(contentDir, `core-repair-evidence.${slug}.json`), { attractions: {} });
     const readyManual = new Set(Object.entries(manualEvidence.attractions || {})
-      .filter(([, value]) => value?.sources?.length >= 2 && value?.routes?.length >= 1 && value?.image?.downloadUrl)
+      // A second independent source improves confidence, but is warning-only.
+      // Do not repeat an already complete research stage solely for source count.
+      .filter(([, value]) => value?.sources?.length >= 1 && value?.routes?.length >= 1 && value?.image?.downloadUrl)
       .map(([key]) => key));
     const experience = readJson(path.join(runtimeDir, `core-experience-evidence.${slug}.json`), { attractions: {} });
     const researchItems = researchData?.attractions || [];

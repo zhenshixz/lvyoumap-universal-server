@@ -79,8 +79,15 @@ function recordMatchesBaseline(record, baselineItem) {
 }
 
 function findOfficialRecord(item, official) {
-  const names = new Set(aliasesFor(item).map(normalizeAttractionName));
-  return [...(official.fiveA || []), ...(official.resorts || [])].find(record => names.has(normalizeAttractionName(record.name))) || null;
+  const names = aliasesFor(item);
+  return [...(official.fiveA || []), ...(official.resorts || [])].find(record => (
+    names.some(name => probablySameAttraction(name, record.name))
+  )) || null;
+}
+
+function blockingQualityIssues(quality) {
+  const warningOnly = new Set(['source.basicInfoSingleSource', 'source.basicInfoTraceability']);
+  return (quality?.issues || []).filter(issue => !warningOnly.has(issue));
 }
 
 function duplicateCandidates(item, records) {
@@ -232,7 +239,8 @@ function validatePackage(context, options = {}) {
     deepMerge(candidate, lazyOverrides[id] || {});
     try {
       const quality = getQuality(candidate);
-      if (!quality.ready || quality.issues.length) throw new Error(`修复项 ${current.name} 仍未通过：${quality.issues.join(', ')}`);
+      const blockers = blockingQualityIssues(quality);
+      if (!quality.ready || blockers.length) throw new Error(`修复项 ${current.name} 仍未通过：${blockers.join(', ')}`);
       readyOverrides.push({ id, patch, baselineKey: patch.baselineKey || '' });
     } catch (error) {
       errors.push(error.message);

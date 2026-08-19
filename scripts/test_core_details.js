@@ -34,6 +34,7 @@ assert(cityAddress.value.startsWith('宁波'), '城市级地址必须明确展�
 assert(imageIdentityTokens({ name: '武康路街区', city: '上海' }).includes('武康路'), '图片搜索应去除景区后缀并保留实体关键词');
 assert(imageIdentityTokens({ name: '天津之眼摩天轮', city: '天津' }).includes('天津之眼'), '设施型景点图片搜索应同时保留实体主干');
 assert(imageIdentityTokens({ name: '溱湖国家湿地公园', city: '泰州' }).includes('溱湖'), '公园型 POI 应保留景点实体主干用于图片核验');
+assert(imageIdentityTokens({ name: '奥帆海洋文化旅游区', city: '青岛' }).includes('奥帆'), '官方长名称应提取大众图片标题使用的实体核心词');
 const imagePage = {
   title: 'File:Street View of Wukang Road, Shanghai.JPG',
   imageinfo: [{ width: 4912, height: 3264, extmetadata: { LicenseShortName: { value: 'CC BY-SA 4.0' }, ImageDescription: { value: '武康路街景，上海' } } }],
