@@ -1,0 +1,1031 @@
+{
+  "province": "海南",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/hainan100001.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 20,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 5,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 5,
+    "priorityObservationCount": 4,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 7,
+  "officialResortCandidateCount": 3,
+  "popularityCount": 20,
+  "existingRecordBoundCount": 6,
+  "existingRecordUnboundCount": 21,
+  "existingRecordUnboundNames": [
+    "海南槟榔谷黎苗文化旅游区",
+    "分界洲岛旅游区",
+    "呀诺达雨林文化旅游区",
+    "西岛",
+    "万宁石梅湾旅游度假区",
+    "骑楼老街",
+    "海南省博物馆",
+    "云洞图书馆",
+    "东郊椰林",
+    "铜鼓岭",
+    "木兰湾",
+    "南海博物馆",
+    "博鳌亚洲论坛永久会址",
+    "玉带滩",
+    "日月湾",
+    "神州半岛",
+    "南湾猴岛",
+    "清水湾",
+    "崖州古城",
+    "琼海博鳌东屿岛旅游度假区",
+    "三亚市亚龙湾旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 5,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 4,
+  "priorityObservationCandidates": [
+    {
+      "name": "雷琼海口火山群世界地质公园",
+      "city": "",
+      "aliases": [
+        "雷琼海口火山群世界地质公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "五指山水满河热带雨林风景区",
+      "city": "",
+      "aliases": [
+        "五指山水满河热带雨林风景区",
+        "五指山水满河热带雨林"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "西沙群岛",
+      "city": "",
+      "aliases": [
+        "西沙群岛"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "红峡谷漂流",
+      "city": "",
+      "aliases": [
+        "红峡谷漂流"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 5,
+  "observationCandidates": [
+    {
+      "name": "雷琼海口火山群世界地质公园",
+      "city": "",
+      "aliases": [
+        "雷琼海口火山群世界地质公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "五指山水满河热带雨林风景区",
+      "city": "",
+      "aliases": [
+        "五指山水满河热带雨林风景区",
+        "五指山水满河热带雨林"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "西沙群岛",
+      "city": "",
+      "aliases": [
+        "西沙群岛"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "红峡谷漂流",
+      "city": "",
+      "aliases": [
+        "红峡谷漂流"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "棋子湾",
+      "city": "昌江",
+      "aliases": [
+        "棋子湾"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "雷琼海口火山群世界地质公园",
+      "city": "",
+      "aliases": [
+        "雷琼海口火山群世界地质公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "五指山水满河热带雨林风景区",
+      "city": "",
+      "aliases": [
+        "五指山水满河热带雨林风景区",
+        "五指山水满河热带雨林"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "西沙群岛",
+      "city": "",
+      "aliases": [
+        "西沙群岛"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "红峡谷漂流",
+      "city": "",
+      "aliases": [
+        "红峡谷漂流"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "棋子湾",
+      "city": "昌江",
+      "aliases": [
+        "棋子湾"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 20,
+    "verifiedCount": 14,
+    "coveredByCoreCount": 1,
+    "unresolvedCount": 5,
+    "warnings": [
+      "携程省级页未发现 昌江 的城市入口。",
+      "棋子湾 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_63c0011596",
+      "name": "天涯海角游览区",
+      "preferredId": "amap_B03830048T",
+      "aliases": [
+        "天涯海角游览区",
+        "三亚市天涯海角游览区"
+      ],
+      "city": "三亚",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_32c72b3d7d",
+      "name": "蜈支洲岛旅游区",
+      "preferredId": "amap_B0FFFUBJXQ",
+      "aliases": [
+        "蜈支洲岛旅游区",
+        "三亚市蜈支洲岛旅游区",
+        "蜈支洲岛"
+      ],
+      "city": "三亚",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_30a009e0bb",
+      "name": "海南槟榔谷黎苗文化旅游区",
+      "preferredId": "manual_hainan_310114b",
+      "aliases": [
+        "海南槟榔谷黎苗文化旅游区",
+        "保亭县海南槟榔谷黎苗文化旅游区",
+        "海南槟榔谷黎苗文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_c7269944d8",
+      "name": "分界洲岛旅游区",
+      "preferredId": "manual_hainan_cf3ebdbf",
+      "aliases": [
+        "分界洲岛旅游区",
+        "陵水县分界洲岛旅游区",
+        "分界洲岛"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_35a844c9ee",
+      "name": "呀诺达雨林文化旅游区",
+      "preferredId": "manual_hainan_5f16b260",
+      "aliases": [
+        "呀诺达雨林文化旅游区",
+        "保亭县呀诺达雨林文化旅游区",
+        "呀诺达雨林文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_168a1db6b5",
+      "name": "南山大小洞天旅游区",
+      "preferredId": "amap_B038300088",
+      "aliases": [
+        "南山大小洞天旅游区",
+        "三亚市南山大小洞天旅游区",
+        "南山大小洞天"
+      ],
+      "city": "三亚",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_0be21a539d",
+      "name": "南山文化旅游区",
+      "preferredId": "amap_B03830047D",
+      "aliases": [
+        "南山文化旅游区",
+        "三亚市南山文化旅游区",
+        "南山文化"
+      ],
+      "city": "三亚",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_6c425cc2b0",
+      "name": "西岛",
+      "preferredId": "manual_hainan_49907a95",
+      "aliases": [
+        "西岛"
+      ],
+      "city": "三亚",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a2b373a3ad",
+      "name": "万宁石梅湾旅游度假区",
+      "preferredId": "manual_hainan_67c4cc30",
+      "aliases": [
+        "万宁石梅湾旅游度假区"
+      ],
+      "city": "万宁",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_18f9258d53",
+      "name": "骑楼老街",
+      "preferredId": "manual_hainan_f3468032",
+      "aliases": [
+        "骑楼老街"
+      ],
+      "city": "海口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "海口",
+          "page": 1,
+          "name": "骑楼老街",
+          "url": "https://you.ctrip.com/sight/haikou37/52006.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5a389e890f",
+      "name": "海南省博物馆",
+      "preferredId": "manual_hainan_dc2c1281",
+      "aliases": [
+        "海南省博物馆"
+      ],
+      "city": "海口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "海口",
+          "page": 1,
+          "name": "海南省博物馆",
+          "url": "https://you.ctrip.com/sight/haikou37/66489.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_63ee9d4698",
+      "name": "云洞图书馆",
+      "preferredId": "manual_hainan_7f2bf84",
+      "aliases": [
+        "云洞图书馆"
+      ],
+      "city": "海口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "海口",
+          "page": 1,
+          "name": "海口云洞图书馆",
+          "url": "https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5cb06ec1a5",
+      "name": "东郊椰林",
+      "preferredId": "manual_hainan_a50af692",
+      "aliases": [
+        "东郊椰林"
+      ],
+      "city": "文昌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "文昌",
+          "page": 1,
+          "name": "东郊椰林风景区",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d7073fc3ed",
+      "name": "铜鼓岭",
+      "preferredId": "manual_hainan_c26fdd45",
+      "aliases": [
+        "铜鼓岭"
+      ],
+      "city": "文昌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "文昌",
+          "page": 1,
+          "name": "海南铜鼓岭景区",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3186.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b1cba04135",
+      "name": "木兰湾",
+      "preferredId": "manual_hainan_465f4805",
+      "aliases": [
+        "木兰湾"
+      ],
+      "city": "文昌",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "文昌",
+          "page": 2,
+          "name": "木兰湾",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3187.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_cae8a1cb32",
+      "name": "南海博物馆",
+      "preferredId": "manual_hainan_4b2dee0",
+      "aliases": [
+        "南海博物馆"
+      ],
+      "city": "琼海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "琼海",
+          "page": 1,
+          "name": "中国(海南)南海博物馆",
+          "url": "https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4cded2f299",
+      "name": "博鳌亚洲论坛永久会址",
+      "preferredId": "manual_hainan_40866fd9",
+      "aliases": [
+        "博鳌亚洲论坛永久会址"
+      ],
+      "city": "琼海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "琼海",
+          "page": 1,
+          "name": "博鳌亚洲论坛永久会址景区",
+          "url": "https://you.ctrip.com/sight/qionghai843/54550.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_ebd555783b",
+      "name": "玉带滩",
+      "preferredId": "manual_hainan_ccec71d3",
+      "aliases": [
+        "玉带滩"
+      ],
+      "city": "琼海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "琼海",
+          "page": 1,
+          "name": "玉带滩",
+          "url": "https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_eb60193138",
+      "name": "日月湾",
+      "preferredId": "manual_hainan_9be5a25f",
+      "aliases": [
+        "日月湾"
+      ],
+      "city": "万宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "万宁",
+          "page": 1,
+          "name": "日月湾",
+          "url": "https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_18e3762cd5",
+      "name": "神州半岛",
+      "preferredId": "manual_hainan_6a65088b",
+      "aliases": [
+        "神州半岛"
+      ],
+      "city": "万宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "万宁",
+          "page": 1,
+          "name": "神州半岛",
+          "url": "https://you.ctrip.com/sight/wanning846/3201.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_41b8ff9faf",
+      "name": "南湾猴岛",
+      "preferredId": "manual_hainan_3f7b144e",
+      "aliases": [
+        "南湾猴岛"
+      ],
+      "city": "陵水",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "陵水",
+          "page": 1,
+          "name": "南湾猴岛生态旅游区",
+          "url": "https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4b7c350e38",
+      "name": "清水湾",
+      "preferredId": "manual_hainan_9702ade7",
+      "aliases": [
+        "清水湾"
+      ],
+      "city": "陵水",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "陵水",
+          "page": 2,
+          "name": "清水湾旅游区",
+          "url": "https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_374a1a4b46",
+      "name": "崖州古城",
+      "preferredId": "manual_hainan_6a6d9398",
+      "aliases": [
+        "崖州古城"
+      ],
+      "city": "三亚",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "三亚",
+          "page": 7,
+          "name": "崖州古城",
+          "url": "https://you.ctrip.com/sight/sanya61/3229.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_1e7ad317c8",
+      "name": "鹿回头",
+      "preferredId": "amap_B03830MO5N",
+      "aliases": [
+        "鹿回头",
+        "鹿回头风景区"
+      ],
+      "city": "三亚",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 5
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_37e776168c",
+      "name": "三亚亚特兰蒂斯度假区",
+      "preferredId": "amap_B0IUMZODQ7",
+      "aliases": [
+        "三亚亚特兰蒂斯度假区",
+        "三亚亚特兰蒂斯景区"
+      ],
+      "city": "三亚",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": 15
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0263091c15",
+      "name": "琼海博鳌东屿岛旅游度假区",
+      "preferredId": "manual_hainan_3d8e1d0b",
+      "aliases": [
+        "琼海博鳌东屿岛旅游度假区"
+      ],
+      "city": "琼海",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1aab61ef49",
+      "name": "三亚市亚龙湾旅游度假区",
+      "preferredId": "amap_B03830MRM2",
+      "aliases": [
+        "三亚市亚龙湾旅游度假区"
+      ],
+      "city": "三亚",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B03830MRM2",
+              "name": "亚龙湾国家旅游度假区",
+              "city": "三亚"
+            },
+            {
+              "id": "amap_B0FFG1K2AH",
+              "name": "亚龙湾风景区-天下第一湾",
+              "city": "三亚"
+            },
+            {
+              "id": "amap_B0FFM0MGNM",
+              "name": "亚龙湾海滩",
+              "city": "三亚"
+            },
+            {
+              "id": "amap_B0383011JF",
+              "name": "亚龙湾热带天堂森林公园",
+              "city": "三亚"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": []
+    }
+  ]
+}

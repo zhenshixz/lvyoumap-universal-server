@@ -1,0 +1,966 @@
+{
+  "province": "湖南",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/hunan100053.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 10,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 12,
+  "officialResortCandidateCount": 4,
+  "popularityCount": 20,
+  "existingRecordBoundCount": 19,
+  "existingRecordUnboundCount": 13,
+  "existingRecordUnboundNames": [
+    "矮寨·十八洞•德夯大峡谷景区",
+    "岳麓山-橘子洲旅游区",
+    "衡山旅游区",
+    "武陵源－天门山旅游区",
+    "矮寨奇观旅游区",
+    "黔阳古城",
+    "洪江古商城",
+    "紫鹊界梯田",
+    "谢子龙影像艺术馆",
+    "李自健美术馆",
+    "上甘棠古村",
+    "长沙铜官窑文化旅游度假区",
+    "灰汤温泉旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "湖南省博物馆",
+      "city": "",
+      "aliases": [
+        "湖南省博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "湖南省博物馆",
+      "city": "",
+      "aliases": [
+        "湖南省博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "湖南省博物院",
+      "city": "长沙",
+      "aliases": [
+        "湖南省博物院"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "芙蓉镇",
+      "city": "湘西州",
+      "aliases": [
+        "芙蓉镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "芋头侗寨",
+      "city": "怀化",
+      "aliases": [
+        "芋头侗寨"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "湖南省博物馆",
+      "city": "",
+      "aliases": [
+        "湖南省博物馆"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "湖南省博物院",
+      "city": "长沙",
+      "aliases": [
+        "湖南省博物院"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "芙蓉镇",
+      "city": "湘西州",
+      "aliases": [
+        "芙蓉镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "芋头侗寨",
+      "city": "怀化",
+      "aliases": [
+        "芋头侗寨"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 10,
+    "verifiedCount": 6,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": [
+      "携程省级页未发现 湘西州 的城市入口。",
+      "芋头侗寨 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_29e4072f85",
+      "name": "湘西州凤凰古城旅游区",
+      "preferredId": "amap_B02E700F2Q",
+      "aliases": [
+        "湘西州凤凰古城旅游区",
+        "湘西州凤凰古城"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_3a8edc626f",
+      "name": "矮寨·十八洞•德夯大峡谷景区",
+      "preferredId": "manual_hunan_9eff088d",
+      "aliases": [
+        "矮寨·十八洞•德夯大峡谷景区",
+        "湘西州吉首市矮寨·十八洞•德夯大峡谷景区",
+        "矮寨·十八洞•德夯大峡谷"
+      ],
+      "city": "湘西州吉首",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2021年"
+    },
+    {
+      "key": "core_796d2d06ea",
+      "name": "桃花源旅游区",
+      "preferredId": "amap_B02E001EG3",
+      "aliases": [
+        "桃花源旅游区",
+        "常德市桃花源旅游区",
+        "桃花源"
+      ],
+      "city": "常德",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_5ce10f8ab0",
+      "name": "炎帝陵景区",
+      "preferredId": "amap_B02DD017UO",
+      "aliases": [
+        "炎帝陵景区",
+        "株洲市炎帝陵景区",
+        "炎帝陵"
+      ],
+      "city": "株洲",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_ed29af2905",
+      "name": "崀山景区",
+      "preferredId": "amap_B02E3000MV",
+      "aliases": [
+        "崀山景区",
+        "邵阳市崀山景区",
+        "崀山"
+      ],
+      "city": "邵阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_2c89994d57",
+      "name": "东江湖旅游区",
+      "preferredId": "amap_B02DF01K6V",
+      "aliases": [
+        "东江湖旅游区",
+        "郴州市东江湖旅游区",
+        "东江湖"
+      ],
+      "city": "郴州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_0e56827d2f",
+      "name": "花明楼景区",
+      "preferredId": "amap_B0FFM3WKUK",
+      "aliases": [
+        "花明楼景区",
+        "长沙市花明楼景区",
+        "花明楼"
+      ],
+      "city": "长沙",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_074658c443",
+      "name": "岳麓山-橘子洲旅游区",
+      "preferredId": "manual_hunan_752117cf",
+      "aliases": [
+        "岳麓山-橘子洲旅游区",
+        "长沙市岳麓山-橘子洲旅游区",
+        "岳麓山-橘子洲",
+        "岳麓山",
+        "橘子洲",
+        "橘子洲山",
+        "长沙市岳麓山"
+      ],
+      "city": "长沙",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_606a555456",
+      "name": "岳阳楼－君山岛景区",
+      "preferredId": "amap_B02DA0PSQH",
+      "aliases": [
+        "岳阳楼－君山岛景区",
+        "岳阳市岳阳楼－君山岛景区",
+        "岳阳楼－君山岛"
+      ],
+      "city": "岳阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_19c842e202",
+      "name": "韶山旅游区",
+      "preferredId": "amap_B02DC0NONG",
+      "aliases": [
+        "韶山旅游区",
+        "湘潭市韶山旅游区",
+        "韶山"
+      ],
+      "city": "湘潭",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_c7568f3480",
+      "name": "衡山旅游区",
+      "preferredId": "amap_B02DE02QBF",
+      "aliases": [
+        "衡山旅游区",
+        "衡阳市衡山旅游区",
+        "衡山"
+      ],
+      "city": "衡阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_506de86315",
+      "name": "武陵源－天门山旅游区",
+      "preferredId": "amap_B02E800EDY",
+      "aliases": [
+        "武陵源－天门山旅游区",
+        "张家界市武陵源－天门山旅游区",
+        "武陵源－天门山"
+      ],
+      "city": "张家界",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_6852cf785b",
+      "name": "仰天湖大草原",
+      "preferredId": "amap_B02DF01KC1",
+      "aliases": [
+        "仰天湖大草原",
+        "仰天湖大草原景区"
+      ],
+      "city": "郴州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 64
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b387c9ee4c",
+      "name": "矮寨奇观旅游区",
+      "preferredId": "manual_hunan_123bf502",
+      "aliases": [
+        "矮寨奇观旅游区",
+        "矮寨奇观"
+      ],
+      "city": "湘西州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e466fb38d9",
+      "name": "黔阳古城",
+      "preferredId": "manual_hunan_5c236086",
+      "aliases": [
+        "黔阳古城"
+      ],
+      "city": "怀化",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "怀化",
+          "page": 1,
+          "name": "黔阳古城",
+          "url": "https://you.ctrip.com/sight/hongjiang2825/1415361.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7662e6dd23",
+      "name": "洪江古商城",
+      "preferredId": "manual_hunan_28cda9a2",
+      "aliases": [
+        "洪江古商城"
+      ],
+      "city": "怀化",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "怀化",
+          "page": 1,
+          "name": "洪江古商城",
+          "url": "https://you.ctrip.com/sight/hongjiang2825/21059.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_dd7c174ad1",
+      "name": "紫鹊界梯田",
+      "preferredId": "manual_hunan_ac250e99",
+      "aliases": [
+        "紫鹊界梯田"
+      ],
+      "city": "娄底",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "娄底",
+          "page": 1,
+          "name": "紫鹊界梯田",
+          "url": "https://you.ctrip.com/sight/xinhua2856/140720.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_181b875cff",
+      "name": "谢子龙影像艺术馆",
+      "preferredId": "manual_hunan_5f5b22f4",
+      "aliases": [
+        "谢子龙影像艺术馆"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "长沙",
+          "page": 4,
+          "name": "谢子龙影像艺术馆",
+          "url": "https://you.ctrip.com/sight/changsha148/5073120.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_544fc85c29",
+      "name": "李自健美术馆",
+      "preferredId": "manual_hunan_402c6892",
+      "aliases": [
+        "李自健美术馆"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "长沙",
+          "page": 1,
+          "name": "李自健美术馆",
+          "url": "https://you.ctrip.com/sight/changsha148/2046357.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_921906b1ab",
+      "name": "上甘棠古村",
+      "preferredId": "manual_hunan_652e859a",
+      "aliases": [
+        "上甘棠古村"
+      ],
+      "city": "永州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "永州",
+          "page": 1,
+          "name": "江永上甘棠古村景区",
+          "url": "https://you.ctrip.com/sight/jiangyong2831/60868.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_ccd29c4f8b",
+      "name": "边城茶峒景区",
+      "preferredId": "amap_B02E70MRXP",
+      "aliases": [
+        "边城茶峒景区",
+        "边城茶峒"
+      ],
+      "city": "湘西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 29
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7a748b7fb8",
+      "name": "张家界国家森林公园",
+      "preferredId": "amap_B02E800EFM",
+      "aliases": [
+        "张家界国家森林公园"
+      ],
+      "city": "张家界",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d3c6af2018",
+      "name": "南岳衡山",
+      "preferredId": "amap_B02DE02QBF",
+      "aliases": [
+        "南岳衡山",
+        "南岳衡山风景名胜区"
+      ],
+      "city": "衡阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bab478ad0b",
+      "name": "杜甫江阁",
+      "preferredId": "amap_B0FFFYEF1T",
+      "aliases": [
+        "杜甫江阁"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": 14
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8fd5737fa7",
+      "name": "岳麓书院",
+      "preferredId": "amap_B02DB05TQH",
+      "aliases": [
+        "岳麓书院"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 17
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ff84bbaf7e",
+      "name": "石鼓书院",
+      "preferredId": "amap_B02DE02WHG",
+      "aliases": [
+        "石鼓书院"
+      ],
+      "city": "衡阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 33
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e7f8568395",
+      "name": "岳阳洞庭湖旅游度假区",
+      "preferredId": "amap_B0GKVH3ASZ",
+      "aliases": [
+        "岳阳洞庭湖旅游度假区",
+        "湖南岳阳洞庭湖旅游度假区"
+      ],
+      "city": "岳阳",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 51
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_18ac0db93b",
+      "name": "高椅岭",
+      "preferredId": "amap_B0G22KTNHO",
+      "aliases": [
+        "高椅岭",
+        "高椅岭旅游区"
+      ],
+      "city": "郴州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 63
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_50445c9d83",
+      "name": "常德柳叶湖旅游度假区",
+      "preferredId": "amap_B02E001Y9N",
+      "aliases": [
+        "常德柳叶湖旅游度假区",
+        "湖南常德柳叶湖旅游度假区"
+      ],
+      "city": "常德",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 69
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3dd18fc5b4",
+      "name": "莽山五指峰",
+      "preferredId": "amap_B0FFLGCJ7A",
+      "aliases": [
+        "莽山五指峰",
+        "五指峰景区"
+      ],
+      "city": "郴州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 116
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9d89f9c29c",
+      "name": "长沙铜官窑文化旅游度假区",
+      "preferredId": "manual_hunan_dd1c3415",
+      "aliases": [
+        "长沙铜官窑文化旅游度假区"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_878cf7b7e8",
+      "name": "灰汤温泉旅游度假区",
+      "preferredId": "manual_hunan_7abd6e3a",
+      "aliases": [
+        "灰汤温泉旅游度假区"
+      ],
+      "city": "长沙",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

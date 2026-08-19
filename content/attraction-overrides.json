@@ -2656,5 +2656,396 @@
       "status": "inherited-after-identity-heal",
       "existingId": "amap_B02CE00USF"
     }
+  },
+  "amap_B02DE02QBF": {
+    "baselineKey": "core_c7568f3480",
+    "id": "amap_B02DE02QBF",
+    "name": "衡山旅游区",
+    "city": "衡阳",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/hunan_3060b39f_verified.jpg",
+    "description": "衡山风景名胜区海拔1300.2米。气候温润，处处是茂林修竹，终年翠绿，奇花异草，四时飘香，自然景色十分秀丽。",
+    "intro": "衡山风景名胜区海拔1300.2米。气候温润，处处是茂林修竹，终年翠绿，奇花异草，四时飘香，自然景色十分秀丽。",
+    "level": "5A景区",
+    "category": "山岳型景区、祈福圣地",
+    "tags": [
+      "山岳型景区、祈福圣地",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "湖南省衡阳市南岳区南岳镇金沙路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "高铁可直达衡山西站（距景区约15分钟车程），出站可乘景区专线大巴或打车前往游客中心；自驾可直接导航至“南岳衡山游客中心”，有大型停车场。",
+        "internal_arrive": "首选游客中心（康家垅检票口），可无缝衔接景区环保车；若选择徒步入山，可从胜利坊进入，但家庭省力游不建议全程徒步。",
+        "internal_traffic": "景区环保车（往返费用以官方当日公告为准，单程约40-45分钟直达南天门）；部分路段可换乘索道（具体运营状态以官方当日公告为准）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐住在游客中心或南岳大庙周边民宿/酒店，交通便利，去景区和吃饭都方便；若想住山顶看日出，可选择上封寺等山顶住宿（需提前确认床位和斋饭供应）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "毛氏红烧肉",
+        "辣椒炒肉",
+        "剁椒鱼头",
+        "长沙臭豆腐"
+      ],
+      "special_care": {
+        "elderly": "全程以环保车代步，仅走南天门到祝融峰的平缓步道，避免爬陡峭台阶，随身带件薄外套防风保暖",
+        "children": "轻装上阵，山上补给点物价合理，无需背负大量水和食物；沿途可安排休息，保持轻松节奏，避免孩子疲劳哭闹。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "环保车直达+祝融峰轻徒步省力线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心（乘坐环保车） ➡️ 南天门（下车步行） ➡️ 祝融峰（登顶祈福",
+          "观景） ➡️ 原路返回南天门（乘坐环保车下山）"
+        ],
+        "duration": "半天",
+        "walking": "约3公里（仅南天门至祝融峰往返，其余路程由环保车覆盖）",
+        "physical": 2,
+        "tips": [
+          "环保车盘山公路弯多，易晕车者务必提前备好晕车药；务必关注末班车时间（通常官方当日建议时段，旺季可能延至官方当日建议时段），避免滞留山上。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 南岳衡山风景名胜区",
+        "url": "https://www.amap.com/place/B02DE02QBF",
+        "poiId": "B02DE02QBF",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "HengshanMountains.JPG",
+      "author": "User:TheNeon",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:HengshanMountains.JPG",
+      "width": 2048,
+      "height": 1536
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B02DE02QBF"
+    }
+  },
+  "amap_B02E800EDY": {
+    "baselineKey": "core_506de86315",
+    "id": "amap_B02E800EDY",
+    "name": "武陵源－天门山旅游区",
+    "city": "张家界",
+    "rating": 4.6,
+    "reviewsCount": "51138条携程点评",
+    "image": "/assets/images/attractions/hunan_573eb17c_verified.jpg",
+    "description": "天门山国家森林公园因自然奇观“天门山国家森林公园-天门洞”而得名。游览景区时，你可以在缆车中俯瞰脚下盘旋在峭壁之间的通天大道和山中美景。",
+    "intro": "天门山国家森林公园因自然奇观“天门山国家森林公园-天门洞”而得名。游览景区时，你可以在缆车中俯瞰脚下盘旋在峭壁之间的通天大道和山中美景。",
+    "level": "5A景区",
+    "category": "自然风景区、国家5A级旅游景区",
+    "tags": [
+      "自然风景区、国家5A级旅游景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "张家界市永定区大庸路天门山索道公司下站",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "张家界荷花机场或张家界西站均有公交、打车或旅游专线可抵达市区或武陵源区，市区至武陵源车程约40至50分钟。",
+        "internal_arrive": "天门山游客中心位于市区，武陵源标志门（东门）位于武陵源区，两者相距约40分钟车程，建议根据住宿位置选择对应入口入园。",
+        "internal_traffic": "天门山含索道、快线索道、环保车、穿山扶梯；武陵源含环保车、百龙天梯、天子山索道、十里画廊小火车，景区间及内部接驳完善。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "天门山索道站附近（市区，方便早起上山）；武陵源标志门附近（出门即景区，适合多日游玩）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "毛氏红烧肉",
+        "辣椒炒肉",
+        "剁椒鱼头",
+        "长沙臭豆腐"
+      ],
+      "special_care": {
+        "elderly": "全程以索道、电梯、扶梯代步，避免攀爬999级天梯和陡峭台阶；山顶风大温差大，备薄外套和防滑鞋",
+        "children": "金鞭溪可玩水观猴，但需看护好不要手提食物；天门山快线索道和森林观光缆车体验感好，孩子通常喜欢；可带便携推车但部分路段需抬行。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "天门山省力环线（B线）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心免费摆渡车至山门",
+          "天门洞快线索道上山",
+          "福缘栈道至天门洞广场",
+          "穿山扶梯直达山顶",
+          "云梦仙顶（直梯上下）",
+          "森林观光缆车至天门山寺",
+          "鬼谷栈道",
+          "悬索桥",
+          "西线玻璃栈道",
+          "原路返回穿山扶梯下山至天门洞广场",
+          "快线索道下山",
+          "环保车返回游客中心"
+        ],
+        "duration": "半天",
+        "walking": "约3至4公里，以平缓栈道为主",
+        "physical": 2,
+        "tips": [
+          "999级天梯不建议徒步，穿山扶梯可省力；山顶温差大，备薄外套；玻璃栈道需自费费用以官方当日公告为准租鞋套。"
+        ],
+        "sourceTitle": "携程旅行 武陵源－天门山旅游区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      {
+        "title": "武陵源核心精华游（东门进）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "武陵源标志门（东门）入园",
+          "环保车至百龙天梯下站",
+          "百龙天梯上行至袁家界",
+          "游览迷魂台",
+          "乾坤柱（阿凡达取景地）",
+          "天下第一桥",
+          "环保车至天子山",
+          "游览贺龙公园",
+          "御笔峰",
+          "天子山索道下山",
+          "环保车至十里画廊",
+          "乘坐小火车游览",
+          "环保车返回东门"
+        ],
+        "duration": "半天",
+        "walking": "约4至5公里，部分观景台需台阶",
+        "physical": 3,
+        "tips": [
+          "百龙天梯上行、天子山索道下行可大幅节省体力；十里画廊建议坐小火车进、步行出；金鞭溪可选段徒步，注意不要手提食物以免被猕猴抢食。"
+        ],
+        "sourceTitle": "携程旅行 武陵源－天门山旅游区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
+        "携程旅行 武陵源－天门山旅游区 详情页：https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 武陵源－天门山旅游区 详情页",
+        "url": "https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "武陵源－天门山旅游区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/zhangjiajie23/8360.html?poiType=3&scene=online",
+      "width": 2000,
+      "height": 1500
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B03830MRM2": {
+    "baselineKey": "core_1aab61ef49",
+    "id": "amap_B03830MRM2",
+    "name": "三亚市亚龙湾旅游度假区",
+    "city": "三亚",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/hainan_f484fde7_verified.jpg",
+    "description": "极具热带风情的国家级旅游度假区——亚龙湾，是海南最南端的一个半月形海湾，全长约7.5公里，是海南名景之一。沙滩绵延7000米，终年可游泳，海水浴场绝佳。",
+    "intro": "极具热带风情的国家级旅游度假区——亚龙湾，是海南最南端的一个半月形海湾，全长约7.5公里，是海南名景之一。沙滩绵延7000米，终年可游泳，海水浴场绝佳。",
+    "level": "国家级旅游度假区",
+    "category": "滨海度假区、热带雨林森林公园",
+    "tags": [
+      "滨海度假区、热带雨林森林公园",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "海南省三亚市吉阳区龙塘路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+        "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+        "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+        "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+      },
+      "transport": {
+        "external_arrive": "距离三亚凤凰国际机场约35公里，车程约40分钟；距三亚市中心约20公里。可乘机场大巴、打车或预约酒店接机；公交有27路、29路等在亚龙湾站下。",
+        "internal_arrive": "自驾前往森林公园建议导航至\"南门P4停车场\"，步行最少；打车建议到\"西门\"。沙滩区域可直接前往亚龙湾海底世界或各酒店沙滩入口。",
+        "internal_traffic": "景区内必须乘坐观光车代步；湾区内各景点距离近，建议租电动车吹海风代步，或打车短途出行。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "以高端度假酒店集群为主，形成封闭式管理的滨海度假带，私密性与舒适度较高，适合追求安静与品质的旅行者。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "加积鸭",
+        "海南文昌鸡",
+        "椰子鸡",
+        "和乐蟹"
+      ],
+      "special_care": {
+        "elderly": "森林公园全程依赖观光车，避免爬陡坡；山顶公园有开阔平地可休息，玻璃栈道视野好但不需大量步行",
+        "children": "兰花谷有平路和凉亭可散步看植物；雨林飞漂趣味性强但需3岁以上；沙滩挖沙玩水适合各年龄段。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "森林公园观光车省力吸氧游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心乘观光车直达过江龙索桥（打卡《非诚勿扰2》取景地）",
+          "乘观光车至山顶公园（漫步全海景玻璃栈道",
+          "逛创意天街补给）",
+          "乘观光车至兰花谷（看热带花草",
+          "平路散步）",
+          "体验雨林飞漂（玻璃水滑道直达山脚出园）"
+        ],
+        "duration": "半天",
+        "walking": "少（全程依赖观光车代步，飞漂省去下山步行）",
+        "physical": 2,
+        "tips": [
+          "务必购买含往返观光车的套票，避免长距离徒步爬山；3岁以上儿童可体验飞漂，3岁以下建议在兰花谷和山顶游玩。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+        "verifiedAt": "2026-08-19"
+      },
+      {
+        "title": "亚龙湾沙滩休闲躺平游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "亚龙湾海底世界（海边秋千拍照）",
+          "天域酒店沙滩（三颗歪脖子椰树）",
+          "红树林酒店（海景草坪）",
+          "美高梅酒店（临海椰林栈道）",
+          "万豪酒店（冲浪板打卡）",
+          "希尔顿酒店（\"Hi SANYA\"标志）"
+        ],
+        "duration": "半天",
+        "walking": "适中（各酒店沙滩相连，可沿海岸线漫步）",
+        "physical": 1,
+        "tips": [
+          "亚龙湾海边酒店沙滩是相通的，无需每家酒店都办理入住即可进入沙滩区域；建议上午或傍晚前往，避开正午暴晒。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 亚龙湾国家旅游度假区",
+        "url": "https://www.amap.com/place/B03830MRM2",
+        "poiId": "B03830MRM2",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "🌴 亚龙湾,这个位于中国最南端的热带滨海旅游城市——三亚市东南28",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4565639026371958963",
+      "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4565639026371958963",
+      "width": 2560,
+      "height": 1716
+    },
+    "quality_status": {
+      "reviewRequired": true,
+      "warnings": [
+        "独立可追溯来源少于2个",
+        "三亚市亚龙湾旅游度假区：基本资料目前只有1个可追溯来源"
+      ]
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B03830MRM2"
+    }
   }
 }

@@ -1,0 +1,2357 @@
+{
+  "province": "海南",
+  "status": "applied",
+  "createdAt": "2026-08-19T06:15:26.797Z",
+  "updatedAt": "2026-08-19T06:15:27.373Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "三亚市亚龙湾旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.hainan.json",
+  "attractions": [
+    {
+      "baselineKey": "core_30a009e0bb",
+      "id": "manual_hainan_310114b",
+      "name": "海南槟榔谷黎苗文化旅游区",
+      "city": "海南",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hainan_310114b_verified.jpg",
+      "description": "景区由非遗村、甘什黎村、谷银苗家、田野黎家、《槟榔·古韵》大型实景演出、兰花小木屋、黎苗风味美食街七大文化体验区构成，风景秀丽，是海南黎、苗族传统“三月三”及“七夕嬉水节”的主要活动举办地之一。",
+      "intro": "景区由非遗村、甘什黎村、谷银苗家、田野黎家、《槟榔·古韵》大型实景演出、兰花小木屋、黎苗风味美食街七大文化体验区构成，风景秀丽，是海南黎、苗族传统“三月三”及“七夕嬉水节”的主要活动举办地之一。",
+      "level": "5A景区",
+      "category": "5A级文化旅游景区、热带雨林、黎苗风情",
+      "tags": [
+        "5A级文化旅游景区、热带雨林、黎苗风情",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "海南省保亭黎族苗族自治县三道镇甘什岭",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“海南槟榔谷黎苗文化旅游区”，景区有大型停车场（费用以官方当日公告为准/天）；公共交通可在三亚汽车总站乘坐往保亭方向的班车，在槟榔谷站下车。",
+          "internal_arrive": "建议从景区大门主入口进入，进门后优先购买观光车票，并前往服务台或查看地图确认当日演出与项目预约方式。",
+          "internal_traffic": "景区内部主要依靠观光车连接各站点（如金门站、花梨站、丰收站等），可多次乘坐；山脚检票口外还有空中小火车、田野卡丁车等辅助交通体验。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择景区内的黎苗特色民宿（如费用以官方当日公告为准/晚的客栈），或返回三亚市区、保亭县城住宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "60岁以上长辈通常无法参与高空等刺激项目，建议重点游览甘什黎村和非遗村，感受黎苗文化，多利用观光车代步，避免连续长距离爬坡",
+          "children": "1.2米以下儿童可玩项目较少，建议以看表演、逛古村落、体验非遗手工为主，1.2米以上可参与大部分项目，注意防蚊防晒。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "山顶下坡省力文化体验线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "乘坐观光车直达金门站（山顶）",
+            "体验飞林探巢或雨林攀岩",
+            "步行下山至花梨站，体验高空滑索",
+            "高空自行车或彩虹滑道",
+            "乘车或步行至甘什黎村，参观百年船形屋",
+            "寻找纹面阿婆",
+            "体验黎锦编织",
+            "前往非遗村观看《槟榔·古韵》实景演出",
+            "乘坐观光车至雨林水漂处，体验玻璃滑道下山至出口"
+          ],
+          "duration": "半天",
+          "walking": "约2-3小时（多台阶与石板路，建议穿运动鞋）",
+          "physical": 3,
+          "tips": [
+            "观光车是省力核心，务必购买当日无限次乘坐票；部分高空项目需提前预约，入园后建议先确认并预约；雨林水漂会湿身，建议自备雨衣或速干衣物。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "探秘海南槟榔谷黎苗文化旅游区 🌴🌴🌴 探索海南槟榔谷黎苗文化",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4696853434211545600",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4696853434211545600",
+        "width": 1440,
+        "height": 1890
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_c7269944d8",
+      "id": "manual_hainan_cf3ebdbf",
+      "name": "分界洲岛旅游区",
+      "city": "海南",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hainan_cf3ebdbf_verified.jpg",
+      "description": "分界洲岛旅游区具有热带海岛风情特色，当地特殊的地理位置、气候特征及地域文化吸引众多新人来这里举办浪漫的海底婚礼。",
+      "intro": "分界洲岛旅游区具有热带海岛风情特色，当地特殊的地理位置、气候特征及地域文化吸引众多新人来这里举办浪漫的海底婚礼。",
+      "level": "5A景区",
+      "category": "海岛自然风光、亲子互动、休闲度假",
+      "tags": [
+        "海岛自然风光、亲子互动、休闲度假",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "海南省陵水黎族自治县98国道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至分界洲岛1号或2号停车场（离码头最近）；高铁至陵水站后打车约20分钟抵达码头。",
+          "internal_arrive": "导航至分界洲岛游客中心，停1号或2号停车场，步行至码头距离最短，带老人小孩更省力。",
+          "internal_traffic": "环岛观光车目前暂停营业（2026年8月10日起整改），恢复时间以官方当日公告为准。当前只能步行游览，建议穿舒适运动鞋，做好防晒。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "岛上设有悬崖酒店和民宿；若不住岛上，推荐住在香水湾或清水湾附近，打车10-20分钟可达码头，性价比更高，部分酒店提供免费码头接送。\n\n长辈建议：岛上坡道较多，建议购买观光车票（恢复后）省力；70岁以上老人门票船票通常免票，需带证件到窗口办理；可在欢喜堂站凭车票喝杯咖啡休息，俯瞰海景不费体力。\n\n儿童建议：1.2米以下儿童免票；沙滩有珊瑚碎，务必给孩子穿溯溪鞋或沙滩鞋，避免光脚划伤；魔鬼鱼互动适合5岁以上孩子，低龄宝宝建议先在沙滩玩沙踏浪。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "岛上坡道较多，建议购买观光车票（恢复后）省力；70岁以上老人门票船票通常免票，需带证件到窗口办理；可在欢喜堂站凭车票喝杯咖啡休息，俯瞰海景不费体力",
+          "children": "1.2米以下儿童免票；沙滩有珊瑚碎，务必给孩子穿溯溪鞋或沙滩鞋，避免光脚划伤；魔鬼鱼互动适合5岁以上孩子，低龄宝宝建议先在沙滩玩沙踏浪。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力精华游（步行版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "上岛码头 ➡️ 海洋剧场 ➡️ 月光古堡（彩虹公路） ➡️ 魔鬼鱼互动区 ➡️ 大洞天站（分界书屋",
+            "热气球",
+            "果冻海） ➡️ 风动石站（悬崖栈道",
+            "悬崖木屋） ➡️ 欢喜堂站（山顶俯瞰",
+            "免费咖啡） ➡️ 约风亭站（决断谷",
+            "悬崖观景台） ➡️ 返回码头离岛"
+          ],
+          "duration": "半天",
+          "walking": "约3-4公里，部分路段有坡度",
+          "physical": 3,
+          "tips": [
+            "上岛后先步行游览观光车不停靠的月光古堡和魔鬼鱼互动区，再前往大洞天站，最后按顺序打卡山顶各站，不走回头路；建议官方当日建议时段开岛即登岛，上午魔鬼鱼更活跃，且能避开午后暴晒。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Fenjiezhou in Lingshui.jpg",
+        "author": "Zhangmoon618",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fenjiezhou_in_Lingshui.jpg",
+        "width": 3840,
+        "height": 2341
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_35a844c9ee",
+      "id": "manual_hainan_5f16b260",
+      "name": "呀诺达雨林文化旅游区",
+      "city": "海南",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hainan_5f16b260_verified.jpg",
+      "description": "呀诺达热带雨林景区是比较有观赏价值的热带雨林资源博览馆。景区主要由经石峡、梦幻谷、黎锦苑、山盟海誓、快乐体验、热带瓜果乡、雨林水族馆、欢乐雨林“呀诺达”大型演艺和综合服务区九个主题景观区组成。",
+      "intro": "呀诺达热带雨林景区是比较有观赏价值的热带雨林资源博览馆。景区主要由经石峡、梦幻谷、黎锦苑、山盟海誓、快乐体验、热带瓜果乡、雨林水族馆、欢乐雨林“呀诺达”大型演艺和综合服务区九个主题景观区组成。",
+      "level": "5A景区",
+      "category": "热带雨林生态旅游区",
+      "tags": [
+        "热带雨林生态旅游区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "海南省保亭黎族苗族自治县三道镇三道广场",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "三亚市区自驾约 40 分钟，海口自驾约 2.5-3 小时；三亚部分区域有景区专线大巴或免费接送车（需提前预约），也可乘坐网约车或出租车直达。",
+          "internal_arrive": "从景区游客中心入园，此处可领取景区地图、寄存行李、购买套票并乘坐内部接驳车。",
+          "internal_traffic": "景区内有雨林巴士（观光车）、缆车和高空滑索。巴士和缆车负责连接游客中心与核心观景平台，滑索可作为下山代步工具，各交通节点均有工作人员引导。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内设有雨林度假酒店，适合安排 1-2 天深度游；也可选择住在三亚市区或海棠湾，当日往返。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "推荐乘坐缆车上山、巴士下山，多利用观光车减少步行；重点游览玻璃平台和萌宠乐园，避开陡峭台阶和溯溪项目",
+          "children": "1.2 米以上儿童可体验高空滑索和萌宠互动；若参与踏瀑戏水需全程家长陪同，且最后关卡无法体验，建议备好全套换洗衣物和手机防水袋。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲游（不玩水）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "乘坐雨林巴士或缆车上山",
+            "哇哎噜玻璃观景平台",
+            "高空滑索下山",
+            "湿地萌宠乐园",
+            "兰花溪",
+            "雨林谷木栈道",
+            "返回游客中心"
+          ],
+          "duration": "半天",
+          "walking": "约 3-4 公里（以木栈道和砖路为主，坡度平缓）",
+          "physical": 2,
+          "tips": [
+            "景区内面积较大，务必全程乘坐观光车接驳，避免体力透支；热带雨林蚊虫较多，需全程做好防蚊和防晒措施。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "呀诺达雨林文化旅游区 - panoramio.jpg",
+        "author": "caoyadong",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%91%80%E8%AF%BA%E8%BE%BE%E9%9B%A8%E6%9E%97%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA_-_panoramio.jpg",
+        "width": 5760,
+        "height": 3840
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_6c425cc2b0",
+      "id": "manual_hainan_49907a95",
+      "name": "西岛",
+      "city": "三亚",
+      "rating": 4.6,
+      "reviewsCount": "18361条携程点评",
+      "image": "/assets/images/attractions/hainan_49907a95_verified.jpg",
+      "description": "西岛，位于三亚湾的中心位置，是海南的原住民旅游海岛，全岛面积2.8平方公里。岛上风景秀丽，海水清澈见底，是一个集海滨风光、沙滩浴、休闲娱乐、海洋探险于一体的综合性旅游区。",
+      "intro": "西岛，位于三亚湾的中心位置，是海南的原住民旅游海岛，全岛面积2.8平方公里。岛上风景秀丽，海水清澈见底，是一个集海滨风光、沙滩浴、休闲娱乐、海洋探险于一体的综合性旅游区。",
+      "level": "热门景点",
+      "category": "海岛、渔村、海滨浴场",
+      "tags": [
+        "海岛、渔村、海滨浴场",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省三亚市天涯区肖旗港码头",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾或打车导航至“肖旗港码头”（西岛海洋文化旅游区游客中心），乘船约 15 分钟上岛。",
+          "internal_arrive": "从游客中心统一登岛，下船后在游客中心换乘观光车或步行进入景区。",
+          "internal_traffic": "岛内主要依靠官方观光车（游客中心至牛王岭/乌龟滩）和步行；渔村内部可步行或租用电动车（注意部分环岛路段限行）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "岛上渔村民宿（方便感受烟火气、赶海）或景区内酒店（如西岛剑麻酒店，离海滨浴场近，但夜间景区关门后进出需注意）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "避免爬山，牛王岭只在观景台或山下休息；多利用观光车代步，在渔村和海滨浴场慢走；注意防晒和防蚊",
+          "children": "带齐挖沙工具和换洗衣物；乌龟滩和海滨浴场适合捡贝壳、看海龟；全程可推婴儿车，但部分礁石滩需穿防滑鞋。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲游（观光车+渔村慢步）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "海滨浴场（玩沙踏浪）",
+            "渔村（珊瑚墙",
+            "百年珊瑚老屋",
+            "海上书房）",
+            "牛王岭（观景台俯瞰）",
+            "乌龟滩（看海龟",
+            "捡贝壳）",
+            "游客中心"
+          ],
+          "duration": "半天",
+          "walking": "约 2 公里（以观光车代步为主，渔村段步行）",
+          "physical": 2,
+          "tips": [
+            "建议购买包含观光车的套票，去程坐右侧看海岸线，返程坐左侧；牛王岭山顶需爬山，老人和儿童建议在观景台或山下休息，不必强求登顶。"
+          ],
+          "sourceTitle": "携程旅行 西岛 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/sanya61/48963.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hainan100001.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 西岛 详情页：https://you.ctrip.com/sight/sanya61/48963.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 西岛 详情页",
+          "url": "https://you.ctrip.com/sight/sanya61/48963.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西岛 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/sanya61/48963.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/sanya61/48963.html?poiType=3&scene=online",
+        "width": 5472,
+        "height": 3078
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a2b373a3ad",
+      "id": "manual_hainan_67c4cc30",
+      "name": "万宁石梅湾旅游度假区",
+      "city": "万宁",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/hainan_67c4cc30_verified.jpg",
+      "description": "万宁石梅湾旅游度假区位于海南省万宁市海南环岛旅游公路，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "万宁石梅湾旅游度假区位于海南省万宁市海南环岛旅游公路，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "海滨度假区",
+      "tags": [
+        "海滨度假区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "海南省万宁市海南环岛旅游公路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "高铁可至神州站（打车约10分钟）或万宁站（打车约20分钟）；自驾导航至“石梅湾九里停车场”或“P1公共停车场”。",
+          "internal_arrive": "推荐从九里停车场或P1公共停车场进入，步行3-5分钟即可到达核心打卡区，避免直接驶入酒店区域产生高额停车费。",
+          "internal_traffic": "景区沿线景点较近，建议租用电动车随停随走；也可在部分点位间打车或乘坐接驳车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐石梅湾九里小区（民宿性价比高，可做饭）或威斯汀/艾美度假酒店（亲子设施完善，沙滩体验佳）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "观海亭俯瞰全景、沙滩散步看日落，节奏舒缓不费力",
+          "children": "酒店沙滩挖沙玩水、M1咖啡奇幻工场室内游乐，安全且互动性强。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "沿海休闲漫步与日落追光",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "凤凰九里书屋",
+            "GoofyDog",
+            "CASHCOW",
+            "威斯汀/艾美酒店沙滩",
+            "观海亭",
+            "海狼日记"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（可分段骑行或打车）",
+          "physical": 2,
+          "tips": [
+            "建议较合适时段前或较合适时段后前往，避开烈日暴晒；书屋内请保持安静，拍照时关闭闪光灯。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 石梅湾：https://www.amap.com/place/B076A00310"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 石梅湾",
+          "url": "https://www.amap.com/place/B076A00310",
+          "poiId": "B076A00310",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "万宁石梅湾旅游度假区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B076A00310",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_18f9258d53",
+      "id": "manual_hainan_f3468032",
+      "name": "骑楼老街",
+      "city": "海口",
+      "rating": 4.6,
+      "reviewsCount": "3916条携程点评",
+      "image": "/assets/images/attractions/hainan_f3468032_verified.jpg",
+      "description": "骑楼老街是海口市一处极具特色的街道景观，主要分布在得胜沙路、新华南路、中山路、博爱路及解放路一带。骑楼是从南洋回来的华侨借鉴当地的建筑风格所建，现在这些南洋建筑经营着各种店铺。",
+      "intro": "骑楼老街是海口市一处极具特色的街道景观，主要分布在得胜沙路、新华南路、中山路、博爱路及解放路一带。骑楼是从南洋回来的华侨借鉴当地的建筑风格所建，现在这些南洋建筑经营着各种店铺。",
+      "level": "热门景点",
+      "category": "历史文化街区 / 开放式景区",
+      "tags": [
+        "历史文化街区 / 开放式景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海口市龙华区中山路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐公交至“钟楼站”或“水巷口站”步行可达；自驾可导航至“骑楼老街P3停车场”或周边停车场，节假日车位紧张，建议尽早前往。",
+          "internal_arrive": "推荐从“骑楼老街北门”进入，出门即可打卡海口钟楼，动线顺畅不绕路。",
+          "internal_traffic": "街区内部均为步行，路面平坦；北广场处设有游览车，70岁以上老人、1.4米以下儿童及残疾人可免费乘坐（具体以官方当日公告为准）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在新华南路、多宝利商业广场或金棕榈文化商业广场附近，步行即可到达老街，周边餐饮和交通配套成熟。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "全程有骑楼长廊遮阴，路面平坦，可边走边歇，体力消耗小",
+          "children": "街道宽敞安全，可体验椰雕手作，沿途小吃丰富，推车友好。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典地标与美食逛吃线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "海口钟楼",
+            "中山路（天后宫",
+            "非遗文化展示馆",
+            "尚南堂）",
+            "水巷口（品尝辣汤饭",
+            "虾饼）",
+            "博爱北路（见外民宿三楼露台俯瞰全景）",
+            "东门市场（感受市井烟火气）"
+          ],
+          "duration": "半天",
+          "walking": "约 1.5 公里",
+          "physical": 2,
+          "tips": [
+            "建议傍晚 官方当日建议时段 后前往，此时光线柔和且气温适宜，亮灯后的骑楼夜景氛围感更佳。"
+          ],
+          "sourceTitle": "携程旅行 骑楼老街 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/haikou37/52006.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/haikou37/52006.html?poiType=3&scene=online",
+          "高德地图 骑楼老街北门广场：https://www.amap.com/place/B0FFFEBFQT"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 骑楼老街 详情页",
+          "url": "https://you.ctrip.com/sight/haikou37/52006.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "骑楼老街 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFEBFQT",
+        "width": 2000,
+        "height": 1500
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_5a389e890f",
+      "id": "manual_hainan_dc2c1281",
+      "name": "海南省博物馆",
+      "city": "海口",
+      "rating": 4.8,
+      "reviewsCount": "1144条携程点评",
+      "image": "/assets/images/attractions/hainan_dc2c1281_verified.jpg",
+      "description": "海南省博物馆是海南省内一座综合性博物馆，坐落于海口市琼山区国兴大道76号，于2008年11月15日开馆，为国家一级博物馆、国家4A级旅游景区。先后获评“全国文化和旅游系统先进集体”“全国文物系统先进集体”，并入选全国中小学生研学实践教育基地、全国首批“大思政课”实践教学基地。",
+      "intro": "海南省博物馆是海南省内一座综合性博物馆，坐落于海口市琼山区国兴大道76号，于2008年11月15日开馆，为国家一级博物馆、国家4A级旅游景区。先后获评“全国文化和旅游系统先进集体”“全国文物系统先进集体”，并入选全国中小学生研学实践教育基地、全国首批“大思政课”实践教学基地。",
+      "level": "博物馆",
+      "category": "博物馆、4A景区",
+      "tags": [
+        "博物馆、4A景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省海口市琼山区国兴大道68号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地址为海口市琼山区国兴大道68号。自驾可导航至馆内停车场（免费，车位充足）；公交可乘坐多路公交至海南广场站或省博物馆站下车。",
+          "internal_arrive": "建议从北门进入，距离游客中心、寄存柜和租车处更近，方便家庭快速安顿。",
+          "internal_traffic": "馆内各楼层之间主要通过电梯连接，对长辈和推婴儿车的家庭非常友好，无需爬楼梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在国兴大道商圈或骑楼老街附近，交通便利，逛完博物馆后周边餐饮选择多，方便休息和就餐。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "馆内有电梯和充足休息区，可放慢节奏，重点看历史与民俗展区",
+          "children": "一楼沉船展厅和三楼非遗互动区（如黎族船型屋、电子琼戏台）趣味性强，可让孩子寻找特定展品或盖章打卡，增加参与感。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "三层渐进式精华游（1楼→2楼→3楼）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1楼南溟泛舸（南海海洋文明陈列，必看华光礁Ⅰ号沉船）",
+            "2楼方外封疆（海南历史陈列，看镇馆之宝）+ 木中皇后（海南黄花梨）+ 香中魁首（海南沉香）",
+            "3楼仙凡之间（海南风情陈列）+ 琼工坊",
+            "琼肴街",
+            "琼崖村",
+            "琼戏台（黎族非遗与民俗体验）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "馆内空调较足，建议给长辈和儿童带件薄外套；一楼游客中心可租儿童推车；建议租借讲解器或关注定时免费人工讲解；一楼文创店可盖章打卡，建议自带小本子。"
+          ],
+          "sourceTitle": "携程旅行 海南省博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/haikou37/66489.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/haikou37/66489.html?poiType=3&scene=online",
+          "高德地图 海南省博物馆：https://www.amap.com/place/B038202RCN"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 海南省博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/haikou37/66489.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "海南省博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B038202RCN",
+        "width": 2000,
+        "height": 1250
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_63ee9d4698",
+      "id": "manual_hainan_7f2bf84",
+      "name": "云洞图书馆",
+      "city": "海口",
+      "rating": 4.4,
+      "reviewsCount": "41条携程点评",
+      "image": "/assets/images/attractions/hainan_7f2bf84_verified.jpg",
+      "description": "海口云洞图书馆紧邻大海，总面积约七百多平方米，图书馆藏书种类丰富，里面还设有阅读区、露台和咖啡厅。",
+      "intro": "海口云洞图书馆紧邻大海，总面积约七百多平方米，图书馆藏书种类丰富，里面还设有阅读区、露台和咖啡厅。",
+      "level": "热门景点",
+      "category": "城市文化地标、滨海观景空间、亲子休闲公园",
+      "tags": [
+        "城市文化地标、滨海观景空间、亲子休闲公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省海口市龙华区世纪广场路1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至世纪公园停车场或市民游客中心停车场；公交可乘坐32、50、77等路至世纪公园站或市民游客中心站。",
+          "internal_arrive": "若仅在馆外拍照、逛世纪公园，无需预约，随时可进入；若需进入云洞图书馆内部阅览，需提前在官方公众号实名预约。",
+          "internal_traffic": "馆内为两层纯白流线型空间，设有平缓坡道与无障碍通道；馆外可乘坐电梯直达世纪大桥观景层。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择骑楼老街或海口湾附近酒店，距离景区较近，周边餐饮与配套完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "馆外步道与世纪公园地势平缓，配备无障碍通道和休息区，适合长辈慢走观景",
+          "children": "世纪公园内有免费儿童游乐区、沙池和超大草坪，适合儿童跑动玩耍，馆内也设有儿童互动绘本区（需预约入馆）。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "云端漫步与绝美日落省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "云洞图书馆馆外镜面水池（拍照打卡）",
+            "云洞图书馆环形廊道与沙池（感受建筑光影）",
+            "世纪公园大草坪（休息野餐",
+            "儿童游玩）",
+            "世纪大桥电梯观景台（俯瞰海口湾全景）",
+            "云洞图书馆馆外海边步道（观赏日落晚霞）"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（全程平缓，以散步为主）",
+          "physical": 1,
+          "tips": [
+            "10岁以下儿童无法入馆，建议在馆外及世纪公园游玩；较合适时段后前往，避开烈日，傍晚可看绝美日落。"
+          ],
+          "sourceTitle": "携程旅行 云洞图书馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online",
+          "高德地图 海口云洞图书馆：https://www.amap.com/place/B0HADHDFW5"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 云洞图书馆 详情页",
+          "url": "https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "云洞图书馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/haikou37/130367420.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1366
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_5cb06ec1a5",
+      "id": "manual_hainan_a50af692",
+      "name": "东郊椰林",
+      "city": "文昌",
+      "rating": 4,
+      "reviewsCount": "519条携程点评",
+      "image": "/assets/images/attractions/hainan_a50af692_verified.jpg",
+      "description": "东郊椰林风景区位于文昌市东郊镇海滨，这里椰林成片，海韵悠悠，风光旖旎。还可品尝到多种椰香浓郁的特色美食。",
+      "intro": "东郊椰林风景区位于文昌市东郊镇海滨，这里椰林成片，海韵悠悠，风光旖旎。还可品尝到多种椰香浓郁的特色美食。",
+      "level": "热门景点",
+      "category": "自然风光/滨海椰林",
+      "tags": [
+        "自然风光/滨海椰林",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省文昌市东郊镇东郊椰林壹号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“东郊椰林”或“椰林湾”，经清澜大桥直达，路况良好；公共交通可乘高铁至文昌站，再打车或乘坐游3路公交前往。",
+          "internal_arrive": "景区为开放式自然区域，无传统大门，建议直接导航至“椰林湾”或“椰林1号观景台”作为核心游玩入口。",
+          "internal_traffic": "景区内道路较长，强烈建议自驾、租用电动车或乘坐景区观光车，步行游览非常耗时且易疲劳。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在椰林壹号或百莱玛度假村附近的民宿与农家乐，性价比高且方便进出；若看火箭发射可提前确认周边住宿的接送与观演条件。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "全程以观光车和自驾为主，避免长时间暴晒和走沙地",
+          "children": "沙滩沙质细腻适合挖沙，但海边风浪大需全程看护，务必做好防蚊防晒。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "椰林海岸自驾观光车省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "椰林公路（自驾穿梭椰林小道）",
+            "椰林湾沙滩（细沙踩水",
+            "赶海）",
+            "百莱玛度假村（歪脖子椰树打卡",
+            "观海平台）",
+            "椰林1号观景台（俯瞰椰林海湾",
+            "远眺火箭发射架）"
+          ],
+          "duration": "半天",
+          "walking": "少（主要依靠自驾和观光车，仅在沙滩和观景台短途步行）",
+          "physical": 2,
+          "tips": [
+            "景区面积大且无单一入口，自驾最方便；可乘坐景区观光车（费用以官方当日公告为准往返，可尝试砍价）代步，避免暴晒和疲劳步行。"
+          ],
+          "sourceTitle": "携程旅行 东郊椰林 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online",
+          "高德地图 东郊椰林风景名胜区：https://www.amap.com/place/B07650045V"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 东郊椰林 详情页",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "东郊椰林 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/wenchang1007/3185.html?poiType=3&scene=online",
+        "width": 6000,
+        "height": 4000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_d7073fc3ed",
+      "id": "manual_hainan_c26fdd45",
+      "name": "铜鼓岭",
+      "city": "文昌",
+      "rating": 4.4,
+      "reviewsCount": "2703条携程点评",
+      "image": "/assets/images/attractions/hainan_c26fdd45_verified.jpg",
+      "description": "海南铜鼓岭景区是由“一岭二园”构成，即铜鼓岭、红树林生态园和石头公园，聚山、海、林、石、滩、河、湖、岛八大旅游资源，集热带常绿季雨矮林科普、海洋文化、伏波文化、生态文化、爱情文化为一体。 \\n \\n铜鼓岭主峰海拔 338 米，是海南岛最东端的临海山岭，素有“琼东第一峰”之称。",
+      "intro": "海南铜鼓岭景区是由“一岭二园”构成，即铜鼓岭、红树林生态园和石头公园，聚山、海、林、石、滩、河、湖、岛八大旅游资源，集热带常绿季雨矮林科普、海洋文化、伏波文化、生态文化、爱情文化为一体。 \\n \\n铜鼓岭主峰海拔 338 米，是海南岛最东端的临海山岭，素有“琼东第一峰”之称。",
+      "level": "热门景点",
+      "category": "自然山海观景",
+      "tags": [
+        "自然山海观景",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省文昌市陈笠村附近",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至铜鼓岭景区游客中心，停车场车位充足；公共交通可在文昌市区乘坐游1路或游2路公交车直达景区。",
+          "internal_arrive": "建议从游客中心主入口进入，购票后凭码入园，乘车通道与徒步通道分开，家庭出行直接走乘车通道。",
+          "internal_traffic": "景区内必须乘坐观光车上下山，私家车不可上山，观光车车程约10-15分钟直达半山腰。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在龙楼镇（距景区近，方便吃海鲜）或文昌市区（餐饮丰富，性价比高，距景区约30-40分钟车程）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "强烈建议购买往返观光车票，避免爬山劳累；穿防滑运动鞋，带一件薄外套防风防晒；在望京亭等平缓区域歇脚，量力而行",
+          "children": "观光车乘坐过程孩子会觉得有趣；备好零食和水；在揽月台和观海长廊等安全区域观景，注意台阶安全，不要靠近悬崖边缘。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "观光车省力登顶看海线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "乘观光车至半山腰",
+            "步行至揽月台（俯瞰月亮湾全景）",
+            "观海长廊（近距离看海岸线）",
+            "风动石（打卡奇石）",
+            "望京亭（歇脚远眺）",
+            "乘观光车或沿伏波古道下山"
+          ],
+          "duration": "半天",
+          "walking": "约300米平缓步道及少量台阶",
+          "physical": 2,
+          "tips": [
+            "一定要选大晴天前往，阴天或大雾天会严重影响观景体验；山顶风大，戴帽子务必系绳；自备少量水和零食，山顶餐饮选择较少。"
+          ],
+          "sourceTitle": "携程旅行 铜鼓岭 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/wenchang1007/3186.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/wenchang1007/3186.html?poiType=3&scene=online",
+          "高德地图 铜鼓岭景区：https://www.amap.com/place/B07650044E"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 铜鼓岭 详情页",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3186.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "铜鼓岭 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B07650044E",
+        "width": 1864,
+        "height": 4096
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_b1cba04135",
+      "id": "manual_hainan_465f4805",
+      "name": "木兰湾",
+      "city": "文昌",
+      "rating": 4.5,
+      "reviewsCount": "28条携程点评",
+      "image": "/assets/images/attractions/hainan_465f4805_verified.jpg",
+      "description": "形状似三角形，位于文昌市北端的铺前镇，形状似三角形，由木兰头、木兰湾和30平方公里的宽阔腹地组成，与七星岭相连，与海口市海上直线距离49公里，陆路距离90公里。\\n \\n该湾水深浪平,岸边海底基础为石质，可停万吨巨轮，距国际航线3海里，条件成熟时，可辟为深水港。",
+      "intro": "形状似三角形，位于文昌市北端的铺前镇，形状似三角形，由木兰头、木兰湾和30平方公里的宽阔腹地组成，与七星岭相连，与海口市海上直线距离49公里，陆路距离90公里。\\n \\n该湾水深浪平,岸边海底基础为石质，可停万吨巨轮，距国际航线3海里，条件成熟时，可辟为深水港。",
+      "level": "热门景点",
+      "category": "自然海湾/灯塔/风车海岸",
+      "tags": [
+        "自然海湾/灯塔/风车海岸",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省文昌市铺前镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "建议自驾，导航至“木兰湾灯塔”或“风车3号观景台”。从海口市区经海文大桥车程约1小时，文昌市区车程约50分钟。公共交通可先至铺前镇再打车，但返程较难打车，建议提前预约。",
+          "internal_arrive": "直接导航“木兰湾灯塔”，P1/P2停车场车位充足，停好车步行约100米即达核心区。",
+          "internal_traffic": "景区内部以自驾沿环岛旅游公路游览为主，部分路段可步行或骑行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在铺前镇（民宿性价比高，餐饮选择多）或文昌市区（酒店设施完善，适合后续游玩航天科普中心）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "灯塔内设有电梯和无障碍通道，无需爬楼梯即可登顶观景；海边风大，需备薄外套防风保暖",
+          "children": "东侧浅滩沙质绵软、水位浅，适合挖沙踩水；可提前准备挖沙工具和赶海夹子，退潮时可在安全区域观察小螃蟹。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "灯塔风车海岸亲子省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "木兰湾灯塔（电梯登顶俯瞰玻璃海）",
+            "东侧细软沙滩（浅滩踩水",
+            "挖沙）",
+            "风车海岸公路（自驾或漫步，打卡巨型风车与海景同框）",
+            "西侧火山礁石滩（退潮时观海",
+            "拍情绪风大片）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "沿途商业配套少，务必自带饮用水、零食和垃圾袋；礁石区布满海蛎壳，必须穿防滑洞洞鞋或溯溪鞋，严禁光脚。"
+          ],
+          "sourceTitle": "携程旅行 木兰湾 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/wenchang1007/3187.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/wenchang1007/3187.html?poiType=3&scene=online",
+          "高德地图 木兰湾：https://www.amap.com/place/B0FFFDG1NV"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 木兰湾 详情页",
+          "url": "https://you.ctrip.com/sight/wenchang1007/3187.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "木兰湾 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFDG1NV",
+        "width": 1280,
+        "height": 720
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_cae8a1cb32",
+      "id": "manual_hainan_4b2dee0",
+      "name": "南海博物馆",
+      "city": "琼海",
+      "rating": 4.8,
+      "reviewsCount": "67条携程点评",
+      "image": "/assets/images/attractions/hainan_4b2dee0_verified.jpg",
+      "description": "中国(海南)南海博物馆坐落于潭门中心渔港，外观融合现代美学风格与中国文化元素，取义“丝路逐浪，南海之舟”。馆内有各类藏品7万多件，包括历代外销文物、南海生物标本、海南历史文物、历代船模等，以展示南海人文历史、自然生态、文化遗产保护以及我国与南海周边国家的经贸交往、文化交流为主。",
+      "intro": "中国(海南)南海博物馆坐落于潭门中心渔港，外观融合现代美学风格与中国文化元素，取义“丝路逐浪，南海之舟”。馆内有各类藏品7万多件，包括历代外销文物、南海生物标本、海南历史文物、历代船模等，以展示南海人文历史、自然生态、文化遗产保护以及我国与南海周边国家的经贸交往、文化交流为主。",
+      "level": "博物馆",
+      "category": "国家一级博物馆、4A级旅游景区、海洋人文与水下考古专题馆",
+      "tags": [
+        "国家一级博物馆、4A级旅游景区、海洋人文与水下考古专题馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省琼海市潭门镇博物馆路1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“中国（海南）南海博物馆北区3号门”或“南区停车场”，停车免费；公共交通可乘坐琼海15路或博鳌13路公交至附近站点后步行前往。",
+          "internal_arrive": "推荐从北区3号门（北门）进，进门即达1层鲸类标本展，且停车场距离近；若从南区进，安检后直接到达2层大厅。",
+          "internal_traffic": "馆内南北区各楼层均配备电梯，2层有空中连廊连接南北区，全程无障碍通行，无需上下楼梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择潭门镇（距离近，可去海鲜市场吃海鲜）或博鳌镇（距离约9公里，配套更完善，适合看海休闲）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "馆内电梯和休息区充足，可慢慢逛，重点看沉船文物和渔家文化展，建议蹭免费人工讲解",
+          "children": "鲸鱼骨架、沉船复原、地面投影互动和模拟考古区非常吸引孩子，可租婴儿车，馆内母婴室和卫生间齐全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南北区精华省力游（家庭首选）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "北区1层（南海鲸灵·鲸类标本展）",
+            "南区2层（南海人文历史陈列",
+            "华光礁Ⅰ号沉船特展）",
+            "空中连廊（观海拍照）",
+            "南区3层（深蓝宝藏沉船考古特展",
+            "做海渔家文化展）",
+            "南区1层（南海自然生态陈列）"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里",
+          "physical": 3,
+          "tips": [
+            "馆内空间较大，建议穿舒适运动鞋；可租用免费婴儿车或轮椅；每层均有休息座椅和直饮水，建议带一件薄外套以防空调偏冷。"
+          ],
+          "sourceTitle": "携程旅行 南海博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 南海博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "南海博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/qionghai843/4941343.html?poiType=3&scene=online",
+        "width": 3660,
+        "height": 2440
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4cded2f299",
+      "id": "manual_hainan_40866fd9",
+      "name": "博鳌亚洲论坛永久会址",
+      "city": "琼海",
+      "rating": 4.2,
+      "reviewsCount": "2181条携程点评",
+      "image": "/assets/images/attractions/hainan_40866fd9_verified.jpg",
+      "description": "博鳌亚洲论坛永久会址景区覆盖了海南省琼海市的东屿岛，这里深受欢迎，不容错过的当属那气势恢宏的会议中心、拥有神奇回音效应的祈运台(龙颈穴)和玉带滩这个三江入海交汇处的奇特景点了。 \\n景区的售票点在岛外，购买门票后，便可乘坐景区的电瓶车经过培兰大桥上岛。",
+      "intro": "博鳌亚洲论坛永久会址景区覆盖了海南省琼海市的东屿岛，这里深受欢迎，不容错过的当属那气势恢宏的会议中心、拥有神奇回音效应的祈运台(龙颈穴)和玉带滩这个三江入海交汇处的奇特景点了。 \\n景区的售票点在岛外，购买门票后，便可乘坐景区的电瓶车经过培兰大桥上岛。",
+      "level": "热门景点",
+      "category": "会议地标 / 滨海观景 / 亲子休闲",
+      "tags": [
+        "会议地标 / 滨海观景 / 亲子休闲",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省琼海市博鳌镇远洋大道1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至\"博鳌亚洲论坛永久会址-水城路入口\"（新能源车可直接上岛）；油车需停游客中心停车场换乘接驳车。高铁到博鳌站后打车约 15 分钟可达。",
+          "internal_arrive": "优先走水城路入口（东边隧道入岛），新能源车可直接开到核心景区附近；西门（游客中心）非景区车辆禁入，需购票换乘观光车。",
+          "internal_traffic": "景区内有无障碍通道覆盖，步行即可串联各打卡点；如需代步可乘坐景区新能源接驳车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "岛上有博鳌亚洲论坛大酒店等住宿选择，周边博鳌镇老街、沙美村、潭门渔港也有民宿和餐饮配套。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "全程平缓好走，树荫多不晒，无障碍通道覆盖率高，适合慢节奏游览",
+          "children": "湖边可喂黑天鹅，草坪可跑跳放电，有\"小外交官\"发言体验，互动性强。\n\n补充避坑提醒：\n\n东屿岛为零碳示范区，油车不能上岛，新能源车可直接进。\n主会场内部需单独购票，外围打卡点全部免费，不执着于看会议室可不买票。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "会址外围轻游 + 三江入海观景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "迎宾广场（国旗环岛）",
+            "会议中心喷泉广场",
+            "祈运台·龙颈穴",
+            "鳌石广场观景台",
+            "新闻中心外围",
+            "万泉河入海口观景"
+          ],
+          "duration": "半天",
+          "walking": "约 1.5 公里",
+          "physical": 2,
+          "tips": [
+            "全程平缓、树荫较多，适合推婴儿车；建议下午 3 点后前往，避开正午暴晒，还能顺路看落日。"
+          ],
+          "sourceTitle": "携程旅行 博鳌亚洲论坛永久会址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/qionghai843/54550.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/qionghai843/54550.html?poiType=3&scene=online",
+          "高德地图 博鳌亚洲论坛永久会址景区：https://www.amap.com/place/B0766003XK"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 博鳌亚洲论坛永久会址 详情页",
+          "url": "https://you.ctrip.com/sight/qionghai843/54550.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "博鳌亚洲论坛永久会址 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0766003XK",
+        "width": 1440,
+        "height": 1080
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_ebd555783b",
+      "id": "manual_hainan_ccec71d3",
+      "name": "玉带滩",
+      "city": "琼海",
+      "rating": 4.4,
+      "reviewsCount": "696条携程点评",
+      "image": "/assets/images/attractions/hainan_ccec71d3_verified.jpg",
+      "description": "玉带滩是琼海市博鳌镇一处沙滩半岛，这里有着河、海交汇处的独特景观。站在狭长的玉带滩上，一侧是波涛汹涌的南海，一侧是风平浪静的三江交汇处（万泉河、龙滚河和九龙江），景色非常奇特。",
+      "intro": "玉带滩是琼海市博鳌镇一处沙滩半岛，这里有着河、海交汇处的独特景观。站在狭长的玉带滩上，一侧是波涛汹涌的南海，一侧是风平浪静的三江交汇处（万泉河、龙滚河和九龙江），景色非常奇特。",
+      "level": "热门景点",
+      "category": "自然沙滩半岛、河海分界奇观",
+      "tags": [
+        "自然沙滩半岛、河海分界奇观",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省琼海市远洋大道1号博鳌亚洲论坛永久会址景区内",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至\"博鳌亚洲论坛成立会址\"或\"东屿岛码头\"，停好车后步行至码头乘船；公共交通可先到琼海站或博鳌站，再打车前往博鳌镇码头。",
+          "internal_arrive": "推荐从博鳌亚洲论坛成立会址码头进入，这是最常规、最安全的乘船登滩入口，船班相对密集。",
+          "internal_traffic": "景区内部无观光车，主要靠步行；沙滩上有当地村民的沙滩车租赁，可代步前往三江汇合口，但需提前谈好价格和路线。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在博鳌镇或东屿岛附近，餐饮和住宿配套相对完善，方便游玩后休息和用餐。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "乘船登滩过程平缓，沙滩步行强度不大，适合长辈；但需注意沙滩防滑，避免在礁石区湿滑处行走",
+          "children": "沙滩细软、海浪相对温柔，适合小朋友在浅滩玩沙踩水；建议准备挖沙工具、防滑溯溪鞋和换洗衣物。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "乘船登滩·河海分界省力观景游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "博鳌亚洲论坛成立会址码头乘船登滩",
+            "沙滩漫步观赏河海分界线",
+            "圣公石礁石群拍照打卡",
+            "三江汇合口远眺",
+            "乘船返回码头"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（沙滩平缓慢行）",
+          "physical": 2,
+          "tips": [
+            "务必在退潮期前往，涨潮时沙滩面积骤减且存在安全隐患；沙滩无遮阳设施，需做好防晒；建议在岸边浅滩玩沙，切勿往深海区走。"
+          ],
+          "sourceTitle": "携程旅行 玉带滩 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online",
+          "高德地图 玉带滩：https://www.amap.com/place/B07660LPTT"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 玉带滩 详情页",
+          "url": "https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "玉带滩 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/qionghai843/54236.html?poiType=3&scene=online",
+        "width": 5464,
+        "height": 3640
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_eb60193138",
+      "id": "manual_hainan_9be5a25f",
+      "name": "日月湾",
+      "city": "万宁",
+      "rating": 4.7,
+      "reviewsCount": "200条携程点评",
+      "image": "/assets/images/attractions/hainan_9be5a25f_verified.jpg",
+      "description": "日月湾是国家AAA级旅游景区。日月湾海门浏览区位于素有“海南黄金海岸”之称的日月湾海边，距离海口市168公里，三亚市87公里，从东线高速公路日月湾 入口进入景区只有500米。",
+      "intro": "日月湾是国家AAA级旅游景区。日月湾海门浏览区位于素有“海南黄金海岸”之称的日月湾海边，距离海口市168公里，三亚市87公里，从东线高速公路日月湾 入口进入景区只有500米。",
+      "level": "热门景点",
+      "category": "海滨休闲、冲浪体验、网红打卡",
+      "tags": [
+        "海滨休闲、冲浪体验、网红打卡",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "万宁市海南环岛高速",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾走 G98 环岛高速从日月湾出口下；高铁到神州站或万宁站后打车前往，车程约几十分钟。",
+          "internal_arrive": "白天去沙滩玩可定位\"日月湾海门游览区\"；住宿或去日岛可定位\"万宁日月湾\"或\"融创日月湾\"。",
+          "internal_traffic": "岛内有摆渡车连接岛内与海滩、酒吧街（白天约 费用以官方当日公告为准，晚上约 费用以官方当日公告为准）；租小电驴（约 20-费用以官方当日公告为准/小时）或草莓熊三轮车（约 费用以官方当日公告为准/小时）沿椰林公路骑行最方便。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "分为三片——酒吧一条街（出门即沙滩但夜间较吵）、融创日月湾填岛（远离酒吧街，适合家庭，套房多）、田新村及后方村子（安静性价比高，但离海边有距离）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "避免住酒吧街附近，选择融创填岛或田新村更安静；以沙滩散步、喝咖啡、看海为主，不安排高强度项目",
+          "children": "4 岁以上可体验亲子冲浪（教练全程护持），沙滩挖沙、踩浪花是低龄宝宝快乐源泉；备长袖防晒泳衣、挖沙工具、防滑涉水鞋，正午避免暴晒。\n\n日月湾整体不大，核心玩法就是\"看海 + 喝咖啡 + 冲浪打卡\"，带长辈或小孩的话，租辆小电驴或三轮车沿着椰林公路慢慢晃，比纯步行省力很多。晚上酒吧街比较热闹，如果带小孩或长辈，住宿尽量避开酒吧街正对面。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "椰林海岸慢游线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "椰林公路",
+            "日月湾沙滩",
+            "海门椰坊",
+            "夏日冲浪店",
+            "216沙滩餐吧",
+            "融创教堂"
+          ],
+          "duration": "半天",
+          "walking": "约 2-3 公里（可租小电驴或三轮车代步）",
+          "physical": 2,
+          "tips": [
+            "海门椰坊建议上午去，人少不排队；正午阳光强烈，注意物理防晒，避免暴晒。"
+          ],
+          "sourceTitle": "携程旅行 日月湾 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 日月湾 详情页",
+          "url": "https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "日月湾 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/wanning846/3204.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1126
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_18e3762cd5",
+      "id": "manual_hainan_6a65088b",
+      "name": "神州半岛",
+      "city": "万宁",
+      "rating": 4.7,
+      "reviewsCount": "382条携程点评",
+      "image": "/assets/images/attractions/hainan_6a65088b_verified.jpg",
+      "description": "神州半岛位于万宁市东澳镇，这里三面环海，一面接陆，拥有原生态的海滨风光，如今随着岛上星级酒店、豪华别墅、高尔夫球场等的修建，更是增添了一份现代美。 神州半岛拥有内外双海，每个海湾都有着各自的风情，两岸婀娜的椰林、挺拔清秀的木麻黄，翠绿的山岭跌宕起伏，风光无限。",
+      "intro": "神州半岛位于万宁市东澳镇，这里三面环海，一面接陆，拥有原生态的海滨风光，如今随着岛上星级酒店、豪华别墅、高尔夫球场等的修建，更是增添了一份现代美。 神州半岛拥有内外双海，每个海湾都有着各自的风情，两岸婀娜的椰林、挺拔清秀的木麻黄，翠绿的山岭跌宕起伏，风光无限。",
+      "level": "热门景点",
+      "category": "滨海度假区",
+      "tags": [
+        "滨海度假区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省万宁市东澳镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可直接导航至神州半岛各酒店或停车场；若乘高铁，可坐到神州站，出站后打车约 10-20 分钟即可到达半岛核心区。",
+          "internal_arrive": "推荐从神州半岛旅游区大门停车场或君悦酒店附近进入，周边配套成熟，停车和换乘都比较方便。",
+          "internal_traffic": "半岛内最推荐租用电动车或三人座“八嘎车”环岛游玩，灵活且能吹海风；也可在景区门口乘坐 费用以官方当日公告为准左右的电动观光车前往灯塔等核心点。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "追求省心躺平可选神州半岛喜来登、君悦等一线海景度假酒店；追求性价比和美食便利，可选择神州小镇核心商业区的精品民宿或公寓，下楼就能逛街吃饭。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "全程以车代步，避免长时间步行；选择有泳池和草坪的酒店内休息，傍晚去沙滩散步吹海风；避开正午暴晒，注意防蚊",
+          "children": "内海浪小水浅，适合低龄娃踩水玩沙；可去桥海牧场喂小动物；务必带上挖沙工具，海边礁石区注意防滑和安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "椰林灯塔日落省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "椰林公路（拍照）",
+            "神州半岛灯塔（打卡）",
+            "科罗娜日落吧或喜来登沙滩（看晚霞）"
+          ],
+          "duration": "半天",
+          "walking": "约 3 公里（可分段乘坐观光车或电动车代步）",
+          "physical": 2,
+          "tips": [
+            "灯塔景区内部部分路段可能限制外来车辆进入，建议将车停在景区大门停车场，再换乘观光车或步行前往；傍晚 官方当日建议时段-官方当日建议时段 是看日落和拍照光线最好的时候，正午紫外线强，尽量安排在室内或树荫下休息。"
+          ],
+          "sourceTitle": "携程旅行 神州半岛 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/wanning846/3201.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/wanning846/3201.html?poiType=3&scene=online",
+          "高德地图 神州半岛旅游度假区：https://www.amap.com/place/B076A0LQWJ"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 神州半岛 详情页",
+          "url": "https://you.ctrip.com/sight/wanning846/3201.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "神州半岛 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B076A0LQWJ",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_41b8ff9faf",
+      "id": "manual_hainan_3f7b144e",
+      "name": "南湾猴岛",
+      "city": "陵水",
+      "rating": 4.3,
+      "reviewsCount": "1782条携程点评",
+      "image": "/assets/images/attractions/hainan_3f7b144e_verified.jpg",
+      "description": "南湾猴岛生态旅游区位于海南省陵水县南约14公里的南湾半岛。它依山傍水，三面环海，形状狭长，总面积为10.2平方公里，大小12个山头连绵起伏。",
+      "intro": "南湾猴岛生态旅游区位于海南省陵水县南约14公里的南湾半岛。它依山傍水，三面环海，形状狭长，总面积为10.2平方公里，大小12个山头连绵起伏。",
+      "level": "热门景点",
+      "category": "生态旅游区、猕猴自然保护区",
+      "tags": [
+        "生态旅游区、猕猴自然保护区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省陵水黎族自治县新村镇望海大道1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“南湾猴岛售票处”（陵水新村镇望海大道1号），三亚出发约75公里，车程1小时10分钟；公共交通可在陵水站打车前往。",
+          "internal_arrive": "从官方游客中心或售票处核验入园，建议官方当日建议时段前抵达以避开缆车排队高峰。",
+          "internal_traffic": "跨海缆车（往返含在门票内）、轮渡、电瓶观光车均可选，推荐缆车上山、轮渡或电瓶车下山以节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可住陵水新村镇或附近酒店，方便前往景区及新村夜市；也可住三亚，当日往返。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "全程可依赖缆车和电瓶车，避免爬台阶，注意防晒和防蚊",
+          "children": "可体验喂猴和看猴子跳水，但需全程看护，严禁私自伸手或翻包。\n\n补充几点实用提醒：\n\n猴子安全：不穿红色或亮色衣服，不戴项链耳环等闪亮饰品；猴子靠近时原地不动，切勿奔跑。\n防晒防蚊：岛上树荫不多，防晒帽、冰袖、驱蚊水必备。\n猴粮购买：只能在景区现场购买专用猴食，禁止自带零食投喂。\n返程安排：若选择轮渡返程，可顺便欣赏海上疍家渔排风光，傍晚时分拍照很出片。\n\n南湾猴岛整体面积不大，核心玩法集中在缆车观景和猕猴互动，2至3小时即可轻松逛完，非常适合家庭半日或一日游。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "缆车上山+核心区省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "跨海缆车上山",
+            "猕猴迎宾区",
+            "浴圣池（看猴子跳水）",
+            "猴艺剧场（以官方当日公告为准）",
+            "山林栈道与滨海观景台",
+            "乘轮渡或电瓶车返程"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "缆车选右侧座位可俯瞰疍家渔排；全程拉紧背包拉链，不拎塑料袋，不直视或逗弄猴子，投喂仅限景区专用猴食并由工作人员协助。"
+          ],
+          "sourceTitle": "携程旅行 南湾猴岛 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 南湾猴岛 详情页",
+          "url": "https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "南湾猴岛 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/lingshui1509/5712183.html?poiType=3&scene=online",
+        "width": 1920,
+        "height": 1080
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_4b7c350e38",
+      "id": "manual_hainan_9702ade7",
+      "name": "清水湾",
+      "city": "陵水",
+      "rating": 4.7,
+      "reviewsCount": "547条携程点评",
+      "image": "/assets/images/attractions/hainan_9702ade7_verified.jpg",
+      "description": "清水湾旅游区位于陵水县东部沿海，是一个由雅居乐集团管理的休闲胜地。在这里可将清水、白沙、奇岭、怪石等景色一览无余，奇妙的是，其弧形海岸一半是礁岩，一半是沙滩，同时拥有海南东西两地海岸风光。",
+      "intro": "清水湾旅游区位于陵水县东部沿海，是一个由雅居乐集团管理的休闲胜地。在这里可将清水、白沙、奇岭、怪石等景色一览无余，奇妙的是，其弧形海岸一半是礁岩，一半是沙滩，同时拥有海南东西两地海岸风光。",
+      "level": "热门景点",
+      "category": "海滨沙滩、休闲度假",
+      "tags": [
+        "海滨沙滩、休闲度假",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "清水湾大道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐高铁至陵水站，打车约30分钟抵达；或飞抵三亚凤凰机场后打车/租车前往。景区周边公共交通不便，强烈建议自驾或租赁电动车出行。",
+          "internal_arrive": "推荐导航至“瓦恩游牧沙滩酒吧”或“雅居乐清水湾瀚海银滩-西北门”，这两个入口靠近核心打卡点，且周边停车相对方便。",
+          "internal_traffic": "景区沿海岸线设有观光车/电瓶车，招手即停、随上随下（费用以官方当日公告为准），也可在主干道租用共享电动车，灵活且省力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "清水湾沿线分布着众多酒店与民宿。高端度假可选莱佛士酒店、威斯汀度假酒店；性价比高的公寓式民宿集中在瀚海银滩、云海帆歌等小区，部分楼栋可步行直达沙滩，周边餐饮和超市配套成熟。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "选择带电梯且离沙滩近的住宿，避免爬楼；游玩时走椰林景观道，避开正午暴晒，在沙滩椅休息吹海风即可，无需长时间步行",
+          "children": "沙滩沙子极细，适合挖沙玩沙，建议备好挖沙工具、溯溪鞋和防晒衣；在礁石区赶海时务必穿防滑鞋，注意脚下安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "椰林栈道休闲漫步游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "自由灯塔 ➠ 瓦恩游牧沙滩酒吧 ➠ 瀚海银滩歪脖子椰子树 ➠ 莱佛士大草坪 ➠ 龙头岭"
+          ],
+          "duration": "半天",
+          "walking": "约1.2-1.3公里",
+          "physical": 2,
+          "tips": [
+            "全程建议去程步行感受椰林海风，回程可在龙头岭乘坐观光车或电瓶车返回起点，避免暴晒和过度劳累。"
+          ],
+          "sourceTitle": "携程旅行 清水湾 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 清水湾 详情页",
+          "url": "https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "清水湾 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/lingshui1509/107590.html?poiType=3&scene=online",
+        "width": 4000,
+        "height": 2670
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_374a1a4b46",
+      "id": "manual_hainan_6a6d9398",
+      "name": "崖州古城",
+      "city": "三亚",
+      "rating": 4.4,
+      "reviewsCount": "158条携程点评",
+      "image": "/assets/images/attractions/hainan_6a6d9398_verified.jpg",
+      "description": "崖州古城就是现在的三亚市崖城镇，这里是历朝历代崖州郡治所在地。如今这里留存下来的完整古迹已经不多了，崖州学宫是其中具有代表性的一处，这里曾是古崖州的较高学府，不论是建筑还是留存的古物都值得细细品味。",
+      "intro": "崖州古城就是现在的三亚市崖城镇，这里是历朝历代崖州郡治所在地。如今这里留存下来的完整古迹已经不多了，崖州学宫是其中具有代表性的一处，这里曾是古崖州的较高学府，不论是建筑还是留存的古物都值得细细品味。",
+      "level": "热门景点",
+      "category": "历史文化古城、人文古迹",
+      "tags": [
+        "历史文化古城、人文古迹",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "海南省三亚市崖州区东门路77号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐环岛高铁至崖州站，出站后打车约10分钟或乘坐公交前往；从三亚市区自驾或打车约需50分钟至1小时。",
+          "internal_arrive": "建议从文明门（南门）进入，这里是古城的标志性建筑，进门后即可顺路游览核心景点。",
+          "internal_traffic": "古城街区面积不大，景点之间距离较近，全程步行即可，无需额外乘坐内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在崖州区内方便就近游览，或选择三亚市区及南山景区附近，第二天再前往古城。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "路线平缓，适合慢走，可在崖州学宫感受文脉，在老街品尝当地小吃",
+          "children": "可在学宫了解历史名人故事，体验古风拍照，但需注意青石板路不宜推婴儿车。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古城核心古迹与老街漫步",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "文明门（古城标志性城门）",
+            "少司徒牌坊（明代青石牌坊）",
+            "崖州学宫（中国最南端孔庙，含棂星门",
+            "大成殿",
+            "崇圣祠及历史名人展厅）",
+            "骑楼老街（感受南洋风格建筑与市井烟火气）",
+            "迎旺塔（清代风水砖塔，外观打卡）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "古城内多为青石板路，建议穿防滑舒适的平底鞋；崖州学宫周一闭馆，请务必避开周一前往。"
+          ],
+          "sourceTitle": "携程旅行 崖州古城 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/sanya61/3229.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/sanya61/3229.html?poiType=3&scene=online",
+          "高德地图 崖州古城：https://www.amap.com/place/B038300GWH"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 崖州古城 详情页",
+          "url": "https://you.ctrip.com/sight/sanya61/3229.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "崖州古城 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B038300GWH",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0263091c15",
+      "id": "manual_hainan_3d8e1d0b",
+      "name": "琼海博鳌东屿岛旅游度假区",
+      "city": "琼海",
+      "rating": 4,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/hainan_3d8e1d0b_verified.jpg",
+      "description": "琼海博鳌东屿岛旅游度假区位于琼海市博鳌水城旅游区附近，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "琼海博鳌东屿岛旅游度假区位于琼海市博鳌水城旅游区附近，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "滨海生态度假区、国际会议文化、零碳示范岛",
+      "tags": [
+        "滨海生态度假区、国际会议文化、零碳示范岛",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "琼海市博鳌水城旅游区附近",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "高铁可至琼海站或博鳌站，自驾或打车前往；飞机可至琼海博鳌国际机场。",
+          "internal_arrive": "油车游客请导航至“博鳌东屿岛游客中心”换乘接驳车；新能源车或网约车可直接定位“博鳌亚洲论坛国际会议中心”上岛。",
+          "internal_traffic": "岛内主要依靠步行、租赁自行车或乘坐酒店/景区接驳车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "岛内集中了博鳌亚洲论坛大酒店和东屿岛大酒店等五星级度假酒店，均配备海景泳池和温泉，适合家庭一站式躺平度假。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "岛上坡度平缓，环岛栈道骑行和温泉泡汤非常轻松，避开正午暴晒即可",
+          "children": "中国航海博物馆博鳌数字馆有VR和模拟器互动，鳌石广场可看海，沙滩和酒店泳池也能充分放电。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力半日休闲游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "博鳌亚洲论坛永久会址（感受国际会议气场）",
+            "中国航海博物馆博鳌数字馆（三楼，体验航海模拟器与5D影院）",
+            "鳌石广场（登观景台俯瞰三江入海口）",
+            "环岛栈道（租双人自行车慢骑，途经椰林聚落）",
+            "东屿岛温泉（泡滨海温泉放松）"
+          ],
+          "duration": "半天",
+          "walking": "约2-3公里",
+          "physical": 2,
+          "tips": [
+            "岛内仅允许新能源车通行，油车需停在游客中心换乘摆渡车；数字馆和论坛会址建议提前确认当日开放状态，以官方当日公告为准。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "环岛栈道骑行追日落",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "万泉云居（观赏三江入海口日落）",
+            "环岛栈道（骑行5公里，打卡乐美湖",
+            "红树林）",
+            "东屿沙滩（露营或踩沙）",
+            "鳌咖（品尝零碳咖啡，夜景观星）"
+          ],
+          "duration": "半天",
+          "walking": "约1-2公里",
+          "physical": 3,
+          "tips": [
+            "傍晚时分江风拂面、椰影婆娑，是环岛骑行和看日落的最佳时段；建议备好防晒和驱蚊用品。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "高德地图 博鳌东屿岛度假区：https://www.amap.com/place/B0HALS3Z3L"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 博鳌东屿岛度假区",
+          "url": "https://www.amap.com/place/B0HALS3Z3L",
+          "poiId": "B0HALS3Z3L",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "琼海博鳌东屿岛旅游度假区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0HALS3Z3L",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B03830MRM2": {
+      "baselineKey": "core_1aab61ef49",
+      "id": "amap_B03830MRM2",
+      "name": "三亚市亚龙湾旅游度假区",
+      "city": "三亚",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/hainan_f484fde7_verified.jpg",
+      "description": "极具热带风情的国家级旅游度假区——亚龙湾，是海南最南端的一个半月形海湾，全长约7.5公里，是海南名景之一。沙滩绵延7000米，终年可游泳，海水浴场绝佳。",
+      "intro": "极具热带风情的国家级旅游度假区——亚龙湾，是海南最南端的一个半月形海湾，全长约7.5公里，是海南名景之一。沙滩绵延7000米，终年可游泳，海水浴场绝佳。",
+      "level": "国家级旅游度假区",
+      "category": "滨海度假区、热带雨林森林公园",
+      "tags": [
+        "滨海度假区、热带雨林森林公园",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "海南省三亚市吉阳区龙塘路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "距离三亚凤凰国际机场约35公里，车程约40分钟；距三亚市中心约20公里。可乘机场大巴、打车或预约酒店接机；公交有27路、29路等在亚龙湾站下。",
+          "internal_arrive": "自驾前往森林公园建议导航至\"南门P4停车场\"，步行最少；打车建议到\"西门\"。沙滩区域可直接前往亚龙湾海底世界或各酒店沙滩入口。",
+          "internal_traffic": "景区内必须乘坐观光车代步；湾区内各景点距离近，建议租电动车吹海风代步，或打车短途出行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "以高端度假酒店集群为主，形成封闭式管理的滨海度假带，私密性与舒适度较高，适合追求安静与品质的旅行者。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "加积鸭",
+          "海南文昌鸡",
+          "椰子鸡",
+          "和乐蟹"
+        ],
+        "special_care": {
+          "elderly": "森林公园全程依赖观光车，避免爬陡坡；山顶公园有开阔平地可休息，玻璃栈道视野好但不需大量步行",
+          "children": "兰花谷有平路和凉亭可散步看植物；雨林飞漂趣味性强但需3岁以上；沙滩挖沙玩水适合各年龄段。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "森林公园观光车省力吸氧游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心乘观光车直达过江龙索桥（打卡《非诚勿扰2》取景地）",
+            "乘观光车至山顶公园（漫步全海景玻璃栈道",
+            "逛创意天街补给）",
+            "乘观光车至兰花谷（看热带花草",
+            "平路散步）",
+            "体验雨林飞漂（玻璃水滑道直达山脚出园）"
+          ],
+          "duration": "半天",
+          "walking": "少（全程依赖观光车代步，飞漂省去下山步行）",
+          "physical": 2,
+          "tips": [
+            "务必购买含往返观光车的套票，避免长距离徒步爬山；3岁以上儿童可体验飞漂，3岁以下建议在兰花谷和山顶游玩。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "亚龙湾沙滩休闲躺平游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "亚龙湾海底世界（海边秋千拍照）",
+            "天域酒店沙滩（三颗歪脖子椰树）",
+            "红树林酒店（海景草坪）",
+            "美高梅酒店（临海椰林栈道）",
+            "万豪酒店（冲浪板打卡）",
+            "希尔顿酒店（\"Hi SANYA\"标志）"
+          ],
+          "duration": "半天",
+          "walking": "适中（各酒店沙滩相连，可沿海岸线漫步）",
+          "physical": 1,
+          "tips": [
+            "亚龙湾海边酒店沙滩是相通的，无需每家酒店都办理入住即可进入沙滩区域；建议上午或傍晚前往，避开正午暴晒。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 亚龙湾国家旅游度假区",
+          "url": "https://www.amap.com/place/B03830MRM2",
+          "poiId": "B03830MRM2",
+          "evidenceMode": "existing-amap-record",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "🌴 亚龙湾,这个位于中国最南端的热带滨海旅游城市——三亚市东南28",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4565639026371958963",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4565639026371958963",
+        "width": 2560,
+        "height": 1716
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "三亚市亚龙湾旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      },
+      "ratingAudit": {
+        "selected": "高德地图",
+        "status": "inherited-after-identity-heal",
+        "existingId": "amap_B03830MRM2"
+      }
+    }
+  },
+  "selfHealActions": [
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B03830MRM2",
+      "keptName": "三亚市亚龙湾旅游度假区",
+      "removedId": "manual_hainan_f484fde7",
+      "removedName": "三亚市亚龙湾旅游度假区",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    }
+  ],
+  "reviewedAt": "2026-08-19",
+  "reviewedAtIso": "2026-08-19T06:15:27.385Z",
+  "appliedAt": "2026-08-19T06:17:24.273Z",
+  "appliedAttractionIds": [
+    "manual_hainan_310114b",
+    "manual_hainan_cf3ebdbf",
+    "manual_hainan_5f16b260",
+    "manual_hainan_49907a95",
+    "manual_hainan_67c4cc30",
+    "manual_hainan_f3468032",
+    "manual_hainan_dc2c1281",
+    "manual_hainan_7f2bf84",
+    "manual_hainan_a50af692",
+    "manual_hainan_c26fdd45",
+    "manual_hainan_465f4805",
+    "manual_hainan_4b2dee0",
+    "manual_hainan_40866fd9",
+    "manual_hainan_ccec71d3",
+    "manual_hainan_9be5a25f",
+    "manual_hainan_6a65088b",
+    "manual_hainan_3f7b144e",
+    "manual_hainan_9702ade7",
+    "manual_hainan_6a6d9398",
+    "manual_hainan_3d8e1d0b"
+  ],
+  "appliedOverrideIds": [
+    "amap_B03830MRM2"
+  ]
+}

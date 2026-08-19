@@ -7,6 +7,13 @@
         "incomingName": "蓬莱阁-三仙山-八仙过海旅游区",
         "decidedAt": "2026-08-18T09:00:03.780Z"
       }
+    },
+    "湖南": {
+      "core_074658c443": {
+        "action": "keep_new",
+        "incomingName": "岳麓山-橘子洲旅游区",
+        "decidedAt": "2026-08-19T05:44:22.116Z"
+      }
     }
   }
 }
