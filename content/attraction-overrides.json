@@ -5565,5 +5565,235 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B03E2003KM": {
+    "baselineKey": "core_9d6ef28257",
+    "id": "amap_B03E2003KM",
+    "name": "江布拉克景区",
+    "city": "昌吉回族",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/xinjiang_dcc5e619_verified.jpg",
+    "description": "江布拉克景区位于天山北麓，准噶尔盆地东南缘，总面积48平方公里，是典型温带干旱区山地垂直综合景观和特有的山地麦田版画的完美结合，是新疆天山世界自然遗产地延续景观，主要景点有天山麦海、疏勒古城（石城子遗址）、麻沟梁村、天山怪坡、花海子、江布拉克大峡谷、断桥、三道扁子、新户河。",
+    "intro": "江布拉克景区位于天山北麓，准噶尔盆地东南缘，总面积48平方公里，是典型温带干旱区山地垂直综合景观和特有的山地麦田版画的完美结合，是新疆天山世界自然遗产地延续景观，主要景点有天山麦海、疏勒古城（石城子遗址）、麻沟梁村、天山怪坡、花海子、江布拉克大峡谷、断桥、三道扁子、新户河。",
+    "level": "5A景区",
+    "category": "自然生态、草原麦海、峡谷森林、人文遗址",
+    "tags": [
+      "自然生态、草原麦海、峡谷森林、人文遗址",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "新疆维吾尔自治区昌吉回族自治州奇台县",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾从乌鲁木齐出发约2至3小时直达，导航\"江布拉克景区\"或\"一万泉景区入口\"；公共交通可从乌鲁木齐乘班车到奇台县，再转乘景区班车。",
+        "internal_arrive": "推荐从一万泉入口进，避开正门人流和车流；自驾车走自驾通道进入，随停随拍更自由。",
+        "internal_traffic": "景区内为51公里环线，自驾最方便（7座以下车辆通行费费用以官方当日公告为准/辆，不限时）；也可乘区间车（费用以官方当日公告为准），但站点较少，拍照不便。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区内可选合兴酒店、江布拉克酒店、紫芸凤池酒店及星空帐篷营地，推窗见雪山麦田，方便看日出日落；景区外可选半截沟镇民宿或奇台县城酒店，性价比高、餐饮更便捷。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "烤羊肉串",
+        "新疆手抓饭",
+        "新疆烤包子",
+        "新疆大盘鸡"
+      ],
+      "special_care": {
+        "elderly": "景区以自驾为主，体力消耗小；大峡谷木栈道较长，长辈可选择在观景台拍照，不必全程徒步；早晚温差大，务必带薄外套",
+        "children": "欢乐谷有凌空滑板车等项目，适合亲子体验；花海子有滑草和滑道设施；沿途可看牛羊和草原木屋，孩子喜欢；注意防晒和防风。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "逆时针自驾省力环线（家庭友好）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "一万泉入口",
+          "天山麦海",
+          "天山怪坡",
+          "花海子",
+          "江布拉克大峡谷",
+          "欢乐谷",
+          "疏勒古城",
+          "黑涝坝",
+          "断桥",
+          "松翠谷",
+          "出景区"
+        ],
+        "duration": "半天",
+        "walking": "约2至3公里（集中在大峡谷木栈道、断桥观景台）",
+        "physical": 2,
+        "tips": [
+          "建议从一万泉入口进景区，人少车少、不排队；全程逆时针不走回头路，随停随拍；门票48小时有效，时间充裕可住景区内看星空。"
+        ],
+        "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+        "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
+        "verifiedAt": "2026-08-20"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "高德地图 江布拉克：https://www.amap.com/place/B03E2003KM"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 江布拉克",
+        "url": "https://www.amap.com/place/B03E2003KM",
+        "poiId": "B03E2003KM",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-20"
+      },
+      "basicInfoUpdatedAt": "2026-08-20",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "江布拉克景区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B03E2003KM",
+      "width": 2048,
+      "height": 2048
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B03E2003KM"
+    }
+  },
+  "amap_B03E20M4SC": {
+    "baselineKey": "core_b62a32dccc",
+    "id": "amap_B03E20M4SC",
+    "name": "天山天池风景名胜区",
+    "city": "阜康",
+    "rating": 4.6,
+    "reviewsCount": "14115条携程点评",
+    "image": "/assets/images/attractions/xinjiang_a78db150_verified.jpg",
+    "description": "\\n \\n \\n天山天池，又称天池国家地质公园，古称“瑶池”，位于昌吉州阜康市境内，博格达峰的北侧，距乌鲁木齐市约110公里，是新疆有名的旅游胜地。 \\n在中国古代神话中，天池还是西王母娘娘沐浴的地方。",
+    "intro": "\\n \\n \\n天山天池，又称天池国家地质公园，古称“瑶池”，位于昌吉州阜康市境内，博格达峰的北侧，距乌鲁木齐市约110公里，是新疆有名的旅游胜地。 \\n在中国古代神话中，天池还是西王母娘娘沐浴的地方。",
+    "level": "5A景区",
+    "category": "自然山水、高山湖泊、雪山森林",
+    "tags": [
+      "自然山水、高山湖泊、雪山森林",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "新疆维吾尔自治区昌吉回族自治州阜康市准噶尔路501号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾可导航至“天山天池游客服务中心”或“天山天池民俗风情园停车场”；公共交通可从乌鲁木齐北郊客运站或高铁汽车站乘坐直通车前往。",
+        "internal_arrive": "建议从游客中心正门入园，乘坐官方区间车进山，切勿轻信路边黄牛或私自绕行民俗风情园，以免产生隐形消费或耽误行程。",
+        "internal_traffic": "景区核心区间车（必乘）连接游客中心与主湖区；另有马牙山索道及观光车、环湖游船、环湖电瓶车等自费接驳项目，可根据体力和天气情况选择。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "可选择住在景区内（如温泉酒店、星空民宿或哈萨克毡房，方便次日游览或看星空），或住在阜康市区（性价比高，餐饮选择多），也可当日往返住在乌鲁木齐市区。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "烤羊肉串",
+        "新疆手抓饭",
+        "新疆烤包子",
+        "新疆大盘鸡"
+      ],
+      "special_care": {
+        "elderly": "海拔约1900米，一般不易高反，但马牙山索道及观景台台阶较多，长辈建议仅游览主湖与飞龙潭区域，避免剧烈爬升",
+        "children": "低龄儿童在木栈道行走时需注意防滑，环湖段可考虑租赁电动车省力，沿途可科普西王母瑶池传说增加趣味性。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "家庭省力休闲游（主湖+飞龙潭）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心",
+          "区间车（约40分钟）",
+          "天池主湖",
+          "定海神针",
+          "环湖木栈道",
+          "飞龙潭",
+          "返程"
+        ],
+        "duration": "半天",
+        "walking": "约2至3公里",
+        "physical": 2,
+        "tips": [
+          "区间车建议坐右侧靠窗，沿途可观赏峡谷与云杉；环湖木栈道部分路段在修缮，请留意现场指示牌，勿走封闭路段。"
+        ],
+        "sourceTitle": "携程旅行 天山天池风景名胜区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/fukang2506/4649.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-20"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 天山天池风景名胜区 详情页：https://you.ctrip.com/sight/fukang2506/4649.html?poiType=3&scene=online",
+        "高德地图 天山天池风景区：https://www.amap.com/place/B03E20M4SC"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 天山天池风景名胜区 详情页",
+        "url": "https://you.ctrip.com/sight/fukang2506/4649.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-20"
+      },
+      "basicInfoUpdatedAt": "2026-08-20",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "天山天池风景名胜区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B03E20M4SC",
+      "width": 2080,
+      "height": 1560
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

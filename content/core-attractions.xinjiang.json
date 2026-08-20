@@ -1,0 +1,1195 @@
+{
+  "province": "新疆",
+  "checkedAt": "2026-08-20",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/xinjiang100008.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 19,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 18,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 18,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 18,
+  "officialResortCandidateCount": 2,
+  "popularityCount": 10,
+  "existingRecordBoundCount": 12,
+  "existingRecordUnboundCount": 16,
+  "existingRecordUnboundNames": [
+    "江布拉克景区",
+    "赛里木湖景区",
+    "巴音布鲁克景区",
+    "喀拉峻景区",
+    "喀什古城景区",
+    "博斯腾湖景区",
+    "那拉提旅游风景区",
+    "天山天池风景名胜区",
+    "塔克拉玛干•三五九旅文化旅游区",
+    "兵团十师185团白沙湖景区（阿勒泰地区）",
+    "赛里木湖",
+    "喀什古城",
+    "新疆维吾尔自治区博物馆",
+    "巴音布鲁克景区",
+    "国际大巴扎",
+    "五家渠青格达湖旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 18,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 18,
+  "observationCandidates": [
+    {
+      "name": "喀纳斯",
+      "city": "阿勒泰地区布尔津",
+      "aliases": [
+        "喀纳斯"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "禾木村",
+      "city": "阿勒泰地区布尔津",
+      "aliases": [
+        "禾木村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "那拉提草原",
+      "city": "伊犁哈萨克自治州新源",
+      "aliases": [
+        "那拉提草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "独库公路",
+      "city": "伊犁哈萨克自治州至巴音郭",
+      "aliases": [
+        "独库公路"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "夏塔古道",
+      "city": "伊犁哈萨克自治州昭苏",
+      "aliases": [
+        "夏塔古道"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "琼库什台",
+      "city": "伊犁哈萨克自治州特克斯",
+      "aliases": [
+        "琼库什台"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "乌伦古湖",
+      "city": "阿勒泰地区福海",
+      "aliases": [
+        "乌伦古湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "安集海大峡谷",
+      "city": "塔城地区沙湾",
+      "aliases": [
+        "安集海大峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "白沙湖",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "白沙湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "喀拉库勒湖",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "喀拉库勒湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "盘龙古道",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "盘龙古道"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "天山神秘大峡谷",
+      "city": "阿克苏地区库车",
+      "aliases": [
+        "天山神秘大峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "交河故城",
+      "city": "吐鲁番市高昌",
+      "aliases": [
+        "交河故城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "库木塔格沙漠",
+      "city": "吐鲁番市鄯善",
+      "aliases": [
+        "库木塔格沙漠"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "坎儿井",
+      "city": "吐鲁番市高昌",
+      "aliases": [
+        "坎儿井"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "伊犁六星街",
+      "city": "伊犁哈萨克自治州伊宁",
+      "aliases": [
+        "伊犁六星街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "喀赞其民俗旅游区",
+      "city": "伊犁哈萨克自治州伊宁",
+      "aliases": [
+        "喀赞其民俗旅游区",
+        "喀赞其民俗"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "库车老城",
+      "city": "阿克苏地区库车",
+      "aliases": [
+        "库车老城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "喀纳斯",
+      "city": "阿勒泰地区布尔津",
+      "aliases": [
+        "喀纳斯"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "禾木村",
+      "city": "阿勒泰地区布尔津",
+      "aliases": [
+        "禾木村"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "那拉提草原",
+      "city": "伊犁哈萨克自治州新源",
+      "aliases": [
+        "那拉提草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "独库公路",
+      "city": "伊犁哈萨克自治州至巴音郭",
+      "aliases": [
+        "独库公路"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "夏塔古道",
+      "city": "伊犁哈萨克自治州昭苏",
+      "aliases": [
+        "夏塔古道"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "琼库什台",
+      "city": "伊犁哈萨克自治州特克斯",
+      "aliases": [
+        "琼库什台"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "乌伦古湖",
+      "city": "阿勒泰地区福海",
+      "aliases": [
+        "乌伦古湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "安集海大峡谷",
+      "city": "塔城地区沙湾",
+      "aliases": [
+        "安集海大峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "白沙湖",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "白沙湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "喀拉库勒湖",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "喀拉库勒湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "盘龙古道",
+      "city": "喀什地区塔什库尔干塔吉克",
+      "aliases": [
+        "盘龙古道"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "天山神秘大峡谷",
+      "city": "阿克苏地区库车",
+      "aliases": [
+        "天山神秘大峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "交河故城",
+      "city": "吐鲁番市高昌",
+      "aliases": [
+        "交河故城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "库木塔格沙漠",
+      "city": "吐鲁番市鄯善",
+      "aliases": [
+        "库木塔格沙漠"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "坎儿井",
+      "city": "吐鲁番市高昌",
+      "aliases": [
+        "坎儿井"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "伊犁六星街",
+      "city": "伊犁哈萨克自治州伊宁",
+      "aliases": [
+        "伊犁六星街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "喀赞其民俗旅游区",
+      "city": "伊犁哈萨克自治州伊宁",
+      "aliases": [
+        "喀赞其民俗旅游区",
+        "喀赞其民俗"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "库车老城",
+      "city": "阿克苏地区库车",
+      "aliases": [
+        "库车老城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 19,
+    "verifiedCount": 1,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 18,
+    "warnings": [
+      "携程省级页未发现 阿勒泰地区布尔津 的城市入口。",
+      "携程省级页未发现 伊犁哈萨克自治州新源 的城市入口。",
+      "携程省级页未发现 伊犁哈萨克自治州至巴音郭 的城市入口。",
+      "携程省级页未发现 伊犁哈萨克自治州昭苏 的城市入口。",
+      "携程省级页未发现 伊犁哈萨克自治州特克斯 的城市入口。",
+      "携程省级页未发现 阿勒泰地区福海 的城市入口。",
+      "携程省级页未发现 塔城地区沙湾 的城市入口。",
+      "携程省级页未发现 喀什地区塔什库尔干塔吉克 的城市入口。",
+      "携程省级页未发现 阿克苏地区库车 的城市入口。",
+      "携程省级页未发现 吐鲁番市高昌 的城市入口。",
+      "携程省级页未发现 吐鲁番市鄯善 的城市入口。",
+      "携程省级页未发现 伊犁哈萨克自治州伊宁 的城市入口。",
+      "喀拉库勒湖 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "库木塔格沙漠 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_0e1d388f7e",
+      "name": "天山托木尔景区",
+      "preferredId": "amap_B0JB9HW1VD",
+      "aliases": [
+        "天山托木尔景区",
+        "阿克苏地区天山托木尔景区",
+        "天山托木尔"
+      ],
+      "city": "阿克苏",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_9d6ef28257",
+      "name": "江布拉克景区",
+      "preferredId": "amap_B03E2003KM",
+      "aliases": [
+        "江布拉克景区",
+        "昌吉回族自治州江布拉克景区",
+        "江布拉克"
+      ],
+      "city": "昌吉回族",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_12c3725b5d",
+      "name": "赛里木湖景区",
+      "preferredId": "manual_xinjiang_6ef454b5",
+      "aliases": [
+        "赛里木湖景区",
+        "博尔塔拉蒙古自治州赛里木湖景区",
+        "赛里木湖"
+      ],
+      "city": "博尔塔拉蒙古",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2021年"
+    },
+    {
+      "key": "core_75115b2e70",
+      "name": "世界魔鬼城景区",
+      "preferredId": "amap_B03DE0004L",
+      "aliases": [
+        "世界魔鬼城景区",
+        "克拉玛依市世界魔鬼城景区",
+        "世界魔鬼城"
+      ],
+      "city": "克拉玛依",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_dfcbe2567c",
+      "name": "帕米尔旅游区",
+      "preferredId": "amap_B0FFLPW724",
+      "aliases": [
+        "帕米尔旅游区",
+        "喀什地区帕米尔旅游区",
+        "帕米尔"
+      ],
+      "city": "喀什",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_b30dea007b",
+      "name": "巴音布鲁克景区",
+      "preferredId": "manual_xinjiang_fef2983b",
+      "aliases": [
+        "巴音布鲁克景区",
+        "巴音郭楞蒙古自治州巴音布鲁克景区",
+        "巴音布鲁克"
+      ],
+      "city": "巴音郭楞蒙古",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_aa67ea5140",
+      "name": "喀拉峻景区",
+      "preferredId": "manual_xinjiang_daf3b772",
+      "aliases": [
+        "喀拉峻景区",
+        "伊犁哈萨克自治州喀拉峻景区",
+        "喀拉峻"
+      ],
+      "city": "伊犁哈萨克",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_e983bdb52f",
+      "name": "喀什古城景区",
+      "preferredId": "manual_xinjiang_9b7d3fc8",
+      "aliases": [
+        "喀什古城景区",
+        "喀什地区喀什古城景区",
+        "喀什古城"
+      ],
+      "city": "喀什",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_c6018627b9",
+      "name": "博斯腾湖景区",
+      "preferredId": "manual_xinjiang_24d40569",
+      "aliases": [
+        "博斯腾湖景区",
+        "巴音郭楞蒙古自治州博斯腾湖景区",
+        "博斯腾湖"
+      ],
+      "city": "巴音郭楞蒙古",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_fc6dae0986",
+      "name": "天山大峡谷",
+      "preferredId": "amap_B0FFIKGPKW",
+      "aliases": [
+        "天山大峡谷",
+        "乌鲁木齐市天山大峡谷"
+      ],
+      "city": "乌鲁木齐",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_ebced33d3f",
+      "name": "金湖杨景区",
+      "preferredId": "amap_B03E600CFW",
+      "aliases": [
+        "金湖杨景区",
+        "喀什地区金湖杨景区",
+        "金湖杨"
+      ],
+      "city": "喀什",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_5b913ababa",
+      "name": "可可托海景区",
+      "preferredId": "amap_B038A0LOO7",
+      "aliases": [
+        "可可托海景区",
+        "阿勒泰地区可可托海景区",
+        "可可托海"
+      ],
+      "city": "阿勒泰",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_051ca12f80",
+      "name": "那拉提旅游风景区",
+      "preferredId": "manual_xinjiang_ac133172",
+      "aliases": [
+        "那拉提旅游风景区",
+        "伊犁哈萨克自治州那拉提旅游风景区",
+        "那拉提旅游"
+      ],
+      "city": "伊犁哈萨克",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_8579df865f",
+      "name": "喀纳斯景区",
+      "preferredId": "amap_B038A0061O",
+      "aliases": [
+        "喀纳斯景区",
+        "阿勒泰地区喀纳斯景区",
+        "喀纳斯"
+      ],
+      "city": "阿勒泰",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_e9aceb7216",
+      "name": "葡萄沟风景区",
+      "preferredId": "amap_B03E3002L4",
+      "aliases": [
+        "葡萄沟风景区",
+        "吐鲁番市葡萄沟风景区",
+        "葡萄沟"
+      ],
+      "city": "吐鲁番",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_b62a32dccc",
+      "name": "天山天池风景名胜区",
+      "preferredId": "amap_B03E20M4SC",
+      "aliases": [
+        "天山天池风景名胜区",
+        "昌吉回族自治州天山天池风景名胜区",
+        "天山天池"
+      ],
+      "city": "昌吉回族",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_2d535d25b4",
+      "name": "塔克拉玛干•三五九旅文化旅游区",
+      "preferredId": "manual_xinjiang_85f7101f",
+      "aliases": [
+        "塔克拉玛干•三五九旅文化旅游区",
+        "兵团阿拉尔市塔克拉玛干•三五九旅文化旅游区",
+        "塔克拉玛干•三五九旅文化"
+      ],
+      "city": "兵团阿拉尔",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2021年"
+    },
+    {
+      "key": "core_e737bb9060",
+      "name": "兵团十师185团白沙湖景区（阿勒泰地区）",
+      "preferredId": "manual_xinjiang_39d8bee6",
+      "aliases": [
+        "兵团十师185团白沙湖景区（阿勒泰地区）",
+        "兵团十师185团白沙湖景区"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_c02f67167d",
+      "name": "赛里木湖",
+      "preferredId": "manual_xinjiang_6ef454b5",
+      "aliases": [
+        "赛里木湖"
+      ],
+      "city": "博尔塔拉蒙古自治州博乐",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_fcdec3ad7e",
+      "name": "喀什古城",
+      "preferredId": "manual_xinjiang_9b7d3fc8",
+      "aliases": [
+        "喀什古城"
+      ],
+      "city": "喀什地区喀什",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9e4cba51a3",
+      "name": "新疆维吾尔自治区博物馆",
+      "preferredId": "manual_xinjiang_c49ad92b",
+      "aliases": [
+        "新疆维吾尔自治区博物馆"
+      ],
+      "city": "乌鲁木齐",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b30dea007b",
+      "name": "巴音布鲁克景区",
+      "preferredId": "manual_xinjiang_fef2983b",
+      "aliases": [
+        "巴音布鲁克景区",
+        "巴音布鲁克"
+      ],
+      "city": "巴音郭楞蒙古自治州和静",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1b0fee2eec",
+      "name": "国际大巴扎",
+      "preferredId": "manual_xinjiang_c47e4c99",
+      "aliases": [
+        "国际大巴扎"
+      ],
+      "city": "乌鲁木齐",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "乌鲁木齐",
+          "page": 1,
+          "name": "新疆国际大巴扎",
+          "url": "https://you.ctrip.com/sight/urumqi117/133968.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_adbde16304",
+      "name": "火焰山景区",
+      "preferredId": "amap_B0FFFTMYIO",
+      "aliases": [
+        "火焰山景区",
+        "火焰山"
+      ],
+      "city": "吐鲁番",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 51
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_366a16086c",
+      "name": "禾木风景区",
+      "preferredId": "amap_B0FFHUZDVF",
+      "aliases": [
+        "禾木风景区",
+        "禾木"
+      ],
+      "city": "阿勒泰",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3042f81975",
+      "name": "天山天池",
+      "preferredId": "amap_B03E20M4SC",
+      "aliases": [
+        "天山天池",
+        "天山天池风景区"
+      ],
+      "city": "昌吉",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_97ddf132ae",
+      "name": "红山公园",
+      "preferredId": "amap_B03DF066YE",
+      "aliases": [
+        "红山公园"
+      ],
+      "city": "乌鲁木齐",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 8
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9f2465f817",
+      "name": "五家渠青格达湖旅游度假区",
+      "preferredId": "manual_xinjiang_7fa0a215",
+      "aliases": [
+        "五家渠青格达湖旅游度假区"
+      ],
+      "city": "五家渠",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

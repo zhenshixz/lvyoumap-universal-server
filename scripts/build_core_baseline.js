@@ -180,20 +180,25 @@ function evidencePlatform(value) {
 }
 
 async function readOfficial5A(province) {
-  const response = await fetch(officialUrl, { headers: { 'user-agent': 'Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0' } });
+  const response = await fetch(officialUrl, { headers: { "user-agent": "Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0" } });
   if (!response.ok) throw new Error(`文化和旅游部数据服务请求失败：HTTP ${response.status}`);
   const html = await response.text();
-  const escaped = province.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const section = html.match(new RegExp(`<div class="tit"[^>]*>${escaped}</div>\\s*<div class="box"[^>]*>([\\s\\S]*?)</div></div><div class="li"`));
-  if (!section) throw new Error(`文化和旅游部数据服务中没有解析到 ${province}。`);
-  return [...section[1].matchAll(/<a[^>]*>([\s\S]*?)<\/a>/g)].map(match => {
-    const raw = decodeHtml(match[1]);
-    const yearMatch = raw.match(/(\d{4}(?:\/\d{4})?年)$/);
-    const officialName = raw.replace(/\d{4}(?:\/\d{4})?年$/, '').trim();
-    const city = cityFromOfficial(officialName);
-    const name = stripAdministrativePrefix(officialName);
-    return { name, officialName, city, year: yearMatch ? yearMatch[1] : '' };
-  });
+  const provinces = province === "新疆" ? ["新疆", "兵团"] : [province];
+  const items = [];
+  for (const name of provinces) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const section = html.match(new RegExp(`<div class="tit"[^>]*>${escaped}</div>\\s*<div class="box"[^>]*>([\\s\\S]*?)</div>\\s*</div>(?:<div class="li"|</div>)`));
+    if (!section) throw new Error(`文化和旅游部数据服务中没有解析到 ${name}。`);
+    for (const match of section[1].matchAll(/<a[^>]*>([\s\S]*?)<\/a>/g)) {
+      const raw = decodeHtml(match[1]);
+      const yearMatch = raw.match(/(\d{4}(?:\/\d{4})?年)$/);
+      const officialName = raw.replace(/\d{4}(?:\/\d{4})?年$/, "").trim();
+      const city = cityFromOfficial(officialName);
+      const name = stripAdministrativePrefix(officialName);
+      items.push({ name, officialName, city, year: yearMatch ? yearMatch[1] : "" });
+    }
+  }
+  return items;
 }
 
 async function main() {
