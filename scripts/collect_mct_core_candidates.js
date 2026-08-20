@@ -118,10 +118,15 @@ async function main() {
   const html = await response.text();
   const fiveACount = expectedCount(html, '国家5A级景区', '个');
   const resortCount = expectedCount(html, '国家级旅游度假区', '个');
-  if (!Number.isFinite(fiveACount) || fiveACount <= 0 || !Number.isFinite(resortCount)) throw new Error('没有从页面摘要中完整解析到5A景区或国家级旅游度假区数量。');
+  const isSpecialRegion = ['香港', '澳门', '台湾'].includes(provinceName);
+  if (!isSpecialRegion && (!Number.isFinite(fiveACount) || fiveACount <= 0 || !Number.isFinite(resortCount))) throw new Error('没有从页面摘要中完整解析到5A景区或国家级旅游度假区数量。');
   const groups = extractGroups(html);
-  const fiveA = selectGroupByCount(groups, fiveACount, '国家5A级景区', group => group.filter(item => !/度假区|酒店|饭店|宾馆/.test(item.name)).length);
-  const resortSelection = selectOptionalGroup(groups, resortCount, '国家级旅游度假区', group => group.filter(item => /度假区/.test(item.name)).length);
+  const fiveA = isSpecialRegion && (!Number.isFinite(fiveACount) || fiveACount === 0)
+    ? []
+    : selectGroupByCount(groups, fiveACount, '国家5A级景区', group => group.filter(item => !/度假区|酒店|饭店|宾馆/.test(item.name)).length);
+  const resortSelection = isSpecialRegion && (!Number.isFinite(resortCount) || resortCount === 0)
+    ? { group: [], warning: '' }
+    : selectOptionalGroup(groups, resortCount, '国家级旅游度假区', group => group.filter(item => /度假区/.test(item.name)).length);
   const resorts = resortSelection.group;
   const output = {
     province: provinceName,

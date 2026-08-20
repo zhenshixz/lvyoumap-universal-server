@@ -1,0 +1,1556 @@
+{
+  "province": "台湾",
+  "status": "applied",
+  "createdAt": "2026-08-20T06:40:10.193Z",
+  "updatedAt": "2026-08-20T06:40:10.194Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [],
+  "seedFile": "content/core-repair-seeds.taiwan.json",
+  "attractions": [
+    {
+      "baselineKey": "core_473b77aa6e",
+      "id": "manual_taiwan_da0d52a2",
+      "name": "日月潭",
+      "city": "南投",
+      "rating": 4.8,
+      "reviewsCount": "2043条携程点评",
+      "image": "/assets/images/attractions/taiwan_da0d52a2_verified.jpg",
+      "description": "• 日月潭四周群山环抱，林木葱郁，潭水晶莹剔透，清澈见底，能见度达10米以上 \\n• 游览日月潭有多种方式，坐游艇环湖、日月潭缆车、日月潭自行车道环湖还有环湖步道都是不错的选择 \\n• 每年的春季沿线夹道的樱花盛开，呈现一片姹紫嫣红的景像 \\n \\n△ 日月潭湖面辽阔，群峰倒映湖中犹如画中的美景。潭中有一个小岛，远看好像浮在水面上的一颗珠子，所以被叫做“珠子屿”，现在也叫拉鲁岛。",
+      "intro": "• 日月潭四周群山环抱，林木葱郁，潭水晶莹剔透，清澈见底，能见度达10米以上 \\n• 游览日月潭有多种方式，坐游艇环湖、日月潭缆车、日月潭自行车道环湖还有环湖步道都是不错的选择 \\n• 每年的春季沿线夹道的樱花盛开，呈现一片姹紫嫣红的景像 \\n \\n△ 日月潭湖面辽阔，群峰倒映湖中犹如画中的美景。潭中有一个小岛，远看好像浮在水面上的一颗珠子，所以被叫做“珠子屿”，现在也叫拉鲁岛。",
+      "level": "热门景点",
+      "category": "自然湖泊/人文古迹",
+      "tags": [
+        "自然湖泊/人文古迹",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "台湾南投县鱼池乡水社村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可从台中干城站或高铁台中站乘坐台湾好行6670B巴士，约1.5-2小时直达日月潭水社游客中心。",
+          "internal_arrive": "水社码头（游客中心集中，游船、租车、餐饮配套最完善，适合作为行程起点）。",
+          "internal_traffic": "环湖游船（串联水社、玄光寺、伊达邵码头）、游湖巴士6669（可达文武庙等陆路景点）、环湖电动车或自行车（适合水社至向山段平路骑行）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "水社码头周边（交通便利，适合首次游览）；伊达邵码头周边（毗邻美食街，适合喜欢慢节奏和夜市氛围的游客）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "以游船和乘车为主，减少爬坡步行，推荐在伊达邵商店街或水社码头周边找湖景茶座休息",
+          "children": "游船体验、伊达邵吃特色小吃（如茶叶蛋、香肠、麻糬）、向山自行车道骑行都非常适合亲子互动。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "游船串联经典地标省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "水社码头（乘游船）",
+            "玄光码头（下船）",
+            "玄光寺（打卡日月潭石碑",
+            "品阿嬷茶叶蛋）",
+            "青龙山步道（平缓步道散步）",
+            "玄奘寺（瞻仰玄奘法师顶骨舍利）",
+            "慈恩塔（360度俯瞰日月潭全景）",
+            "玄光码头（乘游船）",
+            "伊达邵码头（下船逛邵族商店街",
+            "品尝特色小吃）",
+            "文武庙（乘车前往，登观景台俯瞰湖景）"
+          ],
+          "duration": "半天",
+          "walking": "约4-5公里（含步道缓行）",
+          "physical": 3,
+          "tips": [
+            "建议购买游船一日套票，可在各码头无限次上下船；青龙山步道有爬升，若长辈体力有限，可在玄光寺附近折返，不必强求登顶慈恩塔。"
+          ],
+          "sourceTitle": "携程旅行 日月潭 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/nantou759/22859.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 日月潭 详情页：https://you.ctrip.com/sight/nantou759/22859.html?poiType=3&scene=online",
+          "高德地图 日月潭风景区：https://www.amap.com/place/B0FFFUTOW0"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 日月潭 详情页",
+          "url": "https://you.ctrip.com/sight/nantou759/22859.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "日月潭 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUTOW0",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_2345e15c10",
+      "id": "manual_taiwan_385f050c",
+      "name": "野柳地质公园",
+      "city": "新北",
+      "rating": 4.8,
+      "reviewsCount": "2292条携程点评",
+      "image": "/assets/images/attractions/taiwan_385f050c_verified.jpg",
+      "description": "·探索被誉为世界奇观之一的野柳地质公园中特别的地质和地形，感受地球上与火星很相似的环境。 ·近距离抚摸多年受海水侵蚀和风化而渐渐形成的巨石，每一个的形状都独具特色。",
+      "intro": "·探索被誉为世界奇观之一的野柳地质公园中特别的地质和地形，感受地球上与火星很相似的环境。 ·近距离抚摸多年受海水侵蚀和风化而渐渐形成的巨石，每一个的形状都独具特色。",
+      "level": "热门景点",
+      "category": "自然地质公园",
+      "tags": [
+        "自然地质公园",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "207305 新北市万里区野柳里港东路167-1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "公共交通可搭乘 国光客运1815 或 基隆客运953 至“野柳站”下车，步行约 10 分钟抵达；自驾可经 台62线 至万里/野柳出口，公园对面设有收费停车场。",
+          "internal_arrive": "建议从正门（游客中心旁）进入，入园后左手边即为地质展示馆，可先避暑了解地质科普，再沿主步道前行。",
+          "internal_traffic": "园区内全为平缓的无障碍步道与栈道，无缆车或电瓶车，全程靠步行游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "若需住宿，可选择周边的万里区民宿，或返回新北市区、台北市区入住，交通更为便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "全程平路无障碍，推轮椅或散步均无压力，海边风大建议备防风外套",
+          "children": "退潮时可在潮间带观察寄居蟹与小贝壳，是一堂生动的自然科普课，但需全程看护，勿让儿童靠近礁石边缘或触碰岩石。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "平路省力观景线（家庭推荐）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "地质展示馆",
+            "第一区蕈状岩群与姜石区",
+            "第二区女王头与仙女鞋",
+            "第三区蜂窝岩与壶穴",
+            "海边观景步道及潮间带（退潮时）",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约 1 公里",
+          "physical": 2,
+          "tips": [
+            "园区岩石经海蚀后表面粗糙且部分湿滑，务必穿防滑鞋；海边紫外线强，需做好防晒；每周三下午通常有地质维护，部分区域可能关闭，以官方当日公告为准；请勿触摸或攀爬岩石。"
+          ],
+          "sourceTitle": "携程旅行 野柳地质公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/newtaipeicity2063/67556.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 野柳地质公园 详情页：https://you.ctrip.com/sight/newtaipeicity2063/67556.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 野柳地质公园 详情页",
+          "url": "https://you.ctrip.com/sight/newtaipeicity2063/67556.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "野柳地质公园 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/newtaipeicity2063/67556.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/newtaipeicity2063/67556.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1667
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_39a853d25b",
+      "id": "manual_taiwan_f4a9f7c7",
+      "name": "阿里山",
+      "city": "嘉义县",
+      "rating": 4.8,
+      "reviewsCount": "556条携程点评",
+      "image": "/assets/images/attractions/taiwan_f4a9f7c7_verified.jpg",
+      "description": "阿里山风景区是台湾标志性的景点，由18座大山组成的阿里山山脉面积广阔，精华的自然美景聚集在“阿里山森林游乐区”中，五大奇景“日出、云海、晚霞、森林、火车”在这里可以全部欣赏到，游客们提到“去阿里山”，通常也是指来这里。 如果天气晴朗，阿里山日出不容错过。",
+      "intro": "阿里山风景区是台湾标志性的景点，由18座大山组成的阿里山山脉面积广阔，精华的自然美景聚集在“阿里山森林游乐区”中，五大奇景“日出、云海、晚霞、森林、火车”在这里可以全部欣赏到，游客们提到“去阿里山”，通常也是指来这里。 如果天气晴朗，阿里山日出不容错过。",
+      "level": "热门景点",
+      "category": "森林游乐区 / 自然生态 / 人文古迹",
+      "tags": [
+        "森林游乐区 / 自然生态 / 人文古迹",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "嘉义县阿里山乡中正村59号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从嘉义火车站或嘉义高铁站搭乘台湾好行巴士（如7322或7329线）上山，车程约2.5小时；也可选择阿里山森林铁路或包车前往。",
+          "internal_arrive": "从阿里山转运站（游客中心）进入园区，此处靠近阿里山车站，是搭乘园区内小火车和接驳车的枢纽。",
+          "internal_traffic": "园区内有阿里山森林小火车（如沼平线、祝山线）和电动游园车接驳，可大幅减少步行距离。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在阿里山游客中心或阿里山车站附近（如阿里山神木宾馆、阿里山阁大饭店等），步行即可到达核心景点和小火车站，方便看日出和休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "阿里山海拔约2000米，气温较低且早晚温差大，务必携带保暖外套；部分路段有台阶，建议穿防滑鞋，并在受镇宫或服务区多休息",
+          "children": "森林步道平缓且充满自然生态，适合亲子观察植物，可让孩子体验复古森林小火车，增加游玩趣味。\n\n（注：小火车班次、日出时间及园区接驳车时刻会随季节和天气调整，具体请以官方当日公告为准。）"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "沼平至神木下坡省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "沼平车站",
+            "沼平公园",
+            "姊妹潭",
+            "受镇宫",
+            "香林神木",
+            "树灵塔",
+            "神木车站"
+          ],
+          "duration": "半天",
+          "walking": "约2至3小时",
+          "physical": 2,
+          "tips": [
+            "从沼平车站一路下坡走到神木车站最省力，逛完可直接在神木车站搭乘森林小火车返回阿里山车站，不走回头路。"
+          ],
+          "sourceTitle": "携程旅行 阿里山 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 阿里山 详情页",
+          "url": "https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "阿里山 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online",
+        "width": 5379,
+        "height": 3577
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_d45cd4502a",
+      "id": "manual_taiwan_e4326137",
+      "name": "太鲁阁国家公园",
+      "city": "花莲",
+      "rating": 4.8,
+      "reviewsCount": "1159条携程点评",
+      "image": "/assets/images/attractions/taiwan_e4326137_verified.jpg",
+      "description": "太鲁阁国家公园是花莲知名的自然保护区，横跨花莲县、台中市和南投县。公园于1986年正式成立。",
+      "intro": "太鲁阁国家公园是花莲知名的自然保护区，横跨花莲县、台中市和南投县。公园于1986年正式成立。",
+      "level": "热门景点",
+      "category": "自然峡谷与海岸景观",
+      "tags": [
+        "自然峡谷与海岸景观",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "Xiulin Township, Hualien County, 台湾 972",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐台铁至新城火车站或花莲火车站，出站后转乘台湾好行302路客运、包车或出租车前往景区。",
+          "internal_arrive": "建议从太鲁阁游客中心进入，此处设施完善，可咨询最新路况与步道开放信息，是游览峡谷的核心起点。",
+          "internal_traffic": "园区内跨度较大，推荐搭乘台湾好行302路客运或包车游览；峡谷内部分路段（如燕子口、九曲洞）实施交通管制，行车时不可随意停车，需在指定观景区域停留。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择新城火车站周边、花莲市区（往返便利），或入住太鲁阁园内的太鲁阁晶英酒店、布洛湾山月村、天祥青年活动中心（便于深度体验）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "尽量选择平缓的观景台，避免攀登陡峭步道，注意防滑并佩戴安全帽",
+          "children": "准备充足的零食和水，沿途讲解峡谷地质知识，在安全区域让孩子亲近自然。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "峡谷观景与海岸风光省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "太鲁阁游客中心",
+            "靳珩公园观景台（远眺印第安酋长岩）",
+            "长春祠外围",
+            "天祥"
+          ],
+          "duration": "半天",
+          "walking": "约1-2公里（以平缓步道和观景台为主）",
+          "physical": 2,
+          "tips": [
+            "峡谷内部分路段可能因地质状况管制，进入前务必在游客中心确认当日开放范围，并佩戴安全帽以防落石。"
+          ],
+          "sourceTitle": "携程旅行 太鲁阁国家公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online",
+          "高德地图 太鲁阁国家公园：https://www.amap.com/place/B0FFHKNFA0"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 太鲁阁国家公园 详情页",
+          "url": "https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "太鲁阁国家公园 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online",
+        "width": 1920,
+        "height": 1280
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_fbe14d8f8a",
+      "id": "manual_taiwan_50173d10",
+      "name": "清水断崖",
+      "city": "花莲",
+      "rating": 4.8,
+      "reviewsCount": "1091条携程点评",
+      "image": "/assets/images/attractions/taiwan_50173d10_verified.jpg",
+      "description": "清水断崖，位于和平和崇德之间，是台湾东岸的一大奇景，更是台湾八大景之一。清水断崖高一千多公尺，以极近90度的角度紧临太平洋，公路绵延20多公里，蜿蜒曲折，一边是悬崖峭壁，一边是茫茫大海，形势险峻，气象万千，令人胆战心惊，叹为观止。",
+      "intro": "清水断崖，位于和平和崇德之间，是台湾东岸的一大奇景，更是台湾八大景之一。清水断崖高一千多公尺，以极近90度的角度紧临太平洋，公路绵延20多公里，蜿蜒曲折，一边是悬崖峭壁，一边是茫茫大海，形势险峻，气象万千，令人胆战心惊，叹为观止。",
+      "level": "热门景点",
+      "category": "自然奇观/海岸观景",
+      "tags": [
+        "自然奇观/海岸观景",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "秀林乡花莲县台湾 972",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可搭乘台铁至新城站或崇德站，出站后建议包车或打车前往；自驾可沿苏花公路行驶，注意在正规停车区停靠。",
+          "internal_arrive": "崇德主观景台设施最全，有停车场和卫生间，适合家庭首站；若从新城站出发，出站打车更方便。",
+          "internal_traffic": "景区沿苏花公路分布，各观景台之间建议包车、自驾或打车衔接，公共交通不便。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住花莲车站附近或新城老街，方便补给和乘车前往景区。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "以观景台为主，避免长距离徒步，注意防滑",
+          "children": "在安全区域看海拍照，教育其远离悬崖和海浪，切勿下海。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "观景台省力俯瞰游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "崇德主观景台（俯瞰断崖整体弧线）",
+            "汇德步道（约750米，步行至低位观景平台近距离看海）",
+            "崇德海滩（感受白浪拍岸，注意保持安全距离）"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 2,
+          "tips": [
+            "建议上午前往，阳光下水色更蓝；全程无遮挡，务必做好防晒；海边风浪大，切勿靠近悬崖边缘或下海游泳。"
+          ],
+          "sourceTitle": "携程旅行 清水断崖 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/hualien1366/63066.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/hualien1366/63066.html?poiType=3&scene=online",
+          "高德地图 清水断崖：https://www.amap.com/place/B0FFFUTW0F"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 清水断崖 详情页",
+          "url": "https://you.ctrip.com/sight/hualien1366/63066.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "清水断崖 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUTW0F",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_12208b34da",
+      "id": "manual_taiwan_efb48",
+      "name": "七星潭",
+      "city": "花莲",
+      "rating": 4.8,
+      "reviewsCount": "1628条携程点评",
+      "image": "/assets/images/attractions/taiwan_efb48_verified.jpg",
+      "description": "七星潭是一处绵长的新月形海岸， 七星潭为人知晓的是壮丽的海湾，看日出、赏星、赏月都相当合适，不仅是游客喜爱，因其邻近花莲市区，很多人习惯下班后来海边散步，享受夏日余晖与海滩风情。 夏季的时候，早上5点多就能看到火红的太阳从海面上升起，日出东方照亮七星潭，海面波光粼粼让人充满光亮与希望。",
+      "intro": "七星潭是一处绵长的新月形海岸， 七星潭为人知晓的是壮丽的海湾，看日出、赏星、赏月都相当合适，不仅是游客喜爱，因其邻近花莲市区，很多人习惯下班后来海边散步，享受夏日余晖与海滩风情。 夏季的时候，早上5点多就能看到火红的太阳从海面上升起，日出东方照亮七星潭，海面波光粼粼让人充满光亮与希望。",
+      "level": "热门景点",
+      "category": "滨海风景区、月牙形砾石海滩、自行车道、观景平台",
+      "tags": [
+        "滨海风景区、月牙形砾石海滩、自行车道、观景平台",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "971台湾花蓮縣新城鄉大漢村七星街79巷5號",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐台铁至新城火车站或花莲火车站，出站后转乘公交（如台湾好行310线）或包车前往；自驾可直接导航至七星潭风景区停车场。",
+          "internal_arrive": "建议从七星潭风景区主入口进入，此处靠近海边步道与自行车道起点，方便直接开启游览。",
+          "internal_traffic": "景区内设有长达21公里的环海自行车道，可租用自行车沿海岸线骑行；也可在步道平缓处直接步行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择七星潭周边的民宿或酒店（如七星潭渡假饭店、春沐七星潭海岸旅店等），步行即可到达海边，方便观赏日出日落。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "步道平缓，适合慢走吸氧，但鹅卵石路面需注意防滑，建议穿舒适运动鞋",
+          "children": "可在安全区域观察潮间带生态、叠石许愿，但严禁下海游泳，需全程看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "七星潭海岸休闲省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "七星潭海边鹅卵石步道（听浪发呆",
+            "叠石许愿）",
+            "环海自行车道（租自行车骑行吹海风）",
+            "赏星广场（眺望太平洋",
+            "欣赏星空）",
+            "观日楼（等待日出或日落）",
+            "定置渔场（了解传统渔业作业）"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（可结合自行车骑行，轻松省力）",
+          "physical": 2,
+          "tips": [
+            "海滩铺满鹅卵石，光脚行走会硌脚，务必穿防滑鞋或洞洞鞋；海边风大且紫外线强，需做好防晒并携带防风外套。"
+          ],
+          "sourceTitle": "携程旅行 七星潭 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/hualien1366/63093.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/hualien1366/63093.html?poiType=3&scene=online",
+          "高德地图 七星潭风景区：https://www.amap.com/place/B0FFFUTT38"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 七星潭 详情页",
+          "url": "https://you.ctrip.com/sight/hualien1366/63093.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "七星潭 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUTT38",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_ee4fca7171",
+      "id": "manual_taiwan_15b8a5ef",
+      "name": "垦丁国家公园",
+      "city": "屏东",
+      "rating": 4.8,
+      "reviewsCount": "545条携程点评",
+      "image": "/assets/images/attractions/taiwan_15b8a5ef_verified.jpg",
+      "description": "\\n垦丁国家公园位于台湾南端恒春半岛之南侧，三面环海，是少数涵盖陆地与海域的国家公园之一。特殊的地形、丰饶的动植物及独特的民情风俗，不仅是保育、研究、环境教育的自然博物馆，更是休闲旅游的怡情胜地。",
+      "intro": "\\n垦丁国家公园位于台湾南端恒春半岛之南侧，三面环海，是少数涵盖陆地与海域的国家公园之一。特殊的地形、丰饶的动植物及独特的民情风俗，不仅是保育、研究、环境教育的自然博物馆，更是休闲旅游的怡情胜地。",
+      "level": "热门景点",
+      "category": "国家公园 / 自然海岸",
+      "tags": [
+        "国家公园 / 自然海岸",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "台湾省恒春镇垦丁路596号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘高铁至左营站，转乘垦丁快线或台湾好行巴士直达恒春转运站或垦丁地区。",
+          "internal_arrive": "自驾可导航至各景点专属停车场；非自驾建议在恒春转运站或垦丁大街附近租车。",
+          "internal_traffic": "最推荐租用电动车，灵活自由且方便停靠观景台；也可选择包车游览，适合不想骑行的家庭。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在垦丁大街或恒春镇，交通便利，餐饮选择多，去东西线距离适中。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "选择有电梯或平缓步道的景点（如观海楼），避开陡峭山路，随身携带温水与防晒防蚊用品",
+          "children": "优先安排沙滩玩水（如白沙湾、南湾）和生态观察（如猫鼻头、砂岛），注意海边防晒与防蚊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "东线壮阔海岸与地标打卡（省力休闲版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "船帆石（海边礁石拍照）",
+            "砂岛生态保护区（贝壳砂滩）",
+            "鹅銮鼻公园（白色灯塔与草甸）",
+            "台湾最南点（步道观景台）",
+            "龙磐公园（悬崖草原与无敌海景）"
+          ],
+          "duration": "半天",
+          "walking": "约 5-8 公里（视各点停车距离而定）",
+          "physical": 3,
+          "tips": [
+            "东线落山风较大，骑行电动车需注意安全；鹅銮鼻公园和台湾最南点部分路段有坡度，建议将车停在离步道较近的停车场以减少步行。"
+          ],
+          "sourceTitle": "携程旅行 垦丁国家公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        {
+          "title": "西线悠闲沙滩与绝美日落",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南湾（沙滩玩水）",
+            "猫鼻头公园（观景台看猫岩）",
+            "白沙湾（细沙散步）",
+            "红柴坑（海边看日落）"
+          ],
+          "duration": "半天",
+          "walking": "约 3-5 公里",
+          "physical": 2,
+          "tips": [
+            "西线适合下午 3 点后出发，悠闲逛到傍晚看日落；部分路段夜间无路灯，建议天黑前返回住宿区。"
+          ],
+          "sourceTitle": "携程旅行 垦丁国家公园 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 垦丁国家公园 详情页",
+          "url": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "垦丁国家公园 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1367
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_2a0a4f3be0",
+      "id": "manual_taiwan_d8892eb",
+      "name": "高美湿地",
+      "city": "台中",
+      "rating": 4.8,
+      "reviewsCount": "671条携程点评",
+      "image": "/assets/images/attractions/taiwan_d8892eb_verified.jpg",
+      "description": "高美湿地位于台中，面积不大，同时拥有泥质、沙质滩地，潮溪、草泽等多种栖息地，这里生物多样，每年冬天大量候鸟南渡至此避寒过冬，是高美湿地胜景之一。 当你到达高美湿地，映入眼帘的是两排巨大的风力发电车，巨大的叶片在风中转动，很是壮观。",
+      "intro": "高美湿地位于台中，面积不大，同时拥有泥质、沙质滩地，潮溪、草泽等多种栖息地，这里生物多样，每年冬天大量候鸟南渡至此避寒过冬，是高美湿地胜景之一。 当你到达高美湿地，映入眼帘的是两排巨大的风力发电车，巨大的叶片在风中转动，很是壮观。",
+      "level": "热门景点",
+      "category": "生态湿地、日落观景",
+      "tags": [
+        "生态湿地、日落观景",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "436台湾臺中市清水區美堤街",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至高美湿地游客中心停车场；公共交通可从台中市区搭乘309路公车至18号风车站，或到清水火车站后转乘179路公车前往。",
+          "internal_arrive": "建议从游客中心入口进入，此处停车场较近，且方便使用洗手间和清洗设施。",
+          "internal_traffic": "景区内主要沿木栈道步行游览，无内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择住在台中港附近或清水区，方便行程结束后休息，也可顺路品尝海鲜。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "木栈道平坦好走，适合长辈散步，但需注意防风保暖，避免在湿滑处停留",
+          "children": "退潮时可在浅滩安全区域玩沙、观察小螃蟹，建议自备挖沙工具和换洗衣物，切勿进入湿地核心区。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "木栈道夕阳省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "高美湿地游客中心",
+            "木栈道中段（观招潮蟹",
+            "弹涂鱼）",
+            "木栈道尽头浅滩（下水踩沙",
+            "拍天空之镜）",
+            "风车大道（拍巨型风车剪影）",
+            "堤岸（等夕阳落山）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（往返木栈道）",
+          "physical": 2,
+          "tips": [
+            "出发前务必查询当日潮汐表，干潮前后1至2小时为最佳游玩时间；木栈道会随涨潮封闭，以官方当日公告为准。建议穿拖鞋或易穿脱的鞋子，现场泥沙较多，上岸后可在清洗区冲脚。海风较大，傍晚需备薄外套防风。"
+          ],
+          "sourceTitle": "携程旅行 高美湿地 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taichung1369/63256.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taichung1369/63256.html?poiType=3&scene=online",
+          "高德地图 高美湿地：https://www.amap.com/place/B0LKXDMZJM"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 高美湿地 详情页",
+          "url": "https://you.ctrip.com/sight/taichung1369/63256.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "高美湿地 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0LKXDMZJM",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_539066fc4d",
+      "id": "manual_taiwan_91296ce9",
+      "name": "奇美博物馆",
+      "city": "台南",
+      "rating": 4.8,
+      "reviewsCount": "634条携程点评",
+      "image": "/assets/images/attractions/taiwan_91296ce9_verified.jpg",
+      "description": "大英博物馆 × 奇美博物馆 法老文物来台！ 280件珍贵文物 黄金珠宝、陪葬珍品、神庙建筑、大型石雕 重现古埃及辉煌 大英博物馆巨献《埃及之王：法老》 展览日期：2026.01.29 - 2027.01.10",
+      "intro": "大英博物馆 × 奇美博物馆 法老文物来台！ 280件珍贵文物 黄金珠宝、陪葬珍品、神庙建筑、大型石雕 重现古埃及辉煌 大英博物馆巨献《埃及之王：法老》 展览日期：2026.01.29 - 2027.01.10",
+      "level": "博物馆",
+      "category": "综合类博物馆（西洋艺术、乐器、兵器、自然史）",
+      "tags": [
+        "综合类博物馆（西洋艺术、乐器、兵器、自然史）",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "台南市仁德区文华路二段66号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "高铁台南站可转乘台铁至保安站后步行或打车；台南火车站可搭乘H31、红3或红4路公交直达；自驾可前往园区停车场。",
+          "internal_arrive": "从正门（阿波罗喷泉广场侧）进入，先感受欧式建筑外观，再进入大厅开始游览。",
+          "internal_traffic": "馆内分两层，各展区之间通过电梯、坡道和长廊连接，全程无障碍，推轮椅或婴儿车均可顺畅通行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在台南市区（如火车站、林百货附近）或高铁站周边，前往博物馆打车约20-30分钟，公交也可达。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "馆内无障碍设施完善，休息区较多，可慢慢欣赏雕塑与油画，累了可在二楼咖啡厅休息",
+          "children": "动物厅的大型标本和化石、乐器厅的古董琴非常吸引小朋友，适合科普教育，全程推婴儿车也很方便。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典艺术与自然省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "阿波罗喷泉广场（室外拍照）",
+            "艺术厅（13-20世纪西洋油画）",
+            "罗丹厅（含《沉思者》）",
+            "雕塑大道",
+            "乐器厅（古董名琴与音乐播放器）",
+            "动物厅（大型标本与化石）",
+            "兵器厅（古代兵器与盔甲）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "馆内提供人工导览服务，可跟随导览节奏轻松逛完；常设展门票支持多次出入，工作人员会在手上盖章，中途去便利店或咖啡厅休息后可凭章再次入馆。"
+          ],
+          "sourceTitle": "携程旅行 奇美博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tainan757/1787597.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tainan757/1787597.html?poiType=3&scene=online",
+          "高德地图 奇美博物馆：https://www.amap.com/place/B0FFFUU6GF"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 奇美博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/tainan757/1787597.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "奇美博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUU6GF",
+        "width": 1216,
+        "height": 810
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_8453396836",
+      "id": "manual_taiwan_8d6f8df8",
+      "name": "台南安平古堡",
+      "city": "台南",
+      "rating": 4.6,
+      "reviewsCount": "640条携程点评",
+      "image": "/assets/images/attractions/taiwan_8d6f8df8_verified.jpg",
+      "description": "安平古堡位于台南，是台湾地区古老的城堡。 每到黄昏落日景色优美。",
+      "intro": "安平古堡位于台南，是台湾地区古老的城堡。 每到黄昏落日景色优美。",
+      "level": "热门景点",
+      "category": "古迹遗址、历史博物馆",
+      "tags": [
+        "古迹遗址、历史博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "台南市安平区国胜路82号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐台南公交88路或99专线至安平古堡站；自驾可导航至景区周边停车场，但周末车位较紧张。",
+          "internal_arrive": "建议从国胜路主入口进入，入园后先参观室外遗迹，再进入室内展馆，最后登瞭望台，动线最顺且省力。",
+          "internal_traffic": "园区内主要为平缓的步道与石板路，无内部接驳车，全程步行游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐入住安平老街周边民宿或台南市区酒店，方便游览后前往老街品尝小吃。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "步道整体平缓，但瞭望台有楼梯，若腿脚不便可在史迹纪念馆内休息；城墙遗迹部分有青苔，请勿攀爬以防滑倒",
+          "children": "空间开阔适合散步，可引导孩子寻找城墙上的“壁锁”和门前的“剑狮”图腾，增加探索趣味，但需在旁陪同看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古堡遗迹与瞭望台省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "入口广场（郑成功铜像与古炮）",
+            "热兰遮城遗迹（红砖城墙与壁锁）",
+            "史迹纪念馆（室内展陈与模型）",
+            "白色瞭望台（登顶俯瞰安平港）",
+            "园区步道（返回出口）"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "园区内台阶不多且坡道平缓，但瞭望台登顶需走楼梯，建议避开正午高温时段，并备好防蚊液与饮用水。"
+          ],
+          "sourceTitle": "携程旅行 台南安平古堡 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tainan757/22866.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tainan757/22866.html?poiType=3&scene=online",
+          "高德地图 安平古堡：https://www.amap.com/place/B0FFFUTSNK"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 台南安平古堡 详情页",
+          "url": "https://you.ctrip.com/sight/tainan757/22866.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "台南安平古堡 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUTSNK",
+        "width": 1560,
+        "height": 2080
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_5b5d3c06f0",
+      "id": "manual_taiwan_226d966f",
+      "name": "北投温泉博物馆",
+      "city": "台北",
+      "rating": 4.7,
+      "reviewsCount": "329条携程点评",
+      "image": "/assets/images/attractions/taiwan_226d966f_verified.jpg",
+      "description": "北投温泉博物馆是1913年兴建的温泉公共浴场，采用日式木结构，背靠青山，曲径通幽，花木扶疏。1997年，被定为文物古迹并改建为北投温泉博物馆。",
+      "intro": "北投温泉博物馆是1913年兴建的温泉公共浴场，采用日式木结构，背靠青山，曲径通幽，花木扶疏。1997年，被定为文物古迹并改建为北投温泉博物馆。",
+      "level": "博物馆",
+      "category": "博物馆、历史古迹、亲子研学",
+      "tags": [
+        "博物馆、历史古迹、亲子研学",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "112台湾臺北市北投區林泉里中山路2號",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "搭乘捷运淡水信义线至北投站，换乘新北投线至新北投站，出站后步行约5至10分钟即可抵达。",
+          "internal_arrive": "主入口位于建筑二楼，进门处有志工引导换鞋。",
+          "internal_traffic": "馆内为两层楼日式木构建筑，通过木制楼梯连接一楼与二楼。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "北投温泉区（周边有多家温泉酒店与民宿，步行或短途车程可达）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "二楼榻榻米大厅适合坐下休息观景，馆内参观节奏舒缓，但上下木楼梯需注意防滑",
+          "children": "一楼大浴池和北投石展区有互动与科普元素，适合亲子研学，馆外草坪和北投公园也方便孩子活动。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "一楼浴场探秘与二楼榻榻米休憩",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一楼北投温泉浴场展示区（大浴池）",
+            "一楼北投石展示区",
+            "二楼榻榻米活动大厅（观景休息）",
+            "二楼多媒体视听室"
+          ],
+          "duration": "半天",
+          "walking": "约150米（馆内）",
+          "physical": 2,
+          "tips": [
+            "进馆需更换馆方准备的拖鞋；二楼榻榻米大厅可席地而坐吹风休息，但不可卧躺。"
+          ],
+          "sourceTitle": "携程旅行 北投温泉博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online",
+          "高德地图 北投温泉博物馆：https://www.amap.com/place/B0FFFUU6FX"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 北投温泉博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "北投温泉博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1362
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_2c3b9edb0d",
+      "id": "manual_taiwan_de48d5d5",
+      "name": "台中漫画博物馆",
+      "city": "台中",
+      "rating": 5,
+      "reviewsCount": "3条携程点评",
+      "image": "/assets/images/attractions/taiwan_de48d5d5_verified.jpg",
+      "description": "台中漫画博物馆位于403台湾台中市西區林森路33號，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "台中漫画博物馆位于403台湾台中市西區林森路33號，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "博物馆",
+      "category": "博物馆、日式历史建筑、亲子休闲",
+      "tags": [
+        "博物馆、日式历史建筑、亲子休闲",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "403台湾台中市西區林森路33號",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "距离台中火车站步行约10-15分钟；可搭乘市区公交或共享单车前往。",
+          "internal_arrive": "建议从林森路33号主入口进入，先领取导览图或了解当展讯，再按路线游览。",
+          "internal_traffic": "园区为分散式建筑，各馆之间通过林荫步道连接，全程步行即可。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在台中火车站周边或绿光计划周边，步行或骑行即可到达，交通便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "园区步道平坦，古树多可遮阴，适合慢走；日式建筑与澡堂布展富有怀旧感，可重点参观",
+          "children": "漫画图书馆可翻阅书籍，日式浴室有球池互动，户外镜湖周边有漫画角色立牌，适合拍照和探索。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "日式建筑与漫画互动半日省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "台中车站方向入口",
+            "林森路33号馆（看主题展与漫画原稿墙）",
+            "漫画图书馆（翻阅台日韩漫画）",
+            "日式浴室（体验公共澡堂布展与球池）",
+            "镜湖与古树（户外装置拍照打卡）"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 2,
+          "tips": [
+            "园区内多栋日式建筑入馆需脱鞋，建议穿方便穿脱的鞋子；户外绿树较多，注意防晒。"
+          ],
+          "sourceTitle": "携程旅行 台中漫画博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 台中漫画博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "台中漫画博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online",
+        "width": 1789,
+        "height": 2237
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_d6bde0590c",
+      "id": "manual_taiwan_462984d5",
+      "name": "鹿港龙山寺",
+      "city": "彰化",
+      "rating": 4.6,
+      "reviewsCount": "42条携程点评",
+      "image": "/assets/images/attractions/taiwan_462984d5_verified.jpg",
+      "description": "鹿港龙山寺具有古朴的风貌，建筑、彩绘和雕刻都美轮美奂，还有美丽的藻井。鹿港龙山寺建于明郑永历七年（1653年），在1786年迁到现在的位置，于1831年修建原本的狭小庙寺而成，并重建多次。",
+      "intro": "鹿港龙山寺具有古朴的风貌，建筑、彩绘和雕刻都美轮美奂，还有美丽的藻井。鹿港龙山寺建于明郑永历七年（1653年），在1786年迁到现在的位置，于1831年修建原本的狭小庙寺而成，并重建多次。",
+      "level": "热门景点",
+      "category": "国定古迹 / 清代闽南佛寺 / 宗教文化景点",
+      "tags": [
+        "国定古迹 / 清代闽南佛寺 / 宗教文化景点",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "505台湾省彰化縣鹿港鎮龍山街100號",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可自驾前往（附近有停车场），或搭乘公车至鹿港镇公所站后步行前往。",
+          "internal_arrive": "建议从正前方的山门进入，沿中轴线由前向后参观，空间层次分明，最省力。",
+          "internal_traffic": "全寺为平地步行，无电梯或代步车，各殿宇之间通过天井和回廊连接。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "鹿港老街周边（如瑶林街、埔头街附近），方便游览后步行回酒店休息。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "全程平地无台阶陡坡，非常省力，但寺内空间较大，建议穿防滑舒适的鞋子，并在阴凉处或回廊多休息",
+          "children": "建筑上的剪黏、木雕和神兽造型丰富，适合引导孩子观察传统工艺，但需注意在殿内保持安静，不要奔跑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "中轴线建筑艺术省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "山门（十二柱山门与八字墙）",
+            "前殿（戏台与藻井）",
+            "正殿（重檐歇山顶与木雕斗拱）",
+            "后殿（传统院落与回廊）"
+          ],
+          "duration": "半天",
+          "walking": "约200米",
+          "physical": 1,
+          "tips": [
+            "寺内香火较旺，请保持安静并尊重当地信众的信仰习俗，拍摄时尽量避免使用闪光灯。"
+          ],
+          "sourceTitle": "携程旅行 鹿港龙山寺 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/changhua3180/1673668.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/changhua3180/1673668.html?poiType=3&scene=online",
+          "高德地图 鹿港龙山寺：https://www.amap.com/place/B0FFFUTY1L"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 鹿港龙山寺 详情页",
+          "url": "https://you.ctrip.com/sight/changhua3180/1673668.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "鹿港龙山寺 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0FFFUTY1L",
+        "width": 2048,
+        "height": 1536
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_004fb24b7a",
+      "id": "manual_taiwan_ccb032b3",
+      "name": "兰屿",
+      "city": "台东",
+      "rating": 4.8,
+      "reviewsCount": "48条携程点评",
+      "image": "/assets/images/attractions/taiwan_ccb032b3_verified.jpg",
+      "description": "椰油村是岛上的行政中心，乡公所、国中、公交车总站皆在此。村边的开元港是对外交通的重要门户，与台东富岗渔港间有交通船航行。",
+      "intro": "椰油村是岛上的行政中心，乡公所、国中、公交车总站皆在此。村边的开元港是对外交通的重要门户，与台东富岗渔港间有交通船航行。",
+      "level": "热门景点",
+      "category": "海岛、火山岩海岸、达悟族原住民文化",
+      "tags": [
+        "海岛、火山岩海岸、达悟族原住民文化",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "952台湾台东县兰屿乡",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从台东富冈渔港乘船约2.5小时抵达，或从台东机场乘德安航空小飞机约20分钟抵达。船班与航班受天气影响大，需提前确认。",
+          "internal_arrive": "兰屿为全岛开放式景区，无传统单一大门。建议从开元港码头或兰屿机场进入后，直接前往民宿或租车行安顿。",
+          "internal_traffic": "环岛公路全长约37公里。推荐包车或租赁电动车（需提前预订，注意续航）；若无机车驾照，不建议徒步环岛，可搭乘每日仅4班的环岛公交（需提前在站牌等候）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在开元港码头附近（出行、补给方便）或东清、野银部落（看日出、体验原住民文化、环境安静）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "岛上坡道较多，建议选择包车环岛，避免频繁上下坡和长时间暴晒",
+          "children": "海边多为礁石，下水游玩需穿防滑鞋和水母衣，注意潮汐安全，切勿独自靠近海边。\n\n补充提醒：岛上无ATM，需提前备足现金；尊重达悟族文化，参观地下屋务必请当地族人向导带领，勿擅自闯入；飞鱼季期间禁止下水、潜水及触碰拼板舟。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "东线省力半环岛看海游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "东清湾（看拼板舟与日出）",
+            "情人洞（礁石深潭）",
+            "朗岛秘境沙滩（浮潜玩水）",
+            "青青草原（看日落草坡）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（多为平缓步道与沙滩）",
+          "physical": 2,
+          "tips": [
+            "东清湾和朗岛多为礁石海岸，务必穿溯溪鞋；岛上餐厅营业时间短，建议错峰就餐或备好干粮。"
+          ],
+          "sourceTitle": "携程旅行 兰屿 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 兰屿 详情页",
+          "url": "https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-20"
+        },
+        "basicInfoUpdatedAt": "2026-08-20",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "兰屿 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1664
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {},
+  "reviewedAt": "2026-08-20",
+  "reviewedAtIso": "2026-08-20T06:40:10.780Z",
+  "appliedAt": "2026-08-20T06:41:41.973Z",
+  "appliedAttractionIds": [
+    "manual_taiwan_da0d52a2",
+    "manual_taiwan_385f050c",
+    "manual_taiwan_f4a9f7c7",
+    "manual_taiwan_e4326137",
+    "manual_taiwan_50173d10",
+    "manual_taiwan_efb48",
+    "manual_taiwan_15b8a5ef",
+    "manual_taiwan_d8892eb",
+    "manual_taiwan_91296ce9",
+    "manual_taiwan_8d6f8df8",
+    "manual_taiwan_226d966f",
+    "manual_taiwan_de48d5d5",
+    "manual_taiwan_462984d5",
+    "manual_taiwan_ccb032b3"
+  ],
+  "appliedOverrideIds": []
+}

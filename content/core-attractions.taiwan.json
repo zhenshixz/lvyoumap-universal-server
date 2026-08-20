@@ -1,0 +1,931 @@
+{
+  "province": "台湾",
+  "checkedAt": "2026-08-20",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=taiwan&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/taiwan100076.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 21,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 9,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 9,
+    "priorityObservationCount": 6,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 0,
+  "officialResortCandidateCount": 0,
+  "popularityCount": 17,
+  "existingRecordBoundCount": 3,
+  "existingRecordUnboundCount": 14,
+  "existingRecordUnboundNames": [
+    "日月潭",
+    "野柳地质公园",
+    "阿里山",
+    "太鲁阁国家公园",
+    "清水断崖",
+    "七星潭",
+    "垦丁国家公园",
+    "高美湿地",
+    "奇美博物馆",
+    "台南安平古堡",
+    "北投温泉博物馆",
+    "台中漫画博物馆",
+    "鹿港龙山寺",
+    "兰屿"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 9,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 6,
+  "priorityObservationCandidates": [
+    {
+      "name": "鲸世界赏鲸(花莲港)",
+      "city": "",
+      "aliases": [
+        "鲸世界赏鲸(花莲港)",
+        "鲸世界赏鲸"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北101观景台",
+      "city": "",
+      "aliases": [
+        "台北101观景台"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+      "city": "",
+      "aliases": [
+        "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+        "中国台湾台北 · BIGBANG 2026",
+        "2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "猫空缆车",
+      "city": "",
+      "aliases": [
+        "猫空缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北市立动物园",
+      "city": "",
+      "aliases": [
+        "台北市立动物园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演",
+      "city": "",
+      "aliases": [
+        "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 9,
+  "observationCandidates": [
+    {
+      "name": "鲸世界赏鲸(花莲港)",
+      "city": "",
+      "aliases": [
+        "鲸世界赏鲸(花莲港)",
+        "鲸世界赏鲸"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北101观景台",
+      "city": "",
+      "aliases": [
+        "台北101观景台"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+      "city": "",
+      "aliases": [
+        "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+        "中国台湾台北 · BIGBANG 2026",
+        "2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "猫空缆车",
+      "city": "",
+      "aliases": [
+        "猫空缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北市立动物园",
+      "city": "",
+      "aliases": [
+        "台北市立动物园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演",
+      "city": "",
+      "aliases": [
+        "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九份老街",
+      "city": "新北",
+      "aliases": [
+        "九份老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "平溪十分老街",
+      "city": "新北",
+      "aliases": [
+        "平溪十分老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "淡水老街",
+      "city": "新北",
+      "aliases": [
+        "淡水老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "鲸世界赏鲸(花莲港)",
+      "city": "",
+      "aliases": [
+        "鲸世界赏鲸(花莲港)",
+        "鲸世界赏鲸"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北101观景台",
+      "city": "",
+      "aliases": [
+        "台北101观景台"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+      "city": "",
+      "aliases": [
+        "中国台湾台北 · BIGBANG 2026-2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI",
+        "中国台湾台北 · BIGBANG 2026",
+        "2027 WORLD TOUR &lt; XX : COSMOS &gt; IN TAIPEI"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "猫空缆车",
+      "city": "",
+      "aliases": [
+        "猫空缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "台北市立动物园",
+      "city": "",
+      "aliases": [
+        "台北市立动物园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演",
+      "city": "",
+      "aliases": [
+        "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九份老街",
+      "city": "新北",
+      "aliases": [
+        "九份老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "平溪十分老街",
+      "city": "新北",
+      "aliases": [
+        "平溪十分老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "淡水老街",
+      "city": "新北",
+      "aliases": [
+        "淡水老街"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 21,
+    "verifiedCount": 12,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 9,
+    "warnings": [
+      "携程省级页未发现 新北 的城市入口。",
+      "中国台湾高雄 · BTS 2026《ARIRANG》世界巡演 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "九份老街 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_165f9478f1",
+      "name": "台北故宫博物院",
+      "preferredId": "amap_B0FFF9O3Q6",
+      "aliases": [
+        "台北故宫博物院"
+      ],
+      "city": "台北",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_473b77aa6e",
+      "name": "日月潭",
+      "preferredId": "manual_taiwan_da0d52a2",
+      "aliases": [
+        "日月潭"
+      ],
+      "city": "南投",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2345e15c10",
+      "name": "野柳地质公园",
+      "preferredId": "manual_taiwan_385f050c",
+      "aliases": [
+        "野柳地质公园"
+      ],
+      "city": "新北",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a1a16ed19e",
+      "name": "台北101大楼",
+      "preferredId": "amap_B0FFFUTSX9",
+      "aliases": [
+        "台北101大楼"
+      ],
+      "city": "台北",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_39a853d25b",
+      "name": "阿里山",
+      "preferredId": "manual_taiwan_f4a9f7c7",
+      "aliases": [
+        "阿里山"
+      ],
+      "city": "嘉义",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "嘉义",
+          "page": 1,
+          "name": "阿里山国家森林游乐区",
+          "url": "https://you.ctrip.com/sight/chiayicounty3182/22891.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d45cd4502a",
+      "name": "太鲁阁国家公园",
+      "preferredId": "manual_taiwan_e4326137",
+      "aliases": [
+        "太鲁阁国家公园"
+      ],
+      "city": "花莲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "花莲",
+          "page": 1,
+          "name": "太鲁阁国家公园",
+          "url": "https://you.ctrip.com/sight/hualien1366/63047.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_fbe14d8f8a",
+      "name": "清水断崖",
+      "preferredId": "manual_taiwan_50173d10",
+      "aliases": [
+        "清水断崖"
+      ],
+      "city": "花莲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "花莲",
+          "page": 1,
+          "name": "清水断崖",
+          "url": "https://you.ctrip.com/sight/hualien1366/63066.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_12208b34da",
+      "name": "七星潭",
+      "preferredId": "manual_taiwan_efb48",
+      "aliases": [
+        "七星潭"
+      ],
+      "city": "花莲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "花莲",
+          "page": 1,
+          "name": "七星潭海岸风景特定区",
+          "url": "https://you.ctrip.com/sight/hualien1366/63093.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_ee4fca7171",
+      "name": "垦丁国家公园",
+      "preferredId": "manual_taiwan_15b8a5ef",
+      "aliases": [
+        "垦丁国家公园"
+      ],
+      "city": "屏东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "屏东",
+          "page": 1,
+          "name": "垦丁国家公园",
+          "url": "https://you.ctrip.com/sight/pingtung1364/62822.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_2a0a4f3be0",
+      "name": "高美湿地",
+      "preferredId": "manual_taiwan_d8892eb",
+      "aliases": [
+        "高美湿地"
+      ],
+      "city": "台中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台中",
+          "page": 1,
+          "name": "高美湿地",
+          "url": "https://you.ctrip.com/sight/taichung1369/63256.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_539066fc4d",
+      "name": "奇美博物馆",
+      "preferredId": "manual_taiwan_91296ce9",
+      "aliases": [
+        "奇美博物馆"
+      ],
+      "city": "台南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台南",
+          "page": 1,
+          "name": "奇美博物馆",
+          "url": "https://you.ctrip.com/sight/tainan757/1787597.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_8453396836",
+      "name": "台南安平古堡",
+      "preferredId": "manual_taiwan_8d6f8df8",
+      "aliases": [
+        "台南安平古堡"
+      ],
+      "city": "台南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台南",
+          "page": 1,
+          "name": "安平古堡",
+          "url": "https://you.ctrip.com/sight/tainan757/22866.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5b5d3c06f0",
+      "name": "北投温泉博物馆",
+      "preferredId": "manual_taiwan_226d966f",
+      "aliases": [
+        "北投温泉博物馆"
+      ],
+      "city": "台北",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台北",
+          "page": 6,
+          "name": "北投温泉博物馆",
+          "url": "https://you.ctrip.com/sight/taipei360/109810.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_2c3b9edb0d",
+      "name": "台中漫画博物馆",
+      "preferredId": "manual_taiwan_de48d5d5",
+      "aliases": [
+        "台中漫画博物馆"
+      ],
+      "city": "台中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台中",
+          "page": 5,
+          "name": "国家漫画博物馆",
+          "url": "https://you.ctrip.com/sight/taichung1369/151072989.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d6bde0590c",
+      "name": "鹿港龙山寺",
+      "preferredId": "manual_taiwan_462984d5",
+      "aliases": [
+        "鹿港龙山寺"
+      ],
+      "city": "彰化",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "彰化",
+          "page": 5,
+          "name": "鹿港龙山寺",
+          "url": "https://you.ctrip.com/sight/changhua3180/1673668.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_004fb24b7a",
+      "name": "兰屿",
+      "preferredId": "manual_taiwan_ccb032b3",
+      "aliases": [
+        "兰屿"
+      ],
+      "city": "台东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "台东",
+          "page": 1,
+          "name": "兰屿",
+          "url": "https://you.ctrip.com/sight/taitung760/62703.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_283cc8e7e0",
+      "name": "阳明山",
+      "preferredId": "amap_B0FFFUTOQ8",
+      "aliases": [
+        "阳明山",
+        "阳明山公园"
+      ],
+      "city": "台北",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 7
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

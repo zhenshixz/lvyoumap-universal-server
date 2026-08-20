@@ -1,0 +1,1036 @@
+{
+  "province": "香港",
+  "checkedAt": "2026-08-20",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=xianggang&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/hongkong38.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 25,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 10,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 10,
+    "priorityObservationCount": 4,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 0,
+  "officialResortCandidateCount": 0,
+  "popularityCount": 21,
+  "existingRecordBoundCount": 5,
+  "existingRecordUnboundCount": 16,
+  "existingRecordUnboundNames": [
+    "昂坪360",
+    "维多利亚港",
+    "太平山",
+    "香港迪士尼乐园",
+    "天星小轮",
+    "中环摩天轮",
+    "旺角",
+    "大馆",
+    "尖沙咀",
+    "浅水湾",
+    "赤柱",
+    "南丫岛",
+    "大澳",
+    "香港故宫文化博物馆",
+    "香港太空馆",
+    "庙街夜市"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 10,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 4,
+  "priorityObservationCandidates": [
+    {
+      "name": "山顶缆车",
+      "city": "",
+      "aliases": [
+        "山顶缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香港摩天轮",
+      "city": "",
+      "aliases": [
+        "香港摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "Big Bus香港观光巴士游",
+      "city": "",
+      "aliases": [
+        "Big Bus香港观光巴士游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 10,
+  "observationCandidates": [
+    {
+      "name": "山顶缆车",
+      "city": "",
+      "aliases": [
+        "山顶缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香港摩天轮",
+      "city": "",
+      "aliases": [
+        "香港摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "Big Bus香港观光巴士游",
+      "city": "",
+      "aliases": [
+        "Big Bus香港观光巴士游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "石澳",
+      "city": "香港",
+      "aliases": [
+        "石澳"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "梅窝",
+      "city": "香港",
+      "aliases": [
+        "梅窝"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "荔枝窝",
+      "city": "香港",
+      "aliases": [
+        "荔枝窝"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "M+博物馆",
+      "city": "香港",
+      "aliases": [
+        "M+博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "跑马地赛马场",
+      "city": "香港",
+      "aliases": [
+        "跑马地赛马场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九龙城寨公园",
+      "city": "香港",
+      "aliases": [
+        "九龙城寨公园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "山顶缆车",
+      "city": "",
+      "aliases": [
+        "山顶缆车"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "香港摩天轮",
+      "city": "",
+      "aliases": [
+        "香港摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "Big Bus香港观光巴士游",
+      "city": "",
+      "aliases": [
+        "Big Bus香港观光巴士游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "石澳",
+      "city": "香港",
+      "aliases": [
+        "石澳"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "梅窝",
+      "city": "香港",
+      "aliases": [
+        "梅窝"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "荔枝窝",
+      "city": "香港",
+      "aliases": [
+        "荔枝窝"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "M+博物馆",
+      "city": "香港",
+      "aliases": [
+        "M+博物馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "跑马地赛马场",
+      "city": "香港",
+      "aliases": [
+        "跑马地赛马场"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "九龙城寨公园",
+      "city": "香港",
+      "aliases": [
+        "九龙城寨公园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 25,
+    "verifiedCount": 15,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 10,
+    "warnings": [
+      "荔枝窝 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "M+博物馆 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_33c519f299",
+      "name": "昂坪360",
+      "preferredId": "manual_xianggang_119b4661",
+      "aliases": [
+        "昂坪360"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5ffee0926a",
+      "name": "维多利亚港",
+      "preferredId": "amap_B073C053V1",
+      "aliases": [
+        "维多利亚港"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 1,
+          "name": "维多利亚港",
+          "url": "https://you.ctrip.com/sight/hongkong38/55194.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_3b19edc844",
+      "name": "太平山",
+      "preferredId": "manual_xianggang_eb646b2e",
+      "aliases": [
+        "太平山"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 1,
+          "name": "太平山顶",
+          "url": "https://you.ctrip.com/sight/hongkong38/3307.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4f975010bb",
+      "name": "香港迪士尼乐园",
+      "preferredId": "amap_B073C039N2",
+      "aliases": [
+        "香港迪士尼乐园"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 1,
+          "name": "香港迪士尼乐园",
+          "url": "https://you.ctrip.com/sight/hongkong38/22943.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_35f055f9f9",
+      "name": "天星小轮",
+      "preferredId": "manual_xianggang_222c6be7",
+      "aliases": [
+        "天星小轮"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 2,
+          "name": "天星小轮",
+          "url": "https://you.ctrip.com/sight/hongkong38/113165.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_e97ef45271",
+      "name": "中环摩天轮",
+      "preferredId": "amap_B0FFFY95JC",
+      "aliases": [
+        "中环摩天轮"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 1,
+          "name": "香港摩天轮",
+          "url": "https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7ed6df9bef",
+      "name": "旺角",
+      "preferredId": "manual_xianggang_4e448ba7",
+      "aliases": [
+        "旺角"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 7,
+          "name": "旺角",
+          "url": "https://you.ctrip.com/sight/hongkong38/136007533.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_8471818573",
+      "name": "大馆",
+      "preferredId": "amap_B0FFJPF0MR",
+      "aliases": [
+        "大馆"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 8,
+          "name": "大馆",
+          "url": "https://you.ctrip.com/sight/hongkong38/1416016.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_55397a0362",
+      "name": "尖沙咀",
+      "preferredId": "amap_B0J2R1VCND",
+      "aliases": [
+        "尖沙咀"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 2,
+          "name": "尖沙咀",
+          "url": "https://you.ctrip.com/sight/hongkong38/56109.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a8136f9cfe",
+      "name": "浅水湾",
+      "preferredId": "manual_xianggang_b0b0d1ef",
+      "aliases": [
+        "浅水湾"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 6,
+          "name": "浅水湾",
+          "url": "https://you.ctrip.com/sight/hongkong38/3310.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_e45ab41f95",
+      "name": "赤柱",
+      "preferredId": "manual_xianggang_12907513",
+      "aliases": [
+        "赤柱"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 9,
+          "name": "赤柱",
+          "url": "https://you.ctrip.com/sight/hongkong38/3311.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_53627f3906",
+      "name": "南丫岛",
+      "preferredId": "manual_xianggang_2a552774",
+      "aliases": [
+        "南丫岛"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 6,
+          "name": "南丫岛",
+          "url": "https://you.ctrip.com/sight/hongkong38/52675.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_5b6f88be0b",
+      "name": "大澳",
+      "preferredId": "manual_xianggang_f08df9f",
+      "aliases": [
+        "大澳"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 8,
+          "name": "大澳",
+          "url": "https://you.ctrip.com/sight/hongkong38/3312.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9f49a8a337",
+      "name": "香港故宫文化博物馆",
+      "preferredId": "amap_B0IUAZW064",
+      "aliases": [
+        "香港故宫文化博物馆"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 1,
+          "name": "香港故宫文化博物馆",
+          "url": "https://you.ctrip.com/sight/hongkong38/134064807.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c49fcbfe47",
+      "name": "香港太空馆",
+      "preferredId": "amap_B073C03VP6",
+      "aliases": [
+        "香港太空馆"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 4,
+          "name": "香港太空馆",
+          "url": "https://you.ctrip.com/sight/hongkong38/3343.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4459b4c83b",
+      "name": "庙街夜市",
+      "preferredId": "manual_xianggang_30263bbd",
+      "aliases": [
+        "庙街夜市"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "香港",
+          "page": 8,
+          "name": "庙街夜市",
+          "url": "https://you.ctrip.com/sight/hongkong38/1700072.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_4f975010bb",
+      "name": "香港迪士尼乐园",
+      "preferredId": "amap_B073C039N2",
+      "aliases": [
+        "香港迪士尼乐园"
+      ],
+      "city": "离岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_17f9722aa0",
+      "name": "香港海洋公园",
+      "preferredId": "amap_B073C04ON5",
+      "aliases": [
+        "香港海洋公园"
+      ],
+      "city": "南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 8
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5ffee0926a",
+      "name": "维多利亚港",
+      "preferredId": "amap_B073C053V1",
+      "aliases": [
+        "维多利亚港"
+      ],
+      "city": "油尖旺",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9f49a8a337",
+      "name": "香港故宫文化博物馆",
+      "preferredId": "amap_B0IUAZW064",
+      "aliases": [
+        "香港故宫文化博物馆"
+      ],
+      "city": "油尖旺",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e31f80781e",
+      "name": "太平山顶",
+      "preferredId": "amap_B073C0YCF7",
+      "aliases": [
+        "太平山顶"
+      ],
+      "city": "中西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

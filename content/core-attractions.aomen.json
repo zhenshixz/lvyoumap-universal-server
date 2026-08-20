@@ -1,0 +1,1070 @@
+{
+  "province": "澳门",
+  "checkedAt": "2026-08-20",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=aomen&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/macau39.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 27,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 9,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 9,
+    "priorityObservationCount": 8,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 0,
+  "officialResortCandidateCount": 0,
+  "popularityCount": 20,
+  "existingRecordBoundCount": 1,
+  "existingRecordUnboundCount": 19,
+  "existingRecordUnboundNames": [
+    "新濠影汇水上乐园",
+    "大三巴牌坊",
+    "妈阁庙",
+    "龙环葡韵住宅式博物馆",
+    "路环岛",
+    "澳门旅游塔",
+    "威尼斯人度假村",
+    "巴黎人酒店",
+    "伦敦人度假村",
+    "永利皇宫",
+    "渔人码头",
+    "玫瑰圣母堂",
+    "议事亭前地",
+    "恋爱巷",
+    "大炮台",
+    "郑家大屋",
+    "官也街",
+    "澳门博物馆",
+    "石排湾郊野公园"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 9,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 8,
+  "priorityObservationCandidates": [
+    {
+      "name": "澳门新濠天地《水舞间》",
+      "city": "",
+      "aliases": [
+        "澳门新濠天地《水舞间》"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国澳门 · 澳门2049",
+      "city": "",
+      "aliases": [
+        "中国澳门 · 澳门2049"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠影汇满纷乐园",
+      "city": "",
+      "aliases": [
+        "新濠影汇满纷乐园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠天地",
+      "city": "",
+      "aliases": [
+        "新濠天地"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "影汇之星8字形摩天轮",
+      "city": "",
+      "aliases": [
+        "影汇之星8字形摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门新濠影汇度假区",
+      "city": "",
+      "aliases": [
+        "澳门新濠影汇度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门teamLab超自然空间",
+      "city": "",
+      "aliases": [
+        "澳门teamLab超自然空间"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 9,
+  "observationCandidates": [
+    {
+      "name": "澳门新濠天地《水舞间》",
+      "city": "",
+      "aliases": [
+        "澳门新濠天地《水舞间》"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国澳门 · 澳门2049",
+      "city": "",
+      "aliases": [
+        "中国澳门 · 澳门2049"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠影汇满纷乐园",
+      "city": "",
+      "aliases": [
+        "新濠影汇满纷乐园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠天地",
+      "city": "",
+      "aliases": [
+        "新濠天地"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "影汇之星8字形摩天轮",
+      "city": "",
+      "aliases": [
+        "影汇之星8字形摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门新濠影汇度假区",
+      "city": "",
+      "aliases": [
+        "澳门新濠影汇度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门teamLab超自然空间",
+      "city": "",
+      "aliases": [
+        "澳门teamLab超自然空间"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "东望洋灯塔",
+      "city": "澳门",
+      "aliases": [
+        "东望洋灯塔"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "澳门新濠天地《水舞间》",
+      "city": "",
+      "aliases": [
+        "澳门新濠天地《水舞间》"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "中国澳门 · 澳门2049",
+      "city": "",
+      "aliases": [
+        "中国澳门 · 澳门2049"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 4,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠影汇满纷乐园",
+      "city": "",
+      "aliases": [
+        "新濠影汇满纷乐园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "新濠天地",
+      "city": "",
+      "aliases": [
+        "新濠天地"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "港珠澳大桥游",
+      "city": "",
+      "aliases": [
+        "港珠澳大桥游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "影汇之星8字形摩天轮",
+      "city": "",
+      "aliases": [
+        "影汇之星8字形摩天轮"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 8,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门新濠影汇度假区",
+      "city": "",
+      "aliases": [
+        "澳门新濠影汇度假区"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "澳门teamLab超自然空间",
+      "city": "",
+      "aliases": [
+        "澳门teamLab超自然空间"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "东望洋灯塔",
+      "city": "澳门",
+      "aliases": [
+        "东望洋灯塔"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 27,
+    "verifiedCount": 18,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 9,
+    "warnings": [
+      "港珠澳大桥游 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "影汇之星8字形摩天轮 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "澳门新濠影汇度假区 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "澳门teamLab超自然空间 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_5715bd7401",
+      "name": "新濠影汇水上乐园",
+      "preferredId": "manual_aomen_8aefeb03",
+      "aliases": [
+        "新濠影汇水上乐园"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b3b40fc2d3",
+      "name": "大三巴牌坊",
+      "preferredId": "amap_B073D00ASB",
+      "aliases": [
+        "大三巴牌坊"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 1,
+          "name": "大三巴牌坊",
+          "url": "https://you.ctrip.com/sight/macau39/3399.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7c85b9c6e5",
+      "name": "妈阁庙",
+      "preferredId": "amap_B073D00CQD",
+      "aliases": [
+        "妈阁庙"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "妈阁庙",
+          "url": "https://you.ctrip.com/sight/macau39/3381.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a04b961189",
+      "name": "龙环葡韵住宅式博物馆",
+      "preferredId": "amap_B073D00IU5",
+      "aliases": [
+        "龙环葡韵住宅式博物馆"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 9,
+          "name": "龙环葡韵住宅式博物馆",
+          "url": "https://you.ctrip.com/sight/macau39/5712.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_68899a9caa",
+      "name": "路环岛",
+      "preferredId": "manual_aomen_e104b316",
+      "aliases": [
+        "路环岛"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 6,
+          "name": "路环岛",
+          "url": "https://you.ctrip.com/sight/macau39/144798.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7244425de3",
+      "name": "澳门旅游塔",
+      "preferredId": "amap_B073D00HLO",
+      "aliases": [
+        "澳门旅游塔"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 1,
+          "name": "澳门旅游塔",
+          "url": "https://you.ctrip.com/sight/macau39/136025.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_8ed3643f90",
+      "name": "威尼斯人度假村",
+      "preferredId": "manual_aomen_8b20ca93",
+      "aliases": [
+        "威尼斯人度假村"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "澳门威尼斯人度假区",
+          "url": "https://you.ctrip.com/sight/macau39/54501.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_a63701f8ae",
+      "name": "巴黎人酒店",
+      "preferredId": "manual_aomen_c9062471",
+      "aliases": [
+        "巴黎人酒店"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "澳门巴黎人度假区",
+          "url": "https://you.ctrip.com/sight/macau39/5075348.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_335ee2abe2",
+      "name": "伦敦人度假村",
+      "preferredId": "manual_aomen_11df5500",
+      "aliases": [
+        "伦敦人度假村"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "澳门伦敦人度假区",
+          "url": "https://you.ctrip.com/sight/macau39/107330861.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_756a168699",
+      "name": "永利皇宫",
+      "preferredId": "manual_aomen_46d5b32d",
+      "aliases": [
+        "永利皇宫"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "永利皇宫",
+          "url": "https://you.ctrip.com/sight/macau39/69412976.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_0fe9d46325",
+      "name": "渔人码头",
+      "preferredId": "amap_B073D00BLS",
+      "aliases": [
+        "渔人码头"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 5,
+          "name": "澳门渔人码头-马可勃罗露天广场",
+          "url": "https://you.ctrip.com/sight/macau39/4583114.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b656fdd703",
+      "name": "玫瑰圣母堂",
+      "preferredId": "amap_B073D00AS5",
+      "aliases": [
+        "玫瑰圣母堂"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 7,
+          "name": "玫瑰圣母堂",
+          "url": "https://you.ctrip.com/sight/macau39/3400.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c89f61332f",
+      "name": "议事亭前地",
+      "preferredId": "manual_aomen_e2955134",
+      "aliases": [
+        "议事亭前地"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 7,
+          "name": "议事亭前地",
+          "url": "https://you.ctrip.com/sight/macau39/49198.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b71554208b",
+      "name": "恋爱巷",
+      "preferredId": "manual_aomen_1e5365f7",
+      "aliases": [
+        "恋爱巷"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 6,
+          "name": "恋爱巷",
+          "url": "https://you.ctrip.com/sight/macau39/1788398.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_3bedfef999",
+      "name": "大炮台",
+      "preferredId": "amap_B073D00AS7",
+      "aliases": [
+        "大炮台"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 6,
+          "name": "大炮台",
+          "url": "https://you.ctrip.com/sight/macau39/3366.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_c4f67120ee",
+      "name": "郑家大屋",
+      "preferredId": "manual_aomen_c1d6efa4",
+      "aliases": [
+        "郑家大屋"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 10,
+          "name": "郑家大屋",
+          "url": "https://you.ctrip.com/sight/macau39/26481.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b55aa7e46c",
+      "name": "官也街",
+      "preferredId": "manual_aomen_a63f3e42",
+      "aliases": [
+        "官也街"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 3,
+          "name": "官也街",
+          "url": "https://you.ctrip.com/sight/macau39/132400.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f0db8e7cce",
+      "name": "澳门博物馆",
+      "preferredId": "manual_aomen_8706b1e6",
+      "aliases": [
+        "澳门博物馆"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 5,
+          "name": "澳门博物馆",
+          "url": "https://you.ctrip.com/sight/macau39/45076.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_da8da1ad84",
+      "name": "石排湾郊野公园",
+      "preferredId": "amap_B073D00IID",
+      "aliases": [
+        "石排湾郊野公园"
+      ],
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "澳门",
+          "page": 10,
+          "name": "石排湾郊野公园",
+          "url": "https://you.ctrip.com/sight/macau39/5067752.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7244425de3",
+      "name": "澳门旅游塔",
+      "preferredId": "amap_B073D00HLO",
+      "aliases": [
+        "澳门旅游塔"
+      ],
+      "city": "风顺堂",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

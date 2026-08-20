@@ -180,6 +180,7 @@ function evidencePlatform(value) {
 }
 
 async function readOfficial5A(province) {
+  if (['香港', '澳门', '台湾'].includes(province)) return [];
   const response = await fetch(officialUrl, { headers: { "user-agent": "Mozilla/5.0 ChinaTourismMapDataMaintenance/1.0" } });
   if (!response.ok) throw new Error(`文化和旅游部数据服务请求失败：HTTP ${response.status}`);
   const html = await response.text();
@@ -207,8 +208,9 @@ async function main() {
   const province = db.provinces?.[provinceName];
   if (!province) throw new Error(`基础数据库中没有找到省份：${provinceName}`);
   const slug = province.id || provinceName;
+  const isSpecialRegion = ['香港', '澳门', '台湾'].includes(provinceName);
   const official = await readOfficial5A(provinceName);
-  if (!official.length) throw new Error(`${provinceName} 的国家5A名单为空，拒绝生成。`);
+  if (!isSpecialRegion && !official.length) throw new Error(provinceName + " 的国家5A名单为空，拒绝生成。");
   const popularityPath = path.join(runtimeDir, `core-popularity-${slug}.json`);
   const popularity = readJson(popularityPath, { candidates: [] });
   const otaPath = path.join(runtimeDir, `core-ota-${slug}.json`);
@@ -218,7 +220,7 @@ async function main() {
   const secondaryEvidence = ignoreSecondary
     ? {}
     : readJson(path.join(runtimeDir, `core-secondary-evidence-${slug}.json`), {});
-  if (officialCandidates.fiveA?.length && officialCandidates.fiveA.length !== official.length) {
+  if (!isSpecialRegion && officialCandidates.fiveA?.length && officialCandidates.fiveA.length !== official.length) {
     throw new Error(`文旅部两个官方入口的5A数量不一致（${official.length} / ${officialCandidates.fiveA.length}），拒绝自动建立清单。`);
   }
   const records = province.attractions || [];
