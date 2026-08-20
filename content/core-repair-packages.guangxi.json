@@ -1,0 +1,931 @@
+{
+  "province": "广西",
+  "status": "applied",
+  "createdAt": "2026-08-19T08:52:47.118Z",
+  "updatedAt": "2026-08-19T08:52:47.702Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [
+    "大新明仕旅游度假区：基本资料目前只有1个可追溯来源",
+    "桂林阳朔遇龙河旅游度假区：基本资料目前只有1个可追溯来源"
+  ],
+  "seedFile": "content/core-repair-seeds.guangxi.json",
+  "attractions": [
+    {
+      "baselineKey": "core_d9cc50e33f",
+      "id": "manual_guangxi_239a6f3e",
+      "name": "独秀峰•靖江王城景区",
+      "city": "桂林",
+      "rating": 3.9,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/guangxi_239a6f3e_verified.jpg",
+      "description": "景区位于漓江之畔，是以山形秀美的独秀峰为代表和整个明代靖江王府为地域范围的景区。景区内自然山水风光与历史人文景观交相辉映，“桂林山水甲天下”这千古名句的真迹题刻就出于此处。",
+      "intro": "景区位于漓江之畔，是以山形秀美的独秀峰为代表和整个明代靖江王府为地域范围的景区。景区内自然山水风光与历史人文景观交相辉映，“桂林山水甲天下”这千古名句的真迹题刻就出于此处。",
+      "level": "5A景区",
+      "category": "历史人文与自然山水结合的5A级景区",
+      "tags": [
+        "历史人文与自然山水结合的5A级景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "广西壮族自治区桂林市秀峰区王城路1号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "公交1路、2路、18路至\"靖江王城\"站；自驾可停景区停车场（小车费用以官方当日公告为准/2.5小时）。",
+          "internal_arrive": "南门（端礼门）进入，正对东西巷，周边餐饮和停车更方便；北门（广智门）也可进，但建议从南门入园跟随讲解团走完整路线。",
+          "internal_traffic": "景区内步行游览，部分游客可选择短驳车从北门绕到南门（3分钟），但整体步行即可覆盖。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在东西巷或正阳步行街附近，步行5-10分钟可达景区，周边餐饮选择多，夜景也方便逛。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "承运殿、贡院等平地展区适合长辈，但独秀峰台阶陡峭，建议长辈在山脚月牙池或王府后花园休息，不必强行登顶",
+          "children": "贡院科举体验、王府秘拓拓印福字互动性强，孩子参与度高，可提前准备小本子收集景区印章。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "中轴线经典省力游（约2-2.5小时）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "端礼门（南门）入园",
+            "承运门",
+            "承运殿（看明代石雕台基",
+            "听讲解）",
+            "王府秘拓（体验非遗拓印）",
+            "广西贡院（沉浸式科举体验）",
+            "太平岩（洞内观太岁石刻）",
+            "独秀峰山脚（打卡\"桂林山水甲天下\"石刻）",
+            "登顶独秀峰（360°俯瞰桂林城）",
+            "广智门（北门）出园"
+          ],
+          "duration": "半天",
+          "walking": "约1.5-2公里",
+          "physical": 3,
+          "tips": [
+            "门票包含官方讲解，建议跟随讲解团游览，能更好理解王府历史与科举文化；登顶独秀峰约需15-20分钟，台阶较陡，穿防滑鞋。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "高德地图 独秀峰：https://www.amap.com/place/B0FFG28ZUA"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 独秀峰",
+          "url": "https://www.amap.com/place/B0FFG28ZUA",
+          "poiId": "B0FFG28ZUA",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Guilin Duxiu Feng 2012.09.28 13-57-40.jpg",
+        "author": "Zhangzhugang",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guilin_Duxiu_Feng_2012.09.28_13-57-40.jpg",
+        "width": 3840,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_690d753ba9",
+      "id": "manual_guangxi_be54f73d",
+      "name": "通灵大峡谷",
+      "city": "靖西",
+      "rating": 4.5,
+      "reviewsCount": "4758条携程点评",
+      "image": "/assets/images/attractions/guangxi_be54f73d_verified.jpg",
+      "description": "通灵大峡谷位于广西百色市靖西县，是一处结合了热带雨林、河流瀑布、峡谷溶洞等多种景观的自然风景区，也是靖西著名的景点之一。游玩景区可以在秀美的山水之间漫步观景，体会森林氧吧的清新。",
+      "intro": "通灵大峡谷位于广西百色市靖西县，是一处结合了热带雨林、河流瀑布、峡谷溶洞等多种景观的自然风景区，也是靖西著名的景点之一。游玩景区可以在秀美的山水之间漫步观景，体会森林氧吧的清新。",
+      "level": "热门景点",
+      "category": "自然峡谷、溶洞、瀑布",
+      "tags": [
+        "自然峡谷、溶洞、瀑布",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "广西壮族自治区百色市靖西市湖润镇新灵村",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“通灵大峡谷停车场”（车位充足，停里面免费寄存行李）；公共交通可高铁到靖西站后转乘景区直通车或班车。",
+          "internal_arrive": "建议较合适时段前入园，避开旅行团人流，光线好且容易在瀑布看到彩虹。",
+          "internal_traffic": "景区为单行线步道，全程无其他内部交通工具，出口处有接驳车返回大门。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "靖西市区（吃饭逛街方便，选择多）或鹅泉附近（方便次日早游，但民宿条件一般）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "818级台阶下行较费膝盖，建议佩戴护膝或使用登山杖，量力而行",
+          "children": "全程台阶和湿滑路面较多，需全程看护，建议穿防滑运动鞋，备好雨衣和防水袋。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力精华游（单行线不走回头路）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "818级石阶下行",
+            "念八峡原始雨林",
+            "通灵宝洞（溶洞+地下暗河）",
+            "通灵大瀑布",
+            "水帘洞",
+            "鸳鸯潭",
+            "古悬洞葬观景台",
+            "出口接驳车返回"
+          ],
+          "duration": "半天",
+          "walking": "约3.8公里",
+          "physical": 3,
+          "tips": [
+            "出口到停车场有1.5公里连续上坡，强烈建议乘坐费用以官方当日公告为准的接驳车，避免暴晒和体力透支。"
+          ],
+          "sourceTitle": "携程旅行 通灵大峡谷 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/jingxi967/51441.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/guangxi100052.html",
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "携程旅行 通灵大峡谷 详情页：https://you.ctrip.com/sight/jingxi967/51441.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 通灵大峡谷 详情页",
+          "url": "https://you.ctrip.com/sight/jingxi967/51441.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "通灵大峡谷 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/jingxi967/51441.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/jingxi967/51441.html?poiType=3&scene=online",
+        "width": 2048,
+        "height": 1366
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_cdf91a5acb",
+      "id": "manual_guangxi_9f0856b0",
+      "name": "柳州工业博物馆",
+      "city": "柳州",
+      "rating": 4.8,
+      "reviewsCount": "143条携程点评",
+      "image": "/assets/images/attractions/guangxi_9f0856b0_verified.jpg",
+      "description": "柳州工业博物馆位于文昌大桥东侧，市民广场对面，2012年5月才建成。作为老牌工业城市，柳州几乎是中国近代工业进程的缩影，而在柳州近年新开的博物馆中，工业博物馆是较有看头的一个，而且是免费的。",
+      "intro": "柳州工业博物馆位于文昌大桥东侧，市民广场对面，2012年5月才建成。作为老牌工业城市，柳州几乎是中国近代工业进程的缩影，而在柳州近年新开的博物馆中，工业博物馆是较有看头的一个，而且是免费的。",
+      "level": "博物馆",
+      "category": "工业主题博物馆、国家AAAA级景区",
+      "tags": [
+        "工业主题博物馆、国家AAAA级景区",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "广西壮族自治区柳州市鱼峰区柳东路220号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "乘坐12路公交至“工业博物馆”站；或乘69、75、76、95路至“文昌路西”站步行约5分钟；自驾可导航至馆内免费停车场（车位有限，建议错峰）。",
+          "internal_arrive": "建议从南门或东门进入，南门有巨型蒸汽机车和绿皮车厢，东门有红砖墙和水池倒影，适合先拍照再进馆。",
+          "internal_traffic": "馆内主要依靠坡道和长廊连接各展区，1楼与2楼之间通过坡道和长廊过渡，无需爬楼梯。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐选择窑埠古镇或五星步行街附近，距离博物馆步行或打车约10至15分钟，周边餐饮和交通更便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "全程坡道省力，可在一楼观看皮影戏或租VR眼镜听讲解，二楼有休息区和卫生间",
+          "children": "室外绿皮火车和蒸汽机车能吸引孩子兴趣，馆内有模拟驾驶等互动体验，适合科普研学。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "室外硬核机械+室内历史长廊（省力不走回头路）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "南门入口（蒸汽机车与绿皮火车打卡）",
+            "东广场水池（红砖墙倒影拍照）",
+            "1F 工业历史馆（1902年木炭汽车",
+            "老机床）",
+            "2F 企业风采馆与生态宜居馆（五菱崛起与城市转型）",
+            "2F 长廊（工业成果展示）",
+            "文创区与盖章点",
+            "出口"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "馆内全程为坡道设计，无台阶，推婴儿车或轮椅可丝滑通行；建议顺着地面圆形箭头指示牌走，避免走回头路。"
+          ],
+          "sourceTitle": "携程旅行 柳州工业博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/liuzhou143/1412454.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/liuzhou143/1412454.html?poiType=3&scene=online",
+          "高德地图 柳州工业博物馆：https://www.amap.com/place/B03040OFSU"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 柳州工业博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/liuzhou143/1412454.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "柳州工业博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B03040OFSU",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_7bbc7dc706",
+      "id": "manual_guangxi_efa1af76",
+      "name": "广西民族博物馆",
+      "city": "南宁",
+      "rating": 4.7,
+      "reviewsCount": "988条携程点评",
+      "image": "/assets/images/attractions/guangxi_efa1af76_verified.jpg",
+      "description": "广西民族博物馆位于青秀区，毗邻青秀山，这里陈列着种类齐全的铜鼓，铜鼓“雷纹大铜鼓”就位于其中。这里还有五彩八桂展览，可以看到各式各样的民族特色服饰和生活用品，展示了广西各个民族的特点。",
+      "intro": "广西民族博物馆位于青秀区，毗邻青秀山，这里陈列着种类齐全的铜鼓，铜鼓“雷纹大铜鼓”就位于其中。这里还有五彩八桂展览，可以看到各式各样的民族特色服饰和生活用品，展示了广西各个民族的特点。",
+      "level": "博物馆",
+      "category": "博物馆、民族文化展示",
+      "tags": [
+        "博物馆、民族文化展示",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "南宁市青秀区青环路11号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "公交可乘69路、W8路至“广西民族博物馆”站；自驾或打车导航至“广西民族博物馆”，馆内设有停车场（周末及节假日车位较紧张，建议公共交通出行）。",
+          "internal_arrive": "入口处可刷身份证或扫码登记入馆，建议提前通过官方公众号了解预约要求；右手边有寄存柜可存放背包。",
+          "internal_traffic": "馆内配备电梯，可直达各楼层；各展厅之间通过室内走廊连通，无障碍设施完善。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在青秀区或东盟商务区附近，距离博物馆较近，周边餐饮和交通配套完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "路线平缓，电梯直达，三楼和二楼为核心展区，体力消耗小，适合慢节奏参观",
+          "children": "可重点看铜鼓文化展（找最大的铜鼓）、民族服饰展（看漂亮的民族服装），馆内有互动体验区，适合亲子研学。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "省力顺游路线（三楼→二楼→室外）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "三楼《五彩八桂——广西民族文化陈列》（看民族服饰",
+            "民居复原",
+            "传统工艺）",
+            "二楼《穿越时空的鼓声——铜鼓文化展》（看镇馆之宝云雷纹大铜鼓）",
+            "一楼（寄存行李",
+            "文创店）",
+            "室外露天展示园（看侗族风雨桥",
+            "壮族干栏民居等实景建筑）"
+          ],
+          "duration": "半天",
+          "walking": "约2000步",
+          "physical": 3,
+          "tips": [
+            "建议从三楼开始往下逛，避免反复爬楼；馆内冷气较足，建议给长辈和儿童带件薄外套；部分区域禁止闪光灯拍照。"
+          ],
+          "sourceTitle": "携程旅行 广西民族博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/nanning166/1413292.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/nanning166/1413292.html?poiType=3&scene=online",
+          "高德地图 广西民族博物馆：https://www.amap.com/place/B030305T9Q"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 广西民族博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/nanning166/1413292.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "广西民族博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B030305T9Q",
+        "width": 1220,
+        "height": 1183
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_8c3ea9d653",
+      "id": "manual_guangxi_e0e67fa",
+      "name": "桂林雁山旅游度假区",
+      "city": "桂林",
+      "rating": 4.1,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/guangxi_e0e67fa_verified.jpg",
+      "description": "桂林雁山旅游度假区位于广西壮族自治区桂林市雁山区大雁路398号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "桂林雁山旅游度假区位于广西壮族自治区桂林市雁山区大雁路398号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "国家级旅游度假区",
+      "category": "国家级旅游度假区（集山水观光、科普研学、文化体验、亲子度假于一体）",
+      "tags": [
+        "国家级旅游度假区（集山水观光、科普研学、文化体验、亲子度假于一体）",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "广西壮族自治区桂林市雁山区大雁路398号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至各景区游客中心（如桂林融创文旅城、桂林园博园），市区出发约40-50分钟；公共交通可乘公交至雁山区后打车前往。",
+          "internal_arrive": "融创海世界和园博园建议从主入口游客中心进入，设施齐全且可快速获取园区地图。",
+          "internal_traffic": "度假区内景点较分散，建议自驾或包车；园博园等大型园区内可租电瓶车代步。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "桂林融创文旅城周边酒店、愚自乐园·地中海度假村、雁山宋品酒店等，方便就近游玩。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "选择有代步工具的景区（如园博园电瓶车、冠岩洞内小火车和电梯），避免爬山，多安排休息点",
+          "children": "优先选择融创海世界、园博园开阔草坪和萌宠区，可带风筝、泡泡机等玩具，备好零食和水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲游（融创海世界+园博园）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "融创海世界（海底隧道",
+            "水母馆",
+            "萌宠区）",
+            "桂林园博园（中心湖景区",
+            "广西城市展区",
+            "七彩花田）",
+            "雁山园（涵通楼",
+            "碧云湖",
+            "相思江故道）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5万步（建议园区租电瓶车代步）",
+          "physical": 3,
+          "tips": [
+            "融创海世界建议入园即冲海底隧道和水母馆，人少好拍照；园博园面积较大，强烈建议租四人电瓶车边开边逛，长辈坐着休息也舒服。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "Wikidata Q263281 实体页：https://www.wikidata.org/wiki/Q263281",
+          "高德地图 桂林雁山旅游度假区：https://www.amap.com/place/B0J0Y5P6IS"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 桂林雁山旅游度假区",
+          "url": "https://www.amap.com/place/B0J0Y5P6IS",
+          "poiId": "B0J0Y5P6IS",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "桂林雁山旅游度假区",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://baike.baidu.com/item/%E6%A1%82%E6%9E%97%E9%9B%81%E5%B1%B1%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA/63715600",
+        "sourceUrl": "http://baike.baidu.com/item/%E6%A1%82%E6%9E%97%E9%9B%81%E5%B1%B1%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA/63715600",
+        "width": 5139,
+        "height": 3301
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_66ca090a93",
+      "id": "manual_guangxi_dbdb2baf",
+      "name": "大新明仕旅游度假区",
+      "city": "崇左",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/guangxi_dbdb2baf_verified.jpg",
+      "description": "明仕旅游度假区以明仕田园风光和壮族民俗风情为主题资源，资源丰富且覆盖范围广泛，是度假区内主要的吸引力资源。度假区在发展中注重喀斯特地貌与山水田园，壮族与边境、花山文化、农耕等多种组合，田园+地质+水系+文化的资源组合性好。",
+      "intro": "明仕旅游度假区以明仕田园风光和壮族民俗风情为主题资源，资源丰富且覆盖范围广泛，是度假区内主要的吸引力资源。度假区在发展中注重喀斯特地貌与山水田园，壮族与边境、花山文化、农耕等多种组合，田园+地质+水系+文化的资源组合性好。",
+      "level": "国家级旅游度假区",
+      "category": "自然山水、田园风光、休闲度假",
+      "tags": [
+        "自然山水、田园风光、休闲度假",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "广西壮族自治区崇左市大新县堪圩社区6号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾从南宁出发约3小时，途经合那高速；高铁至崇左南站后，在游客集散中心乘班车（费用以官方当日公告为准）直达；也可在南宁客运站乘大巴至大新县再转景区专线。",
+          "internal_arrive": "推荐从那关屯文化中心停车场或游客中心附近进入，避开人流高峰，停车更划算。",
+          "internal_traffic": "景区内可租自行车（部分民宿免费）、电动车（费用以官方当日公告为准/小时）、八嘎车（电动三轮车费用以官方当日公告为准/小时），或乘坐观光车；沿河绿道平坦，自行车最方便且部分路段机动车限行。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区内民宿/酒店（如大新明仕山庄、明仕长留山居、明仕那里等，步行可达景点，清晨安静）；景区周边或大新县城酒店（性价比高，餐饮配套更全）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "竹筏漂流节奏平缓，适合长辈；骑行选平坦沿河绿道，避免陡坡；山里早晚偏凉，备薄外套",
+          "children": "鱼鳞坝浅滩可玩水（带泳衣和替换衣物）；竹筏上可听山歌、看山水，孩子不易哭闹；全程可推婴儿车。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "明仕河竹筏+田园骑行半日省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "明仕游客中心（乘竹筏漂流）",
+            "鱼鳞坝（打卡浅滩）",
+            "龙头山观景台（俯瞰全景）",
+            "稻那里（稻田咖啡歇脚）",
+            "幸福桥（日落追光）"
+          ],
+          "duration": "半天",
+          "walking": "约1000米（龙头山登顶约10分钟缓坡，其余均为平路）",
+          "physical": 2,
+          "tips": [
+            "竹筏建议提前预约，旺季排队久；鱼鳞坝下午人多，建议上午前往更清净；自驾停车勿导航“明仕田园停车场”，可停那关屯文化中心停车场（费用以官方当日公告为准/天）。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "观光车环线轻松游（不骑车不暴晒）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "观光车乘车点（大新明仕山水生态旅游有限公司）",
+            "鱼鳞坝",
+            "幸福桥",
+            "龙头山",
+            "花千骨取景地",
+            "竹筏码头",
+            "返回乘车点"
+          ],
+          "duration": "半天",
+          "walking": "约500米（仅在站点下车拍照）",
+          "physical": 1,
+          "tips": [
+            "观光车费用以官方当日公告为准，循环往返，沿途停靠核心点并停留拍照，适合怕晒、低体力人群；购票可通过小程序或现场扫码，具体以官方当日公告为准。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "夏季避暑好去处# 崇左大新明仕田园避暑,田园风光,溪流潺潺,夏日",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5494770740343167907",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5494770740343167907",
+        "width": 2048,
+        "height": 1535
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "大新明仕旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_359a5ea817",
+      "id": "manual_guangxi_c4cb862",
+      "name": "桂林阳朔遇龙河旅游度假区",
+      "city": "桂林",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/guangxi_c4cb862_verified.jpg",
+      "description": "度假区位于广西桂林阳朔县西南面，拥有独特的喀斯特峰林—峰丛景观，同时也是世界知名的乡村民俗文化体验地，拥有诗情画意的原生态山水田园风光。",
+      "intro": "度假区位于广西桂林阳朔县西南面，拥有独特的喀斯特峰林—峰丛景观，同时也是世界知名的乡村民俗文化体验地，拥有诗情画意的原生态山水田园风光。",
+      "level": "国家级旅游度假区",
+      "category": "自然山水/竹筏漂流/田园风光",
+      "tags": [
+        "自然山水/竹筏漂流/田园风光",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "广西壮族自治区桂林市阳朔县066乡道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至阳朔站后，可乘专线大巴或打车前往景区；自驾可导航至对应码头停车场。",
+          "internal_arrive": "带老人儿童首选富里桥码头或水厄底码头，风景好且配套完善；追求刺激可选金龙桥码头。",
+          "internal_traffic": "码头间有景区观光车接驳（费用以官方当日公告为准）；景区内推荐租电动车沿河骑行（约30至费用以官方当日公告为准/天），方便随时停车拍照。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "遇龙河畔轻奢酒店或田园民宿（近码头，环境清幽）；阳朔西街周边民宿（价格亲民，吃喝方便）。 长辈建议：选择无冲坝的四人筏或八人筏（如富里桥往返段），全程平稳不溅水；避免正午暴晒，注意防晒防蚊。 儿童建议：1米以下儿童不能乘坐带冲坝的双人/三人筏，需选四人/八人筏；备好洞洞鞋和手机防水袋，冲坝时水花较大。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "选择无冲坝的四人筏或八人筏（如富里桥往返段），全程平稳不溅水；避免正午暴晒，注意防晒防蚊",
+          "children": "1米以下儿童不能乘坐带冲坝的双人/三人筏，需选四人/八人筏；备好洞洞鞋和手机防水袋，冲坝时水花较大。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "竹筏慢漂+十里画廊田园骑行",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "富里桥（古桥倒影打卡）",
+            "遇龙河竹筏漂流（富里桥至三岔口段，无冲坝平稳往返）",
+            "工农桥（竹筏终点，拍摄全景）",
+            "十里画廊（沿河堤岸骑行，打卡稻田与喀斯特峰林）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里（主要在码头上下筏及古桥周边）",
+          "physical": 2,
+          "tips": [
+            "竹筏票需提前在官方小程序实名预约，每晚官方当日建议时段放次日票；若未抢到票，可尝试次日早点去码头窗口排队捡漏。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "跟着我去旅游#桂林阳朔遇龙河的竹筏漂流确实是近距离感受阳朔玫哪",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4631732457126782997",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4631732457126782997",
+        "width": 1440,
+        "height": 1080
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "桂林阳朔遇龙河旅游度假区：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B030B0MRNC": {
+      "baselineKey": "core_bec1eb1acd",
+      "id": "amap_B030B0MRNC",
+      "name": "涠洲岛南湾鳄鱼山景区",
+      "city": "北海",
+      "rating": 4.4,
+      "reviewsCount": "22389条携程点评",
+      "image": "/assets/images/attractions/guangxi_eea9e57c_verified.jpg",
+      "description": "涠洲岛位于北海南部，是我国面积较大的死火山岛，很多人把这里做为毕业旅行目的地。岛上鳄鱼山景区的火山岩、滴水丹屏的海蚀景观、风情各异的海滩、美丽的日出日落，都是涠洲岛的魅力所在。",
+      "intro": "涠洲岛位于北海南部，是我国面积较大的死火山岛，很多人把这里做为毕业旅行目的地。岛上鳄鱼山景区的火山岩、滴水丹屏的海蚀景观、风情各异的海滩、美丽的日出日落，都是涠洲岛的魅力所在。",
+      "level": "5A景区",
+      "category": "火山地质公园、海岛自然风景区",
+      "tags": [
+        "火山地质公园、海岛自然风景区",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "广西壮族自治区北海市海城区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "导航至“南湾鳄鱼山景区游客中心”（停车场免费）或“滴水阁”（停车收费，但步行距离更短）。",
+          "internal_arrive": "带老人小孩建议直接从游客中心乘坐观光车进入，省去长距离暴晒步行；若选择步行，从滴水阁入园路程最短。",
+          "internal_traffic": "景区内有观光车接驳（往返费用以官方当日公告为准），也可全程步行栈道；部分路段可乘坐快艇直达南湾码头（以官方当日公告为准）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在南湾街附近，餐饮集中且距离景区近，游玩后方便休息和用餐。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "桂林米粉",
+          "阳朔啤酒鱼",
+          "梧州纸包鸡",
+          "柳州螺蛳粉"
+        ],
+        "special_care": {
+          "elderly": "避开正午暴晒时段，穿舒适运动鞋，部分路段台阶较陡需量力而行，可考虑在月亮湾等平缓区域休息",
+          "children": "月亮湾退潮时可抓螃蟹、捡贝壳，建议备好零食和饮用水，注意防晒防蚊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "观光车接驳省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心乘观光车至景区入口 ➠ 鳄鱼山灯塔 ➠ 涠洲廓 ➠ 汤翁台 ➠ 火山口遗址 ➠ 月亮湾 ➠ 海枯石烂 ➠ 月亮广场 ➠ 返回入口"
+          ],
+          "duration": "半天",
+          "walking": "约2.2公里环线",
+          "physical": 3,
+          "tips": [
+            "景区为单行环线，跟着步道走不会迷路；下山时观光车排队可能较长，建议预留好返程时间。"
+          ],
+          "sourceTitle": "携程旅行 涠洲岛南湾鳄鱼山景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 涠洲岛南湾鳄鱼山景区 详情页：https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+          "高德地图 南湾鳄鱼山景区：https://www.amap.com/place/B030B0MRNC"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 涠洲岛南湾鳄鱼山景区 详情页",
+          "url": "https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "涠洲岛南湾鳄鱼山景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B030B0MRNC",
+        "width": 2000,
+        "height": 1334
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "selfHealActions": [
+    {
+      "type": "convert_addition_to_override",
+      "keptId": "amap_B030B0MRNC",
+      "keptName": "涠洲岛南湾鳄鱼山景区",
+      "removedId": "manual_guangxi_eea9e57c",
+      "removedName": "涠洲岛南湾鳄鱼山景区",
+      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
+    }
+  ],
+  "reviewedAt": "2026-08-19",
+  "reviewedAtIso": "2026-08-19T08:52:47.716Z",
+  "appliedAt": "2026-08-19T09:01:48.345Z",
+  "appliedAttractionIds": [
+    "manual_guangxi_239a6f3e",
+    "manual_guangxi_be54f73d",
+    "manual_guangxi_9f0856b0",
+    "manual_guangxi_efa1af76",
+    "manual_guangxi_e0e67fa",
+    "manual_guangxi_dbdb2baf",
+    "manual_guangxi_c4cb862"
+  ],
+  "appliedOverrideIds": [
+    "amap_B030B0MRNC"
+  ]
+}

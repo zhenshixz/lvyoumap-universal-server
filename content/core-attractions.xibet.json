@@ -1,0 +1,1064 @@
+{
+  "province": "西藏",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=xizang&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/tibet100003.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 16,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 4,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 5,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 19,
+  "existingRecordBoundCount": 11,
+  "existingRecordUnboundCount": 13,
+  "existingRecordUnboundNames": [
+    "雅鲁藏布大峡谷景区",
+    "纳木错",
+    "珠穆朗玛峰大本营",
+    "南迦巴瓦峰",
+    "来古冰川",
+    "卡若拉冰川",
+    "古格王朝遗址",
+    "西藏博物馆",
+    "西藏非物质文化遗产博物馆",
+    "八廓街",
+    "索松村",
+    "普莫雍错",
+    "林芝市鲁朗小镇旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 4,
+  "priorityObservationCandidates": [
+    {
+      "name": "羊卓雍错",
+      "city": "",
+      "aliases": [
+        "羊卓雍错"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 3,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0G1CMQH57",
+              "name": "羊卓雍错(羊湖)4号观景台",
+              "city": "山南"
+            },
+            {
+              "id": "amap_B0FFG8WQA7",
+              "name": "羊卓雍错(羊湖)1号观景台",
+              "city": "山南"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "纳木措圣象天门",
+      "city": "",
+      "aliases": [
+        "纳木措圣象天门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "纳木措国家公园",
+      "city": "",
+      "aliases": [
+        "纳木措国家公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "珠峰大本营",
+      "city": "",
+      "aliases": [
+        "珠峰大本营"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "羊卓雍错",
+      "city": "",
+      "aliases": [
+        "羊卓雍错"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 3,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0G1CMQH57",
+              "name": "羊卓雍错(羊湖)4号观景台",
+              "city": "山南"
+            },
+            {
+              "id": "amap_B0FFG8WQA7",
+              "name": "羊卓雍错(羊湖)1号观景台",
+              "city": "山南"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "纳木措圣象天门",
+      "city": "",
+      "aliases": [
+        "纳木措圣象天门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "纳木措国家公园",
+      "city": "",
+      "aliases": [
+        "纳木措国家公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "珠峰大本营",
+      "city": "",
+      "aliases": [
+        "珠峰大本营"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "羊卓雍错",
+      "city": "",
+      "aliases": [
+        "羊卓雍错"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 3,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0G1CMQH57",
+              "name": "羊卓雍错(羊湖)4号观景台",
+              "city": "山南"
+            },
+            {
+              "id": "amap_B0FFG8WQA7",
+              "name": "羊卓雍错(羊湖)1号观景台",
+              "city": "山南"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "纳木措圣象天门",
+      "city": "",
+      "aliases": [
+        "纳木措圣象天门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 5,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "纳木措国家公园",
+      "city": "",
+      "aliases": [
+        "纳木措国家公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "珠峰大本营",
+      "city": "",
+      "aliases": [
+        "珠峰大本营"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0K1FHI7BU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            },
+            {
+              "id": "amap_B0HR07XANU",
+              "name": "珠峰大本营",
+              "city": "日喀则"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 16,
+    "verifiedCount": 12,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_a1b137dd59",
+      "name": "雅鲁藏布大峡谷景区",
+      "preferredId": "manual_xibet_6862cab8",
+      "aliases": [
+        "雅鲁藏布大峡谷景区",
+        "林芝市雅鲁藏布大峡谷景区",
+        "雅鲁藏布大峡谷"
+      ],
+      "city": "林芝",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_e2fd6f366e",
+      "name": "扎什伦布寺景区",
+      "preferredId": "amap_B037C002S6",
+      "aliases": [
+        "扎什伦布寺景区",
+        "日喀则市扎什伦布寺景区",
+        "扎什伦布寺"
+      ],
+      "city": "日喀则",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_85b5f41cda",
+      "name": "巴松措景区",
+      "preferredId": "amap_B037E0M3PB",
+      "aliases": [
+        "巴松措景区",
+        "林芝市巴松措景区",
+        "巴松措"
+      ],
+      "city": "林芝",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_0e5878d794",
+      "name": "大昭寺景区",
+      "preferredId": "amap_B037B00F2D",
+      "aliases": [
+        "大昭寺景区",
+        "拉萨市大昭寺景区",
+        "大昭寺"
+      ],
+      "city": "拉萨",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_0777b9a352",
+      "name": "布达拉宫景区",
+      "preferredId": "amap_B037B01F68",
+      "aliases": [
+        "布达拉宫景区",
+        "拉萨市布达拉宫景区",
+        "布达拉宫"
+      ],
+      "city": "拉萨",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_2323ceed4e",
+      "name": "纳木措景区",
+      "preferredId": "amap_B037B021L9",
+      "aliases": [
+        "纳木措景区",
+        "纳木措",
+        "西藏纳木措自然保护区"
+      ],
+      "city": "那曲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": 52
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B037B021L9",
+          "name": "西藏纳木措自然保护区",
+          "city": "那曲"
+        }
+      ]
+    },
+    {
+      "key": "core_01fce7abd4",
+      "name": "纳木错",
+      "preferredId": "manual_xibet_15ff5e48",
+      "aliases": [
+        "纳木错"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "拉萨",
+          "page": 5,
+          "name": "纳木错国家风景区",
+          "url": "https://you.ctrip.com/sight/damxung2443/149972445.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_52afbfb706",
+      "name": "珠穆朗玛峰大本营",
+      "preferredId": "manual_xibet_f87ca3c6",
+      "aliases": [
+        "珠穆朗玛峰大本营"
+      ],
+      "city": "日喀则",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "日喀则",
+          "page": 1,
+          "name": "珠穆朗玛峰",
+          "url": "https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_58817b5fbf",
+      "name": "南迦巴瓦峰",
+      "preferredId": "manual_xibet_e54658cf",
+      "aliases": [
+        "南迦巴瓦峰"
+      ],
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B037E0M71K",
+              "name": "南迦巴瓦峰观景台",
+              "city": "林芝"
+            },
+            {
+              "id": "amap_B0LAPDBJ2O",
+              "name": "南迦巴瓦峰索松村最佳观景台",
+              "city": "林芝"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B037E0M71K",
+              "name": "南迦巴瓦峰观景台",
+              "city": "林芝"
+            },
+            {
+              "id": "amap_B0LAPDBJ2O",
+              "name": "南迦巴瓦峰索松村最佳观景台",
+              "city": "林芝"
+            }
+          ]
+        },
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "林芝",
+          "page": 1,
+          "name": "南迦巴瓦峰",
+          "url": "https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_45170cb181",
+      "name": "来古冰川",
+      "preferredId": "manual_xibet_eae13f57",
+      "aliases": [
+        "来古冰川"
+      ],
+      "city": "昌都",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "昌都",
+          "page": 1,
+          "name": "来古冰川",
+          "url": "https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_f7fd666b92",
+      "name": "卡若拉冰川",
+      "preferredId": "manual_xibet_8971547d",
+      "aliases": [
+        "卡若拉冰川"
+      ],
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "山南",
+          "page": 9,
+          "name": "卡若拉冰川",
+          "url": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9121f817c1",
+      "name": "古格王朝遗址",
+      "preferredId": "manual_xibet_62378296",
+      "aliases": [
+        "古格王朝遗址"
+      ],
+      "city": "阿里",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "阿里",
+          "page": 2,
+          "name": "古格王朝遗址-红殿",
+          "url": "https://you.ctrip.com/sight/zanda2454/145360250.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_0dbd832952",
+      "name": "西藏博物馆",
+      "preferredId": "manual_xibet_e06c7d06",
+      "aliases": [
+        "西藏博物馆"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "拉萨",
+          "page": 1,
+          "name": "西藏博物馆",
+          "url": "https://you.ctrip.com/sight/lhasa36/51555.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_d9b772f708",
+      "name": "西藏非物质文化遗产博物馆",
+      "preferredId": "manual_xibet_27c6248d",
+      "aliases": [
+        "西藏非物质文化遗产博物馆"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "拉萨",
+          "page": 6,
+          "name": "西藏非物质文化遗产博物馆",
+          "url": "https://you.ctrip.com/sight/lhasa36/64389875.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_bc1aa83e72",
+      "name": "八廓街",
+      "preferredId": "manual_xibet_16a9af42",
+      "aliases": [
+        "八廓街"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "拉萨",
+          "page": 1,
+          "name": "八廓街",
+          "url": "https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_bf4bb92132",
+      "name": "索松村",
+      "preferredId": "manual_xibet_b0101ae8",
+      "aliases": [
+        "索松村"
+      ],
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "林芝",
+          "page": 1,
+          "name": "索松村",
+          "url": "https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_0032a9d0b9",
+      "name": "普莫雍错",
+      "preferredId": "manual_xibet_5783a095",
+      "aliases": [
+        "普莫雍错"
+      ],
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "山南",
+          "page": 1,
+          "name": "普莫雍错",
+          "url": "https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_676790c32f",
+      "name": "冈仁波齐",
+      "preferredId": "amap_B0LA61CXYP",
+      "aliases": [
+        "冈仁波齐"
+      ],
+      "city": "阿里",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 62
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_bbca6159dd",
+      "name": "扎基寺",
+      "preferredId": "amap_B037B01194",
+      "aliases": [
+        "扎基寺"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 5
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4fd008bc5f",
+      "name": "羊卓雍措",
+      "preferredId": "amap_B037D0MKCD",
+      "aliases": [
+        "羊卓雍措",
+        "羊卓雍措景区"
+      ],
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1d9b926263",
+      "name": "色拉寺",
+      "preferredId": "amap_B037B00980",
+      "aliases": [
+        "色拉寺"
+      ],
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 10
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ca8924ed86",
+      "name": "鲁朗林海",
+      "preferredId": "amap_B037E004U5",
+      "aliases": [
+        "鲁朗林海",
+        "鲁朗林海风景区"
+      ],
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 45
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_6ed15a801d",
+      "name": "色林措",
+      "preferredId": "amap_B0FFKPA92D",
+      "aliases": [
+        "色林措"
+      ],
+      "city": "那曲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 54
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a36c024e34",
+      "name": "林芝市鲁朗小镇旅游度假区",
+      "preferredId": "manual_xibet_7515eea6",
+      "aliases": [
+        "林芝市鲁朗小镇旅游度假区"
+      ],
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

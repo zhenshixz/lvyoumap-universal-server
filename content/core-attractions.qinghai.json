@@ -1,0 +1,991 @@
+{
+  "province": "青海",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=qinghai&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/qinghai100032.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 22,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 21,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 21,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 4,
+  "officialResortCandidateCount": 0,
+  "popularityCount": 9,
+  "existingRecordBoundCount": 7,
+  "existingRecordUnboundCount": 6,
+  "existingRecordUnboundNames": [
+    "海北州阿咪东索景区",
+    "互助土族故土园旅游区",
+    "塔尔寺景区",
+    "青海湖风景区",
+    "青海藏文化博物院",
+    "青海省博物馆"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 21,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "青海湖二郎剑景区",
+      "city": "",
+      "aliases": [
+        "青海湖二郎剑景区",
+        "青海湖二郎剑"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 21,
+  "observationCandidates": [
+    {
+      "name": "青海湖二郎剑景区",
+      "city": "",
+      "aliases": [
+        "青海湖二郎剑景区",
+        "青海湖二郎剑"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茶卡盐湖",
+      "city": "海西州",
+      "aliases": [
+        "茶卡盐湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "祁连卓尔山",
+      "city": "海北州",
+      "aliases": [
+        "祁连卓尔山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "门源百里油菜花",
+      "city": "海北州",
+      "aliases": [
+        "门源百里油菜花"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "阿尼玛卿雪山",
+      "city": "果洛州",
+      "aliases": [
+        "阿尼玛卿雪山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "年保玉则",
+      "city": "果洛州",
+      "aliases": [
+        "年保玉则"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "坎布拉国家森林公园",
+      "city": "黄南州",
+      "aliases": [
+        "坎布拉国家森林公园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "同仁热贡艺术之乡",
+      "city": "黄南州",
+      "aliases": [
+        "同仁热贡艺术之乡"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "同仁古城",
+      "city": "黄南州",
+      "aliases": [
+        "同仁古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "孟达天池",
+      "city": "临夏州/海东",
+      "aliases": [
+        "孟达天池"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "大柴旦翡翠湖",
+      "city": "海西州",
+      "aliases": [
+        "大柴旦翡翠湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "察尔汗盐湖",
+      "city": "海西州",
+      "aliases": [
+        "察尔汗盐湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "格尔木昆仑旅游区",
+      "city": "海西州",
+      "aliases": [
+        "格尔木昆仑旅游区",
+        "格尔木昆仑"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "可可西里",
+      "city": "海西州",
+      "aliases": [
+        "可可西里"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "格尔木乌素特水上雅丹",
+      "city": "海西州",
+      "aliases": [
+        "格尔木乌素特水上雅丹"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "冷湖火星营地",
+      "city": "海西州",
+      "aliases": [
+        "冷湖火星营地"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茫崖艾肯泉",
+      "city": "海西州",
+      "aliases": [
+        "茫崖艾肯泉"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茫崖翡翠湖",
+      "city": "海西州",
+      "aliases": [
+        "茫崖翡翠湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "德令哈克鲁克湖",
+      "city": "海西州",
+      "aliases": [
+        "德令哈克鲁克湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "金银滩草原",
+      "city": "海北州",
+      "aliases": [
+        "金银滩草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "原子城纪念馆",
+      "city": "海北州",
+      "aliases": [
+        "原子城纪念馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "青海湖二郎剑景区",
+      "city": "",
+      "aliases": [
+        "青海湖二郎剑景区",
+        "青海湖二郎剑"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茶卡盐湖",
+      "city": "海西州",
+      "aliases": [
+        "茶卡盐湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "祁连卓尔山",
+      "city": "海北州",
+      "aliases": [
+        "祁连卓尔山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "门源百里油菜花",
+      "city": "海北州",
+      "aliases": [
+        "门源百里油菜花"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "阿尼玛卿雪山",
+      "city": "果洛州",
+      "aliases": [
+        "阿尼玛卿雪山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "年保玉则",
+      "city": "果洛州",
+      "aliases": [
+        "年保玉则"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "坎布拉国家森林公园",
+      "city": "黄南州",
+      "aliases": [
+        "坎布拉国家森林公园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "同仁热贡艺术之乡",
+      "city": "黄南州",
+      "aliases": [
+        "同仁热贡艺术之乡"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "同仁古城",
+      "city": "黄南州",
+      "aliases": [
+        "同仁古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "孟达天池",
+      "city": "临夏州/海东",
+      "aliases": [
+        "孟达天池"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "大柴旦翡翠湖",
+      "city": "海西州",
+      "aliases": [
+        "大柴旦翡翠湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "察尔汗盐湖",
+      "city": "海西州",
+      "aliases": [
+        "察尔汗盐湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "格尔木昆仑旅游区",
+      "city": "海西州",
+      "aliases": [
+        "格尔木昆仑旅游区",
+        "格尔木昆仑"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "可可西里",
+      "city": "海西州",
+      "aliases": [
+        "可可西里"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "格尔木乌素特水上雅丹",
+      "city": "海西州",
+      "aliases": [
+        "格尔木乌素特水上雅丹"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "冷湖火星营地",
+      "city": "海西州",
+      "aliases": [
+        "冷湖火星营地"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茫崖艾肯泉",
+      "city": "海西州",
+      "aliases": [
+        "茫崖艾肯泉"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "茫崖翡翠湖",
+      "city": "海西州",
+      "aliases": [
+        "茫崖翡翠湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "德令哈克鲁克湖",
+      "city": "海西州",
+      "aliases": [
+        "德令哈克鲁克湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "金银滩草原",
+      "city": "海北州",
+      "aliases": [
+        "金银滩草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "原子城纪念馆",
+      "city": "海北州",
+      "aliases": [
+        "原子城纪念馆"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 22,
+    "verifiedCount": 1,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 21,
+    "warnings": [
+      "携程省级页未发现 海西州 的城市入口。",
+      "携程省级页未发现 海北州 的城市入口。",
+      "携程省级页未发现 果洛州 的城市入口。",
+      "携程省级页未发现 黄南州 的城市入口。",
+      "携程省级页未发现 临夏州/海东 的城市入口。",
+      "阿尼玛卿雪山 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "茫崖翡翠湖 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_b8c85ac81d",
+      "name": "海北州阿咪东索景区",
+      "preferredId": "manual_qinghai_a975dde2",
+      "aliases": [
+        "海北州阿咪东索景区",
+        "海北州阿咪东索"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_2dae16837c",
+      "name": "互助土族故土园旅游区",
+      "preferredId": "manual_qinghai_47b772db",
+      "aliases": [
+        "互助土族故土园旅游区",
+        "海东市互助土族故土园旅游区",
+        "互助土族故土园"
+      ],
+      "city": "海东",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_db2c6b0205",
+      "name": "塔尔寺景区",
+      "preferredId": "manual_qinghai_1f2d877b",
+      "aliases": [
+        "塔尔寺景区",
+        "西宁市塔尔寺景区",
+        "塔尔寺"
+      ],
+      "city": "西宁",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_dc70941869",
+      "name": "青海湖风景区",
+      "preferredId": "manual_qinghai_13035b3c",
+      "aliases": [
+        "青海湖风景区",
+        "青海湖"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_3e5a3b2914",
+      "name": "青海藏文化博物院",
+      "preferredId": "manual_qinghai_d19c5b68",
+      "aliases": [
+        "青海藏文化博物院"
+      ],
+      "city": "西宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ae634593f8",
+      "name": "青海省博物馆",
+      "preferredId": "manual_qinghai_4845c7db",
+      "aliases": [
+        "青海省博物馆"
+      ],
+      "city": "西宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "西宁",
+          "page": 1,
+          "name": "青海省博物馆",
+          "url": "https://you.ctrip.com/sight/xining237/136221.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_9ed32b4807",
+      "name": "茶卡盐湖",
+      "preferredId": "amap_B03D1008S8",
+      "aliases": [
+        "茶卡盐湖",
+        "茶卡盐湖景区"
+      ],
+      "city": "海西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_5071443193",
+      "name": "大柴旦翡翠湖旅游景区",
+      "preferredId": "amap_B0FFJZ6MJD",
+      "aliases": [
+        "大柴旦翡翠湖旅游景区",
+        "大柴旦翡翠湖"
+      ],
+      "city": "海西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_52c13826a7",
+      "name": "黑独山",
+      "preferredId": "amap_B0LDJCR1R3",
+      "aliases": [
+        "黑独山",
+        "黑独山景区"
+      ],
+      "city": "海西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 3
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_d3c966efad",
+      "name": "U型公路",
+      "preferredId": "amap_B0HA7SYMTI",
+      "aliases": [
+        "U型公路"
+      ],
+      "city": "海西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 13
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_037f3e5cd4",
+      "name": "察尔汗盐湖",
+      "preferredId": "amap_B03D100IO0",
+      "aliases": [
+        "察尔汗盐湖"
+      ],
+      "city": "海西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4de86a3cd9",
+      "name": "西宁野生动物园",
+      "preferredId": "amap_B03CB0726M",
+      "aliases": [
+        "西宁野生动物园"
+      ],
+      "city": "西宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": 9
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_4c4cb2fc83",
+      "name": "丹噶尔古城",
+      "preferredId": "amap_B03CB0Z1MX",
+      "aliases": [
+        "丹噶尔古城"
+      ],
+      "city": "西宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

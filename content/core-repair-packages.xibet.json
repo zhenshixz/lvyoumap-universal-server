@@ -1,0 +1,1673 @@
+{
+  "province": "西藏",
+  "status": "applied",
+  "createdAt": "2026-08-19T09:14:29.716Z",
+  "updatedAt": "2026-08-19T09:29:13.673Z",
+  "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
+  "warnings": [],
+  "seedFile": "content/core-repair-seeds.xibet.json",
+  "attractions": [
+    {
+      "baselineKey": "core_a1b137dd59",
+      "id": "manual_xibet_6862cab8",
+      "name": "雅鲁藏布大峡谷景区",
+      "city": "米林",
+      "rating": 4.6,
+      "reviewsCount": "4887条携程点评",
+      "image": "/assets/images/attractions/xibet_6862cab8_verified.jpg",
+      "description": "雅鲁藏布大峡谷是围绕南迦巴瓦峰的一处马蹄形大峡谷，也是世界大峡谷。谷内风光多种多样，可以观看南迦巴瓦、雅江尼洋河、古老村落等等。",
+      "intro": "雅鲁藏布大峡谷是围绕南迦巴瓦峰的一处马蹄形大峡谷，也是世界大峡谷。谷内风光多种多样，可以观看南迦巴瓦、雅江尼洋河、古老村落等等。",
+      "level": "5A景区",
+      "category": "自然峡谷、雪山观景",
+      "tags": [
+        "自然峡谷、雪山观景",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "西藏自治区林芝市米林市派镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从林芝市区（八一镇）出发，沿雅鲁藏布江行驶约90公里，车程约2小时抵达派镇游客中心；建议包车或拼车前往，山路弯多，自驾需谨慎。",
+          "internal_arrive": "导航至“雅鲁藏布大峡谷景区游客中心”，在游客中心统一购票并乘坐观光车进入；若自驾前往北岸索松村，需在入口处查验门票。",
+          "internal_traffic": "南岸需乘坐景区观光车（费用以官方当日公告为准），4个观景台循环停靠，随上随下；北岸自驾车可直接开入，也可在游客中心换乘北岸观光车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "南岸以派镇为主，配套完善；北岸以索松村、吞白村、达林村为主，民宿直面雪山，适合看日出日落和日照金山，但部分路段路况较复杂。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "海拔约3000米，需防高反，避免剧烈运动，备好氧气瓶和保暖衣物",
+          "children": "景区观光车游览轻松，栈道平缓，适合亲子，但需注意防晒、防风，并全程看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "南岸观光车省力环线（核心观景台打卡）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "大渡卡遗址（峡谷起点俯瞰）",
+            "爱情广场（千年古桑树）",
+            "南迦巴瓦观山台（直面雪山）",
+            "雅鲁藏布大峡谷亲水台（近距离感受江水奔涌）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里（各观景台均有栈道，平缓易行）",
+          "physical": 2,
+          "tips": [
+            "观光车为循环发车，每个站点均可自由上下，建议在前两站保存体力，重点在后两站停留；晴天前往才能大概率看到南迦巴瓦峰全貌。"
+          ],
+          "sourceTitle": "携程旅行 雅鲁藏布大峡谷景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/mainling2448/4625.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "北岸索松村观山休闲游（直面雪山与田园）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "索松村（青稞田",
+            "民宿天台",
+            "观景亭）",
+            "公尊德姆庄园（拍摄南迦巴瓦水中倒影）"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里（村内平缓路段休闲漫步）",
+          "physical": 2,
+          "tips": [
+            "北岸可自驾进入（需提前预订园内民宿），无需购买南岸观光车票，但需查验门票；索松村是看南迦巴瓦日照金山的最佳位置，建议傍晚前往。"
+          ],
+          "sourceTitle": "携程旅行 雅鲁藏布大峡谷景区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/mainling2448/4625.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xizang&type=0",
+          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+          "携程旅行 雅鲁藏布大峡谷景区 详情页：https://you.ctrip.com/sight/mainling2448/4625.html?poiType=3&scene=online",
+          "高德地图 雅鲁藏布大峡谷：https://www.amap.com/place/B037E004U9"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 雅鲁藏布大峡谷景区 详情页",
+          "url": "https://you.ctrip.com/sight/mainling2448/4625.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "雅鲁藏布大峡谷景区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B037E004U9",
+        "width": 2040,
+        "height": 1148
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_01fce7abd4",
+      "id": "manual_xibet_15ff5e48",
+      "name": "纳木错",
+      "city": "当雄",
+      "rating": 5,
+      "reviewsCount": "1条携程点评",
+      "image": "/assets/images/attractions/xibet_15ff5e48_verified.jpg",
+      "description": "纳木错位于S206与Y111交叉口东北方向686米，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "纳木错位于S206与Y111交叉口东北方向686米，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "自然湖泊、高原风光",
+      "tags": [
+        "自然湖泊、高原风光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "S206与Y111交叉口东北方向686米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从拉萨自驾约4小时，途经念青唐古拉山观景台和那根拉山口；也可在拉萨乘坐班车到当雄县城，再转乘包车或旅游专线前往景区。",
+          "internal_arrive": "从拉萨方向前往，导航至纳木错扎西半岛游客中心，在游客中心购票后乘坐景区观光车进入。",
+          "internal_traffic": "景区观光车单程约30-40分钟，各中转点之间招手即停，可无限循环乘坐。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "当雄县城（设施完善，适合家庭住宿）或扎西半岛景区附近（有民宿和土屋，可看清晨和黄昏的纳木错，但条件相对简陋）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "海拔在4700米以上，行动放缓，避免剧烈运动和久站，备好氧气瓶，注意保暖防风",
+          "children": "备足高热量零食和氧气，湖边风大温差大，穿够衣服，不要让孩子在湖边奔跑打闹。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "扎西半岛观光车省力环线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1号中转点（湖边观景",
+            "牦牛小羊拍照）",
+            "2号中转点（石林景观）",
+            "3号中转点（湖湾雪山同框，人少清静）",
+            "返回景区大门"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（各中转点之间步行约20分钟，也可招手乘坐观光车）",
+          "physical": 2,
+          "tips": [
+            "观光车环岛行驶，每个站点可下车拍照后再上车前往下一个；坐观光车出景区时记得坐在能看到湖水的一侧；如果走不动了，中途可招手坐观光车，不用硬走。"
+          ],
+          "sourceTitle": "携程旅行 纳木错 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/damxung2443/149972445.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/damxung2443/149972445.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 纳木错 详情页",
+          "url": "https://you.ctrip.com/sight/damxung2443/149972445.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Namtso-and-holy-rock.jpg",
+        "author": "Peter Vigier",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Namtso-and-holy-rock.jpg",
+        "width": 3536,
+        "height": 1404
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_52afbfb706",
+      "id": "manual_xibet_f87ca3c6",
+      "name": "珠穆朗玛峰大本营",
+      "city": "定日",
+      "rating": 4.6,
+      "reviewsCount": "380条携程点评",
+      "image": "/assets/images/attractions/xibet_f87ca3c6_verified.jpg",
+      "description": "珠穆朗玛峰在藏语中意为：第三女神，位于日喀则地区定日县中尼边境，海拔8848.86米，是喜马拉雅山脉的主峰，世界最高峰。珠峰景区周边8000米以上的山峰有4座、7000米以上的山峰有40余座。",
+      "intro": "珠穆朗玛峰在藏语中意为：第三女神，位于日喀则地区定日县中尼边境，海拔8848.86米，是喜马拉雅山脉的主峰，世界最高峰。珠峰景区周边8000米以上的山峰有4座、7000米以上的山峰有40余座。",
+      "level": "热门景点",
+      "category": "自然风景区",
+      "tags": [
+        "自然风景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区日喀则市定日县境内的中尼边境",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从日喀则市区自驾约300公里，行车5-6小时，全程柏油路，途经318国道、嘉措拉山口、加乌拉山口。私家车只能到珠峰小镇环保车换乘中心，不能直达大本营。需提前办理边防证，沿途有多处检查站核验。",
+          "internal_arrive": "珠峰景区北大门游客集散中心，人车分流，实名购票核验边防证后入园。",
+          "internal_traffic": "私家车禁止直通大本营，必须换乘景区环保观光车，车程约1小时。环保车会停各大酒店，提前和司机说酒店名字即可下车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住扎西宗乡（海拔约4200米，食宿选择多，环保车起点）或巴松村（距大本营更近，海拔更低，条件比大本营好）。不推荐住大本营帐篷（海拔5200米，条件简陋，夜间极冷，极易高反）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "60岁以上老人需提前在低海拔地区（如拉萨或日喀则）适应2-3天再前往，随身带氧气瓶，行动缓慢，有胸闷头痛立刻停下休息吸氧，不建议硬扛高反",
+          "children": "建议10岁以上且能清晰表达身体感受的孩子前往，穿足保暖衣物（加绒+薄羽绒+防风外套），备氧气瓶，全程慢行不跑跳。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力半日游（卡点看日落）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "珠峰游客集散中心（换乘环保车）",
+            "加乌拉山口观景台（远眺5座8000米级雪山）",
+            "珠峰108拐（行车观赏）",
+            "珠穆朗玛峰大本营（下车后缓步行走）",
+            "珠峰测量碑（打卡拍照）",
+            "绒布寺（世界海拔较高寺庙，可远观或进入）",
+            "返回休息室（喝热饮",
+            "等日落）"
+          ],
+          "duration": "半天",
+          "walking": "约500米（木栈道平路，全程缓行）",
+          "physical": 2,
+          "tips": [
+            "建议提前联系珠峰小镇或巴松村的酒店老板帮忙预约环保车接送，避免自己跑换乘中心；随身备足氧气瓶，穿防风保暖衣物（冲锋衣+羽绒服+帽子+手套），动作放慢不跑跳。"
+          ],
+          "sourceTitle": "携程旅行 珠穆朗玛峰大本营 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 珠穆朗玛峰大本营 详情页",
+          "url": "https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "珠穆朗玛峰大本营 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/tingri2450/4280.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1568
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_58817b5fbf",
+      "id": "manual_xibet_e54658cf",
+      "name": "南迦巴瓦峰",
+      "city": "米林",
+      "rating": 4.2,
+      "reviewsCount": "1362条携程点评",
+      "image": "/assets/images/attractions/xibet_e54658cf_verified.jpg",
+      "description": "南迦巴瓦峰位于林芝地区，是全球海拔排名第15的高峰。这里山顶冰川高耸、形状俏丽，山间常有云雾缭绕，而山下则是植被茂密的藏区江南，景色优美。",
+      "intro": "南迦巴瓦峰位于林芝地区，是全球海拔排名第15的高峰。这里山顶冰川高耸、形状俏丽，山间常有云雾缭绕，而山下则是植被茂密的藏区江南，景色优美。",
+      "level": "热门景点",
+      "category": "自然风景区",
+      "tags": [
+        "自然风景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区林芝市米林县西藏林",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可飞往林芝米林机场或乘坐火车至林芝站，随后自驾或包车前往，车程约2小时。",
+          "internal_arrive": "从派镇进入雅鲁藏布大峡谷景区，随后前往索松村或直白村。",
+          "internal_traffic": "北线（索松村方向）可自驾或包车；南线（直白村方向）需乘坐景区观光车。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "索松村、吞白村、直白村。 长辈建议：林芝海拔约3000米，高反概率相对较低，但仍需避免剧烈运动、多喝水；建议选择有地暖或空调的民宿，注意保暖。 儿童建议：高原紫外线强，需做好防晒；早晚温差大，备好薄外套；可选择平缓的栈道或林间步道轻徒步，避免长时间奔跑。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "林芝海拔约3000米，高反概率相对较低，但仍需避免剧烈运动、多喝水；建议选择有地暖或空调的民宿，注意保暖",
+          "children": "高原紫外线强，需做好防晒；早晚温差大，备好薄外套；可选择平缓的栈道或林间步道轻徒步，避免长时间奔跑。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "索松村北线省力观景游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "索松村观景台",
+            "小橘子营地",
+            "达林村轻徒步"
+          ],
+          "duration": "半天",
+          "walking": "约2公里",
+          "physical": 2,
+          "tips": [
+            "建议住在索松村观景民宿，推窗即可远眺雪山；下午时段云层较薄，更容易看到日照金山；备好防风外套，山谷风大。"
+          ],
+          "sourceTitle": "携程旅行 南迦巴瓦峰 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 南迦巴瓦峰 详情页",
+          "url": "https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "南迦巴瓦峰 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/mainling2448/4619.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1667
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_45170cb181",
+      "id": "manual_xibet_eae13f57",
+      "name": "来古冰川",
+      "city": "八宿",
+      "rating": 4.1,
+      "reviewsCount": "427条携程点评",
+      "image": "/assets/images/attractions/xibet_eae13f57_verified.jpg",
+      "description": "围绕着来古村的多条冰川，在村子前形成了多个冰湖，因不同的冰川所在的地质和土壤成分不同，每一个冰湖都会反射出不同的颜色，有一个冰湖上还漂浮着大大小小的冰山。冰川的末端与冰湖之间，断裂的冰川露出十数米高蓝幽幽的冰层。",
+      "intro": "围绕着来古村的多条冰川，在村子前形成了多个冰湖，因不同的冰川所在的地质和土壤成分不同，每一个冰湖都会反射出不同的颜色，有一个冰湖上还漂浮着大大小小的冰山。冰川的末端与冰湖之间，断裂的冰川露出十数米高蓝幽幽的冰层。",
+      "level": "热门景点",
+      "category": "自然冰川、高山湖泊",
+      "tags": [
+        "自然冰川、高山湖泊",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区昌都市八宿县然乌镇",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾或拼车至来古冰川游客中心（位于西藏昌都市八宿县然乌镇），公共交通可先到然乌镇再转乘当地车辆。",
+          "internal_arrive": "从游客中心统一购票进入，景区内分A线和B线，A线为主路直走，B线为右转。",
+          "internal_traffic": "观光车（游客中心至转运点）、村民越野车（前往B线高海拔区域）、骑马（A线转运点至观景点）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "来古村（距景区近，可退部分门票，但条件较简朴）或然乌镇（住宿和餐饮条件更好，距景区约20公里）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "海拔约4000米以上，行动务必放缓，避免剧烈运动和登高，备好氧气瓶，随时休息",
+          "children": "注意防寒保暖和防滑，携带高热量零食和热水，避免在冰面奔跑打闹，全程陪同看护。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力A线（来古冰川）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心",
+            "观光车终点",
+            "1号观景点与蓝冰湖"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（可骑马）",
+          "physical": 2,
+          "tips": [
+            "骑马往返费用以官方当日公告为准，能节省大量体力；冰面湿滑务必穿防滑鞋或租冰爪，注意保暖防风。"
+          ],
+          "sourceTitle": "携程旅行 来古冰川 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online",
+          "高德地图 来古冰川(暂停开放)：https://www.amap.com/place/B0HD7UO7NK"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 来古冰川 详情页",
+          "url": "https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "来古冰川 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/basu120403/52577.html?poiType=3&scene=online",
+        "width": 5434,
+        "height": 3623
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_f7fd666b92",
+      "id": "manual_xibet_8971547d",
+      "name": "卡若拉冰川",
+      "city": "江孜",
+      "rating": 4.3,
+      "reviewsCount": "256条携程点评",
+      "image": "/assets/images/attractions/xibet_8971547d_verified.jpg",
+      "description": "卡若拉冰川位于浪卡子县和江孜县交界处，非常壮观。电影《红河谷》、《江孜之战》、《云水谣》都曾在此拍摄外景。",
+      "intro": "卡若拉冰川位于浪卡子县和江孜县交界处，非常壮观。电影《红河谷》、《江孜之战》、《云水谣》都曾在此拍摄外景。",
+      "level": "热门景点",
+      "category": "自然冰川、观景台",
+      "tags": [
+        "自然冰川、观景台",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区日喀则市江孜县和江孜县交界处",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾或包车从拉萨出发，沿349国道行驶约2.5小时可达；若从日喀则方向前往，车程约10分钟即可看到全貌。",
+          "internal_arrive": "导航至“卡若拉冰川观景台”或“卡若拉冰川停车场”，国道旁有免费停车和观景区域。",
+          "internal_traffic": "景区为开放式，各观景台之间距离很近，建议自驾或包车前往，方便随时停车拍照和回车上休息吸氧。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "可选择在浪卡子县或日喀则市住宿，作为中转休息点，条件相对完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "全程平路观景即可，避免剧烈跑动和爬高，随时注意血氧和身体状况",
+          "children": "在家长看护下平路活动，不要翻越护栏，注意防风保暖，防止高反。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力平路观景线（推荐）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "国道旁免费观景台",
+            "《红河谷》石碑旁平地",
+            "停车场经幡打卡点",
+            "公路护栏远景位"
+          ],
+          "duration": "半天",
+          "walking": "约300米（全程平地，无爬坡）",
+          "physical": 1,
+          "tips": [
+            "下午4-6点光线柔和，冰川透出清透冰蓝色，穿红色或白色外套更出片；高原风大且冷，务必穿冲锋衣、戴帽子和墨镜。"
+          ],
+          "sourceTitle": "携程旅行 卡若拉冰川 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        {
+          "title": "栈道近距离攀登线（视体力而定）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "停车场入口",
+            "登山步道",
+            "5200米游客栈道打卡点"
+          ],
+          "duration": "半天",
+          "walking": "约1.8公里（爬升约200米，往返约1-1.5小时）",
+          "physical": 4,
+          "tips": [
+            "海拔接近5200米，爬楼梯会加速氧气消耗，务必携带便携氧气瓶；山顶与山脚景观差异不大，若感觉喘不过气请及时下撤，切勿勉强。"
+          ],
+          "sourceTitle": "携程旅行 卡若拉冰川 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 卡若拉冰川 详情页",
+          "url": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "卡若拉冰川 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/gyantse2437/109942.html?poiType=3&scene=online",
+        "width": 1280,
+        "height": 960
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_9121f817c1",
+      "id": "manual_xibet_62378296",
+      "name": "古格王朝遗址",
+      "city": "札达",
+      "rating": 4,
+      "reviewsCount": "7条携程点评",
+      "image": "/assets/images/attractions/xibet_62378296_verified.jpg",
+      "description": "古格王朝遗址-红殿位于阿里地区，是古格王朝的重要历史遗迹之一。古格王朝曾是历史上一个繁荣的王国，其遗址坐落在象泉河畔的土林地貌之中，展现了当地的辉煌文明。",
+      "intro": "古格王朝遗址-红殿位于阿里地区，是古格王朝的重要历史遗迹之一。古格王朝曾是历史上一个繁荣的王国，其遗址坐落在象泉河畔的土林地貌之中，展现了当地的辉煌文明。",
+      "level": "热门景点",
+      "category": "历史遗迹/人文景观",
+      "tags": [
+        "历史遗迹/人文景观",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区阿里地区札达县古格王国遗址北侧120米",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "距离札达县城约18公里，车程约30分钟。可先抵达拉萨或阿里昆莎机场，再包车/自驾前往札达县（阿里地区属边境管理区，必须提前办好边防证）。",
+          "internal_arrive": "导航至“古格王朝遗址”游客中心，自驾车停放在游客中心停车场，随后换乘景区接驳车前往遗址入口。",
+          "internal_traffic": "游客中心至遗址入口需乘坐景区接驳车（约3公里盘山公路），遗址内部为步行登山，无其他内部交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在札达县城（海拔相对较低，住宿条件较好，方便休息和调整状态），次日清晨或前一天傍晚往返遗址。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "遗址海拔近4000米且需攀爬大量台阶，体力消耗极大，不建议高龄长辈前往",
+          "children": "儿童对高原缺氧环境适应能力较弱，且登山存在安全隐患，不建议带幼童前往。\n\n补充一点实用提示：殿内无灯光，若想看清壁画细节，建议早上去利用晨光透过天井的自然光；山顶部分区域（如坛城殿）可能因修缮或保护政策封闭，具体以官方当日公告为准。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典登顶俯瞰线（山脚至山顶平台）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心接驳车终点",
+            "山脚平民洞窟群",
+            "度母殿",
+            "白殿",
+            "红殿",
+            "大威德殿",
+            "山顶王宫遗址平台（俯瞰札达土林与象泉河全景）",
+            "原路下山"
+          ],
+          "duration": "半天",
+          "walking": "约2-3小时（全程500多级台阶，海拔3700-3900米，需慢行防高反）",
+          "physical": 4,
+          "tips": [
+            "殿内壁画严禁拍照和触摸；建议上午前往，光线好且避开正午暴晒；景区内无商店，需自备充足饮用水和零食。"
+          ],
+          "sourceTitle": "携程旅行 古格王朝遗址 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/zanda2454/145360250.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/zanda2454/145360250.html?poiType=3&scene=online",
+          "高德地图 古格王朝遗址红殿：https://www.amap.com/place/B0GRZC9I8O"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 古格王朝遗址 详情页",
+          "url": "https://you.ctrip.com/sight/zanda2454/145360250.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "古格王朝遗址 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0GRZC9I8O",
+        "width": 1500,
+        "height": 2000
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0dbd832952",
+      "id": "manual_xibet_e06c7d06",
+      "name": "西藏博物馆",
+      "city": "拉萨",
+      "rating": 4.5,
+      "reviewsCount": "538条携程点评",
+      "image": "/assets/images/attractions/xibet_e06c7d06_verified.jpg",
+      "description": "西藏博物馆坐落于拉萨市罗布林卡东部马路对面，是西藏第一座具有现代化功能的博物馆。馆内珍藏有许多珍贵文物，展示出藏民族独具魅力的灿烂文化和悠久历史。",
+      "intro": "西藏博物馆坐落于拉萨市罗布林卡东部马路对面，是西藏第一座具有现代化功能的博物馆。馆内珍藏有许多珍贵文物，展示出藏民族独具魅力的灿烂文化和悠久历史。",
+      "level": "博物馆",
+      "category": "博物馆",
+      "tags": [
+        "博物馆",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "西藏自治区拉萨市城关区罗布林卡路19号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "位于拉萨市城关区罗布林卡路19号，可乘公交2路、8路、13路、24路至“博物馆站”，或打车、骑行前往。",
+          "internal_arrive": "建议从北门进入，安检后刷身份证入馆，门口有行李寄存柜。",
+          "internal_traffic": "馆内各楼层之间主要依靠电梯和扶梯连接，全程平路为主，无陡峭台阶。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在城关区，距离博物馆较近，周边餐饮和交通配套完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "馆内设有供氧室和大量休息座椅，建议缓慢行走，备好氧气瓶",
+          "children": "二楼设有专属儿童体验馆，可互动玩耍，馆内还有研学活动可预约，适合亲子家庭。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力核心游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一楼《离太阳最近的人》民俗展",
+            "二楼《雪域长歌》历史展",
+            "三楼观景台远眺布达拉宫",
+            "一楼文创馆集章邮寄"
+          ],
+          "duration": "半天",
+          "walking": "约1500米",
+          "physical": 2,
+          "tips": [
+            "馆内休息区较多，建议带充电宝；可提前在官方小程序查看公益讲解时间，跟随讲解员参观更省力且易懂。"
+          ],
+          "sourceTitle": "携程旅行 西藏博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/lhasa36/51555.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/lhasa36/51555.html?poiType=3&scene=online",
+          "高德地图 西藏博物馆：https://www.amap.com/place/B037B00866"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 西藏博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/lhasa36/51555.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西藏博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B037B00866",
+        "width": 2048,
+        "height": 2048
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_d9b772f708",
+      "id": "manual_xibet_27c6248d",
+      "name": "西藏非物质文化遗产博物馆",
+      "city": "拉萨",
+      "rating": 5,
+      "reviewsCount": "3条携程点评",
+      "image": "/assets/images/attractions/xibet_27c6248d_verified.jpg",
+      "description": "为充分宣传和集中展示自治区非物质文化遗产资源和保护工作成果，进一步提高全社会对非物质文化遗产保护工作重要性的认识，努力营造“文化遗产人人保护，保护成果人人共享”的良好社会环境，该博物馆成为区内专注于保护、传承、传播非遗文化的博物馆，于2024年5月1日起正式面向社会免费开放。 非遗博物馆及千工坊项目总规划用地面积40000平方米（60亩），其中非遗博物馆用地面积24912.58平方米，建筑面积7999.35平方米，千工坊项目用地面积15",
+      "intro": "为充分宣传和集中展示自治区非物质文化遗产资源和保护工作成果，进一步提高全社会对非物质文化遗产保护工作重要性的认识，努力营造“文化遗产人人保护，保护成果人人共享”的良好社会环境，该博物馆成为区内专注于保护、传承、传播非遗文化的博物馆，于2024年5月1日起正式面向社会免费开放。 非遗博物馆及千工坊项目总规划用地面积40000平方米（60亩），其中非遗博物馆用地面积24912.58平方米，建筑面积7999.35平方米，千工坊项目用地面积15",
+      "level": "博物馆",
+      "category": "博物馆/文化体验",
+      "tags": [
+        "博物馆/文化体验",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "拉萨市城关区102乡道拉萨河畔慈觉林文城大道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "自驾或打车导航至\"西藏非物质文化遗产博物馆\"（文成公主剧场旁），附近有停车场；公交可乘35路至文成大道路北站，步行约800米；也可骑共享电动车前往。",
+          "internal_arrive": "从文成公主1号停车场对面进入，右手边朴素建筑为博物馆入口（看似未完工，实为正确入口），进门后到服务台登记身份证并领取参观证。",
+          "internal_traffic": "馆内主要依靠电梯和之字形缓坡通道上下，一层、二层为主展区，五层为观景台，三层和四层暂未开放。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在慈觉林文创园附近（离馆近，安静）或拉萨市区八廓街/布达拉宫周边（交通便利，配套成熟，打车约15-20分钟可达）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "馆内有电梯可直达五层，省力友好；高原地区注意保暖和休息，避免剧烈走动，建议在前台请讲解员陪同讲解",
+          "children": "馆内有格萨尔王音乐欣赏、藏族服饰AI换装、藏历星空投影等互动体验，可激发兴趣；建议家长提前讲解非遗文化背景，增强参与感。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典省力观展+绝美布宫全景线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "一层入口登记领证",
+            "一层彩砂坛城",
+            "藏医药",
+            "藏香藏纸展区",
+            "二层藏文书法",
+            "唐卡",
+            "藏戏服饰展区",
+            "乘电梯至五层超大落地窗观景台远眺布达拉宫与拉萨河谷"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（馆内平缓，之字形缓坡）",
+          "physical": 2,
+          "tips": [
+            "前台可预约免费讲解；五层观景台玻璃有防反光设计，适合拍布宫大片；建议穿舒适鞋，馆内楼梯较多；周一闭馆，周二至周日官方当日建议时段-官方当日建议时段开放（官方当日建议时段停止入馆），以官方当日公告为准。"
+          ],
+          "sourceTitle": "携程旅行 西藏非物质文化遗产博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/lhasa36/64389875.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/lhasa36/64389875.html?poiType=3&scene=online",
+          "高德地图 西藏非物质文化遗产博物馆：https://www.amap.com/place/B0JD7N9FKT"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 西藏非物质文化遗产博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/lhasa36/64389875.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "西藏非物质文化遗产博物馆 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0JD7N9FKT",
+        "width": 2048,
+        "height": 1152
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_bc1aa83e72",
+      "id": "manual_xibet_16a9af42",
+      "name": "八廓街",
+      "city": "拉萨",
+      "rating": 4.7,
+      "reviewsCount": "1162条携程点评",
+      "image": "/assets/images/attractions/xibet_16a9af42_verified.jpg",
+      "description": "八廓街又叫八角街，地属西藏拉萨。它是能代表西藏民风民俗的千年古街，因其古朴的文化底蕴、悠久的历史传统，入围“全国历史文化十大名街”之列。",
+      "intro": "八廓街又叫八角街，地属西藏拉萨。它是能代表西藏民风民俗的千年古街，因其古朴的文化底蕴、悠久的历史传统，入围“全国历史文化十大名街”之列。",
+      "level": "热门景点",
+      "category": "人文历史街区 / 转经道 / 商业步行街",
+      "tags": [
+        "人文历史街区 / 转经道 / 商业步行街",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区拉萨市城关区",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐机场大巴至市区后打车前往，或乘坐市区公交/打车直达八廓街附近。",
+          "internal_arrive": "推荐从大昭寺广场附近的1号安检口进入，人流相对集中，方便后续前往大昭寺或沿主街漫步。",
+          "internal_traffic": "街区内部为步行区域，全程靠步行游览，建议穿舒适的平底鞋。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在八廓街或布达拉宫广场周边2公里内的酒店或民宿，步行即可到达，减少舟车劳顿。 长辈建议：拉萨海拔约3650米，长辈游览时务必放慢脚步，避免快走和爬楼；随身准备便携氧气瓶，每走半小时就在街角茶馆坐下休息；注意保暖，避免感冒。 儿童建议：可以给孩子准备“任务卡”，比如“找到三种不同颜色的门”或“拍下最喜欢的转经筒”，增加游览趣味性；教育孩子不要突然跑动，遇到朝圣者不要随意拍照或挡路。\n\n另外，在八廓街游览时，请务必尊重当地宗教信仰和风俗习惯。在寺庙殿内不要戴墨镜和帽子，严禁拍照；不要踩踏门槛；拍摄朝圣者或当地居民前，请先征得对方同意。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "拉萨海拔约3650米，长辈游览时务必放慢脚步，避免快走和爬楼；随身准备便携氧气瓶，每走半小时就在街角茶馆坐下休息；注意保暖，避免感冒",
+          "children": "可以给孩子准备“任务卡”，比如“找到三种不同颜色的门”或“拍下最喜欢的转经筒”，增加游览趣味性；教育孩子不要突然跑动，遇到朝圣者不要随意拍照或挡路。\n\n另外，在八廓街游览时，请务必尊重当地宗教信仰和风俗习惯。在寺庙殿内不要戴墨镜和帽子，严禁拍照；不要踩踏门槛；拍摄朝圣者或当地居民前，请先征得对方同意。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "八廓街顺时针半圈省力慢游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "大昭寺广场（感受朝圣氛围）",
+            "玛吉阿米（打卡黄色建筑）",
+            "公主柳（传说为文成公主所种）",
+            "清政府驻藏大臣衙门旧址陈列馆（了解历史）",
+            "朗孜夏陈列馆（旧政府及监狱遗址）",
+            "光明港琼甜茶馆（喝甜茶休息）"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（半圈）",
+          "physical": 2,
+          "tips": [
+            "全程顺时针跟随转经人流行走，不要逆行；遇到人群密集处耐心等候，不要强行穿行；街角茶馆很多，随时可以坐下休息。"
+          ],
+          "sourceTitle": "携程旅行 八廓街 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 八廓街 详情页",
+          "url": "https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "八廓街 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/lhasa36/3124.html?poiType=3&scene=online",
+        "width": 1280,
+        "height": 855
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_bf4bb92132",
+      "id": "manual_xibet_b0101ae8",
+      "name": "索松村",
+      "city": "米林",
+      "rating": 4.4,
+      "reviewsCount": "176条携程点评",
+      "image": "/assets/images/attractions/xibet_b0101ae8_verified.jpg",
+      "description": "位于林芝市米林县境内的索松村，位于雅鲁藏布大峡谷的北岸，是一个游客比较少去的村落，这里还是观看南迦巴瓦峰日落的好地方。与热闹的直白村相比，这里非常的安静，一排田园景色，村子旁就是雅鲁藏布江，还有一片茂盛的桃林，每年内的春季，桃花盛开，加上周边的江水、雪山，简直是美不胜收。",
+      "intro": "位于林芝市米林县境内的索松村，位于雅鲁藏布大峡谷的北岸，是一个游客比较少去的村落，这里还是观看南迦巴瓦峰日落的好地方。与热闹的直白村相比，这里非常的安静，一排田园景色，村子旁就是雅鲁藏布江，还有一片茂盛的桃林，每年内的春季，桃花盛开，加上周边的江水、雪山，简直是美不胜收。",
+      "level": "热门景点",
+      "category": "观景村落 / 自然风光",
+      "tags": [
+        "观景村落 / 自然风光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区林芝市米林市雅鲁藏布大峡谷",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾从林芝市区出发约 2 小时，全程铺装路面，后半段为盘山公路，路窄需注意会车；非自驾可在林芝站或米林机场拼车前往，约 费用以官方当日公告为准，建议提前联系民宿老板安排接送。",
+          "internal_arrive": "导航至索松村游客中心或预订的民宿，进村需购票（门票含在雅鲁藏布大峡谷景区门票内，三天有效）。",
+          "internal_traffic": "村内无公共交通，建议自驾或租电动车（约 费用以官方当日公告为准/小时）；部分路段较窄，自驾需慢行避让行人。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "优先选择雪山观景民宿，推窗直面南迦巴瓦峰；喜欢安静可选离村中心较远的民宿，喜欢热闹可选村中心（但晚上可能有驻唱噪音）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "选择带 24 小时供氧和地暖的民宿，避免高反；尽量不安排长途徒步，以民宿露台观景为主",
+          "children": "可在雅鲁藏布江边浅滩踩水、拍雪山同框照，注意高原防晒和保暖。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "索松村轻松观景一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "村口观景台（三座雪山观景台）",
+            "民宿露台/天台（推窗见雪山）",
+            "公尊德姆农庄（江边拍倒影）",
+            "沿途青稞田与雅鲁藏布江畔"
+          ],
+          "duration": "半天",
+          "walking": "约 1-2 公里（以慢走、拍照为主）",
+          "physical": 2,
+          "tips": [
+            "南迦巴瓦峰常年云雾缭绕，建议留宿一晚，清晨和傍晚看日照金山的概率更高；午后容易起风，水面起波纹不利于拍倒影，建议上午去农庄。"
+          ],
+          "sourceTitle": "携程旅行 索松村 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 索松村 详情页",
+          "url": "https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "索松村 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/mainling2448/1753106.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1624
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_0032a9d0b9",
+      "id": "manual_xibet_5783a095",
+      "name": "普莫雍错",
+      "city": "浪卡子",
+      "rating": 4.9,
+      "reviewsCount": "56条携程点评",
+      "image": "/assets/images/attractions/xibet_5783a095_verified.jpg",
+      "description": "普莫雍错是喜马拉雅山脉间的一个咸水湖，地处浪卡子县羊卓雍错南面，海拔约5010米。湖泊为东西走向，湖岸线长约94千米，是藏南较高的湖泊，有着国内“贝加尔湖”的美誉。",
+      "intro": "普莫雍错是喜马拉雅山脉间的一个咸水湖，地处浪卡子县羊卓雍错南面，海拔约5010米。湖泊为东西走向，湖岸线长约94千米，是藏南较高的湖泊，有着国内“贝加尔湖”的美誉。",
+      "level": "热门景点",
+      "category": "高原湖泊、自然风光",
+      "tags": [
+        "高原湖泊、自然风光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "西藏自治区山南市浪卡子县",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "建议从拉萨包车或自驾前往，车程约3.5小时；需提前在“移民局12367”APP办理边防证（注明山南地区），沿途设边防检查站。",
+          "internal_arrive": "导航至“普莫雍错观景台”（219国道旁），此处有停车场和基础服务设施，是距离湖边最近且最省力的入口。",
+          "internal_traffic": "景区沿219国道分布，建议自驾或包车环湖，随停随走；不建议徒步环湖。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在浪卡子县（海拔相对较低，住宿条件较好，有供氧酒店）；推瓦村海拔5070米，条件简陋，不建议长辈和儿童过夜。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "提前1-2天在拉萨适应海拔，随身备好氧气瓶和葡萄糖，切勿在湖边奔跑",
+          "children": "避免在高原大声喧哗和剧烈运动，注意防风保暖，防止感冒引发高反。\n\n另外补充几点实用提示：普莫雍错全年免费开放，但周边部分观景台可能收费；夏季午后湖面风大，慎飞无人机；冬季（1-3月）若遇蓝冰或赶羊节，切勿私自上冰面，需找本地向导带领。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "北岸观景台亲水省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "普莫雍错观景台（俯瞰湖景与雪山全景）",
+            "湖边栈道与亲水点（近距离接触湖水，拍倒影）",
+            "返回观景台休息区吸氧休整"
+          ],
+          "duration": "半天",
+          "walking": "少量，基本为平缓路面或栈道",
+          "physical": 2,
+          "tips": [
+            "观景台有免费吸氧点，感觉不适及时休息；湖边风极大，务必穿防风外套，避免剧烈跑跳。"
+          ],
+          "sourceTitle": "携程旅行 普莫雍错 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "ctrip_city_sightlist：https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 普莫雍错 详情页",
+          "url": "https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "普莫雍错 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/nagarzecounty2438/132898.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1405
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_a36c024e34",
+      "id": "manual_xibet_7515eea6",
+      "name": "林芝市鲁朗小镇旅游度假区",
+      "city": "林芝",
+      "rating": 3.9,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/xibet_7515eea6_verified.jpg",
+      "description": "鲁朗镇坐落于“中国最美景观大道”318国道旁，是藏东南旅游必经之路。白天练习响箭骑马，夜晚观赏民族歌舞…世界顶级自然生态资源，保存完好的工布藏族民俗文化，塑造了鲁朗独特的魅力。",
+      "intro": "鲁朗镇坐落于“中国最美景观大道”318国道旁，是藏东南旅游必经之路。白天练习响箭骑马，夜晚观赏民族歌舞…世界顶级自然生态资源，保存完好的工布藏族民俗文化，塑造了鲁朗独特的魅力。",
+      "level": "国家级旅游度假区",
+      "category": "自然风景区、藏式风情小镇",
+      "tags": [
+        "自然风景区、藏式风情小镇",
+        "经典景点",
+        "官方名录"
+      ],
+      "address": "西藏自治区林芝市巴宜区G318(沪聂线)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
+          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
+          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
+          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+        },
+        "transport": {
+          "external_arrive": "自驾从林芝市区（八一镇）沿G318国道出发，约80公里，车程1.5-2小时直达；公共交通可前往林芝客运站乘坐班车或拼车前往鲁朗镇。",
+          "internal_arrive": "建议直接导航至扎塘鲁措停车场或鲁朗小镇主入口，停车方便且紧邻核心游览区。",
+          "internal_traffic": "小镇内部区域不大，主要景点之间可步行或乘坐小镇观光车游览；若前往鲁朗林海等外围观景台，建议自驾或包车前往。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "鲁朗国际小镇（现代化酒店集中，餐饮便利，部分提供弥散供氧）；扎西岗村（原生态藏式民宿，开窗即见牧场，环境安静）。",
+            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "林芝海拔相对较低，但仍有3300米以上，行动务必放缓，避免剧烈运动，随身携带便携氧气，注意保暖防感冒",
+          "children": "严禁在高原奔跑追逐，需穿防风外套和帽子，做好高倍防晒，多补充温水，随时观察孩子精神状态。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "扎塘鲁措环湖与高山牧场轻徒步",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "扎塘鲁措环湖栈道（过彩色吊桥，沿平缓木栈道漫步，欣赏湖水与雪山倒影）",
+            "高山牧场（在草甸上近距离看牛羊，体验骑马或射箭）",
+            "扎西岗村（漫步原生态工布藏族村寨，感受田园风光）",
+            "鲁朗林海观景台（远眺连绵雪山与万亩云杉林海）"
+          ],
+          "duration": "半天",
+          "walking": "约3-4公里（环湖栈道平坦，整体无爬升压力）",
+          "physical": 2,
+          "tips": [
+            "扎塘鲁措环湖栈道全程无补给点，务必自带足量饮用水；高原天气多变，建议随身携带防风外套和雨具。"
+          ],
+          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
+          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=xizang&type=0",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xizang&type=0",
+          "高德地图 鲁朗小镇牌坊：https://www.amap.com/place/B0HG3YDJPJ"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 鲁朗小镇牌坊",
+          "url": "https://www.amap.com/place/B0HG3YDJPJ",
+          "poiId": "B0HG3YDJPJ",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "林芝市鲁朗小镇旅游度假区 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0HG3YDJPJ",
+        "width": 2080,
+        "height": 944
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B0LA61CXYP": {
+      "id": "amap_B0LA61CXYP",
+      "name": "冈仁波齐",
+      "city": "普兰",
+      "rating": 4.7,
+      "reviewsCount": "347条携程点评",
+      "image": "/assets/images/attractions/xibet_f95eb424_verified.jpg",
+      "description": "冈仁波齐是冈底斯山的主峰，位于阿里地区普兰县北部八嘎乡境内，海拔约6656米，是世界公认的神山，同时被许多佛教认定为是世界的中心。",
+      "intro": "冈仁波齐是冈底斯山的主峰，位于阿里地区普兰县北部八嘎乡境内，海拔约6656米，是世界公认的神山，同时被许多佛教认定为是世界的中心。",
+      "level": "热门景点",
+      "category": "自然与文化双遗产、宗教朝圣地",
+      "tags": [
+        "自然与文化双遗产、宗教朝圣地",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "阿里地区普兰县冈仁波齐峰",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "通常自驾或包车前往，从拉萨出发约1600公里（需4-5天车程），或从日喀则出发约530公里（约10小时车程）；也可先飞抵阿里昆莎机场，再包车前往。",
+          "internal_arrive": "从塔钦镇（塔尔钦）的转山游客中心进入，此处是绝大多数游客和朝圣者的起点。",
+          "internal_traffic": "景区内无公共交通，主要依靠徒步；体力有限者可沿途雇马或请背夫协助搬运行李。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "塔钦镇（巴嘎乡），镇上有多家酒店和客栈，部分提供供氧和地暖设施，方便适应高反。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "50岁以上长辈通常不建议参与转山，高海拔和长距离徒步风险较大，建议在塔钦镇周边适应海拔、远眺神山即可",
+          "children": "需严格评估孩子的高原反应耐受度，避免前往高海拔山口，行程以轻松观景为主，备好儿童常用药和保暖衣物。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "冈仁波齐家庭省力轻徒步观景（塔钦-止热寺往返）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "塔钦镇（适应海拔）",
+            "转山入口经幡广场（远眺神山）",
+            "双腿佛塔（初探峡谷）",
+            "曲古寺（喝茶休整）",
+            "止热寺（观赏冈仁波齐北壁与日照金山）",
+            "原路返回或骑马下撤"
+          ],
+          "duration": "半天",
+          "walking": "约15-20公里（往返，可结合骑马减轻负担）",
+          "physical": 3,
+          "tips": [
+            "建议先在塔钦镇适应1-2天海拔再出发；沿途可雇马或背夫协助，减轻家庭出行负担。"
+          ],
+          "sourceTitle": "携程旅行 冈仁波齐 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tibet100003.html",
+          "携程旅行 冈仁波齐 详情页：https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+          "高德地图 冈仁波齐：https://www.amap.com/place/B0LA61CXYP"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 冈仁波齐 详情页",
+          "url": "https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "冈仁波齐 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0LA61CXYP",
+        "width": 1247,
+        "height": 1663
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    "amap_B037D0MKCD": {
+      "id": "amap_B037D0MKCD",
+      "name": "羊卓雍措",
+      "city": "山南",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/xibet_29d69a19_verified.jpg",
+      "description": "羊卓雍措位于307省道，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "羊卓雍措位于307省道，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "高原湖泊、自然风景区",
+      "tags": [
+        "高原湖泊、自然风景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "307省道",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从拉萨市区出发约2小时车程，全程柏油路，但后半程为临崖盘山公路，建议自驾或包车前往",
+          "internal_arrive": "导航至“羊卓雍措1号观景台”或“岗巴拉山口”，从高处依次向下游览，节省体力",
+          "internal_traffic": "景区内有观光车（票价以官方当日公告为准），可连接各主要观景台；自驾车辆可沿观景台之间的道路行驶，部分路段可停车拍照",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "浪卡子县紧邻羊湖，停车吃饭方便，适合需要中转或留宿的游客；若当日往返，可返回拉萨市区住宿",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "藏式酸奶",
+          "藏家烤全羊",
+          "牦牛肉火锅",
+          "藏式酥油茶"
+        ],
+        "special_care": {
+          "elderly": "羊卓雍措整体海拔在4000至5000米左右，长辈需提前评估身体状况，备好氧气瓶，游览时缓慢行走，避免剧烈运动和长时间吹风",
+          "children": "建议6岁以上且体质较好的儿童前往，家长需全程监护，不要让孩子单独行动，备好保暖衣物和常用药品，注意高原紫外线防护。\n\n你这次是打算从拉萨出发一日游，还是准备在浪卡子县住一晚慢慢玩？"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典观景台省力环线（1至3号观景台）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1号观景台（岗巴拉山口，高空俯瞰S形湖湾）",
+            "2号观景台（朗布其，半山腰近观湖水层次）",
+            "3号观景台（湖边亲水，木栈道近距离接触湖面）"
+          ],
+          "duration": "半天",
+          "walking": "各观景台之间距离较近，多为平缓步行或车内移动，无需爬山",
+          "physical": 2,
+          "tips": [
+            "1、2、3号观景台通常需购买联票，进入观景台门口扫码即可；山上风大且海拔接近5000米，务必做好防风保暖，动作放缓避免高反"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-19"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 羊卓雍措景区：https://www.amap.com/place/B037D0MKCD"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 羊卓雍措景区",
+          "url": "https://www.amap.com/place/B037D0MKCD",
+          "poiId": "B037D0MKCD",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-19"
+        },
+        "basicInfoUpdatedAt": "2026-08-19",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "羊卓雍措 - panoramio.jpg",
+        "author": "guan",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%BE%8A%E5%8D%93%E9%9B%8D%E6%8E%AA_-_panoramio.jpg",
+        "width": 3840,
+        "height": 2571
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    }
+  },
+  "reviewedAt": "2026-08-19",
+  "reviewedAtIso": "2026-08-19T09:29:14.279Z",
+  "appliedAt": "2026-08-19T09:38:19.262Z",
+  "appliedAttractionIds": [
+    "manual_xibet_6862cab8",
+    "manual_xibet_15ff5e48",
+    "manual_xibet_f87ca3c6",
+    "manual_xibet_e54658cf",
+    "manual_xibet_eae13f57",
+    "manual_xibet_8971547d",
+    "manual_xibet_62378296",
+    "manual_xibet_e06c7d06",
+    "manual_xibet_27c6248d",
+    "manual_xibet_16a9af42",
+    "manual_xibet_b0101ae8",
+    "manual_xibet_5783a095",
+    "manual_xibet_7515eea6"
+  ],
+  "appliedOverrideIds": [
+    "amap_B0LA61CXYP",
+    "amap_B037D0MKCD"
+  ]
+}

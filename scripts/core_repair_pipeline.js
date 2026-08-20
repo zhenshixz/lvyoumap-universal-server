@@ -304,7 +304,13 @@ function applyPackage(context, validation) {
 
   const overridePath = path.join(contentDir, 'attraction-overrides.json');
   const overrides = readJson(overridePath, {});
-  for (const { id, patch } of validation.readyOverrides) overrides[id] = deepMerge(overrides[id] || {}, patch);
+  const lazyOverrides = {
+    ...readJson(path.join(contentDir, 'lazy-guide-overrides.json')),
+    ...readJson(path.join(runtimeDir, 'core-lazy-guide-overrides.json')),
+  };
+  for (const { id, patch } of validation.readyOverrides) {
+    overrides[id] = deepMerge(deepMerge(overrides[id] || {}, patch), lazyOverrides[id] || {});
+  }
   const overrideBackup = validation.readyOverrides.length ? backup(overridePath) : '';
   if (validation.readyOverrides.length) writeJsonAtomic(overridePath, overrides);
 

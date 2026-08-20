@@ -4429,5 +4429,1141 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B01D8023U7": {
+    "id": "amap_B01D8023U7",
+    "name": "五当召",
+    "city": "包头",
+    "rating": 4.7,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/neimenggu_f39f1c5c_verified.jpg",
+    "description": "五当召位于吉忽伦图苏木，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "五当召位于吉忽伦图苏木，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "藏传佛教寺院 / 人文古迹 / 自然风光",
+    "tags": [
+      "藏传佛教寺院 / 人文古迹 / 自然风光",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "吉忽伦图苏木",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至\"五当召景区\"，从包头市区出发约1小时车程，路况良好；公共交通可乘坐包头C7旅游专线至景区，班次较少，建议提前确认。",
+        "internal_arrive": "推荐从2号停车场步行入园，车位充足且沿途可观赏玛尼石堆、转经筒和鹿苑；1号停车场离庙宇群更近但车位较少。",
+        "internal_traffic": "景区提供观光车（往返费用以官方当日公告为准），从检票口到庙宇群约600-800米，适合带长辈和儿童的家庭；也可选择步行，沿途风景不错。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区周边有家庭旅馆和五当召酒店，价格相对实惠，但选择不多，旺季建议提前预订；也可选择住在包头市区，当天往返。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "体力有限的长辈建议乘坐观光车直达庙宇群，在广场树荫下休息，可租用轮椅但景区内石板路较多，推行不便",
+        "children": "沿途鹿苑可投喂梅花鹿，互动性强，适合小朋友；注意防晒和防风，穿舒适的运动鞋。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "经典省力精华游（顺时针不走回头路）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心",
+          "观光车/经幡大道",
+          "苏古沁殿（全寺最大经堂）",
+          "洞阔尔殿（天文历法学堂）",
+          "却依拉殿（10米弥勒铜佛）",
+          "当圪希德殿（护法殿）",
+          "山顶观景台（俯瞰全景）",
+          "转经长廊",
+          "鹿苑",
+          "游客中心"
+        ],
+        "duration": "半天",
+        "walking": "约1.5公里（含观景台上下坡）",
+        "physical": 2,
+        "tips": [
+          "建议乘坐观光车直达庙宇群，节省体力；殿内禁止拍照，请保持安静；转经筒和绕行佛塔需顺时针；景区商铺较少，建议自备饮用水和零食。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 五当召：https://www.amap.com/place/B01D8023U7"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 五当召",
+        "url": "https://www.amap.com/place/B01D8023U7",
+        "poiId": "B01D8023U7",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "五当召 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B01D8023U7",
+      "width": 2048,
+      "height": 2048
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0FFHGT7VN": {
+    "id": "amap_B0FFHGT7VN",
+    "name": "大召无量寺",
+    "city": "呼和浩特",
+    "rating": 4.7,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/neimenggu_e5a2fbbf_verified.jpg",
+    "description": "大召无量寺位于呼和浩特（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "大召无量寺位于呼和浩特（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "藏传佛教寺院、人文古迹",
+    "tags": [
+      "藏传佛教寺院、人文古迹",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "呼和浩特（具体入口请以景区官方导航与当日公告为准）",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "可乘坐公交3路、6路、13路至大召站；或乘地铁2号线至伊利广场站B口出步行约8分钟；老城区停车位紧张，不建议自驾。",
+        "internal_arrive": "从正门山门进入，沿中轴线由南向北游览，不走回头路。",
+        "internal_traffic": "寺院内部均为步行，无电瓶车或观光车。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在玉泉区或新城区，距离景区较近，周边餐饮和交通方便。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "寺院整体地势平坦，但殿内有台阶，建议穿防滑鞋， pace 放慢",
+        "children": "可让小孩在寺前广场看白鸽、拍红墙，注意在殿内保持安静，不随意触碰佛像和经幡。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "中轴线核心精华游（省力慢逛）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "山门",
+          "天王殿",
+          "菩提过殿",
+          "大雄宝殿（镇寺三绝：银佛",
+          "龙雕",
+          "壁画）",
+          "九间楼（登高俯瞰）",
+          "转经长廊",
+          "释迦八塔（寺前广场）"
+        ],
+        "duration": "半天",
+        "walking": "约1.5公里",
+        "physical": 2,
+        "tips": [
+          "殿内严禁拍照；转经筒和绕塔需顺时针；不踩门槛，保持安静。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 大召无量寺-大召广场",
+        "url": "https://www.amap.com/place/B0FFHGT7VN",
+        "poiId": "B0FFHGT7VN",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "大召无量寺.jpg",
+      "author": "三猎",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%8F%AC%E6%97%A0%E9%87%8F%E5%AF%BA.jpg",
+      "width": 2454,
+      "height": 1456
+    },
+    "quality_status": {
+      "reviewRequired": true,
+      "warnings": [
+        "独立可追溯来源少于2个",
+        "仅核验到城市级属地，具体入口需以景区官方导航为准",
+        "大召无量寺：基本资料目前只有1个可追溯来源"
+      ]
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-from-existing-override",
+      "existingId": "amap_B0FFHGT7VN"
+    }
+  },
+  "amap_B0FFF9W5YP": {
+    "baselineKey": "core_9ef55b07b9",
+    "id": "amap_B0FFF9W5YP",
+    "name": "兴安盟阿尔山-柴河旅游景区",
+    "city": "阿尔山",
+    "rating": 4.3,
+    "reviewsCount": "6532条携程点评",
+    "image": "/assets/images/attractions/neimenggu_a367f94f_verified.jpg",
+    "description": "阿尔山国家森林公园镶嵌在碧波浩瀚的大兴安岭林海中，公园内有大兴安岭主高峰——特尔美山（海拔1378米）和大兴安岭较大的湖泊——达尔滨湖，更有火山爆发时熔岩流淌凝成的石塘林和天池。其矿泉资源得天独厚，被称为“天下奇泉”。",
+    "intro": "阿尔山国家森林公园镶嵌在碧波浩瀚的大兴安岭林海中，公园内有大兴安岭主高峰——特尔美山（海拔1378米）和大兴安岭较大的湖泊——达尔滨湖，更有火山爆发时熔岩流淌凝成的石塘林和天池。其矿泉资源得天独厚，被称为“天下奇泉”。",
+    "level": "5A景区",
+    "category": "自然山水、火山地质、森林生态",
+    "tags": [
+      "自然山水、火山地质、森林生态",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "内蒙古自治区兴安盟阿尔山市旅游路",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "建议自驾前往，从乌兰浩特或海拉尔出发，车程约3至5小时；也可乘飞机至阿尔山伊尔施机场或火车至阿尔山站后租车。",
+        "internal_arrive": "导航至\"阿尔山森林公园西门\"进入免费自驾线；若前往柴河区域，可直接导航\"柴河月亮小镇\"。",
+        "internal_traffic": "景区内以自驾为主，部分收费景点需换乘观光车；柴河区域景点分散，自驾最便捷。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "阿尔山市区（餐饮住宿条件较好）或柴河月亮小镇（木刻楞民宿，更原生态）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "路线A全程少爬高，观景台到河边仅需短途步行，适合长辈",
+        "children": "不冻河可戏水、蓝房子可骑马体验，乌苏浪子湖可露营休息，孩子参与度高。\n\n补充一点：柴河区域还有同心天池（可开车到山顶俯瞰，看晨雾）、山水岩壁画（河边散步拍照）、十大湾（日落观景台）等免费景点，同样适合家庭省力游览，路况以柏油路为主，轿车可行，但部分小众点位建议SUV。出发前务必加满油，山区部分路段手机信号较弱。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "不冻河-乌苏浪子湖家庭自驾休闲线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "不冻河观景台",
+          "蓝房子",
+          "乌苏浪子湖"
+        ],
+        "duration": "半天",
+        "walking": "约200米（观景台至河边）",
+        "physical": 2,
+        "tips": [
+          "需提前在\"阿尔山柴河旅游景区\"小程序预约乌苏浪子湖车辆入园；全程单行线，随走随停，适合带娃家庭。"
+        ],
+        "sourceTitle": "携程旅行 兴安盟阿尔山-柴河旅游景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/arxan120084/52423.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=neimenggu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 兴安盟阿尔山-柴河旅游景区 详情页：https://you.ctrip.com/sight/arxan120084/52423.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 兴安盟阿尔山-柴河旅游景区 详情页",
+        "url": "https://you.ctrip.com/sight/arxan120084/52423.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "兴安盟阿尔山-柴河旅游景区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/arxan120084/52423.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/arxan120084/52423.html?poiType=3&scene=online",
+      "width": 1980,
+      "height": 1300
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0JUM59JUX": {
+    "baselineKey": "core_c7cd00c40f",
+    "id": "amap_B0JUM59JUX",
+    "name": "中俄边境旅游区",
+    "city": "满洲里",
+    "rating": 4.5,
+    "reviewsCount": "122条携程点评",
+    "image": "/assets/images/attractions/neimenggu_bc71f69b_verified.jpg",
+    "description": "满洲里市中俄边境旅游区借助满洲里得天独厚的地理环境，汇集中国红色文化、俄罗斯风情文化精粹，是一个独具北疆特色的旅游观光休闲度假基地。夜色刚上来，满洲里已是满城灯火，这里的街道整齐，楼房建筑的风格也是规划过的。",
+    "intro": "满洲里市中俄边境旅游区借助满洲里得天独厚的地理环境，汇集中国红色文化、俄罗斯风情文化精粹，是一个独具北疆特色的旅游观光休闲度假基地。夜色刚上来，满洲里已是满城灯火，这里的街道整齐，楼房建筑的风格也是规划过的。",
+    "level": "5A景区",
+    "category": "边境文化、俄式风情、亲子休闲",
+    "tags": [
+      "边境文化、俄式风情、亲子休闲",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "内蒙古自治区呼伦贝尔市满洲里市华埠大街23号",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "可乘坐满洲里10路、6路公交车在套娃广场或国门站下车；自驾或打车前往更灵活，景区外有收费停车场。",
+        "internal_arrive": "从观光塔一楼进入景区，按指示牌依次游览，路线清晰不绕路。",
+        "internal_traffic": "景区内可乘坐观光电瓶车，适合带老人和小孩的家庭，节省体力。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在中苏金街或市区中心地段，距离景区近，餐饮和交通方便；也可选择套娃酒店体验俄式主题住宿。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "全程可乘电瓶车代步，避免长时间步行；国门二楼有玻璃观景台，无需爬高即可俯瞰边境线",
+        "children": "套娃广场外观色彩丰富，适合拍照；火车头广场有复古火车头和飞机模型，孩子喜欢。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "套娃广场 + 国门景区 家庭省力一日游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "套娃广场外观拍照",
+          "乘坐电瓶车前往国门景区",
+          "观光塔一楼进入",
+          "41号界碑打卡",
+          "登国门二楼俯瞰边境线",
+          "历代国门微缩景观",
+          "火车头广场",
+          "离开景区"
+        ],
+        "duration": "半天",
+        "walking": "约 2000 米（大部分路段可乘坐观光车代步）",
+        "physical": 2,
+        "tips": [
+          "景区入园必须携带身份证；建议早上前往国门景区，光线好且人少；套娃广场在门口拍照即可，无需购票入园。"
+        ],
+        "sourceTitle": "携程旅行 中俄边境旅游区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/manzhouli319/143756394.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=neimenggu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 中俄边境旅游区 详情页：https://you.ctrip.com/sight/manzhouli319/143756394.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 中俄边境旅游区 详情页",
+        "url": "https://you.ctrip.com/sight/manzhouli319/143756394.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "中俄边境旅游区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/manzhouli319/143756394.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/manzhouli319/143756394.html?poiType=3&scene=online",
+      "width": 2048,
+      "height": 1365
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B01DD008IM": {
+    "baselineKey": "core_5bc5600ac3",
+    "id": "amap_B01DD008IM",
+    "name": "响沙湾旅游景区",
+    "city": "达拉特旗",
+    "rating": 4.4,
+    "reviewsCount": "5536条携程点评",
+    "image": "/assets/images/attractions/neimenggu_c7401903_verified.jpg",
+    "description": "中国沙漠度假地——内蒙古.响沙湾是集观光与休闲度假为一体的大型综合型的沙漠休闲景区，地处中国第七大沙漠——库布其沙漠东端，是中国境内距离内地及北京较近的沙漠旅游胜地，是国家AAAAA级旅游景区，国家文化产业示范基地。拥有超过500峰的骆驼队。",
+    "intro": "中国沙漠度假地——内蒙古.响沙湾是集观光与休闲度假为一体的大型综合型的沙漠休闲景区，地处中国第七大沙漠——库布其沙漠东端，是中国境内距离内地及北京较近的沙漠旅游胜地，是国家AAAAA级旅游景区，国家文化产业示范基地。拥有超过500峰的骆驼队。",
+    "level": "5A景区",
+    "category": "沙漠度假、休闲游乐",
+    "tags": [
+      "沙漠度假、休闲游乐",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "内蒙古自治区鄂尔多斯市达拉特旗响沙湾旅游景区",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“响沙湾游客中心”或“3号索道停车场”；公共交通可高铁到达拉特西站后打车前往，或从鄂尔多斯/包头客运站乘大巴前往。",
+        "internal_arrive": "自驾首选1、2号或3号索道停车场，下车即近索道入口，可免乘景区接驳车；若使用一卡通，请走“一卡通直通车”通道。",
+        "internal_traffic": "景区内以索道、沙海游艇、沙漠冲浪车、观光小火车和摆渡车为主要接驳方式，各岛之间需换乘对应交通工具。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "莲沙度假岛（莲花酒店）、顺沙度假岛（顺沙度假酒店）、福沙度假岛（福沙度假酒店）、一粒沙度假村、悦沙岛帐篷营地。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "优先选择一价全包度假酒店，享受免排队权益和室内休息区；避免正午暴晒，多乘接驳车减少步行",
+        "children": "提前准备挖沙工具，穿防沙鞋套；部分机动项目有身高限制，可优先体验骑骆驼、小火车和挖沙。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "仙沙岛+悦沙岛双岛省力畅玩",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心乘摆渡车至索道入口",
+          "乘索道或沙海游艇进入响沙湾港",
+          "换乘小火车或冲浪车前往仙沙岛",
+          "体验骑骆驼",
+          "沙漠越野车",
+          "驼峰过山车等项目",
+          "乘摆渡车前往悦沙岛",
+          "打卡沙漠无边泳池",
+          "沙雕城堡",
+          "水上乐园",
+          "乘滑沙或索道返程"
+        ],
+        "duration": "半天",
+        "walking": "较少，岛间及景点间以摆渡车、小火车、冲浪车接驳为主",
+        "physical": 2,
+        "tips": [
+          "建议将滑沙项目留在最后，滑下后直接乘坐摆渡车出景区，避免重复爬坡；正午沙漠暴晒，建议上午和傍晚玩项目，中午在室内或阴凉处休息。"
+        ],
+        "sourceTitle": "携程旅行 响沙湾旅游景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      {
+        "title": "响沙湾港公共区域轻松游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心乘一卡通直通车",
+          "乘沙海游艇抵达响沙湾港",
+          "自由玩沙",
+          "拍照打卡",
+          "体验骑骆驼",
+          "大脚怪等自费项目",
+          "乘滑沙或索道返程"
+        ],
+        "duration": "半天",
+        "walking": "较少，以景区接驳车为主",
+        "physical": 1,
+        "tips": [
+          "如果不追求上岛，公共区域已足够玩沙和拍照，带娃家庭可让孩子尽情挖沙，更省心省力。"
+        ],
+        "sourceTitle": "携程旅行 响沙湾旅游景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=neimenggu&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 响沙湾旅游景区 详情页：https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 响沙湾旅游景区 详情页",
+        "url": "https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "响沙湾旅游景区 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/daladbanner2964/61708.html?poiType=3&scene=online",
+      "width": 4980,
+      "height": 3251
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0FFFE3VE2": {
+    "baselineKey": "core_e8ae7b20e6",
+    "id": "amap_B0FFFE3VE2",
+    "name": "康巴什乌兰木伦湖",
+    "city": "鄂尔多斯",
+    "rating": 3.7,
+    "reviewsCount": "6条携程点评",
+    "image": "/assets/images/attractions/neimenggu_31f86200_verified.jpg",
+    "description": "康巴什乌兰木伦湖音乐喷泉位于内蒙古自治区鄂尔多斯市康巴什新区，是一处集喷泉、音乐、灯光、舞蹈等多种元素于一体的大型音乐喷泉，为游客带来了一场震撼的视听盛宴。喷泉气势雄伟，当水柱直冲云霄时，仿佛要与天公试比高，从远处眺望，便能感受到那份磅礴的气势。",
+    "intro": "康巴什乌兰木伦湖音乐喷泉位于内蒙古自治区鄂尔多斯市康巴什新区，是一处集喷泉、音乐、灯光、舞蹈等多种元素于一体的大型音乐喷泉，为游客带来了一场震撼的视听盛宴。喷泉气势雄伟，当水柱直冲云霄时，仿佛要与天公试比高，从远处眺望，便能感受到那份磅礴的气势。",
+    "level": "热门景点",
+    "category": "城市湖泊景观 / 音乐喷泉 / 城市休闲公园",
+    "tags": [
+      "城市湖泊景观 / 音乐喷泉 / 城市休闲公园",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "鄂尔多斯市康巴什区湖滨路乌兰木伦滨河广场",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+        "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+        "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+        "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+      },
+      "transport": {
+        "external_arrive": "可乘飞机抵达鄂尔多斯伊金霍洛机场（距康巴什约 15 公里，打车约 30 分钟），或乘高铁到鄂尔多斯站（距康巴什约 10 公里，打车约 20 分钟）",
+        "internal_arrive": "导航至\"乌兰木伦滨河广场\"或\"康巴什音乐喷泉\"，自驾可停在湖区就近停车场或湖滨路路边划线车位，19 点后车位紧张建议停至爱拥公园停车场步行前往",
+        "internal_traffic": "景点集中，推荐乘坐 301 路双层观光巴士（费用以官方当日公告为准）或骑共享电单车，避免自驾堵车和找车位",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "推荐入住康巴什新区内酒店，如康巴什朗景酒店或皇室国际酒店，毗邻市政府和湖区，晚上看喷泉方便",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "蒙古馅饼",
+        "手扒肉",
+        "烤全羊",
+        "奶豆腐"
+      ],
+      "special_care": {
+        "elderly": "湖区步道平缓，全程可推轮椅或慢走，观景台阶可坐着看喷泉，体力消耗小",
+        "children": "广场周边有儿童游乐设施，宪法公园、启航公园等免费公园配有滑梯、攀爬等无动力设施，适合低龄宝宝放电"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "傍晚湖畔漫步 + 夜间音乐喷泉",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "傍晚抵达乌兰木伦滨河广场，沿湖岸步道散步，欣赏湖面倒影与城市天际线\n在广场周边儿童游乐区或小吃摊位稍作休息，让小朋友提前放电\n夜幕降临后，在观景台阶就座，观看音乐喷泉灯光水幕表演\n散场后沿湖边慢走消食，感受草原晚风"
+        ],
+        "duration": "半天",
+        "walking": "约 2 公里",
+        "physical": 2,
+        "tips": [
+          "建议 官方当日建议时段 前到达占位，选择中层台阶中间位置视野最佳且不会被水花溅到；湖边夜间风大且温差明显，务必带薄外套；散场后不要立刻开车，在湖边溜达 20 分钟再离场可避开拥堵。"
+        ],
+        "sourceTitle": "携程旅行 康巴什乌兰木伦湖 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "ctrip_city_sightlist：https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 康巴什乌兰木伦湖 详情页",
+        "url": "https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "康巴什乌兰木伦湖 景点页实景图",
+      "author": "景点页公开图片提供者",
+      "provider": "携程景点页面",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online",
+      "sourceUrl": "https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online",
+      "width": 2500,
+      "height": 1406
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B030B0MRNC": {
+    "baselineKey": "core_bec1eb1acd",
+    "id": "amap_B030B0MRNC",
+    "name": "涠洲岛南湾鳄鱼山景区",
+    "city": "北海",
+    "rating": 4.4,
+    "reviewsCount": "22389条携程点评",
+    "image": "/assets/images/attractions/guangxi_eea9e57c_verified.jpg",
+    "description": "涠洲岛位于北海南部，是我国面积较大的死火山岛，很多人把这里做为毕业旅行目的地。岛上鳄鱼山景区的火山岩、滴水丹屏的海蚀景观、风情各异的海滩、美丽的日出日落，都是涠洲岛的魅力所在。",
+    "intro": "涠洲岛位于北海南部，是我国面积较大的死火山岛，很多人把这里做为毕业旅行目的地。岛上鳄鱼山景区的火山岩、滴水丹屏的海蚀景观、风情各异的海滩、美丽的日出日落，都是涠洲岛的魅力所在。",
+    "level": "5A景区",
+    "category": "火山地质公园、海岛自然风景区",
+    "tags": [
+      "火山地质公园、海岛自然风景区",
+      "经典景点",
+      "官方名录"
+    ],
+    "address": "广西壮族自治区北海市海城区",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "导航至“南湾鳄鱼山景区游客中心”（停车场免费）或“滴水阁”（停车收费，但步行距离更短）。",
+        "internal_arrive": "带老人小孩建议直接从游客中心乘坐观光车进入，省去长距离暴晒步行；若选择步行，从滴水阁入园路程最短。",
+        "internal_traffic": "景区内有观光车接驳（往返费用以官方当日公告为准），也可全程步行栈道；部分路段可乘坐快艇直达南湾码头（以官方当日公告为准）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在南湾街附近，餐饮集中且距离景区近，游玩后方便休息和用餐。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "桂林米粉",
+        "阳朔啤酒鱼",
+        "梧州纸包鸡",
+        "柳州螺蛳粉"
+      ],
+      "special_care": {
+        "elderly": "避开正午暴晒时段，穿舒适运动鞋，部分路段台阶较陡需量力而行，可考虑在月亮湾等平缓区域休息",
+        "children": "月亮湾退潮时可抓螃蟹、捡贝壳，建议备好零食和饮用水，注意防晒防蚊。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "观光车接驳省力环线",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心乘观光车至景区入口 ➠ 鳄鱼山灯塔 ➠ 涠洲廓 ➠ 汤翁台 ➠ 火山口遗址 ➠ 月亮湾 ➠ 海枯石烂 ➠ 月亮广场 ➠ 返回入口"
+        ],
+        "duration": "半天",
+        "walking": "约2.2公里环线",
+        "physical": 3,
+        "tips": [
+          "景区为单行环线，跟着步道走不会迷路；下山时观光车排队可能较长，建议预留好返程时间。"
+        ],
+        "sourceTitle": "携程旅行 涠洲岛南湾鳄鱼山景区 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+        "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+        "携程旅行 涠洲岛南湾鳄鱼山景区 详情页：https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+        "高德地图 南湾鳄鱼山景区：https://www.amap.com/place/B030B0MRNC"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 涠洲岛南湾鳄鱼山景区 详情页",
+        "url": "https://you.ctrip.com/sight/beihai140/9311.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "涠洲岛南湾鳄鱼山景区 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B030B0MRNC",
+      "width": 2000,
+      "height": 1334
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B0LA61CXYP": {
+    "id": "amap_B0LA61CXYP",
+    "name": "冈仁波齐",
+    "city": "普兰",
+    "rating": 4.7,
+    "reviewsCount": "347条携程点评",
+    "image": "/assets/images/attractions/xibet_f95eb424_verified.jpg",
+    "description": "冈仁波齐是冈底斯山的主峰，位于阿里地区普兰县北部八嘎乡境内，海拔约6656米，是世界公认的神山，同时被许多佛教认定为是世界的中心。",
+    "intro": "冈仁波齐是冈底斯山的主峰，位于阿里地区普兰县北部八嘎乡境内，海拔约6656米，是世界公认的神山，同时被许多佛教认定为是世界的中心。",
+    "level": "热门景点",
+    "category": "自然与文化双遗产、宗教朝圣地",
+    "tags": [
+      "自然与文化双遗产、宗教朝圣地",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "阿里地区普兰县冈仁波齐峰",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "通常自驾或包车前往，从拉萨出发约1600公里（需4-5天车程），或从日喀则出发约530公里（约10小时车程）；也可先飞抵阿里昆莎机场，再包车前往。",
+        "internal_arrive": "从塔钦镇（塔尔钦）的转山游客中心进入，此处是绝大多数游客和朝圣者的起点。",
+        "internal_traffic": "景区内无公共交通，主要依靠徒步；体力有限者可沿途雇马或请背夫协助搬运行李。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "塔钦镇（巴嘎乡），镇上有多家酒店和客栈，部分提供供氧和地暖设施，方便适应高反。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "藏式酸奶",
+        "藏家烤全羊",
+        "牦牛肉火锅",
+        "藏式酥油茶"
+      ],
+      "special_care": {
+        "elderly": "50岁以上长辈通常不建议参与转山，高海拔和长距离徒步风险较大，建议在塔钦镇周边适应海拔、远眺神山即可",
+        "children": "需严格评估孩子的高原反应耐受度，避免前往高海拔山口，行程以轻松观景为主，备好儿童常用药和保暖衣物。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "冈仁波齐家庭省力轻徒步观景（塔钦-止热寺往返）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "塔钦镇（适应海拔）",
+          "转山入口经幡广场（远眺神山）",
+          "双腿佛塔（初探峡谷）",
+          "曲古寺（喝茶休整）",
+          "止热寺（观赏冈仁波齐北壁与日照金山）",
+          "原路返回或骑马下撤"
+        ],
+        "duration": "半天",
+        "walking": "约15-20公里（往返，可结合骑马减轻负担）",
+        "physical": 3,
+        "tips": [
+          "建议先在塔钦镇适应1-2天海拔再出发；沿途可雇马或背夫协助，减轻家庭出行负担。"
+        ],
+        "sourceTitle": "携程旅行 冈仁波齐 详情页",
+        "sourceUrl": "https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "ctrip_province_sightlist：https://you.ctrip.com/sightlist/tibet100003.html",
+        "携程旅行 冈仁波齐 详情页：https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+        "高德地图 冈仁波齐：https://www.amap.com/place/B0LA61CXYP"
+      ],
+      "ratingSource": {
+        "platform": "携程",
+        "title": "携程旅行 冈仁波齐 详情页",
+        "url": "https://you.ctrip.com/sight/purang2440/4315.html?poiType=3&scene=online",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "冈仁波齐 高德地图实景图",
+      "author": "高德地图用户或商户",
+      "provider": "高德地图",
+      "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+      "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+      "sourceUrl": "https://www.amap.com/place/B0LA61CXYP",
+      "width": 1247,
+      "height": 1663
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    },
+    "lazy_ai_text": "ai总结26篇笔记生成\n\n带长辈和小孩去冈仁波齐，最大的挑战是海拔高（大本营在4600米以上）和传统转山路途艰辛。传统的52公里转山路线对体力要求极高，绝对不建议长辈和小孩尝试。\n\n针对长辈和小孩，最省力、最安全的方案是放弃全程徒步，采用“景区车览+核心观景台短途体验”的方式，既能完整感受神山圣湖的震撼，又能最大程度节省体力。\n\n核心省力路线规划\n\n方案一：一日车览核心观景线（最省力，适合绝大多数长辈小孩）这条路线以坐车为主，只在海拔相对较低、视野最好的观景台进行短途平缓步行，全程不走陡峭山路。\n\n塔钦（起点）：作为进山前的集散地，海拔约4600米。建议在此适应半天，不要剧烈运动。\n\n经幡广场：乘坐景区交通车或包车直达。这里视野开阔，可以近距离感受经幡阵的震撼，路面相对平缓，适合老人小孩简单拍照打卡。\n\n止热寺（核心观景台）：继续乘车或包车前往。这里是观赏冈仁波齐峰北壁和“日照金山”的绝佳位置。在止热寺附近平地处停留即可，千万不要尝试攀爬旁边的陡峭崖壁或继续向上徒步。\n\n曲古寺（可选）：如果长辈体力尚可，可乘车前往曲古寺。传说绕曲古寺转13圈相当于转山一圈，可以在寺庙周边平缓地带体验转经筒，感受人文氛围。\n\n第二天（圣湖线）：从塔钦出发前往玛旁雍措（圣湖）。圣湖周边有自驾或包车环线，可以在湖边平缓的观景台停车游玩，呼吸新鲜空气，感受圣湖的宁静，随后返回塔钦或前往下一站。\n\n景区核心景点解析\n\n在省力路线中，长辈和小孩主要会接触到以下几个核心点位：\n\n冈仁波齐峰：神山核心，在止热寺观景台可近距离仰望其独特的金字塔形山体，感受自然与信仰的震撼。\n\n止热寺：观赏神山北壁和日照金山的最佳位置，地势相对平缓，是车览路线的核心停靠点。\n\n经幡广场：巨大的经幡阵随风飘扬，视觉冲击力极强，适合在平缓地带拍照留念。\n\n曲古寺：人文体验点，长辈可以在寺庙周边平缓地带转经筒，感受朝圣氛围，无需长途徒步。\n\n玛旁雍措：与神山相伴的圣湖，湖水清澈湛蓝，适合自驾或包车环湖游览，在湖边平缓处休憩。\n\n带长辈小孩的关键注意事项\n\n坚决避开高难度路段：传统转山路上的卓玛拉垭口海拔高达5630米，且路况陡峭、落差极大，绝对不要带长辈和小孩尝试翻越。\n\n严防高反：景区平均海拔在4600米以上，长辈和小孩对缺氧更敏感。建议提前准备便携氧气瓶，行程前1-2天在塔钦适应海拔，不要洗头洗澡，动作放缓。\n\n交通方式：景区内部分路段可乘坐景区交通车，但前往止热寺等核心点可能需要包车或拼车。务必提前在游客中心确认最新的车辆通行政策和接驳方式。\n\n天气与装备：高原天气多变，昼夜温差极大。即使是夏季，也务必给长辈和小孩准备冲锋衣、羽绒服、帽子和防滑鞋。",
+    "lazy_ai_source": {
+      "source": "xiaohongshu-dian-dian-ai-chat",
+      "prompt": "冈仁波齐完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
+      "updatedAt": "2026-08-19T09:08:42.94Z"
+    }
+  },
+  "amap_B037D0MKCD": {
+    "id": "amap_B037D0MKCD",
+    "name": "羊卓雍措",
+    "city": "山南",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/xibet_29d69a19_verified.jpg",
+    "description": "羊卓雍措位于307省道，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "羊卓雍措位于307省道，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "高原湖泊、自然风景区",
+    "tags": [
+      "高原湖泊、自然风景区",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "307省道",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "从拉萨市区出发约2小时车程，全程柏油路，但后半程为临崖盘山公路，建议自驾或包车前往",
+        "internal_arrive": "导航至“羊卓雍措1号观景台”或“岗巴拉山口”，从高处依次向下游览，节省体力",
+        "internal_traffic": "景区内有观光车（票价以官方当日公告为准），可连接各主要观景台；自驾车辆可沿观景台之间的道路行驶，部分路段可停车拍照",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "浪卡子县紧邻羊湖，停车吃饭方便，适合需要中转或留宿的游客；若当日往返，可返回拉萨市区住宿",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "藏式酸奶",
+        "藏家烤全羊",
+        "牦牛肉火锅",
+        "藏式酥油茶"
+      ],
+      "special_care": {
+        "elderly": "羊卓雍措整体海拔在4000至5000米左右，长辈需提前评估身体状况，备好氧气瓶，游览时缓慢行走，避免剧烈运动和长时间吹风",
+        "children": "建议6岁以上且体质较好的儿童前往，家长需全程监护，不要让孩子单独行动，备好保暖衣物和常用药品，注意高原紫外线防护。\n\n你这次是打算从拉萨出发一日游，还是准备在浪卡子县住一晚慢慢玩？"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "经典观景台省力环线（1至3号观景台）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "1号观景台（岗巴拉山口，高空俯瞰S形湖湾）",
+          "2号观景台（朗布其，半山腰近观湖水层次）",
+          "3号观景台（湖边亲水，木栈道近距离接触湖面）"
+        ],
+        "duration": "半天",
+        "walking": "各观景台之间距离较近，多为平缓步行或车内移动，无需爬山",
+        "physical": 2,
+        "tips": [
+          "1、2、3号观景台通常需购买联票，进入观景台门口扫码即可；山上风大且海拔接近5000米，务必做好防风保暖，动作放缓避免高反"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-19"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 羊卓雍措景区：https://www.amap.com/place/B037D0MKCD"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 羊卓雍措景区",
+        "url": "https://www.amap.com/place/B037D0MKCD",
+        "poiId": "B037D0MKCD",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-19"
+      },
+      "basicInfoUpdatedAt": "2026-08-19",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "羊卓雍措 - panoramio.jpg",
+      "author": "guan",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%BE%8A%E5%8D%93%E9%9B%8D%E6%8E%AA_-_panoramio.jpg",
+      "width": 3840,
+      "height": 2571
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
+  },
+  "amap_B03BA00EBT": {
+    "id": "amap_B03BA00EBT",
+    "name": "须弥山石窟",
+    "city": "固原",
+    "rating": 4.6,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/ningxia_4c75bf29_verified.jpg",
+    "description": "须弥山石窟位于须弥山东麓，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "须弥山石窟位于须弥山东麓，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "石窟艺术、历史人文、丹霞地貌",
+    "tags": [
+      "石窟艺术、历史人文、丹霞地貌",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "须弥山东麓",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾导航至“须弥山石窟”或“须弥山停车场”，距固原市区约50公里，车程40-50分钟；距银川约3小时车程。",
+        "internal_arrive": "从游客中心进，建议购买含观光车的套票，景区指示牌不多，可在游客中心索取地图。",
+        "internal_traffic": "观光车往返游客中心、博物馆和石窟区，车程约2-5分钟；若步行需穿过河谷、爬台阶，较耗体力。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "建议住在固原市区，餐饮和住宿选择较多，景区周边为农田和山区，无商业配套。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "爆炒黄渠桥羊羔肉",
+        "宁夏手抓羊肉",
+        "宁夏烩羊杂碎",
+        "羊肉老搓面"
+      ],
+      "special_care": {
+        "elderly": "务必购买观光车票，放弃陡峭的子孙宫区，以平路和下坡为主",
+        "children": "带足零食和水，穿运动鞋，避免在陡坡处攀爬。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "精华省力游（博物馆+大佛+核心洞窟）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心",
+          "须弥山博物馆（顶层拍大佛全景）",
+          "大佛楼区（第5窟唐代弥勒大佛）",
+          "圆光寺区（第45",
+          "46窟）",
+          "相国寺区（第51窟“须弥之光”）",
+          "返回"
+        ],
+        "duration": "半天",
+        "walking": "约2-3公里，有上下坡和台阶",
+        "physical": 3,
+        "tips": [
+          "景区内无商铺，务必自带充足饮用水和防晒装备；穿防滑运动鞋。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-20"
+      },
+      {
+        "title": "极简代步游（乘车直达+核心洞窟）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心",
+          "乘观光车直达大佛楼区",
+          "圆光寺区",
+          "相国寺区",
+          "乘观光车返回"
+        ],
+        "duration": "半天",
+        "walking": "约1公里，平缓为主",
+        "physical": 2,
+        "tips": [
+          "适合体力有限的家庭，放弃博物馆和子孙宫，直奔精华洞窟，全程约1.5-2小时。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-20"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 须弥山石窟国家级风景名胜区：https://www.amap.com/place/B03BA00EBT"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 须弥山石窟国家级风景名胜区",
+        "url": "https://www.amap.com/place/B03BA00EBT",
+        "poiId": "B03BA00EBT",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-20"
+      },
+      "basicInfoUpdatedAt": "2026-08-20",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "Xumishan Grottoes 99.jpg",
+      "author": "Thebrainchamber1",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xumishan_Grottoes_99.jpg",
+      "width": 3840,
+      "height": 2160
+    },
+    "quality_status": {
+      "reviewRequired": false,
+      "warnings": []
+    }
   }
 }

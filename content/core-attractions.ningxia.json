@@ -1,0 +1,599 @@
+{
+  "province": "宁夏",
+  "checkedAt": "2026-08-20",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=ningxia&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/ningxia100063.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 7,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 2,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 2,
+    "priorityObservationCount": 0,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 6,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 13,
+  "existingRecordBoundCount": 13,
+  "existingRecordUnboundCount": 6,
+  "existingRecordUnboundNames": [
+    "宁夏镇北堡西部影视城",
+    "宁夏博物馆",
+    "腾格里沙漠",
+    "北长滩古村落",
+    "中卫高庙",
+    "寺口子风景区"
+  ],
+  "mergedDuplicateCount": 1,
+  "mergedDuplicates": [
+    {
+      "kept": "沙湖旅游景区",
+      "merged": "沙湖生态旅游区",
+      "preferredId": "amap_B03B80050G"
+    }
+  ],
+  "reviewCandidateCount": 2,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 0,
+  "priorityObservationCandidates": [],
+  "observationCandidateCount": 2,
+  "observationCandidates": [
+    {
+      "name": "怀远夜市",
+      "city": "银川",
+      "aliases": [
+        "怀远夜市"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "通湖草原",
+      "city": "中卫",
+      "aliases": [
+        "通湖草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "怀远夜市",
+      "city": "银川",
+      "aliases": [
+        "怀远夜市"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "通湖草原",
+      "city": "中卫",
+      "aliases": [
+        "通湖草原"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 7,
+    "verifiedCount": 4,
+    "coveredByCoreCount": 1,
+    "unresolvedCount": 2,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_c0ada5a8b8",
+      "name": "六盘山红军长征旅游区",
+      "preferredId": "amap_B03BA001FK",
+      "aliases": [
+        "六盘山红军长征旅游区",
+        "固原市六盘山红军长征旅游区",
+        "六盘山红军长征"
+      ],
+      "city": "固原",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_0bb785688b",
+      "name": "青铜峡黄河大峡谷旅游区",
+      "preferredId": "amap_B03B90M3BZ",
+      "aliases": [
+        "青铜峡黄河大峡谷旅游区",
+        "吴忠市青铜峡黄河大峡谷旅游区",
+        "青铜峡黄河大峡谷"
+      ],
+      "city": "吴忠",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_8e8e861202",
+      "name": "水洞沟旅游区",
+      "preferredId": "amap_B0FFFCX6QS",
+      "aliases": [
+        "水洞沟旅游区",
+        "银川市水洞沟旅游区",
+        "水洞沟"
+      ],
+      "city": "银川",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_ab53d1041a",
+      "name": "宁夏镇北堡西部影视城",
+      "preferredId": "manual_ningxia_53cce5ed",
+      "aliases": [
+        "宁夏镇北堡西部影视城",
+        "银川市宁夏镇北堡西部影视城"
+      ],
+      "city": "银川",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_573f5cbfe0",
+      "name": "沙坡头旅游景区",
+      "preferredId": "amap_B07A10048L",
+      "aliases": [
+        "沙坡头旅游景区",
+        "中卫市沙坡头旅游景区",
+        "沙坡头"
+      ],
+      "city": "中卫",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_0fac5b439c",
+      "name": "沙湖旅游景区",
+      "preferredId": "amap_B03B80050G",
+      "aliases": [
+        "沙湖旅游景区",
+        "石嘴山市沙湖旅游景区",
+        "沙湖",
+        "沙湖生态旅游区",
+        "沙湖生态"
+      ],
+      "city": "石嘴山",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "mct_national_5a_2025",
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_ef2e3c3e67",
+      "name": "宁夏贺兰山国家森林公园",
+      "preferredId": "amap_B03B700233",
+      "aliases": [
+        "宁夏贺兰山国家森林公园"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": 6
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_05cba97ced",
+      "name": "西夏陵",
+      "preferredId": "amap_B0FFFYSKX3",
+      "aliases": [
+        "西夏陵",
+        "西夏陵国家考古遗址公园"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_9ed8913a72",
+      "name": "镇北堡西部影城",
+      "preferredId": "amap_B03B70256E",
+      "aliases": [
+        "镇北堡西部影城"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0b3a6dadd7",
+      "name": "贺兰山岩画",
+      "preferredId": "amap_B03B7004A0",
+      "aliases": [
+        "贺兰山岩画"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 8
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ba20a35dbd",
+      "name": "宁夏博物馆",
+      "preferredId": "manual_ningxia_6d895c33",
+      "aliases": [
+        "宁夏博物馆"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_859e9f39de",
+      "name": "腾格里沙漠",
+      "preferredId": "manual_ningxia_82989322",
+      "aliases": [
+        "腾格里沙漠"
+      ],
+      "city": "中卫",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_999a94be52",
+      "name": "北长滩古村落",
+      "preferredId": "manual_ningxia_67135284",
+      "aliases": [
+        "北长滩古村落"
+      ],
+      "city": "中卫",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFIYDM3C",
+          "name": "北长滩",
+          "city": "中卫市",
+          "type": "风景名胜;风景名胜相关;旅游景点",
+          "url": "https://www.amap.com/place/B0FFIYDM3C",
+          "verifiedAt": "2026-08-20"
+        }
+      ]
+    },
+    {
+      "key": "core_582e20be2a",
+      "name": "中卫高庙",
+      "preferredId": "manual_ningxia_33221b01",
+      "aliases": [
+        "中卫高庙"
+      ],
+      "city": "中卫",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B07A1001E0",
+          "name": "高庙",
+          "city": "中卫市",
+          "type": "风景名胜;风景名胜;寺庙道观",
+          "url": "https://www.amap.com/place/B07A1001E0",
+          "verifiedAt": "2026-08-20"
+        }
+      ]
+    },
+    {
+      "key": "core_40fc3c383b",
+      "name": "寺口子风景区",
+      "preferredId": "manual_ningxia_22f58ca0",
+      "aliases": [
+        "寺口子风景区",
+        "寺口子"
+      ],
+      "city": "中卫",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "中卫",
+          "page": 2,
+          "name": "寺口子",
+          "url": "https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_e1822e5c24",
+      "name": "览山公园",
+      "preferredId": "amap_B03B70PN5S",
+      "aliases": [
+        "览山公园"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c8dfa802ba",
+      "name": "漫葡·看见贺兰小镇",
+      "preferredId": "amap_B0GR7HIVCF",
+      "aliases": [
+        "漫葡·看见贺兰小镇",
+        "看见贺兰"
+      ],
+      "city": "银川",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 18
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2b09bc3672",
+      "name": "中卫66号公路",
+      "preferredId": "amap_B0G36HMJXO",
+      "aliases": [
+        "中卫66号公路",
+        "66号公路"
+      ],
+      "city": "中卫",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 24
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_a16793d93a",
+      "name": "须弥山石窟",
+      "preferredId": "amap_B03BA00EBT",
+      "aliases": [
+        "须弥山石窟",
+        "须弥山石窟国家级风景名胜区"
+      ],
+      "city": "固原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 26
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

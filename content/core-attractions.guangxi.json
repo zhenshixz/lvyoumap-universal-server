@@ -1,0 +1,916 @@
+{
+  "province": "广西",
+  "checkedAt": "2026-08-19",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/guangxi100052.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 14,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 11,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 11,
+    "priorityObservationCount": 1,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 10,
+  "officialResortCandidateCount": 4,
+  "popularityCount": 12,
+  "existingRecordBoundCount": 14,
+  "existingRecordUnboundCount": 8,
+  "existingRecordUnboundNames": [
+    "涠洲岛南湾鳄鱼山景区",
+    "独秀峰•靖江王城景区",
+    "通灵大峡谷",
+    "柳州工业博物馆",
+    "广西民族博物馆",
+    "桂林雁山旅游度假区",
+    "大新明仕旅游度假区",
+    "桂林阳朔遇龙河旅游度假区"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 11,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 1,
+  "priorityObservationCandidates": [
+    {
+      "name": "遇龙河竹筏漂游",
+      "city": "",
+      "aliases": [
+        "遇龙河竹筏漂游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 11,
+  "observationCandidates": [
+    {
+      "name": "遇龙河竹筏漂游",
+      "city": "",
+      "aliases": [
+        "遇龙河竹筏漂游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "遇龙河",
+      "city": "桂林市阳朔",
+      "aliases": [
+        "遇龙河"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "龙脊梯田",
+      "city": "桂林市龙胜",
+      "aliases": [
+        "龙脊梯田"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄姚古镇",
+      "city": "贺州市昭平",
+      "aliases": [
+        "黄姚古镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "德天跨国瀑布",
+      "city": "崇左市大新",
+      "aliases": [
+        "德天跨国瀑布"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "明仕田园",
+      "city": "崇左市大新",
+      "aliases": [
+        "明仕田园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "鹅泉",
+      "city": "百色市靖西",
+      "aliases": [
+        "鹅泉"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "浩坤湖",
+      "city": "百色市凌云",
+      "aliases": [
+        "浩坤湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "三门海",
+      "city": "河池市凤山",
+      "aliases": [
+        "三门海"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "洞天盛境",
+      "city": "河池市南丹",
+      "aliases": [
+        "洞天盛境"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "程阳八寨",
+      "city": "柳州市三江",
+      "aliases": [
+        "程阳八寨"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "遇龙河竹筏漂游",
+      "city": "",
+      "aliases": [
+        "遇龙河竹筏漂游"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 10,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "遇龙河",
+      "city": "桂林市阳朔",
+      "aliases": [
+        "遇龙河"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "龙脊梯田",
+      "city": "桂林市龙胜",
+      "aliases": [
+        "龙脊梯田"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄姚古镇",
+      "city": "贺州市昭平",
+      "aliases": [
+        "黄姚古镇"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "德天跨国瀑布",
+      "city": "崇左市大新",
+      "aliases": [
+        "德天跨国瀑布"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "明仕田园",
+      "city": "崇左市大新",
+      "aliases": [
+        "明仕田园"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "鹅泉",
+      "city": "百色市靖西",
+      "aliases": [
+        "鹅泉"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "浩坤湖",
+      "city": "百色市凌云",
+      "aliases": [
+        "浩坤湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "三门海",
+      "city": "河池市凤山",
+      "aliases": [
+        "三门海"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "洞天盛境",
+      "city": "河池市南丹",
+      "aliases": [
+        "洞天盛境"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "程阳八寨",
+      "city": "柳州市三江",
+      "aliases": [
+        "程阳八寨"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 14,
+    "verifiedCount": 3,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 11,
+    "warnings": [
+      "携程省级页未发现 桂林市阳朔 的城市入口。",
+      "携程省级页未发现 桂林市龙胜 的城市入口。",
+      "携程省级页未发现 贺州市昭平 的城市入口。",
+      "携程省级页未发现 崇左市大新 的城市入口。",
+      "携程省级页未发现 百色市靖西 的城市入口。",
+      "携程省级页未发现 百色市凌云 的城市入口。",
+      "携程省级页未发现 河池市凤山 的城市入口。",
+      "携程省级页未发现 河池市南丹 的城市入口。",
+      "携程省级页未发现 柳州市三江 的城市入口。",
+      "德天跨国瀑布 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "明仕田园 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "洞天盛境 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "程阳八寨 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_c7b8879e23",
+      "name": "花山岩画景区",
+      "preferredId": "amap_B0JUKUOFLJ",
+      "aliases": [
+        "花山岩画景区",
+        "崇左市花山岩画景区",
+        "花山岩画"
+      ],
+      "city": "崇左",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_f643623c69",
+      "name": "程阳八寨景区",
+      "preferredId": "amap_B03040P5YF",
+      "aliases": [
+        "程阳八寨景区",
+        "柳州市程阳八寨景区",
+        "程阳八寨"
+      ],
+      "city": "柳州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_521709e983",
+      "name": "黄姚古镇景区",
+      "preferredId": "amap_B06EE0LXBS",
+      "aliases": [
+        "黄姚古镇景区",
+        "贺州市黄姚古镇景区",
+        "黄姚古镇"
+      ],
+      "city": "贺州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_bec1eb1acd",
+      "name": "涠洲岛南湾鳄鱼山景区",
+      "preferredId": "amap_B030B0MRNC",
+      "aliases": [
+        "涠洲岛南湾鳄鱼山景区",
+        "北海市涠洲岛南湾鳄鱼山景区",
+        "涠洲岛南湾鳄鱼山"
+      ],
+      "city": "北海",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_167a4d03b5",
+      "name": "百色起义纪念园景区",
+      "preferredId": "amap_B0FFL8L3YY",
+      "aliases": [
+        "百色起义纪念园景区",
+        "百色市百色起义纪念园景区",
+        "百色起义纪念园"
+      ],
+      "city": "百色",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_c958cef2f3",
+      "name": "德天跨国瀑布景区",
+      "preferredId": "amap_B06EB009VO",
+      "aliases": [
+        "德天跨国瀑布景区",
+        "崇左市德天跨国瀑布景区",
+        "德天跨国瀑布"
+      ],
+      "city": "崇左",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_f8ce0512d3",
+      "name": "两江四湖•象山景区",
+      "preferredId": "amap_B030507T9Q",
+      "aliases": [
+        "两江四湖•象山景区",
+        "桂林市两江四湖•象山景区",
+        "两江四湖•象山"
+      ],
+      "city": "桂林",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_b46fa3bc81",
+      "name": "青秀山风景名胜旅游区",
+      "preferredId": "amap_B030305711",
+      "aliases": [
+        "青秀山风景名胜旅游区",
+        "南宁市青秀山风景名胜旅游区",
+        "青秀山风景名胜"
+      ],
+      "city": "南宁",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_d9cc50e33f",
+      "name": "独秀峰•靖江王城景区",
+      "preferredId": "manual_guangxi_239a6f3e",
+      "aliases": [
+        "独秀峰•靖江王城景区",
+        "桂林市独秀峰•靖江王城景区",
+        "独秀峰•靖江王城"
+      ],
+      "city": "桂林",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_d76f99a29b",
+      "name": "漓江风景区",
+      "preferredId": "amap_B030507SVW",
+      "aliases": [
+        "漓江风景区",
+        "桂林市漓江风景区",
+        "漓江"
+      ],
+      "city": "桂林",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_291884042f",
+      "name": "象鼻山景区",
+      "preferredId": "amap_B030506W0W",
+      "aliases": [
+        "象鼻山景区",
+        "象鼻山"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 1
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_33426c65e7",
+      "name": "北海银滩国家旅游度假区",
+      "preferredId": "amap_B030B002C9",
+      "aliases": [
+        "北海银滩国家旅游度假区"
+      ],
+      "city": "北海",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 4
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1558d4799f",
+      "name": "漓江三星游船",
+      "preferredId": "amap_B0FFJC9B7U",
+      "aliases": [
+        "漓江三星游船",
+        "漓江三星游船(磨盘山码头)"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 23
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_secondary_match",
+          "id": "amap_B0FFJC9B7U",
+          "name": "漓江三星游船(磨盘山码头)",
+          "city": "桂林"
+        }
+      ]
+    },
+    {
+      "key": "core_690d753ba9",
+      "name": "通灵大峡谷",
+      "preferredId": "manual_guangxi_be54f73d",
+      "aliases": [
+        "通灵大峡谷"
+      ],
+      "city": "百色市靖西",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_cdf91a5acb",
+      "name": "柳州工业博物馆",
+      "preferredId": "manual_guangxi_9f0856b0",
+      "aliases": [
+        "柳州工业博物馆"
+      ],
+      "city": "柳州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "柳州",
+          "page": 1,
+          "name": "柳州工业博物馆",
+          "url": "https://you.ctrip.com/sight/liuzhou143/1412454.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_7bbc7dc706",
+      "name": "广西民族博物馆",
+      "preferredId": "manual_guangxi_efa1af76",
+      "aliases": [
+        "广西民族博物馆"
+      ],
+      "city": "南宁",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "南宁",
+          "page": 1,
+          "name": "广西民族博物馆",
+          "url": "https://you.ctrip.com/sight/nanning166/1413292.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_6c771d3594",
+      "name": "独秀峰王城景区",
+      "preferredId": "amap_B0305097KU",
+      "aliases": [
+        "独秀峰王城景区",
+        "独秀峰王城",
+        "独秀峰·王城景区"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_c365c09903",
+      "name": "龙脊梯田",
+      "preferredId": "amap_B030509AO3",
+      "aliases": [
+        "龙脊梯田",
+        "龙脊梯田风景名胜区"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": 61
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_b708ee4adf",
+      "name": "冠头岭",
+      "preferredId": "amap_B030B002BE",
+      "aliases": [
+        "冠头岭",
+        "广西冠头岭国家森林公园"
+      ],
+      "city": "北海",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 142
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_8c3ea9d653",
+      "name": "桂林雁山旅游度假区",
+      "preferredId": "manual_guangxi_e0e67fa",
+      "aliases": [
+        "桂林雁山旅游度假区"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_66ca090a93",
+      "name": "大新明仕旅游度假区",
+      "preferredId": "manual_guangxi_dbdb2baf",
+      "aliases": [
+        "大新明仕旅游度假区"
+      ],
+      "city": "崇左",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_359a5ea817",
+      "name": "桂林阳朔遇龙河旅游度假区",
+      "preferredId": "manual_guangxi_c4cb862",
+      "aliases": [
+        "桂林阳朔遇龙河旅游度假区"
+      ],
+      "city": "桂林",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ]
+}

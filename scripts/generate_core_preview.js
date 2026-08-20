@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const http = require('http');
 const net = require('net');
 const path = require('path');
@@ -218,6 +218,7 @@ async function main() {
     const target = provinceData.attractions.find(item => item.id === id);
     if (!target) throw new Error(`隔离预览找不到待增强景点：${id}`);
     merge(target, patch);
+    merge(target, lazyOverrides[id] || {});
     validateManualAttraction(target, province);
     previewOverrides.push(target);
     if (target.image?.startsWith('/')) {
