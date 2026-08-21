@@ -1,6 +1,6 @@
 {
   "province": "云南",
-  "checkedAt": "2026-08-19",
+  "checkedAt": "2026-08-21",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1211,6 +1211,106 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_3c7795fcb7",
+      "name": "怒江大峡谷",
+      "preferredId": "manual_yunnan_f4467ee1",
+      "aliases": [
+        "怒江大峡谷"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_debdf6be3b",
+      "name": "世界恐龙谷",
+      "preferredId": "manual_yunnan_e2412822",
+      "aliases": [
+        "世界恐龙谷"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_1bec0b74fd",
+      "name": "香格里拉巴拉格宗风景名胜区",
+      "preferredId": "manual_yunnan_7eb2a39f",
+      "aliases": [
+        "香格里拉巴拉格宗风景名胜区",
+        "香格里拉巴拉格宗"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 8,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_d8e21beccc",
+      "name": "朱家花园",
+      "preferredId": "manual_yunnan_9dc7112d",
+      "aliases": [
+        "朱家花园"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 41
+  }
 }

@@ -1,6 +1,6 @@
 {
   "province": "湖南",
-  "checkedAt": "2026-08-19",
+  "checkedAt": "2026-08-21",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -961,6 +961,34 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_9ca7c71ca5",
+      "name": "湖南省博物馆",
+      "preferredId": "manual_hunan_1463c06f",
+      "aliases": [
+        "湖南省博物馆",
+        "湖南省博物院"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 33
+  }
 }

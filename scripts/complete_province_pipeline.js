@@ -12,6 +12,7 @@ const args = new Map(process.argv.slice(2).map(arg => {
   const match = arg.match(/^--([^=]+)=(.*)$/);
   return match ? [match[1], match[2]] : [arg.replace(/^--/, ''), true];
 }));
+const skipPreview = args.has('skip-preview');
 const province = String(args.get('province') || '').trim();
 if (!province) throw new Error('请使用 --province=省份。');
 
@@ -158,6 +159,10 @@ function main() {
     return;
   }
   if (packageData?.status === 'reviewed' && !packageHasPlaceholderImages(packageData)) {
+    if (skipPreview) {
+      writeProgress({ status: 'done', stage: 'reviewed', message: `${province}补全包已通过质量门禁，等待全国批次统一预览。`, index: 7, total: 7, percent: 100 });
+      return;
+    }
     writeProgress({ status: 'generating', stage: 'preview', message: '补全包已通过质量门禁，正在恢复或重建隔离预览。', index: 6, total: 7, percent: 86 });
     run('generate_core_preview.js', [`--province=${province}`]);
     packageData = readJson(packagePath);
@@ -220,6 +225,13 @@ function main() {
   packageData = readJson(packagePath);
   if (packageData?.status !== 'reviewed') throw new Error('补全包未进入 reviewed 状态。');
   checkStop();
+
+  if (skipPreview) {
+    const totalItems = (packageData.attractions?.length || 0) + Object.keys(packageData.overrides || {}).length;
+    writeProgress({ status: 'done', stage: 'reviewed', message: `${province}完整补全已通过质量门禁，等待全国批次统一预览。`, index: 7, total: 7, percent: 100, success: totalItems, failed: 0 });
+    console.log(`${province}完整补全已完成；本次跳过单省预览，等待全国批次统一预览。`);
+    return;
+  }
 
   writeProgress({ status: 'generating', stage: 'preview', message: '质量门禁通过，正在生成隔离预览。', index: 6, total: 7, percent: 86 });
   run('generate_core_preview.js', [`--province=${province}`]);

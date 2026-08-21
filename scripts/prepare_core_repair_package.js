@@ -188,7 +188,10 @@ const dossierPath = path.join(runtimeDir, `core-repairs.${info.slug}.json`);
 const researchWorkspacePath = path.join(runtimeDir, `core-repair-research.${info.slug}.json`);
 const researchPath = path.join(reportDir, `core-research-${info.slug}.json`);
 const seed = readJson(seedPath);
-if (!seed || seed.province !== province || !Array.isArray(seed.attractions) || !seed.attractions.length) {
+const missingInDossier = (readJson(dossierPath)?.items || []).filter(item => item.currentStatus === 'missing' || item.currentStatus === 'review' || item.status === 'missing' || item.status === 'review');
+const coveredBySeed = new Set((seed?.attractions || []).map(a => a.baselineKey || a.name));
+const hasUncoveredMissing = missingInDossier.some(item => !coveredBySeed.has(item.baselineKey) && !coveredBySeed.has(item.name));
+if (!seed || seed.province !== province || !Array.isArray(seed.attractions) || !seed.attractions.length || hasUncoveredMissing) {
   const dossier = readJson(dossierPath);
   const baseline = readJson(path.join(contentDir, `core-attractions.${info.slug}.json`));
   const official = readJson(path.join(runtimeDir, `core-official-${info.slug}.json`), {});

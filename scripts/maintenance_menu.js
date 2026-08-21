@@ -156,7 +156,8 @@ function checkJavaScript() {
     'scripts/core_repair_pipeline.js', 'scripts/prepare_core_repair_package.js',
     'scripts/research_core_repairs.js', 'scripts/complete_province_pipeline.js',
     'scripts/generate_core_preview.js', 'scripts/stop_core_preview.js',
-    'scripts/national_core_queue.js',
+    'scripts/national_core_queue.js', 'scripts/observation_batch.js',
+    'scripts/run_observation_batch.js', 'scripts/generate_observation_batch_preview.js',
   ];
   for (const file of files) {
     const result = spawnSync(process.execPath, ['--check', file], { cwd: rootDir, stdio: 'inherit', shell: false });
@@ -272,6 +273,14 @@ function openCurrentTaskView() {
     return false;
   }
 
+  if (progress.batchManifest) {
+    const batch = readJson(progress.batchManifest, null);
+    if (batch?.previewUrl && ['preview_ready', 'partially_applied'].includes(batch.status)) {
+      console.log(`\n正在打开全国单源批次隔离预览：${batch.previewUrl}`);
+      return openUrl(batch.previewUrl);
+    }
+  }
+
   const province = provinceFromProgress(progress);
   if (province) {
     let ready = previewStateFor(province);
@@ -313,6 +322,19 @@ function stopSafely() {
 
 function generateAndVerify() {
   console.log('\n开始重新生成并校验……');
+  // 兼容历史观察池批次：把“已有同实体 / 非景点”的终态结论正式
+  // 收口到核心清单，避免批次显示完成而全国校验仍把它们算作缺失。
+  const observationTools = require('./observation_batch');
+  const activeObservation = observationTools.activeBatch();
+  if (activeObservation) {
+    const resolution = observationTools.persistBatchResolutions(activeObservation.manifestPath);
+    if (resolution.bound || resolution.removed) {
+      console.log(`已自动收口观察池归类：绑定已有景点 ${resolution.bound} 项，移除非景点候选 ${resolution.removed} 项。`);
+    }
+    if (resolution.unresolved.length) {
+      console.log(`仍有 ${resolution.unresolved.length} 项身份绑定待处理；将继续生成，最终校验会准确报告。`);
+    }
+  }
   if (!runNode('generate_static_data.js')) return false;
   if (!checkJavaScript()) return false;
   if (!runNode('build.js')) return false;
@@ -863,6 +885,160 @@ async function runProvinceCompletion(rl, province) {
   return startBackground(province, { repairOnly: mode.repairOnly });
 }
 
+function startObservationBatch(manifestPath) {
+  if (currentTaskIsRunning()) {
+    console.log('\n已有后台任务正在运行，不能重复启动。');
+    showProgress();
+    return false;
+  }
+  if (fs.existsSync(stopPath)) fs.rmSync(stopPath, { force: true });
+  const logFd = fs.openSync(logPath, 'a');
+  const child = spawn(process.execPath, [path.join('scripts', 'run_observation_batch.js'), `--manifest=${manifestPath}`], {
+    cwd: rootDir, detached: true, stdio: ['ignore', logFd, logFd], windowsHide: true,
+  });
+  child.unref();
+  fs.closeSync(logFd);
+  writeJsonAtomic(progressPath, {
+    status: 'starting', stage: 'observation_batch', scope: '全国单源观察池批量补全',
+    message: '全国批次已启动；正在按省份顺序补全，失败项会保留断点。',
+    index: 0, total: 0, success: 0, failed: 0, pid: child.pid,
+    batchManifest: manifestPath, updatedAt: new Date().toISOString(),
+  });
+  console.log(`\n全国单源批次已在后台启动（PID ${child.pid}）。`);
+  console.log('可以关闭总控；稍后从任务中心查看进度，完成后同一入口会打开统一预览。');
+  return true;
+}
+
+async function applyObservationBatch(manifestPath) {
+  const tools = require('./observation_batch');
+  let manifest = tools.readJson(manifestPath, null);
+  if (!manifest) return false;
+  const resolution = tools.persistBatchResolutions(manifestPath);
+  if (resolution.bound || resolution.removed) {
+    console.log(`\n已收口批次归类：绑定已有景点 ${resolution.bound} 项，移除非景点候选 ${resolution.removed} 项。`);
+  }
+  if (resolution.unresolved.length) {
+    console.log(`另有 ${resolution.unresolved.length} 项无法自动绑定，将保留给最终校验准确提示。`);
+  }
+  let success = 0;
+  let failed = 0;
+  for (const state of manifest.provinces || []) {
+    if (state.status !== 'ready') continue;
+    console.log(`\n正在写入 ${state.province}（${state.selectedNames.length} 项）……`);
+    if (buildSelectedProvince(state.province)) {
+      const remainingKeys = [...(state.pendingKeys || [])];
+      const remainingNames = [...(state.pendingNames || [])];
+      state.status = remainingKeys.length ? 'failed' : 'applied';
+      state.appliedAt = new Date().toISOString();
+      success += state.selectedKeys.length;
+      if (remainingKeys.length) {
+        state.selectedKeys = remainingKeys;
+        state.selectedNames = remainingNames;
+        state.error = `${remainingKeys.length} 项保留断点。`;
+      }
+    } else {
+      state.status = 'failed';
+      state.error = '最终写入或增量验收失败，已自动回滚该省。';
+      failed += state.selectedKeys.length;
+    }
+    manifest = tools.updateBatch(manifestPath, { provinces: manifest.provinces });
+  }
+  const pending = manifest.provinces.filter(item => ['failed', 'queued'].includes(item.status));
+  manifest = tools.updateBatch(manifestPath, {
+    status: pending.length ? 'retry_ready' : 'applied',
+    appliedAt: new Date().toISOString(), summary: { applied: success, failed },
+  });
+  writeJsonAtomic(progressPath, {
+    status: pending.length ? 'retry_ready' : 'done', stage: 'observation_batch_applied',
+    scope: '全国单源观察池批量补全',
+    index: manifest.provinces.filter(item => item.status === 'applied').length,
+    total: manifest.provinces.length,
+    percent: manifest.provinces.length ? Math.round(manifest.provinces.filter(item => item.status === 'applied').length / manifest.provinces.length * 1000) / 10 : 100,
+    success, failed, pendingNames: pending.flatMap(item => item.selectedNames),
+    message: pending.length ? `已写入 ${success} 项；${failed} 项保留断点。` : `本批次 ${success} 项已全部写入 beta。`,
+    batchManifest: manifestPath, updatedAt: new Date().toISOString(),
+  });
+  console.log(pending.length ? `\n已写入 ${success} 项；${failed} 项已回滚并保留断点。` : `\n本批次 ${success} 项已全部写入 beta。`);
+  return failed === 0;
+}
+
+async function observationBatchControl(rl) {
+  const tools = require('./observation_batch');
+  const active = tools.activeBatch();
+  if (active && !['applied', 'cancelled'].includes(active.manifest.status)) {
+    const { manifestPath } = active;
+    let manifest = active.manifest;
+    if (manifest.status === 'retry_ready') manifest = tools.reconcileBatch(manifestPath);
+    const applied = manifest.provinces.filter(item => item.status === 'applied').reduce((sum, item) => sum + item.selectedKeys.length, 0);
+    const resolved = manifest.provinces.reduce((sum, item) => sum + (item.resolutions?.length || 0), 0);
+    const ready = manifest.provinces.filter(item => item.status === 'ready').reduce((sum, item) => sum + item.selectedKeys.length, 0);
+    const pending = manifest.provinces.filter(item => ['queued', 'running', 'failed'].includes(item.status)).reduce((sum, item) => sum + item.selectedKeys.length, 0);
+    console.log(`\n当前批次：共 ${manifest.selectedCount} 项；已写入 ${applied}，已归类 ${resolved}，待预览 ${ready}，待续跑 ${pending}。`);
+    if (manifest.status === 'running' || currentTaskIsRunning()) {
+      showProgress();
+      return true;
+    }
+    if (manifest.status === 'user_action') {
+      const progress = readJson(progressPath, {});
+      showProgress();
+      if (progress.status === 'login_required') {
+        console.log('请先在任务中心选择 [3] 完成登录，再回到 [6] 续跑。');
+        return true;
+      }
+      if (progress.status === 'decision_required') {
+        console.log('请先在任务中心选择 [5] 处理景点身份歧义，再回到 [6] 续跑。');
+        return true;
+      }
+      if (progress.status === 'restricted') {
+        const retry = await ask(rl, '平台限制期间断点已保存。现在尝试续跑？请输入 Y，其他键稍后再试：');
+        if (!/^y$/i.test(retry)) return true;
+      }
+      tools.updateBatch(manifestPath, { status: 'retry_ready', currentProvince: '' });
+      console.log('已确认前置问题解除，正在从保存的省份和景点断点继续。');
+      return startObservationBatch(manifestPath);
+    }
+    if (ready > 0 && manifest.status !== 'preview_ready') {
+      console.log('已恢复同省成功项，正在重新生成统一隔离预览。');
+      return startObservationBatch(manifestPath);
+    }
+    if (manifest.status === 'preview_ready' || ready > 0) {
+      if (manifest.previewUrl) {
+        console.log(`统一隔离预览：${manifest.previewUrl}`);
+        openUrl(manifest.previewUrl);
+      }
+      const approval = await ask(rl, '确认预览中的成功项无误并一次写入 beta？请输入 Y 批准，其他键保留不写：');
+      if (/^y$/i.test(approval)) return applyObservationBatch(manifestPath);
+      console.log('批次资料、预览和断点均已保留，beta 尚未写入。');
+      return true;
+    }
+    console.log('正在从已保存断点继续；已成功项目不会重复采集。');
+    return startObservationBatch(manifestPath);
+  }
+
+  const items = tools.scanObservationPool();
+  if (!items.length) {
+    console.log('\n当前没有可补选的单源观察池候选。');
+    return true;
+  }
+  tools.printObservationPool(items);
+  const selected = tools.parseSelection(await ask(rl, '请选择要恢复并补全的景点：'), items);
+  if (!selected.length) {
+    console.log('\n未选择任何景点。');
+    return true;
+  }
+  const groups = new Map();
+  for (const item of selected) {
+    if (!groups.has(item.province)) groups.set(item.province, []);
+    groups.get(item.province).push(item.name);
+  }
+  console.log(`\n已选择 ${selected.length} 项，涉及 ${groups.size} 个省份：`);
+  for (const [province, names] of groups) console.log(`  ${province}：${names.join('、')}`);
+  const approval = await ask(rl, '确认建立安全批次并立即开始完整补全？请输入 Y，其他键取消：');
+  if (!/^y$/i.test(approval)) return true;
+  const batch = tools.createBatch(selected);
+  return startObservationBatch(batch.manifestPath);
+}
+
 function menu() {
   console.clear();
   console.log('============================================================');
@@ -966,6 +1142,7 @@ async function taskCenter(rl) {
   console.log('[3] 登录 / 刷新小红书点点状态');
   console.log('[4] 安全停止后台任务');
   console.log('[5] 处理景点身份歧义（同名、跨城市、多实体）');
+  console.log('[6] 全国单源观察池批量补选（多选后自动补全、统一预览、一次写入）');
   console.log('[0] 返回');
   const action = await ask(rl, '请选择：');
   if (action === '1') showProgress();
@@ -973,6 +1150,7 @@ async function taskCenter(rl) {
   else if (action === '3') runNode('xhs_lazy_guides.js', ['--login']);
   else if (action === '4') stopSafely();
   else if (action === '5') await resolveIdentityConflicts(rl);
+  else if (action === '6') await observationBatchControl(rl);
 }
 
 async function main() {
@@ -1015,4 +1193,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { shouldRefreshRatingPreview, provinceFromProgress, validateIncrementalRelease, buildSelectedProvince };
+module.exports = { shouldRefreshRatingPreview, provinceFromProgress, validateIncrementalRelease, buildSelectedProvince, observationBatchControl };

@@ -1,32 +1,135 @@
 {
   "province": "黑龙江",
   "status": "applied",
-  "createdAt": "2026-08-17T08:44:20.208Z",
-  "updatedAt": "2026-08-17T08:44:20.208Z",
+  "createdAt": "2026-08-21T02:56:49.459Z",
+  "updatedAt": "2026-08-21T02:56:50.150Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [
-    "亚布力滑雪旅游度假区：基本资料目前只有1个可追溯来源"
-  ],
+  "warnings": [],
   "seedFile": "content/core-repair-seeds.heilongjiang.json",
   "attractions": [
     {
-      "baselineKey": "core_2197258baa",
-      "id": "manual_heilongjiang_a617449b",
-      "name": "扎龙生态旅游区",
-      "city": "齐齐哈尔",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/heilongjiang_a617449b_verified.jpg",
-      "description": "扎龙生态旅游区位于齐齐哈尔市铁锋区，总面积4.7平方公里。扎龙生态旅游区湿地风光秀美，拥有扎龙湖、荷仙池鹤唳云天、鹿鹤同春、芦林鹤影等游览景区，打造了望鹤楼、水禽岛、名鹤苑、扎龙湿地博物馆、丹顶鹤野化训飞区等丰富多样的旅游景点。",
-      "intro": "扎龙生态旅游区位于齐齐哈尔市铁锋区，总面积4.7平方公里。扎龙生态旅游区湿地风光秀美，拥有扎龙湖、荷仙池鹤唳云天、鹿鹤同春、芦林鹤影等游览景区，打造了望鹤楼、水禽岛、名鹤苑、扎龙湿地博物馆、丹顶鹤野化训飞区等丰富多样的旅游景点。",
-      "level": "5A景区",
-      "category": "自然生态/湿地公园/5A景区",
+      "baselineKey": "core_7493d5044c",
+      "id": "manual_heilongjiang_f60fa7a6",
+      "name": "哈药六版画博物馆",
+      "city": "哈尔滨",
+      "rating": 4.5,
+      "reviewsCount": "3158条携程点评",
+      "image": "/assets/images/attractions/heilongjiang_f60fa7a6_verified.jpg",
+      "description": "哈药六版画博物馆面积广阔，建筑以法国为原型，结合哈尔滨地域建筑特色，注入现代全新的设计理念，集古典主义、巴洛克、洛可可等建筑风格为一身，馆内可参观数百幅名家版画及俄罗斯油画、版画作品，特色建筑与历史文化、绘画艺术相结合，带来独特的参观体验和感受。",
+      "intro": "哈药六版画博物馆面积广阔，建筑以法国为原型，结合哈尔滨地域建筑特色，注入现代全新的设计理念，集古典主义、巴洛克、洛可可等建筑风格为一身，馆内可参观数百幅名家版画及俄罗斯油画、版画作品，特色建筑与历史文化、绘画艺术相结合，带来独特的参观体验和感受。",
+      "level": "博物馆",
+      "category": "博物馆/欧式建筑打卡",
       "tags": [
-        "自然生态/湿地公园/5A景区",
-        "经典景点",
-        "官方名录"
+        "博物馆/欧式建筑打卡",
+        "室内参观",
+        "口碑热门"
       ],
-      "address": "黑龙江省齐齐哈尔市铁锋区扎龙镇扎龙村",
+      "address": "黑龙江省哈尔滨市道外区南直路326号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "地铁3号线海河东路站3号口或市第二医院站1号口，步行约10分钟；自驾可导航至“哈药六版画博物馆东北门”，院内设有收费停车场。",
+          "internal_arrive": "建议从东北门进入，南门通常为出口，避免绕路。",
+          "internal_traffic": "馆内无电梯，需全程步行爬楼梯，各楼层均设有卫生间。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在中央大街或中华巴洛克风情街附近，距离较近，打车约15分钟，方便后续安排行程。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "锅包肉",
+          "哈尔滨红肠",
+          "得莫利炖活鱼",
+          "小鸡炖蘑菇"
+        ],
+        "special_care": {
+          "elderly": "馆内无电梯，若长辈腿脚不便，建议仅在一楼大厅及外部广场拍照打卡，无需强行爬楼",
+          "children": "可让孩子参与4楼的版画拓印体验（收费），或自带本子收集各楼层免费印章，增加游览趣味性。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "从上往下经典省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "5楼版画展厅（金色长廊+北大荒版画）",
+            "4楼厂史馆与蚕翼绣展区（怀旧老物件+非遗刺绣）",
+            "1楼鎏金大厅（18米水晶吊灯+旋转楼梯+三层喷泉）",
+            "外部广场（欧式建筑全景仰拍）"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 3,
+          "tips": [
+            "全程无电梯，务必穿平底舒适鞋；建议自带盖章本，馆内多处文创区提供免费集章服务。"
+          ],
+          "sourceTitle": "携程旅行 哈药六版画博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/heilongjiang100055.html",
+          "携程旅行 哈药六版画博物馆 详情页：https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 哈药六版画博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
+        },
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "哈药六版画博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
+        "width": 1536,
+        "height": 964
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_e407600d6c",
+      "id": "manual_heilongjiang_8194f22a",
+      "name": "松花江观光索道",
+      "city": "哈尔滨",
+      "rating": 4.5,
+      "reviewsCount": "8215条携程点评",
+      "image": "/assets/images/attractions/heilongjiang_8194f22a_verified.jpg",
+      "description": "松花江观光索道南起通江广场，北至太阳岛风景区，横跨于松花江上，是颇具名气的的观光交通工具。索道全长1156米，江中索道支架距江面70余米，乘坐在轿厢中可俯瞰松花江两岸全景，风光无限。",
+      "intro": "松花江观光索道南起通江广场，北至太阳岛风景区，横跨于松花江上，是颇具名气的的观光交通工具。索道全长1156米，江中索道支架距江面70余米，乘坐在轿厢中可俯瞰松花江两岸全景，风光无限。",
+      "level": "热门景点",
+      "category": "跨江观光索道",
+      "tags": [
+        "跨江观光索道",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "黑龙江省哈尔滨市道里区通江街218号",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -38,14 +141,14 @@
           "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
         },
         "transport": {
-          "external_arrive": "距离齐齐哈尔市区约30公里，自驾导航至“扎龙生态旅游区游客中心”；可乘坐306路旅游专线公交直达景区门口；打车或包车单程约60至费用以官方当日公告为准。",
-          "internal_arrive": "建议从游客中心主入口进园，入园后直接乘坐观光车前往核心区域，避免步行枯燥路段。",
-          "internal_traffic": "观光车（必选，连接大门与核心观光区）；游船（单程费用以官方当日公告为准，直达观鹤台，最省力）；观光小火车（单程费用以官方当日公告为准，下车后仍需步行一段）；步行（约2公里，沿途可欣赏芦苇荡和偶遇散养丹顶鹤）。",
+          "external_arrive": "地铁3号线友谊宫站1号口步行约50米；或公交2/13/47路至市人大站步行约200米；自驾可导航至印象城A座地面停车场或松花江索道地面停车场。",
+          "internal_arrive": "江南入口（天鹅城堡）白天人少，适合去程；江北入口（巧克力城堡）傍晚人多，适合返程或避开高峰。",
+          "internal_traffic": "索道轿厢单程约6-10分钟；江北下轿厢后可乘观光车至地铁口（费用以官方当日公告为准），或乘轮渡返回江南。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "景区内扎龙宾馆（可免观光车费，方便错峰观鹤和看日落）；齐齐哈尔市区（住宿选择多，餐饮方便，适合当日往返）。",
+            "area": "建议住在中央大街或防洪纪念塔附近，步行或地铁即可到达江南入口，周边餐饮和交通更便利。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -56,240 +159,33 @@
           "小鸡炖蘑菇"
         ],
         "special_care": {
-          "elderly": "推荐“观光车+游船”组合，全程少走弯路，避免暴晒和长时间步行",
-          "children": "可带娃在芦苇栈道近距离观察散养的丹顶鹤和水鸟，但务必保持安全距离，严禁触摸和追逐，以防被啄伤。"
+          "elderly": "索道平稳安全，但风大时可能短时停运，出行前建议电话确认；70岁以上老人有优待政策，需持有效证件到窗口购票；尽量避开节假日高峰，或选择VIP通道减少排队",
+          "children": "1.2米以下免票，1.2-1.5米半价；轿厢内全程无剧烈晃动，适合儿童体验；建议选日落时段，孩子对高空和晚霞更感兴趣，可备些小零食安抚情绪。"
         }
       },
       "lazy_routes": [
         {
-          "title": "省力观鹤休闲线",
+          "title": "日落追光省力线（江南去江北回）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "游客中心检票",
-            "乘坐观光车至核心观光区",
-            "乘坐游船至观鹤台（或乘坐小火车后步行）",
-            "观鹤台观看丹顶鹤放飞",
-            "沿千米芦苇木栈道漫步",
-            "登望鹤楼俯瞰湿地全景",
-            "参观鹤文化博物馆",
-            "乘坐观光车返程"
+            "江南天鹅城堡入口（通江街218号）",
+            "4楼候车区",
+            "3楼检票乘轿厢",
+            "空中俯瞰松花江与两岸城景",
+            "江北巧克力城堡下车",
+            "太阳岛江边漫步",
+            "乘坐轮渡或观光车返程"
           ],
           "duration": "半天",
-          "walking": "约1至2公里（视是否选择游船或小火车而定）",
+          "walking": "较少，索道轿厢内全程无步行，两端站点衔接步行约10分钟",
           "physical": 2,
           "tips": [
-            "丹顶鹤放飞时间较短，务必提前30分钟到观鹤台占位；景区内蚊虫较多，请备好驱蚊液和防晒用品。"
+            "江南往江北方向白天排队较短，建议买单程票；江北返程人多，可坐轮渡（约2-费用以官方当日公告为准）或观光车（费用以官方当日公告为准）回市区，避免排队；日落前半小时上轿厢视野最佳，选车厢右侧或最后一排无遮挡。"
           ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "齐齐哈尔扎龙生态旅游区成为了中国生态旅游的璀璨明珠",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://www.sohu.com/a/905889137_100267014",
-        "sourceUrl": "http://www.sohu.com/a/905889137_100267014",
-        "width": 2048,
-        "height": 1536
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_8b880a851d",
-      "id": "manual_heilongjiang_b2cd2a20",
-      "name": "虎头旅游景区",
-      "city": "鸡西",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/heilongjiang_b2cd2a20_verified.jpg",
-      "description": "虎头旅游景区具有大界江、大湿地、大冰雪、大森林等塞北自然风光、战争遗址和历史文物等旅游资源，是集生态旅游、红色旅游、森林旅游、跨境旅游、冰雪旅游为一体的综合性景区，被专家称为黑龙江省唯一一处“非城市中心型旅游资源集合区”。",
-      "intro": "虎头旅游景区具有大界江、大湿地、大冰雪、大森林等塞北自然风光、战争遗址和历史文物等旅游资源，是集生态旅游、红色旅游、森林旅游、跨境旅游、冰雪旅游为一体的综合性景区，被专家称为黑龙江省唯一一处“非城市中心型旅游资源集合区”。",
-      "level": "5A景区",
-      "category": "5A级景区（历史遗迹与界江风光）",
-      "tags": [
-        "5A级景区（历史遗迹与界江风光）",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "黑龙江省鸡西市虎林市虎头镇",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾导航至“虎头旅游景区游客中心”；或先抵达虎林市，再转乘客运班车前往虎头镇。",
-          "internal_arrive": "游客中心（周边有停车场，且紧邻二战终结地纪念园，方便停车后步行游览）。",
-          "internal_traffic": "景区内景点分布较散，相距约1-2公里，观光车运营情况以官方当日公告为准，建议自驾或包车游玩。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "虎头镇内（推荐江边民宿或宾馆，推窗可揽乌苏里江景，方便观看日出日落）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "地下要塞内台阶多且阴冷，若腿脚不便或怕冷可仅在博物馆地上展厅参观",
-          "children": "可结合二战纪念园和巨炮遗址进行爱国主义教育，在江边广场和天下第一虎附近拍照打卡。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力经典一日游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "游客中心",
-            "第二次世界大战终结地纪念园",
-            "侵华日军虎头要塞博物馆及地下工事",
-            "乌苏里江广场与乌苏里江起点",
-            "天下第一虎",
-            "关帝庙",
-            "虎头植物园与乌苏里江第一塔"
-          ],
-          "duration": "半天",
-          "walking": "约8000-10000步（景点间有一定距离，建议穿舒适防滑鞋）",
-          "physical": 3,
-          "tips": [
-            "地下工事阴冷潮湿，务必给长辈和儿童准备长袖外套；博物馆需刷身份证入馆，请提前备好证件。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "到鸡西旅游一定要去虎头风景区,一年四季都有不一样的风景",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://baijiahao.baidu.com/s?id=1787507249041792859&wfr=spider&for=pc",
-        "sourceUrl": "http://baijiahao.baidu.com/s?id=1787507249041792859&wfr=spider&for=pc",
-        "width": 1200,
-        "height": 900
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_6dd327d8c3",
-      "id": "manual_heilongjiang_f37d1bd1",
-      "name": "哈尔滨冰雪大世界",
-      "city": "哈尔滨",
-      "rating": 4.4,
-      "reviewsCount": "49274条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_f37d1bd1_verified.jpg",
-      "description": "哈尔滨冰雪大世界：四季皆可赴的冰雪盛宴 谁说冰雪只能在寒冬邂逅？哈尔滨冰雪大世界打破季节壁垒，从银装素裹的严冬，到繁花似锦的春夏秋，都能让你沉浸式玩转冰与雪，解锁多元欢乐体验。",
-      "intro": "哈尔滨冰雪大世界：四季皆可赴的冰雪盛宴 谁说冰雪只能在寒冬邂逅？哈尔滨冰雪大世界打破季节壁垒，从银装素裹的严冬，到繁花似锦的春夏秋，都能让你沉浸式玩转冰与雪，解锁多元欢乐体验。",
-      "level": "热门景点",
-      "category": "冰雪主题乐园",
-      "tags": [
-        "冰雪主题乐园",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "黑龙江省哈尔滨市松北区松北大道西侧",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "地铁2号线冰雪大世界站3号或4号口出站步行可达；自驾可停园区B2免费停车场。",
-          "internal_arrive": "东门（东售检票厅）离大滑梯近，适合想先玩项目的游客；南门（团队售票大厅）离摩天轮近，适合想先赏冰雕的游客。",
-          "internal_traffic": "园区内以步行为主，可租雪圈在缓坡滑行代步；部分区域有免费接驳车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "松北融创度假区（离园区近，适合带老人儿童）；市区中央大街附近（餐饮便利，但需打车约30分钟到园区）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "穿防滑雪地靴，多进室内馆取暖，避免长时间在室外站立",
-          "children": "租雪圈当\"推车\"，多玩小型冰滑梯，注意戴触屏手套方便拍照。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力赏冰乐雪环线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "东门入园",
-            "冰雪城堡与主塔冰灯区",
-            "青蛙王子互动冰雕",
-            "四季游乐馆（室内取暖）",
-            "雪花摩天轮",
-            "梦想大舞台",
-            "南门出园"
-          ],
-          "duration": "半天",
-          "walking": "约2-3公里",
-          "physical": 3,
-          "tips": [
-            "入园后立刻在官方小程序预约大滑梯和摩天轮，两个项目尽量约在不同时间段；带老人儿童建议租雪圈代步，累了可坐雪圈休息；较合适时段后冰灯亮灯，此时拍照光线最佳。"
-          ],
-          "sourceTitle": "携程旅行 哈尔滨冰雪大世界 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/harbin151/20017.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
+          "sourceTitle": "携程旅行 松花江观光索道 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -298,939 +194,45 @@
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
           "ctrip_province_sightlist：https://you.ctrip.com/sightlist/heilongjiang100055.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 哈尔滨冰雪大世界 详情页：https://you.ctrip.com/sight/harbin151/20017.html?poiType=3&scene=online",
-          "高德地图 哈尔滨冰雪大世界：https://www.amap.com/place/B01C317HZ0"
+          "携程旅行 松花江观光索道 详情页：https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online"
         ],
         "ratingSource": {
           "platform": "携程",
-          "title": "携程旅行 哈尔滨冰雪大世界 详情页",
-          "url": "https://you.ctrip.com/sight/harbin151/20017.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
+          "title": "携程旅行 松花江观光索道 详情页",
+          "url": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
         },
-        "basicInfoUpdatedAt": "2026-08-17",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "哈尔滨冰雪大世界 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B01C317HZ0",
-        "width": 2104,
-        "height": 1560
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_14057d7abe",
-      "id": "manual_heilongjiang_2d3dd1db",
-      "name": "北极村",
-      "city": "漠河",
-      "rating": 4.4,
-      "reviewsCount": "2851条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_2d3dd1db_verified.jpg",
-      "description": "北极村是我国大陆最北端的临江小村，地处黑龙江上游南岸，七星山脚下，北与俄罗斯阿穆尔州的伊格娜恩依诺村隔黑龙江相望。地理坐标为：东经122°21′05″至122°21′30″，北纬53°27′00″至53°33′30″，北极村原名漠河村，是现今北极乡政府所在地，距漠河县址西林吉镇87公里。",
-      "intro": "北极村是我国大陆最北端的临江小村，地处黑龙江上游南岸，七星山脚下，北与俄罗斯阿穆尔州的伊格娜恩依诺村隔黑龙江相望。地理坐标为：东经122°21′05″至122°21′30″，北纬53°27′00″至53°33′30″，北极村原名漠河村，是现今北极乡政府所在地，距漠河县址西林吉镇87公里。",
-      "level": "5A景区",
-      "category": "5A级景区/边境村落/自然与人文打卡地",
-      "tags": [
-        "5A级景区/边境村落/自然与人文打卡地",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "大兴安岭地区漠河市北极村旅游风景区",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至北极村景区停车场（外部车辆不可进村）；从漠河客运站乘大巴约1小时可达，票价费用以官方当日公告为准，发车时间以当日为准。",
-          "internal_arrive": "自驾游客将车停放在景区大门外停车场，换乘景区接驳车或步行进入；非自驾游客在客运站购票后直接乘大巴进村。",
-          "internal_traffic": "景区观光大巴费用以官方当日公告为准，官方当日建议时段-官方当日建议时段随叫随停；小型游览电瓶车用于短途接驳至民宿或出口。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐七星广场和最北邮局附近，周边餐饮、超市齐全，晚上参加篝火晚会步行即可到达。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "全程依赖观光车代步，北线栈道平缓，避免长时间步行",
-          "children": "可安排驯鹿园喂食体验，沿途\"找北\"打卡趣味性强，适合亲子互动。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "北线精华徒步+南线观光车省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "七星广场（中转站）",
-            "乘北线观光车至金鸡之冠广场",
-            "沿木栈道徒步打卡138号界碑",
-            "我找到北了石碑",
-            "神州北极广场",
-            "在最北一家附近乘观光车返回七星广场",
-            "乘南线观光车沿途游览鄂伦春博物馆",
-            "最北哨所",
-            "漠口三十驿站",
-            "返回七星广场",
-            "步行至最北邮局寄明信片"
-          ],
-          "duration": "半天",
-          "walking": "约2公里（北线栈道）",
-          "physical": 3,
-          "tips": [
-            "北线徒步段风景最好，建议从金鸡之冠往神州北极方向走，全程不回头；观光车随叫随停，可在小程序或电话摇车，旺季等车约10-20分钟。"
-          ],
-          "sourceTitle": "携程旅行 北极村 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/mohe983/61235.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/heilongjiang100055.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "携程旅行 北极村 详情页：https://you.ctrip.com/sight/mohe983/61235.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 北极村 详情页",
-          "url": "https://you.ctrip.com/sight/mohe983/61235.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "北极村 景点页实景图",
+        "title": "松花江观光索道 景点页实景图",
         "author": "景点页公开图片提供者",
         "provider": "携程景点页面",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/mohe983/61235.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/mohe983/61235.html?poiType=3&scene=online",
-        "width": 10368,
-        "height": 6912
+        "licenseUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
+        "width": 4032,
+        "height": 2268
       },
       "quality_status": {
         "reviewRequired": false,
         "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_e39c330595",
-      "id": "manual_heilongjiang_a3377f38",
-      "name": "中央大街",
-      "city": "哈尔滨",
-      "rating": 4.8,
-      "reviewsCount": "8582条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_a3377f38_verified.jpg",
-      "description": "来到中央大街一定要去尝尝地道的俄式西餐，以及大名鼎鼎的马迭尔冰棍。这条拥有超过百年历史的商业街荟萃着许多经典的欧式建筑，也开满了各种百货商店，每到夜晚整条街被灯光渲染得流光溢彩，是哈尔滨必体验之地。",
-      "intro": "来到中央大街一定要去尝尝地道的俄式西餐，以及大名鼎鼎的马迭尔冰棍。这条拥有超过百年历史的商业街荟萃着许多经典的欧式建筑，也开满了各种百货商店，每到夜晚整条街被灯光渲染得流光溢彩，是哈尔滨必体验之地。",
-      "level": "热门景点",
-      "category": "商业步行街 / 欧式建筑群 / 历史文化街区",
-      "tags": [
-        "商业步行街 / 欧式建筑群 / 历史文化街区",
-        "室内参观",
-        "口碑热门"
-      ],
-      "address": "黑龙江省哈尔滨市道里区中央大街1号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
-          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
-          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
-          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
-        },
-        "transport": {
-          "external_arrive": "乘坐地铁2号线至“中央大街站”2号口出，步行约3-5分钟即可到达中央大街南门；若乘高铁到哈尔滨站，打车约10分钟可达；机场可乘机场大巴3号线至中央大街站。",
-          "internal_arrive": "建议从南端（经纬街）的中央大街南门进入，这里有标志性的铁艺拱门，适合拍街道全景，然后一路向北步行至防洪纪念塔，不走回头路。",
-          "internal_traffic": "中央大街为纯步行街，内部只能步行；若想前往周边的圣·索菲亚教堂或道里菜市场，可骑共享单车或步行约10-15分钟。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在道里区中央大街或圣·索菲亚教堂附近，景点集中，吃饭、逛街、交通都方便，老人和孩子累了可以随时回酒店休息。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "中央大街路面是面包石，腿脚不便的长辈需要搀扶防摔跤，沿途有很多长椅可以随时坐下休息，买特产时尽量选择软一点的列巴",
-          "children": "可以在马迭尔宾馆门口买冰棍，在圣·索菲亚教堂广场喂鸽子，到防洪纪念塔和松花江畔看江景，孩子会很喜欢。\n\n你这次去哈尔滨是打算白天逛还是晚上看夜景？如果是带长辈和小孩，我可以帮你再调整一下节奏。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "中央大街经典省力漫步线（南向北）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "中央大街南门（铁艺拱门打卡）",
-            "马迭尔宾馆（买马迭尔冰棍）",
-            "教育书店（松浦洋行，看巴洛克穹顶）",
-            "梅金·肖克庭院（小众复古小院拍照）",
-            "秋林·格瓦斯百年文化馆",
-            "万国洋行旧址",
-            "防洪纪念塔",
-            "松花江畔（吹江风看日落）"
-          ],
-          "duration": "半天",
-          "walking": "约1.4公里（全程平路，但面包石路面有一定弹性，建议穿平底鞋）",
-          "physical": 3,
-          "tips": [
-            "中央大街面包石路面虽然好看，但穿高跟鞋或硬底鞋容易累脚，务必给家人准备舒适的运动鞋；马迭尔冰棍认准宾馆自营窗口，费用以官方当日公告为准一根的原味最经典。"
-          ],
-          "sourceTitle": "携程旅行 中央大街 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 中央大街 详情页",
-          "url": "https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "中央大街 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/harbin151/7712.html?poiType=3&scene=online",
-        "width": 1280,
-        "height": 854
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_df0d9c0e42",
-      "id": "manual_heilongjiang_f1c1a84c",
-      "name": "龙江第一湾",
-      "city": "漠河",
-      "rating": 4.5,
-      "reviewsCount": "637条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_f1c1a84c_verified.jpg",
-      "description": "龙江第一湾风景区位于漠河市，中俄界河额尔古纳河在漠河县洛古河村西北15公里处与俄罗斯方向流过来的石勒喀河汇合后就成为黑龙江源头，滚滚黑龙江水从这里为起点沿着内外兴安岭交界处的低谷一路东流150公里后在一个叫红旗岭的地方突然拆成一个Ω形江湾，这个长度达30公里的神奇大湾就是黑龙江第一湾。 \\n\\n",
-      "intro": "龙江第一湾风景区位于漠河市，中俄界河额尔古纳河在漠河县洛古河村西北15公里处与俄罗斯方向流过来的石勒喀河汇合后就成为黑龙江源头，滚滚黑龙江水从这里为起点沿着内外兴安岭交界处的低谷一路东流150公里后在一个叫红旗岭的地方突然拆成一个Ω形江湾，这个长度达30公里的神奇大湾就是黑龙江第一湾。 \\n\\n",
-      "level": "热门景点",
-      "category": "自然地貌观光景区",
-      "tags": [
-        "自然地貌观光景区",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "黑龙江省大兴安岭地区漠河市国道Z036西80米",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"龙江第一湾景区\"；若乘公共交通，可从漠河或北极村坐大巴至北红村，再在北红村村委拼车前往（费用以官方当日公告为准，需提前排队）。",
-          "internal_arrive": "直接前往景区游客中心，统一购票并乘坐景交车入园，切勿尝试自驾进入。",
-          "internal_traffic": "必须乘坐景区景交车（必消费用），路线为游客中心-乌苏里浅滩-龙江第一湾，循环发车，不坐满不发车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在北红村（距离景区约30公里，车程20多分钟），可体验原始农家生活，方便次日继续行程；或住在北极村/漠河市区，但需预留充足交通时间。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "1000级木栈道较陡，建议量力而行，可只走到中途平台观景；务必穿防滑平底鞋，携带护膝，注意保暖防风",
-          "children": "栈道有音乐和松鼠可互动，但台阶多且陡，需全程牵手看护，建议家长背抱或分段休息，避免体力透支。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "经典观景台打卡线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "游客中心（乘景交车）",
-            "乌苏里浅滩（打卡中国最北点石碑）",
-            "龙江第一湾观景台（登1000级木栈道俯瞰Ω形江湾）",
-            "原路返回游客中心"
-          ],
-          "duration": "半天",
-          "walking": "约2000级台阶往返，单程约30-50分钟",
-          "physical": 4,
-          "tips": [
-            "景交车20分钟一班，在乌苏里浅滩和观景台停留时间需留意广播，避免错过班次；边境地带严禁飞无人机。"
-          ],
-          "sourceTitle": "携程旅行 龙江第一湾 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 龙江第一湾 详情页",
-          "url": "https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "龙江第一湾 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/mohe983/110351.html?poiType=3&scene=online",
-        "width": 3000,
-        "height": 2000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_d26f72bf0e",
-      "id": "manual_heilongjiang_8971fe93",
-      "name": "漠河舞厅",
-      "city": "漠河",
-      "rating": 4,
-      "reviewsCount": "21条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_8971fe93_verified.jpg",
-      "description": "漠河舞厅是因为一首《漠河舞厅》歌曲爆红。该舞厅在一次火灾之后重建，是当地一家真正意义上的私营大众舞厅，成为除电影院之外很受当地人喜爱的休闲娱乐的地方，也见证了漠河人漫长的自我疗愈与生活复苏。",
-      "intro": "漠河舞厅是因为一首《漠河舞厅》歌曲爆红。该舞厅在一次火灾之后重建，是当地一家真正意义上的私营大众舞厅，成为除电影院之外很受当地人喜爱的休闲娱乐的地方，也见证了漠河人漫长的自我疗愈与生活复苏。",
-      "level": "热门景点",
-      "category": "文化体验/复古舞厅",
-      "tags": [
-        "文化体验/复古舞厅",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "黑龙江省大兴安岭地区漠河市商贸街汇丰大楼地下一层",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "可乘飞机至漠河古莲机场，或火车至漠河站，再打车或公交前往市区。",
-          "internal_arrive": "从地面楼梯向下进入地下一层舞厅，门口有明确标识。",
-          "internal_traffic": "景区为单层室内空间，无需内部交通。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在漠河市区，靠近漠河舞厅或北极星广场，步行或打车即可到达各景点。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "带足保暖衣物，穿防滑鞋，备好常用药品",
-          "children": "准备小零食，注意防走失，可带相机记录互动。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "漠河市区半日轻松游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "五六火灾纪念馆",
-            "松苑公园",
-            "漠河舞厅（地下一层舞池体验）",
-            "北极星广场（俯瞰县城夜景）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 2,
-          "tips": [
-            "漠河舞厅位于地下一层，门口有楼梯向下，建议穿防滑舒适的鞋子；晚上8-9点氛围最热闹，可提前到门口感受。"
-          ],
-          "sourceTitle": "携程旅行 漠河舞厅 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 漠河舞厅 详情页",
-          "url": "https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "漠河舞厅 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/mohe983/136063426.html?poiType=66&scene=online",
-        "width": 2500,
-        "height": 1667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_6fa791dba4",
-      "id": "manual_heilongjiang_a062da66",
-      "name": "横道河子小镇",
-      "city": "牡丹江",
-      "rating": 3.9,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/heilongjiang_a062da66_verified.jpg",
-      "description": "横道河子小镇位于绥满路145号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "横道河子小镇位于绥满路145号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "热门景点",
-      "category": "历史文化名镇、俄式风情小镇、自然生态",
-      "tags": [
-        "历史文化名镇、俄式风情小镇、自然生态",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "绥满路145号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "高铁至横道河子东站（哈尔滨出发约1.5小时，牡丹江出发约20分钟）；自驾经哈牡高速（G10）至横道河子出口，全程约220公里。",
-          "internal_arrive": "高铁游客从东站出站后打车进入镇区；自驾游客可导航至俄罗斯老街或中东铁路机车库附近停车。",
-          "internal_traffic": "镇内无网约车和公交，主要靠出租车或拼车（通常按点位一口价，建议上车前确认价格）。镇中心景点之间步行可达。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐俄罗斯老街或横道河子站附近的民宿与宾馆，步行即可到达核心景点，方便随时回屋休息。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "路线A整体平缓，但半山坡有坡度，长辈可选择在老街或机车库附近休息，避免攀爬",
-          "children": "东北虎林园和七里地生态村互动性强，孩子可近距离看老虎、玩雪圈滑梯，建议多备保暖衣物和替换鞋袜。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "小镇俄式风情与铁路历史省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "东北虎林园（乘车观虎）",
-            "中东铁路机车库（参观扇形车库与老火车）",
-            "俄罗斯风情小镇（漫步俄式老街）",
-            "圣母进堂教堂（外观打卡）",
-            "半山坡（俯瞰小镇全景）",
-            "横道河子老火车站"
-          ],
-          "duration": "半天",
-          "walking": "约2公里",
-          "physical": 2,
-          "tips": [
-            "镇内景点较集中，建议打车或拼车前往第一个景点，后续步行串联。半山坡有免费和收费观景台，免费路线较陡，带长辈建议选择收费路线或放弃。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-17"
-        },
-        {
-          "title": "七里地生态村玩雪与林间穿越",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "七里地生态村口乐园（林间穿越",
-            "雪圈滑梯）",
-            "村中农家乐（体验东北大炕",
-            "吃午饭）",
-            "返程"
-          ],
-          "duration": "半天",
-          "walking": "约1公里",
-          "physical": 3,
-          "tips": [
-            "距离镇中心约7公里，需打车前往。适合冬季或秋季带娃体验林间穿越和玩雪，项目丰富，建议提前联系老板确认开放情况。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "amap_live_web_service：https://www.amap.com/place/B0KKT5PKVJ"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 横道河子小镇游乐场",
-          "url": "https://www.amap.com/place/B0KKT5PKVJ",
-          "poiId": "B0KKT5PKVJ",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "牡丹江市横道河子小镇秋色,外景超美,不用滤镜也出片",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://baijiahao.baidu.com/s?id=1859509019935587832&wfr=spider&for=pc",
-        "sourceUrl": "http://baijiahao.baidu.com/s?id=1859509019935587832&wfr=spider&for=pc",
-        "width": 1200,
-        "height": 900
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_14e2f3d45e",
-      "id": "manual_heilongjiang_50e8dc40",
-      "name": "瑷珲历史陈列馆",
-      "city": "黑河",
-      "rating": 4.3,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/heilongjiang_50e8dc40_verified.jpg",
-      "description": "瑷珲历史陈列馆占地10万平方米，规划为8个大小不等的功能区：大门风景区、历史陈列区、题词碑林区、将军衙门区、民俗风情区、江畔娱乐区、管理区和商服区并适当配置园林、绿地、雕塑等景观。",
-      "intro": "瑷珲历史陈列馆占地10万平方米，规划为8个大小不等的功能区：大门风景区、历史陈列区、题词碑林区、将军衙门区、民俗风情区、江畔娱乐区、管理区和商服区并适当配置园林、绿地、雕塑等景观。",
-      "level": "热门景点",
-      "category": "遗址博物馆 / 爱国主义教育基地",
-      "tags": [
-        "遗址博物馆 / 爱国主义教育基地",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "黑河市爱辉区萨布素街与天市路交叉路口往西南约150米",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至“瑷珲历史陈列馆”，从黑河市区出发约40分钟车程，馆外有免费停车场；公共交通可在黑河国际公路客运站乘坐前往瑷珲镇的班车，车程约1小时。",
-          "internal_arrive": "需携带本人有效身份证原件，在门口登记或扫码预约后入馆，未办理身份证的未成年人需出示户口本。",
-          "internal_traffic": "馆内各展区及室外景点均为步行参观，场馆内设有无障碍通道和休息区。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在黑河市区（如中央街、文化街附近），餐饮和住宿选择丰富，方便游玩后休息。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "馆内部分历史场景较为沉重，长辈参观时注意情绪疏导，可多关注室外风铃墙和魁星阁的静谧氛围",
-          "children": "4岁以下幼童不建议在“海兰泡惨案”半景画展厅久留，家长需提前引导，重在建立家国历史意识。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "核心展区省力参观路线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "二楼序厅及第一",
-            "二",
-            "三部分展区",
-            "第四部分《瑷珲条约》签约实景还原",
-            "一楼“海兰泡惨案”半景画展厅",
-            "室外1858风铃墙",
-            "魁星阁与见证松"
-          ],
-          "duration": "半天",
-          "walking": "约1公里",
-          "physical": 2,
-          "tips": [
-            "馆内有定时公益讲解，建议跟随讲解参观，能更深入理解历史脉络；馆内禁止摄像，拍照请关闭闪光灯。"
-          ],
-          "sourceTitle": "携程旅行 瑷珲历史陈列馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/heihe265/5069240.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/heihe265/5069240.html?poiType=3&scene=online",
-          "高德地图 黑河市瑷珲历史陈列馆：https://www.amap.com/place/B01C800HHN"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 黑河市瑷珲历史陈列馆",
-          "url": "https://www.amap.com/place/B01C800HHN",
-          "poiId": "B01C800HHN",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "瑷珲历史陈列馆 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B01C800HHN",
-        "width": 1536,
-        "height": 2048
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_b2aa96ce61",
-      "id": "manual_heilongjiang_900291db",
-      "name": "虎头要塞",
-      "city": "鸡西",
-      "rating": 4.4,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/heilongjiang_900291db_verified.jpg",
-      "description": "虎头要塞位于虎头镇虎头旅游风景区侵华日军虎头要塞博物馆侵华日军虎头要塞遗址，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "虎头要塞位于虎头镇虎头旅游风景区侵华日军虎头要塞博物馆侵华日军虎头要塞遗址，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "热门景点",
-      "category": "历史遗迹/红色旅游/军事遗址",
-      "tags": [
-        "历史遗迹/红色旅游/军事遗址",
-        "室内参观",
-        "口碑热门"
-      ],
-      "address": "虎头镇虎头旅游风景区侵华日军虎头要塞博物馆侵华日军虎头要塞遗址",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
-          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
-          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
-          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾前往，导航至“虎头游客中心”或“虎头要塞博物馆”；若乘公共交通，可先抵达虎林市客运站，再换乘班车前往虎头镇。",
-          "internal_arrive": "从虎头游客中心或侵华日军虎头要塞博物馆正门进入，此处有清晰的导览图和指示牌，方便规划路线。",
-          "internal_traffic": "景区内各景点相对集中，主要依靠步行游览；部分区域可能设有观光车，具体以官方当日公告为准。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "虎头镇主街及游客中心周边，有各类家庭旅馆、民宿和经济型酒店，餐饮和补给较为方便。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "地下工事和纪念园部分路段有台阶且路面不平，建议长辈穿防滑鞋，量力而行，必要时在游客中心租赁轮椅",
-          "children": "地下工事光线较暗、空间狭窄，需全程陪同牵好孩子；馆内历史内容较沉重，建议家长用适龄语言引导，或请讲解员协助讲解。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "核心遗址与历史探秘省力线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "侵华日军虎头要塞博物馆",
-            "虎头要塞地下工事",
-            "二战终结地纪念园",
-            "巨炮阵地遗址"
-          ],
-          "duration": "半天",
-          "walking": "约1.5-2公里",
-          "physical": 3,
-          "tips": [
-            "地下工事阴冷潮湿，务必为全家准备长袖外套和长裤；博物馆与地下工事相连，建议先参观地上展厅了解背景再进入地下；部分坑道台阶湿滑昏暗，需全程看护好老人与儿童。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "amap_live_web_service：https://www.amap.com/place/B0KRVZFXEL"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 虎头要塞暗堡",
-          "url": "https://www.amap.com/place/B0KRVZFXEL",
-          "poiId": "B0KRVZFXEL",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-17"
-        },
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "虎头要塞 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0KRVZFXEL",
-        "width": 1632,
-        "height": 1224
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_b8892e1b03",
-      "id": "manual_heilongjiang_430d9b4d",
-      "name": "亚布力滑雪旅游度假区",
-      "city": "哈尔滨",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/heilongjiang_430d9b4d_verified.jpg",
-      "description": "亚布力滑雪旅游度假区是国家4A级景区，也是我国南极考察训练基地。度假区由风车山庄、交通山庄、大青山滑雪场、通信山庄、电力山庄、云鼎山庄、雅旺斯、好汉泊雪场等组成，设有各类娱乐项目，为游客带来丰富的冰雪体验。",
-      "intro": "亚布力滑雪旅游度假区是国家4A级景区，也是我国南极考察训练基地。度假区由风车山庄、交通山庄、大青山滑雪场、通信山庄、电力山庄、云鼎山庄、雅旺斯、好汉泊雪场等组成，设有各类娱乐项目，为游客带来丰富的冰雪体验。",
-      "level": "国家级旅游度假区",
-      "category": "滑雪度假、冰雪娱乐、森林观光",
-      "tags": [
-        "滑雪度假、冰雪娱乐、森林观光",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "哈尔滨市尚志市223省道",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "哈尔滨乘高铁至亚布力西站约1小时10分钟，出站后打车费用以官方当日公告为准或乘公交费用以官方当日公告为准前往度假区；自驾从哈尔滨市区走绥满高速约200公里，2.5小时可达。",
-          "internal_arrive": "从亚布力西站出站后，建议提前联系民宿或酒店安排接站，或打车前往阳光度假村滑雪场入口，避免临时打车困难。",
-          "internal_traffic": "度假区内有公交往返雪场和高铁站（费用以官方当日公告为准，约半小时一班）；各雪场之间可乘坐索道或打车；包车游览周边景点更省心。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "度假区内（如亚布洛尼酒店、森林温泉酒店，步行可达核心景点，条件好但价格较高）；青云小镇附近（性价比高，距雪场五六公里，打车约20分钟）；亚布力镇上（价格亲民，餐饮便利，距高铁站近）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "优先选择缆车、马拉爬犁、森林温泉等轻松项目，避免高强度滑雪；注意保暖防风，随身携带常用药品",
-          "children": "选择初级雪道或儿童专属滑雪区，可请教练指导；冰雪画廊的雪圈滑梯、雪地转转等项目免费无限次玩，孩子非常喜欢。\n\n实用补充提示\n雪道开放：各雪场雪道开放情况每日可能不同，建议提前关注官方公众号查看当日雪道开放情报。\n保暖装备：三层穿衣法最靠谱，外层必须防水；墨镜防雪盲、帽子耳罩口罩防水手套缺一不可；手机贴暖宝宝，低温下极易关机。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力一日游（滑雪+戏雪+温泉）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "阳光度假村滑雪场（A索缆车登顶",
-            "幸福大道A1中级道体验）",
-            "世界第一滑道（缆车登顶后乘坐滑道下山）",
-            "冰雪画廊（戏雪乐园",
-            "雪地转转",
-            "雪圈滑梯）",
-            "马拉爬犁+驯鹿园（森林雪原穿梭",
-            "近距离接触驯鹿）",
-            "森林温泉（放松恢复体力）"
-          ],
-          "duration": "半天",
-          "walking": "中等（缆车和索道可大幅减少步行，主要步行集中在戏雪区和温泉区）",
-          "physical": 3,
-          "tips": [
-            "带娃家庭建议较合适时段前到达滑雪场，此时人少雪好；下午去冰雪画廊光线柔和更出片；晚上泡温泉缓解滑雪疲劳。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
-          "verifiedAt": "2026-08-17"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-17",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "Yabuli Ski Resort.jpg",
-        "author": "Cameraton Cleric",
-        "provider": "Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yabuli_Ski_Resort.jpg",
-        "width": 3840,
-        "height": 2560
-      },
-      "quality_status": {
-        "reviewRequired": true,
-        "warnings": [
-          "独立可追溯来源少于2个",
-          "亚布力滑雪旅游度假区：基本资料目前只有1个可追溯来源"
-        ]
       }
     }
   ],
   "overrides": {},
-  "reviewedAt": "2026-08-17",
-  "reviewedAtIso": "2026-08-17T08:44:20.889Z",
-  "appliedAt": "2026-08-17T08:46:22.540Z",
+  "reviewedAt": "2026-08-21",
+  "reviewedAtIso": "2026-08-21T02:56:50.117Z",
+  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "batchSelectedKeys": [
+    "core_7493d5044c",
+    "core_e407600d6c"
+  ],
+  "appliedAt": "2026-08-21T03:40:36.258Z",
   "appliedAttractionIds": [
-    "manual_heilongjiang_a617449b",
-    "manual_heilongjiang_b2cd2a20",
-    "manual_heilongjiang_f37d1bd1",
-    "manual_heilongjiang_2d3dd1db",
-    "manual_heilongjiang_a3377f38",
-    "manual_heilongjiang_f1c1a84c",
-    "manual_heilongjiang_8971fe93",
-    "manual_heilongjiang_a062da66",
-    "manual_heilongjiang_50e8dc40",
-    "manual_heilongjiang_900291db",
-    "manual_heilongjiang_430d9b4d"
+    "manual_heilongjiang_f60fa7a6",
+    "manual_heilongjiang_8194f22a"
   ],
   "appliedOverrideIds": []
 }

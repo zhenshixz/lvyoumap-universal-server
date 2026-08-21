@@ -1,6 +1,6 @@
 {
   "province": "山西",
-  "verifiedAt": "2026-08-17",
+  "verifiedAt": "2026-08-21",
   "policy": "景点身份、属地、基本介绍、地址、攻略和至少一条真实可执行游览方案为硬门槛；第二条路线不是强制项。第二来源与授权实景图缺口记录为警告并进入隔离预览；动态信息不固化。",
   "attractions": [
     {
@@ -151,7 +151,7 @@
       "lazy_ai_source": {
         "source": "xiaohongshu-dian-dian-ai-chat",
         "prompt": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
-        "updatedAt": "2026-08-17T06:22:41.890Z"
+        "updatedAt": "2026-08-17T06:22:41.89Z"
       },
       "quality_policy": {
         "forbiddenTerms": []
@@ -204,7 +204,7 @@
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "profile": "coastal",
+      "profile": "urban",
       "sources": [
         {
           "title": "xiaohongshu_core_candidates",
@@ -751,7 +751,7 @@
       "lazy_ai_source": {
         "source": "xiaohongshu-dian-dian-ai-chat",
         "prompt": "运城盐湖完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）",
-        "updatedAt": "2026-08-17T06:21:20.510Z"
+        "updatedAt": "2026-08-17T06:21:20.51Z"
       },
       "quality_policy": {
         "forbiddenTerms": []

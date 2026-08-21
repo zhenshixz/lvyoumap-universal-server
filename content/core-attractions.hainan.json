@@ -1,6 +1,6 @@
 {
   "province": "海南",
-  "checkedAt": "2026-08-19",
+  "checkedAt": "2026-08-21",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1026,6 +1026,106 @@
         }
       ],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_bcb0bc6de9",
+      "name": "红峡谷漂流",
+      "preferredId": "manual_hainan_10c0b819",
+      "aliases": [
+        "红峡谷漂流"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_79f3ed880b",
+      "name": "雷琼海口火山群世界地质公园",
+      "preferredId": "manual_hainan_3165c013",
+      "aliases": [
+        "雷琼海口火山群世界地质公园"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_c9e5e02dc9",
+      "name": "五指山水满河热带雨林风景区",
+      "preferredId": "manual_hainan_11291aca",
+      "aliases": [
+        "五指山水满河热带雨林风景区",
+        "五指山水满河热带雨林"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_0f60819ddb",
+      "name": "西沙群岛",
+      "preferredId": "manual_hainan_91680e1b",
+      "aliases": [
+        "西沙群岛"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 31
+  }
 }

@@ -1,1040 +1,30 @@
 {
   "province": "河南",
   "status": "applied",
-  "createdAt": "2026-08-19T01:32:01.196Z",
-  "updatedAt": "2026-08-19T01:32:01.800Z",
+  "createdAt": "2026-08-21T02:55:42.921Z",
+  "updatedAt": "2026-08-21T02:55:43.539Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [
-    "郑州银基国际旅游度假区：基本资料目前只有1个可追溯来源",
-    "尧山温泉旅游度假区：基本资料目前只有1个可追溯来源"
-  ],
+  "warnings": [],
   "seedFile": "content/core-repair-seeds.henan.json",
   "attractions": [
     {
-      "baselineKey": "core_63adc0d6ef",
-      "id": "manual_henan_4cf7277",
-      "name": "嵖岈山旅游景区",
-      "city": "驻马店",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_4cf7277_verified.jpg",
-      "description": "驻马店市嵖岈山景区总面积148平方公里，主景区面积50平方公里，嵖岈山景区系伏牛山东缘余脉，山势嵯峨，怪石林立。南山、北山、花果山、六峰山砥足而立，秀蜜湖、琵琶湖、百花湖、天磨湖点缀其间，构成了一幅奇特秀丽的风光画卷。",
-      "intro": "驻马店市嵖岈山景区总面积148平方公里，主景区面积50平方公里，嵖岈山景区系伏牛山东缘余脉，山势嵯峨，怪石林立。南山、北山、花果山、六峰山砥足而立，秀蜜湖、琵琶湖、百花湖、天磨湖点缀其间，构成了一幅奇特秀丽的风光画卷。",
-      "level": "5A景区",
-      "category": "自然山水与奇石景观、西游文化主题景区",
-      "tags": [
-        "自然山水与奇石景观、西游文化主题景区",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "驻马店市遂平县查岈山风景区",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"嵖岈山风景区南山门\"停车场；或乘高铁至驻马店西站，换乘303路旅游专线直达南门。",
-          "internal_arrive": "首选南门（南山门）入园，此处为奇石精华线，魔毯、滑道等省力设施集中，适合家庭游览。",
-          "internal_traffic": "魔毯（上山省力）、崖壁滑道（下山不费腿）、天空漂流、观光车（山下环湖接驳，南门至北门单程）。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "景区南门周边有行者·嵖岈山酒店及多家农家乐、民宿，步行至景区入口约 2 分钟，方便往返。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "可走北门峡谷休闲线（较平缓），或全程乘坐观光车+魔毯，避免陡峭台阶",
-          "children": "魔毯上山和滑道下山趣味性强，黑风洞和西游雕塑园可沉浸式体验西游文化，冒险谷有亲子游乐设施。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "南门进北门出·魔毯滑道省力环线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "南门（西游文化广场）",
-            "秀蜜湖",
-            "黑风洞",
-            "魔毯上山",
-            "石猴院",
-            "一线天",
-            "飞来石",
-            "凤凰台",
-            "崖壁滑道下山",
-            "琵琶湖",
-            "天磨湖",
-            "北门",
-            "观光车返回南门"
-          ],
-          "duration": "半天",
-          "walking": "约 4-5 公里（含部分台阶和湖景步道）",
-          "physical": 3,
-          "tips": [
-            "黑风洞内部狭窄曲折，身高180cm以上或体重较大者慎入；一线天较窄，需侧身通过；建议穿防滑鞋，自带水和零食。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "高德地图 嵖岈山风景区：https://www.amap.com/place/B018C00E36"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "Chaya Shan 21.jpg",
-        "author": "Gary Todd",
-        "provider": "Wikimedia Commons",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaya_Shan_21.jpg",
-        "width": 3840,
-        "height": 2560
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_7c3b777ff9",
-      "id": "manual_henan_2ab7d82e",
-      "name": "老君山－鸡冠洞旅游区",
-      "city": "栾川",
+      "baselineKey": "core_defe8a5f52",
+      "id": "manual_henan_2eb0b922",
+      "name": "洛阳博物馆",
+      "city": "洛阳",
       "rating": 4.7,
-      "reviewsCount": "15608条携程点评",
-      "image": "/assets/images/attractions/henan_2ab7d82e_verified.jpg",
-      "description": "老君山景区相传是道教始祖李耳（老子）的归隐修炼之地，北魏时在山中建庙纪念，后来被封为“天下名山”，历来香火旺盛。山中树木茂盛，风景如画，处处都能看到山泉。",
-      "intro": "老君山景区相传是道教始祖李耳（老子）的归隐修炼之地，北魏时在山中建庙纪念，后来被封为“天下名山”，历来香火旺盛。山中树木茂盛，风景如画，处处都能看到山泉。",
-      "level": "5A景区",
-      "category": "自然山水、地质溶洞、道教文化",
-      "tags": [
-        "自然山水、地质溶洞、道教文化",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省洛阳市栾川县七里坪村21组",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾：导航至\"老君山风景名胜区\"或\"鸡冠洞景区停车场\"，走洛栾高速，路况良好，景区间车程约30分钟。\n公共交通：高铁至洛阳龙门站后，在客运站乘大巴至栾川（约2小时），再转乘当地公交或打车前往景区。",
-          "internal_arrive": "老君山推荐从云景索道或中灵索道入口进入，两者票通用，云景索道出口更高，中灵索道排队通常较短；鸡冠洞从正门步行至洞口约5-10分钟，带老人小孩可乘观光车。",
-          "internal_traffic": "老君山有观光车、一级索道、二级索道、上行电梯和下山滑道；鸡冠洞有观光车、升龙缆车和飞龙滑道。家庭游强烈建议购买一级+二级索道往返票，省去大量体力消耗。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在老君山脚下（如云景索道或中灵索道附近民宿）或栾川县城。山脚民宿性价比高，方便次日早起乘索道上山；县城餐饮选择多，价格亲民。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "老君山全程乘坐索道，避免徒步陡坡；鸡冠洞洞内台阶较多、地面湿滑，需慢行防滑",
-          "children": "老君山十里画屏为缓坡栈道，对儿童友好；鸡冠洞内有NPC互动和地质科普，适合亲子体验。两景区均注意保暖防滑，备好登山杖。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "老君山索道省力登顶+鸡冠洞溶洞探秘（2日家庭游）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "Day 1 老君山：游客中心乘坐观光车至一级索道下站",
-            "乘坐一级索道至中天门",
-            "换乘二级索道至十里画屏入口",
-            "漫步十里画屏栈道",
-            "经将军峰",
-            "伏牛极顶",
-            "抵达金顶道观群（打卡金殿",
-            "老君庙）",
-            "原路返回乘坐二级索道",
-            "一级索道下山\nDay 2 鸡冠洞：景区入口步行或乘坐观光车至登山口",
-            "步行约300级台阶至洞口（可乘缆车省力）",
-            "依次游览玉柱潭",
-            "溢彩殿",
-            "叠帏宫",
-            "洞天河",
-            "聚仙宫",
-            "瑶池宫",
-            "藏秀阁",
-            "石林坊",
-            "从洞口出，结束游览"
-          ],
-          "duration": "半天",
-          "walking": "老君山约4-5公里（以索道为主，十里画屏缓坡栈道），鸡冠洞约1.8公里（洞内单行线）",
-          "physical": 3,
-          "tips": [
-            "老君山一级索道上行通常在下午3-4点停止运营，务必早点出发；山顶和洞内温差大，务必带防风外套；许愿牌建议在山下停车场购买，越往上越贵。"
-          ],
-          "sourceTitle": "携程旅行 老君山－鸡冠洞旅游区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/luanchuan1930/9348.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "携程旅行 老君山－鸡冠洞旅游区 详情页：https://you.ctrip.com/sight/luanchuan1930/9348.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 老君山－鸡冠洞旅游区 详情页",
-          "url": "https://you.ctrip.com/sight/luanchuan1930/9348.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "老君山－鸡冠洞旅游区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/luanchuan1930/9348.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/luanchuan1930/9348.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1277
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_6c63eeba5a",
-      "id": "manual_henan_60783292",
-      "name": "尧山－中原大佛景区",
-      "city": "平顶山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_60783292_verified.jpg",
-      "description": "中原大佛，位于河南省平顶山市鲁山县尧山佛泉寺，是世界上最高的佛教造像。整体佛像铸造用铜3300吨，黄金108公斤，特殊钢15000余吨，表面面积为11300平方米，通过焊接13300块铜板而成。",
-      "intro": "中原大佛，位于河南省平顶山市鲁山县尧山佛泉寺，是世界上最高的佛教造像。整体佛像铸造用铜3300吨，黄金108公斤，特殊钢15000余吨，表面面积为11300平方米，通过焊接13300块铜板而成。",
-      "level": "5A景区",
-      "category": "5A级自然山水与佛教文化景区",
-      "tags": [
-        "5A级自然山水与佛教文化景区",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "平顶山市鲁山县赵村镇",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"中原大佛景区\"或\"尧山景区\"，停车场收费费用以官方当日公告为准/次；公共交通可在平顶山市区贸易广场乘班车至尧山风景区，中途在大佛景区下车。",
-          "internal_arrive": "大佛景区推荐从东侧停车场进、西侧出，停车更方便；尧山景区从正门进入后直接乘坐景交车。",
-          "internal_traffic": "大佛区有观光车（单程费用以官方当日公告为准）可送至大佛脚下平台；尧山景区有景交车（往返费用以官方当日公告为准）、尧山索道（上行费用以官方当日公告为准）、滑道（费用以官方当日公告为准）和通天门电车（费用以官方当日公告为准）等多种代步工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "大佛景区周边上汤村民宿（性价比高，约100-费用以官方当日公告为准/晚）、福泉大酒店（步行近大佛）；或选择鲁山县城连锁酒店（150-费用以官方当日公告为准/晚，餐饮选择多）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "大佛区台阶较多，务必乘坐观光车和电梯；尧山区全程依赖索道和滑道，避免攀爬陡峭路段，备好登山杖",
-          "children": "尧山滑道和九曲瀑布孩子较喜欢，注意防滑和安全；大佛区可让孩子体验\"抱佛脚\"，但需看管好。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力两日游（先人文后自然）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "佛泉寺",
-            "福慧大道（365台阶）",
-            "礼佛台",
-            "中原大佛（乘电梯抱佛脚）",
-            "尧山景区大门",
-            "景交车",
-            "尧山索道",
-            "玉皇顶",
-            "滑道",
-            "青龙背",
-            "九曲瀑布"
-          ],
-          "duration": "半天",
-          "walking": "中等（大佛区台阶较多，尧山区以索道和滑道代步为主）",
-          "physical": 3,
-          "tips": [
-            "大佛区建议乘坐观光车+电梯节省体力；尧山索道和滑道是省力关键，建议提前确认设备运行状态；晴天前往视野最佳，可俯瞰云海。"
-          ],
-          "sourceTitle": "mct_national_5a_2025",
-          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "堯山景區-12.jpg",
-        "author": "Piano08647",
-        "provider": "Wikimedia Commons",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A0%AF%E5%B1%B1%E6%99%AF%E5%8D%80-12.jpg",
-        "width": 3756,
-        "height": 2818
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_6989eb7e72",
-      "id": "manual_henan_d1f3ec17",
-      "name": "殷墟景区",
-      "city": "安阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_d1f3ec17_verified.jpg",
-      "description": "世界文化遗产河南安阳殷墟景区位于中国历史文化名城安阳西北郊。安阳殷墟是中国商代晚期的都城，也是中国历史上第一个有文献可考并为甲骨文和考古发掘所证实的古代都城遗址，距今已有3300年的历史。",
-      "intro": "世界文化遗产河南安阳殷墟景区位于中国历史文化名城安阳西北郊。安阳殷墟是中国商代晚期的都城，也是中国历史上第一个有文献可考并为甲骨文和考古发掘所证实的古代都城遗址，距今已有3300年的历史。",
-      "level": "5A景区",
-      "category": "博物馆、历史遗址、文化遗产",
-      "tags": [
-        "博物馆、历史遗址、文化遗产",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省安阳市",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "高铁至安阳东站（打车约30分钟）或安阳站（打车约15分钟），自驾可直接导航至景区停车场。",
-          "internal_arrive": "建议从殷墟博物馆南门或殷墟宫殿宗庙遗址北门进入，周边停车相对便利。",
-          "internal_traffic": "景区内有免费摆渡车连接博物馆与宫殿宗庙遗址（约5-8分钟车程），宫殿宗庙遗址与王陵遗址之间有景区中巴车（凭联票免费乘坐，需留意发车时间）。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在安阳市区北大街附近或殷都区，周边餐饮丰富，且距离景区交通便捷。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "景区内部分区域为户外遗址，建议携带轻便轮椅或租用景区推车；务必请人工讲解或租赁讲解器，避免走马观花",
-          "children": "可参与馆内的模拟考古、甲骨文互动体验，购买文创雪糕盲盒增加趣味性，在讲解员引导下寻找甲骨文中的“车”字等互动游戏。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力精华游（博物馆+宫殿宗庙）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "殷墟博物馆（3F“长从何来”特展",
-            "2F“伟大的商文明”",
-            "1F车马坑）",
-            "乘坐景区摆渡车",
-            "殷墟宫殿宗庙遗址（妇好墓",
-            "甲骨窖穴",
-            "车马坑）"
-          ],
-          "duration": "半天",
-          "walking": "约2公里",
-          "physical": 2,
-          "tips": [
-            "博物馆内建议从3楼往下逛，精华展品集中在高层；遗址区多为户外步道，务必穿舒适平底鞋，做好防晒补水。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "深度全景游（含王陵遗址）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "殷墟博物馆",
-            "殷墟宫殿宗庙遗址",
-            "乘坐景区中巴车",
-            "殷墟王陵遗址（车马坑陈列馆",
-            "王陵墓葬展览馆",
-            "M260展厅）"
-          ],
-          "duration": "半天",
-          "walking": "约3公里",
-          "physical": 3,
-          "tips": [
-            "王陵遗址距离较远（约5公里），需预留接驳车时间，建议提前向工作人员确认当日发车班次，避免错过末班车。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "Exterior, Yinxu Museum 20241002-B.jpg",
-        "author": "Tim Wu",
-        "provider": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exterior,_Yinxu_Museum_20241002-B.jpg",
-        "width": 3840,
-        "height": 2560
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_d848072ea5",
-      "id": "manual_henan_9ef49495",
-      "name": "云台山－神农山－青天河风景区",
-      "city": "修武",
-      "rating": 4.7,
-      "reviewsCount": "35516条携程点评",
-      "image": "/assets/images/attractions/henan_9ef49495_verified.jpg",
-      "description": "【大美云台山风景名胜区】 云台山风景名胜区是国家级风景名胜区、国家首批5A级旅游景区和全球首批世界地质公园，位于河南焦作市修武县境内，太行山南麓，豫晋省界交汇处，总面积50多平方公里。云台山风景名胜区有焦作市云台山风景名胜区-红石峡、潭瀑峡、泉瀑峡、小寨沟景区-猕猴谷、茱萸峰、叠彩洞、万善寺、子房湖等八个景点，是一处以裂谷构造、水动力作用和地质地貌景观为主，以自然生态和人文景观为辅，以峰谷交错、绝壁林立与飞瀑流泉、清溪幽潭为特色，集美学",
-      "intro": "【大美云台山风景名胜区】 云台山风景名胜区是国家级风景名胜区、国家首批5A级旅游景区和全球首批世界地质公园，位于河南焦作市修武县境内，太行山南麓，豫晋省界交汇处，总面积50多平方公里。云台山风景名胜区有焦作市云台山风景名胜区-红石峡、潭瀑峡、泉瀑峡、小寨沟景区-猕猴谷、茱萸峰、叠彩洞、万善寺、子房湖等八个景点，是一处以裂谷构造、水动力作用和地质地貌景观为主，以自然生态和人文景观为辅，以峰谷交错、绝壁林立与飞瀑流泉、清溪幽潭为特色，集美学",
-      "level": "5A景区",
-      "category": "自然山水、地质奇观、人文古迹",
-      "tags": [
-        "自然山水、地质奇观、人文古迹",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "焦作市修武县七贤镇沙墙村北2公里",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "可乘高铁至焦作站或修武西站，出站后转乘旅游专线公交或打车前往景区；自驾可走晋新高速、二广高速，在焦作西或修武出口下高速，景区周边有大型停车场。",
-          "internal_arrive": "建议从焦作市区的云台山游客服务中心统一购票、换乘内部交通车进入，不要直接开私家车到景区门口，以免无法进入核心区。",
-          "internal_traffic": "景区内有完善的观光车系统，连接各子景区（红石峡、潭瀑峡、泉瀑峡、茱萸峰等），部分路段如茱萸峰可乘坐索道或观光车直达，大幅节省体力。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在焦作市区的酒店，或景区附近的修武县、云台山民宿小镇，餐饮和住宿选择多，方便第二天一早进入景区。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "优先选择红石峡和潭瀑峡等平路较多的区域，茱萸峰可乘索道上下，避免长时间爬山",
-          "children": "红石峡和潭瀑峡水量充沛时孩子喜欢看水，可准备一些零食和玩具，在平缓地带休息游玩。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "云台山核心峡谷与瀑布省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "红石峡（峡谷底部平路，看丹霞地貌与瀑布）",
-            "潭瀑峡（小寨沟，平路看三泉瀑）",
-            "泉瀑峡（看云台天瀑，视水量而定）",
-            "茱萸峰（乘索道上下，登玻璃栈道）"
-          ],
-          "duration": "半天",
-          "walking": "约 10-15 公里（主要依靠内部交通接驳，核心景点多为平路或索道）",
-          "physical": 3,
-          "tips": [
-            "务必提前购买景区内部交通车票，各景点间距离较远，自驾车不能进入核心景区；红石峡是精华但需下台阶，建议穿防滑运动鞋。"
-          ],
-          "sourceTitle": "携程旅行 云台山－神农山－青天河风景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62276.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "携程旅行 云台山－神农山－青天河风景区 详情页：https://you.ctrip.com/sight/xiuwu2267/62276.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 云台山－神农山－青天河风景区 详情页",
-          "url": "https://you.ctrip.com/sight/xiuwu2267/62276.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "云台山－神农山－青天河风景区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/xiuwu2267/62276.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62276.html?poiType=3&scene=online",
-        "width": 1280,
-        "height": 958
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_0aff341f98",
-      "id": "manual_henan_b9e84119",
-      "name": "河南博物院",
-      "city": "郑州",
-      "rating": 4.8,
-      "reviewsCount": "9680条携程点评",
-      "image": "/assets/images/attractions/henan_b9e84119_verified.jpg",
-      "description": "【河南博物院简介】 \\n创建于1927年，是我国成立较早的博物馆之一。本馆坐落于河南省郑州市农业路中段，院区占地面积126亩，建筑面积5.5万平方米。",
-      "intro": "【河南博物院简介】 \\n创建于1927年，是我国成立较早的博物馆之一。本馆坐落于河南省郑州市农业路中段，院区占地面积126亩，建筑面积5.5万平方米。",
-      "level": "热门景点",
+      "reviewsCount": "3663条携程点评",
+      "image": "/assets/images/attractions/henan_2eb0b922_verified.jpg",
+      "description": "洛阳博物馆创建于1958年，现为国家一级博物馆。是一座集文物收藏、科学研究、陈列展览、社会教育与文化交流诸功能为一体的综合性博物馆。",
+      "intro": "洛阳博物馆创建于1958年，现为国家一级博物馆。是一座集文物收藏、科学研究、陈列展览、社会教育与文化交流诸功能为一体的综合性博物馆。",
+      "level": "博物馆",
       "category": "博物馆",
       "tags": [
         "博物馆",
         "经典景点",
         "口碑热门"
       ],
-      "address": "郑州市金水区农业路8号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
-        },
-        "transport": {
-          "external_arrive": "地铁2号线关虎屯站C口或7号线农业大学站D口，步行约10分钟；公交B2/B11/B18可达。",
-          "internal_arrive": "主馆入口安检入内，需携带身份证原件刷证进馆；大件行李可存人工寄存处，小件背包用自助存包柜。",
-          "internal_traffic": "馆内配备电梯和扶梯，各楼层展厅之间可无障碍通行，方便推婴儿车或轮椅。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在农业路或紫荆山路周边商圈，距离博物院步行或骑行可达，餐饮购物方便。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "租轮椅或推婴儿车代步，多利用馆内休息区；选择电子讲解器自由控制节奏，不跟人工讲解团赶场",
-          "children": "穿舒适软底鞋，带小水杯；用\"寻宝打卡\"方式引导，重点看妇好鸮尊、绿釉陶狗等趣味文物；1楼文创店买考古盲盒或盖章本作为奖励。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "镇馆之宝省力精华线（1→2→3→4楼）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "1楼1厅（贾湖骨笛）",
-            "1楼2厅（杜岭方鼎",
-            "妇好鸮尊）",
-            "1楼3厅（玉柄铁剑）",
-            "1楼4厅（莲鹤方壶）",
-            "2楼5厅（四神云气图）",
-            "2楼7厅（武则天金简）",
-            "3楼10厅（汝窑天蓝釉刻花鹅颈瓶）",
-            "4楼13厅（云纹铜禁）",
-            "1楼文创店（盖章/买伴手礼）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 3,
-          "tips": [
-            "按楼层从1到4依次参观，全程顺向不折返；可租电子讲解器或拼人工讲解，边听故事边逛更省力。"
-          ],
-          "sourceTitle": "携程旅行 河南博物院 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online",
-          "高德地图 河南博物院：https://www.amap.com/place/B01730HZRE"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 河南博物院 详情页",
-          "url": "https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "河南博物院 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhengzhou157/9593.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_3227e85f95",
-      "id": "manual_henan_93bc648d",
-      "name": "洛阳古墓博物馆",
-      "city": "洛阳",
-      "rating": 4.7,
-      "reviewsCount": "1093条携程点评",
-      "image": "/assets/images/attractions/henan_93bc648d_verified.jpg",
-      "description": "洛阳古墓博物馆是世界上第一座古墓博物馆。博物馆分为历代墓葬区、北魏帝王陵墓和河南壁画馆三大展区，藏有我国古代各个时期的数十座墓室，均由原址搬迁而来，并在地下展区按墓葬形制复原展出。",
-      "intro": "洛阳古墓博物馆是世界上第一座古墓博物馆。博物馆分为历代墓葬区、北魏帝王陵墓和河南壁画馆三大展区，藏有我国古代各个时期的数十座墓室，均由原址搬迁而来，并在地下展区按墓葬形制复原展出。",
-      "level": "博物馆",
-      "category": "博物馆/古墓遗址",
-      "tags": [
-        "博物馆/古墓遗址",
-        "室内参观",
-        "口碑热门"
-      ],
-      "address": "河南省洛阳市老城区机场路6号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
-          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
-          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
-          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
-        },
-        "transport": {
-          "external_arrive": "可乘坐地铁2号线至邙岭站，出站后打车约10分钟直达；或乘坐83路公交车直达博物馆门口。自驾可导航至“洛阳古墓博物馆”，园区内设有停车场（收费约5至费用以官方当日公告为准/次），建议往深处开停车更近。",
-          "internal_arrive": "从正门进入后，先前往太虚殿右侧的讲解接待中心了解讲解服务或租借语音导览器，随后在入口处寄存行李和贵重物品，再按导览图指示开始游览。",
-          "internal_traffic": "景区内部主要依靠步行，各展区之间通过地下通道和楼梯连接，无内部观光车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在老城区（靠近景区，周边餐饮多）或洛龙区（新区，酒店设施较新），打车前往景区约20至30分钟。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "地下墓道部分路段较陡且地面青砖可能湿滑，长辈需穿防滑鞋，量力而行，避免在狭窄墓室长时间停留",
-          "children": "馆内氛围偏严肃，部分低矮昏暗的墓室可能让幼童感到害怕或有幽闭恐惧，建议大龄儿童前往，并提前给孩子做心理建设。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "地下探秘与帝王地宫经典环线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "太虚殿（序厅看沙盘）",
-            "地下历代墓葬区（25座真墓沉浸式参观）",
-            "河南古代壁画馆（看千年壁画真迹）",
-            "宋金砖雕馆（看宋金世俗生活砖雕）",
-            "北魏宣武帝景陵（下40米斜坡地宫）",
-            "出口"
-          ],
-          "duration": "半天",
-          "walking": "约1.5至2公里",
-          "physical": 2,
-          "tips": [
-            "地下展区恒温偏凉，建议带件薄外套；部分墓室低矮狭窄需弯腰穿行，注意低头防磕碰；馆内光线较暗，拍照严禁使用闪光灯；强烈建议租借语音导览或在讲解接待中心拼团请人工讲解，否则容易只看个热闹。"
-          ],
-          "sourceTitle": "携程旅行 洛阳古墓博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online",
-          "高德地图 洛阳古墓博物馆：https://www.amap.com/place/B017B01J0M"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 洛阳古墓博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "洛阳古墓博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/luoyang198/9337.html?poiType=3&scene=online",
-        "width": 2048,
-        "height": 1367
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_b8328a6787",
-      "id": "manual_henan_f412adc1",
-      "name": "浚县古城",
-      "city": "浚县",
-      "rating": 4.4,
-      "reviewsCount": "53条携程点评",
-      "image": "/assets/images/attractions/henan_f412adc1_verified.jpg",
-      "description": "浚县位于河南北部，隶属河南省鹤壁市，是中国国家历史文化名城、中国民间文化艺术之乡。浚县古城是将古城墙、世袭翰林府、浚县古城-关圣庙、明清四合院、县衙、文庙联合一起的景区，着重体现浚县的千年文化传承。",
-      "intro": "浚县位于河南北部，隶属河南省鹤壁市，是中国国家历史文化名城、中国民间文化艺术之乡。浚县古城是将古城墙、世袭翰林府、浚县古城-关圣庙、明清四合院、县衙、文庙联合一起的景区，着重体现浚县的千年文化传承。",
-      "level": "热门景点",
-      "category": "历史文化古城 / 古建街区 / 非遗体验",
-      "tags": [
-        "历史文化古城 / 古建街区 / 非遗体验",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "河南省鹤壁市浚县西大街实验幼儿园西侧约190米",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至古城西门外停车场（费用以官方当日公告为准/天）；高铁可至滑浚站或鹤壁东站，出站后打车或乘坐公交1路、5路直达古城门口。",
-          "internal_arrive": "强烈推荐从西城门进入，这里集中了古城80%的核心景点，且门外有专属停车场，周边美食和特产店也最密集。",
-          "internal_traffic": "古城内有费用以官方当日公告为准摆渡车（招手即停），路线覆盖南北城门及主要景点，带老人小孩非常省力；古城内无共享单车，主要靠步行或摆渡车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在古城周边或西门附近的民宿与酒店，方便随时回房休息，晚上也能方便地欣赏古城夜景。 长辈建议：古城整体平坦，但登城墙和逛古建仍需体力，建议多利用费用以官方当日公告为准摆渡车代步，午后可在街边茶馆或民宿休息；美食推荐口感软烂的浚县八大碗和丸子汤，适合长辈食用。 儿童建议：古城内有很多非遗泥咕咕手艺人，可以带孩子体验捏泥塑、听泥哨发声；县衙和文庙也是很好的历史科普场所，沿途还能品尝石子馍等特色小吃，孩子不易觉得枯燥。\n\n补充一点，古城街区本身是免费开放的，只有县衙、翰林府、文庙等内部景点需要门票，建议直接购买联票更划算。另外，夏季或节假日出行前，建议提前查看天气并备好防晒防蚊用品，部分动态信息以官方当日公告为准。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "古城整体平坦，但登城墙和逛古建仍需体力，建议多利用1元摆渡车代步，午后可在街边茶馆或民宿休息；美食推荐口感软烂的浚县八大碗和丸子汤，适合长辈食用",
-          "children": "古城内有很多非遗泥咕咕手艺人，可以带孩子体验捏泥塑、听泥哨发声；县衙和文庙也是很好的历史科普场所，沿途还能品尝石子馍等特色小吃，孩子不易觉得枯燥。\n\n补充一点，古城街区本身是免费开放的，只有县衙、翰林府、文庙等内部景点需要门票，建议直接购买联票更划算。另外，夏季或节假日出行前，建议提前查看天气并备好防晒防蚊用品，部分动态信息以官方当日公告为准。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "古城核心古建与街巷漫游线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "西城门入园",
-            "登明代古城墙俯瞰全景",
-            "世袭翰林府（欣赏砖雕与园林布局）",
-            "文治阁（古城中心地标打卡）",
-            "县衙（感受古衙署格局）",
-            "文庙（红墙古柏拍照）",
-            "云溪桥（看大运河古石拱桥）",
-            "北大街或西大街逛吃"
-          ],
-          "duration": "半天",
-          "walking": "约2-3公里",
-          "physical": 3,
-          "tips": [
-            "古城内景点主要集中在西门附近，建议从西城门进入，一路向东或向北逛，不走回头路。"
-          ],
-          "sourceTitle": "携程旅行 浚县古城 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 浚县古城 详情页",
-          "url": "https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "浚县古城 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/xuncounty1446089/5706448.html?poiType=3&scene=online",
-        "width": 1840,
-        "height": 1219
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_e44df01ac4",
-      "id": "manual_henan_b8b8d8cd",
-      "name": "郑州银基国际旅游度假区",
-      "city": "郑州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_b8b8d8cd_verified.jpg",
-      "description": "郑州银基国际旅游度假区位于河南省郑州市新密市刘寨镇大鸿路1号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "郑州银基国际旅游度假区位于河南省郑州市新密市刘寨镇大鸿路1号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "国家级旅游度假区",
-      "category": "动物主题乐园、室内冰雪乐园、温泉度假综合体",
-      "tags": [
-        "动物主题乐园、室内冰雪乐园、温泉度假综合体",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省郑州市新密市刘寨镇大鸿路1号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
-          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
-          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
-          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航“银基动物王国”或“银基冰雪酒店”，停车场费用以官方当日公告为准/天；高铁至郑州东站后打车约40-50分钟可达。",
-          "internal_arrive": "南门（主入口）入园，步行至游客中心领取纸质地图和打卡护照，方便规划路线和集章换礼。",
-          "internal_traffic": "园区内有免费接驳小火车连接酒店与园区；园区内可租赁电动观光车或儿童推车，也可步行游览。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "银基冰雪酒店（动物主题房，住客可提前入园，有免费接驳车）、银基黄帝宫御温泉酒店（带温泉和儿童戏水区，适合家庭休整）。",
-            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "优先选择室内恒温项目（如迷失河谷、奇幻盒子）避暑避晒；可乘坐观光车游览梦幻动物园，减少步行；下午安排温泉酒店休息泡汤解乏",
-          "children": "1.1米以下宝宝重点玩奇幻世界和奇幻盒子，项目温和不刺激；可参与萌宠投喂和小小营养师互动体验；建议自带或租赁儿童推车，避免长时间步行。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力核心游（动物王国）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "佳宝小镇（入园领护照）",
-            "梦幻动物园（酋长之家",
-            "草原探险基地）",
-            "翡翠海（迷失河谷",
-            "海狮剧场）",
-            "生命岛（花车巡游",
-            "4D影院）",
-            "奇幻世界（奇幻盒子",
-            "萌宠剧场）",
-            "生命岛（奇境森林灯光秀）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5万步",
-          "physical": 3,
-          "tips": [
-            "入园后立刻在小程序预约酋长之家，选右侧座位；迷失河谷是室内空调区，适合正午避暑；带娃建议租儿童推车，园区较大。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "郑州银基国际旅游度假区",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://baike.baidu.com/item/%E9%83%91%E5%B7%9E%E9%93%B6%E5%9F%BA%E5%9B%BD%E9%99%85%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA/24397960",
-        "sourceUrl": "http://baike.baidu.com/item/%E9%83%91%E5%B7%9E%E9%93%B6%E5%9F%BA%E5%9B%BD%E9%99%85%E6%97%85%E6%B8%B8%E5%BA%A6%E5%81%87%E5%8C%BA/24397960",
-        "width": 5760,
-        "height": 3840
-      },
-      "quality_status": {
-        "reviewRequired": true,
-        "warnings": [
-          "独立可追溯来源少于2个",
-          "郑州银基国际旅游度假区：基本资料目前只有1个可追溯来源"
-        ]
-      }
-    },
-    {
-      "baselineKey": "core_0f306813d8",
-      "id": "manual_henan_7fa05c4c",
-      "name": "三门峡市天鹅湖旅游度假区",
-      "city": "三门峡",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_7fa05c4c_verified.jpg",
-      "description": "三门峡市天鹅湖旅游度假区位于位于黄河之滨、天鹅湖畔。围绕黄河、温泉两大主题资源，推出“听见黄河谣”、“律动天鹅湖”、“乐活地坑院”、“康养在温泉”四大主题度假产品。",
-      "intro": "三门峡市天鹅湖旅游度假区位于位于黄河之滨、天鹅湖畔。围绕黄河、温泉两大主题资源，推出“听见黄河谣”、“律动天鹅湖”、“乐活地坑院”、“康养在温泉”四大主题度假产品。",
-      "level": "国家级旅游度假区",
-      "category": "湿地公园、自然生态",
-      "tags": [
-        "湿地公园、自然生态",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省三门峡市陕州区陕州大道苍龙涧河桥西侧天鹅湖旅游度假区综合服务中心",
+      "address": "河南省洛阳市洛龙区聂泰路与文博路交叉口西北角",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -1046,14 +36,14 @@
           "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
         },
         "transport": {
-          "external_arrive": "高铁至三门峡南站后打车约20分钟；自驾导航至\"天鹅湖北门/南门停车场\"，车位充足；公交可乘5路、23路、108路至\"天鹅湖站\"。",
-          "internal_arrive": "北门进（直达天鹅密集区，适合大部分游客）；南门进（靠近苍龙湖，步行距离更短，老人小孩更友好）。",
-          "internal_traffic": "景区内可乘坐观光车（建议提前预约），也可租共享单车沿三色柏油路骑行，部分区域有木栈道和人行栈道。",
+          "external_arrive": "地铁2号线文博园站A口步行约5至8分钟；自驾可导航至西门停车场，但旺季车位紧张，建议早到。",
+          "internal_arrive": "推荐从南门入园，入口两侧有免费自助行李柜，可寄存24寸及以下小件行李。",
+          "internal_traffic": "馆内各楼层之间主要依靠扶梯和直梯连接，带老人和小孩建议优先使用直梯，避免上下楼梯消耗体力。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "湖滨区周边酒店（如三门峡天鹅湖国际大酒店、索西亚国际酒店等），步行或打车可达景区，部分酒店提供观光车预约服务。",
+            "area": "建议住在洛龙区文博园周边或市区中心地带，交通便利，逛完博物馆后可方便前往其他景点或就餐。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -1064,32 +54,31 @@
           "道口烧鸡"
         ],
         "special_care": {
-          "elderly": "优先选择南门进或乘坐观光车，减少步行距离；湖边风大，务必戴好帽子、手套，做好防风保暖；投喂天鹅请使用景区专用玉米，避免用手直接接触",
-          "children": "建议携带婴儿推车，景区内步行距离较长；备好防风保暖衣物和墨镜；叮嘱孩子安静观鸟、不越护栏，注意防丢。\n\n补充一点：每年11月至次年3月是观赏西伯利亚白天鹅的最佳季节，其他季节天鹅已飞走，建议冬季前往。景区全程免费开放，但游船、观光车等需另付费，具体以官方当日公告为准。"
+          "elderly": "全程尽量走直梯，在一楼石刻馆和二楼珍宝馆等核心展区多利用休息长椅歇脚，注意馆内温度较低需保暖",
+          "children": "可提前给孩子科普镇馆之宝，进馆后开启\"寻宝模式\"，增加参观趣味性，低幼儿童建议缩短逛展时间。"
         }
       },
       "lazy_routes": [
         {
-          "title": "北门进·苍龙湖省力观鹅线",
+          "title": "二楼精华优先省力线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "北门进",
-            "青龙湖沿岸平台",
-            "三河广场",
-            "苍龙湖（近距离投喂天鹅）",
-            "黄河公铁两用大桥（网红桥打卡）",
-            "南门出"
+            "南门入园直上二楼珍宝馆",
+            "二楼唐三彩馆",
+            "二楼宫廷文物馆",
+            "乘直梯下一楼石刻馆",
+            "一楼河洛文明展"
           ],
           "duration": "半天",
-          "walking": "约2-3公里",
+          "walking": "约1.5公里",
           "physical": 2,
           "tips": [
-            "北门进直达天鹅密集区，苍龙湖堤坝可近距离投喂，建议上午8-10点前往，天鹅成群觅食更灵动。"
+            "二楼珍宝馆集中了大部分镇馆之宝，建议优先参观；馆内空调较足，建议带一件薄外套。"
           ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "携程旅行 洛阳博物馆 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -1097,426 +86,153 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "Wikidata Q97181059 实体页：https://www.wikidata.org/wiki/Q97181059"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "\"采访中,三门峡天鹅湖国家城市湿地公园管理处宣教科主任韩铁艳欣喜地",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://travel.sohu.com/a/966624189_120166273",
-        "sourceUrl": "http://travel.sohu.com/a/966624189_120166273",
-        "width": 2100,
-        "height": 1280
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c2b11ec45b",
-      "id": "manual_henan_6ad24665",
-      "name": "尧山温泉旅游度假区",
-      "city": "平顶山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/henan_6ad24665_verified.jpg",
-      "description": "尧山雄踞中原，既有北国山岳的雄伟峻拔，也不乏南方山水的钟灵毓秀。奇峰、怪石、飞瀑、温泉、山花、红叶、湖面、云海、原始森林、珍禽异兽及众多人文景观构成了完整的风景体系。",
-      "intro": "尧山雄踞中原，既有北国山岳的雄伟峻拔，也不乏南方山水的钟灵毓秀。奇峰、怪石、飞瀑、温泉、山花、红叶、湖面、云海、原始森林、珍禽异兽及众多人文景观构成了完整的风景体系。",
-      "level": "国家级旅游度假区",
-      "category": "温泉度假、自然山水、佛教文化",
-      "tags": [
-        "温泉度假、自然山水、佛教文化",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省平顶山市鲁山县中原大佛天瑞温泉大酒店",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾前往，导航至“尧山风景区立体停车场”或“尧山福泉大酒店”；若乘公共交通，可先至平顶山西站或鲁山站，再转乘当地班车或拼车前往。",
-          "internal_arrive": "以温泉休闲为主建议从尧山福泉入口进入；以登山观景为主建议从尧山风景区山门进入。",
-          "internal_traffic": "尧山风景区内设有景交车、迎凤索道/石人索道及下山滑道，建议组合乘坐以节省体力；度假区内各景点间距离较近，自驾或打车最为便捷。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐入住尧山镇上汤村附近的温泉度假酒店（如福泉大酒店）或特色民宿，距离温泉区和中原大佛景区较近，方便往返。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "优先选择尧山福泉泡汤和二楼休息区放松，避免高强度爬山；若去中原大佛景区，可乘坐观光车直达核心区，减少台阶攀爬",
-          "children": "尧山福泉的儿童水寨和戏水滑梯非常适合亲子互动；登山时注意携带零食和水，避免过度疲劳。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "尧山福泉室内休闲亲子游（省力首选）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "温泉大厅更衣洗漱",
-            "一楼室内温泉区（大池适应水温",
-            "特色汤池体验",
-            "儿童水寨戏水）",
-            "二楼大型休息区（午休/影音/棋牌）",
-            "返回更衣区淋浴"
-          ],
-          "duration": "半天",
-          "walking": "约1500米",
-          "physical": 2,
-          "tips": [
-            "建议自带手机防水袋和速干浴巾；室内空调开放，泡汤时注意及时补充水分；儿童水寨水深较浅，家长需全程看护。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "尧山风景区索道+滑道省力登高游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "景区山门",
-            "乘坐景交车至索道站",
-            "乘坐索道上行至玉皇顶",
-            "漫步青龙背观景",
-            "乘坐滑道下山",
-            "乘坐景交车返回山门"
-          ],
-          "duration": "半天",
-          "walking": "约3000米",
-          "physical": 4,
-          "tips": [
-            "山顶风大且气温较低，务必携带防风外套；滑道和索道需根据当日天气及运营情况选择，避免走回头路。 路线B提示：不适用"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "潜入河南平顶山的鲁山县尧山温泉旅游度假区,在森林中泡温泉,看星空.",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://baijiahao.baidu.com/s?id=1863016863153504758&wfr=spider&for=pc",
-        "sourceUrl": "http://baijiahao.baidu.com/s?id=1863016863153504758&wfr=spider&for=pc",
-        "width": 1242,
-        "height": 932
-      },
-      "quality_status": {
-        "reviewRequired": true,
-        "warnings": [
-          "独立可追溯来源少于2个",
-          "尧山温泉旅游度假区：基本资料目前只有1个可追溯来源"
-        ]
-      }
-    }
-  ],
-  "overrides": {
-    "amap_B0G3VXEC4B": {
-      "baselineKey": "core_2d8d54c1b7",
-      "id": "amap_B0G3VXEC4B",
-      "name": "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
-      "city": "南阳",
-      "rating": 4.6,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/henan_7cfba65b_verified.jpg",
-      "description": "景区位于河南省南阳市西峡县，主要有老界岭和恐龙遗迹园两大主景区，是中国南阳伏牛山世界地质公园的精髓和核心，是国家级自然保护区，位于中国南北气候的分界线，是长江流域和黄河流域的分水岭，是一个集观光体验、科普科考、休闲度假于一体的综合性旅游目的地。",
-      "intro": "景区位于河南省南阳市西峡县，主要有老界岭和恐龙遗迹园两大主景区，是中国南阳伏牛山世界地质公园的精髓和核心，是国家级自然保护区，位于中国南北气候的分界线，是长江流域和黄河流域的分水岭，是一个集观光体验、科普科考、休闲度假于一体的综合性旅游目的地。",
-      "level": "5A景区",
-      "category": "科普研学、山岳自然、避暑休闲",
-      "tags": [
-        "科普研学、山岳自然、避暑休闲",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "南阳市西峡县丹水镇",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾：导航至“西峡恐龙遗迹园南门”或“老界岭西门停车场”，停车便利。\n公共交通：高铁至南阳东站后，转乘大巴或包车前往西峡县；或从南阳汽车西站乘班车至太平镇（老界岭）。",
-          "internal_arrive": "恐龙遗迹园：建议从南门入园，门口有大型停车场，入园后直接购买观光车票。\n老界岭：建议从西门（骆驼峰停车场）入园，目前东门可能处于关闭状态，具体以官方当日公告为准。",
-          "internal_traffic": "恐龙遗迹园：园区较大，强烈建议购买费用以官方当日公告为准的环线观光车票，可直达各核心展馆，省去爬坡走路。\n老界岭：必须乘坐景交车（费用以官方当日公告为准）到达索道下站；建议购买往返索道票直达山顶；下山可选择费用以官方当日公告为准的山地滑道，对膝盖非常友好。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "西峡县城：餐饮选择多，性价比高，适合第一天游玩恐龙园后入住。\n太平镇/老界岭山下：多为民宿和农家乐，适合第二天一早进山避暑，部分民宿可能赠送景区门票或索道票，预订前需确认。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "老界岭徒步上山路段陡峭且无风景，务必乘坐索道上山；下山尽量使用滑道或索道，避免膝盖受损；山顶气温较低，需备薄外套",
-          "children": "恐龙园全程平路，可推婴儿车，仿真恐龙和互动剧场孩子很喜欢；老界岭分水岭是极佳的地理科普点，但需注意防风保暖，带好零食和水。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "两日科普避暑省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "Day 1 恐龙探秘：地质科普广场",
-            "恐龙蛋化石博物馆（可体验9D飞跃剧场）",
-            "乘坐观光车",
-            "中国西峡恐龙馆（看巨型阿根廷龙骨架）",
-            "恐龙蛋遗址馆（236米地下隧道看原生化石）",
-            "户外仿真恐龙园\nDay 2 伏牛吸氧：乘坐景交车至索道下站",
-            "索道上山",
-            "分水岭（一脚踏南北打卡）",
-            "1830云顶咖啡观景",
-            "神女峰观景台",
-            "乘坐山地滑道下山"
-          ],
-          "duration": "半天",
-          "walking": "约3000米（主要在山顶栈道和室内展馆）",
-          "physical": 2,
-          "tips": [
-            "两个景区相距约40-50分钟车程，建议第一天住西峡县城，第二天住太平镇或老界岭山下，避免每天折返跑。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 中国西峡恐龙遗迹园",
-          "url": "https://www.amap.com/place/B0G3VXEC4B",
-          "poiId": "B0G3VXEC4B",
-          "evidenceMode": "existing-amap-record",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "伏牛山老界岭恐龙遗迹园旅游区 西峡恐龙遗迹园,这个位于河南省南阳",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5215625620281569844",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5215625620281569844",
-        "width": 1419,
-        "height": 1064
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      },
-      "ratingAudit": {
-        "selected": "高德地图",
-        "status": "inherited-after-identity-heal",
-        "existingId": "amap_B0G3VXEC4B"
-      }
-    },
-    "amap_B017308CXT": {
-      "baselineKey": "core_1c7e7d0167",
-      "id": "amap_B017308CXT",
-      "name": "嵩山少林景区",
-      "city": "登封",
-      "rating": 4.5,
-      "reviewsCount": "17311条携程点评",
-      "image": "/assets/images/attractions/henan_32fe064_verified.jpg",
-      "description": "都说“天下武功出少林”，别说从小深受少林功夫影响的国人，许多国际友人到了河南，也都会去嵩山少林景区看看。这里不仅是天下武林圣地，也是佛教禅宗祖庭。",
-      "intro": "都说“天下武功出少林”，别说从小深受少林功夫影响的国人，许多国际友人到了河南，也都会去嵩山少林景区看看。这里不仅是天下武林圣地，也是佛教禅宗祖庭。",
-      "level": "5A景区",
-      "category": "人文古迹、自然山水",
-      "tags": [
-        "人文古迹、自然山水",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "河南省郑州市登封市G207嵩山少林风景区",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至“嵩山少林寺景区生态停车场”或“少林武僧塑像”附近停车场；从郑州出发自驾约1.5-2小时。公共交通可在郑州中心汽车站或郑州东站高铁长途汽车枢纽站乘坐大巴至登封客运总站，再转乘当地交通工具前往景区。",
-          "internal_arrive": "建议从少林寺游客中心（少室山入口）进入，此处配套完善，且能顺路游览核心人文景点，避开三皇寨入口的长距离爬升。",
-          "internal_traffic": "景区内主要依靠观光车（摆渡车）和索道。观光车连接游客中心、武术馆、少林寺和塔林；少林索道连接塔林附近与书册崖，是省力看全景的核心工具。景区内也可租赁四人电动小观光车代步。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在登封市区（如嵩阳书院游客中心附近），酒店选择多、餐饮丰富且性价比高；若追求便捷，也可选择景区外的农家乐或周边酒店，但条件相对基础。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "全程以观光车和索道代步，避免攀登好汉坡和陡峭台阶，在少林寺常住院和塔林等平缓区域慢走游览，注意膝盖保暖",
-          "children": "下午错峰入园可避开暴晒和人流，全程平坦路段较多，婴儿车基本可通行；务必备好零食、水和驱蚊液，切勿带幼童前往书册崖狭窄栈道。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "少室山精华省力游（索道+观光车）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "景区游客中心",
-            "乘坐观光车",
-            "少林寺武术馆（观看功夫表演）",
-            "少林寺常住院（山门",
-            "大雄宝殿",
-            "藏经阁）",
-            "塔林",
-            "少林索道",
-            "书册崖（观景拍照）",
-            "原路索道下山",
-            "乘坐观光车返程"
-          ],
-          "duration": "半天",
-          "walking": "约4-5公里（平缓步道为主）",
-          "physical": 2,
-          "tips": [
-            "建议购买观光车往返票，从游客中心到索道站距离较远，坐车能省下大量体力；书册崖风景绝佳但栈道较窄，带幼儿的家庭建议在平台休息，不要让幼儿进入狭窄栈道。"
-          ],
-          "sourceTitle": "携程旅行 嵩山少林景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "携程旅行 嵩山少林景区 详情页：https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
-          "高德地图 嵩山少林牌坊：https://www.amap.com/place/B0FFFP1MWC"
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/henan100058.html",
+          "携程旅行 洛阳博物馆 详情页：https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online"
         ],
         "ratingSource": {
           "platform": "携程",
-          "title": "携程旅行 嵩山少林景区 详情页",
-          "url": "https://you.ctrip.com/sight/dengfeng1014/7954.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
+          "title": "携程旅行 洛阳博物馆 详情页",
+          "url": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
         },
-        "basicInfoUpdatedAt": "2026-08-19",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "嵩山少林景区 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0FFFP1MWC",
-        "width": 2304,
-        "height": 1728
+        "title": "洛阳博物馆 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
+        "width": 2500,
+        "height": 1631
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_2b988f2b42",
+      "id": "manual_henan_98e4faf6",
+      "name": "宋都皇城旅游度假区",
+      "city": "开封",
+      "rating": 4.5,
+      "reviewsCount": "174条携程点评",
+      "image": "/assets/images/attractions/henan_98e4faf6_verified.jpg",
+      "description": "开封宋都皇城旅游度假区位于千年未变的中轴线——北宋东京城内皇宫所在地，是宋都皇家文化的核心区，也是开封文化旅游的核心区，有着无可替代的文化价值。 \\n度假区内文化旅游资源丰富，区内包含10个景点，大宋武侠城、中国翰园、铁塔景区、启封故园、城墙、州桥及汴河遗址、山陕甘会馆、延庆观、繁塔、地下战备粮库。",
+      "intro": "开封宋都皇城旅游度假区位于千年未变的中轴线——北宋东京城内皇宫所在地，是宋都皇家文化的核心区，也是开封文化旅游的核心区，有着无可替代的文化价值。 \\n度假区内文化旅游资源丰富，区内包含10个景点，大宋武侠城、中国翰园、铁塔景区、启封故园、城墙、州桥及汴河遗址、山陕甘会馆、延庆观、繁塔、地下战备粮库。",
+      "level": "热门景点",
+      "category": "人文历史、仿宋园林、亲子休闲度假区",
+      "tags": [
+        "人文历史、仿宋园林、亲子休闲度假区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "河南省开封市龙亭区东京大道辅路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁可至开封北站或开封站，打车或乘公交前往景区；自驾可导航至度假区周边智慧停车场，停车后步行或换乘接驳车入园。",
+          "internal_arrive": "推荐从清明上河园南门进入，此处临近主干道，交通方便，且入园后能迅速进入核心游览区。",
+          "internal_traffic": "度假区内景点相对集中，主要靠步行；也可在街区使用共享单车，或乘坐大宋御河游船、景区接驳车等省力方式。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在清明上河园、龙亭或七盛角周边的民宿与酒店，如宋潮双龙巷客栈、开封铂尔曼酒店等，方便步行前往各大景点，晚上还能逛夜市。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "河南烩面",
+          "逍遥镇胡辣汤",
+          "开封灌汤包",
+          "道口烧鸡"
+        ],
+        "special_care": {
+          "elderly": "园区内演出较多，可多选择坐着观看的表演，避开长时间徒步；利用游船和接驳车节省体力，中午回酒店休息再逛夜景",
+          "children": "带娃可重点看水傀儡、马战等互动性强的实景演出，在虹桥和御街体验投壶、射箭等宋代游戏，增加趣味性。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "清明上河园沉浸式宋韵半日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "清明上河园南门入园",
+            "虹桥（打卡《清明上河图》核心场景）",
+            "水傀儡（观看水上非遗表演）",
+            "岳飞枪挑小梁王（大型马战实景演出）",
+            "大宋·保卫战（沉浸式战争演艺）",
+            "园区夜景灯光（感受梦回大宋氛围）"
+          ],
+          "duration": "半天",
+          "walking": "约8000步",
+          "physical": 3,
+          "tips": [
+            "园区内演出密集，建议入园后先领取或查看电子节目单，根据演出时间灵活调整路线，提前15-20分钟去热门演出区占位；可租宋制汉服拍照，沉浸感更强。"
+          ],
+          "sourceTitle": "携程旅行 宋都皇城旅游度假区 详情页",
+          "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/henan100058.html",
+          "携程旅行 宋都皇城旅游度假区 详情页：https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online"
+        ],
+        "ratingSource": {
+          "platform": "携程",
+          "title": "携程旅行 宋都皇城旅游度假区 详情页",
+          "url": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
+          "verifiedAt": "2026-08-21"
+        },
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "宋都皇城旅游度假区 景点页实景图",
+        "author": "景点页公开图片提供者",
+        "provider": "携程景点页面",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
+        "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
+        "width": 5648,
+        "height": 3700
       },
       "quality_status": {
         "reviewRequired": false,
         "warnings": []
       }
     }
-  },
-  "selfHealActions": [
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "amap_B0G3VXEC4B",
-      "keptName": "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
-      "removedId": "manual_henan_7cfba65b",
-      "removedName": "西峡恐龙遗迹园-伏牛山-老界岭旅游区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "amap_B017308CXT",
-      "keptName": "嵩山少林景区",
-      "removedId": "manual_henan_32fe064",
-      "removedName": "嵩山少林景区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    }
   ],
-  "reviewedAt": "2026-08-19",
-  "reviewedAtIso": "2026-08-19T01:32:01.814Z",
-  "appliedAt": "2026-08-19T01:35:05.730Z",
+  "overrides": {},
+  "reviewedAt": "2026-08-21",
+  "reviewedAtIso": "2026-08-21T02:55:43.506Z",
+  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "batchSelectedKeys": [
+    "core_defe8a5f52",
+    "core_2b988f2b42"
+  ],
+  "appliedAt": "2026-08-21T03:40:30.814Z",
   "appliedAttractionIds": [
-    "manual_henan_4cf7277",
-    "manual_henan_2ab7d82e",
-    "manual_henan_60783292",
-    "manual_henan_d1f3ec17",
-    "manual_henan_9ef49495",
-    "manual_henan_b9e84119",
-    "manual_henan_93bc648d",
-    "manual_henan_f412adc1",
-    "manual_henan_b8b8d8cd",
-    "manual_henan_7fa05c4c",
-    "manual_henan_6ad24665"
+    "manual_henan_2eb0b922",
+    "manual_henan_98e4faf6"
   ],
-  "appliedOverrideIds": [
-    "amap_B0G3VXEC4B",
-    "amap_B017308CXT"
-  ]
+  "appliedOverrideIds": []
 }

@@ -21,6 +21,13 @@
         "incomingName": "羌城旅游区",
         "decidedAt": "2026-08-19T06:35:54.561Z"
       }
+    },
+    "江苏": {
+      "core_6a869bedb2": {
+        "action": "keep_new",
+        "incomingName": "太湖旅游区",
+        "decidedAt": "2026-08-21T03:17:27.165Z"
+      }
     }
   }
 }
