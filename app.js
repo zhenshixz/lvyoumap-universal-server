@@ -1,3 +1,30 @@
+
+function toHighResImageUrl(url) {
+  if (!url || typeof url !== 'string') return url || '';
+  if (url.includes('store.is.autonavi.com/showpic/')) {
+    if (url.includes('type=7')) return url;
+    if (url.includes('type=')) return url.replace(/([?&])type=[^&]*/, '$1type=7');
+    return url + (url.includes('?') ? '&type=7' : '?type=7');
+  }
+  if (url.includes('aos-comment.amap.com/') && /_\d+_\d+_\d+\.jpg$/i.test(url)) {
+    return url.replace(/_\d+_\d+_\d+\.jpg$/i, '_2048_2048_80.jpg');
+  }
+  return url;
+}
+window.toHighResImageUrl = toHighResImageUrl;
+
+
+function escapeHtml(value = "") {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  }[ch] || ch));
+}
+window.escapeHtml = escapeHtml;
+
 // 中国旅游地图 App 核心逻辑
 
 // 1. 城市到省份的映射
@@ -30,7 +57,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260813_beijing_preview_v3";
+const STATIC_DATA_VERSION = "20260824_all_amap_hd_v5";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
@@ -1991,6 +2018,32 @@ async function openDetailModal(attraction) {
   if (basicTipEl) basicTipEl.textContent = attraction.tips || "建议结合景区公告、实时交通和现场开放情况安排行程。";
   renderModalFeatureTags(attraction);
 
+  // ==========================================
+  // 🌟 动态渲染【热门子景点】(sub_spots) 画廊
+  // ==========================================
+  const subspotsContainer = document.getElementById("modal-subspots-container");
+  const subspotsPill = document.getElementById("modal-subspots-count-pill");
+  const subspotsGrid = document.getElementById("modal-subspots-grid");
+  if (subspotsContainer && subspotsGrid) {
+    if (attraction.sub_spots && Array.isArray(attraction.sub_spots) && attraction.sub_spots.length > 0) {
+      if (subspotsPill) subspotsPill.textContent = `${attraction.sub_spots.length} 处精选`;
+      subspotsGrid.setAttribute("data-count", String(Math.min(attraction.sub_spots.length, 6)));
+      subspotsGrid.innerHTML = attraction.sub_spots.map(s => `
+        <div class="subspot-cell-card" data-name="${escapeHtml(s.name)}" data-img="${escapeHtml(s.image)}" onclick="viewSubspotLargeImage(this.dataset.name, toHighResImageUrl(this.dataset.img))">
+          <div class="subspot-img-box">
+            <img src="${escapeHtml(s.image)}" alt="${escapeHtml(s.name)}" loading="lazy">
+          </div>
+          <div class="subspot-cell-name">${escapeHtml(s.name)}</div>
+        </div>
+      `).join('');
+      subspotsContainer.style.display = "block";
+    } else {
+      subspotsContainer.style.display = "none";
+      subspotsGrid.innerHTML = "";
+    }
+  }
+
+
   const scorePanel = document.getElementById("score-chart-panel");
   const scoreKeys = ["scenery", "traffic", "cost", "service", "crowd"];
   const hasRealScores = attraction.scores && scoreKeys.every(key => Number.isFinite(Number(attraction.scores[key])) && Number(attraction.scores[key]) > 0);
@@ -3502,3 +3555,31 @@ function openLoginModal() {
 function closeLoginModal() {
   document.getElementById('login-modal').style.display = 'none';
 }
+
+
+let _subspotOriginalModalImg = '';
+let _subspotOriginalModalTitle = '';
+
+function viewSubspotLargeImage(subName, subImg) {
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const detailModal = document.getElementById('detail-modal');
+  if (modalImg && modalTitle && detailModal) {
+    if (!_subspotOriginalModalImg) {
+      _subspotOriginalModalImg = modalImg.src;
+      _subspotOriginalModalTitle = modalTitle.textContent;
+    }
+    modalImg.src = subImg;
+    modalTitle.textContent = modalTitle.textContent.split(' · ')[0] + ' · ' + subName;
+    detailModal.classList.add('image-viewer-active');
+    const closeBtn = document.getElementById('modal-close');
+    if (closeBtn) {
+      closeBtn.title = '返回详情';
+      closeBtn.setAttribute('aria-label', '返回景点详情');
+    }
+  }
+}
+window.viewSubspotLargeImage = viewSubspotLargeImage;
+
+window.openDetailModal = openDetailModal;
+window.closeModal = closeModal;

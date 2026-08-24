@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="中国旅游地图 - 发现中国之美">
   <meta name="twitter:description" content="浏览中国各省市热门景点、旅行指南和实时天气，发现适合家人出行的目的地。">
   <meta name="twitter:image" content="https://xzmap.xzbest.site/assets/images/china_map_base.png">
-  <link rel="stylesheet" href="style.css?v=20260612_tablet_card_fix">
+  <link rel="stylesheet" href="style.css?v=20260824_all_amap_hd_v5">
 </head>
 
 <body>
@@ -557,6 +557,15 @@
               </div>
               <div class="info-practical-note">票务、开放时间可能随季节和节假日调整，出发前建议再核对一次。</div>
             </div>
+          
+            <!-- 🌟 底部横向全宽大卡片：热门子景点 🌟 -->
+            <div class="info-overview-card" id="modal-subspots-container" style="grid-column: 1 / -1; margin-top: 14px; padding: 14px 16px; display: none;">
+              <div class="info-section-header">
+                <h4 class="info-section-title">热门子景点</h4>
+                <span class="info-source-pill" id="modal-subspots-count-pill"></span>
+              </div>
+              <div class="subspot-grid" id="modal-subspots-grid"></div>
+            </div>
           </div>
         </div>
 
@@ -641,7 +650,7 @@
 
   <!-- 加载基础数据与逻辑代码 -->
   <script src="china_geo.js"></script>
-  <script src="app.js?v=20260613_map_loader_restore_v6"></script>
+  <script src="app.js?v=20260824_all_amap_hd_v5"></script>
 </body>
 
 </html>

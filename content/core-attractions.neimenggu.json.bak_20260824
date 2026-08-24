@@ -1,0 +1,1032 @@
+{
+  "province": "内蒙古",
+  "checkedAt": "2026-08-21",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=neimenggu&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/innermongolia100062.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 8,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 4,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 4,
+    "priorityObservationCount": 4,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 8,
+  "officialResortCandidateCount": 1,
+  "popularityCount": 15,
+  "existingRecordBoundCount": 15,
+  "existingRecordUnboundCount": 8,
+  "existingRecordUnboundNames": [
+    "阿拉善盟胡杨林旅游区",
+    "兴安盟阿尔山-柴河旅游景区",
+    "中俄边境旅游区",
+    "响沙湾旅游景区",
+    "内蒙古博物院",
+    "康巴什乌兰木伦湖",
+    "黑山头",
+    "恩和俄罗斯民族乡"
+  ],
+  "mergedDuplicateCount": 0,
+  "mergedDuplicates": [],
+  "reviewCandidateCount": 4,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 4,
+  "priorityObservationCandidates": [
+    {
+      "name": "乌兰湖",
+      "city": "",
+      "aliases": [
+        "乌兰湖"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "大召寺",
+      "city": "",
+      "aliases": [
+        "大召寺"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "阿尔山国家森林公园",
+      "city": "",
+      "aliases": [
+        "阿尔山国家森林公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E20MQ8X",
+              "name": "阿尔山白狼峰景区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E2002BL",
+              "name": "阿尔山国家森林公园天池",
+              "city": "兴安"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "满洲里国门景区",
+      "city": "",
+      "aliases": [
+        "满洲里国门景区",
+        "满洲里国门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 4,
+  "observationCandidates": [
+    {
+      "name": "乌兰湖",
+      "city": "",
+      "aliases": [
+        "乌兰湖"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "大召寺",
+      "city": "",
+      "aliases": [
+        "大召寺"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "阿尔山国家森林公园",
+      "city": "",
+      "aliases": [
+        "阿尔山国家森林公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E20MQ8X",
+              "name": "阿尔山白狼峰景区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E2002BL",
+              "name": "阿尔山国家森林公园天池",
+              "city": "兴安"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "满洲里国门景区",
+      "city": "",
+      "aliases": [
+        "满洲里国门景区",
+        "满洲里国门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "乌兰湖",
+      "city": "",
+      "aliases": [
+        "乌兰湖"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 1,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "大召寺",
+      "city": "",
+      "aliases": [
+        "大召寺"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "阿尔山国家森林公园",
+      "city": "",
+      "aliases": [
+        "阿尔山国家森林公园"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 6,
+      "amapRank": 0,
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0FFF9W5YP",
+              "name": "阿尔山国家森林公园",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E20MQ8X",
+              "name": "阿尔山白狼峰景区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B0J19Z1IFU",
+              "name": "阿尔山旅游度假区",
+              "city": "兴安"
+            },
+            {
+              "id": "amap_B01E2002BL",
+              "name": "阿尔山国家森林公园天池",
+              "city": "兴安"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "满洲里国门景区",
+      "city": "",
+      "aliases": [
+        "满洲里国门景区",
+        "满洲里国门"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 9,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 8,
+    "verifiedCount": 4,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 4,
+    "warnings": []
+  },
+  "attractions": [
+    {
+      "key": "core_354f80a2ea",
+      "name": "老牛湾黄河大峡谷旅游区",
+      "preferredId": "amap_B0FFJBSI4V",
+      "aliases": [
+        "老牛湾黄河大峡谷旅游区",
+        "呼和浩特市老牛湾黄河大峡谷旅游区",
+        "老牛湾黄河大峡谷"
+      ],
+      "city": "呼和浩特",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_0668a2aa2f",
+      "name": "呼伦贝尔大草原·莫尔格勒河景区",
+      "preferredId": "amap_B0JDZ5C6RX",
+      "aliases": [
+        "呼伦贝尔大草原·莫尔格勒河景区",
+        "呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区",
+        "呼伦贝尔大草原·莫尔格勒河"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_17eb083f11",
+      "name": "阿拉善盟胡杨林旅游区",
+      "preferredId": "manual_neimenggu_4eeebd7",
+      "aliases": [
+        "阿拉善盟胡杨林旅游区",
+        "阿拉善盟胡杨林"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_03451d71f8",
+      "name": "阿斯哈图石林景区",
+      "preferredId": "amap_B01DC0JKMK",
+      "aliases": [
+        "阿斯哈图石林景区",
+        "赤峰市阿斯哈图石林景区",
+        "阿斯哈图石林"
+      ],
+      "city": "赤峰",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_9ef55b07b9",
+      "name": "兴安盟阿尔山-柴河旅游景区",
+      "preferredId": "amap_B0FFF9W5YP",
+      "aliases": [
+        "兴安盟阿尔山-柴河旅游景区",
+        "兴安盟阿尔山-柴河",
+        "兴安盟阿尔山",
+        "柴河",
+        "柴河山"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2017年"
+    },
+    {
+      "key": "core_c7cd00c40f",
+      "name": "中俄边境旅游区",
+      "preferredId": "amap_B0JUM59JUX",
+      "aliases": [
+        "中俄边境旅游区",
+        "呼伦贝尔市中俄边境旅游区",
+        "中俄边境"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2016年"
+    },
+    {
+      "key": "core_44d2ea7ce6",
+      "name": "成吉思汗陵旅游区",
+      "preferredId": "amap_B0H64RJTHB",
+      "aliases": [
+        "成吉思汗陵旅游区",
+        "鄂尔多斯市成吉思汗陵旅游区",
+        "成吉思汗陵"
+      ],
+      "city": "鄂尔多斯",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_5bc5600ac3",
+      "name": "响沙湾旅游景区",
+      "preferredId": "amap_B01DD008IM",
+      "aliases": [
+        "响沙湾旅游景区",
+        "鄂尔多斯市响沙湾旅游景区",
+        "响沙湾"
+      ],
+      "city": "鄂尔多斯",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_822f28bf66",
+      "name": "乌兰布统旅游区",
+      "preferredId": "amap_B0FFH6KSEH",
+      "aliases": [
+        "乌兰布统旅游区",
+        "乌兰布统",
+        "乌兰布统景区"
+      ],
+      "city": "赤峰",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 5,
+        "amapRank": 2
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7c0e6242a1",
+      "name": "乌兰哈达火山地质公园",
+      "preferredId": "amap_B0FFJ0ZPOT",
+      "aliases": [
+        "乌兰哈达火山地质公园",
+        "乌兰哈达火山景区"
+      ],
+      "city": "乌兰察布",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": 31
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_643262c003",
+      "name": "内蒙古博物院",
+      "preferredId": "manual_neimenggu_c40d865a",
+      "aliases": [
+        "内蒙古博物院"
+      ],
+      "city": "呼和浩特",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "呼和浩特",
+          "page": 1,
+          "name": "内蒙古博物院(新馆)",
+          "url": "https://you.ctrip.com/sight/hohhot156/111989682.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_e8ae7b20e6",
+      "name": "康巴什乌兰木伦湖",
+      "preferredId": "amap_B0FFFE3VE2",
+      "aliases": [
+        "康巴什乌兰木伦湖"
+      ],
+      "city": "鄂尔多斯",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [
+        {
+          "type": "ambiguous_local_match",
+          "matches": [
+            {
+              "id": "amap_B0FFFE3VE2",
+              "name": "乌兰木伦湖",
+              "city": "鄂尔多斯"
+            },
+            {
+              "id": "amap_B0IUV5NMIG",
+              "name": "康巴什乌兰木伦湖音乐喷泉",
+              "city": "鄂尔多斯"
+            }
+          ]
+        }
+      ],
+      "secondaryEvidence": [
+        {
+          "source": "amap_ambiguous",
+          "candidates": [
+            {
+              "id": "amap_B0FFFE3VE2",
+              "name": "乌兰木伦湖",
+              "city": "鄂尔多斯"
+            },
+            {
+              "id": "amap_B0IUV5NMIG",
+              "name": "康巴什乌兰木伦湖音乐喷泉",
+              "city": "鄂尔多斯"
+            }
+          ]
+        },
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "鄂尔多斯",
+          "page": 3,
+          "name": "康巴什乌兰木伦湖音乐喷泉",
+          "url": "https://you.ctrip.com/sight/ordos600/145498029.html?poiType=3&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_b7988b71e8",
+      "name": "黑山头",
+      "preferredId": "manual_neimenggu_75b23616",
+      "aliases": [
+        "黑山头"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "ctrip_city_sightlist",
+          "city": "呼伦贝尔",
+          "page": 2,
+          "name": "黑山头哈撒尔马场",
+          "url": "https://you.ctrip.com/sight/ergun2026/5712964.html?poiType=66&scene=online"
+        }
+      ]
+    },
+    {
+      "key": "core_025705728e",
+      "name": "恩和俄罗斯民族乡",
+      "preferredId": "manual_neimenggu_b3a19358",
+      "aliases": [
+        "恩和俄罗斯民族乡"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [
+        {
+          "source": "amap_live_web_service",
+          "id": "B0FFL8WP3Y",
+          "name": "恩和俄罗斯民族乡门楼",
+          "city": "呼伦贝尔市",
+          "type": "风景名胜;风景名胜相关;旅游景点",
+          "url": "https://www.amap.com/place/B0FFL8WP3Y",
+          "verifiedAt": "2026-08-19"
+        }
+      ]
+    },
+    {
+      "key": "core_67cc66286a",
+      "name": "黄花沟草原旅游度假区",
+      "preferredId": "amap_B01DA14HQE",
+      "aliases": [
+        "黄花沟草原旅游度假区"
+      ],
+      "city": "乌兰察布",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 4,
+        "amapRank": 33
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ac2e06e0d4",
+      "name": "额尔古纳湿地",
+      "preferredId": "amap_B0FFFGOSGZ",
+      "aliases": [
+        "额尔古纳湿地",
+        "额尔古纳湿地景区"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 12
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_2d5eccfe6b",
+      "name": "五当召",
+      "preferredId": "amap_B01D8023U7",
+      "aliases": [
+        "五当召"
+      ],
+      "city": "包头",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 16
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1513d77edf",
+      "name": "敕勒川草原",
+      "preferredId": "amap_B0G25SVB25",
+      "aliases": [
+        "敕勒川草原"
+      ],
+      "city": "呼和浩特",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 19
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1923f318a2",
+      "name": "大召无量寺",
+      "preferredId": "amap_B0FFHGT7VN",
+      "aliases": [
+        "大召无量寺",
+        "大召无量寺-大召广场"
+      ],
+      "city": "呼和浩特",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 30
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_7d97d5d7c1",
+      "name": "额济纳胡杨林",
+      "preferredId": "amap_B0HRTU5JUN",
+      "aliases": [
+        "额济纳胡杨林",
+        "额济纳胡杨林旅游区"
+      ],
+      "city": "阿拉善",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 45
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1ceda7e55c",
+      "name": "红石崖国家生态公园",
+      "preferredId": "amap_B0FFGCG9UX",
+      "aliases": [
+        "红石崖国家生态公园"
+      ],
+      "city": "乌兰察布",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 88
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_ed4ac340ce",
+      "name": "巴丹吉林沙漠",
+      "preferredId": "amap_B0FFK12OAN",
+      "aliases": [
+        "巴丹吉林沙漠",
+        "巴丹吉林沙漠旅游区"
+      ],
+      "city": "阿拉善",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 106
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_3b392a501d",
+      "name": "呼伦湖",
+      "preferredId": "amap_B01D60NHGR",
+      "aliases": [
+        "呼伦湖",
+        "内蒙古呼伦湖国家级自然保护区"
+      ],
+      "city": "呼伦贝尔",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": 127
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_12e549fb69",
+      "name": "大召寺",
+      "preferredId": "manual_neimenggu_ba72ed78",
+      "aliases": [
+        "大召寺"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_bbd2a0a869",
+      "name": "满洲里国门景区",
+      "preferredId": "manual_neimenggu_263da640",
+      "aliases": [
+        "满洲里国门景区",
+        "满洲里国门"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 9,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_f6d1c4266c",
+      "name": "乌兰湖",
+      "preferredId": "manual_neimenggu_d895838",
+      "aliases": [
+        "乌兰湖"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    }
+  ],
+  "counts": {
+    "attractions": 26
+  }
+}

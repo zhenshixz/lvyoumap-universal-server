@@ -4268,3 +4268,111 @@ body {
 .purple-tips { background: linear-gradient(to right, #f3e8ff, #ffffff); color: #6b21a8; border-left: 3px solid #9333ea; }
 .orange-tips { background: linear-gradient(to right, #ffedd5, #ffffff); color: #9a3412; border-left: 3px solid #ea580c; }
 .red-tips { background: linear-gradient(to right, #fee2e2, #ffffff); color: #991b1b; border-left: 3px solid #dc2626; }
+
+
+/* ==================== 热门子景点卡片与网格样式 (紧凑自适应版) ==================== */
+#modal-subspots-container {
+  grid-column: 1 / -1;
+  margin-top: 8px !important;
+  padding: 10px 14px !important;
+}
+
+.subspot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+@media (min-width: 901px) {
+  .subspot-grid[data-count="5"] {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .subspot-grid[data-count="6"] {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .subspot-grid[data-count="4"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .subspot-grid[data-count="3"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .subspot-grid[data-count="2"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .subspot-grid[data-count="1"] {
+    grid-template-columns: repeat(1, minmax(0, 200px));
+  }
+}
+
+@media (max-width: 900px) {
+  .subspot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .subspot-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin-top: 6px;
+  }
+  .subspot-cell-name {
+    font-size: 11px !important;
+    padding: 4px 2px !important;
+    font-weight: 700 !important;
+  }
+  .subspot-cell-card {
+    border-radius: 6px !important;
+  }
+  #modal-subspots-container {
+    padding: 8px 10px !important;
+    margin-top: 6px !important;
+  }
+}
+
+.subspot-cell-card {
+  background: var(--bg-primary, #f8fafc);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+.subspot-cell-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan, #0284c7);
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(2, 132, 199, 0.12);
+}
+.subspot-img-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+.subspot-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.subspot-cell-card:hover .subspot-img-box img {
+  transform: scale(1.06);
+}
+.subspot-cell-name {
+  padding: 5px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}

@@ -1,3 +1,17 @@
+
+function upgradeGaodeUrl(url) {
+  if (!url || typeof url !== 'string') return url;
+  if (url.includes('store.is.autonavi.com/showpic/')) {
+    if (url.includes('type=7')) return url;
+    if (url.includes('type=')) return url.replace(/([?&])type=[^&]*/, '$1type=7');
+    return url + (url.includes('?') ? '&type=7' : '?type=7');
+  }
+  if (url.includes('aos-comment.amap.com/') && /_\d+_\d+_\d+\.jpg$/i.test(url)) {
+    return url.replace(/_\d+_\d+_\d+\.jpg$/i, '_2048_2048_80.jpg');
+  }
+  return url;
+}
+
 const fs = require('fs');
 const path = require('path');
 
@@ -306,9 +320,10 @@ function buildSearchIndex(provinces) {
         price: attraction.price,
         intro: attraction.intro,
         address: attraction.address,
-        image: attraction.image,
+        image: upgradeGaodeUrl(attraction.image),
         image_source: attraction.image_source,
         tags: attraction.tags,
+        sub_spots: attraction.sub_spots,
       });
     }
   }

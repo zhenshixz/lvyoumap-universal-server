@@ -1,0 +1,1248 @@
+{
+  "province": "湖北",
+  "checkedAt": "2026-08-24",
+  "baselineStatus": "multi_source_ready",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "sources": {
+    "mct_national_5a_2025": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
+    "mct_national_tourism_resort": "https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
+    "xiaohongshu_core_candidates": "https://www.xiaohongshu.com/ai_chat_tab",
+    "ctrip_province_sightlist": "https://you.ctrip.com/sightlist/hubei100067.html",
+    "ctrip_city_sightlist": "携程各城市景点分页（由省级攻略页发现城市入口）",
+    "amap_local_snapshot": "content/db.json",
+    "dianping": "当前未接入，不计入本次交叉验证",
+    "official_attraction_site": "content/core-evidence-overrides.json 中人工核验的景点官网页面"
+  },
+  "sourceAvailability": {
+    "officialMct": true,
+    "ctrip": true,
+    "ctripCityPages": true,
+    "xiaohongshu": true,
+    "amapLocalSnapshot": true,
+    "amapLiveWebService": true,
+    "dianping": false
+  },
+  "qualityGate": {
+    "passed": true,
+    "sourcesComplete": true,
+    "selectedIssueCount": 0,
+    "selectedIssues": [],
+    "filteredTemporaryOtaCount": 0,
+    "filteredTemporaryOtaCandidates": [],
+    "secondaryEvidenceComplete": true,
+    "secondaryInputCandidateCount": 19,
+    "secondaryMissingInputNames": [],
+    "unresolvedAfterSecondaryCount": 19,
+    "blockingSingleSourceCount": 0,
+    "observationCount": 19,
+    "priorityObservationCount": 2,
+    "note": "质量门禁只阻断来源链路缺失或已入选项目的关键质量错误；单源候选完成二次补证后仍无法确认时进入观察池，不写入核心清单，也不阻断整省。省榜高位单源候选标记为优先观察，后续获得新证据时自动晋级。"
+  },
+  "amapSnapshotCount": 5330,
+  "officialCount": 16,
+  "officialResortCandidateCount": 3,
+  "popularityCount": 6,
+  "existingRecordBoundCount": 10,
+  "existingRecordUnboundCount": 12,
+  "existingRecordUnboundNames": [
+    "明显陵文化旅游景区",
+    "恩施州腾龙洞景区",
+    "木兰文化生态旅游区",
+    "东湖景区",
+    "神农架生态旅游区",
+    "恩施州神农溪纤夫文化旅游区",
+    "三峡大坝－屈原故里文化旅游区",
+    "三峡大坝旅游区",
+    "湖北省博物馆",
+    "交运两坝一峡游船",
+    "武汉黄陂区木兰湖旅游度假区",
+    "神农架木鱼旅游度假区"
+  ],
+  "mergedDuplicateCount": 1,
+  "mergedDuplicates": [
+    {
+      "kept": "恩施大峡谷",
+      "merged": "恩施大峡谷",
+      "preferredId": "amap_B02CE02V2J"
+    }
+  ],
+  "reviewCandidateCount": 19,
+  "blockingReviewCandidateCount": 0,
+  "blockingReviewCandidates": [],
+  "priorityObservationCandidateCount": 2,
+  "priorityObservationCandidates": [
+    {
+      "name": "神农架天生桥景区",
+      "city": "",
+      "aliases": [
+        "神农架天生桥景区",
+        "神农架天生桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "晴川阁",
+      "city": "",
+      "aliases": [
+        "晴川阁"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "observationCandidateCount": 19,
+  "observationCandidates": [
+    {
+      "name": "神农架天生桥景区",
+      "city": "",
+      "aliases": [
+        "神农架天生桥景区",
+        "神农架天生桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "晴川阁",
+      "city": "",
+      "aliases": [
+        "晴川阁"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "武当山",
+      "city": "十堰市（世界文化遗产",
+      "aliases": [
+        "武当山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "神农架",
+      "city": "神农架林区（世界自然遗产",
+      "aliases": [
+        "神农架"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "屏山峡谷",
+      "city": "恩施州（玻璃水与悬浮船出",
+      "aliases": [
+        "屏山峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "梭布垭石林",
+      "city": "恩施州（奥陶纪海底石林",
+      "aliases": [
+        "梭布垭石林"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "腾龙洞",
+      "city": "恩施州（中国已探明最大溶",
+      "aliases": [
+        "腾龙洞"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "三峡人家",
+      "city": "宜昌市（巴楚文化活化石",
+      "aliases": [
+        "三峡人家"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "清江画廊",
+      "city": "宜昌市（倒影峡与武落钟离",
+      "aliases": [
+        "清江画廊"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄鹤楼",
+      "city": "武汉市（江南三大名楼之首",
+      "aliases": [
+        "黄鹤楼"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "荆州古城",
+      "city": "荆州市（三国文化核心地",
+      "aliases": [
+        "荆州古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "古隆中",
+      "city": "襄阳市（三顾茅庐发生地",
+      "aliases": [
+        "古隆中"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "襄阳古城",
+      "city": "襄阳市（临汉江而建",
+      "aliases": [
+        "襄阳古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "东湖风景区",
+      "city": "武汉市（中国最大城中湖",
+      "aliases": [
+        "东湖风景区",
+        "东湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长江大桥",
+      "city": "武汉市（万里长江第一桥",
+      "aliases": [
+        "长江大桥"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "古德寺",
+      "city": "武汉市（中西融合特色寺庙",
+      "aliases": [
+        "古德寺"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黎黄陂路",
+      "city": "武汉市（民国复古街道",
+      "aliases": [
+        "黎黄陂路"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "恩施土司城",
+      "city": "恩施州（土家族文化核心地",
+      "aliases": [
+        "恩施土司城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "恩施女儿城",
+      "city": "恩施州（土家风情夜市与小",
+      "aliases": [
+        "恩施女儿城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "name": "神农架天生桥景区",
+      "city": "",
+      "aliases": [
+        "神农架天生桥景区",
+        "神农架天生桥"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 2,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "晴川阁",
+      "city": "",
+      "aliases": [
+        "晴川阁"
+      ],
+      "sources": [
+        "ctrip_popularity"
+      ],
+      "otaRank": 7,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "武当山",
+      "city": "十堰市（世界文化遗产",
+      "aliases": [
+        "武当山"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "神农架",
+      "city": "神农架林区（世界自然遗产",
+      "aliases": [
+        "神农架"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "屏山峡谷",
+      "city": "恩施州（玻璃水与悬浮船出",
+      "aliases": [
+        "屏山峡谷"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "梭布垭石林",
+      "city": "恩施州（奥陶纪海底石林",
+      "aliases": [
+        "梭布垭石林"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "腾龙洞",
+      "city": "恩施州（中国已探明最大溶",
+      "aliases": [
+        "腾龙洞"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "三峡人家",
+      "city": "宜昌市（巴楚文化活化石",
+      "aliases": [
+        "三峡人家"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "清江画廊",
+      "city": "宜昌市（倒影峡与武落钟离",
+      "aliases": [
+        "清江画廊"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黄鹤楼",
+      "city": "武汉市（江南三大名楼之首",
+      "aliases": [
+        "黄鹤楼"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "荆州古城",
+      "city": "荆州市（三国文化核心地",
+      "aliases": [
+        "荆州古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "古隆中",
+      "city": "襄阳市（三顾茅庐发生地",
+      "aliases": [
+        "古隆中"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "襄阳古城",
+      "city": "襄阳市（临汉江而建",
+      "aliases": [
+        "襄阳古城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "东湖风景区",
+      "city": "武汉市（中国最大城中湖",
+      "aliases": [
+        "东湖风景区",
+        "东湖"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "长江大桥",
+      "city": "武汉市（万里长江第一桥",
+      "aliases": [
+        "长江大桥"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "古德寺",
+      "city": "武汉市（中西融合特色寺庙",
+      "aliases": [
+        "古德寺"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "黎黄陂路",
+      "city": "武汉市（民国复古街道",
+      "aliases": [
+        "黎黄陂路"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "恩施土司城",
+      "city": "恩施州（土家族文化核心地",
+      "aliases": [
+        "恩施土司城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "name": "恩施女儿城",
+      "city": "恩施州（土家风情夜市与小",
+      "aliases": [
+        "恩施女儿城"
+      ],
+      "sources": [
+        "xiaohongshu_popularity"
+      ],
+      "otaRank": 0,
+      "amapRank": 0,
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    }
+  ],
+  "secondaryEvidenceSummary": {
+    "candidateCount": 19,
+    "verifiedCount": 0,
+    "coveredByCoreCount": 0,
+    "unresolvedCount": 19,
+    "warnings": [
+      "携程省级页未发现 十堰市（世界文化遗产 的城市入口。",
+      "携程省级页未发现 神农架林区（世界自然遗产 的城市入口。",
+      "携程省级页未发现 恩施州（玻璃水与悬浮船出 的城市入口。",
+      "携程省级页未发现 恩施州（奥陶纪海底石林 的城市入口。",
+      "携程省级页未发现 恩施州（中国已探明最大溶 的城市入口。",
+      "携程省级页未发现 宜昌市（巴楚文化活化石 的城市入口。",
+      "携程省级页未发现 宜昌市（倒影峡与武落钟离 的城市入口。",
+      "携程省级页未发现 武汉市（江南三大名楼之首 的城市入口。",
+      "携程省级页未发现 荆州市（三国文化核心地 的城市入口。",
+      "携程省级页未发现 襄阳市（三顾茅庐发生地 的城市入口。",
+      "携程省级页未发现 襄阳市（临汉江而建 的城市入口。",
+      "携程省级页未发现 武汉市（中国最大城中湖 的城市入口。",
+      "携程省级页未发现 武汉市（万里长江第一桥 的城市入口。",
+      "携程省级页未发现 武汉市（中西融合特色寺庙 的城市入口。",
+      "携程省级页未发现 武汉市（民国复古街道 的城市入口。",
+      "携程省级页未发现 恩施州（土家族文化核心地 的城市入口。",
+      "携程省级页未发现 恩施州（土家风情夜市与小 的城市入口。",
+      "神农架 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "三峡人家 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "清江画廊 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "襄阳古城 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "黎黄陂路 高德实时补证失败：CUQPS_HAS_EXCEEDED_THE_LIMIT"
+    ]
+  },
+  "attractions": [
+    {
+      "key": "core_7ff797b787",
+      "name": "麻城龟峰山景区",
+      "preferredId": "amap_B02C900BCS",
+      "aliases": [
+        "麻城龟峰山景区",
+        "黄冈市麻城龟峰山景区",
+        "麻城龟峰山"
+      ],
+      "city": "黄冈",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_28ba095f92",
+      "name": "明显陵文化旅游景区",
+      "preferredId": "manual_hubei_ec8d6277",
+      "aliases": [
+        "明显陵文化旅游景区",
+        "荆门市明显陵文化旅游景区",
+        "明显陵文化"
+      ],
+      "city": "荆门",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2024年"
+    },
+    {
+      "key": "core_47f76b4afa",
+      "name": "三峡大瀑布景区",
+      "preferredId": "amap_B02CD0Q5Q0",
+      "aliases": [
+        "三峡大瀑布景区",
+        "宜昌市三峡大瀑布景区",
+        "三峡大瀑布"
+      ],
+      "city": "宜昌",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2022年"
+    },
+    {
+      "key": "core_a7d4f02481",
+      "name": "恩施州腾龙洞景区",
+      "preferredId": "amap_B02CE00USF",
+      "aliases": [
+        "恩施州腾龙洞景区",
+        "恩施州腾龙洞"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2020年"
+    },
+    {
+      "key": "core_e7ed20bf27",
+      "name": "古隆中景区",
+      "preferredId": "amap_B02C6025OT",
+      "aliases": [
+        "古隆中景区",
+        "襄阳市古隆中景区",
+        "古隆中"
+      ],
+      "city": "襄阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2019年"
+    },
+    {
+      "key": "core_9b3eeb59e2",
+      "name": "三国赤壁古战场景区",
+      "preferredId": "amap_B02CB00553",
+      "aliases": [
+        "三国赤壁古战场景区",
+        "咸宁市三国赤壁古战场景区",
+        "三国赤壁古战场"
+      ],
+      "city": "咸宁",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2018年"
+    },
+    {
+      "key": "core_7ffb5bf792",
+      "name": "恩施大峡谷",
+      "preferredId": "amap_B02CE02V2J",
+      "aliases": [
+        "恩施州恩施大峡谷景区",
+        "恩施州恩施大峡谷",
+        "恩施大峡谷"
+      ],
+      "city": "恩施",
+      "tier": "national",
+      "basis": [
+        "official_5a",
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "mct_national_5a_2025",
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "officialYear": "2015年"
+    },
+    {
+      "key": "core_25c5cc1195",
+      "name": "木兰文化生态旅游区",
+      "preferredId": "manual_hubei_17d1dce8",
+      "aliases": [
+        "木兰文化生态旅游区",
+        "武汉市木兰文化生态旅游区",
+        "木兰文化生态"
+      ],
+      "city": "武汉",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2014年"
+    },
+    {
+      "key": "core_304f54869b",
+      "name": "东湖景区",
+      "preferredId": "manual_hubei_80d93676",
+      "aliases": [
+        "东湖景区",
+        "湖北省武汉市东湖景区",
+        "东湖"
+      ],
+      "city": "湖北省武汉",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_f001b82857",
+      "name": "清江画廊景区",
+      "preferredId": "amap_B02CD02EMJ",
+      "aliases": [
+        "清江画廊景区",
+        "宜昌市清江画廊景区",
+        "清江画廊"
+      ],
+      "city": "宜昌",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2013年"
+    },
+    {
+      "key": "core_5d4f80690e",
+      "name": "神农架生态旅游区",
+      "preferredId": "manual_hubei_5f88c6f6",
+      "aliases": [
+        "神农架生态旅游区",
+        "神农架生态"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2012年"
+    },
+    {
+      "key": "core_17d7377f80",
+      "name": "恩施州神农溪纤夫文化旅游区",
+      "preferredId": "manual_hubei_ac9f8291",
+      "aliases": [
+        "恩施州神农溪纤夫文化旅游区",
+        "恩施州神农溪纤夫文化"
+      ],
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_57c93b00e5",
+      "name": "武当山风景区",
+      "preferredId": "amap_B02CF00632",
+      "aliases": [
+        "武当山风景区",
+        "十堰市武当山风景区",
+        "武当山"
+      ],
+      "city": "十堰",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_5ece688aec",
+      "name": "三峡人家风景区",
+      "preferredId": "amap_B02CD01U6K",
+      "aliases": [
+        "三峡人家风景区",
+        "宜昌市三峡人家风景区",
+        "三峡人家"
+      ],
+      "city": "宜昌",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2011年"
+    },
+    {
+      "key": "core_a2b58e4c1d",
+      "name": "三峡大坝－屈原故里文化旅游区",
+      "preferredId": "manual_hubei_bfe22612",
+      "aliases": [
+        "三峡大坝－屈原故里文化旅游区",
+        "宜昌市三峡大坝－屈原故里文化旅游区",
+        "三峡大坝－屈原故里文化"
+      ],
+      "city": "宜昌",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_20597d04c5",
+      "name": "黄鹤楼公园",
+      "preferredId": "amap_B001B0IY32",
+      "aliases": [
+        "黄鹤楼公园",
+        "武汉市黄鹤楼公园"
+      ],
+      "city": "武汉",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "officialYear": "2007年"
+    },
+    {
+      "key": "core_f21499facc",
+      "name": "三峡大坝旅游区",
+      "preferredId": "manual_hubei_793c0d8f",
+      "aliases": [
+        "三峡大坝旅游区",
+        "三峡大坝"
+      ],
+      "city": "宜昌市（世界级水利工程",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 1,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_309041099f",
+      "name": "湖北省博物馆",
+      "preferredId": "manual_hubei_e1ce8136",
+      "aliases": [
+        "湖北省博物馆"
+      ],
+      "city": "武汉市（荆楚文化殿堂",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 6,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_1c4463a08f",
+      "name": "交运两坝一峡游船",
+      "preferredId": "manual_hubei_e72799a7",
+      "aliases": [
+        "交运两坝一峡游船"
+      ],
+      "city": "宜昌市（乘船游览葛洲坝、",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "sourceSignals": {
+        "otaRank": 10,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_e985a0d5cd",
+      "name": "恩施土司城",
+      "preferredId": "amap_B02CE005L9",
+      "aliases": [
+        "恩施土司城"
+      ],
+      "city": "恩施",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "sourceSignals": {
+        "otaRank": 3,
+        "amapRank": 88
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_91be0cae8e",
+      "name": "武汉黄陂区木兰湖旅游度假区",
+      "preferredId": "manual_hubei_c4546f40",
+      "aliases": [
+        "武汉黄陂区木兰湖旅游度假区"
+      ],
+      "city": "武汉",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_0a1ba28c44",
+      "name": "神农架木鱼旅游度假区",
+      "preferredId": "manual_hubei_5ad7f6b5",
+      "aliases": [
+        "神农架木鱼旅游度假区"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": []
+    },
+    {
+      "key": "core_20e623431e",
+      "name": "晴川阁",
+      "preferredId": "manual_hubei_c096421a",
+      "aliases": [
+        "晴川阁"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 7,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_b73cd770fd",
+      "name": "神农架天生桥景区",
+      "preferredId": "manual_hubei_1c27c052",
+      "aliases": [
+        "神农架天生桥景区",
+        "神农架天生桥"
+      ],
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": 2,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_eb2b7660db",
+      "name": "恩施女儿城",
+      "preferredId": "manual_hubei_92e58a5d",
+      "aliases": [
+        "恩施女儿城"
+      ],
+      "city": "恩施州（土家风情夜市与小",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_b221c07e1b",
+      "name": "古德寺",
+      "preferredId": "manual_hubei_6bed1926",
+      "aliases": [
+        "古德寺"
+      ],
+      "city": "武汉市（中西融合特色寺庙",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_caaee17b05",
+      "name": "黎黄陂路",
+      "preferredId": "manual_hubei_3e24e41d",
+      "aliases": [
+        "黎黄陂路"
+      ],
+      "city": "武汉市（民国复古街道",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    }
+  ],
+  "counts": {
+    "attractions": 27
+  }
+}
