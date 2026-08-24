@@ -4,9 +4,11 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const rootDir = path.resolve(__dirname, '..');
-const outputDir = path.join(rootDir, 'dist');
+const finalOutputDir = path.join(rootDir, 'dist');
+const outputDir = path.join(rootDir, '.dist-next');
+const backupOutputDir = path.join(rootDir, '.dist-previous');
 
-if (path.dirname(outputDir) !== rootDir || path.basename(outputDir) !== 'dist') {
+if (path.dirname(outputDir) !== rootDir || path.basename(outputDir) !== '.dist-next') {
   throw new Error(`Refusing to clean unexpected output directory: ${outputDir}`);
 }
 
@@ -51,41 +53,60 @@ execFileSync(process.execPath, [path.join(rootDir, 'scripts', 'generate_static_d
 fs.rmSync(outputDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
 
-for (const file of ['index.html', 'app.js', 'style.css', 'china.json', 'china_geo.js']) {
-  copyFile(file);
+try {
+  for (const file of ['index.html', 'app.js', 'style.css', 'china.json', 'china_geo.js']) {
+    copyFile(file);
+  }
+  for (const directory of ['assets', 'data', 'vendor']) {
+    copyDirectory(directory);
+  }
+
+  const indexPath = path.join(outputDir, 'index.html');
+  let indexHtml = fs.readFileSync(indexPath, 'utf8');
+  indexHtml = indexHtml
+    .replace(/style\.css(?:\?v=[^"']*)?/g, `style.css?v=${hashFile('style.css')}`)
+    .replace(/china_geo\.js(?:\?v=[^"']*)?/g, `china_geo.js?v=${hashFile('china_geo.js')}`)
+    .replace(/app\.js(?:\?v=[^"']*)?/g, `app.js?v=${hashFile('app.js')}`);
+  fs.writeFileSync(indexPath, indexHtml, 'utf8');
+
+  const files = listFiles(outputDir);
+  const nonAsciiPaths = files
+    .map((file) => path.relative(outputDir, file))
+    .filter((relativePath) => /[^\x00-\x7F]/.test(relativePath));
+  if (nonAsciiPaths.length > 0) {
+    throw new Error(`Deployment paths must be ASCII-only:\n${nonAsciiPaths.join('\n')}`);
+  }
+
+  const totalBytes = files.reduce((sum, file) => sum + fs.statSync(file).size, 0);
+  const largest = files
+    .map((file) => ({ file, size: fs.statSync(file).size }))
+    .sort((a, b) => b.size - a.size)[0];
+
+  const buildInfo = {
+    version: process.env.GITHUB_SHA || process.env.BUILD_VERSION || 'local',
+    builtAt: new Date().toISOString(),
+    files: files.length,
+  };
+  fs.writeFileSync(path.join(outputDir, 'build-info.json'), `${JSON.stringify(buildInfo, null, 2)}\n`);
+
+  // Only replace the last known-good build after the new build is complete.
+  // A killed terminal or interrupted copy can therefore never leave a partial dist.
+  fs.rmSync(backupOutputDir, { recursive: true, force: true });
+  if (fs.existsSync(finalOutputDir)) fs.renameSync(finalOutputDir, backupOutputDir);
+  try {
+    fs.renameSync(outputDir, finalOutputDir);
+  } catch (error) {
+    if (!fs.existsSync(finalOutputDir) && fs.existsSync(backupOutputDir)) {
+      fs.renameSync(backupOutputDir, finalOutputDir);
+    }
+    throw error;
+  }
+  fs.rmSync(backupOutputDir, { recursive: true, force: true });
+
+  console.log(`Universal server frontend ready: ${path.relative(rootDir, finalOutputDir)}`);
+  console.log(`Files: ${files.length + 1}; total: ${(totalBytes / 1024 / 1024).toFixed(2)} MiB`);
+  console.log(`Largest: ${path.relative(outputDir, largest.file)} (${(largest.size / 1024 / 1024).toFixed(2)} MiB)`);
+} catch (error) {
+  fs.rmSync(outputDir, { recursive: true, force: true });
+  throw error;
 }
-for (const directory of ['assets', 'data', 'vendor']) {
-  copyDirectory(directory);
-}
-
-const indexPath = path.join(outputDir, 'index.html');
-let indexHtml = fs.readFileSync(indexPath, 'utf8');
-indexHtml = indexHtml
-  .replace(/style\.css(?:\?v=[^"']*)?/g, `style.css?v=${hashFile('style.css')}`)
-  .replace(/china_geo\.js(?:\?v=[^"']*)?/g, `china_geo.js?v=${hashFile('china_geo.js')}`)
-  .replace(/app\.js(?:\?v=[^"']*)?/g, `app.js?v=${hashFile('app.js')}`);
-fs.writeFileSync(indexPath, indexHtml, 'utf8');
-
-const files = listFiles(outputDir);
-const nonAsciiPaths = files
-  .map((file) => path.relative(outputDir, file))
-  .filter((relativePath) => /[^\x00-\x7F]/.test(relativePath));
-if (nonAsciiPaths.length > 0) {
-  throw new Error(`Deployment paths must be ASCII-only:\n${nonAsciiPaths.join('\n')}`);
-}
-
-const totalBytes = files.reduce((sum, file) => sum + fs.statSync(file).size, 0);
-const largest = files
-  .map((file) => ({ file, size: fs.statSync(file).size }))
-  .sort((a, b) => b.size - a.size)[0];
-
-const buildInfo = {
-  version: process.env.GITHUB_SHA || process.env.BUILD_VERSION || 'local',
-  builtAt: new Date().toISOString(),
-  files: files.length,
-};
-fs.writeFileSync(path.join(outputDir, 'build-info.json'), `${JSON.stringify(buildInfo, null, 2)}\n`);
-
-console.log(`Universal server frontend ready: ${path.relative(rootDir, outputDir)}`);
-console.log(`Files: ${files.length + 1}; total: ${(totalBytes / 1024 / 1024).toFixed(2)} MiB`);
-console.log(`Largest: ${path.relative(outputDir, largest.file)} (${(largest.size / 1024 / 1024).toFixed(2)} MiB)`);

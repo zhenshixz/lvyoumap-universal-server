@@ -1,6 +1,6 @@
 {
   "province": "青海",
-  "checkedAt": "2026-08-19",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -986,6 +986,370 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_de731f9d86",
+      "name": "阿尼玛卿雪山",
+      "preferredId": "manual_qinghai_db211242",
+      "aliases": [
+        "阿尼玛卿雪山"
+      ],
+      "city": "果洛州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_f4e48f31d4",
+      "name": "德令哈克鲁克湖",
+      "preferredId": "manual_qinghai_a9c36946",
+      "aliases": [
+        "德令哈克鲁克湖"
+      ],
+      "city": "海西州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_3fc5fe88e3",
+      "name": "格尔木昆仑旅游区",
+      "preferredId": "manual_qinghai_47640b93",
+      "aliases": [
+        "格尔木昆仑旅游区",
+        "格尔木昆仑"
+      ],
+      "city": "海西州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_c054f044e9",
+      "name": "格尔木乌素特水上雅丹",
+      "preferredId": "amap_B0FFI14USI",
+      "aliases": [
+        "格尔木乌素特水上雅丹"
+      ],
+      "city": "海西州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_69468297cb",
+      "name": "金银滩草原",
+      "preferredId": "manual_qinghai_a9142fdb",
+      "aliases": [
+        "金银滩草原"
+      ],
+      "city": "海北州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_893d10a6ed",
+      "name": "坎布拉国家森林公园",
+      "preferredId": "manual_qinghai_51f62c78",
+      "aliases": [
+        "坎布拉国家森林公园"
+      ],
+      "city": "黄南州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_9b2a86193f",
+      "name": "冷湖火星营地",
+      "preferredId": "manual_qinghai_a0d2ed28",
+      "aliases": [
+        "冷湖火星营地"
+      ],
+      "city": "海西州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_465e9ea655",
+      "name": "茫崖艾肯泉",
+      "preferredId": "manual_qinghai_8b8fee50",
+      "aliases": [
+        "茫崖艾肯泉"
+      ],
+      "city": "海西州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_40fc310381",
+      "name": "门源百里油菜花",
+      "preferredId": "manual_qinghai_9f44bc66",
+      "aliases": [
+        "门源百里油菜花"
+      ],
+      "city": "海北州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_7da1434cf9",
+      "name": "孟达天池",
+      "preferredId": "manual_qinghai_8399e9d3",
+      "aliases": [
+        "孟达天池"
+      ],
+      "city": "临夏州/海东",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_689f7f8cf5",
+      "name": "年保玉则",
+      "preferredId": "manual_qinghai_f74409fb",
+      "aliases": [
+        "年保玉则"
+      ],
+      "city": "果洛州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_d96b7f0b0a",
+      "name": "祁连卓尔山",
+      "preferredId": "manual_qinghai_4a084b5c",
+      "aliases": [
+        "祁连卓尔山"
+      ],
+      "city": "海北州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_0d337a7b56",
+      "name": "同仁古城",
+      "preferredId": "manual_qinghai_5cb89d6f",
+      "aliases": [
+        "同仁古城"
+      ],
+      "city": "黄南州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_ab8dd510da",
+      "name": "同仁热贡艺术之乡",
+      "preferredId": "manual_qinghai_2be66709",
+      "aliases": [
+        "同仁热贡艺术之乡"
+      ],
+      "city": "黄南州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_4f364553f2",
+      "name": "原子城纪念馆",
+      "preferredId": "manual_qinghai_10198697",
+      "aliases": [
+        "原子城纪念馆"
+      ],
+      "city": "海北州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 28
+  }
 }

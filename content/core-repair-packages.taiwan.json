@@ -1,136 +1,32 @@
 {
   "province": "台湾",
   "status": "applied",
-  "createdAt": "2026-08-21T03:20:07.198Z",
-  "updatedAt": "2026-08-21T03:20:07.842Z",
+  "createdAt": "2026-08-21T09:33:12.544Z",
+  "updatedAt": "2026-08-24T03:12:58.499Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "平溪十分老街：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.taiwan.json",
   "attractions": [
     {
-      "baselineKey": "core_cc9dd06de9",
-      "id": "manual_taiwan_34c5d01c",
-      "name": "鲸世界赏鲸(花莲港)",
-      "city": "花莲",
-      "rating": 4.7,
-      "reviewsCount": "240条携程点评",
-      "image": "/assets/images/attractions/taiwan_34c5d01c_verified.jpg",
-      "description": "\\n每年 3月至 10 月是花莲海域的赏鲸和海豚的好时期，在这片海域中，我们拥有大翅鲸、抹香鲸、啄鲸、瓶鼻海豚、弗氏海豚、花纹海豚、飞旋海豚等 20 多种鲸豚。 \\n \\n经典赏鲸行程1.5~2小时！",
-      "intro": "\\n每年 3月至 10 月是花莲海域的赏鲸和海豚的好时期，在这片海域中，我们拥有大翅鲸、抹香鲸、啄鲸、瓶鼻海豚、弗氏海豚、花纹海豚、飞旋海豚等 20 多种鲸豚。 \\n \\n经典赏鲸行程1.5~2小时！",
+      "baselineKey": "core_003c8778d9",
+      "id": "manual_taiwan_32d494a4",
+      "name": "淡水老街",
+      "city": "新北",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/taiwan_32d494a4_verified.jpg",
+      "description": "淡水老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "淡水老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "海洋生态观光 / 赏鲸豚体验",
+      "category": "历史街区、美食商圈、河滨风光",
       "tags": [
-        "海洋生态观光 / 赏鲸豚体验",
+        "历史街区、美食商圈、河滨风光",
         "经典景点",
         "口碑热门"
       ],
-      "address": "台湾花莲县花莲市民享3街42号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
-        },
-        "transport": {
-          "external_arrive": "自驾可前往花莲港码头旁免费停车区；也可选择加购花莲市区接送服务，由专车直达码头。",
-          "internal_arrive": "提前30分钟抵达向日广场（花莲市民孝里港滨路35-1号）报到点，领取船票并完成安全说明。",
-          "internal_traffic": "登船后在室内观景区、户外甲板及二楼舱位间自由移动，无需额外乘坐交通工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在花莲市区或花莲火车站周边，距离码头较近，方便安排接送或自行前往。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "台湾卤肉饭",
-          "台湾蚵仔煎",
-          "红烧牛肉面",
-          "珍珠奶茶"
-        ],
-        "special_care": {
-          "elderly": "提前服用晕船药，穿着防风保暖外套，选择平稳舱位休息",
-          "children": "做好防晒，穿长裤防走光，全程听从船员安全指引，不随意攀爬栏杆。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力赏鲸半日游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "向日广场报到集合",
-            "行前解说室学习",
-            "登船出海",
-            "船头/二楼甲板观赏鲸豚",
-            "返港解散"
-          ],
-          "duration": "半天",
-          "walking": "较少，主要在码头与船舱间短距离移动",
-          "physical": 1,
-          "tips": [
-            "建议提前30分钟到达码头报到；上船后优先选择一楼船头或二楼半开放舱位观赏，视角更佳且不易晕船。"
-          ],
-          "sourceTitle": "携程旅行 鲸世界赏鲸(花莲港) 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/hualien1366/4731345.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
-          "携程旅行 鲸世界赏鲸(花莲港) 详情页：https://you.ctrip.com/sight/hualien1366/4731345.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 鲸世界赏鲸(花莲港) 详情页",
-          "url": "https://you.ctrip.com/sight/hualien1366/4731345.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "鲸世界赏鲸(花莲港) 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/hualien1366/4731345.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/hualien1366/4731345.html?poiType=66&scene=online",
-        "width": 3696,
-        "height": 2448
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_80304a9d16",
-      "id": "manual_taiwan_aa583d55",
-      "name": "猫空缆车",
-      "city": "台北",
-      "rating": 4.7,
-      "reviewsCount": "1014条携程点评",
-      "image": "/assets/images/attractions/taiwan_aa583d55_verified.jpg",
-      "description": "高空俯瞰美景，饱览大台北，乘坐全透明水晶车厢，抬头远观山景，低头饱览脚下途经风光，晚上搭乘还可以远眺台北夜景，连台北101也尽收眼底 猫空缆车一共四站，依序为动物园站、动物园内站、指南宫站及猫空站，全程大约17分钟。猫空缆车连接了猫空山区，在车厢里居高临下，可以看见整个。",
-      "intro": "高空俯瞰美景，饱览大台北，乘坐全透明水晶车厢，抬头远观山景，低头饱览脚下途经风光，晚上搭乘还可以远眺台北夜景，连台北101也尽收眼底 猫空缆车一共四站，依序为动物园站、动物园内站、指南宫站及猫空站，全程大约17分钟。猫空缆车连接了猫空山区，在车厢里居高临下，可以看见整个。",
-      "level": "热门景点",
-      "category": "观光缆车、茶园风光、自然步道",
-      "tags": [
-        "观光缆车、茶园风光、自然步道",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "台湾台北市文山区新光路二段8号",
+      "address": "新北（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -142,14 +38,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "搭乘台北捷运文湖线至动物园站，出站步行约5分钟即可到达缆车站；也可搭乘公车（如棕15、236等）至动物园站。",
-          "internal_arrive": "从捷运动物园站2号出口出站，跟随指示牌左转直行即可到达猫空缆车动物园站，指示清晰不易迷路。",
-          "internal_traffic": "缆车全线共设4站（动物园站、动物园南站、指南宫站、猫空站），可中途下车游玩，再凭票继续搭乘；若前往猫空站周边茶馆，出站后步行或搭乘当地出租车即可。",
+          "external_arrive": "搭乘台北捷运淡水信义线（红线）至淡水站；或自驾至国道1号台北交流道下，接省道台2乙线。",
+          "internal_arrive": "捷运淡水站1号出口出站，沿中正路步行约3分钟即可抵达老街核心区域。",
+          "internal_traffic": "以步行游览为主，前往渔人码头可搭乘公车或渡轮。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在台北市区（如捷运文湖线沿线）或文山区附近，方便当日往返猫空，夜间也可欣赏台北夜景。",
+            "area": "建议入住淡水老街周边或捷运淡水站附近的酒店，方便往返与觅食。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -160,30 +56,33 @@
           "珍珠奶茶"
         ],
         "special_care": {
-          "elderly": "缆车运行平稳，长辈可放心乘坐；樟树步道平缓且设有凉亭休息，适合长辈慢走；若行动不便，可使用轮椅或电动代步车搭乘缆车（尺寸需符合规定）",
-          "children": "水晶车厢的透明底板能让孩子体验“空中飞行”的新奇感；猫空站周边有茶霜淇淋等特色小吃，步道沿途也能观察自然生态，趣味性强。\n\n猫空缆车全长4.03公里，是台北市首座观光休憩缆车，连接动物园西侧与猫空山区，全程约20-30分钟。景区分为4个站点，沿途可俯瞰台北盆地、景美溪谷与连绵茶园，晴天还能远眺台北101。猫空站周边是百年茶乡，聚集了大量景观茶坊，提供木栅铁观音、文山包种茶品尝及茶香料理。此外，景区还设有樟树步道、猫空茶香环状步道等自然步道，以及茶文化DIY体验，适合家庭休闲出游。\n\n省力游览方案\n路线A（空中俯瞰+山顶轻徒步）：从捷运动物园站出发，乘坐猫空缆车直达猫空站。下车后沿平缓的樟树步道漫步至观景台，欣赏茶园风光与台北101夜景。全程步行约30分钟，体力消耗小，非常适合带长辈和小孩的家庭。\n路线B：不适用。\n实用贴士\n车厢选择：水晶车厢底部透明，视野震撼，但排队时间较长；普通车厢排队较快。建议去程坐水晶车厢（白天看风景），返程坐普通车厢（天黑后底部透明也看不到风景）。\n天气注意：山区天气变化快，夏季易有阵雨，建议携带雨具和防晒用品；恶劣天气时缆车可能暂停营运，出发前请以官方当日公告为准。\n无障碍设施：缆车支持轮椅及婴儿车搭乘（尺寸需符合规定），车厢内有工作人员协助进出，对行动不便者友好。\n周边搭配\n\n若时间充裕，可将猫空缆车与台北市立动物园串联游玩。建议先坐缆车上山，再乘缆车到动物园南站入园，一路下坡逛动物园，对推婴儿车的家庭非常省力。\n\n你这次去台北大概安排了几天行程？如果需要，我可以帮你把猫空和周边的景点串成一条更完整的路线。"
+          "elderly": "老街至河滨步道较为平缓，适合慢走；红毛城与部分古迹有缓坡，建议量力而行，多利用沿途休息区",
+          "children": "老街小吃丰富，可边走边吃；渔人码头河滨开阔，适合奔跑玩耍，但需注意河边安全。"
         }
       },
       "lazy_routes": [
         {
-          "title": "空中俯瞰+山顶茶园轻徒步（省力经典）",
+          "title": "老街美食与河滨夕阳省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "捷运动物园站2号出口",
-            "猫空缆车动物园站（乘坐水晶车厢）",
-            "猫空站",
-            "樟树步道",
-            "猫空观景台（眺望台北101与夜景）"
+            "捷运淡水站1号口出站",
+            "淡水老街（品尝阿给",
+            "鱼酥",
+            "铁蛋等小吃）",
+            "多田荣吉故居（日式建筑休憩）",
+            "真理大学（欣赏欧式校园与海景）",
+            "红毛城（俯瞰淡水河出海口）",
+            "淡水渔人码头（情人桥赏夕阳）"
           ],
           "duration": "半天",
-          "walking": "约30分钟（步道平缓）",
+          "walking": "约3至5公里（全程平缓，部分古迹区域有缓坡）",
           "physical": 2,
           "tips": [
-            "去程建议坐水晶车厢（白天视野好），返程坐普通车厢（天黑后底部透明也看不到风景）；樟树步道全程平缓、树荫多，非常适合家庭轻松漫步。"
+            "建议穿平底鞋，河滨风大需带外套；老街小吃建议多人分食以尝更多种类；避开周末节假日高峰体验更佳。"
           ],
-          "sourceTitle": "携程旅行 猫空缆车 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/taipei360/1407616.html?poiType=66&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -192,51 +91,48 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
-          "携程旅行 猫空缆车 详情页：https://you.ctrip.com/sight/taipei360/1407616.html?poiType=66&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q11152333 实体页：https://www.wikidata.org/wiki/Q11152333"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 猫空缆车 详情页",
-          "url": "https://you.ctrip.com/sight/taipei360/1407616.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "猫空缆车 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/taipei360/1407616.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/taipei360/1407616.html?poiType=66&scene=online",
-        "width": 1567,
-        "height": 1045
+        "title": "Tamsui 淡水老街 - panoramio (45).jpg",
+        "author": "susan curry",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tamsui_%E6%B7%A1%E6%B0%B4%E8%80%81%E8%A1%97_-_panoramio_(45).jpg",
+        "width": 3840,
+        "height": 2158
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     },
     {
-      "baselineKey": "core_ad3cfe78c5",
-      "id": "manual_taiwan_6584d83e",
-      "name": "台北101观景台",
-      "city": "台北",
-      "rating": 4.6,
-      "reviewsCount": "1642条携程点评",
-      "image": "/assets/images/attractions/taiwan_6584d83e_verified.jpg",
-      "description": "4/2至 8/31，89F 观景台年度特展《台湾怪可爱:星期一的布鲁斯云端特展》(Adorable Taiwan: Monday Bruce in the Cloud) 联手台湾人气原创插画 IP,将那只带着深沉黑眼圈、完美体现上班族心声的忧郁小兔「星期一的布鲁斯(MondayBruce)」带上海拔 382 公尺的高空。 将 89F 观景台全面翻转为全台高空「云端办公室」与「BRUCE'S LOUNGE」,邀您将地面烦恼一键切换成「飞行",
-      "intro": "4/2至 8/31，89F 观景台年度特展《台湾怪可爱:星期一的布鲁斯云端特展》(Adorable Taiwan: Monday Bruce in the Cloud) 联手台湾人气原创插画 IP,将那只带着深沉黑眼圈、完美体现上班族心声的忧郁小兔「星期一的布鲁斯(MondayBruce)」带上海拔 382 公尺的高空。 将 89F 观景台全面翻转为全台高空「云端办公室」与「BRUCE'S LOUNGE」,邀您将地面烦恼一键切换成「飞行",
+      "baselineKey": "core_d45c7ce8e6",
+      "id": "manual_taiwan_9f4822b",
+      "name": "九份老街",
+      "city": "新北",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/taiwan_9f4822b_verified.jpg",
+      "description": "九份老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "九份老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "城市地标观景",
+      "category": "老街 / 山城观景 / 怀旧文化",
       "tags": [
-        "城市地标观景",
+        "老街 / 山城观景 / 怀旧文化",
         "经典景点",
         "口碑热门"
       ],
-      "address": "台北市信义区信义路五段7号89楼",
+      "address": "新北（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -248,14 +144,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "搭乘捷运信义线至台北101/世贸站，从4号出口出站即可直达大楼。",
-          "internal_arrive": "观景台售票处及电梯入口位于5楼，进入商场后跟随指示牌前往。",
-          "internal_traffic": "从5楼直达89楼的高速电梯约37秒即可到达，电梯速度快，部分人可能会有耳压感；89楼至91楼需步行楼梯，88楼至89楼有电梯连接。",
+          "external_arrive": "从台北市区可搭乘台铁至 瑞芳车站，再转乘公交（如 788、965、1062 等）或打车前往；部分公交路线（如 965）可从西门町直达。",
+          "internal_arrive": "建议从 九份老街 入口（基山街）或 九份派出所 附近下车开始游览，顺势往下走较省力；若从汽车路进入，需先爬较长陡坡。",
+          "internal_traffic": "老街内部以步行和石阶为主，无车辆通行，请全程靠脚力漫步。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议入住台北信义区商圈附近酒店，步行或短途乘车即可到达，周边餐饮和购物设施完善。",
+            "area": "九份老街 周边有多家民宿和酒店，适合想多看几次山城晨昏景色的游客，但需注意部分民宿位于坡道上方，携带大件行李可能不便。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -266,142 +162,33 @@
           "珍珠奶茶"
         ],
         "special_care": {
-          "elderly": "全程电梯可达89楼和88楼，体力消耗小；88楼风阻尼器参观区有建筑科普短片和休息区，适合长辈驻足观看",
-          "children": "高速电梯体验本身对孩子很有吸引力，89楼有文创店和小吃饮品，88楼的风阻尼器也是很好的科普教育点。"
+          "elderly": "尽量选择从高处往低处走的路线，避免长时间攀爬陡坡；可在 阿妹茶楼 等观景茶馆休息喝茶，欣赏风景；务必穿防滑鞋，注意石阶安全",
+          "children": "老街小吃丰富，可安排品尝芋圆、草仔粿等；红灯笼和山城景色适合拍照打卡；全程需牵好孩子，注意台阶和人流安全。"
         }
       },
       "lazy_routes": [
         {
-          "title": "经典高空观景与建筑科普省力游",
+          "title": "经典省力下山观景线（下午至傍晚）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "5楼售票处与电梯入口",
-            "89楼室内观景台（360度俯瞰台北全景）",
-            "91楼室外观景台（天气允许时开放，体验高空风）",
-            "88楼风阻尼器参观区（观赏巨型阻尼球）",
-            "返回5楼"
+            "九份老街入口（基山街）",
+            "品尝在地小吃（芋圆",
+            "草仔粿等）",
+            "漫步基山街特色小店",
+            "前往 阿妹茶楼 周边欣赏山海景",
+            "沿 竖崎路 红灯笼阶梯缓缓下行",
+            "途经 昇平戏院 感受怀旧氛围",
+            "在观景平台等待日落与红灯笼亮起"
           ],
           "duration": "半天",
-          "walking": "较少，主要为楼层内短距离步行",
-          "physical": 2,
-          "tips": [
-            "91楼室外观景台需视风速及天候等因素开放，具体以官方当日公告为准；89楼有纪念品商店和全台最高邮筒可寄明信片。"
-          ],
-          "sourceTitle": "携程旅行 台北101观景台 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/taipei360/1788434.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
-          "携程旅行 台北101观景台 详情页：https://you.ctrip.com/sight/taipei360/1788434.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 台北101观景台 详情页",
-          "url": "https://you.ctrip.com/sight/taipei360/1788434.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "台北101观景台 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/taipei360/1788434.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/taipei360/1788434.html?poiType=3&scene=online",
-        "width": 2047,
-        "height": 1366
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c86e741eae",
-      "id": "manual_taiwan_da36c32a",
-      "name": "台北市立动物园",
-      "city": "台北",
-      "rating": 4.8,
-      "reviewsCount": "1548条携程点评",
-      "image": "/assets/images/attractions/taiwan_da36c32a_verified.jpg",
-      "description": "• 世界前十名大都市型的动物园之一，可搭捷运文湖线轻松抵达台北市立动物园 • 园区内有超过四百种的动物，是东南亚规模较大的动物园 • 园内设施完善且有多处休息空间及饮水机 △ 园区内有超过四百种的动物，是东亚规模较大的动物园。园内的展示区包括台湾乡土动物区、儿童动物园区、昆虫馆、教育中心、台北市立动物园无尾熊馆、大猫熊馆(新光特展馆)、亚洲热带雨林区、沙漠动物区、澳洲动物区、台北市立动物园 非洲动物区、鸟园区、台北市立动物园两栖爬虫动物",
-      "intro": "• 世界前十名大都市型的动物园之一，可搭捷运文湖线轻松抵达台北市立动物园 • 园区内有超过四百种的动物，是东南亚规模较大的动物园 • 园内设施完善且有多处休息空间及饮水机 △ 园区内有超过四百种的动物，是东亚规模较大的动物园。园内的展示区包括台湾乡土动物区、儿童动物园区、昆虫馆、教育中心、台北市立动物园无尾熊馆、大猫熊馆(新光特展馆)、亚洲热带雨林区、沙漠动物区、澳洲动物区、台北市立动物园 非洲动物区、鸟园区、台北市立动物园两栖爬虫动物",
-      "level": "热门景点",
-      "category": "自然生态/亲子游乐",
-      "tags": [
-        "自然生态/亲子游乐",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "台北市文山区新光路二段30号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
-          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
-          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
-        },
-        "transport": {
-          "external_arrive": "搭乘台北捷运文湖线至“动物园站”，出站步行约 3 分钟可达正门；或搭乘至动物园站后，转乘猫空缆车至“动物园南站”入园。",
-          "internal_arrive": "带长辈或儿童首选“猫空缆车动物园南站”入口，可结合缆车与游园小火车实现全程下坡；若不想坐缆车，可从捷运站旁的“正门”进入，门口可租借婴儿车并购买游园小火车票。",
-          "internal_traffic": "园区内设有游园小火车（单程约 费用以官方当日公告为准新台币，可刷悠游卡），从正门直达鸟园站；园区内步道宽敞、树荫多，对婴儿车非常友好，门口也可租借推车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "台北市内（建议住在捷运文湖线沿线或市中心，前往动物园约 30-40 分钟车程）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "台湾卤肉饭",
-          "台湾蚵仔煎",
-          "红烧牛肉面",
-          "珍珠奶茶"
-        ],
-        "special_care": {
-          "elderly": "园区较大，务必利用小火车和缆车代步，多利用室内馆（如企鹅馆、两栖爬虫馆）休息避暑，注意防晒和补充水分",
-          "children": "儿童动物园可近距离互动小动物，大熊猫馆和穿山甲馆人气高，建议错峰前往，园内餐饮便利，可备些小零食。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "南门小火车一路下坡省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "猫空缆车动物园南站",
-            "搭乘游园小火车至鸟园站",
-            "鸟园区",
-            "企鹅馆",
-            "非洲动物区",
-            "亚洲热带雨林区",
-            "新光特展馆（大熊猫）",
-            "穿山甲馆",
-            "无尾熊馆",
-            "儿童动物园",
-            "正门出口"
-          ],
-          "duration": "半天",
-          "walking": "约 3-4 公里",
+          "walking": "约 1.5 至 2 小时",
           "physical": 3,
           "tips": [
-            "强烈建议从猫空缆车南站入园，再坐小火车到最里面的鸟园，然后一路下坡逛，全程不爬坡，对推婴儿车和长辈非常友好；部分室内场馆（如大熊猫馆、企鹅馆等）有定期休馆维护，具体以官方当日公告为准。"
+            "强烈建议下午 3 点至 5 点之间抵达，既能看到白天的山城海景，又能等到傍晚红灯笼亮起；务必穿防滑舒适的鞋子，石阶在雨天或傍晚较滑。"
           ],
-          "sourceTitle": "携程旅行 台北市立动物园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/taipei360/19883.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -410,51 +197,151 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/taiwan100076.html",
-          "携程旅行 台北市立动物园 详情页：https://you.ctrip.com/sight/taipei360/19883.html?poiType=3&scene=online",
-          "Wikidata Q591131 实体页：https://www.wikidata.org/wiki/Q591131"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q10878674 实体页：https://www.wikidata.org/wiki/Q10878674"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 台北市立动物园 详情页",
-          "url": "https://you.ctrip.com/sight/taipei360/19883.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "台北市立动物园:亲子游的完美选择 🐘🌳",
+        "title": "224, Taiwan, 新北市瑞芳區崇文里 - panoramio (11).jpg",
+        "author": "徐月春",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:224,_Taiwan,_%E6%96%B0%E5%8C%97%E5%B8%82%E7%91%9E%E8%8A%B3%E5%8D%80%E5%B4%87%E6%96%87%E9%87%8C_-_panoramio_(11).jpg",
+        "width": 2592,
+        "height": 3872
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_69cba63c4a",
+      "id": "manual_taiwan_a1e708ed",
+      "name": "平溪十分老街",
+      "city": "新北",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/taiwan_a1e708ed_verified.jpg",
+      "description": "平溪十分老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "平溪十分老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "古镇老街、铁道文化、祈福体验",
+      "tags": [
+        "古镇老街、铁道文化、祈福体验",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "新北（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从台北出发，可搭乘台铁至瑞芳车站，再于瑞芳站转乘平溪线小火车至十分车站；若从厦门出发，可先飞抵台北，再按此路线换乘。",
+          "internal_arrive": "从十分车站出站即是老街入口，周边有便利店和厕所，建议在此稍作休整后再进入老街核心区。",
+          "internal_traffic": "老街内部及至静安吊桥均为步行，路面平坦；若前往十分瀑布（距离约1.5公里），可考虑在老街租用电动车或搭乘当地接驳车以节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住宿于瑞芳火车站附近，交通便利且餐饮选择丰富、价格亲民；若偏好夜景氛围，也可选择九份老街周边的民宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "台湾卤肉饭",
+          "台湾蚵仔煎",
+          "红烧牛肉面",
+          "珍珠奶茶"
+        ],
+        "special_care": {
+          "elderly": "路线A整体平缓，适合长辈慢游，但静安吊桥及老街部分路段可能有轻微坡度，建议穿防滑舒适的鞋子，避免前往需大量上下楼梯的十分瀑布",
+          "children": "铁轨穿街和放天灯对儿童极具吸引力，可让孩子参与写心愿，但需全程看护，严禁在铁轨上奔跑或逗留。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "经典铁轨漫步与祈福线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "十分车站出站",
+            "十分老街铁轨街区（感受火车穿街",
+            "铁轨拍照）",
+            "老街沿街小吃与天灯店（体验写天灯",
+            "放天灯）",
+            "静安吊桥（横跨基隆河的老吊桥，傍晚亮灯有味道）",
+            "返程"
+          ],
+          "duration": "半天",
+          "walking": "约1至1.5公里",
+          "physical": 2,
+          "tips": [
+            "铁轨上拍照时务必注意现场工作人员提醒，听到火车铃声及时避让，切勿在铁轨中间长时间停留；放天灯时尽量选择上方电线较少、空间开阔的位置，可先询问店家协助确认。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "新北的十分老街给游客第一印象就是放天灯的地方",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4771223300979802589",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4771223300979802589",
-        "width": 1920,
-        "height": 1410
+        "licenseUrl": "http://k.sina.com.cn/article_1409073633_p53fcc1e1027009i62.html",
+        "sourceUrl": "http://k.sina.com.cn/article_1409073633_p53fcc1e1027009i62.html",
+        "width": 1200,
+        "height": 751
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "平溪十分老街：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:20:07.805Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:33:13.125Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_cc9dd06de9",
-    "core_80304a9d16",
-    "core_ad3cfe78c5",
-    "core_c86e741eae"
+    "core_003c8778d9",
+    "core_d45c7ce8e6",
+    "core_69cba63c4a"
   ],
-  "appliedAt": "2026-08-21T03:41:39.084Z",
+  "appliedAt": "2026-08-24T03:12:59.593Z",
   "appliedAttractionIds": [
-    "manual_taiwan_34c5d01c",
-    "manual_taiwan_aa583d55",
-    "manual_taiwan_6584d83e",
-    "manual_taiwan_da36c32a"
+    "manual_taiwan_32d494a4",
+    "manual_taiwan_9f4822b",
+    "manual_taiwan_a1e708ed"
   ],
   "appliedOverrideIds": []
 }

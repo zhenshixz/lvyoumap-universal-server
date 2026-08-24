@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity } = require('./collect_core_details');
+const { allAliases, bufferDimensions, commonsSemanticScore, completeEvidence, imageIdentityTokens, localImageFileUsable, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity, usableImageQuality } = require('./collect_core_details');
 const { localAmapRating } = require('./core_rating_evidence');
 
 const cases = [
@@ -18,6 +18,7 @@ assert(allAliases({ name: '八达岭—慕田峪长城旅游区' }).includes('�
 assert(completeEvidence({ address: '地址', description: '介绍', sources: [{}, {}], routes: [{}, {}], image: { localPath: '/a.jpg', downloadUrl: 'https://example.com/a.jpg' } }), '完整断点应可复用');
 assert(!completeEvidence({ address: '地址', description: '介绍', sources: [{}], routes: [{}, {}], image: { localPath: '/assets/images/default-thumbnail.jpg', placeholder: true } }), '占位图不得被判定为完整资料');
 assert(!completeEvidence({ address: '地址', sources: [{}] }), '残缺断点不得误判完成');
+assert(!localImageFileUsable({ localPath: '/assets/images/attractions/__missing_test_image.jpg' }), '仅有图片元数据但文件未落盘时必须重新换源');
 assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小三峡'), '全角连接符复合景区应产生组成景点别名');
 assert(allAliases({ name: '小三峡－小小三峡旅游区' }).includes('小小三峡'), '全角连接符复合景区应保留第二个组成景点别名');
 assert(allAliases({ name: '溪口－滕头旅游景区' }).includes('溪口'), '双字组成景点也应作为高德别名检索词');
@@ -50,6 +51,16 @@ const bingFixture = '<a class="iusc" m="{&quot;murl&quot;:&quot;https://example.
 assert.deepStrictEqual(parseBingImageResults(bingFixture), [{ imageUrl: 'https://example.com/scenic.jpg', sourceUrl: 'https://example.com/page', title: '小三峡实景' }], '公开图片搜索结果应解析原图和来源页');
 const baiduFixture = { data: [{ fromPageTitle: '<strong>天津之眼</strong>实景', width: 1920, height: 1080, replaceUrl: [{ ObjURL: 'https://example.com/tianjin-eye.jpg', FromURL: 'https://example.com/tianjin-eye' }] }] };
 assert.deepStrictEqual(parseBaiduImageResults(baiduFixture), [{ imageUrl: 'https://example.com/tianjin-eye.jpg', sourceUrl: 'https://example.com/tianjin-eye', title: '天津之眼实景', declaredWidth: 1920, declaredHeight: 1080 }], '百度图片结果应解析高清原图、来源页和实体标题');
+
+const webpFixture = Buffer.alloc(30);
+webpFixture.write('RIFF', 0, 'ascii');
+webpFixture.write('WEBP', 8, 'ascii');
+webpFixture.write('VP8X', 12, 'ascii');
+webpFixture.writeUIntLE(1279, 24, 3);
+webpFixture.writeUIntLE(719, 27, 3);
+assert.deepStrictEqual(bufferDimensions(webpFixture), { width: 1280, height: 720 }, '公开网页常见 WebP 图片必须能读取真实尺寸');
+assert(usableImageQuality({ width: 800, height: 450 }, 60 * 1024), '800x450、60KB 的清晰网页实景图应可通过质量门槛');
+assert(!usableImageQuality({ width: 640, height: 360 }, 60 * 1024), '低分辨率缩略图仍不得进入景点数据');
 
 const ctripFixture = [
   '{"poiName":"目标景区","districtName":"北京","commentScore":4.7,"commentCount":321,"address":"目标地址","introduction":"目标介绍","imageUrl":"https://example.com/target.jpg"}',

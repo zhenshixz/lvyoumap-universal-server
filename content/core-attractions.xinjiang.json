@@ -1,6 +1,6 @@
 {
   "province": "新疆",
-  "checkedAt": "2026-08-20",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1190,6 +1190,178 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_c1779ad8cd",
+      "name": "安集海大峡谷",
+      "preferredId": "manual_xinjiang_77ca6c10",
+      "aliases": [
+        "安集海大峡谷"
+      ],
+      "city": "塔城地区沙湾",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_430bcb1240",
+      "name": "禾木村",
+      "preferredId": "manual_xinjiang_805c7f56",
+      "aliases": [
+        "禾木村"
+      ],
+      "city": "阿勒泰地区布尔津",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_83450ff7b0",
+      "name": "喀拉库勒湖",
+      "preferredId": "manual_xinjiang_5008a89e",
+      "aliases": [
+        "喀拉库勒湖"
+      ],
+      "city": "喀什地区塔什库尔干塔吉克",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_c063d37dfe",
+      "name": "喀赞其民俗旅游区",
+      "preferredId": "manual_xinjiang_2370e110",
+      "aliases": [
+        "喀赞其民俗旅游区",
+        "喀赞其民俗"
+      ],
+      "city": "伊犁哈萨克自治州伊宁",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_fc0da07273",
+      "name": "琼库什台",
+      "preferredId": "manual_xinjiang_8d86d4a2",
+      "aliases": [
+        "琼库什台"
+      ],
+      "city": "伊犁哈萨克自治州特克斯",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_1384525e66",
+      "name": "夏塔古道",
+      "preferredId": "manual_xinjiang_7bcfe4aa",
+      "aliases": [
+        "夏塔古道"
+      ],
+      "city": "伊犁哈萨克自治州昭苏",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_ff5c1b35fe",
+      "name": "伊犁六星街",
+      "preferredId": "manual_xinjiang_8f39a505",
+      "aliases": [
+        "伊犁六星街"
+      ],
+      "city": "伊犁哈萨克自治州伊宁",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 35
+  }
 }

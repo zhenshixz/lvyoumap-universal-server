@@ -1,30 +1,36 @@
 {
   "province": "甘肃",
   "status": "applied",
-  "createdAt": "2026-08-19T07:59:07.891Z",
-  "updatedAt": "2026-08-19T07:59:08.495Z",
+  "createdAt": "2026-08-21T08:59:50.884Z",
+  "updatedAt": "2026-08-24T03:09:04.951Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "扁都口生态旅游区：基本资料目前只有1个可追溯来源",
+    "郎木寺：基本资料目前只有1个可追溯来源",
+    "水帘洞石窟：基本资料目前只有1个可追溯来源",
+    "雅丹魔鬼城：基本资料目前只有1个可追溯来源",
+    "正宁路夜市：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.gansu.json",
   "attractions": [
     {
-      "baselineKey": "core_07f017063a",
-      "id": "manual_gansu_a2a56db6",
-      "name": "甘南州冶力关旅游区",
-      "city": "甘肃",
+      "baselineKey": "core_71f3585093",
+      "id": "manual_gansu_abe88ce8",
+      "name": "扁都口生态旅游区",
+      "city": "民乐",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/gansu_a2a56db6_verified.jpg",
-      "description": "冶力关旅游区位于甘肃省甘南藏族自治州临潭县东北部，地处青藏高原和黄土高原的过渡带，是青藏高原东北边缘、秦岭褶皱带上集高山湖泊、丹霞地貌、亚高山草甸、梯田花海于一体的复合型生态旅游区。距省会兰州150公里，距甘南州府合作市90公里。",
-      "intro": "冶力关旅游区位于甘肃省甘南藏族自治州临潭县东北部，地处青藏高原和黄土高原的过渡带，是青藏高原东北边缘、秦岭褶皱带上集高山湖泊、丹霞地貌、亚高山草甸、梯田花海于一体的复合型生态旅游区。距省会兰州150公里，距甘南州府合作市90公里。",
-      "level": "5A景区",
-      "category": "自然山水与丹霞地貌复合型景区",
+      "image": "/assets/images/attractions/gansu_abe88ce8_verified.jpg",
+      "description": "扁都口生态旅游区位于民乐（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "扁都口生态旅游区位于民乐（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "自然风光、峡谷生态、花海草原",
       "tags": [
-        "自然山水与丹霞地貌复合型景区",
+        "自然风光、峡谷生态、花海草原",
         "经典景点",
-        "官方名录"
+        "口碑热门"
       ],
-      "address": "甘肃省甘南藏族自治州临潭县冶力关镇滨河北路",
+      "address": "民乐（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +42,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾最优，从兰州出发约150-180公里，车程约3小时，导航至\"冶力关旅游区游客中心\"；公共交通可在兰州汽车南站乘大巴至冶力关镇，车程约3.5小时，班次较少，建议提前查询。",
-          "internal_arrive": "推荐从游客中心进入，停车后换票上二楼乘坐景交车，路线顺畅；若自驾前往天池冶海北岸，可导航至\"常爷庙\"，但需确认当日是否允许自驾进入。",
-          "internal_traffic": "景区内景点之间距离较远，景交车为统一交通工具，建议购买包含景交车的门票；自驾车一般不能直接进入核心游览区，需换乘景交车。",
+          "external_arrive": "自驾导航至“扁都口生态休闲旅游区”。从民乐县城出发沿 G227 向南约 28 公里，车程 30-40 分钟；从张掖市区出发约 85 公里，车程约 1.5 小时。",
+          "internal_arrive": "建议从游客服务中心进入，此处有水厕，条件较好，适合带老人和孩子优先在此休整、补给和上厕所。",
+          "internal_traffic": "景区内景点已实现环线游览，核心区域实行交通管制。可选择步行、骑马（有专门马道，新手可请马夫牵引）或乘坐观光车游览；景区内还铺设了自行车观光道。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "冶力关镇民宿和酒店集中，价格亲民，旺季建议提前预订；部分民宿可看溪流，部分套餐含景区门票。\n长辈儿童友好建议\n长辈建议：天池冶海北岸可骑马直达湖边，避免爬台阶；赤壁幽谷可走主路平地段，下山选滑道；全程备好防风外套，早晚温差大。\n儿童建议：天池冶海对岸草原可骑马、捡野花，孩子参与感强；赤壁幽谷丹霞地貌像\"寻宝\"，可捡\"靠山棍\"；景区内蚊虫较多，建议穿长袖长裤，备驱蚊用品。\n补充提醒\n海拔约2200-2600米，少部分人可能有轻微高反，建议首日避免剧烈运动，备好常用药。\n甘南天气多变，白天防晒、早晚保暖，冲锋衣必备；夏季多阵雨，备好雨具。",
+            "area": "优先推荐住宿在民乐县城，酒店齐全且热水稳定；若需景区内住宿，可选择汽车旅馆、胶囊宾馆或欧式木屋，但条件相对一般，旺季需提前预订。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,34 +60,32 @@
           "兰州酿皮子"
         ],
         "special_care": {
-          "elderly": "天池冶海北岸可骑马直达湖边，避免爬台阶；赤壁幽谷可走主路平地段，下山选滑道；全程备好防风外套，早晚温差大",
-          "children": "天池冶海对岸草原可骑马、捡野花，孩子参与感强；赤壁幽谷丹霞地貌像\"寻宝\"，可捡\"靠山棍\"；景区内蚊虫较多，建议穿长袖长裤，备驱蚊用品。\n补充提醒\n海拔约2200-2600米，少部分人可能有轻微高反，建议首日避免剧烈运动，备好常用药。\n甘南天气多变，白天防晒、早晚保暖，冲锋衣必备；夏季多阵雨，备好雨具。"
+          "elderly": "海拔较高，行动需放缓，注意保暖防风，避免高反",
+          "children": "高原牧场可体验骑马和亲近牛羊，木栈道平坦适合散步，但需全程看护，勿私自远离步道进入山坡或峡谷深处。"
         }
       },
       "lazy_routes": [
         {
-          "title": "天池冶海+赤壁幽谷省力休闲游",
+          "title": "花海草原轻松休闲线（省力观景）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "游客中心换乘景交车",
-            "天池冶海北岸（可骑马或走栈道至湖边）",
-            "乘快艇游览冶海",
-            "换乘景交车前往赤壁幽谷",
-            "沿栈道游览丹霞地貌（四屏峰",
-            "圣旨崖等）",
-            "可体验滑道下山",
-            "返回游客中心"
+            "游客服务中心（休整补给）",
+            "木栈道观景台（俯瞰花海与祁连雪山全景）",
+            "油菜花田木栈道（漫步浅色系花海，浅色系长裙",
+            "草帽出片）",
+            "高原牧场（体验骑马或观赏牛羊成群）",
+            "扁都峡谷（感受两山夹峙的丝路古道风光）"
           ],
           "duration": "半天",
-          "walking": "约2-3公里（多为平缓栈道，可骑马或乘船替代部分步行）",
+          "walking": "约 1.5-2 公里（以木栈道和平缓草地为主）",
           "physical": 2,
           "tips": [
-            "天池冶海建议坐快艇直达对岸草原，避免走石子路；赤壁幽谷可走主路到底再上栈道，返程体验滑道更省力。"
+            "景区海拔接近 3000 米，切勿剧烈奔跑，缓步游览；高原天气多变，随身备好薄冲锋衣或防晒开衫，避免午后突发阵雨降温。"
           ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -89,251 +93,49 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
         "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "甘肃——高山湖泊,原始森林,丹霞地貌全挤砸绷芈糜尉暗阋绷鼐扒",
+        "title": "王晓泾近期,位于祁连山下的甘肃省张掖市民乐县扁都口休闲旅游景区",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4729691250688284698",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4729691250688284698",
-        "width": 1280,
-        "height": 2278
+        "licenseUrl": "http://news.cri.cn/2024-07-22/749a689a-b2e9-4d6f-e6fd-ce16d784bbb0.html",
+        "sourceUrl": "http://news.cri.cn/2024-07-22/749a689a-b2e9-4d6f-e6fd-ce16d784bbb0.html",
+        "width": 3418,
+        "height": 2088
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "扁都口生态旅游区：基本资料目前只有1个可追溯来源"
+        ]
       }
     },
     {
-      "baselineKey": "core_90a29b9dcb",
-      "id": "manual_gansu_a69f4dce",
-      "name": "官鹅沟景区",
-      "city": "宕昌",
-      "rating": 4.3,
-      "reviewsCount": "1721条携程点评",
-      "image": "/assets/images/attractions/gansu_a69f4dce_verified.jpg",
-      "description": "官鹅沟大景区位于甘肃陇南宕昌县，是一条长约三十多公里的峡谷。峡谷里有二十多个颜色深浅不一的碧绿湖泊，湖水清澈，还有老树等盘桓水中，是摄影家眼中的“小九寨”。",
-      "intro": "官鹅沟大景区位于甘肃陇南宕昌县，是一条长约三十多公里的峡谷。峡谷里有二十多个颜色深浅不一的碧绿湖泊，湖水清澈，还有老树等盘桓水中，是摄影家眼中的“小九寨”。",
-      "level": "5A景区",
-      "category": "自然山水峡谷",
-      "tags": [
-        "自然山水峡谷",
-        "经典景点",
-        "官方名录",
-        "峡谷瀑布、高山湖泊、森林自然风景区"
-      ],
-      "address": "甘肃省陇南市宕昌县城关镇官鹅村",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾可直接导航至鹿仁游客中心；高铁可至哈达铺站，出站后拼车或打车前往景区（约30-40分钟）。",
-          "internal_arrive": "建议从官珠沟入口（鹿仁游客中心）进入，这里是核心精华区，设施更完善，更适合家庭出游。",
-          "internal_traffic": "景区内有观光大巴（含在联票内）、通天门至观音阁的摆渡车（单独收费）、以及雷古山索道（单独收费），可根据体力灵活组合。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住宕昌县城（餐饮购物选择多，性价比高）或官珠沟/鹅嫚沟周边的民宿（环境清幽，适合深度避暑）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "全程木栈道平缓，基本无陡峭爬坡，但瀑布附近湿滑，需穿防滑鞋并备好薄外套",
-          "children": "沿途可玩水、看瀑布和小动物，建议自带零食和水，走不动时可随时乘坐摆渡车，避免硬撑。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "官珠沟精华省力游（瀑布群+湖泊）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "鹿仁游客中心",
-            "观光车直达通天门",
-            "摆渡车至观音阁",
-            "木栈道徒步（五谷峰",
-            "龙涎瀑",
-            "盘龙峡",
-            "五瀑峡",
-            "九叠瀑",
-            "聚仙台",
-            "对峙瀑）",
-            "官鹅天瀑",
-            "原路返回通天门",
-            "观光车返程沿途打卡湖泊（三叠湖",
-            "公主湖",
-            "阴平湖）",
-            "鹿仁寨"
-          ],
-          "duration": "半天",
-          "walking": "约3-4公里（平缓木栈道）",
-          "physical": 2,
-          "tips": [
-            "一定要“先坐车到最深处再往回走”，千万别在中途提前下车，否则后面要走很多冤枉路；栈道常年潮湿，务必穿防滑鞋。"
-          ],
-          "sourceTitle": "携程旅行 官鹅沟景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "雷古山索道俯瞰游（需额外购票）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "聚仙台",
-            "摆渡车至索道下站",
-            "乘坐索道上雷古山观景台",
-            "俯瞰峡谷与雪山",
-            "原路返回"
-          ],
-          "duration": "半天",
-          "walking": "约1公里（山顶栈道基本平缓）",
-          "physical": 3,
-          "tips": [
-            "索道受天气影响较大，大风或恶劣天气可能停运，需提前确认；山顶风大温低，需备好防风外套。"
-          ],
-          "sourceTitle": "携程旅行 官鹅沟景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "官珠沟精华瀑布省力游（推荐家庭首选）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "游客中心乘观光车直达通天门",
-            "换乘摆渡车至观音阁",
-            "徒步游览龙涎瀑",
-            "盘龙峡",
-            "五瀑峡",
-            "九叠瀑",
-            "抵达聚仙台",
-            "步行至官鹅天瀑",
-            "原路返回通天门",
-            "乘观光车返程，沿途打卡阴平湖",
-            "公主湖",
-            "鹿仁寨休整"
-          ],
-          "duration": "半天",
-          "walking": "约 2.5 公里（单程精华段）",
-          "physical": 2,
-          "tips": [
-            "一定要“先坐车到最里面再往外逛”，全程下坡或平路最省力；瀑布附近栈道湿滑，务必穿防滑鞋，并带一件薄外套保暖。"
-          ],
-          "sourceTitle": "携程旅行 官鹅沟 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "鹅嫚沟高山彩湖休闲游（适合第二天或体力有限者）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "鹅嫚沟游客中心乘观光车直达十八相会",
-            "沿途下车打卡金羊湖",
-            "天外来石",
-            "神象沐浴瀑",
-            "乘观光车随叫随停返程"
-          ],
-          "duration": "半天",
-          "walking": "约 1 公里（视个人下车打卡情况而定）",
-          "physical": 1,
-          "tips": [
-            "鹅嫚沟景点分散，观光车招手即停，非常适合不想走路的长辈和儿童；若要去泽荡措需步行往返约 9 公里，不建议家庭游客前往。"
-          ],
-          "sourceTitle": "携程旅行 官鹅沟 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "携程旅行 官鹅沟景区 详情页：https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "高德地图 官鹅沟大景区：https://www.amap.com/place/B0B770NCHV",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 官鹅沟景区 详情页",
-          "url": "https://you.ctrip.com/sight/tanchang2790/145267.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "官鹅沟景区 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0B770NCHV",
-        "width": 1500,
-        "height": 2000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      },
-      "self_heal": {
-        "mergedDuplicateIds": [
-          "manual_gansu_cc68dca1"
-        ],
-        "mergedBaselineKeys": [
-          "core_90a29b9dcb",
-          "core_0e9d2e2a08"
-        ],
-        "mergedAliases": [
-          "官鹅沟"
-        ],
-        "reason": "同省近似名称且共享同一 OTA/高德实体来源，自动合并"
-      }
-    },
-    {
-      "baselineKey": "core_d513f46318",
-      "id": "manual_gansu_e1c62934",
-      "name": "临夏州炳灵寺世界文化遗产旅游区",
-      "city": "甘肃",
+      "baselineKey": "core_7915abd427",
+      "id": "manual_gansu_51bb6e55",
+      "name": "炳灵寺石窟",
+      "city": "永靖",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/gansu_e1c62934_verified.jpg",
-      "description": "炳灵寺位于甘肃临夏永靖县西南35公里处的小积石山中。炳灵寺最早叫\\",
-      "intro": "炳灵寺位于甘肃临夏永靖县西南35公里处的小积石山中。炳灵寺最早叫\\",
-      "level": "5A景区",
-      "category": "石窟艺术、丹霞地貌、黄河风光",
+      "image": "/assets/images/attractions/gansu_51bb6e55_verified.jpg",
+      "description": "炳灵寺石窟位于永靖（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "炳灵寺石窟位于永靖（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "石窟艺术/丹霞地貌/黄河风光",
       "tags": [
-        "石窟艺术、丹霞地貌、黄河风光",
+        "石窟艺术/丹霞地貌/黄河风光",
         "经典景点",
-        "官方名录"
+        "口碑热门"
       ],
-      "address": "临夏回族自治州永靖县",
+      "address": "永靖（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -345,14 +147,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "水路可导航至刘家峡大坝码头或东干码头乘船前往（船程约30-60分钟，受天气影响较大，大风可能停航）；陆路可自驾或包车从兰州出发，车程约2.5小时，部分路段为盘山公路，需谨慎驾驶。",
-          "internal_arrive": "检票后从右手边进入景区（注意避开\"左拐售票处\"的指示牌），沿栈道步行约10分钟即可到达石窟核心区。",
-          "internal_traffic": "景区内部以步行栈道为主，无观光车；从检票口到石窟区步行约10分钟。",
+          "external_arrive": "自驾或包车从兰州出发约2-2.5小时；水路从刘家峡大坝码头或东干码头乘快艇约30-60分钟抵达（以官方当日公告为准）。",
+          "internal_arrive": "陆路直达景区停车场，步行约10分钟到检票口；水路到码头后步行进入景区。",
+          "internal_traffic": "景区内为步行栈道，无其他交通工具。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "推荐住在永靖县县城或刘家峡镇，配套完善、餐饮选择多；若想节省次日交通时间，可选择炳灵寺景区附近的民宿，但需提前确认周边餐饮和交通条件。",
+            "area": "永靖县城或刘家峡镇，餐饮住宿配套较完善。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -363,682 +165,54 @@
           "兰州酿皮子"
         ],
         "special_care": {
-          "elderly": "普窟区和观景台路线平缓，适合长辈慢游；特窟楼梯陡峭且狭窄，不建议长辈攀登；建议携带防风外套（库区风大）和防滑运动鞋",
-          "children": "1.2米以下儿童通常免票（以官方当日公告为准）；特窟因安全原因不接待未成年人；建议自备零食和水，景区内选择较少；可让孩子在观景台和丹霞地貌区感受自然奇观。"
+          "elderly": "走纯普窟路线，避开169/172特窟的陡峭木梯，全程平缓",
+          "children": "特窟陡梯需手脚并用，未成年人需监护人陪同并签免责书，恐高者不建议攀爬。"
         }
       },
       "lazy_routes": [
         {
-          "title": "家庭省力精华游（普窟+大佛+丹霞观景）",
+          "title": "普窟+特窟深度游览（推荐陆路前往）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
             "检票口",
-            "普窟区（1-184窟）",
-            "唐代弥勒大佛",
-            "卧佛殿",
-            "对岸观景台（远眺姊妹峰）"
+            "171窟唐代弥勒大佛",
+            "两桥间普窟群",
+            "169与172特窟（需攀爬陡梯）",
+            "对岸卧佛殿",
+            "姊妹峰观景台",
+            "老君洞"
           ],
           "duration": "半天",
-          "walking": "约1.5公里（栈道平缓，无陡峭爬升）",
-          "physical": 2,
-          "tips": [
-            "建议优先游览普窟和大佛，观景台拍照后原路返回；特窟楼梯陡峭，家庭游可放弃；景区内餐饮较少，建议自带零食和水。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "🌟 甘肃炳灵寺石窟:千年佛像的瑰宝 🌟",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5526988359585517239",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5526988359585517239",
-        "width": 1440,
-        "height": 1890
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_ecfc480d73",
-      "id": "manual_gansu_88cc2a5e",
-      "name": "崆峒山风景名胜区",
-      "city": "平凉",
-      "rating": 4.7,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/gansu_88cc2a5e_verified.jpg",
-      "description": "崆峒山位于甘肃省平凉市，是古丝绸之路西出关中之要塞。景区面积84平方公里。",
-      "intro": "崆峒山位于甘肃省平凉市，是古丝绸之路西出关中之要塞。景区面积84平方公里。",
-      "level": "5A景区",
-      "category": "山岳型风景名胜区、道教文化名山",
-      "tags": [
-        "山岳型风景名胜区、道教文化名山",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "平凉市崆峒区崆峒镇",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"崆峒山游客中心\"（崆峒古镇）；公共交通可乘坐 9 路或 13 路公交车至\"崆峒古镇\"站，下车步行约 300 米到达东门。",
-          "internal_arrive": "推荐从崆峒古镇游客中心进入，可购买观光车票直达半山或山顶，大幅节省体力；若选择纯徒步，可从东门进入。",
-          "internal_traffic": "景区内有观光车（游客中心至中台单程约 费用以官方当日公告为准，至香山寺单程约 费用以官方当日公告为准）和索道（游客中心至中台单程约 费用以官方当日公告为准），具体票价和运行时间以官方当日公告为准。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "崆峒古镇周边（如崆峒山庄、杜鹃田园民宿等）或平凉市区（距离景区约 6 公里，车程 10 分钟，选择更多、性价比更高）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "优先乘坐观光车直达香山寺或中台，避开\"上天梯\"等陡峭路段，中途多休息，穿防滑运动鞋",
-          "children": "可准备背带或腰凳（婴儿车不便推行），带上零食和水，在中台广场和弹筝湖等平缓区域活动，注意防走失。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "观光车直达香山寺 + 下行精华游（省力首选）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "崆峒古镇游客中心",
-            "乘坐观光车直达香山寺",
-            "混元顶",
-            "皇城",
-            "雷声峰栈道",
-            "棋盘岭",
-            "朝天门",
-            "中台",
-            "塔院（法轮寺）",
-            "乘坐观光车返回游客中心"
-          ],
-          "duration": "半天",
-          "walking": "约 3-4 公里",
-          "physical": 2,
-          "tips": [
-            "观光车到香山寺后一路下行，对膝盖更友好；中台是交通枢纽，可在此休息补给，再决定去东线还是直接坐车下山。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "高德地图 崆峒山风景名胜区：https://www.amap.com/place/B03A500C84"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 崆峒山风景名胜区",
-          "url": "https://www.amap.com/place/B03A500C84",
-          "poiId": "B03A500C84",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "打卡甘肃省平凉市全国首个5a级景区崆峒山,这里被称中华道教第一山,藏",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4985675132728230923",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4985675132728230923",
-        "width": 2000,
-        "height": 2667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_b05ef9fe66",
-      "id": "manual_gansu_cfada5f3",
-      "name": "扎尕那",
-      "city": "迭部",
-      "rating": 4.3,
-      "reviewsCount": "4048条携程点评",
-      "image": "/assets/images/attractions/gansu_cfada5f3_verified.jpg",
-      "description": "扎尕那，又名扎尕拉，位于甘南藏族自治州迭部县，是一圈俏丽的崖壁包裹中的一个藏族小村寨，风景秀丽奇幻，是整个甘南藏区风光尤为优美的地方之一。 \\n村中古老的木制藏居沿山而建，当地人安静淳朴的劳作在山坡河水之间，构成美妙的田园风光。",
-      "intro": "扎尕那，又名扎尕拉，位于甘南藏族自治州迭部县，是一圈俏丽的崖壁包裹中的一个藏族小村寨，风景秀丽奇幻，是整个甘南藏区风光尤为优美的地方之一。 \\n村中古老的木制藏居沿山而建，当地人安静淳朴的劳作在山坡河水之间，构成美妙的田园风光。",
-      "level": "热门景点",
-      "category": "自然风光/藏寨人文/轻徒步",
-      "tags": [
-        "自然风光/藏寨人文/轻徒步",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "甘肃省甘南藏族自治州迭部县X412(尼扎段)",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至扎尕那南门（游客中心）或北门；公共交通可先抵达兰州或夏河，再包车或拼车前往迭部县，最后转乘当地车辆进入景区。",
-          "internal_arrive": "推荐从南门进入，距离核心村落和仙女滩更近，路况较好；若从北门进入（如走洛克之路），需注意部分路段为非铺装路面，对车辆底盘有一定要求。",
-          "internal_traffic": "景区内有观光车连接游客中心与一线天、仙女滩；四个村落之间距离较远，建议自驾或请民宿老板帮忙联系当地车辆接送。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "东哇村（商业配套最齐全，海拔最低）、业日村（性价比高，近润吾沟入口）、达日村（视野最佳，适合看日出，海拔较高）、代巴村（最原始，配套较少）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "优先选择东哇村或业日村住宿，海拔相对较低且配套完善；避免前往代巴村等高处，观景以可开车直达的达日观景台和业日观景台为主，润吾沟仅走前1.5公里平缓木栈道",
-          "children": "穿着防滑运动鞋，备好雨衣和厚外套；下午4点后不要进入润吾沟，山里天黑早且降温快；可准备便携氧气和零食，注意防高反。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "观景台全景与峡谷轻徒步省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "扎尕那游客中心",
-            "一线天（乘坐观光车）",
-            "仙女滩（高山草甸看日落）",
-            "业日观景台（看日出与全景）",
-            "润吾沟（木栈道轻徒步看瀑布）",
-            "达日观景台（俯瞰双村落）"
-          ],
-          "duration": "半天",
-          "walking": "约4-6公里（以木栈道和平缓石板路为主）",
+          "walking": "约1.5-2公里",
           "physical": 3,
           "tips": [
-            "前往仙女滩务必乘坐观光车或骑马，切勿从游客中心徒步上山，坡度极大非常消耗体力；润吾沟建议走左侧木栈道，平缓好走，走到瀑布群即可原路返回。"
+            "进景区后先找保安联系特窟讲解，争取第一时间上169特窟；大背包建议放在楼下，楼梯口较窄易卡住；下陡梯时需倒着走，注意防滑。"
           ],
-          "sourceTitle": "携程旅行 扎尕那 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/diebu1446184/52045.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/gansu100060.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 扎尕那 详情页：https://you.ctrip.com/sight/diebu1446184/52045.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 扎尕那 详情页",
-          "url": "https://you.ctrip.com/sight/diebu1446184/52045.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "扎尕那 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/diebu1446184/52045.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/diebu1446184/52045.html?poiType=3&scene=online",
-        "width": 2048,
-        "height": 1156
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_21f38cf356",
-      "id": "manual_gansu_f0ba2cac",
-      "name": "甘肃省博物馆",
-      "city": "兰州",
-      "rating": 4.6,
-      "reviewsCount": "3973条携程点评",
-      "image": "/assets/images/attractions/gansu_f0ba2cac_verified.jpg",
-      "description": "甘肃省博物馆位于兰州市七里河区，馆内珍藏了众多珍贵的文物珍宝，精彩和丰富程度在全国的博物馆中排名前列，是游玩兰州市区的标志性建筑之一。由于甘肃地处丝绸之路，同时又是汉藏地域的交界地，所以能反映西域、中原、藏区文化的文物都有大量的出土展示，使博物馆中的文物丰富多彩又别具风格，非常值得参观。",
-      "intro": "甘肃省博物馆位于兰州市七里河区，馆内珍藏了众多珍贵的文物珍宝，精彩和丰富程度在全国的博物馆中排名前列，是游玩兰州市区的标志性建筑之一。由于甘肃地处丝绸之路，同时又是汉藏地域的交界地，所以能反映西域、中原、藏区文化的文物都有大量的出土展示，使博物馆中的文物丰富多彩又别具风格，非常值得参观。",
-      "level": "博物馆",
-      "category": "博物馆",
-      "tags": [
-        "博物馆",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "甘肃省兰州市七里河区西津西路3号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "乘坐兰州地铁1号线至七里河站或西站什字站，步行约500米可达；自驾可停放在对面的兰州中心地下停车场。",
-          "internal_arrive": "从正门入馆，需刷身份证原件安检入内，左侧大厅设有行李寄存柜。",
-          "internal_traffic": "馆内各楼层之间可通过电梯或楼梯通行，建议根据体力情况选择。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在七里河区（离馆近）或城关区（靠近黄河风情线，吃喝方便）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "馆内提供手动轮椅免费借用，一楼和二楼有休息区，可放慢节奏",
-          "children": "可租用官方讲解器或租借AR眼镜导览，一楼古生物化石展厅的巨型骨架和二楼的铜奔马非常吸引小朋友，馆外出口处有免费盖章点可让孩子参与互动。"
-        }
-      },
-      "lazy_routes": [
         {
-          "title": "精华省力游（二楼→三楼→一楼）",
+          "title": "纯普窟轻松游览（适合水路或时间紧）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "二楼丝绸之路文明展厅（重点看铜奔马",
-            "驿使图画像砖",
-            "玻璃莲花托盏）",
-            "三楼甘肃彩陶展厅（看人头形器口彩陶瓶",
-            "鲵鱼纹彩陶瓶）与佛教艺术展厅",
-            "一楼古生物化石展厅（看黄河古象化石",
-            "恐龙化石）与文创店"
-          ],
-          "duration": "半天",
-          "walking": "约2000米",
-          "physical": 3,
-          "tips": [
-            "开馆后直奔二楼看铜奔马可避开人流高峰；馆内拍照严禁使用闪光灯，以免损伤文物。"
-          ],
-          "sourceTitle": "携程旅行 甘肃省博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/lanzhou231/9586.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/gansu100060.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 甘肃省博物馆 详情页：https://you.ctrip.com/sight/lanzhou231/9586.html?poiType=3&scene=online",
-          "高德地图 甘肃省博物馆：https://www.amap.com/place/B03A30AKRC"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 甘肃省博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/lanzhou231/9586.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "甘肃省博物馆 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B03A30AKRC",
-        "width": 4032,
-        "height": 3024
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_dea459fc6e",
-      "id": "manual_gansu_ede3bf11",
-      "name": "张掖丹霞地质公园",
-      "city": "肃南",
-      "rating": 4.7,
-      "reviewsCount": "32条携程点评",
-      "image": "/assets/images/attractions/gansu_ede3bf11_verified.jpg",
-      "description": "张掖丹霞国家地质公园位于中国甘肃省张掖市，以其独特的地貌和丰富的地质特征而闻名。公园内的丹霞地貌形成于数百万年前，由红色砂岩和砾岩经过长期的风化和侵蚀作用而成，呈现出色彩斑斓的自然景观。",
-      "intro": "张掖丹霞国家地质公园位于中国甘肃省张掖市，以其独特的地貌和丰富的地质特征而闻名。公园内的丹霞地貌形成于数百万年前，由红色砂岩和砾岩经过长期的风化和侵蚀作用而成，呈现出色彩斑斓的自然景观。",
-      "level": "热门景点",
-      "category": "自然地质公园、5A级景区",
-      "tags": [
-        "自然地质公园、5A级景区",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "丹霞大道盛华文化酒店北20米近",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至“张掖丹霞地质公园北门”或“西门”，停车场车位充足；若乘坐动车至张掖西站，可在进站口左手边的游客集散中心乘坐景区直通车。",
-          "internal_arrive": "首选北门，班次最多、停车最方便、路线最顺；若自驾且想避开人流，可选择西门进西门出，但务必确认乘坐的是西入口专线观光车。",
-          "internal_traffic": "景区内必须乘坐观光车，观光车为单向环线循环运行，不能自由折返跳站，各观景台可凭票随意上下车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在张掖市区（如张掖西站附近或明清街青春集市周边），餐饮和住宿配套完善，物价合理；若赶早班机或晚班动车，也可选择住在临泽县。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "重点游览1号和4号观景台，这两个观景台视野开阔且相对平缓，尽量多坐观光车减少步行",
-          "children": "全程台阶较多，婴儿车无法使用，建议抱行或背带；务必看好孩子，严禁翻越护栏踩踏山体（会面临高额罚款），并备好防晒帽、墨镜和充足饮用水。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "北门进北门出·家庭省力精华游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "北门入口",
-            "2号七彩仙缘台（快速打卡）",
-            "1号七彩云海台（俯瞰全景）",
-            "4号七彩虹霞台（重点游玩",
-            "等日落）",
-            "北门返程"
-          ],
-          "duration": "半天",
-          "walking": "约500米",
-          "physical": 2,
-          "tips": [
-            "建议下午官方当日建议时段-官方当日建议时段入园，避开正午暴晒，且到4号台刚好赶上日落黄金光线；4号台是全场精华，务必预留充足时间；返程时认准“北门乘车处”标识，千万别上错去其他门口的车。"
-          ],
-          "sourceTitle": "携程旅行 张掖丹霞地质公园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 张掖丹霞地质公园 详情页",
-          "url": "https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "张掖丹霞地质公园 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/sunan1446174/130858645.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1875
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c6718defe3",
-      "id": "manual_gansu_7b6637c1",
-      "name": "拉卜楞寺",
-      "city": "夏河",
-      "rating": 4.4,
-      "reviewsCount": "892条携程点评",
-      "image": "/assets/images/attractions/gansu_7b6637c1_verified.jpg",
-      "description": "拉卜楞寺位于甘南地区夏河县，是藏传佛教格鲁派的六大寺之一，寺院规模宏大地位崇高，是甘南地区寺院的代表，也是游客来到甘南的好去处。这里有恢宏的寺院建筑群，而且大多金碧辉煌，行走其中或是在高处拍摄全景都十分壮观。",
-      "intro": "拉卜楞寺位于甘南地区夏河县，是藏传佛教格鲁派的六大寺之一，寺院规模宏大地位崇高，是甘南地区寺院的代表，也是游客来到甘南的好去处。这里有恢宏的寺院建筑群，而且大多金碧辉煌，行走其中或是在高处拍摄全景都十分壮观。",
-      "level": "热门景点",
-      "category": "藏传佛教寺院、人文历史景区",
-      "tags": [
-        "藏传佛教寺院、人文历史景区",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "甘南藏族自治州夏河县拉卜楞镇人民西街252号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾从兰州出发约230公里，车程3.5至4小时，路况良好；公共交通可前往兰州汽车南站乘坐班车直达夏河县城，再打车或步行前往景区。",
-          "internal_arrive": "推荐从东门进入，门口即是停车场和转经长廊起点，车位较多，且方便直接开启游览。",
-          "internal_traffic": "景区内部主要依靠步行，殿堂之间距离适中，建议放慢脚步，避免剧烈跑跳以防高反。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在夏河县城内或寺院东门旁的酒店与民宿，步行即可到达景区，餐饮和购物设施也更完善。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "海拔约3200米，务必放慢步伐，避免剧烈运动，可备好氧气瓶或葡萄糖；65周岁以上凭身份证通常免票，可节省体力",
-          "children": "全程需保持安静，教导孩子顺时针转经；1.2米以下儿童通常免票，但转经长廊较长，建议根据孩子体力酌情体验。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "东门进西门出省力经典线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "东门停车场",
-            "转经长廊（体验一段即可）",
-            "游客中心（跟随僧人讲解）",
-            "闻思学院大经堂",
-            "酥油花馆",
-            "弥勒佛殿（大金瓦殿）",
-            "贡唐宝塔",
-            "西门出",
-            "对面山坡观景台（俯瞰全景）"
-          ],
-          "duration": "半天",
-          "walking": "约2至3小时",
-          "physical": 3,
-          "tips": [
-            "殿内严禁拍照，请提前关闭闪光灯；转经和绕塔必须全程顺时针；门票在多个殿堂会二次检票，请务必妥善保管。"
-          ],
-          "sourceTitle": "携程旅行 拉卜楞寺 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 拉卜楞寺 详情页",
-          "url": "https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "拉卜楞寺 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/xiahe2792/15540.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c56a683787",
-      "id": "manual_gansu_46baad23",
-      "name": "南佐遗址",
-      "city": "庆阳",
-      "rating": 4.3,
-      "reviewsCount": "30条携程点评",
-      "image": "/assets/images/attractions/gansu_46baad23_verified.jpg",
-      "description": "南佐遗址现存9处大型夯土台基，北部1处大型建筑一号基址已发掘。一号基址为地面建筑基址，长方形，长33．5、宽18．8米。",
-      "intro": "南佐遗址现存9处大型夯土台基，北部1处大型建筑一号基址已发掘。一号基址为地面建筑基址，长方形，长33．5、宽18．8米。",
-      "level": "热门景点",
-      "category": "考古遗址公园",
-      "tags": [
-        "考古遗址公园",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "甘肃省庆阳市西峰区西南6公里的后官寨乡南佐村",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "距庆阳市区约6公里，建议自驾或包车前往，返程打车较难。",
-          "internal_arrive": "从遗址大门进入，沿主步道依次游览各节点。",
-          "internal_traffic": "园区内步行游览，无内部接驳车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在庆阳市区，打车方便且餐饮选择多。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "园区内树荫较少，注意防晒防蚊，建议携带折叠小凳随时休息",
-          "children": "可结合先民雕塑和炭化稻米展柜讲解史前生活，增加趣味性。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "遗址核心区省力环线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "遗址大门",
-            "先民石像群",
-            "白灰面剖面遗址",
-            "九台夯土观景台",
-            "宫殿F1复原坑",
-            "炭化稻米展柜"
+            "检票口",
+            "171窟唐代弥勒大佛",
+            "两桥间普窟群",
+            "对岸卧佛殿",
+            "姊妹峰观景台"
           ],
           "duration": "半天",
           "walking": "约1公里",
           "physical": 2,
           "tips": [
-            "建议提前了解遗址历史背景，现场标识牌学术术语较多，自带讲解或提前做功课体验会更好。"
+            "不走特窟陡梯，全程平缓栈道，适合老人小孩；可在检票口租讲解器或请导游，约1-1.5小时可走完。"
           ],
-          "sourceTitle": "携程旅行 南佐遗址 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/qingyang834/61219.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -1047,51 +221,47 @@
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/qingyang834/61219.html?poiType=3&scene=online",
-          "高德地图 南佐遗址：https://www.amap.com/place/B0FFJ4QNLD"
+          "Wikidata Q259336 实体页：https://www.wikidata.org/wiki/Q259336"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 南佐遗址 详情页",
-          "url": "https://you.ctrip.com/sight/qingyang834/61219.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "南佐遗址 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0FFJ4QNLD",
-        "width": 2048,
-        "height": 1536
+        "title": "炳灵寺石窟千年奇观 🌟藏在甘肃临夏永靖县积石山大寺沟西侧崖壁的",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5235548105191665591",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5235548105191665591",
+        "width": 1728,
+        "height": 2304
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     },
     {
-      "baselineKey": "core_c1532b1da7",
-      "id": "manual_gansu_bc481a26",
-      "name": "锁阳城遗址",
-      "city": "瓜州",
-      "rating": 4.3,
-      "reviewsCount": "321条携程点评",
-      "image": "/assets/images/attractions/gansu_bc481a26_verified.jpg",
-      "description": "锁阳城遗址在汉代是敦煌郡冥安县治所，西晋为晋昌县，隋为常乐县，唐为瓜州郡。后历经战乱，明王室闭关后遭废弃。",
-      "intro": "锁阳城遗址在汉代是敦煌郡冥安县治所，西晋为晋昌县，隋为常乐县，唐为瓜州郡。后历经战乱，明王室闭关后遭废弃。",
+      "baselineKey": "core_7b3d0699d6",
+      "id": "manual_gansu_12f22d4f",
+      "name": "甘南草原",
+      "city": "甘南州",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/gansu_12f22d4f_verified.jpg",
+      "description": "甘南草原位于甘南州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "甘南草原位于甘南州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "世界文化遗产 / 古代军事防御遗址 / 丝路古迹",
+      "category": "高山草甸草原",
       "tags": [
-        "世界文化遗产 / 古代军事防御遗址 / 丝路古迹",
+        "高山草甸草原",
         "经典景点",
         "口碑热门"
       ],
-      "address": "酒泉市瓜州县桥子乡南坝村",
+      "address": "甘南州（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -1103,14 +273,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾或包车前往，距瓜州县城约62公里（车程约1小时），距敦煌市区约120公里（车程约1.5小时），景区停车场免费。",
-          "internal_arrive": "从游客中心进入，先了解整体布局再乘车游览。",
-          "internal_traffic": "必须乘坐观光车（景区较大，无法全程步行），也可选择马车（电驱辅助）。",
+          "external_arrive": "建议先抵达兰州，随后自驾或包车前往甘南州夏河县（车程约4小时），沿途海拔缓缓升高，有助于适应高原环境。",
+          "internal_arrive": "从夏河县方向进入桑科草原，公路沿途均有观景和停车空间，无需刻意寻找特定大门。",
+          "internal_traffic": "以自驾或包车为主，草原范围广阔，公共交通不便，私家车可停在公路两侧划线区域或观景台附近。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住瓜州县城（酒店选择多、配套完善），或住敦煌市区（旅游配套成熟，但车程较长）。",
+            "area": "推荐住在夏河县城（海拔相对较低，住宿条件好），或选择草原深处的牧民民宿（可体验草原之夜，但需确认供暖和卫生条件）。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -1121,374 +291,238 @@
           "兰州酿皮子"
         ],
         "special_care": {
-          "elderly": "戈壁风大且温差大，需备防风外套和防滑鞋",
-          "children": "可结合玄奘西行故事讲解，增加趣味性，注意防沙护目。\n\n补充一点，景区周边餐饮较少，可在游客中心或瓜州县城用餐；严禁攀爬城墙和踩踏遗址，保护文物。"
+          "elderly": "甘南海拔在3000米左右，初到高原切忌跑跳和剧烈运动，动作放缓，可备好氧气瓶以防高反；早晚温差大，务必携带防风保暖的冲锋衣",
+          "children": "高原紫外线强，需做好防晒；草原风大且夜间气温低，注意给孩子增添衣物；在草原上玩耍时注意看护，避免过度靠近牛羊或野生动物。"
         }
       },
       "lazy_routes": [
         {
-          "title": "观光车省力核心游",
+          "title": "桑科草原自驾轻游与山包观景",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "从夏河县出发前往桑科草原，导航至甘南夏河机场方向，沿途横穿草原公路；路过游客中心后继续前行，在安全区域停靠欣赏草甸与牛羊；随后寻找视野开阔的山包（海拔约3600米）登高俯瞰草原全貌；傍晚在草原深处欣赏日落，夜晚可体验观星。"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（以观景台和山包短途徒步为主）",
+          "physical": 2,
+          "tips": [
+            "建议自驾或包车前往，随走随停；避开商业化较重的游客中心内部，在公路沿线和草原深处体验更好；沿途补给点少，务必自带充足的水和零食；骑马前务必与牧民确认好价格、时长和路线。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q99923774 实体页：https://www.wikidata.org/wiki/Q99923774"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "甘南草原 | 盛夏的绝美仙境 时值盛夏,甘南大草原美成了一幅画!",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4431801965707125217",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4431801965707125217",
+        "width": 5272,
+        "height": 3514
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_c69788cd6a",
+      "id": "manual_gansu_88345378",
+      "name": "郎木寺",
+      "city": "碌曲",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/gansu_88345378_verified.jpg",
+      "description": "郎木寺位于碌曲（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "郎木寺位于碌曲（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "藏传佛教寺庙、高原人文自然景区",
+      "tags": [
+        "藏传佛教寺庙、高原人文自然景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "碌曲（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至\"甘肃郎木寺（赛赤寺）\"，路况良好；公共交通可在兰州或合作市乘班车至郎木寺镇，再步行或打车前往。",
+          "internal_arrive": "赛赤寺山门售票处，自驾车可开入寺内停车场（收费约 5-费用以官方当日公告为准），建议早点到以免车位紧张。",
+          "internal_traffic": "寺内以步行为主，后山观景台和天葬台方向可包车或骑摩托前往，节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "郎木寺镇区，距离赛赤寺步行约 10-15 分钟，选择较多，建议提前确认是否提供电热毯和供氧设备。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "兰州牛肉面",
+          "东乡手抓羊肉",
+          "黄焖羊肉",
+          "兰州酿皮子"
+        ],
+        "special_care": {
+          "elderly": "海拔约 3350 米，抵达首日避免洗澡洗头，慢行防高反，可备便携氧气瓶；寺内台阶较多，建议穿防滑鞋，必要时包车前往后山",
+          "children": "可带些零食在草甸喂土拨鼠，增加互动体验；注意防晒和保暖，山区昼夜温差大。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "赛赤寺半日轻徒步（省力观景版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "赛赤寺山门",
+            "白塔",
+            "转经长廊",
+            "大经堂",
+            "金瓦殿",
+            "弥勒殿",
+            "宗喀巴大殿",
+            "后山观景台（俯瞰全镇全景）"
+          ],
+          "duration": "半天",
+          "walking": "约 2 公里，缓坡为主，部分台阶",
+          "physical": 3,
+          "tips": [
+            "保存好门票和停车收据，出寺时可能查验；殿内禁止拍照，顺时针转经；后山观景台是看日照金顶和晨雾的最佳机位，清晨 官方当日建议时段-官方当日建议时段 光线最美。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "这座历史悠久的佛教圣地,坐落在甘肃省甘南藏族自治州碌曲县郎木寺镇",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3642968974536031749",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3642968974536031749",
+        "width": 1918,
+        "height": 1248
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "郎木寺：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_1d4db403b7",
+      "id": "manual_gansu_c778061a",
+      "name": "水帘洞石窟",
+      "city": "武山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/gansu_c778061a_verified.jpg",
+      "description": "水帘洞石窟位于武山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "水帘洞石窟位于武山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "石窟古迹、自然风光",
+      "tags": [
+        "石窟古迹、自然风光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "武山（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至“武山摩崖石窟文化旅游区”或“水帘洞景区”，停车方便；公共交通可乘火车至武山站，出站后在阳光水岸公交站换乘景区专线车（约半小时一班）；或从天水客运站乘车至洛门汽车站，再转乘水帘洞专线车。",
+          "internal_arrive": "从游客中心统一购票并寄存行李，随后乘坐景交车进入景区，不要直接导航到后山，后山路况较差且陡峭。",
+          "internal_traffic": "景区内核心景点之间需乘坐景交车，步行距离较长，不建议全程徒步。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议入住武山县城内酒店，或选择洛门镇（餐饮和住宿条件较好，有连锁品牌），第二天再前往景区。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "兰州牛肉面",
+          "东乡手抓羊肉",
+          "黄焖羊肉",
+          "兰州酿皮子"
+        ],
+        "special_care": {
+          "elderly": "拉梢寺大佛观景平台需登数十级台阶，水帘洞和千佛洞均需爬台阶，若长辈体力有限，可在核心路口休息，仅远观大佛",
+          "children": "景区内河道和台阶较多，需全程陪同，注意脚下安全，避免在栈道和河道边奔跑。\n\n你这次是打算自驾去，还是坐公共交通？如果是公共交通，我可以帮你再细化一下从天水或武山站的换乘细节。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "核心景点省力环游线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
             "游客中心",
-            "观光车",
-            "古城墙观景台（俯瞰内外城与18米角墩）",
-            "观光车",
-            "塔尔寺遗址（沿木栈道近距离参观大塔与小塔群）",
-            "观光车",
-            "返回游客中心"
+            "乘景交车至核心路口",
+            "拉梢寺（观42.3米摩崖浮雕大佛）",
+            "水帘洞（登台阶看天然岩洞与壁画）",
+            "沿河道步行至千佛洞（看残存壁画与造像）",
+            "原路返回景交车乘车点"
           ],
           "duration": "半天",
-          "walking": "约500米（主要在塔尔寺遗址木栈道及观景台上下）",
-          "physical": 2,
-          "tips": [
-            "戈壁无遮挡暴晒且风沙大，务必做好防风防晒；建议请讲解或租用电子讲解器，否则容易“看土堆”；木栈道部分路段高低不平，注意脚下安全。"
-          ],
-          "sourceTitle": "携程旅行 锁阳城遗址 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 锁阳城遗址 详情页",
-          "url": "https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "锁阳城遗址 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/guazhou2807/4955.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c043a24b83",
-      "id": "manual_gansu_a56c0711",
-      "name": "黄河风情线",
-      "city": "兰州",
-      "rating": 5,
-      "reviewsCount": "3条携程点评",
-      "image": "/assets/images/attractions/gansu_a56c0711_verified.jpg",
-      "description": "兰州黄河风情线大景区是一条沿黄河两岸延伸、将自然风光与城市文化紧密串联的滨河开放式景区，被誉为这座“黄河之城”的城市名片和城市中心的“外滩”。它以百里黄河沿线为主轴，贯穿城关、七里河、安宁等多个城区段，形成市内滨河绿色长廊，并成为兰州重要的生态旅游和休闲空间。",
-      "intro": "兰州黄河风情线大景区是一条沿黄河两岸延伸、将自然风光与城市文化紧密串联的滨河开放式景区，被誉为这座“黄河之城”的城市名片和城市中心的“外滩”。它以百里黄河沿线为主轴，贯穿城关、七里河、安宁等多个城区段，形成市内滨河绿色长廊，并成为兰州重要的生态旅游和休闲空间。",
-      "level": "热门景点",
-      "category": "城市滨河风光带 / 人文休闲",
-      "tags": [
-        "城市滨河风光带 / 人文休闲",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "兰州市七里河区南滨河东路倚能·金河家园东北侧约210米",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "可乘坐地铁1号线直达沿线（如小西湖站、东方红广场站）；自驾可沿南滨河中路行驶，但傍晚时段停车位紧张，建议错峰。",
-          "internal_arrive": "推荐从东端的水车博览园或西端的黄河母亲雕塑开始，一路由东向西或由西向东，不走回头路。",
-          "internal_traffic": "沿线有滨河公交、地铁1号线，也可打车点对点直达；黄河索道和快艇是跨河及上下山的重要代步工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐住在中山桥或张掖路步行街附近，去各景点都很近，周边餐饮丰富；若追求景观，可选择黄河边的亲子酒店，躺在床上就能看黄河。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "多利用索道和打车减少爬山和长距离步行，在黄河边茶摊喝三炮台休息，避免正午暴晒",
-          "children": "在水车博览园体验蹬水车，在黄河边安全区域玩沙，乘坐快艇或羊皮筏子感受黄河，全程需看护好孩子远离深水区域。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "黄河岸线省力漫游（由东向西）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "水车博览园（看巨型水车互动）",
-            "乘坐羊皮筏子或黄河快艇（体验黄河漂流）",
-            "黄河母亲雕塑（打卡地标）",
-            "乘坐黄河索道跨越黄河上白塔山（俯瞰全景）",
-            "中山桥（漫步百年铁桥看夜景）"
-          ],
-          "duration": "半天",
-          "walking": "约 2-3 公里（大量依赖索道、快艇和打车代步）",
-          "physical": 2,
-          "tips": [
-            "各景点之间距离约 1-2 公里，全程步行较累，建议结合打车、地铁和索道代步；傍晚河边风大，建议带一件薄外套。"
-          ],
-          "sourceTitle": "携程旅行 黄河风情线 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/lanzhou231/149990551.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/lanzhou231/149990551.html?poiType=3&scene=online",
-          "高德地图 兰州黄河风情线大景区：https://www.amap.com/place/B0G0P5D8S9"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 黄河风情线 详情页",
-          "url": "https://you.ctrip.com/sight/lanzhou231/149990551.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "黄河风情线 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0G0P5D8S9",
-        "width": 2000,
-        "height": 1500
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_2b34b9e9be",
-      "id": "manual_gansu_f214838e",
-      "name": "临夏永靖刘家峡旅游度假区",
-      "city": "临夏回族",
-      "rating": 4.7,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/gansu_f214838e_verified.jpg",
-      "description": "临夏永靖刘家峡旅游度假区位于甘肃省临夏回族自治州永靖县，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "临夏永靖刘家峡旅游度假区位于甘肃省临夏回族自治州永靖县，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "国家级旅游度假区",
-      "category": "自然奇观、水利工程、湿地风光、人文石窟",
-      "tags": [
-        "自然奇观、水利工程、湿地风光、人文石窟",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "甘肃省临夏回族自治州永靖县",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
-          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
-          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
-          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾，从兰州出发沿兰永公路约1.5小时可达；也可在兰州汽车西站乘坐大巴直达永靖县城，再打车前往各景点。",
-          "internal_arrive": "自驾游客可直接导航至各观景台或码头，景区周边设有多个停车场；若乘船前往炳灵寺，建议从向阳码头或东干码头进入。",
-          "internal_traffic": "景区内景点较为分散，建议自驾或包车游玩；县城至各景点打车费用以官方当日公告为准左右，部分观景台内部提供观光车服务。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐入住永靖县城或太极岛湿地公园周边的酒店（如黄河明珠国际酒店），房间宽敞且周边餐饮、休闲设施完善，方便家庭休息。",
-            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "优先选择路线A，避免攀爬陡峭石窟，在湿地公园散步和观景台俯瞰更为轻松",
-          "children": "可在湿地公园租用电动车骑行，或在魏家坡湖畔露营、玩水，增加游玩趣味性。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "湖光奇观休闲省力游（适合长辈儿童）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "黄洮交汇观景平台（乘观光车上山俯瞰双色黄河）",
-            "刘家峡大坝（外部观景台俯瞰高峡平湖）",
-            "太极岛湿地公园（沿湖步道散步或骑行）"
-          ],
-          "duration": "半天",
-          "walking": "较少，观景台可乘观光车，湿地公园路面平缓",
-          "physical": 2,
-          "tips": [
-            "黄洮交汇观景平台建议上午前往，光线顺光时双色分界线最清晰；湖面风大，务必为长辈和儿童准备防风薄外套。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "verifiedAt": "2026-08-19"
-        },
-        {
-          "title": "人文山水深度游（需乘船，体力要求较高）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "向阳码头或东干码头乘船",
-            "炳灵寺石窟（游览千年石窟与唐代大佛）",
-            "魏家坡湖畔露营休息"
-          ],
-          "duration": "半天",
-          "walking": "较多，石窟内部台阶陡峭，需穿防滑运动鞋",
-          "physical": 4,
-          "tips": [
-            "炳灵寺石窟必须乘船抵达，往返船程约1至1.5小时，务必提前确认末班船时间；石窟内禁止航拍，且部分区域台阶较陡，长辈需量力而行。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "高德地图 刘家峡旅游度假区：https://www.amap.com/place/B0FFHXG49M"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 刘家峡旅游度假区",
-          "url": "https://www.amap.com/place/B0FFHXG49M",
-          "poiId": "B0FFHXG49M",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "临夏永靖刘家峡旅游度假区 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0FFHXG49M",
-        "width": 2048,
-        "height": 1536
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    }
-  ],
-  "overrides": {
-    "amap_B03A900102": {
-      "baselineKey": "core_a0c544c459",
-      "id": "amap_B03A900102",
-      "name": "敦煌莫高窟",
-      "city": "敦煌",
-      "rating": 4.4,
-      "reviewsCount": "10824条携程点评",
-      "image": "/assets/images/attractions/gansu_1b51906b_verified.jpg",
-      "description": "莫高窟也称千佛洞，位于敦煌市区的东南侧。石窟始建于东晋十六国时期，石窟开凿历经了千年，直到元朝结束。",
-      "intro": "莫高窟也称千佛洞，位于敦煌市区的东南侧。石窟始建于东晋十六国时期，石窟开凿历经了千年，直到元朝结束。",
-      "level": "热门景点",
-      "category": "人文历史/石窟艺术",
-      "tags": [
-        "人文历史/石窟艺术",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "甘肃省酒泉市敦煌市阳关大道",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "可乘飞机或高铁抵达敦煌市，随后打车或乘坐公交前往莫高窟数字展示中心（距市区约15公里）。",
-          "internal_arrive": "常规票从数字展示中心展1馆入口进入；应急票从展2馆入口进入，请勿走错。",
-          "internal_traffic": "数字展示中心与实体窟区之间由景区摆渡车连接，车程约15分钟；窟区内为步行游览，部分路段有休息凳。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议入住敦煌市区酒店，餐饮和住宿选择丰富，距离景区车程约20至30分钟。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "优先选择最早或最晚场次避开高温与人流高峰；景区提供免费轮椅服务，可提前电话预约；若体力有限，参观完部分实体窟后可在休息区等候，不必勉强走完所有洞窟",
-          "children": "利用数字展示中心的球幕电影和VR互动展提前预热，提高孩子兴趣；窟内禁止喧哗，可提前给孩子看《九色鹿》动画铺垫；携带小扇子、湿巾防暑，若孩子烦躁可放弃后半程，直接返回展示中心休息。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "常规票半日省力游（含数字电影+实体窟+复制窟）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "莫高窟数字展示中心（观看《千年莫高》《梦幻佛宫》球幕电影）",
-            "乘坐景区摆渡车前往实体窟区",
-            "跟随讲解员参观实体洞窟（8个普窟）",
-            "九层楼广场打卡",
-            "敦煌石窟文物保护研究陈列中心（参观1:1复制窟，可拍照）",
-            "乘坐摆渡车返回数字展示中心"
-          ],
-          "duration": "半天",
-          "walking": "约1.5至2公里（实体窟区内部步行，其余路段可乘摆渡车）",
+          "walking": "约1.5-2小时",
           "physical": 3,
           "tips": [
-            "务必携带身份证，全程需多次刷证检票；窟区内无餐饮售卖，建议自带饮用水和零食；洞窟内严禁拍照，请关闭闪光灯。"
+            "务必购买往返景交车，从入口到核心景区步行距离较长；穿防滑运动鞋，部分台阶较陡；若遇雨季，水帘洞景观更明显，旱季可能无水。"
           ],
-          "sourceTitle": "携程旅行 敦煌莫高窟 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -1496,160 +530,49 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 敦煌莫高窟 详情页",
-          "url": "https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "敦煌莫高窟 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "甘肃武山水帘洞石窟",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1566.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1667
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3755285839730899898",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3755285839730899898",
+        "width": 4000,
+        "height": 3000
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "水帘洞石窟：基本资料目前只有1个可追溯来源"
+        ]
       }
     },
-    "amap_B03A9000ZN": {
-      "baselineKey": "core_544047ef4b",
-      "id": "amap_B03A9000ZN",
-      "name": "鸣沙山月牙泉",
+    {
+      "baselineKey": "core_c68f7a7912",
+      "id": "manual_gansu_5cbb06f3",
+      "name": "雅丹魔鬼城",
       "city": "敦煌",
-      "rating": 4.7,
-      "reviewsCount": "38030条携程点评",
-      "image": "/assets/images/attractions/gansu_a859cc3e_verified.jpg",
-      "description": "鸣沙山月牙泉位于敦煌市区以南，这里沙山与泉水共处，历来以“沙漠奇观”闻名于世，是敦煌的名片之一。在这里你既可以爬上鸣沙山，俯瞰月牙泉，还能在山顶上欣赏大漠日落，感受西北大漠的苍凉广阔。",
-      "intro": "鸣沙山月牙泉位于敦煌市区以南，这里沙山与泉水共处，历来以“沙漠奇观”闻名于世，是敦煌的名片之一。在这里你既可以爬上鸣沙山，俯瞰月牙泉，还能在山顶上欣赏大漠日落，感受西北大漠的苍凉广阔。",
-      "level": "5A景区",
-      "category": "自然奇观 / 沙漠绿洲 / 5A级景区",
-      "tags": [
-        "自然奇观 / 沙漠绿洲 / 5A级景区",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "酒泉市敦煌市鸣山路",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"鸣沙山月牙泉中门停车场\"；市区打车约15-20分钟、费用以官方当日公告为准左右；公交可乘3路、5路至\"月牙泉南门站\"。",
-          "internal_arrive": "首选中门，离月牙泉最近、步行最短、配套最全；自驾且赶旺季下午高峰可考虑东门（停车场大、检票快），但距核心区较远需换乘观光车。",
-          "internal_traffic": "景区内有观光车，单程费用以官方当日公告为准、往返费用以官方当日公告为准，中门到月牙泉步行约10分钟，体力一般或带老人小孩可乘坐省力。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "敦煌市区（沙洲夜市附近）最方便，打车到景区约15-20分钟；也可选择景区门口周边民宿，但配套相对有限。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "兰州牛肉面",
-          "东乡手抓羊肉",
-          "黄焖羊肉",
-          "兰州酿皮子"
-        ],
-        "special_care": {
-          "elderly": "60岁以下、无严重心肺疾病者可游玩，建议走木梯栈道，骑骆驼可选双人骑乘，避免正午暴晒，13:00-17:00尽量不户外活动",
-          "children": "5岁以上儿童更适合，滑沙需家长陪同，身高1.4米以上可直接滑沙下山，注意防沙护眼。\n\n补充实用提示：门票三日有效，可分两次入园看日出和日落；建议下午5点后入园避开暴晒；穿洞洞鞋或拖鞋+袜子，不用买鞋套；手机和相机务必做好防沙措施；带足水和防晒用品。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "中门省力休闲线（家庭友好型）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "中门入园",
-            "观光车直达月牙泉",
-            "月泉阁二楼平台打卡",
-            "泉边芦苇栈道漫步",
-            "平缓沙山浅爬俯瞰全景",
-            "体验滑沙下山",
-            "返程出口"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里（木栈道+木梯）",
-          "physical": 2,
-          "tips": [
-            "中门离月牙泉最近，进门步行10分钟即可到达核心区；上山务必走木梯栈道，不要直接爬沙坡，否则\"走一步滑半步\"非常耗费体力。"
-          ],
-          "sourceTitle": "携程旅行 鸣沙山月牙泉 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 鸣沙山月牙泉 详情页",
-          "url": "https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "鸣沙山月牙泉 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1563.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1595
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    "amap_B03A913N0I": {
-      "baselineKey": "core_2c72db500a",
-      "id": "amap_B03A913N0I",
-      "name": "敦煌古城",
-      "city": "敦煌",
-      "rating": 3.9,
-      "reviewsCount": "1134条携程点评",
-      "image": "/assets/images/attractions/gansu_cdb9979_verified.jpg",
-      "description": "敦煌影视古城又称敦煌影视城、敦煌古城，位于敦煌市区西南侧，距离市区车程约16公里，是游客游玩敦煌西线上的一处重要景点，一般和玉门关、阳关景区、敦煌雅丹国家地质公园一起一日游玩。影视古城是1987年中日合拍历史故事片《敦煌》时仿造宋朝沙州古城建设，后来又成为《封神演义》、《新龙门客栈》、《奔跑吧兄弟》等众多影视剧和综艺节目的取景地。",
-      "intro": "敦煌影视古城又称敦煌影视城、敦煌古城，位于敦煌市区西南侧，距离市区车程约16公里，是游客游玩敦煌西线上的一处重要景点，一般和玉门关、阳关景区、敦煌雅丹国家地质公园一起一日游玩。影视古城是1987年中日合拍历史故事片《敦煌》时仿造宋朝沙州古城建设，后来又成为《封神演义》、《新龙门客栈》、《奔跑吧兄弟》等众多影视剧和综艺节目的取景地。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/gansu_5cbb06f3_verified.jpg",
+      "description": "雅丹魔鬼城位于敦煌（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "雅丹魔鬼城位于敦煌（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "影视拍摄基地 / 仿古街区",
+      "category": "地质地貌观光",
       "tags": [
-        "影视拍摄基地 / 仿古街区",
+        "地质地貌观光",
         "经典景点",
         "口碑热门"
       ],
-      "address": "酒泉市敦煌市敦煌西南18公里处的大漠戈壁滩上",
+      "address": "敦煌（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -1661,14 +584,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "位于敦煌市区西南约 18 公里的戈壁滩上，无公共交通直达，需自驾、包车或乘坐西线旅游直通车前往。",
-          "internal_arrive": "从古城大门进入，正对主街，可快速进入核心游览区。",
-          "internal_traffic": "景区面积不大，各街区之间步行即可，无需额外乘坐内部交通工具。",
+          "external_arrive": "距离敦煌市区约160公里，车程约2.5小时，沿途无加油站，建议自驾前加满油或选择包车前往。",
+          "internal_arrive": "从游客中心统一检票进入，换乘景区观光车。",
+          "internal_traffic": "必须乘坐景区观光车（单程约46公里），各站点停靠10-20分钟，原车返回；深度游可在孔雀玉立站点换乘自费越野车或电瓶车深入腹地。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在敦煌市区沙洲夜市附近，吃喝逛方便，前往古城也相对便捷。",
+            "area": "敦煌市区（酒店选择多，餐饮便利，适合游玩后休息）。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -1679,32 +602,32 @@
           "兰州酿皮子"
         ],
         "special_care": {
-          "elderly": "古城内步行距离适中，但石板路较多，建议穿舒适的平底鞋，避免正午高温时段前往",
-          "children": "可租借汉服或古装体验穿越感，对仿古建筑和街景充满好奇，建议家长陪同在小巷中探索拍照。"
+          "elderly": "全程观光车代步，步行极少，但戈壁无遮挡、风大日晒强，需备薄外套防风保暖，戴好防风帽和墨镜",
+          "children": "可带儿童推车，各站点推车可行，让孩子在安全区域玩沙，注意补水防晒，避免正午暴晒时段入园。"
         }
       },
       "lazy_routes": [
         {
-          "title": "古城核心街区与城楼全景省力游",
+          "title": "常规观光车日落省力线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "古城大门（城楼仰拍）",
-            "敦煌街（刺史府）",
-            "汴梁街（土墙巷武侠风）",
-            "高昌街（西域风情）",
-            "朱雀门城楼（俯瞰全景）",
-            "鸿运客栈（武侠风打卡）"
+            "游客中心乘观光车",
+            "金狮迎宾/最孤独的派出所",
+            "狮身人面像",
+            "孔雀玉立",
+            "西海舰队",
+            "伟人像（日落观赏点）"
           ],
           "duration": "半天",
-          "walking": "约 1.5 公里",
+          "walking": "约500米（各站点下车到观景台短途步行）",
           "physical": 2,
           "tips": [
-            "建议下午 4 点后入园，光线柔和且避开正午暴晒；古城内多为石板路，务必穿平底鞋或运动鞋。"
+            "务必记住自己的观光车号和座位号，原车原座返回；建议坐左侧窗口，全程能看到雅丹全貌；戈壁风大，帽子一定要系绳，做好防晒防风。"
           ],
-          "sourceTitle": "携程旅行 敦煌古城 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -1712,88 +635,158 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 敦煌古城 详情页",
-          "url": "https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-19"
-        },
-        "basicInfoUpdatedAt": "2026-08-19",
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "敦煌古城 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "🚜敦煌西线探秘:雅丹魔鬼城攻略🌟",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/dunhuang8/1561.html?poiType=3&scene=online",
-        "width": 3427,
-        "height": 2288
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5231205360657198042",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5231205360657198042",
+        "width": 1440,
+        "height": 1050
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "雅丹魔鬼城：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_885f6274b9",
+      "id": "manual_gansu_1c33e37a",
+      "name": "正宁路夜市",
+      "city": "兰州",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/gansu_1c33e37a_verified.jpg",
+      "description": "正宁路夜市位于兰州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "正宁路夜市位于兰州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "夜市街区",
+      "tags": [
+        "夜市街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "兰州（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐地铁1号线至西关十字站或东风剧院站，出站后步行或骑行共享单车前往；也可打车或乘坐公交至附近站点。",
+          "internal_arrive": "正宁路与甘家巷交口是夜市的核心入口，周边灯笼街道氛围感强，适合拍照打卡。",
+          "internal_traffic": "夜市为开放式街区，内部全程步行游览。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在正宁路夜市周边或中山桥附近，方便夜间逛吃，且能顺路游览黄河风情线。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "兰州牛肉面",
+          "东乡手抓羊肉",
+          "黄焖羊肉",
+          "兰州酿皮子"
+        ],
+        "special_care": {
+          "elderly": "尽量选择明码标价、口味软糯的小吃（如灰豆子、牛奶鸡蛋醪糟），避开高峰期拥挤摊位",
+          "children": "夜市人多，需时刻注意防走失，避免给儿童食用过多生冷或辛辣食物。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "正宁路夜市经典逛吃线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "正宁路与甘家巷交口入口",
+            "牛奶鸡蛋醪糟摊位",
+            "烤羊肉与高担酿皮摊",
+            "甜醅子与灰豆子摊",
+            "夜市深处或沿黄河边散步消食"
+          ],
+          "duration": "半天",
+          "walking": "约500米",
+          "physical": 2,
+          "tips": [
+            "建议官方当日建议时段刚开市或官方当日建议时段后错峰前往，避开人潮；下单前务必问清价格，优先选择明码标价摊位；人多拥挤时注意保管手机和背包；昼夜温差大，晚间建议带一件薄外套。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "兰州正宁路夜市南关民族风味一条街:烟火升腾处 解锁金城夜宵江湖",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://baijiahao.baidu.com/s?id=1846759504170289256&wfr=spider&for=pc",
+        "sourceUrl": "http://baijiahao.baidu.com/s?id=1846759504170289256&wfr=spider&for=pc",
+        "width": 1200,
+        "height": 802
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "正宁路夜市：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
-  },
-  "selfHealActions": [
-    {
-      "type": "merge_duplicate_additions",
-      "keptId": "manual_gansu_a69f4dce",
-      "keptName": "官鹅沟景区",
-      "removedId": "manual_gansu_cc68dca1",
-      "removedName": "官鹅沟",
-      "reason": "同省近似名称且共享同一 OTA/高德实体来源，自动合并"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "amap_B03A900102",
-      "keptName": "敦煌莫高窟",
-      "removedId": "manual_gansu_1b51906b",
-      "removedName": "敦煌莫高窟",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "amap_B03A9000ZN",
-      "keptName": "鸣沙山月牙泉",
-      "removedId": "manual_gansu_a859cc3e",
-      "removedName": "鸣沙山月牙泉",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "amap_B03A913N0I",
-      "keptName": "敦煌古城",
-      "removedId": "manual_gansu_cdb9979",
-      "removedName": "敦煌古城",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    }
   ],
-  "reviewedAt": "2026-08-19",
-  "reviewedAtIso": "2026-08-19T07:59:08.511Z",
-  "appliedAt": "2026-08-19T08:02:08.766Z",
+  "overrides": {},
+  "reviewedAt": "2026-08-21",
+  "reviewedAtIso": "2026-08-21T08:59:51.476Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
+  "batchSelectedKeys": [
+    "core_71f3585093",
+    "core_7915abd427",
+    "core_7b3d0699d6",
+    "core_c69788cd6a",
+    "core_1d4db403b7",
+    "core_c68f7a7912",
+    "core_885f6274b9"
+  ],
+  "appliedAt": "2026-08-24T03:09:06.034Z",
   "appliedAttractionIds": [
-    "manual_gansu_a2a56db6",
-    "manual_gansu_a69f4dce",
-    "manual_gansu_e1c62934",
-    "manual_gansu_88cc2a5e",
-    "manual_gansu_cfada5f3",
-    "manual_gansu_f0ba2cac",
-    "manual_gansu_ede3bf11",
-    "manual_gansu_7b6637c1",
-    "manual_gansu_46baad23",
-    "manual_gansu_bc481a26",
-    "manual_gansu_a56c0711",
-    "manual_gansu_f214838e"
+    "manual_gansu_abe88ce8",
+    "manual_gansu_51bb6e55",
+    "manual_gansu_12f22d4f",
+    "manual_gansu_88345378",
+    "manual_gansu_c778061a",
+    "manual_gansu_5cbb06f3",
+    "manual_gansu_1c33e37a"
   ],
-  "appliedOverrideIds": [
-    "amap_B03A900102",
-    "amap_B03A9000ZN",
-    "amap_B03A913N0I"
-  ]
+  "appliedOverrideIds": []
 }

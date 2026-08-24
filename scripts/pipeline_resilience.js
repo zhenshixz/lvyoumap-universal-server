@@ -50,6 +50,7 @@ function stagePolicy(script) {
     'xhs_lazy_guides.js': { maxAttempts: 2, delayMs: 2500 },
     'xhs_research_guides.js': { maxAttempts: 2, delayMs: 2500 },
     'collect_core_details.js': { maxAttempts: 2, delayMs: 1800 },
+    'research_core_repairs.js': { maxAttempts: 2, delayMs: 1800 },
     'collect_secondary_core_evidence.js': { maxAttempts: 2, delayMs: 1800 },
     'collect_mct_core_candidates.js': { maxAttempts: 2, delayMs: 1800 },
     'collect_ota_core_candidates.js': { maxAttempts: 2, delayMs: 1800 },

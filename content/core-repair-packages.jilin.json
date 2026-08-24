@@ -1,97 +1,1379 @@
 {
   "province": "吉林",
-  "status": "reviewed",
-  "createdAt": "2026-08-21T02:58:36.474Z",
-  "updatedAt": "2026-08-21T06:17:32.428Z",
+  "status": "applied",
+  "createdAt": "2026-08-21T09:13:54.872Z",
+  "updatedAt": "2026-08-24T03:11:05.507Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "关东影视城：基本资料目前只有1个可追溯来源",
+    "集安古城：基本资料目前只有1个可追溯来源",
+    "靖宇县城：基本资料目前只有1个可追溯来源",
+    "松江河古镇：基本资料目前只有1个可追溯来源",
+    "万龙滑雪场：基本资料目前只有1个可追溯来源",
+    "延吉水上市场：基本资料目前只有1个可追溯来源",
+    "长白朝鲜族自治县：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.jilin.json",
-  "attractions": [],
-  "overrides": {},
+  "attractions": [
+    {
+      "baselineKey": "core_cab63f929c",
+      "id": "manual_jilin_3bec56ad",
+      "name": "关东影视城",
+      "city": "沈阳市（注",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_3bec56ad_verified.jpg",
+      "description": "关东影视城位于沈阳市（注（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "关东影视城位于沈阳市（注（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "民国风沉浸式影视主题景区 / 露天博物馆",
+      "tags": [
+        "民国风沉浸式影视主题景区 / 露天博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "沈阳市（注（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾导航至\"东北有戏\"（沈阳市浑南区棋盘山378号），景区北侧新增约2000个停车位；公共交通可乘地铁至世博园站，换乘景区夜游专线（费用以官方当日公告为准）直达门口，或乘坐168路公交至秀湖广场站步行前往。",
+          "internal_arrive": "建议从正门（西门）入园，步行距离较近；自驾车辆勿在路边违停，易拥堵贴条。",
+          "internal_traffic": "园区内以步行游览为主，整体体量适中，无园内接驳车；建议穿舒适鞋子，带娃家庭可预留推车体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "周边有沈阳秀湖酒店、山里红山庄等住宿选择，距离景区较近，适合安排棋盘山一日游或多日游。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "园区有暖心驿站可领免费冷饮雪糕，走累了可休息；部分演出场地为板凳座位，建议自带折叠小凳，避免久站；冬季山区气温较低，注意保暖",
+          "children": "可租民国风服饰拍照，参与NPC互动赚银票换孔明灯，园内有无动力乐园可让孩子撒欢放电。\n\n你打算什么时候去？如果是周末或节假日，建议提前关注官方公众号查看当日节目单和人流情况。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "关东街区漫步 + 实景互动体验线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "城门（登楼俯瞰全景）",
+            "中华路（主街区，NPC巡游与主线剧情集中地）",
+            "民兴街（民国洋风布景，可体验变戏法",
+            "AI东北等互动点位）",
+            "鼓楼片区（观看定点演出与民俗大戏）",
+            "非yi手信街（各国风情布景，适合拍复古写真）",
+            "山珍路/万家胡同（关东小吃街，品尝平价东北特色美食）"
+          ],
+          "duration": "半天",
+          "walking": "约 2 公里",
+          "physical": 3,
+          "tips": [
+            "建议午后入园，白天逛街区、看表演，夜场欣赏打铁花和光影秀；路上遇到NPC可大胆互动，通过闯关游戏赚取银票兑换小礼物。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "金秋不宅家# 秋季外出游玩打卡,沈阳浑南区的关东影视城.",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4409556908384933937",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4409556908384933937",
+        "width": 1312,
+        "height": 1821
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "关东影视城：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_6995b06179",
+      "id": "manual_jilin_b2ae15e7",
+      "name": "吉林文庙",
+      "city": "吉林",
+      "rating": 4.2,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/jilin_b2ae15e7_verified.jpg",
+      "description": "吉林文庙位于文庙胡同南昌路2号(近江城广场)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "吉林文庙位于文庙胡同南昌路2号(近江城广场)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "人文古迹、博物馆",
+      "tags": [
+        "人文古迹、博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "文庙胡同南昌路2号(近江城广场)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘坐公交至“文庙胡同”或“文庙”站；自驾可停放在景区门口停车场或周边居民区。",
+          "internal_arrive": "从西辕门（“德配天地”匾额下）进入。",
+          "internal_traffic": "景区内为平地步行，全程无障碍。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在吉林市火车站附近或松花江沿岸，距文庙较近且交通便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "景区地势平坦，无台阶障碍，适合长辈慢步游览，可在大成殿前祈福",
+          "children": "带孩子走过状元桥讨个好彩头，在东西配殿了解古代科举和儒家文化，寓教于乐。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "中轴线经典祈福游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "西辕门进入",
+            "泮池与状元桥",
+            "棂星门",
+            "大成门",
+            "大成殿",
+            "崇圣殿",
+            "东西配殿（科举文化展/孔子文化展）"
+          ],
+          "duration": "半天",
+          "walking": "约800米",
+          "physical": 2,
+          "tips": [
+            "文庙正门（南门）常年不开，务必从西辕门进入；可关注免费讲解时间（如官方当日建议时段、官方当日建议时段等，以官方当日公告为准）；红墙黄瓦非常适合汉服或素色衣服拍照。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 吉林文庙：https://www.amap.com/place/B01B0026DI"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 吉林文庙",
+          "url": "https://www.amap.com/place/B01B0026DI",
+          "poiId": "B01B0026DI",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-21"
+        },
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "吉林文庙 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B01B0026DI",
+        "width": 2016,
+        "height": 1512
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_8bd7513b91",
+      "id": "manual_jilin_c13f8f85",
+      "name": "集安古城",
+      "city": "通化",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_c13f8f85_verified.jpg",
+      "description": "集安古城位于通化（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "集安古城位于通化（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "人文历史街区",
+      "tags": [
+        "人文历史街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "通化（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至“集安古城停车场”；外地游客可乘高铁或大巴至集安市区后打车前往，起步价费用以官方当日公告为准。",
+          "internal_arrive": "古城门广场主入口，周边有公共卫生间和休息区，方便家庭集结。",
+          "internal_traffic": "街区内部均为步行，无观光车；各节点间距短，慢走约5-10分钟即可到达。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在集安市区（大吉他广场或滨江广场附近），步行或打车即可到达古城，餐饮和配套更完善。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "全程平路无台阶，节奏缓慢，适合长辈散步观景",
+          "children": "青石板街和夜景灯光区适合孩子拍照打卡，可准备些小零食在休息区补充体力。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "古城慢游省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "古城门广场",
+            "青石板主街",
+            "民俗展示馆",
+            "夜景灯光区"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "主街全程平路，可推婴儿车或轮椅；建议傍晚前往，白天无遮挡较晒，夜景灯光亮起后氛围更好。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "通化,游走集安古城境内,探寻高句丽旧迹",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://baijiahao.baidu.com/s?id=1867959428547229788&wfr=spider&for=pc",
+        "sourceUrl": "http://baijiahao.baidu.com/s?id=1867959428547229788&wfr=spider&for=pc",
+        "width": 1200,
+        "height": 800
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "集安古城：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_a53b17df98",
+      "id": "manual_jilin_87246a7f",
+      "name": "靖宇县城",
+      "city": "白山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_87246a7f_verified.jpg",
+      "description": "靖宇县城位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "靖宇县城位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "自然地质/红色文化/城市休闲",
+      "tags": [
+        "自然地质/红色文化/城市休闲",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "白山（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾最便捷，从长白山或靖宇县城出发导航至“四海龙湾玛珥湖”；注意走主路，勿信导航导出的乡间小路。",
+          "internal_arrive": "四海龙湾景区门口可停车，建议听从工作人员指引停放；杨靖宇将军殉国地停车位较少，建议早到或打车前往。",
+          "internal_traffic": "景区间需自驾或打车；四海龙湾内有观光车（约4分钟），可节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在靖宇县城内，性价比高，餐饮选择多，方便第二天前往各景区。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "四海龙湾环湖栈道平缓，适合长辈散步；避免攀登瞭望塔陡坡",
+          "children": "靖宇公园有互动任务和萌宠乐园，孩子可参与；可准备小零食投喂小动物。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "四海龙湾“森林之眼”自然轻徒步（家庭省力版）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "景区入口",
+            "观光车（可选）",
+            "环湖木栈道（平缓段）",
+            "火山岩地质区",
+            "观景平台（俯瞰正圆湖面）",
+            "萌宠乐园（可选）",
+            "返回入口"
+          ],
+          "duration": "半天",
+          "walking": "约2公里（环湖栈道平缓，避开瞭望塔陡坡）",
+          "physical": 2,
+          "tips": [
+            "山区基本无手机信号，务必提前下载离线地图；观景塔官方当日建议时段准时关闭，建议上午前往；景区内无餐饮，需自备水和零食。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        },
+        {
+          "title": "红色记忆与县城休闲慢游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "杨靖宇将军殉国地（纪念馆/纪念碑）",
+            "靖宇公园（游园互动/打卡）",
+            "靖宇县露天市场（品尝特色小吃/采购山货）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 3,
+          "tips": [
+            "杨靖宇将军殉国地部分区域可能施工修缮，具体开放情况以官方当日公告为准；靖宇公园有NPC互动任务，适合带娃家庭体验。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "景点位于白山市靖宇县城外28.",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5395775055712964353",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5395775055712964353",
+        "width": 1296,
+        "height": 1728
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "靖宇县城：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_ffb6f2e9bd",
+      "id": "manual_jilin_130dd6a7",
+      "name": "前郭尔罗斯蒙古族自治县",
+      "city": "松原",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_130dd6a7_verified.jpg",
+      "description": "前郭尔罗斯蒙古族自治县位于松原（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "前郭尔罗斯蒙古族自治县位于松原（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "5A级湖泊生态旅游区、蒙古族文化主题景区、县级博物馆、藏传佛教寺院",
+      "tags": [
+        "5A级湖泊生态旅游区、蒙古族文化主题景区、县级博物馆、藏传佛教寺院",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "松原（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "可乘飞机至松原查干湖机场，或乘高铁至松原站/查干湖站；也可从长春等地乘坐长途客车直达松原客运站，再转乘景区专车或打车前往。",
+          "internal_arrive": "查干湖景区主要游客中心集中在南湖区域，建议从南湖游客中心进入；若前往北湖赏景，建议自驾或租用电单车。",
+          "internal_traffic": "查干湖景区内建议自驾、包车或乘坐景区观光车；县城内景点较集中，可乘坐公交或打车前往。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "查干湖周边民宿（推窗见湖光，适合度假）或松原市区酒店（餐饮交通更便利，性价比高）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "选择路线B或路线A中平坦栈道与观光车结合的方式，避免过度劳累，可在公园与江畔休闲散步",
+          "children": "路线A的竹筏游湖和路线B的博物馆猛犸象标本非常吸引孩子，可结合喂鸽子、射箭等互动体验。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "查干湖湖光渔猎深度游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "渔猎文化博物馆（了解万年渔猎故事与冬捕非遗）",
+            "成吉思汗召（参观蒙古帝国历史陈列与纪念场馆）",
+            "竹筏码头（穿梭芦苇荡赏荷花与野鸭）",
+            "妙音寺（探访吉林省唯一藏传佛教寺院）",
+            "王爷府陈列馆（了解郭尔罗斯前旗王府历史）",
+            "鸿鹄楼（登顶俯瞰查干湖全景）"
+          ],
+          "duration": "半天",
+          "walking": "中等（景区范围较大，部分路段需步行，可结合观光车）",
+          "physical": 3,
+          "tips": [
+            "查干湖景区面积广阔，南湖与北湖有一定距离，建议自驾或包车游玩；夏季可乘竹筏赏荷，冬季可体验非遗冬捕（具体以官方当日公告为准）。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        },
+        {
+          "title": "县城蒙元文化与江景休闲游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "成吉思汗文化园（打卡世界最高成吉思汗站立青铜像）",
+            "郭尔罗斯博物馆（观看猛犸象标本与蒙古族民俗文物）",
+            "纳仁汗公园与滨江公园（漫步松花江畔赏江景）",
+            "龙华寺（参观亚洲最大寺庙殿宇之一的大雄宝殿）"
+          ],
+          "duration": "半天",
+          "walking": "轻松（多为公园与广场漫步，适合休闲）",
+          "physical": 2,
+          "tips": [
+            "成吉思汗文化园全天开放；郭尔罗斯博物馆建议提前确认开放时间，周一可能闭馆。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q1376078 实体页：https://www.wikidata.org/wiki/Q1376078"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "Qian Gorlos, Songyuan, Jilin, China - panoramio (22).jpg",
+        "author": "Kobe Bryn",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qian_Gorlos,_Songyuan,_Jilin,_China_-_panoramio_(22).jpg",
+        "width": 3200,
+        "height": 1800
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_10d16fa390",
+      "id": "manual_jilin_7b47d8a0",
+      "name": "松江河古镇",
+      "city": "白山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_7b47d8a0_verified.jpg",
+      "description": "松江河古镇位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "松江河古镇位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "自然风景区（长白山西坡）+ 小镇休闲",
+      "tags": [
+        "自然风景区（长白山西坡）+ 小镇休闲",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "白山（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至长白山西站（距镇约20分钟车程）；飞机至长白山机场（距镇约15分钟）；自驾导航至\"长白山西景区集散中心\"。",
+          "internal_arrive": "从西景区游客中心（池西集散中心）进入，提前在\"长白山\"公众号预约门票，建议选早时段（7-9点）看天池概率更高。",
+          "internal_traffic": "景区内全程靠环保车接驳，从集散中心到天池换乘点约50分钟，再到天池脚下约20分钟；下车后徒步台阶。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "松江河镇内（性价比高，餐饮丰富，打车到景区约15分钟）；或万达/鲁能度假区（设施好但价格高，适合想躺平休息的家庭）。 长辈建议：1442级台阶对膝盖和心肺要求较高，长辈不建议登顶；若长辈同行，可考虑改去北坡（坐倒站车直达天池，无需徒步），或仅在镇内松江河国家森林公园散步。 儿童建议：台阶途中有休息亭，可让孩子慢慢走；务必带防风薄外套和一次性雨衣；天池温度比山下低8-12℃，注意保暖。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "1442级台阶对膝盖和心肺要求较高，长辈不建议登顶；若长辈同行，可考虑改去北坡（坐倒站车直达天池，无需徒步），或仅在镇内松江河国家森林公园散步",
+          "children": "台阶途中有休息亭，可让孩子慢慢走；务必带防风薄外套和一次性雨衣；天池温度比山下低8-12℃，注意保暖。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "西坡天池全景+大峡谷省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客集散中心",
+            "环保车",
+            "天池换乘点",
+            "徒步1442级台阶登顶观天池",
+            "原路返回",
+            "锦江大峡谷（木栈道约1小时）",
+            "返程"
+          ],
+          "duration": "半天",
+          "walking": "约3.5小时（不含等车时间）",
+          "physical": 4,
+          "tips": [
+            "台阶沿途无售卖，自带水和零食；天池天气多变，备一次性雨衣；山顶风大禁打伞，穿防风外套。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "探索长白山西坡:松江河镇的绝美风光",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4339282125231503752",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4339282125231503752",
+        "width": 1440,
+        "height": 1050
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "松江河古镇：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_6d6dafdc61",
+      "id": "manual_jilin_6e1069e0",
+      "name": "图们口岸",
+      "city": "延边朝鲜族",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/jilin_6e1069e0_verified.jpg",
+      "description": "图们口岸位于明星路69号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "图们口岸位于明星路69号，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "边境口岸观光",
+      "tags": [
+        "边境口岸观光",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "明星路69号",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "从延吉西站乘高铁到图们北站约15分钟，出站后右手边换乘9路公交直达口岸（费用以官方当日公告为准），注意确认是\"直达\"班次；也可选择包车，省心且能存放行李。",
+          "internal_arrive": "从口岸大街正门进入，沿人流方向步行即可串联主要打卡点。",
+          "internal_traffic": "景区内景点集中，全程步行即可，无需额外乘坐交通工具。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在图们北站或口岸附近，方便往返；若时间紧，可直接在延吉住，当天往返图们半日游。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "南阳亭观景台可远眺朝鲜全景，但登山步道较陡，长辈可选择在口岸广场和图们江公园平地休息观景，避免爬山",
+          "children": "景区内有儿童乐园和无动力游乐设施，可让孩子玩耍放松；建议给孩子准备小零食和望远镜，增加游玩趣味。\n\n补充一点实用提醒：边境地区请勿随意对岸拍照或大声喧哗；高铁站和公交站附近可能有拉客包车，谨慎选择，避免被坑。天气晴朗时视野最好，建议上午前往，光线适宜拍照。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "口岸核心打卡省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "口岸广场（铁路国门）",
+            "86号界碑",
+            "网红打卡墙",
+            "图们江广场 / 中国朝鲜族非物质文化遗产展览馆",
+            "87号界碑",
+            "南阳亭观景台"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "86号界碑处游客较多，建议错峰或到旁边插空错位拍照；沿路有租望远镜的，可借来看对岸朝鲜南阳郡风光。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 图们口岸：https://www.amap.com/place/B0K24DHECY"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 图们口岸",
+          "url": "https://www.amap.com/place/B0K24DHECY",
+          "poiId": "B0K24DHECY",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-21"
+        },
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "图们口岸 高德地图实景图",
+        "author": "高德地图用户或商户",
+        "provider": "高德地图",
+        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
+        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
+        "sourceUrl": "https://www.amap.com/place/B0K24DHECY",
+        "width": 1920,
+        "height": 1080
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_46e241b1e0",
+      "id": "manual_jilin_b3688b5d",
+      "name": "万龙滑雪场",
+      "city": "吉林",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_b3688b5d_verified.jpg",
+      "description": "万龙滑雪场位于吉林（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "万龙滑雪场位于吉林（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "滑雪度假区、4A级景区",
+      "tags": [
+        "滑雪度假区、4A级景区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "吉林（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "高铁至太子城站后换乘免费接驳车（约20分钟）；或自驾导航至万龙滑雪场，雪场提供停车场。",
+          "internal_arrive": "雪具大厅（3层）为主入口，配套齐全；大客流时也可从6索大厅（第二休息大厅）进入。",
+          "internal_traffic": "7条缆车与3条魔毯，1索/2索/5索/6索均可直达山顶，高速缆车约6分钟上下山。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "龙宫酒店（滑进滑出、四星级）、双龙酒店（性价比高、含温泉）、盛龙/万龙公寓（家庭套房）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "可乘坐缆车登顶欣赏林海雪景，在山顶木屋或大厅咖啡厅休息观景，无需高强度滑雪",
+          "children": "1.2米以下免费，4层儿童乐园适合2-7岁，有防撞设施和托管服务，雪道平缓安全。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "家庭省力休闲一日游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "雪具大厅（3层换装）",
+            "1索/2索（登顶）",
+            "长龙道（东区初级道，平缓开阔）",
+            "雪具大厅2层快餐厅（用餐休息）",
+            "4层儿童乐园（海洋球",
+            "滑梯等娱雪项目）",
+            "山顶木屋或半山雪咖啡厅（观景打卡）",
+            "返程"
+          ],
+          "duration": "半天",
+          "walking": "约1500米（含大厅内换装及儿童乐园活动）",
+          "physical": 2,
+          "tips": [
+            "1.2米以下儿童免雪票（需购费用以官方当日公告为准保险），可全程陪同体验；长龙道虽长但坡度缓，新手和儿童不易害怕。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "马上就出发#地理背景:长白山脚下的\"野雪秘境\"万龙滑雪场坐落在吉林",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://baijiahao.baidu.com/s?id=1857886813366170357&wfr=spider&for=pc",
+        "sourceUrl": "http://baijiahao.baidu.com/s?id=1857886813366170357&wfr=spider&for=pc",
+        "width": 1200,
+        "height": 800
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "万龙滑雪场：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_185a37eb28",
+      "id": "manual_jilin_b34145b3",
+      "name": "延边博物馆",
+      "city": "延边朝鲜族",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_b34145b3_verified.jpg",
+      "description": "延边博物馆位于体育场环路，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "延边博物馆位于体育场环路，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "博物馆",
+      "category": "博物馆、4A级景区",
+      "tags": [
+        "博物馆、4A级景区",
+        "室内参观",
+        "口碑热门"
+      ],
+      "address": "体育场环路",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
+          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
+          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
+          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+        },
+        "transport": {
+          "external_arrive": "位于延吉市长白山西路8627号，距延吉西站打车约10分钟；可乘公交28路（延边博物馆站）或9路、12路、39路（人民体育场站）到达。",
+          "internal_arrive": "从南门进入（位于二楼），出门时从北门（一楼）离开，顺游览动线不走回头路。",
+          "internal_traffic": "馆内配备电梯，可直达三楼，老人和小孩可全程乘电梯上下；也可走楼梯逐层参观。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在延吉西站附近或延吉市区，方便前往博物馆及周边美食街。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "馆内全程有电梯，可乘电梯直达三楼再逐层下行，减少体力消耗；一楼和二楼有休息区和咖啡店，逛累了可随时歇脚",
+          "children": "二楼民俗展厅有1:1复原的朝鲜族民居、暖炕、泡菜缸等场景，互动性强，孩子可试穿韩服、体验传统美食制作，沉浸式体验感好。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "三层全景省力游（南门进北门出）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "二楼南门入口",
+            "二楼西展厅（闯关越江·共建家园）",
+            "三楼西展厅（浴血奋战·共同抗敌）",
+            "二楼东展厅（民俗文化·共放异彩，1:1复原朝鲜族民居）",
+            "一楼西展厅（中华文明·东疆曙光，看贞孝公主墓志碑）",
+            "一楼东展厅（一心向党·永续辉煌）",
+            "一楼北门出口"
+          ],
+          "duration": "半天",
+          "walking": "约1500步",
+          "physical": 2,
+          "tips": [
+            "入口在二楼南门，出口在一楼北门，建议自带空白本子去一楼文创店或二楼咖啡区免费盖章；每天上午官方当日建议时段、下午官方当日建议时段有免费公益讲解，每场约40分钟，可在大门左前方等候。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 延边博物馆：https://www.amap.com/place/B05990MVFU"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "延边博物馆:探秘朝鲜族文化之旅 延边博物馆位于延边朝鲜族自治州的",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4168886165217337700",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4168886165217337700",
+        "width": 1201,
+        "height": 897
+      },
+      "quality_status": {
+        "reviewRequired": false,
+        "warnings": []
+      }
+    },
+    {
+      "baselineKey": "core_cd4354644c",
+      "id": "manual_jilin_3f476ebb",
+      "name": "延吉水上市场",
+      "city": "延边朝鲜族",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_3f476ebb_verified.jpg",
+      "description": "延吉水上市场位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "延吉水上市场位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "特色早市 / 民俗美食街区",
+      "tags": [
+        "特色早市 / 民俗美食街区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "延边朝鲜族（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "公交6路、23路、50路直达\"延吉水上市场\"站；自驾可停市场南侧停车场（约770个车位），但周末早高峰易拥堵，建议打车前往。",
+          "internal_arrive": "从市场南侧入口进入，距离停车场和公交站点更近，动线更顺畅。",
+          "internal_traffic": "市场为三层室内综合体，各楼层之间通过楼梯和电梯连接，内部以步行逛为主。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在参花街或人民公园附近，步行或短途打车即可到达，方便早起前往且避开早高峰堵车。\n\n长辈建议：新市场配有公共休息区和标准化卫生间，逛累了可随时歇脚；建议穿防滑舒适的鞋子，避开官方当日建议时段-官方当日建议时段人流高峰时段。\n\n儿童建议：1层美食街有现做现卖的小吃（如打糕、小鱼饼、紫菜包饭），适合孩子尝试；可带一瓶温水，避免孩子吃太多糯米和重油制品。\n\n补充避坑提醒：\n\n大部分摊位支持试吃，先尝后买，不好吃直接走\n不要一进门就买，越靠里面价格越实惠，多问几家对比\n泡菜、明太鱼等伴手礼可让摊主真空塑封并邮寄，不用自己拎着走\n不建议买散装果酱酸奶、水晶饺子、冷掉的鱼饼串和海鲜饼，容易踩雷\n\n你这次去延吉是打算早起冲早市，还是想睡懒觉去逛逛？如果是带长辈或小孩，我可以帮你调整一下行程节奏。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "新市场配有公共休息区和标准化卫生间，逛累了可随时歇脚；建议穿防滑舒适的鞋子，避开7:30-9:00人流高峰时段",
+          "children": "1层美食街有现做现卖的小吃（如打糕、小鱼饼、紫菜包饭），适合孩子尝试；可带一瓶温水，避免孩子吃太多糯米和重油制品。\n\n补充避坑提醒：\n\n大部分摊位支持试吃，先尝后买，不好吃直接走\n不要一进门就买，越靠里面价格越实惠，多问几家对比\n泡菜、明太鱼等伴手礼可让摊主真空塑封并邮寄，不用自己拎着走\n不建议买散装果酱酸奶、水晶饺子、冷掉的鱼饼串和海鲜饼，容易踩雷\n\n你这次去延吉是打算早起冲早市，还是想睡懒觉去逛逛？如果是带长辈或小孩，我可以帮你调整一下行程节奏。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "烟火早市逛吃+特产采购省力线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "1层室内美食街（品尝汤饭",
+            "打糕",
+            "米肠等朝鲜族小吃）",
+            "1层室外区域（浏览人参",
+            "菌菇等山货及文创）",
+            "2层室内特产区（选购泡菜",
+            "明太鱼",
+            "米酒等伴手礼）"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "建议官方当日建议时段-官方当日建议时段到达，此时人流量适中、食材最新鲜；官方当日建议时段-官方当日建议时段会非常拥挤，部分热门摊位排队较长。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "即刻出发去吉林##城市巡游记#延吉水上市场,是东北地区一颗璀璨的水",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5204774475684162120",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5204774475684162120",
+        "width": 2000,
+        "height": 1333
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "延吉水上市场：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_8c7b46382b",
+      "id": "manual_jilin_4c4f0a86",
+      "name": "长白朝鲜族自治县",
+      "city": "白山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/jilin_4c4f0a86_verified.jpg",
+      "description": "长白朝鲜族自治县位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "长白朝鲜族自治县位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "边境风光、朝鲜族民俗风情、自然生态",
+      "tags": [
+        "边境风光、朝鲜族民俗风情、自然生态",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "白山（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾前往最为便捷，县城周边停车设施完善；外部公共交通（如高铁、大巴）信息以官方当日公告为准。",
+          "internal_arrive": "建议从长白口岸或千年崖城风景区开始游览，这两个点距离县城较近，且能迅速进入边境与民俗氛围。",
+          "internal_traffic": "县城内及各大景区之间距离较近，自驾或打车最为方便；部分景区（如千年崖城、塔山公园）内部有观光车或可开车直达，能大幅节省体力。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在长白县城内（如长白大街周边），餐饮和早市购物方便；或选择千年崖城景区内的民宿，可沉浸式体验民俗风情且免去每日奔波。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "行程节奏放慢，多利用景区观光车和木栈道，避免攀爬陡峭石阶，注意边境江边防风保暖",
+          "children": "可在中华秋沙鸭公园（县城周边）喂野鸭，或在千年崖城、果园民俗村体验穿朝鲜族服饰和品尝打糕等特色美食。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "边境风情与民俗休闲省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "长白口岸（登中朝长惠国际大桥感受“一步跨两国”）",
+            "千年崖城风景区（漫步临崖步道，欣赏朝鲜族古村落与渤海国风情）",
+            "塔山公园（乘车上山或走木栈道，俯瞰鸭绿江与县城全景）",
+            "果园民俗村（体验朝鲜族传统服饰拍照与民俗美食）"
+          ],
+          "duration": "半天",
+          "walking": "全程以平缓木栈道和乘车为主，适合家庭慢游",
+          "physical": 2,
+          "tips": [
+            "塔山公园有木栈道和石阶多条路线，带长辈建议选择木栈道或开车直达高点；长白口岸和大桥区域风大，建议备好防风外套。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "它就是长白朝鲜族自治县,位于吉林省白山市,长白山脚下鸭绿江上游.",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3490556549681101831",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3490556549681101831",
+        "width": 1442,
+        "height": 1050
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "长白朝鲜族自治县：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    }
+  ],
+  "overrides": {
+    "amap_B0599000AS": {
+      "baselineKey": "core_d5b9c54dbf",
+      "id": "amap_B0599000AS",
+      "name": "珲春防川风景区",
+      "city": "延边朝鲜族",
+      "rating": 3.9,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/jilin_e70752e1_verified.jpg",
+      "description": "珲春防川风景区位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "珲春防川风景区位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "边境风光/民俗村落/观景台",
+      "tags": [
+        "边境风光/民俗村落/观景台",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "延边朝鲜族（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾或包车前往（约70公里，车程1.5小时），高铁至珲春站后可乘防川专线车（仅限上午发车，以官方当日公告为准）。",
+          "internal_arrive": "防川风景区游客中心（统一购票、乘坐观光车入园）。",
+          "internal_traffic": "景区观光车（游客中心至龙虎阁及各村落点位接驳）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "珲春市区（海鲜街、老客运站附近，方便就餐和出行）。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "乌拉满族火锅",
+          "查干湖炖鱼",
+          "延吉冷面",
+          "吉林参鸡汤"
+        ],
+        "special_care": {
+          "elderly": "龙虎阁楼梯较滑，建议乘电梯上下；江边风大，备一件防风外套",
+          "children": "可带望远镜观察三国风景，东方第一村可喂海鸥，增加互动乐趣。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "一眼望三国·家庭省力休闲游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "游客中心乘观光车至龙虎阁",
+            "乘电梯上11楼室内观景",
+            "下至10楼室外观景台远眺三国",
+            "乘观光车至东方第一村逛朝鲜族民俗村",
+            "喂海鸥",
+            "沿边境木栈道缓步慢行欣赏图们江景"
+          ],
+          "duration": "半天",
+          "walking": "约1至2公里（以观光车接驳为主，木栈道平缓）",
+          "physical": 2,
+          "tips": [
+            "龙虎阁电梯旺季排队较长，可考虑走楼梯下至10楼观景；务必携带身份证，边境区域禁飞无人机。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 珲春防川景区：https://www.amap.com/place/B0MU57TC41"
+        ],
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 珲春防川景区",
+          "url": "https://www.amap.com/place/B0MU57TC41",
+          "poiId": "B0MU57TC41",
+          "evidenceMode": "live-amap-web-service",
+          "verifiedAt": "2026-08-21"
+        },
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "珲春 防川之防川风景区.jpg",
+        "author": "Liuxingy",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%8F%B2%E6%98%A5_%E9%98%B2%E5%B7%9D%E4%B9%8B%E9%98%B2%E5%B7%9D%E9%A3%8E%E6%99%AF%E5%8C%BA.jpg",
+        "width": 3840,
+        "height": 2880
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    }
+  },
   "selfHealActions": [
     {
       "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_313b694b",
-      "keptName": "大安嫩江湾旅游区",
-      "removedId": "manual_jilin_313b694b",
-      "removedName": "大安嫩江湾旅游区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_3de53c87",
-      "keptName": "前郭查干湖景区",
-      "removedId": "manual_jilin_3de53c87",
-      "removedName": "前郭查干湖景区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_121ede7f",
-      "keptName": "世界雕塑公园景区",
-      "removedId": "manual_jilin_121ede7f",
-      "removedName": "世界雕塑公园景区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_fd41516",
-      "keptName": "伪满皇宫博物馆",
-      "removedId": "manual_jilin_fd41516",
-      "removedName": "伪满皇宫博物馆",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_cc743cad",
-      "keptName": "长白山景区",
-      "removedId": "manual_jilin_cc743cad",
-      "removedName": "长白山景区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_6966281e",
-      "keptName": "长春冰雪新天地",
-      "removedId": "manual_jilin_6966281e",
-      "removedName": "长春冰雪新天地",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_22f024d9",
-      "keptName": "松花湖",
-      "removedId": "manual_jilin_22f024d9",
-      "removedName": "松花湖",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_18bf3e1b",
-      "keptName": "北大湖滑雪度假区",
-      "removedId": "manual_jilin_18bf3e1b",
-      "removedName": "北大湖滑雪度假区",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_bc0da8dd",
-      "keptName": "莲花山滑雪场",
-      "removedId": "manual_jilin_bc0da8dd",
-      "removedName": "莲花山滑雪场",
-      "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
-    },
-    {
-      "type": "convert_addition_to_override",
-      "keptId": "manual_jilin_fadecc8d",
-      "keptName": "高句丽王城、王陵及贵族墓葬",
-      "removedId": "manual_jilin_fadecc8d",
-      "removedName": "高句丽王城、王陵及贵族墓葬",
+      "keptId": "amap_B0599000AS",
+      "keptName": "珲春防川风景区",
+      "removedId": "manual_jilin_e70752e1",
+      "removedName": "珲春防川风景区",
       "reason": "已批准核心清单在底库唯一命中同一实体，自动转换为增强覆盖"
     }
   ],
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:58:37.062Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
-  "batchSelectedKeys": []
+  "reviewedAtIso": "2026-08-21T09:13:55.527Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
+  "batchSelectedKeys": [
+    "core_cab63f929c",
+    "core_6995b06179",
+    "core_8bd7513b91",
+    "core_a53b17df98",
+    "core_ffb6f2e9bd",
+    "core_10d16fa390",
+    "core_6d6dafdc61",
+    "core_46e241b1e0",
+    "core_185a37eb28",
+    "core_cd4354644c",
+    "core_8c7b46382b",
+    "core_d5b9c54dbf"
+  ],
+  "appliedAt": "2026-08-24T03:11:06.618Z",
+  "appliedAttractionIds": [
+    "manual_jilin_3bec56ad",
+    "manual_jilin_b2ae15e7",
+    "manual_jilin_c13f8f85",
+    "manual_jilin_87246a7f",
+    "manual_jilin_130dd6a7",
+    "manual_jilin_7b47d8a0",
+    "manual_jilin_6e1069e0",
+    "manual_jilin_b3688b5d",
+    "manual_jilin_b34145b3",
+    "manual_jilin_3f476ebb",
+    "manual_jilin_4c4f0a86"
+  ],
+  "appliedOverrideIds": [
+    "amap_B0599000AS"
+  ]
 }

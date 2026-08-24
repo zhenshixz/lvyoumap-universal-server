@@ -1,6 +1,6 @@
 {
   "province": "台湾",
-  "checkedAt": "2026-08-21",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1023,9 +1023,81 @@
       "matchWarnings": [],
       "secondaryEvidence": [],
       "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_003c8778d9",
+      "name": "淡水老街",
+      "preferredId": "manual_taiwan_32d494a4",
+      "aliases": [
+        "淡水老街"
+      ],
+      "city": "新北",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_d45c7ce8e6",
+      "name": "九份老街",
+      "preferredId": "manual_taiwan_9f4822b",
+      "aliases": [
+        "九份老街"
+      ],
+      "city": "新北",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_69cba63c4a",
+      "name": "平溪十分老街",
+      "preferredId": "manual_taiwan_a1e708ed",
+      "aliases": [
+        "平溪十分老街"
+      ],
+      "city": "新北",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
   ],
   "counts": {
-    "attractions": 21
+    "attractions": 24
   }
 }

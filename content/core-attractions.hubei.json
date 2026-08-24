@@ -1,6 +1,6 @@
 {
   "province": "湖北",
-  "checkedAt": "2026-08-21",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1168,9 +1168,81 @@
       "matchWarnings": [],
       "secondaryEvidence": [],
       "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_eb2b7660db",
+      "name": "恩施女儿城",
+      "preferredId": "manual_hubei_92e58a5d",
+      "aliases": [
+        "恩施女儿城"
+      ],
+      "city": "恩施州（土家风情夜市与小",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_b221c07e1b",
+      "name": "古德寺",
+      "preferredId": "manual_hubei_6bed1926",
+      "aliases": [
+        "古德寺"
+      ],
+      "city": "武汉市（中西融合特色寺庙",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_caaee17b05",
+      "name": "黎黄陂路",
+      "preferredId": "manual_hubei_3e24e41d",
+      "aliases": [
+        "黎黄陂路"
+      ],
+      "city": "武汉市（民国复古街道",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
   ],
   "counts": {
-    "attractions": 24
+    "attractions": 27
   }
 }

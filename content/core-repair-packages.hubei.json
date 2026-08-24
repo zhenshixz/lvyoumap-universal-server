@@ -1,30 +1,32 @@
 {
   "province": "湖北",
   "status": "applied",
-  "createdAt": "2026-08-21T02:57:51.593Z",
-  "updatedAt": "2026-08-21T02:57:52.218Z",
+  "createdAt": "2026-08-21T09:04:45.547Z",
+  "updatedAt": "2026-08-24T03:10:18.384Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "恩施女儿城：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.hubei.json",
   "attractions": [
     {
-      "baselineKey": "core_20e623431e",
-      "id": "manual_hubei_c096421a",
-      "name": "晴川阁",
-      "city": "武汉",
-      "rating": 4.7,
-      "reviewsCount": "7430条携程点评",
-      "image": "/assets/images/attractions/hubei_c096421a_verified.jpg",
-      "description": "汉阳龟山上的晴川阁，濒临长江，与长江对面的黄鹤楼夹江相望，与黄鹤楼、古琴台并称“三楚圣境”。晴川阁始建于明代，如今的建筑是1980年代根据历史照片复建的。",
-      "intro": "汉阳龟山上的晴川阁，濒临长江，与长江对面的黄鹤楼夹江相望，与黄鹤楼、古琴台并称“三楚圣境”。晴川阁始建于明代，如今的建筑是1980年代根据历史照片复建的。",
+      "baselineKey": "core_eb2b7660db",
+      "id": "manual_hubei_92e58a5d",
+      "name": "恩施女儿城",
+      "city": "恩施州（土家风情夜市与小",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hubei_92e58a5d_verified.jpg",
+      "description": "恩施女儿城位于恩施州（土家风情夜市与小（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "恩施女儿城位于恩施州（土家风情夜市与小（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "人文古迹/江景园林",
+      "category": "开放式仿古风情街区（土家民俗文化与夜市美食）",
       "tags": [
-        "人文古迹/江景园林",
+        "开放式仿古风情街区（土家民俗文化与夜市美食）",
         "经典景点",
         "口碑热门"
       ],
-      "address": "湖北省武汉市汉阳区洗马长街86号",
+      "address": "恩施州（土家风情夜市与小（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +38,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "公交至“晴川大道晴川阁站”直达景区门口；地铁6号线至“琴台站”A口，步行或骑行约10-15分钟；也可在武昌中华路码头乘轮渡至晴川码头。",
-          "internal_arrive": "从景区正门（南门）进入，路线顺畅，可先逛禹稷行宫再登晴川阁主楼。",
-          "internal_traffic": "景区内全部为步行，道路相对平缓，部分路段有台阶。",
+          "external_arrive": "自驾导航至“恩施土家女儿城”专属停车场；公共交通可乘坐31路公交至女儿城站；从市区打车前往约20-费用以官方当日公告为准。",
+          "internal_arrive": "建议从主入口牌坊进入，此处视野开阔，能第一时间感受街区全貌，且距离核心游览区最近。",
+          "internal_traffic": "景区为开放式街区，内部无观光车，全程步行游览。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在钟家村商圈或汉阳老街附近，餐饮选择多，距离景区较近，方便游玩后休息和用餐。",
+            "area": "可选择景区内或周边的特色民宿与快捷酒店，步行可达景区，方便夜间休息和错峰游览。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,31 +56,32 @@
           "武汉热干面"
         ],
         "special_care": {
-          "elderly": "景区有台阶和坡道，建议穿防滑舒适的鞋子，主楼登高层可量力而行，在二层平台观景即可",
-          "children": "铁门关有三国文化展，碑廊可看诗词石刻，适合给孩子讲历史故事，江边步道可喂鱼吹江风，寓教于乐。\n\n（注：具体开放时间、预约方式及夜游安排等动态信息，请以官方当日公告为准。）"
+          "elderly": "景区多为平路，对长辈较友好，但石板路夜间可能湿滑，需放缓脚步；可多利用街边休息区歇脚",
+          "children": "可租一套土家族服饰体验拍照，参与打糍粑等互动活动，增加游玩趣味性。"
         }
       },
       "lazy_routes": [
         {
-          "title": "晴川阁经典省力环线",
+          "title": "夜景逛吃省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "三楚胜境",
-            "禹稷行宫",
-            "晴川阁（主楼二层观景）",
-            "朝宗亭",
-            "铁门关",
-            "出口"
+            "入口牌坊",
+            "风雨桥",
+            "幺妹儿街（灯笼街与吊脚楼夜景）",
+            "美食街（逛吃特色小吃）",
+            "摆手堂广场（感受民俗氛围）",
+            "巴人堂（体验摔碗酒）",
+            "中心广场（看铜雕地砖与休闲散步）"
           ],
           "duration": "半天",
-          "walking": "约1公里",
+          "walking": "约1.5公里",
           "physical": 2,
           "tips": [
-            "景区台阶较多，建议穿平底鞋；主楼二层是拍黄鹤楼与长江大桥同框的最佳机位，傍晚光线柔和时最出片。"
+            "建议傍晚官方当日建议时段左右入园，此时光线柔和适合拍照，且能衔接夜景亮灯；全程为青石板路，务必穿平底鞋。"
           ],
-          "sourceTitle": "携程旅行 晴川阁 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/wuhan145/89781.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -87,51 +90,49 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hubei100067.html",
-          "携程旅行 晴川阁 详情页：https://you.ctrip.com/sight/wuhan145/89781.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 晴川阁 详情页",
-          "url": "https://you.ctrip.com/sight/wuhan145/89781.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "晴川阁 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "恩施女儿城超火金句集锦 🔥",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/wuhan145/89781.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/wuhan145/89781.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1662
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4340344098706212222",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4340344098706212222",
+        "width": 1440,
+        "height": 1050
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "恩施女儿城：基本资料目前只有1个可追溯来源"
+        ]
       }
     },
     {
-      "baselineKey": "core_b73cd770fd",
-      "id": "manual_hubei_1c27c052",
-      "name": "神农架天生桥景区",
-      "city": "神农架",
-      "rating": 4.5,
-      "reviewsCount": "385条携程点评",
-      "image": "/assets/images/attractions/hubei_1c27c052_verified.jpg",
-      "description": "神农架天生桥景区处在老君山下，距神农坛4.8公里的地方，发源于老君山的黄岩河流经此地，经过千万年地表水和地下水的流动、冲刷、溶蚀形成今天“天桥飞渡”的模样，黄岩河从葫芦状的孔洞下流过，势若蛟龙、气势恢宏。相传太上老君炼丹在此取水时正值山洪暴发，老君将手中的拂尘架于黄岩河两岸，立即变成石桥，从此山民们不再受洪水的危害，因此这座石桥也被称作“幸福桥”。",
-      "intro": "神农架天生桥景区处在老君山下，距神农坛4.8公里的地方，发源于老君山的黄岩河流经此地，经过千万年地表水和地下水的流动、冲刷、溶蚀形成今天“天桥飞渡”的模样，黄岩河从葫芦状的孔洞下流过，势若蛟龙、气势恢宏。相传太上老君炼丹在此取水时正值山洪暴发，老君将手中的拂尘架于黄岩河两岸，立即变成石桥，从此山民们不再受洪水的危害，因此这座石桥也被称作“幸福桥”。",
+      "baselineKey": "core_b221c07e1b",
+      "id": "manual_hubei_6bed1926",
+      "name": "古德寺",
+      "city": "武汉市（中西融合特色寺庙",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hubei_6bed1926_verified.jpg",
+      "description": "古德寺位于武汉市（中西融合特色寺庙（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "古德寺位于武汉市（中西融合特色寺庙（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "自然生态 / 轻徒步 / 峡谷瀑布",
+      "category": "宗教文化景区、历史建筑",
       "tags": [
-        "自然生态 / 轻徒步 / 峡谷瀑布",
+        "宗教文化景区、历史建筑",
         "经典景点",
         "口碑热门"
       ],
-      "address": "湖北省神农架林区木鱼镇神农架国家级自然保护区内",
+      "address": "武汉市（中西融合特色寺庙（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -143,14 +144,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾导航\"天生桥景区\"，但进山路段易拥堵，建议早到或错峰；非自驾可在木鱼镇集散中心乘景区大巴前往。",
-          "internal_arrive": "从左侧入口进、右侧出口出，全程不走回头路。",
-          "internal_traffic": "全程步行木栈道，平缓好走，无其他内部交通工具。",
+          "external_arrive": "推荐乘坐地铁至 赵家条站（3/8号线）或 罗家庄站（3号线），步行约 10-15 分钟抵达；周边停车位稀少，不建议自驾。",
+          "internal_arrive": "从正门（工农兵路入口）进入，进门后先至白鸽广场，可近距离观赏和投喂鸽群。",
+          "internal_traffic": "景区内部为步行游览，各殿宇之间距离较近，全程平缓无陡坡。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "木鱼镇（距景区约 10 公里，周边餐饮住宿便利，去天生桥、神农坛、官门山都近）",
+            "area": "推荐选择地铁 3 号线或 8 号线沿线的酒店，出行便捷，游玩结束后可顺路前往 黎黄陂路 或 江汉路 附近就餐。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -161,34 +162,31 @@
           "武汉热干面"
         ],
         "special_care": {
-          "elderly": "走到虎潭即可折返，避免后半段台阶；峡谷内温度偏低，建议备薄外套；穿防滑鞋，栈道湿滑",
-          "children": "沿途溪流清澈可玩水，但需注意安全；后半段有豆腐坊等手工作坊可体验，增加趣味性。"
+          "elderly": "寺内多为平地，步行强度低，但需穿着得体（不穿短裤、吊带），建议携带遮阳帽和饮用水",
+          "children": "白鸽广场喂鸽子孩子很喜欢，可准备推车，注意防晒防暑，殿内保持安静勿奔跑。"
         }
       },
       "lazy_routes": [
         {
-          "title": "环形省力游（精华段可折返）",
+          "title": "经典核心打卡线（省力不走回头路）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "景区入口",
-            "巴人部落（茅屋水车",
-            "豆腐坊）",
-            "天生桥飞瀑观景台（岩隙飞瀑）",
-            "九泉幽谷（青苔栈道",
-            "碧潭）",
-            "虎潭",
-            "兰花山步道",
+            "入口白鸽广场",
+            "天王殿",
+            "圆通宝殿",
+            "四面佛",
+            "观音殿二楼回廊",
             "出口"
           ],
           "duration": "半天",
-          "walking": "约 2 公里",
+          "walking": "约 600 米",
           "physical": 2,
           "tips": [
-            "走到虎潭即可原路折返，全程约 1 小时，能省下后半段较多台阶和商铺区；若走完全程环线约 1.5–2 小时。"
+            "建议上午 官方当日建议时段-官方当日建议时段 或下午 官方当日建议时段 后前往，光线柔和且人少；殿内禁止拍照，请勿喧哗。"
           ],
-          "sourceTitle": "携程旅行 神农架天生桥景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shennongjia147/139232.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -197,46 +195,150 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hubei100067.html",
-          "携程旅行 神农架天生桥景区 详情页：https://you.ctrip.com/sight/shennongjia147/139232.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q10913316 实体页：https://www.wikidata.org/wiki/Q10913316"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 神农架天生桥景区 详情页",
-          "url": "https://you.ctrip.com/sight/shennongjia147/139232.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "神农架天生桥景区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/shennongjia147/139232.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/shennongjia147/139232.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1669
+        "title": "古德寺圆通殿2023.4 (1).jpg",
+        "author": "ScareCriterion12",
+        "provider": "Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8F%A4%E5%BE%B7%E5%AF%BA%E5%9C%86%E9%80%9A%E6%AE%BF2023.4_(1).jpg",
+        "width": 3840,
+        "height": 2557
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_caaee17b05",
+      "id": "manual_hubei_3e24e41d",
+      "name": "黎黄陂路",
+      "city": "武汉市（民国复古街道",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hubei_3e24e41d_verified.jpg",
+      "description": "黎黄陂路位于武汉市（民国复古街道（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "黎黄陂路位于武汉市（民国复古街道（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "开放式历史文化街区、街头博物馆",
+      "tags": [
+        "开放式历史文化街区、街头博物馆",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "武汉市（民国复古街道（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "地铁1号线或6号线大智路站A口步行约8分钟；自驾可停汉口江滩停车场（费用以官方当日公告为准/小时），但路边车位紧张。",
+          "internal_arrive": "推荐从沿江大道入口进入，向南步行至中山大道，沿途建筑密集且光线较好。",
+          "internal_traffic": "街区为步行街，全程步行漫游，路面平整。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议入住江汉路或汉口江滩周边酒店，步行即可到达街区，周边餐饮和交通更便利。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "清蒸武昌鱼",
+          "排骨藕汤",
+          "三鲜豆皮",
+          "武汉热干面"
+        ],
+        "special_care": {
+          "elderly": "全程平路无台阶，对长辈非常友好，可随时在街角咖啡馆休息",
+          "children": "婴儿车友好，可带孩子玩“找铜人雕塑”的寻宝游戏，或去汉口二厂文创店体验DIY汽水。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "百年欧式建筑与文艺咖啡漫步",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "黎黄陂路街头博物馆（地标红墙）",
+            "宋庆龄汉口旧居纪念馆（华俄道胜银行旧址）",
+            "巴公房子（三角红砖建筑，绝美转角）",
+            "俄国巡捕房旧址",
+            "美国海军青年会旧址",
+            "惠罗公司旧址（汉口二厂文创）",
+            "中共中央机关旧址纪念馆（红色礼屋）"
+          ],
+          "duration": "半天",
+          "walking": "约600米（全程约1.5-2小时）",
+          "physical": 1,
+          "tips": [
+            "建议较合适时段后前往，梧桐光影柔和且避开正午烈日；沿途咖啡馆密集，随时可歇脚。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q11178868 实体页：https://www.wikidata.org/wiki/Q11178868"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "LiHuangPi Road，Wuhan，China.jpg",
+        "author": "Zhangmoon618",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LiHuangPi_Road%EF%BC%8CWuhan%EF%BC%8CChina.jpg",
+        "width": 3456,
+        "height": 5184
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:57:52.184Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:04:46.146Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_20e623431e",
-    "core_b73cd770fd"
+    "core_eb2b7660db",
+    "core_b221c07e1b",
+    "core_caaee17b05"
   ],
-  "appliedAt": "2026-08-21T03:40:48.240Z",
+  "appliedAt": "2026-08-24T03:10:19.713Z",
   "appliedAttractionIds": [
-    "manual_hubei_c096421a",
-    "manual_hubei_1c27c052"
+    "manual_hubei_92e58a5d",
+    "manual_hubei_6bed1926",
+    "manual_hubei_3e24e41d"
   ],
   "appliedOverrideIds": []
 }

@@ -1,6 +1,6 @@
 {
   "province": "浙江",
-  "checkedAt": "2026-08-18",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1093,6 +1093,105 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_181cd120b3",
+      "name": "临海古城",
+      "preferredId": "manual_zhejiang_38f565dc",
+      "aliases": [
+        "临海古城"
+      ],
+      "city": "台州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_4567be25ce",
+      "name": "宁波博物馆",
+      "preferredId": "manual_zhejiang_f4dde447",
+      "aliases": [
+        "宁波博物馆"
+      ],
+      "city": "宁波",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_b5332e8a79",
+      "name": "松阳古村落",
+      "preferredId": "manual_zhejiang_cf9391de",
+      "aliases": [
+        "松阳古村落"
+      ],
+      "city": "丽水",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_57a9b44d73",
+      "name": "严州古城",
+      "preferredId": "manual_zhejiang_75dfded1",
+      "aliases": [
+        "严州古城"
+      ],
+      "city": "杭州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 44
+  }
 }

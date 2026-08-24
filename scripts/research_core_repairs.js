@@ -183,22 +183,46 @@ function jpegDimensions(buffer) {
   return null;
 }
 
+const MIN_IMAGE_WIDTH = 800;
+const MIN_IMAGE_HEIGHT = 450;
+const MIN_IMAGE_BYTES = 60 * 1024;
+
 function imageDimensions(filePath) {
   const buffer = fs.readFileSync(filePath);
   if (buffer.slice(0, 2).toString('hex') === 'ffd8') return jpegDimensions(buffer);
   if (buffer.slice(1, 4).toString() === 'PNG') return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+  if (/^GIF8[79]a$/.test(buffer.slice(0, 6).toString('ascii'))) return { width: buffer.readUInt16LE(6), height: buffer.readUInt16LE(8) };
+  if (buffer.slice(0, 4).toString('ascii') === 'RIFF' && buffer.slice(8, 12).toString('ascii') === 'WEBP') {
+    const type = buffer.slice(12, 16).toString('ascii');
+    if (type === 'VP8X' && buffer.length >= 30) return { width: 1 + buffer.readUIntLE(24, 3), height: 1 + buffer.readUIntLE(27, 3) };
+    if (type === 'VP8L' && buffer.length >= 25 && buffer[20] === 0x2f) {
+      return {
+        width: 1 + buffer[21] + ((buffer[22] & 0x3f) << 8),
+        height: 1 + ((buffer[22] & 0xc0) >> 6) + (buffer[23] << 2) + ((buffer[24] & 0x0f) << 10),
+      };
+    }
+    if (type === 'VP8 ') {
+      const frame = buffer.indexOf(Buffer.from([0x9d, 0x01, 0x2a]), 20);
+      if (frame >= 0 && frame + 7 <= buffer.length) return { width: buffer.readUInt16LE(frame + 3) & 0x3fff, height: buffer.readUInt16LE(frame + 5) & 0x3fff };
+    }
+  }
   return null;
+}
+
+function validImageFile(filePath) {
+  if (!fs.existsSync(filePath)) return false;
+  const dimensions = imageDimensions(filePath);
+  return Boolean(dimensions
+    && dimensions.width >= MIN_IMAGE_WIDTH
+    && dimensions.height >= MIN_IMAGE_HEIGHT
+    && fs.statSync(filePath).size >= MIN_IMAGE_BYTES);
 }
 
 async function ensureVerifiedImage(verified, imageTarget) {
   if (verified.image?.placeholder || /default-thumbnail/i.test(verified.image?.localPath || '') || !verified.image?.downloadUrl) {
     throw new Error('真实景点图片尚未补齐；该景点已保留为可续跑断点');
   }
-  const validExisting = () => {
-    if (!fs.existsSync(imageTarget)) return false;
-    const dimensions = imageDimensions(imageTarget);
-    return Boolean(dimensions && dimensions.width >= 1200 && dimensions.height >= 700 && fs.statSync(imageTarget).size >= 100 * 1024);
-  };
+  const validExisting = () => validImageFile(imageTarget);
   if (validExisting()) return;
   let backupPath = '';
   if (fs.existsSync(imageTarget)) {
@@ -209,7 +233,7 @@ async function ensureVerifiedImage(verified, imageTarget) {
   }
   try {
     await downloadResilient(verified.image.downloadUrl, imageTarget);
-    if (!validExisting()) throw new Error('下载后的图片仍未达到 1200x700 和 100KB 门槛');
+    if (!validExisting()) throw new Error('下载后的图片未达到网页实景图质量门槛（至少 800x450、60KB）');
   } catch (error) {
     if (fs.existsSync(imageTarget)) fs.unlinkSync(imageTarget);
     if (backupPath && fs.existsSync(backupPath)) fs.renameSync(backupPath, imageTarget);
@@ -399,8 +423,7 @@ async function main() {
     try {
       await ensureVerifiedImage(verified, imageTarget);
       const dimensions = imageDimensions(imageTarget);
-      if (!dimensions || dimensions.width < 1200 || dimensions.height < 700) throw new Error(`真实尺寸不足（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
-      if (fs.statSync(imageTarget).size < 100 * 1024) throw new Error('图片文件过小');
+      if (!validImageFile(imageTarget)) throw new Error(`图片未达到网页实景图质量门槛（${dimensions?.width || 0}x${dimensions?.height || 0}）`);
       verified.image.width = dimensions.width;
       verified.image.height = dimensions.height;
       const item = buildAttraction(workspaceItem, verified, foods, lazy);

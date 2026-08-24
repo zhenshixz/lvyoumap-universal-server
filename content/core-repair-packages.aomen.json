@@ -1,30 +1,30 @@
 {
   "province": "澳门",
   "status": "applied",
-  "createdAt": "2026-08-21T02:48:56.127Z",
-  "updatedAt": "2026-08-21T06:17:32.423Z",
+  "createdAt": "2026-08-21T08:52:59.971Z",
+  "updatedAt": "2026-08-24T03:25:38.968Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.aomen.json",
   "attractions": [
     {
-      "baselineKey": "core_00fef9d173",
-      "id": "manual_aomen_d03c0e6e",
-      "name": "澳门新濠影汇度假区",
+      "baselineKey": "core_45311f86ff",
+      "id": "manual_aomen_cd7f869",
+      "name": "东望洋灯塔",
       "city": "澳门",
-      "rating": 4.7,
-      "reviewsCount": "2887条携程点评",
-      "image": "/assets/images/attractions/aomen_d03c0e6e_verified.jpg",
-      "description": "这个夏天，新濠影汇水上乐园化身充满色彩与欢乐的 “迪士尼太空水世界”。四大太空主题迪士尼打卡装置横跨室内及户外园区，让宾客在水花、阳光与欢笑之间，与一众迪士尼经典角色展开一场清凉又奇妙的夏日冒险，沿途发掘意想不到的奇妙惊喜。",
-      "intro": "这个夏天，新濠影汇水上乐园化身充满色彩与欢乐的 “迪士尼太空水世界”。四大太空主题迪士尼打卡装置横跨室内及户外园区，让宾客在水花、阳光与欢笑之间，与一众迪士尼经典角色展开一场清凉又奇妙的夏日冒险，沿途发掘意想不到的奇妙惊喜。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/aomen_cd7f869_verified.jpg",
+      "description": "东望洋灯塔位于澳门（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "东望洋灯塔位于澳门（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "综合度假区（室内水上乐园、摩天轮、儿童乐园、主题展览、商场餐饮）",
+      "category": "世界文化遗产 / 观景台 / 历史古迹",
       "tags": [
-        "综合度假区（室内水上乐园、摩天轮、儿童乐园、主题展览、商场餐饮）",
+        "世界文化遗产 / 观景台 / 历史古迹",
         "经典景点",
         "口碑热门"
       ],
-      "address": "澳门路氹连贯公路新濠影汇三楼",
+      "address": "澳门（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +36,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "从珠海横琴口岸过关后，可乘坐澳门轻轨至莲花站（1站即达），从A出口出站后穿过天桥即可直接进入度假区；也可在关口乘坐免费穿梭巴士（发财车）直达；公交可乘坐25B、26A、51A、MT4路。",
-          "internal_arrive": "推荐从1楼东北入口或轻轨站入口进入，周边主题装置集中，方便第一时间打卡；若入住酒店，可从酒店大堂直接进入商场区域。",
-          "internal_traffic": "度假区内各楼层通过扶梯和直梯连接，动线清晰；1楼、2楼、3楼均有明确指示牌指向摩天轮、水上乐园等核心区域，步行即可到达，无需额外交通工具。",
+          "external_arrive": "乘坐公交至「二龙喉公园站」下车；或打车定位「二龙喉公园」及「东望洋炮台」山脚入口。",
+          "internal_arrive": "首选二龙喉公园入口，可乘坐松山缆车直达半山，大幅节省体力；也可从松山行人隧道电梯上山。",
+          "internal_traffic": "山顶区域为步行栈道与石阶，无内部交通工具，需自行步行游览。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "度假区内酒店分为巨星汇和明星汇两大区域。巨星汇套房面积较大，带270°双景观窗，可直面8字摩天轮和官也街夜景；明星汇标准房性价比高，部分房型可直面水舞间剧场LED巨幕。",
+            "area": "建议入住新马路或大三巴片区，前往二龙喉公园交通便利，游玩后可顺路品尝地道美食。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,29 +54,31 @@
           "木糠布丁"
         ],
         "special_care": {
-          "elderly": "室内恒温环境舒适，可优先选择8字摩天轮俯瞰全景、逛商场主题展、在美食广场用餐，避免剧烈运动和户外暴晒",
-          "children": "小童（100cm以下）推荐满纷乐园和水上乐园浅水池，大童（100cm以上）可体验水上乐园滑梯和VR游戏，建议根据身高选择项目，并备好防滑袜和换洗衣物。"
+          "elderly": "务必乘坐松山缆车或隧道电梯上山，避免攀爬陡坡；山顶有长椅可休息，风大时注意保暖",
+          "children": "二龙喉公园内有小型动物园和健身设施，可提前游玩；灯塔观景台视野开阔，适合引导孩子观察城市全景，但需注意观景台边缘安全，勿攀爬或坐卧台阶。"
         }
       },
       "lazy_routes": [
         {
-          "title": "室内恒温省力遛娃半日游",
+          "title": "松山缆车省力登顶全景线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "1楼东北入口主题装置打卡",
-            "1楼时代广场/主入口大堂逛主题展",
-            "西翼3楼水上乐园（室内恒温区）或满纷乐园",
-            "东翼3楼影汇之星8字摩天轮（傍晚看日落夜景）"
+            "二龙喉公园（乘坐松山缆车或步行上山）",
+            "东望洋炮台（百年花岗岩遗迹与古炮）",
+            "东望洋灯塔外围观景台（360°俯瞰澳门半岛",
+            "新葡京与跨海大桥）",
+            "圣母雪地殿教堂（欣赏中西合璧壁画，内部禁止拍照）",
+            "松山军用隧道（探秘历史军事遗迹）"
           ],
           "duration": "半天",
-          "walking": "约3000-5000步（视具体游玩项目而定）",
+          "walking": "约 500 米（下缆车后步行至山顶约 10-15 分钟，山顶各景点间环形漫步）",
           "physical": 2,
           "tips": [
-            "建议上午或下午早点入场，避开官方当日建议时段-官方当日建议时段人流高峰；摩天轮建议官方当日建议时段后去，可一次收获日落和夜景；园区内餐饮选择多，美食广场性价比高，适合带娃简餐。"
+            "松山缆车周一停运，周二至周日 官方当日建议时段-官方当日建议时段 运营；炮台区 官方当日建议时段 停止入场，建议上午或傍晚前往；山顶无便利店，请自备饮用水。"
           ],
-          "sourceTitle": "携程旅行 澳门新濠影汇度假区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/macau39/5715249.html?poiType=66&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -85,591 +87,41 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 澳门新濠影汇度假区 详情页：https://you.ctrip.com/sight/macau39/5715249.html?poiType=66&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q3313058 实体页：https://www.wikidata.org/wiki/Q3313058"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 澳门新濠影汇度假区 详情页",
-          "url": "https://you.ctrip.com/sight/macau39/5715249.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "澳门新濠影汇度假区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/macau39/5715249.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/macau39/5715249.html?poiType=66&scene=online",
-        "width": 1273,
-        "height": 852
+        "title": "东望洋灯塔 - Guia Lighthouse - 2016.06 - panoramio.jpg",
+        "author": "rheins",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%9C%E6%9C%9B%E6%B4%8B%E7%81%AF%E5%A1%94_-_Guia_Lighthouse_-_2016.06_-_panoramio.jpg",
+        "width": 3840,
+        "height": 2879
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_e69d13581c",
-      "id": "manual_aomen_1dc03c14",
-      "name": "澳门teamLab超自然空间",
-      "city": "澳门",
-      "rating": 4.6,
-      "reviewsCount": "2061条携程点评",
-      "image": "/assets/images/attractions/aomen_1dc03c14_verified.jpg",
-      "description": "• 澳门teamLab超自然空间是由世界知名艺术团队teamLab倾力打造，高至8m的超巨型作品群所构成，面积达5000平方米的复杂且具有高低差的立体交互空间。 \\n• 探索丰富的沉浸式空间，无论大人小孩或情侣都能乐在其中，拍照打卡好去处。",
-      "intro": "• 澳门teamLab超自然空间是由世界知名艺术团队teamLab倾力打造，高至8m的超巨型作品群所构成，面积达5000平方米的复杂且具有高低差的立体交互空间。 \\n• 探索丰富的沉浸式空间，无论大人小孩或情侣都能乐在其中，拍照打卡好去处。",
-      "level": "热门景点",
-      "category": "沉浸式互动艺术展览",
-      "tags": [
-        "沉浸式互动艺术展览",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "澳门路凼金光大道威尼斯人度假村teamLab超自然空间",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "位于澳门威尼斯人金光会展F馆，可从威尼斯人西翼大堂步行约5分钟到达；也可从巴黎人酒店5楼南翼乘电梯至3楼步行约2分钟到达，比从威尼斯人内部走更近。",
-          "internal_arrive": "建议从巴黎人酒店5楼进入，经南翼至3楼直达，路程更短；若从威尼斯人西翼大堂进入，需跟随金光会展指示牌步行约10-20分钟。",
-          "internal_traffic": "场馆为5000㎡立体交互空间，高至8米，内部无电梯或扶梯，需自行上下台阶和坡道。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐入住威尼斯人、巴黎人或伦敦人酒店，凭房卡可享门票折扣，且室内连廊互通，全程空调，带娃更方便。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "葡式蛋挞",
-          "传统猪扒包",
-          "水蟹粥",
-          "木糠布丁"
-        ],
-        "special_care": {
-          "elderly": "场馆冷气较足，建议携带薄外套；部分展区有镜面地板和坡道，建议穿防滑平底鞋，避免穿短裙；可选择水晶宇宙、漂浮花园、茶屋等互动较少、适合静赏的区域",
-          "children": "3岁以上儿童更适合参与，3岁以下可能因光线昏暗产生恐惧；彩绘海洋、弹跳宇宙、滑梯水果园等互动项目深受孩子喜爱，可引导其用身体\"作画\"，激发创作热情；全程需成人陪同，牵好孩子避免走散。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭亲子省力漫游线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "水晶宇宙",
-            "彩绘海洋",
-            "弹跳宇宙",
-            "滑梯水果园",
-            "漂浮花园",
-            "EN TEA HOUSE茶屋"
-          ],
-          "duration": "半天",
-          "walking": "约1500米（场馆内为立体迷宫，需上下台阶和坡道）",
-          "physical": 2,
-          "tips": [
-            "场馆内无固定路线，建议扫码查看未去展区，多问工作人员指引；带娃务必牵好孩子，部分区域有高低差和坡面易崴脚。"
-          ],
-          "sourceTitle": "携程旅行 澳门teamLab超自然空间 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/macau39/5700498.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 澳门teamLab超自然空间 详情页：https://you.ctrip.com/sight/macau39/5700498.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 澳门teamLab超自然空间 详情页",
-          "url": "https://you.ctrip.com/sight/macau39/5700498.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "澳门teamLab超自然空间 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/macau39/5700498.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/macau39/5700498.html?poiType=3&scene=online",
-        "width": 1988,
-        "height": 1326
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_3a08ef5359",
-      "id": "manual_aomen_fcc0c50a",
-      "name": "港珠澳大桥游",
-      "city": "珠海",
-      "rating": 4.5,
-      "reviewsCount": "2084条携程点评",
-      "image": "/assets/images/attractions/aomen_fcc0c50a_verified.jpg",
-      "description": "港珠澳大桥游是由港珠澳三地联合工作委员会及珠海市人民政府授权珠海九洲控股集团组建全资企业珠海九洲港珠澳大桥旅游有限公司与大桥管理局合作开发经营的旅游项目。 \\n港珠澳大桥游项目地处于香港、珠海、澳门三地口岸之间，位于海关监管区和口岸限定区域内，在该区域开展旅游，是全国范围内突破现有政策的创新。",
-      "intro": "港珠澳大桥游是由港珠澳三地联合工作委员会及珠海市人民政府授权珠海九洲控股集团组建全资企业珠海九洲港珠澳大桥旅游有限公司与大桥管理局合作开发经营的旅游项目。 \\n港珠澳大桥游项目地处于香港、珠海、澳门三地口岸之间，位于海关监管区和口岸限定区域内，在该区域开展旅游，是全国范围内突破现有政策的创新。",
-      "level": "热门景点",
-      "category": "桥梁工程观光、海岛观景",
-      "tags": [
-        "桥梁工程观光、海岛观景",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "广东省珠海市香洲区港珠澳大桥珠海口岸港东一路128号交通连廊三楼规划场地",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至\"港珠澳大桥珠海公路口岸P2地下停车场\"（性价比高，首3小时免费）；打车定位\"港珠澳大桥珠海公路口岸—送客平台\"，从口岸天地进入后乘扶梯至2楼；公交可乘3/12/23/25路到\"大桥口岸枢纽\"站。",
-          "internal_arrive": "口岸天地B区2楼港珠澳大桥游旅游检查厅，提前30分钟到达排队检票。",
-          "internal_traffic": "往返口岸与蓝海豚岛由观光大巴统一接送；岛上设有电梯，老人和轮椅可无障碍通行。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "如计划衔接澳门行程，可住珠海横琴或澳门氹仔附近；若仅玩大桥游，珠海口岸周边酒店即可。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "葡式蛋挞",
-          "传统猪扒包",
-          "水蟹粥",
-          "木糠布丁"
-        ],
-        "special_care": {
-          "elderly": "全程大巴+岛上电梯，步行少，适合长辈；展厅讲解有科普意义，能感受家国情怀",
-          "children": "车程约25分钟，可提前准备小零食；海底隧道和观景平台对孩子有吸引力，耳机讲解也适合亲子研学。\n\n补充提醒：港珠澳大桥游≠出境游，登岛后不可直接去香港或澳门，必须返回珠海口岸再办理过关手续。如想顺路去澳门，可在游览结束后从珠海口岸步行过关前往，人少且通关快。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "观光大巴车游+蓝海豚岛登岛",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "口岸天地B区2楼出发大厅排队安检",
-            "乘坐观光大巴车行约25-30分钟（车览九州桥风帆塔",
-            "江海桥海豚塔",
-            "青州桥中国结，穿越海底隧道）",
-            "抵达蓝海豚岛下车",
-            "参观大桥建设展厅（听讲解）",
-            "120级大台阶及360°观景平台（远眺香港大屿山和机场）",
-            "按指定时间集合返程"
-          ],
-          "duration": "半天",
-          "walking": "约300米（岛上步行）",
-          "physical": 2,
-          "tips": [
-            "必须携带身份证原件刷脸入园；上车尽量选右侧靠窗座位，海景视野更好；岛上风大，建议带防风外套；全程约140分钟，需提前在\"港珠澳大桥游\"公众号购票预约。"
-          ],
-          "sourceTitle": "携程旅行 港珠澳大桥游 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 港珠澳大桥游 详情页：https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 港珠澳大桥游 详情页",
-          "url": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "港珠澳大桥游 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1438
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_8f6ec7e6ac",
-      "id": "manual_aomen_cff10d35",
-      "name": "新濠天地",
-      "city": "澳门",
-      "rating": 4.8,
-      "reviewsCount": "6171条携程点评",
-      "image": "/assets/images/attractions/aomen_cff10d35_verified.jpg",
-      "description": "一生必看的水上汇演— 《水舞间》五月新章揭幕。 这是一场关于爱情与冒险、光明与黑暗的对决。",
-      "intro": "一生必看的水上汇演— 《水舞间》五月新章揭幕。 这是一场关于爱情与冒险、光明与黑暗的对决。",
-      "level": "热门景点",
-      "category": "综合度假村（含剧院、艺术装置、商场、酒店）",
-      "tags": [
-        "综合度假村（含剧院、艺术装置、商场、酒店）",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "澳门路氹連貫公路 City of Dreams",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "从拱北口岸或横琴口岸过关后，可乘坐新濠天地免费穿梭巴士直达；或乘坐澳门轻轨至路氹东站，从A口出经行人天桥步行3-5分钟即达。",
-          "internal_arrive": "建议从一楼主入口进入，正对《梦幻之门》装置，动线最顺，且方便前往一楼剧院和商场。",
-          "internal_traffic": "全程室内步行，商场与酒店之间通过连廊互通，无需额外乘坐交通工具；若前往高层区域可乘坐高速观光电梯。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "新濠天地内包含君悦酒店、摩珀斯酒店等，住店客人可直达剧院和商场，最省体力。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "葡式蛋挞",
-          "传统猪扒包",
-          "水蟹粥",
-          "木糠布丁"
-        ],
-        "special_care": {
-          "elderly": "全程室内空调环境，路面平坦无台阶，适合长辈慢走；可在商场休息区随时歇脚，观看演出时选择舒适座位",
-          "children": "《水舞间》"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "水舞间与艺术装置省力打卡线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "入口广场：打卡丹尼尔·阿尔轩打造的巨型艺术装置《梦幻之门》，两座空心头像相对而立，适合全家合影。\n\n一楼商场与中庭：闲逛新濠大道，欣赏随处可见的当代艺术装置（如村上隆花卉墙",
-            "大卷伸嗣《回响—无限》），感受未来感空间设计。\n\n一楼水舞间剧院：观看270度环形剧场的水上汇演，舞台可在1分钟内完成水陆切换，融合高空跳水与特技杂技。\n\n后台导览（演出结束后）：走进地下潜水区域探秘1700万升巨型水池，登上18米高空舞台俯瞰全场，体验演员视角（需年满12周岁）。"
-          ],
-          "duration": "半天",
-          "walking": "约1500米（主要在室内商场与连廊，路面平坦）",
-          "physical": 2,
-          "tips": [
-            "剧场冷气较足，建议带薄外套；前排为溅水区，带儿童建议选后排；后台导览需提前购票，且仅在特定场次演出后开放，具体以官方当日公告为准。"
-          ],
-          "sourceTitle": "携程旅行 新濠天地 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/macau39/1407295.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 新濠天地 详情页：https://you.ctrip.com/sight/macau39/1407295.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 新濠天地 详情页",
-          "url": "https://you.ctrip.com/sight/macau39/1407295.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "新濠天地 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/macau39/1407295.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/macau39/1407295.html?poiType=66&scene=online",
-        "width": 4242,
-        "height": 2828
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_a02b70e5e7",
-      "id": "manual_aomen_81a1ae5f",
-      "name": "新濠影汇满纷乐园",
-      "city": "澳门",
-      "rating": 4.5,
-      "reviewsCount": "589条携程点评",
-      "image": "/assets/images/attractions/aomen_81a1ae5f_verified.jpg",
-      "description": "• 享受独特的室内游乐场 \\n • 尽享五大主题区 \\n • 尽享多元玩乐体验 \\n\\n \\n \\n占地四层的「新濠影汇满纷乐园」可同时容纳500人，分为山岩、丛林、海底、外层空间和太空站五区，所有年龄层的孩子们都可以在此尽情、跳跃、攀爬、探索，尽享多元玩乐体验，挑战自我。 \\n此外更设有3间派对间，娱乐大使将为生日小明星及其星级客人提供独特的派对体验。",
-      "intro": "• 享受独特的室内游乐场 \\n • 尽享五大主题区 \\n • 尽享多元玩乐体验 \\n\\n \\n \\n占地四层的「新濠影汇满纷乐园」可同时容纳500人，分为山岩、丛林、海底、外层空间和太空站五区，所有年龄层的孩子们都可以在此尽情、跳跃、攀爬、探索，尽享多元玩乐体验，挑战自我。 \\n此外更设有3间派对间，娱乐大使将为生日小明星及其星级客人提供独特的派对体验。",
-      "level": "热门景点",
-      "category": "室内亲子主题乐园",
-      "tags": [
-        "室内亲子主题乐园",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "澳门路氹连贯公路新濠影汇西翼三楼",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "从横琴口岸或澳门国际机场出发，可乘坐免费接驳车或打车直达新濠影汇。",
-          "internal_arrive": "乐园入口位于新濠影汇西翼3楼，从酒店大堂或鼎泰丰旁可通过楼梯或电梯直达。",
-          "internal_traffic": "乐园内部通过楼层电梯和树屋餐厅的滑梯进行垂直连接，各楼层均有洗手间和休息区。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "新濠影汇酒店（住客可享门票折扣及便捷入场）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "葡式蛋挞",
-          "传统猪扒包",
-          "水蟹粥",
-          "木糠布丁"
-        ],
-        "special_care": {
-          "elderly": "乐园内各楼层均设有充足的休息座位，长辈可陪同休息或在低幼区（如波波池）旁看护，无需全程攀爬",
-          "children": "100cm以下宝宝适合主攻丛林区和海洋区，120cm以上大童可挑战山岩区的攀岩和绳网，请根据身高选择项目。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "四层楼垂直探险与放电路线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "3楼丛林主题区（奇趣树屋",
-            "丛林反斗车）",
-            "3楼山岩主题区（赤手登峰",
-            "猴子绳堡）",
-            "3楼海洋主题区（泡泡纷FUN堡",
-            "浪花弹弹塔）",
-            "5楼树屋餐厅及电玩区休息",
-            "6楼外太空主题区（星球波波池",
-            "太空弹弹网）",
-            "7楼太空站主题区（炮弹发射台",
-            "积木区）"
-          ],
-          "duration": "半天",
-          "walking": "约1500米",
-          "physical": 3,
-          "tips": [
-            "建议穿长袖长裤和防滑袜，部分攀爬项目有身高限制，进场时请留意各区域提示。"
-          ],
-          "sourceTitle": "携程旅行 新濠影汇满纷乐园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/macau39/134051128.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 新濠影汇满纷乐园 详情页：https://you.ctrip.com/sight/macau39/134051128.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 新濠影汇满纷乐园 详情页",
-          "url": "https://you.ctrip.com/sight/macau39/134051128.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "新濠影汇满纷乐园 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/macau39/134051128.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/macau39/134051128.html?poiType=3&scene=online",
-        "width": 5250,
-        "height": 3500
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_d61e2ca333",
-      "id": "manual_aomen_6b950192",
-      "name": "影汇之星8字形摩天轮",
-      "city": "澳门",
-      "rating": 4.6,
-      "reviewsCount": "3601条携程点评",
-      "image": "/assets/images/attractions/aomen_6b950192_verified.jpg",
-      "description": "• 标志型的8字形外形 • 悬挂于130米高空，一览澳门景致 • 观景厢主题多样，丰富多彩 影汇之星8字摩天轮是新濠影汇的标志性景观。耸立于两座酒店大楼之间的瞩目标志「影汇之星」设计概念源自好莱坞巨制之震撼场景，恍如两颗炽热行星冲击大楼外墙，留下了一个近乎完整的「8」字。",
-      "intro": "• 标志型的8字形外形 • 悬挂于130米高空，一览澳门景致 • 观景厢主题多样，丰富多彩 影汇之星8字摩天轮是新濠影汇的标志性景观。耸立于两座酒店大楼之间的瞩目标志「影汇之星」设计概念源自好莱坞巨制之震撼场景，恍如两颗炽热行星冲击大楼外墙，留下了一个近乎完整的「8」字。",
-      "level": "热门景点",
-      "category": "观景摩天轮",
-      "tags": [
-        "观景摩天轮",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "澳门路氹连贯公路新濠影汇东翼三楼",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "各口岸有免费发财车直达新濠影汇；也可乘坐澳门轻轨氹仔线至莲花口岸站，或搭乘15、21A、25、25X、26、26A、MT4等公交线路前往。",
-          "internal_arrive": "从新濠影汇东翼正大门进入，沿\"影汇之星\"指示牌步行至3楼检票口，注意认准蓝色扶梯或直梯上3楼。",
-          "internal_traffic": "3楼检票后换乘直梯直达23楼登舱口，全程无需步行爬楼。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "新濠影汇酒店内或路氹城周边酒店（如威尼斯人、巴黎人、美高梅等），步行或免费发财车即可到达。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "葡式蛋挞",
-          "传统猪扒包",
-          "水蟹粥",
-          "木糠布丁"
-        ],
-        "special_care": {
-          "elderly": "摩天轮运转平稳、全程空调，适合长辈轻松观景；但透明玻璃地板区域恐高者请勿站立",
-          "children": "观景厢空间宽敞，部分有迪士尼等主题装饰，小朋友会很喜欢；2岁以下婴幼儿免票，12岁以下需成人陪同。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "高空观景+3楼花园打卡省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "新濠影汇东翼3楼入口检票",
-            "乘坐直梯至23楼登舱口",
-            "进入观景厢乘坐一圈（约11-15分钟）欣赏高空全景",
-            "下舱后穿过3楼纪念品商店",
-            "从3楼玻璃门出去到室外花园近距离仰拍摩天轮"
-          ],
-          "duration": "半天",
-          "walking": "约200米",
-          "physical": 2,
-          "tips": [
-            "观景厢内部分地板为透明玻璃，恐高者请勿站立其上；建议傍晚时分乘坐，可同时欣赏日落与夜景。"
-          ],
-          "sourceTitle": "携程旅行 影汇之星8字形摩天轮 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/macau39/2021110.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/macau39.html",
-          "携程旅行 影汇之星8字形摩天轮 详情页：https://you.ctrip.com/sight/macau39/2021110.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 影汇之星8字形摩天轮 详情页",
-          "url": "https://you.ctrip.com/sight/macau39/2021110.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "影汇之星8字形摩天轮 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/macau39/2021110.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/macau39/2021110.html?poiType=3&scene=online",
-        "width": 2048,
-        "height": 1367
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:48:56.705Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T08:53:00.545Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_00fef9d173",
-    "core_e69d13581c",
-    "core_3a08ef5359",
-    "core_8f6ec7e6ac",
-    "core_a02b70e5e7",
-    "core_d61e2ca333"
+    "core_45311f86ff"
   ],
-  "appliedAt": "2026-08-21T06:40:39.911Z",
+  "appliedAt": "2026-08-24T03:25:40.051Z",
   "appliedAttractionIds": [
-    "manual_aomen_d03c0e6e",
-    "manual_aomen_1dc03c14",
-    "manual_aomen_fcc0c50a",
-    "manual_aomen_cff10d35",
-    "manual_aomen_81a1ae5f",
-    "manual_aomen_6b950192"
+    "manual_aomen_cd7f869"
   ],
   "appliedOverrideIds": []
 }

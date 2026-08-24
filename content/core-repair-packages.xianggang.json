@@ -1,140 +1,34 @@
 {
   "province": "香港",
   "status": "applied",
-  "createdAt": "2026-08-21T03:22:47.806Z",
-  "updatedAt": "2026-08-21T03:22:48.412Z",
+  "createdAt": "2026-08-21T09:36:36.437Z",
+  "updatedAt": "2026-08-24T03:13:21.361Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "九龙城寨公园：基本资料目前只有1个可追溯来源",
+    "跑马地赛马场：基本资料目前只有1个可追溯来源",
+    "石澳：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.xianggang.json",
   "attractions": [
     {
-      "baselineKey": "core_29e7728ae0",
-      "id": "manual_xianggang_15445219",
-      "name": "港珠澳大桥游",
-      "city": "珠海",
-      "rating": 4.5,
-      "reviewsCount": "2084条携程点评",
-      "image": "/assets/images/attractions/xianggang_15445219_verified.jpg",
-      "description": "港珠澳大桥游是由港珠澳三地联合工作委员会及珠海市人民政府授权珠海九洲控股集团组建全资企业珠海九洲港珠澳大桥旅游有限公司与大桥管理局合作开发经营的旅游项目。 \\n港珠澳大桥游项目地处于香港、珠海、澳门三地口岸之间，位于海关监管区和口岸限定区域内，在该区域开展旅游，是全国范围内突破现有政策的创新。",
-      "intro": "港珠澳大桥游是由港珠澳三地联合工作委员会及珠海市人民政府授权珠海九洲控股集团组建全资企业珠海九洲港珠澳大桥旅游有限公司与大桥管理局合作开发经营的旅游项目。 \\n港珠澳大桥游项目地处于香港、珠海、澳门三地口岸之间，位于海关监管区和口岸限定区域内，在该区域开展旅游，是全国范围内突破现有政策的创新。",
-      "level": "热门景点",
-      "category": "跨海大桥观光 / 人工岛游览 / 科普研学",
-      "tags": [
-        "跨海大桥观光 / 人工岛游览 / 科普研学",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "广东省珠海市香洲区港珠澳大桥珠海口岸港东一路128号交通连廊三楼规划场地",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至“港珠澳大桥珠海口岸P2地下停车场”（性价比高）；打车或公交可至“大桥口岸枢纽”站，在3楼送客平台下车。",
-          "internal_arrive": "从P2停车场或3楼下车后，前往口岸天地B区，乘坐扶梯或电梯下至2楼，即可找到“港珠澳大桥游旅游检查厅”。",
-          "internal_traffic": "口岸至蓝海豚岛之间乘坐官方观光大巴（单程约25-30分钟），岛上各楼层之间有电梯和楼梯连接。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在珠海香洲区或靠近港珠澳大桥口岸的酒店，方便第二天一早前往口岸，避免长途奔波。\n长辈儿童专属建议\n长辈建议：岛上1楼到4楼有电梯，长辈无需爬120级阶梯即可到达观景平台和展厅；大巴车上有专业讲解，长辈可安心坐着听，感受大国工程的震撼，全程节奏舒缓，非常适合作为“家国情怀”研学之旅。\n儿童建议：大巴和岛上的耳机讲解通俗易懂，展厅内有丰富的模型和多媒体展示，是极佳的科普研学场景；建议为孩子准备一些零食和水，岛上虽有自助卖水机，但自备更便捷。\n\n如果你原本是想了解从香港口岸出发去珠海或澳门的“过桥交通体验”，或者想在香港本地找其他看大桥的观景台，可以告诉我，我再为你补充相关路线。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "港式丝袜奶茶",
-          "深井烧鹅",
-          "港式咖喱鱼蛋",
-          "避风塘炒蟹"
-        ],
-        "special_care": {
-          "elderly": "岛上1楼到4楼有电梯，长辈无需爬120级阶梯即可到达观景平台和展厅；大巴车上有专业讲解，长辈可安心坐着听，感受大国工程的震撼，全程节奏舒缓，非常适合作为“家国情怀”研学之旅",
-          "children": "大巴和岛上的耳机讲解通俗易懂，展厅内有丰富的模型和多媒体展示，是极佳的科普研学场景；建议为孩子准备一些零食和水，岛上虽有自助卖水机，但自备更便捷。\n\n如果你原本是想了解从香港口岸出发去珠海或澳门的“过桥交通体验”，或者想在香港本地找其他看大桥的观景台，可以告诉我，我再为你补充相关路线。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "观光大巴登岛省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "港珠澳大桥珠海公路口岸旅游检查厅（安检上车）",
-            "乘车穿越九州航道桥（风帆塔）",
-            "江海航道桥（海豚塔）",
-            "青州航道桥（中国结）及海底隧道",
-            "抵达蓝海豚岛（下车游览）",
-            "相聚广场（打卡120级阶梯）",
-            "四楼展厅（参观大桥建设模型与历程）",
-            "观景平台（远眺香港国际机场与大屿山）",
-            "游客服务中心（集合返程）"
-          ],
-          "duration": "半天",
-          "walking": "全程以乘坐观光大巴为主，岛上步行主要集中在1楼至4楼的展厅和观景平台，岛上有电梯直达，整体步行强度很低。",
-          "physical": 2,
-          "tips": [
-            "上车前务必选右手边靠窗的座位，视野最佳，能看海且有机会偶遇中华白海豚；必须携带实体身份证原件，否则无法安检上车；全程严禁携带无人机。"
-          ],
-          "sourceTitle": "携程旅行 港珠澳大桥游 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hongkong38.html",
-          "携程旅行 港珠澳大桥游 详情页：https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 港珠澳大桥游 详情页",
-          "url": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "港珠澳大桥游 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhuhai27/122396.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1438
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_b19058fe53",
-      "id": "manual_xianggang_95f89023",
-      "name": "山顶缆车",
+      "baselineKey": "core_3f63942ff7",
+      "id": "manual_xianggang_2bb566a7",
+      "name": "九龙城寨公园",
       "city": "香港",
-      "rating": 4.6,
-      "reviewsCount": "11958条携程点评",
-      "image": "/assets/images/attractions/xianggang_95f89023_verified.jpg",
-      "description": "山顶缆车联同汇丰保险隆重呈献全港至高立体光影盛事 — 汇丰保险「汇映山顶」光影汇演。 是次「汇映山顶」光影汇演以位于香港地标太平山顶的凌霄阁为舞台，透过一幕幕融合光影艺术与城市文化元素的视听盛宴，细致呈现香港多元而独特的城市魅力，向本地市民及全球旅客诉说属于香港的动人故事，展现历久弥新的繁华与活力。",
-      "intro": "山顶缆车联同汇丰保险隆重呈献全港至高立体光影盛事 — 汇丰保险「汇映山顶」光影汇演。 是次「汇映山顶」光影汇演以位于香港地标太平山顶的凌霄阁为舞台，透过一幕幕融合光影艺术与城市文化元素的视听盛宴，细致呈现香港多元而独特的城市魅力，向本地市民及全球旅客诉说属于香港的动人故事，展现历久弥新的繁华与活力。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/xianggang_2bb566a7_verified.jpg",
+      "description": "九龙城寨公园位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "九龙城寨公园位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "观光交通、城市观景",
+      "category": "城市公园 / 历史古迹 / 江南园林",
       "tags": [
-        "观光交通、城市观景",
+        "城市公园 / 历史古迹 / 江南园林",
         "经典景点",
         "口碑热门"
       ],
-      "address": "香港中环花园道33号",
+      "address": "香港（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -146,14 +40,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "港铁中环站J2出口，沿指示牌步行约10-15分钟可达花园道山顶缆车总站。",
-          "internal_arrive": "花园道33号山顶缆车总站（中环侧），沿途有\"太平山缆车\"指示牌引导。",
-          "internal_traffic": "山顶缆车从花园道总站至山顶凌霄阁站，车程约7-10分钟，车厢内可感受25.7度陡坡的倾斜体验。",
+          "external_arrive": "港铁宋皇台站B3出口步行约10分钟；或乘巴士至九龙城/贾炳达道站，步行约2分钟到达。",
+          "internal_arrive": "推荐从南门进入，进门即可打卡南门遗址与古炮，顺势向公园中心推进，动线最顺畅。",
+          "internal_traffic": "公园内全为平地步道，无内部交通工具，全程步行即可。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住中环或金钟一带，步行或短途乘车即可到达缆车站，方便安排行程。",
+            "area": "周边无大型商业酒店，建议住在港铁宋皇台站、乐富站或钻石山站附近，交通便捷且餐饮选择丰富。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -164,30 +58,30 @@
           "避风塘炒蟹"
         ],
         "special_care": {
-          "elderly": "若担心排队体力消耗，可考虑打车至山顶广场（定位\"山顶商场LG层停车场\"），再体验缆车下山",
-          "children": "山顶缆车倾斜体验对孩子很有吸引力，可提前讲解\"高楼变斜\"的视觉原理，增加趣味性。\n\n补充提醒：如遇台风或黑色暴雨预警，山顶缆车及摩天台可能临时关闭，已购票的退换政策以官方当日公告为准；山顶全程禁飞无人机，摩天台428不可携带三脚架和外放音响。"
+          "elderly": "公园内亭台楼阁众多，座椅充足，可随时休憩；古迹区有深厚历史底蕴，适合慢走细看",
+          "children": "青铜微缩模型和光影展的场景还原非常直观有趣，能让孩子快速了解旧时城寨生活；园内植物径丰富，也可作为自然科普小课堂。\n\n补充实用小贴士：\n\n公园免费开放，但光影之旅展览需现场排队取票，具体放号时间和场次以官方当日公告为准。\n园内无餐厅，建议自带饮用水，或逛完后前往周边的九龙城街市及泰式美食街用餐。\n夏季前往记得携带驱蚊液，早晚光线柔和时拍照最出片。"
         }
       },
       "lazy_routes": [
         {
-          "title": "省力观景经典线（缆车+凌霄阁+环山步道）",
+          "title": "古迹园林轻徒步省力线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "花园道山顶缆车总站",
-            "乘坐山顶缆车上山",
-            "凌霄阁摩天台428",
-            "卢吉道观景步道",
-            "山顶广场"
+            "南门怀古（触摸清代城墙残垣与石板道）",
+            "衙府缅昔（参观唯一保留的清代三进衙门及门前古炮）",
+            "九龙城寨光影之旅（1:1还原电影场景的沉浸式展览，需现场取票）",
+            "千面小城常设展览（观看精细青铜微缩模型，还原昔日高密度“握手楼”）",
+            "八径异趣与归璧半亭（漫步江南园林植物径，在亭台回廊间休憩拍照）"
           ],
           "duration": "半天",
-          "walking": "约1000米（以实际步速为准）",
+          "walking": "约 1.5 公里（公园面积适中，不走回头路）",
           "physical": 2,
           "tips": [
-            "上山坐右边、下山坐左边可俯瞰维港全景；山顶昼夜温差大，建议带薄外套；山顶物价较高，可自备零食和水。"
+            "光影之旅展览人气较高，建议入园后优先前往衙门前找工作人员领取入场票，每批限时约15分钟，领到票后再按顺序游览其他景点，避免错过场次。"
           ],
-          "sourceTitle": "携程旅行 山顶缆车 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/hongkong38/113164.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -196,51 +90,49 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hongkong38.html",
-          "携程旅行 山顶缆车 详情页：https://you.ctrip.com/sight/hongkong38/113164.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 山顶缆车 详情页",
-          "url": "https://you.ctrip.com/sight/hongkong38/113164.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "山顶缆车 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "香港九龙城寨公园:百年变迁与古典韵味",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/hongkong38/113164.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/hongkong38/113164.html?poiType=3&scene=online",
-        "width": 8640,
-        "height": 5760
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3129126865580900425",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3129126865580900425",
+        "width": 1800,
+        "height": 1117
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "九龙城寨公园：基本资料目前只有1个可追溯来源"
+        ]
       }
     },
     {
-      "baselineKey": "core_1627d5e381",
-      "id": "manual_xianggang_fde8e54f",
-      "name": "香港摩天轮",
+      "baselineKey": "core_509ad3d68d",
+      "id": "manual_xianggang_fc43404f",
+      "name": "荔枝窝",
       "city": "香港",
-      "rating": 4.6,
-      "reviewsCount": "4237条携程点评",
-      "image": "/assets/images/attractions/xianggang_fde8e54f_verified.jpg",
-      "description": "• 享受香港天际线的壮丽景色 \\n• 体验十五分钟的旅程，饱览维多利亚港及香港天际线的全景！ \\n• 由友邦呈现的AR应用程式可带您回到过去 \\n\\n \\n \\n \\n△ 香港摩天轮是中环的地标景观之一，高达60米的摩天轮为游客提供了一处欣赏维多利亚港景色的好地方。",
-      "intro": "• 享受香港天际线的壮丽景色 \\n• 体验十五分钟的旅程，饱览维多利亚港及香港天际线的全景！ \\n• 由友邦呈现的AR应用程式可带您回到过去 \\n\\n \\n \\n \\n△ 香港摩天轮是中环的地标景观之一，高达60米的摩天轮为游客提供了一处欣赏维多利亚港景色的好地方。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/xianggang_fc43404f_verified.jpg",
+      "description": "荔枝窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "荔枝窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "城市观景/地标打卡",
+      "category": "自然生态与客家古村",
       "tags": [
-        "城市观景/地标打卡",
+        "自然生态与客家古村",
         "经典景点",
         "口碑热门"
       ],
-      "address": "香港中环民光街33号",
+      "address": "香港（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -252,14 +144,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "地铁：港铁中环站A出口或香港站A2出口，沿民耀街步行8-15分钟\n天星小轮：从尖沙咀码头乘船至中环7号码头，步行5分钟即达\n巴士：乘坐至中环巴士终点站（交易广场）下车",
-          "internal_arrive": "从中环天星码头方向步行前往，下船抬头就能看到摩天轮，不用绕路；若坐地铁从A口出，沿指示牌往码头方向走即可。",
-          "internal_traffic": "香港摩天轮为单层开放式结构，无内部楼层分区，直接到基座购票登轮即可。",
+          "external_arrive": "从深圳福田/罗湖口岸过关后，乘港铁东铁线至大埔墟站A3出口，转乘20R小巴（平日）或275R巴士（周末及假日）至乌蛟腾总站。",
+          "internal_arrive": "乌蛟腾总站（徒步起点），或马料水新渡轮码头3号梯台（坐船直达）。",
+          "internal_traffic": "村内及步道均为步行，无其他交通工具。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "如想方便游览，可选择住在中环或尖沙咀附近，步行或坐天星小轮即可到达，节省体力。",
+            "area": "村内活化客家村屋民宿，节假日需提前预订，禁止野外搭帐篷露营。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -270,28 +162,49 @@
           "避风塘炒蟹"
         ],
         "special_care": {
-          "elderly": "车厢有恒温空调且运行平稳，恐高也能放心坐；65岁以上长者有优惠票价；建议选靠海侧座位，视野好不费力",
-          "children": "3岁以下免费，3-11岁半价；车厢空间大不拥挤，全程约15-20分钟孩子不会坐不住；摩天轮下有专门停放推车的地方，带娃很方便。"
+          "elderly": "可选择路线B坐船直达，或路线A前半段平缓路段，避免后半段爬升",
+          "children": "沿途可观察弹涂鱼、招潮蟹等自然生态，但需注意防蚊防滑，全程结伴同行。"
         }
       },
       "lazy_routes": [
         {
-          "title": "维港日落夜景省力游",
+          "title": "省力精华线（乌蛟腾至荔枝窝）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "抵达中环9号码头旁摩天轮基座\n乘坐摩天轮包厢或散座，升至60米高空俯瞰维港全景（可看到IFC",
-            "中环摩天大楼",
-            "天星小轮）\n全程约15-20分钟，转3圈，车厢内有空调\n下轮后在附近海滨长廊散步吹风\n偶遇富豪雪糕车买支雪糕打卡"
+            "乌蛟腾",
+            "苗三古道",
+            "三桠村",
+            "荔枝窝"
           ],
           "duration": "半天",
-          "walking": "约200-500米（从码头到摩天轮及海滨散步）",
+          "walking": "约7.5-9公里",
+          "physical": 2,
+          "tips": [
+            "路况以林荫土路和石板路为主，平缓不晒。务必穿防滑登山鞋，提前下载离线地图，部分路段无手机信号。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        },
+        {
+          "title": "坐船直达线（马料水至荔枝窝）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "马料水码头",
+            "街渡",
+            "荔枝窝码头",
+            "村内漫步"
+          ],
+          "duration": "半天",
+          "walking": "约1公里（村内）",
           "physical": 1,
           "tips": [
-            "建议傍晚官方当日建议时段-官方当日建议时段前往，一次看完日落、蓝调和夜景；车厢选靠海侧座位更出片；现场可买票，也支持线上购票省排队时间；台风暴雨天可能暂停运营，出行前查天气。"
+            "街渡一般仅在周末及公众假期运行，去程约90分钟，返程需留意官方当日建议时段班次，以官方当日公告为准。"
           ],
-          "sourceTitle": "携程旅行 香港摩天轮 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -300,51 +213,48 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hongkong38.html",
-          "携程旅行 香港摩天轮 详情页：https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q3972238 实体页：https://www.wikidata.org/wiki/Q3972238"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 香港摩天轮 详情页",
-          "url": "https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "香港摩天轮 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "0元玩转这座城 香港荔枝窝徒步,风景非",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/hongkong38/1673000.html?poiType=66&scene=online",
-        "width": 3248,
-        "height": 2282
+        "licenseUrl": "http://m.dianping.com/ugcdetail/323535584?sceneType=0&bizType=29&msource=baiduappugc",
+        "sourceUrl": "http://m.dianping.com/ugcdetail/323535584?sceneType=0&bizType=29&msource=baiduappugc",
+        "width": 3072,
+        "height": 2048
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     },
     {
-      "baselineKey": "core_e30ce1c672",
-      "id": "manual_xianggang_812b8834",
-      "name": "Big Bus香港观光巴士游",
+      "baselineKey": "core_605617e9d1",
+      "id": "manual_xianggang_c66365b3",
+      "name": "梅窝",
       "city": "香港",
-      "rating": 4.4,
-      "reviewsCount": "660条携程点评",
-      "image": "/assets/images/attractions/xianggang_812b8834_verified.jpg",
-      "description": "探索城市新玩法：Big Bus 落日飞车 搭乘 Big Bus 落日飞车敞篷双层巴士，迎着微风穿梭于香港的经典街景与璀璨夜色之间。无论是白天的历史文化探索，还是夜晚的霓虹灯视觉盛宴，落日飞车都能带给你好的观光视角，随手一拍就是称霸朋友圈的氛围感大片！",
-      "intro": "探索城市新玩法：Big Bus 落日飞车 搭乘 Big Bus 落日飞车敞篷双层巴士，迎着微风穿梭于香港的经典街景与璀璨夜色之间。无论是白天的历史文化探索，还是夜晚的霓虹灯视觉盛宴，落日飞车都能带给你好的观光视角，随手一拍就是称霸朋友圈的氛围感大片！",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/xianggang_c66365b3_verified.jpg",
+      "description": "梅窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "梅窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "观光巴士 / 城市游览",
+      "category": "离岛小镇、海滨沙滩、轻徒步",
       "tags": [
-        "观光巴士 / 城市游览",
+        "离岛小镇、海滨沙滩、轻徒步",
         "经典景点",
         "口碑热门"
       ],
-      "address": "不同路线上车点不同，请以产品上的信息为准",
+      "address": "香港（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -356,14 +266,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "中环七号码头（摩天轮旁）或尖沙咀K11 MUSEA（星光大道李小龙雕像旁），具体视所选线路起点而定",
-          "internal_arrive": "首次使用建议前往中环七号码头激活和换票，该站为多条线路交汇点，周边交通便利，可结合天星小轮一同游玩",
-          "internal_traffic": "巴士支持随上随下，凭票在任意站点无限次乘坐，各站点之间由观光巴士串联，无需额外换乘其他交通工具",
+          "external_arrive": "从中环6号码头乘坐新渡轮前往梅窝码头，高速船约35分钟，普通船约50分钟；或从东涌站乘坐新大屿山巴士3M线抵达。",
+          "internal_arrive": "梅窝码头，下船后周边设施齐全，步行即可前往各大景点。",
+          "internal_traffic": "岛上以步行和租赁单车为主，码头及街市附近有多家单车行，可租单人车或适合家庭的四人协力车。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在中环、金钟或尖沙咀附近，前往巴士起点站步行或短途乘车即可到达，方便随时上下车",
+            "area": "银矿湾度假酒店（近沙滩，配套完善）、梅窝码头周边民宿及酒店。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -374,29 +284,32 @@
           "避风塘炒蟹"
         ],
         "special_care": {
-          "elderly": "全程可坐二层前排或下层（避风），减少步行和日晒，语音导览可听历史故事",
-          "children": "绿线沿途有沙滩可挖沙，巴士本身敞篷体验也受小朋友欢迎，可提前准备挖沙工具和防晒用品\n\n补充一点：如果时间充裕，也可以考虑红蓝联运的“发现之旅”，但绿线单线游港岛南部山海风光，节奏最慢、最轻松，是家庭游的稳妥选择。具体线路运营时间和站点请以官方当日公告为准。"
+          "elderly": "路线平坦轻松，银石街和码头周边适合散步，银矿湾泳滩有长椅可休息观海",
+          "children": "银矿湾泳滩沙质细腻，退潮时可赶海捉小鱼小蟹，沙滩游乐设施和公共游乐场适合放电。"
         }
       },
       "lazy_routes": [
         {
-          "title": "绿线赤柱山海休闲游（家庭省力首选）",
+          "title": "梅窝海滨休闲与轻徒步省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "中环七号码头（换票上车） ➡️ 山顶缆车站（俯瞰全景） ➡️ 湾仔海滨长廊（看海景打卡） ➡️ 赤柱（逛美利楼",
-            "卜公码头",
-            "赤柱市集） ➡️ 浅水湾（沙滩玩沙",
-            "影湾园拍照） ➡️ 香港仔（看避风塘风光） ➡️ 返回中环七号码头"
+            "梅窝码头",
+            "银石街（彩色村屋）",
+            "文武庙",
+            "银矿湾瀑布",
+            "银矿洞",
+            "银矿湾泳滩",
+            "梅窝洗衣公司"
           ],
           "duration": "半天",
-          "walking": "较少，各站点下车游玩后均可原路返回或就近上车，适合不想走太多路的家庭",
+          "walking": "约 3 公里",
           "physical": 2,
           "tips": [
-            "建议提前下载 Big Bus APP 查看车辆实时位置；二层后排视野无遮挡，拍照更出片；车上提供多语种语音导览耳机（普通话频道通常为2号）；车票通常包含天星小轮单程票，可顺便游览维港夜景"
+            "建议租四人协力车代步，部分路段可推婴儿车；岛上许多小店只收现金，请提前备足港币；瀑布和树林蚊虫较多，务必携带防蚊液。"
           ],
-          "sourceTitle": "携程旅行 Big Bus香港观光巴士游 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/hongkong38/1711456.html?poiType=66&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -405,50 +318,257 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hongkong38.html",
-          "携程旅行 Big Bus香港观光巴士游 详情页：https://you.ctrip.com/sight/hongkong38/1711456.html?poiType=66&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q3111452 实体页：https://www.wikidata.org/wiki/Q3111452"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 Big Bus香港观光巴士游 详情页",
-          "url": "https://you.ctrip.com/sight/hongkong38/1711456.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "Big Bus香港观光巴士游 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "香港梅窝半日游:自然爱好者的天堂!",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/hongkong38/1711456.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/hongkong38/1711456.html?poiType=66&scene=online",
-        "width": 8014,
-        "height": 5346
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4430235784238524108",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4430235784238524108",
+        "width": 1574,
+        "height": 2115
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_3d93be3d02",
+      "id": "manual_xianggang_8f7bba1c",
+      "name": "跑马地赛马场",
+      "city": "香港",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/xianggang_8f7bba1c_verified.jpg",
+      "description": "跑马地赛马场位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "跑马地赛马场位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "体育竞技、城市休闲、夜游体验\n路线A：夜马嘉年华沉浸体验",
+      "tags": [
+        "体育竞技、城市休闲、夜游体验\n路线A：夜马嘉年华沉浸体验",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "香港（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "港铁港岛线铜锣湾站A出口，沿黄泥涌道步行约15-20分钟；或出站后搭乘叮叮车至跑马地总站，下车即达，更省力。",
+          "internal_arrive": "普通游客和持港澳通行证的内地游客，请走G公众入口的游客专属通道，刷证免费入场。",
+          "internal_traffic": "场内各看台、餐厅及博物馆之间主要通过楼梯和电梯连接，建议穿舒适的平底鞋，避免穿拖鞋或洞洞鞋（部分区域禁止入内）。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "推荐住在铜锣湾或跑马地周边酒店，步行或短途打车即可到达，方便往返。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "港式丝袜奶茶",
+          "深井烧鹅",
+          "港式咖喱鱼蛋",
+          "避风塘炒蟹"
+        ],
+        "special_care": {
+          "elderly": "可优先选择先骏廊室内空调区或二楼看台，视野开阔且不用长时间站立，搭配简餐休息，体验舒适",
+          "children": "18岁以下儿童不能进入赛马场，但可陪同前往二楼的香港赛马博物馆，馆内有整面落地玻璃可清晰观看赛马，还有马王标本和互动模型，免费且不限年龄。\n\n（注：赛马赛程、具体入场时间及内部设施安排以官方当日公告为准。）"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "夜马狂欢与近距离观赛",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "G公众入口（游客通道入场）",
+            "一楼围栏区（赛前看骑师遛马热身）",
+            "一楼看台或啤酒园（感受现场音乐与冲刺氛围）",
+            "先骏廊四/五楼露台（俯瞰赛道全景，享受简餐）"
+          ],
+          "duration": "半天",
+          "walking": "约500米（场内平路为主）",
+          "physical": 2,
+          "tips": [
+            "建议提前在官网查看周三夜马赛程，18岁以下严禁入场；散场时人流量大，建议看完中场音乐表演后错峰离场。\n路线B"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "落雪青裳 的想法: 香港赛马会 | 周末去赌🐴买了50hkd的潘顿赌赢",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://www.zhihu.com/pin/1922808568706475956",
+        "sourceUrl": "http://www.zhihu.com/pin/1922808568706475956",
+        "width": 4032,
+        "height": 3024
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "跑马地赛马场：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_d07b1bb347",
+      "id": "manual_xianggang_15060627",
+      "name": "石澳",
+      "city": "香港",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/xianggang_15060627_verified.jpg",
+      "description": "石澳位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "石澳位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "海滨小镇 / 休闲沙滩 / 轻徒步 / 影视取景地",
+      "tags": [
+        "海滨小镇 / 休闲沙滩 / 轻徒步 / 影视取景地",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "香港（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "港铁筲箕湾站 A3 出口，转乘 9 号巴士直达石澳总站（车程约 30-40 分钟）。",
+          "internal_arrive": "石澳巴士总站，下车即达核心游玩区，周边有士多和洗手间。",
+          "internal_traffic": "以步行为主，沿途均为平路或缓坡，适合推车和慢走。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在市区或筲箕湾附近，交通便利，餐饮选择多，方便往返石澳。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "港式丝袜奶茶",
+          "深井烧鹅",
+          "港式咖喱鱼蛋",
+          "避风塘炒蟹"
+        ],
+        "special_care": {
+          "elderly": "全程平路无爬升，节奏缓慢，适合在海滩躺平或慢逛彩色街巷，注意海边风大和礁石湿滑",
+          "children": "石澳泳滩沙质细腻、水质清澈，可挖沙、玩水、捡贝壳，沙滩旁有免费淋浴间和更衣室，非常适合亲子放电。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "石澳海滨休闲省力游",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "石澳巴士总站",
+            "石澳泳滩（踩沙看海）",
+            "情人桥（拍海景剪影）",
+            "彩色小屋街（打卡马卡龙建筑）",
+            "石澳健康院（《喜剧之王》取景地）",
+            "大头洲（俯瞰全景）"
+          ],
+          "duration": "半天",
+          "walking": "约 2-3 公里",
+          "physical": 2,
+          "tips": [
+            "9号双层巴士去程坐二层右侧、返程坐二层左侧可看海景；沙滩租伞和躺椅可尝试砍价；务必晴天前往，阴天海水颜色会大打折扣。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "🚄香港海岛探险:石澳泳滩秘境",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4626948133958953052",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4626948133958953052",
+        "width": 1539,
+        "height": 2616
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "石澳：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:22:48.378Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:36:37.060Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_29e7728ae0",
-    "core_b19058fe53",
-    "core_1627d5e381",
-    "core_e30ce1c672"
+    "core_3f63942ff7",
+    "core_509ad3d68d",
+    "core_605617e9d1",
+    "core_3d93be3d02",
+    "core_d07b1bb347"
   ],
-  "appliedAt": "2026-08-21T03:41:43.933Z",
+  "appliedAt": "2026-08-24T03:13:22.532Z",
   "appliedAttractionIds": [
-    "manual_xianggang_15445219",
-    "manual_xianggang_95f89023",
-    "manual_xianggang_fde8e54f",
-    "manual_xianggang_812b8834"
+    "manual_xianggang_2bb566a7",
+    "manual_xianggang_fc43404f",
+    "manual_xianggang_c66365b3",
+    "manual_xianggang_8f7bba1c",
+    "manual_xianggang_15060627"
   ],
   "appliedOverrideIds": []
 }

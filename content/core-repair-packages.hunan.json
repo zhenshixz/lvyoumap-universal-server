@@ -1,49 +1,49 @@
 {
   "province": "湖南",
   "status": "applied",
-  "createdAt": "2026-08-21T02:58:33.841Z",
-  "updatedAt": "2026-08-21T02:58:34.477Z",
+  "createdAt": "2026-08-21T09:05:39.270Z",
+  "updatedAt": "2026-08-24T03:10:34.339Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.hunan.json",
   "attractions": [
     {
-      "baselineKey": "core_9ca7c71ca5",
-      "id": "manual_hunan_1463c06f",
-      "name": "湖南省博物馆",
-      "city": "长沙",
-      "rating": 4.8,
-      "reviewsCount": "15971条携程点评",
-      "image": "/assets/images/attractions/hunan_1463c06f_verified.jpg",
-      "description": "湖南省博物馆馆藏文物丰富，马王堆汉墓文物颇具特色。马王堆汉墓陈列是湖南省博物馆的基本陈列。",
-      "intro": "湖南省博物馆馆藏文物丰富，马王堆汉墓文物颇具特色。马王堆汉墓陈列是湖南省博物馆的基本陈列。",
-      "level": "博物馆",
-      "category": "博物馆",
+      "baselineKey": "core_17e1301595",
+      "id": "manual_hunan_7f36e53e",
+      "name": "芋头侗寨",
+      "city": "怀化",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/hunan_7f36e53e_verified.jpg",
+      "description": "芋头侗寨位于万佛山·侗寨风景名胜区，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "芋头侗寨位于万佛山·侗寨风景名胜区，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "原生态侗族古村落、全国重点文物保护单位",
       "tags": [
-        "博物馆",
-        "室内参观",
+        "原生态侗族古村落、全国重点文物保护单位",
+        "经典景点",
         "口碑热门"
       ],
-      "address": "湖南省长沙市开福区东风路50号",
+      "address": "万佛山·侗寨风景名胜区",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
       "guide_data": {
         "clothing": {
-          "spring_autumn": "以轻便整洁衣物和舒适步行鞋为主，室内外温差大时备一件薄外套。",
-          "summer": "穿透气衣物并备薄外套，展馆或演出场馆空调环境可能偏凉。",
-          "winter": "常规保暖衣物即可，步行串联周边街区时注意天气变化。",
-          "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "地铁6号线烈士公园南站1A口或湘雅医院站2号口；公交至湖南省博物馆站；自驾可停周边商场（如99park、大都会），馆内停车场不对外开放。",
-          "internal_arrive": "馆园融合广场迎客中心（原西门已关闭，请按新入口指引前往）。",
-          "internal_traffic": "馆内各楼层通过扶梯和直梯连接，设有免费轮椅和童车租借服务（一楼咨询台）。",
+          "external_arrive": "建议自驾，导航至\"芋头古侗寨\"，寨门口配有免费大型停车场；若乘公共交通，可先到通道汽车站，再转乘班车或包车前往。",
+          "internal_arrive": "游客中心到寨口约1公里，体力一般或带老人小孩的游客建议乘坐观光车（往返费用以官方当日公告为准）直达寨内，避免走长途上坡路。",
+          "internal_traffic": "寨内全程步行游览，无其他内部交通工具，各景点沿山势和古驿道自然分布。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "五一广场或芙蓉广场周边，距离博物馆较近，餐饮和交通配套完善。",
+            "area": "寨内有少量本地居民改造的民宿，可体验原生态烟火气，但隔音和设施相对基础；若对住宿条件要求较高，建议住在通道县城或附近的皇都侗寨。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,31 +54,32 @@
           "长沙臭豆腐"
         ],
         "special_care": {
-          "elderly": "尽量利用直梯和休息区，避免长时间站立；可关注免费公益讲解场次（如上午10点、下午2点），减轻自行看展的体力消耗",
-          "children": "建议携带推车；可租AR智慧导览器或AI讲解器增加互动性；提前与孩子沟通辛追夫人展区内容，避免产生不适。"
+          "elderly": "尽量乘坐观光车减少爬坡，在芦笙鼓楼或崖上鼓楼找地方坐下喝杯侗家油茶，感受慢节奏",
+          "children": "可带孩子体验侗锦、蜡染等非遗手作，在花街古道寻找青石板上的岁月痕迹，寓教于乐。"
         }
       },
       "lazy_routes": [
         {
-          "title": "省力顺流精华游",
+          "title": "核心景点省力环线（不走回头路）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "3楼马王堆汉墓陈列（素纱襌衣",
-            "T型帛画",
-            "彩绘棺椁）",
-            "2楼湖南人·三湘历史文化陈列（皿方罍",
-            "大禾人面纹方鼎）",
-            "1楼辛追夫人观瞻区"
+            "寨门",
+            "廻龙风雨桥",
+            "芦笙鼓楼",
+            "乾隆古井与萨岁坛",
+            "花街古道",
+            "崖上鼓楼",
+            "观景台（俯瞰吊脚楼群与梯田）"
           ],
           "duration": "半天",
-          "walking": "约2至3公里",
-          "physical": 3,
+          "walking": "约1.5公里（可乘观光车直达寨内核心区，减少爬坡）",
+          "physical": 2,
           "tips": [
-            "馆内空调较足，建议带薄外套；辛追夫人展区严禁拍照，请保持安静；大件行李可在一楼或负一楼免费寄存。"
+            "寨内多为青石板路与坡道，务必穿防滑舒适的平底鞋；崖上鼓楼是俯瞰\"侗寨布达拉宫\"全景的最佳机位，建议清晨或傍晚前往，光影更柔和。"
           ],
-          "sourceTitle": "携程旅行 湖南省博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/changsha148/8981.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -87,27 +88,29 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hunan100053.html",
-          "携程旅行 湖南省博物馆 详情页：https://you.ctrip.com/sight/changsha148/8981.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 芋头侗寨古建筑群：https://www.amap.com/place/B02E9017OZ"
         ],
         "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 湖南省博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/changsha148/8981.html?poiType=3&scene=online",
+          "platform": "高德地图",
+          "title": "高德地图 芋头侗寨古建筑群",
+          "url": "https://www.amap.com/place/B02E9017OZ",
+          "poiId": "B02E9017OZ",
+          "evidenceMode": "live-amap-web-service",
           "verifiedAt": "2026-08-21"
         },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "湖南省博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/changsha148/8981.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/changsha148/8981.html?poiType=3&scene=online",
-        "width": 2048,
-        "height": 1280
+        "title": "芦笙鼓楼5.jpg",
+        "author": "三猎",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%8A%A6%E7%AC%99%E9%BC%93%E6%A5%BC5.jpg",
+        "width": 3840,
+        "height": 2556
       },
       "quality_status": {
         "reviewRequired": false,
@@ -117,14 +120,14 @@
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:58:34.446Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:05:39.849Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_9ca7c71ca5"
+    "core_17e1301595"
   ],
-  "appliedAt": "2026-08-21T03:40:58.485Z",
+  "appliedAt": "2026-08-24T03:10:35.455Z",
   "appliedAttractionIds": [
-    "manual_hunan_1463c06f"
+    "manual_hunan_7f36e53e"
   ],
   "appliedOverrideIds": []
 }

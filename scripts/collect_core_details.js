@@ -106,6 +106,9 @@ function curlJson(url) {
 }
 
 const imageProbeCache = new Map();
+const MIN_IMAGE_WIDTH = 800;
+const MIN_IMAGE_HEIGHT = 450;
+const MIN_IMAGE_BYTES = 60 * 1024;
 
 function jpegDimensions(buffer) {
   let offset = 2;
@@ -132,7 +135,35 @@ function bufferDimensions(buffer) {
   if (buffer.slice(1, 4).toString() === 'PNG') {
     return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
   }
+  if (/^GIF8[79]a$/.test(buffer.slice(0, 6).toString('ascii'))) {
+    return { width: buffer.readUInt16LE(6), height: buffer.readUInt16LE(8) };
+  }
+  if (buffer.slice(0, 4).toString('ascii') === 'RIFF' && buffer.slice(8, 12).toString('ascii') === 'WEBP') {
+    const type = buffer.slice(12, 16).toString('ascii');
+    if (type === 'VP8X' && buffer.length >= 30) {
+      return { width: 1 + buffer.readUIntLE(24, 3), height: 1 + buffer.readUIntLE(27, 3) };
+    }
+    if (type === 'VP8L' && buffer.length >= 25 && buffer[20] === 0x2f) {
+      return {
+        width: 1 + buffer[21] + ((buffer[22] & 0x3f) << 8),
+        height: 1 + ((buffer[22] & 0xc0) >> 6) + (buffer[23] << 2) + ((buffer[24] & 0x0f) << 10),
+      };
+    }
+    if (type === 'VP8 ') {
+      const frame = buffer.indexOf(Buffer.from([0x9d, 0x01, 0x2a]), 20);
+      if (frame >= 0 && frame + 7 <= buffer.length) {
+        return { width: buffer.readUInt16LE(frame + 3) & 0x3fff, height: buffer.readUInt16LE(frame + 5) & 0x3fff };
+      }
+    }
+  }
   return null;
+}
+
+function usableImageQuality(dimensions, bytes) {
+  return Boolean(dimensions
+    && dimensions.width >= MIN_IMAGE_WIDTH
+    && dimensions.height >= MIN_IMAGE_HEIGHT
+    && bytes >= MIN_IMAGE_BYTES);
 }
 
 function probeRemoteImage(url) {
@@ -151,7 +182,7 @@ function probeRemoteImage(url) {
   });
   const dimensions = result.status === 0 ? bufferDimensions(result.stdout || Buffer.alloc(0)) : null;
   const quality = {
-    ok: Boolean(dimensions && dimensions.width >= 1200 && dimensions.height >= 700 && result.stdout.length >= 100 * 1024),
+    ok: usableImageQuality(dimensions, result.stdout?.length || 0),
     width: dimensions?.width || 0,
     height: dimensions?.height || 0,
     bytes: result.stdout?.length || 0,
@@ -372,8 +403,8 @@ function usableCommonsPage(page) {
   const meta = info.extmetadata || {};
   const license = decodeHtml(meta.LicenseShortName?.value || meta.UsageTerms?.value || '');
   return /(?:CC\s*BY|CC0|public domain|公有领域)/i.test(license)
-    && Number(info.width || 0) >= 1200
-    && Number(info.height || 0) >= 700;
+    && Number(info.width || 0) >= MIN_IMAGE_WIDTH
+    && Number(info.height || 0) >= MIN_IMAGE_HEIGHT;
 }
 
 const IMAGE_NOISE = /(?:map|地图|导览|guide|route|路线|logo|标志|icon|图标|poster|海报|ticket|门票|qr|二维码|diagram|示意|plan|规划|station|站台|platform|concourse|地铁|metro|pdf|svg)/i;
@@ -850,15 +881,30 @@ function imageMeetsPublishedQuality(image) {
   return Boolean(
     image
     && !image.placeholder
-    && Number(image.width || 0) >= 1200
-    && Number(image.height || 0) >= 700
+    && Number(image.width || 0) >= MIN_IMAGE_WIDTH
+    && Number(image.height || 0) >= MIN_IMAGE_HEIGHT
     && image.downloadUrl
   );
 }
 
+function localImageFileUsable(image) {
+  const localPath = String(image?.localPath || '').replace(/^\/+/, '').replace(/\//g, path.sep);
+  if (!localPath) return false;
+  const filePath = path.join(rootDir, localPath);
+  if (!fs.existsSync(filePath)) return false;
+  try {
+    const dimensions = bufferDimensions(fs.readFileSync(filePath));
+    return usableImageQuality(dimensions, fs.statSync(filePath).size);
+  } catch {
+    return false;
+  }
+}
+
 function reusableEvidence(value) {
   if (!completeEvidence(value)) return false;
-  if (refreshImages && !imageMeetsPublishedQuality(value.image)) return false;
+  // 图片元数据存在不代表文件已经成功落盘。网络中断或源站 403 后，
+  // 必须回到图片发现链路换源，不能永远复用同一条失效直链。
+  if (refreshImages && (!imageMeetsPublishedQuality(value.image) || !localImageFileUsable(value.image))) return false;
   return true;
 }
 
@@ -1041,7 +1087,7 @@ function main() {
     if (manualValue?.sources?.length >= 1
       && manualValue?.routes?.length >= 1
       && manualValue?.image?.downloadUrl
-      && !(refreshImages && !imageMeetsPublishedQuality(manualValue.image))) {
+      && !(refreshImages && (!imageMeetsPublishedQuality(manualValue.image) || !localImageFileUsable(manualValue.image)))) {
       const officialRecord = matchingOfficial(item, official);
       let merged = refreshStableMetadata(mergeManual(output.attractions[item.baselineKey] || {}, manualValue), item, officialRecord);
       if (refreshRatings) {
@@ -1199,4 +1245,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { allAliases, commonsSemanticScore, completeEvidence, imageIdentityTokens, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity };
+module.exports = { allAliases, bufferDimensions, commonsSemanticScore, completeEvidence, imageIdentityTokens, localImageFileUsable, parseBaiduImageResults, parseBingImageResults, parseCtripHtml, resolveVerifiedAddress, sameIdentity, usableImageQuality };

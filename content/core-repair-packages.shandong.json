@@ -1,49 +1,51 @@
 {
   "province": "山东",
   "status": "applied",
-  "createdAt": "2026-08-21T03:04:22.554Z",
-  "updatedAt": "2026-08-21T03:04:23.179Z",
+  "createdAt": "2026-08-21T09:27:23.976Z",
+  "updatedAt": "2026-08-24T03:11:51.828Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "中国陶瓷琉璃馆：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.shandong.json",
   "attractions": [
     {
-      "baselineKey": "core_305883ab87",
-      "id": "manual_shandong_c4ee6736",
-      "name": "青岛啤酒博物馆",
-      "city": "山东",
+      "baselineKey": "core_1d8bb32f37",
+      "id": "manual_shandong_ff781d5d",
+      "name": "中国陶瓷琉璃馆",
+      "city": "淄博",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/shandong_c4ee6736_verified.jpg",
-      "description": "青岛啤酒博物馆位于山东（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "青岛啤酒博物馆位于山东（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "博物馆",
-      "category": "工业博物馆 / 4A级景区 / 国家一级博物馆",
+      "image": "/assets/images/attractions/shandong_ff781d5d_verified.jpg",
+      "description": "中国陶瓷琉璃馆位于淄博（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "中国陶瓷琉璃馆位于淄博（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "博物馆 / 4A级景区",
       "tags": [
-        "工业博物馆 / 4A级景区 / 国家一级博物馆",
+        "博物馆 / 4A级景区",
         "经典景点",
         "口碑热门"
       ],
-      "address": "山东（具体入口请以景区官方导航与当日公告为准）",
+      "address": "淄博（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
       "guide_data": {
         "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "地铁2号线利津路站C口步行约500米；公交至\"青岛啤酒博物馆站\"下车即到；自驾不建议，周边停车不便且馆内可饮酒。",
-          "internal_arrive": "入口位于游客中心，可免费寄存行李；建议提前在线上预约购票，节假日当天可能售罄。",
-          "internal_traffic": "全程单向闭环路线，无需折返，按指示牌自然行走即可。",
+          "external_arrive": "自驾可停地下停车场（建议停J2区乘电梯上楼）；公交可乘136路至文化中心西站步行约300米到达。",
+          "internal_arrive": "建议从正门进入，乘中央直梯直达4楼开始游览；若遇周末预约满员，可关注特展门票通道入馆。",
+          "internal_traffic": "馆内各楼层之间设有直梯和扶梯，方便老人和儿童上下楼，无需爬楼梯。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "推荐住在信号山地铁站或台东站附近，步行可达多个景点，交通便利。",
+            "area": "建议住在张店区万象汇或八大局便民市场周边，距离场馆近，餐饮和购物方便。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,34 +56,31 @@
           "奶汤蒲菜"
         ],
         "special_care": {
-          "elderly": "馆内有陡楼梯和湿滑地面，长辈尽量穿防滑鞋，多利用休息区缓步慢行",
-          "children": "1.4米以下儿童免票，可领取无酒精饮品；醉酒小屋和生产线对儿童很有吸引力，建议3岁以上前往，全程约1.5-2小时，节奏轻松不累娃。"
+          "elderly": "入口处可免费租借轮椅，每层都有休息座椅，建议走精华路线，避免疲劳",
+          "children": "3楼陶艺厅的趣味小陶人和4楼的水浒108将泥塑很受小朋友喜欢，B1层还有手工DIY体验，可自带集章本在馆内多点位盖章。"
         }
       },
       "lazy_routes": [
         {
-          "title": "AB馆单向闭环省力游",
+          "title": "自上而下精华省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "入口",
-            "A馆（百年历史文化区）",
-            "时光花园",
-            "B馆（酿造工艺区）",
-            "醉酒小屋",
-            "品酒区（领原浆与纯生）",
-            "文创店",
-            "1903面包坊",
-            "出口"
+            "4F琉璃灯工厅（打卡琉璃花冠",
+            "水浒108将）",
+            "3F五色厅（看战国琉璃珠）与瑶光厅",
+            "2F古瓷厅（看青釉莲花尊）与国窑厅",
+            "1F古齐厅（看蛋壳黑陶杯）",
+            "B1负一层（文创与盖章）"
           ],
           "duration": "半天",
-          "walking": "约1500米",
-          "physical": 2,
+          "walking": "约2-3小时",
+          "physical": 3,
           "tips": [
-            "门票含一杯原浆和一杯纯生，原浆保质期仅24小时，务必在现场喝完；馆内部分地面湿滑且有陡楼梯，建议穿防滑平底鞋；B馆车间温度约18℃，可备一件薄外套。"
+            "进馆后直接乘电梯上4楼，自上而下参观不走回头路，最省力；馆内每层都有饮水机，建议自带水杯。"
           ],
-          "sourceTitle": "ctrip_province_sightlist",
-          "sourceUrl": "https://you.ctrip.com/sightlist/shandong100039.html",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -90,41 +89,42 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shandong100039.html",
-          "Wikidata Q15914948 实体页：https://www.wikidata.org/wiki/Q15914948"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
         "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "青岛啤酒博物馆:免费畅游,尽享啤酒魅力 🌟 山东省近期推出了国有",
+        "title": "🏺🔮 淄博陶瓷琉璃博物馆探秘",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4822356282569413523",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4822356282569413523",
-        "width": 1876,
-        "height": 1297
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5917287422591319314",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5917287422591319314",
+        "width": 1920,
+        "height": 1410
       },
       "quality_status": {
         "reviewRequired": true,
         "warnings": [
-          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "中国陶瓷琉璃馆：基本资料目前只有1个可追溯来源"
         ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:04:23.147Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:27:24.593Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_305883ab87"
+    "core_1d8bb32f37"
   ],
-  "appliedAt": "2026-08-21T03:41:19.037Z",
+  "appliedAt": "2026-08-24T03:11:53.139Z",
   "appliedAttractionIds": [
-    "manual_shandong_c4ee6736"
+    "manual_shandong_ff781d5d"
   ],
   "appliedOverrideIds": []
 }

@@ -1,22 +1,24 @@
 {
   "province": "辽宁",
   "status": "applied",
-  "createdAt": "2026-08-21T03:01:25.010Z",
-  "updatedAt": "2026-08-21T03:01:25.626Z",
+  "createdAt": "2026-08-21T09:14:41.615Z",
+  "updatedAt": "2026-08-24T03:11:16.507Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "九一八事变博物馆：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.liaoning.json",
   "attractions": [
     {
-      "baselineKey": "core_2545329b9f",
-      "id": "manual_liaoning_42f9ded0",
-      "name": "“九•一八”历史博物馆",
+      "baselineKey": "core_43888ac6df",
+      "id": "manual_liaoning_592a8b12",
+      "name": "九一八事变博物馆",
       "city": "沈阳",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/liaoning_42f9ded0_verified.jpg",
-      "description": "坐落于沈阳市区东北隅的““九•一八”历史博物馆是为纪念在“九·一八”事变中的受难同胞、警示国人勿忘国耻而建。馆内陈列着大量的史实照片、档案，还有各种侵华罪证物件、抗日烈士遗物等文物展品，从各个方面展示了侵华日军的史实罪证，以及沦陷区人民的苦难生活与不屈不挠的斗争事迹。",
-      "intro": "坐落于沈阳市区东北隅的““九•一八”历史博物馆是为纪念在“九·一八”事变中的受难同胞、警示国人勿忘国耻而建。馆内陈列着大量的史实照片、档案，还有各种侵华罪证物件、抗日烈士遗物等文物展品，从各个方面展示了侵华日军的史实罪证，以及沦陷区人民的苦难生活与不屈不挠的斗争事迹。",
+      "image": "/assets/images/attractions/liaoning_592a8b12_verified.jpg",
+      "description": "九一八事变博物馆位于沈阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "九一八事变博物馆位于沈阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "博物馆",
       "category": "博物馆、爱国主义教育基地",
       "tags": [
@@ -24,7 +26,7 @@
         "室内参观",
         "口碑热门"
       ],
-      "address": "辽宁省沈阳市大东区望花南街46号",
+      "address": "沈阳（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +38,14 @@
           "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
         },
         "transport": {
-          "external_arrive": "可乘坐地铁4号线至“北大营站”C口，或地铁10号线至“北塔站”A口，出站后步行约10-15分钟可达；也可乘坐115路、131路、163路等公交至“九一八历史博物馆”站。",
-          "internal_arrive": "建议从正门东侧进入，馆内东侧有小型停车场，但车位紧张；推荐导航至对面通力公交共享停车场或周边其他停车场，步行约200-500米即可到达，停车更从容。",
-          "internal_traffic": "馆内主要为地下展厅，通过斜坡时空隧道连接，整体为平缓的单向坡道，无电梯，但坡度设计适合步行，无需额外乘坐内部交通工具。",
+          "external_arrive": "乘坐地铁10号线至北塔站A口出站，步行约1公里可达；或乘坐公交163路、212路、253路等至九一八历史博物馆站直达。自驾可停对面通力公交共享停车场或馆内东侧停车场，但高峰期车位紧张。",
+          "internal_arrive": "需提前通过官方公众号预约，入馆携带身份证；入口处有游客中心可寄存行李。",
+          "internal_traffic": "馆内为全程平地，设有电梯和坡道，支持婴儿车及轮椅通行，内部动线为单向循环，无需上下楼折返。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在沈阳市中街或大东区附近，距离博物馆较近，周边餐饮和交通配套完善，方便参观后休息和就餐。",
+            "area": "建议入住大东区或中街附近，交通便利且周边餐饮丰富。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,35 +56,35 @@
           "老边饺子"
         ],
         "special_care": {
-          "elderly": "馆内展线较长且情绪较为沉重，建议长辈穿着舒适的运动鞋，若体力有限可重点参观序厅、第四展厅（抗争）和出口长廊，适当跳过部分细节展区",
-          "children": "参观前可给孩子简单科普历史背景，建议佩戴红领巾增强仪式感；利用出口处的文创免费盖章活动作为“打卡任务”，激发孩子的参观兴趣，引导其感受和平的珍贵。\n\n补充一点，如果时间充裕，参观完博物馆后，还可以去附近的北大营遗址（步行约15分钟）或沈阳二战盟军战俘营旧址（车程约10分钟），将这段历史脉络补得更完整。\n\n你这次去沈阳是打算和长辈一起，还是带小朋友？如果是带小朋友，我可以帮你再补充一些适合亲子互动的参观小任务。"
+          "elderly": "馆内部分展区灯光较暗且氛围沉重，建议长辈穿舒适的防滑鞋，随身携带温水，若体力有限可重点参观序厅、4展厅和6展厅",
+          "children": "提前给孩子做心理建设，用简单的语言讲述历史，引导其保持安静肃穆，在出口处可带孩子盖纪念章，增加互动仪式感。"
         }
       },
       "lazy_routes": [
         {
-          "title": "沉浸式单向主线游览（含广场与核心展厅）",
+          "title": "主馆历史脉络与广场纪念地深度游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "残历碑广场（触摸弹痕",
+            "残历碑广场（残历碑",
             "警世钟）",
             "序厅（白山黑水浮雕）",
-            "第一展厅（侵华预谋与背景）",
-            "第二展厅（事变爆发与东北沦陷）",
-            "第三展厅（殖民统治与罪证）",
-            "第四展厅（军民不屈抗争）",
-            "第五展厅（全国抗战与光复）",
-            "第六展厅（胜利审判与和平反思）",
-            "出口长廊（1931-1945年份步道与留言区）"
+            "1展厅（日本侵华预谋）",
+            "2展厅（事变爆发与东北沦陷）",
+            "3展厅（殖民统治与731部队罪证）",
+            "4展厅（东北军民抗日斗争）",
+            "5展厅（全国抗战与东北光复）",
+            "6展厅（正义审判与珍爱和平）",
+            "出口长廊（题词墙与时光步道）"
           ],
           "duration": "半天",
           "walking": "约1.5公里",
-          "physical": 3,
+          "physical": 2,
           "tips": [
-            "馆内为单向单行线，无需折返；建议提前在官方公众号了解免费公益讲解时间（通常为上午官方当日建议时段和下午官方当日建议时段），或租赁语音导览器，能大幅提升参观体验。"
+            "馆内展线为单向贯通设计，跟着人流走即可，不走回头路；建议租用讲解器或跟随免费人工讲解（通常官方当日建议时段和官方当日建议时段有公益讲解），能更深入理解文物背后的历史细节。"
           ],
-          "sourceTitle": "携程旅行 “九•一八”历史博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9232.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -91,263 +93,42 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
-          "携程旅行 “九•一八”历史博物馆 详情页：https://you.ctrip.com/sight/shenyang155/9232.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
         "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "“九•一八”历史博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/shenyang155/9232.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/shenyang155/9232.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1668
+        "title": "1933年工农红军学校政治部印制的当前全国政治形势图.jpg",
+        "author": "Cangminzho",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1933%E5%B9%B4%E5%B7%A5%E5%86%9C%E7%BA%A2%E5%86%9B%E5%AD%A6%E6%A0%A1%E6%94%BF%E6%B2%BB%E9%83%A8%E5%8D%B0%E5%88%B6%E7%9A%84%E5%BD%93%E5%89%8D%E5%85%A8%E5%9B%BD%E6%94%BF%E6%B2%BB%E5%BD%A2%E5%8A%BF%E5%9B%BE.jpg",
+        "width": 2950,
+        "height": 2360
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_79acf15d43",
-      "id": "manual_liaoning_d2b6962",
-      "name": "沈阳方城文化旅游区",
-      "city": "沈阳",
-      "rating": 4.6,
-      "reviewsCount": "116条携程点评",
-      "image": "/assets/images/attractions/liaoning_d2b6962_verified.jpg",
-      "description": "沈阳方城文化旅游区位于沈阳市的中心，由东、西、南、北顺城街路围合而成，总面积1.69平方公里，是沈阳市历史文化资源密集的街区，也是东北地区历史文化遗存集中的区域。有世界文化遗产沈阳故宫和全国重点文物保护单位张学良旧居，有汗王宫遗址等7家省级文物保护单位，盛京城址（西北角楼）等9家市级文物保护单位，东三省总督府旧址等42处历史风貌建筑，马家烧麦、老边饺子等11家传统门店，有沈阳民间传统灯谜、沈阳胡魁章制笔工艺、马家烧麦制作技艺、辽菜传统制",
-      "intro": "沈阳方城文化旅游区位于沈阳市的中心，由东、西、南、北顺城街路围合而成，总面积1.69平方公里，是沈阳市历史文化资源密集的街区，也是东北地区历史文化遗存集中的区域。有世界文化遗产沈阳故宫和全国重点文物保护单位张学良旧居，有汗王宫遗址等7家省级文物保护单位，盛京城址（西北角楼）等9家市级文物保护单位，东三省总督府旧址等42处历史风貌建筑，马家烧麦、老边饺子等11家传统门店，有沈阳民间传统灯谜、沈阳胡魁章制笔工艺、马家烧麦制作技艺、辽菜传统制",
-      "level": "热门景点",
-      "category": "开放式人文历史街区与古建筑群",
-      "tags": [
-        "开放式人文历史街区与古建筑群",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "辽宁省沈阳市沈河区九门路九门南巷4号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "地铁1号线“中街站”或“怀远门站”直达；公交可至“张氏帅府站”；自驾可导航至周边收费停车场。",
-          "internal_arrive": "推荐从地铁1号线中街站C口或怀远门站B口出站，步行即可进入方城核心区域。",
-          "internal_traffic": "方城区域约1.69平方公里，景点集中，全程步行或骑共享单车最便捷；若带老人小孩，可乘坐方城双层观光巴士串联核心景点。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐怀远门片区（近地铁、安静、看古城门夜景）或中街/头条胡同内侧（下楼即景点、逛吃方便），建议选非临街房间以保证休息。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "海鲜焖子",
-          "锦州烧烤",
-          "沟帮子熏鸡",
-          "老边饺子"
-        ],
-        "special_care": {
-          "elderly": "方城为开放式街区，地面多铺设防滑石板，步行强度适中；可乘坐观光巴士代步，游客中心有休息区和热水；故宫和帅府内有较多台阶，建议长辈量力而行，多利用平路休息点",
-          "children": "街区有非遗文化和历史故事可体验，头条胡同和中街小吃丰富；游客中心有母婴室，方便带娃家庭休整；可让孩子在集章地图上打卡，增加游览趣味性。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "经典人文休闲线（故宫+帅府+中街）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "沈阳方城游客中心（领地图",
-            "盖章",
-            "歇脚）",
-            "沈阳故宫（大清门",
-            "大政殿",
-            "十王亭）",
-            "张学良旧居（三进四合院",
-            "大青楼",
-            "赵一荻故居）",
-            "头条胡同（品尝特色小吃",
-            "感受烟火气）",
-            "中街步行街（逛吃",
-            "看古城门夜景）"
-          ],
-          "duration": "半天",
-          "walking": "约2.5公里",
-          "physical": 3,
-          "tips": [
-            "游客中心有免费地图和26枚地标章可盖，设施齐全，适合家庭出发前休整；故宫和帅府建议上午前往，避开人流高峰。"
-          ],
-          "sourceTitle": "携程旅行 沈阳方城文化旅游区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/144560924.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
-          "携程旅行 沈阳方城文化旅游区 详情页：https://you.ctrip.com/sight/shenyang155/144560924.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 沈阳方城文化旅游区 详情页",
-          "url": "https://you.ctrip.com/sight/shenyang155/144560924.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "沈阳方城文化旅游区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/shenyang155/144560924.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/shenyang155/144560924.html?poiType=3&scene=online",
-        "width": 5960,
-        "height": 3102
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_cb7d0607cb",
-      "id": "manual_liaoning_15feefa3",
-      "name": "沈阳方特欢乐世界",
-      "city": "沈阳",
-      "rating": 4.9,
-      "reviewsCount": "52186条携程点评",
-      "image": "/assets/images/attractions/liaoning_15feefa3_verified.jpg",
-      "description": "沈阳方特欢乐世界位于沈阳市沈北新区盛京大街，占地约50万平方米，由深圳华强集团精心打造，是东北地区规模颇大的第四代主题乐园。沈阳方特欢乐世界以科幻和互动体验为乐园特色，由飞越极限、疯狂成语、恐龙危机、沈阳方特欢乐世界-生命之光、海螺湾、沈阳方特欢乐世界-聊斋、熊出没历险记、熊出没脱口秀、火流星、沈阳方特欢乐世界-神秘河谷、飓风飞椅、儿童王国、矿山飞车、逍遥水母、柯基跑跑车等十几个大型主题项目区组成，涵盖主题项目、游乐项目、休闲及景观项目",
-      "intro": "沈阳方特欢乐世界位于沈阳市沈北新区盛京大街，占地约50万平方米，由深圳华强集团精心打造，是东北地区规模颇大的第四代主题乐园。沈阳方特欢乐世界以科幻和互动体验为乐园特色，由飞越极限、疯狂成语、恐龙危机、沈阳方特欢乐世界-生命之光、海螺湾、沈阳方特欢乐世界-聊斋、熊出没历险记、熊出没脱口秀、火流星、沈阳方特欢乐世界-神秘河谷、飓风飞椅、儿童王国、矿山飞车、逍遥水母、柯基跑跑车等十几个大型主题项目区组成，涵盖主题项目、游乐项目、休闲及景观项目",
-      "level": "热门景点",
-      "category": "大型科技主题乐园",
-      "tags": [
-        "大型科技主题乐园",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "辽宁省沈阳市沈北新区盛京大街55号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "乘坐地铁2号线至终点蒲田路站出站打车前往；或乘坐236、255路公交至方特终点站南门下车。",
-          "internal_arrive": "建议从南门入园，入园后左侧即为寄存处，方便存放大件物品，轻装上阵。",
-          "internal_traffic": "园区内设有租车点（美国街和太空飞梭对面），带老人小孩可租赁代步车；园区整体面积适中，步行结合休息区小憩即可。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐入住沈阳方特花园酒店，距离乐园步行约8分钟，方便中途回房休息或看烟花后快速撤离。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "海鲜焖子",
-          "锦州烧烤",
-          "沟帮子熏鸡",
-          "老边饺子"
-        ],
-        "special_care": {
-          "elderly": "多安排飞越极限、海螺湾、聊斋等室内剧场和缓坡项目，避开大摆锤、太空飞梭等高强度刺激项目，园区内长椅和休息区较多，可随时歇脚",
-          "children": "1.2米以下儿童可玩项目集中在儿童王国和熊熊城堡周边，如逍遥水母、双层旋转木马、熊出没历险记等，注意部分项目有严格身高限制，务必提前在App上确认。\n家庭省力避坑补充"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭逆时针省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "入园后以中央熊熊城堡为地标，建议逆时针方向游览。首站前往飞越极限感受悬空飞行；随后进入室内剧场区，依次体验海螺湾",
-            "熊出没剧场",
-            "聊斋和生命之光，既能避暑又能看演出；接着前往儿童友好区，游玩逍遥水母",
-            "双层旋转木马",
-            "飞天团子和疯狂成语；下午根据体力挑战矿山飞车或恐龙危机；傍晚在城堡广场区域观看花车巡游，晚上欣赏烟花秀（具体演出时间以官方当日公告为准）。"
-          ],
-          "duration": "半天",
-          "walking": "约1.5万步",
-          "physical": 2,
-          "tips": [
-            "强烈建议下载“方特旅游”App，随时查看项目位置、身高限制和实时排队情况，还能导航，是省力不绕路的核心工具。"
-          ],
-          "sourceTitle": "携程旅行 沈阳方特欢乐世界 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shenyang155/109993.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
-          "携程旅行 沈阳方特欢乐世界 详情页：https://you.ctrip.com/sight/shenyang155/109993.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 沈阳方特欢乐世界 详情页",
-          "url": "https://you.ctrip.com/sight/shenyang155/109993.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "沈阳方特欢乐世界 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/shenyang155/109993.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/shenyang155/109993.html?poiType=66&scene=online",
-        "width": 6720,
-        "height": 4480
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "九一八事变博物馆：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:01:25.594Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:14:42.216Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_2545329b9f",
-    "core_79acf15d43",
-    "core_cb7d0607cb"
+    "core_43888ac6df"
   ],
-  "appliedAt": "2026-08-21T03:41:04.287Z",
+  "appliedAt": "2026-08-24T03:11:17.672Z",
   "appliedAttractionIds": [
-    "manual_liaoning_42f9ded0",
-    "manual_liaoning_d2b6962",
-    "manual_liaoning_15feefa3"
+    "manual_liaoning_592a8b12"
   ],
   "appliedOverrideIds": []
 }

@@ -339,7 +339,18 @@ function generateAndVerify() {
   if (!checkJavaScript()) return false;
   if (!runNode('build.js')) return false;
   if (!runNode('verify-build.js')) return false;
-  return runNode('report_core_attractions.js', ['--all', '--strict']);
+  if (!runNode('report_core_attractions.js', ['--all'])) return false;
+  const nationalReport = readJson(path.join(rootDir, 'reports', 'core-attractions-national.json'), null);
+  if (!nationalReport || !Number.isFinite(nationalReport.provinceCount) || nationalReport.provinceCount < 1) {
+    console.log('全国质量报告结构异常，发布已停止。');
+    return false;
+  }
+  const unresolved = Number(nationalReport.missing || 0) + Number(nationalReport.review || 0)
+    + Math.max(0, Number(nationalReport.present || 0) - Number(nationalReport.readyCount || 0));
+  if (unresolved) {
+    console.log(`质量报告另有 ${unresolved} 个普通待治理项，已记录但不阻断其余合格数据发布。`);
+  }
+  return true;
 }
 
 function provinceInfo(provinceName) {
@@ -923,7 +934,21 @@ async function applyObservationBatch(manifestPath) {
   let success = 0;
   let failed = 0;
   for (const state of manifest.provinces || []) {
-    if (state.status !== 'ready') continue;
+    if (['applied', 'resolved'].includes(state.status)) continue;
+    // 同一省存在失败项时，也必须允许已经完成且通过预览的项目独立写入。
+    // 失败项继续保留断点，不能再拖住该省的全部成功项目。
+    if (state.status !== 'ready' && !(state.readyKeys || []).length) continue;
+    // Re-filter immediately before the irreversible apply step. This also handles
+    // old batches whose saved package predates a later identity/non-attraction decision.
+    const coverage = tools.filterReviewedPackage(manifestPath, state.slug);
+    tools.applyCoverageToState(state, coverage);
+    manifest = tools.updateBatch(manifestPath, { provinces: manifest.provinces });
+    const keysToApply = [...(state.readyKeys || [])];
+    const namesToApply = [...(state.readyNames || [])];
+    if (!keysToApply.length) continue;
+    state.selectedKeys = keysToApply;
+    state.selectedNames = namesToApply;
+    state.status = 'ready';
     console.log(`\n正在写入 ${state.province}（${state.selectedNames.length} 项）……`);
     if (buildSelectedProvince(state.province)) {
       const remainingKeys = [...(state.pendingKeys || [])];
@@ -972,7 +997,8 @@ async function observationBatchControl(rl) {
     const applied = manifest.provinces.filter(item => item.status === 'applied').reduce((sum, item) => sum + item.selectedKeys.length, 0);
     const resolved = manifest.provinces.reduce((sum, item) => sum + (item.resolutions?.length || 0), 0);
     const ready = manifest.provinces.filter(item => item.status === 'ready').reduce((sum, item) => sum + item.selectedKeys.length, 0);
-    const pending = manifest.provinces.filter(item => ['queued', 'running', 'failed'].includes(item.status)).reduce((sum, item) => sum + item.selectedKeys.length, 0);
+    const pending = manifest.provinces.filter(item => ['queued', 'running', 'failed'].includes(item.status))
+      .reduce((sum, item) => sum + (item.pendingKeys?.length || item.selectedKeys.length), 0);
     console.log(`\n当前批次：共 ${manifest.selectedCount} 项；已写入 ${applied}，已归类 ${resolved}，待预览 ${ready}，待续跑 ${pending}。`);
     if (manifest.status === 'running' || currentTaskIsRunning()) {
       showProgress();
@@ -997,11 +1023,24 @@ async function observationBatchControl(rl) {
       console.log('已确认前置问题解除，正在从保存的省份和景点断点继续。');
       return startObservationBatch(manifestPath);
     }
-    if (ready > 0 && manifest.status !== 'preview_ready') {
-      console.log('已恢复同省成功项，正在重新生成统一隔离预览。');
+    if (pending > 0) {
+      if (manifest.status === 'preview_ready' || manifest.previewUrl) {
+        manifest = tools.updateBatch(manifestPath, { status: 'retry_ready', previewUrl: '', previewItemCount: 0, currentProvince: '' });
+      }
+      console.log(`已完成的 ${ready} 项会保留；现在只续跑剩余 ${pending} 项，不会提前写入半个批次。`);
       return startObservationBatch(manifestPath);
     }
-    if (manifest.status === 'preview_ready' || ready > 0) {
+    if (ready > 0 && manifest.status !== 'preview_ready') {
+      console.log('全部所选景点已经补齐，正在生成统一隔离预览。');
+      return startObservationBatch(manifestPath);
+    }
+    if (manifest.status === 'preview_ready' && ready > 0) {
+      const previewState = readJson(path.join(runtimeDir, 'previews', 'observation-batch', 'state.json'), null);
+      if (previewState?.batchId !== manifest.id || !processIsRunning(previewState?.pid)) {
+        console.log('旧预览服务已经失效，正在依据当前批次自动重建；不会重复联网采集。');
+        tools.updateBatch(manifestPath, { status: 'retry_ready', previewUrl: '', previewItemCount: 0 });
+        return startObservationBatch(manifestPath);
+      }
       if (manifest.previewUrl) {
         console.log(`统一隔离预览：${manifest.previewUrl}`);
         openUrl(manifest.previewUrl);
@@ -1193,4 +1232,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { shouldRefreshRatingPreview, provinceFromProgress, validateIncrementalRelease, buildSelectedProvince, observationBatchControl };
+module.exports = { shouldRefreshRatingPreview, provinceFromProgress, validateIncrementalRelease, buildSelectedProvince, observationBatchControl, applyObservationBatch };

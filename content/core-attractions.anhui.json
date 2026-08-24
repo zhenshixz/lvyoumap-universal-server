@@ -1,6 +1,6 @@
 {
   "province": "安徽",
-  "checkedAt": "2026-08-18",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -743,6 +743,57 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_f31ad44950",
+      "name": "凤阳博物馆",
+      "preferredId": "manual_anhui_f98fa9fc",
+      "aliases": [
+        "凤阳博物馆"
+      ],
+      "city": "滁州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_05c7699edf",
+      "name": "屯溪老街",
+      "preferredId": "manual_anhui_3db0dd93",
+      "aliases": [
+        "屯溪老街"
+      ],
+      "city": "黄山",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 29
+  }
 }

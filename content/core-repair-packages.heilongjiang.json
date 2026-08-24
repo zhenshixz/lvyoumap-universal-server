@@ -1,30 +1,30 @@
 {
   "province": "黑龙江",
   "status": "applied",
-  "createdAt": "2026-08-21T02:56:49.459Z",
-  "updatedAt": "2026-08-21T02:56:50.150Z",
+  "createdAt": "2026-08-21T09:02:59.431Z",
+  "updatedAt": "2026-08-24T03:10:08.298Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.heilongjiang.json",
   "attractions": [
     {
-      "baselineKey": "core_7493d5044c",
-      "id": "manual_heilongjiang_f60fa7a6",
-      "name": "哈药六版画博物馆",
+      "baselineKey": "core_c11b8c6e24",
+      "id": "manual_heilongjiang_d9dbadaa",
+      "name": "圣·索菲亚大教堂",
       "city": "哈尔滨",
-      "rating": 4.5,
-      "reviewsCount": "3158条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_f60fa7a6_verified.jpg",
-      "description": "哈药六版画博物馆面积广阔，建筑以法国为原型，结合哈尔滨地域建筑特色，注入现代全新的设计理念，集古典主义、巴洛克、洛可可等建筑风格为一身，馆内可参观数百幅名家版画及俄罗斯油画、版画作品，特色建筑与历史文化、绘画艺术相结合，带来独特的参观体验和感受。",
-      "intro": "哈药六版画博物馆面积广阔，建筑以法国为原型，结合哈尔滨地域建筑特色，注入现代全新的设计理念，集古典主义、巴洛克、洛可可等建筑风格为一身，馆内可参观数百幅名家版画及俄罗斯油画、版画作品，特色建筑与历史文化、绘画艺术相结合，带来独特的参观体验和感受。",
-      "level": "博物馆",
-      "category": "博物馆/欧式建筑打卡",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/heilongjiang_d9dbadaa_verified.jpg",
+      "description": "圣·索菲亚大教堂位于哈尔滨（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "圣·索菲亚大教堂位于哈尔滨（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "历史建筑/城市地标/广场",
       "tags": [
-        "博物馆/欧式建筑打卡",
+        "历史建筑/城市地标/广场",
         "室内参观",
         "口碑热门"
       ],
-      "address": "黑龙江省哈尔滨市道外区南直路326号",
+      "address": "哈尔滨（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +36,14 @@
           "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
         },
         "transport": {
-          "external_arrive": "地铁3号线海河东路站3号口或市第二医院站1号口，步行约10分钟；自驾可导航至“哈药六版画博物馆东北门”，院内设有收费停车场。",
-          "internal_arrive": "建议从东北门进入，南门通常为出口，避免绕路。",
-          "internal_traffic": "馆内无电梯，需全程步行爬楼梯，各楼层均设有卫生间。",
+          "external_arrive": "地铁2号线尚志大街站步行约8-10分钟；公交至建筑艺术广场站或兆麟街站。",
+          "internal_arrive": "广场全天免费开放，无需购票；若内部修缮开放后进入建筑艺术馆，以官方当日公告为准。",
+          "internal_traffic": "广场区域为步行区，无内部交通工具。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在中央大街或中华巴洛克风情街附近，距离较近，打车约15分钟，方便后续安排行程。",
+            "area": "建议入住道里区中央大街或圣·索菲亚大教堂周边，步行可达景点，方便带长辈和儿童中途休息。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,29 +54,29 @@
           "小鸡炖蘑菇"
         ],
         "special_care": {
-          "elderly": "馆内无电梯，若长辈腿脚不便，建议仅在一楼大厅及外部广场拍照打卡，无需强行爬楼",
-          "children": "可让孩子参与4楼的版画拓印体验（收费），或自带本子收集各楼层免费印章，增加游览趣味性。"
+          "elderly": "广场平坦无台阶，适合缓慢散步；冬季注意防滑保暖，避免长时间站立",
+          "children": "广场有鸽子可互动，建议自备鸽粮；周边咖啡店可休息，避免孩子疲劳。"
         }
       },
       "lazy_routes": [
         {
-          "title": "从上往下经典省力游",
+          "title": "广场外景打卡+周边街区漫步",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "5楼版画展厅（金色长廊+北大荒版画）",
-            "4楼厂史馆与蚕翼绣展区（怀旧老物件+非遗刺绣）",
-            "1楼鎏金大厅（18米水晶吊灯+旋转楼梯+三层喷泉）",
-            "外部广场（欧式建筑全景仰拍）"
+            "建筑艺术广场正门全景拍照",
+            "教堂侧边拱门框架机位",
+            "广场长椅低角度仰拍",
+            "步行前往中央大街逛吃"
           ],
           "duration": "半天",
           "walking": "约800米",
-          "physical": 3,
+          "physical": 1,
           "tips": [
-            "全程无电梯，务必穿平底舒适鞋；建议自带盖章本，馆内多处文创区提供免费集章服务。"
+            "傍晚官方当日建议时段-官方当日建议时段蓝调时刻亮灯后氛围感最佳；广场揽客的公主裙拍照和跟拍需谨慎甄别，提前问清价格避免隐形消费。"
           ],
-          "sourceTitle": "携程旅行 哈药六版画博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -85,154 +85,41 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/heilongjiang100055.html",
-          "携程旅行 哈药六版画博物馆 详情页：https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q830054 实体页：https://www.wikidata.org/wiki/Q830054"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 哈药六版画博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "哈药六版画博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/harbin151/148457657.html?poiType=3&scene=online",
-        "width": 1536,
-        "height": 964
+        "title": "80-391-0151 Kyiv St.Sophia's Cathedral RB 18 2 (cropped).jpg",
+        "author": "Rbrechko",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_(cropped).jpg",
+        "width": 3840,
+        "height": 2882
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_e407600d6c",
-      "id": "manual_heilongjiang_8194f22a",
-      "name": "松花江观光索道",
-      "city": "哈尔滨",
-      "rating": 4.5,
-      "reviewsCount": "8215条携程点评",
-      "image": "/assets/images/attractions/heilongjiang_8194f22a_verified.jpg",
-      "description": "松花江观光索道南起通江广场，北至太阳岛风景区，横跨于松花江上，是颇具名气的的观光交通工具。索道全长1156米，江中索道支架距江面70余米，乘坐在轿厢中可俯瞰松花江两岸全景，风光无限。",
-      "intro": "松花江观光索道南起通江广场，北至太阳岛风景区，横跨于松花江上，是颇具名气的的观光交通工具。索道全长1156米，江中索道支架距江面70余米，乘坐在轿厢中可俯瞰松花江两岸全景，风光无限。",
-      "level": "热门景点",
-      "category": "跨江观光索道",
-      "tags": [
-        "跨江观光索道",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "黑龙江省哈尔滨市道里区通江街218号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
-          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
-          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
-        },
-        "transport": {
-          "external_arrive": "地铁3号线友谊宫站1号口步行约50米；或公交2/13/47路至市人大站步行约200米；自驾可导航至印象城A座地面停车场或松花江索道地面停车场。",
-          "internal_arrive": "江南入口（天鹅城堡）白天人少，适合去程；江北入口（巧克力城堡）傍晚人多，适合返程或避开高峰。",
-          "internal_traffic": "索道轿厢单程约6-10分钟；江北下轿厢后可乘观光车至地铁口（费用以官方当日公告为准），或乘轮渡返回江南。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在中央大街或防洪纪念塔附近，步行或地铁即可到达江南入口，周边餐饮和交通更便利。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "锅包肉",
-          "哈尔滨红肠",
-          "得莫利炖活鱼",
-          "小鸡炖蘑菇"
-        ],
-        "special_care": {
-          "elderly": "索道平稳安全，但风大时可能短时停运，出行前建议电话确认；70岁以上老人有优待政策，需持有效证件到窗口购票；尽量避开节假日高峰，或选择VIP通道减少排队",
-          "children": "1.2米以下免票，1.2-1.5米半价；轿厢内全程无剧烈晃动，适合儿童体验；建议选日落时段，孩子对高空和晚霞更感兴趣，可备些小零食安抚情绪。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "日落追光省力线（江南去江北回）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "江南天鹅城堡入口（通江街218号）",
-            "4楼候车区",
-            "3楼检票乘轿厢",
-            "空中俯瞰松花江与两岸城景",
-            "江北巧克力城堡下车",
-            "太阳岛江边漫步",
-            "乘坐轮渡或观光车返程"
-          ],
-          "duration": "半天",
-          "walking": "较少，索道轿厢内全程无步行，两端站点衔接步行约10分钟",
-          "physical": 2,
-          "tips": [
-            "江南往江北方向白天排队较短，建议买单程票；江北返程人多，可坐轮渡（约2-费用以官方当日公告为准）或观光车（费用以官方当日公告为准）回市区，避免排队；日落前半小时上轿厢视野最佳，选车厢右侧或最后一排无遮挡。"
-          ],
-          "sourceTitle": "携程旅行 松花江观光索道 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/heilongjiang100055.html",
-          "携程旅行 松花江观光索道 详情页：https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 松花江观光索道 详情页",
-          "url": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "松花江观光索道 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/harbin151/113617.html?poiType=3&scene=online",
-        "width": 4032,
-        "height": 2268
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:56:50.117Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:02:59.991Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_7493d5044c",
-    "core_e407600d6c"
+    "core_c11b8c6e24"
   ],
-  "appliedAt": "2026-08-21T03:40:36.258Z",
+  "appliedAt": "2026-08-24T03:10:09.484Z",
   "appliedAttractionIds": [
-    "manual_heilongjiang_f60fa7a6",
-    "manual_heilongjiang_8194f22a"
+    "manual_heilongjiang_d9dbadaa"
   ],
   "appliedOverrideIds": []
 }

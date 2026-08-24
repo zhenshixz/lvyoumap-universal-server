@@ -1,50 +1,53 @@
 {
   "province": "宁夏",
   "status": "applied",
-  "createdAt": "2026-08-20T01:14:14.537Z",
-  "updatedAt": "2026-08-20T01:14:14.538Z",
+  "createdAt": "2026-08-21T09:15:57.181Z",
+  "updatedAt": "2026-08-24T03:11:27.762Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "怀远夜市：基本资料目前只有1个可追溯来源",
+    "通湖草原：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.ningxia.json",
   "attractions": [
     {
-      "baselineKey": "core_ab53d1041a",
-      "id": "manual_ningxia_53cce5ed",
-      "name": "宁夏镇北堡西部影视城",
+      "baselineKey": "core_9a8919ef80",
+      "id": "manual_ningxia_74c1713b",
+      "name": "怀远夜市",
       "city": "银川",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/ningxia_53cce5ed_verified.jpg",
-      "description": "镇北堡西部影城位于宁夏回族自治区银川市，是集观光、娱乐、休闲、餐饮、购物于一体的国家5A级旅游景区。镇北堡西部影城以其古朴、原始、粗犷、荒凉、民间化为特色，主要景点有明城、清城、老银川一条街等，曾被评为“中国最受欢迎旅游目的地”，是中国十大影视基地之一。",
-      "intro": "镇北堡西部影城位于宁夏回族自治区银川市，是集观光、娱乐、休闲、餐饮、购物于一体的国家5A级旅游景区。镇北堡西部影城以其古朴、原始、粗犷、荒凉、民间化为特色，主要景点有明城、清城、老银川一条街等，曾被评为“中国最受欢迎旅游目的地”，是中国十大影视基地之一。",
-      "level": "5A景区",
-      "category": "影视文化景区",
+      "image": "/assets/images/attractions/ningxia_74c1713b_verified.jpg",
+      "description": "怀远夜市位于银川（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "怀远夜市位于银川（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "美食街区/夜市",
       "tags": [
-        "影视文化景区",
+        "美食街区/夜市",
         "经典景点",
-        "官方名录"
+        "口碑热门"
       ],
-      "address": "宁夏回族自治区银川市西夏区镇北堡镇",
+      "address": "银川（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
       "guide_data": {
         "clothing": {
-          "spring_autumn": "轻便分层穿搭最实用，室内项目、户外步行和晚间活动可灵活增减。",
-          "summer": "速干衣、防晒和雨具并备，室内空调场所给儿童准备薄外套。",
-          "winter": "准备防风保暖外套和舒适步行鞋，早晚活动注意温差。",
-          "tips": "大型度假区步行量容易被低估，鞋子舒适度比造型更重要。"
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾导航\"镇北堡西部影城\"，距银川市区约35-40公里，车程约40分钟，停车场充足（小车费用以官方当日公告为准/辆）；市区可乘游3路旅游专线或17路公交直达；打车约50-费用以官方当日公告为准。",
-          "internal_arrive": "从\"知之门\"入口进，此处有免费讲解和文化长廊，先了解背景再逛更有感觉。",
-          "internal_traffic": "景区内有电动黄包车（费用以官方当日公告为准/辆，绕景区一圈约30分钟）；游客服务区可租婴儿车/轮椅（押金费用以官方当日公告为准，免费使用）。",
+          "external_arrive": "自驾可导航至宁阳广场地下车库；若从览山公园出发，可乘坐直达公交专线（费用以官方当日公告为准）；市区内打车或乘坐常规公交均可便捷到达。",
+          "internal_arrive": "推荐从南门（新华百货方向）进入，过天桥后步行距离最短，且能直接对接主街美食区。",
+          "internal_traffic": "街区为步行制，内部无其他交通工具，建议以步行为主，边走边吃。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "推荐住在漫葡小镇（距景区很近，方便次日游玩）或银川市区（餐饮住宿选择多，晚上可去览山公园看日落、怀远夜市吃小吃）。",
-            "desc": "住在度假区或官方接驳覆盖区域，适合早入园和晚间活动。"
+            "area": "首选西夏区怀远路附近，步行即可到达；若追求安静和更好设施，可选择北京路段的星级酒店，打车约10分钟可达。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
         "food": [
@@ -54,38 +57,32 @@
           "羊肉老搓面"
         ],
         "special_care": {
-          "elderly": "景区树荫少、正午暴晒，建议上午9点前或下午3点后入园；全程平路但沙石路多，建议穿防滑鞋，可租轮椅；自带充足饮用水和防晒用品",
-          "children": "可租紫霞仙子/至尊宝服装拍照（约50元/小时），小朋友喜欢盘丝洞、老玩具等场景；景区内有西北小吃（羊杂碎、酿皮等），也可自带零食；若后续行程要去沙坡头等沙漠景区，建议不要在影城骑骆驼。\n\n补充提醒：西北紫外线强，防晒霜、墨镜、遮阳帽必备；租衣服建议在拍摄点附近租，避免跨区域被加钱；下午3-5点光线最柔和，城墙和月亮门拍剪影最出片。\n\n你们大概计划逛几个小时？如果时间紧，可以重点去清城和明城，老银川一条街简单逛逛就行。"
+          "elderly": "夜市人多拥挤，建议长辈在二楼或负一层相对宽敞的区域休息，由年轻人外出“打猎”美食",
+          "children": "选择甜口、软乎、不辣的小吃（如牛奶鸡蛋醪糟、牛肉饼），并全程牵好孩子防止走散。"
         }
       },
       "lazy_routes": [
         {
-          "title": "省力经典环线（明城→清城→老银川一条街）",
+          "title": "经典逛吃与省力避挤路线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "知之门（文化长廊）",
-            "明城（月亮门",
-            "红高粱酒坊",
-            "龙门客栈）",
-            "清城（幸运之门",
-            "盘丝洞",
-            "牛魔王宫",
-            "城墙）",
-            "老银川一条街（民国商铺",
-            "老邮局",
-            "茶馆）",
-            "出口"
+            "宁阳广场地下车库（停车）",
+            "过天桥从南门进入夜市",
+            "沿街打卡酥小蒙牛肉饼",
+            "奴尔麦辣条等美食",
+            "穿过广场往西门方向逛",
+            "从西门出或前往宁阳广场负一层继续觅食"
           ],
           "duration": "半天",
-          "walking": "约2-3公里（全程平路，沙石土路）",
-          "physical": 3,
+          "walking": "约1至2公里",
+          "physical": 2,
           "tips": [
-            "带娃或长辈强烈建议进门后乘坐电动黄包车（费用以官方当日公告为准/辆，可坐2-3人，游览一圈约30分钟），省去暴晒和长距离步行；若步行，务必穿防滑运动鞋，景区多沙石路。"
+            "建议官方当日建议时段左右抵达，避开官方当日建议时段后的人流高峰；夜市地面较油且人多，务必穿舒适的运动鞋，并时刻看紧老人与儿童。"
           ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=ningxia&type=0",
-          "verifiedAt": "2026-08-20"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -93,176 +90,68 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=ningxia&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
         "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-20",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "探秘宁夏镇北堡西部影视城 来到银川旅游,怎么能错过镇北堡西部影视城",
+        "title": "银川的怀远夜市,应该是来到这里必打卡的地方,夜市就在大路边上,晚上",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3928923761172892984",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3928923761172892984",
-        "width": 1205,
-        "height": 800
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5531503564259919790",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5531503564259919790",
+        "width": 4096,
+        "height": 3072
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "怀远夜市：基本资料目前只有1个可追溯来源"
+        ]
       }
     },
     {
-      "baselineKey": "core_ba20a35dbd",
-      "id": "manual_ningxia_6d895c33",
-      "name": "宁夏博物馆",
-      "city": "银川",
-      "rating": 4.7,
-      "reviewsCount": "933条携程点评",
-      "image": "/assets/images/attractions/ningxia_6d895c33_verified.jpg",
-      "description": "宁夏博物馆位于银川市金凤区，整个建筑平面呈“回”字型布局，贴应了宁夏回族自治区的“回”字。外墙装饰所运用的迦陵频伽、力士志文支座等建筑构件形象，以及四个大门使用的装饰图案，这些都是宁夏历史文化遗存的代表，具有鲜明的地域特色。",
-      "intro": "宁夏博物馆位于银川市金凤区，整个建筑平面呈“回”字型布局，贴应了宁夏回族自治区的“回”字。外墙装饰所运用的迦陵频伽、力士志文支座等建筑构件形象，以及四个大门使用的装饰图案，这些都是宁夏历史文化遗存的代表，具有鲜明的地域特色。",
-      "level": "博物馆",
-      "category": "博物馆/文化历史类景区",
-      "tags": [
-        "博物馆/文化历史类景区",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "宁夏回族自治区银川市金凤区人民广场东街6号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "乘坐公交1路、2路、33路、34路、38路等至“人民广场站”或“宁夏博物馆站”下车；乘坐地铁1号线至人民广场站步行约10分钟；自驾可导航至宁夏博物馆南门停车场，或停放在周边的银川市政府中心停车场、宁夏图书馆停车场。",
-          "internal_arrive": "务必定位并前往南门入馆，南门设有安检通道和游客服务中心，其他门可能无法入馆或引导不便。",
-          "internal_traffic": "馆内各楼层之间主要依靠中央电扶梯和楼梯连接，整体动线较为顺畅，无需额外乘坐内部交通工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在金凤区人民广场周边或银川市中心商圈，距离博物馆较近，逛完后方便前往怀远夜市或览山公园。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "爆炒黄渠桥羊羔肉",
-          "宁夏手抓羊肉",
-          "宁夏烩羊杂碎",
-          "羊肉老搓面"
-        ],
-        "special_care": {
-          "elderly": "馆内空调温度较低，建议携带薄外套；全程有电梯和休息区，可放慢节奏重点参观二楼通史展和三楼民俗展，避免长时间站立",
-          "children": "一楼岩画展厅的动物图案和三楼民俗场景互动性强，可带孩子参与文创店的集章打卡活动，增加游览趣味性。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "省力精华速览路线（约1.5-2小时）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "南门入馆",
-            "一楼服务台领取导览手册并寄存行李",
-            "二楼《朔色长天》通史展厅（重点看鎏金铜牛",
-            "胡旋舞石刻墓门",
-            "石雕力士志文支座）",
-            "三楼《天下黄河富宁夏》民俗陈列",
-            "一楼《石刻史书》岩画展厅",
-            "一楼文创店集章打卡后出馆"
-          ],
-          "duration": "半天",
-          "walking": "适中（主要依靠馆内扶梯上下，核心展区集中在二楼）",
-          "physical": 2,
-          "tips": [
-            "馆内展厅较多且部分入口标识不够明显，务必在一楼服务台领取纸质导览手册，按时间顺序逛展不走回头路；每天上午官方当日建议时段和下午官方当日建议时段或官方当日建议时段有免费公益讲解，可在服务台旁排队跟随。"
-          ],
-          "sourceTitle": "携程旅行 宁夏博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/yinchuan239/147000.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/ningxia100063.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 宁夏博物馆 详情页：https://you.ctrip.com/sight/yinchuan239/147000.html?poiType=3&scene=online",
-          "高德地图 宁夏博物馆：https://www.amap.com/place/B03B703MJK"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 宁夏博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/yinchuan239/147000.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "宁夏博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/yinchuan239/147000.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/yinchuan239/147000.html?poiType=3&scene=online",
-        "width": 2048,
-        "height": 1367
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_859e9f39de",
-      "id": "manual_ningxia_82989322",
-      "name": "腾格里沙漠",
+      "baselineKey": "core_8b5fa8b168",
+      "id": "manual_ningxia_4f371994",
+      "name": "通湖草原",
       "city": "中卫",
-      "rating": 4.7,
-      "reviewsCount": "84条携程点评",
-      "image": "/assets/images/attractions/ningxia_82989322_verified.jpg",
-      "description": "腾格里沙漠位于内蒙古自治区阿拉善左旗西南部和甘肃省中部边境，是电影《刺陵》的取景地，也是年轻人向往的小众旅行地。在这里可以体验腾格里沙漠星空露营，也可以骑着骆驼遨游在沙海，或乘坐越野车在沙漠里驰骋感受激情。",
-      "intro": "腾格里沙漠位于内蒙古自治区阿拉善左旗西南部和甘肃省中部边境，是电影《刺陵》的取景地，也是年轻人向往的小众旅行地。在这里可以体验腾格里沙漠星空露营，也可以骑着骆驼遨游在沙海，或乘坐越野车在沙漠里驰骋感受激情。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/ningxia_4f371994_verified.jpg",
+      "description": "通湖草原位于中卫（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "通湖草原位于中卫（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "自然风景区",
+      "category": "草原与沙漠复合型景区",
       "tags": [
-        "自然风景区",
+        "草原与沙漠复合型景区",
         "经典景点",
         "口碑热门"
       ],
-      "address": "中卫市沙坡头区",
+      "address": "中卫（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
       "guide_data": {
         "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
+          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
+          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
         },
         "transport": {
-          "external_arrive": "高铁至中卫南站（打车约35分钟，费用以官方当日公告为准）；飞机至中卫机场（打车约30分钟，费用以官方当日公告为准）；自驾从银川出发约2小时，从市区出发约30分钟。",
-          "internal_arrive": "建议从腾格里沙漠游客中心进入，部分营地提供接站和接驳服务，提前联系管家安排车辆进沙。",
-          "internal_traffic": "营地内一般提供摆渡车或越野车接驳服务，部分项目点之间有区间车连接，具体以官方当日公告为准。",
+          "external_arrive": "从中卫市区自驾约30分钟，距离约20公里；景区不通公交，建议自驾或打车前往。",
+          "internal_arrive": "导航至通湖草原景区大门或7号星空帐篷酒店接待处停车，私家车不能自驾进入景区，需换乘内部接驳车。",
+          "internal_traffic": "景区内有观光摆渡车、观光小火车和越野车接驳，连接草原区、沙漠区和住宿区，住客可由管家安排专车接送。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "沙漠营地小木屋或帐篷（建议选带空调和独立卫浴的小木屋，白天帐篷内较闷热）；也可选择住在沙坡头附近或中卫市区，每天往返景区。\n\n长辈建议：以乘车和观景为主，体验平缓骑骆驼、营地休息、观星和篝火晚会，避免长时间徒步和剧烈项目；注意早晚温差，备好薄外套。\n\n儿童建议：可体验骑骆驼、滑沙、沙漠越野车、卡丁车等项目，营地通常有免费挖沙工具和亲子研学活动；注意防晒防沙，备好湿巾和棉签清理耳朵。\n\n补充一点：腾格里沙漠和沙坡头共用同一片沙漠，但腾格里这边人相对较少、性价比更高。如果时间充裕，可以第一天住腾格里沙漠营地体验沙漠项目，第二天去沙坡头看黄河与沙漠同框的景观。",
+            "area": "景区内有7号星空帐篷酒店等沙漠帐篷住宿，提供管家服务、自助火锅和免费接驳，适合家庭度假休整。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -273,255 +162,27 @@
           "羊肉老搓面"
         ],
         "special_care": {
-          "elderly": "以乘车和观景为主，体验平缓骑骆驼、营地休息、观星和篝火晚会，避免长时间徒步和剧烈项目；注意早晚温差，备好薄外套",
-          "children": "可体验骑骆驼、滑沙、沙漠越野车、卡丁车等项目，营地通常有免费挖沙工具和亲子研学活动；注意防晒防沙，备好湿巾和棉签清理耳朵。\n\n补充一点：腾格里沙漠和沙坡头共用同一片沙漠，但腾格里这边人相对较少、性价比更高。如果时间充裕，可以第一天住腾格里沙漠营地体验沙漠项目，第二天去沙坡头看黄河与沙漠同框的景观。"
+          "elderly": "尽量乘坐摆渡车和小火车减少步行，选择骑骆驼、草原漫步等平缓项目，避免剧烈运动；傍晚温差大，备防风外套",
+          "children": "准备洞洞鞋方便玩沙，自带或租用挖沙工具，注意防晒和防风沙面巾；滑沙选择缓坡区，家长陪同。"
         }
       },
       "lazy_routes": [
         {
-          "title": "家庭省力休闲线（1日或2日）",
+          "title": "傍晚入园·草原沙漠轻体验线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "游客中心",
-            "骑骆驼",
-            "沙漠越野车",
-            "滑沙",
-            "营地休息",
-            "观星",
-            "篝火晚会"
+            "草原区漫步：入园后沿盐湖湿地和芦苇丛散步，看牛羊成群，背景蒙古包适合拍照打卡\n沙漠区骑骆驼：由领队带领的骆驼队骑行，约20分钟，感受沙漠驼铃\n沙漠冲浪车：越野车在沙丘间飞驰，刺激感强，适合追求体验感的家庭成员\n滑沙体验：选择缓坡区，家长可抱娃共坐滑板，安全系数高\n篝火晚会：夜晚围篝火欢歌起舞，氛围感强，具体安排以官方当日公告为准\n星空课堂：专业老师讲解星座和天文知识，适合亲子研学"
           ],
           "duration": "半天",
-          "walking": "较少，以乘车和体验项目为主",
-          "physical": 2,
-          "tips": [
-            "建议较合适时段后进入沙漠，避开正午高温；提前备好防沙鞋套、防晒面罩、护目镜和防风帽；可自带一些零食和水果，营地餐饮选择有限且价格偏高。"
-          ],
-          "sourceTitle": "携程旅行 腾格里沙漠 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhongwei1184/5068838.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/ningxia100063.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 腾格里沙漠 详情页：https://you.ctrip.com/sight/zhongwei1184/5068838.html?poiType=3&scene=online",
-          "高德地图 中卫腾格里沙漠营地：https://www.amap.com/place/B0MDMX0X8B"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 腾格里沙漠 详情页",
-          "url": "https://you.ctrip.com/sight/zhongwei1184/5068838.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "腾格里沙漠 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhongwei1184/5068838.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhongwei1184/5068838.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1667
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_999a94be52",
-      "id": "manual_ningxia_67135284",
-      "name": "北长滩古村落",
-      "city": "中卫",
-      "rating": 4.3,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/ningxia_67135284_verified.jpg",
-      "description": "北长滩古村落位于迎水桥镇涌泉村山海情拍摄基地南侧200米，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "北长滩古村落位于迎水桥镇涌泉村山海情拍摄基地南侧200米，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "热门景点",
-      "category": "原生态历史文化古村落",
-      "tags": [
-        "原生态历史文化古村落",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "迎水桥镇涌泉村山海情拍摄基地南侧200米",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "无公共交通直达，需自驾或包车前往。从中卫市区出发约60公里，车程约1.5小时，后半段为碎石盘山公路，建议驾驶SUV，轿车需慢行避让大坑。",
-          "internal_arrive": "导航直接定位“北长滩古村落”，切勿只搜“66号公路”以免定位跑偏。沿途部分路段无手机信号，务必提前下载离线地图。",
-          "internal_traffic": "村落为原生态步行区，无内部观光车或接驳工具，全程靠步行游览。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "村落内无住宿设施，建议入住中卫市区（性价比高、方便就餐）或黄河宿集（网红民宿集群，适合慢度假）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "爆炒黄渠桥羊羔肉",
-          "宁夏手抓羊肉",
-          "宁夏烩羊杂碎",
-          "羊肉老搓面"
-        ],
-        "special_care": {
-          "elderly": "村内道路相对平缓，但部分区域为土路碎石路，建议穿防滑鞋；村内仅有2处旱厕，行动不便者需提前规划",
-          "children": "可带娃体验石磨、驴车等原始农具，认识黄河文化，但需全程看护，严禁在公路和黄河岸边奔跑。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "黄河古村慢游省力线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "村口观景台（俯瞰村落全景）",
-            "明清土坯民居群（感受西北原生态建筑）",
-            "百年老水车（黄河边经典打卡点）",
-            "黄河岸畔老梨树群（吹风休憩",
-            "拍剪影）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 2,
-          "tips": [
-            "村内无商店，务必自带足量饮用水和干粮；黄河岸边泥土松软，切勿靠近水边或下水游玩。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-20"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "amap_live_web_service：https://www.amap.com/place/B0FFIYDM3C"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 北长滩",
-          "url": "https://www.amap.com/place/B0FFIYDM3C",
-          "poiId": "B0FFIYDM3C",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "北长滩古村落 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0FFIYDM3C",
-        "width": 1500,
-        "height": 2000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_582e20be2a",
-      "id": "manual_ningxia_33221b01",
-      "name": "中卫高庙",
-      "city": "中卫",
-      "rating": 4.7,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/ningxia_33221b01_verified.jpg",
-      "description": "中卫高庙位于鼓楼北街高庙保安寺，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "中卫高庙位于鼓楼北街高庙保安寺，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "热门景点",
-      "category": "古建筑/人文历史/宗教文化",
-      "tags": [
-        "古建筑/人文历史/宗教文化",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "鼓楼北街高庙保安寺",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "位于中卫市区中心，从中卫火车站步行约10至15分钟可达；也可乘坐公交2路、4路、8路至“高庙北站”下车。",
-          "internal_arrive": "从正门山门进入，顺中轴线依次向上游览。",
-          "internal_traffic": "景区内部均为步行，无其他交通工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在中卫鼓楼或中山街步行街附近，距离高庙步行可达，周边餐饮和烟火气浓厚，方便就餐。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "爆炒黄渠桥羊羔肉",
-          "宁夏手抓羊肉",
-          "宁夏烩羊杂碎",
-          "羊肉老搓面"
-        ],
-        "special_care": {
-          "elderly": "台阶陡峭且密集，长辈需放慢脚步，注意防滑，建议只在低层平台游览，不必强求登顶；地宫阴冷且氛围压抑，不建议长辈进入",
-          "children": "地宫场景较为惊悚，可能引起儿童害怕，建议家长根据孩子胆量决定是否前往；可引导孩子观察精美的砖雕和古建结构，增加人文趣味。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "中轴线登高与古建探秘",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "山门",
-            "天王殿",
-            "大雄宝殿",
-            "24级台阶（拾级而上）",
-            "砖雕牌坊",
-            "南天门",
-            "中楼",
-            "五岳玉皇圣母殿（顶层俯瞰全景）",
-            "下楼参观文楼与武楼",
-            "五百罗汉堂",
-            "十八层地狱地宫（入口在文昌阁右侧，视胆量选择）"
-          ],
-          "duration": "半天",
-          "walking": "约1至1.5小时，景区整体紧凑，但包含上下台阶",
+          "walking": "中等，景区内有摆渡车和小火车接驳，可减少步行距离",
           "physical": 3,
           "tips": [
-            "殿内台阶较陡，务必穿舒适平底鞋；地宫内光线暗且场景惊悚，胆小者、老人和儿童建议绕行；殿内一般不拍神像，请保持安静。"
+            "强烈建议较合适时段后入园，避开正午烈日暴晒，沙漠地表温度可达40℃以上，傍晚温度更舒适。"
           ],
           "sourceTitle": "xiaohongshu_core_candidates",
           "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-20"
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -529,289 +190,44 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "amap_live_web_service：https://www.amap.com/place/B07A1001E0"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 高庙",
-          "url": "https://www.amap.com/place/B07A1001E0",
-          "poiId": "B07A1001E0",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "中卫高庙 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B07A1001E0",
-        "width": 1500,
-        "height": 2000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_40fc3c383b",
-      "id": "manual_ningxia_22f58ca0",
-      "name": "寺口子风景区",
-      "city": "中卫",
-      "rating": 4.4,
-      "reviewsCount": "161条携程点评",
-      "image": "/assets/images/attractions/ningxia_22f58ca0_verified.jpg",
-      "description": "寺口子古称北海，南依山道奇险的香山，北临塞上江南卫宁平原，东边是西夏古都银川，东靠风光甚好的沙坡头，由于地理位置优越，自古就是兵家必争之地，有着丰富的人文景观和独特的自然风光，有“历史博物馆”之称。寺口子分为东、西两个景区，东景区被称为塞上奇峡景区，以山石地貌景观为有名，是西北神奇美丽的峡谷之一，怪石连绵起伏，有的突兀耸立，有的光滑如镜，神态各异，天成妙趣。",
-      "intro": "寺口子古称北海，南依山道奇险的香山，北临塞上江南卫宁平原，东边是西夏古都银川，东靠风光甚好的沙坡头，由于地理位置优越，自古就是兵家必争之地，有着丰富的人文景观和独特的自然风光，有“历史博物馆”之称。寺口子分为东、西两个景区，东景区被称为塞上奇峡景区，以山石地貌景观为有名，是西北神奇美丽的峡谷之一，怪石连绵起伏，有的突兀耸立，有的光滑如镜，神态各异，天成妙趣。",
-      "level": "热门景点",
-      "category": "自然风景区（丹霞地貌与喀斯特地貌）",
-      "tags": [
-        "自然风景区（丹霞地貌与喀斯特地貌）",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "中卫市沙坡头区宣和镇南20公里处",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾或包车前往，从中卫市区出发约50公里，车程1小时左右；若乘公共交通，可先到中卫汽车总站坐班车至宣和镇，再包车或拼车前往景区。",
-          "internal_arrive": "自驾可直接导航至“寺口子风景区”，门口有停车场；东西两区相距较远，需分别停车。",
-          "internal_traffic": "东西两区相距约1.5至2公里，需自驾或包车转场，景区内无观光车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议返回中卫市区住宿，选择更多且配套完善；若想在景区附近，可选择宣和镇街道或周边农家乐。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "爆炒黄渠桥羊羔肉",
-          "宁夏手抓羊肉",
-          "宁夏烩羊杂碎",
-          "羊肉老搓面"
-        ],
-        "special_care": {
-          "elderly": "仅游玩西区平缓路段，避开陡峭栈道和索桥，体力不支时及时休息",
-          "children": "西区适合亲子探险，但需全程看护，避免在栈道边缘奔跑，恐高儿童慎上索桥。\n\n你这次去中卫是打算和长辈或小朋友一起，还是年轻人自己组队？如果是带老人小孩，建议就只玩西区，东区比较陡峭，不太适合。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "西区丹霞舒缓游（家庭省力首选）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "景区入口",
-            "苏武牧羊雕像",
-            "苏武栖身石窟与圈羊石窟",
-            "丹霞栈道",
-            "云汉天渡索桥（可选）",
-            "山顶俯瞰全景",
-            "原路或山脊线返回"
-          ],
-          "duration": "半天",
-          "walking": "约2至2.5小时，步行距离约2至3公里",
-          "physical": 2,
-          "tips": [
-            "西区全程无遮挡，务必做好防晒；山顶风大，建议备一件防风外套；景区内无售卖点，需自带充足饮水。"
-          ],
-          "sourceTitle": "携程旅行 寺口子风景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "ctrip_city_sightlist：https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online",
-          "高德地图 寺口子沟：https://www.amap.com/place/B0FFF65NRU"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 寺口子风景区 详情页",
-          "url": "https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "寺口子风景区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "中卫通湖草原,沙漠绿洲相连,牧歌悠扬超惬意!",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhongwei1184/50861.html?poiType=3&scene=online",
-        "width": 2000,
-        "height": 1333
+        "licenseUrl": "http://baijiahao.baidu.com/s?id=1842852285013245339&wfr=spider&for=pc",
+        "sourceUrl": "http://baijiahao.baidu.com/s?id=1842852285013245339&wfr=spider&for=pc",
+        "width": 1242,
+        "height": 931
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "通湖草原：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
-  "overrides": {
-    "amap_B03BA00EBT": {
-      "id": "amap_B03BA00EBT",
-      "name": "须弥山石窟",
-      "city": "固原",
-      "rating": 4.6,
-      "reviewsCount": "高德地图",
-      "image": "/assets/images/attractions/ningxia_4c75bf29_verified.jpg",
-      "description": "须弥山石窟位于须弥山东麓，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "须弥山石窟位于须弥山东麓，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "热门景点",
-      "category": "石窟艺术、历史人文、丹霞地貌",
-      "tags": [
-        "石窟艺术、历史人文、丹霞地貌",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "须弥山东麓",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至“须弥山石窟”或“须弥山停车场”，距固原市区约50公里，车程40-50分钟；距银川约3小时车程。",
-          "internal_arrive": "从游客中心进，建议购买含观光车的套票，景区指示牌不多，可在游客中心索取地图。",
-          "internal_traffic": "观光车往返游客中心、博物馆和石窟区，车程约2-5分钟；若步行需穿过河谷、爬台阶，较耗体力。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在固原市区，餐饮和住宿选择较多，景区周边为农田和山区，无商业配套。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "爆炒黄渠桥羊羔肉",
-          "宁夏手抓羊肉",
-          "宁夏烩羊杂碎",
-          "羊肉老搓面"
-        ],
-        "special_care": {
-          "elderly": "务必购买观光车票，放弃陡峭的子孙宫区，以平路和下坡为主",
-          "children": "带足零食和水，穿运动鞋，避免在陡坡处攀爬。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "精华省力游（博物馆+大佛+核心洞窟）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "游客中心",
-            "须弥山博物馆（顶层拍大佛全景）",
-            "大佛楼区（第5窟唐代弥勒大佛）",
-            "圆光寺区（第45",
-            "46窟）",
-            "相国寺区（第51窟“须弥之光”）",
-            "返回"
-          ],
-          "duration": "半天",
-          "walking": "约2-3公里，有上下坡和台阶",
-          "physical": 3,
-          "tips": [
-            "景区内无商铺，务必自带充足饮用水和防晒装备；穿防滑运动鞋。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-20"
-        },
-        {
-          "title": "极简代步游（乘车直达+核心洞窟）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "游客中心",
-            "乘观光车直达大佛楼区",
-            "圆光寺区",
-            "相国寺区",
-            "乘观光车返回"
-          ],
-          "duration": "半天",
-          "walking": "约1公里，平缓为主",
-          "physical": 2,
-          "tips": [
-            "适合体力有限的家庭，放弃博物馆和子孙宫，直奔精华洞窟，全程约1.5-2小时。"
-          ],
-          "sourceTitle": "xiaohongshu_core_candidates",
-          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
-          "verifiedAt": "2026-08-20"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "高德地图 须弥山石窟国家级风景名胜区：https://www.amap.com/place/B03BA00EBT"
-        ],
-        "ratingSource": {
-          "platform": "高德地图",
-          "title": "高德地图 须弥山石窟国家级风景名胜区",
-          "url": "https://www.amap.com/place/B03BA00EBT",
-          "poiId": "B03BA00EBT",
-          "evidenceMode": "live-amap-web-service",
-          "verifiedAt": "2026-08-20"
-        },
-        "basicInfoUpdatedAt": "2026-08-20",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "Xumishan Grottoes 99.jpg",
-        "author": "Thebrainchamber1",
-        "provider": "Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xumishan_Grottoes_99.jpg",
-        "width": 3840,
-        "height": 2160
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    }
-  },
-  "reviewedAt": "2026-08-20",
-  "reviewedAtIso": "2026-08-20T01:14:15.249Z",
-  "appliedAt": "2026-08-20T01:17:09.004Z",
+  "overrides": {},
+  "reviewedAt": "2026-08-21",
+  "reviewedAtIso": "2026-08-21T09:15:57.828Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
+  "batchSelectedKeys": [
+    "core_9a8919ef80",
+    "core_8b5fa8b168"
+  ],
+  "appliedAt": "2026-08-24T03:11:28.860Z",
   "appliedAttractionIds": [
-    "manual_ningxia_53cce5ed",
-    "manual_ningxia_6d895c33",
-    "manual_ningxia_82989322",
-    "manual_ningxia_67135284",
-    "manual_ningxia_33221b01",
-    "manual_ningxia_22f58ca0"
+    "manual_ningxia_74c1713b",
+    "manual_ningxia_4f371994"
   ],
-  "appliedOverrideIds": [
-    "amap_B03BA00EBT"
-  ]
+  "appliedOverrideIds": []
 }

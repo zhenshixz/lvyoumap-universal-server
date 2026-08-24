@@ -1,49 +1,49 @@
 {
   "province": "广西",
   "status": "applied",
-  "createdAt": "2026-08-21T02:50:18.322Z",
-  "updatedAt": "2026-08-21T02:50:18.929Z",
+  "createdAt": "2026-08-21T09:00:41.111Z",
+  "updatedAt": "2026-08-24T03:09:22.603Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.guangxi.json",
   "attractions": [
     {
-      "baselineKey": "core_7e0f8de6c4",
-      "id": "manual_guangxi_324b7331",
-      "name": "遇龙河竹筏漂游",
-      "city": "阳朔",
-      "rating": 4.4,
-      "reviewsCount": "6670条携程点评",
-      "image": "/assets/images/attractions/guangxi_324b7331_verified.jpg",
-      "description": "遇龙河竹筏漂游是游玩遇龙河景区推荐的方式，乘竹筏泛舟在遇龙河上，两岸山水如画，非常享受。坐上缓慢的竹筏，看两岸连绵起伏的山峰和田园风光。",
-      "intro": "遇龙河竹筏漂游是游玩遇龙河景区推荐的方式，乘竹筏泛舟在遇龙河上，两岸山水如画，非常享受。坐上缓慢的竹筏，看两岸连绵起伏的山峰和田园风光。",
+      "baselineKey": "core_8cb7a93bae",
+      "id": "manual_guangxi_419805b8",
+      "name": "三门海",
+      "city": "河池市凤山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/guangxi_419805b8_verified.jpg",
+      "description": "三门海位于河池市凤山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "三门海位于河池市凤山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "自然山水/漂流体验",
+      "category": "喀斯特地貌、地下暗河、天窗群",
       "tags": [
-        "自然山水/漂流体验",
+        "喀斯特地貌、地下暗河、天窗群",
         "经典景点",
         "口碑热门"
       ],
-      "address": "桂林市阳朔县遇龙河景区(近朝阳码头)",
+      "address": "河池市凤山（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
       "guide_data": {
         "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+          "spring_autumn": "海边风大且天气变化快，建议轻薄防风外套、长裤和防滑运动鞋。",
+          "summer": "速干衣、防晒帽、防晒霜和补水用品并备，下水项目另带可更换衣物。",
+          "winter": "准备防风外套和长裤，阴雨、海风较强时体感会明显降低。",
+          "tips": "滨海栈道、礁石和雨后地面可能湿滑，以防滑鞋为主，不穿拖鞋长距离游览。"
         },
         "transport": {
-          "external_arrive": "自驾导航至对应码头（如骥马码头、富里桥码头），多数码头门口可停放电动车或汽车；也可在阳朔县城租电动车前往，沿途风景好且灵活。",
-          "internal_arrive": "优先选择骥马码头或富里桥码头，避开人流量极大的水厄底码头和金龙桥码头，旺季排队可能长达数小时。",
-          "internal_traffic": "竹筏为单程漂流，下筏后需乘坐景区观光摆渡车返回上游起点，费用费用以官方当日公告为准；若自驾或租电动车，需提前规划好返程取车路线。",
+          "external_arrive": "自驾导航至三门海景区停车场（免费，距游客中心约400米）；公共交通可至凤山县城后转乘班车或包车前往。",
+          "internal_arrive": "建议从游客中心码头进入，先乘船体验核心景观，再根据体力选择是否徒步。",
+          "internal_traffic": "景区内无观光车，主要靠乘船和徒步；下船后可选择步行或联系当地包车接送。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在阳朔县城或十里画廊附近，距离各码头车程多在15至25分钟，交通便利且餐饮住宿选择丰富。",
+            "area": "建议住凤山县城（选择多、性价比高，距景区约半小时车程）或景区周边民宿（步行可达码头，但餐饮配套较少）。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,54 +54,51 @@
           "柳州螺蛳粉"
         ],
         "special_care": {
-          "elderly": "70岁以上老人严禁乘坐带冲坝的双人筏和三人筏，只能选择富里桥四人筏或万景码头八人休闲筏等无冲坝线路",
-          "children": "1米以下儿童严禁乘坐带冲坝的竹筏，只能选择无冲坝的多人休闲筏。所有竹筏全程必须穿救生衣，儿童不得在筏上站立或大幅度打闹。\n\n补充几个关键避坑点：\n\n购票：每晚20:00在微信小程序\"遇龙河景区竹筏漂流票\"或\"i游阳朔\"抢次日票，旺季一票难求，建议准时蹲点。\n证件：必须携带身份证原件，无证件无法检票登筏，儿童可用户口本。\n体重限制：双人筏两人总重不能超过160kg，码头会现场称重；单人体重超100kg需单独坐筏。\n最佳时段：建议下午16:00至17:00前往，光线柔和好出片，也能避开正午暴晒。"
+          "elderly": "乘船平稳适合长辈，但洞内地面湿滑，需穿防滑鞋并有人搀扶",
+          "children": "全程穿好救生衣，在船上和栈道注意看护，避免靠近水边或攀爬。\n\n你这次去三门海是打算自驾还是坐公共交通？如果是自驾，我可以帮你规划一下沿途的停车和加油建议。"
         }
       },
       "lazy_routes": [
         {
-          "title": "骥马码头至综合码头（家庭经典线）",
+          "title": "乘船穿洞+观景台折返（省力休闲版）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "骥马码头登筏",
-            "沿途竹林夹岸",
-            "稻田连片",
-            "青蛙过江",
-            "七星洲等自然景观",
-            "9个冲坝点体验轻刺激",
-            "综合码头下筏",
-            "乘坐观光车返回起点"
+            "游客中心码头乘船",
+            "穿越3个天窗溶洞",
+            "下船后沿步道至观景台俯瞰天窗全景",
+            "原路返回游客中心"
           ],
           "duration": "半天",
-          "walking": "登筏和下筏时少量步行，全程基本无徒步",
+          "walking": "约1-2公里（含码头往返及观景台短途）",
           "physical": 2,
           "tips": [
-            "全程约6公里、90分钟，风景涵盖遇龙河精华段，冲坝有适度水花飞溅但不惊险。建议穿洞洞鞋或拖鞋，备好手机防水袋。竹筏为单程，下筏后需乘观光车（费用以官方当日公告为准）返回起点取车。"
+            "乘船时建议坐船头或前排，拍照视野最佳；全程穿好救生衣，洞内岩石低矮，注意不要随意探头伸手。"
           ],
-          "sourceTitle": "携程旅行 遇龙河竹筏漂游 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         },
         {
-          "title": "富里桥码头至三岔口（老人儿童休闲线）",
+          "title": "后山徒步环线（进阶体验版）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "富里桥码头登筏",
-            "沿途欣赏千年富里古桥倒影",
-            "水面平缓无冲坝",
-            "三岔口下筏",
-            "乘坐观光车返回起点"
+            "大榕树登山口",
+            "观景台",
+            "飞龙穿洞",
+            "马王洞（红七军兵工厂遗址）",
+            "社更穿洞",
+            "木栈道返程"
           ],
           "duration": "半天",
-          "walking": "登筏和下筏时少量步行，全程无徒步",
-          "physical": 1,
+          "walking": "约6-8公里",
+          "physical": 4,
           "tips": [
-            "全程约2公里、40分钟，四人筏每筏可坐4人，适合带老人和1米以下儿童的家庭。无冲坝设计，全程平稳不溅水，票源相对充足，不用熬夜抢票。"
+            "部分台阶较陡，需穿防滑鞋；建议晴天前往，水色更蓝更出片；体力一般者可到观景台或飞龙穿洞后原路返回。"
           ],
-          "sourceTitle": "携程旅行 遇龙河竹筏漂游 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -110,44 +107,41 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/guangxi100052.html",
-          "携程旅行 遇龙河竹筏漂游 详情页：https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q10867071 实体页：https://www.wikidata.org/wiki/Q10867071"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 遇龙河竹筏漂游 详情页",
-          "url": "https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "遇龙河竹筏漂游 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "有一次,步行到离河池市凤山县三门海镇中心,向东不到一公里处,我发现",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/yangshuo702/137485.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1527
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4877673970926774945",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4877673970926774945",
+        "width": 4096,
+        "height": 2304
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:50:18.898Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:00:41.711Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_7e0f8de6c4"
+    "core_8cb7a93bae"
   ],
-  "appliedAt": "2026-08-21T03:40:13.043Z",
+  "appliedAt": "2026-08-24T03:09:24.620Z",
   "appliedAttractionIds": [
-    "manual_guangxi_324b7331"
+    "manual_guangxi_419805b8"
   ],
   "appliedOverrideIds": []
 }

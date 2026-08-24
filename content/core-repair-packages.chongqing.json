@@ -1,30 +1,32 @@
 {
   "province": "重庆",
   "status": "applied",
-  "createdAt": "2026-08-21T02:49:37.752Z",
-  "updatedAt": "2026-08-21T02:49:38.410Z",
+  "createdAt": "2026-08-21T08:55:16.267Z",
+  "updatedAt": "2026-08-24T03:08:48.703Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "涪陵816核工厂：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.chongqing.json",
   "attractions": [
     {
-      "baselineKey": "core_c465d6f0d8",
-      "id": "manual_chongqing_55dee871",
-      "name": "武隆天生三桥",
+      "baselineKey": "core_5bfc0c4b79",
+      "id": "manual_chongqing_84e16850",
+      "name": "涪陵816核工厂",
       "city": "重庆",
-      "rating": 4.6,
-      "reviewsCount": "16909条携程点评",
-      "image": "/assets/images/attractions/chongqing_55dee871_verified.jpg",
-      "description": "武隆天生三桥，属于典型的喀斯特地貌，罕见的地质奇观旅游区，也是电影《满城尽带黄金甲》和《变形金刚4》的取景地。景区位于武隆县仙女山镇，游客一般是在仙女镇的游客中心购票后，乘坐景区提供的环保车到达景区。",
-      "intro": "武隆天生三桥，属于典型的喀斯特地貌，罕见的地质奇观旅游区，也是电影《满城尽带黄金甲》和《变形金刚4》的取景地。景区位于武隆县仙女山镇，游客一般是在仙女镇的游客中心购票后，乘坐景区提供的环保车到达景区。",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_84e16850_verified.jpg",
+      "description": "涪陵816核工厂位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "涪陵816核工厂位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "自然奇观/喀斯特地貌/世界自然遗产",
+      "category": "工业遗址 / 红色旅游 / 科普教育",
       "tags": [
-        "自然奇观/喀斯特地貌/世界自然遗产",
+        "工业遗址 / 红色旅游 / 科普教育",
         "经典景点",
         "口碑热门"
       ],
-      "address": "重庆市武隆区仙女山镇龙桥街与仙南路交汇南200米",
+      "address": "重庆（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +38,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "高铁可至武隆南站或武隆站，出站换乘景区大巴约40-50分钟抵达仙女山游客中心；自驾需导航至“武隆喀斯特景区游客中心”停车场，私家车不可直达景区入口，必须换乘中转大巴。",
-          "internal_arrive": "统一从仙女山游客中心乘坐景区中转大巴入园，切勿直接导航至天生三桥大门。",
-          "internal_traffic": "门票包含中转大巴与80米观光电梯；出口至中转站有费用以官方当日公告为准的自费观光车，带长辈儿童强烈建议乘坐。",
+          "external_arrive": "自驾导航至\"816工程游客中心\"，停车场充足；或乘高铁至涪陵北站后转乘公交/打车前往。",
+          "internal_arrive": "游客中心购票后乘摆渡车至洞口，再乘电瓶车至讲解集合点，统一由讲解员带队进入。",
+          "internal_traffic": "游客中心至洞口、洞口至洞内集合点均需换乘景区接驳车；洞内步行游览，无其他交通工具。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在仙女山镇（游客中心附近），餐饮住宿选择多，方便次日一早入园。",
+            "area": "推荐涪陵城区滨江路附近或白涛镇，方便次日游览。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,32 +56,32 @@
           "毛血旺"
         ],
         "special_care": {
-          "elderly": "全程依赖电梯下行和出口观光车，避免爬坡；谷底温差大需备薄外套，务必穿防滑鞋",
-          "children": "路线平缓适合亲子，但部分路段湿滑需牵手看护，建议带包脚防滑鞋和备用衣物以防被水雾打湿。"
+          "elderly": "洞内部分路段需爬楼梯，体力不佳者建议评估后前往",
+          "children": "可接受，但深洞环境可能让幼童害怕，建议提前做科普引导，不建议携带推车。"
         }
       },
       "lazy_routes": [
         {
-          "title": "电梯下行+三桥平路漫步省力线",
+          "title": "地下核工程探秘省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "游客中心换乘中转大巴",
-            "80米旋转观光电梯下至谷底",
-            "天龙桥（仰拍双拱桥洞）",
-            "天福官驿（满城尽带黄金甲取景地，可俯拍全景）",
-            "青龙桥（世界最高天生桥，观神鹰天坑）",
-            "黑龙桥（观四连崖壁泉与幽深桥洞）",
-            "出口乘坐15元观光车或步行上坡返回中转站"
+            "游客中心（乘摆渡车）",
+            "洞口（乘电瓶车）",
+            "讲解集合点",
+            "引水洞",
+            "101反应堆大厅",
+            "中央控制室",
+            "出口观景台"
           ],
           "duration": "半天",
-          "walking": "约1.5-2小时（核心段多为平缓栈道，出口至上车点约1公里上坡）",
-          "physical": 2,
+          "walking": "约1.5至2小时，部分路段需上下楼梯",
+          "physical": 3,
           "tips": [
-            "必须穿防滑运动鞋，谷底常有水雾和湿滑台阶；建议自带饮用水和零食，景区内补给点较少且物价偏高。"
+            "必须跟随免费讲解员游览，洞内如迷宫易迷路；穿防滑平底鞋，带薄外套（洞内恒温约18℃）；拍照抓紧，勿脱离步道。"
           ],
-          "sourceTitle": "携程旅行 武隆天生三桥 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/chongqing158/45771.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -88,28 +90,237 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/chongqing158.html",
-          "携程旅行 武隆天生三桥 详情页：https://you.ctrip.com/sight/chongqing158/45771.html?poiType=3&scene=online",
-          "高德地图 重庆武隆天生三桥风景区：https://www.amap.com/place/B00170I6E1"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "重庆816核工程:6万人地下挖了17年,内部景象很壮观",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
+        "license": "公开网页图片（家庭自用展示）",
+        "licenseUrl": "http://travel.sohu.com/a/858728774_120455300",
+        "sourceUrl": "http://travel.sohu.com/a/858728774_120455300",
+        "width": 2708,
+        "height": 1701
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "涪陵816核工厂：基本资料目前只有1个可追溯来源"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_8d004c8391",
+      "id": "manual_chongqing_a803c25d",
+      "name": "金刚碑古村",
+      "city": "重庆",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/chongqing_a803c25d_verified.jpg",
+      "description": "金刚碑古村位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "金刚碑古村位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "古村落/自然生态/休闲度假",
+      "tags": [
+        "古村落/自然生态/休闲度假",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "重庆（具体入口请以景区官方导航与当日公告为准）",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "自驾可导航至“金刚碑古村落停车场”或“金刚碑公交车站”；公共交通可乘轻轨6号线至北碚站4B口，换乘518或520路公交至“金刚碑站”下车步行约100米。",
+          "internal_arrive": "推荐从临溪小路入口进入，一路下坡轻松好走，沿途可欣赏溪谷与老建筑；若不想走路，入口旁也可乘坐观光车直达村内。",
+          "internal_traffic": "村内主要为步行，青石板路与石梯坎较多；入口处设有观光车接驳，可往返于大门与村内，适合体力不支或带娃家庭。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "景区周边有柏联酒店等温泉民宿及江景民宿，部分带有私汤，适合想深度放松的家庭；若不住宿，也可在北碚城区选择餐饮和住宿。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "全程下坡进入对膝盖友好，但村内部分路段为石梯坎和青石板，建议穿防滑平底鞋，随身携带登山杖",
+          "children": "嘉陵江边浅滩可捡鹅卵石、踩水，古村内有童话秋千，非常适合小朋友玩耍，但需注意江边安全和防蚊。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "临溪下坡+江边观景省力休闲线",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "金刚碑大门（临溪小路入口） ➡️ 古村老街（青苔石墙与百年黄桷树） ➡️ 过溪石桥与古树转角 ➡️ 嘉陵江畔（江边礁石与童话秋千） ➡️ 玻璃观景台 ➡️ 乘坐观光车返回大门"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里",
+          "physical": 2,
+          "tips": [
+            "建议从临溪小路下坡进入古村，全程树荫遮蔽不晒；回程若走不动可乘坐观光车（费用以官方当日公告为准，1.2米以下儿童免费）避免爬坡。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q139997614 实体页：https://www.wikidata.org/wiki/Q139997614"
+        ],
+        "ratingSource": null,
+        "basicInfoUpdatedAt": "2026-08-21",
+        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+      },
+      "image_source": {
+        "title": "金刚碑古村落.jpg",
+        "author": "重庆轨交18",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E5%88%9A%E7%A2%91%E5%8F%A4%E6%9D%91%E8%90%BD.jpg",
+        "width": 1920,
+        "height": 2560
+      },
+      "quality_status": {
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
+      }
+    },
+    {
+      "baselineKey": "core_f12cb6c465",
+      "id": "manual_chongqing_90df2a93",
+      "name": "龙门浩老街",
+      "city": "重庆",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
+      "image": "/assets/images/attractions/chongqing_90df2a93_verified.jpg",
+      "description": "龙门浩老街位于南滨路105号(上新街地铁站2号口步行320米)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "龙门浩老街位于南滨路105号(上新街地铁站2号口步行320米)，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "热门景点",
+      "category": "历史文化街区、滨江观景区、艺术商业体验区",
+      "tags": [
+        "历史文化街区、滨江观景区、艺术商业体验区",
+        "经典景点",
+        "口碑热门"
+      ],
+      "address": "南滨路105号(上新街地铁站2号口步行320米)",
+      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+      "guide_data": {
+        "clothing": {
+          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+        },
+        "transport": {
+          "external_arrive": "乘坐轨道交通6号线或环线至上新街站，从2号口出站步行约5分钟可达主入口；自驾可导航至龙门浩老街地下停车场。",
+          "internal_arrive": "推荐从上新街站2号口进入，先逛龙门浩老街，一路下坡至下浩里，最后从南滨路或乘电梯返回，不走回头路。",
+          "internal_traffic": "街区内部以步行和台阶为主，但设有3部便民直梯（入口、中段、福门附近），可大幅减少爬坡上坎的体力消耗。",
+          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+        },
+        "housing": [
+          {
+            "area": "建议住在南滨路沿线或上新街地铁站附近，方便前往景区且能欣赏江景夜景。",
+            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+          }
+        ],
+        "food": [
+          "重庆火锅",
+          "重庆小面",
+          "歌乐山辣子鸡",
+          "毛血旺"
+        ],
+        "special_care": {
+          "elderly": "尽量利用景区便民电梯上下，避免连续爬楼梯；沿途多找江景咖啡店休息，备好薄外套以防傍晚江风凉",
+          "children": "可安排在手作店或文创区体验，避免在狭窄楼梯处奔跑；夏季注意防蚊防晒。"
+        }
+      },
+      "lazy_routes": [
+        {
+          "title": "全程下坡省力版（先龙门浩后下浩里）",
+          "badge": "少走回头路",
+          "suitability": "第一次到访、亲子与长辈同行",
+          "nodes": [
+            "上新街站2号口",
+            "龙门浩老街入口（福门）",
+            "揽月台玻璃露台",
+            "山城画框机位",
+            "“我在重庆”红墙",
+            "望江巷（下行栈道）",
+            "下浩里老街（瀑布观景台",
+            "浩阅书店）",
+            "南滨路江边",
+            "乘便民电梯返程"
+          ],
+          "duration": "半天",
+          "walking": "约1.5公里（全程下坡，返程可乘电梯）",
+          "physical": 3,
+          "tips": [
+            "务必穿防滑平底鞋，石板路雨天湿滑；景区有多部便民电梯，走不动可直接坐电梯下行或上行，避免爬楼梯。"
+          ],
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
+        }
+      ],
+      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+      "quality_policy": {},
+      "source_evidence": {
+        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+        "basicInfoSources": [
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "高德地图 龙门浩老街：https://www.amap.com/place/B0FFJ0756U"
         ],
         "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 武隆天生三桥 详情页",
-          "url": "https://you.ctrip.com/sight/chongqing158/45771.html?poiType=3&scene=online",
+          "platform": "高德地图",
+          "title": "高德地图 龙门浩老街",
+          "url": "https://www.amap.com/place/B0FFJ0756U",
+          "poiId": "B0FFJ0756U",
+          "evidenceMode": "live-amap-web-service",
           "verifiedAt": "2026-08-21"
         },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "武隆天生三桥 高德地图实景图",
+        "title": "龙门浩老街 高德地图实景图",
         "author": "高德地图用户或商户",
         "provider": "高德地图",
         "license": "高德开放平台地点图片资料，版权归原作者或来源方",
         "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B00170I6E1",
-        "width": 2048,
-        "height": 1536
+        "sourceUrl": "https://www.amap.com/place/B0FFJ0756U",
+        "width": 1242,
+        "height": 1656
       },
       "quality_status": {
         "reviewRequired": false,
@@ -119,14 +330,18 @@
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:49:38.378Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T08:55:16.840Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_c465d6f0d8"
+    "core_5bfc0c4b79",
+    "core_8d004c8391",
+    "core_f12cb6c465"
   ],
-  "appliedAt": "2026-08-21T03:40:04.723Z",
+  "appliedAt": "2026-08-24T03:08:49.950Z",
   "appliedAttractionIds": [
-    "manual_chongqing_55dee871"
+    "manual_chongqing_84e16850",
+    "manual_chongqing_a803c25d",
+    "manual_chongqing_90df2a93"
   ],
   "appliedOverrideIds": []
 }

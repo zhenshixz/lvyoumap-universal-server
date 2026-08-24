@@ -1,30 +1,30 @@
 {
   "province": "云南",
   "status": "applied",
-  "createdAt": "2026-08-21T03:25:41.072Z",
-  "updatedAt": "2026-08-21T03:25:41.692Z",
+  "createdAt": "2026-08-21T09:42:33.256Z",
+  "updatedAt": "2026-08-24T03:13:42.129Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.yunnan.json",
   "attractions": [
     {
-      "baselineKey": "core_3c7795fcb7",
-      "id": "manual_yunnan_f4467ee1",
-      "name": "怒江大峡谷",
-      "city": "福贡",
-      "rating": 4.8,
-      "reviewsCount": "106条携程点评",
-      "image": "/assets/images/attractions/yunnan_f4467ee1_verified.jpg",
-      "description": "怒江大峡谷位于横断山脉三江并流区域，其中云南段有300多公里，平均深度2000米，其中较深的3500一段就位于云南贡山丙中洛风景区一带，被称为“东方大峡谷”。 怒江两岸是高耸的高黎贡山和碧罗雪山，山势陡峭层峦叠嶂，峡谷中居住着傈僳族、独龙族、怒族、普米族等十几个少数民族，由于人迹罕至，至今仍保留着古朴的民俗。",
-      "intro": "怒江大峡谷位于横断山脉三江并流区域，其中云南段有300多公里，平均深度2000米，其中较深的3500一段就位于云南贡山丙中洛风景区一带，被称为“东方大峡谷”。 怒江两岸是高耸的高黎贡山和碧罗雪山，山势陡峭层峦叠嶂，峡谷中居住着傈僳族、独龙族、怒族、普米族等十几个少数民族，由于人迹罕至，至今仍保留着古朴的民俗。",
+      "baselineKey": "core_2d8aed36c3",
+      "id": "manual_yunnan_13a0ad20",
+      "name": "元阳梯田",
+      "city": "红河",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/yunnan_13a0ad20_verified.jpg",
+      "description": "元阳梯田位于红河（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "元阳梯田位于红河（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "自然峡谷 / 自驾公路 / 民族风情",
+      "category": "自然山水、世界文化遗产",
       "tags": [
-        "自然峡谷 / 自驾公路 / 民族风情",
+        "自然山水、世界文化遗产",
         "经典景点",
         "口碑热门"
       ],
-      "address": "云南省怒江傈僳族自治州泸水市洛本卓白族乡中心校",
+      "address": "红河（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +36,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "建议先飞抵保山或丽江，再租车自驾前往泸水市（六库）；或从昆明乘大巴至六库，随后在本地包车/拼车沿G219北上。",
-          "internal_arrive": "从泸水市（六库）进入怒江大峡谷，沿G219国道一路向北前往丙中洛，沿途可随时在观景台停靠。",
-          "internal_traffic": "强烈建议自驾或包车（约300-费用以官方当日公告为准/天），沿途风景极佳，包车可随时停车拍照，比公共交通灵活得多。",
+          "external_arrive": "建议自驾或包车前往，导航至“元阳新街镇（箐口游客中心）”或“多依树观景台”；若乘公共交通，可先至昆明、建水或蒙自，再转乘班车至元阳新街镇，随后需包车或打车进入景区。",
+          "internal_arrive": "推荐从元绿二级公路方向上山，路况较好且安全；尽量避免走爱伍段，该路段急弯多、落石风险大。",
+          "internal_traffic": "景区内部景点分散，盘山公路弯多坡陡，必须自驾或包车游玩，无公共交通覆盖。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "泸水市（六库）住宿条件较好，适合首站补给；福贡县和贡山县适合中途休整；丙中洛镇和老姆登村民宿较多，适合看晨雾和星空，但整体条件相对基础。",
+            "area": "推荐入住多依树景区或胜村附近的民宿，方便次日清晨步行看日出，且周边餐饮补给相对便利。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,35 +54,29 @@
           "大理砂锅鱼"
         ],
         "special_care": {
-          "elderly": "峡谷海拔落差大但整体不高，不易高反，但早晚温差可达20℃，需备冲锋衣或薄羽绒服",
-          "children": "老虎跳和雾里村部分路段有青苔，需穿防滑鞋；温泉建议选择私汤或独立池，避免公共塘。"
+          "elderly": "山区早晚温差大且风大，需备足保暖外套；观景台多为平路或缓坡，但部分路段有台阶，建议穿防滑鞋，量力而行，避免长时间在风口站立",
+          "children": "可安排轻徒步体验哈尼族古村文化，注意看护安全，勿擅自下至陌生田埂；可准备少量零食，若遇到当地村民小孩索要物品，建议引导其通过帮忙拍照等劳动换取，避免养成不劳而获的习惯。"
         }
       },
       "lazy_routes": [
         {
-          "title": "G219 怒江美丽公路家庭自驾省力游（泸水至丙中洛段）",
+          "title": "核心观景台与古村省力休闲游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "小沙坝服务区（江畔栈道观景",
-            "餐饮补给）",
-            "登埂澡堂（江边天然温泉泡脚）",
-            "老虎跳（近距离观看怒江急流奔腾）",
-            "老姆登村（观景台俯瞰峡谷全景与皇冠山）",
-            "知子罗（漫步80年代复古“记忆之城”）",
-            "石月亮观景台（远眺高黎贡山天然穿洞）",
-            "丙中洛（感受“人神共居”的田园风光）",
-            "怒江第一湾（俯瞰270度半圆形大弯）",
-            "雾里村（轻徒步茶马古道，探访云端村落）"
+            "多依树观景台（晨间赏日出云海）",
+            "爱春蓝梯田（上午观镜面蓝调）",
+            "阿者科古村（漫步哈尼蘑菇房）",
+            "坝达观景台（傍晚看日落鎏金）"
           ],
           "duration": "半天",
-          "walking": "全程大部分时间在车内，每日有效步行约2000-4000步",
+          "walking": "约1000米（以观景台平路、古村石板路为主，无高强度攀爬）",
           "physical": 2,
           "tips": [
-            "沿途弯道较多，建议由经验丰富的老司机驾驶，切勿开夜车；部分村寨信号较弱，务必提前下载离线地图并备好少量现金。"
+            "爱春蓝梯田的最佳观赏期在上午官方当日建议时段至官方当日建议时段，且必须为晴天，建议看完日出后第一时间前往；多依树和坝达观景台在旺季清晨和傍晚易拥堵，建议提前出发或入住附近民宿步行前往。"
           ],
-          "sourceTitle": "携程旅行 怒江大峡谷 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/fugong1446273/21705.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -91,379 +85,41 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/yunnan100007.html",
-          "携程旅行 怒江大峡谷 详情页：https://you.ctrip.com/sight/fugong1446273/21705.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q64776052 实体页：https://www.wikidata.org/wiki/Q64776052"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 怒江大峡谷 详情页",
-          "url": "https://you.ctrip.com/sight/fugong1446273/21705.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "怒江大峡谷 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "夏季避暑好去处# 红河元阳梯田避暑,云雾缭绕,夏日田园风光美如画!",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/fugong1446273/21705.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/fugong1446273/21705.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1874
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4874930182643433056",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4874930182643433056",
+        "width": 2048,
+        "height": 1486
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_debdf6be3b",
-      "id": "manual_yunnan_e2412822",
-      "name": "世界恐龙谷",
-      "city": "禄丰",
-      "rating": 4.5,
-      "reviewsCount": "1986条携程点评",
-      "image": "/assets/images/attractions/yunnan_e2412822_verified.jpg",
-      "description": "世界恐龙谷位于楚雄州禄丰县川街乡阿纳村恐龙山，是一个大型的恐龙文化旅游主题公园，很有趣味性和科普意义。在这里，游人可以走进恐龙王国、穿越侏罗纪世界、解读地球生灵的兴衰演变。",
-      "intro": "世界恐龙谷位于楚雄州禄丰县川街乡阿纳村恐龙山，是一个大型的恐龙文化旅游主题公园，很有趣味性和科普意义。在这里，游人可以走进恐龙王国、穿越侏罗纪世界、解读地球生灵的兴衰演变。",
-      "level": "热门景点",
-      "category": "科普遗址 + 主题乐园",
-      "tags": [
-        "科普遗址 + 主题乐园",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "楚雄彝族自治州禄丰县杭瑞高速",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾从昆明出发走杭瑞高速，约1-1.5小时，在\"恐龙谷\"出口下，停车场全天费用以官方当日公告为准；高铁到禄丰南站后，打车约15分钟或乘10路公交直达。",
-          "internal_arrive": "从正门进入，进门后右转走平路即可到达遗址公园核心区，婴儿车全程畅通无阻；若要去时空乐园，入口在正门左侧，两区相邻。",
-          "internal_traffic": "景区内有观光车（费用以官方当日公告为准，全天不限次），带老人小孩可购买节省体力；也可租婴儿车（费用以官方当日公告为准/辆，需押金）。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "景区旁的阿纳村或禄丰市金山古镇性价比高，吃喝玩乐方便；若图便捷可住景区内的恐龙谷温泉酒店，入住通常送双园门票，还能泡温泉。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "过桥米线",
-          "野生菌火锅",
-          "汽锅鸡",
-          "大理砂锅鱼"
-        ],
-        "special_care": {
-          "elderly": "走平路即可，可租轮椅，建议请讲解员帮助理解化石知识",
-          "children": "1.2米以上可玩时空乐园更多项目，1.2米以下优先逛遗址公园，可体验化石修复。\n\n你这次去是打算只看化石科普，还是也想带小朋友玩游乐项目？"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "遗址公园半日省力科普游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "正门入园（过木桥右转走平路）",
-            "恐龙大本营（科普馆看图文展板",
-            "可卡点看4D电影）",
-            "恐龙遗址博物馆（看60余具真实化石骨架",
-            "27米阿纳川街龙",
-            "原址化石层）",
-            "化石修复体验（可选，亲手清理化石）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 2,
-          "tips": [
-            "建议请人工讲解或租语音导览，不然很难看出化石的门道；园区内餐饮选择不多，建议自带零食和水；穿舒适运动鞋，做好防晒。"
-          ],
-          "sourceTitle": "携程旅行 世界恐龙谷 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/lufeng2188/62308.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/yunnan100007.html",
-          "携程旅行 世界恐龙谷 详情页：https://you.ctrip.com/sight/lufeng2188/62308.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 世界恐龙谷 详情页",
-          "url": "https://you.ctrip.com/sight/lufeng2188/62308.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "世界恐龙谷 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/lufeng2188/62308.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/lufeng2188/62308.html?poiType=66&scene=online",
-        "width": 4145,
-        "height": 2764
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_1bec0b74fd",
-      "id": "manual_yunnan_7eb2a39f",
-      "name": "香格里拉巴拉格宗风景名胜区",
-      "city": "香格里拉",
-      "rating": 4.5,
-      "reviewsCount": "3066条携程点评",
-      "image": "/assets/images/attractions/yunnan_7eb2a39f_verified.jpg",
-      "description": "在滇、川、藏三省交汇的横断山脉腹地，深藏着“香格里拉巴拉格宗风景名胜区”这片藏地秘境。作为《消失的地平线》中香格里拉传奇的真实映照，这里高达3576米的垂直落差，生动诠释了“一山有四季，十里不同天”的生态奇观。",
-      "intro": "在滇、川、藏三省交汇的横断山脉腹地，深藏着“香格里拉巴拉格宗风景名胜区”这片藏地秘境。作为《消失的地平线》中香格里拉传奇的真实映照，这里高达3576米的垂直落差，生动诠释了“一山有四季，十里不同天”的生态奇观。",
-      "level": "热门景点",
-      "category": "自然峡谷与藏文化村落",
-      "tags": [
-        "自然峡谷与藏文化村落",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "迪庆藏族自治州香格里拉市尼西乡巴拉社",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "距离香格里拉市区约70多公里，建议从独克宗古城乘坐景区直通车或包车自驾前往，车程约2小时。",
-          "internal_arrive": "以景区游客中心为起点，所有内部观光车均从此处统一发车和返程。",
-          "internal_traffic": "全程依赖景区内部观光大巴，各景点间需按固定路线换乘，无法自行跳过不想去的站点。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "可选择入住景区内的神迹酒店（含门票且可深度游），或住在景区外的独克宗古城东门附近（方便乘坐直通车）。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "过桥米线",
-          "野生菌火锅",
-          "汽锅鸡",
-          "大理砂锅鱼"
-        ],
-        "special_care": {
-          "elderly": "海拔落差大，佛塔处海拔超4000米，需严格防寒保暖、吸氧防高反，避免剧烈运动",
-          "children": "大峡谷栈道平缓适合轻徒步，可体验漂流，但需注意防晒和温差，备好零食。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "经典全景省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "巴拉村",
-            "回音壁",
-            "香巴拉佛塔",
-            "巴拉卓玛拉康",
-            "香格里拉大峡谷",
-            "千年菩提树"
-          ],
-          "duration": "半天",
-          "walking": "约4-5公里（多为平路栈道）",
-          "physical": 2,
-          "tips": [
-            "景区内观光车路线固定且班次有限，务必在每站牢记司机告知的返程上车时间，切勿错过；香巴拉佛塔海拔超4000米，建议备好氧气瓶并提前服用晕车药。"
-          ],
-          "sourceTitle": "携程旅行 香格里拉巴拉格宗风景名胜区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shangrila106/4213.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/yunnan100007.html",
-          "携程旅行 香格里拉巴拉格宗风景名胜区 详情页：https://you.ctrip.com/sight/shangrila106/4213.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 香格里拉巴拉格宗风景名胜区 详情页",
-          "url": "https://you.ctrip.com/sight/shangrila106/4213.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "香格里拉巴拉格宗风景名胜区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/shangrila106/4213.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/shangrila106/4213.html?poiType=3&scene=online",
-        "width": 1280,
-        "height": 800
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_d8e21beccc",
-      "id": "manual_yunnan_9dc7112d",
-      "name": "朱家花园",
-      "city": "建水",
-      "rating": 4.6,
-      "reviewsCount": "4081条携程点评",
-      "image": "/assets/images/attractions/yunnan_9dc7112d_verified.jpg",
-      "description": "朱家花园位于建水县翰林街，是清末乡绅朱渭卿兄弟建造的家宅和宗祠。园内宗祠、庙堂、居室、园林皆富丽堂皇，在这可以了解到西南民居建筑风格。",
-      "intro": "朱家花园位于建水县翰林街，是清末乡绅朱渭卿兄弟建造的家宅和宗祠。园内宗祠、庙堂、居室、园林皆富丽堂皇，在这可以了解到西南民居建筑风格。",
-      "level": "热门景点",
-      "category": "历史建筑 / 私家园林",
-      "tags": [
-        "历史建筑 / 私家园林",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "云南省红河哈尼族彝族自治州建水县翰林街16号(近书院街)",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "位于云南省红河州建水县翰林街16号，地处建水古城核心区域。昆明高铁约2小时直达建水，打车10分钟可达；自驾导航\"朱家花园景区\"，园区外有停车场，古城内道路较窄，建议减速慢行。",
-          "internal_arrive": "从正门入园，按中轴线依次深入，最后从后花园出口离开，不走回头路。",
-          "internal_traffic": "全园步行，无内部交通工具。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在建水古城内或古城周边步行5分钟可达朱家花园的区域，方便随时休息和逛吃。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "过桥米线",
-          "野生菌火锅",
-          "汽锅鸡",
-          "大理砂锅鱼"
-        ],
-        "special_care": {
-          "elderly": "园内台阶和门槛较多，部分区域石板路较滑，建议携带折叠小凳随时休息，穿防滑平底鞋",
-          "children": "可参与\"一日朱家人\"沉浸式互动体验（以官方当日公告为准），与NPC互动闯关集印章、赚取银票，后花园假山区域也适合孩子捉迷藏，增加游玩趣味性。\n\n你这次去建水古城是打算安排半天逛朱家花园，还是想和周边景点（比如朝阳楼、文庙、双龙桥）一起串联游玩？"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "经典省力游园线（正门进→后花园出）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "正门",
-            "\"循规蹈矩\"月宫门",
-            "三进四合院（工字型客厅）",
-            "朱氏宗祠与水上戏台",
-            "梅馆",
-            "兰庭",
-            "竹园",
-            "菊苑（四院）",
-            "含玉楼（小姐绣楼）",
-            "后花园（光远亭",
-            "假山",
-            "回廊）",
-            "出口"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 3,
-          "tips": [
-            "园内石板路多、台阶和门槛较多，建议穿舒适平底鞋；可请讲解员或扫码听语音讲解，边听故事边逛更有体验感。"
-          ],
-          "sourceTitle": "携程旅行 朱家花园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/jianshui2151/17552.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/yunnan100007.html",
-          "携程旅行 朱家花园 详情页：https://you.ctrip.com/sight/jianshui2151/17552.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 朱家花园 详情页",
-          "url": "https://you.ctrip.com/sight/jianshui2151/17552.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "朱家花园 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/jianshui2151/17552.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/jianshui2151/17552.html?poiType=3&scene=online",
-        "width": 4240,
-        "height": 2832
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:25:41.655Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:42:33.846Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_3c7795fcb7",
-    "core_debdf6be3b",
-    "core_1bec0b74fd",
-    "core_d8e21beccc"
+    "core_2d8aed36c3"
   ],
-  "appliedAt": "2026-08-21T03:41:50.950Z",
+  "appliedAt": "2026-08-24T03:13:43.260Z",
   "appliedAttractionIds": [
-    "manual_yunnan_f4467ee1",
-    "manual_yunnan_e2412822",
-    "manual_yunnan_7eb2a39f",
-    "manual_yunnan_9dc7112d"
+    "manual_yunnan_13a0ad20"
   ],
   "appliedOverrideIds": []
 }

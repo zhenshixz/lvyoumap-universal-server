@@ -1,6 +1,6 @@
 {
   "province": "甘肃",
-  "checkedAt": "2026-08-19",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1022,6 +1022,178 @@
       },
       "matchWarnings": [],
       "secondaryEvidence": []
+    },
+    {
+      "key": "core_71f3585093",
+      "name": "扁都口生态旅游区",
+      "preferredId": "manual_gansu_abe88ce8",
+      "aliases": [
+        "扁都口生态旅游区",
+        "扁都口生态"
+      ],
+      "city": "民乐",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_7915abd427",
+      "name": "炳灵寺石窟",
+      "preferredId": "manual_gansu_51bb6e55",
+      "aliases": [
+        "炳灵寺石窟"
+      ],
+      "city": "永靖",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_7b3d0699d6",
+      "name": "甘南草原",
+      "preferredId": "manual_gansu_12f22d4f",
+      "aliases": [
+        "甘南草原"
+      ],
+      "city": "甘南州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_c69788cd6a",
+      "name": "郎木寺",
+      "preferredId": "manual_gansu_88345378",
+      "aliases": [
+        "郎木寺"
+      ],
+      "city": "碌曲",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_1d4db403b7",
+      "name": "水帘洞石窟",
+      "preferredId": "manual_gansu_c778061a",
+      "aliases": [
+        "水帘洞石窟"
+      ],
+      "city": "武山",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_c68f7a7912",
+      "name": "雅丹魔鬼城",
+      "preferredId": "manual_gansu_5cbb06f3",
+      "aliases": [
+        "雅丹魔鬼城"
+      ],
+      "city": "敦煌",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_885f6274b9",
+      "name": "正宁路夜市",
+      "preferredId": "manual_gansu_1c33e37a",
+      "aliases": [
+        "正宁路夜市"
+      ],
+      "city": "兰州",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
-  ]
+  ],
+  "counts": {
+    "attractions": 34
+  }
 }

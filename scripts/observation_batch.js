@@ -239,6 +239,34 @@ function updateBatch(manifestPath, patch) {
   return next;
 }
 
+function prepareProvinceWorkspace(manifestPath, state) {
+  const manifest = readJson(manifestPath, null);
+  if (!manifest) throw new Error('批次清单不存在。');
+  if (state.workspaceBatchId === manifest.id) return false;
+
+  const workspaceSnapshot = path.join(manifest.batchDir, 'snapshot', 'workspace', state.slug);
+  fs.mkdirSync(workspaceSnapshot, { recursive: true });
+  const transientFiles = [
+    path.join(contentDir, `core-repair-packages.${state.slug}.json`),
+    path.join(contentDir, `core-repair-seeds.${state.slug}.json`),
+    path.join(runtimeDir, `core-repairs.${state.slug}.json`),
+    path.join(runtimeDir, `core-repair-research.${state.slug}.json`),
+    path.join(runtimeDir, `core-repair-evidence.${state.slug}.auto.json`),
+    path.join(runtimeDir, `core-experience-evidence.${state.slug}.json`),
+    path.join(rootDir, 'reports', `core-research-${state.slug}.json`),
+  ];
+  for (const filePath of transientFiles) {
+    if (!fs.existsSync(filePath)) continue;
+    const snapshotPath = path.join(workspaceSnapshot, path.basename(filePath));
+    if (!fs.existsSync(snapshotPath)) fs.copyFileSync(filePath, snapshotPath);
+    fs.rmSync(filePath, { force: true });
+  }
+  state.workspaceBatchId = manifest.id;
+  state.workspacePreparedAt = new Date().toISOString();
+  state.error = '';
+  return true;
+}
+
 function filterReviewedPackage(manifestPath, slug) {
   const manifest = readJson(manifestPath, {});
   const provinceState = (manifest.provinces || []).find(item => item.slug === slug);
@@ -247,8 +275,12 @@ function filterReviewedPackage(manifestPath, slug) {
   const packageData = readJson(packagePath, null);
   if (packageData?.status !== 'reviewed') throw new Error(`${provinceState.province}补全包尚未 reviewed。`);
   const selectedKeys = new Set(provinceState.originalSelectedKeys || provinceState.selectedKeys || []);
-  packageData.attractions = (packageData.attractions || []).filter(item => selectedKeys.has(item.baselineKey));
-  packageData.overrides = Object.fromEntries(Object.entries(packageData.overrides || {}).filter(([, item]) => selectedKeys.has(item.baselineKey)));
+  const resolvedKeys = new Set([
+    ...(provinceState.resolutions || []).map(item => item.key),
+    ...classifyMissing(provinceState, [...selectedKeys]).resolved.map(item => item.key),
+  ]);
+  packageData.attractions = (packageData.attractions || []).filter(item => selectedKeys.has(item.baselineKey) && !resolvedKeys.has(item.baselineKey));
+  packageData.overrides = Object.fromEntries(Object.entries(packageData.overrides || {}).filter(([, item]) => selectedKeys.has(item.baselineKey) && !resolvedKeys.has(item.baselineKey)));
   const covered = new Set([
     ...packageData.attractions.map(item => item.baselineKey),
     ...Object.values(packageData.overrides).map(item => item.baselineKey),
@@ -294,29 +326,39 @@ function classifyMissing(state, missingKeys) {
 function applyCoverageToState(state, coverage) {
   const entries = selectedEntryMap(state);
   const namesFor = keys => keys.map(key => entries.get(key)?.name || key);
-  const classified = classifyMissing(state, coverage.missingKeys);
   if (!state.originalSelectedKeys) state.originalSelectedKeys = [...(state.selectedKeys || [])];
   if (!state.originalSelectedNames) state.originalSelectedNames = [...(state.selectedNames || [])];
+  // 非景点候选和已经绑定到现有记录的别名，即使碰巧出现在旧补全包中，
+  // 也必须先归类，不能因为“包里有同名项”而被误写成新景点。
+  const selectedClassification = classifyMissing(state, state.originalSelectedKeys);
+  const resolvedKeys = new Set(selectedClassification.resolved.map(item => item.key));
+  const coveredKeys = coverage.coveredKeys.filter(key => !resolvedKeys.has(key));
+  const missingKeys = coverage.missingKeys.filter(key => !resolvedKeys.has(key));
+  const classified = { resolved: selectedClassification.resolved, unresolved: missingKeys };
   state.resolutions = classified.resolved;
   state.pendingKeys = classified.unresolved;
   state.pendingNames = namesFor(classified.unresolved);
-  state.readyKeys = coverage.coveredKeys;
-  state.readyNames = namesFor(coverage.coveredKeys);
-  if (coverage.coveredKeys.length) {
-    state.selectedKeys = [...coverage.coveredKeys];
+  state.readyKeys = coveredKeys;
+  state.readyNames = namesFor(coveredKeys);
+  if (coveredKeys.length && !classified.unresolved.length) {
+    state.selectedKeys = [...coveredKeys];
     state.selectedNames = [...state.readyNames];
     state.status = 'ready';
-    state.error = classified.unresolved.length ? `${classified.unresolved.length} 项保留断点。` : '';
+    state.error = '';
   } else if (!classified.unresolved.length) {
     state.selectedKeys = [];
     state.selectedNames = [];
     state.status = 'resolved';
     state.error = '';
   } else {
-    state.selectedKeys = [...classified.unresolved];
-    state.selectedNames = [...state.pendingNames];
+    state.selectedKeys = [...(state.originalSelectedKeys || [])].filter(key => !resolvedKeys.has(key));
+    state.selectedNames = namesFor(state.selectedKeys);
     state.status = 'failed';
-    state.error = `${state.province}仍有 ${classified.unresolved.length} 个已选景点未形成完整补全资料。`;
+    state.error = `${state.province}仍有 ${classified.unresolved.length} 个已选景点未形成完整补全资料；已完成的采集断点会复用，下次重建该省完整补全包。`;
+    // reviewed 包只覆盖部分所选景点时，不能把省份误标为可预览。
+    // 允许下一轮重新建立本批独立工作区；点点攻略等成功断点仍保存在全局覆盖层。
+    delete state.workspaceBatchId;
+    delete state.workspacePreparedAt;
   }
   return state;
 }
@@ -327,6 +369,7 @@ function reconcileBatch(manifestPath) {
   let changed = false;
   for (const state of manifest.provinces || []) {
     if (state.status !== 'failed') continue;
+    if (state.workspaceBatchId !== manifest.id) continue;
     try {
       const coverage = filterReviewedPackage(manifestPath, state.slug);
       applyCoverageToState(state, coverage);
@@ -408,6 +451,7 @@ module.exports = {
   applyCoverageToState,
   filterReviewedPackage,
   parseSelection,
+  prepareProvinceWorkspace,
   persistBatchResolutions,
   printObservationPool,
   readJson,

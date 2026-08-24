@@ -1,136 +1,32 @@
 {
   "province": "河南",
   "status": "applied",
-  "createdAt": "2026-08-21T02:55:42.921Z",
-  "updatedAt": "2026-08-21T02:55:43.539Z",
+  "createdAt": "2026-08-21T09:02:12.807Z",
+  "updatedAt": "2026-08-24T03:09:50.281Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "新县西河古村：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.henan.json",
   "attractions": [
     {
-      "baselineKey": "core_defe8a5f52",
-      "id": "manual_henan_2eb0b922",
-      "name": "洛阳博物馆",
-      "city": "洛阳",
-      "rating": 4.7,
-      "reviewsCount": "3663条携程点评",
-      "image": "/assets/images/attractions/henan_2eb0b922_verified.jpg",
-      "description": "洛阳博物馆创建于1958年，现为国家一级博物馆。是一座集文物收藏、科学研究、陈列展览、社会教育与文化交流诸功能为一体的综合性博物馆。",
-      "intro": "洛阳博物馆创建于1958年，现为国家一级博物馆。是一座集文物收藏、科学研究、陈列展览、社会教育与文化交流诸功能为一体的综合性博物馆。",
-      "level": "博物馆",
-      "category": "博物馆",
-      "tags": [
-        "博物馆",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "河南省洛阳市洛龙区聂泰路与文博路交叉口西北角",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
-          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
-          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
-        },
-        "transport": {
-          "external_arrive": "地铁2号线文博园站A口步行约5至8分钟；自驾可导航至西门停车场，但旺季车位紧张，建议早到。",
-          "internal_arrive": "推荐从南门入园，入口两侧有免费自助行李柜，可寄存24寸及以下小件行李。",
-          "internal_traffic": "馆内各楼层之间主要依靠扶梯和直梯连接，带老人和小孩建议优先使用直梯，避免上下楼梯消耗体力。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "建议住在洛龙区文博园周边或市区中心地带，交通便利，逛完博物馆后可方便前往其他景点或就餐。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "河南烩面",
-          "逍遥镇胡辣汤",
-          "开封灌汤包",
-          "道口烧鸡"
-        ],
-        "special_care": {
-          "elderly": "全程尽量走直梯，在一楼石刻馆和二楼珍宝馆等核心展区多利用休息长椅歇脚，注意馆内温度较低需保暖",
-          "children": "可提前给孩子科普镇馆之宝，进馆后开启\"寻宝模式\"，增加参观趣味性，低幼儿童建议缩短逛展时间。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "二楼精华优先省力线",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "南门入园直上二楼珍宝馆",
-            "二楼唐三彩馆",
-            "二楼宫廷文物馆",
-            "乘直梯下一楼石刻馆",
-            "一楼河洛文明展"
-          ],
-          "duration": "半天",
-          "walking": "约1.5公里",
-          "physical": 2,
-          "tips": [
-            "二楼珍宝馆集中了大部分镇馆之宝，建议优先参观；馆内空调较足，建议带一件薄外套。"
-          ],
-          "sourceTitle": "携程旅行 洛阳博物馆 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/henan100058.html",
-          "携程旅行 洛阳博物馆 详情页：https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 洛阳博物馆 详情页",
-          "url": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "洛阳博物馆 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/luoyang198/77546.html?poiType=3&scene=online",
-        "width": 2500,
-        "height": 1631
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_2b988f2b42",
-      "id": "manual_henan_98e4faf6",
-      "name": "宋都皇城旅游度假区",
-      "city": "开封",
-      "rating": 4.5,
-      "reviewsCount": "174条携程点评",
-      "image": "/assets/images/attractions/henan_98e4faf6_verified.jpg",
-      "description": "开封宋都皇城旅游度假区位于千年未变的中轴线——北宋东京城内皇宫所在地，是宋都皇家文化的核心区，也是开封文化旅游的核心区，有着无可替代的文化价值。 \\n度假区内文化旅游资源丰富，区内包含10个景点，大宋武侠城、中国翰园、铁塔景区、启封故园、城墙、州桥及汴河遗址、山陕甘会馆、延庆观、繁塔、地下战备粮库。",
-      "intro": "开封宋都皇城旅游度假区位于千年未变的中轴线——北宋东京城内皇宫所在地，是宋都皇家文化的核心区，也是开封文化旅游的核心区，有着无可替代的文化价值。 \\n度假区内文化旅游资源丰富，区内包含10个景点，大宋武侠城、中国翰园、铁塔景区、启封故园、城墙、州桥及汴河遗址、山陕甘会馆、延庆观、繁塔、地下战备粮库。",
+      "baselineKey": "core_00937ac63a",
+      "id": "manual_henan_7a3bd91e",
+      "name": "新县西河古村",
+      "city": "信阳",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/henan_7a3bd91e_verified.jpg",
+      "description": "新县西河古村位于信阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "新县西河古村位于信阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "人文历史、仿宋园林、亲子休闲度假区",
+      "category": "原生态古村落 / 山水自然 / 亲子溯溪",
       "tags": [
-        "人文历史、仿宋园林、亲子休闲度假区",
+        "原生态古村落 / 山水自然 / 亲子溯溪",
         "经典景点",
         "口碑热门"
       ],
-      "address": "河南省开封市龙亭区东京大道辅路",
+      "address": "信阳（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -142,14 +38,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "高铁可至开封北站或开封站，打车或乘公交前往景区；自驾可导航至度假区周边智慧停车场，停车后步行或换乘接驳车入园。",
-          "internal_arrive": "推荐从清明上河园南门进入，此处临近主干道，交通方便，且入园后能迅速进入核心游览区。",
-          "internal_traffic": "度假区内景点相对集中，主要靠步行；也可在街区使用共享单车，或乘坐大宋御河游船、景区接驳车等省力方式。",
+          "external_arrive": "建议自驾，导航至“西河古村落”或“古村内停车场”，村口有免费停车位；若乘公共交通，可从信阳高铁站乘车约1.5小时抵达，或在新县县城换乘当地车辆。",
+          "internal_arrive": "直接导航至古村内停车场，停车方便省心，下车即可进入核心景区。",
+          "internal_traffic": "村内面积不大，全程步行即可；也可租借共享电动车沿溪流骑行，感受山野微风。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "建议住在清明上河园、龙亭或七盛角周边的民宿与酒店，如宋潮双龙巷客栈、开封铂尔曼酒店等，方便步行前往各大景点，晚上还能逛夜市。",
+            "area": "村内有多家由古宅改建的特色民宿，推窗即见古枫杨和溪水，适合想体验慢生活的家庭；也可选择住在新县县城，车程约30至40分钟。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -160,31 +56,30 @@
           "道口烧鸡"
         ],
         "special_care": {
-          "elderly": "园区内演出较多，可多选择坐着观看的表演，避开长时间徒步；利用游船和接驳车节省体力，中午回酒店休息再逛夜景",
-          "children": "带娃可重点看水傀儡、马战等互动性强的实景演出，在虹桥和御街体验投壶、射箭等宋代游戏，增加趣味性。"
+          "elderly": "沿河石板路平缓，适合慢走散步、临水发呆，后山观景台可俯瞰全村，体力消耗小",
+          "children": "溪水浅且清澈，有专属下水区域，可带溯溪鞋、小网兜踩水捞鱼，体验竹筏划船，安全又清凉。"
         }
       },
       "lazy_routes": [
         {
-          "title": "清明上河园沉浸式宋韵半日游",
+          "title": "古村慢游溯溪线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "清明上河园南门入园",
-            "虹桥（打卡《清明上河图》核心场景）",
-            "水傀儡（观看水上非遗表演）",
-            "岳飞枪挑小梁王（大型马战实景演出）",
-            "大宋·保卫战（沉浸式战争演艺）",
-            "园区夜景灯光（感受梦回大宋氛围）"
+            "村口千年古枫杨",
+            "张氏宗祠",
+            "沿河石板路漫步",
+            "后山观景台俯瞰全景",
+            "西河工坊体验非遗手作"
           ],
           "duration": "半天",
-          "walking": "约8000步",
-          "physical": 3,
+          "walking": "约1.5公里",
+          "physical": 2,
           "tips": [
-            "园区内演出密集，建议入园后先领取或查看电子节目单，根据演出时间灵活调整路线，提前15-20分钟去热门演出区占位；可租宋制汉服拍照，沉浸感更强。"
+            "古村多青石板路，部分路段易长青苔，务必穿防滑舒适的运动鞋；村内商业化程度低，建议自备饮用水和小零食。"
           ],
-          "sourceTitle": "携程旅行 宋都皇城旅游度假区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -193,46 +88,42 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/henan100058.html",
-          "携程旅行 宋都皇城旅游度假区 详情页：https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 宋都皇城旅游度假区 详情页",
-          "url": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "宋都皇城旅游度假区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "骑行信阳新县西河古村落,小河两岸都是枝繁叶茂的老树,遮天蔽日,河水",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/136038248.html?poiType=3&scene=online",
-        "width": 5648,
-        "height": 3700
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4598249622240348549",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4598249622240348549",
+        "width": 3648,
+        "height": 2736
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "新县西河古村：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:55:43.506Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:02:13.399Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_defe8a5f52",
-    "core_2b988f2b42"
+    "core_00937ac63a"
   ],
-  "appliedAt": "2026-08-21T03:40:30.814Z",
+  "appliedAt": "2026-08-24T03:09:51.366Z",
   "appliedAttractionIds": [
-    "manual_henan_2eb0b922",
-    "manual_henan_98e4faf6"
+    "manual_henan_7a3bd91e"
   ],
   "appliedOverrideIds": []
 }

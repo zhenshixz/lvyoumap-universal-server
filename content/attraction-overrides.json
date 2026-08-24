@@ -7416,5 +7416,251 @@
       "reviewRequired": false,
       "warnings": []
     }
+  },
+  "amap_B0599000AS": {
+    "baselineKey": "core_d5b9c54dbf",
+    "id": "amap_B0599000AS",
+    "name": "珲春防川风景区",
+    "city": "延边朝鲜族",
+    "rating": 3.9,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/jilin_e70752e1_verified.jpg",
+    "description": "珲春防川风景区位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "珲春防川风景区位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "边境风光/民俗村落/观景台",
+    "tags": [
+      "边境风光/民俗村落/观景台",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "延边朝鲜族（具体入口请以景区官方导航与当日公告为准）",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾或包车前往（约70公里，车程1.5小时），高铁至珲春站后可乘防川专线车（仅限上午发车，以官方当日公告为准）。",
+        "internal_arrive": "防川风景区游客中心（统一购票、乘坐观光车入园）。",
+        "internal_traffic": "景区观光车（游客中心至龙虎阁及各村落点位接驳）。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "珲春市区（海鲜街、老客运站附近，方便就餐和出行）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "乌拉满族火锅",
+        "查干湖炖鱼",
+        "延吉冷面",
+        "吉林参鸡汤"
+      ],
+      "special_care": {
+        "elderly": "龙虎阁楼梯较滑，建议乘电梯上下；江边风大，备一件防风外套",
+        "children": "可带望远镜观察三国风景，东方第一村可喂海鸥，增加互动乐趣。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "一眼望三国·家庭省力休闲游",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "游客中心乘观光车至龙虎阁",
+          "乘电梯上11楼室内观景",
+          "下至10楼室外观景台远眺三国",
+          "乘观光车至东方第一村逛朝鲜族民俗村",
+          "喂海鸥",
+          "沿边境木栈道缓步慢行欣赏图们江景"
+        ],
+        "duration": "半天",
+        "walking": "约1至2公里（以观光车接驳为主，木栈道平缓）",
+        "physical": 2,
+        "tips": [
+          "龙虎阁电梯旺季排队较长，可考虑走楼梯下至10楼观景；务必携带身份证，边境区域禁飞无人机。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-21"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+        "高德地图 珲春防川景区：https://www.amap.com/place/B0MU57TC41"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 珲春防川景区",
+        "url": "https://www.amap.com/place/B0MU57TC41",
+        "poiId": "B0MU57TC41",
+        "evidenceMode": "live-amap-web-service",
+        "verifiedAt": "2026-08-21"
+      },
+      "basicInfoUpdatedAt": "2026-08-21",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "珲春 防川之防川风景区.jpg",
+      "author": "Liuxingy",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%8F%B2%E6%98%A5_%E9%98%B2%E5%B7%9D%E4%B9%8B%E9%98%B2%E5%B7%9D%E9%A3%8E%E6%99%AF%E5%8C%BA.jpg",
+      "width": 3840,
+      "height": 2880
+    },
+    "quality_status": {
+      "reviewRequired": true,
+      "warnings": [
+        "仅核验到城市级属地，具体入口需以景区官方导航为准"
+      ]
+    }
+  },
+  "amap_B0FFI14USI": {
+    "baselineKey": "core_c054f044e9",
+    "id": "amap_B0FFI14USI",
+    "name": "格尔木乌素特水上雅丹",
+    "city": "海西州",
+    "rating": 4.8,
+    "reviewsCount": "高德地图",
+    "image": "/assets/images/attractions/qinghai_8d102e25_verified.jpg",
+    "description": "格尔木乌素特水上雅丹位于海西州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "intro": "格尔木乌素特水上雅丹位于海西州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+    "level": "热门景点",
+    "category": "地质地貌观光",
+    "tags": [
+      "地质地貌观光",
+      "经典景点",
+      "口碑热门"
+    ],
+    "address": "海西州（具体入口请以景区官方导航与当日公告为准）",
+    "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
+    "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
+    "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
+    "guide_data": {
+      "clothing": {
+        "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
+        "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
+        "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
+        "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
+      },
+      "transport": {
+        "external_arrive": "自驾从格尔木出发约350公里，车程约4小时，沿G315国道行驶，沿途无公交直达，建议自驾或包车前往；出发前加满油，距景区约40公里内无加油站。",
+        "internal_arrive": "导航至\"乌素特水上雅丹地质公园\"游客中心，车辆停放停车场后购票入园。",
+        "internal_traffic": "景区纵深约12公里，必须乘坐观光车游览，站点自由上下，返程逐站停靠。",
+        "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
+      },
+      "housing": [
+        {
+          "area": "景区内（乌素特雅丹大酒店、梦幻星空野奢酒店及房车营地，方便看日出日落和星空）；景区外（大柴旦镇酒店，性价比高但距景区约2.5小时车程）。",
+          "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
+        }
+      ],
+      "food": [
+        "青海手工酸奶",
+        "青海牦牛肉干",
+        "青海土火锅",
+        "青海手抓羊肉"
+      ],
+      "special_care": {
+        "elderly": "景区海拔约2800米，行动放缓预防高反；全程依赖观光车，各站点步行距离短，适合长辈；注意昼夜温差大，备好薄羽绒或冲锋衣",
+        "children": "可在湖边喂海鸥（自备面包或小鱼干），对小朋友很有吸引力；乘坐快艇穿梭雅丹群间体验感好；注意湖边安全，勿靠近深水区。\n\n你这次是打算从格尔木自驾过去，还是包车？如果是自驾的话，路上可以顺便看看315 U型公路和西台吉乃尔双色湖，不过U型公路现在修路可能封闭了，建议出发前再确认一下路况。"
+      }
+    },
+    "lazy_routes": [
+      {
+        "title": "精华省力游（观光车直达终点再往回玩）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "望海台（制高点俯瞰\"西海舰队\"全景）",
+          "蓬莱仙岛（木栈道近拍水中雅丹）",
+          "西海舰队（雅丹群落如战舰列阵，日落金光绝美）",
+          "黄金沙滩（碧水配黄沙，逆光剪影与日落机位）"
+        ],
+        "duration": "半天",
+        "walking": "约1.5公里（各站点间木栈道及观景台短途步行）",
+        "physical": 2,
+        "tips": [
+          "务必乘坐观光车直达最远端望海台，再一站站往回玩，不走回头路；景区内餐饮偏少偏贵，建议自备饮用水和零食；戈壁风大、紫外线强，注意防晒防风；无人机需提前报备，飞手注意湖面安全。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-24"
+      },
+      {
+        "title": "雅丹之眼深度游（需额外体力或自费项目）",
+        "badge": "少走回头路",
+        "suitability": "第一次到访、亲子与长辈同行",
+        "nodes": [
+          "望海台",
+          "乘坐越野车或徒步前往雅丹之眼",
+          "雅丹之眼（俯瞰祖母绿色水洼与雅丹群同框）",
+          "原路返回望海台继续后续站点"
+        ],
+        "duration": "半天",
+        "walking": "单程约2.2公里（徒步约40分钟，也可乘越野车）",
+        "physical": 4,
+        "tips": [
+          "雅丹之眼位于望海台深处约2公里，观光车不走回头路，需从望海台单独前往；体力一般或带老人小孩建议选择越野车往返，避免暴晒徒步；深处无手机信号，提前下载离线地图。"
+        ],
+        "sourceTitle": "xiaohongshu_core_candidates",
+        "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+        "verifiedAt": "2026-08-24"
+      }
+    ],
+    "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
+    "quality_policy": {},
+    "source_evidence": {
+      "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
+      "basicInfoSources": [
+        "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
+      ],
+      "ratingSource": {
+        "platform": "高德地图",
+        "title": "高德地图 乌素特(水上)雅丹地质公园",
+        "url": "https://www.amap.com/place/B0FFI14USI",
+        "poiId": "B0FFI14USI",
+        "evidenceMode": "existing-amap-record",
+        "verifiedAt": "2026-08-24"
+      },
+      "basicInfoUpdatedAt": "2026-08-24",
+      "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
+    },
+    "image_source": {
+      "title": "水上雅丹,全称乌素特雅丹地质公园,位于青海省海西州大柴旦行委翁台",
+      "author": "公开网页图片提供者",
+      "provider": "公开图片搜索",
+      "license": "公开网页图片（家庭自用展示）",
+      "licenseUrl": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4714975112321092219",
+      "sourceUrl": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4714975112321092219",
+      "width": 1707,
+      "height": 1280
+    },
+    "quality_status": {
+      "reviewRequired": true,
+      "warnings": [
+        "独立可追溯来源少于2个",
+        "仅核验到城市级属地，具体入口需以景区官方导航为准",
+        "格尔木乌素特水上雅丹：基本资料目前只有1个可追溯来源"
+      ]
+    },
+    "ratingAudit": {
+      "selected": "高德地图",
+      "status": "inherited-after-identity-heal",
+      "existingId": "amap_B0FFI14USI"
+    }
   }
 }

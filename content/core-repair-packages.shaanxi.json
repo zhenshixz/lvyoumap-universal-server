@@ -1,30 +1,32 @@
 {
   "province": "陕西",
   "status": "applied",
-  "createdAt": "2026-08-21T03:05:06.615Z",
-  "updatedAt": "2026-08-21T03:05:07.254Z",
+  "createdAt": "2026-08-21T09:28:09.097Z",
+  "updatedAt": "2026-08-24T03:12:09.180Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
-  "warnings": [],
+  "warnings": [
+    "驼铃传奇秀：基本资料目前只有1个可追溯来源"
+  ],
   "seedFile": "content/core-repair-seeds.shaanxi.json",
   "attractions": [
     {
-      "baselineKey": "core_5530393ada",
-      "id": "manual_shaanxi_43bc43f5",
-      "name": "秦岭四宝科学公园",
-      "city": "周至",
-      "rating": 4.8,
-      "reviewsCount": "1082条携程点评",
-      "image": "/assets/images/attractions/shaanxi_43bc43f5_verified.jpg",
-      "description": "秦岭四宝科学公园位于西安市周至县楼观台西边，是展示陕西省生态文明建设成果、展示秦岭生物多样性、展示陕西省野生动物保护成果的重要窗口。该公园打响秦岭大熊猫文化品牌，成为陕西省文旅产业新亮点。",
-      "intro": "秦岭四宝科学公园位于西安市周至县楼观台西边，是展示陕西省生态文明建设成果、展示秦岭生物多样性、展示陕西省野生动物保护成果的重要窗口。该公园打响秦岭大熊猫文化品牌，成为陕西省文旅产业新亮点。",
+      "baselineKey": "core_dcca5a9ca0",
+      "id": "manual_shaanxi_a6e66539",
+      "name": "驼铃传奇秀",
+      "city": "西安",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/shaanxi_a6e66539_verified.jpg",
+      "description": "驼铃传奇秀位于西安（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "驼铃传奇秀位于西安（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "动物园 / 自然科普",
+      "category": "室内沉浸式实景演艺",
       "tags": [
-        "动物园 / 自然科普",
+        "室内沉浸式实景演艺",
         "经典景点",
         "口碑热门"
       ],
-      "address": "陕西省西安市周至县温泉道楼观道温泉酒店西南侧195米",
+      "address": "西安（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +38,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾导航\"秦岭四宝科学公园\"，西安市区约70公里、1.5小时可达；公共交通可在西安市汽车站（丰庆路13号）乘大巴至楼观台站，再换乘当地车辆费用以官方当日公告为准到达。",
-          "internal_arrive": "从正门入园，左手边即为观光车售票处及乘车点，也可选择步行上山。",
-          "internal_traffic": "园区观光车费用以官方当日公告为准，直达山顶2号馆，下山全程下坡无需乘车。",
+          "external_arrive": "可乘坐地铁3号线至务庄站或保税区站，出站后换乘公交或打车前往；自驾可导航至华夏文旅大剧院第一停车场，停车便利。",
+          "internal_arrive": "建议至少提前40分钟到达剧院，预留时间取票、寻找入口和卫生间，避免匆忙。",
+          "internal_traffic": "景区主要为单一剧场内部，无内部公共交通需求。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "园区周边有赵公故里酒店、道温泉酒店等，距离园区约6分钟车程，可泡汤缓解疲劳；也可选择住在西安市区当天往返。",
+            "area": "若希望行程轻松，可选择住在华夏文旅度假区附近；若需兼顾市区其他景点，建议住在钟楼或大雁塔周边，看演出当天再前往度假区。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,33 +56,33 @@
           "Biangbiang面"
         ],
         "special_care": {
-          "elderly": "务必乘坐观光车直达山顶，全程下坡不费腿；穿软底运动鞋，带保温杯和薄外套（山间温差大）",
-          "children": "园区步道平缓，适合推婴儿车；可带集章本在1号馆文创店和出口处免费盖章；自备零食和水，园内餐饮选择较少。"
+          "elderly": "剧场内设有无障碍通道与母婴休息区，对长辈友好，但演出音效较大，靠近舞台的座位可能产生不适，建议选择中后排座位",
+          "children": "真动物互动和震撼特效非常吸引小朋友，但剧情涉及丝路艰险与离别，更适合有一定历史认知和坐得住的三年级以上儿童，低幼宝宝建议家长提前安抚并备好外套。"
         }
       },
       "lazy_routes": [
         {
-          "title": "观光车登顶+下坡省力游（家庭首选）",
+          "title": "经典室内观演省力路线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "入园乘坐观光车直达山顶2号馆",
-            "1号馆（看七仔及成年熊猫）",
-            "熊猫幼崽馆",
-            "羚牛展区",
-            "朱鹮湿地",
-            "金丝猴峡谷",
-            "小熊猫区",
-            "出口文创店"
+            "抵达华夏文旅大剧院",
+            "提前入场休息与使用卫生间",
+            "进入剧场就座",
+            "观看360°旋转观众席实景演出（包含真骆驼",
+            "真狼互动及瀑布",
+            "火山",
+            "飘雪等特效）",
+            "演出结束离场"
           ],
           "duration": "半天",
-          "walking": "约1.5-2小时",
-          "physical": 2,
+          "walking": "极少（主要为从入口到剧场的短距离步行，剧场内全程 seated）",
+          "physical": 1,
           "tips": [
-            "观光车费用以官方当日公告为准，带老人小孩强烈建议乘坐；上午官方当日建议时段-官方当日建议时段是熊猫最活跃时段，官方当日建议时段-官方当日建议时段大多午休，建议早入园。"
+            "演出中有瀑布倾泻等水雾特效，前排座位容易被溅湿，建议选中间或靠后区域；剧场内空调较足，建议带一件薄外套保暖。"
           ],
-          "sourceTitle": "携程旅行 秦岭四宝科学公园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/zhouzhi2781/5716259.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -89,44 +91,42 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shanxi100057.html",
-          "携程旅行 秦岭四宝科学公园 详情页：https://you.ctrip.com/sight/zhouzhi2781/5716259.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 秦岭四宝科学公园 详情页",
-          "url": "https://you.ctrip.com/sight/zhouzhi2781/5716259.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "秦岭四宝科学公园 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
+        "title": "🐫🔥 西安第三天:震撼的驼铃传奇秀 🎭",
+        "author": "公开网页图片提供者",
+        "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/zhouzhi2781/5716259.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/zhouzhi2781/5716259.html?poiType=3&scene=online",
-        "width": 2000,
-        "height": 1500
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4677596746271900222",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4677596746271900222",
+        "width": 1920,
+        "height": 1410
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "驼铃传奇秀：基本资料目前只有1个可追溯来源"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T03:05:07.215Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:28:09.685Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_5530393ada"
+    "core_dcca5a9ca0"
   ],
-  "appliedAt": "2026-08-21T03:41:26.111Z",
+  "appliedAt": "2026-08-24T03:12:11.071Z",
   "appliedAttractionIds": [
-    "manual_shaanxi_43bc43f5"
+    "manual_shaanxi_a6e66539"
   ],
   "appliedOverrideIds": []
 }

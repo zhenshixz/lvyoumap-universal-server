@@ -3,6 +3,7 @@ const http = require('http');
 const net = require('net');
 const path = require('path');
 const { spawn } = require('child_process');
+const { execFileSync } = require('child_process');
 const { probablySameAttraction, validateManualAttraction } = require('./generate_static_data');
 const { readJson, updateBatch } = require('./observation_batch');
 
@@ -14,11 +15,35 @@ const args = new Map(process.argv.slice(2).map(value => {
   return match ? [match[1], match[2]] : [value.replace(/^--/, ''), true];
 }));
 const manifestPath = String(args.get('manifest') || '');
-if (!manifestPath) throw new Error('请使用 --manifest=批次文件。');
 
 function writeJson(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+}
+
+function isBuildReady(directory, provinceSlugs = []) {
+  const required = [
+    'index.html',
+    'app.js',
+    'style.css',
+    path.join('data', 'search-index.json'),
+    path.join('data', 'provinces-index.json'),
+    ...provinceSlugs.map(slug => path.join('data', 'provinces', `${slug}.json`)),
+  ];
+  return required.every(relativePath => fs.existsSync(path.join(directory, relativePath)));
+}
+
+function ensureBuildReady(provinceSlugs = []) {
+  const distDir = path.join(rootDir, 'dist');
+  if (isBuildReady(distDir, provinceSlugs)) return;
+  console.log('检测到 dist 不完整，正在自动重新构建后继续生成预览……');
+  execFileSync(process.execPath, [path.join(rootDir, 'scripts', 'build.js')], {
+    cwd: rootDir,
+    stdio: 'inherit',
+  });
+  if (!isBuildReady(distDir, provinceSlugs)) {
+    throw new Error('自动构建完成后 dist 仍不完整，请检查磁盘空间。');
+  }
 }
 
 function merge(target, patch) {
@@ -81,10 +106,12 @@ function previewHtml(items, baseUrl, failed) {
 }
 
 async function main() {
+  if (!manifestPath) throw new Error('请使用 --manifest=批次文件。');
   let manifest = readJson(manifestPath, null);
   if (!manifest) throw new Error('批次清单不存在。');
   const readyStates = manifest.provinces.filter(item => item.status === 'ready');
   if (!readyStates.length) throw new Error('批次中没有可预览省份。');
+  ensureBuildReady(readyStates.map(item => item.slug));
   const previewRoot = path.join(runtimeDir, 'previews', 'observation-batch');
   const stagingRoot = `${previewRoot}.next`;
   const siteDir = path.join(stagingRoot, 'site');
@@ -101,10 +128,11 @@ async function main() {
   for (const state of readyStates) {
     const packageData = readJson(path.join(contentDir, `core-repair-packages.${state.slug}.json`), null);
     if (packageData?.status !== 'reviewed') throw new Error(`${state.province}补全包状态已变化，请重新续跑。`);
+    const allowedKeys = new Set(state.readyKeys?.length ? state.readyKeys : state.selectedKeys || []);
     const provincePath = path.join(siteDir, 'data', 'provinces', `${state.slug}.json`);
     const provinceData = readJson(provincePath, null);
     if (!provinceData?.attractions) throw new Error(`${state.province}静态数据不存在。`);
-    for (const raw of packageData.attractions || []) {
+    for (const raw of (packageData.attractions || []).filter(item => allowedKeys.has(item.baselineKey))) {
       const item = JSON.parse(JSON.stringify(raw));
       merge(item, lazyOverrides[item.id] || {});
       delete item.baselineKey;
@@ -116,7 +144,7 @@ async function main() {
       search.push({ province: state.province, provinceId: state.slug, ...item });
       previewItems.push({ ...item, province: state.province });
     }
-    for (const [id, patch] of Object.entries(packageData.overrides || {})) {
+    for (const [id, patch] of Object.entries(packageData.overrides || {}).filter(([, item]) => allowedKeys.has(item.baselineKey))) {
       const target = provinceData.attractions.find(item => item.id === id);
       if (!target) throw new Error(`${state.province}找不到待增强景点：${id}`);
       merge(target, patch);
@@ -153,7 +181,11 @@ async function main() {
   console.log(`全国单源批次预览已生成：${manifest.previewUrl}`);
 }
 
-main().catch(error => {
-  console.error(`生成全国批次预览失败：${error.message}`);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch(error => {
+    console.error(`生成全国批次预览失败：${error.message}`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { isBuildReady };

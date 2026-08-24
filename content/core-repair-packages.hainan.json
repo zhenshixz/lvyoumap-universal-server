@@ -1,30 +1,30 @@
 {
   "province": "海南",
   "status": "applied",
-  "createdAt": "2026-08-21T02:52:41.318Z",
-  "updatedAt": "2026-08-21T02:52:41.994Z",
+  "createdAt": "2026-08-21T09:01:27.964Z",
+  "updatedAt": "2026-08-24T03:09:32.962Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [],
   "seedFile": "content/core-repair-seeds.hainan.json",
   "attractions": [
     {
-      "baselineKey": "core_bcb0bc6de9",
-      "id": "manual_hainan_10c0b819",
-      "name": "红峡谷漂流",
-      "city": "五指山",
-      "rating": 4.6,
-      "reviewsCount": "627条携程点评",
-      "image": "/assets/images/attractions/hainan_10c0b819_verified.jpg",
-      "description": "红峡谷漂流位于五指山红峡谷文化旅游风景区内，距离五指山市区12公里。景区占地3000亩，是以五指山热带雨林、峡谷漂流为主题，观光度假、休闲娱乐、居住养生为一体的复合型景区。",
-      "intro": "红峡谷漂流位于五指山红峡谷文化旅游风景区内，距离五指山市区12公里。景区占地3000亩，是以五指山热带雨林、峡谷漂流为主题，观光度假、休闲娱乐、居住养生为一体的复合型景区。",
+      "baselineKey": "core_82a6d404d2",
+      "id": "manual_hainan_4c1f0304",
+      "name": "棋子湾",
+      "city": "昌江",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/hainan_4c1f0304_verified.jpg",
+      "description": "棋子湾位于昌江（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "棋子湾位于昌江（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "峡谷漂流、热带雨林户外玩水",
+      "category": "滨海自然景观",
       "tags": [
-        "峡谷漂流、热带雨林户外玩水",
+        "滨海自然景观",
         "经典景点",
         "口碑热门"
       ],
-      "address": "南圣镇前方6公里处红峡谷漂流",
+      "address": "昌江（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -36,14 +36,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "自驾导航至“五指山红峡谷文化旅游区漂流-终点站”，三亚出发约1.5-2小时，海口出发约2.5-3小时；公共交通可至五指山汽车站后打车前往，但景区周边返程打车较难，自驾最省心。",
-          "internal_arrive": "建议导航至终点停车场，乘坐景区免费摆渡车前往起点；若停在起点，漂流结束需再乘摆渡车返回起点取车。",
-          "internal_traffic": "景区提供起点与终点之间的免费摆渡车，约10分钟一班；漂流全程在河道内进行，无其他内部交通工具。",
+          "external_arrive": "高铁可至棋子湾站，出站打车约15分钟可达景区；自驾从海口出发约2.5小时，三亚出发约2小时。",
+          "internal_arrive": "推荐从大角公园入口进入，停车场配套完善，周边有小吃摊和椰子售卖，补给方便。",
+          "internal_traffic": "景区各角之间距离较远，建议自驾或租用电动车；部分度假酒店提供往返大角公园的免费接驳车（需提前向前台确认发车时间）。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "推荐入住五指山市区（如五指山中部大酒店），性价比高且餐饮出行便利；或选择景区周边的温泉度假区，适合漂流后放松休整。",
+            "area": "推荐入住棋子湾开元度假村等沿海度假酒店，或昌化镇上的民宿，前者配套齐全适合躺平，后者周边餐饮选择更多。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -54,143 +54,30 @@
           "和乐蟹"
         ],
         "special_care": {
-          "elderly": "因漂流对体力有一定要求且景区有年龄限制（通常男性55周岁、女性50周岁以下），长辈如不符合条件或体力有限，可仅参与红峡谷栈道徒步观景，欣赏热带雨林与峡谷地貌",
-          "children": "14周岁以上可参与漂流，需成人陪同，平缓河段适合亲子打水仗，也可体验亲子皮筏艇、水上行走球等轻玩水项目。"
+          "elderly": "大角公园沙滩平缓，栈道设施完善，适合长辈散步看海",
+          "children": "中角礁石区退潮后可赶海抓小螃蟹，大角沙滩适合挖沙玩水，建议自带玩沙工具和赶海装备。"
         }
       },
       "lazy_routes": [
         {
-          "title": "家庭省力休闲漂流线",
+          "title": "三段海岸亲子慢游线",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "终点停车场停车",
-            "乘坐景区摆渡车至起点",
-            "寄存行李（工作人员统一转运至终点）",
-            "穿戴救生装备",
-            "漂流（3.8公里，约1.5-2小时，平缓河段打水仗）",
-            "终点淋浴洗漱",
-            "乘摆渡车返程"
+            "大角公园亲海栈道（仙人掌丛",
+            "观景台）",
+            "中角礁石区（赶海拾贝",
+            "看海浪撞石）",
+            "小角沙滩（看海上日落）"
           ],
           "duration": "半天",
-          "walking": "约500米（含摆渡车上下及淋浴间步行）",
-          "physical": 3,
-          "tips": [
-            "自驾建议将车停在终点停车场，换洗衣物直接放车上，可省去租储物柜的费用；漂流全程湿透，务必自带全套换洗衣物、毛巾及手机防水袋。"
-          ],
-          "sourceTitle": "携程旅行 红峡谷漂流 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/wuzhishan982/1685044.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hainan100001.html",
-          "携程旅行 红峡谷漂流 详情页：https://you.ctrip.com/sight/wuzhishan982/1685044.html?poiType=66&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 红峡谷漂流 详情页",
-          "url": "https://you.ctrip.com/sight/wuzhishan982/1685044.html?poiType=66&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "红峡谷漂流 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/wuzhishan982/1685044.html?poiType=66&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/wuzhishan982/1685044.html?poiType=66&scene=online",
-        "width": 6000,
-        "height": 4000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_79f3ed880b",
-      "id": "manual_hainan_3165c013",
-      "name": "雷琼海口火山群世界地质公园",
-      "city": "海口",
-      "rating": 4.6,
-      "reviewsCount": "9679条携程点评",
-      "image": "/assets/images/attractions/hainan_3165c013_verified.jpg",
-      "description": "雷琼海口火山群世界地质公园位于海口市石山镇。公园拥有类型多样的火山，堪称一个天然的地质博物馆。",
-      "intro": "雷琼海口火山群世界地质公园位于海口市石山镇。公园拥有类型多样的火山，堪称一个天然的地质博物馆。",
-      "level": "热门景点",
-      "category": "世界地质公园 / 国家4A级景区 / 火山地质与热带雨林生态景区",
-      "tags": [
-        "世界地质公园 / 国家4A级景区 / 火山地质与热带雨林生态景区",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "海口市秀英区石山镇风景路89号",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至“火山口地质公园东门停车场”，距海口市区约30-40分钟车程，停车方便；公共交通可乘坐旅游1线或市郊4路直达景区门口。",
-          "internal_arrive": "建议从东门进入，入园后先逛有空调的火山科普馆避暑并了解地质知识，再开始户外徒步，体验更佳。",
-          "internal_traffic": "景区内部主要依靠步行，各景点之间通过栈道和石阶连接，无内部观光车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "可选择住在景区附近的石山镇，周边有农家乐和特色餐饮；或返回海口市区西海岸或骑楼老街附近住宿，餐饮和交通更便利。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "加积鸭",
-          "海南文昌鸡",
-          "椰子鸡",
-          "和乐蟹"
-        ],
-        "special_care": {
-          "elderly": "可选择走半山腰的观景台路线俯瞰火山口，不必强求下到陡峭的坑底",
-          "children": "火山科普馆非常适合亲子研学，出口处有儿童乐园可继续放电，建议自带水壶和小零食补充体力。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "家庭省力环线（不走回头路）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "东门入口",
-            "火山科普馆（室内空调，看火山标本与3D模型）",
-            "热带雨林栈道（穿梭于黑色火山岩与茂密植被间）",
-            "马鞍岭火山口（登顶海口制高点，俯瞰全景与琼州海峡）",
-            "下探风炉岭火山口底部（近距离触摸熔岩岩壁，感受天然清凉）",
-            "火山神庙（打卡玄武岩古建筑）",
-            "仙人洞熔岩隧道（探索地心溶洞，寻找天窗丁达尔光束）",
-            "火山石器文化园（观看古人类石磨",
-            "石臼等器具）",
-            "休闲广场与出口（可逛儿童乐园）"
-          ],
-          "duration": "半天",
-          "walking": "约1.5-2小时",
+          "walking": "约1.5公里",
           "physical": 2,
           "tips": [
-            "下火山口底部的台阶较陡，务必扶好扶手，慢走稳行；洞内温度约23℃，建议带一件薄外套；全程树荫较多，但山顶部分区域无遮挡，需做好防晒。"
+            "中角礁石区建议穿防滑溯溪鞋；赶海前请查询当日潮汐表，退潮时前往更安全；西海岸紫外线强，需备足防晒用品。"
           ],
-          "sourceTitle": "携程旅行 雷琼海口火山群世界地质公园 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/haikou37/3175.html?poiType=3&scene=online",
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
           "verifiedAt": "2026-08-21"
         }
       ],
@@ -199,266 +86,41 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hainan100001.html",
-          "携程旅行 雷琼海口火山群世界地质公园 详情页：https://you.ctrip.com/sight/haikou37/3175.html?poiType=3&scene=online"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q24836912 实体页：https://www.wikidata.org/wiki/Q24836912"
         ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 雷琼海口火山群世界地质公园 详情页",
-          "url": "https://you.ctrip.com/sight/haikou37/3175.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
+        "ratingSource": null,
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "雷琼海口火山群世界地质公园是国家4a级旅游景区,也是海南省唯一的一",
+        "title": "昌江棋子湾自驾游攻略",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4061914146348837798",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_4061914146348837798",
+        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3403164616611259504",
+        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3403164616611259504",
         "width": 1440,
-        "height": 1080
+        "height": 1890
       },
       "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_c9e5e02dc9",
-      "id": "manual_hainan_11291aca",
-      "name": "五指山水满河热带雨林风景区",
-      "city": "五指山",
-      "rating": 4.2,
-      "reviewsCount": "2067条携程点评",
-      "image": "/assets/images/attractions/hainan_11291aca_verified.jpg",
-      "description": "五指山水满河热带雨林风景区位于五指山脚下的水满乡，这里有着茂密的热带雨林景观，原始黎村的母亲河——水满河流经了整个景区，空气清新，风光旖旎。在景区内还可正面远眺五指山，领略它的巍峨壮观和大自然的鬼斧神工。",
-      "intro": "五指山水满河热带雨林风景区位于五指山脚下的水满乡，这里有着茂密的热带雨林景观，原始黎村的母亲河——水满河流经了整个景区，空气清新，风光旖旎。在景区内还可正面远眺五指山，领略它的巍峨壮观和大自然的鬼斧神工。",
-      "level": "热门景点",
-      "category": "热带雨林观光、轻徒步",
-      "tags": [
-        "热带雨林观光、轻徒步",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "五指山市水满乡水满上村",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "建议自驾，导航至“五指山水满河热带雨林风景区停车场”，停车免费。从海口或三亚出发车程约2小时，沿途多为盘山路，新手司机需谨慎驾驶。",
-          "internal_arrive": "入园前务必确认导航目的地为“五指山水满河热带雨林风景区”，切勿与“五指山国家级自然保护区”（爬主峰登山口）混淆，两者是独立景区。",
-          "internal_traffic": "景区内需乘坐往返观光车，步行至观山台距离较远，观光车为必乘项目。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "可选择入住水满乡周边的民宿（如雨林仙境客栈等）体验山景，或选择五指山市区的酒店，餐饮选择更丰富。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "加积鸭",
-          "海南文昌鸡",
-          "椰子鸡",
-          "和乐蟹"
-        ],
-        "special_care": {
-          "elderly": "选择一环小环线，全程木栈道和缓坡，坡度极低，适合走走停停",
-          "children": "沿水满河溪谷浅滩可浅踩玩水，观察雨林昆虫和植物，但需全程看护，严禁下水深潭。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "轻松亲子观景线（一环小环线）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "入园乘坐观光车直达观山台",
-            "拍摄五指山全景",
-            "进入一环平缓雨林栈道",
-            "沿途观赏板根",
-            "绞杀榕",
-            "桫椤等雨林奇观",
-            "漫步水满河溪谷浅滩",
-            "抵达水满亭",
-            "原路乘车返程"
-          ],
-          "duration": "半天",
-          "walking": "约2公里",
-          "physical": 2,
-          "tips": [
-            "观光车包含在门票内，务必乘坐以节省体力；栈道部分路段潮湿，需穿防滑鞋；景区内补给点较少，建议自带饮用水。"
-          ],
-          "sourceTitle": "携程旅行 五指山水满河热带雨林风景区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/wuzhishan982/110178.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hainan100001.html",
-          "携程旅行 五指山水满河热带雨林风景区 详情页：https://you.ctrip.com/sight/wuzhishan982/110178.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 五指山水满河热带雨林风景区 详情页",
-          "url": "https://you.ctrip.com/sight/wuzhishan982/110178.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "五指山水满河热带雨林风景区 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/wuzhishan982/110178.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/wuzhishan982/110178.html?poiType=3&scene=online",
-        "width": 2992,
-        "height": 2000
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_0f60819ddb",
-      "id": "manual_hainan_91680e1b",
-      "name": "西沙群岛",
-      "city": "三沙",
-      "rating": 4.7,
-      "reviewsCount": "26条携程点评",
-      "image": "/assets/images/attractions/hainan_91680e1b_verified.jpg",
-      "description": "西沙群岛是中国南海陆地面积第一大的群岛，北起北礁，南至先驱滩，东起西渡滩，西止于中建岛。 由海南省三沙市西沙区管辖。",
-      "intro": "西沙群岛是中国南海陆地面积第一大的群岛，北起北礁，南至先驱滩，东起西渡滩，西止于中建岛。 由海南省三沙市西沙区管辖。",
-      "level": "热门景点",
-      "category": "海岛观光、爱国主义教育、海洋生态",
-      "tags": [
-        "海岛观光、爱国主义教育、海洋生态",
-        "经典景点",
-        "口碑热门"
-      ],
-      "address": "中国海南省三沙市",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "从各地飞往三亚凤凰国际机场，再前往三亚凤凰岛国际邮轮港登船。目前去西沙只有邮轮和帆船两种方式，邮轮适合绝大多数家庭游客，帆船更适合追求深度体验的年轻玩家。",
-          "internal_arrive": "三亚凤凰岛国际邮轮港。建议提前1-2小时到达候船大厅，按管家指引办理登船手续。",
-          "internal_traffic": "邮轮停泊在深海区域，无法直接靠岸，登岛需乘坐官方冲锋艇（接驳艇）往返，每次登岛约5-10分钟航程，由管家分组安排。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "全程住宿在邮轮上（4天3晚），岛上不安排住宿。邮轮房型从四人间到海景双人间不等，建议选择有窗房型，且祥龙岛号吨位更大、设施更新，对晕船人群更友好。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "加积鸭",
-          "海南文昌鸡",
-          "椰子鸡",
-          "和乐蟹"
-        ],
-        "special_care": {
-          "elderly": "优先选择祥龙岛号（船大更稳），提前备好晕船药；船上有多层电梯，房间有独立卫生间，整体较省力；70岁以上需提供3个月内体检报告并签署免责协议",
-          "children": "10岁以下暂不接待（部分航次12岁以下），10-70周岁可参团；岛上紫外线极强，需做好物理防晒；可带孩子参加升旗仪式，是很好的爱国教育体验。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "邮轮4天3晚经典三岛游（家庭省力版）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "Day 1 登船启航：下午在三亚凤凰岛国际邮轮港办理登船手续，由专属管家带领熟悉邮轮设施（餐厅",
-            "超市",
-            "甲板等），傍晚享用晚餐，在甲板欣赏海上日落。\nDay 2 全富岛 + 银屿岛：上午乘坐冲锋艇登全富岛，参加升国旗仪式，在纯白珊瑚沙滩上拍照，感受\"玻璃海\"；下午前往银屿岛，逛渔村",
-            "看七色海，在岛上品尝渔民现煮海鲜。\nDay 3 银屿岛 + 鸭公岛：上午再次登银屿岛，退潮时漫步海滩",
-            "寄明信片；下午登鸭公岛，看由珊瑚碎石堆砌的原生态渔岛，在指定区域浮潜看鱼群。\nDay 4 返航三亚：清晨在甲板看日出，上午享用早餐并办理离船手续，约8点左右抵达三亚，行程结束。"
-          ],
-          "duration": "半天",
-          "walking": "登岛时步行约1-2小时/岛，邮轮内可自由活动",
-          "physical": 2,
-          "tips": [
-            "全程必须跟团，由管家统一安排冲锋艇接驳登岛，不可自由行。\n登岛必须穿带后跟的涉水鞋或洞洞鞋，严禁穿拖鞋、人字拖。\n岛上无商店、信号弱，建议带少量现金和防水手机袋。\n严禁捡拾或带走珊瑚、贝壳、砗磲等海洋生物，垃圾需带回邮轮。"
-          ],
-          "sourceTitle": "携程旅行 西沙群岛 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/sansha120101/143006927.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/hainan100001.html",
-          "携程旅行 西沙群岛 详情页：https://you.ctrip.com/sight/sansha120101/143006927.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 西沙群岛 详情页",
-          "url": "https://you.ctrip.com/sight/sansha120101/143006927.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-21"
-        },
-        "basicInfoUpdatedAt": "2026-08-21",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "西沙群岛 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/sansha120101/143006927.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/sansha120101/143006927.html?poiType=3&scene=online",
-        "width": 1620,
-        "height": 1080
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
+        "reviewRequired": true,
+        "warnings": [
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+        ]
       }
     }
   ],
   "overrides": {},
   "reviewedAt": "2026-08-21",
-  "reviewedAtIso": "2026-08-21T02:52:41.956Z",
-  "batchId": "observation-2026-08-21T02-45-45-778Z",
+  "reviewedAtIso": "2026-08-21T09:01:28.617Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
   "batchSelectedKeys": [
-    "core_bcb0bc6de9",
-    "core_79f3ed880b",
-    "core_c9e5e02dc9",
-    "core_0f60819ddb"
+    "core_82a6d404d2"
   ],
-  "appliedAt": "2026-08-21T03:40:20.940Z",
+  "appliedAt": "2026-08-24T03:09:34.181Z",
   "appliedAttractionIds": [
-    "manual_hainan_10c0b819",
-    "manual_hainan_3165c013",
-    "manual_hainan_11291aca",
-    "manual_hainan_91680e1b"
+    "manual_hainan_4c1f0304"
   ],
   "appliedOverrideIds": []
 }

@@ -1,142 +1,32 @@
 {
   "province": "安徽",
   "status": "applied",
-  "createdAt": "2026-08-18T02:29:15.103Z",
-  "updatedAt": "2026-08-18T02:29:15.103Z",
+  "createdAt": "2026-08-21T08:52:01.660Z",
+  "updatedAt": "2026-08-24T03:08:39.450Z",
   "policy": "官方身份与基本信息优先；主流OTA只作游客视角补充；图片必须可追溯；点点懒人攻略完成后才能进入最终质量闸门。",
   "warnings": [
-    "黄山黟县国际乡村旅游度假区：基本资料目前只有1个可追溯来源",
-    "合肥市巢湖半汤温泉养生度假区：基本资料目前只有1个可追溯来源"
+    "凤阳博物馆：基本资料目前只有1个可追溯来源"
   ],
   "seedFile": "content/core-repair-seeds.anhui.json",
   "attractions": [
     {
-      "baselineKey": "core_775ebb6257",
-      "id": "manual_anhui_1a20932b",
-      "name": "古徽州文化旅游区",
-      "city": "歙县",
-      "rating": 4.3,
-      "reviewsCount": "241条携程点评",
-      "image": "/assets/images/attractions/anhui_1a20932b_verified.jpg",
-      "description": "古徽州文化旅游区位于徽文化发祥地安徽省黄山市，由徽州古城、棠樾牌坊群鲍家花园、唐模、潜口民宅、呈坎五大精品景区组成，北依黄山，南接千岛湖。 徽州古城是徽州府治所在地，是保存尤为完好的中国四大古城之一。",
-      "intro": "古徽州文化旅游区位于徽文化发祥地安徽省黄山市，由徽州古城、棠樾牌坊群鲍家花园、唐模、潜口民宅、呈坎五大精品景区组成，北依黄山，南接千岛湖。 徽州古城是徽州府治所在地，是保存尤为完好的中国四大古城之一。",
-      "level": "5A景区",
-      "category": "人文历史、古村落、古城、园林",
-      "tags": [
-        "人文历史、古村落、古城、园林",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "安徽省黄山市歙县徽州路与西街交叉口",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "轻便衣物、薄外套和舒适步行鞋适合街区与室内外连续游览。",
-          "summer": "透气速干衣、防晒和补水用品并备，午后安排室内点位更舒适。",
-          "winter": "准备薄至中等厚度外套，阴雨天增加防水鞋和便携雨具。",
-          "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
-        },
-        "transport": {
-          "external_arrive": "高铁至黄山北站或歙县北站，出站可乘旅游专线大巴或打车前往；自驾导航至徽州古城游客中心停车场，车位充足。",
-          "internal_arrive": "首选徽州古城游客中心入口，停车方便，距离核心景点近；也可从西北门进入，人少不排队。",
-          "internal_traffic": "古城内全程步行游览；若前往棠樾牌坊群、唐模、潜口民宅、呈坎等周边景区，可乘坐旅游专线大巴或打车，部分景区间有接驳车。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "不想累腿推荐住在古城内斗山街、打箍井附近的徽派民宿，出门即景区；追求性价比和舒适设施可选择歙县县城酒店或新安江畔民宿。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "黄山烧饼",
-          "徽州毛豆腐",
-          "问政山笋",
-          "徽州臭鳜鱼"
-        ],
-        "special_care": {
-          "elderly": "路线以平缓石板路为主，避免攀爬，可在徽州府衙、博物馆等室内场所休息",
-          "children": "渔梁坝浅滩可带小水桶捞鱼捡石，古城内有非遗鱼灯DIY、徽墨描金等动手体验，趣味性强。\n\n你这次是打算在古城周边玩一天，还是准备把呈坎、唐模这些古村也一起安排上？"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "徽州古城+渔梁坝半日慢游（核心精华省力版）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "安徽徽州历史博物馆（吹空调看展了解背景）",
-            "南谯楼（拍城门框景）",
-            "许国石坊（打卡全国唯一八脚牌坊）",
-            "徽州府衙（看古代官署建筑）",
-            "斗山街（漫步青石板古巷，感受徽商老宅）",
-            "渔梁坝（看千年古坝，江边浅滩玩水）"
-          ],
-          "duration": "半天",
-          "walking": "约3-4公里",
-          "physical": 2,
-          "tips": [
-            "古城外围街巷免费开放，无需预约直接进；建议从游客中心停车场或西北门公共停车场进入，全程步行街，车辆无法驶入城内。"
-          ],
-          "sourceTitle": "携程旅行 古徽州文化旅游区 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/shecounty527/1751362.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-18"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "携程旅行 古徽州文化旅游区 详情页：https://you.ctrip.com/sight/shecounty527/1751362.html?poiType=3&scene=online",
-          "高德地图 古徽州文化旅游区：https://www.amap.com/place/B0FFI7G6RK"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 古徽州文化旅游区 详情页",
-          "url": "https://you.ctrip.com/sight/shecounty527/1751362.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-18"
-        },
-        "basicInfoUpdatedAt": "2026-08-18",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "古徽州文化旅游区 高德地图实景图",
-        "author": "高德地图用户或商户",
-        "provider": "高德地图",
-        "license": "高德开放平台地点图片资料，版权归原作者或来源方",
-        "licenseUrl": "https://lbs.amap.com/api/webservice/summary",
-        "sourceUrl": "https://www.amap.com/place/B0FFI7G6RK",
-        "width": 1391,
-        "height": 1854
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_a72e61a266",
-      "id": "manual_anhui_9dc5aa6c",
-      "name": "皖南古村落－西递宏村",
-      "city": "黄山",
+      "baselineKey": "core_f31ad44950",
+      "id": "manual_anhui_f98fa9fc",
+      "name": "凤阳博物馆",
+      "city": "滁州",
       "rating": 0,
       "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/anhui_9dc5aa6c_verified.jpg",
-      "description": "皖南古村落景区以西递村、宏村为代表，是安徽南部民居中较有代表性的两座古村落。西递村已有950多年的历史，村内完好地保存着典型的明清古村落风格，有“活的古民居博物馆”之称。",
-      "intro": "皖南古村落景区以西递村、宏村为代表，是安徽南部民居中较有代表性的两座古村落。西递村已有950多年的历史，村内完好地保存着典型的明清古村落风格，有“活的古民居博物馆”之称。",
-      "level": "5A景区",
-      "category": "古村落、世界文化遗产",
+      "image": "/assets/images/attractions/anhui_f98fa9fc_verified.jpg",
+      "description": "凤阳博物馆位于滁州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "凤阳博物馆位于滁州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "level": "博物馆",
+      "category": "博物馆",
       "tags": [
-        "古村落、世界文化遗产",
+        "博物馆",
         "室内参观",
-        "官方名录"
+        "口碑热门"
       ],
-      "address": "黄山（具体入口请以景区官方导航与当日公告为准）",
+      "address": "滁州（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -148,14 +38,14 @@
           "tips": "历史建筑、纪念场馆和宗教场所宜衣着得体，避免影响参观秩序。"
         },
         "transport": {
-          "external_arrive": "高铁至黟县东站，出站可乘公交专线或打车前往（西递约10分钟，宏村约40分钟）；或至黄山北站后转乘大巴。自驾可导航至各景区停车场。",
-          "internal_arrive": "西递推荐南门入园，宏村推荐西门入园（靠近停车场，步行进景区较近）。",
-          "internal_traffic": "村内以步行探索为主；宏村与西递之间可乘坐公交专线或打车，车程约20-30分钟。",
+          "external_arrive": "自驾可导航至凤阳县惠政路，博物馆门口有少量停车位；也可乘坐公共交通前往县图书馆或政务大楼附近，步行抵达。",
+          "internal_arrive": "从博物馆正门进入，一楼大厅即为序厅，可第一时间近距离观赏镇馆之宝。",
+          "internal_traffic": "馆内共两层，一楼为主展厅，二楼为临时展厅，通过内部楼梯或电梯上下，全程室内无障碍通道，方便推行婴儿车或轮椅。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "宏村可选择月沼或南湖周边的民宿，推窗即景；西递可选择景区西北角的客栈，安静且去逛不远。住景区内可感受早晚无人的静谧，住村外性价比高且步行几分钟即到。",
+            "area": "建议入住凤阳县城中心或明中都皇故城国家考古遗址公园附近的酒店，周边餐饮和出行较为便利。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -166,57 +56,31 @@
           "徽州臭鳜鱼"
         ],
         "special_care": {
-          "elderly": "穿防滑运动鞋，古村石板路雨天易滑；游客中心可租轮椅，尽量选择平缓步道，避免爬陡坡；点餐时提前说\"少盐少油\"",
-          "children": "古村石板路多，不适合推婴儿车；可租讲解器或请导游，边走边讲徽州文化故事，沉浸式感受更有意思。"
+          "elderly": "馆内全程室内空调，环境舒适，展线平缓无台阶，非常适合长辈轻松参观",
+          "children": "钟离厅的沉浸式考古投影和多媒体互动装置能吸引孩子兴趣，建议结合讲解故事化引导，增加参观趣味性。\n\n根据你引用的笔记和搜索结果，我为你整理了凤阳博物馆的家庭省力游览信息。这座国家二级博物馆以“一轴五厅”布局串联起凤阳五千年历史，展陈设计兼具历史深度与科技感，非常适合家庭室内休闲游。\n\n核心展区分布\n一楼常设展：包含序厅、历史文化厅、钟离厅和中都厅。序厅陈列着重达22.2吨的明中都奉天殿蟠龙石础，体量远超北京故宫同类文物；钟离厅设有沉浸式投影和考古沙盘，科技感十足；中都厅集中展示了明中都出土的石构件、琉璃瓦和皇家石雕。"
         }
       },
       "lazy_routes": [
         {
-          "title": "西递古村慢游线（清静古朴，适合长辈）",
+          "title": "凤阳博物馆精华省力游",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "南门入园",
-            "胡文光刺史牌坊",
-            "敬爱堂",
-            "桃李园",
-            "大夫第",
-            "西园/东园",
-            "后山观景台"
+            "序厅（镇馆之宝蟠龙石础）",
+            "历史文化厅（凤阳通史与珍贵文物）",
+            "钟离厅（钟离古国专题与沉浸式投影）",
+            "中都厅（明中都皇家遗址与石雕）",
+            "二楼临时展厅（当期特展）"
           ],
           "duration": "半天",
-          "walking": "约2-3小时",
+          "walking": "约1500米",
           "physical": 2,
           "tips": [
-            "西递巷子多，可穿梭小巷避人流；后山观景台可俯瞰全村船形格局，日落时分光线最佳。"
+            "建议提前在服务台预约人工讲解（费用以官方当日公告为准/次），能更深入理解文物背后的历史故事；一楼展厅出口处有文创和纪念币机，可盖章留念。"
           ],
-          "sourceTitle": "mct_national_5a_2025",
-          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "verifiedAt": "2026-08-18"
-        },
-        {
-          "title": "宏村水墨画线（水系景观，适合亲子）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "南湖",
-            "画桥",
-            "南湖书院",
-            "月沼",
-            "汪氏宗祠",
-            "承志堂",
-            "树人堂",
-            "村口古树"
-          ],
-          "duration": "半天",
-          "walking": "约2-3小时",
-          "physical": 2,
-          "tips": [
-            "建议清晨或傍晚前往，避开旅行团高峰；顺着水流行进不易迷路，主街人多时钻进两侧小巷更清净。"
-          ],
-          "sourceTitle": "mct_national_5a_2025",
-          "sourceUrl": "https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "verifiedAt": "2026-08-18"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -224,161 +88,49 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
-          "Wikidata Q15895518 实体页：https://www.wikidata.org/wiki/Q15895518"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
         "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-18",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "安徽冬游鉴赏#西递宏村位于安徽省黄山市黟县东南部,以世外桃源般的",
+        "title": "漫游凤阳博物馆大名鼎鼎的帝王之乡穿越千年的风尘仆仆踏上那片被历史",
         "author": "公开网页图片提供者",
         "provider": "公开图片搜索",
         "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3960925751449678652",
-        "sourceUrl": "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_3960925751449678652",
-        "width": 1920,
-        "height": 1280
+        "licenseUrl": "http://www.zhihu.com/pin/1863955634149543936",
+        "sourceUrl": "http://www.zhihu.com/pin/1863955634149543936",
+        "width": 4096,
+        "height": 2304
       },
       "quality_status": {
         "reviewRequired": true,
         "warnings": [
-          "仅核验到城市级属地，具体入口需以景区官方导航为准"
+          "独立可追溯来源少于2个",
+          "仅核验到城市级属地，具体入口需以景区官方导航为准",
+          "凤阳博物馆：基本资料目前只有1个可追溯来源"
         ]
       }
     },
     {
-      "baselineKey": "core_d11dbf3232",
-      "id": "manual_anhui_66ff1171",
-      "name": "西递",
-      "city": "黟县",
-      "rating": 4.6,
-      "reviewsCount": "11762条携程点评",
-      "image": "/assets/images/attractions/anhui_66ff1171_verified.jpg",
-      "description": "西递位于黟县东南8公里，黄山市西北50公里处，是典型的徽派古村。宏村看水，这里则主要看建筑，记得留意建筑上的徽派三雕，砖雕、石雕、木雕，花纹枝桠精细得仿佛一捏就断。",
-      "intro": "西递位于黟县东南8公里，黄山市西北50公里处，是典型的徽派古村。宏村看水，这里则主要看建筑，记得留意建筑上的徽派三雕，砖雕、石雕、木雕，花纹枝桠精细得仿佛一捏就断。",
+      "baselineKey": "core_05c7699edf",
+      "id": "manual_anhui_3db0dd93",
+      "name": "屯溪老街",
+      "city": "黄山",
+      "rating": 0,
+      "reviewsCount": "暂无公开平台评分",
+      "image": "/assets/images/attractions/anhui_3db0dd93_verified.jpg",
+      "description": "屯溪老街位于黄山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
+      "intro": "屯溪老街位于黄山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "level": "热门景点",
-      "category": "世界文化遗产、徽派古村落、人文历史",
+      "category": "历史文化街区、徽派古建筑群、商业步行街",
       "tags": [
-        "世界文化遗产、徽派古村落、人文历史",
+        "历史文化街区、徽派古建筑群、商业步行街",
         "经典景点",
         "口碑热门"
       ],
-      "address": "安徽省黄山市黟县西递镇西递村",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
-          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
-          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
-        },
-        "transport": {
-          "external_arrive": "自驾导航至“西递景区停车场”；高铁至黟县东站后打车约20分钟，或在黄山北站乘坐旅游专线大巴。",
-          "internal_arrive": "从正门牌楼（游客中心）入园，不要走小道绕路，门口可寄存行李。",
-          "internal_traffic": "古村内均为青石板路，无内部交通工具，需全程步行。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "推荐入住景区内古宅民宿，方便早晚错峰游览和看夜景；若住村外，可选择景区入口附近的酒店，出行和用餐更便利。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "黄山烧饼",
-          "徽州毛豆腐",
-          "问政山笋",
-          "徽州臭鳜鱼"
-        ],
-        "special_care": {
-          "elderly": "西递整体地势平缓，但青石板路凹凸不平且雨后湿滑，务必穿防滑平底鞋，建议携带登山杖辅助行走，避开正午烈日",
-          "children": "古村人文气息浓厚，可让孩子寻找石雕中的小动物或体验非遗鱼灯制作，但巷弄较多易迷路，需时刻看护，不建议携带婴儿车。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "经典省力环线（约2-3小时）",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "胡文光刺史牌坊",
-            "明经湖",
-            "敬爱堂",
-            "追慕堂",
-            "西园与东园",
-            "青云轩",
-            "大夫第（绣楼）",
-            "膺福堂",
-            "古来桥",
-            "后山观景亭"
-          ],
-          "duration": "半天",
-          "walking": "约2公里",
-          "physical": 2,
-          "tips": [
-            "建议请一位官方讲解员，徽派建筑的石雕、木雕和楹联背后的故事很多，不听讲解容易“只看房子”。"
-          ],
-          "sourceTitle": "携程旅行 西递 详情页",
-          "sourceUrl": "https://you.ctrip.com/sight/yicounty528/18052.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-18"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "ctrip_province_sightlist：https://you.ctrip.com/sightlist/anhui100068.html",
-          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
-          "携程旅行 西递 详情页：https://you.ctrip.com/sight/yicounty528/18052.html?poiType=3&scene=online"
-        ],
-        "ratingSource": {
-          "platform": "携程",
-          "title": "携程旅行 西递 详情页",
-          "url": "https://you.ctrip.com/sight/yicounty528/18052.html?poiType=3&scene=online",
-          "verifiedAt": "2026-08-18"
-        },
-        "basicInfoUpdatedAt": "2026-08-18",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "西递 景点页实景图",
-        "author": "景点页公开图片提供者",
-        "provider": "携程景点页面",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "https://you.ctrip.com/sight/yicounty528/18052.html?poiType=3&scene=online",
-        "sourceUrl": "https://you.ctrip.com/sight/yicounty528/18052.html?poiType=3&scene=online",
-        "width": 3600,
-        "height": 2400
-      },
-      "quality_status": {
-        "reviewRequired": false,
-        "warnings": []
-      }
-    },
-    {
-      "baselineKey": "core_ae0df75b27",
-      "id": "manual_anhui_8f4d8666",
-      "name": "黄山黟县国际乡村旅游度假区",
-      "city": "安徽",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/anhui_8f4d8666_verified.jpg",
-      "description": "黄山黟县国际乡村旅游度假区位于安徽（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "intro": "黄山黟县国际乡村旅游度假区位于安徽（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
-      "level": "国家级旅游度假区",
-      "category": "古村落群、自然山水、非遗文化体验",
-      "tags": [
-        "古村落群、自然山水、非遗文化体验",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "安徽（具体入口请以景区官方导航与当日公告为准）",
+      "address": "黄山（具体入口请以景区官方导航与当日公告为准）",
       "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
       "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
       "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
@@ -390,14 +142,14 @@
           "tips": "城市街区步行和排队时间可能较长，优先穿软底防滑鞋。"
         },
         "transport": {
-          "external_arrive": "高铁可至黟县东站或黄山北站，出站后转乘旅游专线公交或打车前往各景区；自驾可直接导航至各景点停车场。",
-          "internal_arrive": "宏村建议从南门进入，西递建议从主入口牌楼进入，碧山村和秀里无严格门禁，可直接导航至村口。",
-          "internal_traffic": "各景点间距离不远，自驾最方便；也可在县城或宏村租车骑小电驴；部分景区内有观光车或接驳车服务，具体以官方当日公告为准。",
+          "external_arrive": "自驾可导航至“老街地下停车场”或“世纪广场公共停车场”；高铁至黄山北站后打车约 15-20 分钟，或乘坐公交 K6 路、12 路等直达老街入口。",
+          "internal_arrive": "推荐从东入口牌坊进入，沿主街向西漫步至镇海桥，一路下坡或平路，不走回头路。",
+          "internal_traffic": "街区为步行商业街，内部全靠步行，可借助支巷的阴凉处或街边茶楼稍作休息。",
           "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
         },
         "housing": [
           {
-            "area": "宏村周边（步行可达景区，方便休息）、西递周边（夜晚静谧）、碧山村（文艺民宿集中）、秀里景区周边（方便看夜景）、黟县县城（餐饮选择多，性价比高）。",
+            "area": "建议住在屯溪老街或黎阳in巷周边民宿及酒店，步行可达商圈，方便随时休息和逛吃。",
             "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
           }
         ],
@@ -408,37 +160,33 @@
           "徽州臭鳜鱼"
         ],
         "special_care": {
-          "elderly": "古村多石板路，务必穿防滑鞋，可提前在游客中心租用轮椅；选择有电梯或一楼的民宿，避免爬楼；行程每天不超过2个景点，中午留足休息时间",
-          "children": "可安排非遗鱼灯制作、扎染等手作体验；在碧山村、丰梧村等免费古村让孩子在稻田和溪边亲近自然；注意防蚊防虫，备好常用药品。"
+          "elderly": "全程平路无台阶压力，可多利用支巷阴凉处和街边茶楼歇脚，欣赏徽派建筑与江景",
+          "children": "可带孩子在支巷寻找非遗手作（如徽墨制作、徽州三雕），品尝黄山烧饼和毛豆腐，增加游玩趣味性。"
         }
       },
       "lazy_routes": [
         {
-          "title": "古村慢游与非遗夜游",
+          "title": "老街主街慢游与支巷探秘（家庭省力版）",
           "badge": "少走回头路",
           "suitability": "第一次到访、亲子与长辈同行",
           "nodes": [
-            "宏村（南湖画桥",
-            "月沼",
-            "承志堂）",
-            "西递（胡文光牌楼",
-            "敬爱堂",
-            "村口观景台）",
-            "碧山村（碧山书局",
-            "工销社",
-            "手作体验）",
-            "秀里（徽派建筑夜景",
-            "非遗鱼灯表演）"
+            "老街东入口牌坊",
+            "主街漫步（欣赏青石板路与马头墙）",
+            "屯溪博物馆（了解老街历史与徽商文化）",
+            "万粹楼（徽派古建筑代表）",
+            "钻入支巷（如还淳巷",
+            "梧岗巷感受原汁原味徽州生活）",
+            "老街西口（镇海桥/老大桥看三江交汇江景）"
           ],
           "duration": "半天",
-          "walking": "约 10000 步",
+          "walking": "约 1.5 公里（主街全长 1272 米，核心段约 832 米）",
           "physical": 2,
           "tips": [
-            "宏村和西递建议清晨或傍晚错峰游览，避开正午人流；古村石板路较多，务必穿防滑运动鞋；秀里的非遗鱼灯表演建议提前确认当日演出时间。"
+            "青石板路走久了易硌脚，务必穿舒适的平底鞋；建议清晨 7 点前或傍晚 18 点后前往，此时人少光好，红灯笼亮起时氛围感极佳。"
           ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
-          "verifiedAt": "2026-08-18"
+          "sourceTitle": "xiaohongshu_core_candidates",
+          "sourceUrl": "https://www.xiaohongshu.com/ai_chat_tab",
+          "verifiedAt": "2026-08-21"
         }
       ],
       "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
@@ -446,145 +194,43 @@
       "source_evidence": {
         "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
         "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0"
+          "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
+          "Wikidata Q11043618 实体页：https://www.wikidata.org/wiki/Q11043618"
         ],
         "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-18",
+        "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
       "image_source": {
-        "title": "安徽黟县:秋意渐浓美乡村",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://www.sohu.com/a/818872290_162522",
-        "sourceUrl": "http://www.sohu.com/a/818872290_162522",
-        "width": 3333,
-        "height": 2316
+        "title": "Loujiepailou.jpg",
+        "author": "Gisling",
+        "provider": "Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loujiepailou.jpg",
+        "width": 1611,
+        "height": 2388
       },
       "quality_status": {
         "reviewRequired": true,
         "warnings": [
-          "独立可追溯来源少于2个",
-          "仅核验到城市级属地，具体入口需以景区官方导航为准",
-          "黄山黟县国际乡村旅游度假区：基本资料目前只有1个可追溯来源"
-        ]
-      }
-    },
-    {
-      "baselineKey": "core_fddd426458",
-      "id": "manual_anhui_72138b78",
-      "name": "合肥市巢湖半汤温泉养生度假区",
-      "city": "合肥",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
-      "image": "/assets/images/attractions/anhui_72138b78_verified.jpg",
-      "description": "被誉为“九福之地”的半汤温泉是中国四大古温泉之一，内含有益人体的矿物质微量元素30多种。因相距不足千米有两口温泉，一为冷泉，一为热泉，汇合处冷热各半，称之为“半汤”。",
-      "intro": "被誉为“九福之地”的半汤温泉是中国四大古温泉之一，内含有益人体的矿物质微量元素30多种。因相距不足千米有两口温泉，一为冷泉，一为热泉，汇合处冷热各半，称之为“半汤”。",
-      "level": "国家级旅游度假区",
-      "category": "温泉度假、自然生态、休闲观光",
-      "tags": [
-        "温泉度假、自然生态、休闲观光",
-        "经典景点",
-        "官方名录"
-      ],
-      "address": "合肥市巢湖市半汤镇",
-      "openHours": "开放日期、预约与入场时段可能动态调整，出发前以景区官方当日公告为准",
-      "price": "票务、优惠及独立项目价格可能动态调整，以景区官方购票渠道当日公示为准",
-      "tips": "先确认预约、开放区域和入场证件；动态信息以官方当日公告为准。",
-      "guide_data": {
-        "clothing": {
-          "spring_autumn": "湖区早晚及乘船时风大，建议轻薄防风外套、长裤和防滑鞋。",
-          "summer": "速干衣、防晒帽、防晒霜和足量饮水并备，尽量避开正午暴晒。",
-          "winter": "准备保暖防风外套和长裤，湖面及码头体感温度通常更低。",
-          "tips": "码头、游船和临水步道注意防滑，儿童和长辈上下船时应有人照看。"
-        },
-        "transport": {
-          "external_arrive": "自驾可导航至度假区内各酒店或景区停车场，从合肥市区出发约 1 小时车程；高铁可至巢湖东站，出站后打车约 15-20 分钟可达。",
-          "internal_arrive": "若以泡温泉为核心，建议直接导航至度假区内的温泉酒店（如深业半汤御泉庄或深业温泉假日酒店）作为主入口；若以逛吃休闲为主，可导航至半汤老街。",
-          "internal_traffic": "度假区内范围较大，各酒店与温泉区之间通常配有免费的接驳车，随叫随停；部分路段也可步行或骑行。",
-          "tips": "返程班次、末班车和临时交通管制可能变化，出发前在官方渠道复核。"
-        },
-        "housing": [
-          {
-            "area": "度假区内有多家温泉度假酒店及民宿，如深业半汤御泉庄、深业温泉假日酒店等，建议优先选择带私汤或含温泉门票的房型，方便随时泡汤。",
-            "desc": "选择轨道交通便利、与下一日行程衔接顺畅的区域，不必只追求景区门口。"
-          }
-        ],
-        "food": [
-          "黄山烧饼",
-          "徽州毛豆腐",
-          "问政山笋",
-          "徽州臭鳜鱼"
-        ],
-        "special_care": {
-          "elderly": "选择水温适中的药浴或牛奶池，单次泡汤时间不宜过长，泡后注意保暖",
-          "children": "优先选择儿童专属戏水区，水温温和且有滑梯等设施，家长需全程陪同看护，并备好游泳圈。"
-        }
-      },
-      "lazy_routes": [
-        {
-          "title": "核心泡汤与老街休闲省力游",
-          "badge": "少走回头路",
-          "suitability": "第一次到访、亲子与长辈同行",
-          "nodes": [
-            "度假区温泉泡汤区（户外特色泡池",
-            "儿童戏水区",
-            "休息大厅）",
-            "半汤老街（徽派建筑打卡",
-            "品尝农家特色菜）"
-          ],
-          "duration": "半天",
-          "walking": "约 2 公里",
-          "physical": 2,
-          "tips": [
-            "建议自备泳衣和防滑拖鞋，泡汤时注意补充水分，每次浸泡 10-15 分钟即起身休息。"
-          ],
-          "sourceTitle": "中华人民共和国文化和旅游部大众旅游服务",
-          "sourceUrl": "https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
-          "verifiedAt": "2026-08-18"
-        }
-      ],
-      "lazy_tips": "路线用于降低折返和体力消耗；开放区域、预约、接驳及演出安排以官方当日公告为准。",
-      "quality_policy": {},
-      "source_evidence": {
-        "source": "文化和旅游主管部门、景区官方渠道与主流OTA交叉核验",
-        "basicInfoSources": [
-          "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0"
-        ],
-        "ratingSource": null,
-        "basicInfoUpdatedAt": "2026-08-18",
-        "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
-      },
-      "image_source": {
-        "title": "巢湖深业半汤温泉体验:冬日暖阳☀️ 从合肥出发,开车一个小时",
-        "author": "公开网页图片提供者",
-        "provider": "公开图片搜索",
-        "license": "公开网页图片（家庭自用展示）",
-        "licenseUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5253332731518511571",
-        "sourceUrl": "http://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5253332731518511571",
-        "width": 1280,
-        "height": 930
-      },
-      "quality_status": {
-        "reviewRequired": true,
-        "warnings": [
-          "独立可追溯来源少于2个",
-          "合肥市巢湖半汤温泉养生度假区：基本资料目前只有1个可追溯来源"
+          "仅核验到城市级属地，具体入口需以景区官方导航为准"
         ]
       }
     }
   ],
   "overrides": {},
-  "reviewedAt": "2026-08-18",
-  "reviewedAtIso": "2026-08-18T02:29:15.807Z",
-  "appliedAt": "2026-08-18T06:30:07.933Z",
+  "reviewedAt": "2026-08-21",
+  "reviewedAtIso": "2026-08-21T08:52:02.305Z",
+  "batchId": "observation-2026-08-21T07-09-05-891Z",
+  "batchSelectedKeys": [
+    "core_f31ad44950",
+    "core_05c7699edf"
+  ],
+  "appliedAt": "2026-08-24T03:08:40.489Z",
   "appliedAttractionIds": [
-    "manual_anhui_1a20932b",
-    "manual_anhui_9dc5aa6c",
-    "manual_anhui_66ff1171",
-    "manual_anhui_8f4d8666",
-    "manual_anhui_72138b78"
+    "manual_anhui_f98fa9fc",
+    "manual_anhui_3db0dd93"
   ],
   "appliedOverrideIds": []
 }

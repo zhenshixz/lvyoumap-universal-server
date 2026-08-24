@@ -1,6 +1,6 @@
 {
   "province": "香港",
-  "checkedAt": "2026-08-21",
+  "checkedAt": "2026-08-24",
   "baselineStatus": "multi_source_ready",
   "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
   "sourcePolicy": {
@@ -1127,9 +1127,129 @@
       "matchWarnings": [],
       "secondaryEvidence": [],
       "selectionBatch": "observation-2026-08-21T02-45-45-778Z"
+    },
+    {
+      "key": "core_3f63942ff7",
+      "name": "九龙城寨公园",
+      "preferredId": "manual_xianggang_2bb566a7",
+      "aliases": [
+        "九龙城寨公园"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_509ad3d68d",
+      "name": "荔枝窝",
+      "preferredId": "manual_xianggang_fc43404f",
+      "aliases": [
+        "荔枝窝"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_605617e9d1",
+      "name": "梅窝",
+      "preferredId": "manual_xianggang_c66365b3",
+      "aliases": [
+        "梅窝"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_3d93be3d02",
+      "name": "跑马地赛马场",
+      "preferredId": "manual_xianggang_8f7bba1c",
+      "aliases": [
+        "跑马地赛马场"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
+    },
+    {
+      "key": "core_d07b1bb347",
+      "name": "石澳",
+      "preferredId": "manual_xianggang_15060627",
+      "aliases": [
+        "石澳"
+      ],
+      "city": "香港",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "sourceSignals": {
+        "otaRank": null,
+        "amapRank": null
+      },
+      "matchWarnings": [],
+      "secondaryEvidence": [],
+      "selectionBatch": "observation-2026-08-21T07-09-05-891Z"
     }
   ],
   "counts": {
-    "attractions": 25
+    "attractions": 30
   }
 }
