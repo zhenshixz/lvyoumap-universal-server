@@ -1560,8 +1560,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
         </div>
         <div class="card-rating-row">
           <span class="card-rating-star">${hasPublicRating ? `★ ${Number(attr.rating).toFixed(1)}` : '暂无公开评分'}</span>
-          <span class="card-review-count">(${reviewCountStr})</span>
-        </div>
+          </div>
         <p class="card-excerpt">“${attr.intro}”</p>
       </div>
       <div class="fav-btn ${isFav ? 'active' : ''}" data-id="${attr.id}" title="${isFav ? '取消收藏' : '加入收藏'}">
