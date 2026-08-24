@@ -257,8 +257,8 @@
       "id": "manual_hubei_80d93676",
       "name": "东湖景区",
       "city": "湖北省武汉",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_80d93676_verified.jpg",
       "description": "武汉东湖生态旅游风景区面积88平方公里，由听涛、磨山、落雁、吹笛、白马和珞洪六个片区组成，是全国文明风景旅游区示范点、首批国家重点风景名胜区。",
       "intro": "武汉东湖生态旅游风景区面积88平方公里，由听涛、磨山、落雁、吹笛、白马和珞洪六个片区组成，是全国文明风景旅游区示范点、首批国家重点风景名胜区。",
@@ -336,7 +336,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 东湖生态旅游风景区",
+          "url": "https://www.amap.com/place/B001B0A0CK",
+          "poiId": "B001B0A0CK",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -365,8 +372,8 @@
       "id": "manual_hubei_5f88c6f6",
       "name": "神农架生态旅游区",
       "city": "湖北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_5f88c6f6_verified.jpg",
       "description": "神农架是国家森林公园、国家湿地公园、国家地质公园、世界地质公园、世界自然遗产地，拥有源自地球上最完整的前寒武纪地层，燕山、喜马拉雅冰川运动造就的地质奇观，形成了以“华中屋脊”为中心，集自然奇观、科考探秘、天人和谐于一体的原生态旅游区。",
       "intro": "神农架是国家森林公园、国家湿地公园、国家地质公园、世界地质公园、世界自然遗产地，拥有源自地球上最完整的前寒武纪地层，燕山、喜马拉雅冰川运动造就的地质奇观，形成了以“华中屋脊”为中心，集自然奇观、科考探秘、天人和谐于一体的原生态旅游区。",
@@ -469,7 +476,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 神农架国家级自然保护区",
+          "url": "https://www.amap.com/place/B06B7000HF",
+          "poiId": "B06B7000HF",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -498,8 +512,8 @@
       "id": "manual_hubei_ac9f8291",
       "name": "恩施州神农溪纤夫文化旅游区",
       "city": "湖北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_ac9f8291_verified.jpg",
       "description": "神农溪位于长江三峡西陵峡与巫峡之间，因发源于原始森林神农架南坡而得名。两岸群山耸立、逶迤绵延、层峦叠障，以雄、秀、险、奇不同风格形成了龙昌、鹦鹉、绵竹、神农四个各具特色的峡谷。",
       "intro": "神农溪位于长江三峡西陵峡与巫峡之间，因发源于原始森林神农架南坡而得名。两岸群山耸立、逶迤绵延、层峦叠障，以雄、秀、险、奇不同风格形成了龙昌、鹦鹉、绵竹、神农四个各具特色的峡谷。",
@@ -589,7 +603,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 神农溪景区",
+          "url": "https://www.amap.com/place/B0FFGJRHYE",
+          "poiId": "B0FFGJRHYE",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1190,8 +1211,8 @@
       "id": "manual_hubei_5ad7f6b5",
       "name": "神农架木鱼旅游度假区",
       "city": "湖北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_5ad7f6b5_verified.jpg",
       "description": "神农架木鱼旅游度假区地处华中第一峰——神农顶南部山麓，平均海拔1200米，镇内有神农顶、神农坛、天生桥、香溪源等著名旅游景点，是湖北“长江三峡、神农架、武当山”旅游黄金上的重要节点和游客集散地，是鄂西生态文化旅游圈的核心板块，也是神农架对外开放的窗口。度假产品多样，拥有运动健身类、休闲娱乐类、康体疗养类、夜游类、常态化节庆演艺活动等，品质高，如杜鹃花节、花朝节、神农祭祀、滑雪节、国际森林越野跑、世界中医药健康论坛等活动，能区别于一般城市",
       "intro": "神农架木鱼旅游度假区地处华中第一峰——神农顶南部山麓，平均海拔1200米，镇内有神农顶、神农坛、天生桥、香溪源等著名旅游景点，是湖北“长江三峡、神农架、武当山”旅游黄金上的重要节点和游客集散地，是鄂西生态文化旅游圈的核心板块，也是神农架对外开放的窗口。度假产品多样，拥有运动健身类、休闲娱乐类、康体疗养类、夜游类、常态化节庆演艺活动等，品质高，如杜鹃花节、花朝节、神农祭祀、滑雪节、国际森林越野跑、世界中医药健康论坛等活动，能区别于一般城市",
@@ -1268,7 +1289,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hubei&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 神农架木鱼镇度假区",
+          "url": "https://www.amap.com/place/B0MD37GJUW",
+          "poiId": "B0MD37GJUW",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1525,8 +1553,8 @@
       "id": "manual_hubei_92e58a5d",
       "name": "恩施女儿城",
       "city": "恩施州（土家风情夜市与小",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_92e58a5d_verified.jpg",
       "description": "恩施女儿城位于恩施州（土家风情夜市与小（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "恩施女儿城位于恩施州（土家风情夜市与小（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1602,7 +1630,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 恩施土家女儿城",
+          "url": "https://www.amap.com/place/B02CE0P84E",
+          "poiId": "B02CE0P84E",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1635,8 +1670,8 @@
       "id": "manual_hubei_6bed1926",
       "name": "古德寺",
       "city": "武汉市（中西融合特色寺庙",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_6bed1926_verified.jpg",
       "description": "古德寺位于武汉市（中西融合特色寺庙（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "古德寺位于武汉市（中西融合特色寺庙（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1712,7 +1747,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q10913316 实体页：https://www.wikidata.org/wiki/Q10913316"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 古德寺(宗教活动场所)(暂停开放)",
+          "url": "https://www.amap.com/place/B001B1IGH4",
+          "poiId": "B001B1IGH4",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1743,8 +1785,8 @@
       "id": "manual_hubei_3e24e41d",
       "name": "黎黄陂路",
       "city": "武汉市（民国复古街道",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hubei_3e24e41d_verified.jpg",
       "description": "黎黄陂路位于武汉市（民国复古街道（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "黎黄陂路位于武汉市（民国复古街道（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1821,7 +1863,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q11178868 实体页：https://www.wikidata.org/wiki/Q11178868"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 黎黄陂路历史文化街区",
+          "url": "https://www.amap.com/place/B0FFG6V1J3",
+          "poiId": "B0FFG6V1J3",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

@@ -4,8 +4,8 @@
       "id": "manual_hunan_9eff088d",
       "name": "矮寨·十八洞•德夯大峡谷景区",
       "city": "湘西州吉首",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hunan_9eff088d_verified.jpg",
       "description": "矮寨•十八洞•德夯大峡谷景区位于湘西世界地质公园的核心区，由矮寨大桥、精准扶贫首倡地十八洞村、“天下鼓乡、天然氧吧”德夯大峡谷等景区共同组成。",
       "intro": "矮寨•十八洞•德夯大峡谷景区位于湘西世界地质公园的核心区，由矮寨大桥、精准扶贫首倡地十八洞村、“天下鼓乡、天然氧吧”德夯大峡谷等景区共同组成。",
@@ -80,7 +80,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 矮寨大桥景区",
+          "url": "https://www.amap.com/place/B02E70MOPA",
+          "poiId": "B02E70MOPA",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1144,8 +1151,8 @@
       "id": "manual_hunan_7abd6e3a",
       "name": "灰汤温泉旅游度假区",
       "city": "长沙",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hunan_7abd6e3a_verified.jpg",
       "description": "灰汤温泉已有两千多年历史，是我国三大著名高温复合温泉之一，出水口温度可达90℃，富含29种对人体有益的微量元素，具有消炎镇静等神奇功效。",
       "intro": "灰汤温泉已有两千多年历史，是我国三大著名高温复合温泉之一，出水口温度可达90℃，富含29种对人体有益的微量元素，具有消炎镇静等神奇功效。",
@@ -1220,7 +1227,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hunan&type=0",
           "Wikidata Q15953835 实体页：https://www.wikidata.org/wiki/Q15953835"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 灰汤紫龙湾温泉度假区",
+          "url": "https://www.amap.com/place/B02F800B8Z",
+          "poiId": "B02F800B8Z",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

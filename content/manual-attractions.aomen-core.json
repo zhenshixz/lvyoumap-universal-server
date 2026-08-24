@@ -1941,8 +1941,8 @@
       "id": "manual_aomen_cd7f869",
       "name": "东望洋灯塔",
       "city": "澳门",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/aomen_cd7f869_verified.jpg",
       "description": "东望洋灯塔位于澳门（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "东望洋灯塔位于澳门（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2018,7 +2018,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q3313058 实体页：https://www.wikidata.org/wiki/Q3313058"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 东望洋灯塔",
+          "url": "https://www.amap.com/place/B001F001D4",
+          "poiId": "B001F001D4",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

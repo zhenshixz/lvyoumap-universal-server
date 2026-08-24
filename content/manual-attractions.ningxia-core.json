@@ -4,8 +4,8 @@
       "id": "manual_ningxia_53cce5ed",
       "name": "宁夏镇北堡西部影视城",
       "city": "银川",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/ningxia_53cce5ed_verified.jpg",
       "description": "镇北堡西部影城位于宁夏回族自治区银川市，是集观光、娱乐、休闲、餐饮、购物于一体的国家5A级旅游景区。镇北堡西部影城以其古朴、原始、粗犷、荒凉、民间化为特色，主要景点有明城、清城、老银川一条街等，曾被评为“中国最受欢迎旅游目的地”，是中国十大影视基地之一。",
       "intro": "镇北堡西部影城位于宁夏回族自治区银川市，是集观光、娱乐、休闲、餐饮、购物于一体的国家5A级旅游景区。镇北堡西部影城以其古朴、原始、粗犷、荒凉、民间化为特色，主要景点有明城、清城、老银川一条街等，曾被评为“中国最受欢迎旅游目的地”，是中国十大影视基地之一。",
@@ -87,7 +87,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=ningxia&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 镇北堡西部影城",
+          "url": "https://www.amap.com/place/B03B70256E",
+          "poiId": "B03B70256E",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -688,8 +695,8 @@
       "id": "manual_ningxia_74c1713b",
       "name": "怀远夜市",
       "city": "银川",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/ningxia_74c1713b_verified.jpg",
       "description": "怀远夜市位于银川（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "怀远夜市位于银川（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -764,7 +771,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 怀远观光夜市",
+          "url": "https://www.amap.com/place/B0GKBNDJIH",
+          "poiId": "B0GKBNDJIH",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -797,8 +811,8 @@
       "id": "manual_ningxia_4f371994",
       "name": "通湖草原",
       "city": "中卫",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/ningxia_4f371994_verified.jpg",
       "description": "通湖草原位于中卫（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "通湖草原位于中卫（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -868,7 +882,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 通湖草原旅游景区",
+          "url": "https://www.amap.com/place/B01E3005Q2",
+          "poiId": "B01E3005Q2",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

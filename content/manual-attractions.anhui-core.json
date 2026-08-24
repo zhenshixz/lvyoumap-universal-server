@@ -117,8 +117,8 @@
       "id": "manual_anhui_9dc5aa6c",
       "name": "皖南古村落－西递宏村",
       "city": "黄山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/anhui_9dc5aa6c_verified.jpg",
       "description": "皖南古村落景区以西递村、宏村为代表，是安徽南部民居中较有代表性的两座古村落。西递村已有950多年的历史，村内完好地保存着典型的明清古村落风格，有“活的古民居博物馆”之称。",
       "intro": "皖南古村落景区以西递村、宏村为代表，是安徽南部民居中较有代表性的两座古村落。西递村已有950多年的历史，村内完好地保存着典型的明清古村落风格，有“活的古民居博物馆”之称。",
@@ -220,7 +220,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0",
           "Wikidata Q15895518 实体页：https://www.wikidata.org/wiki/Q15895518"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 宏村",
+          "url": "https://www.amap.com/place/B022F00F44",
+          "poiId": "B022F00F44",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -367,8 +374,8 @@
       "id": "manual_anhui_8f4d8666",
       "name": "黄山黟县国际乡村旅游度假区",
       "city": "安徽",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/anhui_8f4d8666_verified.jpg",
       "description": "黄山黟县国际乡村旅游度假区位于安徽（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "黄山黟县国际乡村旅游度假区位于安徽（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -448,7 +455,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 黄山风景区",
+          "url": "https://www.amap.com/place/B022F0ML6Z",
+          "poiId": "B022F0ML6Z",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -481,8 +495,8 @@
       "id": "manual_anhui_72138b78",
       "name": "合肥市巢湖半汤温泉养生度假区",
       "city": "合肥",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/anhui_72138b78_verified.jpg",
       "description": "被誉为“九福之地”的半汤温泉是中国四大古温泉之一，内含有益人体的矿物质微量元素30多种。因相距不足千米有两口温泉，一为冷泉，一为热泉，汇合处冷热各半，称之为“半汤”。",
       "intro": "被誉为“九福之地”的半汤温泉是中国四大古温泉之一，内含有益人体的矿物质微量元素30多种。因相距不足千米有两口温泉，一为冷泉，一为热泉，汇合处冷热各半，称之为“半汤”。",
@@ -556,7 +570,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=anhui&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 深业半汤御泉庄温泉",
+          "url": "https://www.amap.com/place/B0FFF7Q1X5",
+          "poiId": "B0FFF7Q1X5",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -588,8 +609,8 @@
       "id": "manual_anhui_f98fa9fc",
       "name": "凤阳博物馆",
       "city": "滁州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/anhui_f98fa9fc_verified.jpg",
       "description": "凤阳博物馆位于滁州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "凤阳博物馆位于滁州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -663,7 +684,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 凤阳县博物馆(安徽博物院凤阳分院)",
+          "url": "https://www.amap.com/place/B0FFGSJJ36",
+          "poiId": "B0FFGSJJ36",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -696,8 +724,8 @@
       "id": "manual_anhui_3db0dd93",
       "name": "屯溪老街",
       "city": "黄山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/anhui_3db0dd93_verified.jpg",
       "description": "屯溪老街位于黄山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "屯溪老街位于黄山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -774,7 +802,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q11043618 实体页：https://www.wikidata.org/wiki/Q11043618"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 屯溪老街",
+          "url": "https://www.amap.com/place/B0FFFTTA22",
+          "poiId": "B0FFFTTA22",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

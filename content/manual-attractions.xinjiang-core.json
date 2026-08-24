@@ -302,8 +302,8 @@
       "id": "manual_xinjiang_daf3b772",
       "name": "喀拉峻景区",
       "city": "伊犁哈萨克",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_daf3b772_verified.jpg",
       "description": "景区内雪峰与峡谷辉映，森林与草原镶嵌，春夏季五花绽放，姹紫嫣红，晨曦落霞映照下线条柔美、层次分明，构成一幅幅艺术画卷。喀拉峻景区作为“新疆天山”世界自然遗产的重要组成部分，是新疆天山生物多样性较丰富、美学价值较高的区域。",
       "intro": "景区内雪峰与峡谷辉映，森林与草原镶嵌，春夏季五花绽放，姹紫嫣红，晨曦落霞映照下线条柔美、层次分明，构成一幅幅艺术画卷。喀拉峻景区作为“新疆天山”世界自然遗产的重要组成部分，是新疆天山生物多样性较丰富、美学价值较高的区域。",
@@ -375,7 +375,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "高德地图 喀拉峻风景区：https://www.amap.com/place/B0G3FRNH9E"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 喀拉峻大草原",
+          "url": "https://www.amap.com/place/B03E700B1H",
+          "poiId": "B03E700B1H",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -570,8 +577,8 @@
       "id": "manual_xinjiang_24d40569",
       "name": "博斯腾湖景区",
       "city": "巴音郭楞蒙古",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_24d40569_verified.jpg",
       "description": "巴音郭楞蒙古自治州博斯腾湖景区占地面积988平方公里，是位于我国新疆的风景名胜。景区是以博斯腾湖风景为主，博斯腾淖尔，蒙古语意为“站立”，因三道湖心山屹立于湖中而得名。",
       "intro": "巴音郭楞蒙古自治州博斯腾湖景区占地面积988平方公里，是位于我国新疆的风景名胜。景区是以博斯腾湖风景为主，博斯腾淖尔，蒙古语意为“站立”，因三道湖心山屹立于湖中而得名。",
@@ -667,7 +674,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "高德地图 博斯腾湖风景名胜区：https://www.amap.com/place/B03E400BVV"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 博斯腾湖大河口景区",
+          "url": "https://www.amap.com/place/B03E4004VO",
+          "poiId": "B03E4004VO",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -830,8 +844,8 @@
       "id": "manual_xinjiang_85f7101f",
       "name": "塔克拉玛干•三五九旅文化旅游区",
       "city": "兵团阿拉尔",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_85f7101f_verified.jpg",
       "description": "阿拉尔市塔克拉玛干·三五九旅文化旅游区，是以三五九旅屯垦纪念馆为核心，展示兵团屯垦戍边红色文化以及接受爱国主义教育，了解阿拉尔市以及兵团建设成就的一个窗口，也是新疆建设兵团重要的红色旅游基地。其中纪念馆是为纪念1950年挺进新疆、解放新疆的新疆军区农业建设第一师而建。",
       "intro": "阿拉尔市塔克拉玛干·三五九旅文化旅游区，是以三五九旅屯垦纪念馆为核心，展示兵团屯垦戍边红色文化以及接受爱国主义教育，了解阿拉尔市以及兵团建设成就的一个窗口，也是新疆建设兵团重要的红色旅游基地。其中纪念馆是为纪念1950年挺进新疆、解放新疆的新疆军区农业建设第一师而建。",
@@ -928,7 +942,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 三五九旅屯垦纪念馆",
+          "url": "https://www.amap.com/place/B0FFF6A3OT",
+          "poiId": "B0FFF6A3OT",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -957,8 +978,8 @@
       "id": "manual_xinjiang_39d8bee6",
       "name": "兵团十师185团白沙湖景区（阿勒泰地区）",
       "city": "新疆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_39d8bee6_verified.jpg",
       "description": "阿勒泰地区喀纳斯景区位于新疆阿尔泰山中段，地处中国与哈萨克斯坦、俄罗斯、蒙古国接壤地带。主要景点有喀纳斯湖、卧龙湾、泰加林廊道等。",
       "intro": "阿勒泰地区喀纳斯景区位于新疆阿尔泰山中段，地处中国与哈萨克斯坦、俄罗斯、蒙古国接壤地带。主要景点有喀纳斯湖、卧龙湾、泰加林廊道等。",
@@ -1053,7 +1074,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 白沙湖景区",
+          "url": "https://www.amap.com/place/B0FFFY5P4H",
+          "poiId": "B0FFFY5P4H",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1307,8 +1335,8 @@
       "id": "manual_xinjiang_7fa0a215",
       "name": "五家渠青格达湖旅游度假区",
       "city": "五家渠",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_7fa0a215_verified.jpg",
       "description": "五家渠青格达湖旅游度假区位于新疆维吾尔自治区五家渠市青湖南路2666号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "五家渠青格达湖旅游度假区位于新疆维吾尔自治区五家渠市青湖南路2666号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1382,7 +1410,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=xinjiang&type=0",
           "高德地图 五家渠青格达湖旅游风景区：https://www.amap.com/place/B03E20M1RW"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 青格达湖旅游风景区",
+          "url": "https://www.amap.com/place/B03E20M1RW",
+          "poiId": "B03E20M1RW",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-20",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1411,8 +1446,8 @@
       "id": "manual_xinjiang_77ca6c10",
       "name": "安集海大峡谷",
       "city": "塔城地区沙湾",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_77ca6c10_verified.jpg",
       "description": "安集海大峡谷位于塔城地区沙湾（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "安集海大峡谷位于塔城地区沙湾（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1485,7 +1520,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 乌沙安集海大峡谷",
+          "url": "https://www.amap.com/place/B0FFGWQ4WV",
+          "poiId": "B0FFGWQ4WV",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1518,8 +1560,8 @@
       "id": "manual_xinjiang_805c7f56",
       "name": "禾木村",
       "city": "阿勒泰地区布尔津",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_805c7f56_verified.jpg",
       "description": "禾木村位于阿勒泰地区布尔津（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "禾木村位于阿勒泰地区布尔津（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1596,7 +1638,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q14162264 实体页：https://www.wikidata.org/wiki/Q14162264"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 禾木风景区",
+          "url": "https://www.amap.com/place/B0FFHUZDVF",
+          "poiId": "B0FFHUZDVF",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1627,8 +1676,8 @@
       "id": "manual_xinjiang_5008a89e",
       "name": "喀拉库勒湖",
       "city": "喀什地区塔什库尔干塔吉克",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_5008a89e_verified.jpg",
       "description": "喀拉库勒湖位于喀什地区塔什库尔干塔吉克（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "喀拉库勒湖位于喀什地区塔什库尔干塔吉克（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1701,7 +1750,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 卡拉库里湖风景区",
+          "url": "https://www.amap.com/place/B03E700B1H",
+          "poiId": "B03E700B1H",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1734,8 +1790,8 @@
       "id": "manual_xinjiang_2370e110",
       "name": "喀赞其民俗旅游区",
       "city": "伊犁哈萨克自治州伊宁",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_2370e110_verified.jpg",
       "description": "喀赞其民俗旅游区位于伊犁哈萨克自治州伊宁（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "喀赞其民俗旅游区位于伊犁哈萨克自治州伊宁（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1809,7 +1865,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 伊犁老城文化旅游区",
+          "url": "https://www.amap.com/place/B03E70M9TY",
+          "poiId": "B03E70M9TY",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1842,8 +1905,8 @@
       "id": "manual_xinjiang_8d86d4a2",
       "name": "琼库什台",
       "city": "伊犁哈萨克自治州特克斯",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_8d86d4a2_verified.jpg",
       "description": "琼库什台位于伊犁哈萨克自治州特克斯（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "琼库什台位于伊犁哈萨克自治州特克斯（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1917,7 +1980,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q14142104 实体页：https://www.wikidata.org/wiki/Q14142104"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 新疆琼库什台大草原",
+          "url": "https://www.amap.com/place/B0FFJE6GOO",
+          "poiId": "B0FFJE6GOO",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1948,8 +2018,8 @@
       "id": "manual_xinjiang_7bcfe4aa",
       "name": "夏塔古道",
       "city": "伊犁哈萨克自治州昭苏",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_7bcfe4aa_verified.jpg",
       "description": "夏塔古道位于伊犁哈萨克自治州昭苏（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "夏塔古道位于伊犁哈萨克自治州昭苏（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2022,7 +2092,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 夏塔古道",
+          "url": "https://www.amap.com/place/B0MU4S9DVP",
+          "poiId": "B0MU4S9DVP",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2055,8 +2132,8 @@
       "id": "manual_xinjiang_8f39a505",
       "name": "伊犁六星街",
       "city": "伊犁哈萨克自治州伊宁",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xinjiang_8f39a505_verified.jpg",
       "description": "伊犁六星街位于伊犁哈萨克自治州伊宁（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "伊犁六星街位于伊犁哈萨克自治州伊宁（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2131,7 +2208,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 六星街景区",
+          "url": "https://www.amap.com/place/B0KDYAY50F",
+          "poiId": "B0KDYAY50F",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

@@ -4,8 +4,8 @@
       "id": "manual_henan_4cf7277",
       "name": "嵖岈山旅游景区",
       "city": "驻马店",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_4cf7277_verified.jpg",
       "description": "驻马店市嵖岈山景区总面积148平方公里，主景区面积50平方公里，嵖岈山景区系伏牛山东缘余脉，山势嵯峨，怪石林立。南山、北山、花果山、六峰山砥足而立，秀蜜湖、琵琶湖、百花湖、天磨湖点缀其间，构成了一幅奇特秀丽的风光画卷。",
       "intro": "驻马店市嵖岈山景区总面积148平方公里，主景区面积50平方公里，嵖岈山景区系伏牛山东缘余脉，山势嵯峨，怪石林立。南山、北山、花果山、六峰山砥足而立，秀蜜湖、琵琶湖、百花湖、天磨湖点缀其间，构成了一幅奇特秀丽的风光画卷。",
@@ -89,7 +89,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "高德地图 嵖岈山风景区：https://www.amap.com/place/B018C00E36"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 嵖岈山风景区",
+          "url": "https://www.amap.com/place/B018C00E36",
+          "poiId": "B018C00E36",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -244,8 +251,8 @@
       "id": "manual_henan_60783292",
       "name": "尧山－中原大佛景区",
       "city": "平顶山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_60783292_verified.jpg",
       "description": "中原大佛，位于河南省平顶山市鲁山县尧山佛泉寺，是世界上最高的佛教造像。整体佛像铸造用铜3300吨，黄金108公斤，特殊钢15000余吨，表面面积为11300平方米，通过焊接13300块铜板而成。",
       "intro": "中原大佛，位于河南省平顶山市鲁山县尧山佛泉寺，是世界上最高的佛教造像。整体佛像铸造用铜3300吨，黄金108公斤，特殊钢15000余吨，表面面积为11300平方米，通过焊接13300块铜板而成。",
@@ -326,7 +333,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 尧山风景区",
+          "url": "https://www.amap.com/place/B01770NGUN",
+          "poiId": "B01770NGUN",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -355,8 +369,8 @@
       "id": "manual_henan_d1f3ec17",
       "name": "殷墟景区",
       "city": "安阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_d1f3ec17_verified.jpg",
       "description": "世界文化遗产河南安阳殷墟景区位于中国历史文化名城安阳西北郊。安阳殷墟是中国商代晚期的都城，也是中国历史上第一个有文献可考并为甲骨文和考古发掘所证实的古代都城遗址，距今已有3300年的历史。",
       "intro": "世界文化遗产河南安阳殷墟景区位于中国历史文化名城安阳西北郊。安阳殷墟是中国商代晚期的都城，也是中国历史上第一个有文献可考并为甲骨文和考古发掘所证实的古代都城遗址，距今已有3300年的历史。",
@@ -455,7 +469,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 殷墟博物馆",
+          "url": "https://www.amap.com/place/B0HB3UA3TP",
+          "poiId": "B0HB3UA3TP",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -935,8 +956,8 @@
       "id": "manual_henan_b8b8d8cd",
       "name": "郑州银基国际旅游度假区",
       "city": "郑州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_b8b8d8cd_verified.jpg",
       "description": "郑州银基国际旅游度假区位于河南省郑州市新密市刘寨镇大鸿路1号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "郑州银基国际旅游度假区位于河南省郑州市新密市刘寨镇大鸿路1号，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1015,7 +1036,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 郑州银基动物王国",
+          "url": "https://www.amap.com/place/B0FFKYGE2W",
+          "poiId": "B0FFKYGE2W",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1047,8 +1075,8 @@
       "id": "manual_henan_7fa05c4c",
       "name": "三门峡市天鹅湖旅游度假区",
       "city": "三门峡",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_7fa05c4c_verified.jpg",
       "description": "三门峡市天鹅湖旅游度假区位于位于黄河之滨、天鹅湖畔。围绕黄河、温泉两大主题资源，推出“听见黄河谣”、“律动天鹅湖”、“乐活地坑院”、“康养在温泉”四大主题度假产品。",
       "intro": "三门峡市天鹅湖旅游度假区位于位于黄河之滨、天鹅湖畔。围绕黄河、温泉两大主题资源，推出“听见黄河谣”、“律动天鹅湖”、“乐活地坑院”、“康养在温泉”四大主题度假产品。",
@@ -1124,7 +1152,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0",
           "Wikidata Q97181059 实体页：https://www.wikidata.org/wiki/Q97181059"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 天鹅湖国家城市湿地公园",
+          "url": "https://www.amap.com/place/B02000010S",
+          "poiId": "B02000010S",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1153,8 +1188,8 @@
       "id": "manual_henan_6ad24665",
       "name": "尧山温泉旅游度假区",
       "city": "平顶山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.2,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_6ad24665_verified.jpg",
       "description": "尧山雄踞中原，既有北国山岳的雄伟峻拔，也不乏南方山水的钟灵毓秀。奇峰、怪石、飞瀑、温泉、山花、红叶、湖面、云海、原始森林、珍禽异兽及众多人文景观构成了完整的风景体系。",
       "intro": "尧山雄踞中原，既有北国山岳的雄伟峻拔，也不乏南方山水的钟灵毓秀。奇峰、怪石、飞瀑、温泉、山花、红叶、湖面、云海、原始森林、珍禽异兽及众多人文景观构成了完整的风景体系。",
@@ -1251,7 +1286,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=henan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 尧山温泉国家级旅游度假区",
+          "url": "https://www.amap.com/place/B0FFHB51U9",
+          "poiId": "B0FFHB51U9",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1504,8 +1546,8 @@
       "id": "manual_henan_7a3bd91e",
       "name": "新县西河古村",
       "city": "信阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/henan_7a3bd91e_verified.jpg",
       "description": "新县西河古村位于信阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "新县西河古村位于信阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1579,7 +1621,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 西河古村落景区",
+          "url": "https://www.amap.com/place/B0FFG0HQ1V",
+          "poiId": "B0FFG0HQ1V",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

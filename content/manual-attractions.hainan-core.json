@@ -4,8 +4,8 @@
       "id": "manual_hainan_310114b",
       "name": "海南槟榔谷黎苗文化旅游区",
       "city": "海南",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hainan_310114b_verified.jpg",
       "description": "景区由非遗村、甘什黎村、谷银苗家、田野黎家、《槟榔·古韵》大型实景演出、兰花小木屋、黎苗风味美食街七大文化体验区构成，风景秀丽，是海南黎、苗族传统“三月三”及“七夕嬉水节”的主要活动举办地之一。",
       "intro": "景区由非遗村、甘什黎村、谷银苗家、田野黎家、《槟榔·古韵》大型实景演出、兰花小木屋、黎苗风味美食街七大文化体验区构成，风景秀丽，是海南黎、苗族传统“三月三”及“七夕嬉水节”的主要活动举办地之一。",
@@ -84,7 +84,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 海南槟榔谷黎苗文化旅游区",
+          "url": "https://www.amap.com/place/B03210LJGX",
+          "poiId": "B03210LJGX",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -113,8 +120,8 @@
       "id": "manual_hainan_cf3ebdbf",
       "name": "分界洲岛旅游区",
       "city": "海南",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hainan_cf3ebdbf_verified.jpg",
       "description": "分界洲岛旅游区具有热带海岛风情特色，当地特殊的地理位置、气候特征及地域文化吸引众多新人来这里举办浪漫的海底婚礼。",
       "intro": "分界洲岛旅游区具有热带海岛风情特色，当地特殊的地理位置、气候特征及地域文化吸引众多新人来这里举办浪漫的海底婚礼。",
@@ -190,7 +197,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 分界洲岛景区",
+          "url": "https://www.amap.com/place/B0329001HK",
+          "poiId": "B0329001HK",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -219,8 +233,8 @@
       "id": "manual_hainan_5f16b260",
       "name": "呀诺达雨林文化旅游区",
       "city": "海南",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hainan_5f16b260_verified.jpg",
       "description": "呀诺达热带雨林景区是比较有观赏价值的热带雨林资源博览馆。景区主要由经石峡、梦幻谷、黎锦苑、山盟海誓、快乐体验、热带瓜果乡、雨林水族馆、欢乐雨林“呀诺达”大型演艺和综合服务区九个主题景观区组成。",
       "intro": "呀诺达热带雨林景区是比较有观赏价值的热带雨林资源博览馆。景区主要由经石峡、梦幻谷、黎锦苑、山盟海誓、快乐体验、热带瓜果乡、雨林水族馆、欢乐雨林“呀诺达”大型演艺和综合服务区九个主题景观区组成。",
@@ -298,7 +312,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hainan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 呀诺达雨林文化旅游区",
+          "url": "https://www.amap.com/place/B02FE007Y7",
+          "poiId": "B02FE007Y7",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2701,8 +2722,8 @@
       "id": "manual_hainan_4c1f0304",
       "name": "棋子湾",
       "city": "昌江",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hainan_4c1f0304_verified.jpg",
       "description": "棋子湾位于昌江（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "棋子湾位于昌江（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2777,7 +2798,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q24836912 实体页：https://www.wikidata.org/wiki/Q24836912"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 棋子湾国家海洋公园",
+          "url": "https://www.amap.com/place/B02FE07R9E",
+          "poiId": "B02FE07R9E",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

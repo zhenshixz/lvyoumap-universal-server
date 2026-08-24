@@ -4,8 +4,8 @@
       "id": "manual_neimenggu_4eeebd7",
       "name": "阿拉善盟胡杨林旅游区",
       "city": "内蒙古",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/neimenggu_4eeebd7_verified.jpg",
       "description": "额济纳旗地处亚欧大陆腹地，属于大陆性荒漠气候，具有干旱少雨，日照充足，多风沙等特点，胡杨树是唯一能够在这里生长的树种。胡杨那磅礴向上的气势，向人们展示着不屈不挠的精神，那鬼斧神工般的形态，让人们感受到大自然的壮美。",
       "intro": "额济纳旗地处亚欧大陆腹地，属于大陆性荒漠气候，具有干旱少雨，日照充足，多风沙等特点，胡杨树是唯一能够在这里生长的树种。胡杨那磅礴向上的气势，向人们展示着不屈不挠的精神，那鬼斧神工般的形态，让人们感受到大自然的壮美。",
@@ -79,7 +79,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=neimenggu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 额济纳胡杨林旅游区",
+          "url": "https://www.amap.com/place/B0HRTU5JUN",
+          "poiId": "B0HRTU5JUN",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

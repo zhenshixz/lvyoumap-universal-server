@@ -234,8 +234,8 @@
       "id": "manual_chongqing_371c39f0",
       "name": "龙缸景区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_371c39f0_verified.jpg",
       "description": "龙缸是一个长轴距离304～326米、短轴距离178～183米、深度达335米的椭圆形天坑，这一深度位居中国第三位，世界第五位。缸内壁如削，壁缝松柏横卧，古藤倒垂，缸底四季吐翠，百鸟争鸣。",
       "intro": "龙缸是一个长轴距离304～326米、短轴距离178～183米、深度达335米的椭圆形天坑，这一深度位居中国第三位，世界第五位。缸内壁如削，壁缝松柏横卧，古藤倒垂，缸底四季吐翠，百鸟争鸣。",
@@ -317,7 +317,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 重庆云阳龙缸国家地质公园",
+          "url": "https://www.amap.com/place/B00178YXVR",
+          "poiId": "B00178YXVR",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -346,8 +353,8 @@
       "id": "manual_chongqing_3b5b7c42",
       "name": "四面山景区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_3b5b7c42_verified.jpg",
       "description": "四面山风景区拥有“丹霞地貌”的特征，极具观赏价值。四面山风景区主要有望乡台、土地岩、龙潭湖、洪海、珍珠湖等核心景区，自然景观独特、生态环境优美、旅游资源丰富，是休闲度假优选的旅游目的地。",
       "intro": "四面山风景区拥有“丹霞地貌”的特征，极具观赏价值。四面山风景区主要有望乡台、土地岩、龙潭湖、洪海、珍珠湖等核心景区，自然景观独特、生态环境优美、旅游资源丰富，是休闲度假优选的旅游目的地。",
@@ -445,7 +452,14 @@
           "Wikidata Q7517768 实体页：https://www.wikidata.org/wiki/Q7517768",
           "高德地图 四面山景区：https://www.amap.com/place/B00170I91F"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 四面山景区",
+          "url": "https://www.amap.com/place/B00170I91F",
+          "poiId": "B00170I91F",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -474,8 +488,8 @@
       "id": "manual_chongqing_8e2e0927",
       "name": "金佛山景区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_8e2e0927_verified.jpg",
       "description": "金佛山景区因喀斯特世界自然遗产、生物多样性、佛教文化三大奇观闻名于世。景区具有原始独特的自然风貌，雄险怪奇的岩体造型，神秘幽深的洞宫地府，变幻莫测的气象景观，惊险刺激的绝壁栈道，历史悠久的唐寺庙群，融山、水、林、泉、洞为一体，集雄、奇、险、秀于一身。",
       "intro": "金佛山景区因喀斯特世界自然遗产、生物多样性、佛教文化三大奇观闻名于世。景区具有原始独特的自然风貌，雄险怪奇的岩体造型，神秘幽深的洞宫地府，变幻莫测的气象景观，惊险刺激的绝壁栈道，历史悠久的唐寺庙群，融山、水、林、泉、洞为一体，集雄、奇、险、秀于一身。",
@@ -565,7 +579,14 @@
           "Wikidata Q3321893 实体页：https://www.wikidata.org/wiki/Q3321893",
           "高德地图 金佛山国家风景名胜区：https://www.amap.com/place/B001786UY2"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 金佛山国家风景名胜区",
+          "url": "https://www.amap.com/place/B001786UY2",
+          "poiId": "B001786UY2",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -738,8 +759,8 @@
       "id": "manual_chongqing_d8bedb9e",
       "name": "桃花源旅游景区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_d8bedb9e_verified.jpg",
       "description": "桃花源景区位于重庆避暑胜地酉阳县城近郊的大山之中，被认为是陶渊明《桃花源记》的原型地。景区由世外桃源、太古洞、酉州古城、桃花源国家森林公园、二酉山等等景点组成。",
       "intro": "桃花源景区位于重庆避暑胜地酉阳县城近郊的大山之中，被认为是陶渊明《桃花源记》的原型地。景区由世外桃源、太古洞、酉州古城、桃花源国家森林公园、二酉山等等景点组成。",
@@ -844,7 +865,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "Wikidata Q910739 实体页：https://www.wikidata.org/wiki/Q910739"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 酉阳桃花源景区",
+          "url": "https://www.amap.com/place/B00170IEFX",
+          "poiId": "B00170IEFX",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1140,8 +1168,8 @@
       "id": "manual_chongqing_b47de5fd",
       "name": "大足石刻景区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_b47de5fd_verified.jpg",
       "description": "大足石刻是唐末、宋初时期的宗教摩崖石刻，以佛教题材为主，尤以北山摩崖造像和宝顶山摩崖造像最为著名，是中国著名的古代石刻艺术。1999年，以北山、宝顶山、南山、石篆山、石门山为代表的大足石刻被列入世界文化遗产。",
       "intro": "大足石刻是唐末、宋初时期的宗教摩崖石刻，以佛教题材为主，尤以北山摩崖造像和宝顶山摩崖造像最为著名，是中国著名的古代石刻艺术。1999年，以北山、宝顶山、南山、石篆山、石门山为代表的大足石刻被列入世界文化遗产。",
@@ -1220,7 +1248,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "Wikidata Q651278 实体页：https://www.wikidata.org/wiki/Q651278"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 大足石刻名胜风景区",
+          "url": "https://www.amap.com/place/B0FFJB6NA5",
+          "poiId": "B0FFJB6NA5",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -3190,8 +3225,8 @@
       "id": "manual_chongqing_286c6146",
       "name": "石柱黄水旅游度假区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.2,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_286c6146_verified.jpg",
       "description": "石柱黄水旅游度假区位于重庆市石柱土家族自治县S404，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "石柱黄水旅游度假区位于重庆市石柱土家族自治县S404，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -3265,7 +3300,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=chongqing&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 黄水国家森林公园",
+          "url": "https://www.amap.com/place/B0LR2M4QN5",
+          "poiId": "B0LR2M4QN5",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -3297,8 +3339,8 @@
       "id": "manual_chongqing_fc9f182a",
       "name": "仙女山旅游度假区",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_fc9f182a_verified.jpg",
       "description": "度假区位于武隆仙女山中部，毗邻世界自然遗产地、国家5A级景区天生三桥和仙女山国家森林公园。自然条件优越，森林覆盖率达80%以上，年均气温17.4摄氏度。",
       "intro": "度假区位于武隆仙女山中部，毗邻世界自然遗产地、国家5A级景区天生三桥和仙女山国家森林公园。自然条件优越，森林覆盖率达80%以上，年均气温17.4摄氏度。",
@@ -3374,7 +3416,14 @@
           "Wikidata Q10884241 实体页：https://www.wikidata.org/wiki/Q10884241",
           "高德地图 仙女山国家级旅游度假区：https://www.amap.com/place/B0FFLAGWZ7"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 仙女山国家森林公园",
+          "url": "https://www.amap.com/place/B001786W8A",
+          "poiId": "B001786W8A",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -3516,8 +3565,8 @@
       "id": "manual_chongqing_84e16850",
       "name": "涪陵816核工厂",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_84e16850_verified.jpg",
       "description": "涪陵816核工厂位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "涪陵816核工厂位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -3593,7 +3642,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 816地下核工程",
+          "url": "https://www.amap.com/place/B001786W3A",
+          "poiId": "B001786W3A",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -3626,8 +3682,8 @@
       "id": "manual_chongqing_a803c25d",
       "name": "金刚碑古村",
       "city": "重庆",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/chongqing_a803c25d_verified.jpg",
       "description": "金刚碑古村位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "金刚碑古村位于重庆（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -3698,7 +3754,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q139997614 实体页：https://www.wikidata.org/wiki/Q139997614"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 金刚碑历史文化街区",
+          "url": "https://www.amap.com/place/B0FFH7Q1X6",
+          "poiId": "B0FFH7Q1X6",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

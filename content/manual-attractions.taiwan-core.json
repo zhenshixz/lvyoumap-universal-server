@@ -2031,8 +2031,8 @@
       "id": "manual_taiwan_32d494a4",
       "name": "淡水老街",
       "city": "新北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/taiwan_32d494a4_verified.jpg",
       "description": "淡水老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "淡水老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2110,7 +2110,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q11152333 实体页：https://www.wikidata.org/wiki/Q11152333"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 淡水老街",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_danshui",
+          "poiId": "ctrip_sight_danshui",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2141,8 +2148,8 @@
       "id": "manual_taiwan_9f4822b",
       "name": "九份老街",
       "city": "新北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/taiwan_9f4822b_verified.jpg",
       "description": "九份老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "九份老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2220,7 +2227,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q10878674 实体页：https://www.wikidata.org/wiki/Q10878674"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 九份老街",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_jiufen",
+          "poiId": "ctrip_sight_jiufen",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2251,8 +2265,8 @@
       "id": "manual_taiwan_a1e708ed",
       "name": "平溪十分老街",
       "city": "新北",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/taiwan_a1e708ed_verified.jpg",
       "description": "平溪十分老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "平溪十分老街位于新北（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2328,7 +2342,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 十分老街(天灯故乡)",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_shifen",
+          "poiId": "ctrip_sight_shifen",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

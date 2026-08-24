@@ -4,8 +4,8 @@
       "id": "manual_shaanxi_c60e975f",
       "name": "金丝峡景区",
       "city": "商洛",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shaanxi_c60e975f_verified.jpg",
       "description": "景区内有白龙峡、黑龙峡、青龙峡、石燕寨和丹江源五大景区。金丝峡以窄、幽、秀、奇而闻名，河流密布，森林茂密，野生动植物繁多，原始生态保存完好，是秦岭地区最完整的嶂谷地质构造。",
       "intro": "景区内有白龙峡、黑龙峡、青龙峡、石燕寨和丹江源五大景区。金丝峡以窄、幽、秀、奇而闻名，河流密布，森林茂密，野生动植物繁多，原始生态保存完好，是秦岭地区最完整的嶂谷地质构造。",
@@ -84,7 +84,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "高德地图 金丝峡景区：https://www.amap.com/place/B039200432"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 金丝峡景区",
+          "url": "https://www.amap.com/place/B039200432",
+          "poiId": "B039200432",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -803,8 +810,8 @@
       "id": "manual_shaanxi_a1f52acd",
       "name": "商洛市牛背梁旅游度假区",
       "city": "商洛",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shaanxi_a1f52acd_verified.jpg",
       "description": "牛背梁旅游度假区是集休闲度假、户外拓展、康体养生、文化体验于一体的旅游度假区。牛背梁旅游度假区度假产品多样，住宿接待设施类型丰富，有酒店、山庄、民宿、农家乐等，高中低档配比合理，呈现复合型多层次的度假住宿设施体系。",
       "intro": "牛背梁旅游度假区是集休闲度假、户外拓展、康体养生、文化体验于一体的旅游度假区。牛背梁旅游度假区度假产品多样，住宿接待设施类型丰富，有酒店、山庄、民宿、农家乐等，高中低档配比合理，呈现复合型多层次的度假住宿设施体系。",
@@ -881,7 +888,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanxi&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 牛背梁国家森林公园",
+          "url": "https://www.amap.com/place/B039202DMG",
+          "poiId": "B039202DMG",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1026,8 +1040,8 @@
       "id": "manual_shaanxi_a6e66539",
       "name": "驼铃传奇秀",
       "city": "西安",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shaanxi_a6e66539_verified.jpg",
       "description": "驼铃传奇秀位于西安（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "驼铃传奇秀位于西安（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1104,7 +1118,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 华夏文旅西安度假区",
+          "url": "https://www.amap.com/place/B0FFHJTTVL",
+          "poiId": "B0FFHJTTVL",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

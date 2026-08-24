@@ -135,8 +135,8 @@
       "id": "manual_yunnan_5597824e",
       "name": "火山热海旅游区",
       "city": "保山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_5597824e_verified.jpg",
       "description": "火山热海位于腾冲县城西南20公里，面积约9平方公里，较大的气泉、温泉群共有80余处，其中有14个温泉群的水温达90℃以上。2016年被国家旅游局批准为国家AAAAA级旅游景区。",
       "intro": "火山热海位于腾冲县城西南20公里，面积约9平方公里，较大的气泉、温泉群共有80余处，其中有14个温泉群的水温达90℃以上。2016年被国家旅游局批准为国家AAAAA级旅游景区。",
@@ -215,7 +215,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=yunnan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 腾冲热海风景区",
+          "url": "https://www.amap.com/place/B03720042X",
+          "poiId": "B03720042X",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -244,8 +251,8 @@
       "id": "manual_yunnan_6007dcac",
       "name": "昆明世博园景区",
       "city": "昆明",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_6007dcac_verified.jpg",
       "description": "昆明市昆明世博园景区是1999昆明世界园艺博览会会址，园区占地面积约218公顷，集全国各省、区、市地方特色和95个国家风格的园林园艺品、庭院建筑和科技成就于一园，体现了“人与自然，和谐发展”的时代主题。",
       "intro": "昆明市昆明世博园景区是1999昆明世界园艺博览会会址，园区占地面积约218公顷，集全国各省、区、市地方特色和95个国家风格的园林园艺品、庭院建筑和科技成就于一园，体现了“人与自然，和谐发展”的时代主题。",
@@ -322,7 +329,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "Wikidata Q10880855 实体页：https://www.wikidata.org/wiki/Q10880855"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 世界园艺博览园",
+          "url": "https://www.amap.com/place/B03670000C",
+          "poiId": "B03670000C",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -351,8 +365,8 @@
       "id": "manual_yunnan_fa0b9c2d",
       "name": "迪庆州普达措国家公园",
       "city": "云南",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_fa0b9c2d_verified.jpg",
       "description": "普达措景区位于滇西北“三江并流”世界自然遗产中心地带，由国际重要湿地碧塔海自然保护区和“三江并流”世界自然遗产哈巴片区之属都湖景区两部分构成，以碧塔海、属都湖和弥里塘亚高山牧场为主要组成部分，也是香格里拉旅游的主要景点之一。景区拥有地质地貌、湖泊湿地、森林草甸、河谷溪流、珍稀动植物等，原始生态环境保存完好。",
       "intro": "普达措景区位于滇西北“三江并流”世界自然遗产中心地带，由国际重要湿地碧塔海自然保护区和“三江并流”世界自然遗产哈巴片区之属都湖景区两部分构成，以碧塔海、属都湖和弥里塘亚高山牧场为主要组成部分，也是香格里拉旅游的主要景点之一。景区拥有地质地貌、湖泊湿地、森林草甸、河谷溪流、珍稀动植物等，原始生态环境保存完好。",
@@ -428,7 +442,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=yunnan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 普达措国家公园",
+          "url": "https://www.amap.com/place/B0377006XM",
+          "poiId": "B0377006XM",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -570,8 +591,8 @@
       "id": "manual_yunnan_bd272868",
       "name": "玉溪抚仙湖旅游度假区",
       "city": "玉溪",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_bd272868_verified.jpg",
       "description": "澄江抚仙湖，湖水晶莹剔透、清澈见底，古人称为“琉璃万顷”。>中记述了抚仙湖的清澈秀美，“滇山淮多士，故多壅流而成海，而流多浑浊，淮抚仙湖最清”。",
       "intro": "澄江抚仙湖，湖水晶莹剔透、清澈见底，古人称为“琉璃万顷”。>中记述了抚仙湖的清澈秀美，“滇山淮多士，故多壅流而成海，而流多浑浊，淮抚仙湖最清”。",
@@ -645,7 +666,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=yunnan&type=0",
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 抚仙湖国家级旅游度假区",
+          "url": "https://www.amap.com/place/B0KUFUQC8S",
+          "poiId": "B0KUFUQC8S",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2005,8 +2033,8 @@
       "id": "manual_yunnan_5584f7e2",
       "name": "阳宗海旅游度假区",
       "city": "昆明",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_5584f7e2_verified.jpg",
       "description": "阳宗海是云南省九大高原湖泊之一，为天然淡水湖泊，湖面面积31.9平方公里，属珠江水系南盘江流域。阳宗海景色秀丽，湖水清澈，有明湖澄碧、高原明珠之称。",
       "intro": "阳宗海是云南省九大高原湖泊之一，为天然淡水湖泊，湖面面积31.9平方公里，属珠江水系南盘江流域。阳宗海景色秀丽，湖水清澈，有明湖澄碧、高原明珠之称。",
@@ -2084,7 +2112,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=yunnan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 阳宗海风景区",
+          "url": "https://www.amap.com/place/B0LKNMP2DX",
+          "poiId": "B0LKNMP2DX",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2683,8 +2718,8 @@
       "id": "manual_yunnan_13a0ad20",
       "name": "元阳梯田",
       "city": "红河",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/yunnan_13a0ad20_verified.jpg",
       "description": "元阳梯田位于红河（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "元阳梯田位于红河（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2758,7 +2793,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q64776052 实体页：https://www.wikidata.org/wiki/Q64776052"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 元阳·哈尼梯田",
+          "url": "https://www.amap.com/place/B0FFGJV3YF",
+          "poiId": "B0FFGJV3YF",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

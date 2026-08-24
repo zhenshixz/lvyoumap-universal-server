@@ -118,8 +118,8 @@
       "id": "manual_liaoning_75f79c7e",
       "name": "沈阳植物园",
       "city": "沈阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/liaoning_75f79c7e_verified.jpg",
       "description": "沈阳市植物园（沈阳世博园）栽植露地木本植物、露地草本植物和温室植物2000余种。园区内汇集、展示了东北、西北、华北及内蒙古地区植物资源，是东北地区植物种类和数量最多的综合性植物展园。",
       "intro": "沈阳市植物园（沈阳世博园）栽植露地木本植物、露地草本植物和温室植物2000余种。园区内汇集、展示了东北、西北、华北及内蒙古地区植物资源，是东北地区植物种类和数量最多的综合性植物展园。",
@@ -197,7 +197,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "Wikidata Q17028819 实体页：https://www.wikidata.org/wiki/Q17028819"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 沈阳植物园(沈阳世博园)",
+          "url": "https://www.amap.com/place/B00180J8ET",
+          "poiId": "B00180J8ET",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1273,8 +1280,8 @@
       "id": "manual_liaoning_99803960",
       "name": "大连长山群岛旅游度假区",
       "city": "大连",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/liaoning_99803960_verified.jpg",
       "description": "大连长山群岛旅游度假区位于大连市长海县长海獐子岛福满渔家民宿北侧约170米，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "大连长山群岛旅游度假区位于大连市长海县长海獐子岛福满渔家民宿北侧约170米，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1350,7 +1357,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=liaoning&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 大长山岛风景区",
+          "url": "https://www.amap.com/place/B01B00067T",
+          "poiId": "B01B00067T",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1382,8 +1396,8 @@
       "id": "manual_liaoning_42f9ded0",
       "name": "“九•一八”历史博物馆",
       "city": "沈阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/liaoning_42f9ded0_verified.jpg",
       "description": "坐落于沈阳市区东北隅的““九•一八”历史博物馆是为纪念在“九·一八”事变中的受难同胞、警示国人勿忘国耻而建。馆内陈列着大量的史实照片、档案，还有各种侵华罪证物件、抗日烈士遗物等文物展品，从各个方面展示了侵华日军的史实罪证，以及沦陷区人民的苦难生活与不屈不挠的斗争事迹。",
       "intro": "坐落于沈阳市区东北隅的““九•一八”历史博物馆是为纪念在“九·一八”事变中的受难同胞、警示国人勿忘国耻而建。馆内陈列着大量的史实照片、档案，还有各种侵华罪证物件、抗日烈士遗物等文物展品，从各个方面展示了侵华日军的史实罪证，以及沦陷区人民的苦难生活与不屈不挠的斗争事迹。",
@@ -1463,7 +1477,14 @@
           "ctrip_province_sightlist：https://you.ctrip.com/sightlist/liaoning100061.html",
           "携程旅行 “九•一八”历史博物馆 详情页：https://you.ctrip.com/sight/shenyang155/9232.html?poiType=3&scene=online"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 沈阳九一八历史博物馆",
+          "url": "https://www.amap.com/place/B01B00000C",
+          "poiId": "B01B00000C",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1720,8 +1741,8 @@
       "id": "manual_liaoning_592a8b12",
       "name": "九一八事变博物馆",
       "city": "沈阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/liaoning_592a8b12_verified.jpg",
       "description": "九一八事变博物馆位于沈阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "九一八事变博物馆位于沈阳（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1800,7 +1821,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 沈阳九一八历史博物馆",
+          "url": "https://www.amap.com/place/B01B00000C",
+          "poiId": "B01B00000C",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

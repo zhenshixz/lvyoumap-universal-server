@@ -4,8 +4,8 @@
       "id": "manual_zhejiang_206eb3eb",
       "name": "溪口－滕头旅游景区",
       "city": "宁波",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_206eb3eb_verified.jpg",
       "description": "溪口－滕头旅游景区位于宁波（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "溪口－滕头旅游景区位于宁波（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -102,7 +102,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "Wikidata Q1233637 实体页：https://www.wikidata.org/wiki/Q1233637"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 雪窦山",
+          "url": "https://www.amap.com/place/B023E07FDK",
+          "poiId": "B023E07FDK",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -133,8 +140,8 @@
       "id": "manual_zhejiang_65caa79",
       "name": "乌镇古镇旅游区",
       "city": "嘉兴",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_65caa79_verified.jpg",
       "description": "乌镇作为江南水乡六大古镇之一，拥有1300年建镇史。雕梁、画栋、石巷、老屋见证着古镇沧桑历史与斑驳光影。",
       "intro": "乌镇作为江南水乡六大古镇之一，拥有1300年建镇史。雕梁、画栋、石巷、老屋见证着古镇沧桑历史与斑驳光影。",
@@ -212,7 +219,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 乌镇风景区",
+          "url": "https://www.amap.com/place/B0FFFAPGR4",
+          "poiId": "B0FFFAPGR4",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -375,8 +389,8 @@
       "id": "manual_zhejiang_fae85aa4",
       "name": "泰顺廊桥-氡泉旅游度假区",
       "city": "温州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_fae85aa4_verified.jpg",
       "description": "泰顺廊桥-氢泉旅游度假区地处亚热带海洋型季风气候带，气候宜人，山清水秀，四季分明，拥有4A级景区2家、国家级非物质文遗产6项、省级非物质文化遗产9项，以及溪东桥、北涧桥、包氏宗祠等国保单位。度假区拥有氧泉、廊桥两项主体资源，其中“承天氡泉”被誉为“神水宝地”“天下第一氧”，为浙江省两个4级温泉之一，也是浙江省唯一 一家含氢量适宜的自涌型温泉。",
       "intro": "泰顺廊桥-氢泉旅游度假区地处亚热带海洋型季风气候带，气候宜人，山清水秀，四季分明，拥有4A级景区2家、国家级非物质文遗产6项、省级非物质文化遗产9项，以及溪东桥、北涧桥、包氏宗祠等国保单位。度假区拥有氧泉、廊桥两项主体资源，其中“承天氡泉”被誉为“神水宝地”“天下第一氧”，为浙江省两个4级温泉之一，也是浙江省唯一 一家含氢量适宜的自涌型温泉。",
@@ -451,7 +465,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 泰顺廊桥文化园",
+          "url": "https://www.amap.com/place/B0FFGA0P60",
+          "poiId": "B0FFGA0P60",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -619,8 +640,8 @@
       "id": "manual_zhejiang_38f565dc",
       "name": "临海古城",
       "city": "台州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_38f565dc_verified.jpg",
       "description": "临海古城位于台州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "临海古城位于台州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -696,7 +717,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q119035979 实体页：https://www.wikidata.org/wiki/Q119035979"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 台州府城文化旅游区(江南长城)",
+          "url": "https://www.amap.com/place/B023C0067T",
+          "poiId": "B023C0067T",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -727,8 +755,8 @@
       "id": "manual_zhejiang_f4dde447",
       "name": "宁波博物馆",
       "city": "宁波",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_f4dde447_verified.jpg",
       "description": "宁波博物馆位于宁波（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "宁波博物馆位于宁波（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -805,7 +833,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q1070226 实体页：https://www.wikidata.org/wiki/Q1070226"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 宁波博物院",
+          "url": "https://www.amap.com/place/B023E05HS9",
+          "poiId": "B023E05HS9",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -836,8 +871,8 @@
       "id": "manual_zhejiang_cf9391de",
       "name": "松阳古村落",
       "city": "丽水",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_cf9391de_verified.jpg",
       "description": "松阳古村落位于丽水（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "松阳古村落位于丽水（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -913,7 +948,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 松阳杨家堂古村落",
+          "url": "https://www.amap.com/place/B023E07FDL",
+          "poiId": "B023E07FDL",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -946,8 +988,8 @@
       "id": "manual_zhejiang_75dfded1",
       "name": "严州古城",
       "city": "杭州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/zhejiang_75dfded1_verified.jpg",
       "description": "严州古城位于梅城镇正大街，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "严州古城位于梅城镇正大街，是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1022,7 +1064,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "高德地图 严州古城：https://www.amap.com/place/B023B19XYF"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 严州古城(建德梅城)",
+          "url": "https://www.amap.com/place/B0FFG0HQ1W",
+          "poiId": "B0FFG0HQ1W",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

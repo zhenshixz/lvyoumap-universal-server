@@ -4,8 +4,8 @@
       "id": "manual_heilongjiang_a617449b",
       "name": "扎龙生态旅游区",
       "city": "齐齐哈尔",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/heilongjiang_a617449b_verified.jpg",
       "description": "扎龙生态旅游区位于齐齐哈尔市铁锋区，总面积4.7平方公里。扎龙生态旅游区湿地风光秀美，拥有扎龙湖、荷仙池鹤唳云天、鹿鹤同春、芦林鹤影等游览景区，打造了望鹤楼、水禽岛、名鹤苑、扎龙湿地博物馆、丹顶鹤野化训飞区等丰富多样的旅游景点。",
       "intro": "扎龙生态旅游区位于齐齐哈尔市铁锋区，总面积4.7平方公里。扎龙生态旅游区湿地风光秀美，拥有扎龙湖、荷仙池鹤唳云天、鹿鹤同春、芦林鹤影等游览景区，打造了望鹤楼、水禽岛、名鹤苑、扎龙湿地博物馆、丹顶鹤野化训飞区等丰富多样的旅游景点。",
@@ -83,7 +83,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 扎龙国家级自然保护区",
+          "url": "https://www.amap.com/place/B01C400MXJ",
+          "poiId": "B01C400MXJ",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -112,8 +119,8 @@
       "id": "manual_heilongjiang_b2cd2a20",
       "name": "虎头旅游景区",
       "city": "鸡西",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/heilongjiang_b2cd2a20_verified.jpg",
       "description": "虎头旅游景区具有大界江、大湿地、大冰雪、大森林等塞北自然风光、战争遗址和历史文物等旅游资源，是集生态旅游、红色旅游、森林旅游、跨境旅游、冰雪旅游为一体的综合性景区，被专家称为黑龙江省唯一一处“非城市中心型旅游资源集合区”。",
       "intro": "虎头旅游景区具有大界江、大湿地、大冰雪、大森林等塞北自然风光、战争遗址和历史文物等旅游资源，是集生态旅游、红色旅游、森林旅游、跨境旅游、冰雪旅游为一体的综合性景区，被专家称为黑龙江省唯一一处“非城市中心型旅游资源集合区”。",
@@ -190,7 +197,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 虎头要塞遗址景区",
+          "url": "https://www.amap.com/place/B037D00B0U",
+          "poiId": "B037D00B0U",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1142,8 +1156,8 @@
       "id": "manual_heilongjiang_430d9b4d",
       "name": "亚布力滑雪旅游度假区",
       "city": "哈尔滨",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/heilongjiang_430d9b4d_verified.jpg",
       "description": "亚布力滑雪旅游度假区是国家4A级景区，也是我国南极考察训练基地。度假区由风车山庄、交通山庄、大青山滑雪场、通信山庄、电力山庄、云鼎山庄、雅旺斯、好汉泊雪场等组成，设有各类娱乐项目，为游客带来丰富的冰雪体验。",
       "intro": "亚布力滑雪旅游度假区是国家4A级景区，也是我国南极考察训练基地。度假区由风车山庄、交通山庄、大青山滑雪场、通信山庄、电力山庄、云鼎山庄、雅旺斯、好汉泊雪场等组成，设有各类娱乐项目，为游客带来丰富的冰雪体验。",
@@ -1221,7 +1235,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=heilongjiang&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 亚布力滑雪",
+          "url": "https://www.amap.com/place/B0L0AHCG80",
+          "poiId": "B0L0AHCG80",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1474,8 +1495,8 @@
       "id": "manual_heilongjiang_d9dbadaa",
       "name": "圣·索菲亚大教堂",
       "city": "哈尔滨",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/heilongjiang_d9dbadaa_verified.jpg",
       "description": "圣·索菲亚大教堂位于哈尔滨（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "圣·索菲亚大教堂位于哈尔滨（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1549,7 +1570,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q830054 实体页：https://www.wikidata.org/wiki/Q830054"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 哈尔滨圣索菲亚大教堂",
+          "url": "https://www.amap.com/place/B037000B4V",
+          "poiId": "B037000B4V",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

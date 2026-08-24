@@ -236,8 +236,8 @@
       "id": "manual_shandong_20820f4b",
       "name": "蓬莱阁-三仙山-八仙过海旅游区",
       "city": "烟台",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shandong_20820f4b_verified.jpg",
       "description": "蓬莱阁风景区总面积1.85万平方米，现存有驰名中外的国家级重点文物保护单位——蓬莱水城及蓬莱阁、戚继光故里等名胜古迹。",
       "intro": "蓬莱阁风景区总面积1.85万平方米，现存有驰名中外的国家级重点文物保护单位——蓬莱水城及蓬莱阁、戚继光故里等名胜古迹。",
@@ -310,7 +310,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 三仙山风景区",
+          "url": "https://www.amap.com/place/B021705T2P",
+          "poiId": "B021705T2P",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1499,8 +1506,8 @@
       "id": "manual_shandong_3de3ab8f",
       "name": "凤凰岛旅游度假区",
       "city": "青岛",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shandong_3de3ab8f_verified.jpg",
       "description": "度假区海岸线长5公里，是我国北方最具有品质、最富盛名的度假区之一。整个度假区金沙奇礁，峰峦叠翠，阳光、大海、沙滩、岛屿相互交融，形成一幅优美和谐的海滨图画。",
       "intro": "度假区海岸线长5公里，是我国北方最具有品质、最富盛名的度假区之一。整个度假区金沙奇礁，峰峦叠翠，阳光、大海、沙滩、岛屿相互交融，形成一幅优美和谐的海滨图画。",
@@ -1578,7 +1585,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shandong&type=0",
           "高德地图 凤凰岛旅游度假区：https://www.amap.com/place/B0FFIWPB1F"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 凤凰岛旅游度假区",
+          "url": "https://www.amap.com/place/B0FFIWPB1F",
+          "poiId": "B0FFIWPB1F",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-18",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1735,8 +1749,8 @@
       "id": "manual_shandong_c4ee6736",
       "name": "青岛啤酒博物馆",
       "city": "山东",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shandong_c4ee6736_verified.jpg",
       "description": "青岛啤酒博物馆位于山东（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "青岛啤酒博物馆位于山东（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1815,7 +1829,14 @@
           "ctrip_province_sightlist：https://you.ctrip.com/sightlist/shandong100039.html",
           "Wikidata Q15914948 实体页：https://www.wikidata.org/wiki/Q15914948"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 青岛啤酒博物馆",
+          "url": "https://www.amap.com/place/B021401A45",
+          "poiId": "B021401A45",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1846,8 +1867,8 @@
       "id": "manual_shandong_ff781d5d",
       "name": "中国陶瓷琉璃馆",
       "city": "淄博",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shandong_ff781d5d_verified.jpg",
       "description": "中国陶瓷琉璃馆位于淄博（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "中国陶瓷琉璃馆位于淄博（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1922,7 +1943,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 淄博陶瓷琉璃博物馆",
+          "url": "https://www.amap.com/place/B0FFL2Q5HP",
+          "poiId": "B0FFL2Q5HP",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

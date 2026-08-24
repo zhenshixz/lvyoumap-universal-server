@@ -4,8 +4,8 @@
       "id": "manual_jiangsu_2f5c68d1",
       "name": "洪泽湖湿地景区",
       "city": "宿迁",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_2f5c68d1_verified.jpg",
       "description": "景区分为五大游览区，分别是以芦苇迷宫为代表的湿地文化体验区、以洪泽湖鱼族馆为代表的湿地科普互动区、以千荷园为代表的湿地植物展示区、以深呼吸通道为代表的湿地生态养生区以及以湿地度假村为代表的湿地度假休闲区。景区集观光旅游、生态休闲、科普教育、度假养生等为一体，现已成为华东地区具有代表性的生态湿地景区。",
       "intro": "景区分为五大游览区，分别是以芦苇迷宫为代表的湿地文化体验区、以洪泽湖鱼族馆为代表的湿地科普互动区、以千荷园为代表的湿地植物展示区、以深呼吸通道为代表的湿地生态养生区以及以湿地度假村为代表的湿地度假休闲区。景区集观光旅游、生态休闲、科普教育、度假养生等为一体，现已成为华东地区具有代表性的生态湿地景区。",
@@ -85,7 +85,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 泗洪洪泽湖湿地景区",
+          "url": "https://www.amap.com/place/B020F151GV",
+          "poiId": "B020F151GV",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -114,8 +121,8 @@
       "id": "manual_jiangsu_5d1d5f86",
       "name": "金山•焦山•北固山风景区",
       "city": "镇江",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_5d1d5f86_verified.jpg",
       "description": "镇江三山，即金山、北固山和焦山，沿江屹立，风景秀丽壮观，犹如一幅壮丽的山水长卷。金山名胜古迹甚多，俯拾皆是。",
       "intro": "镇江三山，即金山、北固山和焦山，沿江屹立，风景秀丽壮观，犹如一幅壮丽的山水长卷。金山名胜古迹甚多，俯拾皆是。",
@@ -199,7 +206,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 焦山景区",
+          "url": "https://www.amap.com/place/B01FF0O69Z",
+          "poiId": "B01FF0O69Z",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -495,8 +509,8 @@
       "id": "manual_jiangsu_d49a7b58",
       "name": "中央电视台无锡影视基地三国水浒城景区",
       "city": "无锡",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_d49a7b58_verified.jpg",
       "description": "中央电视台无锡影视基地是中国首创的大规模影视拍摄和旅游基地。无锡影视基地始建于1987年，占地面积近100公顷，可使用太湖水面200公顷。",
       "intro": "中央电视台无锡影视基地是中国首创的大规模影视拍摄和旅游基地。无锡影视基地始建于1987年，占地面积近100公顷，可使用太湖水面200公顷。",
@@ -567,7 +581,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 三国水浒景区",
+          "url": "https://www.amap.com/place/B01FE0IFA3",
+          "poiId": "B01FE0IFA3",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -596,8 +617,8 @@
       "id": "manual_jiangsu_eee74370",
       "name": "钟山风景名胜区－中山陵园风景区",
       "city": "南京",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_eee74370_verified.jpg",
       "description": "钟山风景名胜区是中国著名的风景游览胜地、首批国家级风景名胜区之一。中山陵是中华民国国父、中国民主革命先行者孙中山的陵墓，主要建筑有牌坊、墓道、陵门、石阶、碑亭、祭堂和墓室等。",
       "intro": "钟山风景名胜区是中国著名的风景游览胜地、首批国家级风景名胜区之一。中山陵是中华民国国父、中国民主革命先行者孙中山的陵墓，主要建筑有牌坊、墓道、陵门、石阶、碑亭、祭堂和墓室等。",
@@ -676,7 +697,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 钟山风景名胜区",
+          "url": "https://www.amap.com/place/B00190CS6P",
+          "poiId": "B00190CS6P",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1521,8 +1549,8 @@
       "id": "manual_jiangsu_6fdc4a33",
       "name": "宿迁骆马湖旅游度假区",
       "city": "宿迁",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_6fdc4a33_verified.jpg",
       "description": "宿迁骆马湖旅游度假区位于宿迁市宿豫区水杉大道与玉兰路交叉口西北150米与宿迁市宿豫区奥体路，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "宿迁骆马湖旅游度假区位于宿迁市宿豫区水杉大道与玉兰路交叉口西北150米与宿迁市宿豫区奥体路，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1599,7 +1627,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0",
           "高德地图 宿迁骆马湖国家级旅游度假区：https://www.amap.com/place/B0FFG21M5F"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 宿迁骆马湖国家级旅游度假区",
+          "url": "https://www.amap.com/place/B0FFG21M5F",
+          "poiId": "B0FFG21M5F",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1765,8 +1800,8 @@
       "id": "manual_jiangsu_5193feaa",
       "name": "汤山温泉旅游度假区",
       "city": "南京",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jiangsu_5193feaa_verified.jpg",
       "description": "中国最古老的温泉养生地之一，这里集人文景观和自然风光于一体，不仅坐拥15万亩山林，还拥有南京直立猿人头骨化石和距今600多年的世界最大的阳山碑材等。",
       "intro": "中国最古老的温泉养生地之一，这里集人文景观和自然风光于一体，不仅坐拥15万亩山林，还拥有南京直立猿人头骨化石和距今600多年的世界最大的阳山碑材等。",
@@ -1841,7 +1876,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jiangsu&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 汤山风景区",
+          "url": "https://www.amap.com/place/B001908L3R",
+          "poiId": "B001908L3R",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

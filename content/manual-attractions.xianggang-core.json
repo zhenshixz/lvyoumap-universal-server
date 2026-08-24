@@ -1511,8 +1511,8 @@
       "id": "manual_xianggang_2bb566a7",
       "name": "九龙城寨公园",
       "city": "香港",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xianggang_2bb566a7_verified.jpg",
       "description": "九龙城寨公园位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "九龙城寨公园位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1586,7 +1586,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 九龙寨城公园",
+          "url": "https://www.amap.com/place/B073C03KR1",
+          "poiId": "B073C03KR1",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1619,8 +1626,8 @@
       "id": "manual_xianggang_fc43404f",
       "name": "荔枝窝",
       "city": "香港",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xianggang_fc43404f_verified.jpg",
       "description": "荔枝窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "荔枝窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1714,7 +1721,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q3972238 实体页：https://www.wikidata.org/wiki/Q3972238"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 荔枝窝自然步道",
+          "url": "https://www.amap.com/place/B0FFL8098P",
+          "poiId": "B0FFL8098P",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1745,8 +1759,8 @@
       "id": "manual_xianggang_c66365b3",
       "name": "梅窝",
       "city": "香港",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/xianggang_c66365b3_verified.jpg",
       "description": "梅窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "梅窝位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1823,7 +1837,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q3111452 实体页：https://www.wikidata.org/wiki/Q3111452"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 梅窝银矿湾",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_meivo",
+          "poiId": "ctrip_sight_meivo",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1854,8 +1875,8 @@
       "id": "manual_xianggang_8f7bba1c",
       "name": "跑马地赛马场",
       "city": "香港",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/xianggang_8f7bba1c_verified.jpg",
       "description": "跑马地赛马场位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "跑马地赛马场位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1928,7 +1949,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 跑马地马场",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_happyvalley",
+          "poiId": "ctrip_sight_happyvalley",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1961,8 +1989,8 @@
       "id": "manual_xianggang_15060627",
       "name": "石澳",
       "city": "香港",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.1,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/xianggang_15060627_verified.jpg",
       "description": "石澳位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "石澳位于香港（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2037,7 +2065,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 石澳郊野公园",
+          "url": "https://www.amap.com/place/B073C04DHP",
+          "poiId": "B073C04DHP",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

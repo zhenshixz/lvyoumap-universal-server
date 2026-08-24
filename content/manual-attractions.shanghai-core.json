@@ -141,8 +141,8 @@
       "id": "manual_shanghai_d9fb268a",
       "name": "中国共产党一大•二大•四大纪念馆景区",
       "city": "上海",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shanghai_d9fb268a_verified.jpg",
       "description": "中共“一大”原址是两栋砖木结构的两层石库门楼房，一栋是一大代表李汉俊的家宅，另一栋是一大代表在上海的住所--博文女校。中共“二大”会址是始建于1915年的石库门民居，曾是时任中央局宣传主任李达的寓所。",
       "intro": "中共“一大”原址是两栋砖木结构的两层石库门楼房，一栋是一大代表李汉俊的家宅，另一栋是一大代表在上海的住所--博文女校。中共“二大”会址是始建于1915年的石库门民居，曾是时任中央局宣传主任李达的寓所。",
@@ -240,7 +240,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 中共一大纪念馆一大广场",
+          "url": "https://www.amap.com/place/B0HD6SBAAC",
+          "poiId": "B0HD6SBAAC",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -269,8 +276,8 @@
       "id": "manual_shanghai_4775351e",
       "name": "上海科技馆",
       "city": "上海",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.2,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shanghai_4775351e_verified.jpg",
       "description": "上海科技馆坐落于上海浦东新区行政文化中心的世纪广场。上海科技馆的每个展区都是一个人们关注的社会话题；每个展品，都是一个引人入胜的互动游戏。",
       "intro": "上海科技馆坐落于上海浦东新区行政文化中心的世纪广场。上海科技馆的每个展区都是一个人们关注的社会话题；每个展品，都是一个引人入胜的互动游戏。",
@@ -369,7 +376,14 @@
           "Wikidata Q855376 实体页：https://www.wikidata.org/wiki/Q855376",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 上海科技馆下沉式广场",
+          "url": "https://www.amap.com/place/B0FFFSNYVW",
+          "poiId": "B0FFFSNYVW",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2168,8 +2182,8 @@
       "id": "manual_shanghai_38436581",
       "name": "上海国际旅游度假区",
       "city": "上海",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.9,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shanghai_38436581_verified.jpg",
       "description": "上海国际旅游度假区位于浦东中部，规划面积24.7平方公里，是上海“城市东西向发展轴”和浦东“南北科技创新走廊”的交汇带，是上海建设世界著名旅游城市和浦东打造引领区最具想象力的承载区域。度假区地理位置优越、交通便捷，区域内不仅有中国内地首座迪士尼主题乐园及多家酒店，还有迪士尼小镇、4A级旅游景区比斯特上海购物村、薰衣草公园等休闲餐饮配套设施。",
       "intro": "上海国际旅游度假区位于浦东中部，规划面积24.7平方公里，是上海“城市东西向发展轴”和浦东“南北科技创新走廊”的交汇带，是上海建设世界著名旅游城市和浦东打造引领区最具想象力的承载区域。度假区地理位置优越、交通便捷，区域内不仅有中国内地首座迪士尼主题乐园及多家酒店，还有迪士尼小镇、4A级旅游景区比斯特上海购物村、薰衣草公园等休闲餐饮配套设施。",
@@ -2270,7 +2284,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
           "Wikidata Q97352149 实体页：https://www.wikidata.org/wiki/Q97352149"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 上海迪士尼度假区",
+          "url": "https://www.amap.com/place/B00157AW8O",
+          "poiId": "B00157AW8O",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-14",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2441,8 +2462,8 @@
       "id": "manual_shanghai_2c123a9c",
       "name": "愚园路",
       "city": "上海",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "携程攻略",
       "image": "/assets/images/attractions/shanghai_2c123a9c_verified.jpg",
       "description": "愚园路位于上海（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "愚园路位于上海（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2513,7 +2534,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q11073613 实体页：https://www.wikidata.org/wiki/Q11073613"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "携程旅行",
+          "title": "携程旅行 愚园路历史文化风貌区",
+          "url": "https://you.ctrip.com/sight/ctrip_sight_yuyuanlu",
+          "poiId": "ctrip_sight_yuyuanlu",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2544,8 +2572,8 @@
       "id": "manual_shanghai_86191d95",
       "name": "中共一大会址",
       "city": "上海",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/shanghai_86191d95_verified.jpg",
       "description": "中共一大会址位于上海（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "中共一大会址位于上海（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2619,7 +2647,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q134468744 实体页：https://www.wikidata.org/wiki/Q134468744"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 中共一大会址纪念馆",
+          "url": "https://www.amap.com/place/B001556C42",
+          "poiId": "B001556C42",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

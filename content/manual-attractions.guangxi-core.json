@@ -582,8 +582,8 @@
       "id": "manual_guangxi_dbdb2baf",
       "name": "大新明仕旅游度假区",
       "city": "崇左",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/guangxi_dbdb2baf_verified.jpg",
       "description": "明仕旅游度假区以明仕田园风光和壮族民俗风情为主题资源，资源丰富且覆盖范围广泛，是度假区内主要的吸引力资源。度假区在发展中注重喀斯特地貌与山水田园，壮族与边境、花山文化、农耕等多种组合，田园+地质+水系+文化的资源组合性好。",
       "intro": "明仕旅游度假区以明仕田园风光和壮族民俗风情为主题资源，资源丰富且覆盖范围广泛，是度假区内主要的吸引力资源。度假区在发展中注重喀斯特地貌与山水田园，壮族与边境、花山文化、农耕等多种组合，田园+地质+水系+文化的资源组合性好。",
@@ -680,7 +680,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 明仕田园景区",
+          "url": "https://www.amap.com/place/B031B0086R",
+          "poiId": "B031B0086R",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -712,8 +719,8 @@
       "id": "manual_guangxi_c4cb862",
       "name": "桂林阳朔遇龙河旅游度假区",
       "city": "桂林",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/guangxi_c4cb862_verified.jpg",
       "description": "度假区位于广西桂林阳朔县西南面，拥有独特的喀斯特峰林—峰丛景观，同时也是世界知名的乡村民俗文化体验地，拥有诗情画意的原生态山水田园风光。",
       "intro": "度假区位于广西桂林阳朔县西南面，拥有独特的喀斯特峰林—峰丛景观，同时也是世界知名的乡村民俗文化体验地，拥有诗情画意的原生态山水田园风光。",
@@ -786,7 +793,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=guangxi&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 遇龙河景区",
+          "url": "https://www.amap.com/place/B03050V0PB",
+          "poiId": "B03050V0PB",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -952,8 +966,8 @@
       "id": "manual_guangxi_419805b8",
       "name": "三门海",
       "city": "河池市凤山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/guangxi_419805b8_verified.jpg",
       "description": "三门海位于河池市凤山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "三门海位于河池市凤山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1049,7 +1063,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q10867071 实体页：https://www.wikidata.org/wiki/Q10867071"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 凤山三门海生态旅游区",
+          "url": "https://www.amap.com/place/B031B0086S",
+          "poiId": "B031B0086S",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

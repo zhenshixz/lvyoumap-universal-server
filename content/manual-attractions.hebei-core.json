@@ -4,8 +4,8 @@
       "id": "manual_hebei_dc8b294d",
       "name": "南湖·开滦旅游景区",
       "city": "唐山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hebei_dc8b294d_verified.jpg",
       "description": "唐山南湖·开滦旅游景区位于唐山城市中央，占地 5.8平方公里，由百年工业遗产保护地“开滦国家矿山公园”与开滦采煤沉降修复地“唐山南湖旅游景区”组成，完美呈现了唐山从工业文明向生态文明的转型蝶变。",
       "intro": "唐山南湖·开滦旅游景区位于唐山城市中央，占地 5.8平方公里，由百年工业遗产保护地“开滦国家矿山公园”与开滦采煤沉降修复地“唐山南湖旅游景区”组成，完美呈现了唐山从工业文明向生态文明的转型蝶变。",
@@ -80,7 +80,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hebei&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 唐山南湖旅游景区",
+          "url": "https://www.amap.com/place/B013B037A9",
+          "poiId": "B013B037A9",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -453,8 +460,8 @@
       "id": "manual_hebei_794561dc",
       "name": "崇礼冰雪旅游度假区",
       "city": "张家口",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/hebei_794561dc_verified.jpg",
       "description": "崇礼地处北纬41°的“世界黄金滑雪带”，是2022年北京奥运会的举办地之一。崇礼冰雪旅游度假区由太舞滑雪场、富龙四季小镇、国家跳台滑雪中心等组成。",
       "intro": "崇礼地处北纬41°的“世界黄金滑雪带”，是2022年北京奥运会的举办地之一。崇礼冰雪旅游度假区由太舞滑雪场、富龙四季小镇、国家跳台滑雪中心等组成。",
@@ -528,7 +535,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=hebei&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 崇礼万龙滑雪场/太舞度假小镇",
+          "url": "https://www.amap.com/place/B0FFHBQ4H7",
+          "poiId": "B0FFHBQ4H7",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

@@ -4,8 +4,8 @@
       "id": "manual_sichuan_6e6e42cc",
       "name": "甘孜州海螺沟景区",
       "city": "四川",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_6e6e42cc_verified.jpg",
       "description": "海螺沟景区位于青藏高原东南缘，贡嘎山东坡，处于四川省甘孜藏族自治州的泸定、康定、九龙和雅安市的石棉4县交界区，面积906.13平方公里，由海螺沟、燕子沟、磨子沟、南门关沟、雅家埂、磨西台地六个景区组成，是 国家级风景名胜区、国家级自然保护区、国家地质公园、国家森林公园、中国唯一的冰川森林公园和国家生态旅游示范区，是古代通往藏区的茶马古道的必经之地。",
       "intro": "海螺沟景区位于青藏高原东南缘，贡嘎山东坡，处于四川省甘孜藏族自治州的泸定、康定、九龙和雅安市的石棉4县交界区，面积906.13平方公里，由海螺沟、燕子沟、磨子沟、南门关沟、雅家埂、磨西台地六个景区组成，是 国家级风景名胜区、国家级自然保护区、国家地质公园、国家森林公园、中国唯一的冰川森林公园和国家生态旅游示范区，是古代通往藏区的茶马古道的必经之地。",
@@ -83,7 +83,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 海螺沟冰川森林公园",
+          "url": "https://www.amap.com/place/B0337006XR",
+          "poiId": "B0337006XR",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -227,8 +234,8 @@
       "id": "manual_sichuan_d49d85d9",
       "name": "阆中古城旅游景区",
       "city": "南充",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_d49d85d9_verified.jpg",
       "description": "阆中古城位于四川盆地东北缘、嘉陵江中游，有2300多年的建城历史，为古代巴国蜀国军事重镇。古城有张飞庙、永安寺、五龙庙、滕王阁、观音寺、巴巴寺、大佛寺、川北道贡院等8处全国重点文物保护单位；有邵家湾墓群、文笔塔、石室观摩崖造像、雷神洞摩崖造像、牛王洞摩崖造像、红四方面军总政治部旧址、华光楼等22处省级文物保护单位。",
       "intro": "阆中古城位于四川盆地东北缘、嘉陵江中游，有2300多年的建城历史，为古代巴国蜀国军事重镇。古城有张飞庙、永安寺、五龙庙、滕王阁、观音寺、巴巴寺、大佛寺、川北道贡院等8处全国重点文物保护单位；有邵家湾墓群、文笔塔、石室观摩崖造像、雷神洞摩崖造像、牛王洞摩崖造像、红四方面军总政治部旧址、华光楼等22处省级文物保护单位。",
@@ -305,7 +312,14 @@
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10",
           "高德地图 阆中古城：https://www.amap.com/place/B033102997"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 阆中古城",
+          "url": "https://www.amap.com/place/B033102997",
+          "poiId": "B033102997",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -334,8 +348,8 @@
       "id": "manual_sichuan_786662df",
       "name": "羌城旅游区",
       "city": "绵阳",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_786662df_verified.jpg",
       "description": "旅游区位于四川盆地西北部北川羌族自治县，由北川地震遗址区、北川新县城，北川地震纪念馆、北川羌族民俗博物馆、吉娜羌寨、维斯特游客中心等景点组成。旅游区位于绵阳市北川羌族自治县境内，由地震纪念地、大爱文化观赏区和禹羌文化体验区三大部分组成，总面积6.01平方公里。",
       "intro": "旅游区位于四川盆地西北部北川羌族自治县，由北川地震遗址区、北川新县城，北川地震纪念馆、北川羌族民俗博物馆、吉娜羌寨、维斯特游客中心等景点组成。旅游区位于绵阳市北川羌族自治县境内，由地震纪念地、大爱文化观赏区和禹羌文化体验区三大部分组成，总面积6.01平方公里。",
@@ -409,7 +423,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 北川羌城旅游区",
+          "url": "https://www.amap.com/place/B0FFF3O02Y",
+          "poiId": "B0FFF3O02Y",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -891,8 +912,8 @@
       "id": "manual_sichuan_17552bbf",
       "name": "成都西岭雪山-花水湾旅游度假区",
       "city": "成都",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_17552bbf_verified.jpg",
       "description": "成都西岭雪山-花水湾旅游度假区位于成都市大邑县西岭镇、花水湾镇，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "成都西岭雪山-花水湾旅游度假区位于成都市大邑县西岭镇、花水湾镇，是已通过名称、属地和来源交叉核验的国家级旅游度假区。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -969,7 +990,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 西岭雪山风景名胜区",
+          "url": "https://www.amap.com/place/B001C7UH3U",
+          "poiId": "B001C7UH3U",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1001,8 +1029,8 @@
       "id": "manual_sichuan_a3efdaf6",
       "name": "成都天府青城康养休闲旅游度假区",
       "city": "成都",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_a3efdaf6_verified.jpg",
       "description": "度假区气候四季分明、温和宜人，以道家养生文化为主题，以世界文化遗产青城山—都江堰、世界自然遗产大熊猫栖息地、都江堰世界灌溉工程遗产为依托，有优美的山地风光和川西田园风光。",
       "intro": "度假区气候四季分明、温和宜人，以道家养生文化为主题，以世界文化遗产青城山—都江堰、世界自然遗产大熊猫栖息地、都江堰世界灌溉工程遗产为依托，有优美的山地风光和川西田园风光。",
@@ -1104,7 +1132,14 @@
         "basicInfoSources": [
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=sichuan&type=0"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 青城后山",
+          "url": "https://www.amap.com/place/B001C7X564",
+          "poiId": "B001C7X564",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1250,8 +1285,8 @@
       "id": "manual_sichuan_9905acf3",
       "name": "贡嘎雪山",
       "city": "甘孜州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_9905acf3_verified.jpg",
       "description": "贡嘎雪山位于甘孜州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "贡嘎雪山位于甘孜州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1324,7 +1359,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 贡嘎雪山观景台",
+          "url": "https://www.amap.com/place/B0FFG0JWKS",
+          "poiId": "B0FFG0JWKS",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-24",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1357,8 +1399,8 @@
       "id": "manual_sichuan_e9d7b343",
       "name": "色达佛学院",
       "city": "甘孜州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/sichuan_e9d7b343_verified.jpg",
       "description": "色达佛学院位于甘孜州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "色达佛学院位于甘孜州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1431,7 +1473,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 色达喇荣五明佛学院",
+          "url": "https://www.amap.com/place/B0FFG0HQ1V",
+          "poiId": "B0FFG0HQ1V",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-24",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

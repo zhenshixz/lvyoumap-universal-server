@@ -4,8 +4,8 @@
       "id": "manual_jilin_313b694b",
       "name": "大安嫩江湾旅游区",
       "city": "白城",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_313b694b_verified.jpg",
       "description": "嫩江湾旅游区地处吉林省大安市，距城区仅1公里。景区总面积3.5平方公里，有老坎子码头、辽皇观鱼台、华夷同风院等大小景点百余处。",
       "intro": "嫩江湾旅游区地处吉林省大安市，距城区仅1公里。景区总面积3.5平方公里，有老坎子码头、辽皇观鱼台、华夷同风院等大小景点百余处。",
@@ -105,7 +105,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 大安嫩江湾旅游区-地藏寺",
+          "url": "https://www.amap.com/place/B0FFK8AUV9",
+          "poiId": "B0FFK8AUV9",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -243,8 +250,8 @@
       "id": "manual_jilin_121ede7f",
       "name": "世界雕塑公园景区",
       "city": "长春",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_121ede7f_verified.jpg",
       "description": "长春世界雕塑园集自然山水与人文景观于一体，包括长春雕塑艺术馆、松山韩蓉非洲艺术收藏博物馆、魏小明艺术馆、长春雕塑博物馆和雕塑体验馆等景点。",
       "intro": "长春世界雕塑园集自然山水与人文景观于一体，包括长春雕塑艺术馆、松山韩蓉非洲艺术收藏博物馆、魏小明艺术馆、长春雕塑博物馆和雕塑体验馆等景点。",
@@ -322,7 +329,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 长春世界雕塑园",
+          "url": "https://www.amap.com/place/B01AF09Z8B",
+          "poiId": "B01AF09Z8B",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -351,8 +365,8 @@
       "id": "manual_jilin_fd41516",
       "name": "伪满皇宫博物馆",
       "city": "长春",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.8,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_fd41516_verified.jpg",
       "description": "伪满皇宫博物院是中国末代皇帝爱新觉罗·溥仪称帝“满洲国”的宫廷旧址，是日本殖民统治中国东北十四年的历史见证，也是近代长春城市变迁的地标式建筑群。博物院形成了宫廷旧址博物馆+旅游景区的格局。",
       "intro": "伪满皇宫博物院是中国末代皇帝爱新觉罗·溥仪称帝“满洲国”的宫廷旧址，是日本殖民统治中国东北十四年的历史见证，也是近代长春城市变迁的地标式建筑群。博物院形成了宫廷旧址博物馆+旅游景区的格局。",
@@ -434,7 +448,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=jilin&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 伪满皇宫博物院",
+          "url": "https://www.amap.com/place/B01AF0ZDGM",
+          "poiId": "B01AF0ZDGM",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-17",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1175,8 +1196,8 @@
       "id": "manual_jilin_3bec56ad",
       "name": "关东影视城",
       "city": "沈阳市（注",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_3bec56ad_verified.jpg",
       "description": "关东影视城位于沈阳市（注（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "关东影视城位于沈阳市（注（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1252,7 +1273,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 关东影视城-慈悲庵",
+          "url": "https://www.amap.com/place/B00180KD1R",
+          "poiId": "B00180KD1R",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1399,8 +1427,8 @@
       "id": "manual_jilin_c13f8f85",
       "name": "集安古城",
       "city": "通化",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_c13f8f85_verified.jpg",
       "description": "集安古城位于通化（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "集安古城位于通化（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1473,7 +1501,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 高句丽文物古迹旅游景区(高句丽王城)",
+          "url": "https://www.amap.com/place/B0367006XR",
+          "poiId": "B0367006XR",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1506,8 +1541,8 @@
       "id": "manual_jilin_87246a7f",
       "name": "靖宇县城",
       "city": "白山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.3,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_87246a7f_verified.jpg",
       "description": "靖宇县城位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "靖宇县城位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1602,7 +1637,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 杨靖宇将军殉国地",
+          "url": "https://www.amap.com/place/B03660077V",
+          "poiId": "B03660077V",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1635,8 +1677,8 @@
       "id": "manual_jilin_130dd6a7",
       "name": "前郭尔罗斯蒙古族自治县",
       "city": "松原",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_130dd6a7_verified.jpg",
       "description": "前郭尔罗斯蒙古族自治县位于松原（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "前郭尔罗斯蒙古族自治县位于松原（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1732,7 +1774,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q1376078 实体页：https://www.wikidata.org/wiki/Q1376078"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 查干湖国家级自然保护区",
+          "url": "https://www.amap.com/place/B036C00B2T",
+          "poiId": "B036C00B2T",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1763,8 +1812,8 @@
       "id": "manual_jilin_7b47d8a0",
       "name": "松江河古镇",
       "city": "白山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_7b47d8a0_verified.jpg",
       "description": "松江河古镇位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "松江河古镇位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1840,7 +1889,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 长白山鲁能胜地旅游度假区",
+          "url": "https://www.amap.com/place/B0FFH7Q1X7",
+          "poiId": "B0FFH7Q1X7",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1986,8 +2042,8 @@
       "id": "manual_jilin_b3688b5d",
       "name": "万龙滑雪场",
       "city": "吉林",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_b3688b5d_verified.jpg",
       "description": "万龙滑雪场位于吉林（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "万龙滑雪场位于吉林（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2064,7 +2120,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 吉林万龙滑雪场",
+          "url": "https://www.amap.com/place/B0FFH3JTVL",
+          "poiId": "B0FFH3JTVL",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2097,8 +2160,8 @@
       "id": "manual_jilin_b34145b3",
       "name": "延边博物馆",
       "city": "延边朝鲜族",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_b34145b3_verified.jpg",
       "description": "延边博物馆位于体育场环路，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "延边博物馆位于体育场环路，是已通过名称、属地和来源交叉核验的博物馆。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2175,7 +2238,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "高德地图 延边博物馆：https://www.amap.com/place/B05990MVFU"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 延边博物馆",
+          "url": "https://www.amap.com/place/B05990MVFU",
+          "poiId": "B05990MVFU",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2204,8 +2274,8 @@
       "id": "manual_jilin_3f476ebb",
       "name": "延吉水上市场",
       "city": "延边朝鲜族",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_3f476ebb_verified.jpg",
       "description": "延吉水上市场位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "延吉水上市场位于延边朝鲜族（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2282,7 +2352,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 延吉水上市场早市",
+          "url": "https://www.amap.com/place/B03680077W",
+          "poiId": "B03680077W",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2315,8 +2392,8 @@
       "id": "manual_jilin_4c4f0a86",
       "name": "长白朝鲜族自治县",
       "city": "白山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/jilin_4c4f0a86_verified.jpg",
       "description": "长白朝鲜族自治县位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "长白朝鲜族自治县位于白山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2389,7 +2466,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 长白山南景区 / 长白民俗村",
+          "url": "https://www.amap.com/place/B03680077X",
+          "poiId": "B03680077X",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },

@@ -4,8 +4,8 @@
       "id": "manual_gansu_a2a56db6",
       "name": "甘南州冶力关旅游区",
       "city": "甘肃",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_a2a56db6_verified.jpg",
       "description": "冶力关旅游区位于甘肃省甘南藏族自治州临潭县东北部，地处青藏高原和黄土高原的过渡带，是青藏高原东北边缘、秦岭褶皱带上集高山湖泊、丹霞地貌、亚高山草甸、梯田花海于一体的复合型生态旅游区。距省会兰州150公里，距甘南州府合作市90公里。",
       "intro": "冶力关旅游区位于甘肃省甘南藏族自治州临潭县东北部，地处青藏高原和黄土高原的过渡带，是青藏高原东北边缘、秦岭褶皱带上集高山湖泊、丹霞地貌、亚高山草甸、梯田花海于一体的复合型生态旅游区。距省会兰州150公里，距甘南州府合作市90公里。",
@@ -83,7 +83,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 冶力关国家森林公园",
+          "url": "https://www.amap.com/place/B03AD002X0",
+          "poiId": "B03AD002X0",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -321,8 +328,8 @@
       "id": "manual_gansu_e1c62934",
       "name": "临夏州炳灵寺世界文化遗产旅游区",
       "city": "甘肃",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_e1c62934_verified.jpg",
       "description": "炳灵寺位于甘肃临夏永靖县西南35公里处的小积石山中。炳灵寺最早叫\\",
       "intro": "炳灵寺位于甘肃临夏永靖县西南35公里处的小积石山中。炳灵寺最早叫\\",
@@ -397,7 +404,14 @@
           "中华人民共和国文化和旅游部大众旅游服务：https://lyfw.mct.gov.cn/site/special/province?pkey=gansu&type=0",
           "mct_national_5a_2025：https://sjfw.mct.gov.cn/site/dataservice/rural?type=10"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 炳灵寺石窟(暂停开放)",
+          "url": "https://www.amap.com/place/B03A20012I",
+          "poiId": "B03A20012I",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-19",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1459,8 +1473,8 @@
       "id": "manual_gansu_abe88ce8",
       "name": "扁都口生态旅游区",
       "city": "民乐",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.4,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_abe88ce8_verified.jpg",
       "description": "扁都口生态旅游区位于民乐（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "扁都口生态旅游区位于民乐（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1535,7 +1549,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 民乐扁都口生态休闲旅游区",
+          "url": "https://www.amap.com/place/B03A000A16",
+          "poiId": "B03A000A16",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1568,8 +1589,8 @@
       "id": "manual_gansu_51bb6e55",
       "name": "炳灵寺石窟",
       "city": "永靖",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_51bb6e55_verified.jpg",
       "description": "炳灵寺石窟位于永靖（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "炳灵寺石窟位于永靖（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1667,7 +1688,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q259336 实体页：https://www.wikidata.org/wiki/Q259336"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 炳灵寺石窟",
+          "url": "https://www.amap.com/place/B03A20012I",
+          "poiId": "B03A20012I",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1698,8 +1726,8 @@
       "id": "manual_gansu_12f22d4f",
       "name": "甘南草原",
       "city": "甘南州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.5,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_12f22d4f_verified.jpg",
       "description": "甘南草原位于甘南州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "甘南草原位于甘南州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1770,7 +1798,14 @@
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab",
           "Wikidata Q99923774 实体页：https://www.wikidata.org/wiki/Q99923774"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 桑科草原风景区",
+          "url": "https://www.amap.com/place/B03AB01705",
+          "poiId": "B03AB01705",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1801,8 +1836,8 @@
       "id": "manual_gansu_88345378",
       "name": "郎木寺",
       "city": "碌曲",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.6,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_88345378_verified.jpg",
       "description": "郎木寺位于碌曲（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "郎木寺位于碌曲（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1879,7 +1914,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 郎木寺",
+          "url": "https://www.amap.com/place/B0KDP16N3N",
+          "poiId": "B0KDP16N3N",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -1912,8 +1954,8 @@
       "id": "manual_gansu_c778061a",
       "name": "水帘洞石窟",
       "city": "武山",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.1,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_c778061a_verified.jpg",
       "description": "水帘洞石窟位于武山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "水帘洞石窟位于武山（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -1988,7 +2030,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 水帘洞石窟群",
+          "url": "https://www.amap.com/place/B03AA0N8HB",
+          "poiId": "B03AA0N8HB",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2021,8 +2070,8 @@
       "id": "manual_gansu_5cbb06f3",
       "name": "雅丹魔鬼城",
       "city": "敦煌",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 3.3,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_5cbb06f3_verified.jpg",
       "description": "雅丹魔鬼城位于敦煌（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "雅丹魔鬼城位于敦煌（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2097,7 +2146,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 雅丹地质公园-观光车乘车点",
+          "url": "https://www.amap.com/place/B0LR3CE1PI",
+          "poiId": "B0LR3CE1PI",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
@@ -2130,8 +2186,8 @@
       "id": "manual_gansu_1c33e37a",
       "name": "正宁路夜市",
       "city": "兰州",
-      "rating": 0,
-      "reviewsCount": "暂无公开平台评分",
+      "rating": 4.7,
+      "reviewsCount": "高德地图",
       "image": "/assets/images/attractions/gansu_1c33e37a_verified.jpg",
       "description": "正宁路夜市位于兰州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
       "intro": "正宁路夜市位于兰州（具体入口请以景区官方导航与当日公告为准），是已通过名称、属地和来源交叉核验的热门景点。具体开放范围、预约和交通安排以景区官方当日公告为准。",
@@ -2205,7 +2261,14 @@
         "basicInfoSources": [
           "xiaohongshu_core_candidates：https://www.xiaohongshu.com/ai_chat_tab"
         ],
-        "ratingSource": null,
+        "ratingSource": {
+          "platform": "高德地图",
+          "title": "高德地图 正宁路小吃夜市",
+          "url": "https://www.amap.com/place/B0FFF54MAJ",
+          "poiId": "B0FFF54MAJ",
+          "evidenceMode": "verified-repair-2026",
+          "verifiedAt": "2026-08-24"
+        },
         "basicInfoUpdatedAt": "2026-08-21",
         "note": "开放、预约、票价和交通为动态信息，出发前以官方当日公告为准。"
       },
