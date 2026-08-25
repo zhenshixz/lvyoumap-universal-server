@@ -21,7 +21,8 @@
     "maintenance": "node scripts/maintenance_menu.js",
     "core:queue": "node scripts/national_core_queue.js",
     "core:queue:static": "node scripts/national_core_queue.js --collect-static",
-    "verify": "npm run check && npm run build && node scripts/verify-build.js && node scripts/report_core_attractions.js --all --strict"
+    "verify": "npm run check && npm run build && node scripts/verify-build.js && node scripts/report_core_attractions.js --all",
+    "verify:strict": "npm run verify && node scripts/report_core_attractions.js --all --strict"
   },
   "engines": {
     "node": ">=24"
