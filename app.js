@@ -54,7 +54,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260825_food_national_v11";
+const STATIC_DATA_VERSION = "20260825_responsive_zoom_v12";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
@@ -64,7 +64,19 @@ let myChart = null;
 let currentSelectedProvince = "";
 let currentSelectedAttraction = null;
 let favorites = [];
-let currentZoom = window.innerWidth <= 768 ? 1.8 : 1.2;
+// 根据设备屏幕尺寸自适应初始与复位缩放比例 (手机默认+2档/平板+1档/PC保持原状)
+function getResponsiveDefaultZoom() {
+  const width = window.innerWidth;
+  if (width <= 768) {
+    return 2.2; // 手机端：默认按2下[+]号效果
+  } else if (width <= 1024) {
+    return 2.0; // 平板端：默认按1下[+]号效果
+  } else {
+    return 1.2; // PC端：保持原样
+  }
+}
+
+let currentZoom = getResponsiveDefaultZoom();
 let currentViewMode = "province"; // province or city
 let selectedCityFilter = "全部";
 let currentAttractionPage = 1;
@@ -542,7 +554,7 @@ const landscapeSeriesData = [
 
 // 各区定位配置 (华北, 东北, 华东, 华中, 华南, 西南, 西北)
 const regionCoordinates = {
-  all: { center: [104.3, 35.8], zoom: 1.2 },
+  all: { center: [104.3, 35.8], get zoom() { return getResponsiveDefaultZoom(); } },
   hb: { center: [115.5, 39.5], zoom: 2.2 },
   db: { center: [126.0, 45.0], zoom: 2.1 },
   hd: { center: [118.5, 29.5], zoom: 2.3 },
@@ -855,7 +867,7 @@ function initEventListeners() {
       });
       
       // 复位缩放和中心点
-      currentZoom = window.innerWidth <= 768 ? 1.8 : 1.2;
+      currentZoom = getResponsiveDefaultZoom();
       myChart.setOption({
         geo: {
           zoom: currentZoom,
@@ -3373,7 +3385,7 @@ function initRegionControls() {
       const coords = regionCoordinates[region];
       
       if (coords && myChart) {
-        currentZoom = coords.zoom;
+        currentZoom = (region === 'all') ? getResponsiveDefaultZoom() : coords.zoom;
         myChart.setOption({
           geo: {
             center: coords.center,
