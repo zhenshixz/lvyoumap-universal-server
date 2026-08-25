@@ -1,0 +1,1252 @@
+{
+  "province": "辽宁",
+  "checkedAt": "2026-08-24",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "baselineCount": 31,
+  "recordCount": 222,
+  "counts": {
+    "present": 31,
+    "review": 0,
+    "missing": 0
+  },
+  "coverage": 1,
+  "readyCount": 31,
+  "qualityBands": {
+    "stable": 15,
+    "improve": 16,
+    "incomplete": 0,
+    "priority": 0,
+    "missing": 0,
+    "review": 0
+  },
+  "issueCounts": {
+    "source.basicInfoTraceability": 14,
+    "image.sourceOrLicense": 14,
+    "source.basicInfoSingleSource": 2
+  },
+  "items": [
+    {
+      "key": "core_4b6d4d414c",
+      "name": "五女山景区",
+      "city": "本溪",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B019E00MN0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019E00MN0",
+          "name": "五女山景区",
+          "city": "本溪",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_921ce06f5f",
+      "name": "红海滩风景廊道景区",
+      "city": "盘锦",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0FFJ8TVJ0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFJ8TVJ0",
+          "name": "红海滩国家风景廊道",
+          "city": "盘锦",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_794b915b53",
+      "name": "千山景区",
+      "city": "鞍山",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_liaoning_784fdc74",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_784fdc74",
+          "name": "千山景区",
+          "city": "鞍山",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_15b8365124",
+      "name": "本溪水洞景区",
+      "city": "本溪",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B019E00LBV",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019E00LBV",
+          "name": "本溪水洞景区",
+          "city": "本溪",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_de69836778",
+      "name": "金石滩景区",
+      "city": "大连",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0FFFGVLRG",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFFGVLRG",
+          "name": "大连金石滩国家旅游度假区",
+          "city": "大连",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a185ef0319",
+      "name": "老虎滩海洋公园—老虎滩极地馆",
+      "city": "大连",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B019B0226E",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019B0226E",
+          "name": "大连老虎滩海洋公园",
+          "city": "大连",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a2e045884d",
+      "name": "沈阳植物园",
+      "city": "沈阳",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_liaoning_75f79c7e",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_75f79c7e",
+          "name": "沈阳植物园",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_784db122a2",
+      "name": "沈阳故宫",
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_f944e59e",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_f944e59e",
+          "name": "沈阳故宫",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_570e4a523f",
+      "name": "辽宁省博物馆",
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_e2803ad9",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_e2803ad9",
+          "name": "辽宁省博物馆",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_5cd064e95b",
+      "name": "丹东鸭绿江断桥",
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B019F009YS",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019F009YS",
+          "name": "鸭绿江断桥",
+          "city": "丹东",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_f5cba71cbd",
+      "name": "营口盖州团山海洋公园",
+      "city": "营口",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B01A10HUYL",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01A10HUYL",
+          "name": "辽宁团山国家级海洋公园",
+          "city": "营口",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_f9bf8b5350",
+      "name": "张氏帅府",
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_44dbd58d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_44dbd58d",
+          "name": "张氏帅府",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_bc10976c79",
+      "name": "旅顺口",
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_318093d6",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_318093d6",
+          "name": "旅顺口",
+          "city": "大连",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_21f8454c67",
+      "name": "丹东绿江村",
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_84bdbfa1",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_84bdbfa1",
+          "name": "丹东绿江村",
+          "city": "宽甸",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_ae84bcb89a",
+      "name": "朝阳牛河梁遗址",
+      "city": "朝阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_785b4886",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_785b4886",
+          "name": "朝阳牛河梁遗址",
+          "city": "建平",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b1e5953ed8",
+      "name": "辽阳白塔",
+      "city": "辽阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_live_web_service"
+      ],
+      "preferredId": "manual_liaoning_8b95a2a2",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_8b95a2a2",
+          "name": "辽阳白塔",
+          "city": "辽阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0a54a4fc6f",
+      "name": "辽阳汉魏壁画馆",
+      "city": "辽阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_db48c217",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_db48c217",
+          "name": "辽阳汉魏壁画馆",
+          "city": "辽阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_077556cbda",
+      "name": "阜新海棠山",
+      "city": "阜新",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_liaoning_262d28df",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_262d28df",
+          "name": "阜新海棠山",
+          "city": "阜新县",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_2cc4c275ef",
+      "name": "张学良旧居",
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B001804BB9",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B001804BB9",
+          "name": "张学良旧居陈列馆",
+          "city": "沈阳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c6b42f2ba5",
+      "name": "大连星海广场",
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B019B0AN7O",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019B0AN7O",
+          "name": "大连星海广场",
+          "city": "大连",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_f3fa12298d",
+      "name": "大连海昌东方水城",
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B019B143HI",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019B143HI",
+          "name": "海昌·东方水城",
+          "city": "大连",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_44fc591799",
+      "name": "大连森林动物园",
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B019B0332D",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019B0332D",
+          "name": "大连森林动物园",
+          "city": "大连",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_868b518334",
+      "name": "丹东凤凰山",
+      "city": "丹东",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B019F00SJX",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B019F00SJX",
+          "name": "凤凰山",
+          "city": "丹东",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_cd5412cab6",
+      "name": "葫芦岛兴城古城",
+      "city": "葫芦岛",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B01AD0HY3R",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01AD0HY3R",
+          "name": "兴城古城",
+          "city": "葫芦岛",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c872e6945b",
+      "name": "锦州笔架山",
+      "city": "锦州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFH0Y1D3",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFH0Y1D3",
+          "name": "锦州市笔架山风景区",
+          "city": "锦州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_512555cc32",
+      "name": "朝阳鸟化石国家地质公园",
+      "city": "朝阳",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B01A505NOM",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01A505NOM",
+          "name": "辽宁朝阳鸟化石国家地质公园",
+          "city": "朝阳",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_514a0254a4",
+      "name": "大连长山群岛旅游度假区",
+      "city": "大连",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "preferredId": "manual_liaoning_99803960",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_99803960",
+          "name": "大连长山群岛旅游度假区",
+          "city": "大连",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 95,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoSingleSource"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_2545329b9f",
+      "name": "“九•一八”历史博物馆",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_liaoning_42f9ded0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_42f9ded0",
+          "name": "“九•一八”历史博物馆",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_79acf15d43",
+      "name": "沈阳方城文化旅游区",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_liaoning_d2b6962",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_d2b6962",
+          "name": "沈阳方城文化旅游区",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_cb7d0607cb",
+      "name": "沈阳方特欢乐世界",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_liaoning_15feefa3",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_15feefa3",
+          "name": "沈阳方特欢乐世界",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_43888ac6df",
+      "name": "九一八事变博物馆",
+      "city": "沈阳",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_liaoning_592a8b12",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_liaoning_592a8b12",
+          "name": "九一八事变博物馆",
+          "city": "沈阳",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 95,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoSingleSource"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

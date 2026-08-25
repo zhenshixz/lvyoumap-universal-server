@@ -1,0 +1,968 @@
+{
+  "province": "西藏",
+  "checkedAt": "2026-08-19",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "baselineCount": 24,
+  "recordCount": 96,
+  "counts": {
+    "present": 24,
+    "review": 0,
+    "missing": 0
+  },
+  "coverage": 1,
+  "readyCount": 24,
+  "qualityBands": {
+    "stable": 15,
+    "improve": 9,
+    "incomplete": 0,
+    "priority": 0,
+    "missing": 0,
+    "review": 0
+  },
+  "issueCounts": {
+    "source.basicInfoTraceability": 9,
+    "image.sourceOrLicense": 9
+  },
+  "items": [
+    {
+      "key": "core_a1b137dd59",
+      "name": "雅鲁藏布大峡谷景区",
+      "city": "林芝",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "manual_xibet_6862cab8",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_6862cab8",
+          "name": "雅鲁藏布大峡谷景区",
+          "city": "米林",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e2fd6f366e",
+      "name": "扎什伦布寺景区",
+      "city": "日喀则",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B037C002S6",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037C002S6",
+          "name": "扎什伦布寺",
+          "city": "日喀则",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_85b5f41cda",
+      "name": "巴松措景区",
+      "city": "林芝",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B037E0M3PB",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037E0M3PB",
+          "name": "巴松措",
+          "city": "林芝",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0e5878d794",
+      "name": "大昭寺景区",
+      "city": "拉萨",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B037B00F2D",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037B00F2D",
+          "name": "大昭寺",
+          "city": "拉萨",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0777b9a352",
+      "name": "布达拉宫景区",
+      "city": "拉萨",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B037B01F68",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037B01F68",
+          "name": "布达拉宫",
+          "city": "拉萨",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_2323ceed4e",
+      "name": "纳木措景区",
+      "city": "那曲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B037B021L9",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037B021L9",
+          "name": "西藏纳木措自然保护区",
+          "city": "那曲",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_01fce7abd4",
+      "name": "纳木错",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_15ff5e48",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_15ff5e48",
+          "name": "纳木错",
+          "city": "当雄",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_52afbfb706",
+      "name": "珠穆朗玛峰大本营",
+      "city": "日喀则",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_f87ca3c6",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_f87ca3c6",
+          "name": "珠穆朗玛峰大本营",
+          "city": "定日",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_58817b5fbf",
+      "name": "南迦巴瓦峰",
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_e54658cf",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_e54658cf",
+          "name": "南迦巴瓦峰",
+          "city": "米林",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_45170cb181",
+      "name": "来古冰川",
+      "city": "昌都",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_eae13f57",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_eae13f57",
+          "name": "来古冰川",
+          "city": "八宿",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_f7fd666b92",
+      "name": "卡若拉冰川",
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_8971547d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_8971547d",
+          "name": "卡若拉冰川",
+          "city": "江孜",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_9121f817c1",
+      "name": "古格王朝遗址",
+      "city": "阿里",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_62378296",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_62378296",
+          "name": "古格王朝遗址",
+          "city": "札达",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0dbd832952",
+      "name": "西藏博物馆",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_e06c7d06",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_e06c7d06",
+          "name": "西藏博物馆",
+          "city": "拉萨",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_d9b772f708",
+      "name": "西藏非物质文化遗产博物馆",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_27c6248d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_27c6248d",
+          "name": "西藏非物质文化遗产博物馆",
+          "city": "拉萨",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_bc1aa83e72",
+      "name": "八廓街",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_16a9af42",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_16a9af42",
+          "name": "八廓街",
+          "city": "拉萨",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_bf4bb92132",
+      "name": "索松村",
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_b0101ae8",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_b0101ae8",
+          "name": "索松村",
+          "city": "米林",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0032a9d0b9",
+      "name": "普莫雍错",
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_xibet_5783a095",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_5783a095",
+          "name": "普莫雍错",
+          "city": "浪卡子",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_676790c32f",
+      "name": "冈仁波齐",
+      "city": "阿里",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0LA61CXYP",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0LA61CXYP",
+          "name": "冈仁波齐",
+          "city": "普兰",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_bbca6159dd",
+      "name": "扎基寺",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B037B01194",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037B01194",
+          "name": "扎基寺",
+          "city": "拉萨",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_4fd008bc5f",
+      "name": "羊卓雍措",
+      "city": "山南",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B037D0MKCD",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037D0MKCD",
+          "name": "羊卓雍措",
+          "city": "山南",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_1d9b926263",
+      "name": "色拉寺",
+      "city": "拉萨",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B037B00980",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037B00980",
+          "name": "色拉寺",
+          "city": "拉萨",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_ca8924ed86",
+      "name": "鲁朗林海",
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B037E004U5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B037E004U5",
+          "name": "鲁朗林海风景区",
+          "city": "林芝",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_6ed15a801d",
+      "name": "色林措",
+      "city": "那曲",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFKPA92D",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFKPA92D",
+          "name": "色林措",
+          "city": "那曲",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a36c024e34",
+      "name": "林芝市鲁朗小镇旅游度假区",
+      "city": "林芝",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort"
+      ],
+      "preferredId": "manual_xibet_7515eea6",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_xibet_7515eea6",
+          "name": "林芝市鲁朗小镇旅游度假区",
+          "city": "林芝",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

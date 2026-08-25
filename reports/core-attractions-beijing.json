@@ -10,7 +10,7 @@
     "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
   },
   "baselineCount": 23,
-  "recordCount": 114,
+  "recordCount": 112,
   "counts": {
     "present": 23,
     "review": 0,

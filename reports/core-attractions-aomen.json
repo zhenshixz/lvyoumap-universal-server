@@ -1,0 +1,1058 @@
+{
+  "province": "澳门",
+  "checkedAt": "2026-08-24",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "baselineCount": 27,
+  "recordCount": 38,
+  "counts": {
+    "present": 27,
+    "review": 0,
+    "missing": 0
+  },
+  "coverage": 1,
+  "readyCount": 27,
+  "qualityBands": {
+    "stable": 27,
+    "improve": 0,
+    "incomplete": 0,
+    "priority": 0,
+    "missing": 0,
+    "review": 0
+  },
+  "issueCounts": {},
+  "items": [
+    {
+      "key": "core_5715bd7401",
+      "name": "新濠影汇水上乐园",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_8aefeb03",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_8aefeb03",
+          "name": "新濠影汇水上乐园",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b3b40fc2d3",
+      "name": "大三巴牌坊",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00ASB",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00ASB",
+          "name": "大三巴牌坊",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7c85b9c6e5",
+      "name": "妈阁庙",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00CQD",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00CQD",
+          "name": "妈阁庙",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a04b961189",
+      "name": "龙环葡韵住宅式博物馆",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00IU5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00IU5",
+          "name": "龙环葡韵住宅式博物馆",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_68899a9caa",
+      "name": "路环岛",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_e104b316",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_e104b316",
+          "name": "路环岛",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7244425de3",
+      "name": "澳门旅游塔",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00HLO",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00HLO",
+          "name": "澳门旅游塔",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_8ed3643f90",
+      "name": "威尼斯人度假村",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_8b20ca93",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_8b20ca93",
+          "name": "威尼斯人度假村",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a63701f8ae",
+      "name": "巴黎人酒店",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_c9062471",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_c9062471",
+          "name": "巴黎人酒店",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_335ee2abe2",
+      "name": "伦敦人度假村",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_11df5500",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_11df5500",
+          "name": "伦敦人度假村",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_756a168699",
+      "name": "永利皇宫",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_46d5b32d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_46d5b32d",
+          "name": "永利皇宫",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_0fe9d46325",
+      "name": "渔人码头",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00BLS",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00BLS",
+          "name": "渔人码头",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b656fdd703",
+      "name": "玫瑰圣母堂",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00AS5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00AS5",
+          "name": "玫瑰圣母堂",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c89f61332f",
+      "name": "议事亭前地",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_e2955134",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_e2955134",
+          "name": "议事亭前地",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b71554208b",
+      "name": "恋爱巷",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_1e5365f7",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_1e5365f7",
+          "name": "恋爱巷",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_3bedfef999",
+      "name": "大炮台",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00AS7",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00AS7",
+          "name": "大炮台",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c4f67120ee",
+      "name": "郑家大屋",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_c1d6efa4",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_c1d6efa4",
+          "name": "郑家大屋",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b55aa7e46c",
+      "name": "官也街",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_a63f3e42",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_a63f3e42",
+          "name": "官也街",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_f0db8e7cce",
+      "name": "澳门博物馆",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_aomen_8706b1e6",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_8706b1e6",
+          "name": "澳门博物馆",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_da8da1ad84",
+      "name": "石排湾郊野公园",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "amap_B073D00IID",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00IID",
+          "name": "石排湾郊野公园",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7244425de3",
+      "name": "澳门旅游塔",
+      "city": "风顺堂",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B073D00HLO",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B073D00HLO",
+          "name": "澳门旅游塔",
+          "city": "澳门",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_00fef9d173",
+      "name": "澳门新濠影汇度假区",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_d03c0e6e",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_d03c0e6e",
+          "name": "澳门新濠影汇度假区",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e69d13581c",
+      "name": "澳门teamLab超自然空间",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_1dc03c14",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_1dc03c14",
+          "name": "澳门teamLab超自然空间",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_3a08ef5359",
+      "name": "港珠澳大桥游",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_fcc0c50a",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_fcc0c50a",
+          "name": "港珠澳大桥游",
+          "city": "珠海",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_8f6ec7e6ac",
+      "name": "新濠天地",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_cff10d35",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_cff10d35",
+          "name": "新濠天地",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a02b70e5e7",
+      "name": "新濠影汇满纷乐园",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_81a1ae5f",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_81a1ae5f",
+          "name": "新濠影汇满纷乐园",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_d61e2ca333",
+      "name": "影汇之星8字形摩天轮",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_6b950192",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_6b950192",
+          "name": "影汇之星8字形摩天轮",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_45311f86ff",
+      "name": "东望洋灯塔",
+      "city": "澳门",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "manual_observation_selected"
+      ],
+      "preferredId": "manual_aomen_cd7f869",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_aomen_cd7f869",
+          "name": "东望洋灯塔",
+          "city": "澳门",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

@@ -1,0 +1,1241 @@
+{
+  "province": "山西",
+  "checkedAt": "2026-08-21",
+  "method": "高德5330条本地快照作为候选底库；文化和旅游部国家5A与国家级旅游度假区作为官方基线；携程与小红书用于判断跨区域认知和长期口碑。首轮单源候选继续使用城市级携程分页与高德POI定向补证，仍不能确认的结果才进入人工待确认区。",
+  "sourcePolicy": {
+    "official": "国家5A与国家级旅游度假区均以文化和旅游部结构化名录确认身份；度假区保留地址与坐标用于城市校验",
+    "xiaohongshu": "发现官方名单之外的长期高频游客目的地，不用于确认等级、票价和开放时间",
+    "amap": "复用既有高德POI底库做候选发现、名称匹配和本地相对排序，不单独决定核心身份",
+    "ctrip": "判断跨区域游客认知和长期旅行热度，不固化动态评分与票价",
+    "restriction": "非官方候选需跨平台命中；首轮单源候选必须完成定向二次补证；总控不会覆盖已有合格景点数据"
+  },
+  "baselineCount": 30,
+  "recordCount": 249,
+  "counts": {
+    "present": 30,
+    "review": 0,
+    "missing": 0
+  },
+  "coverage": 1,
+  "readyCount": 30,
+  "qualityBands": {
+    "stable": 5,
+    "improve": 25,
+    "incomplete": 0,
+    "priority": 0,
+    "missing": 0,
+    "review": 0
+  },
+  "issueCounts": {
+    "source.basicInfoTraceability": 25,
+    "image.sourceOrLicense": 25
+  },
+  "items": [
+    {
+      "key": "core_f346bcb08e",
+      "name": "乔家大院景区",
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B016200AUC",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B016200AUC",
+          "name": "乔家大院",
+          "city": "晋中",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_441f7ecbf4",
+      "name": "晋祠天龙山景区",
+      "city": "太原",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0I625GZO3",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0I625GZO3",
+          "name": "晋祠天龙山景区",
+          "city": "太原",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_b439c23e7d",
+      "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+      "city": "",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B01650A2TH",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01650A2TH",
+          "name": "黄河壶口瀑布旅游区(陕西省延安市·山西省临汾市)",
+          "city": "山西",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e8c6af63e7",
+      "name": "云丘山景区",
+      "city": "临汾",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B01650WRUX",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01650WRUX",
+          "name": "云丘山景区",
+          "city": "临汾",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_9e880c3f86",
+      "name": "太行山大峡谷八泉峡景区",
+      "city": "长治",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0163005LD",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0163005LD",
+          "name": "太行山大峡谷八泉峡景区",
+          "city": "长治",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_161ce83675",
+      "name": "洪洞大槐树寻根祭祖园旅游景区",
+      "city": "临汾",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B01650A0W3",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01650A0W3",
+          "name": "洪洞大槐树寻根祭祖园",
+          "city": "临汾",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_4a25376427",
+      "name": "雁门关景区",
+      "city": "忻州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B015E00DWA",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015E00DWA",
+          "name": "雁门关景区",
+          "city": "忻州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_5e14356802",
+      "name": "平遥古城景区",
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B016200MKK",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B016200MKK",
+          "name": "平遥古城",
+          "city": "晋中",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_afe5c28236",
+      "name": "绵山风景区",
+      "city": "晋中",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B01620MOKY",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01620MOKY",
+          "name": "绵山风景区",
+          "city": "晋中",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_00ae995167",
+      "name": "皇城相府生态文化旅游区",
+      "city": "晋城",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0164001EG",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0164001EG",
+          "name": "皇城相府",
+          "city": "晋城",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_7f30bd0ddc",
+      "name": "五台山风景名胜区",
+      "city": "忻州",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B015E015ED",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015E015ED",
+          "name": "五台山风景名胜区",
+          "city": "忻州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_805f5ec8a5",
+      "name": "云冈石窟景区",
+      "city": "大同",
+      "tier": "national",
+      "basis": [
+        "official_5a"
+      ],
+      "evidence": [
+        "mct_national_5a_2025"
+      ],
+      "preferredId": "amap_B0160001P5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0160001P5",
+          "name": "云冈石窟",
+          "city": "大同",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a4d474cf65",
+      "name": "应县木塔景区",
+      "city": "朔州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B015D00MZ0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015D00MZ0",
+          "name": "应县木塔",
+          "city": "朔州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_04a228ee91",
+      "name": "小西天",
+      "city": "临汾",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0165005K0",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0165005K0",
+          "name": "小西天",
+          "city": "临汾",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a3f679dc74",
+      "name": "悬空寺",
+      "city": "大同",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFF3LXOW",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFF3LXOW",
+          "name": "悬空寺",
+          "city": "大同",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_6727e196f5",
+      "name": "山西博物院",
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_shanxi_c1104813",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_shanxi_c1104813",
+          "name": "山西博物院",
+          "city": "太原",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_a6d283a96b",
+      "name": "北齐壁画博物馆",
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_shanxi_c319249d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_shanxi_c319249d",
+          "name": "北齐壁画博物馆",
+          "city": "太原",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_9360849216",
+      "name": "运城盐湖",
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_shanxi_fee2975d",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_shanxi_fee2975d",
+          "name": "运城盐湖",
+          "city": "运城",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_fe40b6a95e",
+      "name": "浊漳河谷古建群",
+      "city": "长治",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_city_sightlist",
+        "xiaohongshu_core_candidates"
+      ],
+      "preferredId": "manual_shanxi_c59b3e16",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "manual_shanxi_c59b3e16",
+          "name": "浊漳河谷古建群",
+          "city": "平顺",
+          "dataLayer": "manual",
+          "quality": {
+            "ready": true,
+            "score": 100,
+            "band": "stable",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": true,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": []
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_9b4b56903f",
+      "name": "晋祠",
+      "city": "太原",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B015F02AH1",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015F02AH1",
+          "name": "晋祠景区",
+          "city": "太原",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_db4837cfc9",
+      "name": "华严寺",
+      "city": "大同",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0160007IG",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0160007IG",
+          "name": "华严寺",
+          "city": "大同",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_19e6aa4bc3",
+      "name": "忻州古城",
+      "city": "忻州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFKEPDL8",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFKEPDL8",
+          "name": "忻州古城",
+          "city": "忻州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_435dac98c0",
+      "name": "王家大院",
+      "city": "晋中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B016200MX2",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B016200MX2",
+          "name": "山西灵石王家大院",
+          "city": "晋中",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_570c0f8726",
+      "name": "双林寺",
+      "city": "晋中",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B016200M7A",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B016200M7A",
+          "name": "双林寺",
+          "city": "晋中",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_5019f2b051",
+      "name": "广胜寺",
+      "city": "临汾",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B01650A5H5",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01650A5H5",
+          "name": "广胜寺",
+          "city": "临汾",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e66af8fb51",
+      "name": "佛光寺",
+      "city": "忻州",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B015E014LT",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015E014LT",
+          "name": "佛光寺",
+          "city": "忻州",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_e3bc8549ca",
+      "name": "永乐宫",
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B01670038O",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B01670038O",
+          "name": "永乐宫",
+          "city": "运城",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_2fce797fd9",
+      "name": "解州关帝庙",
+      "city": "运城",
+      "tier": "regional_icon",
+      "basis": [
+        "cross_source_popularity"
+      ],
+      "evidence": [
+        "xiaohongshu_core_candidates",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFGSOEKN",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFGSOEKN",
+          "name": "解州关帝庙",
+          "city": "运城",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_3f6ba94c7c",
+      "name": "晋城太行锡崖沟旅游度假区",
+      "city": "晋城",
+      "tier": "regional_icon",
+      "basis": [
+        "official_national_resort"
+      ],
+      "evidence": [
+        "mct_national_tourism_resort",
+        "amap_local_snapshot"
+      ],
+      "preferredId": "amap_B0FFI00XHI",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B0FFI00XHI",
+          "name": "锡崖沟",
+          "city": "晋城",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    },
+    {
+      "key": "core_c1e1059590",
+      "name": "晋祠博物馆",
+      "city": "",
+      "tier": "regional_icon",
+      "basis": [
+        "manual_observation_selected"
+      ],
+      "evidence": [
+        "ctrip_province_sightlist",
+        "manual_observation_selected"
+      ],
+      "preferredId": "amap_B015F02AH1",
+      "status": "present",
+      "reason": "preferred_id",
+      "matches": [
+        {
+          "id": "amap_B015F02AH1",
+          "name": "晋祠景区",
+          "city": "太原",
+          "dataLayer": "db",
+          "quality": {
+            "ready": true,
+            "score": 90,
+            "band": "improve",
+            "basicComplete": true,
+            "guideComplete": true,
+            "lazyComplete": true,
+            "sourceComplete": true,
+            "imageResolvable": true,
+            "imageSourceComplete": false,
+            "lazySource": "xiaohongshu-dian-dian-ai-chat",
+            "issues": [
+              "source.basicInfoTraceability",
+              "image.sourceOrLicense"
+            ]
+          }
+        }
+      ],
+      "alternatives": []
+    }
+  ]
+}

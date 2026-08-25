@@ -4,7 +4,7 @@
   "method": "官方来源确认身份与等级；携程、去哪儿确认主流旅游认知；大众点评仅补充本地口碑存在性。OTA评分和票价不作为长期事实。",
   "sourcePolicy": {},
   "baselineCount": 15,
-  "recordCount": 134,
+  "recordCount": 133,
   "counts": {
     "present": 15,
     "review": 0,
@@ -238,30 +238,7 @@
           }
         }
       ],
-      "alternatives": [
-        {
-          "id": "amap_B0FFMCEONZ",
-          "name": "织金洞",
-          "city": "毕节",
-          "dataLayer": "db",
-          "quality": {
-            "ready": true,
-            "score": 90,
-            "band": "improve",
-            "basicComplete": true,
-            "guideComplete": true,
-            "lazyComplete": true,
-            "sourceComplete": true,
-            "imageResolvable": true,
-            "imageSourceComplete": false,
-            "lazySource": "xiaohongshu-dian-dian-ai-chat",
-            "issues": [
-              "source.basicInfoTraceability",
-              "image.sourceOrLicense"
-            ]
-          }
-        }
-      ]
+      "alternatives": []
     },
     {
       "key": "china_sky_eye",

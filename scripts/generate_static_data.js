@@ -6,9 +6,6 @@ function upgradeGaodeUrl(url) {
     if (url.includes('type=')) return url.replace(/([?&])type=[^&]*/, '$1type=7');
     return url + (url.includes('?') ? '&type=7' : '?type=7');
   }
-  if (url.includes('aos-comment.amap.com/') && /_\d+_\d+_\d+\.jpg$/i.test(url)) {
-    return url.replace(/_\d+_\d+_\d+\.jpg$/i, '_2048_2048_80.jpg');
-  }
   return url;
 }
 
@@ -67,6 +64,11 @@ function applyImageOverrides(provinces, overrides) {
   for (const province of Object.values(provinces || {})) {
     for (const attraction of province.attractions || []) {
       if (attraction.id) attractionsById.set(attraction.id, attraction);
+      if (Array.isArray(attraction.sub_spots)) {
+        for (const sub of attraction.sub_spots) {
+          if (sub.id) attractionsById.set(sub.id, sub);
+        }
+      }
     }
   }
 

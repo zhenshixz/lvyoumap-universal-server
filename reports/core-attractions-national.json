@@ -1,12 +1,50 @@
 {
-  "generatedAt": "2026-08-13T03:29:20.099Z",
-  "provinceCount": 5,
-  "baselineCount": 120,
-  "present": 120,
-  "review": 0,
-  "missing": 0,
-  "readyCount": 120,
+  "generatedAt": "2026-08-24T09:36:58.545Z",
+  "provinceCount": 34,
+  "baselineCount": 1035,
+  "present": 1029,
+  "review": 4,
+  "missing": 2,
+  "readyCount": 1029,
   "provinces": [
+    {
+      "province": "安徽",
+      "baselineCount": 29,
+      "counts": {
+        "present": 29,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 29,
+      "qualityBands": {
+        "stable": 4,
+        "improve": 25,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-anhui.json"
+    },
+    {
+      "province": "澳门",
+      "baselineCount": 27,
+      "counts": {
+        "present": 27,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 27,
+      "qualityBands": {
+        "stable": 27,
+        "improve": 0,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-aomen.json"
+    },
     {
       "province": "北京",
       "baselineCount": 23,
@@ -25,6 +63,25 @@
         "review": 0
       },
       "report": "reports\\core-attractions-beijing.json"
+    },
+    {
+      "province": "重庆",
+      "baselineCount": 37,
+      "counts": {
+        "present": 37,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 37,
+      "qualityBands": {
+        "stable": 31,
+        "improve": 6,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-chongqing.json"
     },
     {
       "province": "福建",
@@ -46,6 +103,25 @@
       "report": "reports\\core-attractions-fujian.json"
     },
     {
+      "province": "甘肃",
+      "baselineCount": 34,
+      "counts": {
+        "present": 34,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 34,
+      "qualityBands": {
+        "stable": 20,
+        "improve": 14,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-gansu.json"
+    },
+    {
       "province": "广东",
       "baselineCount": 44,
       "counts": {
@@ -63,6 +139,25 @@
         "review": 0
       },
       "report": "reports\\core-attractions-guangdong.json"
+    },
+    {
+      "province": "广西",
+      "baselineCount": 24,
+      "counts": {
+        "present": 23,
+        "review": 0,
+        "missing": 1
+      },
+      "readyCount": 23,
+      "qualityBands": {
+        "stable": 8,
+        "improve": 15,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 1,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-guangxi.json"
     },
     {
       "province": "贵州",
@@ -84,6 +179,139 @@
       "report": "reports\\core-attractions-guizhou.json"
     },
     {
+      "province": "海南",
+      "baselineCount": 32,
+      "counts": {
+        "present": 32,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 32,
+      "qualityBands": {
+        "stable": 26,
+        "improve": 6,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-hainan.json"
+    },
+    {
+      "province": "河北",
+      "baselineCount": 29,
+      "counts": {
+        "present": 29,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 29,
+      "qualityBands": {
+        "stable": 6,
+        "improve": 23,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-hebei.json"
+    },
+    {
+      "province": "黑龙江",
+      "baselineCount": 29,
+      "counts": {
+        "present": 29,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 29,
+      "qualityBands": {
+        "stable": 13,
+        "improve": 16,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-heilongjiang.json"
+    },
+    {
+      "province": "河南",
+      "baselineCount": 33,
+      "counts": {
+        "present": 33,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 33,
+      "qualityBands": {
+        "stable": 13,
+        "improve": 20,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-henan.json"
+    },
+    {
+      "province": "湖北",
+      "baselineCount": 27,
+      "counts": {
+        "present": 26,
+        "review": 1,
+        "missing": 0
+      },
+      "readyCount": 26,
+      "qualityBands": {
+        "stable": 15,
+        "improve": 11,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 1
+      },
+      "report": "reports\\core-attractions-hubei.json"
+    },
+    {
+      "province": "湖南",
+      "baselineCount": 34,
+      "counts": {
+        "present": 32,
+        "review": 2,
+        "missing": 0
+      },
+      "readyCount": 32,
+      "qualityBands": {
+        "stable": 14,
+        "improve": 18,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 2
+      },
+      "report": "reports\\core-attractions-hunan.json"
+    },
+    {
+      "province": "江苏",
+      "baselineCount": 49,
+      "counts": {
+        "present": 49,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 49,
+      "qualityBands": {
+        "stable": 20,
+        "improve": 29,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-jiangsu.json"
+    },
+    {
       "province": "江西",
       "baselineCount": 21,
       "counts": {
@@ -101,6 +329,329 @@
         "review": 0
       },
       "report": "reports\\core-attractions-jiangxi.json"
+    },
+    {
+      "province": "吉林",
+      "baselineCount": 34,
+      "counts": {
+        "present": 34,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 34,
+      "qualityBands": {
+        "stable": 17,
+        "improve": 17,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-jilin.json"
+    },
+    {
+      "province": "辽宁",
+      "baselineCount": 31,
+      "counts": {
+        "present": 31,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 31,
+      "qualityBands": {
+        "stable": 15,
+        "improve": 16,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-liaoning.json"
+    },
+    {
+      "province": "内蒙古",
+      "baselineCount": 26,
+      "counts": {
+        "present": 26,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 26,
+      "qualityBands": {
+        "stable": 13,
+        "improve": 13,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-neimenggu.json"
+    },
+    {
+      "province": "宁夏",
+      "baselineCount": 21,
+      "counts": {
+        "present": 21,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 21,
+      "qualityBands": {
+        "stable": 7,
+        "improve": 14,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-ningxia.json"
+    },
+    {
+      "province": "青海",
+      "baselineCount": 28,
+      "counts": {
+        "present": 28,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 28,
+      "qualityBands": {
+        "stable": 8,
+        "improve": 20,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-qinghai.json"
+    },
+    {
+      "province": "陕西",
+      "baselineCount": 30,
+      "counts": {
+        "present": 30,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 30,
+      "qualityBands": {
+        "stable": 11,
+        "improve": 19,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-shaanxi.json"
+    },
+    {
+      "province": "山东",
+      "baselineCount": 45,
+      "counts": {
+        "present": 44,
+        "review": 1,
+        "missing": 0
+      },
+      "readyCount": 44,
+      "qualityBands": {
+        "stable": 18,
+        "improve": 26,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 1
+      },
+      "report": "reports\\core-attractions-shandong.json"
+    },
+    {
+      "province": "上海",
+      "baselineCount": 29,
+      "counts": {
+        "present": 29,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 29,
+      "qualityBands": {
+        "stable": 21,
+        "improve": 8,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-shanghai.json"
+    },
+    {
+      "province": "山西",
+      "baselineCount": 30,
+      "counts": {
+        "present": 30,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 30,
+      "qualityBands": {
+        "stable": 5,
+        "improve": 25,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-shanxi.json"
+    },
+    {
+      "province": "四川",
+      "baselineCount": 34,
+      "counts": {
+        "present": 34,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 34,
+      "qualityBands": {
+        "stable": 13,
+        "improve": 21,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-sichuan.json"
+    },
+    {
+      "province": "台湾",
+      "baselineCount": 24,
+      "counts": {
+        "present": 24,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 24,
+      "qualityBands": {
+        "stable": 20,
+        "improve": 4,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-taiwan.json"
+    },
+    {
+      "province": "天津",
+      "baselineCount": 24,
+      "counts": {
+        "present": 24,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 24,
+      "qualityBands": {
+        "stable": 14,
+        "improve": 10,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-tianjin.json"
+    },
+    {
+      "province": "香港",
+      "baselineCount": 30,
+      "counts": {
+        "present": 30,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 30,
+      "qualityBands": {
+        "stable": 25,
+        "improve": 5,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-xianggang.json"
+    },
+    {
+      "province": "西藏",
+      "baselineCount": 24,
+      "counts": {
+        "present": 24,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 24,
+      "qualityBands": {
+        "stable": 15,
+        "improve": 9,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-xibet.json"
+    },
+    {
+      "province": "新疆",
+      "baselineCount": 35,
+      "counts": {
+        "present": 35,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 35,
+      "qualityBands": {
+        "stable": 19,
+        "improve": 16,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-xinjiang.json"
+    },
+    {
+      "province": "云南",
+      "baselineCount": 42,
+      "counts": {
+        "present": 42,
+        "review": 0,
+        "missing": 0
+      },
+      "readyCount": 42,
+      "qualityBands": {
+        "stable": 27,
+        "improve": 15,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 0,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-yunnan.json"
+    },
+    {
+      "province": "浙江",
+      "baselineCount": 44,
+      "counts": {
+        "present": 43,
+        "review": 0,
+        "missing": 1
+      },
+      "readyCount": 43,
+      "qualityBands": {
+        "stable": 13,
+        "improve": 30,
+        "incomplete": 0,
+        "priority": 0,
+        "missing": 1,
+        "review": 0
+      },
+      "report": "reports\\core-attractions-zhejiang.json"
     }
   ]
 }

@@ -6,9 +6,6 @@ function toHighResImageUrl(url) {
     if (url.includes('type=')) return url.replace(/([?&])type=[^&]*/, '$1type=7');
     return url + (url.includes('?') ? '&type=7' : '?type=7');
   }
-  if (url.includes('aos-comment.amap.com/') && /_\d+_\d+_\d+\.jpg$/i.test(url)) {
-    return url.replace(/_\d+_\d+_\d+\.jpg$/i, '_2048_2048_80.jpg');
-  }
   return url;
 }
 window.toHighResImageUrl = toHighResImageUrl;
@@ -57,7 +54,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260824_all_amap_hd_v5";
+const STATIC_DATA_VERSION = "20260824_p3_standard_subspots_v9";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
