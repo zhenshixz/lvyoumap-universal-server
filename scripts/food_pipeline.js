@@ -529,4 +529,4 @@ function approve(excludedIndexes = []) {
   writeJson(batchPath, batch);
 }
 
-module.exports = { collect, openPreview, approve, publish, batchPath, readJson, extractCandidates, collectAmapMetadata, enrichMetadata };
+module.exports = { collect, openPreview, approve, publish, batchPath, readJson, extractCandidates, collectAmapMetadata, enrichMetadata, downloadImage };
