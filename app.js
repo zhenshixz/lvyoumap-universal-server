@@ -1562,7 +1562,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
     const isFav = favorites.some(f => f.id === attr.id);
     const hasPublicRating = Number(attr.rating) > 0;
     const realCommentCount = attr.source_evidence?.commentCount || attr.reviewsCount || '';
-    const commentCountText = String(realCommentCount).trim();
+    const commentCountText = sanitizePublicSourceText(String(realCommentCount).trim());
     const sourcePlatform = attr.source_evidence?.ratingSource?.platform || '';
     const legacyAmapSource = /^amap/i.test(String(attr.source_evidence?.source || ''));
     const ratingPlatformText = /高德/.test(`${commentCountText}${sourcePlatform}`) || legacyAmapSource ? '高德地图' : '';
@@ -1977,8 +1977,10 @@ async function openDetailModal(attraction) {
   const imageCredit = document.getElementById("modal-image-credit");
   const imageSource = attraction.image_source;
   if (imageSource?.sourceUrl) {
-    imageCredit.textContent = `图片：${imageSource.author || imageSource.provider} · ${imageSource.license || "查看来源"}`;
-    imageCredit.href = imageSource.sourceUrl;
+    const publicImageCredit = getPublicImageCredit(imageSource);
+    imageCredit.textContent = publicImageCredit.text;
+    if (publicImageCredit.href) imageCredit.href = publicImageCredit.href;
+    else imageCredit.removeAttribute("href");
     imageCredit.hidden = false;
   } else {
     imageCredit.textContent = "";
@@ -2795,7 +2797,7 @@ async function openDetailModal(attraction) {
             </div>
             ${route.sourceUrl ? `
               <div class="route-source-row">
-                来源：<a href="${route.sourceUrl}" target="_blank" rel="noopener noreferrer">${route.sourceTitle}</a>
+                来源：${renderPublicRouteSource(route)}
                 ${route.verifiedAt ? `<span>核验：${route.verifiedAt}</span>` : ""}
               </div>
             ` : ""}
@@ -2872,17 +2874,51 @@ function getAttractionSourceNames(attraction) {
   const rawSources = Array.isArray(evidence.basicInfoSources) ? evidence.basicInfoSources : [];
   const names = rawSources.map(source => {
     const text = String(source);
-    if (text.includes("高德")) return "高德";
-    if (text.includes("携程")) return "携程";
-    if (text.includes("同程")) return "同程";
-    return text.replace(/[:：].*$/, "").slice(0, 8);
+    if (/高德|amap/i.test(text)) return "高德地图";
+    if (/景区官方|政府|文旅/.test(text)) return "景区官方";
+    if (/百科|维基|wikipedia|wikimedia/i.test(text)) return "公开百科";
+    if (isPrivateSourceLabel(text)) return "景区官方";
+    return "公开资料";
   });
   if (evidence.source) {
     const source = String(evidence.source);
-    if (source.includes("amap")) names.unshift("高德");
-    else names.unshift(source.slice(0, 8));
+    if (/amap|高德/i.test(source)) names.unshift("高德地图");
+    else if (isPrivateSourceLabel(source)) names.unshift("景区官方");
+    else names.unshift("公开资料");
   }
   return [...new Set(names)].slice(0, 3);
+}
+
+// 公开界面只展示归一化来源；原始平台名、URL 与采集关系仍完整保留在数据中。
+function isPrivateSourceLabel(value) {
+  return /携程|ctrip|trip\.com|同程|ly\.com|17u|小红书|xiaohongshu|点点|去哪儿|qunar|马蜂窝|mafengwo|大众点评|dianping|美团|meituan|飞猪|fliggy|alitrip|途牛|tuniu|驴妈妈|lvmama|tripadvisor|猫途鹰/i.test(String(value || ""));
+}
+
+function sanitizePublicSourceText(value) {
+  return String(value || "")
+    .replace(/携程|同程|小红书|点点|去哪儿|马蜂窝|大众点评|美团|飞猪|途牛|驴妈妈|猫途鹰/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function getPublicImageCredit(imageSource) {
+  const raw = `${imageSource?.author || ""} ${imageSource?.provider || ""} ${imageSource?.sourceUrl || ""}`;
+  if (isPrivateSourceLabel(raw)) {
+    return { text: "图片：景区公开资料", href: "" };
+  }
+  const author = sanitizePublicSourceText(imageSource?.author || imageSource?.provider || "公开资料");
+  return {
+    text: `图片：${author || "公开资料"} · ${imageSource?.license || "查看来源"}`,
+    href: imageSource?.sourceUrl || "",
+  };
+}
+
+function renderPublicRouteSource(route) {
+  const raw = `${route?.sourceTitle || ""} ${route?.sourceUrl || ""}`;
+  if (isPrivateSourceLabel(raw)) return "景区官方";
+  const title = sanitizePublicSourceText(route?.sourceTitle || "景区公开资料") || "景区公开资料";
+  if (!route?.sourceUrl) return title;
+  return `<a href="${route.sourceUrl}" target="_blank" rel="noopener noreferrer">${title}</a>`;
 }
 
 function inferVisitDuration(attraction) {
