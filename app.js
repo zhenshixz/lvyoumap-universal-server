@@ -54,7 +54,7 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260825_responsive_zoom_v12";
+const STATIC_DATA_VERSION = "20260827_attraction_display_level_v2";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
@@ -1497,6 +1497,26 @@ function formatAttractionLevel(level) {
   return formatted;
 }
 
+// 对外只保留三档，避免“国家级景点”“热门景点”等模糊等级误导用户。
+function getAttractionDisplayLevel(attraction) {
+  const values = [
+    ...(Array.isArray(attraction?.tags) ? attraction.tags : []),
+    attraction?.level,
+  ].map(value => String(value || "").trim());
+  const isGrade = (value, grade) => {
+    const normalized = value
+      .replace(/^国家/, "")
+      .replace("AAAAA", "5A")
+      .replace("AAAA", "4A")
+      .replace(/级旅游景区$/, "景区")
+      .replace(/A级景区$/, "A景区");
+    return normalized === `${grade}A景区`;
+  };
+  if (values.some(value => isGrade(value, 5))) return "5A景区";
+  if (values.some(value => isGrade(value, 4))) return "4A景区";
+  return "特色景点";
+}
+
 // 5. 渲染景点列表 (按评分降序默认排序，超10条分页 - 适配高端设计)
 function renderAttractionList(attractions, containerId = "attractions-list-container") {
   const container = document.getElementById(containerId);
@@ -1569,8 +1589,17 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
     const reviewCountStr = ratingPlatformText || !commentCountText || /暂无|未公开|无公开|官方认证/.test(commentCountText)
       ? (ratingPlatformText || '暂无公开评价')
       : (/(评价|点评)$/.test(commentCountText) ? commentCountText : `${commentCountText.replace(/条$/, '')}条评价`);
-    const formattedLevel = formatAttractionLevel(attr.level);
+    const formattedLevel = getAttractionDisplayLevel(attr);
     const heritageStr = (formattedLevel.includes("5A") || attr.level.includes("世界文化遗产")) ? "世界文化遗产" : "国家级风景区";
+    const displayTags = [...new Set(
+      (Array.isArray(attr.tags) ? attr.tags : [])
+        .map(tag => String(tag).trim())
+        .filter(Boolean)
+    )].slice(0, 3);
+    const cardTags = displayTags.length ? displayTags : [formattedLevel, heritageStr];
+    const cardTagsHtml = cardTags
+      .map(tag => `<span class="card-badge-level">${tag}</span>`)
+      .join("");
     const searchProvince = attr.provinceName || "";
     const searchCity = attr.city && attr.city !== searchProvince ? attr.city : "";
     const searchLocationText = searchProvince
@@ -1591,8 +1620,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
         </div>
         <div class="card-badges-row">
           ${searchLocationBadge}
-          <span class="card-badge-level">${formattedLevel}</span>
-          <span class="card-badge-heritage">${heritageStr}</span>
+          ${cardTagsHtml}
         </div>
         <div class="card-rating-row">
           <span class="card-rating-star">${hasPublicRating ? `★ ${Number(attr.rating).toFixed(1)}` : '暂无公开评分'}</span>
@@ -1988,7 +2016,7 @@ async function openDetailModal(attraction) {
     imageCredit.hidden = true;
   }
   document.getElementById("modal-title").textContent = attraction.name;
-  document.getElementById("modal-level").textContent = formatAttractionLevel(attraction.level);
+  document.getElementById("modal-level").textContent = getAttractionDisplayLevel(attraction);
   document.getElementById("modal-hotness").textContent = attraction.hotness || "⭐⭐⭐⭐⭐";
   document.getElementById("modal-intro").textContent = attraction.intro || "暂无介绍";
   const hoursVal = attraction.openHours || "详见景区公告";
@@ -2014,7 +2042,7 @@ async function openDetailModal(attraction) {
   const dataSourceEl = document.getElementById("modal-data-source");
   if (dataSourceEl) dataSourceEl.textContent = sourceText;
   const infoLevelEl = document.getElementById("modal-info-level");
-  if (infoLevelEl) infoLevelEl.textContent = formatAttractionLevel(attraction.level);
+  if (infoLevelEl) infoLevelEl.textContent = getAttractionDisplayLevel(attraction);
   const phoneEl = document.getElementById("modal-phone");
   if (phoneEl) phoneEl.textContent = attraction.tel || attraction.phone || "详见景区公告";
   const durationEl = document.getElementById("modal-duration");
@@ -2944,7 +2972,7 @@ function getFeatureSummary(attraction) {
   const tags = [
     ...(Array.isArray(attraction.tags) ? attraction.tags : []),
     attraction.category,
-    formatAttractionLevel(attraction.level),
+    getAttractionDisplayLevel(attraction),
   ].filter(Boolean).map(tag => String(tag).replace(/景区$/, ""));
   const fallback = [];
   const name = attraction.name || "";
@@ -2969,7 +2997,7 @@ function renderModalFeatureTags(attraction) {
   const candidates = [
     ...(Array.isArray(attraction.tags) ? attraction.tags : []),
     attraction.category,
-    formatAttractionLevel(attraction.level),
+    getAttractionDisplayLevel(attraction),
   ].filter(Boolean);
   const tags = [...new Set(candidates.map(tag => String(tag).trim()).filter(tag => tag && tag !== "常规景区"))].slice(0, 5);
   container.innerHTML = tags.map(tag => `<span>${tag}</span>`).join("");
