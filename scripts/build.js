@@ -45,6 +45,16 @@ function hashFile(relativePath) {
     .slice(0, 12);
 }
 
+function hashDirectory(relativePath) {
+  const directory = path.join(outputDir, relativePath);
+  const hash = crypto.createHash('sha256');
+  for (const file of listFiles(directory).sort()) {
+    hash.update(path.relative(directory, file).replace(/\\/g, '/'));
+    hash.update(fs.readFileSync(file));
+  }
+  return hash.digest('hex').slice(0, 12);
+}
+
 execFileSync(process.execPath, [path.join(rootDir, 'scripts', 'generate_static_data.js')], {
   cwd: rootDir,
   stdio: 'inherit',
@@ -60,6 +70,16 @@ try {
   for (const directory of ['assets', 'data', 'vendor']) {
     copyDirectory(directory);
   }
+
+  // Data-only updates must invalidate both the app script and province JSON.
+  // Otherwise browsers keep using the old STATIC_DATA_VERSION indefinitely.
+  const dataVersion = hashDirectory('data');
+  const appPath = path.join(outputDir, 'app.js');
+  const appJs = fs.readFileSync(appPath, 'utf8').replace(
+    /const STATIC_DATA_VERSION\s*=\s*["'][^"']+["'];/,
+    `const STATIC_DATA_VERSION = "${dataVersion}";`,
+  );
+  fs.writeFileSync(appPath, appJs, 'utf8');
 
   const indexPath = path.join(outputDir, 'index.html');
   let indexHtml = fs.readFileSync(indexPath, 'utf8');
