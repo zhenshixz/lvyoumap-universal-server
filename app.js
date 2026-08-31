@@ -2279,15 +2279,14 @@ async function openDetailModal(attraction) {
       });
 
       const realFoodsList = foodGuide.slice(0, 3).map((f, idx) => {
-        let desc = idx === 0 ? "地道招牌，风味绝佳" : (idx === 1 ? "本地传统特色，必尝" : "特色小吃，打卡首选");
+        let desc = "当地代表性风味";
         let img = `assets/images/dynamic_food_${encodeURIComponent(f.substring(0,15))}.jpg?v=${STATIC_DATA_VERSION}`;
         return { name: f, desc, img };
       });
 
-      const realHousingTips = ["旺季房源紧张，建议提前预订", "节假日热门酒店容易满房", "部分客栈条件有限，谨慎选择"];
-      if (isMountain) realHousingTips.push("山间温差大，注意夜间保暖");
+      const realHousingTips = ["住宿区域仅作位置参考，房态与价格以预订时为准"];
       
-      const realFoodTips = ["景区内餐厅建议错峰用餐", "热门美食街注意防范拥挤", "部分路段餐饮选择较少", "海鲜或特产购买前先询价"];
+      const realFoodTips = ["所列为当地代表性风味，实际供应和价格以现场为准"];
       const guideCard = (icon, title, desc, tone = "blue") => `
         <div class="guide-lite-card">
           <span class="guide-lite-card-icon guide-lite-icon-${tone}">${icon}</span>

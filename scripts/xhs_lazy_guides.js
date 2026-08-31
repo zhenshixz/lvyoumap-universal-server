@@ -73,12 +73,14 @@ function compactText(text) {
     .trim();
 }
 
-function promptFor(attraction) {
+function promptFor(attraction, provinceName = '') {
   const name = String(attraction.name || '').trim();
+  const city = String(attraction.city || '').trim();
+  const exactName = `${provinceName}${city}${name}`;
   if (/大马戏/.test(name)) {
-    return `只回答“${name}”这个独立演出项目截至当前仍可执行的长辈小孩省力观看攻略。不要写动物世界、欢乐世界、水上乐园或其他长隆园区路线；重点写入场前准备、适合长辈小孩的通用选座原则、观看注意事项和散场避拥挤方法。不要写固定座区编号、票价、固定开演时间、演出时长或临时场次，不建议提前离场；不确定的项目明确提醒查官方。`;
+    return `只回答“${exactName}”这个独立演出项目，禁止列举、比较或混入其他城市同名项目。输出可直接放进详情页“懒人攻略”的完整文章正文：先说明长辈和小孩如何省力观看，再写入场前准备、通用选座原则、观看注意事项和散场避拥挤方法。不要写其他园区路线、餐饮、住宿、穿衣清单，也不要写固定座区编号、票价、开演时间、演出时长或临时场次；不要客套、反问或要求确认地点。`;
   }
-  return `${name}完整景区截至当前仍可执行的长辈小孩省力路线。不要只回答其中一个子景点；不要提供票价、固定开放时间、临时演出场次等易过期信息；不确定的项目明确提醒查官方，不要无关内容（如餐饮推荐）`;
+  return `请只回答“${exactName}”这个具体景点，禁止列举、比较或混入其他城市同名景点。输出可直接放进详情页“懒人攻略”的完整文章正文：先用一小段说明老人和小孩如何省力，再给至少1条基于真实景区节点的游览路线，按实际游览顺序写清节点、步行或坡度、代步方式、约用时或折返点、休息点，并补充老人儿童注意和避坑提醒。没有复杂线路的公园、广场、灯塔，写真实的散步或观景顺序，不虚构索道、景交车或游玩项目。不要输出衣食住行清单、住宿、美食或穿衣指南；不要写易过期的固定票价、开放时间、班次和临时活动；不要客套、反问或要求确认地点。`;
 }
 
 function cleanupAnswer(pageText, prompt) {
@@ -152,6 +154,7 @@ function answerQuality(text, prompt = '') {
   const showMode = /大马戏|独立演出项目/.test(prompt);
   const showSignals = (answer.match(/入场|选座|座位|观看|声光|散场|退场|出口/g) || []).length;
   const trailing = lines.at(-1) || '';
+  const identityRisk = /(全国有(?:好几个|多个|多处)|国内有(?:好几个|多个|几处)|多个同名|主要有两个|可能指(?:的是|多个|两个)|我先按.{0,30}(?:整理|规划|回答)|分别整理.{0,30}(?:路线|方案)|如果你说的是|先确认你说的是|最主流的是|默认按|根据所在城市参考|不要选错)/.test(answer);
   // 点点经常用连续段落而非小标题作答。旧门槛强制 500 字、2 个路线词和
   // 独立小标题，会把已经完整的 5~10 秒回答误判失败，随后白等到超时再刷新。
   const complete = answer.length >= 280
@@ -159,9 +162,10 @@ function answerQuality(text, prompt = '') {
     && audienceSignals >= 1
     && safetySignals >= 1
     && (sections >= 1 || lines.length >= 5)
+    && !identityRisk
     && !(/(路线|技巧|注意事项|提醒|建议)$/.test(trailing) && trailing.length <= 16)
     && !/登录后查看搜索结果|登录后推荐更懂你的笔记|小红书如何扫码|换个问题试试/.test(answer);
-  return { complete, length: answer.length, routeSignals, showSignals, audienceSignals, safetySignals, sections };
+  return { complete, length: answer.length, routeSignals, showSignals, audienceSignals, safetySignals, sections, identityRisk };
 }
 
 function isTransientAnswer(text) {
@@ -182,8 +186,8 @@ function retryPlan(result) {
 }
 
 function isExcludedName(name) {
-  return /(火车站|高铁站|汽车站|站前|停车场|停车区|服务区|售票处|卫生间|游客中心|服务中心|入口|出口|检票口|换乘中心|码头售票|普通广场|人民公园)/.test(name)
-    || (/(站|停车场|服务区|售票处|卫生间|入口|出口|游客中心|服务中心|广场|公园)$/.test(name) && !/天安门广场/.test(name));
+  return /(火车站|高铁站|汽车站|站前广场|停车场|停车区|服务区|售票处|卫生间|游客中心|服务中心|检票口|换乘中心|码头售票|(?:景区|公园|广场)?(?:入口|出口|出入口)$)/.test(name)
+    || /(?:公交站|地铁站|汽车站|火车站|高铁站)$/.test(name);
 }
 
 function buildCorePreferredIds() {
@@ -360,7 +364,7 @@ async function waitForLogin(page) {
 }
 
 async function scrapeOne(page, target, options = {}) {
-  const basePrompt = promptFor(target.attraction);
+  const basePrompt = promptFor(target.attraction, target.provinceName);
   const prompt = options.attempt > 1
     ? `${basePrompt}。请直接给出完整攻略正文，不要停留在分析过程。`
     : basePrompt;
@@ -512,7 +516,7 @@ async function runCollection() {
         }
         result.attempts = attempts;
       } catch (error) {
-        result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction) };
+        result = { ok: false, reason: 'error', error: error.message, prompt: promptFor(target.attraction, target.provinceName) };
       }
       results.push({ province: target.provinceName, id: target.attraction.id, name: target.attraction.name, dataLayer: target.dataLayer, ...result });
       if (result.reason === 'login_required') {
@@ -626,4 +630,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { answerQuality, isTransientAnswer, retryPlan };
+module.exports = { answerQuality, isTransientAnswer, retryPlan, promptFor, isExcludedName };
