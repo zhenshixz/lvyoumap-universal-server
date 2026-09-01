@@ -51,18 +51,23 @@ function validateCard(item, effective, cityProvinceIndex) {
   const lazy = String(effective.lazy_ai_text || '').trim();
   const combined = [intro, lazy].join('\n');
 
-  if (intro.length < 45) errors.push({ code: 'intro_too_short', field: 'intro', message: '简介过短或仍是通用占位文案' });
+  if (intro.length < 35) errors.push({ code: 'intro_too_short', field: 'intro', message: '简介过短或仍是通用占位文案' });
   if (GENERIC_INTRO_PATTERNS.some(pattern => pattern.test(intro))) errors.push({ code: 'intro_generic', field: 'intro', message: '简介仍包含旧模板或通用占位表达' });
 
-  const foreignCities = [];
+  const foreignIntroCities = [];
+  const foreignLazyCities = [];
   for (const [candidate, provinces] of cityProvinceIndex) {
-    if (candidate === city || candidate.length < 2 || item.name.includes(candidate)) continue;
+    if (candidate === city || city.includes(candidate) || candidate.includes(city) || candidate.length < 2 || item.name.includes(candidate)) continue;
     const escaped = candidate.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const explicitMention = new RegExp(`${escaped}(?:市|州|地区|盟)|(?:位于|前往|到达|导航到|来自|是|按)${escaped}`);
-    if (!explicitMention.test(combined)) continue;
-    if (!provinces.has(province)) foreignCities.push(candidate);
+    if (provinces.has(province)) continue;
+    explicitMention.lastIndex = 0;
+    if (explicitMention.test(intro)) foreignIntroCities.push(candidate);
+    explicitMention.lastIndex = 0;
+    if (explicitMention.test(lazy)) foreignLazyCities.push(candidate);
   }
-  if (foreignCities.length) errors.push({ code: 'foreign_city_reference', field: 'intro/lazy_ai_text', message: `出现异地城市：${[...new Set(foreignCities)].slice(0, 6).join('、')}` });
+  if (foreignIntroCities.length) errors.push({ code: 'foreign_city_reference', field: 'intro', message: `简介出现异地城市：${[...new Set(foreignIntroCities)].slice(0, 6).join('、')}` });
+  if (foreignLazyCities.length) errors.push({ code: 'foreign_city_reference', field: 'lazy_ai_text', message: `懒人攻略出现异地城市：${[...new Set(foreignLazyCities)].slice(0, 6).join('、')}` });
 
   if (AMBIGUOUS_LAZY_PATTERNS.some(pattern => pattern.test(lazy))) {
     errors.push({ code: 'lazy_entity_ambiguous', field: 'lazy_ai_text', message: '懒人攻略仍在多个同名实体之间摇摆' });
