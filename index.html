@@ -389,8 +389,15 @@
     <div class="modal-content">
       <!-- 顶部大图 -->
       <div class="modal-banner">
-        <img src="" alt="" class="modal-banner-img" id="modal-img">
+        <img src="" alt="" class="modal-banner-img" id="modal-img" referrerpolicy="no-referrer">
         <div class="modal-banner-overlay"></div>
+        <button class="modal-gallery-arrow modal-gallery-prev" id="modal-gallery-prev" type="button" aria-label="上一张图片" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.4 4.6-1.4-1.4L5.2 12l8.8 8.8 1.4-1.4L8 12l7.4-7.4Z" /></svg>
+        </button>
+        <button class="modal-gallery-arrow modal-gallery-next" id="modal-gallery-next" type="button" aria-label="下一张图片" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.6 19.4 1.4 1.4 8.8-8.8L10 3.2 8.6 4.6 16 12l-7.4 7.4Z" /></svg>
+        </button>
+        <div class="modal-gallery-counter" id="modal-gallery-counter" aria-live="polite" hidden></div>
         <a class="modal-image-credit" id="modal-image-credit" href="" target="_blank" rel="noopener noreferrer" hidden></a>
         <button class="modal-image-expand" id="modal-image-expand" type="button" aria-label="查看大图" hidden>
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -601,6 +608,21 @@
 
       </div>
     </div>
+  </div>
+
+  <div class="image-viewer" id="image-viewer" role="dialog" aria-modal="true" aria-label="景点大图" hidden>
+    <img class="image-viewer-img" id="image-viewer-img" src="" alt="" referrerpolicy="no-referrer">
+    <button class="image-viewer-arrow image-viewer-prev" id="image-viewer-prev" type="button" aria-label="上一张图片" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.4 4.6-1.4-1.4L5.2 12l8.8 8.8 1.4-1.4L8 12l7.4-7.4Z" /></svg>
+    </button>
+    <button class="image-viewer-arrow image-viewer-next" id="image-viewer-next" type="button" aria-label="下一张图片" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.6 19.4 1.4 1.4 8.8-8.8L10 3.2 8.6 4.6 16 12l-7.4 7.4Z" /></svg>
+    </button>
+    <div class="image-viewer-title" id="image-viewer-title"></div>
+    <div class="image-viewer-counter" id="image-viewer-counter" hidden></div>
+    <button class="image-viewer-close" id="image-viewer-close" type="button" aria-label="返回景点详情">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+    </button>
   </div>
 
   <!-- 5. 畅游中国旅行账户登录弹窗 (纯净日间风格，完美融合高保真体验) -->

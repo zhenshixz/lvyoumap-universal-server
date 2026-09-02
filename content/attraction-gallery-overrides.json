@@ -1,0 +1,30 @@
+{
+  "amap_B001D0VWVB": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/6fb8c7b6354b705e891a17cf873d34f4?type=7",
+        "caption": "大唐西市夜景全景",
+        "source": "amap",
+        "sourcePoiId": "B001D0VWVB"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0e7d489269b731f3a846a2be3977f8f0?type=7",
+        "caption": "大唐西市博物馆外观",
+        "source": "amap",
+        "sourcePoiId": "B001D0VWVB"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/90c64e82741c92fb41f9d7517de51fe9?type=7",
+        "caption": "大唐西市博物馆内部",
+        "source": "amap",
+        "sourcePoiId": "B001D0VY24"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/881bfd209427b93e0000003349918994?type=7",
+        "caption": "大唐西市丝路广场",
+        "source": "amap",
+        "sourcePoiId": "B001D0VVQM"
+      }
+    ]
+  }
+}

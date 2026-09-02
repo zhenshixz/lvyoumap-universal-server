@@ -63,6 +63,11 @@ const IMMERSIVE_IMAGE_MAX_UPSCALE = 1.05;
 let myChart = null;
 let currentSelectedProvince = "";
 let currentSelectedAttraction = null;
+let modalGalleryImages = [];
+let modalGalleryIndex = 0;
+let modalGalleryTouchStartX = null;
+let modalGallerySuppressExpandUntil = 0;
+let modalClosePointerHandledAt = 0;
 let favorites = [];
 // 根据设备屏幕尺寸自适应初始与复位缩放比例 (手机默认+2档/平板+1档/PC保持原状)
 function getResponsiveDefaultZoom() {
@@ -968,33 +973,46 @@ function initEventListeners() {
   // 3.7 景点详情弹窗事件
   const modalImage = document.getElementById("modal-img");
   const modalImageExpand = document.getElementById("modal-image-expand");
+  const modalGalleryPrev = document.getElementById("modal-gallery-prev");
+  const modalGalleryNext = document.getElementById("modal-gallery-next");
   const modalClose = document.getElementById("modal-close");
   const modalBanner = document.querySelector("#detail-modal .modal-banner");
+  const imageViewer = document.getElementById("image-viewer");
+  const imageViewerImage = document.getElementById("image-viewer-img");
+  const imageViewerClose = document.getElementById("image-viewer-close");
+  const imageViewerPrev = document.getElementById("image-viewer-prev");
+  const imageViewerNext = document.getElementById("image-viewer-next");
 
-  modalClose.addEventListener("click", () => {
+  const handleModalClose = () => {
     if (isImmersiveImageViewerOpen()) {
       closeImmersiveImageViewer();
       return;
     }
     closeModal();
+  };
+  modalClose.addEventListener("pointerup", (event) => {
+    if (event.pointerType === "mouse") return;
+    event.preventDefault();
+    event.stopPropagation();
+    modalClosePointerHandledAt = Date.now();
+    handleModalClose();
+  });
+  modalClose.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (Date.now() - modalClosePointerHandledAt < 700) return;
+    handleModalClose();
   });
   if (ENABLE_IMMERSIVE_IMAGE_VIEWER) {
     modalImageExpand.hidden = false;
     modalImage.addEventListener("click", (event) => {
       if (isImmersiveImageViewerOpen()) return;
+      if (Date.now() < modalGallerySuppressExpandUntil) return;
       event.stopPropagation();
       openImmersiveImageViewer();
     });
     modalImageExpand.addEventListener("click", (event) => {
       event.stopPropagation();
       openImmersiveImageViewer();
-    });
-    modalBanner.addEventListener("click", (event) => {
-      if (!isImmersiveImageViewerOpen()) return;
-      if (event.target.closest(".modal-close-btn, .modal-image-credit, .modal-image-expand")) return;
-      if (isPointOutsideContainedImage(modalImage, event.clientX, event.clientY)) {
-        closeImmersiveImageViewer();
-      }
     });
     modalImage.setAttribute("role", "button");
     modalImage.setAttribute("tabindex", "0");
@@ -1012,16 +1030,75 @@ function initEventListeners() {
       if (isImmersiveImageViewerOpen()) updateImmersiveImageQuality();
     });
   }
+  [
+    [modalGalleryPrev, -1],
+    [modalGalleryNext, 1],
+  ].forEach(([button, direction]) => button?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    moveModalGallery(direction);
+  }));
+  [
+    [imageViewerPrev, -1],
+    [imageViewerNext, 1],
+  ].forEach(([button, direction]) => button?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    moveModalGallery(direction);
+  }));
+  const closeImageViewerImmediately = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    closeImmersiveImageViewer();
+  };
+  imageViewerClose?.addEventListener("touchend", closeImageViewerImmediately, { passive: false });
+  imageViewerClose?.addEventListener("pointerup", (event) => {
+    if (event.pointerType === "touch") return;
+    closeImageViewerImmediately(event);
+  });
+  imageViewerClose?.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  imageViewer?.addEventListener("click", (event) => {
+    if (event.target === imageViewer) closeImmersiveImageViewer();
+  });
+  let viewerTouchStartX = null;
+  imageViewerImage?.addEventListener("touchstart", (event) => {
+    viewerTouchStartX = event.changedTouches[0]?.clientX ?? null;
+  }, { passive: true });
+  imageViewerImage?.addEventListener("touchend", (event) => {
+    if (viewerTouchStartX === null || modalGalleryImages.length < 2) return;
+    const endX = event.changedTouches[0]?.clientX ?? viewerTouchStartX;
+    const deltaX = endX - viewerTouchStartX;
+    viewerTouchStartX = null;
+    if (Math.abs(deltaX) >= 45) moveModalGallery(deltaX < 0 ? 1 : -1);
+  }, { passive: true });
+  modalImage.addEventListener("touchstart", (event) => {
+    modalGalleryTouchStartX = event.changedTouches[0]?.clientX ?? null;
+  }, { passive: true });
+  modalImage.addEventListener("touchend", (event) => {
+    if (modalGalleryTouchStartX === null || modalGalleryImages.length < 2) return;
+    const endX = event.changedTouches[0]?.clientX ?? modalGalleryTouchStartX;
+    const deltaX = endX - modalGalleryTouchStartX;
+    modalGalleryTouchStartX = null;
+    if (Math.abs(deltaX) < 45) return;
+    modalGallerySuppressExpandUntil = Date.now() + 450;
+    moveModalGallery(deltaX < 0 ? 1 : -1);
+  }, { passive: true });
   document.getElementById("detail-modal").addEventListener("click", (e) => {
     if (e.target.id === "detail-modal") closeModal();
   });
   document.addEventListener("keydown", (event) => {
+    const detailModal = document.getElementById("detail-modal");
+    if (detailModal.style.display === "flex" && modalGalleryImages.length > 1 && (event.key === "ArrowLeft" || event.key === "ArrowRight")) {
+      event.preventDefault();
+      moveModalGallery(event.key === "ArrowLeft" ? -1 : 1);
+      return;
+    }
     if (event.key !== "Escape") return;
     if (isImmersiveImageViewerOpen()) {
       closeImmersiveImageViewer();
       return;
     }
-    const detailModal = document.getElementById("detail-modal");
     if (detailModal.style.display === "flex") closeModal();
   });
 
@@ -2030,12 +2107,10 @@ async function openDetailModal(attraction) {
 
   currentSelectedAttraction = attraction;
 
-  const modalImage = document.getElementById("modal-img");
-  modalImage.src = attraction.image;
-  modalImage.alt = attraction.name;
+  setupModalGallery(attraction);
 
   const imageCredit = document.getElementById("modal-image-credit");
-  const imageSource = attraction.image_source;
+  const imageSource = modalGalleryImages[0]?.imageSource || attraction.image_source;
   if (imageSource?.sourceUrl) {
     const publicImageCredit = getPublicImageCredit(imageSource);
     imageCredit.textContent = publicImageCredit.text;
@@ -2972,6 +3047,82 @@ function getPublicImageCredit(imageSource) {
   };
 }
 
+function normalizeAttractionGallery(attraction) {
+  const rawItems = Array.isArray(attraction.images) ? attraction.images : [];
+  const items = [
+    { url: attraction.image, caption: attraction.name, imageSource: attraction.image_source },
+    ...rawItems.map(item => typeof item === "string" ? { url: item } : item),
+  ];
+  const seen = new Set();
+  return items.map(item => ({
+    ...item,
+    url: toHighResImageUrl(String(item?.url || item?.image || "").trim()),
+    imageSource: item?.imageSource || item?.image_source || null,
+  })).filter(item => item.url && !seen.has(item.url) && seen.add(item.url)).slice(0, 8);
+}
+
+function updateModalGalleryCredit(imageSource) {
+  const imageCredit = document.getElementById("modal-image-credit");
+  if (!imageCredit) return;
+  if (imageSource?.sourceUrl) {
+    const publicImageCredit = getPublicImageCredit(imageSource);
+    imageCredit.textContent = publicImageCredit.text;
+    if (publicImageCredit.href) imageCredit.href = publicImageCredit.href;
+    else imageCredit.removeAttribute("href");
+    imageCredit.hidden = false;
+    return;
+  }
+  imageCredit.textContent = "";
+  imageCredit.removeAttribute("href");
+  imageCredit.hidden = true;
+}
+
+function renderModalGalleryImage(index) {
+  if (!modalGalleryImages.length) return;
+  modalGalleryIndex = (index + modalGalleryImages.length) % modalGalleryImages.length;
+  const item = modalGalleryImages[modalGalleryIndex];
+  const modalImage = document.getElementById("modal-img");
+  modalImage.src = item.url;
+  modalImage.alt = item.caption || `${currentSelectedAttraction?.name || "景点"}图片 ${modalGalleryIndex + 1}`;
+  const viewerImage = document.getElementById("image-viewer-img");
+  if (viewerImage) {
+    viewerImage.src = item.url;
+    viewerImage.alt = modalImage.alt;
+  }
+  updateModalGalleryCredit(item.imageSource);
+  const counter = document.getElementById("modal-gallery-counter");
+  if (counter) counter.textContent = `${modalGalleryIndex + 1} / ${modalGalleryImages.length}`;
+  const viewerCounter = document.getElementById("image-viewer-counter");
+  if (viewerCounter) viewerCounter.textContent = `${modalGalleryIndex + 1} / ${modalGalleryImages.length}`;
+  if (isImmersiveImageViewerOpen()) updateImmersiveImageQuality();
+  const next = modalGalleryImages[(modalGalleryIndex + 1) % modalGalleryImages.length];
+  if (next && next.url !== item.url) {
+    const preload = new Image();
+    preload.referrerPolicy = "no-referrer";
+    preload.src = next.url;
+  }
+}
+
+function setupModalGallery(attraction) {
+  modalGalleryImages = normalizeAttractionGallery(attraction);
+  modalGalleryIndex = 0;
+  const hasGallery = modalGalleryImages.length > 1;
+  ["modal-gallery-prev", "modal-gallery-next", "modal-gallery-counter"].forEach(id => {
+    const element = document.getElementById(id);
+    if (element) element.hidden = !hasGallery;
+  });
+  ["image-viewer-prev", "image-viewer-next", "image-viewer-counter"].forEach(id => {
+    const element = document.getElementById(id);
+    if (element) element.hidden = !hasGallery;
+  });
+  renderModalGalleryImage(0);
+}
+
+function moveModalGallery(direction) {
+  if (modalGalleryImages.length < 2) return;
+  renderModalGalleryImage(modalGalleryIndex + direction);
+}
+
 function renderPublicRouteSource(route) {
   const raw = `${route?.sourceTitle || ""} ${route?.sourceUrl || ""}`;
   if (isPrivateSourceLabel(raw)) return "景区官方";
@@ -3036,7 +3187,7 @@ function renderModalFeatureTags(attraction) {
 
 // 沉浸式大图：复用现有详情层，避免出现“弹窗套弹窗”。
 function isImmersiveImageViewerOpen() {
-  return document.getElementById("detail-modal")?.classList.contains("image-viewer-active") || false;
+  return !document.getElementById("image-viewer")?.hidden;
 }
 
 function isPointOutsideContainedImage(image, clientX, clientY) {
@@ -3062,60 +3213,29 @@ function isPointOutsideContainedImage(image, clientX, clientY) {
 }
 
 function updateImmersiveImageQuality() {
-  const modal = document.getElementById("detail-modal");
-  const image = document.getElementById("modal-img");
-  const note = document.getElementById("modal-image-quality-note");
-  if (!modal || !image || !note || !image.naturalWidth || !image.naturalHeight) return;
-
-  const availableWidth = window.innerWidth;
-  const availableHeight = window.innerHeight;
-  const containScale = Math.min(
-    availableWidth / image.naturalWidth,
-    availableHeight / image.naturalHeight,
-  );
-  const shouldProtectNativeSize = containScale > IMMERSIVE_IMAGE_MAX_UPSCALE;
-
-  modal.classList.toggle("image-viewer-native-size", shouldProtectNativeSize);
-  if (shouldProtectNativeSize) {
-    modal.style.setProperty("--viewer-image-native-width", `${image.naturalWidth}px`);
-    modal.style.setProperty("--viewer-image-native-height", `${image.naturalHeight}px`);
-    note.textContent = `原图 ${image.naturalWidth}×${image.naturalHeight}，已按原始尺寸显示`;
-    note.hidden = false;
-  } else {
-    modal.style.removeProperty("--viewer-image-native-width");
-    modal.style.removeProperty("--viewer-image-native-height");
-    note.textContent = "";
-    note.hidden = true;
-  }
+  const image = document.getElementById("image-viewer-img");
+  if (!image || !image.naturalWidth || !image.naturalHeight) return;
 }
 
 function openImmersiveImageViewer() {
   if (!ENABLE_IMMERSIVE_IMAGE_VIEWER || isImmersiveImageViewerOpen()) return;
-  const modal = document.getElementById("detail-modal");
-  const closeButton = document.getElementById("modal-close");
-  modal.classList.add("image-viewer-active");
-  closeButton.title = "返回详情";
-  closeButton.setAttribute("aria-label", "返回景点详情");
+  const viewer = document.getElementById("image-viewer");
+  document.getElementById("image-viewer-title").textContent = currentSelectedAttraction?.name || "景点大图";
+  viewer.hidden = false;
   updateImmersiveImageQuality();
 }
 
 function closeImmersiveImageViewer() {
-  const modal = document.getElementById("detail-modal");
-  const closeButton = document.getElementById("modal-close");
-  const qualityNote = document.getElementById("modal-image-quality-note");
-  modal.classList.remove("image-viewer-active", "image-viewer-native-size");
-  modal.style.removeProperty("--viewer-image-native-width");
-  modal.style.removeProperty("--viewer-image-native-height");
-  qualityNote.hidden = true;
-  qualityNote.textContent = "";
-  closeButton.title = "关闭";
-  closeButton.setAttribute("aria-label", "关闭景点详情");
+  const viewer = document.getElementById("image-viewer");
+  if (viewer) viewer.hidden = true;
 }
 
 // 关闭弹窗
 function closeModal() {
   closeImmersiveImageViewer();
   document.getElementById("detail-modal").style.display = "none";
+  modalGalleryImages = [];
+  modalGalleryIndex = 0;
   
   const fills = ["scenery", "traffic", "cost", "service", "crowd"];
   fills.forEach(key => {

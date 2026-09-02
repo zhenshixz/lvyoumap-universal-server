@@ -18,6 +18,7 @@ const imageOverridesPath = path.join(rootDir, 'content', 'image-overrides.json')
 const manualAttractionsPath = path.join(rootDir, 'content', 'manual-attractions.json');
 const identityDecisionsPath = path.join(rootDir, 'content', 'core-identity-decisions.json');
 const attractionOverridesPath = path.join(rootDir, 'content', 'attraction-overrides.json');
+const attractionGalleryOverridesPath = path.join(rootDir, 'content', 'attraction-gallery-overrides.json');
 const attractionDisplayTagsPath = path.join(rootDir, 'content', 'attraction-display-tags.json');
 const lazyGuideOverridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
 const dataDir = path.join(rootDir, 'data');
@@ -345,6 +346,9 @@ function main() {
   const attractionOverrides = fs.existsSync(attractionOverridesPath)
     ? JSON.parse(fs.readFileSync(attractionOverridesPath, 'utf8'))
     : {};
+  const attractionGalleryOverrides = fs.existsSync(attractionGalleryOverridesPath)
+    ? JSON.parse(fs.readFileSync(attractionGalleryOverridesPath, 'utf8').replace(/^\uFEFF/, ''))
+    : {};
   const attractionDisplayTags = fs.existsSync(attractionDisplayTagsPath)
     ? JSON.parse(fs.readFileSync(attractionDisplayTagsPath, 'utf8').replace(/^\uFEFF/, ''))
     : {};
@@ -357,6 +361,12 @@ function main() {
 
   const mergedManualCount = mergeManualAttractions(provinces, manualAttractions, identityDecisions);
   const attractionOverrideCount = applyAttractionOverrides(provinces, attractionOverrides, 'Attraction override');
+  const attractionGalleryOverrideCount = applyAttractionOverrides(
+    provinces,
+    attractionGalleryOverrides,
+    'Attraction gallery override',
+    ['images']
+  );
   const attractionDisplayTagCount = applyAttractionOverrides(
     provinces,
     attractionDisplayTags,
@@ -384,6 +394,7 @@ function main() {
   console.log(`Merged ${mergedManualCount} reviewed manual attractions.`);
   console.log(`Manual layers: ${manualLayers.names.join(', ')}`);
   console.log(`Applied ${attractionOverrideCount} reviewed attraction overrides.`);
+  console.log(`Applied ${attractionGalleryOverrideCount} attraction gallery overrides.`);
   console.log(`Applied ${attractionDisplayTagCount} reviewed attraction display-tag overrides.`);
   console.log(`Applied ${lazyGuideOverrideCount} lazy-guide overrides.`);
   console.log(`Applied ${Object.keys(imageOverrides).length} reviewed image overrides.`);

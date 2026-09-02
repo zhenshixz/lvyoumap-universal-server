@@ -32,6 +32,8 @@ if not exist "dist\index.html" (
 
 set "HOST=0.0.0.0"
 set "PORT=3000"
+for /f %%P in ('powershell -NoProfile -Command "$p=3000; while (Get-NetTCPConnection -State Listen -LocalPort $p -ErrorAction SilentlyContinue) { $p++ }; $p"') do set "PORT=%%P"
+if not "%PORT%"=="3000" echo [INFO] Port 3000 is busy. Using port %PORT% instead.
 echo [INFO] Starting stable preview server...
 echo [INFO] Press Ctrl+C to stop.
 echo ============================================================
