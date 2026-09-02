@@ -154,6 +154,19 @@ function parseIntroBody(body, items) {
   const answerStart = Math.max(clean.indexOf('ai总结'), clean.lastIndexOf('景点：'));
   const answer = clean.slice(Math.max(0, answerStart)).replace(/\n活动[\s\S]*$/, '');
   const parsed = {};
+  const candidates = [...answer.matchAll(/([^\n｜|]{2,120})[｜|]\s*简介[:：]\s*([^\n]+)/g)].map(match => ({
+    title: stable(match[1]),
+    intro: stable(match[2].replace(/[。\r\n]+$/g, '')),
+  })).filter(candidate => candidate.intro.length >= 25);
+  const normalized = value => String(value || '').replace(/[省市区县自治州地区特别行政]+/g, '').replace(/[^\p{L}\p{N}]/gu, '');
+  const similarity = (left, right) => {
+    const a = normalized(left);
+    const b = normalized(right);
+    if (!a || !b) return 0;
+    if (a.includes(b) || b.includes(a)) return Math.min(a.length, b.length) + 20;
+    const chars = new Set(a);
+    return [...new Set(b)].filter(char => chars.has(char)).length / Math.max(a.length, b.length);
+  };
   for (const item of items) {
     const marker = `${item.name}｜简介：`;
     let position = answer.indexOf(marker);
@@ -162,9 +175,17 @@ function parseIntroBody(body, items) {
       if (prefix.includes(item.province.slice(0, 2)) && prefix.includes(item.city.slice(0, 2))) break;
       position = answer.indexOf(marker, position + marker.length);
     }
-    if (position < 0) continue;
-    const tail = answer.slice(position + marker.length);
-    const intro = stable((tail.match(/^.*?[。\r\n]/)?.[0] || tail.split(/[｜|]/)[0]).replace(/[。\r\n]+$/g, ''));
+    let intro = '';
+    if (position >= 0) {
+      const tail = answer.slice(position + marker.length);
+      intro = stable((tail.match(/^.*?[。\r\n]/)?.[0] || tail.split(/[｜|]/)[0]).replace(/[。\r\n]+$/g, ''));
+    } else {
+      const provinceMatches = candidates.filter(candidate => candidate.title.includes(item.province.slice(0, 2)));
+      const cityMatches = provinceMatches.filter(candidate => candidate.title.includes(item.city.slice(0, 2)));
+      const pool = cityMatches.length ? cityMatches : provinceMatches;
+      const candidate = [...pool].sort((left, right) => similarity(right.title, item.name) - similarity(left.title, item.name))[0];
+      intro = candidate?.intro || '';
+    }
     if (intro.length < 25) continue;
     parsed[item.id] = { intro, description: intro };
   }

@@ -29,8 +29,23 @@ for (const item of manifest.items) {
   const effective = { ...(sources.get(item.id) || {}), ...item.before, ...item.proposed };
   item.validation = validateCard(gateItem, effective, cityIndex);
   item.validation.errors = item.validation.errors.filter(error => {
-    if (['intro_too_short', 'intro_generic'].includes(error.code)) return repairsEntity;
-    if (error.code === 'foreign_city_reference') return error.field === 'intro' ? repairsEntity : repairsLazy;
+    if (['intro_too_short', 'intro_generic'].includes(error.code)) {
+      if (manifest.phase === '内容完善') {
+        const intro = String(effective.intro || effective.description || '').trim();
+        const generic = /(自然风光秀丽，是体验当地特色美景的绝佳去处|历史底蕴深厚，是一处非常值得一游的人文胜地|以.+为主要看点。适合纳入.+经典游览线路)/u.test(intro);
+        return repairsEntity && (intro.length < 25 || generic);
+      }
+      return repairsEntity;
+    }
+    if (error.code === 'foreign_city_reference') {
+      if (manifest.phase === '内容完善' && error.field === 'intro') {
+        const intro = String(effective.intro || '');
+        const referencedCity = String(error.message || '').match(/：(.+)$/u)?.[1];
+        if (/(中山文化|昌江河)/u.test(intro)) return false;
+        if (referencedCity && new RegExp(`${referencedCity}(?:区|县|镇|街道)`, 'u').test(intro)) return false;
+      }
+      return error.field === 'intro' ? repairsEntity : repairsLazy;
+    }
     if (['lazy_entity_ambiguous', 'lazy_missing'].includes(error.code)) return repairsLazy;
     if (['guide_missing', 'guide_template_residue'].includes(error.code)) return repairsGuide;
     return false;
