@@ -71,6 +71,8 @@ http://127.0.0.1:3000/api/weather?province=北京
 
 ## GitHub Desktop自动部署
 
+页面底部会从当前线上版本的 `build-info.json` 读取时间，以小字显示“月-日 时:分 更新”。该文件随每次成功构建进入当前发布版本；读取失败时自动隐藏，不影响地图和实时天气。
+
 公开仓库默认不需要GitHub Token、Actions Secrets或云厂商插件。`bootstrap.sh`会安装
 `lvyoumap-update.timer`，服务器约每30秒检查一次`main`：
 

@@ -333,6 +333,8 @@ body {
   border-top: 1px solid rgba(15, 23, 42, 0.04);
   font-size: 10px;
   line-height: 1;
+  gap: 7px;
+  white-space: nowrap;
   z-index: 9;
 }
 
@@ -346,6 +348,17 @@ body {
 .site-legal-footer a:hover,
 .site-legal-footer a:focus-visible {
   color: var(--accent-cyan);
+}
+
+.deployment-time {
+  color: var(--text-muted);
+  font-size: 9px;
+  opacity: 0.58;
+}
+
+.deployment-time::before {
+  content: "·";
+  margin-right: 7px;
 }
 
 /* ==========================================

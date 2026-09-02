@@ -196,6 +196,37 @@ window.addEventListener('error', function(e) {
 }, true);
 
 // 初始化页面
+async function loadDeploymentTimestamp() {
+  const element = document.getElementById("deployment-time");
+  if (!element) return;
+  try {
+    const response = await fetch(`/build-info.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return;
+    const buildInfo = await response.json();
+    const deployedAt = new Date(buildInfo.deployedAt || buildInfo.builtAt || "");
+    if (Number.isNaN(deployedAt.getTime())) return;
+    const shortTime = new Intl.DateTimeFormat("zh-CN", {
+      timeZone: "Asia/Shanghai",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).format(deployedAt).replace(/\//g, "-");
+    const fullTime = new Intl.DateTimeFormat("zh-CN", {
+      timeZone: "Asia/Shanghai",
+      dateStyle: "medium",
+      timeStyle: "medium",
+      hour12: false,
+    }).format(deployedAt);
+    element.textContent = `${shortTime} 更新`;
+    element.title = `当前线上版本时间：${fullTime}`;
+    element.hidden = false;
+  } catch {
+    // 版本信息不可用时保持隐藏，不影响地图主体功能。
+  }
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   // 🚀 强效缓存击穿：针对微信等顽固 WebView 直接注入 CSS 修正
   const cacheBusterStyle = document.createElement("style");
@@ -241,6 +272,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   initTheme();
   initClock();
+  loadDeploymentTimestamp();
   await loadInitialData();
   initEventListeners();
   initRegionControls();
