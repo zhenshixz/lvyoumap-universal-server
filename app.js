@@ -1,4 +1,4 @@
-
+﻿
 function toHighResImageUrl(url) {
   if (!url || typeof url !== 'string') return url || '';
   if (url.includes('store.is.autonavi.com/showpic/')) {
@@ -68,6 +68,7 @@ let modalGalleryIndex = 0;
 let modalGalleryTouchStartX = null;
 let modalGallerySuppressExpandUntil = 0;
 let modalClosePointerHandledAt = 0;
+let imageViewerClosedAt = 0;
 let favorites = [];
 // 根据设备屏幕尺寸自适应初始与复位缩放比例 (手机默认+2档/平板+1档/PC保持原状)
 function getResponsiveDefaultZoom() {
@@ -891,6 +892,15 @@ function bindMapChartEvents() {
 
 // 3. 事件监听配置
 function initEventListeners() {
+  // 全局捕获阶段拦截：大图关闭 600ms 内，阻止任何穿透点击到达页面 DOM 节点（封面图、按钮、遮罩）
+  window.addEventListener("click", (event) => {
+    if (Date.now() - imageViewerClosedAt < 600) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+    }
+  }, true);
+
   // 3.1 地图区块及标记点击事件与图片预加载 (全面兼容 2D / ECharts GL 3D)
   bindMapChartEvents();
 
@@ -984,6 +994,9 @@ function initEventListeners() {
   const imageViewerNext = document.getElementById("image-viewer-next");
 
   const handleModalClose = () => {
+    if (Date.now() - imageViewerClosedAt < 600) {
+      return;
+    }
     if (isImmersiveImageViewerOpen()) {
       closeImmersiveImageViewer();
       return;
@@ -991,6 +1004,11 @@ function initEventListeners() {
     closeModal();
   };
   modalClose.addEventListener("pointerup", (event) => {
+    if (Date.now() - imageViewerClosedAt < 600) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
     if (event.pointerType === "mouse") return;
     event.preventDefault();
     event.stopPropagation();
@@ -999,6 +1017,7 @@ function initEventListeners() {
   });
   modalClose.addEventListener("click", (event) => {
     event.stopPropagation();
+    if (Date.now() - imageViewerClosedAt < 600) return;
     if (Date.now() - modalClosePointerHandledAt < 700) return;
     handleModalClose();
   });
@@ -1006,11 +1025,13 @@ function initEventListeners() {
     modalImageExpand.hidden = false;
     modalImage.addEventListener("click", (event) => {
       if (isImmersiveImageViewerOpen()) return;
+      if (Date.now() - imageViewerClosedAt < 600) return;
       if (Date.now() < modalGallerySuppressExpandUntil) return;
       event.stopPropagation();
       openImmersiveImageViewer();
     });
     modalImageExpand.addEventListener("click", (event) => {
+      if (Date.now() - imageViewerClosedAt < 600) return;
       event.stopPropagation();
       openImmersiveImageViewer();
     });
@@ -1047,19 +1068,19 @@ function initEventListeners() {
   const closeImageViewerImmediately = (event) => {
     event.preventDefault();
     event.stopPropagation();
+    event.stopImmediatePropagation();
     closeImmersiveImageViewer();
   };
-  imageViewerClose?.addEventListener("touchend", closeImageViewerImmediately, { passive: false });
-  imageViewerClose?.addEventListener("pointerup", (event) => {
-    if (event.pointerType === "touch") return;
-    closeImageViewerImmediately(event);
-  });
-  imageViewerClose?.addEventListener("click", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-  });
+  // 大图可能仍在解码。使用 pointerdown 在手指按下时立即关闭，不等待
+  // touchend/click 手势判定；配合 imageViewerClosedAt 冷却锁彻底阻断事件穿透。
+  imageViewerClose?.addEventListener("pointerdown", closeImageViewerImmediately, { passive: false });
+  imageViewerClose?.addEventListener("click", closeImageViewerImmediately);
   imageViewer?.addEventListener("click", (event) => {
-    if (event.target === imageViewer) closeImmersiveImageViewer();
+    if (event.target === imageViewer) {
+      event.preventDefault();
+      event.stopPropagation();
+      closeImmersiveImageViewer();
+    }
   });
   let viewerTouchStartX = null;
   imageViewerImage?.addEventListener("touchstart", (event) => {
@@ -1085,6 +1106,7 @@ function initEventListeners() {
     moveModalGallery(deltaX < 0 ? 1 : -1);
   }, { passive: true });
   document.getElementById("detail-modal").addEventListener("click", (e) => {
+    if (Date.now() - imageViewerClosedAt < 600) return;
     if (e.target.id === "detail-modal") closeModal();
   });
   document.addEventListener("keydown", (event) => {
@@ -1099,6 +1121,7 @@ function initEventListeners() {
       closeImmersiveImageViewer();
       return;
     }
+    if (Date.now() - imageViewerClosedAt < 600) return;
     if (detailModal.style.display === "flex") closeModal();
   });
 
@@ -3086,8 +3109,10 @@ function renderModalGalleryImage(index) {
   modalImage.alt = item.caption || `${currentSelectedAttraction?.name || "景点"}图片 ${modalGalleryIndex + 1}`;
   const viewerImage = document.getElementById("image-viewer-img");
   if (viewerImage) {
-    viewerImage.src = item.url;
     viewerImage.alt = modalImage.alt;
+    // 关闭状态不维护第二份隐藏大图，避免移动端后台重复解码。
+    if (isImmersiveImageViewerOpen()) viewerImage.src = item.url;
+    else viewerImage.removeAttribute("src");
   }
   updateModalGalleryCredit(item.imageSource);
   const counter = document.getElementById("modal-gallery-counter");
@@ -3219,15 +3244,27 @@ function updateImmersiveImageQuality() {
 
 function openImmersiveImageViewer() {
   if (!ENABLE_IMMERSIVE_IMAGE_VIEWER || isImmersiveImageViewerOpen()) return;
+  if (Date.now() - imageViewerClosedAt < 600) return;
   const viewer = document.getElementById("image-viewer");
+  const image = document.getElementById("image-viewer-img");
+  const item = modalGalleryImages[modalGalleryIndex];
+  if (image && item?.url) {
+    image.src = item.url;
+    image.alt = item.caption || `${currentSelectedAttraction?.name || "景点"}图片 ${modalGalleryIndex + 1}`;
+  }
   document.getElementById("image-viewer-title").textContent = currentSelectedAttraction?.name || "景点大图";
   viewer.hidden = false;
   updateImmersiveImageQuality();
 }
 
 function closeImmersiveImageViewer() {
+  imageViewerClosedAt = Date.now();
   const viewer = document.getElementById("image-viewer");
-  if (viewer) viewer.hidden = true;
+  if (!viewer) return;
+  viewer.hidden = true;
+  const image = document.getElementById("image-viewer-img");
+  // 隐藏后立即释放大图资源与未完成解码；详情顶部图仍保留，不触发详情重绘。
+  if (image) image.removeAttribute("src");
 }
 
 // 关闭弹窗

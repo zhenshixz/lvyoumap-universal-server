@@ -8,22 +8,792 @@
         "sourcePoiId": "B001D0VWVB"
       },
       {
-        "url": "https://store.is.autonavi.com/showpic/0e7d489269b731f3a846a2be3977f8f0?type=7",
-        "caption": "大唐西市博物馆外观",
-        "source": "amap",
-        "sourcePoiId": "B001D0VWVB"
-      },
-      {
-        "url": "https://store.is.autonavi.com/showpic/90c64e82741c92fb41f9d7517de51fe9?type=7",
-        "caption": "大唐西市博物馆内部",
-        "source": "amap",
-        "sourcePoiId": "B001D0VY24"
+        "url": "https://ak-d.tripcdn.com/images/1mh2512000haue4p00EB8.jpg",
+        "caption": "大唐西市建筑夜景",
+        "source": "public-search",
+        "sourceUrl": "https://www.trip.com/travel-guide/attraction/xi-an/tang-west-market-museum-101091/"
       },
       {
         "url": "https://store.is.autonavi.com/showpic/881bfd209427b93e0000003349918994?type=7",
         "caption": "大唐西市丝路广场",
         "source": "amap",
         "sourcePoiId": "B001D0VVQM"
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101h12000f6sg55j0056.jpg",
+        "caption": "大唐西市博物馆入口",
+        "source": "public-search",
+        "sourceUrl": "https://www.trip.com/travel-guide/attraction/xi-an/tang-west-market-museum-101091/"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/90c64e82741c92fb41f9d7517de51fe9?type=7",
+        "caption": "大唐西市博物馆建筑",
+        "source": "amap",
+        "sourcePoiId": "B001D0VY24"
+      }
+    ]
+  },
+  "amap_B0345001JL": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/ec73257a74bd2193e4612a0c54ee87e1?type=7",
+        "caption": "九寨沟现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/825dd69e934c1fa81e0943898dd1e067?type=7",
+        "caption": "九寨沟",
+        "source": "amap",
+        "sourcePoiId": "B0345001JL"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/46a21c60ba5617a10d1279c8a48b1a99?type=7",
+        "caption": "九寨沟",
+        "source": "amap",
+        "sourcePoiId": "B0345001JL"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/-_panoramio_%282282%29.jpg/1920px--_panoramio_%282282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "- panoramio (2282).jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A-_panoramio_(2282).jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "pzhui",
+          "license": "CC BY 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A-_panoramio_(2282).jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Jiuzhaigou_Valley_2002-09-12_03.jpg/1920px-Jiuzhaigou_Valley_2002-09-12_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Jiuzhaigou Valley 2002-09-12 03.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJiuzhaigou_Valley_2002-09-12_03.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJiuzhaigou_Valley_2002-09-12_03.jpg"
+        }
+      }
+    ]
+  },
+  "amap_B022F0ML6Z": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/e82f9f2c5995f5e08d6c5b29943b68ac?type=7",
+        "caption": "黄山风景区现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a6ed3107375ca49ef93b1ada75b98443?type=7",
+        "caption": "黄山",
+        "source": "amap",
+        "sourcePoiId": "B022F0ML6Z"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/d05de63ae9b99cd7dc9e1c47160d97c7?type=7",
+        "caption": "黄山风景区",
+        "source": "amap",
+        "sourcePoiId": "B022F0ML6Z"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/604bf52b9431fb5ece8b9f16b9812636?type=7",
+        "caption": "光明顶",
+        "source": "reviewed-subspot",
+        "sourcePoiId": "amap_B022F0MIDU"
+      },
+      {
+        "url": "https://youimg1.c-ctrip.com/target/0104a120008ah3n3q93E0_D_10000_1200.jpg?proc=autoorient",
+        "caption": "安徽黄山黄山风景区景点15天天气预报_黄山风景区景点未来5天天气预报_黄山风景区景点24小时天气预报-天气查",
+        "source": "public-search",
+        "sourceUrl": "https://www.tianqicha.com/sight/71a73873a8e813c48b34b3307f2f2c2a.html"
+      }
+    ]
+  },
+  "amap_B023B13L9M": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/44a8bfa45e118d5e37adf558bfcf0d82?type=7",
+        "caption": "杭州西湖风景名胜区现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/e2bda1f3737e11d428a2869726275953?type=7",
+        "caption": "杭州西湖风景名胜区",
+        "source": "amap",
+        "sourcePoiId": "B023B13L9M"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/6b5aff697cfe75d03dd06edb551124b1?type=7",
+        "caption": "杭州西湖风景名胜区",
+        "source": "amap",
+        "sourcePoiId": "B023B13L9M"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/79d78770e053cbc78b61063ccb297801?type=7",
+        "caption": "杭州西湖风景名胜区",
+        "source": "amap",
+        "sourcePoiId": "B023B13L9M"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/478ddbbf592df9e88466a3e10c5d6b70?type=7",
+        "caption": "断桥残雪",
+        "source": "reviewed-subspot",
+        "sourcePoiId": "amap_B023B01EE6"
+      }
+    ]
+  },
+  "amap_B02E800EFM": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/77ad479478f6b6cc6f9ea4a59bbfa689?type=7",
+        "caption": "张家界国家森林公园现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9dca6025c249adec8184e3f2d372baef?type=7",
+        "caption": "张家界国家森林公园",
+        "source": "amap",
+        "sourcePoiId": "B02E800EFM"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/27ce2081a340e314ca7bf9fee893c57c?type=7",
+        "caption": "张家界国家森林公园金鞭溪",
+        "source": "amap",
+        "sourcePoiId": "B0FFF3O6X7"
+      },
+      {
+        "url": "https://aos-comment.amap.com/B0FFFPNBKF/comment/content_media_external_file_1000187716_ss__1758332415442_90641964.jpg?type=7",
+        "caption": "张家界国家森林公园袁家界峰林",
+        "source": "amap",
+        "sourcePoiId": "B0FFFPNBKF"
+      },
+      {
+        "url": "https://aos-comment.amap.com/B02E80MWZH/comment/131348ffc8671ec5a01be10bb6b37f36_2048_2048_80.jpg?type=7",
+        "caption": "张家界国家森林公园天子山峰林",
+        "source": "amap",
+        "sourcePoiId": "B02E80MWZH"
+      }
+    ]
+  },
+  "amap_B016200MKK": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/6766ebd3c75bac8f1968394b263be1fd?type=7",
+        "caption": "平遥古城现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/b077a7b0ed404a4eb83237ff15a58e73?type=7",
+        "caption": "平遥古城",
+        "source": "amap",
+        "sourcePoiId": "B016200MKK"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/34d291c4006fdf3cdefd3affa866244c?type=7",
+        "caption": "平遥古城",
+        "source": "amap",
+        "sourcePoiId": "B016200MKK"
+      },
+      {
+        "url": "https://aos-comment.amap.com/B0FFGHLSX8/comment/AE3DAA1A_3E7D_4808_8BC4_3F406341C75D_L0_001_2000_150_1759120181751_87363276.jpg",
+        "caption": "平遥县署",
+        "source": "reviewed-subspot",
+        "sourcePoiId": "amap_B0FFGHLSX8"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/China_-_Pingyao_11_-_funeral_decoration_shop_%28135945911%29.jpg/1920px-China_-_Pingyao_11_-_funeral_decoration_shop_%28135945911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "China - Pingyao 11 - funeral decoration shop (135945911).jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChina_-_Pingyao_11_-_funeral_decoration_shop_(135945911).jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "McKay Savage from London, UK",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChina_-_Pingyao_11_-_funeral_decoration_shop_(135945911).jpg"
+        }
+      }
+    ]
+  },
+  "amap_B0378008PR": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/79301b10705b92ec03da88565b18e0f5?type=7",
+        "caption": "丽江古城现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/32af1b552ecf66276bd13cb2479cec34?type=7",
+        "caption": "丽江古城",
+        "source": "amap",
+        "sourcePoiId": "B0378008PR"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/98B06384211D48A7BF6DA8AD8A2A941C?type=7",
+        "caption": "文昌宫观景台",
+        "source": "reviewed-subspot",
+        "sourcePoiId": "amap_B0FFK10I11"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sinacn17/213/w2048h1365/20180718/c543-hfnsvza1915201.jpg",
+        "caption": "丽江古城的那一抹晚霞最是让人心动~|丽江古城|晚霞_新浪新闻",
+        "source": "public-search",
+        "sourceUrl": "https://k.sina.com.cn/article_2658100231_p9e6f6407027009bra.html"
+      },
+      {
+        "url": "https://n.sinaimg.cn/sinakd20200507ac/131/w2000h1331/20200507/f041-iteyfww1928524.jpg",
+        "caption": "丽江，云南最慵懒的一座城市，不仅风光秀美，人文底蕴也十分深厚|云南|丽江|丽江古城_新浪新闻",
+        "source": "public-search",
+        "sourceUrl": "https://k.sina.com.cn/article_2481483874_93e8706200100nnd1.html"
+      }
+    ]
+  },
+  "amap_B0FFFAPGR4": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/60bcf8e04c9a3afe44d1ccadbf4877ef?type=7",
+        "caption": "乌镇风景区现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1083d6cc6f769c8c2381587c1e89aae8?type=7",
+        "caption": "乌镇风景区",
+        "source": "amap",
+        "sourcePoiId": "B0FFFAPGR4"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0d3db572be90f3481eabf93ca86ec7aa?type=7",
+        "caption": "乌镇西栅雪景",
+        "source": "amap",
+        "sourcePoiId": "B023D02SCY"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a2c066207271d2aae1bc2c5567e03f04?type=7",
+        "caption": "乌镇西栅水巷夜景",
+        "source": "amap",
+        "sourcePoiId": "B023D02SCY"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/6e5bb13d9eead9a8df8aaffedb28144b?type=7",
+        "caption": "乌镇东栅水乡实景",
+        "source": "amap",
+        "sourcePoiId": "B023D03VEN"
+      }
+    ]
+  },
+  "amap_B02E700F2Q": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/1573c1155a826d8fcd1ad5e020d08717?type=7",
+        "caption": "凤凰古城现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/88300eaa294d71676cfd351794b94db9?type=7",
+        "caption": "凤凰城",
+        "source": "amap",
+        "sourcePoiId": "B02E700F2Q"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/71500d5bf4a219be30169257e5d483bb?type=7",
+        "caption": "凤凰古城",
+        "source": "amap",
+        "sourcePoiId": "B02E700F2Q"
+      },
+      {
+        "url": "https://www.sunriver.cn/upload/at/image/20241128/17327621622063704LxN.jpg",
+        "caption": "凤凰古城沱江夜景",
+        "source": "public-search",
+        "sourceUrl": "https://www.sunriver.cn/index.php/news/info/311.html"
+      },
+      {
+        "url": "https://img.rednet.cn/2024/06-23/ffc6046d-0f39-4f00-b876-a28d9240e991.jpg",
+        "caption": "凤凰古城灯火夜景",
+        "source": "public-search",
+        "sourceUrl": "https://hn.rednet.cn/content/646840/67/14024310.html"
+      }
+    ]
+  },
+  "amap_B000A8UIN8": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/2f968490d105bb2741e17f90b85c6b79?type=7",
+        "caption": "故宫博物院现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ecaaf5e9b0162d30246d29ad51db4849?type=7",
+        "caption": "故宫博物院",
+        "source": "amap",
+        "sourcePoiId": "B000A8UIN8"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ce04dc93c7d4c136cc05877debd0a22b?type=7",
+        "caption": "故宫博物院",
+        "source": "amap",
+        "sourcePoiId": "B000A8UIN8"
+      },
+      {
+        "url": "https://i0.hexun.com/2022-10-21/206939743.jpg",
+        "caption": "故宫文化走出去难点在那里？故宫博物院院长答新京报问：求同存异-新闻频道-和讯网",
+        "source": "public-search",
+        "sourceUrl": "https://news.hexun.com/2022-10-21/206939744.html"
+      },
+      {
+        "url": "https://images1.aoyou.com/productlist/202111/82f6x816170811.jpg",
+        "caption": "故宫博物院一日游【奇异文旅 不含票北京故宫+珍宝馆 精品20人团导游深度讲解】-中青旅遨游网",
+        "source": "public-search",
+        "sourceUrl": "https://www.aoyou.com/domesticgroup/g167540i1"
+      }
+    ]
+  },
+  "amap_B001809F61": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/2d15219b6a147017203952563a011a3a?type=7",
+        "caption": "沈阳故宫博物院现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f0471fbd66cf78a7fb929c1e02abbb3c?type=7",
+        "caption": "沈阳故宫博物院",
+        "source": "amap",
+        "sourcePoiId": "B001809F61"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/72d301075d03d0d2467191a6f39522f8?type=7",
+        "caption": "沈阳故宫",
+        "source": "amap",
+        "sourcePoiId": "B001809F61"
+      },
+      {
+        "url": "https://bluebird-story.com/wp-content/uploads/2019/04/1ebb1b89e17644500461133def58dcf1.jpeg",
+        "caption": "沈阳故宫宫殿院落",
+        "source": "public-search",
+        "sourceUrl": "https://bluebird-story.com/shenyang-gugong/"
+      },
+      {
+        "url": "https://iqh.ruc.edu.cn/images/2024-12/921b25cc241048f584d4e2d48369f1df.jpeg",
+        "caption": "沈阳故宫大政殿",
+        "source": "public-search",
+        "sourceUrl": "https://iqh.ruc.edu.cn/xwdt/cf5322d0fe1d4b2b9bae2adef8b9f0c3.htm"
+      }
+    ]
+  },
+  "amap_B001D06AOS": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/79db7fd7451da35ee939cb797c8f22e9?type=7",
+        "caption": "西安博物院现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9202d90c717b42509292a1431cdf82fe?type=7",
+        "caption": "西安博物院",
+        "source": "amap",
+        "sourcePoiId": "B001D06AOS"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%E8%A5%BF%E5%AE%89%E5%8D%9A%E7%89%A9%E9%99%A2.jpg/1920px-%E8%A5%BF%E5%AE%89%E5%8D%9A%E7%89%A9%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "西安博物院.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E8%A5%BF%E5%AE%89%E5%8D%9A%E7%89%A9%E9%99%A2.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Sarahshine",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E8%A5%BF%E5%AE%89%E5%8D%9A%E7%89%A9%E9%99%A2.jpg"
+        }
+      },
+      {
+        "url": "https://pic.kts.g.mi.com/63225d6065d126895f79df5ea9fc4bff5555476733313702982.jpg",
+        "caption": "西安博物院建筑与园区",
+        "source": "public-search",
+        "sourceUrl": "https://game.xiaomi.com/viewpoint/1410699077_1773928975155_16"
+      },
+      {
+        "url": "https://so1.360tres.com/t018a49370d047e9aa6.jpg",
+        "caption": "西安博物院入口",
+        "source": "public-search",
+        "sourceUrl": "https://baike.so.com/gallery/list?eid=5815291&ghid=first&pic_idx=1&sid=6028103"
+      }
+    ]
+  },
+  "amap_B001D09OYW": {
+    "images": [
+      {
+        "url": "https://aos-cdn-image.amap.com/sns/ugccomment/12131216-8157-4a60-bfd2-b1e57dd8cb1e.jpg",
+        "caption": "秦始皇帝陵博物院现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://aos-cdn-image.amap.com/sns/ugccomment/634c7eba-f4f7-4690-924a-377a33af0ea4.jpg",
+        "caption": "秦始皇帝陵博物院",
+        "source": "amap",
+        "sourcePoiId": "B001D09OYW"
+      },
+      {
+        "url": "https://aos-cdn-image.amap.com/sns/ugccomment/3618388d-0f12-4d59-a4c3-0f8e8e9d45cb.jpg",
+        "caption": "秦始皇帝陵博物院",
+        "source": "amap",
+        "sourcePoiId": "B001D09OYW"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/A_Bronze_Carriage_and_Horse_at_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi%27an.jpg/1920px-A_Bronze_Carriage_and_Horse_at_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi%27an.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "A Bronze Carriage and Horse at Lishan Garden, Terracotta Army Museum, Lintong District, Xi'an.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AA_Bronze_Carriage_and_Horse_at_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi'an.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "YikyuenG",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AA_Bronze_Carriage_and_Horse_at_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi'an.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/The_main_gate%2C_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi%27an.jpg/1920px-The_main_gate%2C_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi%27an.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "The main gate, Lishan Garden, Terracotta Army Museum, Lintong District, Xi'an.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_main_gate%2C_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi'an.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "YikyuenG",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_main_gate%2C_Lishan_Garden%2C_Terracotta_Army_Museum%2C_Lintong_District%2C_Xi'an.jpg"
+        }
+      }
+    ]
+  },
+  "amap_B00157AW8O": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/4f83bd890aba5ab4f0d859e5e25a94f7?type=7",
+        "caption": "上海迪士尼度假区现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/b8f22033d9f27ce6ecc2717f59ce984e?type=7",
+        "caption": "上海迪士尼度假区",
+        "source": "amap",
+        "sourcePoiId": "B00157AW8O"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/31b82e6ecf4d928a3278981307baf6da?type=7",
+        "caption": "上海迪士尼度假区",
+        "source": "amap",
+        "sourcePoiId": "B00157AW8O"
+      },
+      {
+        "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-theme-park-shanghai-disneyland-park-hero-new_tcm1874-114991.jpg",
+        "caption": "上海迪士尼乐园官方全景",
+        "source": "official",
+        "sourceUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=attraction",
+        "imageSource": {
+          "provider": "上海迪士尼度假区官方",
+          "sourceUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=attraction"
+        }
+      },
+      {
+        "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-tron-lightcycle-power-run-hero-new_tcm1874-114865.jpg",
+        "caption": "创极速光轮官方实景",
+        "source": "official",
+        "sourceUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=attraction",
+        "imageSource": {
+          "provider": "上海迪士尼度假区官方",
+          "sourceUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=attraction"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFYPEE9": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/8abd00db6eb33d509e567ec08f75b63d?type=7",
+        "caption": "广州长隆旅游度假区现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1de6cb3df5bb85b684951f3074fb5b15?type=7",
+        "caption": "广州长隆旅游度假区",
+        "source": "amap",
+        "sourcePoiId": "B0FFFYPEE9"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9d229f81a55ae6a59708bae75f07eb32?type=7",
+        "caption": "广州长隆旅游度假区",
+        "source": "amap",
+        "sourcePoiId": "B0FFFYPEE9"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/ChimelongParadiseSouth.jpg/1920px-ChimelongParadiseSouth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "ChimelongParadiseSouth.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChimelongParadiseSouth.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "JaJaWa",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChimelongParadiseSouth.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Guangzhou_Chimelong_Tourist_Resort_20230428-01.jpg/1920px-Guangzhou_Chimelong_Tourist_Resort_20230428-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Guangzhou Chimelong Tourist Resort 20230428-01.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGuangzhou_Chimelong_Tourist_Resort_20230428-01.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "中少",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGuangzhou_Chimelong_Tourist_Resort_20230428-01.jpg"
+        }
+      }
+    ]
+  },
+  "amap_B02500SJWD": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/75652a322d636c09cd237ff8122dbb99?type=7",
+        "caption": "厦门方特梦幻王国现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/7970bf8a0af830b5b09a8eed72102aba?type=7",
+        "caption": "春季",
+        "source": "amap",
+        "sourcePoiId": "B02500SJWD"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/88da6f517eeadc21d9455186da1a4530?type=7",
+        "caption": "厦门方特梦幻王国",
+        "source": "amap",
+        "sourcePoiId": "B02500SJWD"
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo3612000cdmkyh28437.jpg",
+        "caption": "厦门方特水上游乐项目",
+        "source": "public-search",
+        "sourceUrl": "https://gs.ctrip.com/html5/you/sight/xiamen21/140141.html"
+      },
+      {
+        "url": "https://gotravellingworld.com/wp-content/uploads/2025/11/1763008492-1-1024x683.jpg",
+        "caption": "厦门方特梦幻王国入口",
+        "source": "public-search",
+        "sourceUrl": "https://gotravellingworld.com/xiamen-fantawild-adventure/"
+      }
+    ]
+  },
+  "amap_B02140A3J6": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/ab18e44a2d6dd345539fc063ab8a1b59?type=7",
+        "caption": "青岛方特梦幻王国现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/79c74285d99f1653328da2b296006b07?type=7",
+        "caption": "青岛方特梦幻王国",
+        "source": "amap",
+        "sourcePoiId": "B02140A3J6"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/68bf62ca73e658b94868cf6182e470b4?type=7",
+        "caption": "青岛方特梦幻王国",
+        "source": "amap",
+        "sourcePoiId": "B02140A3J6"
+      },
+      {
+        "url": "https://img.guanhai.com.cn/a/10001/202307/2b66d6d3765f205afca61751cc13cdec.jpeg",
+        "caption": "青岛方特入口广场",
+        "source": "public-search",
+        "sourceUrl": "https://www.dailyqd.com/guanhai/263243_1.html"
+      },
+      {
+        "url": "https://live.staticflickr.com/65535/53715979900_f3d5457123_k.jpg",
+        "caption": "青岛方特梦幻王国入口",
+        "source": "public-search",
+        "sourceUrl": "https://darkridedatabase.com/exploring-fantawild-part-2-dreamland/"
+      }
+    ]
+  },
+  "amap_B00140WBI1": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/d5b56df50d024cbd33e4e1a16f77d419?type=7",
+        "caption": "广州塔现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/548caf7e81c63a843faae5d1a9be968c?type=7",
+        "caption": "广州塔",
+        "source": "amap",
+        "sourcePoiId": "B00140WBI1"
+      },
+      {
+        "url": "https://p9.itc.cn/images01/20221226/dab9d45300f84e23802a6cf278fbe2c3.jpeg",
+        "caption": "广州塔－琶洲世界级地标商圈规划发布！区域新盘又上“价值”了_项目_消费_中心",
+        "source": "public-search",
+        "sourceUrl": "https://www.sohu.com/a/621146599_124706"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Canton%20Tower%20at%20night.jpg?width=1920",
+        "caption": "广州塔夜景",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canton_Tower_at_night.jpg"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Canton%20Tower%20at%20night%2001.jpg?width=1600",
+        "caption": "广州塔灯光夜景",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canton_Tower_at_night_01.jpg"
+      }
+    ]
+  },
+  "amap_B00150F6D6": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/797bc3a3aa5722ea6c6f867929f80777?type=7",
+        "caption": "东方明珠广播电视塔现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3f1c20fe363c2ed628733393c0f9d7c0?type=7",
+        "caption": "东方明珠广播电视塔",
+        "source": "amap",
+        "sourcePoiId": "B00150F6D6"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2014.11.16.144847_Oriental_Pearl_Tower_Shanghai.jpg/1920px-2014.11.16.144847_Oriental_Pearl_Tower_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "2014.11.16.144847 Oriental Pearl Tower Shanghai.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014.11.16.144847_Oriental_Pearl_Tower_Shanghai.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Hermann Luyken",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014.11.16.144847_Oriental_Pearl_Tower_Shanghai.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2014.11.16.163241_Oriental_Pearl_Tower_Shanghai.jpg/1920px-2014.11.16.163241_Oriental_Pearl_Tower_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "2014.11.16.163241 Oriental Pearl Tower Shanghai.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014.11.16.163241_Oriental_Pearl_Tower_Shanghai.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Hermann Luyken",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014.11.16.163241_Oriental_Pearl_Tower_Shanghai.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/2014.11.16.165255_Oriental_Pearl_Tower_Shanghai.jpg/1920px-2014.11.16.165255_Oriental_Pearl_Tower_Shanghai.jpg",
+        "caption": "东方明珠塔身近景",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014.11.16.165255_Oriental_Pearl_Tower_Shanghai.jpg"
+      }
+    ]
+  },
+  "amap_B001D09TAA": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/5d751d269b840f620b9f2deb768698a8?type=7",
+        "caption": "西安钟楼现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ac2ed4de49dc97fe83bf7b5cd008a38b?type=7",
+        "caption": "西安钟楼",
+        "source": "amap",
+        "sourcePoiId": "B001D09TAA"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/China_-_Xian_10_%28135950411%29.jpg/1920px-China_-_Xian_10_%28135950411%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "China - Xian 10 (135950411).jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChina_-_Xian_10_(135950411).jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "McKay Savage from London, UK",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChina_-_Xian_10_(135950411).jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Bell_Tower_%2823535469354%29.jpg/1920px-Bell_Tower_%2823535469354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Bell Tower (23535469354).jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABell_Tower_(23535469354).jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Laika ac from UK",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABell_Tower_(23535469354).jpg"
+        }
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/VM_5510_Xian_Bell_Tower.jpg/1920px-VM_5510_Xian_Bell_Tower.jpg",
+        "caption": "西安钟楼建筑全景",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:VM_5510_Xian_Bell_Tower.jpg"
+      }
+    ]
+  },
+  "amap_B0FFFEXRIQ": {
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/773d46d5c3bd8dbded729e0e4fa9c60d?type=7",
+        "caption": "海口钟楼现有封面",
+        "source": "existing"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Haidian_River_02.jpg/1920px-Haidian_River_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Haidian River 02.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHaidian_River_02.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Anna Frodesiak",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHaidian_River_02.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Clock_tower_in_Haikou%2C_China.jpg/1920px-Clock_tower_in_Haikou%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Clock tower in Haikou, China.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AClock_tower_in_Haikou%2C_China.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Zhangmoon618",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AClock_tower_in_Haikou%2C_China.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Haidian_River_and_Clock_tower_in_Haikou.jpg/1920px-Haidian_River_and_Clock_tower_in_Haikou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Haidian River and Clock tower in Haikou.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHaidian_River_and_Clock_tower_in_Haikou.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "Zhangmoon618",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHaidian_River_and_Clock_tower_in_Haikou.jpg"
+        }
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/%E9%95%BF%E5%A0%A4%E8%B7%AF%EF%BC%88%E6%8B%8D%E6%91%84%E4%BA%8E%E5%92%8C%E5%B9%B3%E6%A1%A5%E4%B8%8A%EF%BC%89-By_Bigball_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "caption": "长堤路（拍摄于和平桥上）-By Bigball - panoramio.jpg",
+        "source": "wikimedia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%95%BF%E5%A0%A4%E8%B7%AF%EF%BC%88%E6%8B%8D%E6%91%84%E4%BA%8E%E5%92%8C%E5%B9%B3%E6%A1%A5%E4%B8%8A%EF%BC%89-By_Bigball_-_panoramio.jpg",
+        "imageSource": {
+          "provider": "Wikimedia Commons",
+          "author": "bigball",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%95%BF%E5%A0%A4%E8%B7%AF%EF%BC%88%E6%8B%8D%E6%91%84%E4%BA%8E%E5%92%8C%E5%B9%B3%E6%A1%A5%E4%B8%8A%EF%BC%89-By_Bigball_-_panoramio.jpg"
+        }
       }
     ]
   }
