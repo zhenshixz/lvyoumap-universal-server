@@ -74,4 +74,34 @@ if [[ "${healthy}" -ne 1 ]]; then
   exit 1
 fi
 
+keep_releases="${LVYOUMAP_KEEP_RELEASES:-3}"
+if [[ ! "${keep_releases}" =~ ^[1-9][0-9]*$ ]]; then
+  keep_releases=3
+fi
+
+current_target="$(readlink -f "${current}")"
+declare -A protected_releases=(["${current_target}"]=1)
+protected_count=1
+
+mapfile -t release_dirs < <(
+  find "${releases}" -mindepth 1 -maxdepth 1 -type d -printf '%T@ %p\n' |
+    sort -nr |
+    cut -d' ' -f2-
+)
+
+for candidate in "${release_dirs[@]}"; do
+  if [[ -n "${protected_releases[${candidate}]:-}" ]]; then
+    continue
+  fi
+  if (( protected_count < keep_releases )); then
+    protected_releases["${candidate}"]=1
+    ((protected_count += 1))
+    continue
+  fi
+  if [[ "${candidate}" == "${releases}/"* ]] && [[ "$(basename "${candidate}")" =~ ^[a-f0-9]{7,64}$ ]]; then
+    rm -rf -- "${candidate}"
+    echo "Pruned old release $(basename "${candidate}")"
+  fi
+done
+
 echo "Activated ${version}"

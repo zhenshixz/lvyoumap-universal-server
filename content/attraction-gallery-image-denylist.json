@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://store.is.autonavi.com/showpic/dd533d9045da9fe7a10ec93dbfe78147?type=7",
+    "reason": "视觉复核发现图片自带素材水印",
+    "recordedAt": "2026-09-04"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/100b1f000001gsobq9CAE.jpg",
+    "reason": "2026-09-07实图复核：长隆宣传拼接画面，不作为景点实景图",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/514843361ebd2f9fea4c465e992255d0?type=7",
+    "reason": "2026-09-07实图复核：香港迪士尼冰雪奇缘宣传海报",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/9758d20210d4358131836b5ec786aaa5?type=7",
+    "reason": "2026-09-07实图复核：香港迪士尼图片有明显叠加宣传文字",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo1p12000cq7n4j7808D.jpg",
+    "reason": "2026-09-07实图复核：宝泉相册图片呈荒漠马蹄形峡谷，疑似异地，不能作为已确认实体图片",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/dd15a424e1cc030c0000004351218223?type=7",
+    "reason": "2026-09-07实图复核：黑独山人像艺术拼接图，不作为景点实景图",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/350i180000013wq4bCDD6.jpg",
+    "reason": "2026-09-07实图复核：德天夜游活动价目宣传海报",
+    "recordedAt": "2026-09-07"
+  }
+  ,{"url":"https://store.is.autonavi.com/showpic/5d7fe39384ff71e80d23297d9179272d?type=7","reason":"实图复核：圣索菲亚教堂图片顶部有摄影水印","recordedAt":"2026-09-07"}
+  ,{"url":"https://store.is.autonavi.com/showpic/45c3accb7103a2830000002745610582?type=7","reason":"实图复核：五一广场图为攻略文字拼贴封面","recordedAt":"2026-09-07"}
+  ,{"url":"https://dimg04.c-ctrip.com/images/1lo2912000b94556pF4C6.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
+  ,{"url":"https://dimg04.c-ctrip.com/images/1lo6h12000b9452rhAB14.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
+  ,{"url":"https://dimg04.c-ctrip.com/images/350j1f000001fxbmx040A.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
+]

@@ -10,6 +10,8 @@
     "check:observation": "node --check scripts/observation_batch.js && node --check scripts/run_observation_batch.js && node --check scripts/generate_observation_batch_preview.js && node scripts/test_observation_batch.js",
     "check:content-sample": "node --check scripts/attraction_card_consistency.js && node --check scripts/finalize_attraction_content_sample.js && node --check scripts/start_attraction_content_sample_preview.js && node scripts/test_attraction_card_consistency.js",
     "scan:attraction-content": "node scripts/scan_attraction_content_quick.js",
+    "gallery:batch": "node scripts/collect_attraction_galleries_batch.js --limit=100 --repair-pending",
+    "gallery:batch:preview": "python scripts/render_attraction_gallery_batch.py",
     "report:core": "node scripts/report_core_attractions.js --all",
     "report:core:fujian": "node scripts/report_core_attractions.js --province=福建",
     "report:tasks": "node scripts/create_maintenance_tasks.js",
