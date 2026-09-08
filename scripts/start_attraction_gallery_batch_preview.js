@@ -1,0 +1,177 @@
+const fs = require('fs');
+const http = require('http');
+const net = require('net');
+const os = require('os');
+const path = require('path');
+const { spawn } = require('child_process');
+
+const root = path.resolve(__dirname, '..');
+const sourceSite = path.join(root, 'dist');
+const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
+const batchStatePath = path.join(runtime, 'state.json');
+const previewRoot = path.join(root, '.runtime', 'previews', 'attraction-gallery-batch');
+const stagingRoot = `${previewRoot}.next`;
+const previewStatePath = path.join(previewRoot, 'state.json');
+
+function readJson(file) {
+  return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
+}
+
+function writeJson(file, value) {
+  fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
+}
+
+function html(value) {
+  return String(value || '').replace(/[&<>"']/g, character => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  })[character]);
+}
+
+function provider(candidate) {
+  if (candidate.source === 'amap_exact' || candidate.source === 'amap_subspot' || candidate.source === 'curated_subspot') return '高德地图';
+  if (candidate.source === 'mct_official') return '景区官方';
+  if (candidate.source === 'wikimedia_exact') return '公开百科';
+  if (candidate.source === 'ctrip_exact') return '景区公开资料';
+  return '公开资料';
+}
+
+function linkDirectory(target, destination) {
+  if (!fs.existsSync(target)) return;
+  fs.symlinkSync(target, destination, process.platform === 'win32' ? 'junction' : 'dir');
+}
+
+function copyFile(name, site) {
+  const source = path.join(sourceSite, name);
+  if (!fs.existsSync(source)) return;
+  fs.copyFileSync(source, path.join(site, name));
+}
+
+function freePort(start = 4185) {
+  return new Promise((resolve, reject) => {
+    const tryPort = port => {
+      const server = net.createServer();
+      server.once('error', error => {
+        server.close();
+        if (error.code === 'EADDRINUSE' && port < start + 30) return tryPort(port + 1);
+        reject(error);
+      });
+      server.once('listening', () => server.close(() => resolve(port)));
+      server.listen(port, '127.0.0.1');
+    };
+    tryPort(start);
+  });
+}
+
+function health(port) {
+  return new Promise(resolve => {
+    const request = http.get(`http://127.0.0.1:${port}/api/health`, response => {
+      let body = '';
+      response.on('data', chunk => { body += chunk; });
+      response.on('end', () => {
+        try { resolve(JSON.parse(body)); } catch { resolve(null); }
+      });
+    });
+    request.setTimeout(1200, () => { request.destroy(); resolve(null); });
+    request.on('error', () => resolve(null));
+  });
+}
+
+async function stopOldPreview() {
+  if (!fs.existsSync(previewStatePath)) return;
+  const old = readJson(previewStatePath);
+  const status = await health(Number(old.port));
+  if (status?.service === 'lvyoumap-gallery-batch-preview' && Number.isInteger(Number(old.pid))) {
+    try { process.kill(Number(old.pid)); } catch { /* already stopped */ }
+  }
+}
+
+function buildIndex(items, mapBase) {
+  const cards = items.map(item => `<a class="card" href="${mapBase}/?previewSearch=${encodeURIComponent(item.name)}">
+    <b>${html(item.name)}</b><span>${html(item.province)} · ${html(item.city)}</span>
+    <small>检查：5张均属该景点、清晰、无水印；手机切换与大图加载正常</small>
+  </a>`).join('');
+  return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>全国景点图库隔离预览</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172033;font:15px/1.5 system-ui,"Microsoft YaHei"}.wrap{max-width:1100px;margin:28px auto;padding:0 18px}header{padding:24px;border-radius:18px;background:linear-gradient(135deg,#1677ff,#14b8a6);color:white}header h1{margin:0 0 7px;font-size:25px}header p{margin:3px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px;margin-top:16px}.card{display:flex;flex-direction:column;gap:4px;padding:14px;background:white;border:1px solid #dbe4ef;border-radius:12px;color:inherit;text-decoration:none;box-shadow:0 2px 8px #1e293b0d}.card:hover{border-color:#1677ff}.card span{color:#64748b}.card small{color:#8a5b12}@media(max-width:600px){.wrap{margin:12px auto;padding:0 9px}header{padding:18px}.grid{grid-template-columns:1fr}}</style>
+  <main class="wrap"><header><h1>全国景点图库隔离预览</h1><p>本页共 ${items.length} 个候选景点，只影响隔离预览，不写入 beta 数据。</p><p>点击景点后，在搜索结果中打开详情并切换5张图片。</p></header><section class="grid">${cards}</section></main></html>`;
+}
+
+async function main() {
+  if (!fs.existsSync(sourceSite) || !fs.existsSync(batchStatePath)) throw new Error('缺少 dist 或图库批次状态，请先完成构建和批处理。');
+  const batch = readJson(batchStatePath);
+  const ready = batch.items.filter(item => item.status === 'ready_for_user_review' && item.selected?.length === 5);
+  if (!ready.length) throw new Error('当前没有达到5张且已进入用户复核的景点。');
+
+  await stopOldPreview();
+  fs.rmSync(stagingRoot, { recursive: true, force: true });
+  const site = path.join(stagingRoot, 'site');
+  fs.mkdirSync(site, { recursive: true });
+  for (const name of ['index.html', 'app.js', 'style.css', 'china.json', 'china_geo.js', 'build-info.json']) copyFile(name, site);
+  fs.cpSync(path.join(sourceSite, 'data'), path.join(site, 'data'), { recursive: true, force: true });
+  linkDirectory(path.join(sourceSite, 'assets'), path.join(site, 'assets'));
+  linkDirectory(path.join(sourceSite, 'vendor'), path.join(site, 'vendor'));
+
+  const provinceIndex = readJson(path.join(site, 'data', 'provinces-index.json'));
+  const grouped = new Map();
+  for (const item of ready) {
+    if (!grouped.has(item.province)) grouped.set(item.province, []);
+    grouped.get(item.province).push(item);
+  }
+  let applied = 0;
+  for (const [province, items] of grouped) {
+    const dataFile = provinceIndex[province]?.dataFile;
+    if (!dataFile) throw new Error(`找不到${province}的数据文件。`);
+    const file = path.join(site, 'data', 'provinces', dataFile);
+    const data = readJson(file);
+    const byId = new Map((data.attractions || []).map(item => [item.id, item]));
+    for (const item of items) {
+      const attraction = byId.get(item.id);
+      if (!attraction) throw new Error(`隔离数据中找不到${province}·${item.name}。`);
+      const images = item.selected.map(candidate => ({
+        url: candidate.url,
+        caption: candidate.caption || item.name,
+        imageSource: candidate.sourceUrl ? { provider: provider(candidate), sourceUrl: candidate.sourceUrl } : undefined,
+      }));
+      attraction.image = images[0].url;
+      attraction.images = images;
+      applied += 1;
+    }
+    writeJson(file, data);
+  }
+  if (applied !== ready.length) throw new Error(`预览写入数量不一致：${applied}/${ready.length}`);
+
+  const token = `gallery_preview_${Date.now()}`;
+  const appPath = path.join(site, 'app.js');
+  let app = fs.readFileSync(appPath, 'utf8').replace(/const STATIC_DATA_VERSION\s*=\s*["'][^"']+["'];/, `const STATIC_DATA_VERSION = "${token}";`);
+  app += `\n;(() => { const q=new URLSearchParams(location.search).get('previewSearch'); if(!q)return; const run=()=>{const el=document.getElementById('global-search');if(!el)return setTimeout(run,150);el.value=q;el.dispatchEvent(new Event('input',{bubbles:true}));};setTimeout(run,450);})();\n`;
+  fs.writeFileSync(appPath, app, 'utf8');
+  const indexPath = path.join(site, 'index.html');
+  fs.writeFileSync(indexPath, fs.readFileSync(indexPath, 'utf8').replace(
+    /(src=["'])app\.js(?:\?v=[^"']*)?(["'])/g,
+    `$1app.js?v=${token}$2`,
+  ), 'utf8');
+
+  fs.rmSync(previewRoot, { recursive: true, force: true });
+  fs.renameSync(stagingRoot, previewRoot);
+  const finalSite = path.join(previewRoot, 'site');
+  const port = await freePort();
+  const localBase = `http://127.0.0.1:${port}`;
+  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(ready, localBase), 'utf8');
+  const child = spawn(process.execPath, [path.join(root, 'server', 'index.js')], {
+    cwd: root,
+    detached: true,
+    windowsHide: true,
+    stdio: 'ignore',
+    env: { ...process.env, HOST: '0.0.0.0', PORT: String(port), STATIC_DIR: finalSite, SERVICE_NAME: 'lvyoumap-gallery-batch-preview' },
+  });
+  child.unref();
+  const lan = Object.values(os.networkInterfaces()).flat().filter(item => item?.family === 'IPv4' && !item.internal).map(item => `http://${item.address}:${port}/preview.html`);
+  writeJson(path.join(previewRoot, 'state.json'), { status: 'ready', pid: child.pid, port, itemCount: ready.length, previewUrl: `${localBase}/preview.html`, lanUrls: lan, generatedAt: new Date().toISOString(), sourceDataReadOnly: true });
+  console.log(`隔离预览已生成：${localBase}/preview.html`);
+  for (const url of lan) console.log(`局域网：${url}`);
+  console.log(`预览景点：${ready.length} 个；未修改 content 或正式 Git。`);
+}
+
+main().catch(error => {
+  console.error(`图库隔离预览失败：${error.message}`);
+  process.exitCode = 1;
+});

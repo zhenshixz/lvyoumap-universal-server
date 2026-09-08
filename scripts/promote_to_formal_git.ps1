@@ -61,6 +61,7 @@ $rootFiles = @(
     'PROJECT_MAINTENANCE.md',
     'README.md',
     'run_gallery_batch.bat',
+    'preview_gallery_batch.bat',
     'start_dev.bat',
     'start_universal_server.bat',
     'style.css',
@@ -103,20 +104,8 @@ if (-not (Test-Path -LiteralPath $nationalReportPath -PathType Leaf) -or
     -not (Test-Path -LiteralPath $buildInfoPath -PathType Leaf)) {
     throw '尚未找到完整验收结果。请先在数据维护总控选择 [4]，通过后再同步。'
 }
-$nationalReport = Get-Content -LiteralPath $nationalReportPath -Raw -Encoding UTF8 | ConvertFrom-Json
-if ([int]$nationalReport.missing -ne 0 -or [int]$nationalReport.review -ne 0 -or
-    [int]$nationalReport.readyCount -ne [int]$nationalReport.baselineCount) {
-    Write-Warning ("全国报告仍有非阻断项：missing={0}, review={1}, ready={2}/{3}。同步将继续，正式部署会重新构建；请以线上抽查为准。" -f
-        $nationalReport.missing, $nationalReport.review, $nationalReport.readyCount, $nationalReport.baselineCount)
-}
-$buildInfo = Get-Content -LiteralPath $buildInfoPath -Raw -Encoding UTF8 | ConvertFrom-Json
-$builtAt = [DateTimeOffset]::Parse([string]$buildInfo.builtAt).UtcDateTime
-$newerSources = @($sourceFiles | Where-Object { $_.LastWriteTimeUtc -gt $builtAt.AddSeconds(2) } | Sort-Object LastWriteTimeUtc -Descending)
-if ($newerSources.Count -gt 0) {
-    $previewNames = @($newerSources | Select-Object -First 8 | ForEach-Object { Get-RelativePath $betaRoot $_.FullName })
-    $suffix = if ($newerSources.Count -gt $previewNames.Count) { " 等 $($newerSources.Count) 个文件" } else { '' }
-    Write-Warning ("最近完整验收后有新改动：{0}{1}。不再按时间戳阻断，将复制当前 beta；正式部署会重新构建。" -f ($previewNames -join '、'), $suffix)
-}
+# 上述报告与构建产物只作为“至少完成过一次验收”的安全基线。
+# 非阻断统计和验收后的正常改动不再显示警告，避免干扰日常同步。
 
 # 对最容易因手工编辑损坏的运行入口做快速语法检查；不修改或重建任何源文件。
 $nodeCommand = Get-Command node.exe -ErrorAction SilentlyContinue

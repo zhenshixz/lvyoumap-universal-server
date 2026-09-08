@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const zlib = require('zlib');
 const { bufferDimensions } = require('./collect_core_details');
 const { parseCtripGallery } = require('./gallery_source_parsers');
 
@@ -102,8 +103,18 @@ function fetchText(url, timeout = 18000) {
 }
 
 async function fetchPage(url, timeout) {
-  const cacheFile = path.join(runtime, 'page-cache', `${crypto.createHash('sha256').update(url).digest('hex')}.html`);
-  if (fs.existsSync(cacheFile) && Date.now() - fs.statSync(cacheFile).mtimeMs < 7 * 86400000) return fs.readFileSync(cacheFile, 'utf8');
+  const key = crypto.createHash('sha256').update(url).digest('hex');
+  const cacheFile = path.join(runtime, 'page-cache', `${key}.html.gz`);
+  const legacyFile = path.join(runtime, 'page-cache', `${key}.html`);
+  if (fs.existsSync(cacheFile) && Date.now() - fs.statSync(cacheFile).mtimeMs < 7 * 86400000) {
+    return zlib.gunzipSync(fs.readFileSync(cacheFile)).toString('utf8');
+  }
+  if (fs.existsSync(legacyFile) && Date.now() - fs.statSync(legacyFile).mtimeMs < 7 * 86400000) {
+    const html = fs.readFileSync(legacyFile, 'utf8');
+    fs.writeFileSync(cacheFile, zlib.gzipSync(html, { level: 6 }));
+    fs.rmSync(legacyFile, { force: true });
+    return html;
+  }
   const response = await fetch(url, {
     headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
     redirect: 'follow',
@@ -113,8 +124,30 @@ async function fetchPage(url, timeout) {
   const html = await response.text();
   if (/whaleguard block|captcha|访问过于频繁/i.test(html.slice(0, 3000))) throw new Error('来源限流，保留断点');
   fs.mkdirSync(path.dirname(cacheFile), { recursive: true });
-  fs.writeFileSync(cacheFile, html, 'utf8');
+  fs.writeFileSync(cacheFile, zlib.gzipSync(html, { level: 6 }));
   return html;
+}
+
+function compactPageCache() {
+  const directory = path.join(runtime, 'page-cache');
+  if (!fs.existsSync(directory)) return;
+  for (const file of fs.readdirSync(directory).filter(name => name.endsWith('.html'))) {
+    const source = path.join(directory, file);
+    const target = `${source}.gz`;
+    try {
+      if (!fs.existsSync(target)) fs.writeFileSync(target, zlib.gzipSync(fs.readFileSync(source), { level: 6 }));
+      fs.rmSync(source, { force: true });
+    } catch { /* cache is optional and may be fetched again */ }
+  }
+  const files = fs.readdirSync(directory).map(name => path.join(directory, name))
+    .filter(file => fs.statSync(file).isFile())
+    .sort((left, right) => fs.statSync(right).mtimeMs - fs.statSync(left).mtimeMs);
+  let bytes = 0;
+  for (const [index, file] of files.entries()) {
+    const stat = fs.statSync(file);
+    bytes += stat.size;
+    if (index >= 499 || bytes > 200 * 1024 * 1024 || Date.now() - stat.mtimeMs > 7 * 86400000) fs.rmSync(file, { force: true });
+  }
 }
 
 async function fetchImage(url) {
@@ -457,7 +490,8 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
   for (const old of uniqueCandidates(previous?.qualified || [], denylist)) {
     try {
       const buffer = fs.readFileSync(path.join(root, old.reviewFile));
-      if (crypto.createHash('sha256').update(buffer).digest('hex') !== old.hash) throw new Error('旧缓存内容变化');
+      const expected = old.reviewCompacted ? old.reviewHash : old.hash;
+      if (!expected || crypto.createHash('sha256').update(buffer).digest('hex') !== expected) throw new Error('旧缓存内容变化');
       probed.push(old); attempted.add(old.url);
     } catch { candidates.push(old); }
   }
@@ -506,6 +540,11 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
 
 async function main() {
   loadEnv();
+  compactPageCache();
+  if (process.argv.includes('--compact-cache-only')) {
+    console.log('页面缓存压缩和容量整理完成。');
+    return;
+  }
   const keys = keyPool();
   if (!keys.length) console.warn('未配置高德 Key，继续复用缓存及其他稳定来源。');
   const limit = Math.max(1, Number(argValue('limit', '100')) || 100);

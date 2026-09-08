@@ -84,9 +84,9 @@ try {
   const indexPath = path.join(outputDir, 'index.html');
   let indexHtml = fs.readFileSync(indexPath, 'utf8');
   indexHtml = indexHtml
-    .replace(/style\.css(?:\?v=[^"']*)?/g, `style.css?v=${hashFile('style.css')}`)
-    .replace(/china_geo\.js(?:\?v=[^"']*)?/g, `china_geo.js?v=${hashFile('china_geo.js')}`)
-    .replace(/app\.js(?:\?v=[^"']*)?/g, `app.js?v=${hashFile('app.js')}`);
+    .replace(/(href=["'])style\.css(?:\?v=[^"']*)?(["'])/g, `$1style.css?v=${hashFile('style.css')}$2`)
+    .replace(/(src=["'])china_geo\.js(?:\?v=[^"']*)?(["'])/g, `$1china_geo.js?v=${hashFile('china_geo.js')}$2`)
+    .replace(/(src=["'])app\.js(?:\?v=[^"']*)?(["'])/g, `$1app.js?v=${hashFile('app.js')}$2`);
   fs.writeFileSync(indexPath, indexHtml, 'utf8');
 
   const files = listFiles(outputDir);

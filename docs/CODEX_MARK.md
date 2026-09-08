@@ -16,6 +16,58 @@
 
 ---
 
+## 2026-09-08｜首批52个景点图库写入 beta
+
+- 用户完成隔离预览后，将本批52个景点图库写入 `content/attraction-gallery-overrides.json`；原有21个图库完整保留，当前合计73个景点图库。
+- 只写入状态为 `ready_for_user_review` 且恰好5张的候选；其余48个来源不足项继续保留在运行断点中，没有混入正式内容。
+- 每个新图库把已验收首图同步设为景点封面，避免前端自动追加旧封面后出现6张；生成器仅对图库层开放 `image`、`image_source`、`images` 三个字段，不影响其他景点资料。
+- 新增原子写入、自动备份与构建后校验脚本。构建通过，52/52 均为5张唯一图片，封面一致，无拒绝清单图片及通用搜索图片。
+- 本次只写入 beta，未修改正式 Git；等待用户运行 `sync_to_formal_git.bat` 后自行提交和部署。
+
+涉及：`content/attraction-gallery-overrides.json`、`scripts/apply_attraction_gallery_batch.js`、`scripts/verify_attraction_gallery_batch.js`、`scripts/generate_static_data.js`、`package.json`、生成后的 `data`。
+
+- 同步工具同时移除了“全国报告非阻断项”和“验收后存在新改动”两类无实际操作价值的警告；真正的路径、文件完整性、JavaScript语法、超大文件等安全检查继续保留。
+
+---
+
+## 2026-09-07｜隔离预览按钮失效根因修复
+
+- 现象：图库地图隔离预览中，PC端“查看大图”和详情右上角关闭按钮均无响应。
+- 根因：构建及预览脚本使用全局 `app.js` 字符串替换缓存版本号，误命中 HTML 内“由 app.js 动态生成”等注释，并吞掉直到下一处引号之间的HTML，造成DOM结构损坏和事件初始化中断。
+- 全局修复：`scripts/build.js` 只允许在 `src="app.js"`、`src="china_geo.js"`、`href="style.css"` 属性内替换版本；图库预览脚本同样只替换脚本 `src`，以后页面正文和注释出现文件名也不会被破坏。
+- 已重新原子构建 beta 并重建52个景点隔离预览。PC自动化验证：大图打开、大图关闭、详情关闭全部成功；手机390×844触屏环境验证：切换至2/5、大图打开和关闭成功；浏览器运行错误为0。
+- 本次只修复构建/预览机制，没有写入图库候选，没有修改正式 Git。
+
+涉及：`scripts/build.js`、`scripts/start_attraction_gallery_batch_preview.js`。
+
+---
+
+## 2026-09-07｜52个图库地图原样隔离预览与缓存防膨胀
+
+### 隔离预览
+
+- 新增 `preview_gallery_batch.bat` 与 `scripts/start_attraction_gallery_batch_preview.js`，把首批52个五图候选叠加到独立地图站点；不修改 `content`、`data`、正式图库或正式 Git。
+- 预览复用当前 `dist/assets` 和 `dist/vendor` 的目录链接，仅复制约46MB的页面与数据，不再复制约1.5GB静态资源。
+- 每个预览景点强制使用本批选中的5张图，并将首张同步设为封面，避免“原封面+5张候选”变成6张。
+- 当前入口：`http://127.0.0.1:4185/preview.html`；同一局域网可用 `http://192.168.16.43:4185/preview.html`（局域网地址以后可能变化）。
+
+### 图片补全机制结论
+
+- 框架已经形成：精确实体绑定、稳定来源白名单、尺寸/体积/比例/移动UA硬门禁、哈希与感知去重、拒绝清单、联系表视觉初审、地图原样隔离预览、人工确认后才写入。
+- 机制底层闭环已具备，但全国来源覆盖仍未健全：首批100个中52个达到5张，48个缺稳定来源；外链长期可用性和逐图语义仍需地图/真机验收，不能把 `ready_for_user_review` 当作已发布。
+- 旧21个图库中的18张通用搜索图和6张高德评论图属于历史债务，必须按新稳定来源规则复查。
+
+### 防止空间和会话再次膨胀
+
+- 原空间根因是审图原图约896MB和未压缩页面缓存约366MB，不是9张联系表。
+- 页面缓存改为 gzip，保留7天并设置500文件/200MB硬上限；审图原图在联系表生成后压缩为720×540以内的复核缓存，保留原始URL、原始尺寸和原始哈希，不降低地图实际外链清晰度。
+- 本次图库运行目录由约1269.76MB降至82.50MB，其中复核图32.50MB、页面缓存42.69MB；断点状态和联系表保留。
+- 后续不再把整批联系表或大量原图嵌入对话，只提供本地预览链接并抽查少量目标；关键结论写入本文档，避免会话上下文因图片重复进入GB级。
+
+涉及：`scripts/start_attraction_gallery_batch_preview.js`、`preview_gallery_batch.bat`、`scripts/compact_attraction_gallery_runtime.py`、`scripts/collect_attraction_galleries_batch.js`、`run_gallery_batch.bat`、`package.json`。
+
+---
+
 ## 2026-09-07｜图库断点恢复、稳定来源提速与实图初审
 
 ### 当前结果与边界

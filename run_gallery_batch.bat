@@ -59,6 +59,11 @@ if errorlevel 1 (
   exit /b 1
 )
 
+python scripts\compact_attraction_gallery_runtime.py
+if errorlevel 1 (
+  echo [WARN] Review cache compaction failed. Gallery results are still available.
+)
+
 echo [OK] Review files are under .runtime\attraction-gallery-batch\contact-sheets
 pause
 exit /b 0

@@ -365,7 +365,7 @@ function main() {
     provinces,
     attractionGalleryOverrides,
     'Attraction gallery override',
-    ['images']
+    ['image', 'image_source', 'images']
   );
   const attractionDisplayTagCount = applyAttractionOverrides(
     provinces,
