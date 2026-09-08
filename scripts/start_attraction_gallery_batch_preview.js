@@ -9,6 +9,8 @@ const root = path.resolve(__dirname, '..');
 const sourceSite = path.join(root, 'dist');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
 const batchStatePath = path.join(runtime, 'state.json');
+const galleryPolicyPath = path.join(root, 'content', 'attraction-gallery-policy.json');
+const galleryOverridesPath = path.join(root, 'content', 'attraction-gallery-overrides.json');
 const previewRoot = path.join(root, '.runtime', 'previews', 'attraction-gallery-batch');
 const stagingRoot = `${previewRoot}.next`;
 const previewStatePath = path.join(previewRoot, 'state.json');
@@ -85,21 +87,29 @@ async function stopOldPreview() {
   }
 }
 
-function buildIndex(items, mapBase) {
+function buildIndex(items, mapBase, policy) {
   const cards = items.map(item => `<a class="card" href="${mapBase}/?previewSearch=${encodeURIComponent(item.name)}">
     <b>${html(item.name)}</b><span>${html(item.province)} · ${html(item.city)}</span>
-    <small>检查：5张均属该景点、清晰、无水印；手机切换与大图加载正常</small>
+    <small>检查：${item.selected.length}张均属该景点、清晰、无水印；手机切换与大图加载正常</small>
   </a>`).join('');
   return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>全国景点图库隔离预览</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172033;font:15px/1.5 system-ui,"Microsoft YaHei"}.wrap{max-width:1100px;margin:28px auto;padding:0 18px}header{padding:24px;border-radius:18px;background:linear-gradient(135deg,#1677ff,#14b8a6);color:white}header h1{margin:0 0 7px;font-size:25px}header p{margin:3px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px;margin-top:16px}.card{display:flex;flex-direction:column;gap:4px;padding:14px;background:white;border:1px solid #dbe4ef;border-radius:12px;color:inherit;text-decoration:none;box-shadow:0 2px 8px #1e293b0d}.card:hover{border-color:#1677ff}.card span{color:#64748b}.card small{color:#8a5b12}@media(max-width:600px){.wrap{margin:12px auto;padding:0 9px}header{padding:18px}.grid{grid-template-columns:1fr}}</style>
-  <main class="wrap"><header><h1>全国景点图库隔离预览</h1><p>本页共 ${items.length} 个候选景点，只影响隔离预览，不写入 beta 数据。</p><p>点击景点后，在搜索结果中打开详情并切换5张图片。</p></header><section class="grid">${cards}</section></main></html>`;
+  <main class="wrap"><header><h1>全国景点图库隔离预览</h1><p>本页共 ${items.length} 个本轮待验收景点，只影响隔离预览，不写入 beta 数据。</p><p>全局规则：目标${policy.targetImages}张，${policy.minimumImages}-${policy.maximumImages}张均可通过；点击景点后检查全部图片。</p></header><section class="grid">${cards}</section></main></html>`;
 }
 
 async function main() {
   if (!fs.existsSync(sourceSite) || !fs.existsSync(batchStatePath)) throw new Error('缺少 dist 或图库批次状态，请先完成构建和批处理。');
   const batch = readJson(batchStatePath);
-  const ready = batch.items.filter(item => item.status === 'ready_for_user_review' && item.selected?.length === 5);
-  if (!ready.length) throw new Error('当前没有达到5张且已进入用户复核的景点。');
+  const policy = readJson(galleryPolicyPath);
+  const current = readJson(galleryOverridesPath);
+  const ready = batch.items.filter(item => item.status === 'ready_for_user_review'
+    && item.selected?.length >= policy.minimumImages && item.selected.length <= policy.maximumImages);
+  const reviewItems = ready.filter(item => {
+    const existing = (current[item.id]?.images || []).map(image => typeof image === 'string' ? image : image.url);
+    const selected = item.selected.map(image => image.url);
+    return JSON.stringify(existing) !== JSON.stringify(selected);
+  });
+  if (!reviewItems.length) throw new Error('当前没有新增或发生变化的3-5张图库需要复核。');
 
   await stopOldPreview();
   fs.rmSync(stagingRoot, { recursive: true, force: true });
@@ -112,7 +122,7 @@ async function main() {
 
   const provinceIndex = readJson(path.join(site, 'data', 'provinces-index.json'));
   const grouped = new Map();
-  for (const item of ready) {
+  for (const item of reviewItems) {
     if (!grouped.has(item.province)) grouped.set(item.province, []);
     grouped.get(item.province).push(item);
   }
@@ -137,7 +147,7 @@ async function main() {
     }
     writeJson(file, data);
   }
-  if (applied !== ready.length) throw new Error(`预览写入数量不一致：${applied}/${ready.length}`);
+  if (applied !== reviewItems.length) throw new Error(`预览写入数量不一致：${applied}/${reviewItems.length}`);
 
   const token = `gallery_preview_${Date.now()}`;
   const appPath = path.join(site, 'app.js');
@@ -155,7 +165,7 @@ async function main() {
   const finalSite = path.join(previewRoot, 'site');
   const port = await freePort();
   const localBase = `http://127.0.0.1:${port}`;
-  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(ready, localBase), 'utf8');
+  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(reviewItems, localBase, policy), 'utf8');
   const child = spawn(process.execPath, [path.join(root, 'server', 'index.js')], {
     cwd: root,
     detached: true,
@@ -165,10 +175,10 @@ async function main() {
   });
   child.unref();
   const lan = Object.values(os.networkInterfaces()).flat().filter(item => item?.family === 'IPv4' && !item.internal).map(item => `http://${item.address}:${port}/preview.html`);
-  writeJson(path.join(previewRoot, 'state.json'), { status: 'ready', pid: child.pid, port, itemCount: ready.length, previewUrl: `${localBase}/preview.html`, lanUrls: lan, generatedAt: new Date().toISOString(), sourceDataReadOnly: true });
+  writeJson(path.join(previewRoot, 'state.json'), { status: 'ready', pid: child.pid, port, itemCount: reviewItems.length, previewUrl: `${localBase}/preview.html`, lanUrls: lan, generatedAt: new Date().toISOString(), sourceDataReadOnly: true });
   console.log(`隔离预览已生成：${localBase}/preview.html`);
   for (const url of lan) console.log(`局域网：${url}`);
-  console.log(`预览景点：${ready.length} 个；未修改 content 或正式 Git。`);
+  console.log(`本轮待验收景点：${reviewItems.length} 个；未修改 content 或正式 Git。`);
 }
 
 main().catch(error => {

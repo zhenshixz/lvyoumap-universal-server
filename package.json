@@ -11,6 +11,8 @@
     "check:content-sample": "node --check scripts/attraction_card_consistency.js && node --check scripts/finalize_attraction_content_sample.js && node --check scripts/start_attraction_content_sample_preview.js && node scripts/test_attraction_card_consistency.js",
     "scan:attraction-content": "node scripts/scan_attraction_content_quick.js",
     "gallery:batch": "node scripts/collect_attraction_galleries_batch.js --limit=100 --repair-pending",
+    "gallery:batch:10pct:primary": "node scripts/collect_attraction_galleries_batch.js --limit=520 --max-items=520 --concurrency=6 --primary-only",
+    "gallery:batch:10pct:secondary": "node scripts/collect_attraction_galleries_batch.js --limit=520 --max-items=520 --concurrency=6 --repair-pending",
     "gallery:batch:preview": "python scripts/render_attraction_gallery_batch.py",
     "gallery:batch:map-preview": "node scripts/start_attraction_gallery_batch_preview.js",
     "gallery:batch:apply": "node scripts/apply_attraction_gallery_batch.js",

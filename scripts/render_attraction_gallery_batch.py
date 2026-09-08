@@ -11,6 +11,7 @@ RUNTIME = ROOT / '.runtime' / 'attraction-gallery-batch'
 STATE = RUNTIME / 'state.json'
 OUTPUT = RUNTIME / 'contact-sheets'
 DENYLIST = ROOT / 'content' / 'attraction-gallery-image-denylist.json'
+POLICY = ROOT / 'content' / 'attraction-gallery-policy.json'
 
 
 def font(size):
@@ -59,6 +60,14 @@ def visual_ok(path, hashes):
 
 def main():
     data = json.loads(STATE.read_text(encoding='utf-8-sig'))
+    policy = json.loads(POLICY.read_text(encoding='utf-8-sig'))
+    minimum = int(policy['minimumImages'])
+    maximum = int(policy['maximumImages'])
+    if not 1 <= minimum <= int(policy['targetImages']) <= maximum:
+        raise ValueError('图库规则无效：必须满足 minimumImages <= targetImages <= maximumImages')
+    data['version'] = 5
+    data['galleryPolicy'] = policy
+    data['rule'] = policy['rule']
     denied = {
         item['url'] for item in json.loads(DENYLIST.read_text(encoding='utf-8-sig'))
     } if DENYLIST.exists() else set()
@@ -67,7 +76,9 @@ def main():
         old.unlink()
     ready = []
     for item in data['items']:
-        if item.get('status') == 'ready_for_user_review' and len(item.get('selected', [])) == 5:
+        if item.get('status', '').startswith('excluded_'):
+            continue
+        if item.get('status') == 'ready_for_user_review' and minimum <= len(item.get('selected', [])) <= maximum:
             if all(candidate.get('url') not in denied and (ROOT / candidate['reviewFile']).exists()
                    for candidate in item['selected']):
                 ready.append(item)
@@ -89,9 +100,9 @@ def main():
             except Exception as error:
                 item['visualRejected'].append({'url': candidate['url'], 'reason': str(error)})
                 continue
-        item['selected'] = selected[:5]
-        item['status'] = 'ready_for_user_review' if len(item['selected']) == 5 else 'pending_sources'
-        if len(item['selected']) == 5:
+        item['selected'] = selected[:maximum]
+        item['status'] = 'ready_for_user_review' if len(item['selected']) >= minimum else 'pending_sources'
+        if len(item['selected']) >= minimum:
             ready.append(item)
     temporary = STATE.with_suffix('.json.tmp')
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -105,7 +116,7 @@ def main():
         subset = ready[sheet_index * per_sheet:(sheet_index + 1) * per_sheet]
         canvas = Image.new('RGB', (1320, 1000), '#f4f7fb')
         draw = ImageDraw.Draw(canvas)
-        draw.text((24, 16), f'全国图库首批稳定来源抽查 {sheet_index + 1}/{math.ceil(len(ready) / per_sheet)}', fill='#0f172a', font=title)
+        draw.text((24, 16), f'全国图库稳定来源抽查（{minimum}-{maximum}张） {sheet_index + 1}/{math.ceil(len(ready) / per_sheet)}', fill='#0f172a', font=title)
         for row, item in enumerate(subset):
             y = 58 + row * 154
             draw.text((24, y + 6), item['name'][:12], fill='#0f172a', font=label)
@@ -120,7 +131,7 @@ def main():
                 except Exception:
                     draw.rectangle((x, y, x + 210, y + 126), fill='#cbd5e1')
         canvas.save(OUTPUT / f'gallery-batch-{sheet_index + 1:02d}.jpg', quality=88)
-    print(f"视觉筛选完成：{len(data['items'])} 个中 {len(ready)} 个达到 5 张；生成 {math.ceil(len(ready) / per_sheet)} 张联系表。")
+    print(f"视觉筛选完成：{len(data['items'])} 个中 {len(ready)} 个达到 {minimum}-{maximum} 张；生成 {math.ceil(len(ready) / per_sheet)} 张联系表。")
 
 
 if __name__ == '__main__':

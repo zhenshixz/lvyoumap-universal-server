@@ -4,6 +4,9 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const selectedPath = path.join(root, '.runtime', 'attraction-gallery-pilot', 'selected.json');
 const outputPath = path.join(root, 'content', 'attraction-gallery-overrides.json');
+const galleryPolicy = JSON.parse(fs.readFileSync(path.join(root, 'content', 'attraction-gallery-policy.json'), 'utf8'));
+const MIN_IMAGES = Number(galleryPolicy.minimumImages);
+const MAX_IMAGES = Number(galleryPolicy.maximumImages);
 
 // 搜索引擎返回的商业素材站预览图通常带水印。最终写入层再次拦截，
 // 防止旧 selected.json 或其他采集脚本绕过前置筛选。
@@ -123,9 +126,9 @@ for (const [id, images] of Object.entries(selected)) {
     .filter(image => !globallyBlockedImageParts.some(part => image.url.toLowerCase().includes(part)))
     .filter(image => !blocked.some(part => image.url.includes(part)))
     .filter(image => image.url && !seen.has(image.url) && seen.add(image.url))
-    .slice(0, 5)
+    .slice(0, MAX_IMAGES)
     .map(cleanImage);
-  if (accepted.length < 5) throw new Error(`${id} 视觉筛选后不足 5 张，停止写入。`);
+  if (accepted.length < MIN_IMAGES) throw new Error(`${id} 视觉筛选后不足 ${MIN_IMAGES} 张，停止写入。`);
   current[id] = { images: accepted };
 }
 

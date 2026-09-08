@@ -1,0 +1,6 @@
+{
+  "minimumImages": 3,
+  "targetImages": 5,
+  "maximumImages": 5,
+  "rule": "优先补到5张；达到3张即可进入验收和写入，不为凑数采用错图、低清图、水印图或不稳定来源。"
+}

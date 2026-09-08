@@ -13,10 +13,19 @@ const amapCacheDir = path.join(runtime, 'amap-cache');
 const dbPath = path.join(root, 'content', 'db.json');
 const galleryPath = path.join(root, 'content', 'attraction-gallery-overrides.json');
 const denylistPath = path.join(root, 'content', 'attraction-gallery-image-denylist.json');
+const galleryPolicyPath = path.join(root, 'content', 'attraction-gallery-policy.json');
 const pageRequests = new Map();
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
+}
+
+const galleryPolicy = readJson(galleryPolicyPath);
+const MIN_IMAGES = Number(galleryPolicy.minimumImages);
+const TARGET_IMAGES = Number(galleryPolicy.targetImages);
+const MAX_IMAGES = Number(galleryPolicy.maximumImages);
+if (!(MIN_IMAGES >= 1 && MIN_IMAGES <= TARGET_IMAGES && TARGET_IMAGES <= MAX_IMAGES)) {
+  throw new Error('图库规则无效：必须满足 minimumImages <= targetImages <= maximumImages。');
 }
 
 function writeJson(file, value) {
@@ -47,6 +56,14 @@ function normalizeName(value) {
     .replace(/[\s·•（）()\[\]【】\-_—]/g, '')
     .replace(/国家级|世界文化遗产|世界自然遗产/g, '')
     .replace(/旅游度假区|风景名胜区|旅游景区|风景区|景区|公园|博物馆|博物院/g, '');
+}
+
+function galleryEntityExclusionReason(attraction) {
+  const name = String(attraction?.name || '');
+  if (/(?:标志门店|餐厅|饭店|酒楼|土菜馆|小吃店|烧烤店|火锅店|咖啡店)/.test(name)) {
+    return '名称明确属于餐饮门店，不进入景点图库';
+  }
+  return '';
 }
 
 function hdUrl(value) {
@@ -422,29 +439,44 @@ async function probe(candidate, attractionId, index) {
   }
 }
 
-function selectTargets(db, existing, limit) {
+function buildCohort(db, existing, state, limit) {
+  const byId = new Map();
+  for (const province of Object.values(db.provinces)) {
+    for (const attraction of province.attractions || []) {
+      if (attraction.id) byId.set(attraction.id, { province: province.province || province.name, attraction });
+    }
+  }
+  const cohort = [];
+  const seen = new Set();
+  const retain = id => {
+    if (!byId.has(id) || seen.has(id) || cohort.length >= limit) return;
+    cohort.push(id); seen.add(id);
+  };
+  for (const id of state.cohortIds || []) retain(id);
+  for (const item of state.items || []) retain(item.id);
   const groups = Object.values(db.provinces).map(province => ({
     province: province.province || province.name,
     attractions: (province.attractions || [])
-      .filter(item => item.id && !existing[item.id])
+      .filter(item => item.id && !existing[item.id] && !seen.has(item.id))
       .sort((left, right) => (Number(right.rating) || 0) - (Number(left.rating) || 0)),
   }));
-  const selected = [];
-  for (let round = 0; selected.length < limit; round += 1) {
+  for (let round = 0; cohort.length < limit; round += 1) {
     let added = 0;
     for (const group of groups) {
       const attraction = group.attractions[round];
       if (!attraction) continue;
-      selected.push({ province: group.province, attraction });
+      if (seen.has(attraction.id)) continue;
+      cohort.push(attraction.id); seen.add(attraction.id);
       added += 1;
-      if (selected.length >= limit) break;
+      if (cohort.length >= limit) break;
     }
     if (!added) break;
   }
-  return selected;
+  state.cohortIds = cohort;
+  return cohort.map(id => byId.get(id)).filter(Boolean);
 }
 
-async function collectOne(record, keys, exhausted, provincePages, officialImages, denylist, previous) {
+async function collectOne(record, keys, exhausted, provincePages, officialImages, denylist, previous, options = {}) {
   const { attraction, province } = record;
   const retryAmap = !previous || previous.amapComplete !== true;
   const exact = retryAmap && attraction.id.startsWith('amap_') ? await amapDetail(attraction.id, keys, exhausted) : null;
@@ -505,16 +537,17 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     }
   };
   await check(candidates);
-  // Only qualified files count toward the target. Retain a small surplus for
-  // perceptual deduplication and visual review, not arbitrary URL counts.
-  if (goodCount() < 7) {
+  // Primary exact sources may naturally provide up to the configured maximum.
+  // Expensive secondary lookups run only below the minimum, so 3-4 good images
+  // are not needlessly chased to five.
+  if (!options.primaryOnly && goodCount() < MIN_IMAGES) {
     try {
       const photos = await ctripExact(attraction, province, provincePages);
       attempts.push({ source: 'ctrip', result: photos.length ? 'found' : 'no_exact_page', count: photos.length });
       await check(photos);
     } catch (error) { attempts.push({ source: 'ctrip', result: 'retryable_error', reason: error.message }); }
   }
-  if (goodCount() < 5) await check(await wikimediaExact(attraction));
+  if (!options.primaryOnly && goodCount() < MIN_IMAGES) await check(await wikimediaExact(attraction));
   const seenHash = new Set();
   const qualified = probed
     .filter(item => item.accepted)
@@ -527,11 +560,13 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     name: attraction.name,
     province,
     city: attraction.city || '',
-    status: qualified.length >= 5 ? 'ready_for_visual_review' : 'pending_sources',
+    status: qualified.length >= MIN_IMAGES ? 'ready_for_visual_review' : 'pending_sources',
     qualifiedCount: qualified.length,
     qualified: qualified.slice(0, 10),
     attempts,
     amapComplete: previous?.amapComplete === true || !!(exact || namedExact),
+    primaryComplete: previous?.primaryComplete === true || options.primaryOnly || !!(exact || namedExact),
+    secondaryComplete: previous?.secondaryComplete === true || !options.primaryOnly,
     updatedAt: new Date().toISOString(),
     rejectedCount: probed.length - qualified.length,
     rejected: probed.filter(item => !item.accepted).map(item => ({ url: item.url, source: item.source, reason: item.reason })),
@@ -551,23 +586,41 @@ async function main() {
   const concurrency = Math.min(6, Math.max(1, Number(argValue('concurrency', '4')) || 4));
   const reset = process.argv.includes('--reset');
   const repairPending = process.argv.includes('--repair-pending');
+  const primaryOnly = process.argv.includes('--primary-only');
+  const retryUnresolved = process.argv.includes('--retry-unresolved');
   const maxItems = Math.max(1, Number(argValue('max-items', String(limit))) || limit);
   const db = readJson(dbPath);
   const galleries = readJson(galleryPath);
-  const targets = selectTargets(db, galleries, limit);
   const old = !reset && fs.existsSync(statePath) ? readJson(statePath) : null;
   const state = old?.items ? old : {
     version: 3,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     limit,
-    rule: '只使用稳定来源；不足5张保持待补，不以错图、低清图或搜索引擎图片凑数。',
+    rule: galleryPolicy.rule,
     sourceOrder: ['现有稳定图', '文旅部官方名录', '高德精确POI', '已确认子景点高德POI', '携程精确景点详情页前两张', 'Wikidata/Wikimedia精确实体'],
     items: [],
   };
   // Changing batch size or resuming must never discard existing progress.
-  state.version = 4; state.limit = limit;
+  state.version = 5; state.limit = limit; state.galleryPolicy = galleryPolicy; state.rule = galleryPolicy.rule;
   state.sourceOrder = ['现有已核对图片', '文旅部名录', '高德精确POI', '携程实体绑定相册', '百科精确实体'];
+  const targets = buildCohort(db, galleries, state, limit);
+  for (const target of targets) {
+    const reason = galleryEntityExclusionReason(target.attraction);
+    if (!reason) continue;
+    const excluded = {
+      id: target.attraction.id,
+      name: target.attraction.name,
+      province: target.province,
+      city: target.attraction.city || '',
+      status: 'excluded_non_attraction',
+      exclusionReason: reason,
+      updatedAt: new Date().toISOString(),
+    };
+    const position = state.items.findIndex(item => item.id === excluded.id);
+    if (position >= 0) state.items[position] = excluded;
+    else state.items.push(excluded);
+  }
   const previousItems = new Map(state.items.map(item => [item.id, item]));
   const exhausted = new Set();
   const provincePages = ctripProvincePages();
@@ -576,7 +629,8 @@ async function main() {
   fs.mkdirSync(runtime, { recursive: true });
   const remaining = targets.filter(target => {
     const prior = previousItems.get(target.attraction.id);
-    return !prior || (repairPending && (prior.status === 'pending_sources'
+    return !prior || (repairPending && ((prior.status === 'pending_sources'
+      && (prior.secondaryComplete !== true || retryUnresolved))
       || (prior.selected || []).some(image => denylist.has(hdUrl(image.url)))));
   }).sort((a, b) => String(previousItems.get(a.attraction.id)?.updatedAt || '')
     .localeCompare(String(previousItems.get(b.attraction.id)?.updatedAt || ''))).slice(0, maxItems);
@@ -585,7 +639,7 @@ async function main() {
     const results = await Promise.all(group.map(async target => {
       const prior = previousItems.get(target.attraction.id);
       try {
-        return await collectOne(target, keys, exhausted, provincePages, officialImages, denylist, prior);
+        return await collectOne(target, keys, exhausted, provincePages, officialImages, denylist, prior, { primaryOnly });
       } catch (error) {
         return { ...prior, id: target.attraction.id, name: target.attraction.name, province: target.province,
           status: 'pending_sources', qualified: prior?.qualified || [], qualifiedCount: prior?.qualifiedCount || 0,
@@ -599,12 +653,20 @@ async function main() {
       console.log(`[本轮 ${index + results.indexOf(result) + 1}/${remaining.length}] ${result.province}·${result.name}: ${result.qualifiedCount} 张 ${result.status === 'ready_for_visual_review' ? '待视觉复核' : '待补来源'}`);
     }
     state.updatedAt = new Date().toISOString();
+    state.cohortSize = state.cohortIds.length;
+    state.runMode = primaryOnly ? 'primary-only' : 'full';
     state.exhaustedKeySlots = [...exhausted].map(value => value + 1);
     writeJson(statePath, state);
     // Amap exhaustion does not prevent official/OTA candidates from completing.
   }
+  state.updatedAt = new Date().toISOString();
+  state.cohortSize = state.cohortIds.length;
+  state.runMode = primaryOnly ? 'primary-only' : 'full';
+  writeJson(statePath, state);
   const ready = state.items.filter(item => ['ready_for_visual_review', 'ready_for_user_review'].includes(item.status)).length;
-  console.log(`首批采集完成：${state.items.length} 个，${ready} 个达到5张基础门禁，${state.items.length - ready} 个保持待补。`);
+  const pending = state.items.filter(item => item.status === 'pending_sources').length;
+  const excluded = state.items.filter(item => item.status === 'excluded_non_attraction').length;
+  console.log(`图库采集完成：${state.items.length} 个，${ready} 个达到${MIN_IMAGES}-${MAX_IMAGES}张基础门槛，${pending} 个保持待补，${excluded} 个非景点已排除。`);
   console.log(`状态文件：${path.relative(root, statePath)}`);
 }
 

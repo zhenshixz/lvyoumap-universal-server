@@ -7,6 +7,9 @@ const root = path.resolve(__dirname, '..');
 const provinceDir = path.join(root, 'data', 'provinces');
 const runtimeDir = path.join(root, '.runtime', 'attraction-gallery-pilot');
 const manifestPath = path.join(runtimeDir, 'manifest.json');
+const galleryPolicy = JSON.parse(fs.readFileSync(path.join(root, 'content', 'attraction-gallery-policy.json'), 'utf8'));
+const MIN_IMAGES = Number(galleryPolicy.minimumImages);
+const MAX_IMAGES = Number(galleryPolicy.maximumImages);
 
 const pilotIds = [
   'amap_B0345001JL', // 九寨沟
@@ -308,20 +311,20 @@ async function main() {
     if (!fs.existsSync(selectedPath)) throw new Error('请先运行视觉筛选脚本。');
     const manifest = readJson(manifestPath);
     const selected = readJson(selectedPath);
-    const shortages = manifest.items.filter(item => (selected[item.id] || []).length < 5);
-    console.log(`仅补视觉筛选后不足 5 张的 ${shortages.length} 个景点。`);
+    const shortages = manifest.items.filter(item => (selected[item.id] || []).length < MIN_IMAGES);
+    console.log(`仅补视觉筛选后不足 ${MIN_IMAGES} 张的 ${shortages.length} 个景点。`);
     for (let index = 0; index < shortages.length; index += 1) {
       const item = shortages[index];
       const attraction = records.get(item.id)?.attraction;
       if (!attraction) continue;
       // 国内公共搜索通常一次即可覆盖景区官网与主流旅游站，先走这一层；
-      // 只有仍不足 5 张时才调用请求次数更多的公开百科。
+      // 只有仍不足最低张数时才调用请求次数更多的公开百科。
       let candidates = uniqueImages([...item.candidates, ...fallbackImageCandidates(attraction)]);
       candidates = candidates.slice(0, 24).map((candidate, candidateIndex) => candidate.quality
         ? candidate
         : probeCandidate(candidate, item.id, candidateIndex));
       let qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok));
-      if (qualified.length < 5) {
+      if (qualified.length < MIN_IMAGES) {
         candidates = uniqueImages([...candidates, ...wikimediaImageCandidates(attraction)])
           .slice(0, 30)
           .map((candidate, candidateIndex) => candidate.quality
@@ -333,11 +336,11 @@ async function main() {
       item.qualified = qualified.slice(0, 12);
       item.candidateCount = candidates.length;
       item.qualifiedCount = item.qualified.length;
-      item.needsFallback = item.qualified.length < 5;
+      item.needsFallback = item.qualified.length < MIN_IMAGES;
       console.log(`[${index + 1}/${shortages.length}] ${item.name}: 候选 ${item.qualified.length} 张`);
     }
     manifest.generatedAt = new Date().toISOString();
-    manifest.rule = '每个已启用图库必须有5张合格图；视觉筛选后仅对缺口景点按需补源。';
+    manifest.rule = galleryPolicy.rule;
     fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\r\n`, 'utf8');
     console.log('缺口定点补图完成。');
     return;
@@ -358,8 +361,8 @@ async function main() {
       ...(attraction.sub_spots || []).map(subspot => ({ url: subspot.image, caption: subspot.name, source: 'reviewed-subspot', sourcePoiId: subspot.id || '' })),
     ]);
     candidates = candidates.slice(0, 16).map((candidate, candidateIndex) => probeCandidate(candidate, id, candidateIndex));
-    let qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, 5);
-    if (qualified.length < 5) {
+    let qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, MAX_IMAGES);
+    if (qualified.length < MIN_IMAGES) {
       const combined = uniqueImages([
         ...candidates,
         ...fallbackImageCandidates(attraction),
@@ -367,9 +370,9 @@ async function main() {
       candidates = combined.map((candidate, candidateIndex) => candidate.quality
         ? candidate
         : probeCandidate(candidate, id, candidateIndex));
-      qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, 5);
+      qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, MAX_IMAGES);
     }
-    if (qualified.length < 5) {
+    if (qualified.length < MIN_IMAGES) {
       const combined = uniqueImages([
         ...candidates,
         ...wikimediaImageCandidates(attraction),
@@ -377,7 +380,7 @@ async function main() {
       candidates = combined.map((candidate, candidateIndex) => candidate.quality
         ? candidate
         : probeCandidate(candidate, id, candidateIndex));
-      qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, 5);
+      qualified = rankGalleryCandidates(candidates.filter(candidate => candidate.quality?.ok)).slice(0, MAX_IMAGES);
     }
     items.push({
       id,
@@ -389,15 +392,15 @@ async function main() {
       qualified,
       candidateCount: candidates.length,
       qualifiedCount: qualified.length,
-      needsFallback: qualified.length < 5,
+      needsFallback: qualified.length < MIN_IMAGES,
     });
-    console.log(`[${index + 1}/${pilotIds.length}] ${attraction.name}: ${qualified.length} 张通过基础检查${qualified.length < 5 ? '，仍需补充来源' : ''}`);
+    console.log(`[${index + 1}/${pilotIds.length}] ${attraction.name}: ${qualified.length} 张通过基础检查${qualified.length < MIN_IMAGES ? '，仍需补充来源' : ''}`);
   }
 
   const manifest = {
     version: 1,
     generatedAt: new Date().toISOString(),
-    rule: '目标3-5张合格图，不以低质量图片凑数；当前文件仅为候选池，不直接写入内容。',
+    rule: galleryPolicy.rule,
     keySlotsUsed: keys.length,
     exhaustedKeySlots: [...exhausted].map(index => index + 1),
     items,

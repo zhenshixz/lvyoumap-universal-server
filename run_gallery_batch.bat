@@ -40,14 +40,23 @@ if errorlevel 1 (
   exit /b 1
 )
 
-set "BATCH_LIMIT=100"
+set "BATCH_LIMIT=520"
 if not "%~1"=="" set "BATCH_LIMIT=%~1"
 
-echo [INFO] Collecting up to %BATCH_LIMIT% attractions.
+echo [INFO] Gallery cohort size: %BATCH_LIMIT% attractions.
 echo [INFO] Progress is resumable. No production data will be written.
-node scripts\collect_attraction_galleries_batch.js --limit=%BATCH_LIMIT% --concurrency=4 --repair-pending
+echo [INFO] Phase 1/2: exact and fast sources.
+node scripts\collect_attraction_galleries_batch.js --limit=%BATCH_LIMIT% --max-items=%BATCH_LIMIT% --concurrency=6 --primary-only
 if errorlevel 1 (
-  echo [ERROR] Collection stopped. Saved progress can be resumed by running this file again.
+  echo [ERROR] Phase 1 stopped. Saved progress can be resumed by running this file again.
+  pause
+  exit /b 1
+)
+
+echo [INFO] Phase 2/2: secondary sources for items below 3 images.
+node scripts\collect_attraction_galleries_batch.js --limit=%BATCH_LIMIT% --max-items=%BATCH_LIMIT% --concurrency=6 --repair-pending
+if errorlevel 1 (
+  echo [ERROR] Phase 2 stopped. Saved progress can be resumed by running this file again.
   pause
   exit /b 1
 )
