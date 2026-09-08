@@ -3,7 +3,8 @@ const path = require('path');
 const crypto = require('crypto');
 const zlib = require('zlib');
 const { bufferDimensions } = require('./collect_core_details');
-const { parseCtripGallery } = require('./gallery_source_parsers');
+const { parseCtripGallery, parseTripAttractionGallery, parseTripPhotoListGallery,
+  parseOfficialSiteGallery, identityName } = require('./gallery_source_parsers');
 
 const root = path.resolve(__dirname, '..');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
@@ -14,7 +15,11 @@ const dbPath = path.join(root, 'content', 'db.json');
 const galleryPath = path.join(root, 'content', 'attraction-gallery-overrides.json');
 const denylistPath = path.join(root, 'content', 'attraction-gallery-image-denylist.json');
 const galleryPolicyPath = path.join(root, 'content', 'attraction-gallery-policy.json');
+const sourcePagesPath = path.join(root, 'content', 'attraction-gallery-source-pages.json');
 const pageRequests = new Map();
+const trustedOfficialHosts = new Set();
+const tripRequestWaiters = [];
+let activeTripRequests = 0;
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
@@ -58,6 +63,40 @@ function normalizeName(value) {
     .replace(/旅游度假区|风景名胜区|旅游景区|风景区|景区|公园|博物馆|博物院/g, '');
 }
 
+function normalizeCity(value) {
+  return String(value || '').toLowerCase().replace(/[\s·•（）()\[\]【】\-_—]/g, '')
+    .replace(/壮族自治区|回族自治区|维吾尔自治区|特别行政区|自治州|地区|盟|市|区|县$/g, '');
+}
+
+function cityCompatible(left, right) {
+  const a = normalizeCity(left);
+  const b = normalizeCity(right);
+  return !a || !b || a === b || a.includes(b) || b.includes(a);
+}
+
+function visitStrings(value, callback, seen = new Set()) {
+  if (typeof value === 'string') return callback(value);
+  if (!value || typeof value !== 'object' || seen.has(value)) return;
+  seen.add(value);
+  if (Array.isArray(value)) value.forEach(item => visitStrings(item, callback, seen));
+  else Object.values(value).forEach(item => visitStrings(item, callback, seen));
+}
+
+function ctripSightUrls(value) {
+  const urls = new Set();
+  visitStrings(value, text => {
+    for (const match of text.matchAll(/https:\/\/you\.ctrip\.com\/sight\/[^\s"'<>，。；、）)\]]+/gi)) {
+      try {
+        const url = new URL(match[0]);
+        url.hash = '';
+        url.search = '';
+        urls.add(url.href);
+      } catch { /* Ignore malformed evidence strings. */ }
+    }
+  });
+  return [...urls];
+}
+
 function galleryEntityExclusionReason(attraction) {
   const name = String(attraction?.name || '');
   if (/(?:标志门店|餐厅|饭店|酒楼|土菜馆|小吃店|烧烤店|火锅店|咖啡店)/.test(name)) {
@@ -79,20 +118,33 @@ function stableUrl(value) {
   const url = hdUrl(value);
   // Amap comment photos are user uploads and may contain posters, screenshots,
   // watermarks or unrelated people. They are deliberately not a stable source.
-  if (/_AIGC\//i.test(url) || /aos-comment\.amap\.com\//i.test(url)) return false;
-  return url.startsWith('/') || /^(?:https:\/\/)(?:store\.is\.autonavi\.com|aos-cdn-image\.amap\.com|lyfw\.mct\.gov\.cn\/_static|upload\.wikimedia\.org|commons\.wikimedia\.org|(?:dimg\d+|youimg\d+)\.c-ctrip\.com)\//i.test(url);
+  if (/_AIGC\//i.test(url) || /aos-comment\.amap\.com\//i.test(url) || /\/sns\/ugccomment\//i.test(url)) return false;
+  if (url.startsWith('/')) return true;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== 'https:') return false;
+    if (trustedOfficialHosts.has(parsed.hostname.toLowerCase())) return true;
+    return /^(?:store\.is\.autonavi\.com|aos-cdn-image\.amap\.com|lyfw\.mct\.gov\.cn|upload\.wikimedia\.org|commons\.wikimedia\.org|(?:dimg\d+|youimg\d+)\.c-ctrip\.com|(?:[a-z0-9-]+\.)+tripcdn\.com)$/i.test(parsed.hostname);
+  } catch {
+    return false;
+  }
 }
 
 function sourceRank(source) {
-  return ({ local: 60, mct_official: 55, amap_exact: 50, amap_subspot: 45, curated_subspot: 40, ctrip_exact: 35, wikimedia_exact: 30 })[source] || 0;
+  return ({ local: 65, official_site: 60, mct_official: 55, amap_exact: 50, trip_exact: 48,
+    amap_subspot: 45, curated_subspot: 42, ctrip_exact: 40, wikimedia_exact: 35 })[source] || 0;
 }
 
 function urlRank(url) {
   if (String(url).startsWith('/')) return 20;
   if (/store\.is\.autonavi\.com\/showpic\//i.test(url)) return 15;
   if (/aos-cdn-image\.amap\.com\//i.test(url)) return 12;
+  if (/tripcdn\.com\//i.test(url)) return 11;
   if (/(?:dimg\d+|youimg\d+)\.c-ctrip\.com\//i.test(url)) return 10;
   if (/wikimedia\.org\//i.test(url)) return 8;
+  try {
+    if (trustedOfficialHosts.has(new URL(url).hostname.toLowerCase())) return 16;
+  } catch { /* Local and malformed URLs were handled above. */ }
   if (/aos-comment\.amap\.com\//i.test(url)) return 5;
   return 0;
 }
@@ -119,30 +171,159 @@ function fetchText(url, timeout = 18000) {
   return pageRequests.get(url);
 }
 
+function isTripPage(url) {
+  try {
+    return /(?:^|\.)trip\.com$/i.test(new URL(url).hostname);
+  } catch {
+    return false;
+  }
+}
+
+function cachedPageUsable(url, html) {
+  return !isTripPage(url) || /<script\b[^>]*\bid=["']__NEXT_DATA__["']/i.test(html);
+}
+
+async function withTripRequestSlot(task) {
+  if (activeTripRequests >= 2) await new Promise(resolve => tripRequestWaiters.push(resolve));
+  activeTripRequests += 1;
+  try {
+    return await task();
+  } finally {
+    activeTripRequests -= 1;
+    const next = tripRequestWaiters.shift();
+    if (next) next();
+  }
+}
+
+async function downloadPage(url, headers, timeout, attempts) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers,
+        redirect: 'follow',
+        signal: AbortSignal.timeout(timeout),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.text();
+    } catch (error) {
+      lastError = error;
+      if (attempt + 1 < attempts) await new Promise(resolve => setTimeout(resolve, 350 * (attempt + 1)));
+    }
+  }
+  throw lastError;
+}
+
 async function fetchPage(url, timeout) {
   const key = crypto.createHash('sha256').update(url).digest('hex');
   const cacheFile = path.join(runtime, 'page-cache', `${key}.html.gz`);
   const legacyFile = path.join(runtime, 'page-cache', `${key}.html`);
   if (fs.existsSync(cacheFile) && Date.now() - fs.statSync(cacheFile).mtimeMs < 7 * 86400000) {
-    return zlib.gunzipSync(fs.readFileSync(cacheFile)).toString('utf8');
+    const html = zlib.gunzipSync(fs.readFileSync(cacheFile)).toString('utf8');
+    if (cachedPageUsable(url, html)) return html;
+    fs.rmSync(cacheFile, { force: true });
   }
   if (fs.existsSync(legacyFile) && Date.now() - fs.statSync(legacyFile).mtimeMs < 7 * 86400000) {
     const html = fs.readFileSync(legacyFile, 'utf8');
-    fs.writeFileSync(cacheFile, zlib.gzipSync(html, { level: 6 }));
     fs.rmSync(legacyFile, { force: true });
-    return html;
+    if (cachedPageUsable(url, html)) {
+      fs.writeFileSync(cacheFile, zlib.gzipSync(html, { level: 6 }));
+      return html;
+    }
   }
-  const response = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
-    redirect: 'follow',
-    signal: AbortSignal.timeout(timeout),
-  });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const html = await response.text();
-  if (/whaleguard block|captcha|访问过于频繁/i.test(html.slice(0, 3000))) throw new Error('来源限流，保留断点');
+  const tripPage = isTripPage(url);
+  const headers = {
+    'User-Agent': tripPage ? 'Mozilla/5.0' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+    'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.6',
+  };
+  const request = () => downloadPage(url, headers, timeout, tripPage ? 3 : 2);
+  const html = tripPage ? await withTripRequestSlot(request) : await request();
+  if (!cachedPageUsable(url, html)) throw new Error('Trip 页面未返回结构化数据，保留断点');
+  if (!/<script\b[^>]*\bid=["']__NEXT_DATA__["']/i.test(html)
+    && /whaleguard block|captcha|访问过于频繁/i.test(html.slice(0, 3000))) throw new Error('来源限流，保留断点');
   fs.mkdirSync(path.dirname(cacheFile), { recursive: true });
   fs.writeFileSync(cacheFile, zlib.gzipSync(html, { level: 6 }));
   return html;
+}
+
+function loadGallerySourcePages() {
+  const result = new Map();
+  if (!fs.existsSync(sourcePagesPath)) return result;
+  const data = readJson(sourcePagesPath);
+  for (const [id, entries] of Object.entries(data.items || {})) {
+    const valid = (Array.isArray(entries) ? entries : []).filter(entry => {
+      if (!['official_site', 'trip_attraction', 'trip_photo_list'].includes(entry?.kind)) return false;
+      try {
+        const page = new URL(entry.url);
+        if (page.protocol !== 'https:') return false;
+        if (entry.kind === 'official_site') trustedOfficialHosts.add(page.hostname.toLowerCase());
+        return true;
+      } catch {
+        return false;
+      }
+    });
+    if (valid.length) result.set(id, valid);
+  }
+  return result;
+}
+
+async function registeredExactSources(attraction, aliases, sourcePages) {
+  const candidates = [];
+  const attempts = [];
+  const targetNames = new Set([attraction.name, ...aliases].map(identityName).filter(Boolean));
+  for (const source of sourcePages.get(attraction.id) || []) {
+    try {
+      let parsed;
+      if (source.kind === 'official_site') {
+        if (source.entityName && !targetNames.has(identityName(source.entityName))) {
+          throw new Error('登记官网实体名称不匹配');
+        }
+        parsed = parseOfficialSiteGallery(await fetchText(source.url), source);
+      } else if (source.kind === 'trip_attraction') {
+        parsed = parseTripAttractionGallery(await fetchText(source.url), source.poiId);
+      } else {
+        parsed = parseTripPhotoListGallery(await fetchText(source.url), source.entityName || attraction.name);
+      }
+      const sourceName = source.kind === 'official_site' ? 'official_site' : 'trip_exact';
+      const photos = parsed.photos.map(photo => ({
+        url: photo.imageUrl,
+        caption: photo.title || `${attraction.name}${sourceName === 'official_site' ? '官网图片' : ' Trip 精确实体图片'}`,
+        source: sourceName,
+        sourceUrl: source.url,
+        sourceField: source.kind,
+        sourcePoiId: parsed.poiId || source.poiId || '',
+      }));
+      candidates.push(...photos);
+      attempts.push({ source: source.kind, result: photos.length ? 'found' : 'empty', count: photos.length });
+    } catch (error) {
+      attempts.push({ source: source.kind, result: 'retryable_error', reason: error.message });
+    }
+  }
+  return { candidates, attempts };
+}
+
+async function tripExactByPoiIds(attraction, poiIds) {
+  const candidates = [];
+  const attempts = [];
+  for (const poiId of [...new Set(poiIds.map(String).filter(value => /^\d+$/.test(value)))].slice(0, 3)) {
+    const sourceUrl = `https://www.trip.com/travel-guide/attraction/x/x-${poiId}/`;
+    try {
+      const parsed = parseTripAttractionGallery(await fetchText(sourceUrl), poiId);
+      const photos = parsed.photos.map(photo => ({
+        url: photo.imageUrl,
+        caption: `${attraction.name} Trip 精确实体图片`,
+        source: 'trip_exact',
+        sourceUrl,
+        sourceField: 'poiData.poiImage',
+        sourcePoiId: poiId,
+      }));
+      candidates.push(...photos);
+      attempts.push({ source: 'trip_exact', result: photos.length ? 'found' : 'empty', count: photos.length, poiId });
+    } catch (error) {
+      attempts.push({ source: 'trip_exact', result: 'retryable_error', reason: error.message, poiId });
+    }
+  }
+  return { candidates, attempts };
 }
 
 function compactPageCache() {
@@ -179,7 +360,9 @@ async function fetchImage(url) {
   });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const type = String(response.headers.get('content-type') || '');
-  if (!type.startsWith('image/')) throw new Error(`非图片响应 ${type}`);
+  // Several Amap/CDN image endpoints return valid image bytes as the generic
+  // binary type. The later dimension decoder is the authoritative validation.
+  if (!type.startsWith('image/') && !/application\/octet-stream/i.test(type)) throw new Error(`非图片响应 ${type}`);
   return Buffer.from(await response.arrayBuffer());
 }
 
@@ -256,16 +439,17 @@ async function amapNamedPoi(name, city, keys, exhausted) {
   }) || null;
 }
 
-function commonsCandidate(page, attraction) {
+function commonsCandidate(page, attraction, trustedEntity = false) {
   const info = page?.imageinfo?.[0];
   if (!info) return null;
   const meta = info.extmetadata || {};
   const text = `${page.title || ''} ${meta.ImageDescription?.value || ''} ${meta.Categories?.value || ''}`;
-  const target = normalizeName(attraction.name);
+  const targets = [...new Set([attraction.name, ...(attraction.aliases || [])].map(normalizeName).filter(Boolean))];
   const normalized = normalizeName(text.replace(/<[^>]*>/g, ' '));
   const noise = /地图|导览|路线|海报|截图|地铁|列车|车厢|站台|logo|二维码|\bmap\b|screenshot|metro|subway|train/i;
   const license = String(meta.LicenseShortName?.value || meta.UsageTerms?.value || '');
-  if (!target || !normalized.includes(target) || noise.test(text) || !/(CC|public domain|公有领域)/i.test(license)) return null;
+  if ((!trustedEntity && !targets.some(target => normalized.includes(target)))
+    || noise.test(text) || !/(CC|public domain|公有领域)/i.test(license)) return null;
   if (Number(info.width || 0) < 1000 || Number(info.height || 0) < 560) return null;
   const url = info.thumburl || info.url;
   if (!stableUrl(url)) return null;
@@ -279,31 +463,38 @@ function commonsCandidate(page, attraction) {
 
 async function wikimediaExact(attraction) {
   try {
-    const searchUrl = new URL('https://www.wikidata.org/w/api.php');
-    Object.entries({ action: 'wbsearchentities', search: attraction.name, language: 'zh', uselang: 'zh', format: 'json', limit: '5', origin: '*' })
-      .forEach(([key, value]) => searchUrl.searchParams.set(key, value));
-    const result = await fetchJson(searchUrl);
-    const target = normalizeName(attraction.name);
-    const hit = (result.search || []).find(item => [item.label, item.match?.text, ...(item.aliases || [])]
-      .some(value => normalizeName(value) === target));
+    const names = [...new Set([attraction.name, ...(attraction.aliases || [])].filter(Boolean))];
+    const targets = new Set(names.map(normalizeName).filter(Boolean));
+    let hit = null;
+    for (const name of names.slice(0, 5)) {
+      const searchUrl = new URL('https://www.wikidata.org/w/api.php');
+      Object.entries({ action: 'wbsearchentities', search: name, language: 'zh', uselang: 'zh', format: 'json', limit: '5', origin: '*' })
+        .forEach(([key, value]) => searchUrl.searchParams.set(key, value));
+      const result = await fetchJson(searchUrl);
+      hit = (result.search || []).find(item => [item.label, item.match?.text, ...(item.aliases || [])]
+        .some(value => targets.has(normalizeName(value))));
+      if (hit) break;
+    }
     if (!hit) return [];
     const entity = (await fetchJson(`https://www.wikidata.org/wiki/Special:EntityData/${hit.id}.json`)).entities?.[hit.id];
     const file = entity?.claims?.P18?.[0]?.mainsnak?.datavalue?.value || '';
     const category = entity?.claims?.P373?.[0]?.mainsnak?.datavalue?.value || '';
-    const pages = {};
+    const candidates = [];
     if (file) {
       const url = new URL('https://commons.wikimedia.org/w/api.php');
       Object.entries({ action: 'query', titles: `File:${file}`, prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '1800', format: 'json', origin: '*' })
         .forEach(([key, value]) => url.searchParams.set(key, value));
-      Object.assign(pages, (await fetchJson(url)).query?.pages || {});
+      candidates.push(...Object.values((await fetchJson(url)).query?.pages || {})
+        .map(page => commonsCandidate(page, attraction, true)).filter(Boolean));
     }
     if (category) {
       const url = new URL('https://commons.wikimedia.org/w/api.php');
       Object.entries({ action: 'query', generator: 'categorymembers', gcmtitle: `Category:${category}`, gcmtype: 'file', gcmlimit: '30', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '1800', format: 'json', origin: '*' })
         .forEach(([key, value]) => url.searchParams.set(key, value));
-      Object.assign(pages, (await fetchJson(url)).query?.pages || {});
+      candidates.push(...Object.values((await fetchJson(url)).query?.pages || {})
+        .map(page => commonsCandidate(page, attraction, true)).filter(Boolean));
     }
-    return Object.values(pages).map(page => commonsCandidate(page, attraction)).filter(Boolean);
+    return candidates;
   } catch {
     return [];
   }
@@ -318,44 +509,196 @@ function decodeHtml(value) {
     .trim();
 }
 
-function ctripProvincePages() {
+function ctripProvincePages(db) {
   const result = new Map();
-  result.detailUrls = new Map();
-  const add = (province, name, url) => {
+  result.detailUrlsById = new Map();
+  result.detailEntries = new Map();
+  result.aliasesById = new Map();
+  result.cityIndexes = new Map();
+  result.wantedByCity = new Map();
+  const byId = new Map();
+  const byProvince = new Map();
+  for (const provinceData of Object.values(db?.provinces || {})) {
+    const province = provinceData.province || provinceData.name;
+    for (const attraction of provinceData.attractions || []) {
+      const entity = { ...attraction, province };
+      if (attraction.id) byId.set(attraction.id, entity);
+      const list = byProvince.get(province) || [];
+      list.push(entity); byProvince.set(province, list);
+    }
+  }
+  const rememberAliases = (id, names) => {
+    if (!id) return;
+    const aliases = result.aliasesById.get(id) || new Set();
+    names.filter(Boolean).forEach(name => aliases.add(name));
+    result.aliasesById.set(id, aliases);
+  };
+  const findEntity = (province, item) => {
+    if (item?.id && byId.has(item.id)) return byId.get(item.id);
+    if (item?.preferredId && byId.has(item.preferredId)) return byId.get(item.preferredId);
+    const names = [item?.name, ...(item?.aliases || [])].map(normalizeName).filter(Boolean);
+    const matches = (byProvince.get(province) || []).filter(entity => names.includes(normalizeName(entity.name))
+      && cityCompatible(entity.city, item?.city));
+    return matches.length === 1 ? matches[0] : null;
+  };
+  const add = (province, name, url, identity = {}) => {
     if (!province || !name || !/^https:\/\/you\.ctrip\.com\/sight\//i.test(url || '')) return;
-    const key = `${province}\u0000${normalizeName(name)}`;
-    const urls = result.detailUrls.get(key) || new Set();
-    urls.add(url); result.detailUrls.set(key, urls);
+    const canonical = ctripSightUrls(url)[0];
+    if (!canonical) return;
+    const names = [...new Set([name, ...(identity.aliases || [])].filter(Boolean))];
+    rememberAliases(identity.id, names);
+    if (identity.id) {
+      const urls = result.detailUrlsById.get(identity.id) || new Set();
+      urls.add(canonical); result.detailUrlsById.set(identity.id, urls);
+    }
+    for (const alias of names) {
+      const key = `${province}\u0000${normalizeName(alias)}`;
+      const entries = result.detailEntries.get(key) || [];
+      if (!entries.some(entry => entry.url === canonical && entry.id === (identity.id || ''))) {
+        entries.push({ url: canonical, id: identity.id || '', city: identity.city || '' });
+      }
+      result.detailEntries.set(key, entries);
+    }
   };
   for (const file of fs.readdirSync(path.join(root, '.runtime')).filter(name => /^core-ota-.+\.json$/i.test(name))) {
     try {
       const data = readJson(path.join(root, '.runtime', file));
-      for (const item of data.candidates || []) add(data.province, item.name, item.url);
+      for (const item of data.candidates || []) add(data.province, item.name, item.url, item);
     } catch { /* Ignore malformed historical snapshots. */ }
   }
   for (const file of fs.readdirSync(path.join(root, '.runtime')).filter(name => /^core-secondary-evidence-.+\.json$/i.test(name))) {
     try {
       const data = readJson(path.join(root, '.runtime', file));
       for (const item of data.results || []) {
-        for (const evidence of item.evidences || []) add(data.province, evidence.name, evidence.url);
+        for (const evidence of item.evidences || []) add(data.province, evidence.name, evidence.url, item);
       }
     } catch { /* Only reuse readable, explicitly named source records. */ }
   }
   if (fs.existsSync(statePath)) {
     for (const item of readJson(statePath).items || []) {
-      for (const image of item.qualified || []) add(item.province, item.name, image.sourceUrl);
+      for (const image of item.qualified || []) add(item.province, item.name, image.sourceUrl, item);
     }
   }
-  for (const file of fs.readdirSync(path.join(root, 'content')).filter(name => /^core-attractions\..+\.json$/i.test(name))) {
+  const contentDir = path.join(root, 'content');
+  const overrideFile = path.join(contentDir, 'attraction-overrides.json');
+  if (fs.existsSync(overrideFile)) {
+    const overrides = readJson(overrideFile);
+    for (const [id, value] of Object.entries(overrides)) {
+      const entity = byId.get(id);
+      if (!entity) continue;
+      for (const url of ctripSightUrls(value)) add(entity.province, entity.name, url, entity);
+    }
+  }
+  for (const file of fs.readdirSync(contentDir).filter(name => /^manual-attractions(?:\..+)?\.json$/i.test(name))) {
     try {
-      const data = readJson(path.join(root, 'content', file));
+      const data = readJson(path.join(contentDir, file));
+      for (const [province, items] of Object.entries(data)) {
+        for (const item of Array.isArray(items) ? items : []) {
+          const entity = findEntity(province, item);
+          const identity = entity ? { ...entity, aliases: item.aliases || [] } : item;
+          rememberAliases(entity?.id, [item.name, ...(item.aliases || [])]);
+          for (const url of ctripSightUrls(item)) add(province, item.name, url, identity);
+        }
+      }
+    } catch { /* Reuse only readable manual records. */ }
+  }
+  for (const file of fs.readdirSync(contentDir).filter(name => /^core-attractions\..+\.json$/i.test(name))) {
+    try {
+      const data = readJson(path.join(contentDir, file));
       if (data.province && data.sources?.ctrip_province_sightlist) result.set(data.province, data.sources.ctrip_province_sightlist);
       if (data.province && data.ctrip_province_sightlist) result.set(data.province, data.ctrip_province_sightlist);
+      for (const item of data.attractions || []) {
+        const entity = findEntity(data.province, item);
+        if (entity) rememberAliases(entity.id, [item.name, ...(item.aliases || [])]);
+        for (const url of ctripSightUrls(item)) add(data.province, item.name, url,
+          entity ? { ...entity, aliases: item.aliases || [] } : item);
+      }
     } catch {
       // 单个历史清单格式异常不阻断全批次。
     }
   }
   return result;
+}
+
+function attractionAliases(attraction, provincePages) {
+  const names = [attraction.name, ...(attraction.aliases || []),
+    ...(provincePages.aliasesById.get(attraction.id) || [])].filter(Boolean);
+  const city = String(attraction.city || '').replace(/(?:自治州|地区|盟|市|区|县)$/g, '');
+  if (city && String(attraction.name || '').startsWith(city)) {
+    const shortName = String(attraction.name).slice(city.length).replace(/^市/, '');
+    if (shortName.length >= 2) names.push(shortName);
+  }
+  return [...new Set(names)];
+}
+
+function indexedCtripUrls(attraction, province, provincePages) {
+  const direct = [...(provincePages.detailUrlsById.get(attraction.id) || [])];
+  if (direct.length) return direct;
+  const entries = attractionAliases(attraction, provincePages).flatMap(name =>
+    provincePages.detailEntries.get(`${province}\u0000${normalizeName(name)}`) || []);
+  const cityMatches = entries.filter(entry => entry.city && cityCompatible(entry.city, attraction.city));
+  const usable = cityMatches.length ? cityMatches : entries.filter(entry => !entry.city);
+  return [...new Set(usable.map(entry => entry.url))];
+}
+
+function registerCtripCityTargets(records, provincePages) {
+  for (const { attraction, province } of records) {
+    const key = `${province}\u0000${normalizeCity(attraction.city || province)}`;
+    const wanted = provincePages.wantedByCity.get(key) || new Set();
+    attractionAliases(attraction, provincePages).map(normalizeName).filter(Boolean)
+      .forEach(name => wanted.add(name));
+    provincePages.wantedByCity.set(key, wanted);
+  }
+}
+
+function parseCtripListLinks(html) {
+  return [...String(html).matchAll(/<div class="titleModule_name__[^"]+"><span><a href="([^"]+)"[^>]*>([^<]+)<\/a>/g)]
+    .map(match => ({ url: new URL(decodeHtml(match[1]), 'https://you.ctrip.com').href, name: decodeHtml(match[2]) }))
+    .filter(item => /^https:\/\/you\.ctrip\.com\/sight\//i.test(item.url));
+}
+
+function discoverCtripCitySlug(html, city) {
+  const plainCity = String(city || '').replace(/市$/, '');
+  const escaped = plainCity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const patterns = [
+    new RegExp(`https?:\\/\\/you\\.ctrip\\.com\\/place\\/([^"?]+)\\.html[^>]*>${escaped}(?:市)?旅游攻略<\\/a>`, 'i'),
+    new RegExp(`href="\\/place\\/([^"?]+)\\.html[^>]*>${escaped}(?:市)?旅游攻略<\\/a>`, 'i'),
+  ];
+  return patterns.map(pattern => String(html).match(pattern)?.[1]).find(Boolean) || '';
+}
+
+async function ctripCityIndex(attraction, province, provincePages) {
+  const base = provincePages.get(province);
+  if (!base) return new Map();
+  const city = attraction.city || province;
+  const key = `${province}\u0000${normalizeCity(city)}`;
+  if (!provincePages.cityIndexes.has(key)) {
+    provincePages.cityIndexes.set(key, (async () => {
+      const output = new Map();
+      const provinceHtml = await fetchText(base);
+      const baseSlug = base.match(/\/sightlist\/([^/?]+)\.html/)?.[1]
+        || base.match(/\/sight\/([^/?]+)\.html/)?.[1];
+      const sameRegion = cityCompatible(city, province);
+      const slug = discoverCtripCitySlug(provinceHtml, city) || (sameRegion ? baseSlug : '');
+      if (!slug) return output;
+      const wanted = provincePages.wantedByCity.get(key) || new Set();
+      const found = new Set();
+      for (let page = 1; page <= 30; page += 1) {
+        const pageUrl = `https://you.ctrip.com/sight/${slug}/s0-p${page}.html`;
+        const links = parseCtripListLinks(await fetchText(pageUrl));
+        if (!links.length) break;
+        for (const link of links) {
+          const normalized = normalizeName(link.name);
+          const urls = output.get(normalized) || new Set();
+          urls.add(link.url); output.set(normalized, urls);
+          if (wanted.has(normalized)) found.add(normalized);
+        }
+        if (wanted.size && [...wanted].every(name => found.has(name))) break;
+      }
+      return output;
+    })());
+  }
+  return provincePages.cityIndexes.get(key);
 }
 
 function mctOfficialImages() {
@@ -380,38 +723,35 @@ function mctOfficialImages() {
 
 async function ctripExact(attraction, province, provincePages) {
   const base = provincePages.get(province);
-  const existing = provincePages.detailUrls.get(`${province}\u0000${normalizeName(attraction.name)}`);
-  let detailUrl = existing?.size === 1 ? [...existing][0] : '';
-  if (!detailUrl && base) {
-    const target = normalizeName(attraction.name);
-    const slug = base.match(/\/sightlist\/([^/?]+)\.html/)?.[1];
-    // The province listing ignores ?keyword=. Reuse actual listing pages across
-    // attractions, with a bounded page budget, rather than repeating fake searches.
-    for (let page = 1; page <= (slug ? 3 : 1) && !detailUrl; page += 1) {
-      const listUrl = page === 1 ? base : `https://you.ctrip.com/sight/${slug}/s0-p${page}.html`;
-      const listHtml = await fetchText(listUrl);
-      const links = [...listHtml.matchAll(/<div class="titleModule_name__[^"]+"><span><a href="([^"]+)"[^>]*>([^<]+)<\/a>/g)]
-        .map(match => ({ url: decodeHtml(match[1]), name: decodeHtml(match[2]) }));
-      for (const link of links) {
-        const url = new URL(link.url, 'https://you.ctrip.com').href;
-        if (!/^https:\/\/you\.ctrip\.com\/sight\//i.test(url)) continue;
-        if (normalizeName(link.name) === target) detailUrl = url;
-      }
-      if (!links.length) break;
+  const aliases = attractionAliases(attraction, provincePages);
+  const targets = new Set(aliases.map(normalizeName).filter(Boolean));
+  const detailUrls = indexedCtripUrls(attraction, province, provincePages);
+  if (!detailUrls.length && base) {
+    const cityIndex = await ctripCityIndex(attraction, province, provincePages);
+    for (const target of targets) {
+      for (const url of cityIndex.get(target) || []) detailUrls.push(url);
     }
   }
-  if (!detailUrl) return [];
-  const detail = parseCtripGallery(await fetchText(detailUrl), attraction);
-  return detail.photos.filter(photo => stableUrl(photo.imageUrl))
-      .map(photo => ({
-        url: photo.imageUrl,
-        caption: attraction.name,
-        source: 'ctrip_exact',
-        sourceUrl: detailUrl,
-        sourceField: 'poiDetail.imageInfo.poiPhotoImageList',
-        sourcePoiId: detail.poiId,
-        sourceImageId: photo.imageId,
-      }));
+  let lastError = null;
+  for (const detailUrl of [...new Set(detailUrls)]) {
+    try {
+      const detail = parseCtripGallery(await fetchText(detailUrl), { ...attraction, aliases });
+      return detail.photos.filter(photo => stableUrl(photo.imageUrl))
+        .map(photo => ({
+          url: photo.imageUrl,
+          caption: attraction.name,
+          source: 'ctrip_exact',
+          sourceUrl: detailUrl,
+          sourceField: 'poiDetail.imageInfo.poiPhotoImageList',
+          sourcePoiId: detail.poiId,
+          sourceImageId: photo.imageId,
+        }));
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  if (lastError && !/实体不匹配/.test(lastError.message)) throw lastError;
+  return [];
 }
 
 async function probe(candidate, attractionId, index) {
@@ -476,16 +816,33 @@ function buildCohort(db, existing, state, limit) {
   return cohort.map(id => byId.get(id)).filter(Boolean);
 }
 
-async function collectOne(record, keys, exhausted, provincePages, officialImages, denylist, previous, options = {}) {
+function recordsForIds(db, ids) {
+  const byId = new Map();
+  for (const province of Object.values(db.provinces)) {
+    for (const attraction of province.attractions || []) {
+      if (attraction.id) byId.set(attraction.id, { province: province.province || province.name, attraction });
+    }
+  }
+  const missing = ids.filter(id => !byId.has(id));
+  if (missing.length) throw new Error(`指定景点 ID 不存在：${missing.join(', ')}`);
+  return ids.map(id => byId.get(id));
+}
+
+async function collectOne(record, keys, exhausted, provincePages, officialImages, sourcePages, denylist, previous, options = {}) {
   const { attraction, province } = record;
   const retryAmap = !previous || previous.amapComplete !== true;
   const exact = retryAmap && attraction.id.startsWith('amap_') ? await amapDetail(attraction.id, keys, exhausted) : null;
   const candidates = [];
+  const attempts = [];
   if (stableUrl(attraction.image)) {
     const local = String(attraction.image).startsWith('/');
     candidates.push({ url: attraction.image, caption: `${attraction.name}现有主图`, source: local ? 'local' : 'amap_exact', sourcePoiId: attraction.id.replace(/^amap_/i, '') });
   }
-  const official = officialImages.get(`${province}\u0000${normalizeName(attraction.name)}`);
+  const aliases = attractionAliases(attraction, provincePages);
+  const registered = await registeredExactSources(attraction, aliases, sourcePages);
+  candidates.push(...registered.candidates);
+  attempts.push(...registered.attempts);
+  const official = aliases.map(name => officialImages.get(`${province}\u0000${normalizeName(name)}`)).find(Boolean);
   if (official && stableUrl(official.url)) {
     candidates.push({
       url: official.url,
@@ -517,7 +874,6 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     }
   }
   const probed = [];
-  const attempts = [];
   const attempted = new Set();
   for (const old of uniqueCandidates(previous?.qualified || [], denylist)) {
     try {
@@ -542,12 +898,17 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
   // are not needlessly chased to five.
   if (!options.primaryOnly && goodCount() < MIN_IMAGES) {
     try {
-      const photos = await ctripExact(attraction, province, provincePages);
+      const photos = await ctripExact({ ...attraction, aliases }, province, provincePages);
       attempts.push({ source: 'ctrip', result: photos.length ? 'found' : 'no_exact_page', count: photos.length });
       await check(photos);
+      if (goodCount() < MIN_IMAGES) {
+        const trip = await tripExactByPoiIds(attraction, photos.map(photo => photo.sourcePoiId));
+        attempts.push(...trip.attempts);
+        await check(trip.candidates);
+      }
     } catch (error) { attempts.push({ source: 'ctrip', result: 'retryable_error', reason: error.message }); }
   }
-  if (!options.primaryOnly && goodCount() < MIN_IMAGES) await check(await wikimediaExact(attraction));
+  if (!options.primaryOnly && goodCount() < MIN_IMAGES) await check(await wikimediaExact({ ...attraction, aliases }));
   const seenHash = new Set();
   const qualified = probed
     .filter(item => item.accepted)
@@ -588,7 +949,8 @@ async function main() {
   const repairPending = process.argv.includes('--repair-pending');
   const primaryOnly = process.argv.includes('--primary-only');
   const retryUnresolved = process.argv.includes('--retry-unresolved');
-  const maxItems = Math.max(1, Number(argValue('max-items', String(limit))) || limit);
+  const requestedIds = [...new Set(argValue('ids').split(',').map(value => value.trim()).filter(Boolean))];
+  const maxItems = Math.max(1, Number(argValue('max-items', String(requestedIds.length || limit))) || (requestedIds.length || limit));
   const db = readJson(dbPath);
   const galleries = readJson(galleryPath);
   const old = !reset && fs.existsSync(statePath) ? readJson(statePath) : null;
@@ -602,9 +964,13 @@ async function main() {
     items: [],
   };
   // Changing batch size or resuming must never discard existing progress.
-  state.version = 5; state.limit = limit; state.galleryPolicy = galleryPolicy; state.rule = galleryPolicy.rule;
-  state.sourceOrder = ['现有已核对图片', '文旅部名录', '高德精确POI', '携程实体绑定相册', '百科精确实体'];
-  const targets = buildCohort(db, galleries, state, limit);
+  state.version = 6; state.galleryPolicy = galleryPolicy; state.rule = galleryPolicy.rule;
+  if (!requestedIds.length) state.limit = limit;
+  state.sourceOrder = ['现有已核对图片', '景区官网精确图片区段', '文旅部名录', '高德精确POI',
+    'Trip精确POI图库', '携程实体绑定相册', '百科精确实体'];
+  const targets = requestedIds.length
+    ? recordsForIds(db, requestedIds)
+    : buildCohort(db, galleries, state, limit);
   for (const target of targets) {
     const reason = galleryEntityExclusionReason(target.attraction);
     if (!reason) continue;
@@ -623,23 +989,26 @@ async function main() {
   }
   const previousItems = new Map(state.items.map(item => [item.id, item]));
   const exhausted = new Set();
-  const provincePages = ctripProvincePages();
+  const provincePages = ctripProvincePages(db);
   const officialImages = mctOfficialImages();
+  const sourcePages = loadGallerySourcePages();
   const denylist = new Set((fs.existsSync(denylistPath) ? readJson(denylistPath) : []).map(item => hdUrl(item.url)));
   fs.mkdirSync(runtime, { recursive: true });
   const remaining = targets.filter(target => {
+    if (requestedIds.length) return !galleryEntityExclusionReason(target.attraction);
     const prior = previousItems.get(target.attraction.id);
     return !prior || (repairPending && ((prior.status === 'pending_sources'
       && (prior.secondaryComplete !== true || retryUnresolved))
       || (prior.selected || []).some(image => denylist.has(hdUrl(image.url)))));
   }).sort((a, b) => String(previousItems.get(a.attraction.id)?.updatedAt || '')
     .localeCompare(String(previousItems.get(b.attraction.id)?.updatedAt || ''))).slice(0, maxItems);
+  registerCtripCityTargets(remaining, provincePages);
   for (let index = 0; index < remaining.length; index += concurrency) {
     const group = remaining.slice(index, index + concurrency);
     const results = await Promise.all(group.map(async target => {
       const prior = previousItems.get(target.attraction.id);
       try {
-        return await collectOne(target, keys, exhausted, provincePages, officialImages, denylist, prior, { primaryOnly });
+        return await collectOne(target, keys, exhausted, provincePages, officialImages, sourcePages, denylist, prior, { primaryOnly });
       } catch (error) {
         return { ...prior, id: target.attraction.id, name: target.attraction.name, province: target.province,
           status: 'pending_sources', qualified: prior?.qualified || [], qualifiedCount: prior?.qualifiedCount || 0,
@@ -670,7 +1039,12 @@ async function main() {
   console.log(`状态文件：${path.relative(root, statePath)}`);
 }
 
-main().catch(error => {
-  console.error(`全国图库批处理失败：${error.message}`);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch(error => {
+    console.error(`全国图库批处理失败：${error.message}`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { ctripProvincePages, indexedCtripUrls, attractionAliases, ctripSightUrls,
+  registerCtripCityTargets, parseCtripListLinks, discoverCtripCitySlug };

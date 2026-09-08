@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "items": {
+    "amap_B025003OPX": [
+      {
+        "kind": "official_site",
+        "url": "https://www.xiamenbg.cn/Home/chIndex",
+        "entityName": "厦门园林植物园",
+        "includePath": "/Uploads/Images/",
+        "sectionStart": "<div class=\"in-bit secwen add1\"><span class=\"s1\">热</span><span class=\"s2\">门</span>景点</div>",
+        "sectionEnd": "精华景点线路"
+      }
+    ],
+    "amap_B0FFHCXU0K": [
+      {
+        "kind": "trip_photo_list",
+        "url": "https://hk.trip.com/travel-guide/huangguoshu-waterfall-143874/tourist-attractions-photo/?locale=zh-HK&curr=HKD",
+        "entityName": "黃果樹瀑布"
+      }
+    ],
+    "amap_B0FFFY95JC": [
+      {
+        "kind": "trip_attraction",
+        "url": "https://hk.trip.com/travel-guide/attraction/hong-kong/hong-kong-observation-wheel-18446632/",
+        "entityName": "香港摩天輪",
+        "poiId": 18446632
+      }
+    ]
+  }
+}

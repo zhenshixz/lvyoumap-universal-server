@@ -31,9 +31,9 @@ function html(value) {
 
 function provider(candidate) {
   if (candidate.source === 'amap_exact' || candidate.source === 'amap_subspot' || candidate.source === 'curated_subspot') return '高德地图';
-  if (candidate.source === 'mct_official') return '景区官方';
+  if (candidate.source === 'mct_official' || candidate.source === 'official_site') return '景区官方';
   if (candidate.source === 'wikimedia_exact') return '公开百科';
-  if (candidate.source === 'ctrip_exact') return '景区公开资料';
+  if (candidate.source === 'ctrip_exact' || candidate.source === 'trip_exact') return '景区公开资料';
   return '公开资料';
 }
 

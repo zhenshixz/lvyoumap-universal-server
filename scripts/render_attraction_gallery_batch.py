@@ -65,7 +65,7 @@ def main():
     maximum = int(policy['maximumImages'])
     if not 1 <= minimum <= int(policy['targetImages']) <= maximum:
         raise ValueError('图库规则无效：必须满足 minimumImages <= targetImages <= maximumImages')
-    data['version'] = 5
+    data['version'] = max(6, int(data.get('version', 0)))
     data['galleryPolicy'] = policy
     data['rule'] = policy['rule']
     denied = {

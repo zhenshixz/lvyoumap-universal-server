@@ -16,6 +16,36 @@
 
 ---
 
+## 2026-09-08｜景区官网与 Trip 精确图库纳入全局来源层
+
+- 根因修正：此前图库白名单主要依赖高德、携程和公开百科，错误遗漏了景区官网与 Trip 精确实体图库；大量“待补”实际是来源发现能力不足，不代表互联网没有真实图片。
+- 新增 `content/attraction-gallery-source-pages.json` 作为困难项精确来源登记表。景区官网只采集登记页面、指定图片区段和同域路径；Trip 只解析精确 POI 或页面内精确同名图集，禁止扫描评论、附近景点、酒店或通用搜索结果。
+- 携程结构化详情中的全局 `poiId` 可直接绑定 Trip 同一实体图库；采集器会自动构造 Trip 精确实体页补图，不再要求逐景点人工搜索 Trip 链接。
+- Trip 页面缓存增加结构校验：缺少 `__NEXT_DATA__` 的风控/残页不会缓存复用；站点并发限制为2，并对网络失败短重试，解决“网页有图但批处理并发时被误判待补”。
+- 定点 `--ids` 补源不再改写全国批次规模；已将误显示为100的批次状态无联网恢复为实际520条，后续可在原批次上直接扩容且不会重跑已完成项。
+- 三个真实样本已通过清晰度、连通性、暗图和感知去重：厦门园林植物园官网选出5张园区实景；黄果树旅游景区由高德+Trip选出5张；香港中环摩天轮由高德+Trip选出5张。
+- 同一机制额外自动救回中山公园、杨柳青古镇；太原植物园新增候选因画面过暗被视觉门禁退回，没有为数量放行。固定520条批次从109个待补降至104个，415个达到3-5张。当前结果只在 beta 断点与隔离验收状态中，尚未写入图库，正式 Git 未修改。
+- 用户完成隔离预览验收后，已将本轮100个新增或变化图库安全写入 beta；原有336个保留，`attraction-gallery-overrides.json` 当前共436个。构建成功，图库批次415/415条均为3-5张唯一图片、封面一致，未命中拒绝清单或通用搜索图；剩余104个困难项继续保留断点，正式 Git 仍未修改。
+
+涉及：`content/attraction-gallery-source-pages.json`、`scripts/gallery_source_parsers.js`、`scripts/test_gallery_source_parsers.js`、`scripts/collect_attraction_galleries_batch.js`、`scripts/render_attraction_gallery_batch.py`、`scripts/start_attraction_gallery_batch_preview.js`、`scripts/apply_attraction_gallery_batch.js`。
+
+---
+
+## 2026-09-08｜图库困难项全局补源与城市级实体索引
+
+- 复用 `attraction-overrides.json`、`manual-attractions*.json`、核心清单和历史运行证据中的携程详情页，按景点 ID、省份、城市、规范名称与已确认别名建立一次性索引；同名实体不跨城市匹配。
+- 新增城市级携程索引：同一城市的待补目标合并扫描一次，最多30页，找到全部目标立即停止；页面与详情请求共享压缩缓存，单条失败只保留断点，不阻断整批。
+- 支持已确认别名和自动去城市前缀别名，例如“上海世纪公园”仅在上海城市索引中匹配“世纪公园”；携程详情页仍二次校验实体名称，避免跨城市同名误配。
+- 修复稳定 CDN 返回 `application/octet-stream` 时被提前误判的问题：先读取二进制，再以真实图片尺寸、文件体积和比例作为质量判定；同时明确排除高德 `/sns/ugccomment/` 用户评论图片。
+- 公开百科改为信任已严格匹配的 Wikidata 实体主图与其 Wikimedia Commons 专属分类；分类内仍执行许可、清晰度、暗图、噪声类型和感知重复图检查，不做通用图片搜索。
+- 204个困难项完成两轮断点补源：基础数量合格415个，经感知去重后全批520个中410个达到3-5张；相对已写入图库，本轮新增或变化95个，剩余109个继续保持待补，1个非景点保持排除。
+- 本轮95个待验收图库共420张：高德精确POI 155张、携程精确实体252张、公开百科精确实体13张；全部3-5张、URL唯一、未命中拒绝清单、无高德评论图。
+- 本轮只更新 beta 采集机制、本地断点和隔离预览，尚未写入 `attraction-gallery-overrides.json`，未修改正式 Git。
+
+涉及：`scripts/collect_attraction_galleries_batch.js`、`scripts/gallery_source_parsers.js`、`scripts/test_gallery_source_parsers.js`、`.runtime/attraction-gallery-batch`（仅本地断点）。
+
+---
+
 ## 2026-09-08｜全国图库10%批次与高效率分层方案
 
 - 建立固定的跨省10%图库批次，共520个景点；批次 ID 持久化到断点状态，后续写入或重跑不会导致样本漂移，也不会重跑已完成项。
