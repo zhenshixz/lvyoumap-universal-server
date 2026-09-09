@@ -361,6 +361,7 @@ function main() {
 
   const mergedManualCount = mergeManualAttractions(provinces, manualAttractions, identityDecisions);
   const attractionOverrideCount = applyAttractionOverrides(provinces, attractionOverrides, 'Attraction override');
+  applyImageOverrides(provinces, imageOverrides);
   const attractionGalleryOverrideCount = applyAttractionOverrides(
     provinces,
     attractionGalleryOverrides,
@@ -379,7 +380,6 @@ function main() {
     'Lazy-guide override',
     ['lazy_ai_text', 'lazy_ai_source']
   );
-  applyImageOverrides(provinces, imageOverrides);
 
   fs.rmSync(provincesDir, { recursive: true, force: true });
   fs.mkdirSync(provincesDir, { recursive: true });

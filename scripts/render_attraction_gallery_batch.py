@@ -1,5 +1,7 @@
+import argparse
 import json
 import math
+import random
 from pathlib import Path
 
 import cv2
@@ -58,7 +60,15 @@ def visual_ok(path, hashes):
     return True, value, ''
 
 
+def arguments():
+    parser = argparse.ArgumentParser(description='Filter gallery candidates and generate a bounded review sample.')
+    parser.add_argument('--contact-sheet-items', type=int, default=30,
+                        help='Number of attractions included in contact sheets; -1 keeps all, 0 disables sheets.')
+    return parser.parse_args()
+
+
 def main():
+    args = arguments()
     data = json.loads(STATE.read_text(encoding='utf-8-sig'))
     policy = json.loads(POLICY.read_text(encoding='utf-8-sig'))
     minimum = int(policy['minimumImages'])
@@ -108,15 +118,21 @@ def main():
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     temporary.replace(STATE)
 
+    review_items = ready
+    if args.contact_sheet_items == 0:
+        review_items = []
+    elif args.contact_sheet_items > 0 and len(ready) > args.contact_sheet_items:
+        review_items = random.Random('gallery-review-v1').sample(ready, args.contact_sheet_items)
+
     title = font(20)
     label = font(14)
     small = font(11)
     per_sheet = 6
-    for sheet_index in range(math.ceil(len(ready) / per_sheet)):
-        subset = ready[sheet_index * per_sheet:(sheet_index + 1) * per_sheet]
+    for sheet_index in range(math.ceil(len(review_items) / per_sheet)):
+        subset = review_items[sheet_index * per_sheet:(sheet_index + 1) * per_sheet]
         canvas = Image.new('RGB', (1320, 1000), '#f4f7fb')
         draw = ImageDraw.Draw(canvas)
-        draw.text((24, 16), f'全国图库稳定来源抽查（{minimum}-{maximum}张） {sheet_index + 1}/{math.ceil(len(ready) / per_sheet)}', fill='#0f172a', font=title)
+        draw.text((24, 16), f'全国图库稳定来源抽查（{minimum}-{maximum}张） {sheet_index + 1}/{math.ceil(len(review_items) / per_sheet)}', fill='#0f172a', font=title)
         for row, item in enumerate(subset):
             y = 58 + row * 154
             draw.text((24, y + 6), item['name'][:12], fill='#0f172a', font=label)
@@ -131,7 +147,7 @@ def main():
                 except Exception:
                     draw.rectangle((x, y, x + 210, y + 126), fill='#cbd5e1')
         canvas.save(OUTPUT / f'gallery-batch-{sheet_index + 1:02d}.jpg', quality=88)
-    print(f"视觉筛选完成：{len(data['items'])} 个中 {len(ready)} 个达到 {minimum}-{maximum} 张；生成 {math.ceil(len(ready) / per_sheet)} 张联系表。")
+    print(f"视觉筛选完成：{len(data['items'])} 个中 {len(ready)} 个达到 {minimum}-{maximum} 张；随机抽查 {len(review_items)} 个，生成 {math.ceil(len(review_items) / per_sheet)} 张联系表。")
 
 
 if __name__ == '__main__':

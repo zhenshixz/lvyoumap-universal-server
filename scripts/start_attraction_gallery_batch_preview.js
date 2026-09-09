@@ -4,6 +4,7 @@ const net = require('net');
 const os = require('os');
 const path = require('path');
 const { spawn } = require('child_process');
+const { publicProvider } = require('./gallery_source_policy');
 
 const root = path.resolve(__dirname, '..');
 const sourceSite = path.join(root, 'dist');
@@ -27,14 +28,6 @@ function html(value) {
   return String(value || '').replace(/[&<>"']/g, character => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
   })[character]);
-}
-
-function provider(candidate) {
-  if (candidate.source === 'amap_exact' || candidate.source === 'amap_subspot' || candidate.source === 'curated_subspot') return '高德地图';
-  if (candidate.source === 'mct_official' || candidate.source === 'official_site') return '景区官方';
-  if (candidate.source === 'wikimedia_exact') return '公开百科';
-  if (candidate.source === 'ctrip_exact' || candidate.source === 'trip_exact') return '景区公开资料';
-  return '公开资料';
 }
 
 function linkDirectory(target, destination) {
@@ -139,7 +132,7 @@ async function main() {
       const images = item.selected.map(candidate => ({
         url: candidate.url,
         caption: candidate.caption || item.name,
-        imageSource: candidate.sourceUrl ? { provider: provider(candidate), sourceUrl: candidate.sourceUrl } : undefined,
+        imageSource: candidate.sourceUrl ? { provider: publicProvider(candidate), sourceUrl: candidate.sourceUrl } : undefined,
       }));
       attraction.image = images[0].url;
       attraction.images = images;

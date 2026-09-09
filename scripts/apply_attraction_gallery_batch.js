@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { publicProvider } = require('./gallery_source_policy');
 
 const root = path.resolve(__dirname, '..');
 const statePath = path.join(root, '.runtime', 'attraction-gallery-batch', 'state.json');
@@ -18,14 +19,6 @@ function writeJsonAtomic(file, value) {
   const temp = `${file}.tmp`;
   fs.writeFileSync(temp, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
   fs.renameSync(temp, file);
-}
-
-function publicProvider(candidate) {
-  if (['amap_exact', 'amap_subspot', 'curated_subspot'].includes(candidate.source)) return '高德地图';
-  if (candidate.source === 'mct_official' || candidate.source === 'official_site') return '景区官方';
-  if (candidate.source === 'wikimedia_exact') return '公开百科';
-  if (candidate.source === 'ctrip_exact' || candidate.source === 'trip_exact') return '景区公开资料';
-  return '公开资料';
 }
 
 function sourceFor(candidate) {

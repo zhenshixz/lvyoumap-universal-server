@@ -1941,17 +1941,27 @@ async function handleSearch(query) {
 
     const searchIndex = await fetchJson(`/data/search-index.json?v=${STATIC_DATA_VERSION}`);
     const foundAttractions = searchIndex
-      .filter((attraction) => [
-        attraction.province,
-        attraction.provinceId,
-        attraction.name,
-        attraction.city,
-        attraction.level,
-        attraction.intro,
-        attraction.address,
-        ...(Array.isArray(attraction.tags) ? attraction.tags : []),
-      ].some((value) => String(value || "").toLowerCase().includes(queryClean)))
-      .map((attraction) => ({ ...attraction, provinceName: attraction.province }));
+      .map((attraction) => {
+        const name = String(attraction.name || "").trim().toLowerCase();
+        const city = String(attraction.city || "").trim().toLowerCase();
+        const tags = Array.isArray(attraction.tags)
+          ? attraction.tags.map((tag) => String(tag || "").trim().toLowerCase())
+          : [];
+
+        let searchScore = 0;
+        if (name === queryClean) searchScore = 1000;
+        else if (name.startsWith(queryClean)) searchScore = 800;
+        else if (name.includes(queryClean)) searchScore = 600;
+        else if (city === queryClean) searchScore = 500;
+        else if (tags.some((tag) => tag === queryClean)) searchScore = 400;
+        else if (tags.some((tag) => tag.includes(queryClean))) searchScore = 300;
+
+        return { ...attraction, provinceName: attraction.province, searchScore };
+      })
+      .filter((attraction) => attraction.searchScore > 0)
+      .sort((left, right) => right.searchScore - left.searchScore
+        || Number(right.rating || 0) - Number(left.rating || 0))
+      .slice(0, 20);
 
     selectedCityFilter = "全部";
     currentAttractionPage = 1;

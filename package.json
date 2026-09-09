@@ -17,6 +17,7 @@
     "gallery:batch:map-preview": "node scripts/start_attraction_gallery_batch_preview.js",
     "gallery:batch:apply": "node scripts/apply_attraction_gallery_batch.js",
     "gallery:batch:verify": "node scripts/verify_attraction_gallery_batch.js",
+    "gallery:source:check": "node scripts/test_gallery_source_policy.js && node scripts/test_gallery_source_parsers.js",
     "report:core": "node scripts/report_core_attractions.js --all",
     "report:core:fujian": "node scripts/report_core_attractions.js --province=福建",
     "report:tasks": "node scripts/create_maintenance_tasks.js",

@@ -5,6 +5,8 @@ const zlib = require('zlib');
 const { bufferDimensions } = require('./collect_core_details');
 const { parseCtripGallery, parseTripAttractionGallery, parseTripPhotoListGallery,
   parseOfficialSiteGallery, identityName } = require('./gallery_source_parsers');
+const { SOURCE_PLAN_VERSION, DISCOVERY_LIMITS, sourceRank, sourceOrderLabels, isStableGalleryUrl,
+  shouldProcessGalleryItem, summarizeSourceAttempts } = require('./gallery_source_policy');
 
 const root = path.resolve(__dirname, '..');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
@@ -20,6 +22,7 @@ const pageRequests = new Map();
 const trustedOfficialHosts = new Set();
 const tripRequestWaiters = [];
 let activeTripRequests = 0;
+const maxTripRequests = 4;
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
@@ -116,23 +119,7 @@ function hdUrl(value) {
 
 function stableUrl(value) {
   const url = hdUrl(value);
-  // Amap comment photos are user uploads and may contain posters, screenshots,
-  // watermarks or unrelated people. They are deliberately not a stable source.
-  if (/_AIGC\//i.test(url) || /aos-comment\.amap\.com\//i.test(url) || /\/sns\/ugccomment\//i.test(url)) return false;
-  if (url.startsWith('/')) return true;
-  try {
-    const parsed = new URL(url);
-    if (parsed.protocol !== 'https:') return false;
-    if (trustedOfficialHosts.has(parsed.hostname.toLowerCase())) return true;
-    return /^(?:store\.is\.autonavi\.com|aos-cdn-image\.amap\.com|lyfw\.mct\.gov\.cn|upload\.wikimedia\.org|commons\.wikimedia\.org|(?:dimg\d+|youimg\d+)\.c-ctrip\.com|(?:[a-z0-9-]+\.)+tripcdn\.com)$/i.test(parsed.hostname);
-  } catch {
-    return false;
-  }
-}
-
-function sourceRank(source) {
-  return ({ local: 65, official_site: 60, mct_official: 55, amap_exact: 50, trip_exact: 48,
-    amap_subspot: 45, curated_subspot: 42, ctrip_exact: 40, wikimedia_exact: 35 })[source] || 0;
+  return isStableGalleryUrl(url, trustedOfficialHosts);
 }
 
 function urlRank(url) {
@@ -184,7 +171,7 @@ function cachedPageUsable(url, html) {
 }
 
 async function withTripRequestSlot(task) {
-  if (activeTripRequests >= 2) await new Promise(resolve => tripRequestWaiters.push(resolve));
+  if (activeTripRequests >= maxTripRequests) await new Promise(resolve => tripRequestWaiters.push(resolve));
   activeTripRequests += 1;
   try {
     return await task();
@@ -466,7 +453,7 @@ async function wikimediaExact(attraction) {
     const names = [...new Set([attraction.name, ...(attraction.aliases || [])].filter(Boolean))];
     const targets = new Set(names.map(normalizeName).filter(Boolean));
     let hit = null;
-    for (const name of names.slice(0, 5)) {
+    for (const name of names.slice(0, DISCOVERY_LIMITS.wikimediaNames)) {
       const searchUrl = new URL('https://www.wikidata.org/w/api.php');
       Object.entries({ action: 'wbsearchentities', search: name, language: 'zh', uselang: 'zh', format: 'json', limit: '5', origin: '*' })
         .forEach(([key, value]) => searchUrl.searchParams.set(key, value));
@@ -682,18 +669,23 @@ async function ctripCityIndex(attraction, province, provincePages) {
       const slug = discoverCtripCitySlug(provinceHtml, city) || (sameRegion ? baseSlug : '');
       if (!slug) return output;
       const wanted = provincePages.wantedByCity.get(key) || new Set();
-      const found = new Set();
-      for (let page = 1; page <= 30; page += 1) {
-        const pageUrl = `https://you.ctrip.com/sight/${slug}/s0-p${page}.html`;
-        const links = parseCtripListLinks(await fetchText(pageUrl));
-        if (!links.length) break;
-        for (const link of links) {
-          const normalized = normalizeName(link.name);
-          const urls = output.get(normalized) || new Set();
-          urls.add(link.url); output.set(normalized, urls);
-          if (wanted.has(normalized)) found.add(normalized);
+      const pages = Array.from({ length: DISCOVERY_LIMITS.ctripCityPages }, (_, index) => index + 1);
+      for (let offset = 0; offset < pages.length; offset += DISCOVERY_LIMITS.ctripPageConcurrency) {
+        const group = pages.slice(offset, offset + DISCOVERY_LIMITS.ctripPageConcurrency);
+        const results = await Promise.all(group.map(async page => {
+          const pageUrl = `https://you.ctrip.com/sight/${slug}/s0-p${page}.html`;
+          try { return parseCtripListLinks(await fetchText(pageUrl)); } catch { return []; }
+        }));
+        let groupHasLinks = false;
+        for (const links of results) {
+          if (links.length) groupHasLinks = true;
+          for (const link of links) {
+            const normalized = normalizeName(link.name);
+            const urls = output.get(normalized) || new Set();
+            urls.add(link.url); output.set(normalized, urls);
+          }
         }
-        if (wanted.size && [...wanted].every(name => found.has(name))) break;
+        if (!groupHasLinks) break;
       }
       return output;
     })());
@@ -721,12 +713,12 @@ function mctOfficialImages() {
   return result;
 }
 
-async function ctripExact(attraction, province, provincePages) {
+async function ctripExact(attraction, province, provincePages, options = {}) {
   const base = provincePages.get(province);
   const aliases = attractionAliases(attraction, provincePages);
   const targets = new Set(aliases.map(normalizeName).filter(Boolean));
   const detailUrls = indexedCtripUrls(attraction, province, provincePages);
-  if (!detailUrls.length && base) {
+  if (!detailUrls.length && base && options.allowCityIndex !== false) {
     const cityIndex = await ctripCityIndex(attraction, province, provincePages);
     for (const target of targets) {
       for (const url of cityIndex.get(target) || []) detailUrls.push(url);
@@ -898,7 +890,9 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
   // are not needlessly chased to five.
   if (!options.primaryOnly && goodCount() < MIN_IMAGES) {
     try {
-      const photos = await ctripExact({ ...attraction, aliases }, province, provincePages);
+      const photos = await ctripExact({ ...attraction, aliases }, province, provincePages, {
+        allowCityIndex: !options.fastSecondary,
+      });
       attempts.push({ source: 'ctrip', result: photos.length ? 'found' : 'no_exact_page', count: photos.length });
       await check(photos);
       if (goodCount() < MIN_IMAGES) {
@@ -908,7 +902,9 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
       }
     } catch (error) { attempts.push({ source: 'ctrip', result: 'retryable_error', reason: error.message }); }
   }
-  if (!options.primaryOnly && goodCount() < MIN_IMAGES) await check(await wikimediaExact({ ...attraction, aliases }));
+  if (!options.primaryOnly && !options.fastSecondary && goodCount() < MIN_IMAGES) {
+    await check(await wikimediaExact({ ...attraction, aliases }));
+  }
   const seenHash = new Set();
   const qualified = probed
     .filter(item => item.accepted)
@@ -931,6 +927,8 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     updatedAt: new Date().toISOString(),
     rejectedCount: probed.length - qualified.length,
     rejected: probed.filter(item => !item.accepted).map(item => ({ url: item.url, source: item.source, reason: item.reason })),
+    sourcePlanVersion: SOURCE_PLAN_VERSION,
+    sourceSummary: summarizeSourceAttempts(attempts),
   };
 }
 
@@ -944,10 +942,11 @@ async function main() {
   const keys = keyPool();
   if (!keys.length) console.warn('未配置高德 Key，继续复用缓存及其他稳定来源。');
   const limit = Math.max(1, Number(argValue('limit', '100')) || 100);
-  const concurrency = Math.min(6, Math.max(1, Number(argValue('concurrency', '4')) || 4));
+  const concurrency = Math.min(12, Math.max(1, Number(argValue('concurrency', '6')) || 6));
   const reset = process.argv.includes('--reset');
   const repairPending = process.argv.includes('--repair-pending');
   const primaryOnly = process.argv.includes('--primary-only');
+  const fastSecondary = process.argv.includes('--fast-secondary');
   const retryUnresolved = process.argv.includes('--retry-unresolved');
   const requestedIds = [...new Set(argValue('ids').split(',').map(value => value.trim()).filter(Boolean))];
   const maxItems = Math.max(1, Number(argValue('max-items', String(requestedIds.length || limit))) || (requestedIds.length || limit));
@@ -966,8 +965,8 @@ async function main() {
   // Changing batch size or resuming must never discard existing progress.
   state.version = 6; state.galleryPolicy = galleryPolicy; state.rule = galleryPolicy.rule;
   if (!requestedIds.length) state.limit = limit;
-  state.sourceOrder = ['现有已核对图片', '景区官网精确图片区段', '文旅部名录', '高德精确POI',
-    'Trip精确POI图库', '携程实体绑定相册', '百科精确实体'];
+  state.sourcePlanVersion = SOURCE_PLAN_VERSION;
+  state.sourceOrder = sourceOrderLabels();
   const targets = requestedIds.length
     ? recordsForIds(db, requestedIds)
     : buildCohort(db, galleries, state, limit);
@@ -997,9 +996,11 @@ async function main() {
   const remaining = targets.filter(target => {
     if (requestedIds.length) return !galleryEntityExclusionReason(target.attraction);
     const prior = previousItems.get(target.attraction.id);
-    return !prior || (repairPending && ((prior.status === 'pending_sources'
-      && (prior.secondaryComplete !== true || retryUnresolved))
-      || (prior.selected || []).some(image => denylist.has(hdUrl(image.url)))));
+    return shouldProcessGalleryItem(prior, {
+      repairPending,
+      retryUnresolved,
+      hasDeniedSelection: (prior?.selected || []).some(image => denylist.has(hdUrl(image.url))),
+    });
   }).sort((a, b) => String(previousItems.get(a.attraction.id)?.updatedAt || '')
     .localeCompare(String(previousItems.get(b.attraction.id)?.updatedAt || ''))).slice(0, maxItems);
   registerCtripCityTargets(remaining, provincePages);
@@ -1008,7 +1009,10 @@ async function main() {
     const results = await Promise.all(group.map(async target => {
       const prior = previousItems.get(target.attraction.id);
       try {
-        return await collectOne(target, keys, exhausted, provincePages, officialImages, sourcePages, denylist, prior, { primaryOnly });
+        return await collectOne(target, keys, exhausted, provincePages, officialImages, sourcePages, denylist, prior, {
+          primaryOnly,
+          fastSecondary,
+        });
       } catch (error) {
         return { ...prior, id: target.attraction.id, name: target.attraction.name, province: target.province,
           status: 'pending_sources', qualified: prior?.qualified || [], qualifiedCount: prior?.qualifiedCount || 0,
@@ -1023,14 +1027,14 @@ async function main() {
     }
     state.updatedAt = new Date().toISOString();
     state.cohortSize = state.cohortIds.length;
-    state.runMode = primaryOnly ? 'primary-only' : 'full';
+    state.runMode = primaryOnly ? 'primary-only' : (fastSecondary ? 'fast-secondary' : 'full');
     state.exhaustedKeySlots = [...exhausted].map(value => value + 1);
     writeJson(statePath, state);
     // Amap exhaustion does not prevent official/OTA candidates from completing.
   }
   state.updatedAt = new Date().toISOString();
   state.cohortSize = state.cohortIds.length;
-  state.runMode = primaryOnly ? 'primary-only' : 'full';
+  state.runMode = primaryOnly ? 'primary-only' : (fastSecondary ? 'fast-secondary' : 'full');
   writeJson(statePath, state);
   const ready = state.items.filter(item => ['ready_for_visual_review', 'ready_for_user_review'].includes(item.status)).length;
   const pending = state.items.filter(item => item.status === 'pending_sources').length;
