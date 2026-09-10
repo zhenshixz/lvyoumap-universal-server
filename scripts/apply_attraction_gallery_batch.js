@@ -3,7 +3,7 @@ const path = require('path');
 const { publicProvider } = require('./gallery_source_policy');
 
 const root = path.resolve(__dirname, '..');
-const statePath = path.join(root, '.runtime', 'attraction-gallery-batch', 'state.json');
+const statePath = path.resolve(root, process.argv.find(a => a.startsWith('--state='))?.slice(8) || path.join(root, '.runtime', 'attraction-gallery-batch', 'state.json'));
 const overridePath = path.join(root, 'content', 'attraction-gallery-overrides.json');
 const denylistPath = path.join(root, 'content', 'attraction-gallery-image-denylist.json');
 const galleryPolicyPath = path.join(root, 'content', 'attraction-gallery-policy.json');

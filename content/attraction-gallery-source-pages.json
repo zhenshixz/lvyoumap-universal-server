@@ -1,6 +1,22 @@
 {
   "version": 1,
   "items": {
+    "amap_B0FFJ66TPR": [
+      {
+        "kind": "trip_attraction",
+        "url": "https://hk.trip.com/travel-guide/attraction/ulan/chaka-sky-no1-scenic-area-56290165/",
+        "entityName": "茶卡盐湖-茶卡天空壹号景区",
+        "poiId": 56290165
+      }
+    ],
+    "amap_B038300YXY": [
+      {
+        "kind": "official_site",
+        "url": "https://www.nanshan.com/www.nanshan.com/index.php/haishangguanyin/index.html",
+        "entityName": "南山文化旅游区南山海上观音",
+        "includePath": "/www.nanshan.com/wp-content/uploads/2017/03/"
+      }
+    ],
     "amap_B025003OPX": [
       {
         "kind": "official_site",

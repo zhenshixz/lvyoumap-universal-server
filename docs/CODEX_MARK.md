@@ -16,6 +16,62 @@
 
 ---
 
+## 2026-09-10 16:28｜Gemini下午成果审计、17项安全交付、全国静默续跑（交接入口）
+
+- 用户最新授权：审计稳定图库后写入 **beta** 供自行同步；剩余全国图库后台跑，明天验收。没有授权修改正式 Git。不要修改 Gemini 文档，也不要覆盖其前端改动。
+- 审计基线：state共5,171项；原固定待补池2,338项中243项处于可预览，5项待机器筛选，2,090项待来源。下午预览里“3,016”是全国累计数，不能当成剩余池完成数。机器标记 ready_for_user_review 只是候选达到数量/技术门槛，并非真实人工验收。
+- 确认根因：①内容守卫仅查caption/title/URL/比例，没有识别画面；②Trip仍混用recommendPhoto，不能宣称官方认证/100%实景；③清水岩误匹配清水岩温泉度假酒店，原来名称包含匹配和缓存cityVerified放行过宽；④乾隆行宫通过Wikimedia博物馆大分类混入墓葬；⑤已登记黑名单的丽江植物园4张图仍残留selected。
+- 本轮交付范围：250项有变化候选做结构审计，248项仍达到3张；从中分布抽查30项的全部图片，逐图筛选18项。63张浏览器无Referer实测62张成功，新疆人民剧场1张百科图加载失败后不足3张，暂缓。因此最终**17个景点、60张实际加载成功的图片**写入`content/attraction-gallery-overrides.json`，新增17、更新0、图库总数2,854；原2,837项保持不变。不能把未抽查的其余候选宣称已审计完成。
+- 17项：长白山国家级自然保护区、泉湖公园、慕士塔格冰川公园、森兰绿地、直贡梯寺、独山子大峡谷、惠山古镇景区、三圣岛、成吉思汗陵园、关帝庙、1915广场、青莲寺、北京鲁迅博物馆、抚顺战犯管理所、九龙洞、安徽大青山野生动物世界、凤凰山森林公园。
+- 先隔离预览后写入；自动备份`.runtime/backups/attraction-gallery-overrides.20260910-162516.json`。本批准确清单和选图在`.runtime/attraction-gallery-batch/codex-approved.json`；结构问题`codex-audit.json`；浏览器结果`codex-browser-check.json`。拒绝清单新增URL检查与既有图库无重叠。
+- 核心修复：Trip图库API只取officialPhoto（名称不等于可证明官方授权）；保留图片原始title；即使缓存有cityVerified也重新检查Trip详情实体，名称改为规范化等值匹配，避免“清水岩”包含匹配酒店；Wikimedia分类图不再仅凭分类归属放行；采集逐图剔除，3–5张保留，不整组清空好图。仍需明天看画面，不能承诺程序已消除所有无关图。
+- 后台入口：`run_gallery_background.bat`（静默启动/断点续跑），`preview_gallery_background.bat`（重新生成并显示电脑/手机预览地址），`stop_gallery_background.bat`（本批结束后安全停下）。三个BAT均ASCII+CRLF，启动校验依赖。运行时电脑须开机联网、不休眠；重启后手动再次点启动BAT。
+- 后台实现：`scripts/codex_gallery_background.js`，单写入锁、8项一批/4并发、采集阶段4分钟超时、单批失败继续其他批，先首轮覆盖再最多二次尝试、优先只差1张项；不在20%停下、不自动写入内容。每30分钟和结束时生成隔离预览。最终若仍未补齐，状态为pass_complete_with_unresolved并保留具体来源失败记录，不能虚报全部完成。与旧Gemini后台/巡检不要同时运行。
+- 后台范围：启动时全部pending_sources/ready_for_visual_review共2,111项；原有可预览但未人工验收项仍在隔离预览。真实实时进度见`.runtime/attraction-gallery-batch/codex-background.json`，日志`codex-background.log`；锁`codex-background.lock`。结束对话不会主动停止任务。
+- 预览：本批17项使用`.runtime/previews/attraction-gallery-batch/state.json`记录地址（本次4185）；后台使用`.runtime/previews/gallery-background/state.json`（从4187选端口）。以对应state.json的实际端口为准。服务启动后检查/api/health。索引都为`/preview.html`，手机使用局域网IP192.168.16.43（换网络后重新点预览BAT）。
+- 空间：审图缓存曾约19GB。新增`codex_compact_gallery_cache.py`只压缩.runtime中审图副本，保留线上URL、原尺寸、原hash，另记reviewHash；每批最多80张或10秒，禁止全量压缩拖住采集。初始全量压缩尝试超时，已终止旧子进程并以有界实现重启；不删除正式图片。联系表仅6张小图，不把全量图片送进对话。
+- 验证：来源解析和网页来源回归通过；BAT编码检查通过；构建成功；隔离索引17项；浏览器地图搜索及详情打开、60张外链图实际加载检查。后台已实际经过多批采集、筛选、断点保存、暂停和恢复；新增候选数量以实时状态为准，不代表全部质量通过。
+- 新对话最短接续提示：**请先读docs/CODEX_MARK.md最新记录，以及.runtime/attraction-gallery-batch/codex-background.json和日志末尾。继续全国图库验收，先汇报实际进度；不要重跑已完成项，不动正式仓，不修改GEMINI_MARK.md。** 不必附带旧长对话。脚本codex_gallery_audit/finalize/prepare为本次快照操作，不要在后台写入时重复执行。
+
+## 2026-09-10｜全国剩余图库：精确页发现提速、真实进度与未解决阻点
+
+- 当前边界：本阶段只在 beta 的 `.runtime/attraction-gallery-batch` 生成候选和断点，未把本阶段新候选写入 `content/attraction-gallery-overrides.json`，未修改正式 Git。固定剩余清单为 2,338 个，第一轮 20% 验收目标 468 个；截至本次交接，109 个已完成视觉筛选并可供用户复核，9 个停在待视觉筛选，2,220 个仍待补源。不能把全局状态中的累计完成数或尝试数当成本轮完成数。
+- 已验证的有效提速：Trip 站内搜索使用隐藏浏览器并发读取真实渲染结果，从每轮 4 个提升到 8 个；24 个搜索可在约 8-12 秒内完成。`gallery_discovery_bridge.js` 的发现版本为 3，只保存名称命中且城市中文或拼音命中的页面，写入 `cityVerified: true`；旧版未带城市核验的页面不能直接信任。
+- 已接入 Trip 完整图库接口：`POST https://www.trip.com/restapi/soa2/19912/getTripPoiPhotoGallery`，新增 POST JSON 缓存、`trip-page`/`trip-gallery` 独立限流和 `parseTripPhotoGallery()`。接口未被拦截时能返回大量 1080-2700px 原图；例如黔灵山已验证有效。
+- 当前核心阻点不是“网上没图”：连续请求后 Trip 接口返回 HTTP 430，响应头明确为 `WafAntibotCheckFailed`。此前代码声称 `fallback_to_page` 但没有真正抓详情页，已修成接口失败时实际解析公开详情页；然而多数详情页首屏只嵌入 1 张低分辨率头图，仍不足以补齐 3 张，不能把这种结果归因为景点缺图。
+- 已修复重复耗时：`run_fresh_trip_galleries.js` 仅消费 `discoveredAt > item.updatedAt` 的新发现且城市已核验页面，自动调用快速 Trip 采集、视觉筛选并更新固定里程碑；同一失败页面不会在无新来源时反复执行。`fast-secondary` 只跑已发现的 Trip 精确页，慢源留给确实不足的项目。
+- 已修复多页面漏采：同一景点最多两个城市核验页面会聚合图片，第一页面为空时继续第二页面，拿够 5 张即停。实际重跑表明部分页面仍只有低清头图，说明这项修复正确但不能绕过 WAF。
+- 百科快速通道结论：固定清单有 346 个待补项命中现有百科标题索引，其中 99 个只差 1 张；试跑 72 个仅 2 个达到数量门槛，已及时停止。标题命中不代表正文有合格大图，不应原样重复这轮低收益任务。
+- 严格实体规则：POI 数字 ID 是 Trip 实体的权威部分，URL slug 可能被忽略。测试时猜测 `...-76857` 实际跳转到大连“秀月峰景区”，证明禁止猜 URL、猜 POI ID或仅凭 slug 采图；必须使用站内搜索返回的精确链接并核对页面名称和城市。
+- 下一步优先级：先研究浏览器已登录/已通过 WAF 的 Trip 详情页“查看全部”图库和页面资源，验证能否批量取得原图链接；若不能，再对剩余项并行发现景区官网精确图库和百科正文图库。不要继续无差别调用已被 430 的 Node 接口，也不要重复跑已证明低命中的百科标题清单。
+- 本轮验证：`gallery_source_parsers`、`gallery_web_sources` 测试通过，相关脚本语法检查通过。未达到 468 个，尚未生成本轮 20% 地图原样隔离预览，不能宣称本阶段已交付。
+- 关键文件：`scripts/gallery_network.js`、`scripts/gallery_source_parsers.js`、`scripts/gallery_web_sources.js`、`scripts/gallery_source_policy.js`、`scripts/gallery_discovery_bridge.js`、`scripts/run_fresh_trip_galleries.js`、`scripts/run_gallery_remaining.js`、`scripts/collect_attraction_galleries_batch.js`、`package.json`、`package-lock.json`。运行态断点位于 `.runtime/attraction-gallery-batch/`，不应同步到正式仓或线上。
+
+---
+
+## 2026-09-09｜剩余图库按20%验收：并行取源与断点修复（进行中）
+
+- 用户目标：剩余景点全部补成3–5张真实清晰图，每完成20%给隔离预览；不能用错图、低清图凑数，不能把请求失败当成网上没有图片。固定剩余范围2,338个，首轮需真正完成468个，不能以尝试次数代替完成数。未获本批验收前不写入图库内容，更不修改正式Git。
+- 官网、Trip独立发现、百科正文、既有携程绑定并行获取；搜索引擎仅用于发现页面。Google浏览器搜索有效，但Node请求只返回脚本外壳；Bing曾返回完全无关泛化结果，DDG遇到202挑战页及403。发现失败必须保留具体错误，不能宣称源站缺图。
+- 新增请求去重、成功JSON缓存、按来源限速和Retry-After冷却。修复百科一家限流连带暂停其他百科的问题；暂停批次只记录实际执行项，恢复时校正旧版误记的未执行项。`remaining-milestones.json`固定任务分母，完成20%后停止等待验收。
+- 发现并修复实质漏图：百科解析先删除信息框再校验城市，恰好把仅在信息框里的地域证据删掉，导致有图页面被错拒。现先校验地域再移除信息框等非正文图片区，乔家大院实际恢复至5张候选。
+- 为减少逐景点搜索，新增每次最多50个标题的百科精确解析索引；复用百科自身重定向和繁简转换，后续优先处理已发现页面。正文图已有原始尺寸和标准缩略图URL时直接复用，避免再逐条调用图片元数据API；最终仍检测实际图片尺寸、去重和来源。
+- Google浏览器找到茶卡天空壹号的Trip精确页（POI 56290165），已登记，可提取5张候选；经现有视觉筛选保留5张。乔家大院与其共用一张小联系表检查，不为全量任务生成截图。
+- 测试：请求缓存/冷却测试、搜索解析和信息框地域回归通过；2个定点实例已实际采集和渲染。全国20%尚未完成，不能据此宣布全量可验收。新增结果仅在.runtime候选中。
+- 关键文件：`scripts/gallery_web_sources.js`、`scripts/gallery_network.js`、`scripts/run_gallery_remaining.js`、`scripts/seed_gallery_wikipedia.js`、采集/渲染/预览脚本、`content/attraction-gallery-source-pages.json`。Gemini历史不改。
+
+## 2026-09-09｜第二次用户补源验证：纠正“困难项”归因
+
+- 教训：用户连续两次从官网、Trip、百科找到丰富实景图，证明此前把采集未命中笼统称为“困难项”不准确。应首先排查页面发现、实体绑定、网络请求、解析、域名和质量筛选，不能以程序返回空数组推断网上缺图，也不能反复要求用户逐条找链接。
+- 已确认根因：南京数据库名称仅为“总统府”，Wikidata 首个同名结果是通用概念；旧白名单漏掉实际 API 返回的高清缩略图域名 `thumb.wikimedia.org`；官网仅有3个手工登记实体；百科异常原先静默返回空数组，未记录请求失败。
+- 本次修复：百科先查询城市限定名称并保留原名称查询；接纳 Wikimedia 官方缩略图域名；记录百科命中实体、候选数量或请求错误；官网解析提前剔除 JS/CSS/SVG 和 logo2 等标志文件；来源策略升级为2，已完成图库不重跑。
+- 实测：南山海上观音官网取得3张尺寸合格候选，南京总统府19张、天津古文化街20张；仅对这3个执行视觉去重后分别保留3、5、5张，生成一张约165KB联系表。数量合格不等于图片构图已最优，南京样本含石狮、地面等局部细节，后续选图应优先景观全貌并保留差异视角。
+- 本轮采集曾误带虞山国家森林公园ID，已核对其仍为待补0张，仅本地采集断点更新，未写入地图内容；随后按正确ID补跑天津古文化街。定点任务必须校对ID对应名称再执行。
+- 当前边界：本次3个仅进入候选隔离验收，未写入内容。仍未实现全国官网自动发现、Trip独立发现和维基百科正文图库解析；不能把上述设想描述为已完成，也不能凭3个样本宣称全国全部图片已覆盖。
+- 后续必须继承：复用已有内容中的精确官网/Trip/百科链接与已确认实体绑定；每个来源独立尝试，Trip不能以携程先返回照片为前置条件；达到3张即停止昂贵补源。仅对未完成项按失败层级成批修复，记录具体原因、尝试来源、下一步动作。禁止原策略无差别重复全量跑、无限重试或用错图低清图凑数。
+- 验证：来源策略和解析现有测试通过；定点视觉脚本增加 `--ids`，只处理指定项并准确报告范围。隔离预览入口使用相对链接，手机点击不再跳到手机自己的127.0.0.1。
+- 涉及：`scripts/gallery_source_policy.js`、`scripts/collect_attraction_galleries_batch.js`、`scripts/gallery_source_parsers.js`、`scripts/render_attraction_gallery_batch.py`、`scripts/start_attraction_gallery_batch_preview.js`、`content/attraction-gallery-source-pages.json`。Gemini文档和正式Git未修改。
+
 ## 2026-09-09｜全国搜索相关度修复
 
 - 问题/目标：短关键词会匹配介绍和地址，且结果未按相关度排序，例如搜索“王府”出现苏州博物馆、温都水城等弱相关项。

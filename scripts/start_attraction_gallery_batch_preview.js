@@ -9,10 +9,10 @@ const { publicProvider } = require('./gallery_source_policy');
 const root = path.resolve(__dirname, '..');
 const sourceSite = path.join(root, 'dist');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
-const batchStatePath = path.join(runtime, 'state.json');
+const batchStatePath = path.resolve(root, process.argv.find(a => a.startsWith('--state='))?.slice(8) || path.join(runtime, 'state.json'));
 const galleryPolicyPath = path.join(root, 'content', 'attraction-gallery-policy.json');
 const galleryOverridesPath = path.join(root, 'content', 'attraction-gallery-overrides.json');
-const previewRoot = path.join(root, '.runtime', 'previews', 'attraction-gallery-batch');
+const previewRoot = path.join(root, '.runtime', 'previews', process.argv.includes('--background') ? 'gallery-background' : 'attraction-gallery-batch');
 const stagingRoot = `${previewRoot}.next`;
 const previewStatePath = path.join(previewRoot, 'state.json');
 
@@ -41,7 +41,7 @@ function copyFile(name, site) {
   fs.copyFileSync(source, path.join(site, name));
 }
 
-function freePort(start = 4185) {
+function freePort(start = process.argv.includes('--background') ? 4187 : 4185) {
   return new Promise((resolve, reject) => {
     const tryPort = port => {
       const server = net.createServer();
@@ -102,7 +102,7 @@ async function main() {
     const selected = item.selected.map(image => image.url);
     return JSON.stringify(existing) !== JSON.stringify(selected);
   });
-  if (!reviewItems.length) throw new Error('当前没有新增或发生变化的3-5张图库需要复核。');
+  if (!reviewItems.length && !process.argv.includes('--background')) throw new Error('当前没有新增或发生变化的3-5张图库需要复核。');
 
   await stopOldPreview();
   fs.rmSync(stagingRoot, { recursive: true, force: true });
@@ -158,7 +158,7 @@ async function main() {
   const finalSite = path.join(previewRoot, 'site');
   const port = await freePort();
   const localBase = `http://127.0.0.1:${port}`;
-  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(reviewItems, localBase, policy), 'utf8');
+  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(reviewItems, '', policy), 'utf8');
   const child = spawn(process.execPath, [path.join(root, 'server', 'index.js')], {
     cwd: root,
     detached: true,
@@ -167,11 +167,50 @@ async function main() {
     env: { ...process.env, HOST: '0.0.0.0', PORT: String(port), STATIC_DIR: finalSite, SERVICE_NAME: 'lvyoumap-gallery-batch-preview' },
   });
   child.unref();
-  const lan = Object.values(os.networkInterfaces()).flat().filter(item => item?.family === 'IPv4' && !item.internal).map(item => `http://${item.address}:${port}/preview.html`);
-  writeJson(path.join(previewRoot, 'state.json'), { status: 'ready', pid: child.pid, port, itemCount: reviewItems.length, previewUrl: `${localBase}/preview.html`, lanUrls: lan, generatedAt: new Date().toISOString(), sourceDataReadOnly: true });
-  console.log(`隔离预览已生成：${localBase}/preview.html`);
-  for (const url of lan) console.log(`局域网：${url}`);
-  console.log(`本轮待验收景点：${reviewItems.length} 个；未修改 content 或正式 Git。`);
+  let verifiedHealth = null;
+  for (let attempt = 0; attempt < 20; attempt++) {
+    verifiedHealth = await health(port);
+    if (verifiedHealth?.service === 'lvyoumap-gallery-batch-preview') break;
+    await new Promise(resolve => setTimeout(resolve, 250));
+  }
+  if (verifiedHealth?.service !== 'lvyoumap-gallery-batch-preview') throw new Error('预览进程未通过健康检查，请检查端口或服务启动日志。');
+  const ifaces = os.networkInterfaces();
+  const physicalLans = [];
+  for (const [name, list] of Object.entries(ifaces)) {
+    if (/vEthernet|WSL|VMware|VirtualBox|Loopback|Meta|TAP|Tun|VPN|Npcap/i.test(name)) continue;
+    for (const item of list || []) {
+      if (item.family === 'IPv4' && !item.internal) {
+        if (/^(192\.168\.|10\.|172\.(1[6-9]|2[0-9]|3[0-1])\.)/.test(item.address)) {
+          physicalLans.push(item.address);
+        }
+      }
+    }
+  }
+  const lanUrls = physicalLans.map(ip => `http://${ip}:${port}/`);
+  writeJson(path.join(previewRoot, 'state.json'), {
+    status: 'ready',
+    pid: child.pid,
+    port,
+    itemCount: reviewItems.length,
+    previewUrl: `${localBase}/`,
+    mapUrl: `${localBase}/`,
+    indexUrl: `${localBase}/preview.html`,
+    physicalIp: physicalLans[0] || '127.0.0.1',
+    lanUrls,
+    generatedAt: new Date().toISOString(),
+    sourceDataReadOnly: true
+  });
+  console.log(`\n==================================================`);
+  console.log(`  【全国景点图库】隔离预览地图服务已就绪`);
+  console.log(`  本轮待验收景点：${reviewItems.length} 个（数据沙箱隔离，未修改正式库）`);
+  console.log(`--------------------------------------------------`);
+  console.log(`  🗺️ 电脑本地地图：${localBase}/`);
+  console.log(`  📋 待审清单索引：${localBase}/preview.html`);
+  for (const ip of physicalLans) {
+    console.log(`  📱 手机局域网地图：http://${ip}:${port}/`);
+    console.log(`  📱 手机待审清单：http://${ip}:${port}/preview.html`);
+  }
+  console.log(`==================================================\n`);
 }
 
 main().catch(error => {

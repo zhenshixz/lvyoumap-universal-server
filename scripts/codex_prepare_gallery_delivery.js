@@ -1,0 +1,10 @@
+const fs=require('fs');
+const path=require('path');
+const dir=path.resolve(__dirname,'../.runtime/attraction-gallery-batch');
+const snapshot=JSON.parse(fs.readFileSync(path.join(dir,'codex-approved.json'),'utf8'));
+const checks=JSON.parse(fs.readFileSync(path.join(dir,'codex-browser-check.json'),'utf8'));
+const ok=new Set(checks.filter(x=>x.ok).map(x=>x.url));
+snapshot.items=snapshot.items.map(x=>({...x,selected:x.selected.filter(y=>ok.has(y.url))})).filter(x=>x.selected.length>=3);
+snapshot.browserVerifiedAt=new Date().toISOString();
+fs.writeFileSync(path.join(dir,'codex-approved.json'),JSON.stringify(snapshot,null,2));
+console.log('Delivery: '+snapshot.items.length+' visually inspected galleries, '+snapshot.items.reduce((n,x)=>n+x.selected.length,0)+' browser-loaded images.');

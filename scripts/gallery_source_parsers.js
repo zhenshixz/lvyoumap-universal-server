@@ -1,4 +1,6 @@
 // Gallery-specific extraction; does not alter the shared basic-information parser.
+const { isContaminatedImage } = require('./gallery_content_guard');
+
 function identityName(value) {
   return String(value || '').toLowerCase().replace(/[\s·•（）()\[\]【】\-_—]/g, '')
     .replace(/国家级|世界文化遗产|世界自然遗产/g, '')
@@ -23,7 +25,10 @@ function parseCtripGallery(html, attraction) {
     city: detail.districtName || '',
     address: detail.address || '',
     poiId: detail.poiId,
-    photos: photos.filter(photo => /^https:\/\//i.test(photo.imageUrl || '')).slice(0, 12),
+    photos: photos
+      .filter(photo => /^https:\/\//i.test(photo.imageUrl || ''))
+      .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title, caption: photo.caption }, detail.poiName).bad)
+      .slice(0, 12),
   };
 }
 
@@ -43,8 +48,28 @@ function parseTripAttractionGallery(html, expectedPoiId) {
     name: poi.poiSubtitleName || poi.poiName,
     poiId: poi.poiId,
     photos: photos.filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?tripcdn\.com\//i.test(photo.imageUrl || ''))
+      .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title }, poi.poiSubtitleName || poi.poiName).bad)
       .filter(photo => !seen.has(photo.imageUrl) && seen.add(photo.imageUrl)).slice(0, 12),
   };
+}
+
+function parseTripPhotoGallery(payload) {
+  if (!payload || payload.ResponseStatus?.Ack !== 'Success') throw new Error('Trip完整图库接口异常');
+  // Keep the explicit officialPhoto field; recommended/UGC pools need separate content review.
+  const groups = [payload.officialPhoto];
+  const seen = new Set();
+  const photos = groups.flatMap(group => Array.isArray(group?.photoList) ? group.photoList : [])
+    .filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?(?:tripcdn\.com|c-ctrip\.com)\//i.test(photo.imageUrl || ''))
+    .filter(photo => !seen.has(photo.imageUrl) && seen.add(photo.imageUrl))
+    .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title }).bad)
+    .map(photo => ({
+      imageUrl: photo.imageUrl,
+      title: photo.title || '',
+      width: Number(photo.width) || 0,
+      height: Number(photo.height) || 0,
+    }));
+  if (!photos.length) throw new Error('Trip完整图库为空');
+  return photos;
 }
 
 function parseTripPhotoListGallery(html, expectedName) {
@@ -56,7 +81,8 @@ function parseTripPhotoListGallery(html, expectedName) {
   return {
     name: group.name,
     poiId: group.poiId,
-    photos: (group.imageDetail || []).filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?tripcdn\.com\//i.test(photo.imageUrl || '')).slice(0, 12),
+    photos: (group.imageDetail || []).filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?tripcdn\.com\//i.test(photo.imageUrl || ''))
+      .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title }, group.name).bad).slice(0, 12),
   };
 }
 
@@ -90,10 +116,12 @@ function parseOfficialSiteGallery(html, source) {
     }
     if (imageUrl.protocol !== 'https:' || imageUrl.hostname !== pageUrl.hostname) continue;
     if (includePaths.length && !includePaths.some(prefix => imageUrl.pathname.startsWith(prefix))) continue;
-    if (/(?:^|\/)(?:favicon|logo|icon|sprite|qrcode|qr-code)(?:[._/-]|$)/i.test(imageUrl.pathname)) continue;
+    if (/\.(?:js|css|html?|svg|ico)(?:$)/i.test(imageUrl.pathname)) continue;
+    if (/(?:^|\/)(?:favicon|logo|icon|sprite|qrcode|qr-code)(?:\d|[._/-]|$)/i.test(imageUrl.pathname)) continue;
     imageUrl.hash = '';
     const url = imageUrl.href;
     if (seen.has(url)) continue;
+    if (isContaminatedImage({ url }, source.entityName || '').bad) continue;
     seen.add(url);
     photos.push({ imageUrl: url });
   }
@@ -105,6 +133,7 @@ module.exports = {
   identityName,
   parseCtripGallery,
   parseTripAttractionGallery,
+  parseTripPhotoGallery,
   parseTripPhotoListGallery,
   parseOfficialSiteGallery,
 };

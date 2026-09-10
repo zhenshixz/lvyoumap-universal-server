@@ -1,5 +1,10 @@
 [
   {
+    "url": "https://www.guiyang.gov.cn/ztzl/yhjsms/yk/sygy/202408/W020240807380180027736_ORIGIN.jpg",
+    "reason": "官网页面里的动物表情拼图，非单幅景观展示图；可靠来源仍需画面复核",
+    "recordedAt": "2026-09-09"
+  },
+  {
     "url": "https://store.is.autonavi.com/showpic/dd533d9045da9fe7a10ec93dbfe78147?type=7",
     "reason": "视觉复核发现图片自带素材水印",
     "recordedAt": "2026-09-04"
@@ -33,26 +38,265 @@
     "url": "https://dimg04.c-ctrip.com/images/350i180000013wq4bCDD6.jpg",
     "reason": "2026-09-07实图复核：德天夜游活动价目宣传海报",
     "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/5d7fe39384ff71e80d23297d9179272d?type=7",
+    "reason": "实图复核：圣索菲亚教堂图片顶部有摄影水印",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/45c3accb7103a2830000002745610582?type=7",
+    "reason": "实图复核：五一广场图为攻略文字拼贴封面",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo2912000b94556pF4C6.jpg",
+    "reason": "实图复核：长隆图有叠加宣传标识",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo6h12000b9452rhAB14.jpg",
+    "reason": "实图复核：长隆图有叠加宣传标识",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/350j1f000001fxbmx040A.jpg",
+    "reason": "实图复核：长隆图有叠加宣传标识",
+    "recordedAt": "2026-09-07"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/b64fb3beb53e4a4eb4f36338da368a89?type=7",
+    "reason": "2026-09-08随机复核：宣传海报，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/f4c857d7054fce1c0000002093248213?type=7",
+    "reason": "2026-09-08随机复核：导览图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/888b410b15c469f47a6465a035d4f24c?type=7",
+    "reason": "2026-09-08随机复核：宣传图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/7e8be918149828fd123f93cf94ac64a8?type=7",
+    "reason": "2026-09-08随机复核：带平台水印，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/d14e58171936a07f4ce1d9c9a6da567d?type=7",
+    "reason": "2026-09-08随机复核：景区导览图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/fce167745a03c982256afd9cc97b6bc5?type=7",
+    "reason": "2026-09-08随机复核：营销海报，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/faba941f915512ed04615864f37a7cec?type=7",
+    "reason": "2026-09-08随机复核：活动宣传图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/10090q000000gdzhl3852.jpg",
+    "reason": "2026-09-08随机复核：尖沙咀相册中的无关生活照",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/61915da76134bcdb0000003056002103?type=7",
+    "reason": "2026-09-08随机复核：导览图，不作为雕塑实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/f24522113e1ceff70000005171348350?type=7",
+    "reason": "2026-09-08随机复核：文章宣传缩略图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/33eb06faadb514870d47aa74e39ea4aa?type=7",
+    "reason": "2026-09-08随机复核：活动海报，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/201ae70ffe8b0fbd5e16c6a25a821541?type=7",
+    "reason": "2026-09-08随机复核：营销海报，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/b2d81d1719c701d68e90efb063b232ce?type=7",
+    "reason": "2026-09-08随机复核：营销海报，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/b467f203feb6d01a2af52f1f8e91faa7?type=7",
+    "reason": "2026-09-08随机复核：活动宣传图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/d5a127bc7603a30e7f9771c4c3a037e0?type=7",
+    "reason": "2026-09-08随机复核：活动宣传图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/34657cb164a5a0e70000003387794796?type=7",
+    "reason": "2026-09-08随机复核：游览路线图，不作为景点实景图",
+    "recordedAt": "2026-09-08"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi4812000e9o4npx559C.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.803Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi2s12000e9o4jceF0D7.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.803Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi3m12000e9o4jbl66CE.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.803Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi1m12000e9o4whh5BAE.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.803Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi0c12000e9o4q9y755A.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/ed831781f58ff086729291877fbd7a72?type=7",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi3l12000pmrzyhs48A2.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo1l12000sxu7oufE781.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo1j12000sxvvqm7EDB2.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo3n12000s7s5n9n9765.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo3j12000s7w1k0qBE3E.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1lo2512000s7s5w8jA40C.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/be7dd95713fbff910000003766362978?type=7",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/dc6a77943c5893fa0000002953582697?type=7",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/6aee1f2a85d110d1e6901225eed79ce4?type=7",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Yunlong_Mountain_Imperial_Palace_for_Short_Stays_in_1831.jpg/1920px-The_Yunlong_Mountain_Imperial_Palace_for_Short_Stays_in_1831.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Xuzhou_Museum_01_2013-01.JPG/1920px-Xuzhou_Museum_01_2013-01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Stone_Outer_Coffin%2C_Tiechashan.jpg/1920px-Stone_Outer_Coffin%2C_Tiechashan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Biluo_Hill_Tomb_XZM.jpg/1920px-Biluo_Hill_Tomb_XZM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi5112000nrfcdjdB71D.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/ae6ac6d5b52436a10000002635860805?type=7",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi6m12000if1l37k9498.jpg",
+    "reason": "2026-09-10 visual audit: unrelated content, collage, watermark or diagram",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1A0t1g000001gvzt8BB11.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi6f12000s9od5dz6853.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi5712000s9oddhu319F.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi5e12000s9od7tw48A2.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi1a12000qnfjpjxD60B.webp",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/0HJ2m12000g6ej0zpD983.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://dimg04.c-ctrip.com/images/1mi1112000si6p0ve86E5.jpg",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/a1a97f28c2dd0f2d5c094edb18c10dcc?type=7",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
+  },
+  {
+    "url": "https://store.is.autonavi.com/showpic/f355bb7160f979d70000003327980635?type=7",
+    "reason": "Known rejected image from previous visual audit",
+    "reviewedAt": "2026-09-10T08:11:31.804Z"
   }
-  ,{"url":"https://store.is.autonavi.com/showpic/5d7fe39384ff71e80d23297d9179272d?type=7","reason":"实图复核：圣索菲亚教堂图片顶部有摄影水印","recordedAt":"2026-09-07"}
-  ,{"url":"https://store.is.autonavi.com/showpic/45c3accb7103a2830000002745610582?type=7","reason":"实图复核：五一广场图为攻略文字拼贴封面","recordedAt":"2026-09-07"}
-  ,{"url":"https://dimg04.c-ctrip.com/images/1lo2912000b94556pF4C6.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
-  ,{"url":"https://dimg04.c-ctrip.com/images/1lo6h12000b9452rhAB14.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
-  ,{"url":"https://dimg04.c-ctrip.com/images/350j1f000001fxbmx040A.jpg","reason":"实图复核：长隆图有叠加宣传标识","recordedAt":"2026-09-07"}
-  ,{"url":"https://store.is.autonavi.com/showpic/b64fb3beb53e4a4eb4f36338da368a89?type=7","reason":"2026-09-08随机复核：宣传海报，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/f4c857d7054fce1c0000002093248213?type=7","reason":"2026-09-08随机复核：导览图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/888b410b15c469f47a6465a035d4f24c?type=7","reason":"2026-09-08随机复核：宣传图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/7e8be918149828fd123f93cf94ac64a8?type=7","reason":"2026-09-08随机复核：带平台水印，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/d14e58171936a07f4ce1d9c9a6da567d?type=7","reason":"2026-09-08随机复核：景区导览图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/fce167745a03c982256afd9cc97b6bc5?type=7","reason":"2026-09-08随机复核：营销海报，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/faba941f915512ed04615864f37a7cec?type=7","reason":"2026-09-08随机复核：活动宣传图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://dimg04.c-ctrip.com/images/10090q000000gdzhl3852.jpg","reason":"2026-09-08随机复核：尖沙咀相册中的无关生活照","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/61915da76134bcdb0000003056002103?type=7","reason":"2026-09-08随机复核：导览图，不作为雕塑实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/f24522113e1ceff70000005171348350?type=7","reason":"2026-09-08随机复核：文章宣传缩略图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/33eb06faadb514870d47aa74e39ea4aa?type=7","reason":"2026-09-08随机复核：活动海报，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/201ae70ffe8b0fbd5e16c6a25a821541?type=7","reason":"2026-09-08随机复核：营销海报，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/b2d81d1719c701d68e90efb063b232ce?type=7","reason":"2026-09-08随机复核：营销海报，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/b467f203feb6d01a2af52f1f8e91faa7?type=7","reason":"2026-09-08随机复核：活动宣传图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/d5a127bc7603a30e7f9771c4c3a037e0?type=7","reason":"2026-09-08随机复核：活动宣传图，不作为景点实景图","recordedAt":"2026-09-08"}
-  ,{"url":"https://store.is.autonavi.com/showpic/34657cb164a5a0e70000003387794796?type=7","reason":"2026-09-08随机复核：游览路线图，不作为景点实景图","recordedAt":"2026-09-08"}
 ]

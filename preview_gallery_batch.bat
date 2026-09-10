@@ -23,10 +23,11 @@ if errorlevel 1 (
   exit /b 1
 )
 
-for /f "tokens=2 delims=:," %%P in ('findstr /c:"\"port\"" ".runtime\previews\attraction-gallery-batch\state.json"') do set "PREVIEW_PORT=%%~P"
+for /f "tokens=2 delims=:," %%P in ('findstr /c:""port"" ".runtime\previews\attraction-gallery-batch\state.json"') do set "PREVIEW_PORT=%%~P"
 set "PREVIEW_PORT=%PREVIEW_PORT: =%"
-if defined PREVIEW_PORT start "" "http://127.0.0.1:%PREVIEW_PORT%/preview.html"
+if defined PREVIEW_PORT start "" "http://127.0.0.1:%PREVIEW_PORT%/"
 
-echo [OK] Preview is running. Close this window when review is finished.
+echo [OK] 隔离地图预览已在浏览器中打开，手机连接同一Wi-Fi访问控制台打印的内网IP即可真实验收。
+echo 关闭此窗口即可退出。
 pause
 exit /b 0

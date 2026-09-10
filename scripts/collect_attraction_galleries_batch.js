@@ -1,15 +1,19 @@
+const { isContaminatedImage, evaluateGalleryPurity } = require('./gallery_content_guard');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const zlib = require('zlib');
 const { bufferDimensions } = require('./collect_core_details');
-const { parseCtripGallery, parseTripAttractionGallery, parseTripPhotoListGallery,
+const { parseCtripGallery, parseTripAttractionGallery, parseTripPhotoGallery, parseTripPhotoListGallery,
   parseOfficialSiteGallery, identityName } = require('./gallery_source_parsers');
 const { SOURCE_PLAN_VERSION, DISCOVERY_LIMITS, sourceRank, sourceOrderLabels, isStableGalleryUrl,
   shouldProcessGalleryItem, summarizeSourceAttempts } = require('./gallery_source_policy');
+const { createWebSources, qualityScore, specificEntityName, simplify } = require('./gallery_web_sources');
+const { createGalleryNetwork } = require('./gallery_network');
 
 const root = path.resolve(__dirname, '..');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
+const sourceNetwork = createGalleryNetwork(path.join(runtime, 'api-cache'));
 const statePath = path.join(runtime, 'state.json');
 const imageDir = path.join(runtime, 'images');
 const amapCacheDir = path.join(runtime, 'amap-cache');
@@ -23,6 +27,7 @@ const trustedOfficialHosts = new Set();
 const tripRequestWaiters = [];
 let activeTripRequests = 0;
 const maxTripRequests = 4;
+const webSources = createWebSources({ fetchText, fetchJson, postJson: sourceNetwork.postJson, trustedOfficialHosts, discoveryDir: path.join(runtime, 'discovered-pages') });
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, ''));
@@ -137,20 +142,15 @@ function urlRank(url) {
 }
 
 function qualityPass(dimensions, bytes) {
-  if (!dimensions || bytes < 70 * 1024) return false;
+  if (!dimensions || bytes < 40 * 1024) return false;
   const long = Math.max(dimensions.width, dimensions.height);
   const short = Math.min(dimensions.width, dimensions.height);
   const ratio = long / Math.max(1, short);
-  return long >= 1000 && short >= 560 && ratio <= 2.5;
+  return long >= 720 && short >= 400 && ratio <= 2.5;
 }
 
 async function fetchJson(url, timeout = 12000) {
-  const response = await fetch(url, {
-    headers: { 'User-Agent': 'ChinaTourismMapGallery/2.0' },
-    signal: AbortSignal.timeout(timeout),
-  });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return response.json();
+  return sourceNetwork.json(url, timeout);
 }
 
 function fetchText(url, timeout = 18000) {
@@ -186,15 +186,16 @@ async function downloadPage(url, headers, timeout, attempts) {
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     try {
-      const response = await fetch(url, {
+      const response = await sourceNetwork.sourceFetch(url, {
         headers,
         redirect: 'follow',
-        signal: AbortSignal.timeout(timeout),
+        get signal() { return AbortSignal.timeout(timeout); },
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return await response.text();
     } catch (error) {
       lastError = error;
+      if (error.retryAt) throw error;
       if (attempt + 1 < attempts) await new Promise(resolve => setTimeout(resolve, 350 * (attempt + 1)));
     }
   }
@@ -268,6 +269,14 @@ async function registeredExactSources(attraction, aliases, sourcePages) {
         parsed = parseOfficialSiteGallery(await fetchText(source.url), source);
       } else if (source.kind === 'trip_attraction') {
         parsed = parseTripAttractionGallery(await fetchText(source.url), source.poiId);
+        try {
+          parsed.photos = parseTripPhotoGallery(await sourceNetwork.postJson('https://hk.trip.com/restapi/soa2/19912/getTripPoiPhotoGallery', {
+            poiId: Number(source.poiId), index: 1, count: 20, typeList: [1, 2, 3, 4, 5], tagId: '',
+          }));
+          attempts.push({ source: 'trip_full_gallery', result: 'found', count: parsed.photos.length });
+        } catch (error) {
+          attempts.push({ source: 'trip_full_gallery', result: 'fallback_to_page', reason: error.message });
+        }
       } else {
         parsed = parseTripPhotoListGallery(await fetchText(source.url), source.entityName || attraction.name);
       }
@@ -298,7 +307,7 @@ async function tripExactByPoiIds(attraction, poiIds) {
       const parsed = parseTripAttractionGallery(await fetchText(sourceUrl), poiId);
       const photos = parsed.photos.map(photo => ({
         url: photo.imageUrl,
-        caption: `${attraction.name} Trip 精确实体图片`,
+        caption: photo.title || `${attraction.name} Trip 精确实体图片`,
         source: 'trip_exact',
         sourceUrl,
         sourceField: 'poiData.poiImage',
@@ -448,9 +457,16 @@ function commonsCandidate(page, attraction, trustedEntity = false) {
   };
 }
 
-async function wikimediaExact(attraction) {
+async function wikimediaExact(attraction, attempts = []) {
   try {
-    const names = [...new Set([attraction.name, ...(attraction.aliases || [])].filter(Boolean))];
+    const baseNames = [...new Set([attraction.name, ...(attraction.aliases || [])].filter(value => value && specificEntityName(value)))];
+    const city = String(attraction.city || '').replace(/(?:自治州|地区|盟|市|区|县)$/g, '');
+    const cityQualifiedNames = city
+      ? baseNames.filter(name => !String(name).startsWith(city)).map(name => `${city}${name}`)
+      : [];
+    // City-qualified names disambiguate generic entities such as "总统府" and
+    // "中山公园"; the original name remains the second lookup for unique names.
+    const names = [...new Set([...cityQualifiedNames, ...baseNames])];
     const targets = new Set(names.map(normalizeName).filter(Boolean));
     let hit = null;
     for (const name of names.slice(0, DISCOVERY_LIMITS.wikimediaNames)) {
@@ -462,8 +478,16 @@ async function wikimediaExact(attraction) {
         .some(value => targets.has(normalizeName(value))));
       if (hit) break;
     }
-    if (!hit) return [];
+    if (!hit) {
+      attempts.push({ source: 'wikimedia_exact', result: 'no_exact_entity', count: 0 });
+      return [];
+    }
     const entity = (await fetchJson(`https://www.wikidata.org/wiki/Special:EntityData/${hit.id}.json`)).entities?.[hit.id];
+    const identityText = simplify(JSON.stringify({ labels: entity?.labels, descriptions: entity?.descriptions, sitelinks: entity?.sitelinks }));
+    if ((!entity?.claims?.P625 && !entity?.claims?.P131) || (city && !identityText.includes(city))) {
+      attempts.push({ source: 'wikimedia_exact', result: 'entity_rejected', entityId: hit.id, reason: '缺少具体地点或城市归属证据' });
+      return [];
+    }
     const file = entity?.claims?.P18?.[0]?.mainsnak?.datavalue?.value || '';
     const category = entity?.claims?.P373?.[0]?.mainsnak?.datavalue?.value || '';
     const candidates = [];
@@ -474,15 +498,19 @@ async function wikimediaExact(attraction) {
       candidates.push(...Object.values((await fetchJson(url)).query?.pages || {})
         .map(page => commonsCandidate(page, attraction, true)).filter(Boolean));
     }
+    // A Commons category can cover a whole museum or parent attraction.
+    // Category membership alone does not establish the pictured entity.
     if (category) {
       const url = new URL('https://commons.wikimedia.org/w/api.php');
       Object.entries({ action: 'query', generator: 'categorymembers', gcmtitle: `Category:${category}`, gcmtype: 'file', gcmlimit: '30', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '1800', format: 'json', origin: '*' })
         .forEach(([key, value]) => url.searchParams.set(key, value));
       candidates.push(...Object.values((await fetchJson(url)).query?.pages || {})
-        .map(page => commonsCandidate(page, attraction, true)).filter(Boolean));
+        .map(page => commonsCandidate(page, attraction, false)).filter(Boolean));
     }
-    return candidates;
-  } catch {
+    attempts.push({ source: 'wikimedia_exact', result: candidates.length ? 'found' : 'empty', count: candidates.length, entityId: hit.id });
+    return candidates.map(candidate => ({ ...candidate, identityEvidence: { wikidataEntity: hit.id, city } }));
+  } catch (error) {
+    attempts.push({ source: 'wikimedia_exact', result: 'retryable_error', reason: error.message });
     return [];
   }
 }
@@ -731,7 +759,7 @@ async function ctripExact(attraction, province, provincePages, options = {}) {
       return detail.photos.filter(photo => stableUrl(photo.imageUrl))
         .map(photo => ({
           url: photo.imageUrl,
-          caption: attraction.name,
+          caption: photo.title || photo.caption || attraction.name,
           source: 'ctrip_exact',
           sourceUrl: detailUrl,
           sourceField: 'poiDetail.imageInfo.poiPhotoImageList',
@@ -746,12 +774,20 @@ async function ctripExact(attraction, province, provincePages, options = {}) {
   return [];
 }
 
-async function probe(candidate, attractionId, index) {
+async function probe(candidate, attractionName, index) {
   try {
+    const preCheck = isContaminatedImage(candidate, attractionName);
+    if (preCheck.bad) {
+      return { ...candidate, accepted: false, reason: preCheck.reason };
+    }
     const buffer = await fetchImage(candidate.url);
     const dimensions = bufferDimensions(buffer);
     if (!qualityPass(dimensions, buffer.length)) {
       return { ...candidate, accepted: false, reason: '分辨率或文件体积不足', dimensions, bytes: buffer.length };
+    }
+    const postCheck = isContaminatedImage({ ...candidate, dimensions }, attractionName);
+    if (postCheck.bad) {
+      return { ...candidate, accepted: false, reason: postCheck.reason, dimensions, bytes: buffer.length };
     }
     const hash = crypto.createHash('sha256').update(buffer).digest('hex');
     const extension = buffer.slice(0, 2).toString('hex') === 'ffd8' ? 'jpg' : 'img';
@@ -823,14 +859,49 @@ function recordsForIds(db, ids) {
 async function collectOne(record, keys, exhausted, provincePages, officialImages, sourcePages, denylist, previous, options = {}) {
   const { attraction, province } = record;
   const retryAmap = !previous || previous.amapComplete !== true;
-  const exact = retryAmap && attraction.id.startsWith('amap_') ? await amapDetail(attraction.id, keys, exhausted) : null;
   const candidates = [];
   const attempts = [];
+  const aliases = attractionAliases(attraction, provincePages);
+  const entity = { ...attraction, aliases };
+  const hasDiscoveredTrip = fs.existsSync(path.join(runtime, 'discovered-pages', `${attraction.id}-trip.json`));
+  const allSecondaryJobs = [
+    ['official_discovery', async () => (sourcePages.get(attraction.id) || []).some(s => s.kind === 'official_site')
+      ? [] : webSources.official(entity, attempts)],
+    ['trip_discovery', () => webSources.trip(entity, attempts)],
+    ['wikipedia_article', () => webSources.wikipedia(entity, attempts)],
+    ['wikimedia_exact', () => wikimediaExact(entity, attempts)],
+    ['ctrip', async () => {
+      const photos = await ctripExact(entity, province, provincePages, { allowCityIndex: false });
+      attempts.push({ source: 'ctrip', result: photos.length ? 'found' : 'no_exact_page', count: photos.length });
+      return photos;
+    }],
+  ];
+  // Once an exact Trip entity page has been discovered, its complete gallery
+  // is the fastest stable source. Slow discovery lanes are deferred only for
+  // items that still remain below three photos after this pass.
+  const jobs = options.primaryOnly ? [] : (options.wikiOnly
+    ? allSecondaryJobs.filter(([source]) => ['wikipedia_article', 'wikimedia_exact'].includes(source))
+    : (options.fastSecondary && hasDiscoveredTrip
+      ? allSecondaryJobs.filter(([source]) => source === 'trip_discovery')
+      : allSecondaryJobs));
+  // Start all discovery lanes together. A failure in one lane cannot prevent
+  // another lane from returning candidates; provenance is retained per lane.
+  const parallelCandidates = Promise.all(jobs.map(async ([source, task]) => {
+    const started = Date.now();
+    try {
+      const photos = await task();
+      attempts.push({ source, result: 'lane_complete', count: photos.length, durationMs: Date.now() - started });
+      return photos;
+    } catch (error) {
+      attempts.push({ source, result: 'retryable_error', reason: error.message, durationMs: Date.now() - started });
+      return [];
+    }
+  }));
+  const exact = retryAmap && attraction.id.startsWith('amap_') ? await amapDetail(attraction.id, keys, exhausted) : null;
   if (stableUrl(attraction.image)) {
     const local = String(attraction.image).startsWith('/');
     candidates.push({ url: attraction.image, caption: `${attraction.name}现有主图`, source: local ? 'local' : 'amap_exact', sourcePoiId: attraction.id.replace(/^amap_/i, '') });
   }
-  const aliases = attractionAliases(attraction, provincePages);
   const registered = await registeredExactSources(attraction, aliases, sourcePages);
   candidates.push(...registered.candidates);
   attempts.push(...registered.attempts);
@@ -868,6 +939,7 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
   const probed = [];
   const attempted = new Set();
   for (const old of uniqueCandidates(previous?.qualified || [], denylist)) {
+    if (old.source === 'wikimedia_exact' && !old.identityEvidence) continue;
     try {
       const buffer = fs.readFileSync(path.join(root, old.reviewFile));
       const expected = old.reviewCompacted ? old.reviewHash : old.hash;
@@ -881,37 +953,37 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     for (let offset = 0; offset < fresh.length; offset += 3) {
       const chunk = fresh.slice(offset, offset + 3);
       chunk.forEach(item => attempted.add(item.url));
-      probed.push(...await Promise.all(chunk.map(item => probe(item, attraction.id, probed.length))));
+      probed.push(...await Promise.all(chunk.map(item => probe(item, attraction.name, probed.length))));
     }
   };
   await check(candidates);
-  // Primary exact sources may naturally provide up to the configured maximum.
-  // Expensive secondary lookups run only below the minimum, so 3-4 good images
-  // are not needlessly chased to five.
-  if (!options.primaryOnly && goodCount() < MIN_IMAGES) {
-    try {
-      const photos = await ctripExact({ ...attraction, aliases }, province, provincePages, {
-        allowCityIndex: !options.fastSecondary,
-      });
-      attempts.push({ source: 'ctrip', result: photos.length ? 'found' : 'no_exact_page', count: photos.length });
-      await check(photos);
-      if (goodCount() < MIN_IMAGES) {
-        const trip = await tripExactByPoiIds(attraction, photos.map(photo => photo.sourcePoiId));
-        attempts.push(...trip.attempts);
-        await check(trip.candidates);
-      }
-    } catch (error) { attempts.push({ source: 'ctrip', result: 'retryable_error', reason: error.message }); }
-  }
-  if (!options.primaryOnly && !options.fastSecondary && goodCount() < MIN_IMAGES) {
-    await check(await wikimediaExact({ ...attraction, aliases }));
+  const pools = await parallelCandidates;
+  // Give every source a bounded first probe, instead of filling the candidate
+  // cap entirely from whichever platform was listed first.
+  for (let offset = 0; offset < 12; offset += 3) {
+    const round = pools.flatMap(pool => pool.slice(offset, offset + 3));
+    if (!round.length) break;
+    await check(round);
+    if (goodCount() >= MAX_IMAGES) break;
   }
   const seenHash = new Set();
-  const qualified = probed
+  let qualified = probed
     .filter(item => item.accepted)
-    .sort((left, right) => sourceRank(right.source) - sourceRank(left.source)
+    .sort((left, right) => qualityScore(right) - qualityScore(left)
+      || sourceRank(right.source) - sourceRank(left.source)
       || urlRank(right.url) - urlRank(left.url)
       || (right.dimensions.width * right.dimensions.height) - (left.dimensions.width * left.dimensions.height))
     .filter(item => !seenHash.has(item.hash) && seenHash.add(item.hash));
+
+  // 全量体系化整组纯净度熔断审核（All-or-Nothing）
+    let circuitBrokenReason = '';
+  if (qualified.length > 0) {
+    const purity = evaluateGalleryPurity(qualified, attraction.name);
+      if (purity.isContaminated) {
+        circuitBrokenReason = purity.reason;
+        qualified = qualified.filter(image => !isContaminatedImage(image, attraction.name).bad);
+      }
+  }
   return {
     id: attraction.id,
     name: attraction.name,
@@ -921,6 +993,7 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     qualifiedCount: qualified.length,
     qualified: qualified.slice(0, 10),
     attempts,
+    collectionMode: options.primaryOnly ? 'primary-only' : 'parallel-web-sources',
     amapComplete: previous?.amapComplete === true || !!(exact || namedExact),
     primaryComplete: previous?.primaryComplete === true || options.primaryOnly || !!(exact || namedExact),
     secondaryComplete: previous?.secondaryComplete === true || !options.primaryOnly,
@@ -929,10 +1002,19 @@ async function collectOne(record, keys, exhausted, provincePages, officialImages
     rejected: probed.filter(item => !item.accepted).map(item => ({ url: item.url, source: item.source, reason: item.reason })),
     sourcePlanVersion: SOURCE_PLAN_VERSION,
     sourceSummary: summarizeSourceAttempts(attempts),
+    retryable: attempts.some(attempt => attempt.result === 'retryable_error'),
+    pendingExplanation: qualified.length >= MIN_IMAGES ? '' : attempts.filter(a => a.result !== 'lane_complete').map(a => `${a.source}: ${a.reason || a.result}`).join('; '),
   };
 }
 
 async function main() {
+  const writerLock = path.join(runtime, 'codex-background.lock');
+  if (fs.existsSync(writerLock)) {
+    const owner = readJson(writerLock).pid;
+    let running = false;
+    try { process.kill(owner, 0); running = true; } catch { /* stale lock */ }
+    if (running && process.ppid !== owner) throw new Error('后台任务正在写入图库状态，请勿同时启动其他采集器。');
+  }
   loadEnv();
   compactPageCache();
   if (process.argv.includes('--compact-cache-only')) {
@@ -947,6 +1029,7 @@ async function main() {
   const repairPending = process.argv.includes('--repair-pending');
   const primaryOnly = process.argv.includes('--primary-only');
   const fastSecondary = process.argv.includes('--fast-secondary');
+  const wikiOnly = process.argv.includes('--wiki-only');
   const retryUnresolved = process.argv.includes('--retry-unresolved');
   const requestedIds = [...new Set(argValue('ids').split(',').map(value => value.trim()).filter(Boolean))];
   const maxItems = Math.max(1, Number(argValue('max-items', String(requestedIds.length || limit))) || (requestedIds.length || limit));
@@ -964,6 +1047,8 @@ async function main() {
   };
   // Changing batch size or resuming must never discard existing progress.
   state.version = 6; state.galleryPolicy = galleryPolicy; state.rule = galleryPolicy.rule;
+  delete state.resumeAfter;
+  delete state.pausedSources;
   if (!requestedIds.length) state.limit = limit;
   state.sourcePlanVersion = SOURCE_PLAN_VERSION;
   state.sourceOrder = sourceOrderLabels();
@@ -1012,11 +1097,12 @@ async function main() {
         return await collectOne(target, keys, exhausted, provincePages, officialImages, sourcePages, denylist, prior, {
           primaryOnly,
           fastSecondary,
+          wikiOnly,
         });
       } catch (error) {
         return { ...prior, id: target.attraction.id, name: target.attraction.name, province: target.province,
           status: 'pending_sources', qualified: prior?.qualified || [], qualifiedCount: prior?.qualifiedCount || 0,
-          error: error.message };
+          error: error.message, retryable: true, updatedAt: new Date().toISOString() };
       }
     }));
     for (const result of results) {
@@ -1030,6 +1116,13 @@ async function main() {
     state.runMode = primaryOnly ? 'primary-only' : (fastSecondary ? 'fast-secondary' : 'full');
     state.exhaustedKeySlots = [...exhausted].map(value => value + 1);
     writeJson(statePath, state);
+    const cooldowns = sourceNetwork.cooldowns();
+    if (['zh.wikipedia.org', 'www.wikidata.org'].every(host => cooldowns.some(x => x.host === host)) && cooldowns.some(x => /duckduckgo/.test(x.host))) {
+      state.pausedSources = cooldowns;
+      state.resumeAfter = cooldowns.map(x => x.retryAt).sort().at(-1);
+      console.log(`主要补源站点正在限流，已保存断点；建议 ${state.resumeAfter} 后继续，未启动的景点保持原状。`);
+      break;
+    }
     // Amap exhaustion does not prevent official/OTA candidates from completing.
   }
   state.updatedAt = new Date().toISOString();
@@ -1039,7 +1132,7 @@ async function main() {
   const ready = state.items.filter(item => ['ready_for_visual_review', 'ready_for_user_review'].includes(item.status)).length;
   const pending = state.items.filter(item => item.status === 'pending_sources').length;
   const excluded = state.items.filter(item => item.status === 'excluded_non_attraction').length;
-  console.log(`图库采集完成：${state.items.length} 个，${ready} 个达到${MIN_IMAGES}-${MAX_IMAGES}张基础门槛，${pending} 个保持待补，${excluded} 个非景点已排除。`);
+  console.log(`图库采集${state.resumeAfter ? '已保存断点' : '本轮结束'}：${state.items.length} 个，${ready} 个达到${MIN_IMAGES}-${MAX_IMAGES}张基础门槛，${pending} 个保持待补，${excluded} 个非景点已排除。`);
   console.log(`状态文件：${path.relative(root, statePath)}`);
 }
 

@@ -64,11 +64,13 @@ def arguments():
     parser = argparse.ArgumentParser(description='Filter gallery candidates and generate a bounded review sample.')
     parser.add_argument('--contact-sheet-items', type=int, default=30,
                         help='Number of attractions included in contact sheets; -1 keeps all, 0 disables sheets.')
+    parser.add_argument('--ids', default='', help='Only review these comma-separated attraction IDs.')
     return parser.parse_args()
 
 
 def main():
     args = arguments()
+    requested_ids = set(filter(None, args.ids.split(',')))
     data = json.loads(STATE.read_text(encoding='utf-8-sig'))
     policy = json.loads(POLICY.read_text(encoding='utf-8-sig'))
     minimum = int(policy['minimumImages'])
@@ -86,6 +88,8 @@ def main():
         old.unlink()
     ready = []
     for item in data['items']:
+        if requested_ids and item['id'] not in requested_ids:
+            continue
         if item.get('status', '').startswith('excluded_'):
             continue
         if item.get('status') == 'ready_for_user_review' and minimum <= len(item.get('selected', [])) <= maximum:
@@ -112,6 +116,7 @@ def main():
                 continue
         item['selected'] = selected[:maximum]
         item['status'] = 'ready_for_user_review' if len(item['selected']) >= minimum else 'pending_sources'
+        item['contentReview'] = 'pending_human_review'
         if len(item['selected']) >= minimum:
             ready.append(item)
     temporary = STATE.with_suffix('.json.tmp')
@@ -147,7 +152,8 @@ def main():
                 except Exception:
                     draw.rectangle((x, y, x + 210, y + 126), fill='#cbd5e1')
         canvas.save(OUTPUT / f'gallery-batch-{sheet_index + 1:02d}.jpg', quality=88)
-    print(f"视觉筛选完成：{len(data['items'])} 个中 {len(ready)} 个达到 {minimum}-{maximum} 张；随机抽查 {len(review_items)} 个，生成 {math.ceil(len(review_items) / per_sheet)} 张联系表。")
+    scope_count = sum(1 for item in data['items'] if not requested_ids or item['id'] in requested_ids)
+    print(f"视觉筛选完成：本轮 {scope_count} 个中 {len(ready)} 个达到 {minimum}-{maximum} 张；抽查 {len(review_items)} 个，生成 {math.ceil(len(review_items) / per_sheet)} 张联系表。")
 
 
 if __name__ == '__main__':

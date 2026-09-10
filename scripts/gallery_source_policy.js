@@ -1,4 +1,4 @@
-const SOURCE_PLAN_VERSION = 1;
+const SOURCE_PLAN_VERSION = 9;
 
 const SOURCE_DEFINITIONS = Object.freeze({
   local: { rank: 65, label: '现有已核对图片', provider: '景区官方' },
@@ -23,7 +23,7 @@ const DISCOVERY_LIMITS = Object.freeze({
   wikimediaNames: 2,
 });
 
-const STABLE_IMAGE_HOST = /^(?:store\.is\.autonavi\.com|aos-cdn-image\.amap\.com|lyfw\.mct\.gov\.cn|upload\.wikimedia\.org|commons\.wikimedia\.org|(?:dimg\d+|youimg\d+)\.c-ctrip\.com|(?:[a-z0-9-]+\.)+tripcdn\.com)$/i;
+const STABLE_IMAGE_HOST = /^(?:store\.is\.autonavi\.com|aos-cdn-image\.amap\.com|lyfw\.mct\.gov\.cn|upload\.wikimedia\.org|thumb\.wikimedia\.org|commons\.wikimedia\.org|(?:dimg\d+|youimg\d+)\.c-ctrip\.com|(?:[a-z0-9-]+\.)+tripcdn\.com)$/i;
 
 function sourceRank(source) {
   return SOURCE_DEFINITIONS[source]?.rank || 0;
@@ -55,6 +55,7 @@ function shouldProcessGalleryItem(prior, options = {}) {
   if (options.hasDeniedSelection) return true;
   if (!options.repairPending || prior.status !== 'pending_sources') return false;
   return prior.secondaryComplete !== true
+    || prior.retryable === true
     || prior.sourcePlanVersion !== SOURCE_PLAN_VERSION
     || options.retryUnresolved === true;
 }
@@ -62,6 +63,7 @@ function shouldProcessGalleryItem(prior, options = {}) {
 function summarizeSourceAttempts(attempts = []) {
   const summary = {};
   for (const attempt of attempts) {
+    if (attempt.result === 'lane_complete') continue;
     const source = String(attempt.source || 'unknown').replace(/^ctrip$/, 'ctrip_exact');
     const current = summary[source] || { found: 0, empty: 0, retryableErrors: 0 };
     if (attempt.result === 'found') current.found += Number(attempt.count) || 1;
