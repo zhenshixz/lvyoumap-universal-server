@@ -1,0 +1,60 @@
+const assert = require('assert/strict');
+const C = require('./gallery_link_batch_common');
+const { fs, path, read, write } = C;
+const sandbox = fs.mkdtempSync(path.join(C.runtime, 'workbench-test-'));
+const originalRuntime = C.runtime;
+function put(file, value) { fs.mkdirSync(path.dirname(file), { recursive: true }); write(file, value); }
+try {
+  C.root = sandbox; C.runtime = path.join(sandbox, '.runtime/gallery-link-batches'); C.runs = path.join(C.runtime, 'runs');
+  fs.mkdirSync(C.runs, { recursive: true });
+  C.batchList = () => fs.readdirSync(C.runs).filter(x => !x.startsWith('.')).map(id => ({ id }));
+  C.batchPath = id => path.join(C.runs, id);
+  const input = { revision: 1, savedAt: '2026-09-11', items: [{ id: 'a', name: 'A', url: '', skip: false }] };
+  put(path.join(C.runtime, 'draft.json'), input);
+  C.draft = () => read(path.join(C.runtime, 'draft.json'));
+  const rows = ['a','b','c','d','e'].map(id => ({ id, name:id, city:'城市', status:'pending_sources' }));
+  put(path.join(sandbox, '.runtime/attraction-gallery-batch/state.json'), { items: rows });
+  put(path.join(sandbox, 'content/attraction-gallery-overrides.json'), { e: { image:'existing' } });
+  const actions = require('./gallery_link_batch_actions');
+  assert.deepEqual(actions.pool().map(i=>i.id), ['b','c','d']);
+  assert.throws(()=>actions.generate({count:101,revision:1}));
+  const generated = actions.generate({count:2,revision:1});
+  assert.equal(generated.items.length,2); assert.equal(generated.savedAt,null);
+  assert.equal(actions.draftList().length,2);
+  assert.deepEqual(actions.pool().map(i=>i.id),['d'],'archived/current unrun lists reserve their items');
+  const saved = actions.saveDraft(generated); assert.ok(saved.savedAt);
+  const first = actions.draftList().find(d=>d.id!==saved.draftId);
+  const restored = actions.restore({id:first.id,revision:saved.revision});
+  assert.equal(restored.items[0].id,'a');
+  assert.throws(()=>actions.saveDraft(saved),'stale revision must not overwrite');
+  const state={id:'20260911-160000-aaaaaa',status:'completed',items:[{id:'b',name:'B',url:'https://hk.trip.com/travel-guide/attraction/city/place-123/',images:[{url:'https://ak-d.tripcdn.com/images/one.jpg',source:'trip',accepted:true}]}]};
+  put(path.join(C.runs,state.id,'state.json'),state);
+  assert.ok(!actions.pool().some(i=>i.id==='b'),'pending review excluded');
+  const { makePlan, execute } = require('./gallery_link_batch_apply');
+  assert.throws(()=>makePlan(state,[{id:'b',urls:['https://evil.invalid/not-reviewed.jpg']}]));
+  const plan=makePlan(state,[{id:'b',urls:[state.items[0].images[0].url]}]);
+  put(path.join(sandbox,'content/db.json'),{provinces:{test:{attractions:rows}}});
+  put(path.join(sandbox,'data/provinces/test.json'),{before:true});
+  put(path.join(sandbox,'dist/marker.json'),{before:true});
+  const build=()=>{put(path.join(sandbox,'.dist-next/data/provinces/test.json'),{attractions:plan.items.map(i=>({...i,image:i.images[0].url}))});};
+  const options={root:sandbox,dir:path.join(C.runs,state.id),build};
+  const result=execute(plan,options); assert.equal(result.status,'applied');assert.equal(result.imageCount,1);
+  assert.deepEqual(read(path.join(sandbox,'content/attraction-gallery-overrides.json')).e,{image:'existing'});
+  assert.equal(execute(plan,{...options,build:()=>{throw Error('must not rebuild')}}).status,'applied');
+  assert.ok(!actions.pool('retry').some(i=>i.id==='b'),'applied one-image item is settled');
+  const failureDir=path.join(C.runs,'20260911-160001-bbbbbb');fs.mkdirSync(failureDir);
+  const before=fs.readFileSync(path.join(sandbox,'content/attraction-gallery-overrides.json'),'utf8');
+  assert.throws(()=>execute(plan,{root:sandbox,dir:failureDir,build:()=>{put(path.join(sandbox,'data/provinces/test.json'),{broken:true});throw Error('mock build failure');}}),/mock build/);
+  assert.equal(fs.readFileSync(path.join(sandbox,'content/attraction-gallery-overrides.json'),'utf8'),before);
+  assert.equal(read(path.join(failureDir,'apply.json')).rolledBack,true);
+  assert.deepEqual(read(path.join(sandbox,'data/provinces/test.json')),{before:true});
+  // Simulate a kill after content mutation, before build completion.
+  put(path.join(failureDir,'apply.json'),{status:'interrupted',pid:999999});
+  put(path.join(sandbox,'content/attraction-gallery-overrides.json'),{corrupt:true});
+  assert.equal(execute(plan,{root:sandbox,dir:failureDir,build}).status,'applied');
+  assert.ok(read(path.join(sandbox,'content/attraction-gallery-overrides.json')).e);
+  console.log('PASS: adjustable lists, archive/restore, exclusions, saved confirmation, one-image apply, scoped approval, idempotence, rollback and crash recovery.');
+} finally {
+  assert.equal(path.dirname(sandbox),originalRuntime); assert.ok(path.basename(sandbox).startsWith('workbench-test-'));
+  fs.rmSync(sandbox,{recursive:true,force:true});
+}

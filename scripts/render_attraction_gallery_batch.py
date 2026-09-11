@@ -2,6 +2,7 @@ import argparse
 import json
 import math
 import random
+from gallery_checkpoint_io import replace_checkpoint
 from pathlib import Path
 
 import cv2
@@ -84,8 +85,9 @@ def main():
         item['url'] for item in json.loads(DENYLIST.read_text(encoding='utf-8-sig'))
     } if DENYLIST.exists() else set()
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    for old in OUTPUT.glob('gallery-batch-*.jpg'):
-        old.unlink()
+    if args.contact_sheet_items != 0:
+        for old in OUTPUT.glob('gallery-batch-*.jpg'):
+            old.unlink()
     ready = []
     for item in data['items']:
         if requested_ids and item['id'] not in requested_ids:
@@ -121,7 +123,7 @@ def main():
             ready.append(item)
     temporary = STATE.with_suffix('.json.tmp')
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    temporary.replace(STATE)
+    replace_checkpoint(temporary, STATE)
 
     review_items = ready
     if args.contact_sheet_items == 0:

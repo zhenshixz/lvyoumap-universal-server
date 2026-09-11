@@ -19,6 +19,8 @@ const { createGalleryNetwork } = require('./gallery_network');
   await assert.rejects(network.json('https://blocked.org/test'), e => !!e.retryAt);
   await assert.rejects(createGalleryNetwork(dir, { fetch }).json('https://blocked.org/other'), e => !!e.retryAt);
   assert.equal(calls, 2, 'cooldown prevents repeated network calls across restarts');
+  const longWait = createGalleryNetwork(dir, { fetch: async () => new Response('', { status: 429, headers: { 'retry-after': '1800' } }) });
+  await assert.rejects(longWait.json('https://long-wait.org/test'), e => Date.parse(e.retryAt) - Date.now() > 1790000);
   for (const file of fs.readdirSync(dir)) fs.unlinkSync(path.join(dir, file));
   fs.rmdirSync(dir);
   console.log('PASS: response cache, request sharing, persistent rate-limit cooldown');

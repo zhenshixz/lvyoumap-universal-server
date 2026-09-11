@@ -80,14 +80,26 @@ async function stopOldPreview() {
   }
 }
 
-function buildIndex(items, mapBase, policy) {
+function buildIndex(items, mapBase, policy, title = '全国景点图库隔离预览', note = '') {
   const cards = items.map(item => `<a class="card" href="${mapBase}/?previewSearch=${encodeURIComponent(item.name)}">
     <b>${html(item.name)}</b><span>${html(item.province)} · ${html(item.city)}</span>
     <small>检查：${item.selected.length}张均属该景点、清晰、无水印；手机切换与大图加载正常</small>
   </a>`).join('');
   return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>全国景点图库隔离预览</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:#172033;font:15px/1.5 system-ui,"Microsoft YaHei"}.wrap{max-width:1100px;margin:28px auto;padding:0 18px}header{padding:24px;border-radius:18px;background:linear-gradient(135deg,#1677ff,#14b8a6);color:white}header h1{margin:0 0 7px;font-size:25px}header p{margin:3px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px;margin-top:16px}.card{display:flex;flex-direction:column;gap:4px;padding:14px;background:white;border:1px solid #dbe4ef;border-radius:12px;color:inherit;text-decoration:none;box-shadow:0 2px 8px #1e293b0d}.card:hover{border-color:#1677ff}.card span{color:#64748b}.card small{color:#8a5b12}@media(max-width:600px){.wrap{margin:12px auto;padding:0 9px}header{padding:18px}.grid{grid-template-columns:1fr}}</style>
-  <main class="wrap"><header><h1>全国景点图库隔离预览</h1><p>本页共 ${items.length} 个本轮待验收景点，只影响隔离预览，不写入 beta 数据。</p><p>全局规则：目标${policy.targetImages}张，${policy.minimumImages}-${policy.maximumImages}张均可通过；点击景点后检查全部图片。</p></header><section class="grid">${cards}</section></main></html>`;
+  <main class="wrap"><header><h1>${html(title)}</h1><p>本页共 ${items.length} 个候选景点，只影响隔离预览，不写入 beta 数据。</p><p>${html(note)}</p><p>全局规则：目标${policy.targetImages}张，${policy.minimumImages}-${policy.maximumImages}张均可通过；点击景点后检查全部图片。</p></header><p><a href="preview.html">本轮新增候选</a> · <a href="previous-review.html">此前积累候选</a> · <a href="all-review.html">全部候选</a></p><section class="grid">${cards}</section></main></html>`;
+}
+
+function writeReviewIndexes(site, items, policy) {
+  const jobPath = path.join(runtime, 'codex-background.json');
+  const ids = new Set(fs.existsSync(jobPath) ? readJson(jobPath).ids : []);
+  const fresh = items.filter(item => ids.has(item.id));
+  const previous = items.filter(item => !ids.has(item.id));
+  const note = '范围：9月10日下午启动的2111项补源任务中，目前达到数量门槛的候选；不是仅午夜后的新增，也不代表已通过人工审图。';
+  fs.writeFileSync(path.join(site, 'preview.html'), buildIndex(fresh, '', policy, '本轮补源 · 新增候选验收', note));
+  fs.writeFileSync(path.join(site, 'previous-review.html'), buildIndex(previous, '', policy, '此前积累 · 候选待审', '这些候选不属于本轮2111项补源池，仍未写入当前图库，不代表此前已经验收通过。'));
+  fs.writeFileSync(path.join(site, 'all-review.html'), buildIndex(items, '', policy, '全部候选 · 隔离预览'));
+  console.log(`Review groups: new=${fresh.length}, previous=${previous.length}, all=${items.length}`);
 }
 
 async function main() {
@@ -103,6 +115,20 @@ async function main() {
     return JSON.stringify(existing) !== JSON.stringify(selected);
   });
   if (!reviewItems.length && !process.argv.includes('--background')) throw new Error('当前没有新增或发生变化的3-5张图库需要复核。');
+
+  if (process.argv.includes('--index-only')) {
+    // Only list candidates whose exact images are already in the served snapshot.
+    const site = path.join(previewRoot, 'site');
+    const index = readJson(path.join(site, 'data', 'provinces-index.json'));
+    const snapshot = new Map();
+    for (const value of Object.values(index)) {
+      const data = readJson(path.join(site, 'data', 'provinces', value.dataFile));
+      for (const item of data.attractions || []) snapshot.set(item.id, item);
+    }
+    const matching = reviewItems.filter(item => JSON.stringify((snapshot.get(item.id)?.images || []).map(x => typeof x === 'string' ? x : x.url)) === JSON.stringify(item.selected.map(x => x.url)));
+    writeReviewIndexes(site, matching, policy);
+    return;
+  }
 
   await stopOldPreview();
   fs.rmSync(stagingRoot, { recursive: true, force: true });
@@ -158,7 +184,8 @@ async function main() {
   const finalSite = path.join(previewRoot, 'site');
   const port = await freePort();
   const localBase = `http://127.0.0.1:${port}`;
-  fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(reviewItems, '', policy), 'utf8');
+  if (process.argv.includes('--background')) writeReviewIndexes(finalSite, reviewItems, policy);
+  else fs.writeFileSync(path.join(finalSite, 'preview.html'), buildIndex(reviewItems, '', policy).replace('<p><a href="preview.html">本轮新增候选</a> · <a href="previous-review.html">此前积累候选</a> · <a href="all-review.html">全部候选</a></p>', ''));
   const child = spawn(process.execPath, [path.join(root, 'server', 'index.js')], {
     cwd: root,
     detached: true,

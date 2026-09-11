@@ -44,7 +44,8 @@ function createGalleryNetwork(cacheDir, options = {}) {
     if ([403, 429, 430, 432].includes(response.status)) {
       const retry = response.headers.get('retry-after');
       const seconds = /^\d+$/.test(retry || '') ? Number(retry) : (Date.parse(retry) - Date.now()) / 1000;
-      state.until = Date.now() + Math.max(60, Math.min(Number.isFinite(seconds) ? seconds : 120, 600)) * 1000;
+      // Never shorten the source's explicit Retry-After (including HTTP-date).
+      state.until = Date.now() + Math.max(60, Number.isFinite(seconds) ? seconds : 120) * 1000;
       saveCooldowns();
       throw cooling(key, state);
     }

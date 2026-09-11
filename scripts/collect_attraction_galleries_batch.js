@@ -10,6 +10,7 @@ const { SOURCE_PLAN_VERSION, DISCOVERY_LIMITS, sourceRank, sourceOrderLabels, is
   shouldProcessGalleryItem, summarizeSourceAttempts } = require('./gallery_source_policy');
 const { createWebSources, qualityScore, specificEntityName, simplify } = require('./gallery_web_sources');
 const { createGalleryNetwork } = require('./gallery_network');
+const { sourcePolicy } = require('./gallery_link_batch_common');
 
 const root = path.resolve(__dirname, '..');
 const runtime = path.join(root, '.runtime', 'attraction-gallery-batch');
@@ -44,7 +45,7 @@ if (!(MIN_IMAGES >= 1 && MIN_IMAGES <= TARGET_IMAGES && TARGET_IMAGES <= MAX_IMA
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(`${file}.tmp`, `${JSON.stringify(value, null, 2)}\r\n`, 'utf8');
-  fs.renameSync(`${file}.tmp`, file);
+  require('./gallery_checkpoint_io').replaceCheckpoint(`${file}.tmp`, file);
 }
 
 function loadEnv() {
@@ -858,7 +859,7 @@ function recordsForIds(db, ids) {
 
 async function collectOne(record, keys, exhausted, provincePages, officialImages, sourcePages, denylist, previous, options = {}) {
   const { attraction, province } = record;
-  const retryAmap = !previous || previous.amapComplete !== true;
+  const retryAmap = (!previous || previous.amapComplete !== true) && !options.amapDisabled;
   const candidates = [];
   const attempts = [];
   const aliases = attractionAliases(attraction, provincePages);
@@ -1021,8 +1022,10 @@ async function main() {
     console.log('页面缓存压缩和容量整理完成。');
     return;
   }
-  const keys = keyPool();
-  if (!keys.length) console.warn('未配置高德 Key，继续复用缓存及其他稳定来源。');
+  const amapPolicy = sourcePolicy();
+  const keys = amapPolicy.amapDisabled ? [] : keyPool();
+  if (amapPolicy.amapDisabled) console.warn(`高德已临时停用：${amapPolicy.amapReason || amapPolicy.amapDisabledUntil}。本轮不读取缓存或请求接口。`);
+  else if (!keys.length) console.warn('未配置高德 Key，继续复用缓存及其他稳定来源。');
   const limit = Math.max(1, Number(argValue('limit', '100')) || 100);
   const concurrency = Math.min(12, Math.max(1, Number(argValue('concurrency', '6')) || 6));
   const reset = process.argv.includes('--reset');
@@ -1032,6 +1035,7 @@ async function main() {
   const wikiOnly = process.argv.includes('--wiki-only');
   const retryUnresolved = process.argv.includes('--retry-unresolved');
   const requestedIds = [...new Set(argValue('ids').split(',').map(value => value.trim()).filter(Boolean))];
+  const backgroundRun = argValue('background-run');
   const maxItems = Math.max(1, Number(argValue('max-items', String(requestedIds.length || limit))) || (requestedIds.length || limit));
   const db = readJson(dbPath);
   const galleries = readJson(galleryPath);
@@ -1052,6 +1056,7 @@ async function main() {
   if (!requestedIds.length) state.limit = limit;
   state.sourcePlanVersion = SOURCE_PLAN_VERSION;
   state.sourceOrder = sourceOrderLabels();
+  state.sourcePolicy = amapPolicy;
   const targets = requestedIds.length
     ? recordsForIds(db, requestedIds)
     : buildCohort(db, galleries, state, limit);
@@ -1098,6 +1103,7 @@ async function main() {
           primaryOnly,
           fastSecondary,
           wikiOnly,
+          amapDisabled: amapPolicy.amapDisabled,
         });
       } catch (error) {
         return { ...prior, id: target.attraction.id, name: target.attraction.name, province: target.province,
@@ -1106,6 +1112,7 @@ async function main() {
       }
     }));
     for (const result of results) {
+      if (backgroundRun) result.backgroundReceipt = { run: backgroundRun, completedAt: new Date().toISOString() };
       const position = state.items.findIndex(item => item.id === result.id);
       if (position >= 0) state.items[position] = result;
       else state.items.push(result);

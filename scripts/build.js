@@ -109,6 +109,10 @@ try {
   };
   fs.writeFileSync(path.join(outputDir, 'build-info.json'), `${JSON.stringify(buildInfo, null, 2)}\n`);
 
+  if (process.argv.includes('--stage-only')) {
+    console.log('Staged frontend ready: .dist-next (dist unchanged)');
+    return;
+  }
   // Only replace the last known-good build after the new build is complete.
   // A killed terminal or interrupted copy can therefore never leave a partial dist.
   fs.rmSync(backupOutputDir, { recursive: true, force: true });

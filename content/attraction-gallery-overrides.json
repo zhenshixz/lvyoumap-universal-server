@@ -3956,11 +3956,42 @@
     ]
   },
   "amap_B0FFH1ULF2": {
-    "image": "https://store.is.autonavi.com/showpic/47e2d00f4a44f59a81282e76110a1425?type=7",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg/1920px-%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "image_source": {
-      "provider": "高德地图"
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg"
     },
     "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg/1920px-%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "遵义会议会址 - panoramio.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80_-_panoramio.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/ZunyiMeeting.jpg/1920px-ZunyiMeeting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "ZunyiMeeting.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AZunyiMeeting.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AZunyiMeeting.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80.jpg/1920px-%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "遵义会议会址.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E4%BC%9A%E5%9D%80.jpg"
+        }
+      },
       {
         "url": "https://store.is.autonavi.com/showpic/47e2d00f4a44f59a81282e76110a1425?type=7",
         "caption": "遵义会议会址纪念馆现有主图",
@@ -3972,15 +4003,6 @@
       },
       {
         "url": "https://store.is.autonavi.com/showpic/d709279d3e7e00ad0000003382832838?type=7",
-        "caption": "遵义会议会址纪念馆",
-        "source": "amap_exact",
-        "sourcePoiId": "B0FFH1ULF2",
-        "imageSource": {
-          "provider": "高德地图"
-        }
-      },
-      {
-        "url": "https://store.is.autonavi.com/showpic/cbc348512c3be6cee4112a7da918d5f7?type=7",
         "caption": "遵义会议会址纪念馆",
         "source": "amap_exact",
         "sourcePoiId": "B0FFH1ULF2",
@@ -130333,6 +130355,4160 @@
         "sourcePoiId": "B02CE0PXGZ",
         "imageSource": {
           "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B030000E1K": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Guangji_Bridge.JPG/1920px-Guangji_Bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGuangji_Bridge.JPG"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Guangji_Bridge.JPG/1920px-Guangji_Bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Guangji Bridge.JPG",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGuangji_Bridge.JPG",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGuangji_Bridge.JPG"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Chaozhou_Guangji_Qiao_2013.10.26_15-26-02.jpg/1920px-Chaozhou_Guangji_Qiao_2013.10.26_15-26-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Chaozhou Guangji Qiao 2013.10.26 15-26-02.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChaozhou_Guangji_Qiao_2013.10.26_15-26-02.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChaozhou_Guangji_Qiao_2013.10.26_15-26-02.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Chaozhou_Guangji_Qiao_2013.10.26_15-27-28.jpg/1920px-Chaozhou_Guangji_Qiao_2013.10.26_15-27-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Chaozhou Guangji Qiao 2013.10.26 15-27-28.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChaozhou_Guangji_Qiao_2013.10.26_15-27-28.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChaozhou_Guangji_Qiao_2013.10.26_15-27-28.jpg"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3f97055e9623bf9a189a34c79eba0c05?type=7",
+        "caption": "广济桥现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B030000E1K",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/10c5b8c7db943d0b2c8dbbc5c498e6a6?type=7",
+        "caption": "广济桥",
+        "source": "amap_exact",
+        "sourcePoiId": "B030000E1K",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B00140AUDQ": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/A_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg/1280px-A_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AA_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/A_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg/1280px-A_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "A stone tower in the northwest corner of Great Buddha Temple.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AA_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AA_stone_tower_in_the_northwest_corner_of_Great_Buddha_Temple.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Shanmen%2C_Guangzhou_Dafo_Temple.jpg/1920px-Shanmen%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Shanmen, Guangzhou Dafo Temple.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShanmen%2C_Guangzhou_Dafo_Temple.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShanmen%2C_Guangzhou_Dafo_Temple.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/DaaiFatZi_ZingMun.jpg/1920px-DaaiFatZi_ZingMun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "DaaiFatZi ZingMun.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaaiFatZi_ZingMun.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaaiFatZi_ZingMun.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/EAST_GATE_for_Great_Buddha_Temple.jpg/1920px-EAST_GATE_for_Great_Buddha_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "EAST GATE for Great Buddha Temple.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEAST_GATE_for_Great_Buddha_Temple.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEAST_GATE_for_Great_Buddha_Temple.jpg"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f3b404959674250a0000003323526969?type=7",
+        "caption": "大佛寺",
+        "source": "amap_exact",
+        "sourcePoiId": "B00140AUDQ",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B001B0IRKH": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wuhan_Botanical_Garden.jpg/1920px-Wuhan_Botanical_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWuhan_Botanical_Garden.jpg"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wuhan_Botanical_Garden.jpg/1920px-Wuhan_Botanical_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Wuhan Botanical Garden.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWuhan_Botanical_Garden.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWuhan_Botanical_Garden.jpg"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/52f5d097372b70dfc70b624f9c6da52b?type=7",
+        "caption": "中国科学院武汉植物园",
+        "source": "amap_exact",
+        "sourcePoiId": "B001B0IRKH",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/13d9308f45fbbe8613a02812bf86f43d?type=7",
+        "caption": "中国科学院武汉植物园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B001B0IRKH",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B000AAF9TK": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Gate_of_Beijing_Xishan_National_Forest_Park_%2820230220143150%29.jpg/1920px-Gate_of_Beijing_Xishan_National_Forest_Park_%2820230220143150%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGate_of_Beijing_Xishan_National_Forest_Park_(20230220143150).jpg"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Gate_of_Beijing_Xishan_National_Forest_Park_%2820230220143150%29.jpg/1920px-Gate_of_Beijing_Xishan_National_Forest_Park_%2820230220143150%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Gate of Beijing Xishan National Forest Park (20230220143150).jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGate_of_Beijing_Xishan_National_Forest_Park_(20230220143150).jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGate_of_Beijing_Xishan_National_Forest_Park_(20230220143150).jpg"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100d0z000000nilpz6E1B.jpg",
+        "caption": "Beijing Xishan National Forest Park",
+        "source": "trip_exact",
+        "sourcePoiId": "90851",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100l0z000000nk8ybF92A.jpg",
+        "caption": "Beijing Xishan National Forest Park",
+        "source": "trip_exact",
+        "sourcePoiId": "90851",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100g0z000000nkrwp2F84.jpg",
+        "caption": "Beijing Xishan National Forest Park",
+        "source": "trip_exact",
+        "sourcePoiId": "90851",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/beijing/beijing-xishan-national-forest-park-90851/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1a512325a25a602a3c856dc6cd5460b6?type=7",
+        "caption": "北京西山国家森林公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B000AAF9TK",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B02CD02J6T": {
+    "image": "https://ak-d.tripcdn.com/images/1A0311000000r7igq0494.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/1A0311000000r7igq0494.jpg",
+        "caption": "玉泉寺",
+        "source": "trip_exact",
+        "sourcePoiId": "83966",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0u11000000r5r8xD5B4.jpg",
+        "caption": "Yuquan Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "83966",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0211000000rcv4l78E3.jpg",
+        "caption": "Yuquan Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "83966",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0s11000000rcnum0984.jpg",
+        "caption": "Yuquan Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "83966",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/dangyang/yuquan-temple-83966/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/597fb6db18a677790000003290042082?type=7",
+        "caption": "玉泉寺",
+        "source": "amap_exact",
+        "sourcePoiId": "B02CD02J6T",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B03B703072": {
+    "image": "https://ak-d.tripcdn.com/images/1me2w12000eqdl1ze4398.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/yinchuan/nanxun-gate-143748384/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/1me2w12000eqdl1ze4398.jpg",
+        "caption": "南薰门",
+        "source": "trip_exact",
+        "sourcePoiId": "143748384",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/yinchuan/nanxun-gate-143748384/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/yinchuan/nanxun-gate-143748384/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3a8b1382306ce0c10000001815900469?type=7",
+        "caption": "南薰门",
+        "source": "amap_exact",
+        "sourcePoiId": "B03B703072",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9591f4e4daae5d30684ee0888705d9ae?type=7",
+        "caption": "南薰门",
+        "source": "amap_exact",
+        "sourcePoiId": "B03B703072",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFF6YBQD": {
+    "image": "https://ak-d.tripcdn.com/images/010271200092lj7vt21C5.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/010271200092lj7vt21C5.jpg",
+        "caption": "西山森林公园",
+        "source": "trip_exact",
+        "sourcePoiId": "79968",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0105q120009dh6w9k2D00.jpg",
+        "caption": "西山森林公园",
+        "source": "trip_exact",
+        "sourcePoiId": "79968",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0104g1200092lj7ho7DF5.jpg",
+        "caption": "西山森林公园",
+        "source": "trip_exact",
+        "sourcePoiId": "79968",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/xishan-forest-park-79968/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/44f9d1062eb2b272ead0b413786dc402?type=7",
+        "caption": "西山森林公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF6YBQD",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1071ffee8c0e648cb4e00dbc931a3c1c?type=7",
+        "caption": "西山森林公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF6YBQD",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B001607JRW": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/West_Gate_of_Xigu_Park_20260611.jpg/1920px-West_Gate_of_Xigu_Park_20260611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWest_Gate_of_Xigu_Park_20260611.jpg"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/West_Gate_of_Xigu_Park_20260611.jpg/1920px-West_Gate_of_Xigu_Park_20260611.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "West Gate of Xigu Park 20260611.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWest_Gate_of_Xigu_Park_20260611.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWest_Gate_of_Xigu_Park_20260611.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/%E8%A5%BF%E6%B2%BD%E5%85%AC%E5%9B%AD%E5%8C%972%E9%97%A8%E7%89%8C%E5%9D%8A.jpg/1920px-%E8%A5%BF%E6%B2%BD%E5%85%AC%E5%9B%AD%E5%8C%972%E9%97%A8%E7%89%8C%E5%9D%8A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "西沽公园北2门牌坊.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E8%A5%BF%E6%B2%BD%E5%85%AC%E5%9B%AD%E5%8C%972%E9%97%A8%E7%89%8C%E5%9D%8A.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E8%A5%BF%E6%B2%BD%E5%85%AC%E5%9B%AD%E5%8C%972%E9%97%A8%E7%89%8C%E5%9D%8A.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/%E7%BA%A2%E6%A1%A5%E9%9D%9E%E9%81%97%E9%A6%86.jpg/1920px-%E7%BA%A2%E6%A1%A5%E9%9D%9E%E9%81%97%E9%A6%86.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "红桥非遗馆.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E7%BA%A2%E6%A1%A5%E9%9D%9E%E9%81%97%E9%A6%86.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E7%BA%A2%E6%A1%A5%E9%9D%9E%E9%81%97%E9%A6%86.jpg"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/eaf1ee921ff7c5d2937dbaf0d8436500?type=7",
+        "caption": "西沽公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B001607JRW",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a46c8921172ca6bb7df2e5b86a49156b?type=7",
+        "caption": "西沽公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B001607JRW",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFI0T7F8": {
+    "image": "https://store.is.autonavi.com/showpic/c2ffbd10422e7caa0000003037586267?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/c2ffbd10422e7caa0000003037586267?type=7",
+        "caption": "蜀西湖公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFI0T7F8",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/2d6931f44639792b05b79f2baa76be68?type=7",
+        "caption": "蜀西湖公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFI0T7F8",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0105712000buxfh4bA4E0.jpg",
+        "caption": "蜀西湖公园",
+        "source": "trip_exact",
+        "sourcePoiId": "131896840",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/hefei/qianxi-lake-131896840/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/hefei/qianxi-lake-131896840/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0102e12000buxfab82A9D.jpg",
+        "caption": "蜀西湖公园",
+        "source": "trip_exact",
+        "sourcePoiId": "131896840",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/hefei/qianxi-lake-131896840/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/hefei/qianxi-lake-131896840/"
+        }
+      }
+    ]
+  },
+  "amap_B0FFHVN746": {
+    "image": "https://ak-d.tripcdn.com/images/0102q120008jziywp2EB8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0102q120008jziywp2EB8.jpg",
+        "caption": "龙泉湖湿地",
+        "source": "trip_exact",
+        "sourcePoiId": "77283465",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101j120008jzj4k328DE.jpg",
+        "caption": "龙泉湖湿地",
+        "source": "trip_exact",
+        "sourcePoiId": "77283465",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101h120008jzjce8CC18.jpg",
+        "caption": "龙泉湖湿地",
+        "source": "trip_exact",
+        "sourcePoiId": "77283465",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shijiazhuang/longquanhu-wetland-77283465/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/31ebdbeb764beec93c8c0f673d0e5b02?type=7",
+        "caption": "龙泉湖湿地现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHVN746",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/49b3d3542d2dc3ce08f5c042754897fe?type=7",
+        "caption": "龙泉湖湿地",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHVN746",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B03030TGRR": {
+    "image": "https://ak-d.tripcdn.com/images/1me2212000oebi1mq1356.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-149273014/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/1me2212000oebi1mq1356.jpg",
+        "caption": "民歌湖国际音乐小镇",
+        "source": "trip_exact",
+        "sourcePoiId": "149273014",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-149273014/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-149273014/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9cc02d8cb06b317c0000002702978678?type=7",
+        "caption": "民歌湖国际音乐小镇",
+        "source": "amap_exact",
+        "sourcePoiId": "B03030TGRR",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/d277ef7121b2ef9b866a23a871f44eae?type=7",
+        "caption": "民歌湖国际音乐小镇现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B03030TGRR",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFH45AJF": {
+    "image": "https://dimg04.c-ctrip.com/images/01A6j120008vsmx0mDADB.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanchang/jiulonghu-wetland-park-69541607/"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01A6j120008vsmx0mDADB.jpg",
+        "caption": "Jiulonghu Wetland Park",
+        "source": "trip_exact",
+        "sourcePoiId": "69541607",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanchang/jiulonghu-wetland-park-69541607/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanchang/jiulonghu-wetland-park-69541607/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01A1y120008vsnt0t0D1C.jpg",
+        "caption": "Jiulonghu Wetland Park",
+        "source": "trip_exact",
+        "sourcePoiId": "69541607",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanchang/jiulonghu-wetland-park-69541607/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanchang/jiulonghu-wetland-park-69541607/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ff191af727fe72200000002940400164?type=7",
+        "caption": "九龙湖公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFH45AJF",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ab1f4c60dba3d4120000002997264050?type=7",
+        "caption": "九龙湖公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFH45AJF",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B01DF14A1J": {
+    "image": "https://ak-d.tripcdn.com/images/0HJ0q12000tf2lxhr5EB8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0HJ0q12000tf2lxhr5EB8.jpg",
+        "caption": "二连浩特国门景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84392",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0104q12000lxqtg0q2EA0.jpg",
+        "caption": "二连浩特国门景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84392",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0102q12000lxqmykpC2D0.jpg",
+        "caption": "二连浩特国门景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84392",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0HJ0o12000ti5f46hBA7B.jpg",
+        "caption": "二连浩特国门景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84392",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/erenhot/erenhot-guomen-scenic-area-84392/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9ae89c41d2643fec6985cf7b8380f40a?type=7",
+        "caption": "二连浩特国门景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B01DF14A1J",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B02CE030WK": {
+    "image": "https://dimg04.c-ctrip.com/images/01A70120008vskg9a5764.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01A70120008vskg9a5764.jpg",
+        "caption": "Enshi Suobuya Stone Forest Scenic Area",
+        "source": "trip_exact",
+        "sourcePoiId": "83821",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0k10000000pc5rs76AB.jpg",
+        "caption": "Enshi Suobuya Stone Forest Scenic Area",
+        "source": "trip_exact",
+        "sourcePoiId": "83821",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0g10000000p8o650A6E.jpg",
+        "caption": "Enshi Suobuya Stone Forest Scenic Area",
+        "source": "trip_exact",
+        "sourcePoiId": "83821",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/enshi-city/enshi-suobuya-stone-forest-scenic-area-83821/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/38870f18894bf6a314baac775023de12?type=7",
+        "caption": "梭布垭石林景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02CE030WK",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/df48e9424c505a527c69cdca0d1fb06b?type=7",
+        "caption": "梭布垭石林景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B02CE030WK",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B03030UCGF": {
+    "image": "https://ak-d.tripcdn.com/images/01052120000ug4ob4B3AA.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/01052120000ug4ob4B3AA.jpg",
+        "caption": "南宁昆仑关旅游风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10546892",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/100o12000000rphr1194E.jpg",
+        "caption": "南宁昆仑关旅游风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10546892",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0104z120000ufz9mf9D8D.jpg",
+        "caption": "南宁昆仑关旅游风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10546892",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/01034120000ug3xws9257.jpg",
+        "caption": "南宁昆仑关旅游风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10546892",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/kunlun-pass-10546892/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/8eee2f15b233bf05e7032165267bffe1?type=7",
+        "caption": "昆仑关旅游风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B03030UCGF",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFHTIGX2": {
+    "image": "https://ak-d.tripcdn.com/images/0HJ4q12000g8nhxnmD2E3.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/songtao/qiandong-caohai-scenic-area-136001212/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0HJ4q12000g8nhxnmD2E3.jpg",
+        "caption": "黔东草海风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "136001212",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/songtao/qiandong-caohai-scenic-area-136001212/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/songtao/qiandong-caohai-scenic-area-136001212/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/4521d5dc7231e22e74c3f1c759a6828a?type=7",
+        "caption": "黔东草海风景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHTIGX2",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f2636abd16e8d9360000002257844303?type=7",
+        "caption": "黔东草海风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHTIGX2",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0I2A7L79A": {
+    "image": "https://ak-d.tripcdn.com/images/0103512000tfawy98E380.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-156453290/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0103512000tfawy98E380.jpg",
+        "caption": "荫生植物园",
+        "source": "trip_exact",
+        "sourcePoiId": "156453290",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-156453290/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/nanning/city-156453290/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/cb27a60095584c770000002397142456?type=7",
+        "caption": "荫生植物园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0I2A7L79A",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/cf936669c5f6be940000003137888676?type=7",
+        "caption": "荫生植物园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0I2A7L79A",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0G2V5KO4E": {
+    "image": "https://dimg04.c-ctrip.com/images/01070120008uvw3eo819D.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01070120008uvw3eo819D.jpg",
+        "caption": "大武口洗煤厂工业遗址公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 129747241,
+        "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0105l120008uvw4pmBD03.jpg",
+        "caption": "大武口洗煤厂工业遗址公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 129747241,
+        "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106e120008uvw0jt4BBE.jpg",
+        "caption": "大武口洗煤厂工业遗址公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 129747241,
+        "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shizuishan889/5716657.html"
+        }
+      }
+    ]
+  },
+  "amap_B0K3GO8I4J": {
+    "image": "https://store.is.autonavi.com/showpic/549ae1967d169b5a1dca9fa6fbec96c1?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/549ae1967d169b5a1dca9fa6fbec96c1?type=7",
+        "caption": "海南环岛旅游公路(起点)现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0K3GO8I4J",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/949da6f61eaec3b7c7030bbd922387be?type=7",
+        "caption": "海南环岛旅游公路(起点)",
+        "source": "amap_exact",
+        "sourcePoiId": "B0K3GO8I4J",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0102312000srike2u6AEA.png",
+        "caption": "海南环岛旅游公路-起点",
+        "source": "trip_exact",
+        "sourcePoiId": "150217008",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/haikou/city-150217008/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/haikou/city-150217008/"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFPPD5X": {
+    "image": "https://ak-d.tripcdn.com/images/0103y120009g82u2hE48B.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0103y120009g82u2hE48B.jpg",
+        "caption": "九山顶自然风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10553258",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/01026120009g82v15AD69.jpg",
+        "caption": "九山顶自然风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10553258",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101u120009g82x9m1F05.jpg",
+        "caption": "九山顶自然风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "10553258",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/tianjin/jiushanding-natural-scenic-area-10553258/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/e4dc74fdbb91aa7fac7c64c4aa97e41c?type=7",
+        "caption": "九山顶自然风景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFPPD5X",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/b6e92ea995a34af6e7e9e0c545ccaeef?type=7",
+        "caption": "九山顶自然风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFPPD5X",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFGPWD2J": {
+    "image": "https://ak-d.tripcdn.com/images/0100812000b5mddjw45D8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/changchun/sakura-island-112647606/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0100812000b5mddjw45D8.jpg",
+        "caption": "樱花岛",
+        "source": "trip_exact",
+        "sourcePoiId": "112647606",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/changchun/sakura-island-112647606/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/changchun/sakura-island-112647606/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/2329cb897b9e88e60000002234922700?type=7",
+        "caption": "樱花岛",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGPWD2J",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a4ee3d3fa3401fe00000005278162561?type=7",
+        "caption": "樱花岛",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGPWD2J",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFG3718N": {
+    "image": "https://ak-d.tripcdn.com/images/0100712000iuj4ebd3BFF.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0100712000iuj4ebd3BFF.jpg",
+        "caption": "福州花海公园",
+        "source": "trip_exact",
+        "sourcePoiId": "24650406",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0103q12000iuj4h0z126F.jpg",
+        "caption": "福州花海公园",
+        "source": "trip_exact",
+        "sourcePoiId": "24650406",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0103l12000iuj4bfi4BE2.jpg",
+        "caption": "福州花海公园",
+        "source": "trip_exact",
+        "sourcePoiId": "24650406",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/fuzhou/huahai-park-24650406/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1e288ca653ca7a3cee30a3d9f58e8f98?type=7",
+        "caption": "福州花海公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFG3718N",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/7d19e4632d54ce563f4abcc87af32b5c?type=7",
+        "caption": "福州花海公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFG3718N",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B031D006QF": {
+    "image": "https://dimg04.c-ctrip.com/images/10011f000001h36uyDF48.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/ganzhou473/17564.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/10011f000001h36uyDF48.jpg",
+        "caption": "郁孤台公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79735,
+        "sourceUrl": "https://you.ctrip.com/sight/ganzhou473/17564.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/ganzhou473/17564.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1e3742fa9d309ec2e9a2611be80bb59e?type=7",
+        "caption": "郁孤台公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B031D006QF",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103u12000bltw8057FB6.jpg",
+        "caption": "郁孤台公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79735,
+        "sourceUrl": "https://you.ctrip.com/sight/ganzhou473/17564.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/ganzhou473/17564.html"
+        }
+      }
+    ]
+  },
+  "amap_B038200FE1": {
+    "image": "https://dimg04.c-ctrip.com/images/0104v12000tic0v7r16BF.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/haikou37/1417227.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104v12000tic0v7r16BF.jpg",
+        "caption": "西海岸带状公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13672433,
+        "sourceUrl": "https://you.ctrip.com/sight/haikou37/1417227.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/haikou37/1417227.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/75cc7ed8a6ca14c3b7af8fc7c0b79b06?type=7",
+        "caption": "西海岸带状公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B038200FE1",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100i12000a1syzglDFA8.jpg",
+        "caption": "西海岸带状公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13672433,
+        "sourceUrl": "https://you.ctrip.com/sight/haikou37/1417227.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/haikou37/1417227.html"
+        }
+      }
+    ]
+  },
+  "amap_B031A010JE": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo1a12000im0zgamF9DD.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo1a12000im0zgamF9DD.jpg",
+        "caption": "大觉山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101781,
+        "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350m15000000ytut778A1.jpg",
+        "caption": "大觉山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101781,
+        "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350b15000000ymxb56EBF.jpg",
+        "caption": "大觉山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101781,
+        "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ea58ebeca9397d5897caaf4f95622eb6?type=7",
+        "caption": "大觉山风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B031A010JE",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350j15000000yjzhv10A5.jpg",
+        "caption": "大觉山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101781,
+        "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/zixi2433/141218.html"
+        }
+      }
+    ]
+  },
+  "amap_B000A208D5": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Xhutong01st.jpg/1920px-Xhutong01st.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "image_source": {
+      "provider": "公开百科",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXhutong01st.jpg"
+    },
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Xhutong01st.jpg/1920px-Xhutong01st.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "Xhutong01st.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXhutong01st.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXhutong01st.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%B1%95%E5%93%81.jpg/1920px-%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%B1%95%E5%93%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "李大钊故居展品.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%B1%95%E5%93%81.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%B1%95%E5%93%81.jpg"
+        }
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%AE%A4%E5%86%85.jpg/1920px-%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%AE%A4%E5%86%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "caption": "李大钊故居室内.jpg",
+        "source": "wikimedia_exact",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%AE%A4%E5%86%85.jpg",
+        "imageSource": {
+          "provider": "公开百科",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%9D%8E%E5%A4%A7%E9%92%8A%E6%95%85%E5%B1%85%E5%AE%A4%E5%86%85.jpg"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a391afaa5d991eef9fa3b2600d2d8545?type=7",
+        "caption": "李大钊故居现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B000A208D5",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/c616018220d4a31a0000003969988032?type=7",
+        "caption": "李大钊故居",
+        "source": "amap_exact",
+        "sourcePoiId": "B000A208D5",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B000A24BD4": {
+    "image": "https://www.sql.org.cn/upfiles/images/2025/0/a80087db-7146-4509-a5a3-c72fbf0e19f7.jpg",
+    "image_source": {
+      "provider": "景区官方",
+      "sourceUrl": "https://www.sql.org.cn/"
+    },
+    "images": [
+      {
+        "url": "https://www.sql.org.cn/upfiles/images/2025/0/a80087db-7146-4509-a5a3-c72fbf0e19f7.jpg",
+        "caption": "宋庆龄同志故居",
+        "source": "official_site",
+        "sourceUrl": "https://www.sql.org.cn/",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://www.sql.org.cn/"
+        }
+      },
+      {
+        "url": "https://www.sql.org.cn/upfiles/images/2024/2/50c8fd60-8f3d-41e6-87e1-76ec94264444.jpg",
+        "caption": "宋庆龄同志故居",
+        "source": "official_site",
+        "sourceUrl": "https://www.sql.org.cn/",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://www.sql.org.cn/"
+        }
+      },
+      {
+        "url": "https://www.sql.org.cn/upfiles/images/2024/2/7694aca3-cc08-4be2-86f3-8129ac40252d.jpg",
+        "caption": "宋庆龄同志故居",
+        "source": "official_site",
+        "sourceUrl": "https://www.sql.org.cn/",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://www.sql.org.cn/"
+        }
+      },
+      {
+        "url": "https://www.sql.org.cn/upfiles/images/2019/0/cf8d4914-f102-4299-adba-9634d952f2b1.jpg",
+        "caption": "宋庆龄同志故居",
+        "source": "official_site",
+        "sourceUrl": "https://www.sql.org.cn/",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://www.sql.org.cn/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/7d6ed390c2c43af40000001162050426?type=7",
+        "caption": "宋庆龄同志故居",
+        "source": "amap_exact",
+        "sourcePoiId": "B000A24BD4",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFJXRPH1": {
+    "image": "https://dimg04.c-ctrip.com/images/1me6g12000cmwb7l7FE8C.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1me6g12000cmwb7l7FE8C.jpg",
+        "caption": "雨母山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 15029543,
+        "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/785367e2736615c30000003117170365?type=7",
+        "caption": "雨母山风景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFJXRPH1",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100c12000b6qm117B826.jpg",
+        "caption": "雨母山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 15029543,
+        "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100712000b6qlbhb936A.jpg",
+        "caption": "雨母山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 15029543,
+        "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106212000b6qlb2o41D4.jpg",
+        "caption": "雨母山风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 15029543,
+        "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hengyang864/1482517.html"
+        }
+      }
+    ]
+  },
+  "amap_B0GU7LGTZD": {
+    "image": "https://dimg04.c-ctrip.com/images/0104412000axqaxl12C2E.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/ningcheng1736/51926.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104412000axqaxl12C2E.jpg",
+        "caption": "辽代大明塔",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84209,
+        "sourceUrl": "https://you.ctrip.com/sight/ningcheng1736/51926.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/ningcheng1736/51926.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9b3e896c13cd3fcbc8625d6a87aced82?type=7",
+        "caption": "辽代大明塔现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0GU7LGTZD",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100912000ay840rt697A.jpg",
+        "caption": "辽代大明塔",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84209,
+        "sourceUrl": "https://you.ctrip.com/sight/ningcheng1736/51926.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/ningcheng1736/51926.html"
+        }
+      }
+    ]
+  },
+  "amap_B03860M447": {
+    "image": "https://dimg04.c-ctrip.com/images/100g10000000o2etz0273.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100g10000000o2etz0273.jpg",
+        "caption": "伊吾胡杨景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82512,
+        "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01048120008vou29x156A.png",
+        "caption": "伊吾胡杨景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82512,
+        "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0879cf7717d6300f2f78e125290c7b04?type=7",
+        "caption": "伊吾胡杨景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B03860M447",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103q120008vou3qu27F6.png",
+        "caption": "伊吾胡杨景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82512,
+        "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01058120008vou7a935DF.png",
+        "caption": "伊吾胡杨景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82512,
+        "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yiwu2505/47911.html"
+        }
+      }
+    ]
+  },
+  "amap_B019E00HA1": {
+    "image": "https://dimg04.c-ctrip.com/images/0106412000ryl8c7r73B9.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106412000ryl8c7r73B9.jpg",
+        "caption": "望天洞景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87888,
+        "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106a12000f6seggl3871.jpg",
+        "caption": "望天洞景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87888,
+        "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350b1f000001gu1ho5096.jpg",
+        "caption": "望天洞景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87888,
+        "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350w1f000001gxor225BF.jpg",
+        "caption": "望天洞景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87888,
+        "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huanren2144/64938.html"
+        }
+      }
+    ]
+  },
+  "amap_B019E0029B": {
+    "image": "https://dimg04.c-ctrip.com/images/0100u12000axbs8o61AAD.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100u12000axbs8o61AAD.jpg",
+        "caption": "平顶山森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 24652063,
+        "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0105z12000axbsot263E8.jpg",
+        "caption": "平顶山森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 24652063,
+        "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100h12000az5mpqx0A6B.jpg",
+        "caption": "平顶山森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 24652063,
+        "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/benxi463/1832878.html"
+        }
+      }
+    ]
+  },
+  "amap_B0HR3OIH0Z": {
+    "image": "https://dimg04.c-ctrip.com/images/0105i120009kjqndvDE9D.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0105i120009kjqndvDE9D.jpg",
+        "caption": "新龙生态林",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69551972,
+        "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104j12000ar1pmx0D487.jpg",
+        "caption": "新龙生态林",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69551972,
+        "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104412000ar1qa7s4A97.jpg",
+        "caption": "新龙生态林",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69551972,
+        "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100612000f6ugi7wF5AA.jpg",
+        "caption": "新龙生态林",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69551972,
+        "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/changzhou206/69551972.html"
+        }
+      }
+    ]
+  },
+  "amap_B0391002N6": {
+    "image": "https://dimg04.c-ctrip.com/images/0102i12000rhsuyl5953B.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102i12000rhsuyl5953B.jpg",
+        "caption": "潼关古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 61462278,
+        "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/5c8e073ab1c70a11411bc0596f981ba8?type=7",
+        "caption": "潼关古城",
+        "source": "amap_exact",
+        "sourcePoiId": "B0391002N6",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100u14000000w9fab49E9.jpg",
+        "caption": "潼关古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 61462278,
+        "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100m14000000wiu5i3D15.jpg",
+        "caption": "潼关古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 61462278,
+        "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100d14000000w7z013694.jpg",
+        "caption": "潼关古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 61462278,
+        "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tongguan2780/5382343.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFKLF16T": {
+    "image": "https://dimg04.c-ctrip.com/images/0103u12000ro40nfd4FAF.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103u12000ro40nfd4FAF.jpg",
+        "caption": "海上魔鬼城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 56809715,
+        "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/35071c000001cq0bp04A6.jpg",
+        "caption": "海上魔鬼城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 56809715,
+        "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/35061c000001c9x7rC3F8.jpg",
+        "caption": "海上魔鬼城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 56809715,
+        "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350k1c000001cdheu63F4.jpg",
+        "caption": "海上魔鬼城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 56809715,
+        "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fuhai1446398/5072964.html"
+        }
+      }
+    ]
+  },
+  "amap_B038A0058I": {
+    "image": "https://dimg04.c-ctrip.com/images/0100212000rwox0nj45DC.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100212000rwox0nj45DC.jpg",
+        "caption": "贾登峪国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82888,
+        "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102i12000f76dp4j35EE.jpg",
+        "caption": "贾登峪国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82888,
+        "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106212000f75g7xw6BFF.jpg",
+        "caption": "贾登峪国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82888,
+        "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/burqin1010/49791.html?poiType=3&scene=online"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFZVR86": {
+    "image": "https://dimg04.c-ctrip.com/images/0104b120006ni2f9eD34D.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104b120006ni2f9eD34D.jpg",
+        "caption": "宝古图沙漠旅游区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 67864972,
+        "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/10061f000001gqu6100A0.jpg",
+        "caption": "宝古图沙漠旅游区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 67864972,
+        "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102e120006ni17jm7F01.jpg",
+        "caption": "宝古图沙漠旅游区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 67864972,
+        "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/naimanbanner2980/5592369.html"
+        }
+      }
+    ]
+  },
+  "amap_B01CB0N9D3": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo5o12000rhi7dzo77AC.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html?poiType=66&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo5o12000rhi7dzo77AC.jpg",
+        "caption": "连环湖温泉景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96210,
+        "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html?poiType=66&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html?poiType=66&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0479f10f3968e8e804e8fdd3c1a151c8?type=7",
+        "caption": "连环湖温泉景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B01CB0N9D3",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350a0x000000l3m691EB4.jpg",
+        "caption": "连环湖温泉景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96210,
+        "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350v0x000000ldcc84B97.jpg",
+        "caption": "连环湖温泉景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96210,
+        "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0107312000f6qwbt4265E.jpg",
+        "caption": "连环湖温泉景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96210,
+        "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/dorbodcounty2231/134312.html"
+        }
+      }
+    ]
+  },
+  "amap_B0B77003C9": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo3g12000fn5z9nf51D8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo3g12000fn5z9nf51D8.jpg",
+        "caption": "祁山武侯祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 18227541,
+        "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo1t12000fn622ru9DE3.jpg",
+        "caption": "祁山武侯祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 18227541,
+        "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo2y12000fn5ytqyEE6C.jpg",
+        "caption": "祁山武侯祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 18227541,
+        "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo2p12000fn629hw0B31.jpg",
+        "caption": "祁山武侯祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 18227541,
+        "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licounty2785/1512766.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFGPDWV0": {
+    "image": "https://dimg04.c-ctrip.com/images/0103l120008ho7j0454A0.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103l120008ho7j0454A0.jpg",
+        "caption": "广武明长城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13592009,
+        "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106f120008ho8c3p592C.jpg",
+        "caption": "广武明长城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13592009,
+        "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102l120008hzju2n5B53.jpg",
+        "caption": "广武明长城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13592009,
+        "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100412000nlpn2wy95A4.jpg",
+        "caption": "广武明长城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13592009,
+        "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shanyin2987/1415651.html?poiType=3&scene=online"
+        }
+      }
+    ]
+  },
+  "amap_B0309001C5": {
+    "image": "https://dimg04.c-ctrip.com/images/350f1e000001fqupe664A.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350f1e000001fqupe664A.jpg",
+        "caption": "六峰山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 80993,
+        "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350k1e000001fv0iz3DAC.jpg",
+        "caption": "六峰山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 80993,
+        "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350j1e000001fqcj61FA6.jpg",
+        "caption": "六峰山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 80993,
+        "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350i1e000001fpne111C0.png",
+        "caption": "六峰山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 80993,
+        "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lingshan969/22125.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFJLW0BN": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo0i12000epqti0h3DC8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo0i12000epqti0h3DC8.jpg",
+        "caption": "绿梦欢乐世界",
+        "source": "ctrip_exact",
+        "sourcePoiId": 38557020,
+        "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo5012000epqtk9jAD48.jpg",
+        "caption": "绿梦欢乐世界",
+        "source": "ctrip_exact",
+        "sourcePoiId": 38557020,
+        "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo2y12000epqt9w0ED1F.jpg",
+        "caption": "绿梦欢乐世界",
+        "source": "ctrip_exact",
+        "sourcePoiId": 38557020,
+        "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100e1f000001gt0j62BF1.jpg",
+        "caption": "绿梦欢乐世界",
+        "source": "ctrip_exact",
+        "sourcePoiId": 38557020,
+        "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/shantou215/2745681.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/41ec848f51e4adbb481472b4da2d2109?type=7",
+        "caption": "绿梦欢乐世界现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFJLW0BN",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFGEZPYP": {
+    "image": "https://whly.ln.gov.cn/whly/imageDir/2025/11/img_pc_site/2025112016155622766.jpg",
+    "image_source": {
+      "provider": "景区官方",
+      "sourceUrl": "https://whly.ln.gov.cn/whly/wlzt/sjly/ajjq/2025102715415480257/"
+    },
+    "images": [
+      {
+        "url": "https://whly.ln.gov.cn/whly/imageDir/2025/11/img_pc_site/2025112016155622766.jpg",
+        "caption": "朝阳化石谷",
+        "source": "official_site",
+        "sourceUrl": "https://whly.ln.gov.cn/whly/wlzt/sjly/ajjq/2025102715415480257/",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://whly.ln.gov.cn/whly/wlzt/sjly/ajjq/2025102715415480257/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/267074f27f4e6d3f4a5ea0c1e8d0a311?type=7",
+        "caption": "朝阳化石谷现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGEZPYP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0207a64c91cfdd8caa5aee0822833143?type=7",
+        "caption": "朝阳化石谷",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGEZPYP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFCX6QP": {
+    "image": "https://www.linyi.gov.cn/virtual_attach_file.vsb?afc=kUlnR2Um6RnRQkn7zLbU4-ZM47sM4AVRMmGPU4AkLzLanRG0gihFp2hmCIa0n1h7n1h2USysozn7U4vPUmUaLmLso77PU8C8MmCYLNrkM7rFM7rfozMfnNrFL8U8U87Jqjfjo4OeoDPbgDTJQty0MRv8oky4MRl4LmUJqd2nx&oid=1585729837&tid=4748&nid=345324&e=.jpg",
+    "image_source": {
+      "provider": "景区官方",
+      "sourceUrl": "https://www.linyi.gov.cn/info/4748/345324.htm"
+    },
+    "images": [
+      {
+        "url": "https://www.linyi.gov.cn/virtual_attach_file.vsb?afc=kUlnR2Um6RnRQkn7zLbU4-ZM47sM4AVRMmGPU4AkLzLanRG0gihFp2hmCIa0n1h7n1h2USysozn7U4vPUmUaLmLso77PU8C8MmCYLNrkM7rFM7rfozMfnNrFL8U8U87Jqjfjo4OeoDPbgDTJQty0MRv8oky4MRl4LmUJqd2nx&oid=1585729837&tid=4748&nid=345324&e=.jpg",
+        "caption": "沂蒙云瀑洞天",
+        "source": "official_site",
+        "sourceUrl": "https://www.linyi.gov.cn/info/4748/345324.htm",
+        "imageSource": {
+          "provider": "景区官方",
+          "sourceUrl": "https://www.linyi.gov.cn/info/4748/345324.htm"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9ce436c39015cfbefc17ee8cd4356ebd?type=7",
+        "caption": "沂蒙云瀑洞天现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFCX6QP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/be7e52c23c320d917427ba4d1811cef6?type=7",
+        "caption": "沂蒙云瀑洞天",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFCX6QP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFJ2PPP6": {
+    "image": "https://dimg04.c-ctrip.com/images/0101812000nwie6hi6942.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62353.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0101812000nwie6hi6942.jpg",
+        "caption": "茱萸峰景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87046,
+        "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62353.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62353.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0101z12000rw81we31F6A.jpg",
+        "caption": "茱萸峰景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87046,
+        "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62353.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiuwu2267/62353.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100t0z000000nl9uw2D8F.jpg",
+        "caption": "Zhuyu Peak",
+        "source": "trip_exact",
+        "sourcePoiId": "87046",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100fhk114x6gn7zhv64EA.jpg",
+        "caption": "Zhuyu Peak",
+        "source": "trip_exact",
+        "sourcePoiId": "87046",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100nhk1439gk5fltv05AD.jpg",
+        "caption": "Zhuyu Peak",
+        "source": "trip_exact",
+        "sourcePoiId": "87046",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/xiuwu/zhuyu-peak-87046/"
+        }
+      }
+    ]
+  },
+  "amap_B02C6006D7": {
+    "image": "https://dimg04.c-ctrip.com/images/0100j12000jb0fmvuF760.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100j12000jb0fmvuF760.jpg",
+        "caption": "鹿门山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84087,
+        "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100w12000jb0fswnFAFC.jpg",
+        "caption": "鹿门山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84087,
+        "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100s1f000001gx65gA04F.jpg",
+        "caption": "鹿门山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84087,
+        "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/35030v000000jmvj4BA93.jpg",
+        "caption": "鹿门山",
+        "source": "ctrip_exact",
+        "sourcePoiId": 84087,
+        "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xiangyang414/51764.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9c402280b5a4ba18e412f5a1c992050d?type=7",
+        "caption": "鹿门山现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02C6006D7",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFHN03YQ": {
+    "image": "https://store.is.autonavi.com/showpic/a9e94dbeced4b4a40000002308970244?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/a9e94dbeced4b4a40000002308970244?type=7",
+        "caption": "向家坝2号观景台现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHN03YQ",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/356567f04042c2c50000002308964555?type=7",
+        "caption": "向家坝2号观景台",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFHN03YQ",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0HJ1t12000g2uyoxs1D96.jpg",
+        "caption": "向家坝2号观景台",
+        "source": "trip_exact",
+        "sourcePoiId": "145543565",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/yibin/xiangjiaba-no-2-viewing-platform-145543565/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/yibin/xiangjiaba-no-2-viewing-platform-145543565/"
+        }
+      }
+    ]
+  },
+  "amap_B0164004YU": {
+    "image": "https://ak-d.tripcdn.com/images/0100e12000np016i9A81B.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0100e12000np016i9A81B.jpg",
+        "caption": "王莽岭风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84042",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101112000np016qbD9C7.jpg",
+        "caption": "王莽岭风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84042",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/2f45aa2661415aea9b53b1c16d868630?type=7",
+        "caption": "王莽岭景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0164004YU",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/350t1e000001f2sxt4434.jpg",
+        "caption": "王莽岭风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84042",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/350u1e000001f2q7i694F.jpg",
+        "caption": "王莽岭风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "84042",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/lingchuan/wangmangling-scenic-area-84042/"
+        }
+      }
+    ]
+  },
+  "amap_B019D0105N": {
+    "image": "https://dimg04.c-ctrip.com/images/0101f12000f6qw3x03E2F.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0101f12000f6qw3x03E2F.jpg",
+        "caption": "三块石国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87372,
+        "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350i0w000000k6nql89D5.jpg",
+        "caption": "三块石国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87372,
+        "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350j0w000000k7crm1DD2.jpg",
+        "caption": "三块石国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87372,
+        "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350u0w000000k7t9lE467.jpg",
+        "caption": "三块石国家森林公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 87372,
+        "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/fushuncounty1446024/63246.html"
+        }
+      }
+    ]
+  },
+  "amap_B0729001DB": {
+    "image": "https://store.is.autonavi.com/showpic/74effc8abd0856c45d1ae1204f64f6ab?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/74effc8abd0856c45d1ae1204f64f6ab?type=7",
+        "caption": "彭祖山景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0729001DB",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f2b4ca669b31df3cab7844491f1affb2?type=7",
+        "caption": "彭祖山",
+        "source": "amap_exact",
+        "sourcePoiId": "B0729001DB",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0102912000993jofz353F.jpg",
+        "caption": "彭祖山景区",
+        "source": "trip_exact",
+        "sourcePoiId": "82811",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0101v120009gwg3ctE4F2.jpg",
+        "caption": "彭祖山景区",
+        "source": "trip_exact",
+        "sourcePoiId": "82811",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0103x120009gwc6pu3F17.jpg",
+        "caption": "彭祖山景区",
+        "source": "trip_exact",
+        "sourcePoiId": "82811",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/meishan/peng-zu-shan-scenic-area-82811/"
+        }
+      }
+    ]
+  },
+  "amap_B030000G4N": {
+    "image": "https://dimg04.c-ctrip.com/images/0107312000rxikbr3401C.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/56727.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0107312000rxikbr3401C.jpg",
+        "caption": "己略黄公祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 85898,
+        "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/56727.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/56727.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0b1c000001e7qguB96F.jpg",
+        "caption": "Jilue Huanggong Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "85898",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100d0z000000nc2a18B33.jpg",
+        "caption": "Jilue Huanggong Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "85898",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100u0z000000ndiju1884.jpg",
+        "caption": "Jilue Huanggong Temple",
+        "source": "trip_exact",
+        "sourcePoiId": "85898",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/chaozhou/jilue-huanggong-temple-85898/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/10090z000000nfy2v6461.jpg",
+        "caption": "己略黄公祠",
+        "source": "ctrip_exact",
+        "sourcePoiId": 85898,
+        "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/56727.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/56727.html?poiType=3&scene=online"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFAK3J5": {
+    "image": "https://ak-d.tripcdn.com/images/0106s12000n24cdax9F01.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0106s12000n24cdax9F01.jpg",
+        "caption": "老君洞",
+        "source": "trip_exact",
+        "sourcePoiId": "37933752",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/0106d12000n24c6ud2598.jpg",
+        "caption": "老君洞",
+        "source": "trip_exact",
+        "sourcePoiId": "37933752",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/10010m000000e0qm2D012.jpg",
+        "caption": "老君洞",
+        "source": "trip_exact",
+        "sourcePoiId": "37933752",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/100s0m000000dustqECF9.jpg",
+        "caption": "老君洞",
+        "source": "trip_exact",
+        "sourcePoiId": "37933752",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+        }
+      },
+      {
+        "url": "https://ak-d.tripcdn.com/images/100n1f000001gpctgB549.jpg",
+        "caption": "老君洞",
+        "source": "trip_exact",
+        "sourcePoiId": "37933752",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/rongshui/rongshui-laojun-hole-37933752/"
+        }
+      }
+    ]
+  },
+  "amap_B0FFGAU0GX": {
+    "image": "https://dimg04.c-ctrip.com/images/0100v120009dgo0wd0054.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100v120009dgo0wd0054.jpg",
+        "caption": "麻城孝感乡文化公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 31442105,
+        "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/fae1fc90e867e5430e23496af4bc9fc6?type=7",
+        "caption": "麻城孝感乡文化公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGAU0GX",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100b1f000001gsm1r43DF.jpg",
+        "caption": "麻城孝感乡文化公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 31442105,
+        "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100c0f0000007hegv42E9.jpg",
+        "caption": "麻城孝感乡文化公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 31442105,
+        "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/macheng1833/2025277.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFGYAXPP": {
+    "image": "https://ak-d.tripcdn.com/images/01074120009hef5yi5E2E.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/donglan/first-bay-of-honghe-river-47270156/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/01074120009hef5yi5E2E.jpg",
+        "caption": "红水河第一湾",
+        "source": "trip_exact",
+        "sourcePoiId": "47270156",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/donglan/first-bay-of-honghe-river-47270156/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/donglan/first-bay-of-honghe-river-47270156/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/10080e3d3b2d760c3a457694dd51d9a2?type=7",
+        "caption": "红水河第一湾",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGYAXPP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/44cd9622efe4cb8f7096c5d08c0e352b?type=7",
+        "caption": "红水河第一湾现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFGYAXPP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B027700015": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo0t12000ejp0c219309.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo0t12000ejp0c219309.jpg",
+        "caption": "成山头国家重点风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78261,
+        "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/701a01dd3dd7cfac32dd834a51245a21?type=7",
+        "caption": "成山头国家重点风景名胜区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B027700015",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/3501170000011o1322577.jpg",
+        "caption": "成山头国家重点风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78261,
+        "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350o1700000119y4u4EDE.jpg",
+        "caption": "成山头国家重点风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78261,
+        "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350k170000011faflEC91.jpg",
+        "caption": "成山头国家重点风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78261,
+        "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rongcheng899/10614.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFKI643L": {
+    "image": "https://ak-d.tripcdn.com/images/0HJ3112000g8h9pahA4B7.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shangli/city-131905344/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0HJ3112000g8h9pahA4B7.jpg",
+        "caption": "翠湖公园",
+        "source": "trip_exact",
+        "sourcePoiId": "131905344",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shangli/city-131905344/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/shangli/city-131905344/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/cba95f3c3f21703c0000000903378653?type=7",
+        "caption": "翠湖公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFKI643L",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/6384c9b892f795290000001204492748?type=7",
+        "caption": "翠湖公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFKI643L",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B015F186Z7": {
+    "image": "https://dimg04.c-ctrip.com/images/0105o12000kkiem6xF3FE.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0105o12000kkiem6xF3FE.jpg",
+        "caption": "青龙古镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 22866346,
+        "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/10a852bc8931c2280000001352972470?type=7",
+        "caption": "青龙古镇现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B015F186Z7",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350110000000pomxx042E.jpg",
+        "caption": "青龙古镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 22866346,
+        "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350610000000pcc1b4F0C.jpg",
+        "caption": "青龙古镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 22866346,
+        "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350210000000pisjc3CD7.jpg",
+        "caption": "青龙古镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 22866346,
+        "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/yangqu2999/1713700.html"
+        }
+      }
+    ]
+  },
+  "amap_B02F5062JE": {
+    "image": "https://ak-d.tripcdn.com/images/0106e12000f6qk2519FB7.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://hk.trip.com/travel-guide/attraction/foshan/zaomu-mountain-82950/"
+    },
+    "images": [
+      {
+        "url": "https://ak-d.tripcdn.com/images/0106e12000f6qk2519FB7.jpg",
+        "caption": "皂幕山旅游风景区",
+        "source": "trip_exact",
+        "sourcePoiId": "82950",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/foshan/zaomu-mountain-82950/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/foshan/zaomu-mountain-82950/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/a1486cbb4ac430860000003045396411?type=7",
+        "caption": "皂幕山旅游风景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B02F5062JE",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/fa81f1a0cec96736424dda8548e61b16?type=7",
+        "caption": "皂幕山旅游风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02F5062JE",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B013B03COE": {
+    "image": "https://dimg04.c-ctrip.com/images/1mh3d12000kuewrsm6879.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1mh3d12000kuewrsm6879.jpg",
+        "caption": "唐山抗震纪念馆",
+        "source": "ctrip_exact",
+        "sourcePoiId": 81490,
+        "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102l12000tt9vvkjB0F6.jpg",
+        "caption": "唐山抗震纪念馆",
+        "source": "ctrip_exact",
+        "sourcePoiId": 81490,
+        "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103o12000tt9vokyA581.jpg",
+        "caption": "唐山抗震纪念馆",
+        "source": "ctrip_exact",
+        "sourcePoiId": 81490,
+        "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0ww0c120009lat7xy0E37.jpg",
+        "caption": "唐山抗震纪念馆",
+        "source": "ctrip_exact",
+        "sourcePoiId": 81490,
+        "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangshan200/24714.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/046b73f2890d5f5c669c77faaa3bf6c4?type=7",
+        "caption": "唐山抗震纪念馆现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B013B03COE",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B020402ESF": {
+    "image": "https://dimg04.c-ctrip.com/images/1me5f12000dt42mr6B77E.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/xinyi1064/109919.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1me5f12000dt42mr6B77E.jpg",
+        "caption": "马陵山风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 91465,
+        "sourceUrl": "https://you.ctrip.com/sight/xinyi1064/109919.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xinyi1064/109919.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1005090000003q8ch9143.jpg",
+        "caption": "马陵山风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 91465,
+        "sourceUrl": "https://you.ctrip.com/sight/xinyi1064/109919.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xinyi1064/109919.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/d513243c4a00e6f54949374c0e4330d8?type=7",
+        "caption": "马陵山风景名胜区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B020402ESF",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFF4CLD7": {
+    "image": "https://dimg04.c-ctrip.com/images/100e1f000001gt28l42AE.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100e1f000001gt28l42AE.jpg",
+        "caption": "黎侯古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 30464853,
+        "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/cd8d23aaa094bc580000002657470170?type=7",
+        "caption": "黎侯古城",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF4CLD7",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103t120009z96t31C9F2.jpg",
+        "caption": "黎侯古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 30464853,
+        "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01062120009z96zvfC161.jpg",
+        "caption": "黎侯古城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 30464853,
+        "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/licheng2996/1989251.html"
+        }
+      }
+    ]
+  },
+  "amap_B013903KTV": {
+    "image": "https://dimg04.c-ctrip.com/images/01022120009ndm3quD8EA.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01022120009ndm3quD8EA.jpg",
+        "caption": "库伦淖尔旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13656659,
+        "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/274ff9a49f671c2a2ba30ca4fc737426?type=7",
+        "caption": "库伦淖尔旅游度假区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B013903KTV",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo0512000awuwmdn8078.jpg",
+        "caption": "库伦淖尔旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13656659,
+        "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo4c12000awux14a201E.jpg",
+        "caption": "库伦淖尔旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13656659,
+        "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo4g12000awuwd5t2023.jpg",
+        "caption": "库伦淖尔旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 13656659,
+        "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/guyuancounty2591/1416614.html"
+        }
+      }
+    ]
+  },
+  "amap_B027902558": {
+    "image": "https://dimg04.c-ctrip.com/images/0100w120008ouqtd5003C.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/rizhao622/125413.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100w120008ouqtd5003C.jpg",
+        "caption": "日照植物园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 10541566,
+        "sourceUrl": "https://you.ctrip.com/sight/rizhao622/125413.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rizhao622/125413.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/613b0a6a1c324e5057f456a577c099fe?type=7",
+        "caption": "日照植物园",
+        "source": "amap_exact",
+        "sourcePoiId": "B027902558",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100q19000001852mg424A.jpg",
+        "caption": "日照植物园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 10541566,
+        "sourceUrl": "https://you.ctrip.com/sight/rizhao622/125413.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/rizhao622/125413.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFG0N0VO": {
+    "image": "https://dimg04.c-ctrip.com/images/1A0718000001482z6DB82.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/huaian351/1713400.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0718000001482z6DB82.jpg",
+        "caption": "蒋坝古镇风景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 22865948,
+        "sourceUrl": "https://you.ctrip.com/sight/huaian351/1713400.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huaian351/1713400.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/28ab07b30be4434c0000004290204118?type=7",
+        "caption": "蒋坝古镇风景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFG0N0VO",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/ac5758128769a96f0000002593058924?type=7",
+        "caption": "蒋坝古镇风景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFG0N0VO",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B01380PGTT": {
+    "image": "https://dimg04.c-ctrip.com/images/350n0z000000mj3g275C6.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350n0z000000mj3g275C6.jpg",
+        "caption": "全胜峡",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101018,
+        "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350q0z000000mlbodD312.jpg",
+        "caption": "全胜峡",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101018,
+        "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1336f247eb6754a5d06a0fbd6410424e?type=7",
+        "caption": "全胜峡",
+        "source": "amap_exact",
+        "sourcePoiId": "B01380PGTT",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350s0z000000mqwvv5FBB.jpg",
+        "caption": "全胜峡",
+        "source": "ctrip_exact",
+        "sourcePoiId": 101018,
+        "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/tangcounty2574/140320.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFF4HVPX": {
+    "image": "https://dimg04.c-ctrip.com/images/01A1c120008ty74p6053F.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01A1c120008ty74p6053F.jpg",
+        "caption": "金湖水上森林景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 25595574,
+        "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/70d34c3a728d32b2093a5f12611a33cd?type=7",
+        "caption": "金湖水上森林景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF4HVPX",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/35030u000000iworkAF05.png",
+        "caption": "金湖水上森林景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 25595574,
+        "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350d0u000000ith969E8F.png",
+        "caption": "金湖水上森林景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 25595574,
+        "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/jinhu368/1908288.html"
+        }
+      }
+    ]
+  },
+  "amap_B024201B9A": {
+    "image": "https://dimg04.c-ctrip.com/images/0104f12000f6qbk1fF2A7.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/jinyun1021/8462.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0104f12000f6qbk1fF2A7.jpg",
+        "caption": "鼎湖峰",
+        "source": "ctrip_exact",
+        "sourcePoiId": 10532907,
+        "sourceUrl": "https://you.ctrip.com/sight/jinyun1021/8462.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/jinyun1021/8462.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0314000000w72l48E51.jpg",
+        "caption": "鼎湖峰",
+        "source": "ctrip_exact",
+        "sourcePoiId": 10532907,
+        "sourceUrl": "https://you.ctrip.com/sight/jinyun1021/8462.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/jinyun1021/8462.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f33c30a9b1c364b93451bafae1455e36?type=7",
+        "caption": "鼎湖峰现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B024201B9A",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B03470P1ZP": {
+    "image": "https://store.is.autonavi.com/showpic/020c2f82167ea75b0000003113516415?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/020c2f82167ea75b0000003113516415?type=7",
+        "caption": "广元市天曌山景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B03470P1ZP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3df2202cb5bd33a3bc0d1375de2d168a?type=7",
+        "caption": "广元市天曌山景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B03470P1ZP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/0dbb2d104c50254b0cf0b6d9f6e5cbf6?type=7",
+        "caption": "广元市天曌山景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B03470P1ZP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B017A0NIM8": {
+    "image": "https://dimg04.c-ctrip.com/images/01049120008dghfgbAC90.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/5067026.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01049120008dghfgbAC90.jpg",
+        "caption": "汴梁小宋城",
+        "source": "ctrip_exact",
+        "sourcePoiId": 56808777,
+        "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/5067026.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/kaifeng165/5067026.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0j17000001285fq89C1.jpg",
+        "caption": "Bianliang Xiao Song City",
+        "source": "trip_exact",
+        "sourcePoiId": "56808777",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A02170000012fprtEC73.jpg",
+        "caption": "Bianliang Xiao Song City",
+        "source": "trip_exact",
+        "sourcePoiId": "56808777",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1A0f1700000128nmp9BDC.jpg",
+        "caption": "Bianliang Xiao Song City",
+        "source": "trip_exact",
+        "sourcePoiId": "56808777",
+        "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://hk.trip.com/travel-guide/attraction/kaifeng/xiao-song-city-56808777/"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/c883fd62c79cfd9d093c14297c2799bd?type=7",
+        "caption": "小宋城",
+        "source": "amap_exact",
+        "sourcePoiId": "B017A0NIM8",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0JRGC16US": {
+    "image": "https://store.is.autonavi.com/showpic/790e40d62e2c5b7f0000002995192510?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/790e40d62e2c5b7f0000002995192510?type=7",
+        "caption": "芜湖市方特旅游区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0JRGC16US",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/bc571cd42ea4f3c50000002326396306?type=7",
+        "caption": "芜湖市方特旅游区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0JRGC16US",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1416020cc96657fc0000002326380634?type=7",
+        "caption": "芜湖市方特旅游区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0JRGC16US",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B021B01796": {
+    "image": "https://store.is.autonavi.com/showpic/bda3db90c02e46759360f72caadc94d3?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/bda3db90c02e46759360f72caadc94d3?type=7",
+        "caption": "山东地下大峡谷",
+        "source": "amap_exact",
+        "sourcePoiId": "B021B01796",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/de04dcab9bef1b954459855a2f89e53c?type=7",
+        "caption": "山东地下大峡谷",
+        "source": "amap_exact",
+        "sourcePoiId": "B021B01796",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/15ec04d233bde52c3a6c3f405e32f1b6?type=7",
+        "caption": "山东地下大峡谷现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B021B01796",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFMDA273": {
+    "image": "https://dimg04.c-ctrip.com/images/0100112000858yx0gEEDE.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100112000858yx0gEEDE.jpg",
+        "caption": "利山涧旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96321231,
+        "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100i12000858yy9o2BF4.jpg",
+        "caption": "利山涧旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96321231,
+        "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0101912000858z0a284D2.jpg",
+        "caption": "利山涧旅游度假区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 96321231,
+        "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/feicounty2895/5711750.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/dd804b1f7d0d288b2bafbe10e9f0725c?type=7",
+        "caption": "利山涧旅游度假区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFMDA273",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B07290N2M7": {
+    "image": "https://dimg04.c-ctrip.com/images/0100s12000f6pwqaz25ED.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/hongya3096/49105.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100s12000f6pwqaz25ED.jpg",
+        "caption": "槽渔滩风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82810,
+        "sourceUrl": "https://you.ctrip.com/sight/hongya3096/49105.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hongya3096/49105.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01039120009cvyyvuC443.jpg",
+        "caption": "槽渔滩风景名胜区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 82810,
+        "sourceUrl": "https://you.ctrip.com/sight/hongya3096/49105.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/hongya3096/49105.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/9ba7f581bbffd7eb0000002158168117?type=7",
+        "caption": "槽渔滩风景名胜区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B07290N2M7",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFME4T1F": {
+    "image": "https://dimg04.c-ctrip.com/images/0100d12000f6pz6avD5C8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0100d12000f6pz6avD5C8.jpg",
+        "caption": "龙天小镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69449507,
+        "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo4w12000fcn78w1E383.jpg",
+        "caption": "龙天小镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69449507,
+        "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo6f12000fcn7dfqF86F.jpg",
+        "caption": "龙天小镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69449507,
+        "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo4s12000fcn7dmi000B.jpg",
+        "caption": "龙天小镇",
+        "source": "ctrip_exact",
+        "sourcePoiId": 69449507,
+        "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/longyou812/69449507.html"
+        }
+      }
+    ]
+  },
+  "amap_B02420JI2C": {
+    "image": "https://dimg04.c-ctrip.com/images/01020120009edjt130E8C.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/suichang1431/56269.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/01020120009edjt130E8C.jpg",
+        "caption": "遂昌金矿国家矿山公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 85706,
+        "sourceUrl": "https://you.ctrip.com/sight/suichang1431/56269.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/suichang1431/56269.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/7d60a943949165d24b4f4bb4908f2c37?type=7",
+        "caption": "遂昌金矿国家矿山公园",
+        "source": "amap_exact",
+        "sourcePoiId": "B02420JI2C",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/eaddfc17f134b18183c7cae6efaa2480?type=7",
+        "caption": "遂昌金矿国家矿山公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02420JI2C",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B03000057A": {
+    "image": "https://dimg04.c-ctrip.com/images/100f11000000qp1cyA2F8.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/61288.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100f11000000qp1cyA2F8.jpg",
+        "caption": "慧如公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 86701,
+        "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/61288.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/61288.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0106a12000f6psplu137E.jpg",
+        "caption": "慧如公园",
+        "source": "ctrip_exact",
+        "sourcePoiId": 86701,
+        "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/61288.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/chaozhou467/61288.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/5ffc887be17cc2eb03c5ded3213d85b9?type=7",
+        "caption": "慧如公园现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B03000057A",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B02EF0IAQ6": {
+    "image": "https://dimg04.c-ctrip.com/images/0102m12000tkh73j40068.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102m12000tkh73j40068.jpg",
+        "caption": "古佛洞天",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78520,
+        "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/fdb5b55989308361b4de4e25440c41fb?type=7",
+        "caption": "古佛洞天",
+        "source": "amap_exact",
+        "sourcePoiId": "B02EF0IAQ6",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3522e1dd0a09798831f936c7521ccdeb?type=7",
+        "caption": "古佛洞天现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02EF0IAQ6",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350b12000000sk9a6F084.jpg",
+        "caption": "古佛洞天",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78520,
+        "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/350f12000000shw0t0146.jpg",
+        "caption": "古佛洞天",
+        "source": "ctrip_exact",
+        "sourcePoiId": 78520,
+        "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/lechang957/11559.html"
+        }
+      }
+    ]
+  },
+  "amap_B020504VPM": {
+    "image": "https://dimg04.c-ctrip.com/images/0102i12000aq9mu3qE692.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102i12000aq9mu3qE692.jpg",
+        "caption": "桃花坞",
+        "source": "ctrip_exact",
+        "sourcePoiId": 93274,
+        "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0105212000aq9mwdcA38B.jpg",
+        "caption": "桃花坞",
+        "source": "ctrip_exact",
+        "sourcePoiId": 93274,
+        "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0103012000aq9mp5xCA81.jpg",
+        "caption": "桃花坞",
+        "source": "ctrip_exact",
+        "sourcePoiId": 93274,
+        "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/huaian351/125608.html"
+        }
+      }
+    ]
+  },
+  "amap_B0FFF2GH1R": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo2p12000et6c0t7D55F.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo2p12000et6c0t7D55F.jpg",
+        "caption": "曹丞相府",
+        "source": "ctrip_exact",
+        "sourcePoiId": 89286,
+        "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/3cbdd98e2917e7f4f02576116560acf4?type=7",
+        "caption": "曹丞相府",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF2GH1R",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/c7e146bf6950e69f7312541606992e01?type=7",
+        "caption": "曹丞相府现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFF2GH1R",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0101e12000953fb835C0D.jpg",
+        "caption": "曹丞相府",
+        "source": "ctrip_exact",
+        "sourcePoiId": 89286,
+        "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/0102x12000953fk2o071C.jpg",
+        "caption": "曹丞相府",
+        "source": "ctrip_exact",
+        "sourcePoiId": 89286,
+        "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/xuchang465/73590.html"
+        }
+      }
+    ]
+  },
+  "amap_B017901L4R": {
+    "image": "https://store.is.autonavi.com/showpic/fa289eb9d70c1993f8d8f61843581fb5?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/fa289eb9d70c1993f8d8f61843581fb5?type=7",
+        "caption": "桐柏山淮源风景名胜区",
+        "source": "amap_exact",
+        "sourcePoiId": "B017901L4R",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/bf130ce6014939789b2a53b753d2e056?type=7",
+        "caption": "桐柏山淮源风景名胜区",
+        "source": "amap_exact",
+        "sourcePoiId": "B017901L4R",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/1a5f60241ae1f23d10cb90d7a17e01a2?type=7",
+        "caption": "桐柏山淮源风景名胜区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B017901L4R",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0179005CP": {
+    "image": "https://store.is.autonavi.com/showpic/01ab31408a5b8ff595cb47e342fe4e4c?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/01ab31408a5b8ff595cb47e342fe4e4c?type=7",
+        "caption": "五朵山旅游景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0179005CP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/06a826589dfd6df58f89729def038efd?type=7",
+        "caption": "五朵山旅游景区",
+        "source": "amap_exact",
+        "sourcePoiId": "B0179005CP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/2361b5d4519bb170cb6a1f9ec53e1ea6?type=7",
+        "caption": "五朵山旅游景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0179005CP",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B0FFFEC6F3": {
+    "image": "https://store.is.autonavi.com/showpic/6a3e0d51fb15ef8d727ccdadd83aa304?type=7",
+    "image_source": {
+      "provider": "高德地图"
+    },
+    "images": [
+      {
+        "url": "https://store.is.autonavi.com/showpic/6a3e0d51fb15ef8d727ccdadd83aa304?type=7",
+        "caption": "中海度假村",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFEC6F3",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/f8c1f40c124a5256e7b7bc23fdd28747?type=7",
+        "caption": "中海度假村",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFEC6F3",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/c540a73250d36be1caf3c4a44f125fcd?type=7",
+        "caption": "中海度假村现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B0FFFEC6F3",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      }
+    ]
+  },
+  "amap_B02F103HUJ": {
+    "image": "https://dimg04.c-ctrip.com/images/1lo5612000h143lm80CEA.jpg",
+    "image_source": {
+      "provider": "景区公开资料",
+      "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html?poiType=3&scene=online"
+    },
+    "images": [
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo5612000h143lm80CEA.jpg",
+        "caption": "梅州雁南飞茶田景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79822,
+        "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo2b12000h144aax5416.jpg",
+        "caption": "梅州雁南飞茶田景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79822,
+        "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html?poiType=3&scene=online",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html?poiType=3&scene=online"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/1lo6112000h143lluE662.jpg",
+        "caption": "梅州雁南飞茶田景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79822,
+        "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html"
+        }
+      },
+      {
+        "url": "https://store.is.autonavi.com/showpic/c0d85bb309ac2fee631c47d618d9d901?type=7",
+        "caption": "梅州雁南飞茶田景区现有主图",
+        "source": "amap_exact",
+        "sourcePoiId": "B02F103HUJ",
+        "imageSource": {
+          "provider": "高德地图"
+        }
+      },
+      {
+        "url": "https://dimg04.c-ctrip.com/images/100i0r000000hbntb2BD3.jpg",
+        "caption": "梅州雁南飞茶田景区",
+        "source": "ctrip_exact",
+        "sourcePoiId": 79822,
+        "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html",
+        "imageSource": {
+          "provider": "景区公开资料",
+          "sourceUrl": "https://you.ctrip.com/sight/meizhou523/17691.html"
         }
       }
     ]

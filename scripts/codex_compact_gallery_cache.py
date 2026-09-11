@@ -4,6 +4,7 @@ import json
 import time
 from pathlib import Path
 from PIL import Image, ImageOps
+from gallery_checkpoint_io import replace_checkpoint
 
 root = Path(__file__).resolve().parent.parent
 runtime = root / '.runtime' / 'attraction-gallery-batch'
@@ -41,5 +42,5 @@ for relative, images in refs.items():
         print('Cache skipped:', source.name, str(error))
 temp = file.with_suffix('.compact.tmp')
 temp.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding='utf-8')
-temp.replace(file)
+replace_checkpoint(temp, file)
 print('Review caches compacted:', count)
