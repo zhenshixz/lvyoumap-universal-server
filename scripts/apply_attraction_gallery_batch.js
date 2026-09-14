@@ -58,6 +58,8 @@ function main() {
   const ready = (state.items || []).filter(item => item.status === 'ready_for_user_review');
 
   if (!ready.length) throw new Error('没有可写入的已验收图库。');
+  const { existingMap, mergeImages } = require('./gallery_existing_images');
+  const existing = existingMap();
   const patches = {};
   let addedCount = 0;
   let updatedCount = 0;
@@ -82,13 +84,14 @@ function main() {
       ...(candidate.sourceUrl ? { sourceUrl: candidate.sourceUrl } : {}),
       imageSource: sourceFor(candidate),
     }));
+    const retained = mergeImages(existing.get(item.id), images);
     const patch = {
-      image: images[0].url,
-      image_source: images[0].imageSource,
-      images,
+      image: retained[0].url,
+      image_source: retained[0].imageSource,
+      images: retained,
     };
     const existingUrls = (current[item.id]?.images || []).map(image => typeof image === 'string' ? image : image.url);
-    if (JSON.stringify(existingUrls) === JSON.stringify(urls) && current[item.id]?.image === patch.image) {
+    if (JSON.stringify(existingUrls) === JSON.stringify(retained.map(im=>im.url)) && current[item.id]?.image === patch.image) {
       unchangedCount += 1;
       continue;
     }

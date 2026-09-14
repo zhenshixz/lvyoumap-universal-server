@@ -119,6 +119,8 @@ const current = fs.existsSync(outputPath)
   ? JSON.parse(fs.readFileSync(outputPath, 'utf8').replace(/^\uFEFF/, ''))
   : {};
 
+const { existingMap, mergeImages } = require('./gallery_existing_images');
+const existing = existingMap();
 for (const [id, images] of Object.entries(selected)) {
   const blocked = excludeByAttraction[id] || [];
   const seen = new Set();
@@ -129,7 +131,8 @@ for (const [id, images] of Object.entries(selected)) {
     .slice(0, MAX_IMAGES)
     .map(cleanImage);
   if (accepted.length < MIN_IMAGES) throw new Error(`${id} 视觉筛选后不足 ${MIN_IMAGES} 张，停止写入。`);
-  current[id] = { images: accepted };
+  const retained = mergeImages(existing.get(id), accepted);
+  current[id] = { ...current[id], image:retained[0].url, image_source:retained[0].imageSource, images: retained };
 }
 
 fs.writeFileSync(outputPath, `${JSON.stringify(current, null, 2)}\r\n`, 'utf8');

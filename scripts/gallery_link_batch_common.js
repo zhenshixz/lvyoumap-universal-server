@@ -14,8 +14,11 @@ function write(file, value) {
 function alive(pid) { try { if (!Number.isInteger(pid) || pid <= 0) return false; process.kill(pid, 0); return true; } catch { return false; } }
 function tripUrl(value) {
   if (!String(value || '').trim()) return '';
-  const u = new URL(String(value).trim());
-  if (u.protocol !== 'https:' || !['hk.trip.com', 'www.trip.com', 'cn.trip.com'].includes(u.hostname) || u.port || u.username || u.password || !/^\/travel-guide\/attraction\/[a-z0-9-]+\/[a-z0-9-]+-\d+\/?$/i.test(u.pathname)) throw Error('请填写 Trip 景点详情页 HTTPS 地址');
+  let u;
+  try { u = new URL(String(value).trim()); } catch { throw Error('链接格式不完整，请复制浏览器地址栏中的完整地址'); }
+  if (u.protocol !== 'https:') throw Error('链接需要以 https:// 开头');
+  if (!['hk.trip.com', 'www.trip.com', 'cn.trip.com'].includes(u.hostname) || u.port || u.username || u.password) throw Error('链接必须来自 hk.trip.com、www.trip.com 或 cn.trip.com');
+  if (!/^\/travel-guide\/(?:attraction|shops)\/[^/]+\/[^/]+-\d+\/?$/i.test(u.pathname)) throw Error('需要Trip具体地点详情页，不能使用搜索页或城市列表页');
   return `https://hk.trip.com${u.pathname.replace(/\/$/, '')}/`;
 }
 // These are supplied or previously browser-verified pages, not automatic search results.
@@ -46,9 +49,12 @@ function validateDraft(input, current) {
   if (input.revision !== current.revision) throw Error('清单已更新，请刷新后再保存');
   if (!Array.isArray(input.items) || input.items.length !== current.items.length || !input.items.length || input.items.length > 100) throw Error('清单条数不匹配（支持1–100项）');
   const result = { ...current, revision: current.revision + 1, savedAt: new Date().toISOString(), items: current.items.map((old, index) => {
-    const item = input.items[index];
+    const matches = input.items.filter(i=>i.id===old.id);
+    if(matches.length!==1) throw Error('清单ID缺失或重复');
+    const item = matches[0];
     if (item.id !== old.id) throw Error('清单ID不可变更');
-    const url = tripUrl(item.url);
+    let url;
+    try { url = tripUrl(item.url); } catch (e) { throw Error(`${old.name}：${e.message}`); }
     const pageName = String(item.pageName || '').trim();
     const region = String(item.region || '').trim();
     if (pageName.length > 100 || region.length > 40) throw Error('名称或地域过长');

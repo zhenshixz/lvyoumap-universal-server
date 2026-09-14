@@ -1,9 +1,10 @@
 const C = require('./gallery_link_batch_common');
 const { fs, path, root, runtime, read, write, batchPath, alive } = C;
 const { execFileSync } = require('child_process');
+const { imagesOf, existingMap, mergeImages } = require('./gallery_existing_images');
 function makePlan(state, selections) {
   if (!Array.isArray(selections) || !selections.length || selections.length > state.items.length) throw Error('请选择要写入的图片');
-  const seen = new Set();
+  const seen = new Set(), existing = existingMap();
   const items = selections.map(choice => {
     const item = state.items.find(i => i.id === choice.id);
     if (!item || seen.has(item.id)) throw Error('验收景点不属于当前批次或重复');
@@ -16,7 +17,9 @@ function makePlan(state, selections) {
       if (u.protocol !== 'https:' || u.username || u.password || u.port) throw Error('图片地址无效');
       return { url, caption: item.name, source: image.source === 'trip' ? 'trip_exact' : 'amap_exact', ...(image.source === 'trip' ? { sourceUrl: item.url } : { sourcePoiId: item.id.replace(/^amap_/, '') }), imageSource: { provider: image.source === 'trip' ? '景区公开资料' : '高德地图', ...(image.source === 'trip' ? { sourceUrl: item.url } : {}) } };
     });
-    return { id: item.id, name: item.name, images };
+    const coverUrl = choice.coverUrl || existing.get(item.id)?.image || images[0].url;
+    mergeImages(existing.get(item.id), images, coverUrl);
+    return { id: item.id, name: item.name, images, coverUrl };
   });
   return { batchId: state.id, approvedAt: new Date().toISOString(), items };
 }
@@ -49,6 +52,8 @@ function execute(plan, options = {}) {
     if (!ids.has(item.id)) throw Error('数据库不存在景点：' + item.name);
     if (item.images.some(im => denied.has(im.url))) throw Error('图片已在拒绝清单：' + item.name);
   }
+  const existing = existingMap(base);
+  const finalItems = plan.items.map(item => ({ ...item, images: mergeImages(existing.get(item.id), item.images, item.coverUrl) }));
   fs.mkdirSync(backup, { recursive: true });
   fs.copyFileSync(target, path.join(backup, 'overrides.json'));
   const hadData = fs.existsSync(dataDir), hadDist = fs.existsSync(dist);
@@ -60,7 +65,7 @@ function execute(plan, options = {}) {
   let committed = false;
   try {
     const merged = { ...current };
-    for (const item of plan.items) merged[item.id] = { ...current[item.id], image: item.images[0].url, image_source: item.images[0].imageSource, images: item.images };
+    for (const item of finalItems) merged[item.id] = { ...current[item.id], image: item.images[0].url, image_source: item.images[0].imageSource, images: item.images };
     write(target, merged);
     (options.build || (() => execFileSync(process.execPath, [path.join(base, 'scripts/build.js'), '--stage-only'], { cwd: base, windowsHide: true, timeout: 300000, stdio: 'inherit' })))();
     const built = new Map();
@@ -68,13 +73,13 @@ function execute(plan, options = {}) {
       const p = read(path.join(stage, 'data/provinces', file));
       for (const i of p.attractions || []) built.set(i.id, i);
     }
-    for (const item of plan.items) {
+    for (const item of finalItems) {
       const i = built.get(item.id);
       if (i?.image !== item.images[0].url || JSON.stringify(i.images?.map(x => typeof x === 'string' ? x : x.url)) !== JSON.stringify(item.images.map(x => x.url))) throw Error('构建结果与验收图片不一致：' + item.name);
     }
     if (hadDist) fs.renameSync(dist, oldDist);
     fs.renameSync(stage, dist);
-    const receipt = { ...progress, status: 'applied', appliedAt: new Date().toISOString(), count: plan.items.length, imageCount: plan.items.reduce((n, i) => n + i.images.length, 0), selections: plan.items.map(i => ({ id: i.id, urls: i.images.map(im => im.url) })), settled: true, backup: path.relative(base, backup).replace(/\\/g, '/') };
+    const receipt = { ...progress, status: 'applied', appliedAt: new Date().toISOString(), count: plan.items.length, imageCount: plan.items.reduce((n, i) => n + i.images.length, 0), selections: plan.items.map(i => ({ id: i.id, urls: i.images.map(im => im.url) })), finalSelections: finalItems.map(i => ({id:i.id,urls:i.images.map(im=>im.url)})), finalImageCount: finalItems.reduce((n,i)=>n+i.images.length,0), policy:'preserve-existing-v1', settled: true, backup: path.relative(base, backup).replace(/\\/g, '/') };
     write(receiptFile, receipt); committed = true;
     // Only the displaced generated dist is removed, never source/online images.
     try { fs.rmSync(oldDist, { recursive: true, force: true }); } catch { /* retain backup on Windows file contention */ }

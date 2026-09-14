@@ -53,6 +53,29 @@ try {
   put(path.join(sandbox,'content/attraction-gallery-overrides.json'),{corrupt:true});
   assert.equal(execute(plan,{root:sandbox,dir:failureDir,build}).status,'applied');
   assert.ok(read(path.join(sandbox,'content/attraction-gallery-overrides.json')).e);
+  // Existing cover-only records and previously accepted galleries survive every append.
+  const H=require('./gallery_existing_images');
+  const oldUrl='https://example.org/old.jpg',newUrl=state.items[0].images[0].url;
+  put(path.join(sandbox,'data/provinces/test.json'),{attractions:[{id:'b',name:'B',image:oldUrl}]});
+  const overrides=read(path.join(sandbox,'content/attraction-gallery-overrides.json'));delete overrides.b;put(path.join(sandbox,'content/attraction-gallery-overrides.json'),overrides);
+  const appendPlan=makePlan(state,[{id:'b',urls:[newUrl]}]);
+  assert.equal(appendPlan.items[0].coverUrl,oldUrl);
+  const appendDir=path.join(C.runs,'20260911-160002-cccccc');fs.mkdirSync(appendDir);
+  const buildActual=()=>{const value=read(path.join(sandbox,'content/attraction-gallery-overrides.json')).b;put(path.join(sandbox,'.dist-next/data/provinces/test.json'),{attractions:[{id:'b',...value}]});};
+  const append=execute(appendPlan,{root:sandbox,dir:appendDir,build:buildActual});
+  assert.deepEqual(append.finalSelections[0].urls,[oldUrl,newUrl]);
+  assert.equal(append.imageCount,1);assert.equal(append.finalImageCount,2);
+  assert.throws(()=>makePlan(state,[{id:'b',urls:[newUrl],coverUrl:'https://example.org/unreviewed.jpg'}]),/封面/);
+  const secondDir=path.join(C.runs,'20260911-160003-dddddd');fs.mkdirSync(secondDir);
+  const second=execute(makePlan(state,[{id:'b',urls:[newUrl],coverUrl:newUrl}]),{root:sandbox,dir:secondDir,build:buildActual});
+  assert.deepEqual(second.finalSelections[0].urls,[newUrl,oldUrl],'changing cover retains old images and deduplicates');
+  const concurrent='https://example.org/accepted-after-review.jpg';
+  const value=read(path.join(sandbox,'content/attraction-gallery-overrides.json'));value.b.images.push({url:concurrent});put(path.join(sandbox,'content/attraction-gallery-overrides.json'),value);
+  const thirdDir=path.join(C.runs,'20260911-160004-eeeeee');fs.mkdirSync(thirdDir);
+  const third=execute(appendPlan,{root:sandbox,dir:thirdDir,build:buildActual});
+  assert.ok(third.finalSelections[0].urls.includes(concurrent),'execution rereads current accepted images, never stale snapshot replacement');
+  assert.equal(H.mergeImages({image:oldUrl,images:[{url:oldUrl}]},[{url:oldUrl}]).length,1);
+  console.log('PASS: existing cover preservation, append/dedup, explicit cover change, stale approval protection.');
   console.log('PASS: adjustable lists, archive/restore, exclusions, saved confirmation, one-image apply, scoped approval, idempotence, rollback and crash recovery.');
 } finally {
   assert.equal(path.dirname(sandbox),originalRuntime); assert.ok(path.basename(sandbox).startsWith('workbench-test-'));

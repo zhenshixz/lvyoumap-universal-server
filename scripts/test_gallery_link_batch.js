@@ -28,10 +28,12 @@ async function test() {
     { id: 'amap_B02400TOA1', name: '灵湖景区', region: '临海', url: 'https://hk.trip.com/travel-guide/attraction/linhai/lake-10520631/', images: [] },
     { id: 'amap_B000000002', name: '另一个景点', region: '临海', url: 'https://hk.trip.com/travel-guide/attraction/linhai/lake-10520631/', images: [] },
   ] });
-  let imageRequests = 0, amapRequests = 0;
+  let imageRequests = 0, amapRequests = 0, shopRequests = 0;
   const realFetch = global.fetch;
-  global.fetch = async url => {
+  global.fetch = async (url, init) => {
     const u = new URL(url);
+    if (u.pathname.endsWith('/SearchPoiImageInfo')) { shopRequests++; assert.equal(JSON.parse(init.body).poiId,10520631); return new Response(JSON.stringify({resultCode:0,imageCount:64,imageInfo:[{imageUrl:'https://ak-d.tripcdn.com/images/fixture.jpg'}]})); }
+    if (u.pathname.startsWith('/travel-guide/shops/')) return new Response('<script id="__NEXT_DATA__">'+JSON.stringify({props:{pageProps:{initialState:{poiId:'10520631'}}}})+'</script>');
     if (u.hostname === 'hk.trip.com') {
       const appData = { poiData: { poiId: 10520631, poiName: '灵湖景区', poiImage: [{ imageUrl: 'https://ak-d.tripcdn.com/images/fixture.jpg' }] } };
       return new Response(`<html><body>灵湖景区 地址：浙江临海<script id="__NEXT_DATA__">${JSON.stringify({ props: { pageProps: { initialState: { appData } } } })}</script></body></html>`);
@@ -67,9 +69,56 @@ async function test() {
     assert.equal(imageRequests, 5, 'targeted repair downloads only the formerly blocked Trip source');
     const beforeAmap=amapRequests;
     C.sourcePolicy=()=>({amapDisabled:true,amapReason:'test monthly pause'}); C.batchList=()=>[];
+    const originalDraft=C.draft(); C.draft=()=>({...originalDraft,items:[{...originalDraft.items[0],url:'https://hk.trip.com/travel-guide/shops/linhai/lake-10520631/'}]});
     delete require.cache[require.resolve('./gallery_link_batch_worker')];
     await require('./gallery_link_batch_worker').run();
     assert.equal(amapRequests,beforeAmap,'monthly pause must issue zero Amap requests');
+    assert.equal(shopRequests,1,'SHOP gallery fetched directly once');
+    const { Discovery, select } = require('./gallery_trip_discovery');
+    const target={name:'灵湖景区',city:'台州'};
+    const candidate={name:'靈湖景區',region:'臨海 · 台州 · 浙江 · 中國',url:'https://hk.trip.com/travel-guide/attraction/linhai/lake-10520631/'};
+    assert.equal(select(target,[candidate]).status,'matched');
+    assert.equal(select(target,[{...candidate,region:'重慶'}]).status,'manual');
+    assert.equal(select(target,[{...candidate,name:'靈湖景區-玻璃橋'}]).status,'matched');
+    assert.equal(select(target,[candidate,{...candidate,url:candidate.url+'other'}]).status,'matched');
+    let searches=0;
+    Discovery.prototype.find=async()=>{ searches++; return {status:'matched',...candidate}; };
+    C.draft=()=>({...originalDraft,savedAt:null,items:[originalDraft.items[0],{...originalDraft.items[0],id:'amap_B999',url:''}]});
+    process.argv.push('--auto-discover');
+    delete require.cache[require.resolve('./gallery_link_batch_worker')];
+    const beforeIds=new Set(fs.readdirSync(C.runs));
+    await require('./gallery_link_batch_worker').run();
+    const autoId=fs.readdirSync(C.runs).find(x=>!beforeIds.has(x));
+    const autoState=read(path.join(C.runs,autoId,'state.json'));
+    assert.equal(searches,1,'manual URL bypasses discovery');
+    assert.equal(autoState.items[1].trip.status,'collected','discovery feeds existing collector');
+    assert.equal(autoState.items[1].images.filter(im=>im.accepted).length,1);
+    autoState.status='interrupted'; autoState.items[1].done=false;
+    write(path.join(C.runs,autoId,'state.json'),autoState);
+    C.batchList=()=>[{id:autoId}];
+    delete require.cache[require.resolve('./gallery_link_batch_worker')];
+    const beforeResume=imageRequests;
+    await require('./gallery_link_batch_worker').run();
+    assert.equal(searches,1,'resume reuses discovered URL');
+    assert.equal(imageRequests,beforeResume,'resume does not redownload completed sources');
+    C.batchList=()=>[{id:autoId}];
+    C.draft=()=>({...originalDraft,revision:99,savedAt:null,items:[{...originalDraft.items[0],url:candidate.url}]});
+    delete require.cache[require.resolve('./gallery_link_batch_worker')];
+    const beforeGuard=imageRequests;
+    await require('./gallery_link_batch_worker').run();
+    assert.equal(imageRequests,beforeGuard,'old successful URL does not recollect in a new draft');
+    C.batchList=()=>[];
+    C.draft=()=>({...originalDraft,savedAt:null,items:[{...originalDraft.items[0],url:''},{...originalDraft.items[0],id:'amap_B998',url:''}]});
+    Discovery.prototype.find=async()=>{throw Error('mock disconnected');};
+    delete require.cache[require.resolve('./gallery_link_batch_worker')];
+    const beforeFailureIds=new Set(fs.readdirSync(C.runs));
+    await assert.rejects(require('./gallery_link_batch_worker').run(),/连续两项/);
+    const failureId=fs.readdirSync(C.runs).find(x=>!beforeFailureIds.has(x));
+    const failureState=read(path.join(C.runs,failureId,'state.json'));
+    assert.equal(failureState.status,'interrupted');
+    assert.equal(failureState.items.filter(i=>i.done).length,0,'service errors remain retryable');
+    assert.equal(fs.existsSync(path.join(testRoot,'worker.lock')),false,'failure releases lock');
+    process.argv.pop();
     console.log('PASS: URL/revision guards, source identity, first Amap only, cross-source dedup, checkpoints, resume, isolated raw cleanup.');
   } finally { global.fetch = realFetch; }
 }

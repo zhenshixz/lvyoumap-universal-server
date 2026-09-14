@@ -19,7 +19,7 @@ function detach(script, logName) {
 }
 async function main() {
   if (Number(process.versions.node.split('.')[0]) < 24) throw Error('Node.js 24+ required');
-  for (const module of ['vue', 'cheerio', 'opencc-js']) require.resolve(module);
+  for (const module of ['vue', 'cheerio', 'opencc-js', 'puppeteer-core']) require.resolve(module);
   const command = process.argv[2] || 'form';
   if (!['form', 'run', 'preview'].includes(command)) throw Error('Expected form, run or preview');
   if (['form', 'run', 'preview'].includes(command)) {

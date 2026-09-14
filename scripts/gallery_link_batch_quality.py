@@ -24,24 +24,20 @@ for item in data:
             image = ImageOps.exif_transpose(original).convert('RGB')
             w, h = image.size
             item['dimensions'] = [w, h]
-            minimum = (1280, 720) if item['source'] == 'amap' else (1000, 560)
-            if max(w, h) < minimum[0] or min(w, h) < minimum[1]:
-                item.update(accepted=False, reason='尺寸不足')
-            else:
-                ok, values, reason = visual_ok(source, hashes)
-                item.update(accepted=ok, reason=reason, hashes=list(values))
-                if ok:
-                    hashes.append(values)
-                    target = manifest.parent / 'candidates' / source.name
-                    target.parent.mkdir(exist_ok=True)
-                    image.thumbnail((2500, 2500))
-                    image.save(target, quality=88, optimize=True)
-                    item['file'] = 'candidates/' + source.name
-                    image.thumbnail((480, 320))
-                    thumb = manifest.parent / 'thumbs' / source.name
-                    thumb.parent.mkdir(exist_ok=True)
-                    image.save(thumb, quality=78, optimize=True)
-                    item['thumb'] = 'thumbs/' + source.name
+            ok, values, reason = visual_ok(source, hashes)
+            item.update(accepted=ok, reason=reason, hashes=list(values))
+            if ok:
+                hashes.append(values)
+                target = manifest.parent / 'candidates' / source.name
+                target.parent.mkdir(exist_ok=True)
+                image.thumbnail((2500, 2500))
+                image.save(target, quality=88, optimize=True)
+                item['file'] = 'candidates/' + source.name
+                image.thumbnail((480, 320))
+                thumb = manifest.parent / 'thumbs' / source.name
+                thumb.parent.mkdir(exist_ok=True)
+                image.save(thumb, quality=78, optimize=True)
+                item['thumb'] = 'thumbs/' + source.name
     except Exception as e:
         item.update(accepted=False, reason='无法解码图片: ' + type(e).__name__)
     # Persist references before deleting this batch's unreferenced raw download.

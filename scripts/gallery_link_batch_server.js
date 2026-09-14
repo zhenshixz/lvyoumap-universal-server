@@ -1,3 +1,4 @@
+const { draftView } = require('./gallery_trip_discovery');
 const http = require('http');
 const C = require('./gallery_link_batch_common');
 const { fs, path, root, runtime, draft, read, write, validateDraft, batchList, batchPath, alive, sourcePolicy } = C;
@@ -23,23 +24,26 @@ const server = http.createServer(async (req, res) => {
         if (url.pathname === '/api/start') return json(res, await actions.start(input));
         if (url.pathname === '/api/apply') return json(res, await actions.apply(input));
         let next;
-        if (url.pathname === '/api/draft') next = actions.saveDraft(input);
+        if (url.pathname === '/api/remaining') next = actions.remaining(input);
+        else if (url.pathname === '/api/draft') next = actions.saveDraft(input);
         else if (url.pathname === '/api/generate') next = actions.generate(input);
         else if (url.pathname === '/api/restore') next = actions.restore(input);
         else return json(res, { error: 'Not found' }, 404);
-        return json(res, { ...next, sourcePolicy: sourcePolicy(), readOnly: false });
+        return json(res, { ...draftView(next), sourcePolicy: sourcePolicy(), readOnly: false });
       } finally { mutating = false; }
     }
     if (req.method !== 'GET') return json(res, { error: 'Method not allowed' }, 405);
     if (url.pathname === '/api/health') return json(res, { service, root });
-    if (url.pathname === '/api/draft') return json(res, { ...draft(), sourcePolicy: sourcePolicy(), readOnly: !local(req) });
+    if (url.pathname === '/api/draft') return json(res, { ...draftView(draft()), sourcePolicy: sourcePolicy(), readOnly: !local(req) });
     if (url.pathname === '/api/batches') return json(res, batchList());
     if (url.pathname === '/api/drafts') return json(res, actions.draftList());
     if (url.pathname === '/api/batch') {
       const s = read(path.join(batchPath(url.searchParams.get('id')), 'state.json'));
       if (!s) return json(res, { error: '批次不存在' }, 404);
       if (s.status === 'running' && !alive(s.pid)) s.status = 'interrupted';
-      return json(res, { ...s, apply: actions.receipt(s.id), readOnly: !local(req) });
+      const { existingMap, imagesOf } = require('./gallery_existing_images');
+      const existing = existingMap();
+      return json(res, { ...s, items:s.items.map(i=>({...i, existingImages:imagesOf(existing.get(i.id)), existingCover:existing.get(i.id)?.image})), apply: actions.receipt(s.id), readOnly: !local(req) });
     }
     let file, type;
     if (url.pathname === '/') { file = path.join(__dirname, 'gallery-link-batch.html'); type = 'text/html; charset=utf-8'; }

@@ -2,6 +2,7 @@ const C = require('./gallery_link_batch_common');
 const { fs, path, root, runtime, runs, read, write, alive, draft, batchPath, batchList } = C;
 const { spawn } = require('child_process');
 const crypto = require('crypto');
+const { classify, policyUpgrade } = require('./gallery_retry_policy');
 const draftsDir = path.join(runtime, 'drafts');
 fs.mkdirSync(draftsDir, { recursive: true });
 const stamp = () => new Date().toISOString().replace(/[^0-9]/g, '') + '-' + crypto.randomBytes(3).toString('hex');
@@ -39,15 +40,16 @@ function saveDraft(input) {
   write(path.join(runtime, 'draft.json'), next);
   return next;
 }
-function pool(mode = 'new') {
+function pool() {
   const source = read(path.join(root, '.runtime/attraction-gallery-batch/state.json'), { items: [] });
   const published = read(path.join(root, 'content/attraction-gallery-overrides.json'), {});
-  const attempted = new Set(), waiting = new Set(), settled = new Set();
+  const attempted = new Set(), waiting = new Set(), settled = new Set(), latest = new Map();
   for (const s of states()) {
     const applied = read(path.join(batchPath(s.id), 'apply.json'));
     if (applied?.status === 'applied') for (const id of applied.ids) settled.add(id);
     for (const i of s.items) {
       attempted.add(i.id);
+      if (!latest.has(i.id)) latest.set(i.id, i);
       if (s.status !== 'completed' || (i.images || []).some(im => im.accepted)) waiting.add(i.id);
     }
   }
@@ -55,7 +57,9 @@ function pool(mode = 'new') {
   for (const d of draftList()) for (const i of read(path.join(draftsDir, d.id + '.json')).items) if (!attempted.has(i.id)) reserved.add(i.id);
   for (const i of draft().items) if (!attempted.has(i.id)) reserved.add(i.id);
   return source.items.filter(i => i.id && !String(i.status).startsWith('excluded_') && !String(i.status).startsWith('ready_for_') && !published[i.id] && !settled.has(i.id) && !waiting.has(i.id) && !reserved.has(i.id)
-    && (mode === 'retry' ? attempted.has(i.id) : !attempted.has(i.id)));
+    && (!latest.has(i.id) || ['new','retry'].includes(classify(latest.get(i.id)))))
+    .sort((a,b)=>Number(attempted.has(a.id))-Number(attempted.has(b.id)))
+    .map(i=>({...i,retryUrl:latest.get(i.id)?.url || '',queueReason:latest.has(i.id)?(policyUpgrade(latest.get(i.id))?'规则更新可重试':'网络异常待重试'):'尚未尝试'}));
 }
 function generate(input) {
   assertIdle();
@@ -63,10 +67,10 @@ function generate(input) {
   if (!Number.isInteger(count) || count < 1 || count > 100) throw Error('请输入1–100之间的整数');
   const current = draft();
   if (input.revision !== current.revision) throw Error('清单已更新，请刷新');
-  const available = pool(input.mode);
+  const available = pool();
   if (!available.length) throw Error('当前条件下没有可生成的景点');
   archive(current);
-  const value = { draftId: stamp(), revision: current.revision + 1, createdAt: new Date().toISOString(), savedAt: null, mode: input.mode || 'new', items: available.slice(0, count).map(i => ({ id: i.id, name: i.name, province: i.province, city: i.city || '', region: i.city || '', beforeSelected: i.selected?.length || 0, url: '', skip: false })) };
+  const value = { draftId: stamp(), revision: current.revision + 1, createdAt: new Date().toISOString(), savedAt: null, mode: 'pending', items: available.slice(0, count).map(i => ({ id: i.id, name: i.name, province: i.province, city: i.city || '', region: i.city || '', beforeSelected: i.selected?.length || 0, url: i.retryUrl || '', skip: false, queueReason:i.queueReason })) };
   archive(value); write(path.join(runtime, 'draft.json'), value);
   return value;
 }
@@ -90,11 +94,12 @@ async function start(input) {
   if (alive(lock?.pid)) return { running: true };
   assertIdle();
   const current = draft();
-  if (input.revision !== current.revision || !current.savedAt) throw Error('请先保存当前清单');
-  const match = states().find(s => s.revision === current.revision || (current.draftId && s.draftId === current.draftId && JSON.stringify(s.items.map(i => [i.id,i.url,i.skip])) === JSON.stringify(current.items.map(i => [i.id,i.url,i.skip]))));
-  if (match?.status === 'completed' && !match.items.some(i => i.trip?.status === 'identity_review')) return { id: match.id, completed: true };
+  if (input.revision !== current.revision || (!current.savedAt && input.autoDiscover !== true)) throw Error('请先保存当前清单');
+  const originalItems = s => read(path.join(batchPath(s.id), 'input.json'))?.items || s.items;
+  const match = states().find(s => !!s.autoDiscover === (input.autoDiscover === true) && (s.revision === current.revision || (current.draftId && s.draftId === current.draftId && JSON.stringify(originalItems(s).map(i => [i.id,i.url,i.skip])) === JSON.stringify(current.items.map(i => [i.id,i.url,i.skip])))));
+  if (match?.status === 'completed' && !match.items.some(i => classify(i)==='retry')) return { id: match.id, completed: true };
   require('./gallery_link_batch_python').resolvePython();
-  const child = detach('gallery_link_batch_worker.js', match ? ['--resume=' + match.id] : [], path.join(runtime, 'worker.log'));
+  const child = detach('gallery_link_batch_worker.js', [...(match ? ['--resume=' + match.id] : []), ...(input.autoDiscover === true ? ['--auto-discover'] : [])], path.join(runtime, 'worker.log'));
   for (let i = 0; i < 40; i++) {
     await new Promise(r => setTimeout(r, 100));
     const s = states().find(s => s.pid === child.pid);
@@ -102,6 +107,20 @@ async function start(input) {
     if (!alive(child.pid)) throw Error('启动失败，请查看worker.log');
   }
   return { running: true };
+}
+function remaining(input) {
+  assertIdle();
+  const current = draft();
+  if (input.revision !== current.revision) throw Error('清单已更新，请刷新');
+  const s = read(path.join(batchPath(input.id), 'state.json'));
+  if (s?.status !== 'completed') throw Error('请等批次处理结束');
+  const published = read(path.join(root, 'content/attraction-gallery-overrides.json'), {});
+  const settled = new Set(states().flatMap(b => { const r=receipt(b.id);return r?.status==='applied'?r.ids:[]; }));
+  const items = s.items.filter(i => !i.skip && !i.trip?.noImageConfirmed && !require('./gallery_retry_policy').history().some(old=>old.id===i.id&&old.trip?.noImageConfirmed) && !published[i.id] && !settled.has(i.id) && !i.images.some(im => im.accepted));
+  if (!items.length) throw Error('本批没有待手填项目');
+  archive(current);
+  const value = { draftId: stamp(), revision: current.revision + 1, createdAt: new Date().toISOString(), savedAt: null, items: items.map(i => ({ id:i.id, name:i.name, city:i.city, province:i.province, region:i.region, url:'', skip:false, beforeSelected:0, discoveryCandidates:i.discovery?.candidates || [], discoveryReason:i.discovery?.reason || i.trip?.reason || i.images.filter(im=>!im.accepted).map(im=>im.reason).filter(Boolean).join('；') || '未取得合格图片' })) };
+  archive(value); write(path.join(runtime,'draft.json'),value); return value;
 }
 async function apply(input) {
   const old = receipt(input.id);
@@ -124,4 +143,4 @@ async function apply(input) {
   }
   throw Error('写入准备超时，请稍后查看当前批次状态');
 }
-module.exports = { receipt, pool, draftList, saveDraft, generate, restore, start, apply, assertIdle };
+module.exports = { remaining, receipt, pool, draftList, saveDraft, generate, restore, start, apply, assertIdle };

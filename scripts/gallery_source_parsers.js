@@ -42,6 +42,12 @@ function parseTripAttractionGallery(html, expectedPoiId) {
   const appData = nextData(html).props?.pageProps?.initialState?.appData;
   const poi = appData?.poiData;
   if (!poi || String(poi.poiId) !== String(expectedPoiId)) throw new Error('Trip景点实体不匹配');
+  const imageInfo = appData.overviewData?.imageInfo;
+  // Trip supplies a decorative defaultUrl even when the entity has no gallery.
+  if (poi.poiImageCount === 0 && imageInfo?.imageCount === 0 && imageInfo.showGallery === false) {
+    return { name:poi.poiSubtitleName || poi.poiName, poiId:poi.poiId, photos:[], available:0,
+      noImageConfirmed:true, evidence:{poiImageCount:0,imageCount:0,showGallery:false,defaultUrl:poi.defaultUrl || ''} };
+  }
   const photos = [...(poi.poiImage || []), ...(appData.overviewData?.imageInfo?.slideShowImages || [])];
   const seen = new Set();
   return {
@@ -49,6 +55,21 @@ function parseTripAttractionGallery(html, expectedPoiId) {
     poiId: poi.poiId,
     photos: photos.filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?tripcdn\.com\//i.test(photo.imageUrl || ''))
       .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title }, poi.poiSubtitleName || poi.poiName).bad)
+      .filter(photo => !seen.has(photo.imageUrl) && seen.add(photo.imageUrl)).slice(0, 12),
+  };
+}
+
+function parseTripShopGallery(html, payload, expectedPoiId) {
+  const state = nextData(html).props?.pageProps?.initialState;
+  if (String(state?.poiId) !== String(expectedPoiId)) throw Error('Trip购物详情页地点ID不匹配');
+  if (String(payload?.resultCode) !== '0' || !Array.isArray(payload.imageInfo)) throw Error('Trip购物图库接口未返回有效图片列表');
+  const seen = new Set();
+  return {
+    poiId: expectedPoiId,
+    name: '',
+    available: Number(payload.imageCount) || payload.imageInfo.length,
+    photos: payload.imageInfo.filter(photo => /^https:\/\/(?:[a-z0-9-]+\.)?tripcdn\.com\//i.test(photo.imageUrl || ''))
+      .filter(photo => !isContaminatedImage({ url: photo.imageUrl, title: photo.title }).bad)
       .filter(photo => !seen.has(photo.imageUrl) && seen.add(photo.imageUrl)).slice(0, 12),
   };
 }
@@ -133,6 +154,7 @@ module.exports = {
   identityName,
   parseCtripGallery,
   parseTripAttractionGallery,
+  parseTripShopGallery,
   parseTripPhotoGallery,
   parseTripPhotoListGallery,
   parseOfficialSiteGallery,
