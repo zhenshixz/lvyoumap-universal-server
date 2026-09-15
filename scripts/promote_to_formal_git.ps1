@@ -55,24 +55,30 @@ $rootFiles = @(
     'authorize_server_access.bat',
     'china_geo.js',
     'china.json',
+    'food_data_controller.bat',
+    'gallery_batch.bat',
     'index.html',
+    'inspect_gallery_health.bat',
     'package.json',
     'package-lock.json',
     'PROJECT_MAINTENANCE.md',
-    'README.md',
-    'run_gallery_batch.bat',
+    'preview_gallery_background.bat',
     'preview_gallery_batch.bat',
+    'README.md',
+    'run_gallery_background.bat',
     'start_dev.bat',
-    'start_universal_server.bat',
+    'stop_gallery_background.bat',
     'style.css',
     'sync_to_formal_git.bat',
-    '数据维护总控.bat'
+    'view_gallery_progress.bat',
+    '数据维护总控.bat',
+    '景点内容快速扫描.bat'
 )
 $sourceDirectories = @('assets', 'content', 'data', 'deploy', 'docs', 'scripts', 'server')
 $excludedRelativePaths = @()
 $excludedNames = @('Thumbs.db', 'desktop.ini', '.DS_Store')
 $excludedExtensions = @('.tmp', '.bak', '.log', '.pyc')
-$excludedBackupNamePattern = '(?i)\.bak(?:$|[._-])'
+$excludedBackupNamePattern = '(?i)\.(?:bak|backup)(?:$|[._-])'
 
 $sourceFiles = New-Object System.Collections.Generic.List[System.IO.FileInfo]
 foreach ($name in $rootFiles) {

@@ -8,7 +8,8 @@ function imagesOf(item) {
 function existingMap(base = C.root, dataDir = C.path.join(base, 'data'), overrides) {
   const map = new Map(), folder = C.path.join(dataDir, 'provinces');
   if (C.fs.existsSync(folder)) for (const file of C.fs.readdirSync(folder).filter(f => f.endsWith('.json'))) {
-    for (const i of C.read(C.path.join(folder, file)).attractions || []) map.set(i.id, i);
+    const value = C.read(C.path.join(folder, file), {});
+    for (const i of value?.attractions || []) map.set(i.id, i);
   }
   overrides ??= C.read(C.path.join(base, 'content/attraction-gallery-overrides.json'), {});
   for (const [id, value] of Object.entries(overrides)) map.set(id, { ...map.get(id), ...value });

@@ -1,8 +1,10 @@
 const C = require('./gallery_link_batch_common');
+const TRIP_432_RETRIES = 0;
+const TRIP_432_DELAY_MS = 0;
 const transient = reason => /ECONN|ETIMEDOUT|ENOTFOUND|EAI_AGAIN|Timeout|timed?\s*out|fetch failed|TypeError|HTTP\s*(429|432|5\d\d)|超时|搜索不可用|未加载完成/i.test(reason || '');
 function policyUpgrade(item) {
   if ((item.qualityPolicyVersion || 1) < 2 && (item.images||[]).some(im=>im.reason==='尺寸不足' && im.dimensions?.[0]>540)) return true;
-  if (item.discovery?.status==='manual' && (item.discovery.policyVersion||1)<4) return require('./gallery_trip_discovery').select(item,item.discovery.candidates||[]).status==='matched';
+  if (item.discovery?.status==='manual' && (item.discovery.policyVersion||1)<5) return true;
   return false;
 }
 function classify(item) {
@@ -37,4 +39,4 @@ function previousAttempt(item, rows) {
   const latest = rows.find(old => old.id === item.id);
   return latest && ['manual', 'review', 'closed'].includes(classify(latest)) ? latest : null;
 }
-module.exports = { policyUpgrade, transient, classify, history, previousAttempt };
+module.exports = { TRIP_432_RETRIES, TRIP_432_DELAY_MS, policyUpgrade, transient, classify, history, previousAttempt };

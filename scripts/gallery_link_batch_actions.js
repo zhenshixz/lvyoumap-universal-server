@@ -64,13 +64,13 @@ function pool() {
 function generate(input) {
   assertIdle();
   const count = Number(input.count);
-  if (!Number.isInteger(count) || count < 1 || count > 100) throw Error('请输入1–100之间的整数');
+  if (!Number.isInteger(count) || count < 1) throw Error('请输入大于0的整数');
   const current = draft();
   if (input.revision !== current.revision) throw Error('清单已更新，请刷新');
   const available = pool();
   if (!available.length) throw Error('当前条件下没有可生成的景点');
   archive(current);
-  const value = { draftId: stamp(), revision: current.revision + 1, createdAt: new Date().toISOString(), savedAt: null, mode: 'pending', items: available.slice(0, count).map(i => ({ id: i.id, name: i.name, province: i.province, city: i.city || '', region: i.city || '', beforeSelected: i.selected?.length || 0, url: i.retryUrl || '', skip: false, queueReason:i.queueReason })) };
+  const value = { draftId: stamp(), revision: current.revision + 1, createdAt: new Date().toISOString(), savedAt: null, mode: 'pending', items: available.slice(0, Math.min(count, available.length)).map(i => ({ id: i.id, name: i.name, province: i.province, city: i.city || '', region: i.city || '', beforeSelected: i.selected?.length || 0, url: i.retryUrl || '', skip: false, queueReason:i.queueReason })) };
   archive(value); write(path.join(runtime, 'draft.json'), value);
   return value;
 }
@@ -97,6 +97,7 @@ async function start(input) {
   if (input.revision !== current.revision || (!current.savedAt && input.autoDiscover !== true)) throw Error('请先保存当前清单');
   const originalItems = s => read(path.join(batchPath(s.id), 'input.json'))?.items || s.items;
   const match = states().find(s => !!s.autoDiscover === (input.autoDiscover === true) && (s.revision === current.revision || (current.draftId && s.draftId === current.draftId && JSON.stringify(originalItems(s).map(i => [i.id,i.url,i.skip])) === JSON.stringify(current.items.map(i => [i.id,i.url,i.skip])))));
+  if (match?.status === 'ip_blocked') throw Error('本批因 Trip HTTP 432 已暂停，请切换 IP 后在进度页点击“我已切换 IP，继续运行”');
   if (match?.status === 'completed' && !match.items.some(i => classify(i)==='retry')) return { id: match.id, completed: true };
   require('./gallery_link_batch_python').resolvePython();
   const child = detach('gallery_link_batch_worker.js', [...(match ? ['--resume=' + match.id] : []), ...(input.autoDiscover === true ? ['--auto-discover'] : [])], path.join(runtime, 'worker.log'));
@@ -107,6 +108,46 @@ async function start(input) {
     if (!alive(child.pid)) throw Error('启动失败，请查看worker.log');
   }
   return { running: true };
+}
+async function retryTransient(input) {
+  const lock = read(path.join(runtime, 'worker.lock'));
+  if (alive(lock?.pid)) return { running: true };
+  assertIdle();
+  const dir = batchPath(input.id);
+  const state = read(path.join(dir, 'state.json'));
+  if (!state || !['completed', 'interrupted'].includes(state.status)) throw Error('请等待当前批次结束');
+  if (receipt(input.id)?.status === 'applied') throw Error('该批已写入Beta，请从待补清单重试失败项');
+  const count = state.items.filter(i => classify(i) === 'retry' && !(i.images || []).some(im => im.accepted)).length;
+  if (!count) throw Error('本批没有可重跑的风控或网络失败项');
+  require('./gallery_link_batch_python').resolvePython();
+  const args = ['--resume=' + input.id, '--retry-transient-only', ...(state.autoDiscover ? ['--auto-discover'] : [])];
+  const child = detach('gallery_link_batch_worker.js', args, path.join(runtime, 'worker.log'));
+  for (let i = 0; i < 40; i++) {
+    await new Promise(r => setTimeout(r, 100));
+    const next = read(path.join(dir, 'state.json'));
+    if (next?.pid === child.pid && next.status === 'running') return { id: input.id, running: true, count };
+    if (!alive(child.pid)) throw Error('快速重跑启动失败，请查看worker.log');
+  }
+  return { id: input.id, running: true, count };
+}
+async function resumeIp(input) {
+  const lock = read(path.join(runtime, 'worker.lock'));
+  if (alive(lock?.pid)) return { id: input.id, running: true };
+  assertIdle();
+  const dir = batchPath(input.id);
+  const state = read(path.join(dir, 'state.json'));
+  if (!state || state.status !== 'ip_blocked') throw Error('该批次当前不在等待切换IP状态');
+  if (receipt(input.id)?.status === 'applied') throw Error('该批已写入Beta，不能继续采集');
+  require('./gallery_link_batch_python').resolvePython();
+  const args = ['--resume=' + input.id, '--resume-ip-blocked', ...(state.autoDiscover ? ['--auto-discover'] : [])];
+  const child = detach('gallery_link_batch_worker.js', args, path.join(runtime, 'worker.log'));
+  for (let i = 0; i < 40; i++) {
+    await new Promise(r => setTimeout(r, 100));
+    const next = read(path.join(dir, 'state.json'));
+    if (next?.pid === child.pid && next.status === 'running') return { id: input.id, running: true };
+    if (!alive(child.pid)) throw Error('切换IP后续跑启动失败，请查看worker.log');
+  }
+  return { id: input.id, running: true };
 }
 function remaining(input) {
   assertIdle();
@@ -143,4 +184,4 @@ async function apply(input) {
   }
   throw Error('写入准备超时，请稍后查看当前批次状态');
 }
-module.exports = { remaining, receipt, pool, draftList, saveDraft, generate, restore, start, apply, assertIdle };
+module.exports = { remaining, receipt, pool, draftList, saveDraft, generate, restore, start, retryTransient, resumeIp, apply, assertIdle };

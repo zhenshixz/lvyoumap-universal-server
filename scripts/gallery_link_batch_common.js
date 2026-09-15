@@ -47,7 +47,7 @@ function draft() {
 }
 function validateDraft(input, current) {
   if (input.revision !== current.revision) throw Error('清单已更新，请刷新后再保存');
-  if (!Array.isArray(input.items) || input.items.length !== current.items.length || !input.items.length || input.items.length > 100) throw Error('清单条数不匹配（支持1–100项）');
+  if (!Array.isArray(input.items) || input.items.length !== current.items.length || !input.items.length) throw Error('清单条数不匹配');
   const result = { ...current, revision: current.revision + 1, savedAt: new Date().toISOString(), items: current.items.map((old, index) => {
     const matches = input.items.filter(i=>i.id===old.id);
     if(matches.length!==1) throw Error('清单ID缺失或重复');

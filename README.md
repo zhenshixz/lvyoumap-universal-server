@@ -19,7 +19,7 @@
 Windows可直接双击：
 
 ```text
-start_universal_server.bat
+start_dev.bat
 ```
 
 也可以在终端执行：

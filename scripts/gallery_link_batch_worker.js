@@ -5,11 +5,13 @@ const { parseTripAttractionGallery, parseTripShopGallery } = require('./gallery_
 const simplify = require('opencc-js').Converter({ from: 'tw', to: 'cn' });
 const { spawnSync } = require('child_process');
 const crypto = require('crypto');
-const { classify, history, previousAttempt, transient, policyUpgrade } = require('./gallery_retry_policy');
+const { TRIP_432_RETRIES, TRIP_432_DELAY_MS, classify, history, previousAttempt, transient, policyUpgrade } = require('./gallery_retry_policy');
 const lockFile = path.join(runtime, 'worker.lock');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 let state, dir, heartbeat, awake, discovery, ownsLock = false;
 const autoDiscover = process.argv.includes('--auto-discover');
+const retryTransientOnly = process.argv.includes('--retry-transient-only');
+const resumeIpBlocked = process.argv.includes('--resume-ip-blocked');
 const now = () => new Date().toISOString();
 const norm = s => simplify(String(s || '')).replace(/[\s·（）()\-_—]/g, '');
 function checkpoint() { state.heartbeatAt = now(); write(path.join(dir, 'state.json'), state); }
@@ -21,8 +23,8 @@ function imageAllowed(url, source) {
 }
 async function fetchBounded(url, kind, request = {}) {
   let last;
-  const tripPage = kind === 'page' && new URL(url).hostname === 'hk.trip.com' && !request.method;
-  const attempts = tripPage ? 3 : 2;
+  const tripPage = kind === 'page' && new URL(url).hostname === 'hk.trip.com';
+  const attempts = 2;
   for (let attempt = 0; attempt < attempts; attempt++) {
     try {
       const response = await fetch(url, { ...request, headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'zh-CN,zh;q=0.9', ...request.headers }, signal: AbortSignal.timeout(12000), redirect: 'error' });
@@ -31,10 +33,13 @@ async function fetchBounded(url, kind, request = {}) {
         e.retry = response.status === 429 || response.status === 432 || response.status >= 500;
         if (response.status === 432 && tripPage) {
           const count = (state.tripThrottle?.consecutive432 || 0) + 1;
-          const delayMs = count === 1 ? 15000 : 45000;
+          const delayMs = TRIP_432_DELAY_MS;
           state.tripThrottle = { consecutive432: count, total432: (state.tripThrottle?.total432 || 0) + 1,
             lastAt: now(), delayMs, reason: 'Trip WhaleGuard HTTP 432' };
           e.delayMs = delayMs;
+          e.ipBlocked = true;
+          state.current.phase = '检测到 HTTP 432，暂停等待切换 IP';
+          checkpoint();
         }
         await response.body?.cancel(); throw e;
       }
@@ -45,7 +50,7 @@ async function fetchBounded(url, kind, request = {}) {
       return Buffer.concat(chunks);
     } catch (e) {
       last = e;
-      if (attempt === attempts - 1 || !(e.retry || e.name === 'TimeoutError' || e.name === 'TypeError')) break;
+      if (e.ipBlocked || attempt === attempts - 1 || !(e.retry || e.name === 'TimeoutError' || e.name === 'TypeError')) break;
       const delayMs = e.delayMs || 2000;
       state.current.phase = e.delayMs ? `Trip风控冷却 ${Math.ceil(delayMs / 1000)}秒` : '短暂重试等待';
       checkpoint(); await sleep(delayMs);
@@ -131,16 +136,25 @@ async function main() {
   if (alive(old?.pid)) throw Error('已有批处理运行，请查看进度');
   if (old) fs.unlinkSync(lockFile);
   const fd = fs.openSync(lockFile, 'wx'); fs.writeFileSync(fd, JSON.stringify({ pid: process.pid, at: now() })); fs.closeSync(fd); ownsLock = true;
-  const input = draft(); if (!input.savedAt && !autoDiscover) throw Error('请先在清单网页点击保存');
   const resumeId = process.argv.find(a => a.startsWith('--resume='))?.slice(9);
+  const retryInput = (retryTransientOnly || resumeIpBlocked) && resumeId ? read(path.join(batchPath(resumeId), 'input.json')) : null;
+  const input = retryInput || draft();
+  if (!input.savedAt && !autoDiscover && !retryTransientOnly && !resumeIpBlocked) throw Error('请先在清单网页点击保存');
   const latest = resumeId ? batchList().find(b => b.id === resumeId) : batchList()[0];
   if (resumeId && !latest) throw Error('找不到需要继续的批次');
   const previous = latest ? read(path.join(batchPath(latest.id), 'state.json')) : null;
-  const reviewBlocked = previous?.items?.filter(x => (['identity_review', 'unsupported_layout'].includes(x.trip?.status) || classify(x)==='retry') && !(x.images || []).some(y => y.accepted)) || [];
+  const reviewBlocked = previous?.items?.filter(x => (retryTransientOnly
+    ? classify(x) === 'retry'
+    : ['identity_review', 'unsupported_layout'].includes(x.trip?.status) || classify(x) === 'retry')
+    && !(x.images || []).some(y => y.accepted)) || [];
+  const quickRetryTargets = retryTransientOnly ? reviewBlocked.map(x => ({
+    id: x.id, name: x.name, reason: x.trip?.reason || x.discovery?.reason || '临时网络失败',
+  })) : [];
   const originalItems = previous ? (read(path.join(batchPath(latest.id), 'input.json'))?.items || previous.items) : [];
-  const sameInput = previous && !!previous.autoDiscover === autoDiscover && (previous.revision === input.revision || (input.draftId && previous.draftId === input.draftId && JSON.stringify(originalItems.map(i => [i.id,i.url,i.skip])) === JSON.stringify(input.items.map(i => [i.id,i.url,i.skip]))));
-  if (previous && (['running', 'interrupted'].includes(previous.status) || reviewBlocked.length) && sameInput) {
+  const sameInput = previous && (retryTransientOnly || resumeIpBlocked || (!!previous.autoDiscover === autoDiscover && (previous.revision === input.revision || (input.draftId && previous.draftId === input.draftId && JSON.stringify(originalItems.map(i => [i.id,i.url,i.skip])) === JSON.stringify(input.items.map(i => [i.id,i.url,i.skip]))))));
+  if (previous && (retryTransientOnly || resumeIpBlocked || ['running', 'interrupted', 'ip_blocked'].includes(previous.status) || reviewBlocked.length) && sameInput) {
     state = previous; dir = batchPath(latest.id);
+    if (retryTransientOnly && !reviewBlocked.length) throw Error('本批没有可重跑的风控或网络失败项');
     state.amapQuota = false; // A resumed session may be on a new day.
     for (const item of reviewBlocked) {
       item.done=false; delete item.trip; delete item.result;
@@ -157,7 +171,8 @@ async function main() {
     state = { id, autoDiscover, revision: input.revision, draftId: input.draftId, createdAt: now(), items: input.items.map(x => ({ ...x, done: false, images: [] })) };
   }
   fs.mkdirSync(path.join(dir, 'raw'), { recursive: true });
-  state.pid = process.pid; state.status = 'running'; delete state.error; state.current = { phase: '准备' }; checkpoint();
+  state.pid = process.pid; state.status = 'running'; delete state.error; delete state.ipBlocked; state.current = { phase: '准备' }; checkpoint();
+  if (retryTransientOnly) state.quickRetry = { startedAt: now(), itemCount: quickRetryTargets.length, reason: '用户切换IP后快速重跑', items: quickRetryTargets };
   heartbeat = setInterval(checkpoint, 3000);
   const policy = sourcePolicy();
   const key = policy.amapDisabled ? '' : amapKey();
@@ -169,6 +184,13 @@ async function main() {
   for (const item of state.items) {
     if (item.done) continue;
     if (item.skip) { item.done = true; item.result = '已跳过'; checkpoint(); continue; }
+    if (!item.url && item.discoveryCandidates?.length) {
+      const cached = require('./gallery_trip_discovery').select(item, item.discoveryCandidates);
+      if (cached.status === 'matched') {
+        item.discovery = {...cached, reusedDraftCandidates:true, searchedAt:null, selectedAt:now(), queries:[item.name]};
+        item.url = cached.url;
+      }
+    }
     const previous = previousAttempt(item, earlier);
     if (previous) {
       if (previous.trip?.noImageConfirmed) { item.trip={...previous.trip}; item.noImageClosed=true; item.done=true; item.result='当前图源无图，已关闭补图'; checkpoint(); continue; }
@@ -184,10 +206,7 @@ async function main() {
     if (autoDiscover && !item.url && item.discovery?.status !== 'manual') {
       state.current = { name: item.name, phase: 'Trip站内搜索与地域匹配' }; checkpoint();
       try {
-        const cached = require('./gallery_trip_discovery').select(item, item.discoveryCandidates || []);
-        item.discovery = cached.status==='matched'
-          ? {...cached, reusedDraftCandidates:true, searchedAt:null, selectedAt:now(), queries:[item.name]}
-          : await discovery.find(item);
+        item.discovery = await discovery.find(item);
         searchFailures = 0;
         if (item.discovery.status === 'matched') { item.url = item.discovery.url; delete item.trip; }
       } catch (e) {
@@ -199,7 +218,7 @@ async function main() {
       checkpoint();
     }
     state.current = { name: item.name, phase: 'Trip详情页与图片' }; checkpoint();
-    if (!item.trip?.status) { try { await collectTrip(item); } catch (e) { item.trip = { status: 'error', reason: errorText(e) }; } checkpoint(); }
+    if (!item.trip?.status) { try { await collectTrip(item); } catch (e) { item.trip = { status: 'error', reason: errorText(e) }; checkpoint(); if (e.ipBlocked) throw e; } }
     state.current.phase = '高德首图'; checkpoint();
     if (!item.amap?.status) { try { await collectAmap(item, key, policy); } catch (e) { item.amap = { status: 'error', reason: errorText(e) }; } checkpoint(); }
     state.current.phase = '图片筛选与缩略图'; checkpoint();
@@ -221,7 +240,7 @@ async function run() {
     awake.on('error', () => {});
   }
   try { await main(); }
-  catch (e) { if (state) { state.status = 'interrupted'; state.error = errorText(e); checkpoint(); } throw e; }
+  catch (e) { if (state) { state.status = e.ipBlocked ? 'ip_blocked' : 'interrupted'; state.error = e.ipBlocked ? 'Trip 返回 HTTP 432，任务已暂停；请切换 IP 后继续' : errorText(e); if(e.ipBlocked) state.ipBlocked={at:now(),item:state.current?.name||'',reason:'HTTP 432'}; checkpoint(); } if(!e.ipBlocked) throw e; }
   finally { await discovery?.close(); clearInterval(heartbeat); awake?.kill(); if (ownsLock) { fs.unlinkSync(lockFile); ownsLock = false; } }
 }
 module.exports = { run };
