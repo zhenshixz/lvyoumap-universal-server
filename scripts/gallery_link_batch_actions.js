@@ -43,6 +43,8 @@ function saveDraft(input) {
 function pool() {
   const source = read(path.join(root, '.runtime/attraction-gallery-batch/state.json'), { items: [] });
   const published = read(path.join(root, 'content/attraction-gallery-overrides.json'), {});
+  const exclusions = read(path.join(root, 'content/attraction-exclusions.json'), {});
+  const excludedIds = new Set(Object.keys(exclusions || {}));
   const attempted = new Set(), waiting = new Set(), settled = new Set(), latest = new Map();
   for (const s of states()) {
     const applied = read(path.join(batchPath(s.id), 'apply.json'));
@@ -56,7 +58,7 @@ function pool() {
   const reserved = new Set();
   for (const d of draftList()) for (const i of read(path.join(draftsDir, d.id + '.json')).items) if (!attempted.has(i.id)) reserved.add(i.id);
   for (const i of draft().items) if (!attempted.has(i.id)) reserved.add(i.id);
-  return source.items.filter(i => i.id && !String(i.status).startsWith('excluded_') && !String(i.status).startsWith('ready_for_') && !published[i.id] && !settled.has(i.id) && !waiting.has(i.id) && !reserved.has(i.id)
+  return source.items.filter(i => i.id && !excludedIds.has(i.id) && !String(i.status).startsWith('excluded_') && !String(i.status).startsWith('ready_for_') && !published[i.id] && !settled.has(i.id) && !waiting.has(i.id) && !reserved.has(i.id)
     && (!latest.has(i.id) || ['new','retry'].includes(classify(latest.get(i.id)))))
     .sort((a,b)=>Number(attempted.has(a.id))-Number(attempted.has(b.id)))
     .map(i=>({...i,retryUrl:latest.get(i.id)?.url || '',queueReason:latest.has(i.id)?(policyUpgrade(latest.get(i.id))?'规则更新可重试':'网络异常待重试'):'尚未尝试'}));

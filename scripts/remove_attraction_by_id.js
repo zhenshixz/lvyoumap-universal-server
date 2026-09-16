@@ -78,6 +78,30 @@ for (const relativePath of ['.runtime/gallery-link-batches/draft.json', ...galle
 }
 
 {
+  const relativePath = '.runtime/attraction-gallery-batch/state.json';
+  const document = readJson(relativePath);
+  const removed = removeFromArray(document.value.items);
+  if (removed) writeJson(document);
+  changes.push({ file: relativePath, removed });
+}
+
+{
+  const relativePath = '.runtime/attraction-gallery-batch/remaining-milestones.json';
+  const document = readJson(relativePath);
+  const removed = removeFromArray(document.value.ids);
+  if (removed) writeJson(document);
+  changes.push({ file: relativePath, removed });
+}
+
+{
+  const relativePath = '.runtime/attraction-gallery-batch/browser-discovery-history.json';
+  const document = readJson(relativePath);
+  const removed = removeObjectKey(document.value);
+  if (removed) writeJson(document);
+  changes.push({ file: relativePath, removed });
+}
+
+{
   const relativePath = '.runtime/attraction-gallery-batch/codex-background.json';
   const document = readJson(relativePath);
   let removed = removeFromArray(document.value.ids);

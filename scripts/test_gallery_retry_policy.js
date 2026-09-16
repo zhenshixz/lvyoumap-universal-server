@@ -13,6 +13,8 @@ assert.equal(classify({...exhausted,trip:{status:'error',reason:'HTTP 432'}}),'r
 const {select,queryVariants}=require('./gallery_trip_discovery');
 const aliasItem={name:'贵阳百花湖风景名胜区',city:'贵阳',province:'贵州'};
 assert.deepEqual(queryVariants(aliasItem),['贵阳百花湖风景名胜区','贵阳百花湖','百花湖']);
+const resortItem={name:'江郎山省级旅游度假区',city:'衢州',province:'浙江'};
+assert.deepEqual(queryVariants(resortItem),['江郎山省级旅游度假区','江郎山']);
 const aliasMatch=select(aliasItem,[{name:'百花湖风景区',region:'百花湖 · 贵阳 · 贵州 · 中国',url:'https://hk.trip.com/travel-guide/attraction/guiyang/baihua-lake-75935/'}]);
 assert.equal(aliasMatch.status,'matched');
 assert.equal(aliasMatch.selectionRule,'first_same_region_alias');

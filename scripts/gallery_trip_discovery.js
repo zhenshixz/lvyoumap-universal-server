@@ -1,18 +1,22 @@
 const { fs, path, runtime, read, write, tripUrl } = require('./gallery_link_batch_common');
 const simplify = require('opencc-js').Converter({ from: 'tw', to: 'cn' });
-const DISCOVERY_POLICY_VERSION = 5;
+const DISCOVERY_POLICY_VERSION = 6;
 const norm = s => simplify(String(s || '')).replace(/[\s\p{P}]/gu, '');
 const regionKey = s => norm(s).replace(/特别行政区|维吾尔族自治区|壮族自治区|回族自治区|蒙古族自治区|自治州|地区|市$/g, '');
 function queryVariants(item) {
   const original = String(item.name || '').trim();
   const variants = [original];
   variants.push(...original.split(/[·、（）()]/).map(x => x.trim()).filter(x => x.length >= 2));
-  const suffixes = ['风景名胜区', '国家级自然保护区', '自然保护区', '风景区', '景区', '旧址', '遗址'];
+  const suffixes = [
+    '国家级旅游度假区', '省级旅游度假区', '国际旅游度假区', '旅游度假区',
+    '国家级自然保护区', '风景名胜区', '自然保护区', '旅游区', '风景区', '景区', '旧址', '遗址'
+  ];
   for (const value of [...variants]) for (const suffix of suffixes) if (value.endsWith(suffix) && value.length > suffix.length + 1) {
     const base = value.slice(0, -suffix.length).trim();
     variants.push(base);
     const city = String(item.city || item.region || '').trim();
     if (city && base.startsWith(city) && base.length > city.length + 1) variants.push(base.slice(city.length));
+    break;
   }
   return [...new Set(variants)].filter(x => x.length >= 2);
 }
