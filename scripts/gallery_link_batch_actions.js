@@ -61,7 +61,17 @@ function pool() {
   return source.items.filter(i => i.id && !excludedIds.has(i.id) && !String(i.status).startsWith('excluded_') && !String(i.status).startsWith('ready_for_') && !published[i.id] && !settled.has(i.id) && !waiting.has(i.id) && !reserved.has(i.id)
     && (!latest.has(i.id) || ['new','retry'].includes(classify(latest.get(i.id)))))
     .sort((a,b)=>Number(attempted.has(a.id))-Number(attempted.has(b.id)))
-    .map(i=>({...i,retryUrl:latest.get(i.id)?.url || '',queueReason:latest.has(i.id)?(policyUpgrade(latest.get(i.id))?'规则更新可重试':'网络异常待重试'):'尚未尝试'}));
+    .map(i=>{
+      const previous = latest.get(i.id);
+      const queueType = !previous ? 'unattempted' : policyUpgrade(previous) ? 'policy' : classify(previous) === 'retry' ? 'retry' : 'unfilled';
+      const queueReason = { unattempted:'尚未尝试', policy:'规则更新可重试', retry:'网络异常待重试', unfilled:'早期未填链接回流' }[queueType];
+      return {...i,retryUrl:previous?.url || '',queueType,queueReason};
+    });
+}
+function poolSummary(items = pool()) {
+  const summary = { total:items.length, unattempted:0, unfilled:0, retry:0, policy:0 };
+  for (const item of items) if (Object.hasOwn(summary, item.queueType)) summary[item.queueType]++;
+  return summary;
 }
 function generate(input) {
   assertIdle();
@@ -186,4 +196,4 @@ async function apply(input) {
   }
   throw Error('写入准备超时，请稍后查看当前批次状态');
 }
-module.exports = { remaining, receipt, pool, draftList, saveDraft, generate, restore, start, retryTransient, resumeIp, apply, assertIdle };
+module.exports = { remaining, receipt, pool, poolSummary, draftList, saveDraft, generate, restore, start, retryTransient, resumeIp, apply, assertIdle };

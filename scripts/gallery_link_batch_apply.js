@@ -48,9 +48,11 @@ function execute(plan, options = {}) {
   const current = read(target, {}), db = read(path.join(base, 'content/db.json'));
   const ids = new Set(Object.values(db.provinces || db).flatMap(p => (p.attractions || []).map(i => i.id)));
   const denied = new Set(read(path.join(base, 'content/attraction-gallery-image-denylist.json'), []).map(i => i.url));
+  const relationDenied = new Set(read(path.join(base, 'content/attraction-gallery-review-decisions.json'), []).filter(i => i.action === 'remove_reference').map(i => `${i.id}\n${i.url}`));
   for (const item of plan.items) {
     if (!ids.has(item.id)) throw Error('数据库不存在景点：' + item.name);
     if (item.images.some(im => denied.has(im.url))) throw Error('图片已在拒绝清单：' + item.name);
+    if (item.images.some(im => relationDenied.has(`${item.id}\n${im.url}`))) throw Error('图片已被人工确认不属于该景点：' + item.name);
   }
   const existing = existingMap(base);
   const finalItems = plan.items.map(item => ({ ...item, images: mergeImages(existing.get(item.id), item.images, item.coverUrl) }));

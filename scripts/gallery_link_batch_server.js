@@ -4,8 +4,13 @@ const C = require('./gallery_link_batch_common');
 const { fs, path, root, runtime, draft, read, write, validateDraft, batchList, batchPath, alive, sourcePolicy } = C;
 const service = 'gallery-link-batch-v1';
 const actions = require('./gallery_link_batch_actions');
+const imageReview = require('./gallery_image_review');
 let mutating = false;
 const json = (res, value, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify(value)); };
+const formView = (value, readOnly) => {
+  const remaining = actions.pool();
+  return { ...draftView(value), sourcePolicy: sourcePolicy(), remainingCount: remaining.length, remainingSummary: actions.poolSummary(remaining), readOnly };
+};
 function local(req) { return ['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(req.socket.remoteAddress); }
 const server = http.createServer(async (req, res) => {
   res.setHeader('Cache-Control', 'no-store'); res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -25,20 +30,22 @@ const server = http.createServer(async (req, res) => {
         if (url.pathname === '/api/retry-transient') return json(res, await actions.retryTransient(input));
         if (url.pathname === '/api/resume-ip') return json(res, await actions.resumeIp(input));
         if (url.pathname === '/api/apply') return json(res, await actions.apply(input));
+        if (url.pathname === '/api/image-audit/delete') return json(res, imageReview.deleteImages(input));
         let next;
         if (url.pathname === '/api/remaining') next = actions.remaining(input);
         else if (url.pathname === '/api/draft') next = actions.saveDraft(input);
         else if (url.pathname === '/api/generate') next = actions.generate(input);
         else if (url.pathname === '/api/restore') next = actions.restore(input);
         else return json(res, { error: 'Not found' }, 404);
-        return json(res, { ...draftView(next), sourcePolicy: sourcePolicy(), remainingCount: actions.pool().length, readOnly: false });
+        return json(res, formView(next, false));
       } finally { mutating = false; }
     }
     if (req.method !== 'GET') return json(res, { error: 'Method not allowed' }, 405);
     if (url.pathname === '/api/health') return json(res, { service, root });
-    if (url.pathname === '/api/draft') return json(res, { ...draftView(draft()), sourcePolicy: sourcePolicy(), remainingCount: actions.pool().length, readOnly: !local(req) });
+    if (url.pathname === '/api/draft') return json(res, formView(draft(), !local(req)));
     if (url.pathname === '/api/batches') return json(res, batchList());
     if (url.pathname === '/api/drafts') return json(res, actions.draftList());
+    if (url.pathname === '/api/image-audit') return json(res, { ...imageReview.list(Object.fromEntries(url.searchParams)), readOnly: !local(req) });
     if (url.pathname === '/api/batch') {
       const s = read(path.join(batchPath(url.searchParams.get('id')), 'state.json'));
       if (!s) return json(res, { error: '批次不存在' }, 404);
@@ -53,6 +60,13 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname === '/') { file = path.join(__dirname, 'gallery-link-batch.html'); type = 'text/html; charset=utf-8'; }
     else if (url.pathname === '/ui.js') { file = path.join(__dirname, 'gallery_link_batch_ui.js'); type = 'text/javascript; charset=utf-8'; }
     else if (url.pathname === '/vue.js') { file = require.resolve('vue/dist/vue.global.prod.js'); type = 'text/javascript; charset=utf-8'; }
+    else if (url.pathname.startsWith('/assets/images/')) {
+      const relative = decodeURIComponent(url.pathname).replace(/^\/+/, '');
+      const candidate = path.resolve(root, relative), allowedRoot = path.resolve(root, 'assets/images') + path.sep;
+      if (candidate.startsWith(allowedRoot) && /\.(?:jpe?g|png|webp|gif)$/i.test(candidate)) {
+        file = candidate; type = /\.png$/i.test(candidate) ? 'image/png' : /\.webp$/i.test(candidate) ? 'image/webp' : /\.gif$/i.test(candidate) ? 'image/gif' : 'image/jpeg';
+      }
+    }
     else {
       const m = url.pathname.match(/^\/media\/(\d{8}-\d{6}-[a-f0-9]{6})\/(thumbs|candidates)\/(amap_[A-Za-z0-9]+-(?:trip|amap)-[a-f0-9]{16}\.jpg)$/);
       if (m) { file = path.join(batchPath(m[1]), m[2], m[3]); type = 'image/jpeg'; }

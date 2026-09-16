@@ -1,5 +1,5 @@
 Vue.createApp({
-  data: () => ({ page: location.hash.slice(1) || 'form', form: null, batches: [], drafts: [], historyId: '', count: 10, selected: '', batch: null, error: '', message: '', saving: false, dirty: false, polling: false, busy: false, choices: {}, covers: {}, choiceBatch: '' }),
+  data: () => ({ page: location.hash.slice(1) || 'form', form: null, batches: [], drafts: [], historyId: '', count: 10, selected: '', batch: null, error: '', message: '', saving: false, dirty: false, polling: false, busy: false, choices: {}, covers: {}, choiceBatch: '', audit: null, auditScope: 'suspicious', auditPage: 1, auditQuery: '', auditChoices: {} }),
   computed: {
     activeFormItems() { return (this.form?.items||[]).filter(i=>!i.noImageClosed); },
     filled() { return this.form?.items.filter(x => x.url).length || 0; },
@@ -15,6 +15,11 @@ Vue.createApp({
     applying() { return this.batch?.apply?.status === 'applying'; },
     quickRetryItems() { const ids=new Set((this.batch?.quickRetry?.items||[]).map(x=>x.id)); return (this.batch?.items||[]).filter(x=>ids.has(x.id)); },
     progressItems() { const ids=new Set(this.quickRetryItems.map(x=>x.id)); return [...(this.batch?.items||[])].sort((a,b)=>Number(!ids.has(a.id))-Number(!ids.has(b.id))); },
+    remainingBreakdown() {
+      const s=this.form?.remainingSummary;if(!s)return '';
+      return [['unattempted','未尝试'],['unfilled','未填链接回流'],['retry','网络失败'],['policy','规则升级重试']].filter(([key])=>s[key]).map(([key,label])=>label+' '+s[key]).join('、');
+    },
+    auditSelectedItems() { return Object.entries(this.auditChoices).filter(([,selected])=>selected).map(([key])=>{const split=key.indexOf('\n');return {id:key.slice(0,split),url:key.slice(split+1)};}); },
   },
   methods: {
     safeUrl(value) { try { const u = new URL(value); return u.protocol === 'https:' && ['hk.trip.com', 'cn.trip.com', 'www.trip.com'].includes(u.hostname); } catch { return false; } },
@@ -26,8 +31,12 @@ Vue.createApp({
     displayImages(item) { const accepted=item.images.filter(x=>x.accepted&&x.thumb); if(!this.applied)return accepted; const chosen=this.batch.apply.selections?.find(i=>i.id===item.id)?.urls||[]; return chosen.map(url=>accepted.find(im=>im.url===url)).filter(Boolean); },
     itemResult(item) { if(!this.applied)return item.result||'等待处理'; const chosen=this.batch.apply.selections?.find(i=>i.id===item.id);return chosen?'已写入 '+chosen.urls.length+' 张 · 暂不补图':'本批未写入，保留原图'; },
     isQuickRetry(item) { return this.quickRetryItems.some(x=>x.id===item.id); },
-    async api(url, options) { const r = await fetch(url, { ...options, signal: AbortSignal.timeout(options?.method ? 20000 : 8000) }); const value = await r.json(); if (!r.ok) throw Error(value.error || '请求失败'); return value; },
-    post(url, input) { return this.api(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input) }); },
+    auditKey(item) { return item.id+'\n'+item.url; },
+    canAuditSelect(item) { const key=this.auditKey(item);if(this.auditChoices[key])return true;const selected=this.auditSelectedItems.filter(x=>x.id===item.id).length;return item.imageCount-selected>1; },
+    selectAuditPage() { if(this.audit?.readOnly)return;for(const item of this.audit?.items||[]){if(this.canAuditSelect(item))this.auditChoices[this.auditKey(item)]=true;} },
+    clearAuditPage() { for(const item of this.audit?.items||[])this.auditChoices[this.auditKey(item)]=false; },
+    async api(url, options) { const { timeout, ...request }=options||{};const r = await fetch(url, { ...request, signal: AbortSignal.timeout(timeout || (request.method ? 20000 : 8000)) }); const value = await r.json(); if (!r.ok) throw Error(value.error || '请求失败'); return value; },
+    post(url, input, timeout) { return this.api(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input), timeout }); },
     async save() { this.saving = true; this.error = ''; try { this.form = await this.post('/api/draft', this.form); this.dirty = false; this.message = '已保存并确认链接，可启动采集。'; this.drafts = await this.api('/api/drafts'); } catch (e) { this.error = e.message; } finally { this.saving = false; } },
     async generate() { if (this.dirty) { this.error = '请先保存当前填写内容，再生成新清单'; return; } this.busy = true; this.error = ''; try { this.form = await this.post('/api/generate', { count: this.count, revision: this.form.revision }); this.message = '已生成 '+this.form.items.length+' 项，原清单保留在历史清单中。'; this.drafts = await this.api('/api/drafts'); } catch(e) { this.error=e.message; } finally { this.busy=false; } },
     async restore() { if (!this.historyId) return; if (this.dirty) { this.error='请先保存当前填写内容'; return; } this.busy=true; this.error=''; try { this.form=await this.post('/api/restore',{id:this.historyId,revision:this.form.revision}); this.message='已打开历史清单'; } catch(e){this.error=e.message;} finally{this.busy=false;} },
@@ -36,6 +45,8 @@ Vue.createApp({
     async resumeIp() { this.busy=true; this.error=''; try { await this.post('/api/resume-ip',{id:this.batch.id}); this.message='已从风控断点继续'; await this.refresh(); } catch(e){this.error=e.message;} finally{this.busy=false;} },
     async remaining() { if(this.dirty){this.error='请先保存当前清单';return;} this.busy=true;try{this.form=await this.post('/api/remaining',{id:this.batch.id,revision:this.form.revision});this.drafts=await this.api('/api/drafts');location.hash='form';}catch(e){this.error=e.message;}finally{this.busy=false;} },
     async applyBatch() { this.busy=true; this.error=''; try { await this.post('/api/apply',{id:this.batch.id,selections:this.selectedItems}); await this.loadBatch(); } catch(e){this.error=e.message;} finally{this.busy=false;} },
+    async loadAudit() { this.error='';try{const query=new URLSearchParams({scope:this.auditScope,page:this.auditPage,pageSize:48,q:this.auditQuery});this.audit=await this.api('/api/image-audit?'+query);this.auditPage=this.audit.page;}catch(e){this.error=e.message;} },
+    async deleteAuditImages() { const items=this.auditSelectedItems;if(!items.length)return;if(!confirm(`确认从勾选卡片所属的景点移除 ${items.length} 张图片？\n\n未勾选的关联景点不会受影响；每个景点至少保留 1 张。`))return;this.busy=true;this.error='';try{const result=await this.post('/api/image-audit/delete',{selections:items},300000);this.auditChoices={};this.message=`已从 ${result.attractionCount} 个景点移除 ${result.removedCount} 张图片，并完成 Beta 重建。`;await this.loadAudit();}catch(e){this.error=e.message;}finally{this.busy=false;} },
     persistChoices() { localStorage.setItem('gallery-review-'+this.batch.id,JSON.stringify({choices:this.choices,covers:this.covers})); },
     async loadBatch() {
       if (!this.selected) return;
@@ -52,9 +63,9 @@ Vue.createApp({
     async refresh() { if (this.polling) return; this.polling = true; try { this.batches = await this.api('/api/batches'); if (!this.selected && this.batches.length) this.selected = this.batches[0].id; await this.loadBatch(); this.error = ''; } catch (e) { this.error = '连接失败：' + e.message; } finally { this.polling = false; } },
   },
   async mounted() {
-    window.addEventListener('hashchange', () => { this.page = location.hash.slice(1) || 'form'; this.refresh(); });
+    window.addEventListener('hashchange', () => { this.page = location.hash.slice(1) || 'form'; if(this.page==='audit')this.loadAudit();else this.refresh(); });
     window.addEventListener('beforeunload', e => { if (this.dirty) { e.preventDefault(); e.returnValue = ''; } });
-    try { this.form = await this.api('/api/draft'); this.drafts = await this.api('/api/drafts'); await this.refresh(); } catch (e) { this.error = e.message; }
-    setInterval(() => { if (this.page !== 'form') this.refresh(); }, 3000);
+    try { this.form = await this.api('/api/draft'); this.drafts = await this.api('/api/drafts'); await this.refresh(); if(this.page==='audit')await this.loadAudit(); } catch (e) { this.error = e.message; }
+    setInterval(() => { if (['progress','preview'].includes(this.page)) this.refresh(); }, 3000);
   },
 }).mount('#app');

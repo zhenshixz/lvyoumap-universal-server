@@ -74,8 +74,20 @@ try {
   const third=execute(appendPlan,{root:sandbox,dir:thirdDir,build:buildActual});
   assert.ok(third.finalSelections[0].urls.includes(concurrent),'execution rereads current accepted images, never stale snapshot replacement');
   assert.equal(H.mergeImages({image:oldUrl,images:[{url:oldUrl}]},[{url:oldUrl}]).length,1);
+  // Manual image review removes only the selected relation, preserves one image, and records the decision.
+  const R=require('./gallery_image_review');
+  const reviewPlan=R.makeDeletePlan([{id:'b',url:newUrl}],{root:sandbox});
+  const reviewDir=path.join(C.runtime,'image-review-test');
+  const reviewBuild=()=>{const gallery=read(path.join(sandbox,'content/attraction-gallery-overrides.json')).b;put(path.join(sandbox,'.dist-next/data/provinces/test.json'),{attractions:[{id:'b',name:'B',...gallery}]});};
+  const reviewed=R.executeDelete(reviewPlan,{root:sandbox,dir:reviewDir,build:reviewBuild,allowTestRoot:true,skipIdleCheck:true});
+  assert.equal(reviewed.removedCount,1);assert.ok(!read(path.join(sandbox,'content/attraction-gallery-overrides.json')).b.images.some(i=>i.url===newUrl));
+  assert.ok(read(path.join(sandbox,'content/attraction-gallery-review-decisions.json')).some(i=>i.id==='b'&&i.url===newUrl));
+  const remainingReview=R.buildCatalog(sandbox).map.get('b');
+  assert.throws(()=>R.makeDeletePlan(H.imagesOf(remainingReview).map(i=>({id:'b',url:i.url})),{root:sandbox}),/至少需要保留 1 张/);
+  const deniedRelationDir=path.join(C.runs,'20260911-160005-ffffff');fs.mkdirSync(deniedRelationDir);
+  assert.throws(()=>execute(appendPlan,{root:sandbox,dir:deniedRelationDir,build:buildActual}),/人工确认不属于该景点/);
 console.log('PASS: existing cover preservation, append/dedup, explicit cover change, stale approval protection.');
-  console.log('PASS: adjustable lists, archive/restore, exclusions, saved confirmation, one-image apply, scoped approval, idempotence, rollback and crash recovery.');
+  console.log('PASS: adjustable lists, archive/restore, exclusions, review deletion, saved confirmation, one-image apply, scoped approval, idempotence, rollback and crash recovery.');
 } finally {
   assert.equal(path.dirname(sandbox),originalRuntime); assert.ok(path.basename(sandbox).startsWith('workbench-test-'));
   fs.rmSync(sandbox,{recursive:true,force:true});
