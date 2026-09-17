@@ -1001,6 +1001,10 @@ function initEventListeners() {
       closeImmersiveImageViewer();
       return;
     }
+    // 子景点全屏大图态：第一次点击只退出大图返回详情，第二次才关闭弹窗。
+    if (exitSubspotLargeImage()) {
+      return;
+    }
     closeModal();
   };
   modalClose.addEventListener("pointerup", (event) => {
@@ -1354,7 +1358,7 @@ async function selectProvince(provinceName) {
     tagsContainer.appendChild(span);
   });
 
-  // 重置子标签选项卡到“景点推荐”
+  // 重置子标签选项卡到"景点推荐"
   document.querySelectorAll(".dest-tab-btn").forEach(btn => {
     btn.classList.toggle("active", btn.getAttribute("data-tab") === "recommend");
   });
@@ -1567,14 +1571,14 @@ function renderCityFilterPills(attractions, provinceName) {
     }
   });
 
-  // 按照景点数量降序排列城市胶囊，如果有“其他”则固定放在最后
+  // 按照景点数量降序排列城市胶囊，如果有"其他"则固定放在最后
   cities.sort((a, b) => {
     if (a === "其他") return 1;
     if (b === "其他") return -1;
     return cityCounts[b] - cityCounts[a];
   });
 
-  // 创建“全部”胶囊
+  // 创建"全部"胶囊
   const allPill = document.createElement("div");
   allPill.className = `city-pill ${selectedCityFilter === "全部" ? "active" : ""}`;
   allPill.innerHTML = `全部 <span class="city-pill-count">${attractions.length}</span>`;
@@ -1629,7 +1633,7 @@ function formatAttractionLevel(level) {
   return formatted;
 }
 
-// 对外只保留三档，避免“国家级景点”“热门景点”等模糊等级误导用户。
+// 对外只保留三档，避免"国家级景点""热门景点"等模糊等级误导用户。
 function getAttractionDisplayLevel(attraction) {
   const values = [
     ...(Array.isArray(attraction?.tags) ? attraction.tags : []),
@@ -1757,7 +1761,7 @@ function renderAttractionList(attractions, containerId = "attractions-list-conta
         <div class="card-rating-row">
           <span class="card-rating-star">${hasPublicRating ? `★ ${Number(attr.rating).toFixed(1)}` : '暂无公开评分'}</span>
           </div>
-        <p class="card-excerpt">“${attr.intro}”</p>
+        <p class="card-excerpt">"${attr.intro}"</p>
       </div>
       <div class="fav-btn ${isFav ? 'active' : ''}" data-id="${attr.id}" title="${isFav ? '取消收藏' : '加入收藏'}">
         <svg viewBox="0 0 24 24">
@@ -2274,7 +2278,7 @@ async function openDetailModal(attraction) {
     // 2. 交通出行
     let localStations = attraction.name.includes("庐山") ? "庐山站、九江站" : (attraction.city ? `${attraction.city}站、${attraction.city}东站` : "周边高铁/枢纽站");
     let trainStation = `推荐到达：${localStations}，出站后可乘大巴/打车前往景区`;
-    let driveTip = `导航 “${attraction.name}”，山路弯道多，注意安全驾驶`;
+    let driveTip = `导航 "${attraction.name}"，山路弯道多，注意安全驾驶`;
     let busPrice = "覆盖主要景点，省时省力。票价：70元/人（七日内有效）";
     let cableTip = "可直达山顶，节省体力。旺季排队时间较长";
     let walkTip = "适合体力较好者。部分路段较陡，注意安全";
@@ -3220,7 +3224,7 @@ function renderModalFeatureTags(attraction) {
   container.innerHTML = tags.map(tag => `<span>${tag}</span>`).join("");
 }
 
-// 沉浸式大图：复用现有详情层，避免出现“弹窗套弹窗”。
+// 沉浸式大图：复用现有详情层，避免出现"弹窗套弹窗"。
 function isImmersiveImageViewerOpen() {
   return !document.getElementById("image-viewer")?.hidden;
 }
@@ -3280,6 +3284,8 @@ function closeImmersiveImageViewer() {
 // 关闭弹窗
 function closeModal() {
   closeImmersiveImageViewer();
+  // 防御性清理子景点全屏大图态，保证任何关闭路径都不残留 image-viewer-active。
+  exitSubspotLargeImage();
   document.getElementById("detail-modal").style.display = "none";
   modalGalleryImages = [];
   modalGalleryIndex = 0;
@@ -3353,7 +3359,7 @@ function renderFoodCityFilterPills(foods, provinceName) {
   // 按照美食数量降序排列城市胶囊
   cities.sort((a, b) => cityCounts[b] - cityCounts[a]);
 
-  // 创建“全部”胶囊
+  // 创建"全部"胶囊
   const allPill = document.createElement("div");
   allPill.className = `city-pill ${selectedFoodCityFilter === "全部" ? "active" : ""}`;
   allPill.innerHTML = `全部 <span class="city-pill-count">${uniqueCount}</span>`;
@@ -3850,6 +3856,25 @@ function viewSubspotLargeImage(subName, subImg) {
     }
   }
 }
+// 退出子景点全屏大图态，恢复详情视图；未处于该状态时返回 false。
+function exitSubspotLargeImage() {
+  const detailModal = document.getElementById('detail-modal');
+  if (!detailModal || !detailModal.classList.contains('image-viewer-active')) return false;
+  detailModal.classList.remove('image-viewer-active');
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  if (modalImg && _subspotOriginalModalImg) modalImg.src = _subspotOriginalModalImg;
+  if (modalTitle && _subspotOriginalModalTitle) modalTitle.textContent = _subspotOriginalModalTitle;
+  _subspotOriginalModalImg = '';
+  _subspotOriginalModalTitle = '';
+  const closeBtn = document.getElementById('modal-close');
+  if (closeBtn) {
+    closeBtn.title = '关闭';
+    closeBtn.removeAttribute('aria-label');
+  }
+  return true;
+}
+
 window.viewSubspotLargeImage = viewSubspotLargeImage;
 
 window.openDetailModal = openDetailModal;

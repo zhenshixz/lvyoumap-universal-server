@@ -1793,6 +1793,14 @@ body {
   padding: 5px 8px;
   font-weight: 700;
 }
+/* 2026-09-17：按用户要求隐藏详情页"来源胶囊（如高德地图）"、"已整理"状态点与"更新于"日期。
+   仅隐藏不删除，恢复时删除本段即可。注意必须用 #modal-source-pill 按 ID 隐藏，
+   不能用 .info-source-pill 类选择器，否则会误伤"热门子景点"数量胶囊。 */
+#modal-source-pill,
+.info-status-dot,
+#modal-source-updated {
+  display: none;
+}
 .info-paragraph {
   font-size: 12.5px;
   color: var(--text-secondary);
