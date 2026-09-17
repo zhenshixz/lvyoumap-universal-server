@@ -347,6 +347,7 @@
   <footer class="site-legal-footer" aria-label="网站备案信息">
     <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">闽ICP备2026018133号</a>
     <span class="deployment-time" id="deployment-time" hidden></span>
+    <span class="site-stats-note">匿名访问统计</span>
   </footer>
 
   <!-- 3. 备份用：底部平板导航栏已按运营需要注释
@@ -674,6 +675,19 @@
   <!-- 加载基础数据与逻辑代码 -->
   <script src="china_geo.js"></script>
   <script src="app.js?v=20260827_attraction_display_level_v2"></script>
+
+  <!-- 百度统计：仅正式域名加载，本地/局域网预览不上报 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      if (location.hostname !== 'xzmap.xzbest.site') return;
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?2d4a80afd47718c02e688eb0ca3d41a6';
+      hm.async = true;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 </body>
 
 </html>

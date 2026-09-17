@@ -361,6 +361,17 @@ body {
   margin-right: 7px;
 }
 
+.site-stats-note {
+  color: var(--text-muted);
+  font-size: 9px;
+  opacity: 0.58;
+}
+
+.site-stats-note::before {
+  content: "·";
+  margin-right: 7px;
+}
+
 /* ==========================================
    4. 左侧地图区域 (map-panel)
    ========================================== */
@@ -2314,7 +2325,7 @@ body {
     padding: 0 5%;
   }
 
-  /* 🔄 针对平板/移动端切换为黄金比例 of “上下模式” */
+  /* 🔄 针对平板/移动端切换为黄金比例 of "上下模式" */
   .main-container {
     display: flex;
     flex-direction: column;
