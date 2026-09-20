@@ -54,11 +54,24 @@ const hotCitiesData = [
 
 // 口碑美食与旅行计划数据库 (由后端数据接口懒加载填充)
 let localCuisineAndItineraries = {};
-const STATIC_DATA_VERSION = "20260827_attraction_display_level_v2";
+const STATIC_DATA_VERSION = "20260920_province_heroes_v1";
 const FAVORITES_STORAGE_KEY = "lvyoumap_favorites_v2";
 // 回撤开关：改为 false 即可停用沉浸式大图，详情页其余功能不受影响。
 const ENABLE_IMMERSIVE_IMAGE_VIEWER = true;
 const IMMERSIVE_IMAGE_MAX_UPSCALE = 1.05;
+
+function renderDestinationHero(destData, fallback = "/assets/images/default-thumbnail.jpg") {
+  const image = document.getElementById("dest-img");
+  const mobile = document.getElementById("dest-img-mobile");
+  const tablet = document.getElementById("dest-img-tablet");
+  const hero = destData?.hero || {};
+  const source = hero.desktop || destData?.image || fallback;
+  image.src = source;
+  image.alt = destData?.province ? `${destData.province}风景` : "";
+  image.style.objectPosition = `${hero.focusX ?? 50}% ${hero.focusY ?? 50}%`;
+  mobile.srcset = hero.mobile || "";
+  tablet.srcset = hero.tablet || "";
+}
 
 let myChart = null;
 let currentSelectedProvince = "";
@@ -153,11 +166,17 @@ async function loadProvinceIndexData() {
 
 async function loadProvinceDetailData(provinceName) {
   const provinceIndex = window.tourismData || await loadProvinceIndexData();
-  const dataFile = provinceIndex?.[provinceName]?.dataFile;
+  const provinceSummary = provinceIndex?.[provinceName];
+  const dataFile = provinceSummary?.dataFile;
   if (!dataFile || !/^[a-z0-9_-]+\.json$/.test(dataFile)) {
     throw new Error(`Static data file is unavailable for province: ${provinceName}`);
   }
-  return fetchJson(`/data/provinces/${dataFile}?v=${STATIC_DATA_VERSION}`);
+  const detail = await fetchJson(`/data/provinces/${dataFile}?v=${STATIC_DATA_VERSION}`);
+  return {
+    ...detail,
+    image: provinceSummary.image || detail.image,
+    ...(provinceSummary.hero ? { hero: provinceSummary.hero } : {}),
+  };
 }
 
 async function loadProvinceListData(provinceName) {
@@ -1329,7 +1348,7 @@ async function selectProvince(provinceName) {
   document.getElementById("favorites-panel").classList.remove("active");
 
   // 数据渲染
-  document.getElementById("dest-img").src = destData.image;
+  renderDestinationHero(destData);
   document.getElementById("dest-title").textContent = destData.province;
   document.getElementById("dest-desc").textContent = destData.description;
   renderMapWithOptions();
@@ -1974,7 +1993,7 @@ async function handleSearch(query) {
 
     document.getElementById("panel-empty").style.display = "none";
     document.getElementById("panel-destination").style.display = "flex";
-    document.getElementById("dest-img").src = "/assets/images/china_relief_map.png";
+    renderDestinationHero({ image: "/assets/images/china_relief_map.png" });
     document.getElementById("dest-title").textContent = `搜索: "${query}"`;
     document.getElementById("dest-desc").textContent = `在全国静态数据中检索到 ${foundAttractions.length} 个相关景点。`;
     document.getElementById("dest-weather-temp").textContent = "--";

@@ -5,6 +5,7 @@ const { fs, path, root, runtime, draft, read, write, validateDraft, batchList, b
 const service = 'gallery-link-batch-v1';
 const actions = require('./gallery_link_batch_actions');
 const imageReview = require('./gallery_image_review');
+const provinceHeroes = require('./province_hero_review');
 let mutating = false;
 const json = (res, value, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify(value)); };
 const formView = (value, readOnly) => {
@@ -31,6 +32,7 @@ const server = http.createServer(async (req, res) => {
         if (url.pathname === '/api/resume-ip') return json(res, await actions.resumeIp(input));
         if (url.pathname === '/api/apply') return json(res, await actions.apply(input));
         if (url.pathname === '/api/image-audit/delete') return json(res, imageReview.deleteImages(input));
+        if (url.pathname === '/api/province-heroes/save') return json(res, provinceHeroes.saveSelection(input));
         let next;
         if (url.pathname === '/api/remaining') next = actions.remaining(input);
         else if (url.pathname === '/api/draft') next = actions.saveDraft(input);
@@ -46,6 +48,7 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname === '/api/batches') return json(res, batchList());
     if (url.pathname === '/api/drafts') return json(res, actions.draftList());
     if (url.pathname === '/api/image-audit') return json(res, { ...imageReview.list(Object.fromEntries(url.searchParams)), readOnly: !local(req) });
+    if (url.pathname === '/api/province-heroes') return json(res, { ...provinceHeroes.buildCatalog(), readOnly: !local(req) });
     if (url.pathname === '/api/batch') {
       const s = read(path.join(batchPath(url.searchParams.get('id')), 'state.json'));
       if (!s) return json(res, { error: '批次不存在' }, 404);
@@ -59,6 +62,8 @@ const server = http.createServer(async (req, res) => {
     let file, type;
     if (url.pathname === '/') { file = path.join(__dirname, 'gallery-link-batch.html'); type = 'text/html; charset=utf-8'; }
     else if (url.pathname === '/ui.js') { file = path.join(__dirname, 'gallery_link_batch_ui.js'); type = 'text/javascript; charset=utf-8'; }
+    else if (url.pathname === '/province-heroes') { file = path.join(__dirname, 'province-hero-review.html'); type = 'text/html; charset=utf-8'; }
+    else if (url.pathname === '/province-hero-ui.js') { file = path.join(__dirname, 'province_hero_review_ui.js'); type = 'text/javascript; charset=utf-8'; }
     else if (url.pathname === '/vue.js') { file = require.resolve('vue/dist/vue.global.prod.js'); type = 'text/javascript; charset=utf-8'; }
     else if (url.pathname.startsWith('/assets/images/')) {
       const relative = decodeURIComponent(url.pathname).replace(/^\/+/, '');

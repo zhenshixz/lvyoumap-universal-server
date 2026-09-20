@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "items": {
+    "北京": {
+      "desktop": "/assets/images/province-heroes/beijing-7b529f1af377b7e7-desktop.webp",
+      "tablet": "/assets/images/province-heroes/beijing-7b529f1af377b7e7-tablet.webp",
+      "mobile": "/assets/images/province-heroes/beijing-7b529f1af377b7e7-mobile.webp",
+      "focusX": 56,
+      "focusY": 57,
+      "sourceAttraction": "水立方(国家游泳中心)",
+      "source": "Wikimedia Commons"
+    },
+    "上海": {
+      "desktop": "/assets/images/province-heroes/shanghai-8b0c6090b4439331-desktop.webp",
+      "tablet": "/assets/images/province-heroes/shanghai-8b0c6090b4439331-tablet.webp",
+      "mobile": "/assets/images/province-heroes/shanghai-8b0c6090b4439331-mobile.webp",
+      "focusX": 55,
+      "focusY": 85,
+      "sourceAttraction": "上海国际旅游度假区",
+      "source": "政府或景区官方页面"
+    },
+    "天津": {
+      "desktop": "/assets/images/province-heroes/tianjin-335c610c604b931e-desktop.webp",
+      "tablet": "/assets/images/province-heroes/tianjin-335c610c604b931e-tablet.webp",
+      "mobile": "/assets/images/province-heroes/tianjin-335c610c604b931e-mobile.webp",
+      "focusX": 50,
+      "focusY": 63,
+      "sourceAttraction": "津湾广场",
+      "source": "Wikimedia Commons"
+    },
+    "重庆": {
+      "desktop": "/assets/images/province-heroes/chongqing-dae92e39dda3b27c-desktop.webp",
+      "tablet": "/assets/images/province-heroes/chongqing-dae92e39dda3b27c-tablet.webp",
+      "mobile": "/assets/images/province-heroes/chongqing-dae92e39dda3b27c-mobile.webp",
+      "focusX": 50,
+      "focusY": 42,
+      "sourceAttraction": "洪崖洞民俗风貌区",
+      "source": "Wikimedia Commons"
+    },
+    "河北": {
+      "desktop": "/assets/images/province-heroes/hebei-9282b899288b0d85-desktop.webp",
+      "tablet": "/assets/images/province-heroes/hebei-9282b899288b0d85-tablet.webp",
+      "mobile": "/assets/images/province-heroes/hebei-9282b899288b0d85-mobile.webp",
+      "focusX": 50,
+      "focusY": 33,
+      "sourceAttraction": "崇礼冰雪旅游度假区",
+      "source": "公开图片搜索"
+    },
+    "山西": {
+      "desktop": "/assets/images/province-heroes/shanxi-9b0259c1e1baed1f-desktop.webp",
+      "tablet": "/assets/images/province-heroes/shanxi-9b0259c1e1baed1f-tablet.webp",
+      "mobile": "/assets/images/province-heroes/shanxi-9b0259c1e1baed1f-mobile.webp",
+      "focusX": 50,
+      "focusY": 26,
+      "sourceAttraction": "云冈石窟",
+      "source": "景区公开资料"
+    },
+    "辽宁": {
+      "desktop": "/assets/images/province-heroes/liaoning-9d7dfa38558ac544-desktop.webp",
+      "tablet": "/assets/images/province-heroes/liaoning-9d7dfa38558ac544-tablet.webp",
+      "mobile": "/assets/images/province-heroes/liaoning-9d7dfa38558ac544-mobile.webp",
+      "focusX": 50,
+      "focusY": 65,
+      "sourceAttraction": "大连长山群岛旅游度假区",
+      "source": "公开图片搜索"
+    },
+    "吉林": {
+      "desktop": "/assets/images/province-heroes/jilin-15d0b6d4a350d06f-desktop.webp",
+      "tablet": "/assets/images/province-heroes/jilin-15d0b6d4a350d06f-tablet.webp",
+      "mobile": "/assets/images/province-heroes/jilin-15d0b6d4a350d06f-mobile.webp",
+      "focusX": 50,
+      "focusY": 41,
+      "sourceAttraction": "北大湖滑雪度假区",
+      "source": "携程景点页面"
+    },
+    "黑龙江": {
+      "desktop": "/assets/images/province-heroes/heilongjiang-d3a21cdeeaf08662-desktop.webp",
+      "tablet": "/assets/images/province-heroes/heilongjiang-d3a21cdeeaf08662-tablet.webp",
+      "mobile": "/assets/images/province-heroes/heilongjiang-d3a21cdeeaf08662-mobile.webp",
+      "focusX": 50,
+      "focusY": 86,
+      "sourceAttraction": "亚布力滑雪旅游度假区",
+      "source": "Wikimedia Commons"
+    },
+    "江苏": {
+      "desktop": "/assets/images/province-heroes/jiangsu-73a680395c80555d-desktop.webp",
+      "tablet": "/assets/images/province-heroes/jiangsu-73a680395c80555d-tablet.webp",
+      "mobile": "/assets/images/province-heroes/jiangsu-73a680395c80555d-mobile.webp",
+      "focusX": 50,
+      "focusY": 30,
+      "sourceAttraction": "苏州博物馆",
+      "source": "携程景点页面"
+    },
+    "浙江": {
+      "desktop": "/assets/images/province-heroes/zhejiang-9c965a48e102dd7b-desktop.webp",
+      "tablet": "/assets/images/province-heroes/zhejiang-9c965a48e102dd7b-tablet.webp",
+      "mobile": "/assets/images/province-heroes/zhejiang-9c965a48e102dd7b-mobile.webp",
+      "focusX": 50,
+      "focusY": 31,
+      "sourceAttraction": "乌镇古镇旅游区",
+      "source": "公开图片搜索"
+    },
+    "安徽": {
+      "desktop": "/assets/images/province-heroes/anhui-6337019bc90b32e1-desktop.webp",
+      "tablet": "/assets/images/province-heroes/anhui-6337019bc90b32e1-tablet.webp",
+      "mobile": "/assets/images/province-heroes/anhui-6337019bc90b32e1-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "黄山黟县国际乡村旅游度假区",
+      "source": "公开图片搜索"
+    },
+    "福建": {
+      "desktop": "/assets/images/province-heroes/fujian-2014e486a849ebfe-desktop.webp",
+      "tablet": "/assets/images/province-heroes/fujian-2014e486a849ebfe-tablet.webp",
+      "mobile": "/assets/images/province-heroes/fujian-2014e486a849ebfe-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "彩虹沙滩",
+      "source": "景区公开资料"
+    },
+    "江西": {
+      "desktop": "/assets/images/province-heroes/jiangxi-2839e43d093c9de7-desktop.webp",
+      "tablet": "/assets/images/province-heroes/jiangxi-2839e43d093c9de7-tablet.webp",
+      "mobile": "/assets/images/province-heroes/jiangxi-2839e43d093c9de7-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "江岭风景区",
+      "source": "景区公开资料"
+    },
+    "山东": {
+      "desktop": "/assets/images/province-heroes/shandong-fa4a3dbc976b0e7d-desktop.webp",
+      "tablet": "/assets/images/province-heroes/shandong-fa4a3dbc976b0e7d-tablet.webp",
+      "mobile": "/assets/images/province-heroes/shandong-fa4a3dbc976b0e7d-mobile.webp",
+      "focusX": 50,
+      "focusY": 65,
+      "sourceAttraction": "台儿庄古城景区",
+      "source": "高德地图"
+    },
+    "河南": {
+      "desktop": "/assets/images/province-heroes/henan-5bcfc81dce82528d-desktop.webp",
+      "tablet": "/assets/images/province-heroes/henan-5bcfc81dce82528d-tablet.webp",
+      "mobile": "/assets/images/province-heroes/henan-5bcfc81dce82528d-mobile.webp",
+      "focusX": 50,
+      "focusY": 67,
+      "sourceAttraction": "河南博物院",
+      "source": "携程景点页面"
+    },
+    "湖北": {
+      "desktop": "/assets/images/province-heroes/hubei-219e95e2e6755461-desktop.webp",
+      "tablet": "/assets/images/province-heroes/hubei-219e95e2e6755461-tablet.webp",
+      "mobile": "/assets/images/province-heroes/hubei-219e95e2e6755461-mobile.webp",
+      "focusX": 50,
+      "focusY": 84,
+      "sourceAttraction": "三峡大坝旅游区",
+      "source": "携程景点页面"
+    },
+    "湖南": {
+      "desktop": "/assets/images/province-heroes/hunan-afd501338a56e20f-desktop.webp",
+      "tablet": "/assets/images/province-heroes/hunan-afd501338a56e20f-tablet.webp",
+      "mobile": "/assets/images/province-heroes/hunan-afd501338a56e20f-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "矮寨奇观旅游区",
+      "source": "携程景点页面"
+    },
+    "广东": {
+      "desktop": "/assets/images/province-heroes/guangdong-3c0fffd9e370287d-desktop.webp",
+      "tablet": "/assets/images/province-heroes/guangdong-3c0fffd9e370287d-tablet.webp",
+      "mobile": "/assets/images/province-heroes/guangdong-3c0fffd9e370287d-mobile.webp",
+      "focusX": 50,
+      "focusY": 73,
+      "sourceAttraction": "海陵岛大角湾海上丝路旅游区",
+      "source": "Wikimedia Commons"
+    },
+    "海南": {
+      "desktop": "/assets/images/province-heroes/hainan-da86bcff672ff3a3-desktop.webp",
+      "tablet": "/assets/images/province-heroes/hainan-da86bcff672ff3a3-tablet.webp",
+      "mobile": "/assets/images/province-heroes/hainan-da86bcff672ff3a3-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "清水湾",
+      "source": "携程景点页面"
+    },
+    "四川": {
+      "desktop": "/assets/images/province-heroes/sichuan-7da2b0d54a441ed5-desktop.webp",
+      "tablet": "/assets/images/province-heroes/sichuan-7da2b0d54a441ed5-tablet.webp",
+      "mobile": "/assets/images/province-heroes/sichuan-7da2b0d54a441ed5-mobile.webp",
+      "focusX": 50,
+      "focusY": 53,
+      "sourceAttraction": "青城山－都江堰旅游景区",
+      "source": "景区公开资料"
+    },
+    "贵州": {
+      "desktop": "/assets/images/province-heroes/guizhou-1a7fdd2cb60f185a-desktop.webp",
+      "tablet": "/assets/images/province-heroes/guizhou-1a7fdd2cb60f185a-tablet.webp",
+      "mobile": "/assets/images/province-heroes/guizhou-1a7fdd2cb60f185a-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "黄果树旅游景区",
+      "source": "景区公开资料"
+    },
+    "云南": {
+      "desktop": "/assets/images/province-heroes/yunnan-c2f0bea290d2df3d-desktop.webp",
+      "tablet": "/assets/images/province-heroes/yunnan-c2f0bea290d2df3d-tablet.webp",
+      "mobile": "/assets/images/province-heroes/yunnan-c2f0bea290d2df3d-mobile.webp",
+      "focusX": 50,
+      "focusY": 89,
+      "sourceAttraction": "纳帕海",
+      "source": "携程景点页面"
+    },
+    "陕西": {
+      "desktop": "/assets/images/province-heroes/shaanxi-6b8e5a9aa5bcac78-desktop.webp",
+      "tablet": "/assets/images/province-heroes/shaanxi-6b8e5a9aa5bcac78-tablet.webp",
+      "mobile": "/assets/images/province-heroes/shaanxi-6b8e5a9aa5bcac78-mobile.webp",
+      "focusX": 50,
+      "focusY": 72,
+      "sourceAttraction": "陕西历史博物馆",
+      "source": "携程景点页面"
+    },
+    "甘肃": {
+      "desktop": "/assets/images/province-heroes/gansu-e26044f4eba23297-desktop.webp",
+      "tablet": "/assets/images/province-heroes/gansu-e26044f4eba23297-tablet.webp",
+      "mobile": "/assets/images/province-heroes/gansu-e26044f4eba23297-mobile.webp",
+      "focusX": 50,
+      "focusY": 32,
+      "sourceAttraction": "张掖丹霞地质公园",
+      "source": "携程景点页面"
+    },
+    "青海": {
+      "desktop": "/assets/images/province-heroes/qinghai-57bb20ecbec34ef3-desktop.webp",
+      "tablet": "/assets/images/province-heroes/qinghai-57bb20ecbec34ef3-tablet.webp",
+      "mobile": "/assets/images/province-heroes/qinghai-57bb20ecbec34ef3-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "金银滩草原",
+      "source": "Wikimedia Commons"
+    },
+    "内蒙古": {
+      "desktop": "/assets/images/province-heroes/neimenggu-0949da2a02881b73-desktop.webp",
+      "tablet": "/assets/images/province-heroes/neimenggu-0949da2a02881b73-tablet.webp",
+      "mobile": "/assets/images/province-heroes/neimenggu-0949da2a02881b73-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "兴安盟阿尔山-柴河旅游景区",
+      "source": "景区公开资料"
+    },
+    "广西": {
+      "desktop": "/assets/images/province-heroes/guangxi-6f702be7a335b420-desktop.webp",
+      "tablet": "/assets/images/province-heroes/guangxi-6f702be7a335b420-tablet.webp",
+      "mobile": "/assets/images/province-heroes/guangxi-6f702be7a335b420-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "桂林雁山旅游度假区",
+      "source": "公开图片搜索"
+    },
+    "西藏": {
+      "desktop": "/assets/images/province-heroes/xibet-a518f4189f5eead9-desktop.webp",
+      "tablet": "/assets/images/province-heroes/xibet-a518f4189f5eead9-tablet.webp",
+      "mobile": "/assets/images/province-heroes/xibet-a518f4189f5eead9-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "南迦巴瓦峰",
+      "source": "携程景点页面"
+    },
+    "宁夏": {
+      "desktop": "/assets/images/province-heroes/ningxia-5e59f36184bef49f-desktop.webp",
+      "tablet": "/assets/images/province-heroes/ningxia-5e59f36184bef49f-tablet.webp",
+      "mobile": "/assets/images/province-heroes/ningxia-5e59f36184bef49f-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "腾格里沙漠",
+      "source": "携程景点页面"
+    },
+    "新疆": {
+      "desktop": "/assets/images/province-heroes/xinjiang-41837bc0b73261ef-desktop.webp",
+      "tablet": "/assets/images/province-heroes/xinjiang-41837bc0b73261ef-tablet.webp",
+      "mobile": "/assets/images/province-heroes/xinjiang-41837bc0b73261ef-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "那拉提旅游风景区",
+      "source": "高德地图"
+    },
+    "香港": {
+      "desktop": "/assets/images/province-heroes/xianggang-8c8acc6e8546bf24-desktop.webp",
+      "tablet": "/assets/images/province-heroes/xianggang-8c8acc6e8546bf24-tablet.webp",
+      "mobile": "/assets/images/province-heroes/xianggang-8c8acc6e8546bf24-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "旺角",
+      "source": "携程景点页面"
+    },
+    "澳门": {
+      "desktop": "/assets/images/province-heroes/aomen-a6239c553462fc5f-desktop.webp",
+      "tablet": "/assets/images/province-heroes/aomen-a6239c553462fc5f-tablet.webp",
+      "mobile": "/assets/images/province-heroes/aomen-a6239c553462fc5f-mobile.webp",
+      "focusX": 50,
+      "focusY": 50,
+      "sourceAttraction": "恋爱巷",
+      "source": "携程景点页面"
+    },
+    "台湾": {
+      "desktop": "/assets/images/province-heroes/taiwan-9a45245022147f2a-desktop.webp",
+      "tablet": "/assets/images/province-heroes/taiwan-9a45245022147f2a-tablet.webp",
+      "mobile": "/assets/images/province-heroes/taiwan-9a45245022147f2a-mobile.webp",
+      "focusX": 50,
+      "focusY": 85,
+      "sourceAttraction": "日月潭",
+      "source": "高德地图"
+    }
+  }
+}

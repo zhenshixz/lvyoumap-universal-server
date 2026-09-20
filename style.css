@@ -634,12 +634,17 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
-/* 5.3 城市大图横幅 - 缩减高度以腾出最大垂直展现空间 */
+/* 5.3 省份头图横幅 */
 .dest-banner-card {
   position: relative;
   width: 100%;
-  height: 95px;
+  height: 124px;
   overflow: hidden;
+}
+.dest-banner-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .dest-banner-img {
   width: 100%;
@@ -2360,7 +2365,7 @@ body {
   
   /* 优化横幅在大屏/宽屏平板下的高度 */
   .dest-banner-card {
-    height: 140px;
+    height: 182px;
   }
 }
 
@@ -4011,7 +4016,7 @@ body {
     min-height: 0;
   }
   .dest-banner-card {
-    height: 54px;
+    height: 70px;
   }
   .dest-banner-content {
     bottom: 4px;

@@ -21,6 +21,7 @@ const attractionOverridesPath = path.join(rootDir, 'content', 'attraction-overri
 const attractionGalleryOverridesPath = path.join(rootDir, 'content', 'attraction-gallery-overrides.json');
 const attractionDisplayTagsPath = path.join(rootDir, 'content', 'attraction-display-tags.json');
 const lazyGuideOverridesPath = path.join(rootDir, 'content', 'lazy-guide-overrides.json');
+const provinceHeroesPath = path.join(rootDir, 'content', 'province-heroes.json');
 const dataDir = path.join(rootDir, 'data');
 const provincesDir = path.join(dataDir, 'provinces');
 
@@ -286,10 +287,11 @@ function mergeManualAttractions(provinces, manualAttractions, identityDecisions 
   return mergedCount;
 }
 
-function buildProvinceIndex(provinces) {
+function buildProvinceIndex(provinces, provinceHeroes = {}) {
   const index = {};
 
   for (const [name, province] of Object.entries(provinces || {})) {
+    const hero = provinceHeroes[name];
     index[name] = {
       id: province.id,
       name: province.name,
@@ -298,7 +300,8 @@ function buildProvinceIndex(provinces) {
       tags: province.tags,
       weather: province.weather,
       bestTime: province.bestTime,
-      image: province.image,
+      image: hero?.desktop || province.image,
+      ...(hero ? { hero } : {}),
       attractionCount: Array.isArray(province.attractions) ? province.attractions.length : 0,
       dataFile: getProvinceDataFile(name, province),
     };
@@ -338,6 +341,9 @@ function buildSearchIndex(provinces) {
 function main() {
   const db = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
   const provinces = db.provinces || {};
+  const provinceHeroes = fs.existsSync(provinceHeroesPath)
+    ? (JSON.parse(fs.readFileSync(provinceHeroesPath, 'utf8').replace(/^\uFEFF/, '')).items || {})
+    : {};
   const imageOverrides = fs.existsSync(imageOverridesPath)
     ? JSON.parse(fs.readFileSync(imageOverridesPath, 'utf8'))
     : {};
@@ -383,7 +389,7 @@ function main() {
 
   fs.rmSync(provincesDir, { recursive: true, force: true });
   fs.mkdirSync(provincesDir, { recursive: true });
-  writeJson(path.join(dataDir, 'provinces-index.json'), buildProvinceIndex(provinces), { bom: true });
+  writeJson(path.join(dataDir, 'provinces-index.json'), buildProvinceIndex(provinces, provinceHeroes), { bom: true });
   writeJson(path.join(dataDir, 'search-index.json'), buildSearchIndex(provinces));
 
   for (const [name, province] of Object.entries(provinces)) {

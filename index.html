@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="中国旅游地图 - 发现中国之美">
   <meta name="twitter:description" content="浏览中国各省市热门景点、旅行指南和实时天气，发现适合家人出行的目的地。">
   <meta name="twitter:image" content="https://xzmap.xzbest.site/assets/images/china_map_base.png">
-  <link rel="stylesheet" href="style.css?v=20260827_attraction_display_level_v2">
+  <link rel="stylesheet" href="style.css?v=20260920_province_heroes_v1">
 </head>
 
 <body>
@@ -259,7 +259,11 @@
 
         <!-- 城市大图横幅卡片 -->
         <div class="dest-banner-card">
-          <img src="" alt="" class="dest-banner-img" id="dest-img">
+          <picture class="dest-banner-picture">
+            <source id="dest-img-mobile" media="(max-width: 768px)">
+            <source id="dest-img-tablet" media="(max-width: 1024px)">
+            <img src="" alt="" class="dest-banner-img" id="dest-img">
+          </picture>
           <div class="dest-banner-gradient"></div>
           <div class="dest-banner-content">
             <div class="dest-banner-top-row">
@@ -566,7 +570,7 @@
               </div>
               <div class="info-practical-note">票务、开放时间可能随季节和节假日调整，出发前建议再核对一次。</div>
             </div>
-          
+
             <!-- 🌟 底部横向全宽大卡片：热门子景点 🌟 -->
             <div class="info-overview-card" id="modal-subspots-container" style="grid-column: 1 / -1; margin-top: 14px; padding: 14px 16px; display: none;">
               <div class="info-section-header">
@@ -674,7 +678,7 @@
 
   <!-- 加载基础数据与逻辑代码 -->
   <script src="china_geo.js"></script>
-  <script src="app.js?v=20260827_attraction_display_level_v2"></script>
+  <script src="app.js?v=20260920_province_heroes_v1"></script>
 
   <!-- 百度统计：仅正式域名加载，本地/局域网预览不上报 -->
   <script>
