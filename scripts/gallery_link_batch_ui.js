@@ -1,5 +1,5 @@
 Vue.createApp({
-  data: () => ({ page: location.hash.slice(1) || 'form', form: null, batches: [], drafts: [], historyId: '', count: 10, selected: '', batch: null, error: '', message: '', saving: false, dirty: false, polling: false, busy: false, choices: {}, covers: {}, choiceBatch: '', audit: null, auditScope: 'suspicious', auditPage: 1, auditQuery: '', auditChoices: {} }),
+  data: () => ({ page: location.hash.slice(1) || 'form', form: null, batches: [], drafts: [], historyId: '', count: 10, selected: '', batch: null, error: '', message: '', saving: false, dirty: false, polling: false, busy: false, choices: {}, covers: {}, choiceBatch: '', audit: null, auditScope: 'quality', auditPage: 1, auditQuery: '', auditChoices: {} }),
   computed: {
     activeFormItems() { return (this.form?.items||[]).filter(i=>!i.noImageClosed); },
     filled() { return this.form?.items.filter(x => x.url).length || 0; },
@@ -17,7 +17,7 @@ Vue.createApp({
     progressItems() { const ids=new Set(this.quickRetryItems.map(x=>x.id)); return [...(this.batch?.items||[])].sort((a,b)=>Number(!ids.has(a.id))-Number(!ids.has(b.id))); },
     remainingBreakdown() {
       const s=this.form?.remainingSummary;if(!s)return '';
-      return [['unattempted','未尝试'],['unfilled','未填链接回流'],['retry','网络失败'],['policy','规则升级重试']].filter(([key])=>s[key]).map(([key,label])=>label+' '+s[key]).join('、');
+      return [['manual','需手填链接'],['retry','网络失败'],['replacement','删除后待补'],['unattempted','未尝试'],['unfilled','未填链接回流'],['policy','规则升级重试']].filter(([key])=>s[key]).map(([key,label])=>label+' '+s[key]).join('、');
     },
     auditSelectedItems() { return Object.entries(this.auditChoices).filter(([,selected])=>selected).map(([key])=>{const split=key.indexOf('\n');return {id:key.slice(0,split),url:key.slice(split+1)};}); },
   },
@@ -35,6 +35,7 @@ Vue.createApp({
     canAuditSelect(item) { const key=this.auditKey(item);if(this.auditChoices[key])return true;const selected=this.auditSelectedItems.filter(x=>x.id===item.id).length;return item.imageCount-selected>1; },
     selectAuditPage() { if(this.audit?.readOnly)return;for(const item of this.audit?.items||[]){if(this.canAuditSelect(item))this.auditChoices[this.auditKey(item)]=true;} },
     clearAuditPage() { for(const item of this.audit?.items||[])this.auditChoices[this.auditKey(item)]=false; },
+    resetAudit() { this.auditChoices={};this.auditPage=1;this.loadAudit(); },
     async api(url, options) { const { timeout, ...request }=options||{};const r = await fetch(url, { ...request, signal: AbortSignal.timeout(timeout || (request.method ? 20000 : 8000)) }); const value = await r.json(); if (!r.ok) throw Error(value.error || '请求失败'); return value; },
     post(url, input, timeout) { return this.api(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input), timeout }); },
     async save() { this.saving = true; this.error = ''; try { this.form = await this.post('/api/draft', this.form); this.dirty = false; this.message = '已保存并确认链接，可启动采集。'; this.drafts = await this.api('/api/drafts'); } catch (e) { this.error = e.message; } finally { this.saving = false; } },
@@ -45,8 +46,9 @@ Vue.createApp({
     async resumeIp() { this.busy=true; this.error=''; try { await this.post('/api/resume-ip',{id:this.batch.id}); this.message='已从风控断点继续'; await this.refresh(); } catch(e){this.error=e.message;} finally{this.busy=false;} },
     async remaining() { if(this.dirty){this.error='请先保存当前清单';return;} this.busy=true;try{this.form=await this.post('/api/remaining',{id:this.batch.id,revision:this.form.revision});this.drafts=await this.api('/api/drafts');location.hash='form';}catch(e){this.error=e.message;}finally{this.busy=false;} },
     async applyBatch() { this.busy=true; this.error=''; try { await this.post('/api/apply',{id:this.batch.id,selections:this.selectedItems}); await this.loadBatch(); } catch(e){this.error=e.message;} finally{this.busy=false;} },
-    async loadAudit() { this.error='';try{const query=new URLSearchParams({scope:this.auditScope,page:this.auditPage,pageSize:48,q:this.auditQuery});this.audit=await this.api('/api/image-audit?'+query);this.auditPage=this.audit.page;}catch(e){this.error=e.message;} },
-    async deleteAuditImages() { const items=this.auditSelectedItems;if(!items.length)return;if(!confirm(`确认从勾选卡片所属的景点移除 ${items.length} 张图片？\n\n未勾选的关联景点不会受影响；每个景点至少保留 1 张。`))return;this.busy=true;this.error='';try{const result=await this.post('/api/image-audit/delete',{selections:items},300000);this.auditChoices={};this.message=`已从 ${result.attractionCount} 个景点移除 ${result.removedCount} 张图片，并完成 Beta 重建。`;await this.loadAudit();}catch(e){this.error=e.message;}finally{this.busy=false;} },
+    async loadAudit() { this.error='';try{const query=new URLSearchParams({scope:this.auditScope,page:this.auditPage,pageSize:48,q:this.auditQuery});this.audit=await this.api('/api/image-audit?'+query);this.auditPage=this.audit.page;if(!Object.keys(this.auditChoices).length)for(const item of this.audit.defaultSelections||[])this.auditChoices[this.auditKey(item)]=true;}catch(e){this.error=e.message;} },
+    async scanAuditQuality() { this.busy=true;this.error='';try{this.audit=await this.post('/api/image-audit/scan-quality',{},300000);this.auditScope='quality';this.auditPage=1;this.auditChoices={};for(const item of this.audit.defaultSelections||[])this.auditChoices[this.auditKey(item)]=true;this.message=`画质扫描完成：已分析 ${this.audit.summary.scanned||0} 张本地审图缓存。`;}catch(e){this.error=e.message;}finally{this.busy=false;} },
+    async deleteAuditImages() { const items=this.auditSelectedItems;if(!items.length)return;if(!confirm(`确认从勾选卡片所属的景点移除 ${items.length} 张图片？\n\n这是第一阶段，只删除你确认的图片，不会自动启动补图。未勾选图片不受影响；每个景点至少保留 1 张。`))return;this.busy=true;this.error='';try{const result=await this.post('/api/image-audit/delete',{selections:items},300000);this.auditChoices={};this.message=`已从 ${result.attractionCount} 个景点移除 ${result.removedCount} 张图片并重建 Beta；其中 ${result.refillQueuedCount} 个景点已进入 Trip 重补池。操作编号 ${result.planId}，删除依据已保存。`;await this.loadAudit();}catch(e){this.error=e.message;}finally{this.busy=false;} },
     persistChoices() { localStorage.setItem('gallery-review-'+this.batch.id,JSON.stringify({choices:this.choices,covers:this.covers})); },
     async loadBatch() {
       if (!this.selected) return;

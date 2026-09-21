@@ -2,6 +2,7 @@ const C = require('./gallery_link_batch_common');
 const { fs, path, root, runtime, read, write, batchPath, alive } = C;
 const { execFileSync } = require('child_process');
 const { imagesOf, existingMap, mergeImages } = require('./gallery_existing_images');
+const refillQueue = require('./gallery_refill_queue');
 function makePlan(state, selections) {
   if (!Array.isArray(selections) || !selections.length || selections.length > state.items.length) throw Error('请选择要写入的图片');
   const seen = new Set(), existing = existingMap();
@@ -26,7 +27,7 @@ function makePlan(state, selections) {
 // Injectable paths/build function keep regression tests entirely isolated.
 function execute(plan, options = {}) {
   const base = options.root || root, dir = options.dir || batchPath(plan.batchId);
-  const target = path.join(base, 'content/attraction-gallery-overrides.json');
+  const target = path.join(base, 'content/attraction-gallery-overrides.json'), queue = refillQueue.queueFile(base);
   const dataDir = path.join(base, 'data'), stage = path.join(base, '.dist-next'), dist = path.join(base, 'dist');
   const backup = path.join(dir, 'apply-backup'), oldDist = path.join(backup, 'dist');
   const receiptFile = path.join(dir, 'apply.json');
@@ -36,6 +37,7 @@ function execute(plan, options = {}) {
     const saved = read(path.join(backup, 'metadata.json'));
     if (!saved) return;
     fs.copyFileSync(path.join(backup, 'overrides.json'), target);
+    if (saved.hadQueue) fs.copyFileSync(path.join(backup, 'refill-queue.json'), queue); else fs.rmSync(queue, { force: true });
     fs.rmSync(dataDir, { recursive: true, force: true });
     if (saved.hadData) fs.cpSync(path.join(backup, 'data'), dataDir, { recursive: true });
     if (fs.existsSync(oldDist)) {
@@ -58,10 +60,11 @@ function execute(plan, options = {}) {
   const finalItems = plan.items.map(item => ({ ...item, images: mergeImages(existing.get(item.id), item.images, item.coverUrl) }));
   fs.mkdirSync(backup, { recursive: true });
   fs.copyFileSync(target, path.join(backup, 'overrides.json'));
-  const hadData = fs.existsSync(dataDir), hadDist = fs.existsSync(dist);
+  const hadData = fs.existsSync(dataDir), hadDist = fs.existsSync(dist), hadQueue = fs.existsSync(queue);
   fs.rmSync(path.join(backup, 'data'), { recursive: true, force: true });
   if (hadData) fs.cpSync(dataDir, path.join(backup, 'data'), { recursive: true });
-  write(path.join(backup, 'metadata.json'), { hadData, hadDist });
+  if (hadQueue) fs.copyFileSync(queue, path.join(backup, 'refill-queue.json'));
+  write(path.join(backup, 'metadata.json'), { hadData, hadDist, hadQueue });
   const progress = { status: 'applying', pid: process.pid, batchId: plan.batchId, startedAt: new Date().toISOString(), ids: plan.items.map(i => i.id) };
   write(receiptFile, progress);
   let committed = false;
@@ -81,7 +84,8 @@ function execute(plan, options = {}) {
     }
     if (hadDist) fs.renameSync(dist, oldDist);
     fs.renameSync(stage, dist);
-    const receipt = { ...progress, status: 'applied', appliedAt: new Date().toISOString(), count: plan.items.length, imageCount: plan.items.reduce((n, i) => n + i.images.length, 0), selections: plan.items.map(i => ({ id: i.id, urls: i.images.map(im => im.url) })), finalSelections: finalItems.map(i => ({id:i.id,urls:i.images.map(im=>im.url)})), finalImageCount: finalItems.reduce((n,i)=>n+i.images.length,0), policy:'preserve-existing-v1', settled: true, backup: path.relative(base, backup).replace(/\\/g, '/') };
+    const refillCompletedCount = refillQueue.complete(finalItems.map(item => ({ id: item.id, finalImageCount: item.images.length, urls: item.images.map(image => image.url) })), plan.batchId, base);
+    const receipt = { ...progress, status: 'applied', appliedAt: new Date().toISOString(), count: plan.items.length, imageCount: plan.items.reduce((n, i) => n + i.images.length, 0), selections: plan.items.map(i => ({ id: i.id, urls: i.images.map(im => im.url) })), finalSelections: finalItems.map(i => ({id:i.id,urls:i.images.map(im=>im.url)})), finalImageCount: finalItems.reduce((n,i)=>n+i.images.length,0), refillCompletedCount, policy:'preserve-existing-v1', settled: true, backup: path.relative(base, backup).replace(/\\/g, '/') };
     write(receiptFile, receipt); committed = true;
     // Only the displaced generated dist is removed, never source/online images.
     try { fs.rmSync(oldDist, { recursive: true, force: true }); } catch { /* retain backup on Windows file contention */ }

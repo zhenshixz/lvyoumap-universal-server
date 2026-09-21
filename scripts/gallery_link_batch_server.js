@@ -32,6 +32,7 @@ const server = http.createServer(async (req, res) => {
         if (url.pathname === '/api/resume-ip') return json(res, await actions.resumeIp(input));
         if (url.pathname === '/api/apply') return json(res, await actions.apply(input));
         if (url.pathname === '/api/image-audit/delete') return json(res, imageReview.deleteImages(input));
+        if (url.pathname === '/api/image-audit/scan-quality') return json(res, imageReview.scanQuality());
         if (url.pathname === '/api/province-heroes/save') return json(res, provinceHeroes.saveSelection(input));
         let next;
         if (url.pathname === '/api/remaining') next = actions.remaining(input);
@@ -56,7 +57,7 @@ const server = http.createServer(async (req, res) => {
       const { existingMap, imagesOf } = require('./gallery_existing_images');
       const { classify } = require('./gallery_retry_policy');
       const existing = existingMap();
-      return json(res, { ...s, retryableCount:s.items.filter(i=>classify(i)==='retry' && !(i.images||[]).some(im=>im.accepted)).length,
+      return json(res, { ...s, retryableCount:s.items.filter(i=>classify(i)==='retry' && !(i.images||[]).some(im=>im.accepted)).length, manualPendingCount: actions.manualPendingCount(s),
         items:s.items.map(i=>({...i, existingImages:imagesOf(existing.get(i.id)), existingCover:existing.get(i.id)?.image})), apply: actions.receipt(s.id), readOnly: !local(req) });
     }
     let file, type;

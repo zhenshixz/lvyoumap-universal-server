@@ -179,6 +179,7 @@ async function main() {
   state.sourcePolicy = policy;
   const python = require('./gallery_link_batch_python').resolvePython();
   const earlier = history(state.id);
+  const relationDenied = new Set(read(path.join(root, 'content/attraction-gallery-review-decisions.json'), []).filter(decision => decision.action === 'remove_reference').map(decision => `${decision.id}\n${decision.url}`));
   let searchFailures = 0;
   if (autoDiscover) discovery = new (require('./gallery_trip_discovery').Discovery)();
   for (const item of state.items) {
@@ -191,7 +192,7 @@ async function main() {
         item.url = cached.url;
       }
     }
-    const previous = previousAttempt(item, earlier);
+    const previous = item.queueType === 'replacement' ? null : previousAttempt(item, earlier);
     if (previous) {
       if (previous.trip?.noImageConfirmed) { item.trip={...previous.trip}; item.noImageClosed=true; item.done=true; item.result='当前图源无图，已关闭补图'; checkpoint(); continue; }
       item.trip = {status:'already_attempted',reason:item.url?'该Trip链接已成功尝试，不重复采集；请换链接或图源':'该景点需人工补充不同链接，不重复自动搜索',previousBatch:previous.batchId};
@@ -203,7 +204,7 @@ async function main() {
       ...(item.images || []).map(x => previousQA.find(y => y.url === x.url && y.accepted !== undefined) || x),
       ...previousQA.filter(y => !(item.images || []).some(x => x.url === y.url)),
     ];
-    if (autoDiscover && !item.url && item.discovery?.status !== 'manual') {
+    if (autoDiscover && !item.url && item.discovery?.status !== 'manual' && item.queueType !== 'manual') {
       state.current = { name: item.name, phase: 'Trip站内搜索与地域匹配' }; checkpoint();
       try {
         item.discovery = await discovery.find(item);
@@ -225,7 +226,13 @@ async function main() {
     write(manifest, item.images);
     const q = spawnSync(python, [path.join(__dirname, 'gallery_link_batch_quality.py'), manifest], { windowsHide: true, timeout: 60000, encoding: 'utf8' });
     if (q.status !== 0) throw Error('图片处理失败，请检查Python依赖；再次启动可续跑');
-    item.images = read(manifest); item.qualityPolicyVersion = 2; item.done = true;
+    item.images = read(manifest);
+    for (const image of item.images) if (relationDenied.has(`${item.id}\n${image.url}`)) {
+      image.accepted = false;
+      image.reason = '该图片已被人工删除，不再作为候选';
+    }
+    write(manifest, item.images);
+    item.qualityPolicyVersion = 2; item.done = true;
     const count = item.images.filter(x => x.accepted).length;
     item.result = item.trip?.noImageConfirmed ? '当前图源无图，已关闭补图' : count ? `${count}张候选，待人工验收` : '暂无合格候选'; checkpoint();
   }

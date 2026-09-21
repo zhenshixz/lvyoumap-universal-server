@@ -105,7 +105,7 @@ function draftView(value) {
     if(closed.has(item.id)&&!item.url) return {...item,autoSelection:null,noImageClosed:true,discoveryReason:'Trip确认无图库，仅占位图；已关闭补图，无需整理'};
     if(item.url || item.skip) return {...item, autoSelection:null};
     const selection=select(item,item.discoveryCandidates||[], { names: queryVariants(item) });
-    const attempted=selection.status==='matched' ? retryPolicy.previousAttempt({...item,url:selection.url},history) : null;
+    const attempted=item.queueType!=='replacement'&&selection.status==='matched' ? retryPolicy.previousAttempt({...item,url:selection.url},history) : null;
     if(attempted) {
       const rejected=[...new Set((attempted.images||[]).filter(x=>!x.accepted).map(x=>x.reason).filter(Boolean))].join('、');
       const supplied=attempted.trip?.available;
@@ -115,7 +115,7 @@ function draftView(value) {
       return {...item,autoSelection:null,attemptedSelection:selection,discoveryReason:detail};
     }
     return {...item, autoSelection:selection.status==='matched'?selection:null,
-      discoveryReason:selection.status==='matched'?'已自动选择同城市首项，启动自动采集即可，无需手填':item.discoveryReason};
+      discoveryReason:item.queueReason || (selection.status==='matched'?'已自动选择同城市首项，启动自动采集即可，无需手填':item.discoveryReason)};
   });
   items.sort((a,b)=>Number(!!a.autoSelection)-Number(!!b.autoSelection));
   return {...value,items};
