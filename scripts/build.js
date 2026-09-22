@@ -71,6 +71,14 @@ try {
     copyDirectory(directory);
   }
 
+  execFileSync(process.execPath, [
+    path.join(rootDir, 'scripts', 'generate_seo_pages.js'),
+    '--output=.dist-next',
+  ], {
+    cwd: rootDir,
+    stdio: 'inherit',
+  });
+
   // Data-only updates must invalidate both the app script and province JSON.
   // Otherwise browsers keep using the old STATIC_DATA_VERSION indefinitely.
   const dataVersion = hashDirectory('data');

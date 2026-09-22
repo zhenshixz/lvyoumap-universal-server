@@ -1,6 +1,19 @@
 # Beta 当前交接摘要
 
-更新时间：2026-09-21
+更新时间：2026-09-22
+
+## 当前软著申请
+
+- 申请版本：中国旅游地图 V3.0.0；固定源码提交 `1ed403b31143fb6a14e43c1cac91a62587837c92`。
+- 日期：开发完成 2026-07-23，首次发表 2026-07-24，首次发表地点中国福建省厦门市。
+- 2026-09-22 已填写到官网签章页，但新版签章页要求承诺未使用 AI 编写代码、文档或申请材料；该承诺与项目实际不符，因此申请已暂停在签字上传前，尚未提交。
+- `.runtime/software-copyright-20260918/` 下两份 PDF 和清单只作为内部草稿与版本证据保留，禁止直接签署承诺或上传。后续需先取得中国版权保护中心对“人主导、AI 辅助开发”的明确申报口径；不能用人工改写掩盖既有 AI 参与。
+
+## 当前代码证据快照
+
+- 私有清单位于 `.runtime/ip-evidence-20260922/`，公开安全说明为 `docs/IP_EVIDENCE_SNAPSHOT_2026-09-22.md`。
+- 正式仓已在本人明确授权下单独提交证据说明：`ad361dc`；本地标签 `evidence-snapshot-2026-09-22`。正式仓无其他未提交改动。
+- GitHub `main` 已收到证据提交 `ad361dc`，本地与 `origin/main` 一致；远程暂未查到标签。需在本人已登录的终端再执行 `git push origin evidence-snapshot-2026-09-22`。
 
 ## 工作边界
 
@@ -30,3 +43,9 @@
 - `node --check`：通过。
 - `node scripts/test_gallery_link_workbench.js`：通过。
 - 当前服务 PID 以 `.runtime/gallery-link-batches/server.json` 为准。
+## 2026-09-22 SEO 当前状态
+
+- 线上尚未收录的核心原因已定位：缺少真实 `robots.txt` / `sitemap.xml`，5,663 个景点没有独立可抓取 URL。
+- Beta 已完成静态 SEO 构建：34 个省份页、5,663 个景点页、5,699 个 sitemap URL；完整构建与校验通过。
+- 本机预览：`http://127.0.0.1:3001/destinations/index.html`；robots 和 sitemap MIME 已验证正确。
+- 尚未同步正式仓、未部署线上、未提交 Google Search Console 或百度搜索资源平台。

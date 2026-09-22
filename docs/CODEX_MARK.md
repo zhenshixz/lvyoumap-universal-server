@@ -1102,3 +1102,33 @@
 - 已盘点并删除系统 Temp 下 43 张 `codex-clipboard-*` 聊天剪贴板临时图，共释放约 10.1 MB；引用检查未发现 Beta 或正式图片依赖这些文件。
 - 未清空 Beta `.runtime`（约 8.9 GB），其中包含可恢复批次、审图缓存和来源记录，直接删除会破坏断点与追溯。
 - 新增轻量交接文件 `docs/CODEX_CURRENT.md`。后续优先读取该摘要和 `CODEX_MARK.md` 末尾，不重复加载完整历史或完整日志。删除本地临时图不会改变已经发送到当前对话的历史 token；需要真正缩短上下文时，应从该摘要开启新对话。
+
+## 2026-09-22｜软著新版 AI 承诺导致本次申请暂停
+
+- 中国版权保护中心当前系统生成的申请确认签章页明确要求申请人声明：软件为人的独立开发，且未使用 AI 开发编写代码、撰写文档或生成登记申请材料；同时载有失实、欺骗及版权登记失信后果。该文本与本项目实际不符：项目开发过程使用过 AI 辅助，当前程序鉴别材料和软件说明书也由 Codex 辅助整理生成。
+- 本次申请停在签章上传前，未签字、未上传、未最终提交。现有 `.runtime/software-copyright-20260918` 材料仅保留为内部草稿和版本证据，**不得直接用于签署该承诺或提交登记**。
+- 不能用人工改写材料来掩盖既有 AI 参与，也不采用代理机构“包过”等规避做法。下一步仅在中国版权保护中心就“人主导、AI 辅助开发”给出可留存的明确申报口径后再决定；否则放弃当前版本的登记申请，改用 Git 历史、部署记录、文件哈希和时间证据等方式保存权属证据。正式仓未修改。
+
+## 2026-09-22｜GitHub 代码证据快照
+
+- 用户明确授权将轻量证据记录同步到 GitHub。以正式仓当时的干净 `main` 为基准：提交 `229efa02d9bdb8e726460409fae512d1e8293b62`、Git 树 `ea8735357042af05e07f6c6c881f4ada4b201b1e`、此前共 65 次提交、4335 个跟踪文件，最早提交为 `37f7fa64d2f64a8fb642cc3a86c7531e2f393d1d`（2026-07-23）。
+- 私有轻量包保存在 `.runtime/ip-evidence-20260922/`：完整提交顺序、Git 引用、元数据、基准树中每个跟踪文件的对象哈希及 `SHA256SUMS.txt`。没有保存 1.5 GiB 的重复 Git bundle，也没有上传服务器日志、账单、身份信息或密钥。
+- 正式仓仅新增 `docs/IP_EVIDENCE_SNAPSHOT_2026-09-22.md`，本地提交 `ad361dc`，本地注释标签 `evidence-snapshot-2026-09-22`。未混入 Beta 的图片、脚本或其他工作文件。
+- 推送 GitHub 暂未完成：本机 `gh` 未登录，HTTPS 没有凭据；两把现有项目 SSH 密钥也没有 GitHub 仓库权限。正式仓当前为 `main...origin/main [ahead 1]`。待本人执行 `gh auth login --web`、`gh auth setup-git` 后，再推送 `main` 和该标签。
+## 2026-09-22｜搜索引擎收录诊断与 Beta 技术修复
+
+- 线上核查：`site:xzmap.xzbest.site` 在百度和 Google 均未发现结果。首页本身返回 200 且已有标题、摘要和 canonical，但 `/robots.txt` 与 `/sitemap.xml` 都被 Nginx 的 SPA 回退错误地返回为首页 HTML；站内 5,663 个景点也只有 JavaScript 状态，没有各自 URL 和可抓取的 `<a href>` 链接。搜索引擎实际只能发现一个首页，这是上线两个月仍未收录的核心技术原因。
+- Beta 已新增构建期 SEO 生成器 `scripts/generate_seo_pages.js`：从现有 34 个省级区域和 5,663 个景点数据自动生成省份目录、景点静态详情页、独立标题/摘要/canonical、面包屑与基础结构化数据。首页页脚增加“景点目录”真实链接，形成首页 → 省份 → 景点的可抓取链路。
+- 已生成真实 UTF-8 `robots.txt` 和根目录 `sitemap.xml`；站点地图共 5,699 个绝对 URL，约 509 KiB，低于单文件 50,000 URL / 50 MiB 限制。`robots.txt` 明确允许抓取并指向正式域名站点地图。站点地图暂不伪造统一构建日期，等内容层具备可靠的逐页更新时间后再加入 `lastmod`。
+- `scripts/build.js` 已接入自动生成，后续每次正式构建会按最新景点数据重建 SEO 页面；`scripts/verify-build.js` 增加页面数量、robots 和 sitemap 校验。Node 预览服务增加 XML/TXT MIME，Nginx 示例配置增加 robots/sitemap 精确路径。
+- Beta 完整构建和验证已通过：34 个省份、5,663 个景点静态页、5,699 个 sitemap URL；抽查 `/destinations/index.html`、`/destinations/beijing.html` 和 `/attractions/beijing/amap_b000a81cb2.html` 均为 200 且正文、canonical、结构化数据存在。本机预览为 `http://127.0.0.1:3001/`。
+- 当前只修改 Beta 与 Beta 构建产物；正式仓和线上仍未改变。上线后还需在 Google Search Console 与百度搜索资源平台验证站点归属并提交 `https://xzmap.xzbest.site/sitemap.xml`。提交只能加快发现，不保证立即收录；先观察首页、省份页和少量核心景点页的抓取/索引状态。
+
+### 收录补充审计与提交边界
+
+- 正式域名的 HTTP 会 301 到 HTTPS；分别模拟 Googlebot 与 Baiduspider 请求 HTTPS 首页均返回 200 和正常 HTML，未发现按爬虫 User-Agent 封锁。当前线上仍是旧版本，因此 robots、sitemap 和景点静态页必须等本轮 Beta 同步部署后再做线上复核。
+- 5,663 个景点均有交通、长辈和亲子提示；以“简介＋地址＋交通＋长辈提示＋亲子提示”组成正文指纹，没有两个景点页完全相同。48 条简介带明显旧模板句，1,562 条简介短于 45 字，但这些页面仍有独立地址和攻略正文，不是空壳页；初期观察索引反馈后再定向改低质量页，不在上线前无依据重写全库。
+- Google 普通旅游页面不能使用 Indexing API；官方接口仅允许 `JobPosting` 和带 `BroadcastEvent` 的直播页。Google 的正确路径仍是 Search Console 归属验证、提交 sitemap，并对极少量核心 URL 使用 URL 检查请求编入索引。
+- 百度可在站点验证后使用“普通收录”的 sitemap 与 API 推送。API 必须使用后台分配的站点 token 和当天配额；token 不写入 Git 或文档，也不重复推送全部旧 URL。首次上线可先推首页、目录、34 个省份及一批核心景点，后续只推新增或实质更新页。
+- IndexNow 可自动通知 Bing 等参与引擎，但不替代 Google Search Console 或百度普通收录。为保持首轮方案轻量，先完成 Google/百度验证和提交，再按实际需要追加 IndexNow 密钥与推送。
+- 本轮未再增加产品文件：Google/百度优先采用 DNS 归属验证，可避免把验证文件或 meta token 固化进项目。部署后由 Codex 复核线上端点并协助操作两个站长平台，用户只需完成账号登录、验证码或 DNS 控制台授权步骤。
