@@ -73,12 +73,14 @@ function pageShell({ title, description, canonicalPath, image, body, structuredD
   <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
   <meta property="og:image" content="${escapeHtml(imageUrl)}">
   <link rel="stylesheet" href="/seo.css">
+  <style>.brand{display:flex;align-items:center;gap:14px}.map-entry{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(8,127,91,.9),rgba(11,154,114,.82));color:#fff!important;text-decoration:none;font-weight:700;border:1px solid rgba(137,229,196,.78);border-radius:999px;box-shadow:0 8px 24px rgba(7,86,63,.25),0 2px 5px rgba(7,86,63,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:box-shadow .18s ease,background .18s ease}.map-entry:hover{background:linear-gradient(135deg,rgba(8,127,91,.94),rgba(11,154,114,.88));box-shadow:0 9px 26px rgba(7,86,63,.3),0 3px 7px rgba(7,86,63,.2)}.map-entry-float{position:fixed;z-index:10;left:50%;bottom:20px;transform:translateX(-50%);width:min(690px,calc(100% - 40px));padding:12px 22px;font-size:15px;letter-spacing:.02em}.map-entry-float span{margin-left:6px;font-size:20px;line-height:1}.map-entry-float:before{content:'✦';margin-right:9px;color:#b9f3df;font-size:14px}@media(max-width:560px){.site-header{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px}.brand{align-items:flex-start;flex-direction:column;gap:0}.map-entry-float{bottom:12px;width:calc(100% - 24px);padding:11px 14px;font-size:14px}}</style>
   <script type="application/ld+json">${safeJson(structuredData)}</script>
 </head>
 <body>
-  <header class="site-header"><a href="/">中国旅游地图</a><span>发现中国之美</span></header>
+  <header class="site-header"><div class="brand"><a href="/">中国旅游地图</a><span>发现中国之美</span></div></header>
   ${body}
   <footer><a href="/">打开互动地图</a><a href="/destinations/index.html">浏览全部省份</a><a href="https://beian.miit.gov.cn/" rel="nofollow">闽ICP备2026018133号</a></footer>
+  <a class="map-entry map-entry-float" href="/" aria-label="进入中国旅游地图，发现中国之美">进入中国旅游地图，发现中国之美 <span aria-hidden="true">→</span></a>
 </body>
 </html>
 `;
