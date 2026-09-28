@@ -64,7 +64,7 @@ fs.rmSync(outputDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
 
 try {
-  for (const file of ['index.html', 'app.js', 'style.css', 'china.json', 'china_geo.js', 'indexnow-key.txt']) {
+  for (const file of ['index.html', 'about.html', 'app.js', 'style.css', 'china.json', 'china_geo.js', 'indexnow-key.txt']) {
     copyFile(file);
   }
   for (const directory of ['assets', 'data', 'vendor']) {

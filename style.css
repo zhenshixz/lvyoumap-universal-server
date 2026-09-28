@@ -618,6 +618,49 @@ body {
   line-height: 1.6;
   max-width: 280px;
 }
+.crawl-entry {
+  width: min(440px, 100%);
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--card-border);
+}
+.crawl-entry > p {
+  max-width: none;
+}
+.crawl-entry-links,
+.crawl-entry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+.crawl-entry-links {
+  margin-top: 12px;
+}
+.crawl-entry-links a {
+  padding: 5px 10px;
+  border: 1px solid rgba(2, 132, 199, 0.16);
+  border-radius: 999px;
+  background: rgba(2, 132, 199, 0.05);
+  color: var(--accent-cyan);
+  font-size: 12px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.crawl-entry-actions {
+  margin-top: 12px;
+  gap: 14px;
+}
+.crawl-entry-actions a {
+  color: var(--text-secondary);
+  font-size: 11px;
+  text-underline-offset: 3px;
+}
+.crawl-entry a:hover,
+.crawl-entry a:focus-visible {
+  color: var(--accent-cyan-hover);
+  border-color: rgba(2, 132, 199, 0.32);
+}
 
 /* 5.2 目的地内容容器 */
 .destination-container {

@@ -3,6 +3,19 @@ const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
 const siteOrigin = 'https://xzmap.xzbest.site';
+const coreAttractionIds = [
+  'amap_B000A8UIN8',
+  'manual_beijing_56bc02b5',
+  'amap_B022F0ML6Z',
+  'amap_B025003YN2',
+  'amap_B02E800EFM',
+  'amap_B001D09OYW',
+  'amap_B0345001JL',
+  'amap_B023B13L9M',
+  'amap_B037B01F68',
+  'amap_B030507SVW',
+];
+const coreAttractionIdSet = new Set(coreAttractionIds.map(id => id.toLowerCase()));
 
 function parseArguments(argv) {
   const outputArgument = argv.find(argument => argument.startsWith('--output='));
@@ -79,7 +92,7 @@ function pageShell({ title, description, canonicalPath, image, body, structuredD
 <body>
   <header class="site-header"><div class="brand"><a href="/">中国旅游地图</a><span>发现中国之美</span></div></header>
   ${body}
-  <footer><a href="/">打开互动地图</a><a href="/destinations/index.html">浏览全部省份</a><a href="https://beian.miit.gov.cn/" rel="nofollow">闽ICP备2026018133号</a></footer>
+  <footer><a href="/">打开互动地图</a><a href="/destinations/index.html">浏览全部省份</a><a href="/about.html">关于本站</a><a href="https://beian.miit.gov.cn/" rel="nofollow">闽ICP备2026018133号</a></footer>
   <a class="map-entry map-entry-float" href="/" aria-label="进入中国旅游地图，发现中国之美">进入中国旅游地图，发现中国之美 <span aria-hidden="true">→</span></a>
 </body>
 </html>
@@ -174,11 +187,11 @@ function generateProvincePage(outputDir, provinceName, province, attractions) {
   const description = truncate(`${provinceName}旅游景点地图与攻略，收录${attractions.length}个景点。${province.description || ''}`, 150);
   const cards = attractions.map(attraction => {
     const url = attractionUrl(provinceId, attraction.id);
-    return `<li><a class="place-card" href="${url}"><img src="${escapeHtml(attraction.image)}" alt="" loading="lazy" referrerpolicy="no-referrer"><span><strong>${escapeHtml(attraction.name)}</strong><small>${escapeHtml(attraction.city || provinceName)}</small><em>${escapeHtml(truncate(attraction.description || attraction.intro, 70))}</em></span></a></li>`;
+    return `<li><a class="place-card" href="${url}"><img src="${escapeHtml(attraction.image)}" alt="${escapeHtml(`${attraction.name}景点图片`)}" loading="lazy" referrerpolicy="no-referrer"><span><strong>${escapeHtml(attraction.name)}</strong><small>${escapeHtml(attraction.city || provinceName)}</small><em>${escapeHtml(truncate(attraction.description || attraction.intro, 70))}</em></span></a></li>`;
   }).join('');
   const body = `<main>
     <nav class="breadcrumb" aria-label="面包屑"><a href="/">首页</a><span>›</span><a href="/destinations/index.html">目的地</a><span>›</span>${escapeHtml(provinceName)}</nav>
-    <section class="listing-hero"><img src="${escapeHtml(province.image)}" alt="${escapeHtml(provinceName)}风景"><div><p class="eyebrow">中国旅游目的地</p><h1>${escapeHtml(provinceName)}旅游景点</h1><p>${escapeHtml(province.description)}</p><strong>共收录 ${attractions.length} 个景点</strong></div></section>
+    <section class="listing-hero"><img src="${escapeHtml(province.image)}" alt="${escapeHtml(`${provinceName}${province.hero?.sourceAttraction || '旅游风景'}`)}"><div><p class="eyebrow">中国旅游目的地</p><h1>${escapeHtml(provinceName)}旅游景点</h1><p>${escapeHtml(province.description)}</p><strong>共收录 ${attractions.length} 个景点</strong></div></section>
     <ul class="place-grid">${cards}</ul>
   </main>`;
   const structuredData = {
@@ -200,10 +213,11 @@ function generateProvincePage(outputDir, provinceName, province, attractions) {
   return canonicalPath;
 }
 
-function generateDirectoryPage(outputDir, provinceEntries) {
+function generateDirectoryPage(outputDir, provinceEntries, featuredAttractions) {
   const canonicalPath = '/destinations/index.html';
-  const cards = provinceEntries.map(({ provinceName, province, count }) => `<li><a class="province-card" href="/destinations/${province.id}.html"><img src="${escapeHtml(province.image)}" alt="" loading="lazy"><span><strong>${escapeHtml(provinceName)}</strong><small>${count} 个景点</small><em>${escapeHtml(truncate(province.description, 62))}</em></span></a></li>`).join('');
-  const body = `<main><nav class="breadcrumb" aria-label="面包屑"><a href="/">首页</a><span>›</span>目的地</nav><section class="directory-intro"><p class="eyebrow">按省份浏览</p><h1>中国旅游目的地</h1><p>从 34 个省级区域进入，浏览景点介绍、地址、开放时间及长辈和亲子出行提示。</p></section><ul class="province-grid">${cards}</ul></main>`;
+  const cards = provinceEntries.map(({ provinceName, province, count }) => `<li><a class="province-card" href="/destinations/${province.id}.html"><img src="${escapeHtml(province.image)}" alt="${escapeHtml(`${provinceName}${province.hero?.sourceAttraction || '旅游风景'}`)}" loading="lazy"><span><strong>${escapeHtml(provinceName)}</strong><small>${count} 个景点</small><em>${escapeHtml(truncate(province.description, 62))}</em></span></a></li>`).join('');
+  const featuredCards = featuredAttractions.map(({ attraction, provinceId }) => `<li><a class="place-card" href="${attractionUrl(provinceId, attraction.id)}"><img src="${escapeHtml(attraction.image)}" alt="${escapeHtml(`${attraction.name}景点图片`)}" loading="lazy"><span><strong>${escapeHtml(attraction.name)}</strong><small>${escapeHtml(attraction.city || '')}</small><em>${escapeHtml(truncate(attraction.description || attraction.intro, 70))}</em></span></a></li>`).join('');
+  const body = `<main><nav class="breadcrumb" aria-label="面包屑"><a href="/">首页</a><span>›</span>目的地</nav><section class="directory-intro"><p class="eyebrow">按省份浏览</p><h1>中国旅游目的地</h1><p>从 34 个省级区域进入，浏览景点介绍、地址、开放时间及长辈和亲子出行提示。</p><p><a href="/about.html">查看本站资料来源、核验方式与更新原则</a></p></section><h2>重点景点</h2><ul class="place-grid">${featuredCards}</ul><h2>全部省级目的地</h2><ul class="province-grid">${cards}</ul></main>`;
   writeFile(outputDir, canonicalPath.slice(1), pageShell({
     title: '中国旅游目的地与景点目录 | 中国旅游地图',
     description: '按省份浏览中国旅游景点，查看景点介绍、地址、开放时间及长辈和亲子出行提示。',
@@ -231,6 +245,8 @@ function main() {
   const provinceIndex = readJson(path.join(outputDir, 'data', 'provinces-index.json'));
   const provinceEntries = [];
   const sitemapPaths = ['/', '/destinations/index.html'];
+  const coreProvincePaths = [];
+  const featuredAttractions = [];
   let attractionCount = 0;
 
   generateStyles(outputDir);
@@ -241,21 +257,44 @@ function main() {
     if (!Array.isArray(attractions)) throw new Error(`Invalid attractions for ${provinceName}`);
     for (const attraction of attractions) {
       if (!/^[A-Za-z0-9_-]+$/.test(String(attraction.id))) throw new Error(`Unsafe attraction id: ${attraction.id}`);
-      sitemapPaths.push(generateAttractionPage(outputDir, provinceName, province.id, attraction));
+      const generatedPath = generateAttractionPage(outputDir, provinceName, province.id, attraction);
+      sitemapPaths.push(generatedPath);
+      if (coreAttractionIdSet.has(String(attraction.id).toLowerCase())) {
+        featuredAttractions.push({ attraction, provinceId: province.id, path: generatedPath });
+      }
       attractionCount += 1;
     }
-    sitemapPaths.push(generateProvincePage(outputDir, provinceName, province, attractions));
+    const provincePath = generateProvincePage(outputDir, provinceName, province, attractions);
+    sitemapPaths.push(provincePath);
+    coreProvincePaths.push(provincePath);
     provinceEntries.push({ provinceName, province, count: attractions.length });
   }
-  generateDirectoryPage(outputDir, provinceEntries);
+  featuredAttractions.sort((left, right) => {
+    return coreAttractionIds.indexOf(String(left.attraction.id)) - coreAttractionIds.indexOf(String(right.attraction.id));
+  });
+  if (featuredAttractions.length !== coreAttractionIds.length) {
+    const foundIds = new Set(featuredAttractions.map(entry => String(entry.attraction.id).toLowerCase()));
+    const missing = coreAttractionIds.filter(id => !foundIds.has(id.toLowerCase()));
+    throw new Error(`Missing featured attractions: ${missing.join(', ')}`);
+  }
+  const coreSitemapPaths = [
+    '/',
+    '/about.html',
+    '/destinations/index.html',
+    ...featuredAttractions.map(entry => entry.path),
+    ...coreProvincePaths,
+  ];
+  generateDirectoryPage(outputDir, provinceEntries, featuredAttractions);
 
   // Omit lastmod until each content record has its own reliable update date.
   // Using the build time would falsely mark all 5,000+ pages as changed on every deployment.
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapPaths.map(urlPath => `  <url><loc>${siteOrigin}${escapeHtml(urlPath)}</loc></url>`).join('\n')}\n</urlset>\n`;
+  const coreSitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${coreSitemapPaths.map(urlPath => `  <url><loc>${siteOrigin}${escapeHtml(urlPath)}</loc></url>`).join('\n')}\n</urlset>\n`;
   writeFile(outputDir, 'sitemap.xml', sitemap);
-  writeFile(outputDir, 'robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`);
-  writeFile(outputDir, 'seo-build-info.json', `${JSON.stringify({ provinceCount: provinceEntries.length, attractionCount, sitemapUrlCount: sitemapPaths.length, generatedAt: new Date().toISOString() }, null, 2)}\n`);
-  console.log(`SEO pages ready: ${provinceEntries.length} provinces, ${attractionCount} attractions, ${sitemapPaths.length} sitemap URLs.`);
+  writeFile(outputDir, 'sitemap-core.xml', coreSitemap);
+  writeFile(outputDir, 'robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap-core.xml\nSitemap: ${siteOrigin}/sitemap.xml\n`);
+  writeFile(outputDir, 'seo-build-info.json', `${JSON.stringify({ provinceCount: provinceEntries.length, attractionCount, sitemapUrlCount: sitemapPaths.length, coreSitemapUrlCount: coreSitemapPaths.length, generatedAt: new Date().toISOString() }, null, 2)}\n`);
+  console.log(`SEO pages ready: ${provinceEntries.length} provinces, ${attractionCount} attractions, ${sitemapPaths.length} sitemap URLs, ${coreSitemapPaths.length} core URLs.`);
 }
 
 main();

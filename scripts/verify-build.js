@@ -7,6 +7,7 @@ const indexPath = path.join(distDir, 'data', 'provinces-index.json');
 
 for (const requiredPath of [
   path.join(distDir, 'index.html'),
+  path.join(distDir, 'about.html'),
   path.join(distDir, 'app.js'),
   path.join(distDir, 'style.css'),
   indexPath,
@@ -14,6 +15,7 @@ for (const requiredPath of [
   path.join(distDir, 'data', 'provinces', 'beijing.json'),
   path.join(distDir, 'robots.txt'),
   path.join(distDir, 'sitemap.xml'),
+  path.join(distDir, 'sitemap-core.xml'),
   path.join(distDir, 'destinations', 'index.html'),
   path.join(distDir, 'destinations', 'beijing.html'),
   path.join(distDir, 'seo-build-info.json'),
@@ -43,11 +45,23 @@ const robots = fs.readFileSync(path.join(distDir, 'robots.txt'), 'utf8');
 if (!robots.includes('Sitemap: https://xzmap.xzbest.site/sitemap.xml')) {
   throw new Error('robots.txt does not reference the production sitemap');
 }
+if (!robots.includes('Sitemap: https://xzmap.xzbest.site/sitemap-core.xml')) {
+  throw new Error('robots.txt does not reference the core sitemap');
+}
 
 const sitemap = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 if (sitemapUrlCount !== seoInfo.sitemapUrlCount || !sitemap.includes('/attractions/beijing/')) {
   throw new Error(`Sitemap verification failed: ${sitemapUrlCount} URLs`);
+}
+
+const coreSitemap = fs.readFileSync(path.join(distDir, 'sitemap-core.xml'), 'utf8');
+const coreSitemapUrlCount = (coreSitemap.match(/<url>/g) || []).length;
+if (coreSitemapUrlCount !== seoInfo.coreSitemapUrlCount
+    || coreSitemapUrlCount !== Object.keys(index).length + 13
+    || !coreSitemap.includes('/about.html')
+    || !coreSitemap.includes('/attractions/beijing/amap_b000a8uin8.html')) {
+  throw new Error(`Core sitemap verification failed: ${coreSitemapUrlCount} URLs`);
 }
 
 const indexNowKey = fs.readFileSync(path.join(distDir, 'indexnow-key.txt'), 'utf8').trim();

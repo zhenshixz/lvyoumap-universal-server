@@ -53,11 +53,8 @@ function sendStatic(response, pathname) {
     return;
   }
   if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
-    if (path.extname(requested)) {
-      sendJson(response, 404, { success: false, error: 'File not found' });
-      return;
-    }
-    filePath = path.join(distDir, 'index.html');
+    sendJson(response, 404, { success: false, error: 'File not found' });
+    return;
   }
   if (!fs.existsSync(filePath)) {
     sendJson(response, 503, { success: false, error: 'Frontend has not been built' });

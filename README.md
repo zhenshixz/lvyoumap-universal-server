@@ -1,8 +1,10 @@
 # Lvyoumap Universal Server
 
-这是中国旅游地图的通用云服务器版本。它不绑定阿里云、腾讯云、宝塔或特定CDN。
+这是[中国旅游地图](https://xzmap.xzbest.site/)的通用云服务器版本。站点按省份整理景点基础信息、开放安排、交通方式及适合长辈和儿童的出行提示。它不绑定阿里云、腾讯云、宝塔或特定CDN。
 
 项目架构、数据分层、小红书点点采集、贵州试点状态、验证和回撤规则统一记录在 [PROJECT_MAINTENANCE.md](PROJECT_MAINTENANCE.md)。后续数据迭代请先阅读该文件。
+
+百度抓取、核心 sitemap、日志核验、官方反馈条件和上线协作步骤记录在 [docs/BAIDU_INDEXING_RUNBOOK.md](docs/BAIDU_INDEXING_RUNBOOK.md)。
 
 ## 运行结构
 
@@ -123,6 +125,29 @@ npm run indexnow:submit
 ```
 
 提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。只有首次上线或全部页面确实发生实质更新时，才使用 `npm run indexnow:submit -- --all`；日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
+
+## 百度普通收录
+
+百度主动推送读取 `sitemap-core.xml`，默认只发送核心入口中的前 10 条，避免站点日配额较小时整批失败：
+
+```bash
+npm run baidu:submit -- --dry-run
+npm run baidu:submit
+```
+
+下一批可使用 `--offset=10`，批量大小可用 `--limit=10` 调整。只在页面新增或发生实质更新后提交；后台显示抓取频次为 0 时，重复推送同一 URL 不会代替百度的正式抓取调度。密钥只保存在 Git 忽略的 `.env` 中。
+
+后台抓取频次可能少于服务器实际记录。下载 Nginx combined 格式访问日志后，用 UA 与双向 DNS 验证真实 Baiduspider：
+
+```bash
+npm run baidu:logs -- D:\path\to\access.log
+```
+
+部署核心页面改动后可生成反馈材料；输出保存在不会进入 Git 的 `.runtime/baidu-indexing-evidence/report.md`：
+
+```bash
+npm run baidu:evidence
+```
 
 ## 数据维护
 
