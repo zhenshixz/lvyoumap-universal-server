@@ -100,6 +100,14 @@ npm run baidu:submit
 npm run baidu:logs -- D:\path\to\xzmap.xzbest.site.log
 ```
 
+本项目生产环境已经允许受限的 `deploy` SSH 账号只读访问该日志。本地 `.env` 配置连接目标后，可直接运行：
+
+```powershell
+npm run baidu:logs:remote
+```
+
+脚本自动下载最近 100,000 行到忽略目录，并立即执行 UA 筛选与双向 DNS 验证。可用 `-- --lines=200000` 调整读取行数，不需要进入宝塔复制日志。
+
 验收时只统计 DNS 双向验证成功的 IP。User-Agent 中写有 Baiduspider 但 DNS 不匹配的请求不能当作百度抓取。
 
 ### 6. 满足条件后提交官方反馈
@@ -139,3 +147,12 @@ npm run baidu:evidence
 4. 百度搜索结果能够查询到首页或核心页面。
 
 `site:xzmap.xzbest.site` 只作为辅助检查；最终以服务器日志、百度搜索资源平台和实际搜索结果共同判断。
+
+## 2026-09-28 线上实施结果
+
+- 实际部署由服务器定时任务从 GitHub 拉取，静态文件位于 `/opt/lvyoumap/current/dist`，Node API 由 `lvyoumap.service` 在 `127.0.0.1:3000` 提供；宝塔只提供 Nginx，不存在对应的宝塔 Node 项目记录。
+- 真实站点配置为 `/www/server/panel/vhost/nginx/lvyoumap.conf`。配置修改前已生成带时间戳的备份，并通过宝塔 Nginx 的 `nginx -t` 后重载。
+- 服务器 IP 和正式 HTTPS 站点中的两处 `/index.html` 回退均改为 `=404`；正式 HTTPS 站点启用 `/www/wwwlogs/xzmap.xzbest.site.log` combined 日志。
+- 外网复核：首页、关于页、目录、核心 sitemap 和 robots 均为 200；随机不存在页面返回 404。受限部署账号可以只读访问新日志，后续使用 `npm run baidu:logs:remote` 自动取回并分析。
+- 首次自动读取到启用日志后的 7 条请求，暂未发现 Baiduspider UA。该日志从本次修改后才开始记录，只能作为后续观察基线，不能用于判断修改前是否有百度抓取。
+- 随后 `baidu:evidence` 使用模拟 Baiduspider UA 检查 7 个线上端点；自动日志分析看到这 7 条 UA，但其来源 IP 反向 DNS 不属于百度，因此全部标记为 `unverified`。这验证了脚本不会把模拟 UA 或伪造爬虫计入真实百度抓取。

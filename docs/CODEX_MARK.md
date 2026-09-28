@@ -1196,3 +1196,12 @@
 - 公开 GitHub README 增加正式网站链接，作为站点所有者可维护的正常外部引用；不采用购买、群发或站群外链。
 - 完整依据、上线步骤、用户协作项、7 天观察窗口和反馈条件记录在 `docs/BAIDU_INDEXING_RUNBOOK.md`，后续新对话以该文档为主线继续。
 - 正式仓验收通过：构建得到 34 个省份、5,663 个景点页、5,699 条完整 sitemap URL 和 47 条核心 sitemap URL；百度提交 dry-run 选择 10 条且没有联网。使用本地正式构建检查首页、关于页、目录、核心 sitemap 和 robots 均返回 200，随机不存在页面返回 404；证据报告可正常生成到忽略目录 `.runtime/baidu-indexing-evidence/`。
+
+## 2026-09-28｜生产 Nginx 软 404 修复与日志自动化
+
+- 确认实际架构不是宝塔 Node 项目：GitHub 定时部署更新 `/opt/lvyoumap/current`，Nginx 提供静态文件，`lvyoumap.service` 仅提供 Node API。真实配置文件为 `/www/server/panel/vhost/nginx/lvyoumap.conf`。
+- 首次安全修改脚本因检测到两处 SPA 回退而拒绝写入，但外层命令没有检查 Python 退出码，错误显示 `SUCCESS`；配置实际未改变。随后按服务器 IP 和 HTTPS 两个静态 server 块的真实结构修正脚本，备份配置、通过 `nginx -t` 并成功重载。
+- 两处 `try_files $uri $uri/ /index.html` 已改为 `try_files $uri $uri/ =404`；HTTPS server 启用 `/www/wwwlogs/xzmap.xzbest.site.log` combined 日志。外网验证随机不存在页面由 200 改为 404，正常页面保持 200。
+- 受限 `deploy` SSH 账号可读取该日志。新增 `scripts/fetch_baidu_server_log.js` 与 `npm run baidu:logs:remote`，可自动下载最近日志并调用现有双向 DNS 核验脚本，后续无需在宝塔手工复制日志。
+- 本地忽略的 `.env` 已配置受限 SSH 目标、密钥路径和日志路径。首次自动拉取到启用后的 7 条请求，Baiduspider UA 为 0；这是从日志启用时开始的新基线，不能倒推此前抓取情况。
+- 运行线上证据检查后，日志出现 7 条由本机模拟 UA 产生的请求；双向 DNS 核验将来源 IP 全部判定为 `unverified`，没有误计为百度官方爬虫。后续只有 `verified` 结果才作为 Baiduspider 到访证据。

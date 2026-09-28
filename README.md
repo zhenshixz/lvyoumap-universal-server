@@ -143,6 +143,12 @@ npm run baidu:submit
 npm run baidu:logs -- D:\path\to\access.log
 ```
 
+生产服务器使用受限部署 SSH 账号时，可在忽略的 `.env` 中配置 `LVYOUMAP_SSH_TARGET`、`LVYOUMAP_SSH_KEY` 和 `LVYOUMAP_NGINX_LOG`，随后自动拉取最近 100,000 行并完成同样的 DNS 核验：
+
+```bash
+npm run baidu:logs:remote
+```
+
 部署核心页面改动后可生成反馈材料；输出保存在不会进入 Git 的 `.runtime/baidu-indexing-evidence/report.md`：
 
 ```bash
