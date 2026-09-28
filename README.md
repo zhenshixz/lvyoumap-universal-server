@@ -118,13 +118,19 @@ DEPLOY_KNOWN_HOSTS
 
 ## IndexNow
 
-构建会把公开验证文件 `indexnow-key.txt` 放到站点根目录。发布完成后运行以下命令，默认只通知首页、目的地目录和省级页面：
+构建会把公开验证文件 `indexnow-key.txt` 放到站点根目录。发布完成后运行以下命令，默认通知 `sitemap-core.xml` 中的 47 个核心页面：
 
 ```bash
 npm run indexnow:submit
 ```
 
-提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。只有首次上线或全部页面确实发生实质更新时，才使用 `npm run indexnow:submit -- --all`；日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
+提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。成功后会在忽略目录记录该 URL 批次，后续默认跳过完全相同的重复通知；只有页面再次发生实质变化时才使用 `--force`。只有全部页面确实发生实质更新时才使用 `--all`，日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
+
+生产爬虫日志可一次检查百度与 Bing，并分别执行官方要求的双向 DNS 校验：
+
+```bash
+npm run search:logs:remote
+```
 
 ## 百度普通收录
 

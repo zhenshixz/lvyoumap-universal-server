@@ -79,12 +79,15 @@ function main() {
   fs.writeFileSync(outputPath, result.stdout, 'utf8');
   console.log(`Downloaded ${result.stdout.split(/\r?\n/).filter(Boolean).length} log lines to ${outputPath}`);
 
-  const analyzer = spawnSync(process.execPath, [path.join(__dirname, 'analyze_baiduspider_log.js'), outputPath], {
-    cwd: rootDir,
-    stdio: 'inherit',
-  });
-  if (analyzer.error) throw analyzer.error;
-  if (analyzer.status !== 0) throw new Error(`Baiduspider analysis failed (${analyzer.status})`);
+  for (const analyzerName of ['analyze_baiduspider_log.js', 'analyze_bingbot_log.js']) {
+    console.log(`\n=== ${analyzerName} ===`);
+    const analyzer = spawnSync(process.execPath, [path.join(__dirname, analyzerName), outputPath], {
+      cwd: rootDir,
+      stdio: 'inherit',
+    });
+    if (analyzer.error) throw analyzer.error;
+    if (analyzer.status !== 0) throw new Error(`${analyzerName} failed (${analyzer.status})`);
+  }
 }
 
 try {

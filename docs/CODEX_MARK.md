@@ -1212,3 +1212,14 @@
 - 本机普通 DNS 查询出现 `198.18.0.6`，属于本机网络代理 fake-IP，未把它当作公网 DNS 证据。其他子域名的橙云状态不影响 `xzmap` 这条独立记录。
 - 正式仓忽略的 `.env` 已安全复用此前保存的百度 token，没有写入 Git 或日志。dry-run 确认下一批为核心 sitemap 前 10 条，未发送请求。
 - 每日自动任务增加一次性提交逻辑：从 2026-09-29 起在额度可用时提交一次核心 10 页；成功后落本地标记并禁止重复提交，`over quota` 时当天不重试。日志监测和 10 月 5 日无抓取时的官方反馈提醒继续保留。
+
+## 2026-09-28｜百度与 Bing 核心提交及双爬虫日志自动检查（正式仓）
+
+- 线上 47 个核心 URL 逐一复核为 HTTP 200、自指 canonical、无 `noindex`，随机不存在路径返回 404；当前没有发现会直接阻止百度或 Bing 抓取的站内技术项。
+- 完整 sitemap 保留 5,699 个 URL，核心 sitemap 保留 47 个 URL。两者均在协议容量内；百度只主动提交核心集，Bing 使用完整 sitemap 做覆盖并用核心集做本轮 IndexNow 通知。
+- `scripts/submit_indexnow.js` 默认改读 `sitemap-core.xml`，精确 URL 批次成功后写入 Git 忽略的本地回执，后续不再误发完全相同的批次；全量提交仍需显式 `--all`，重复实质更新批次需显式 `--force`。
+- 2026-09-28 17:04 验证线上 IndexNow 密钥后提交 47 个核心 URL，接口返回 HTTP 200。该回执只证明通知被接收，不代表已抓取或收录。
+- 新增 `scripts/analyze_bingbot_log.js`，按 Bing 官方规则执行 `search.msn.com` 反向解析与正向回原 IP 验证；生产日志拉取命令现同时检查 Baiduspider 与 bingbot。
+- 当前日志没有经 DNS 双向验证的真实 Baiduspider 或 bingbot。现有 Baiduspider UA 命中均来自本轮模拟抓取检查，已判定为 unverified，不能当作搜索引擎访问。
+- 未统一添加 sitemap `lastmod`。项目当前没有逐 URL 可靠内容更新时间，不能用构建或部署时间冒充页面实际更新时间。
+- 跟进节点固定为 D+3 检查真实抓取与 HTTP 状态、D+7 形成百度反馈包、Bing 首次发现满 14 天仍未抓取时提交 Bing 支持；详见 `docs/SEARCH_INDEXING_STATUS.md`。
