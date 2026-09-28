@@ -17,6 +17,7 @@ for (const requiredPath of [
   path.join(distDir, 'destinations', 'index.html'),
   path.join(distDir, 'destinations', 'beijing.html'),
   path.join(distDir, 'seo-build-info.json'),
+  path.join(distDir, 'indexnow-key.txt'),
 ]) {
   if (!fs.existsSync(requiredPath)) throw new Error(`Missing build output: ${requiredPath}`);
 }
@@ -47,6 +48,11 @@ const sitemap = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
 const sitemapUrlCount = (sitemap.match(/<url>/g) || []).length;
 if (sitemapUrlCount !== seoInfo.sitemapUrlCount || !sitemap.includes('/attractions/beijing/')) {
   throw new Error(`Sitemap verification failed: ${sitemapUrlCount} URLs`);
+}
+
+const indexNowKey = fs.readFileSync(path.join(distDir, 'indexnow-key.txt'), 'utf8').trim();
+if (!/^[A-Za-z0-9-]{8,128}$/.test(indexNowKey)) {
+  throw new Error('IndexNow key verification failed');
 }
 
 console.log(`Build verification passed: ${Object.keys(index).length} provinces, ${seoInfo.attractionCount} SEO attraction pages.`);

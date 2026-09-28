@@ -114,6 +114,16 @@ DEPLOY_KNOWN_HOSTS
 
 推送`main`后会自动构建、上传和切换版本。部署后的`/api/health`检查失败时，服务器自动恢复上一版本。
 
+## IndexNow
+
+构建会把公开验证文件 `indexnow-key.txt` 放到站点根目录。发布完成后运行以下命令，默认只通知首页、目的地目录和省级页面：
+
+```bash
+npm run indexnow:submit
+```
+
+提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。只有首次上线或全部页面确实发生实质更新时，才使用 `npm run indexnow:submit -- --all`；日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
+
 ## 数据维护
 
 全国核心景点补全采用三级质量门禁：身份错配、重复、关键字段/攻略/路线缺失会阻断；第二来源或授权实景图暂缺仅作为隔离预览警告；体验增强项进入后续任务。警告不会被静默忽略，最终写入 beta 前仍需人工查看隔离预览并确认。完整规则见 [PROJECT_MAINTENANCE.md](PROJECT_MAINTENANCE.md)。
