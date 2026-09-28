@@ -1205,3 +1205,10 @@
 - 受限 `deploy` SSH 账号可读取该日志。新增 `scripts/fetch_baidu_server_log.js` 与 `npm run baidu:logs:remote`，可自动下载最近日志并调用现有双向 DNS 核验脚本，后续无需在宝塔手工复制日志。
 - 本地忽略的 `.env` 已配置受限 SSH 目标、密钥路径和日志路径。首次自动拉取到启用后的 7 条请求，Baiduspider UA 为 0；这是从日志启用时开始的新基线，不能倒推此前抓取情况。
 - 运行线上证据检查后，日志出现 7 条由本机模拟 UA 产生的请求；双向 DNS 核验将来源 IP 全部判定为 `unverified`，没有误计为百度官方爬虫。后续只有 `verified` 结果才作为 Baiduspider 到访证据。
+
+## 2026-09-28｜Cloudflare 排除与百度自动推进
+
+- 用户截图确认 `xzmap.xzbest.site` 为灰云“仅 DNS”，A 记录直指 `8.138.252.219`。Google 与 Cloudflare 的独立 DoH 查询也均返回该源站 IP；按 Cloudflare 官方机制，HTTP/HTTPS 不经过 Cloudflare 代理，因此当前百度问题与橙云 WAF、缓存或爬虫策略无关。
+- 本机普通 DNS 查询出现 `198.18.0.6`，属于本机网络代理 fake-IP，未把它当作公网 DNS 证据。其他子域名的橙云状态不影响 `xzmap` 这条独立记录。
+- 正式仓忽略的 `.env` 已安全复用此前保存的百度 token，没有写入 Git 或日志。dry-run 确认下一批为核心 sitemap 前 10 条，未发送请求。
+- 每日自动任务增加一次性提交逻辑：从 2026-09-29 起在额度可用时提交一次核心 10 页；成功后落本地标记并禁止重复提交，`over quota` 时当天不重试。日志监测和 10 月 5 日无抓取时的官方反馈提醒继续保留。

@@ -156,3 +156,16 @@ npm run baidu:evidence
 - 外网复核：首页、关于页、目录、核心 sitemap 和 robots 均为 200；随机不存在页面返回 404。受限部署账号可以只读访问新日志，后续使用 `npm run baidu:logs:remote` 自动取回并分析。
 - 首次自动读取到启用日志后的 7 条请求，暂未发现 Baiduspider UA。该日志从本次修改后才开始记录，只能作为后续观察基线，不能用于判断修改前是否有百度抓取。
 - 随后 `baidu:evidence` 使用模拟 Baiduspider UA 检查 7 个线上端点；自动日志分析看到这 7 条 UA，但其来源 IP 反向 DNS 不属于百度，因此全部标记为 `unverified`。这验证了脚本不会把模拟 UA 或伪造爬虫计入真实百度抓取。
+
+## 2026-09-28 Cloudflare DNS 排查
+
+- Cloudflare 控制台显示 `xzmap.xzbest.site` 的 A 记录为灰云“仅 DNS”，记录值为源站 `8.138.252.219`；同一域名下其他子域名的橙云代理状态不会传递到该记录。
+- Google DNS-over-HTTPS 与 Cloudflare DNS-over-HTTPS 均返回 `8.138.252.219`，TTL 为 300 秒。Cloudflare 官方说明 DNS-only 记录只返回源站地址，HTTP/HTTPS 请求不会经过 Cloudflare 反向代理，因此 Cloudflare WAF、缓存、Bot Fight Mode 或 AI Crawl Control 不在当前请求链路中。
+- 本机系统 DNS 显示的 `198.18.0.6` 是本地网络代理的 fake-IP 映射，不能用于判断公网解析；权威结论使用独立 DoH 结果、Cloudflare 控制台记录和源站日志。
+- 结论：当前百度未收录不能归因于 Cloudflare 橙云。保持 `xzmap` 为灰云作为本轮抓取观察基线，不在观察期内切换代理状态。
+
+## 自动推进规则
+
+- 每日 09:30 的任务自动拉取和验证生产日志，没有有效变化时不通知。
+- 从 2026-09-29 起，对提交 `8c02bc5` 生成的核心 URL 执行一次百度主动推送；成功后写入本地标记并停止重复提交。若当天额度耗尽，只记录本次尝试并等待次日，不在同一天重试。
+- 2026-10-05 仍没有经 DNS 验证的 Baiduspider 时，自动生成最新证据报告并提醒提交一次官方反馈。
