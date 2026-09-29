@@ -43,6 +43,14 @@
 - `node --check`：通过。
 - `node scripts/test_gallery_link_workbench.js`：通过。
 - 当前服务 PID 以 `.runtime/gallery-link-batches/server.json` 为准。
+
+## 2026-09-29 推广工具交接入口
+
+- 推广工具使用独立目录 `D:\github\lvyoumap-promotion-console`，不与正式站点构建和部署混在一起。
+- 平台优先级、版本与完成状态的唯一来源：`D:\github\lvyoumap-promotion-console\docs\PROMOTION_PRIORITY.md`。
+- 登录后完整自动化流程的唯一来源：`D:\github\lvyoumap-promotion-console\docs\PROMOTION_WORKFLOW.md`。
+- 每次调整记录：`D:\github\lvyoumap-promotion-console\docs\CHANGELOG.md`。
+- 新对话应先读取以上三份文件，再从第一个未完成的平台和未勾选步骤继续；不要重新设计多平台大而全方案。
 ## 2026-09-22 SEO 当前状态
 
 - 线上尚未收录的核心原因已定位：缺少真实 `robots.txt` / `sitemap.xml`，5,663 个景点没有独立可抓取 URL。
