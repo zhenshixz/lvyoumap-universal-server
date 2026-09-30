@@ -1,6 +1,20 @@
 # Beta 当前交接摘要
 
-更新时间：2026-09-22
+更新时间：2026-09-24
+
+## 2026-09-24 实时核对（后文 2026-09-22 内容仅作历史快照）
+
+- 工作目录为 `D:\github\lvyoumap-universal-serverbeta`。所有开发、采集、验收先在 Beta；未经用户再次明确授权，不修改正式仓。正式仓 `D:\github\lvyoumap-universal-server` 当前工作树干净，`main` 与 `origin/main` 一致，最新提交 `369a215`（2026-09-23，更新 SEO 页面）。
+- 项目为 Vue 3 前端、Node.js 健康/天气 API、Nginx 静态服务。`content/` 为维护源，`scripts/generate_static_data.js` 生成 `data/`，`scripts/build.js` 生成 `dist/` 并调用 `scripts/generate_seo_pages.js`。`dist`、`.runtime`、`.env`、`node_modules` 不同步到正式 Git。
+- 截至 9 月 24 日本轮图片 Alt 修正前，Beta 的 `scripts/generate_seo_pages.js`、`content/province-heroes.json`、`content/attraction-gallery-refill-queue.json` 与正式仓对应文件 SHA-256 一致。现在 SEO 生成器仅在 Beta 新增图片 Alt 说明，尚未同步正式仓。此前“整个 SEO 功能仍仅在 Beta”的记录已经过时；线上 `robots.txt`、`sitemap.xml`、`/destinations/index.html`、`/api/health` 均返回 200。Beta 与线上 sitemap 均为 5,699 URL，线上目录页包含“进入中国旅游地图”入口。
+- 补图队列当前共 397 项：`completed=141`、`not_required=250`、`pending=6`。草稿 revision `47`，也是 6 项：需手填 Trip 链接 2 项（王府井天主堂东堂、关帝庙）；网络重试 4 项（衡水湖旅游景区、阿拉善左旗东湖草原景区、李家台赶海园、马目风车露营地1号）。历史批次 `20260921-101623-050539` 的 233 项、139 个景点/401 张图已写入 Beta，勿重复应用。
+- `.runtime/attraction-gallery-batch/codex-background.json` 状态为 `paused`，最后更新时间 2026-09-11；其中 PID 28580 已不存在。`.runtime/gallery-link-batches/server.json` 记录的 PID 19196 也已不存在，当前本机未监听 4210、3000、3001。旧 PID 与端口记录不可当成正在运行的服务；如要继续补图，先按现有启动器检查状态，再启动单实例。
+- 省份头图人工选择为 34/34，`content/province-heroes.json` 已固化，三端共 102 张 WebP；正式仓配置文件与 Beta 一致。`docs/CODEX_MARK.md` 末尾记录了 9 月 23 日 SEO 按钮和百度验证文件的历史操作。
+- 搜索平台状态以账号后台为准：历史对话显示 Google sitemap 成功读取 5,699 URL、Google 首页已收录，Bing 已发现约 5.7K URL，百度站点已验证；本次未登录各站长平台重新核验索引数量。`site:` 查询只作辅助，不能推断全部页面收录。
+- 9 月 24 日截图进一步确认：Bing 目录页已发现但未爬网，实时 URL 可抓取、具备收录资格；34 张图缺 Alt 属提示，Beta 已修正并构建/本地预览通过，线上尚未更新。百度普通收录 sitemap 当日配额为 0，未能通过此入口提交；待核实 API/手动配额和抓取诊断。详见 `CODEX_MARK.md` 最新条目。
+- 软著申请因新版“未使用 AI”承诺与实际开发不符，仍暂停在签章上传前；内部草稿不得直接签署提交。证据快照提交已在正式仓及 `origin/main`，本地标签 `evidence-snapshot-2026-09-22` 存在，本次远程标签查询未返回结果。
+- 9 月 24 日本轮仅在 Beta 修改 SEO 生成器的图片 Alt、重新构建并做本地临时预览；没有启动采集后台任务，预览进程已停止，正式仓未修改、未提交或部署。继续工作前优先读本节，再按具体任务读取 `CODEX_MARK.md` 最近记录及对应 `.runtime` 状态；不要输出完整 JSON、日志、原图或大量 Git 文件清单到对话。
+- Beta 工作树长期保留大量未提交的内容、图片和脚本；不能因为切换对话而执行清理、重置或整目录同步。任何新的同步都须先完成本轮 Beta 验收并再次取得用户明确授权。
 
 ## 当前软著申请
 
@@ -43,14 +57,6 @@
 - `node --check`：通过。
 - `node scripts/test_gallery_link_workbench.js`：通过。
 - 当前服务 PID 以 `.runtime/gallery-link-batches/server.json` 为准。
-
-## 2026-09-29 推广工具交接入口
-
-- 推广工具使用独立目录 `D:\github\lvyoumap-promotion-console`，不与正式站点构建和部署混在一起。
-- 平台优先级、版本与完成状态的唯一来源：`D:\github\lvyoumap-promotion-console\docs\PROMOTION_PRIORITY.md`。
-- 登录后完整自动化流程的唯一来源：`D:\github\lvyoumap-promotion-console\docs\PROMOTION_WORKFLOW.md`。
-- 每次调整记录：`D:\github\lvyoumap-promotion-console\docs\CHANGELOG.md`。
-- 新对话应先读取以上三份文件，再从第一个未完成的平台和未勾选步骤继续；不要重新设计多平台大而全方案。
 ## 2026-09-22 SEO 当前状态
 
 - 线上尚未收录的核心原因已定位：缺少真实 `robots.txt` / `sitemap.xml`，5,663 个景点没有独立可抓取 URL。

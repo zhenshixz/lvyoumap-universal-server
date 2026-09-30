@@ -59,6 +59,13 @@ function readSitemapUrls() {
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => decodeXml(match[1].trim()));
 }
 
+function isPriorityUrl(value) {
+  const url = new URL(value);
+  return url.pathname === '/'
+    || url.pathname === '/destinations/index.html'
+    || /^\/destinations\/[a-z0-9_-]+\.html$/.test(url.pathname);
+}
+
 function validateUrl(value) {
   const url = new URL(value);
   if (url.origin !== siteOrigin) throw new Error(`URL is outside ${siteOrigin}: ${value}`);
@@ -70,14 +77,14 @@ async function main() {
   const sitemapUrls = readSitemapUrls();
   const candidates = options.urls.length > 0
     ? options.urls
-    : sitemapUrls;
-  const requestedUrls = options.urls.length > 0 || options.all
+    : (options.all ? sitemapUrls : sitemapUrls.filter(isPriorityUrl));
+  const requestedUrls = options.urls.length > 0
     ? candidates
     : candidates.slice(options.offset, options.offset + options.limit);
   const urls = [...new Set(requestedUrls.map(validateUrl))];
 
   if (urls.length === 0) throw new Error('No URLs selected for Baidu submission');
-  console.log(`Baidu selection: ${urls.length} URLs (${options.all ? 'all core URLs' : `offset ${options.offset}, limit ${options.limit}`}; sitemap total ${sitemapUrls.length})`);
+  console.log(`Baidu selection: ${urls.length} URLs (offset ${options.offset}, limit ${options.limit}; sitemap total ${sitemapUrls.length})`);
   if (options.dryRun) {
     console.log('Dry run complete; no request was sent.');
     return;

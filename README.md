@@ -4,8 +4,6 @@
 
 项目架构、数据分层、小红书点点采集、贵州试点状态、验证和回撤规则统一记录在 [PROJECT_MAINTENANCE.md](PROJECT_MAINTENANCE.md)。后续数据迭代请先阅读该文件。
 
-百度抓取、核心 sitemap、日志核验、官方反馈条件和上线协作步骤记录在 [docs/BAIDU_INDEXING_RUNBOOK.md](docs/BAIDU_INDEXING_RUNBOOK.md)。
-
 ## 运行结构
 
 - Nginx直接提供`dist`中的页面、地图数据和图片。
@@ -118,19 +116,13 @@ DEPLOY_KNOWN_HOSTS
 
 ## IndexNow
 
-构建会把公开验证文件 `indexnow-key.txt` 放到站点根目录。发布完成后运行以下命令，默认通知 `sitemap-core.xml` 中的 47 个核心页面：
+构建会把公开验证文件 `indexnow-key.txt` 放到站点根目录。发布完成后运行以下命令，默认只通知首页、目的地目录和省级页面：
 
 ```bash
 npm run indexnow:submit
 ```
 
-提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。成功后会在忽略目录记录该 URL 批次，后续默认跳过完全相同的重复通知；只有页面再次发生实质变化时才使用 `--force`。只有全部页面确实发生实质更新时才使用 `--all`，日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
-
-生产爬虫日志可一次检查百度与 Bing，并分别执行官方要求的双向 DNS 校验：
-
-```bash
-npm run search:logs:remote
-```
+提交前可用 `npm run indexnow:submit -- --dry-run` 检查 URL 数量而不联网。只有首次上线或全部页面确实发生实质更新时，才使用 `npm run indexnow:submit -- --all`；日常新增或更新单页使用 `--url=https://xzmap.xzbest.site/...`。HTTP 200/202 只表示 IndexNow 已接收通知，不保证抓取或收录。
 
 ## 百度普通收录
 
@@ -147,12 +139,6 @@ npm run baidu:submit
 
 ```bash
 npm run baidu:logs -- D:\path\to\access.log
-```
-
-生产服务器使用受限部署 SSH 账号时，可在忽略的 `.env` 中配置 `LVYOUMAP_SSH_TARGET`、`LVYOUMAP_SSH_KEY` 和 `LVYOUMAP_NGINX_LOG`，随后自动拉取最近 100,000 行并完成同样的 DNS 核验：
-
-```bash
-npm run baidu:logs:remote
 ```
 
 部署核心页面改动后可生成反馈材料；输出保存在不会进入 Git 的 `.runtime/baidu-indexing-evidence/report.md`：

@@ -1,23 +1,19 @@
-const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
-const fullSitemapPath = path.join(distDir, 'sitemap.xml');
-const coreSitemapPath = path.join(distDir, 'sitemap-core.xml');
+const sitemapPath = path.join(distDir, 'sitemap.xml');
 const keyPath = path.join(rootDir, 'indexnow-key.txt');
-const receiptDir = path.join(rootDir, '.runtime', 'indexnow-submissions');
 const siteOrigin = 'https://xzmap.xzbest.site';
 const endpoint = 'https://api.indexnow.org/indexnow';
 const keyLocation = `${siteOrigin}/indexnow-key.txt`;
 
 function parseArguments(argv) {
-  const options = { all: false, dryRun: false, force: false, urls: [] };
+  const options = { all: false, dryRun: false, urls: [] };
   for (const argument of argv) {
     if (argument === '--all') options.all = true;
     else if (argument === '--dry-run') options.dryRun = true;
-    else if (argument === '--force') options.force = true;
     else if (argument.startsWith('--url=')) options.urls.push(argument.slice('--url='.length));
     else throw new Error(`Unknown argument: ${argument}`);
   }
@@ -33,17 +29,19 @@ function decodeXml(value) {
     .replace(/&apos;/g, "'");
 }
 
-function readSitemapUrls(sitemapPath) {
+function readSitemapUrls() {
   if (!fs.existsSync(sitemapPath)) {
-    throw new Error(`Missing ${path.relative(rootDir, sitemapPath)}. Run npm run build first.`);
+    throw new Error('Missing dist/sitemap.xml. Run npm run build first.');
   }
   const xml = fs.readFileSync(sitemapPath, 'utf8');
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => decodeXml(match[1].trim()));
 }
 
-function receiptPath(urls) {
-  const digest = crypto.createHash('sha256').update(urls.join('\n')).digest('hex').slice(0, 16);
-  return path.join(receiptDir, `${digest}.json`);
+function isPriorityUrl(value) {
+  const url = new URL(value);
+  return url.pathname === '/'
+    || url.pathname === '/destinations/index.html'
+    || /^\/destinations\/[a-z0-9_-]+\.html$/.test(url.pathname);
 }
 
 function validateUrl(value) {
@@ -89,23 +87,15 @@ async function main() {
   const key = fs.readFileSync(keyPath, 'utf8').trim();
   if (!/^[A-Za-z0-9-]{8,128}$/.test(key)) throw new Error('Invalid IndexNow key');
 
-  const sitemapPath = options.all ? fullSitemapPath : coreSitemapPath;
-  const sitemapUrls = readSitemapUrls(sitemapPath);
+  const sitemapUrls = readSitemapUrls();
   const requestedUrls = options.urls.length > 0
     ? options.urls.map(validateUrl)
-    : sitemapUrls;
+    : (options.all ? sitemapUrls : sitemapUrls.filter(isPriorityUrl));
   const urls = [...new Set(requestedUrls.map(validateUrl))];
-  const receipt = receiptPath(urls);
 
   if (urls.length === 0) throw new Error('No URLs selected for IndexNow submission');
-  console.log(`IndexNow selection: ${urls.length} URLs from ${path.basename(sitemapPath)}`);
+  console.log(`IndexNow selection: ${urls.length} of ${sitemapUrls.length} sitemap URLs`);
   console.log(`Key location: ${keyLocation}`);
-
-  if (fs.existsSync(receipt) && !options.force) {
-    const previous = JSON.parse(fs.readFileSync(receipt, 'utf8'));
-    console.log(`Exact URL batch was already accepted on ${previous.acceptedAt}; no duplicate request sent.`);
-    return;
-  }
 
   if (options.dryRun) {
     console.log('Dry run complete; no request was sent.');
@@ -120,12 +110,6 @@ async function main() {
     const status = await submitBatch(key, batch);
     console.log(`Submitted ${batch.length} URLs: HTTP ${status}`);
   }
-  fs.mkdirSync(receiptDir, { recursive: true });
-  fs.writeFileSync(receipt, `${JSON.stringify({
-    acceptedAt: new Date().toISOString(),
-    sitemap: options.urls.length > 0 ? 'explicit URLs' : path.basename(sitemapPath),
-    urlCount: urls.length,
-  }, null, 2)}\n`, 'utf8');
   console.log('IndexNow notification accepted. Crawling and indexing are still decided by each search engine.');
 }
 
